@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# Virtual envs
+venv/
+.venv/
+env/
+
+# Secrets / local config
+.env
+.env.local
+
+# Pipeline run artifacts (regenerated per run)
+eis_pipeline/output/
+
+# Editors
+.idea/
+.vscode/
