@@ -196,6 +196,14 @@ def run(
     elif missing:
         logger.info("Skipping embedding fallback (allow_embedding_fallback=False)")
 
+    # 4.5. Extend each detected section's span to the next heading.
+    # All three detectors (regex / AI-TOC / embedding) set char_span to just
+    # the heading/anchor text, which leaves retrieval.get_section_text with
+    # ~7-char windows of nothing but the heading word. Extend each non-cover
+    # ok-status section's span to the start of the next heading (or EOF) so
+    # downstream Stage 3 fields actually receive section bodies.
+    _extend_spans_to_next_heading(detected, doc_len=len(raw), pages=pages)
+
     # 5. Stub not_found for any CEQ section we have nothing on.
     for section_name in config.CEQ_SECTIONS:
         if section_name not in detected:
@@ -273,6 +281,55 @@ def _is_rejected_match(m: re.Match, raw: str) -> bool:
         if rej.search(window):
             return True
     return False
+
+
+# ---------------------------------------------------------------------------
+# Span-extension pass
+# ---------------------------------------------------------------------------
+
+def _extend_spans_to_next_heading(
+    detected: dict[str, DetectedSection],
+    *,
+    doc_len: int,
+    pages: list[FakePage],
+) -> None:
+    """In-place: extend each non-cover section's char_span end to the start
+    of the next detected heading (or end of document).
+
+    Why: the regex / AI-TOC / embedding detectors all set char_span to just
+    the heading text (~7-40 chars). retrieval.get_section_text slices raw
+    using that span, so without this pass the LLM receives only the heading
+    word and (correctly) refuses to summarize. After this pass, summary's
+    span runs from "SUMMARY" through to the start of the next heading
+    (e.g. "PURPOSE AND NEED"), giving the LLM the actual section body.
+
+    Cover is left alone: it's a deterministic first-N-pages span, not a
+    heading match, and is intentionally allowed to overlap the start of
+    summary / purpose_and_need for METS extraction.
+    """
+    candidates = [
+        s for s in detected.values()
+        if s.name != "cover" and s.status == "ok" and s.char_span is not None
+    ]
+    if not candidates:
+        return
+
+    candidates.sort(key=lambda s: s.char_span[0])  # type: ignore[arg-type]
+
+    for i, sec in enumerate(candidates):
+        assert sec.char_span is not None  # narrowing for type-checker
+        start = sec.char_span[0]
+        # End at the next heading's start, or EOF if this is the last one.
+        if i + 1 < len(candidates):
+            next_sec = candidates[i + 1]
+            assert next_sec.char_span is not None
+            end = next_sec.char_span[0]
+        else:
+            end = doc_len
+
+        if end > start:
+            sec.char_span = (start, end)
+            sec.pages = page_range_for_span(pages, sec.char_span)
 
 
 # ---------------------------------------------------------------------------

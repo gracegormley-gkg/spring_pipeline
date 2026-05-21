@@ -1,0 +1,365 @@
+{
+  "publication_id": "p1074_35556036813020",
+  "publication_type": null,
+  "is_supplemental": false,
+  "physical_record_ids": [
+    "p1074_35556036813020"
+  ],
+  "components": [
+    {
+      "record_id": "p1074_35556036813020",
+      "role": "main",
+      "confidence": 1.0
+    }
+  ],
+  "title": {
+    "value": "Environmental Impact Statement, Lead Content in Paint Volume 1 and 2",
+    "status": "extracted_from_mets",
+    "provenance": {
+      "source": "nul_api",
+      "source_text_hash": null,
+      "page": null,
+      "char_offset_raw": null,
+      "section": null,
+      "note": null
+    },
+    "confidence": 0.99
+  },
+  "summary": {
+    "value": "The Consumer Product Safety Commission (CPSC), an independent federal regulatory agency, prepared this Final Environmental Impact Statement concerning the regulation of lead content in paint and certain coated consumer products. The primary population impacted is children, who face health risks from ingesting chips and peelings of lead-containing paints applied to household surfaces, toys, and furniture. The final goal of the proposed action is to ban, under the Consumer Product Safety Act, lead-containing paints and similar surface-coating materials exceeding 0.06 percent lead, as well as toys, children's articles, and furniture bearing such coatings. The driving forces include Congressional mandates under the Lead Based Paint Poisoning Prevention Act (LBPPPA) and its amendments, the CPSC's determination that existing scientific data do not support a finding that lead levels above 0.06 percent in paint are safe, and longstanding regulatory efforts dating to FDA actions under the Federal Hazardous Substances Act. Anticipated beneficial impacts include a moderate reduction in childhood lead poisoning risk and lower hazardous lead levels in consumer products. Negative impacts include slight adverse economic effects on the broader paint industry due to reformulation costs and routine lead-level monitoring estimated at $5–8 million annually, with major adverse effects identified for specialty coating manufacturers, including auto refinishing, industrial maintenance, and graphic arts coatings.",
+    "status": "ok",
+    "provenance": {
+      "source": "regex",
+      "source_text_hash": null,
+      "page": null,
+      "char_offset_raw": [
+        561,
+        72380
+      ],
+      "section": "summary",
+      "note": null
+    },
+    "confidence": 0.85
+  },
+  "layman_summary": {
+    "value": "A federal safety agency called the CPSC looked at the dangers of lead paint and decided to ban paints and surface coatings that contain more than 0.06 percent lead. This rule would also ban toys, children's furniture, and other kids' products covered with those high-lead coatings. The main reason is to protect children, who can get seriously sick from swallowing chips or flakes of lead paint found on walls, toys, and furniture. The ban is expected to lower the risk of lead poisoning in kids. On the downside, paint companies would need to change their formulas and test their products regularly, costing the industry roughly $5–8 million per year, with the biggest financial hit falling on makers of specialty coatings like auto and industrial paints.",
+    "status": "ok",
+    "provenance": {
+      "source": "haiku_classifier",
+      "source_text_hash": null,
+      "page": null,
+      "char_offset_raw": null,
+      "section": null,
+      "note": "rewrite of summary.value (no re-read)"
+    },
+    "confidence": 0.8
+  },
+  "date": {
+    "publication": {
+      "value": "1976",
+      "precision": "year",
+      "status": "needs_review",
+      "provenance": {
+        "source": "regex",
+        "source_text_hash": null,
+        "page": null,
+        "char_offset_raw": null,
+        "section": null,
+        "note": null
+      },
+      "evidence": null
+    },
+    "filing": {
+      "value": null,
+      "status": "deferred_v1"
+    },
+    "comment_deadline": {
+      "value": null,
+      "status": "deferred_v1"
+    },
+    "rod_date": {
+      "value": null,
+      "status": "deferred_v1"
+    }
+  },
+  "year": {
+    "value": 1976,
+    "status": "needs_review",
+    "provenance": {
+      "source": "regex",
+      "source_text_hash": null,
+      "page": null,
+      "char_offset_raw": null,
+      "section": null,
+      "note": "year regex on first 5 fake pages"
+    },
+    "confidence": 0.8
+  },
+  "agency": {
+    "lead_agency": {
+      "value": null,
+      "status": "needs_review",
+      "provenance": null,
+      "confidence": null
+    },
+    "cooperating_agencies": [],
+    "office_or_region": {
+      "value": null,
+      "status": "deferred_v1",
+      "provenance": null,
+      "confidence": null
+    }
+  },
+  "eis_type": {
+    "value": "Final",
+    "status": "extracted_from_cover",
+    "provenance": {
+      "source": "regex",
+      "source_text_hash": null,
+      "page": 1,
+      "char_offset_raw": [
+        0,
+        7581
+      ],
+      "section": "cover",
+      "note": "EIS_TYPE_REGEX match"
+    },
+    "confidence": 0.95
+  },
+  "sections": [
+    {
+      "name": "cover",
+      "char_span": [
+        0,
+        7581
+      ],
+      "pages": [
+        1,
+        3
+      ],
+      "confidence": 1.0,
+      "status": "ok",
+      "detection_method": "default_pages"
+    },
+    {
+      "name": "summary",
+      "char_span": [
+        561,
+        72380
+      ],
+      "pages": [
+        1,
+        29
+      ],
+      "confidence": 0.9,
+      "status": "ok",
+      "detection_method": "regex"
+    },
+    {
+      "name": "purpose_and_need",
+      "char_span": null,
+      "pages": null,
+      "confidence": 1.0,
+      "status": "not_found",
+      "detection_method": "regex"
+    },
+    {
+      "name": "alternatives",
+      "char_span": [
+        72380,
+        711255
+      ],
+      "pages": [
+        29,
+        282
+      ],
+      "confidence": 0.9,
+      "status": "ok",
+      "detection_method": "regex"
+    },
+    {
+      "name": "affected_environment",
+      "char_span": null,
+      "pages": null,
+      "confidence": 1.0,
+      "status": "not_found",
+      "detection_method": "regex"
+    },
+    {
+      "name": "environmental_consequences",
+      "char_span": null,
+      "pages": null,
+      "confidence": 1.0,
+      "status": "not_found",
+      "detection_method": "regex"
+    },
+    {
+      "name": "public_comments",
+      "char_span": null,
+      "pages": null,
+      "confidence": 1.0,
+      "status": "not_found",
+      "detection_method": "regex"
+    },
+    {
+      "name": "response_to_comments",
+      "char_span": null,
+      "pages": null,
+      "confidence": 1.0,
+      "status": "not_found",
+      "detection_method": "regex"
+    },
+    {
+      "name": "rod",
+      "char_span": null,
+      "pages": null,
+      "confidence": 1.0,
+      "status": "not_found",
+      "detection_method": "regex"
+    }
+  ],
+  "comment_blocks": [],
+  "alternatives": [
+    {
+      "label": "Alternative 4",
+      "description": "Alternative 4 is described as equivalent to Alternative 3 but with a one-year effective date for reducing lead content in paint. It was referenced in comparison to Alternative 5, which offered a longer, staged reduction timeline.",
+      "provenance": {
+        "source": "regex",
+        "source_text_hash": null,
+        "page": null,
+        "char_offset_raw": [
+          265964,
+          265977
+        ],
+        "section": "alternatives",
+        "note": "regex label match"
+      },
+      "status": "ok"
+    },
+    {
+      "label": "Alternative 5",
+      "description": "Alternative 5 features a delayed effective date and a gradual, staged reduction of lead content in paint to the 0.06 percent level. Commenters favored this alternative because the longer timeframe would moderate adverse cost impacts on industry and allow more time to research and develop substitute products.",
+      "provenance": {
+        "source": "regex",
+        "source_text_hash": null,
+        "page": null,
+        "char_offset_raw": [
+          266049,
+          266062
+        ],
+        "section": "alternatives",
+        "note": "regex label match"
+      },
+      "status": "ok"
+    }
+  ],
+  "themes": {
+    "primary": [
+      {
+        "value": "waste_and_remediation",
+        "confidence": 0.45
+      },
+      {
+        "value": "other",
+        "confidence": 0.55
+      }
+    ],
+    "subthemes": [
+      {
+        "value": "hazardous_waste",
+        "confidence": 0.5,
+        "parent": "waste_and_remediation"
+      }
+    ],
+    "status": "ok",
+    "provenance": null
+  },
+  "location": {
+    "named_places": [
+      {
+        "name": "Washington, D.C.",
+        "role": "context_reference",
+        "feature_type": "city",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      }
+    ],
+    "project_area_polygon": null,
+    "context_polygons": [],
+    "source_geometry": null,
+    "geometry_role": "unknown",
+    "geometry_status": "unknown",
+    "polygon_uncertainty": "unknown",
+    "spatial_summary": {
+      "representative_point": null,
+      "centroid_method": null,
+      "centroid_status": null,
+      "bbox": null
+    },
+    "status": "ok"
+  },
+  "stakeholders": [],
+  "stakeholder_extraction_scope": "organizations_only",
+  "excluded_stakeholder_types": [
+    "person"
+  ],
+  "stakeholder_status": "no_comment_section_found",
+  "historical_context": {
+    "value": null,
+    "status": "deferred_v1"
+  },
+  "project_status": {
+    "value": null,
+    "status": "deferred_v1"
+  },
+  "cross_publication_links": {
+    "value": [],
+    "status": "deferred_v1"
+  },
+  "extraction_budget_status": "complete",
+  "coverage_estimate": 1.0,
+  "unprocessed_sections": [],
+  "per_field_status": {},
+  "validation": {
+    "approach": "rule_threshold_v1",
+    "verdicts": [],
+    "critic_pass_rate": null,
+    "field_level_confidence": {},
+    "hard_gates": {
+      "verbatim_quotes": "pass",
+      "year_range": "pass",
+      "theme_vocab": "pass",
+      "geocoding_centroid": "pass",
+      "schema_validation": "pass"
+    },
+    "self_consistency": {},
+    "review_routing": "auto_approve",
+    "routing_reasons": []
+  },
+  "pipeline": {
+    "pipeline_version": "v1.0.0",
+    "stage_versions": {
+      "stage1": "1.0.0",
+      "stage1_5": "1.0.0",
+      "stage2": "1.0.0",
+      "stage3a": "1.0.0",
+      "stage3b": "1.0.0"
+    },
+    "model_ids": {
+      "us.anthropic.claude-sonnet-4-6": "us.anthropic.claude-sonnet-4-6"
+    },
+    "gazetteer_versions": {},
+    "calibration_model_id": null,
+    "extracted_at": "2026-05-21T18:56:02.030610+00:00",
+    "total_tokens": 18913,
+    "total_cost_usd": 0.074307,
+    "duration_seconds": 37.83,
+    "warnings": [
+      "year: NUL had no parseable date; extracted 1976 from raw text",
+      "lead_agency: NUL empty, cover scan empty, Haiku returned nothing",
+      "stakeholders: no public_comments/response_to_comments section detected"
+    ]
+  }
+}

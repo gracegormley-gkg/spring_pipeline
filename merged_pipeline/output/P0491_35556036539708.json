@@ -1,0 +1,641 @@
+{
+  "publication_id": "P0491_35556036539708",
+  "publication_type": null,
+  "is_supplemental": false,
+  "physical_record_ids": [
+    "P0491_35556036539708"
+  ],
+  "components": [
+    {
+      "record_id": "P0491_35556036539708",
+      "role": "main",
+      "confidence": 1.0
+    }
+  ],
+  "title": {
+    "value": "Concorde Supersonic Transport Aircraft",
+    "status": "needs_review",
+    "provenance": {
+      "source": "haiku_gapfill",
+      "source_text_hash": null,
+      "page": null,
+      "char_offset_raw": [
+        0,
+        7543
+      ],
+      "section": "cover",
+      "note": null
+    },
+    "confidence": 0.75
+  },
+  "summary": {
+    "value": "The communities primarily impacted are residents of Northern Virginia, particularly those in proximity to Dulles International Airport (IAD), as well as populations near John F. Kennedy International Airport (JFK). The proposed project involves amending the operating specifications of British Airways and Air France to permit Concorde Supersonic Transport (SST) aircraft operations into both airports. The stated justification for the proposal is to provide reduced transatlantic flight times for paying passengers. However, the Northern Virginia Planning District Commission (NVPDC) and the Metropolitan Washington Coalition for Clean Air (MWCCA) contend that benefits accrue only to a minority of high-fare passengers, with minimal regional economic benefit. Anticipated negative environmental impacts include significantly elevated noise pollution—Concorde takeoff levels of 117–125 EPNdB, exceeding FAR Part 36 limits by at least 9 dB—increased air pollutant emissions (carbon monoxide, hydrocarbons, particulates, and NOx), disproportionate fuel consumption (four to five times that of a 747 per seat mile), potential stratospheric ozone depletion, and adverse land use planning consequences for existing Northern Virginia residents. No significant positive environmental impacts are identified; the EIS is characterized by commenters as deficient in adequately analyzing these cumulative environmental costs.",
+    "status": "ok",
+    "provenance": {
+      "source": "regex",
+      "source_text_hash": null,
+      "page": null,
+      "char_offset_raw": [
+        155734,
+        1767945
+      ],
+      "section": "summary",
+      "note": null
+    },
+    "confidence": 0.85
+  },
+  "layman_summary": {
+    "value": "This project would allow British Airways and Air France to fly Concorde supersonic jets into Dulles Airport near Washington, D.C., and JFK Airport in New York, cutting transatlantic flight times. But local groups argue the only real winners are a small number of wealthy travelers, with little benefit to the broader region. The downsides are serious: Concorde takeoffs are extremely loud—far exceeding legal noise limits—and the planes burn four to five times more fuel per passenger than a 747, while also releasing more air pollution and potentially harming the ozone layer. Critics say the environmental review doesn't fully account for these combined harms.",
+    "status": "ok",
+    "provenance": {
+      "source": "haiku_classifier",
+      "source_text_hash": null,
+      "page": null,
+      "char_offset_raw": null,
+      "section": null,
+      "note": "rewrite of summary.value (no re-read)"
+    },
+    "confidence": 0.8
+  },
+  "date": {
+    "publication": {
+      "value": "1975",
+      "precision": "year",
+      "status": "needs_review",
+      "provenance": {
+        "source": "regex",
+        "source_text_hash": null,
+        "page": null,
+        "char_offset_raw": null,
+        "section": null,
+        "note": null
+      },
+      "evidence": null
+    },
+    "filing": {
+      "value": null,
+      "status": "deferred_v1"
+    },
+    "comment_deadline": {
+      "value": null,
+      "status": "deferred_v1"
+    },
+    "rod_date": {
+      "value": null,
+      "status": "deferred_v1"
+    }
+  },
+  "year": {
+    "value": 1975,
+    "status": "needs_review",
+    "provenance": {
+      "source": "regex",
+      "source_text_hash": null,
+      "page": null,
+      "char_offset_raw": null,
+      "section": null,
+      "note": "year regex on first 5 fake pages"
+    },
+    "confidence": 0.8
+  },
+  "agency": {
+    "lead_agency": {
+      "value": "NASA",
+      "status": "needs_review",
+      "provenance": {
+        "source": "controlled_vocab_match",
+        "source_text_hash": null,
+        "page": null,
+        "char_offset_raw": [
+          2557,
+          2602
+        ],
+        "section": "cover",
+        "note": "matched 'National Aeronautics and Space Administration' in cover"
+      },
+      "confidence": 0.85
+    },
+    "cooperating_agencies": [],
+    "office_or_region": {
+      "value": null,
+      "status": "deferred_v1",
+      "provenance": null,
+      "confidence": null
+    }
+  },
+  "eis_type": {
+    "value": "Final",
+    "status": "extracted_from_cover",
+    "provenance": {
+      "source": "regex",
+      "source_text_hash": null,
+      "page": 1,
+      "char_offset_raw": [
+        0,
+        7543
+      ],
+      "section": "cover",
+      "note": "EIS_TYPE_REGEX match"
+    },
+    "confidence": 0.95
+  },
+  "sections": [
+    {
+      "name": "cover",
+      "char_span": [
+        0,
+        7543
+      ],
+      "pages": [
+        1,
+        3
+      ],
+      "confidence": 1.0,
+      "status": "ok",
+      "detection_method": "default_pages"
+    },
+    {
+      "name": "summary",
+      "char_span": [
+        155734,
+        1767945
+      ],
+      "pages": [
+        62,
+        700
+      ],
+      "confidence": 0.9,
+      "status": "ok",
+      "detection_method": "regex"
+    },
+    {
+      "name": "purpose_and_need",
+      "char_span": null,
+      "pages": null,
+      "confidence": 1.0,
+      "status": "not_found",
+      "detection_method": "regex"
+    },
+    {
+      "name": "alternatives",
+      "char_span": [
+        9361,
+        155734
+      ],
+      "pages": [
+        4,
+        62
+      ],
+      "confidence": 0.9,
+      "status": "ok",
+      "detection_method": "regex"
+    },
+    {
+      "name": "affected_environment",
+      "char_span": null,
+      "pages": null,
+      "confidence": 1.0,
+      "status": "not_found",
+      "detection_method": "regex"
+    },
+    {
+      "name": "environmental_consequences",
+      "char_span": null,
+      "pages": null,
+      "confidence": 1.0,
+      "status": "not_found",
+      "detection_method": "regex"
+    },
+    {
+      "name": "public_comments",
+      "char_span": null,
+      "pages": null,
+      "confidence": 1.0,
+      "status": "not_found",
+      "detection_method": "regex"
+    },
+    {
+      "name": "response_to_comments",
+      "char_span": null,
+      "pages": null,
+      "confidence": 1.0,
+      "status": "not_found",
+      "detection_method": "regex"
+    },
+    {
+      "name": "rod",
+      "char_span": null,
+      "pages": null,
+      "confidence": 1.0,
+      "status": "not_found",
+      "detection_method": "regex"
+    }
+  ],
+  "comment_blocks": [],
+  "alternatives": [
+    {
+      "label": "Alternative 1",
+      "description": "Alternative 1 would refuse to amend the operations specifications of Air France and British Airways, effectively denying their request to operate Concorde supersonic transport aircraft.",
+      "provenance": {
+        "source": "regex",
+        "source_text_hash": null,
+        "page": null,
+        "char_offset_raw": [
+          9397,
+          9410
+        ],
+        "section": "alternatives",
+        "note": "regex label match"
+      },
+      "status": "ok"
+    },
+    {
+      "label": "Alternative 2",
+      "description": "Alternative 2 would amend the Air France and British Airways operations specifications as requested, permitting Concorde supersonic transport operations.",
+      "provenance": {
+        "source": "regex",
+        "source_text_hash": null,
+        "page": null,
+        "char_offset_raw": [
+          9512,
+          9525
+        ],
+        "section": "alternatives",
+        "note": "regex label match"
+      },
+      "status": "ok"
+    },
+    {
+      "label": "Alternative 3",
+      "description": "Alternative 3 would impose additional restrictions on British Airways and Air France Concorde operations, going beyond the existing specifications.",
+      "provenance": {
+        "source": "regex",
+        "source_text_hash": null,
+        "page": null,
+        "char_offset_raw": [
+          9664,
+          9677
+        ],
+        "section": "alternatives",
+        "note": "regex label match"
+      },
+      "status": "ok"
+    },
+    {
+      "label": "Alternative 4",
+      "description": "Alternative 4 is the no-action alternative, under which no changes would be made to the existing regulatory situation regarding Concorde operations.",
+      "provenance": {
+        "source": "regex",
+        "source_text_hash": null,
+        "page": null,
+        "char_offset_raw": [
+          9782,
+          9795
+        ],
+        "section": "alternatives",
+        "note": "regex label match"
+      },
+      "status": "ok"
+    },
+    {
+      "label": "Option 2",
+      "description": "Option 2 is one of the regulation options considered for current SSTs, as published in the Federal Register on March 28, 1975, which would require SST aircraft to meet aircraft noise standards applicable to subsonic aircraft.",
+      "provenance": {
+        "source": "regex",
+        "source_text_hash": null,
+        "page": null,
+        "char_offset_raw": [
+          133952,
+          133960
+        ],
+        "section": "alternatives",
+        "note": "regex label match"
+      },
+      "status": "ok"
+    }
+  ],
+  "themes": {
+    "primary": [
+      {
+        "value": "transportation",
+        "confidence": 0.95
+      },
+      {
+        "value": "urban_development",
+        "confidence": 0.3
+      }
+    ],
+    "subthemes": [
+      {
+        "value": "aviation",
+        "confidence": 0.97,
+        "parent": "transportation"
+      }
+    ],
+    "status": "ok",
+    "provenance": null
+  },
+  "location": {
+    "named_places": [
+      {
+        "name": "John F. Kennedy International Airport",
+        "role": "project_area",
+        "feature_type": "facility",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Dulles International Airport",
+        "role": "project_area",
+        "feature_type": "facility",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "New York",
+        "role": "context_reference",
+        "feature_type": "state",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Virginia",
+        "role": "context_reference",
+        "feature_type": "state",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "New Jersey",
+        "role": "context_reference",
+        "feature_type": "state",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Connecticut",
+        "role": "context_reference",
+        "feature_type": "state",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Pennsylvania",
+        "role": "context_reference",
+        "feature_type": "state",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Maryland",
+        "role": "context_reference",
+        "feature_type": "state",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Washington, D.C.",
+        "role": "context_reference",
+        "feature_type": "city",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "City of New York",
+        "role": "context_reference",
+        "feature_type": "city",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Fairfax County",
+        "role": "context_reference",
+        "feature_type": "county",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Montgomery County",
+        "role": "context_reference",
+        "feature_type": "county",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Chesapeake and Ohio Canal National Historical Park",
+        "role": "context_reference",
+        "feature_type": "park",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Jamaica Bay",
+        "role": "context_reference",
+        "feature_type": "place",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Reston",
+        "role": "context_reference",
+        "feature_type": "place",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Los Angeles",
+        "role": "context_reference",
+        "feature_type": "city",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Inglewood, California",
+        "role": "context_reference",
+        "feature_type": "city",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Leesburg, Va.",
+        "role": "context_reference",
+        "feature_type": "city",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Lawrence, N.Y.",
+        "role": "context_reference",
+        "feature_type": "city",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Inwood, N. Y.",
+        "role": "context_reference",
+        "feature_type": "place",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Auburndale",
+        "role": "context_reference",
+        "feature_type": "place",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Queens",
+        "role": "context_reference",
+        "feature_type": "place",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Philadelphia, Penna.",
+        "role": "context_reference",
+        "feature_type": "city",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Maine",
+        "role": "context_reference",
+        "feature_type": "state",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Iowa",
+        "role": "context_reference",
+        "feature_type": "state",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      }
+    ],
+    "project_area_polygon": null,
+    "context_polygons": [],
+    "source_geometry": null,
+    "geometry_role": "unknown",
+    "geometry_status": "unknown",
+    "polygon_uncertainty": "unknown",
+    "spatial_summary": {
+      "representative_point": null,
+      "centroid_method": null,
+      "centroid_status": null,
+      "bbox": null
+    },
+    "status": "ok"
+  },
+  "stakeholders": [],
+  "stakeholder_extraction_scope": "organizations_only",
+  "excluded_stakeholder_types": [
+    "person"
+  ],
+  "stakeholder_status": "no_comment_section_found",
+  "historical_context": {
+    "value": null,
+    "status": "deferred_v1"
+  },
+  "project_status": {
+    "value": null,
+    "status": "deferred_v1"
+  },
+  "cross_publication_links": {
+    "value": [],
+    "status": "deferred_v1"
+  },
+  "extraction_budget_status": "complete",
+  "coverage_estimate": 1.0,
+  "unprocessed_sections": [],
+  "per_field_status": {},
+  "validation": {
+    "approach": "rule_threshold_v1",
+    "verdicts": [],
+    "critic_pass_rate": null,
+    "field_level_confidence": {},
+    "hard_gates": {
+      "verbatim_quotes": "pass",
+      "year_range": "pass",
+      "theme_vocab": "pass",
+      "geocoding_centroid": "pass",
+      "schema_validation": "pass"
+    },
+    "self_consistency": {},
+    "review_routing": "auto_approve",
+    "routing_reasons": []
+  },
+  "pipeline": {
+    "pipeline_version": "v1.0.0",
+    "stage_versions": {
+      "stage1": "1.0.0",
+      "stage1_5": "1.0.0",
+      "stage2": "1.0.0",
+      "stage3a": "1.0.0",
+      "stage3b": "1.0.0"
+    },
+    "model_ids": {
+      "us.anthropic.claude-sonnet-4-6": "us.anthropic.claude-sonnet-4-6"
+    },
+    "gazetteer_versions": {},
+    "calibration_model_id": null,
+    "extracted_at": "2026-05-21T18:57:47.383466+00:00",
+    "total_tokens": 22307,
+    "total_cost_usd": 0.089901,
+    "duration_seconds": 44.86,
+    "warnings": [
+      "year: NUL had no parseable date; extracted 1975 from raw text",
+      "stakeholders: no public_comments/response_to_comments section detected"
+    ]
+  }
+}

@@ -26,7 +26,7 @@
     "confidence": 0.99
   },
   "summary": {
-    "value": "The proposed Castaic-Haskell Junction Power Transmission Line is an 11.5-mile, four-circuit 230-kV transmission line, approximately 3.3 miles of which traverses the Angeles National Forest in California. The primary communities and jurisdictions affected are the State of California, Los Angeles County, and Southern California water agencies dependent on the California Aqueduct (FPC Project No. 2426). The project's final goal is to transmit hydroelectric power generated at the Castaic Power Plant, enabling water delivery through the Angeles Tunnel to the Metropolitan Water District and other Southern California municipalities. The driving force was a contractual water delivery commitment requiring at least two circuits to be operational by July 1971. Environmentally, the principal adverse impacts are aesthetic: visual intrusion upon the Angeles National Forest and unavoidable visual impact near Castaic Dam, plus short-term erosion and soil disturbance during construction, mitigable through erosion control measures. Positive environmental effects include reducing reliance on oil- and gas-fired steam generating plants within the Los Angeles basin, thereby decreasing air pollution and eliminating fuel consumption associated with 'spinning reserve' steam plants. Eleven alternate routes were evaluated; the selected alignment minimizes visual impact, avoids populated areas and recreation sites, and was found acceptable by all consulting state and local agencies.",
+    "value": "The proposed Castaic-Haskell Junction Power Transmission Line is an 11.5-mile, four-circuit 230-kV transmission line, approximately 3.3 miles of which traverses the Angeles National Forest in California. The primary communities and jurisdictions affected are the State of California, Los Angeles County, and Southern California water agencies dependent on the California Aqueduct (FPC Project No. 2426). The project's final goal is to transmit hydroelectric power generated at the Castaic Power Plant, enabling water delivery through the Angeles Tunnel to the Metropolitan Water District and other Southern California municipalities. The driving force was an urgent water delivery commitment requiring at least two circuits to be operational by July 1971. Positive environmental effects include a reduction in reliance on oil- and gas-fired steam generating plants within the Los Angeles basin, thereby decreasing air pollution and eliminating fuel consumption associated with 'spinning reserve' capacity. Adverse impacts include unavoidable visual impacts near Castaic Dam, short-term erosion, and soil disturbance during construction, though these are mitigated through careful routing—selected from eleven alternatives—and stringent erosion control techniques. Less than 30 percent of the route is visible to the general public, and no irreversible commitment of resources is anticipated.",
     "status": "needs_review",
     "provenance": {
       "source": "fallback_keyword_search",
@@ -256,15 +256,6 @@
         "polygon": null
       },
       {
-        "name": "Los Angeles",
-        "role": "context_reference",
-        "feature_type": "city",
-        "source_dataset": null,
-        "source_feature_id": null,
-        "spatial_qualifier": null,
-        "polygon": null
-      },
-      {
         "name": "Southern California",
         "role": "context_reference",
         "feature_type": "place",
@@ -283,9 +274,9 @@
         "polygon": null
       },
       {
-        "name": "Castaic Power Plant",
-        "role": "project_area",
-        "feature_type": "facility",
+        "name": "City of Los Angeles",
+        "role": "context_reference",
+        "feature_type": "city",
         "source_dataset": null,
         "source_feature_id": null,
         "spatial_qualifier": null,
@@ -367,10 +358,10 @@
     },
     "gazetteer_versions": {},
     "calibration_model_id": null,
-    "extracted_at": "2026-05-21T17:42:52.660408+00:00",
-    "total_tokens": 6027,
-    "total_cost_usd": 0.025713,
-    "duration_seconds": 13.07,
+    "extracted_at": "2026-05-21T18:35:29.450878+00:00",
+    "total_tokens": 5984,
+    "total_cost_usd": 0.025068,
+    "duration_seconds": 16.47,
     "warnings": [
       "year: NUL had no parseable date; extracted 1971 from raw text",
       "summary: retrieval degraded (source=fallback_keyword_search); marked needs_review",
