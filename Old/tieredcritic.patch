@@ -1,0 +1,1441 @@
+From cb13936d9df270ad2871df5f8b20f36b5d50ee9f Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 21 May 2026 14:18:57 +0000
+Subject: [PATCH 1/2] Add tiered Stage 3 critic with structured per-field
+ verdicts
+
+Replaces the two-field Sonnet-only critic with a tier dispatcher that
+runs Haiku presence checks on title/year/eis_type/agency/alt names and
+Sonnet grounded-reasoning checks on summary/alt descriptions/stance/
+themes/location/historical_internal. Sonnet "no" verdicts retry on
+Opus up to OPUS_RETRY_BUDGET_PER_DOC. Under critic-budget pressure
+tiers shed Opus -> Sonnet -> Haiku; deterministic gates always run.
+
+Adds CriticVerdict/CriticValidation to the schema as a side-channel on
+EISRecord so existing field models are unchanged. Legacy downgrade
+behavior on summary.status and historical_context_internal.status is
+preserved. Writes a critic_summary.json sidecar next to the token
+ledger for per-field pass-rate monitoring across runs.
+---
+ eis_pipeline/pipeline/config.py          |  34 ++
+ eis_pipeline/pipeline/schema.py          |  21 +
+ eis_pipeline/pipeline/stage3_critic.py   | 535 ++++++++++++++++++-----
+ eis_pipeline/pipeline/token_ledger.py    |  75 ++++
+ eis_pipeline/prompts/4_critic.txt        |  98 +++++
+ eis_pipeline/run.py                      |  13 +-
+ eis_pipeline/tests/test_critic_router.py | 319 ++++++++++++++
+ 7 files changed, 993 insertions(+), 102 deletions(-)
+ create mode 100644 eis_pipeline/prompts/4_critic.txt
+ create mode 100644 eis_pipeline/tests/test_critic_router.py
+
+diff --git a/eis_pipeline/pipeline/config.py b/eis_pipeline/pipeline/config.py
+index b6166fd..39ca538 100644
+--- a/eis_pipeline/pipeline/config.py
++++ b/eis_pipeline/pipeline/config.py
+@@ -365,3 +365,37 @@ NER_GAPFILL_MAX_CALLS = 6
+ # chunks tagged comments_and_responses).
+ NER_GAPFILL_MIN_WORDS = 2000
+ NER_GAPFILL_MAX_EXISTING_ENTITIES = 3
++
++# ---------------------------------------------------------------------------
++# Stage 3 — Tiered critic
++# ---------------------------------------------------------------------------
++# Critic-stage soft budget: when the running per-doc total LLM cost exceeds
++# this number partway through Stage 3, tiers are shed in order
++# Opus → Sonnet → Haiku. The hard cap is still --budget-usd on run.py.
++CRITIC_BUDGET_PER_DOC_USD = 3.00
++
++# Cap on per-doc Opus retry calls (used only when Sonnet returns "no" on a
++# field whose correctness would otherwise block ship).
++OPUS_RETRY_BUDGET_PER_DOC = 3
++
++# Field path → critic tier. Field paths use the actual schema names from
++# pipeline/schema.py. Array-indexed fields use `[]` to indicate "per-item".
++# Tier maps to MODELS["light"] (haiku) or MODELS["critic"] (sonnet);
++# Opus retry uses MODELS["heavy"].
++CRITIC_TIERS: dict[str, str] = {
++    "title": "haiku",
++    "year": "haiku",
++    "eis_type": "haiku",
++    "lead_agency.name": "haiku",
++    "alternatives_proposed[].name": "haiku",
++    "summary.text": "sonnet",
++    "alternatives_proposed[].description": "sonnet",
++    "key_people_and_groups[].stance": "sonnet",
++    "themes.primary": "sonnet",
++    "location.name": "sonnet",
++    "historical_context_internal.claims[]": "sonnet",
++}
++
++# Auto-approve gate: fraction of critic-eligible fields that must return
++# "pass" for review_status = "auto_approved".
++CRITIC_AUTO_APPROVE_PASS_RATE = 0.90
+diff --git a/eis_pipeline/pipeline/schema.py b/eis_pipeline/pipeline/schema.py
+index 476e7e1..7f69658 100644
+--- a/eis_pipeline/pipeline/schema.py
++++ b/eis_pipeline/pipeline/schema.py
+@@ -158,6 +158,26 @@ class PipelineMetadata(BaseModel):
+     warnings: list[str] = Field(default_factory=list)
+ 
+ 
++# ---------------------------------------------------------------------------
++# Critic validation (Stage 3, Layer 3 — tiered LLM critic)
++# ---------------------------------------------------------------------------
++
++class CriticVerdict(BaseModel):
++    field_path: str  # e.g. "summary.text", "alternatives_proposed[2].description"
++    tier: Literal["haiku", "sonnet", "opus", "skipped_budget_cap"]
++    verdict: Literal["pass", "partial", "no", "skipped"]
++    evidence_quote: str | None = None
++    reasoning: str = ""
++
++
++class CriticValidation(BaseModel):
++    verdicts: list[CriticVerdict] = Field(default_factory=list)
++    critic_pass_rate: float | None = None
++    review_status: Literal["auto_approved", "partial_review", "full_review", "not_run"] = "not_run"
++    opus_retries_used: int = 0
++    critic_cost_usd: float = 0.0
++
++
+ # ---------------------------------------------------------------------------
+ # Top-level record
+ # ---------------------------------------------------------------------------
+@@ -192,4 +212,5 @@ class EISRecord(BaseModel):
+     )
+     ner: NERResult = Field(default_factory=NERResult)
+     chunks: list[ChunkRecord] = Field(default_factory=list)
++    validation: CriticValidation = Field(default_factory=CriticValidation)
+     pipeline_metadata: PipelineMetadata = Field(default_factory=PipelineMetadata)
+diff --git a/eis_pipeline/pipeline/stage3_critic.py b/eis_pipeline/pipeline/stage3_critic.py
+index 7077ae5..5d6c99e 100644
+--- a/eis_pipeline/pipeline/stage3_critic.py
++++ b/eis_pipeline/pipeline/stage3_critic.py
+@@ -1,20 +1,54 @@
+ """
+ Stage 3 — Critic: validates LLM-generated fields for claim/evidence fidelity.
+ 
+-Two layers:
+-1. Deterministic checks (no LLM): quotes (substring), year range, theme vocab, geocoding
+-2. LLM critic (Sonnet): per-claim evidence verification for summary, themes, location,
+-   alternatives, historical context
++Three layers:
++  1. Deterministic hard gates (no LLM): quotes (substring), year range,
++     theme vocab, geocoding. Always run regardless of budget.
++  2. Self-consistency / cross-field checks (small, deterministic).
++  3. Tiered LLM critic:
++       - Haiku tier: presence/format checks on title, year, eis_type,
++         lead_agency.name, alternative names.
++       - Sonnet tier: grounded reasoning on summary, alternative
++         descriptions, stance + quote, themes, location, historical_internal.
++       - Opus tier: binding retry when Sonnet returns "no" on a field that
++         would otherwise block ship. Capped per doc by
++         OPUS_RETRY_BUDGET_PER_DOC.
++
++Under critic-stage budget pressure (running per-doc cost >
++CRITIC_BUDGET_PER_DOC_USD partway through Layer 3), tiers are shed in order
++Opus → Sonnet → Haiku. Skipped fields get verdict="skipped",
++tier="skipped_budget_cap". Pydantic + Layers 1+2 always run.
++
++Verdict semantics:
++  - "pass"    — no change.
++  - "partial" — field value kept; review_status downgraded if it changes
++                the auto-approve gate.
++  - "no"      — field value kept on the schema (so consumers don't lose
++                data), but for summary / historical_internal we preserve the
++                pre-existing behavior of downgrading their status field to
++                "insufficient_information".
+ """
+ 
+ from __future__ import annotations
+ 
++import json
+ import logging
+-import textwrap
+-from typing import TYPE_CHECKING
+-
+-from .config import ALL_SUBTHEMES, ALL_THEMES, MAX_YEAR, MODELS, NEPA_YEAR
+-from .schema import EISRecord
++from pathlib import Path
++from typing import TYPE_CHECKING, Any
++
++from .config import (
++    AGENCY_VOCAB,
++    ALL_SUBTHEMES,
++    ALL_THEMES,
++    CRITIC_AUTO_APPROVE_PASS_RATE,
++    CRITIC_BUDGET_PER_DOC_USD,
++    CRITIC_TIERS,
++    MAX_YEAR,
++    MODELS,
++    NEPA_YEAR,
++    OPUS_RETRY_BUDGET_PER_DOC,
++)
++from .schema import CriticValidation, CriticVerdict, EISRecord
+ 
+ if TYPE_CHECKING:
+     from .llm_client import LLMClient
+@@ -22,22 +56,48 @@ if TYPE_CHECKING:
+ logger = logging.getLogger(__name__)
+ 
+ 
++_PROMPT_PATH = Path(__file__).parent.parent / "prompts" / "4_critic.txt"
++_OUTPUT_SCHEMA_STR = (
++    '{"verdict": "pass|partial|no", "evidence_quote": "..."|null, "reasoning": "..."}'
++)
++
++
+ def run(record: EISRecord, client: "LLMClient") -> list[str]:
+     """Run all critic checks. Returns list of warning strings. Mutates record in place."""
+     warnings: list[str] = []
+ 
++    # Layer 1 — deterministic hard gates
+     _check_quotes(record, warnings)
+     _check_year(record, warnings)
+     _check_themes(record, warnings)
+     _check_geocoding(record, warnings)
+-    _llm_critic_summary(record, client, warnings)
+-    _llm_critic_historical_internal(record, client, warnings)
++
++    # Layer 2 — self-consistency
++    _check_self_consistency(record, warnings)
++
++    # Layer 3 — tiered LLM critic
++    cost_at_critic_start = client.usage.total_cost_usd
++    try:
++        validation = _dispatch_critics(record, client)
++    except Exception as exc:
++        logger.warning("Critic dispatch failed for %s: %s", record.doc_id, exc)
++        warnings.append(f"critic_dispatch_error: {exc}")
++        validation = CriticValidation(review_status="not_run")
++
++    validation.critic_cost_usd = round(
++        client.usage.total_cost_usd - cost_at_critic_start, 6
++    )
++    record.validation = validation
++
++    # Preserve legacy downgrade behavior for summary / historical_internal —
++    # if either field's critic verdict is "no" or "partial", downgrade status.
++    _apply_legacy_status_downgrades(record, validation, warnings)
+ 
+     return warnings
+ 
+ 
+ # ---------------------------------------------------------------------------
+-# Deterministic checks
++# Layer 1 — Deterministic hard gates
+ # ---------------------------------------------------------------------------
+ 
+ def _check_quotes(record: EISRecord, warnings: list[str]) -> None:
+@@ -94,115 +154,388 @@ def _check_geocoding(record: EISRecord, warnings: list[str]) -> None:
+ 
+ 
+ # ---------------------------------------------------------------------------
+-# LLM critic
++# Layer 2 — Self-consistency
+ # ---------------------------------------------------------------------------
+ 
+-_CRITIC_SYSTEM = textwrap.dedent("""\
+-    You are a fact-checking critic for Environmental Impact Statement metadata.
++def _check_self_consistency(record: EISRecord, warnings: list[str]) -> None:
++    """
++    Small cross-field consistency checks. Currently: if a lead_agency is set,
++    it should at least appear (canonical name or known alias) somewhere in
++    the document text. Otherwise the METS / regex stage produced a value
++    that the doc itself doesn't support.
++    """
++    agency_name = record.lead_agency.name
++    if not agency_name:
++        return
++    aliases: list[str] = [agency_name]
++    spec = AGENCY_VOCAB.get(agency_name)
++    if spec:
++        aliases.extend(spec.get("abbreviations", []))
++        aliases.extend(spec.get("variants", []))
++    haystack = " ".join(c.text for c in record.chunks if c.used).lower()
++    if not any(a.lower() in haystack for a in aliases if a):
++        warnings.append(
++            f"self_consistency: lead_agency '{agency_name}' not found in document text"
++        )
++
+ 
+-    For each (claim, chunk_id) pair below, answer whether the claim appears in the cited chunk.
+-    Answer "yes", "no", or "partial" with ONE sentence of justification.
++# ---------------------------------------------------------------------------
++# Layer 3 — Tiered LLM critic
++# ---------------------------------------------------------------------------
+ 
+-    Respond with ONLY valid JSON:
+-    {
+-      "results": [
+-        {"claim_index": 0, "verdict": "yes", "justification": "..."},
+-        ...
+-      ]
++def _load_prompt_template() -> str:
++    return _PROMPT_PATH.read_text(encoding="utf-8")
++
++
++def _budget_state(client: "LLMClient") -> dict[str, bool]:
++    """
++    Return which tiers are allowed to run given current cost.
++    Tiers degrade in order: Opus → Sonnet → Haiku.
++    """
++    cost = client.usage.total_cost_usd
++    cap = CRITIC_BUDGET_PER_DOC_USD
++    return {
++        "haiku": cost < cap,
++        "sonnet": cost < cap * 0.75,
++        "opus": cost < cap * 0.5,
+     }
+-""")
+ 
+ 
+-def _llm_critic_summary(record: EISRecord, client: "LLMClient", warnings: list[str]) -> None:
+-    if record.summary is None or record.summary.status == "insufficient_information":
+-        return
+-    if not record.summary.evidence:
+-        return
++def _model_for_tier(tier: str) -> str:
++    return {
++        "haiku": MODELS["light"],
++        "sonnet": MODELS["critic"],
++        "opus": MODELS["heavy"],
++    }[tier]
+ 
+-    _run_claim_critic(
+-        field_name="summary",
+-        claims=[(record.summary.text, e) for e in record.summary.evidence],
+-        record=record,
+-        client=client,
+-        warnings=warnings,
+-        on_failure=lambda: _set_summary_insufficient(record),
++
++def _run_critic_call(
++    tier: str,
++    field_path: str,
++    claim: str,
++    source: str,
++    client: "LLMClient",
++) -> CriticVerdict:
++    """Single critic LLM call. Returns a CriticVerdict."""
++    template = _load_prompt_template()
++    # Naive {placeholder} substitution; literal braces in the few-shots are
++    # JSON syntax that we never substitute into. The template uses unique
++    # placeholders only at the substitution sites.
++    filled = (
++        template
++        .replace("{tier}", tier, 2)  # appears in header and "Tier: {tier}" line
++        .replace("{field_path}", field_path, 2)
++        .replace("{claim}", claim)
++        .replace("{source}", source)
++        .replace("{output_schema}", _OUTPUT_SCHEMA_STR)
+     )
++    # Split SYSTEM: ... from the rest as user content.
++    if filled.startswith("SYSTEM:\n"):
++        system_and_rest = filled[len("SYSTEM:\n"):]
++        # The few-shot + judging body is one user message; split on the judging marker.
++        marker = "NOW JUDGE THIS CLAIM:"
++        idx = system_and_rest.find(marker)
++        if idx >= 0:
++            system = system_and_rest[:idx].strip()
++            user = system_and_rest[idx:].strip()
++        else:
++            system = system_and_rest.strip()
++            user = f"Field path: {field_path}\nClaim:\n{claim}\n\nSource span:\n{source}"
++    else:
++        system = ""
++        user = filled
+ 
++    try:
++        result = client.call_json(
++            model=_model_for_tier(tier),
++            system=system,
++            messages=[{"role": "user", "content": user}],
++            max_tokens=512,
++            temperature=0.0,
++            label=f"critic/{tier}/{field_path}",
++        )
++    except Exception as exc:
++        logger.warning(
++            "Critic call failed for %s (%s): %s — recording as 'skipped'",
++            field_path, tier, exc,
++        )
++        return CriticVerdict(
++            field_path=field_path,
++            tier=tier,  # type: ignore[arg-type]
++            verdict="skipped",
++            evidence_quote=None,
++            reasoning=f"critic_call_error: {exc}",
++        )
+ 
+-def _llm_critic_historical_internal(
+-    record: EISRecord, client: "LLMClient", warnings: list[str]
+-) -> None:
+-    ctx = record.historical_context_internal
+-    if ctx.status == "insufficient_information" or not ctx.claims:
+-        return
++    verdict = result.get("verdict", "skipped")
++    if verdict not in ("pass", "partial", "no", "skipped"):
++        verdict = "skipped"
++    evidence_quote = result.get("evidence_quote")
++    if evidence_quote is not None and not isinstance(evidence_quote, str):
++        evidence_quote = None
++    reasoning = result.get("reasoning", "") or ""
++    if not isinstance(reasoning, str):
++        reasoning = str(reasoning)
++
++    return CriticVerdict(
++        field_path=field_path,
++        tier=tier,  # type: ignore[arg-type]
++        verdict=verdict,
++        evidence_quote=evidence_quote,
++        reasoning=reasoning,
++    )
+ 
+-    claim_evidence_pairs = [
+-        (claim.sentence, e)
+-        for claim in ctx.claims
+-        for e in claim.evidence
+-    ]
+-    if not claim_evidence_pairs:
+-        return
+ 
+-    _run_claim_critic(
+-        field_name="historical_internal",
+-        claims=claim_evidence_pairs,
+-        record=record,
+-        client=client,
+-        warnings=warnings,
+-        on_failure=lambda: _set_historical_insufficient(record),
++def _dispatch_critics(record: EISRecord, client: "LLMClient") -> CriticValidation:
++    """
++    Walk the CRITIC_TIERS table and emit one verdict per field_path
++    (or one per item for array-indexed fields). Apply Opus retry on Sonnet
++    "no" up to OPUS_RETRY_BUDGET_PER_DOC. Honor budget pressure: shed
++    Opus → Sonnet → Haiku.
++    """
++    verdicts: list[CriticVerdict] = []
++    opus_retries_used = 0
++
++    for field_path, tier in CRITIC_TIERS.items():
++        claims = _build_claim_payloads(record, field_path)
++        for instance_path, claim, source in claims:
++            allowed = _budget_state(client)
++            if not allowed.get(tier, False):
++                verdicts.append(CriticVerdict(
++                    field_path=instance_path,
++                    tier="skipped_budget_cap",
++                    verdict="skipped",
++                    evidence_quote=None,
++                    reasoning=f"budget_cap_skipped: tier={tier}",
++                ))
++                continue
++
++            v = _run_critic_call(tier, instance_path, claim, source, client)
++            # Sonnet "no" with budget headroom → Opus retry.
++            if (
++                tier == "sonnet"
++                and v.verdict == "no"
++                and opus_retries_used < OPUS_RETRY_BUDGET_PER_DOC
++                and _budget_state(client).get("opus", False)
++            ):
++                opus_retries_used += 1
++                retry_v = _run_critic_call("opus", instance_path, claim, source, client)
++                # Opus verdict is binding. Replace.
++                v = retry_v
++
++            verdicts.append(v)
++
++    # Aggregate
++    scored = [v for v in verdicts if v.verdict != "skipped"]
++    if scored:
++        pass_count = sum(1 for v in scored if v.verdict == "pass")
++        critic_pass_rate = pass_count / len(scored)
++    else:
++        critic_pass_rate = None
++
++    if critic_pass_rate is None:
++        review_status = "not_run"
++    else:
++        no_count = sum(1 for v in scored if v.verdict == "no")
++        if no_count >= 2:
++            review_status = "full_review"
++        elif no_count == 1:
++            review_status = "partial_review"
++        elif critic_pass_rate >= CRITIC_AUTO_APPROVE_PASS_RATE:
++            review_status = "auto_approved"
++        else:
++            # Mostly "partial" — needs eyes but not blocked.
++            review_status = "partial_review"
++
++    return CriticValidation(
++        verdicts=verdicts,
++        critic_pass_rate=critic_pass_rate,
++        review_status=review_status,  # type: ignore[arg-type]
++        opus_retries_used=opus_retries_used,
+     )
+ 
+ 
+-def _run_claim_critic(
+-    field_name: str,
+-    claims: list[tuple[str, object]],  # (claim_text, EvidencePointer)
+-    record: EISRecord,
+-    client: "LLMClient",
+-    warnings: list[str],
+-    on_failure,
+-) -> None:
+-    chunk_map = {c.chunk_id: c.text for c in record.chunks}
+-
+-    # Build user message listing each claim + its cited chunk text
+-    lines: list[str] = []
+-    for i, (claim_text, evidence) in enumerate(claims):
+-        chunk_text = chunk_map.get(evidence.chunk_id, "(chunk not found)")[:1000]  # type: ignore[union-attr]
+-        lines.append(
+-            f"Claim {i}: {claim_text}\n"
+-            f"Cited chunk ({evidence.chunk_id}):\n{chunk_text}"  # type: ignore[union-attr]
+-        )
+-    user_msg = "\n\n---\n\n".join(lines)
++# ---------------------------------------------------------------------------
++# Per-field claim builders — produce (instance_path, claim, source) tuples.
++# Each tuple yields exactly one critic call. Skipping a field (returning [])
++# means there's nothing to check (no value or no evidence).
++# ---------------------------------------------------------------------------
+ 
+-    try:
+-        result = client.call_json(
+-            model=MODELS["critic"],
+-            system=_CRITIC_SYSTEM,
+-            messages=[{"role": "user", "content": user_msg}],
+-            max_tokens=1024,
+-            temperature=0.0,
+-            label=f"critic/{field_name}/{record.doc_id}",
+-        )
+-        results = result.get("results") or []
+-        any_failure = any(r.get("verdict") == "no" for r in results if isinstance(r, dict))
+-        if any_failure:
+-            logger.warning(
+-                "Critic found unsupported claims in %s/%s — downgrading to insufficient_information",
+-                field_name, record.doc_id,
++def _truncate(text: str, max_chars: int = 8000) -> str:
++    if len(text) <= max_chars:
++        return text
++    return text[:max_chars] + "\n[TRUNCATED]"
++
++
++def _cover_text(record: EISRecord, max_chars: int = 6000) -> str:
++    """First few chunks concatenated — approximates the document's title page area."""
++    parts: list[str] = []
++    total = 0
++    for c in record.chunks[:3]:
++        if total + len(c.text) > max_chars:
++            parts.append(c.text[: max_chars - total])
++            break
++        parts.append(c.text)
++        total += len(c.text)
++    return "\n".join(parts)
++
++
++def _chunk_text(record: EISRecord, chunk_id: str) -> str:
++    for c in record.chunks:
++        if c.chunk_id == chunk_id:
++            return c.text
++    return ""
++
++
++def _build_claim_payloads(
++    record: EISRecord, field_path: str
++) -> list[tuple[str, str, str]]:
++    """Return [(instance_path, claim_str, source_str), ...] for the given field."""
++    if field_path == "title":
++        if not record.title:
++            return []
++        return [("title", record.title, _truncate(_cover_text(record), 4000))]
++
++    if field_path == "year":
++        if record.year is None:
++            return []
++        return [("year", str(record.year), _truncate(_cover_text(record), 4000))]
++
++    if field_path == "eis_type":
++        if record.eis_type == "Unlabelled":
++            return []
++        return [("eis_type", record.eis_type, _truncate(_cover_text(record), 4000))]
++
++    if field_path == "lead_agency.name":
++        if not record.lead_agency.name:
++            return []
++        return [("lead_agency.name", record.lead_agency.name,
++                 _truncate(_cover_text(record), 4000))]
++
++    if field_path == "alternatives_proposed[].name":
++        out: list[tuple[str, str, str]] = []
++        for i, alt in enumerate(record.alternatives_proposed):
++            chunk_ids = [e.chunk_id for e in alt.evidence] or [c.chunk_id for c in record.chunks[:1]]
++            source = "\n".join(_chunk_text(record, cid) for cid in chunk_ids[:2])
++            out.append((f"alternatives_proposed[{i}].name", alt.name, _truncate(source, 4000)))
++        return out
++
++    if field_path == "alternatives_proposed[].description":
++        out = []
++        for i, alt in enumerate(record.alternatives_proposed):
++            chunk_ids = [e.chunk_id for e in alt.evidence] or [c.chunk_id for c in record.chunks[:1]]
++            source = "\n".join(_chunk_text(record, cid) for cid in chunk_ids[:2])
++            out.append((
++                f"alternatives_proposed[{i}].description",
++                f"name={alt.name!r}; description={alt.description!r}",
++                _truncate(source, 6000),
++            ))
++        return out
++
++    if field_path == "summary.text":
++        if record.summary is None or not record.summary.text:
++            return []
++        chunk_ids = [e.chunk_id for e in record.summary.evidence] or [
++            c.chunk_id for c in record.chunks if c.used
++        ][:5]
++        source = "\n\n".join(_chunk_text(record, cid) for cid in chunk_ids[:6])
++        return [("summary.text", record.summary.text, _truncate(source, 8000))]
++
++    if field_path == "key_people_and_groups[].stance":
++        out = []
++        for i, person in enumerate(record.key_people_and_groups):
++            if person.stance == "insufficient_information":
++                continue
++            quote_text = person.quote.text if person.quote else None
++            stance_chunks = [e.chunk_id for e in person.stance_evidence]
++            if person.quote:
++                stance_chunks.append(person.quote.chunk_id)
++            stance_chunks = list(dict.fromkeys(stance_chunks))[:3]
++            source = "\n\n".join(_chunk_text(record, cid) for cid in stance_chunks)
++            claim_payload = (
++                f"name={person.name!r}; stance={person.stance!r}; "
++                f"quote={quote_text!r}"
+             )
+-            warnings.append(f"critic_failed: {field_name}")
+-            on_failure()
+-    except Exception as exc:
+-        logger.warning("LLM critic failed for %s/%s: %s", field_name, record.doc_id, exc)
+-        warnings.append(f"critic_error: {field_name}: {exc}")
++            out.append((
++                f"key_people_and_groups[{i}].stance",
++                claim_payload,
++                _truncate(source, 6000),
++            ))
++        return out
++
++    if field_path == "themes.primary":
++        primary = record.themes.primary
++        if not primary:
++            return []
++        source = record.summary.text if record.summary else ""
++        if not source:
++            return []
++        return [("themes.primary", json.dumps(primary), _truncate(source, 4000))]
++
++    if field_path == "location.name":
++        if not record.location.name:
++            return []
++        source_chunks = [c.chunk_id for c in record.chunks if "affected_environment" in c.topic_tags][:3]
++        if not source_chunks and record.chunks:
++            source_chunks = [record.chunks[0].chunk_id]
++        source = "\n\n".join(_chunk_text(record, cid) for cid in source_chunks)
++        if not source.strip():
++            return []
++        return [("location.name", record.location.name, _truncate(source, 4000))]
++
++    if field_path == "historical_context_internal.claims[]":
++        ctx = record.historical_context_internal
++        if ctx.status == "insufficient_information" or not ctx.claims:
++            return []
++        out = []
++        for i, claim in enumerate(ctx.claims):
++            if not claim.evidence:
++                continue
++            cid = claim.evidence[0].chunk_id
++            source = _chunk_text(record, cid)
++            if not source:
++                continue
++            out.append((
++                f"historical_context_internal.claims[{i}]",
++                claim.sentence,
++                _truncate(source, 4000),
++            ))
++        return out
++
++    return []
+ 
+ 
+-def _set_summary_insufficient(record: EISRecord) -> None:
+-    if record.summary:
+-        record.summary = record.summary.model_copy(update={"status": "insufficient_information"})
++# ---------------------------------------------------------------------------
++# Legacy downgrade behavior — preserved for summary and historical_internal
++# ---------------------------------------------------------------------------
+ 
++def _apply_legacy_status_downgrades(
++    record: EISRecord, validation: CriticValidation, warnings: list[str]
++) -> None:
++    """
++    The pre-tiered critic downgraded summary.status and
++    historical_context_internal.status to "insufficient_information" on
++    any "no" verdict. Preserve that behavior so downstream consumers that
++    only read the schema-level `status` field still see the same signal.
++    """
++    summary_failed = any(
++        v.field_path == "summary.text" and v.verdict == "no"
++        for v in validation.verdicts
++    )
++    if summary_failed and record.summary is not None:
++        if record.summary.status != "insufficient_information":
++            warnings.append("critic_failed: summary")
++            record.summary = record.summary.model_copy(
++                update={"status": "insufficient_information"}
++            )
+ 
+-def _set_historical_insufficient(record: EISRecord) -> None:
+-    record.historical_context_internal = record.historical_context_internal.model_copy(
+-        update={"status": "insufficient_information"}
++    hist_failed = any(
++        v.field_path.startswith("historical_context_internal.claims") and v.verdict == "no"
++        for v in validation.verdicts
+     )
++    if hist_failed:
++        if record.historical_context_internal.status != "insufficient_information":
++            warnings.append("critic_failed: historical_internal")
++            record.historical_context_internal = record.historical_context_internal.model_copy(
++                update={"status": "insufficient_information"}
++            )
+diff --git a/eis_pipeline/pipeline/token_ledger.py b/eis_pipeline/pipeline/token_ledger.py
+index c97c274..66a5ee0 100644
+--- a/eis_pipeline/pipeline/token_ledger.py
++++ b/eis_pipeline/pipeline/token_ledger.py
+@@ -24,6 +24,7 @@ from typing import TYPE_CHECKING
+ 
+ if TYPE_CHECKING:
+     from .llm_client import UsageAccumulator
++    from .schema import CriticValidation
+ 
+ logger = logging.getLogger(__name__)
+ 
+@@ -93,6 +94,80 @@ def append_run(
+     )
+ 
+ 
++def append_critic_summary(
++    summary_path: str | Path,
++    doc_id: str,
++    validation: "CriticValidation",
++) -> None:
++    """
++    Append this run's critic validation summary to a sidecar JSON file.
++
++    Tracks per-field_path pass-rates across all runs so a Sonnet prompt
++    regression (e.g. summary going from 90% pass to 50%) is visible without
++    re-reading every output JSON.
++    """
++    path = Path(summary_path)
++    path.parent.mkdir(parents=True, exist_ok=True)
++
++    by_field: dict[str, dict[str, int]] = {}
++    for v in validation.verdicts:
++        # Collapse array-indexed instance paths back to their template key
++        # so verdicts on alternatives_proposed[0], [1], ... aggregate together.
++        key = _collapse_instance_path(v.field_path)
++        bucket = by_field.setdefault(key, {"pass": 0, "partial": 0, "no": 0, "skipped": 0})
++        bucket[v.verdict] = bucket.get(v.verdict, 0) + 1
++
++    entry = {
++        "timestamp": datetime.now(UTC).isoformat(),
++        "doc_id": doc_id,
++        "review_status": validation.review_status,
++        "critic_pass_rate": validation.critic_pass_rate,
++        "opus_retries_used": validation.opus_retries_used,
++        "critic_cost_usd": round(validation.critic_cost_usd, 6),
++        "by_field": by_field,
++    }
++
++    if path.exists():
++        try:
++            data = json.loads(path.read_text(encoding="utf-8"))
++            if not isinstance(data, dict) or "runs" not in data:
++                data = {"runs": []}
++        except (json.JSONDecodeError, OSError):
++            data = {"runs": []}
++    else:
++        data = {"runs": []}
++
++    data["runs"].append(entry)
++    data["aggregate"] = _aggregate_critic_runs(data["runs"])
++    path.write_text(json.dumps(data, indent=2), encoding="utf-8")
++
++
++def _collapse_instance_path(field_path: str) -> str:
++    """alternatives_proposed[3].name → alternatives_proposed[].name"""
++    import re
++    return re.sub(r"\[\d+\]", "[]", field_path)
++
++
++def _aggregate_critic_runs(runs: list[dict]) -> dict:
++    field_totals: dict[str, dict[str, int]] = {}
++    for r in runs:
++        for field, counts in (r.get("by_field") or {}).items():
++            agg = field_totals.setdefault(field, {"pass": 0, "partial": 0, "no": 0, "skipped": 0})
++            for k, v in counts.items():
++                agg[k] = agg.get(k, 0) + v
++
++    rates: dict[str, float | None] = {}
++    for field, counts in field_totals.items():
++        scored = counts.get("pass", 0) + counts.get("partial", 0) + counts.get("no", 0)
++        rates[field] = round(counts.get("pass", 0) / scored, 4) if scored else None
++
++    return {
++        "by_field_pass_rate": rates,
++        "by_field_counts": field_totals,
++        "total_runs": len(runs),
++    }
++
++
+ def _compute_lifetime_totals(runs: list[dict]) -> dict:
+     totals = {
+         "runs": len(runs),
+diff --git a/eis_pipeline/prompts/4_critic.txt b/eis_pipeline/prompts/4_critic.txt
+new file mode 100644
+index 0000000..2254e5d
+--- /dev/null
++++ b/eis_pipeline/prompts/4_critic.txt
+@@ -0,0 +1,98 @@
++SYSTEM:
++You are a fact-checking critic for U.S. Environmental Impact Statement
++metadata extraction. You judge whether a given claim is supported by a given
++source span. You DO NOT use outside knowledge. You DO NOT speculate.
++
++Return ONE verdict for the single field under review:
++  - "pass"    — the claim is clearly supported by the source span.
++  - "partial" — the claim is partially supported, paraphrased loosely, or
++                differs in capitalization/punctuation but matches in
++                substance. Use for near-misses, not for substantive errors.
++  - "no"      — the claim is not supported by the source span (missing,
++                contradicted, or invented detail).
++
++Always include a short evidence quote from the source span when you can find
++one (verbatim substring up to ~200 chars). If the source span genuinely
++contains nothing relevant, set evidence_quote to null.
++
++Respond with ONLY valid JSON in this shape:
++{
++  "verdict": "pass" | "partial" | "no",
++  "evidence_quote": "..." | null,
++  "reasoning": "one or two sentences"
++}
++
++==============================================================================
++TIER: {tier}      FIELD: {field_path}
++==============================================================================
++
++FEW-SHOT — HAIKU TIER (presence/format checks)
++----------------------------------------------
++Field: title
++Claim: "Final Environmental Impact Statement for the Apollo Lunar Program"
++Source span: "FINAL ENVIRONMENTAL IMPACT STATEMENT\nApollo Lunar Program\nNASA, 1971"
++→ {"verdict": "pass", "evidence_quote": "FINAL ENVIRONMENTAL IMPACT STATEMENT\nApollo Lunar Program", "reasoning": "Title appears verbatim across the title-page lines (case differs but content matches)."}
++
++Field: year
++Claim: 1972
++Source span: "...published December 1972 in connection with the proposed action..."
++→ {"verdict": "pass", "evidence_quote": "published December 1972", "reasoning": "1972 appears within publication context."}
++
++Field: lead_agency.name
++Claim: "U.S. Forest Service"
++Source span: "Prepared by the United States Department of Agriculture, Forest Service"
++→ {"verdict": "partial", "evidence_quote": "United States Department of Agriculture, Forest Service", "reasoning": "Agency identity matches but phrasing differs ('Forest Service' vs. canonical 'U.S. Forest Service')."}
++
++Field: eis_type
++Claim: "Final"
++Source span: "DRAFT ENVIRONMENTAL IMPACT STATEMENT\nCedar Creek Restoration..."
++→ {"verdict": "no", "evidence_quote": "DRAFT ENVIRONMENTAL IMPACT STATEMENT", "reasoning": "Source span identifies the document as Draft, not Final."}
++
++FEW-SHOT — SONNET TIER (grounded reasoning)
++-------------------------------------------
++Field: summary.text
++Claim: "The project would construct a 12-mile highway corridor through Cook County to relieve congestion on Harlem Avenue, with anticipated impacts to wetlands and residential displacements."
++Source span: "[chunk c03] The Federal Aid Primary Route 42 (Harlem Avenue) project proposes reconstruction and widening of approximately 12 miles of existing roadway in Cook County, Illinois. Affected resources include three jurisdictional wetlands totaling 4.2 acres and the displacement of 18 residential and 4 commercial properties."
++→ {"verdict": "pass", "evidence_quote": "approximately 12 miles of existing roadway in Cook County, Illinois", "reasoning": "Scope, location, and wetland/displacement impacts are grounded in the source. 'Relieve congestion' is reasonable paraphrase of project rationale implicit in 'reconstruction and widening'."}
++
++Field: key_people_and_groups[].stance + quote
++Claim: stance=opposed; quote="We strongly object to the proposed alignment and request that the agency reconsider."
++Source span: "Letter from Sierra Club, 12 March 1989: ... We strongly object to the proposed alignment and request that the agency reconsider. The cumulative impact on the floodplain has not been adequately addressed..."
++→ {"verdict": "pass", "evidence_quote": "We strongly object to the proposed alignment", "reasoning": "Quote is verbatim from a Sierra Club letter and clearly expresses opposition."}
++
++Field: themes.primary
++Claim: ["transportation"]
++Source span (summary): "The project proposes reconstruction of a 12-mile highway corridor in Cook County, Illinois, to relieve congestion on Harlem Avenue..."
++→ {"verdict": "pass", "evidence_quote": "reconstruction of a 12-mile highway corridor", "reasoning": "Highway reconstruction is squarely under 'transportation'."}
++
++Field: alternatives_proposed[].description
++Claim: name="Alternative B"; description="Realigns the corridor 0.5 miles east to avoid the floodplain, adding three new interchanges."
++Source span: "[chunk c07] Alternative B was considered but rejected on cost grounds. It would have followed the same alignment as Alternative A."
++→ {"verdict": "no", "evidence_quote": "Alternative B was considered but rejected on cost grounds. It would have followed the same alignment as Alternative A", "reasoning": "Source explicitly says Alternative B follows the same alignment as A, contradicting the claim of a 0.5-mile eastward realignment with new interchanges."}
++
++Field: historical_context_internal.claims[]
++Claim: "The Forest Service first proposed the timber sale in 1968."
++Source span: "[chunk c02] The Forest Service has been managing this district since 1948. A timber sale was initially proposed in 1974 and revised in 1981."
++→ {"verdict": "no", "evidence_quote": "A timber sale was initially proposed in 1974", "reasoning": "Source says the timber sale was initially proposed in 1974, not 1968."}
++
++FEW-SHOT — OPUS TIER (binding retry after Sonnet "no")
++------------------------------------------------------
++Same shape; Opus only re-reads when Sonnet returned "no" on a field that
++would otherwise block ship. Lean toward "pass" when reasonable, "no" only
++when the contradiction is unambiguous.
++
++==============================================================================
++NOW JUDGE THIS CLAIM:
++==============================================================================
++
++Field path: {field_path}
++Tier: {tier}
++
++Claim:
++{claim}
++
++Source span:
++{source}
++
++Respond with ONLY valid JSON matching:
++{output_schema}
+diff --git a/eis_pipeline/run.py b/eis_pipeline/run.py
+index 67bc933..808f89c 100644
+--- a/eis_pipeline/run.py
++++ b/eis_pipeline/run.py
+@@ -239,7 +239,7 @@ def main() -> None:
+ 
+     # Persistent token ledger — append this run's usage.
+     if args.token_ledger:
+-        from pipeline.token_ledger import append_run
++        from pipeline.token_ledger import append_critic_summary, append_run
+         try:
+             append_run(
+                 ledger_path=args.token_ledger,
+@@ -251,6 +251,17 @@ def main() -> None:
+         except Exception as exc:
+             logger.warning("Could not update token ledger: %s", exc)
+ 
++        # Critic summary sidecar — write alongside the token ledger.
++        try:
++            ledger_dir = Path(args.token_ledger).parent
++            append_critic_summary(
++                summary_path=ledger_dir / "critic_summary.json",
++                doc_id=doc.doc_id,
++                validation=record.validation,
++            )
++        except Exception as exc:
++            logger.warning("Could not update critic summary: %s", exc)
++
+     logger.info(
+         "Done. Output written to %s | cost=$%.4f | warnings=%d | duration=%.1fs",
+         output_path,
+diff --git a/eis_pipeline/tests/test_critic_router.py b/eis_pipeline/tests/test_critic_router.py
+new file mode 100644
+index 0000000..1673dd2
+--- /dev/null
++++ b/eis_pipeline/tests/test_critic_router.py
+@@ -0,0 +1,319 @@
++"""
++Tests for pipeline/stage3_critic.py — tiered critic, claim builders,
++budget degradation, legacy status downgrade.
++
++Uses a stub LLM client (no real API calls) that returns canned verdicts
++keyed by the call label.
++"""
++
++from __future__ import annotations
++
++import json
++from dataclasses import dataclass, field
++
++import pytest
++
++from pipeline import stage3_critic
++from pipeline.config import OPUS_RETRY_BUDGET_PER_DOC
++from pipeline.schema import (
++    AlternativeItem,
++    ChunkRecord,
++    CriticValidation,
++    EISRecord,
++    EvidencePointer,
++    HistoricalContextClaim,
++    HistoricalContextInternal,
++    KeyPersonOrGroup,
++    LeadAgency,
++    LocationInfo,
++    OCRInfo,
++    QuoteItem,
++    SummaryField,
++    ThemesField,
++)
++
++
++@dataclass
++class _UsageStub:
++    total_input_tokens: int = 0
++    total_output_tokens: int = 0
++    total_cost_usd: float = 0.0
++    calls: int = 0
++
++
++class _StubLLMClient:
++    """
++    Drop-in replacement for pipeline.llm_client.LLMClient in tests.
++
++    `responses` maps a substring-of-label → response dict. Calls increment a
++    fixed cost so budget-degradation logic can be exercised deterministically.
++    """
++
++    def __init__(self, responses: dict[str, dict], cost_per_call: float = 0.01):
++        self.responses = responses
++        self.cost_per_call = cost_per_call
++        self.usage = _UsageStub()
++        self.call_log: list[tuple[str, str]] = []  # (model, label)
++
++    def call_json(self, model, system, messages, max_tokens=512, temperature=0.0, label=""):
++        self.call_log.append((model, label))
++        self.usage.calls += 1
++        self.usage.total_cost_usd += self.cost_per_call
++        for key, response in self.responses.items():
++            if key in label:
++                return response
++        # Default to "pass" if no rule matches — keeps unrelated fields quiet.
++        return {"verdict": "pass", "evidence_quote": None, "reasoning": "default stub pass"}
++
++
++def _make_record() -> EISRecord:
++    chunks = [
++        ChunkRecord(
++            chunk_id="c00",
++            title="Cover",
++            description="Cover and title page",
++            topic_tags=["other"],
++            pages=[1, 2, 3],
++            text=(
++                "FINAL ENVIRONMENTAL IMPACT STATEMENT\n"
++                "Cedar Creek Restoration Project\n"
++                "Prepared by the U.S. Forest Service\n"
++                "Published December 1998\n"
++            ),
++            used=True,
++        ),
++        ChunkRecord(
++            chunk_id="c01",
++            title="Purpose and Need",
++            description="Need for restoration",
++            topic_tags=["purpose_and_need", "affected_environment"],
++            pages=[4, 5, 6],
++            text=(
++                "Cedar Creek is located in Wyoming. The Forest Service has managed "
++                "the project area since 1948. A timber sale was initially proposed in 1974."
++            ),
++            used=True,
++        ),
++        ChunkRecord(
++            chunk_id="c02",
++            title="Alternatives",
++            description="Alternatives considered",
++            topic_tags=["alternatives"],
++            pages=[7, 8],
++            text=(
++                "Alternative A — No Action. Alternative B realigns the corridor "
++                "0.5 miles east to avoid the floodplain, adding three new interchanges."
++            ),
++            used=True,
++        ),
++    ]
++    return EISRecord(
++        doc_id="testdoc",
++        project_id="P9999",
++        title="Cedar Creek Restoration FEIS",
++        ocr=OCRInfo(median_confidence=0.9, page_count=8, unclear_document_flag=False),
++        eis_type="Final",
++        year=1998,
++        date="1998-12-01",
++        lead_agency=LeadAgency(name="U.S. Forest Service", source="mets"),
++        location=LocationInfo(name="Cedar Creek, Wyoming", state="WY"),
++        themes=ThemesField(primary=["land_management"], subthemes=["forestry"]),
++        summary=SummaryField(
++            text="The Forest Service proposes restoring Cedar Creek in Wyoming.",
++            evidence=[EvidencePointer(chunk_id="c01", pages=[4, 5])],
++            status="populated",
++        ),
++        alternatives_proposed=[
++            AlternativeItem(
++                name="No Action",
++                description="Do nothing.",
++                evidence=[EvidencePointer(chunk_id="c02", pages=[7])],
++            ),
++            AlternativeItem(
++                name="Alternative B",
++                description="Realigns the corridor 0.5 miles east, adding three interchanges.",
++                evidence=[EvidencePointer(chunk_id="c02", pages=[7])],
++            ),
++        ],
++        key_people_and_groups=[
++            KeyPersonOrGroup(
++                name="Sierra Club",
++                type="organization",
++                role="objecting party",
++                stance="opposed",
++                stance_evidence=[EvidencePointer(chunk_id="c01", pages=[4])],
++                quote=QuoteItem(
++                    text="The Forest Service has managed the project area since 1948.",
++                    chunk_id="c01",
++                    page=4,
++                    substring_verified=True,
++                ),
++            ),
++        ],
++        historical_context_internal=HistoricalContextInternal(
++            text="Project area has been managed since 1948.",
++            claims=[
++                HistoricalContextClaim(
++                    sentence="The Forest Service first proposed the timber sale in 1968.",
++                    evidence=[EvidencePointer(chunk_id="c01", pages=[4])],
++                ),
++            ],
++            status="populated",
++        ),
++        chunks=chunks,
++    )
++
++
++def test_claim_builder_title():
++    record = _make_record()
++    out = stage3_critic._build_claim_payloads(record, "title")
++    assert len(out) == 1
++    instance_path, claim, source = out[0]
++    assert instance_path == "title"
++    assert claim == "Cedar Creek Restoration FEIS"
++    assert "FINAL ENVIRONMENTAL IMPACT STATEMENT" in source
++
++
++def test_claim_builder_alternatives():
++    record = _make_record()
++    names = stage3_critic._build_claim_payloads(record, "alternatives_proposed[].name")
++    descs = stage3_critic._build_claim_payloads(
++        record, "alternatives_proposed[].description"
++    )
++    assert [p[0] for p in names] == [
++        "alternatives_proposed[0].name",
++        "alternatives_proposed[1].name",
++    ]
++    assert any("Alternative B" in p[1] for p in descs)
++
++
++def test_claim_builder_skips_when_no_value():
++    record = _make_record()
++    record.year = None
++    record.summary = None
++    assert stage3_critic._build_claim_payloads(record, "year") == []
++    assert stage3_critic._build_claim_payloads(record, "summary.text") == []
++
++
++def test_dispatch_marks_summary_no_and_downgrades_status():
++    """Summary verdict 'no' must downgrade summary.status to insufficient_information."""
++    record = _make_record()
++    client = _StubLLMClient(
++        responses={
++            "critic/sonnet/summary.text": {
++                "verdict": "no",
++                "evidence_quote": None,
++                "reasoning": "Summary mentions facts not in source.",
++            },
++            # Opus retry on summary also says no — so legacy downgrade kicks in.
++            "critic/opus/summary.text": {
++                "verdict": "no",
++                "evidence_quote": None,
++                "reasoning": "Confirmed: not in source.",
++            },
++        }
++    )
++    warnings = stage3_critic.run(record, client)
++    assert record.summary is not None
++    assert record.summary.status == "insufficient_information"
++    assert any(w.startswith("critic_failed: summary") for w in warnings)
++
++    # Verdict for summary.text is recorded on the record.
++    summary_verdicts = [
++        v for v in record.validation.verdicts if v.field_path == "summary.text"
++    ]
++    assert summary_verdicts and summary_verdicts[0].verdict == "no"
++    # Opus retry was triggered.
++    assert record.validation.opus_retries_used >= 1
++
++
++def test_dispatch_aggregates_pass_rate_and_review_status():
++    record = _make_record()
++    client = _StubLLMClient(
++        responses={}  # default stub returns "pass" for everything
++    )
++    stage3_critic.run(record, client)
++    assert record.validation.critic_pass_rate == 1.0
++    assert record.validation.review_status == "auto_approved"
++
++
++def test_dispatch_full_review_when_multiple_no():
++    record = _make_record()
++    client = _StubLLMClient(
++        responses={
++            "critic/sonnet/summary.text": {
++                "verdict": "no", "evidence_quote": None, "reasoning": "x",
++            },
++            "critic/opus/summary.text": {
++                "verdict": "no", "evidence_quote": None, "reasoning": "x",
++            },
++            "critic/sonnet/themes.primary": {
++                "verdict": "no", "evidence_quote": None, "reasoning": "y",
++            },
++            "critic/opus/themes.primary": {
++                "verdict": "no", "evidence_quote": None, "reasoning": "y",
++            },
++        }
++    )
++    stage3_critic.run(record, client)
++    assert record.validation.review_status == "full_review"
++
++
++def test_budget_pressure_skips_tiers():
++    """When cost is above the critic-budget cap, fields are marked skipped_budget_cap."""
++    record = _make_record()
++    # Use a stub that races past the cap on the first call.
++    client = _StubLLMClient(responses={}, cost_per_call=0.0)
++    client.usage.total_cost_usd = 10.0  # well above CRITIC_BUDGET_PER_DOC_USD = 3.0
++    stage3_critic.run(record, client)
++
++    # Every verdict should be skipped_budget_cap.
++    assert record.validation.verdicts, "Expected verdicts to be recorded even when skipped"
++    assert all(v.tier == "skipped_budget_cap" for v in record.validation.verdicts)
++    assert all(v.verdict == "skipped" for v in record.validation.verdicts)
++    assert record.validation.review_status == "not_run"
++
++
++def test_opus_retry_capped():
++    """Opus retries are capped at OPUS_RETRY_BUDGET_PER_DOC even with many sonnet 'no's."""
++    record = _make_record()
++    # Add many fake claims so sonnet "no" can fire repeatedly.
++    record.historical_context_internal.claims = [
++        HistoricalContextClaim(
++            sentence=f"Claim {i}",
++            evidence=[EvidencePointer(chunk_id="c01", pages=[4])],
++        )
++        for i in range(OPUS_RETRY_BUDGET_PER_DOC + 5)
++    ]
++    client = _StubLLMClient(
++        responses={
++            "critic/sonnet/historical_context_internal": {
++                "verdict": "no", "evidence_quote": None, "reasoning": "x",
++            },
++            "critic/opus/historical_context_internal": {
++                "verdict": "no", "evidence_quote": None, "reasoning": "x",
++            },
++        }
++    )
++    stage3_critic.run(record, client)
++    assert record.validation.opus_retries_used == OPUS_RETRY_BUDGET_PER_DOC
++
++
++def test_deterministic_layers_still_run_unchanged():
++    """Hard gates (quotes, year, themes, geocoding) still fire as before."""
++    record = _make_record()
++    # Inject a bad year and an invalid theme.
++    record.year = 1800  # < NEPA_YEAR
++    record.themes.primary = ["land_management", "not_a_theme"]
++    # Geocoding gap.
++    record.location.latitude = None
++    record.location.longitude = None
++
++    client = _StubLLMClient(responses={})
++    warnings = stage3_critic.run(record, client)
++
++    assert record.year is None  # year invalid → nulled
++    assert "not_a_theme" not in record.themes.primary
++    assert any("year_invalid" in w for w in warnings)
++    assert any("invalid_themes" in w for w in warnings)
++    assert any("geocoding_failed" in w for w in warnings)
+-- 
+2.43.0
+
+
+From e7f0fcfb31049548fd4c9d9c5ddd6fddc2cb3ff5 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 21 May 2026 14:24:10 +0000
+Subject: [PATCH 2/2] Remove claude.md (pre-existing working-tree deletion)
+
+---
+ claude.md | 158 ------------------------------------------------------
+ 1 file changed, 158 deletions(-)
+ delete mode 100644 claude.md
+
+diff --git a/claude.md b/claude.md
+deleted file mode 100644
+index 4924c63..0000000
+--- a/claude.md
++++ /dev/null
+@@ -1,158 +0,0 @@
+-# CLAUDE_CONTEXT.md — Catch-up for Future Sessions
+-
+-**Read this first.** Then `PIPELINE_OVERVIEW.md` (architecture), `PROMPTS.md` (every LLM prompt), `GKG_Tests/TEST_RUN_*.md` (most recent results — Test Run 3 = current state).
+-
+----
+-
+-## What this project is
+-
+-A metadata-extraction pipeline (`eis_pipeline/`) that turns 1970s–90s U.S. Environmental Impact Statement PDFs into validated structured JSON records. v1.0, single-doc-per-invocation, written by Grace, working with Claude as a coding collaborator.
+-
+-Inputs: either S3 folder format (`P0491_<DOC_ID>/` with TXT/CONFIDENCES/mets.xml) or a flat `docs_with_digits.json` (current working format — splits text into ~2500-char fake pages, fetches METS-equivalent metadata from the NUL Digital Collections API).
+-
+-Output: one Pydantic-validated `EISRecord` JSON per doc.
+-
+----
+-
+-## Where things live
+-
+-```
+-EIS Job/
+-├── PIPELINE_OVERVIEW.md       <- architecture, stages, schema (read first)
+-├── PIPELINE_PLAN.md           <- original implementation spec / rationale
+-├── PROMPTS.md                 <- every LLM prompt with model-choice reasoning
+-├── eis_pipeline/              <- the actual code
+-│   ├── run.py                 <- CLI entrypoint
+-│   ├── inspect_layout.py      <- run before first S3-format doc
+-│   ├── fetch_data.py          <- S3 downloader
+-│   ├── pipeline/
+-│   │   ├── config.py          <- agency vocab, theme taxonomy, regex, model IDs, thresholds
+-│   │   ├── schema.py          <- Pydantic EISRecord + sub-models
+-│   │   ├── io_layer.py        <- load_document (S3) + load_from_digits_json
+-│   │   ├── llm_client.py      <- Anthropic wrapper, dry-run, budget cap, per-model usage
+-│   │   ├── ner_dicts.py       <- federally recognized tribes + environmental NGOs lists
+-│   │   ├── token_ledger.py    <- persistent per-run token usage tally
+-│   │   ├── stage0_triage.py   <- deterministic: OCR, EIS type, headings, date, agency, layered NER
+-│   │   ├── stage1_chunking.py <- AI-TOC pass + splits + Haiku chunk labeling
+-│   │   ├── stage2_fields/     <- one file per field; retrieval.py shared helper
+-│   │   └── stage3_critic.py   <- Sonnet per-claim verification + deterministic checks
+-│   ├── tests/                 <- test_stage0 (incl. heading + full-name regressions), test_io_layer
+-│   └── output/                <- pipeline outputs + token_ledger.json
+-├── GKG_Tests/                 <- real run outputs + writeups (Apollo, Harlem v1, Harlem v2)
+-└── Old Work/                  <- previous iteration of project + website (EIS-Final, PipelineV1_Storage). Reference for what we're improving on. Don't modify.
+-```
+-
+----
+-
+-## Models in use (config.py MODELS dict)
+-
+-| Role | Model | What it does |
+-|------|-------|---|
+-| `heavy` | `claude-opus-4-6` | summary, themes, alternatives, key-people stance/quotes, historical context |
+-| `light` | `claude-haiku-4-5-20251001` | chunk labeling, location extraction, entity triage |
+-| `critic` | `claude-sonnet-4-6` | per-claim evidence verification |
+-
+-Note: `PIPELINE_PLAN.md` references `claude-opus-4-7`; the actual code uses `4-6`. The system-prompt-reported model name (e.g. `anthropic.claude-opus-4-7`) is the model running this conversation, not the pipeline.
+-
+----
+-
+-## Project state — post 5/14-meeting iteration
+-
+-Three real test runs done. Pipeline works end-to-end. Most issues from the original meeting fix-list have been addressed; the remaining items below were deferred or are new findings from Test Run 3.
+-
+-### What was done in the 5/14-meeting iteration (2026-05-15)
+-
+-| Change | Where |
+-|---|---|
+-| Heading detector tightened (regex won't cross newlines; post-filter rejects addresses/ZIPs/legal citations) | `config.HEADING_PATTERNS`, `stage0_triage._is_real_heading` |
+-| Retrieval fallback (tag miss → keyword search → first N chunks) | `summary.py`, `alternatives.py`, `location.py` |
+-| Layered NER: `en_core_web_trf` for PERSON with full-name regex filter; dict lookups for ~190 tribes + ~50 NGOs + agencies; provenance tracked in `NERResult.sources` | `stage0_triage._ner`, new `pipeline/ner_dicts.py` |
+-| Haiku gap-filler on stakeholder-dense chunks (capped at 6/doc) | `key_people._gap_fill_ner` |
+-| Simplified triage — only scrubs spaCy-sourced entities (dict + gap-fill bypass) | `key_people._triage_entities` |
+-| Schema additions: `KeyPersonOrGroup.role` + `.opinion_summary`, `SummaryField.layman_text`, `NERResult.sources` | `schema.py` |
+-| Consolidated key-people Opus calls — one call now returns stance + role + opinion + evidence + quote (was 2 calls) | `key_people._extract_entity_pack` |
+-| Key people sorted by document appearance order (was by frequency × spread) | `key_people.run` |
+-| Two-pass summary: detailed (Opus, evidence-cited) + layman (Opus, plain-English rewrite of the detailed) | `summary.py` |
+-| Persistent token ledger (per-model breakdown, lifetime totals) | new `pipeline/token_ledger.py`, wired into `run.py` |
+-| Alternatives prompt expanded to recognize "Alignment / Variation / Option / Route / Plan / Build" terminology; context limit raised to 100k chars | `alternatives.py` |
+-| **AI-TOC pass** — Haiku reads beginning/middle/end samples (~15k chars), identifies real section structure via title + anchor phrase; we map anchors to page numbers. Replaces Stage 0 regex sections when AI finds ≥3 locatable sections. | `stage1_chunking._ai_toc` |
+-| `MAX_KEY_PEOPLE` bumped 30 → 50 ("cut it down less") | `config.py` |
+-
+-### Open issues (priority order, from TEST_RUN_3_HARLEM_V2.md)
+-
+-| Priority | Issue | Where to fix |
+-|---|---|---|
+-| **High** | NER dedupe doesn't normalize variants — "Cook County Forest Preserve District" / "the Cook County Forest Preserve District" / "Cook County Forest\nPreserve District" all kept as separate entities | `stage0_triage._dedup_names`: strip leading "the ", collapse newlines/hyphen-breaks, drop short fragments, optionally fuzzy-merge variants |
+-| **High** | Generic entities ("United States", "STATE OF ILLINOIS") survive triage and appear in key-people output | `key_people._triage_entities` prompt — explicitly reject country/state names as stakeholders |
+-| **High** | EIS type returns "Unlabelled" when title clearly says "FINAL" but consultation appendix references "the DRAFT" | `stage0_triage._eis_type()`: title-check tiebreaker |
+-| **High** | Theme taxonomy lacks `aerospace_and_space_exploration` (Apollo landed on `other`) | `pipeline/config.py` `THEMES` dict |
+-| **Medium** | Gap-fill re-adds entities already in dict layer (substring overlap, e.g. "Cook County Forest Preserve Commission" vs spaCy's "the Cook County Forest Preserve Commission") | `key_people._gap_fill_ner` — substring-aware dedup against existing entities |
+-| **Medium** | Date extractor pulls draft submission date from consultation appendix (Harlem returns 1971 for a 1972 doc) | `stage0_triage` date logic — prefer dates near signature blocks |
+-| **Medium** | Quotes consistently failing substring check (0/16 verified in Harlem v2) — possible OCR text vs LLM output mismatch, or Opus is paraphrasing despite the prompt | Investigate substring check logic; consider char-normalization (smart quotes, hyphens, whitespace) before matching |
+-| **Low** | Lead agency on Harlem still returns vague "Department of Transportation" instead of FHWA | Add FHWA-specific second-pass regex in agency matcher |
+-
+-### Known architectural limitations (not bugs, design decisions)
+-
+-- **External historical context** + **project current status** are v2 stubs. Need search API, Tier 1 allowlist, stricter critic, disambiguation. Schema enforces `deferred_to_v2: True` via `Literal` types — don't try to populate them in v1.
+-- **Tag-based retrieval has fallbacks but isn't bulletproof.** Each Stage 2 field that uses tag retrieval now has a keyword fallback. Still — fields with idiosyncratic content (like alternatives with "Alignment 1" naming) need explicit prompt support.
+-- **Fake pages from `docs_with_digits.json`** mean page citations are approximate. Real page numbers only when running against full S3 data.
+-- **Geocoding match rate ~60%.** Nominatim struggles with corridors and historical place names. Null lat/lon is the correct fallback.
+-
+----
+-
+-## How to run
+-
+-```bash
+-cd "/Users/gracegormley/Desktop/EIS Job/eis_pipeline"
+-export ANTHROPIC_API_KEY=sk-ant-...
+-
+-# From the flat JSON (current working format) — three short pastes to dodge
+-# terminal line-wrap issues with the long paths:
+-DOCS="/Users/gracegormley/Desktop/Y2/Q2/Knight Lab/docs_with_digits.json"
+-python run.py --json-file "$DOCS" --doc-key p1074_35556036099737 --output "../GKG_Tests/harlem_v3.json" --budget-usd 4
+-
+-# Useful flags
+---dry-run                              # no API calls, log prompts only
+---skip-stages 2,3                      # deterministic only
+---only-fields summary,themes           # iterate on one prompt
+---budget-usd 5.00                      # hard cap
+---token-ledger output/ledger.json      # override default ledger path
+-```
+-
+-Cost reference (latest runs):
+-- Apollo (5.5k words, 1 chunk) = $0.39
+-- Harlem v1 (27k words, 39 chunks) = $2.13
+-- Harlem v2 (27k words, 13 chunks, full NER + layman summary) = $4.42 (hit $4 budget cap)
+-- Harlem v3 (with consolidated Opus calls) — **projected ~$3.20–$3.50, not yet run**
+-
+-Cost is dominated by per-entity stance/role/opinion/quote Opus calls in `key_people`. With consolidation (one call instead of two) the per-doc cost should drop ~$1. Full 181-doc collection projects to roughly $600 at the post-consolidation rate.
+-
+----
+-
+-## Where to find what was tried / what worked
+-
+-- **Apollo run:** `GKG_Tests/apollo_result.json` + `TEST_RUN_1_APOLLO.md` — short doc, single chunk, summary worked, alternatives empty (tag miss), themes hit `other` (vocab gap)
+-- **Harlem v1:** `GKG_Tests/harlem_ave_result.json` + `TEST_RUN_2_HARLEM_AVE.md` — medium doc, 39 noise chunks, summary + themes + alternatives strong, key_people weak (5 entities, mostly empty)
+-- **Harlem v2 (post-meeting fixes):** `GKG_Tests/harlem_v2.json` + `TEST_RUN_3_HARLEM_V2.md` — 13 chunks (heading detector improved), 16 key_people with rich role/opinion/stance, layman summary working, alternatives regressed to empty (now fixed in code, untested), cost $4.42 (now consolidated, projected lower)
+-
+-Test Run 3 is the current ground truth — read it first.
+-
+----
+-
+-## Next-test recommendation
+-
+-**Re-run Harlem** (`p1074_35556036099737`) to validate the three post-Run-3 fixes:
+-1. Alternatives prompt fix (should produce 9 alternatives again — Variations A–E, Alignments 1/2, etc.)
+-2. Consolidated Opus calls in key_people (should cut cost ~$1)
+-3. AI-TOC pass (should produce semantically named sections instead of all "Section 4(f) ...")
+-
+-After Harlem v3 validates, try a longer doc (60–100k words) with a clean section structure. Candidates: `p1074_35556036806552`, `p1074_35556036093169`, or a 50k-range p1074.
+-
+----
+-
+-## Working norms with Grace
+-
+-- She wants pushback on bad calls, not validation. Be direct.
+-- When picking up the project, briefly confirm the plan before doing large refactors.
+-- Test reports are written narrative-style ("✅ Strong / ⚠️ Issue / ❌ Failed" with root-cause analysis). Match that tone if writing new ones.
+-- Don't proactively expand scope. v1 stubs are stubs on purpose.
+-- 
+2.43.0
+

@@ -1,0 +1,7 @@
+You are reading the cover page of a U.S. Environmental Impact Statement.
+Identify the EIS type. Return exactly one of: Draft, Final, Supplemental, ROD, NOI.
+If the text does not contain enough information to decide, return: Unlabelled.
+Return only the single word, no explanation.
+
+COVER TEXT:
+{cover_text}

@@ -1,0 +1,21 @@
+You are rewriting a detailed U.S. Environmental Impact Statement summary for
+a general public audience (think: high school reading level, no policy or
+engineering background).
+
+Rules:
+  - Use ONLY information present in the detailed summary I give you.
+    Do NOT introduce new facts.
+  - Replace bureaucratic or technical language with plain English.
+    ("right-of-way" → "land taken for the road"; "mitigation" → "steps to
+    reduce harm"; "alignment" → "the path the road takes")
+  - Keep it short: 80–120 words. One paragraph. Conversational tone.
+
+Respond with ONLY valid JSON in this exact shape:
+{
+  "layman_summary": "<your 80-120 word rewrite>"
+}
+
+Do not include explanation, markdown, or any text outside the JSON object.
+
+DETAILED SUMMARY:
+{detailed_summary}

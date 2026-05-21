@@ -1,0 +1,25 @@
+You are reading the cover page of a U.S. Environmental Impact Statement (EIS).
+Extract the project's TITLE from the cover page text.
+
+The title is typically a single phrase (3-15 words) naming the project, location,
+or proposed action. It usually follows phrases like "Environmental Impact
+Statement for", "Environmental Statement for", "Proposed", or appears as the
+prominent heading on the cover. It is NOT the agency name and NOT a section
+heading like "SUMMARY" or "PURPOSE AND NEED".
+
+Return ONLY valid JSON in this exact shape:
+{
+  "title": "<the project title, verbatim from the cover text>",
+  "found": true
+}
+
+If the cover text does not contain a clear project title, return:
+{
+  "title": null,
+  "found": false
+}
+
+Do not include explanation, markdown, or any text outside the JSON object.
+
+COVER TEXT:
+{cover_text}

@@ -1,0 +1,149 @@
+{
+  "runs": [
+    {
+      "timestamp": "2026-05-21T15:59:48.419704+00:00",
+      "doc_id": "p1074_35556035057348",
+      "pipeline_version": "v1.0.0",
+      "duration_seconds": 13.67,
+      "total_input_tokens": 0,
+      "total_output_tokens": 0,
+      "total_tokens": 0,
+      "total_cost_usd": 0.0,
+      "calls": 0,
+      "by_model": {}
+    },
+    {
+      "timestamp": "2026-05-21T16:27:40.194609+00:00",
+      "doc_id": "p1074_35556035057348",
+      "pipeline_version": "v1.0.0",
+      "duration_seconds": 5.01,
+      "total_input_tokens": 0,
+      "total_output_tokens": 0,
+      "total_tokens": 0,
+      "total_cost_usd": 0.0,
+      "calls": 0,
+      "by_model": {}
+    },
+    {
+      "timestamp": "2026-05-21T16:33:19.477534+00:00",
+      "doc_id": "p1074_35556035057348",
+      "pipeline_version": "v1.0.0",
+      "duration_seconds": 5.21,
+      "total_input_tokens": 0,
+      "total_output_tokens": 0,
+      "total_tokens": 0,
+      "total_cost_usd": 0.0,
+      "calls": 0,
+      "by_model": {}
+    },
+    {
+      "timestamp": "2026-05-21T16:44:45.532859+00:00",
+      "doc_id": "p1074_35556035057348",
+      "pipeline_version": "v1.0.0",
+      "duration_seconds": 6.27,
+      "total_input_tokens": 0,
+      "total_output_tokens": 0,
+      "total_tokens": 0,
+      "total_cost_usd": 0.0,
+      "calls": 0,
+      "by_model": {}
+    },
+    {
+      "timestamp": "2026-05-21T16:46:07.609756+00:00",
+      "doc_id": "p1074_35556035057348",
+      "pipeline_version": "v1.0.0",
+      "duration_seconds": 0.95,
+      "total_input_tokens": 0,
+      "total_output_tokens": 0,
+      "total_tokens": 0,
+      "total_cost_usd": 0.0,
+      "calls": 0,
+      "by_model": {}
+    },
+    {
+      "timestamp": "2026-05-21T17:32:47.685275+00:00",
+      "doc_id": "p1074_35556035057348",
+      "pipeline_version": "v1.0.0",
+      "duration_seconds": 0.97,
+      "total_input_tokens": 0,
+      "total_output_tokens": 0,
+      "total_tokens": 0,
+      "total_cost_usd": 0.0,
+      "calls": 0,
+      "by_model": {}
+    },
+    {
+      "timestamp": "2026-05-21T17:33:59.488303+00:00",
+      "doc_id": "p1074_35556035057348",
+      "pipeline_version": "v1.0.0",
+      "duration_seconds": 5.94,
+      "total_input_tokens": 2376,
+      "total_output_tokens": 288,
+      "total_tokens": 2664,
+      "total_cost_usd": 0.011448,
+      "calls": 1,
+      "by_model": {
+        "us.anthropic.claude-sonnet-4-6": {
+          "input_tokens": 2376,
+          "output_tokens": 288,
+          "calls": 1,
+          "cost_usd": 0.011448
+        }
+      }
+    },
+    {
+      "timestamp": "2026-05-21T17:40:28.660285+00:00",
+      "doc_id": "p1074_35556035057348",
+      "pipeline_version": "v1.0.0",
+      "duration_seconds": 12.52,
+      "total_input_tokens": 5391,
+      "total_output_tokens": 603,
+      "total_tokens": 5994,
+      "total_cost_usd": 0.025218,
+      "calls": 2,
+      "by_model": {
+        "us.anthropic.claude-sonnet-4-6": {
+          "input_tokens": 5391,
+          "output_tokens": 603,
+          "calls": 2,
+          "cost_usd": 0.025218
+        }
+      }
+    },
+    {
+      "timestamp": "2026-05-21T17:42:52.664309+00:00",
+      "doc_id": "p1074_35556035057348",
+      "pipeline_version": "v1.0.0",
+      "duration_seconds": 13.07,
+      "total_input_tokens": 5391,
+      "total_output_tokens": 636,
+      "total_tokens": 6027,
+      "total_cost_usd": 0.025713,
+      "calls": 2,
+      "by_model": {
+        "us.anthropic.claude-sonnet-4-6": {
+          "input_tokens": 5391,
+          "output_tokens": 636,
+          "calls": 2,
+          "cost_usd": 0.025713
+        }
+      }
+    }
+  ],
+  "lifetime_totals": {
+    "runs": 9,
+    "total_input_tokens": 13158,
+    "total_output_tokens": 1527,
+    "total_tokens": 14685,
+    "total_cost_usd": 0.062379,
+    "calls": 5,
+    "by_model": {
+      "us.anthropic.claude-sonnet-4-6": {
+        "input_tokens": 13158,
+        "output_tokens": 1527,
+        "calls": 5,
+        "cost_usd": 0.062379
+      }
+    }
+  }
+}

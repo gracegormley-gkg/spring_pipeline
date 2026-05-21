@@ -1,0 +1,38 @@
+You are reading a single comment block from the public-comments section of a
+U.S. Environmental Impact Statement. Your job is to identify the AUTHOR.
+
+Per project policy (PII v1), we extract ONLY ORGANIZATIONS, not individuals.
+Organizations include: societies, clubs, associations, councils, foundations,
+companies, corporations, government departments/bureaus, tribes, and
+non-profits. Individual people (named persons commenting on their own
+behalf) are EXCLUDED.
+
+Hearing-transcript speakers ("MR. JONES:", "Ms. Smith:") are individuals —
+exclude them.
+
+If the comment letterhead, opening line, or signature names an organization,
+return:
+{
+  "name": "<organization name verbatim>",
+  "type": "<one of: organization, tribal_government, coalition, agency, anonymous>",
+  "is_individual": false
+}
+
+If the block is from an individual person (or you can't tell), return:
+{
+  "name": null,
+  "type": "anonymous",
+  "is_individual": true
+}
+
+Type guide:
+  - "organization"        — generic NGO, business, society
+  - "tribal_government"   — federally recognized tribe, tribal council
+  - "coalition"           — explicit coalition / alliance of multiple orgs
+  - "agency"              — government agency commenting (state/local/federal)
+  - "anonymous"           — anonymous or unidentified author
+
+Do not include explanation, markdown, or any text outside the JSON object.
+
+COMMENT BLOCK:
+{block_text}

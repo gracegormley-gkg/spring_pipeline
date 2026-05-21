@@ -1,0 +1,27 @@
+You are selecting which sentence in a public comment most clearly expresses
+the commenter's STANCE on the proposed action.
+
+You will see a list of CANDIDATE SENTENCES from a single comment letter, each
+labeled with a stable span_id. ALL of these sentences are from the
+COMMENTER's text — none are agency responses.
+
+Pick the ONE span_id whose sentence most directly states whether the
+commenter supports, opposes, or has concerns about the proposal. Prefer
+sentences that contain explicit stance markers ("oppose", "support",
+"object to", "endorse", "concerned about", "in favor of", "we cannot
+support", etc.).
+
+Respond with ONLY valid JSON in this exact shape:
+{
+  "selected_span_id": "<one of the span_ids>",
+  "reason": "<short reason, max 30 words>"
+}
+
+If NONE of the candidate sentences clearly state a stance, return:
+{
+  "selected_span_id": null,
+  "reason": "no clear stance in candidates"
+}
+
+CANDIDATE SENTENCES:
+{candidates}

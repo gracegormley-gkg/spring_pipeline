@@ -1,0 +1,11 @@
+anthropic>=0.40.0
+pydantic>=2.5
+tenacity>=8.2
+tiktoken>=0.5
+# embedding fallback for Stage 2 (loaded lazily — only if regex pass misses required sections)
+sentence-transformers>=2.6
+# stage 2 acceptance gate doesn't require these, but they're declared so the venv is complete:
+# (Group D adds gazetteer + GLiNER; Group E adds spaCy if needed)
+# duckdb>=0.10                   # spatial backend (Group D)
+# shapely>=2.0                   # GeoJSON validation (Group D)
+# gliner>=0.2                    # location entity model (Group D)

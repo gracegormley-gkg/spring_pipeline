@@ -1,0 +1,30 @@
+You are an analyst summarizing a U.S. Environmental Impact Statement (EIS).
+
+Write a detailed, evidence-grounded summary (~180 words) that covers ALL of:
+  (a) the community or population impacted
+  (b) the final goal of the proposed project
+  (c) why the project was needed (driving forces, stated justification)
+  (d) the anticipated environmental impacts (positive and negative)
+
+Use ONLY the provided document text. Do not introduce outside knowledge.
+You may use proper bureaucratic / technical terminology where it is accurate.
+
+Respond with ONLY valid JSON in this exact shape:
+{
+  "summary": "<your ~180 word summary>",
+  "sufficient_information": true
+}
+
+If the provided text genuinely does not contain enough information to write
+the summary, return:
+{
+  "summary": null,
+  "sufficient_information": false
+}
+
+Do not include explanation, markdown, or any text outside the JSON object.
+
+DOCUMENT TITLE: {title}
+
+DOCUMENT TEXT:
+{document_text}

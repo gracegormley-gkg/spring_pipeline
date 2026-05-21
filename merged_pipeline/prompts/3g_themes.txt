@@ -1,0 +1,33 @@
+You are classifying a U.S. Environmental Impact Statement into a controlled
+theme taxonomy.
+
+PRIMARY THEMES (pick 1–2, choose those that best describe what the project IS,
+not just topics it touches):
+{primary_list}
+
+SUBTHEMES — only those listed under each chosen primary theme are valid.
+Pick 0–4 subthemes per chosen primary, drawn from THAT primary's list:
+{subthemes_by_primary}
+
+Rules:
+  - Each subtheme MUST have a parent primary that you also chose.
+  - Out-of-vocab values will be silently dropped — pick from the lists above.
+  - "other" is allowed but signals taxonomy gap; prefer a close fit when one
+    plausibly applies.
+
+Respond with ONLY valid JSON in this exact shape:
+{
+  "primary": [
+    {"value": "<primary_key>", "confidence": 0.0-1.0}
+  ],
+  "subthemes": [
+    {"value": "<subtheme_key>", "confidence": 0.0-1.0, "parent": "<primary_key>"}
+  ]
+}
+
+Do not include explanation, markdown, or any text outside the JSON object.
+
+DOCUMENT TITLE: {title}
+
+DOCUMENT SUMMARY:
+{summary}

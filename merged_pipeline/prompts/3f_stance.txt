@@ -1,0 +1,34 @@
+You are classifying the STANCE of a commenter on a U.S. Environmental Impact
+Statement. The commenter's most-relevant sentence is provided.
+
+Return one of these stance values:
+  - "supportive" — the commenter favors the proposed action
+  - "opposed"    — the commenter opposes the proposed action
+  - "mixed"      — the commenter supports some aspects, opposes others
+  - "neutral"    — the commenter is providing information without taking sides
+
+Also identify what they are taking a stance ON. Choose ONE of:
+  - "proposed_action"      — they are reacting to the project as proposed
+  - "no_action"            — they are reacting to the no-action alternative
+  - "specific_alternative" — they are reacting to a specific named alternative
+  - "mitigation"           — they are reacting to a mitigation measure
+  - "process"              — they are commenting on the NEPA process itself
+  - "unknown"              — cannot tell from the sentence alone
+
+Provide a confidence score 0.0–1.0 reflecting how sure you are.
+
+Respond with ONLY valid JSON in this exact shape:
+{
+  "stance": "<one of the four values>",
+  "stance_target": "<one of the six values>",
+  "confidence": 0.0-1.0
+}
+
+Do not include explanation, markdown, or any text outside the JSON object.
+
+COMMENTER SENTENCE:
+{sentence}
+
+(Optional context — surrounding paragraph from the same commenter, may help
+calibrate; do not classify based on this alone:)
+{context}

@@ -1,0 +1,24 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+
+# Outputs (token ledger and run logs are generated)
+output/runs/*.log
+output/nul_cache/*.json
+output/stage1_assembled/*.json
+output/stage1_5_grouped/*.json
+output/stage2_sections/*.json
+output/stage3_fields/*.json
+output/stage4_validated/*.json
+output/final/*.json
+output/review_log/*.json
+output/token_ledger.json
+
+# Keep manifest dir
+!output/manifest/
+output/manifest/*.txt
+
+.DS_Store

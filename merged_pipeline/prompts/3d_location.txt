@@ -1,0 +1,47 @@
+You are extracting place names from a U.S. Environmental Impact Statement.
+
+Goal: identify GEOGRAPHIC PLACES the document refers to — physical locations
+where the project happens, places it affects, or contextual references.
+
+Each place must include:
+  - "name": the place name verbatim from the text (preserve capitalization)
+  - "role": one of:
+      * "project_area"        — where the proposed action takes place
+      * "context_reference"   — mentioned for context but not a project location
+      * "alternative_site"    — a candidate site for an alternative
+      * "comparison_site"     — a similar site mentioned for comparison
+      * "mitigation_location" — a site where mitigation will occur
+  - "feature_type": short categorical hint such as: "national_forest",
+                    "watershed", "river", "highway_corridor", "city",
+                    "county", "state", "park", "wilderness_area",
+                    "transmission_line", "facility", "tribe", "place".
+                    Use "place" if nothing more specific fits.
+  - "spatial_qualifier": null OR one of these phrases when the text uses them:
+                         "parts of", "near", "within", "between",
+                         "downstream from", "upstream from", "adjacent to".
+                         (Otherwise null. A qualifier means the project does
+                         NOT cleanly cover the entire feature.)
+
+Rules:
+  - Skip generic words ("the area", "the region") with no proper name attached.
+  - Skip agency names (those go in lead_agency, not location).
+  - Skip individual people's names.
+  - DO NOT make up coordinates or polygons — return only names + roles.
+  - If the document seems to have no specific geographic location, return
+    {"places": []}.
+
+Respond with ONLY valid JSON in this exact shape:
+{
+  "places": [
+    {"name": "Angeles National Forest", "role": "project_area",
+     "feature_type": "national_forest", "spatial_qualifier": null},
+    {"name": "Castaic Creek", "role": "context_reference",
+     "feature_type": "river", "spatial_qualifier": "near"}
+  ]
+}
+
+Do not include explanation, markdown, or any text outside the JSON object.
+
+DOCUMENT TEXT (sections: cover / summary / purpose-and-need / alternatives;
+public comments deliberately excluded to avoid commenter-address contamination):
+{document_text}

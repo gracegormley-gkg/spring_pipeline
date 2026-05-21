@@ -1,0 +1,31 @@
+You are reading the cover page of a U.S. Environmental Impact Statement (EIS).
+Identify the LEAD AGENCY responsible for the document. The lead agency is the
+federal entity that issued the EIS — usually one of:
+  USDA Forest Service, Bureau of Land Management, U.S. Army Corps of Engineers,
+  Environmental Protection Agency, National Park Service, U.S. Fish and Wildlife
+  Service, NASA, U.S. Department of Energy, U.S. Department of Transportation,
+  Federal Highway Administration, Federal Energy Regulatory Commission, Bureau
+  of Ocean Energy Management, Bureau of Indian Affairs, Bureau of Reclamation,
+  Federal Aviation Administration, Nuclear Regulatory Commission, U.S.
+  Department of Defense, U.S. Department of Agriculture, U.S. Department of the
+  Interior, Federal Railroad Administration, U.S. Department of Housing and
+  Urban Development.
+
+Return ONLY valid JSON in this exact shape, using the canonical agency name
+from the list above (or the closest match if the cover names a sub-bureau):
+{
+  "agency": "<canonical agency name>",
+  "found": true
+}
+
+If you cannot identify a federal lead agency from the cover text, return:
+{
+  "agency": null,
+  "found": false
+}
+
+Do not return state agencies, contractors, or non-governmental organizations.
+Do not include explanation, markdown, or any text outside the JSON object.
+
+COVER TEXT:
+{cover_text}

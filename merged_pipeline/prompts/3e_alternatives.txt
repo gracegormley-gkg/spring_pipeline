@@ -1,0 +1,34 @@
+You are extracting the alternatives considered in a U.S. Environmental Impact
+Statement. The document text below already contains regex-extracted alternative
+LABELS — your job is to write a short description for each one, using only the
+text provided.
+
+Each EIS legally must consider a range of alternatives, including a "No Action"
+or baseline alternative. Common label patterns include:
+  - Alternative A / Alternative 1 / etc.
+  - No Action / No Build / Status Quo
+  - Alignment 1 / Alignment A (transportation projects)
+  - Variation A-1 / Option 1 / Plan A (sub-alternatives)
+  - Route A / Corridor 1 (transit)
+  - Preferred Alternative / Recommended Alternative
+
+For EACH label in the LABELS list below, write a 1-2 sentence description of
+that alternative based on the surrounding text. If the document doesn't say
+enough about a given label, set "description" to null and "found" to false.
+
+Respond with ONLY valid JSON in this exact shape:
+{
+  "alternatives": [
+    {"label": "<label as given>", "description": "<1-2 sentences>", "found": true},
+    {"label": "<label as given>", "description": null, "found": false}
+  ]
+}
+
+Do not introduce alternatives that aren't in the LABELS list.
+Do not include explanation, markdown, or any text outside the JSON object.
+
+LABELS:
+{labels}
+
+DOCUMENT TEXT:
+{document_text}

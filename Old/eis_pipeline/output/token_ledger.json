@@ -1,0 +1,94 @@
+{
+  "runs": [
+    {
+      "timestamp": "2026-05-15T18:25:22.655787+00:00",
+      "doc_id": "35556036099737",
+      "pipeline_version": "v1.0",
+      "duration_seconds": 295.64,
+      "total_input_tokens": 319964,
+      "total_output_tokens": 10351,
+      "total_tokens": 330315,
+      "total_cost_usd": 4.42472,
+      "calls": 68,
+      "by_model": {
+        "claude-haiku-4-5-20251001": {
+          "input_tokens": 62943,
+          "output_tokens": 3222,
+          "calls": 21,
+          "cost_usd": 0.063242
+        },
+        "claude-opus-4-6": {
+          "input_tokens": 255575,
+          "output_tokens": 6943,
+          "calls": 46,
+          "cost_usd": 4.35435
+        },
+        "claude-sonnet-4-6": {
+          "input_tokens": 1446,
+          "output_tokens": 186,
+          "calls": 1,
+          "cost_usd": 0.007128
+        }
+      }
+    },
+    {
+      "timestamp": "2026-05-16T00:26:04.561112+00:00",
+      "doc_id": "35556036099737",
+      "pipeline_version": "v1.0",
+      "duration_seconds": 185.63,
+      "total_input_tokens": 160231,
+      "total_output_tokens": 7041,
+      "total_tokens": 167272,
+      "total_cost_usd": 2.537488,
+      "calls": 26,
+      "by_model": {
+        "claude-haiku-4-5-20251001": {
+          "input_tokens": 21382,
+          "output_tokens": 820,
+          "calls": 6,
+          "cost_usd": 0.020386
+        },
+        "claude-opus-4-6": {
+          "input_tokens": 137485,
+          "output_tokens": 5957,
+          "calls": 19,
+          "cost_usd": 2.50905
+        },
+        "claude-sonnet-4-6": {
+          "input_tokens": 1364,
+          "output_tokens": 264,
+          "calls": 1,
+          "cost_usd": 0.008052
+        }
+      }
+    }
+  ],
+  "lifetime_totals": {
+    "runs": 2,
+    "total_input_tokens": 480195,
+    "total_output_tokens": 17392,
+    "total_tokens": 497587,
+    "total_cost_usd": 6.962208,
+    "calls": 94,
+    "by_model": {
+      "claude-haiku-4-5-20251001": {
+        "input_tokens": 84325,
+        "output_tokens": 4042,
+        "calls": 27,
+        "cost_usd": 0.083628
+      },
+      "claude-opus-4-6": {
+        "input_tokens": 393060,
+        "output_tokens": 12900,
+        "calls": 65,
+        "cost_usd": 6.8634
+      },
+      "claude-sonnet-4-6": {
+        "input_tokens": 2810,
+        "output_tokens": 450,
+        "calls": 2,
+        "cost_usd": 0.01518
+      }
+    }
+  }
+}

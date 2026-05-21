@@ -1,0 +1,101 @@
+{
+  "doc_id": "TEST0000000001",
+  "project_id": "P0491",
+  "title": null,
+  "ocr": {
+    "median_confidence": null,
+    "page_count": 3,
+    "unclear_document_flag": false
+  },
+  "eis_type": "Unlabelled",
+  "length_category": "medium",
+  "word_count": 0,
+  "has_headings": false,
+  "has_toc": false,
+  "sections": [],
+  "lead_agency": {
+    "name": null,
+    "abbreviation": null,
+    "source": "unknown"
+  },
+  "date": null,
+  "year": null,
+  "location": {
+    "name": null,
+    "state": null,
+    "latitude": null,
+    "longitude": null,
+    "geocode_source": null
+  },
+  "themes": {
+    "primary": [
+      "other"
+    ],
+    "subthemes": [
+      "unclassified"
+    ]
+  },
+  "summary": {
+    "text": "",
+    "evidence": [],
+    "status": "insufficient_information"
+  },
+  "alternatives_proposed": [],
+  "key_people_and_groups": [],
+  "historical_context_internal": {
+    "text": null,
+    "claims": [],
+    "status": "insufficient_information"
+  },
+  "historical_context_external": {
+    "text": null,
+    "sources": [],
+    "tier": null,
+    "status": "no_external_context_available",
+    "deferred_to_v2": true
+  },
+  "project_current_status": {
+    "value": "unknown",
+    "source_url": null,
+    "source_passage": null,
+    "source_tier": null,
+    "evidence_date": null,
+    "as_of_date": null,
+    "disambiguation_checks_passed": [],
+    "deferred_to_v2": true
+  },
+  "ner": {
+    "people": [],
+    "organizations": [],
+    "raw_count_before_dedupe": 0,
+    "deduped_count": 0
+  },
+  "chunks": [
+    {
+      "chunk_id": "c01",
+      "title": "c01",
+      "description": "",
+      "topic_tags": [],
+      "pages": [
+        1,
+        2,
+        3
+      ],
+      "text": "DRAFT ENVIRONMENTAL IMPACT STATEMENT\n\nTable of Contents\n\n1. Purpose and Need ..... 2\n2. Alternatives ......... 5\n3. Affected Environment . 8\n\n\f1. PURPOSE AND NEED\n\nThe proposed Highway 99 expansion project is needed to address severe traffic congestion\nin the Cedar Valley region of Oregon. The Federal Highway Administration proposes to widen\nHighway 99 from two lanes to four lanes over a distance of 12 miles.\n\nThe project area includes Cedar Valley, Lane County, Oregon.\n\n\f2. ALTERNATIVES\n\nAlternative A — No Action: Continue current two-lane configuration. Traffic congestion\nwould continue to worsen. No environmental impacts from construction.\n\nAlternative B — Preferred Action: Widen to four lanes along existing alignment.\nModerate wetland impacts. Displaces 12 households.\n\nAlternative C — Northern Bypass: New four-lane road north of existing alignment.\nGreater wetland impacts. Displaces fewer households.\n\n",
+      "median_confidence": 0.94,
+      "used": true
+    }
+  ],
+  "pipeline_metadata": {
+    "version": "v1.0",
+    "run_timestamp": "2026-05-11T18:04:47.789819",
+    "models_used": {
+      "heavy": "claude-opus-4-6",
+      "light": "claude-haiku-4-5-20251001",
+      "critic": "claude-sonnet-4-6"
+    },
+    "total_tokens": 1028,
+    "total_cost_usd": 0.008249,
+    "warnings": []
+  }
+}

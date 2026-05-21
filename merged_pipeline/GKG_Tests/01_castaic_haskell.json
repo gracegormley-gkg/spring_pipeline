@@ -1,0 +1,383 @@
+{
+  "publication_id": "p1074_35556035057348",
+  "publication_type": null,
+  "is_supplemental": false,
+  "physical_record_ids": [
+    "p1074_35556035057348"
+  ],
+  "components": [
+    {
+      "record_id": "p1074_35556035057348",
+      "role": "main",
+      "confidence": 1.0
+    }
+  ],
+  "title": {
+    "value": "Environmental Impact Statement, Proposed Castaic-Haskell Junction Power Transmission Line",
+    "status": "extracted_from_mets",
+    "provenance": {
+      "source": "nul_api",
+      "source_text_hash": null,
+      "page": null,
+      "char_offset_raw": null,
+      "section": null,
+      "note": null
+    },
+    "confidence": 0.99
+  },
+  "summary": {
+    "value": "The proposed Castaic-Haskell Junction Power Transmission Line is an 11.5-mile, four-circuit 230-kV transmission line, approximately 3.3 miles of which traverses the Angeles National Forest in California. The primary communities and jurisdictions affected are the State of California, Los Angeles County, and Southern California water agencies dependent on the California Aqueduct (FPC Project No. 2426). The project's final goal is to transmit hydroelectric power generated at the Castaic Power Plant, enabling water delivery through the Angeles Tunnel to the Metropolitan Water District and other Southern California municipalities. The driving force was a contractual water delivery commitment requiring at least two circuits to be operational by July 1971. Environmentally, the principal adverse impacts are aesthetic: visual intrusion upon the Angeles National Forest and unavoidable visual impact near Castaic Dam, plus short-term erosion and soil disturbance during construction, mitigable through erosion control measures. Positive environmental effects include reducing reliance on oil- and gas-fired steam generating plants within the Los Angeles basin, thereby decreasing air pollution and eliminating fuel consumption associated with 'spinning reserve' steam plants. Eleven alternate routes were evaluated; the selected alignment minimizes visual impact, avoids populated areas and recreation sites, and was found acceptable by all consulting state and local agencies.",
+    "status": "needs_review",
+    "provenance": {
+      "source": "fallback_keyword_search",
+      "source_text_hash": null,
+      "page": null,
+      "char_offset_raw": [
+        0,
+        11214
+      ],
+      "section": null,
+      "note": "keyword search produced 1 window(s)"
+    },
+    "confidence": 0.65
+  },
+  "layman_summary": {
+    "value": null,
+    "status": "needs_review",
+    "provenance": null,
+    "confidence": null
+  },
+  "date": {
+    "publication": {
+      "value": "1971",
+      "precision": "year",
+      "status": "needs_review",
+      "provenance": {
+        "source": "regex",
+        "source_text_hash": null,
+        "page": null,
+        "char_offset_raw": null,
+        "section": null,
+        "note": null
+      },
+      "evidence": null
+    },
+    "filing": {
+      "value": null,
+      "status": "deferred_v1"
+    },
+    "comment_deadline": {
+      "value": null,
+      "status": "deferred_v1"
+    },
+    "rod_date": {
+      "value": null,
+      "status": "deferred_v1"
+    }
+  },
+  "year": {
+    "value": 1971,
+    "status": "needs_review",
+    "provenance": {
+      "source": "regex",
+      "source_text_hash": null,
+      "page": null,
+      "char_offset_raw": null,
+      "section": null,
+      "note": "year regex on first 5 fake pages"
+    },
+    "confidence": 0.8
+  },
+  "agency": {
+    "lead_agency": {
+      "value": "USDA",
+      "status": "needs_review",
+      "provenance": {
+        "source": "controlled_vocab_match",
+        "source_text_hash": null,
+        "page": null,
+        "char_offset_raw": [
+          7482,
+          7512
+        ],
+        "section": "cover",
+        "note": "matched 'U.S. Department of Agriculture' in cover"
+      },
+      "confidence": 0.85
+    },
+    "cooperating_agencies": [],
+    "office_or_region": {
+      "value": null,
+      "status": "deferred_v1",
+      "provenance": null,
+      "confidence": null
+    }
+  },
+  "eis_type": {
+    "value": "Final",
+    "status": "extracted_from_cover",
+    "provenance": {
+      "source": "regex",
+      "source_text_hash": null,
+      "page": 1,
+      "char_offset_raw": [
+        0,
+        7575
+      ],
+      "section": "cover",
+      "note": "EIS_TYPE_REGEX match"
+    },
+    "confidence": 0.95
+  },
+  "sections": [
+    {
+      "name": "cover",
+      "char_span": [
+        0,
+        7575
+      ],
+      "pages": [
+        1,
+        3
+      ],
+      "confidence": 1.0,
+      "status": "ok",
+      "detection_method": "default_pages"
+    },
+    {
+      "name": "summary",
+      "char_span": null,
+      "pages": null,
+      "confidence": 1.0,
+      "status": "not_found",
+      "detection_method": "regex"
+    },
+    {
+      "name": "purpose_and_need",
+      "char_span": null,
+      "pages": null,
+      "confidence": 1.0,
+      "status": "not_found",
+      "detection_method": "regex"
+    },
+    {
+      "name": "alternatives",
+      "char_span": null,
+      "pages": null,
+      "confidence": 1.0,
+      "status": "not_found",
+      "detection_method": "regex"
+    },
+    {
+      "name": "affected_environment",
+      "char_span": null,
+      "pages": null,
+      "confidence": 1.0,
+      "status": "not_found",
+      "detection_method": "regex"
+    },
+    {
+      "name": "environmental_consequences",
+      "char_span": null,
+      "pages": null,
+      "confidence": 1.0,
+      "status": "not_found",
+      "detection_method": "regex"
+    },
+    {
+      "name": "public_comments",
+      "char_span": null,
+      "pages": null,
+      "confidence": 1.0,
+      "status": "not_found",
+      "detection_method": "regex"
+    },
+    {
+      "name": "response_to_comments",
+      "char_span": null,
+      "pages": null,
+      "confidence": 1.0,
+      "status": "not_found",
+      "detection_method": "regex"
+    },
+    {
+      "name": "rod",
+      "char_span": null,
+      "pages": null,
+      "confidence": 1.0,
+      "status": "not_found",
+      "detection_method": "regex"
+    }
+  ],
+  "comment_blocks": [],
+  "alternatives": [],
+  "themes": {
+    "primary": [],
+    "subthemes": [],
+    "status": "skipped_summary_unavailable",
+    "provenance": null
+  },
+  "location": {
+    "named_places": [
+      {
+        "name": "Angeles National Forest",
+        "role": "project_area",
+        "feature_type": "national_forest",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Castaic Dam",
+        "role": "project_area",
+        "feature_type": "facility",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": "near",
+        "polygon": null
+      },
+      {
+        "name": "California",
+        "role": "context_reference",
+        "feature_type": "state",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Los Angeles County",
+        "role": "context_reference",
+        "feature_type": "county",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Los Angeles",
+        "role": "context_reference",
+        "feature_type": "city",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Southern California",
+        "role": "context_reference",
+        "feature_type": "place",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Los Angeles basin",
+        "role": "context_reference",
+        "feature_type": "place",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Castaic Power Plant",
+        "role": "project_area",
+        "feature_type": "facility",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      },
+      {
+        "name": "Washington, D. C.",
+        "role": "context_reference",
+        "feature_type": "city",
+        "source_dataset": null,
+        "source_feature_id": null,
+        "spatial_qualifier": null,
+        "polygon": null
+      }
+    ],
+    "project_area_polygon": null,
+    "context_polygons": [],
+    "source_geometry": null,
+    "geometry_role": "unknown",
+    "geometry_status": "unknown",
+    "polygon_uncertainty": "unknown",
+    "spatial_summary": {
+      "representative_point": null,
+      "centroid_method": null,
+      "centroid_status": null,
+      "bbox": null
+    },
+    "status": "ok"
+  },
+  "stakeholders": [],
+  "stakeholder_extraction_scope": "organizations_only",
+  "excluded_stakeholder_types": [
+    "person"
+  ],
+  "stakeholder_status": "no_comment_section_found",
+  "historical_context": {
+    "value": null,
+    "status": "deferred_v1"
+  },
+  "project_status": {
+    "value": null,
+    "status": "deferred_v1"
+  },
+  "cross_publication_links": {
+    "value": [],
+    "status": "deferred_v1"
+  },
+  "extraction_budget_status": "complete",
+  "coverage_estimate": 1.0,
+  "unprocessed_sections": [],
+  "per_field_status": {},
+  "validation": {
+    "approach": "rule_threshold_v1",
+    "verdicts": [],
+    "critic_pass_rate": null,
+    "field_level_confidence": {},
+    "hard_gates": {
+      "verbatim_quotes": "pass",
+      "year_range": "pass",
+      "theme_vocab": "pass",
+      "geocoding_centroid": "pass",
+      "schema_validation": "pass"
+    },
+    "self_consistency": {},
+    "review_routing": "auto_approve",
+    "routing_reasons": []
+  },
+  "pipeline": {
+    "pipeline_version": "v1.0.0",
+    "stage_versions": {
+      "stage1": "1.0.0",
+      "stage1_5": "1.0.0",
+      "stage2": "1.0.0",
+      "stage3a": "1.0.0",
+      "stage3b": "1.0.0"
+    },
+    "model_ids": {
+      "us.anthropic.claude-sonnet-4-6": "us.anthropic.claude-sonnet-4-6"
+    },
+    "gazetteer_versions": {},
+    "calibration_model_id": null,
+    "extracted_at": "2026-05-21T17:42:52.660408+00:00",
+    "total_tokens": 6027,
+    "total_cost_usd": 0.025713,
+    "duration_seconds": 13.07,
+    "warnings": [
+      "year: NUL had no parseable date; extracted 1971 from raw text",
+      "summary: retrieval degraded (source=fallback_keyword_search); marked needs_review",
+      "summary: layman rewrite failed; layman_summary left empty",
+      "themes: skipped (summary.status='needs_review', value=present)",
+      "alternatives: retrieval degraded (fallback_keyword_search) and no labels found",
+      "stakeholders: no public_comments/response_to_comments section detected"
+    ]
+  }
+}
