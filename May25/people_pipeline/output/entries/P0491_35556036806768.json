@@ -1,0 +1,491 @@
+{
+  "doc_id": "P0491_35556036806768",
+  "work_id": "bbae926c-0ea9-401d-9b66-a08e1513a8c1",
+  "title": "Project STORMFURY, Atlantic weather modification : environmental impact statement.",
+  "estimated_pages": 36,
+  "n_chunks": 1,
+  "n_raw_rows": 6,
+  "n_entries": 6,
+  "verdict_counts": {
+    "PASS": 2,
+    "PASS_WITH_NOTE": 0,
+    "RE_EXTRACT": 3,
+    "HUMAN_REVIEW": 1
+  },
+  "stance_counts": {
+    "neutral": 1,
+    "in_favor": 5
+  },
+  "elapsed_sec": 30.1,
+  "usage": {
+    "extract": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 1,
+          "input_tokens": 20903,
+          "output_tokens": 951,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.077
+        }
+      ],
+      "total": {
+        "calls": 1,
+        "input_tokens": 20903,
+        "output_tokens": 951,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.077
+      }
+    },
+    "critic": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 6,
+          "input_tokens": 7605,
+          "output_tokens": 2484,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.0601
+        }
+      ],
+      "total": {
+        "calls": 6,
+        "input_tokens": 7605,
+        "output_tokens": 2484,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.0601
+      }
+    },
+    "total": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 7,
+          "input_tokens": 28508,
+          "output_tokens": 3435,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.137
+        }
+      ],
+      "total": {
+        "calls": 7,
+        "input_tokens": 28508,
+        "output_tokens": 3435,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.137
+      }
+    }
+  },
+  "schema": {
+    "stance_vocabulary": [
+      "in_favor",
+      "opposed",
+      "conditional",
+      "neutral"
+    ],
+    "kind_vocabulary": [
+      "individual",
+      "official",
+      "organization",
+      "agency",
+      "tribe",
+      "government",
+      "other"
+    ],
+    "verdicts": [
+      "PASS",
+      "PASS_WITH_NOTE",
+      "RE_EXTRACT",
+      "HUMAN_REVIEW"
+    ],
+    "page_numbers": "ESTIMATED from char offsets at 2500 chars/page.",
+    "merge_rule": "One row per (entity, stance) — stance changes produce separate rows.",
+    "cost_note": "USD costs are ESTIMATES from settings.PRICES_USD_PER_M; verify against AWS Bedrock invoice."
+  },
+  "entries": [
+    {
+      "sequence": 1,
+      "entity": "American Conference of Governmental Industrial Hygienists",
+      "kind": "organization",
+      "role": "Standards body cited for silver threshold limits",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The threshold limit for silver was reported to be 10 µg/m³ by the American Conference of Governmental Industrial Hygienists in 1966.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "36"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "36"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The threshold limit for silver was reported to be 10 µg/m³ by the American Conference of Governmental Industrial Hygienists in 1966.",
+          "quote_verified": false,
+          "stance_basis": "Cited as authority for air quality threshold limits; no stance on the project itself, only provides reference standard",
+          "entity_as_written": "American Conference of Governmental Industrial Hygienists",
+          "role_as_written": "Standards body cited for silver threshold limits"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 36 text contains only references/bibliography entries; the summary quote about silver threshold limits and ACGIH does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The American Conference of Governmental Industrial Hygienists is not mentioned anywhere in the cited page text provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance as the entity and quote are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official organization name appears correctly formatted."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "No mention of silver threshold limits or ACGIH in the provided page 36 text, which only contains bibliography entries related to weather modification and typhoon studies."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The cited page 36 text appears to be a references/bibliography section for weather modification topics and contains no mention of silver threshold limits or the American Conference of Governmental Industrial Hygienists. It is possible the wrong page was pulled, or the page numbering is off. A human reviewer should locate the correct page containing the silver/ACGIH content to verify the extraction."
+      }
+    },
+    {
+      "sequence": 2,
+      "entity": "Department of Defense (DOD)",
+      "kind": "agency",
+      "role": "Cooperating agency on STORMFURY",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The project has continually evolved and is today an effort directed by the National Oceanic and Atmospheric Administration (NOAA) with cooperation from the National Aeronautics and Space Administration (NASA) and the Department of Defense (DOD).",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The project has continually evolved and is today an effort directed by the National Oceanic and Atmospheric Administration (NOAA) with cooperation from the National Aeronautics and Space Administration (NASA) and the Department of Defense (DOD).",
+          "quote_verified": true,
+          "stance_basis": "DOD cooperates in the project as a participating agency",
+          "entity_as_written": "Department of Defense (DOD)",
+          "role_as_written": "Cooperating agency on STORMFURY"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact sentence appears verbatim in the Introduction section of page 1."
+          },
+          {
+            "check": "Attribution links DOD to stated stance (paraphrased)",
+            "result": "no",
+            "note": "The cited sentence describes DOD as a cooperating agency on STORMFURY, but does not express DOD's stance or position toward the project. It is a factual description of organizational roles, not a statement of support or favor."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The text only identifies DOD as a cooperating agency; no stance of 'in_favor' is expressed or implied. Participation/cooperation does not unambiguously equal expressed support."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Department of Defense (DOD) is the official name and matches the text."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text explicitly states DOD cooperates on STORMFURY, supporting the role of 'Cooperating agency on STORMFURY'."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The quote is verbatim and the role is accurate, but the stance 'in_favor' is not supported by the evidence. The text merely describes DOD as a cooperating agency without expressing any evaluative position. The stance should be 'neutral' or the row should be flagged as not expressing a stance at all. Re-extraction should assign a neutral stance or exclude this row if only expressed stances are desired."
+      }
+    },
+    {
+      "sequence": 3,
+      "entity": "National Aeronautics and Space Administration (NASA)",
+      "kind": "agency",
+      "role": "Cooperating agency on STORMFURY",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The project has continually evolved and is today an effort directed by the National Oceanic and Atmospheric Administration (NOAA) with cooperation from the National Aeronautics and Space Administration (NASA) and the Department of Defense (DOD).",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The project has continually evolved and is today an effort directed by the National Oceanic and Atmospheric Administration (NOAA) with cooperation from the National Aeronautics and Space Administration (NASA) and the Department of Defense (DOD).",
+          "quote_verified": true,
+          "stance_basis": "NASA cooperates in the project, providing aircraft and support",
+          "entity_as_written": "National Aeronautics and Space Administration (NASA)",
+          "role_as_written": "Cooperating agency on STORMFURY"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact sentence appears verbatim in the Introduction section of page 1."
+          },
+          {
+            "check": "Attribution links NASA to stated stance (paraphrased)",
+            "result": "yes",
+            "note": "The cited narrator sentence names NASA as a cooperating agency on STORMFURY, linking it to the project."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "NASA is described as a cooperating agency, indicating support/participation (in_favor is reasonable)."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official agency name used correctly."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "Text explicitly states NASA provides 'cooperation' on STORMFURY, consistent with 'Cooperating agency' role."
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "The summary quote is present verbatim in the cited page. NASA is clearly identified as a cooperating agency on Project STORMFURY, and the 'in_favor' stance is well-supported by its active cooperative role. All checks pass without issue."
+      }
+    },
+    {
+      "sequence": 4,
+      "entity": "National Hurricane and Experimental Meteorological Laboratory (NHEML)",
+      "kind": "agency",
+      "role": "Modeling group developing 3-D tropical cyclone model",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The Modeling Group at the National Hurricane and Experimental Meteorological Laboratory (NHEML), Miami, Florida, is now developing a three-dimensional tropical cyclone with three nested grids capable of simulating the track, intensity, and inner core structure of tropical cyclones.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "14"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "14"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The Modeling Group at the National Hurricane and Experimental Meteorological Laboratory (NHEML), Miami, Florida, is now developing a three-dimensional tropical cyclone with three nested grids capable of simulating the track, intensity, and inner core structure of tropical cyclones.",
+          "quote_verified": true,
+          "stance_basis": "NHEML is actively developing models specifically designed to support STORMFURY modification strategies",
+          "entity_as_written": "National Hurricane and Experimental Meteorological Laboratory (NHEML)",
+          "role_as_written": "Modeling group developing 3-D tropical cyclone model"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 14 text does not contain the summary quote about NHEML developing a three-dimensional tropical cyclone model with nested grids."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The cited text does not mention NHEML or any modeling group at NHEML; the text discusses natural variability, seeding experiments, and hurricane track effects."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since neither the entity nor the quote appears in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "NHEML is an official agency name and is properly formatted."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not support the role description; no mention of NHEML or 3-D tropical cyclone modeling on page 14."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and entity do not appear anywhere in the cited page 14 text. The quote about NHEML developing a three-dimensional tropical cyclone model with nested grids must come from a different page. The extractor should identify the correct evidence page(s) where this quote actually appears."
+      }
+    },
+    {
+      "sequence": 5,
+      "entity": "National Oceanic and Atmospheric Administration (NOAA)",
+      "kind": "agency",
+      "role": "Project director of STORMFURY",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The project has continually evolved and is today an effort directed by the National Oceanic and Atmospheric Administration (NOAA) with cooperation from the National Aeronautics and Space Administration (NASA) and the Department of Defense (DOD).",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The project has continually evolved and is today an effort directed by the National Oceanic and Atmospheric Administration (NOAA) with cooperation from the National Aeronautics and Space Administration (NASA) and the Department of Defense (DOD).",
+          "quote_verified": true,
+          "stance_basis": "NOAA directs the project and initiated a $30 million modernization program to resume it",
+          "entity_as_written": "National Oceanic and Atmospheric Administration (NOAA)",
+          "role_as_written": "Project director of STORMFURY"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact sentence appears in the Introduction section of page 1."
+          },
+          {
+            "check": "Attribution links NOAA to stated stance (paraphrased)",
+            "result": "yes",
+            "note": "The cited narrator sentence names NOAA as the directing entity of STORMFURY, establishing their active leadership role in the project."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "NOAA directing the project and investing $30M in aircraft modernization clearly indicates support/favor for STORMFURY."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official agency name with acronym matches the text exactly."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "Text explicitly states the project is 'directed by the National Oceanic and Atmospheric Administration (NOAA)', supporting the 'Project director of STORMFURY' role."
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "The summary quote is verbatim in the cited page, NOAA is explicitly named as the directing entity of STORMFURY, and the in_favor stance is well-supported by both the directorship role and the $30M modernization investment mentioned in the same passage. All checks pass cleanly."
+      }
+    },
+    {
+      "sequence": 6,
+      "entity": "Project STORMFURY personnel",
+      "kind": "organization",
+      "role": "Project scientific staff",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Project STORMFURY personnel feel that this particular rule is very conservative and provides a significant margin of safety.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "8"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "8"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Project STORMFURY personnel feel that this particular rule is very conservative and provides a significant margin of safety.",
+          "quote_verified": true,
+          "stance_basis": "Project personnel affirm the safety margin of the seeding eligibility criteria",
+          "entity_as_written": "Project STORMFURY personnel",
+          "role_as_written": "Project scientific staff"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted text 'Project STORMFURY personnel feel that this particular rule is very conservative and provides a significant margin of safety' does not appear anywhere in the provided page 8 text, which covers data collection methods and analysis procedures."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The cited page text makes no mention of Project STORMFURY personnel expressing any opinion about rules or safety margins; the content is purely technical/methodological."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify the in_favor stance as the supporting quote and context are entirely absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Project STORMFURY personnel is a reasonable organizational/group designation."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not describe or reference 'Project scientific staff' in any way that supports this role label."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote is entirely absent from the cited page 8 text, which deals only with data collection and analysis methodology for hurricane seeding experiments. The quote about a 'conservative rule' and 'significant margin of safety' belongs on a different page entirely. The extractor should locate the correct page where this statement appears and re-extract with the proper citation."
+      }
+    }
+  ]
+}

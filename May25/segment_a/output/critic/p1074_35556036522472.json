@@ -1,0 +1,297 @@
+{
+  "title": {
+    "rubric_results": [
+      {
+        "check": "Title is non-empty and plausibly the document's title?",
+        "result": "yes",
+        "note": "The title references a specific urban renewal area and document type (EIS), which is consistent with an Environmental Impact Statement title."
+      },
+      {
+        "check": "Length is reasonable (not a sentence fragment, not the whole abstract)?",
+        "result": "yes",
+        "note": "The title is concise and appropriately scoped — not too short or too long."
+      },
+      {
+        "check": "If two sources (NUL + Haiku) — do they roughly agree?",
+        "result": "n/a",
+        "note": "Only one source (NUL) was provided; no second source to compare."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "medium",
+    "notes": "The extracted title is plausible and well-formed for an EIS document, referencing the Bedford-Pine urban renewal area. However, no cited page text was provided to verify the extraction, and only a single source (NUL) was used. Confidence is medium due to the absence of corroborating evidence from cited pages or a second source.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "year": {
+    "rubric_results": [
+      {
+        "check": "Year falls within 1969 ≤ year ≤ current year?",
+        "result": "no",
+        "note": "2026 is in the future and exceeds the current year (2025), making it an invalid EIS publication year; 1976 from regex would be valid"
+      },
+      {
+        "check": "Year present in NUL metadata OR found on first 3 pages?",
+        "result": "no",
+        "note": "No cited pages were provided to confirm either value; NUL reportedly shows 2026 but no page text is available to verify regex value of 1976"
+      },
+      {
+        "check": "If NUL and regex disagree, value reflects this with a low-confidence flag?",
+        "result": "yes",
+        "note": "Extraction correctly flagged the NUL=2026 vs regex=1976 disagreement with low confidence"
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "The extracted value of 2026 is a future year and almost certainly erroneous for an EIS document. The regex-derived value of 1976 is plausible for an EIS and falls within the valid range. No cited page text was provided to adjudicate between the two sources. A human reviewer should inspect the document cover pages and NUL metadata to determine whether 1976 is the correct publication year.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "eis_type": {
+    "rubric_results": [
+      {
+        "check": "Type is one of: Draft, Final, Supplemental, ROD, Unknown?",
+        "result": "yes",
+        "note": "'Final' is a valid recognized EIS type in the rubric."
+      },
+      {
+        "check": "Regex hit on first page and Sonnet on first 2 pages agree?",
+        "result": "yes",
+        "note": "Both sources listed as 'regex (first page)' and 'Sonnet (first 2 pages)' agree on 'Final'."
+      },
+      {
+        "check": "Evidence phrase supports the chosen type?",
+        "result": "yes",
+        "note": "Evidence phrase 'Final Environmental Impact Statement' directly and unambiguously supports the 'Final' classification."
+      },
+      {
+        "check": "Cited pages provided for verification?",
+        "result": "no",
+        "note": "No cited page text was provided, preventing independent verification of the evidence phrase in context."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "high",
+    "notes": "The extracted value 'Final' is well-supported by the evidence phrase 'Final Environmental Impact Statement,' and both extraction methods agree. However, no cited page text was provided, making it impossible to independently verify the evidence in its original context. The extraction is likely correct given strong agreement between methods, but the absence of cited pages is a minor gap.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "lead_agency": {
+    "rubric_results": [
+      {
+        "check": "All listed agencies appear in NUL contributors OR on cited title pages?",
+        "result": "yes",
+        "note": "United States. Department of Housing and Urban Development is sourced from NUL and is a recognized federal agency name in standard catalog form."
+      },
+      {
+        "check": "Joint-lead (>2 agencies) flagged for human review?",
+        "result": "n/a",
+        "note": "Only one agency listed; joint-lead flag not required."
+      },
+      {
+        "check": "No role text (e.g., '(issuing body)') left in the agency names?",
+        "result": "yes",
+        "note": "Agency name is clean with no appended role descriptors."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "A single lead agency, United States. Department of Housing and Urban Development, is extracted in proper authority-file form with no extraneous role text. It is confirmed present in the NUL source. No cited title pages were provided, but the NUL attribution is sufficient for a passing verdict.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "summary": {
+    "rubric_results": [
+      {
+        "check": "project_description text supported by cited pages",
+        "result": "yes",
+        "note": "278.7 acres, NDP, eastern Atlanta, civic center, elementary school, public housing, hospital expansion since 1968, 78-acre CDP, Park Central Communities, ~$11 million, ~3,000 units, office/retail space, rehabilitation of multi-family units all appear in the cited pages."
+      },
+      {
+        "check": "Numbers, places, dates match cited pages for project_description",
+        "result": "yes",
+        "note": "278.7 acres (cited pages say 278.5 acres in one place and 278.7 in the summary sheet — minor discrepancy but both appear in the document). $11 million disposition price, 78 acres, Park Central Communities, October 1968 start all confirmed. However, the extraction states '2.6 million sq ft of office space, 250,000 sq ft retail, ~3,000 units, two-thirds owner-occupied, ~1,007 rehab units, ~ten years' — these figures are not visible in the cited pages provided, suggesting they come from the CDP appendix or other pages not shown."
+      },
+      {
+        "check": "affected_community text supported by cited pages",
+        "result": "yes",
+        "note": "Predominantly Black, low-income, elderly, renters, overcrowded/deteriorated housing, high crime, low school achievement, Grady Memorial Hospital reliance, PAC, and relocation of families are all referenced in the cited pages. However, specific figures like median family income ~$5,000, 39% below poverty, and 1,871 families for relocation are not visible in the pages provided."
+      },
+      {
+        "check": "Numbers, places, dates match cited pages for affected_community",
+        "result": "no",
+        "note": "Specific statistics (median income ~$5,000, 39% poverty, 1,871 families) are not visible in the provided cited page text, raising concern about whether they are supported or hallucinated/drawn from unseen pages."
+      },
+      {
+        "check": "alternatives_overview text supported by cited pages",
+        "result": "yes",
+        "note": "The table of contents and summary sheet confirm do-nothing, alternative sites, land use alternatives, design alternatives, and other modifications. Design Alternative C, people-mover, total energy system, Felton Drive, middle school, CDC/SBIC/community foundation details are not visible in the provided page text."
+      },
+      {
+        "check": "Numbers, places, dates match cited pages for alternatives_overview",
+        "result": "yes",
+        "note": "No specific numbers to verify; the general categories of alternatives match the TOC and summary sheet."
+      },
+      {
+        "check": "environmental_impact text supported by cited pages",
+        "result": "yes",
+        "note": "Beneficial impacts (replacing blight, housing near jobs), adverse impacts (construction dust/noise, traffic, air pollution with CO standards exceeded, noise along Piedmont/Stone Mountain Freeway), and mitigation measures are referenced in the cited pages. The 1.58 million gallons/day sewage figure is not visible in the provided text."
+      },
+      {
+        "check": "Numbers, places, dates match cited pages for environmental_impact",
+        "result": "no",
+        "note": "The 1.58 million gallons/day sewage figure is not confirmed in the provided cited page text. CO standards being exceeded is referenced in Table 2 context. Other specifics like stormwater retention and double glazing are not visible in the provided pages."
+      },
+      {
+        "check": "public_response text supported by cited pages",
+        "result": "yes",
+        "note": "The lawsuit halting land conveyance until EIS completion is confirmed in the cited pages. Park Central Communities conditional award, $11 million, and PAC involvement are confirmed. Freeman v. Housing Authority, moratorium on displacement, one-for-one replacement, February 1975 PAC concurrence, ECO-1 report criticism, and specific agency comments (EPA, Interior, FPC, MARTA, ARC, DOT, GSA) are not visible in the provided page text."
+      },
+      {
+        "check": "public_response based_on_main_doc_only=true",
+        "result": "yes",
+        "note": "The field is marked based_on_main_doc_only=true and references only the main EIS document."
+      },
+      {
+        "check": "No invention or hallucinated detail beyond cited content",
+        "result": "no",
+        "note": "Several specific figures and details (median income ~$5,000, 39% poverty, 1,871 families, 1.58M gpd sewage, Design Alternative C, February 1975 PAC concurrence, Freeman v. Housing Authority, ECO-1 report, specific agency comments) are not visible in the provided cited page text and may be drawn from pages not shown or potentially hallucinated."
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "medium",
+    "notes": "The extraction is broadly consistent with the document's general content as visible in the cited pages, and many high-level facts are confirmed. However, numerous specific statistics and details (median family income, poverty rate, relocation family count, sewage volume, specific design alternative labels, specific lawsuit names, specific agency comments, CDP program details) are not visible in the provided page text. These may exist in other parts of the document not provided for review, or they may be hallucinated. Human review is needed to verify these specific figures against the full document.",
+    "source_pages": [
+      "1-51",
+      "49-99",
+      "97-147",
+      "193-243",
+      "241-291",
+      "289-339",
+      "385-399",
+      "337-387"
+    ]
+  },
+  "alternatives": {
+    "rubric_results": [
+      {
+        "check": "Each listed alternative is actually discussed on its cited page?",
+        "result": "yes",
+        "note": "All eight alternatives (Do-Nothing, Location of Other Sites, Predominantly Commercial, Predominantly Residential, Design Alternative A, Design Alternative B, Design Alternative C, Other Modifications) are substantively discussed in the cited text under Section IV, which appears in the provided pages. The text confirms content matching each description."
+      },
+      {
+        "check": "No Action alternative is included if the cited text includes it?",
+        "result": "yes",
+        "note": "The 'Do-Nothing Alternative' (labeled '(A) Do-nothing Alternative' in the text) is included in the extraction and is discussed in the cited pages."
+      },
+      {
+        "check": "Names and descriptions match terminology used in the cited text?",
+        "result": "yes",
+        "note": "Terminology is consistent: 'Do-nothing Alternative,' 'Location of Other Sites,' 'Predominantly Commercial Development,' 'Predominantly Residential Development,' 'Design Alternative A,' 'Design Alternative B,' 'Design Alternative C,' and 'Other Modifications' all match the text exactly. The extraction's parenthetical '(Proposed Action)' for Design Alternative C is supported by the text stating it 'is the proposed course of action.'"
+      },
+      {
+        "check": "No outside-knowledge alternatives added that aren't in the chapter?",
+        "result": "yes",
+        "note": "All eight alternatives in the extraction correspond directly to the five categories (A–E) enumerated in the text, with land use and design alternatives properly broken into sub-alternatives as presented in the source. No extraneous alternatives were introduced."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "The extraction accurately captures all alternatives discussed in Section IV of the EIS, with names, descriptions, and page citations consistent with the provided text. The Do-Nothing alternative is properly included, and Design Alternative C is correctly identified as the proposed action. No fabricated or outside-knowledge alternatives were detected.",
+    "source_pages": [
+      "147-226"
+    ]
+  },
+  "themes": {
+    "rubric_results": [
+      {
+        "check": "Each chosen theme is supported by the doc summary fields?",
+        "result": "no",
+        "note": "No cited page text was provided, so there is no verifiable documentary evidence supporting any of the three themes. The justification references summary fields but no actual text was pulled in to confirm."
+      },
+      {
+        "check": "Theme names come from the fixed taxonomy verbatim?",
+        "result": "n/a",
+        "note": "Cannot confirm taxonomy compliance without access to the fixed taxonomy list, but names appear plausible. Flagged as n/a due to missing source text."
+      },
+      {
+        "check": "Subthemes belong to the chosen theme(s) per the taxonomy?",
+        "result": "n/a",
+        "note": "Without cited page text or taxonomy reference, subtheme-to-theme mapping cannot be verified. 'Environmental Regulation and Policy' under 'Governance and Institutional Control' and 'Community Resistance and Activism' under 'Place Based Development Conflicts' seem reasonable but are unverified."
+      },
+      {
+        "check": "1–3 themes and 2–5 subthemes selected (within range)?",
+        "result": "yes",
+        "note": "3 themes and 5 subthemes selected — both within the allowed ranges."
+      }
+    ],
+    "verdict": "RE_EXTRACT",
+    "model_confidence": "low",
+    "notes": "The extraction provides no cited page text whatsoever, making it impossible to verify that the chosen themes and subthemes are grounded in the actual document. The count of themes and subthemes is within range, but the absence of source evidence is a critical failure. The extraction must be re-run with actual cited text passages to support the selections.",
+    "source_pages": []
+  },
+  "location": {
+    "rubric_results": [
+      {
+        "check": "Place names appear in cited pages?",
+        "result": "yes",
+        "note": "Bedford-Pine Urban Renewal Area and Atlanta, Georgia appear repeatedly throughout the cited pages (1-30), including on the cover/summary sheet and throughout the project description."
+      },
+      {
+        "check": "is_multi_site set correctly?",
+        "result": "yes",
+        "note": "The project is a single contiguous urban renewal area in Atlanta; is_multi_site=false is correct."
+      },
+      {
+        "check": "For corridor projects: endpoints named, not just a midpoint?",
+        "result": "n/a",
+        "note": "This is not a corridor project; it is a bounded urban renewal area."
+      },
+      {
+        "check": "State abbreviations match U.S. conventions?",
+        "result": "yes",
+        "note": "GA is the correct USPS abbreviation for Georgia."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "The extracted location is well-supported by the cited pages, which repeatedly reference the Bedford-Pine Urban Renewal Area in Atlanta, Georgia. The boundary description in Exhibit I confirms the area is bounded by Piedmont Avenue, North Avenue, Boulevard, and the Stone Mountain Freeway, consistent with the extraction note. All rubric checks pass.",
+    "source_pages": [
+      "1-30"
+    ]
+  },
+  "key_people": {
+    "rubric_results": [
+      {
+        "check": "Each agency preparer named in the cited Preparers/Consultation text?",
+        "result": "yes",
+        "note": "The cited text clearly states 'Prepared By: Atlanta Area Office / Atlanta Regional Office, U.S. Department of Housing and Urban Development' matching the extracted preparer."
+      },
+      {
+        "check": "Cooperating agencies / tribal nations actually listed in the cited text?",
+        "result": "no",
+        "note": "Most agencies match Section 5 of the cited text, but 'Atlanta Audubon Society,' 'Georgia Conservancy,' and 'Georgia Wildlife Federation' appear in the cited text yet are absent from the extracted cooperating agencies list. Conversely, no tribal nations are mentioned."
+      },
+      {
+        "check": "For public_commenters: stance present on cited page? Quote verbatim? Speaker clear?",
+        "result": "n/a",
+        "note": "No public commenters were extracted; the extraction correctly notes none."
+      },
+      {
+        "check": "Private individuals: last-name-only or 'private commenter' convention followed?",
+        "result": "n/a",
+        "note": "No private individuals were extracted."
+      }
+    ],
+    "verdict": "RE_EXTRACT",
+    "model_confidence": "high",
+    "notes": "The preparer is correctly identified. However, the cooperating agencies list is incomplete: 'Atlanta Audubon Society,' 'Georgia Conservancy,' and 'Georgia Wildlife Federation' are explicitly named in Section 5 of the cited text but were omitted from the extraction. These three organizations should be added to the cooperating agencies list to make the extraction accurate and complete.",
+    "source_pages": [
+      "1-30"
+    ]
+  }
+}

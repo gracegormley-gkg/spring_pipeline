@@ -1,0 +1,36 @@
+{
+  "title": {
+    "value": "SR-252 construction connecting I-5 and I-805, San Diego : environmental impact statement.",
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  },
+  "year": {
+    "value": 2026,
+    "confidence": "low",
+    "sources": [
+      "NUL",
+      "regex (first 3 pages)"
+    ],
+    "note": "NUL=2026 disagrees with regex=1971 — flag"
+  },
+  "eis_type": {
+    "value": "Final",
+    "confidence": "high",
+    "sources": [
+      "regex (first page)",
+      "Sonnet (first 2 pages)"
+    ],
+    "evidence": "FINAL ENVIRONMENTAL IMPACT STATEMENT"
+  },
+  "lead_agency": {
+    "value": [
+      "United States. Federal Highway Administration"
+    ],
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  }
+}

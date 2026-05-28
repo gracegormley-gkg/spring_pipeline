@@ -1,0 +1,36 @@
+{
+  "title": {
+    "value": "Sundesert Nuclear Power Plant units 1-2, construction : environmental impact statement.",
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  },
+  "year": {
+    "value": 2026,
+    "confidence": "low",
+    "sources": [
+      "NUL",
+      "regex (first 3 pages)"
+    ],
+    "note": "NUL=2026 disagrees with regex=1978 — flag"
+  },
+  "eis_type": {
+    "value": "Draft",
+    "confidence": "high",
+    "sources": [
+      "regex (first page)",
+      "Sonnet (first 2 pages)"
+    ],
+    "evidence": "DRAFT ENVIRONMENTAL STATEMENT related to construction of SUNDESERT NUCLEAR PLANT, UNITS 1 AND 2"
+  },
+  "lead_agency": {
+    "value": [
+      "U.S. Nuclear Regulatory Commission"
+    ],
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  }
+}

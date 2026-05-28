@@ -1,0 +1,560 @@
+{
+  "doc_id": "p1074_35556036548337",
+  "work_id": "74b6a128-27b7-4877-b7d4-a22842139fb7",
+  "title": "SR-252 construction connecting I-5 and I-805, San Diego : environmental impact statement.",
+  "n_chunks": 2,
+  "per_chunk": [
+    {
+      "chunk_index": 0,
+      "start_page": 1,
+      "end_page": 51,
+      "ceq_chapter": null,
+      "entities": [
+        {
+          "entity": "Southeast San Diego Development Committee",
+          "kind": "organization",
+          "role": "community planning committee, commenter",
+          "stance": "opposed",
+          "attribution_mode": "direct_quote",
+          "quote": "Another motion was passed, \"to oppose Route 252 for the following reasons: \"1. Route 252 will further serve to divide the community. \"2. The Route does not primarily serve the community its in. \"3. The proposed interchange cannot meet the EPA complex source regulation. \"4. Division Street if improved could serve as an alternative. \"5. The additional cost to construct will be prohibitive. \"6. The Development Committee gave its approval at a time when much attention was directed toward Route 157.\"",
+          "evidence_pages": [
+            "20"
+          ],
+          "stance_basis": "passed motion to oppose Route 252 construction for six stated reasons",
+          "chunk_index": 0
+        },
+        {
+          "entity": "City of San Diego",
+          "kind": "government",
+          "role": "local government, freeway agreement signatory",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "On June 29, 1965, the California Highway Commission adopted the route alignment followed by the proposed project because it was most economical, required less right of way, displaced fewer people and would have a less disruptive effect on the community since it follows a natural terrain feature (South Chollas Creek). This alignment is in the City of San Diego. Its adoption was urged by a resolution of the City.",
+          "evidence_pages": [
+            "12"
+          ],
+          "stance_basis": "urged adoption of the Route 252 alignment by resolution",
+          "chunk_index": 0
+        },
+        {
+          "entity": "City of San Diego City Council",
+          "kind": "government",
+          "role": "local legislative body",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "These culminated in a vote on February 6, 1975, at which time the City Council reaffirmed the building of Route 252.",
+          "evidence_pages": [
+            "20"
+          ],
+          "stance_basis": "voted to reaffirm building of Route 252",
+          "chunk_index": 0
+        },
+        {
+          "entity": "San Diego Unified School District",
+          "kind": "organization",
+          "role": "local school district",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "It was also preferred by the San Diego Unified School District.",
+          "evidence_pages": [
+            "12"
+          ],
+          "stance_basis": "preferred the adopted Route 252 alignment",
+          "chunk_index": 0
+        },
+        {
+          "entity": "California Highway Commission",
+          "kind": "agency",
+          "role": "state highway commission",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "On June 29, 1965, the California Highway Commission adopted the route alignment followed by the proposed project because it was most economical, required less right of way, displaced fewer people and would have a less disruptive effect on the community since it follows a natural terrain feature (South Chollas Creek).",
+          "evidence_pages": [
+            "12"
+          ],
+          "stance_basis": "adopted the Route 252 alignment on stated grounds",
+          "chunk_index": 0
+        },
+        {
+          "entity": "State Air Resources Board",
+          "kind": "agency",
+          "role": "state environmental regulatory agency, consulted commenter",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "The Air Resources Board responded (See Appendix E) that they could not reach a conclusion because the future regional transportation plan has yet to be evaluated. This would apply to any alternative, including the alternative of doing nothing.",
+          "evidence_pages": [
+            "51"
+          ],
+          "stance_basis": "could not reach a conclusion on consistency with State Implementation Plan",
+          "chunk_index": 0
+        },
+        {
+          "entity": "California Department of Transportation",
+          "kind": "agency",
+          "role": "state transportation agency, project proponent",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The tentative finding of the California Department of Transportation is as follows: 1. The proposed project is consistent with the State Implementation Plan since it reduces emissions. 2. The alternatives would result in greater emissions of hydrocarbons. This would be inconsistent with the oxidant control strategy of the State Implementation Plan.",
+          "evidence_pages": [
+            "51"
+          ],
+          "stance_basis": "found project consistent with State Implementation Plan and superior to alternatives on emissions",
+          "chunk_index": 0
+        },
+        {
+          "entity": "Comprehensive Planning Organization (CPO)",
+          "kind": "organization",
+          "role": "regional planning agency",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "Route 252 is included in the Regional Transportation Plan. It is one of the freeways that would be built to implement the plan. Compatibility of the project with regional development policies is insured.",
+          "evidence_pages": [
+            "11"
+          ],
+          "stance_basis": "included Route 252 in the Regional Transportation Plan",
+          "chunk_index": 0
+        },
+        {
+          "entity": "Secretary of Transportation",
+          "kind": "official",
+          "role": "U.S. Secretary of Transportation",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "A Section 4(f) Statement for this project relative to Southcrest Park was approved by the Secretary of Transportation on July 29, 1971.",
+          "evidence_pages": [
+            "12"
+          ],
+          "stance_basis": "approved Section 4(f) Statement permitting use of Southcrest Park for the project",
+          "chunk_index": 0
+        },
+        {
+          "entity": "Federal Highway Administration",
+          "kind": "agency",
+          "role": "federal co-lead agency, project approver",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "Federal Highway Administration design approval of this connection to Interstate 5 was granted December 8, 1970.",
+          "evidence_pages": [
+            "12"
+          ],
+          "stance_basis": "granted design approval for the Interstate 5 connection",
+          "chunk_index": 0
+        },
+        {
+          "entity": "California Department of Fish and Game",
+          "kind": "agency",
+          "role": "state wildlife agency, consulted commenter",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "An advance copy of the environmental impact statement was transmitted to the California Department of Fish and Game for consultative purposes. No issues were turned up by this consultation.",
+          "evidence_pages": [
+            "17"
+          ],
+          "stance_basis": "raised no issues upon consultation regarding vegetation and wildlife",
+          "chunk_index": 0
+        },
+        {
+          "entity": "Southeast San Diego Development Committee member",
+          "kind": "individual",
+          "role": "member of Southeast San Diego Development Committee, commenter",
+          "stance": "opposed",
+          "attribution_mode": "direct_quote",
+          "quote": "\"These are people who feel isolated now. The freeway will make them feel more isolated.\"",
+          "evidence_pages": [
+            "46"
+          ],
+          "stance_basis": "expressed concern that freeway would increase community isolation",
+          "chunk_index": 0
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 22971,
+        "output_tokens": 1757,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 1,
+      "start_page": 49,
+      "end_page": 90,
+      "ceq_chapter": null,
+      "entities": [
+        {
+          "entity": "City of San Diego Environmental Quality Department",
+          "kind": "agency",
+          "role": "commenter / reviewer of draft EIS",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "Highway 252 may not be the most effective means of serving the long-term transportation needs of the region. Based upon data presented in the draft EIS, it appears to be intended to prevent additional freeway congestion rather than relieve current traffic problems. The final EIS could more fully evaluate all alternatives which might similarly or better accomplish the project objectives.",
+          "evidence_pages": [
+            "49"
+          ],
+          "stance_basis": "Supports project only if EIS is substantially revised to address alternatives, impacts on open space, community cohesion, noise, air quality, and visual impacts",
+          "chunk_index": 1
+        },
+        {
+          "entity": "James F. Gleason",
+          "kind": "official",
+          "role": "Environmental Quality Director, City of San Diego",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "The Environmental Quality Department of the City of San Diego has reviewed the draft Environmental Impact Statement for Highway Route 252, and in accordance with the requirements of the California Environmental Quality Act, wishes to make the following comments:",
+          "evidence_pages": [
+            "49"
+          ],
+          "stance_basis": "Signed letter raising multiple deficiencies requiring revision before project can be supported",
+          "chunk_index": 1
+        },
+        {
+          "entity": "Urban Mass Transportation Administration",
+          "kind": "agency",
+          "role": "federal agency commenter, Region IX",
+          "stance": "conditional",
+          "attribution_mode": "direct_quote",
+          "quote": "consideration should be given to exclusive busway lane planning for transit vehicles.",
+          "evidence_pages": [
+            "68"
+          ],
+          "stance_basis": "Supports project but conditions approval on incorporation of exclusive busway lane planning and transit facilities",
+          "chunk_index": 1
+        },
+        {
+          "entity": "Frank J. Krbec",
+          "kind": "official",
+          "role": "Regional Engineer, Urban Mass Transportation Administration",
+          "stance": "conditional",
+          "attribution_mode": "direct_quote",
+          "quote": "consideration should be given to exclusive busway lane planning for transit vehicles.",
+          "evidence_pages": [
+            "68"
+          ],
+          "stance_basis": "Recommends exclusive busway lanes and freeway bus stops as condition for adequate transit planning",
+          "chunk_index": 1
+        },
+        {
+          "entity": "Department of the Interior",
+          "kind": "agency",
+          "role": "federal agency commenter",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "we recommend that the statement include the Section 4(f) documentation (including comments by the departments of the Interior, Agriculture, and Housing and Urban Development) and the approval document executed by the Secretary of Transportation.",
+          "evidence_pages": [
+            "71"
+          ],
+          "stance_basis": "No objection to project but recommends inclusion of Section 4(f) material and archaeological monitoring as conditions",
+          "chunk_index": 1
+        },
+        {
+          "entity": "Mark Abelson",
+          "kind": "official",
+          "role": "Staff Assistant to the Secretary, Department of the Interior",
+          "stance": "conditional",
+          "attribution_mode": "direct_quote",
+          "quote": "we recommend that the statement include the Section 4(f) documentation (including comments by the departments of the Interior, Agriculture, and Housing and Urban Development) and the approval document executed by the Secretary of Transportation.",
+          "evidence_pages": [
+            "71"
+          ],
+          "stance_basis": "Recommends additions to EIS and archaeological monitoring as conditions",
+          "chunk_index": 1
+        },
+        {
+          "entity": "Richard B. Olney",
+          "kind": "individual",
+          "role": "Member, Clean Air Council / commenter",
+          "stance": "opposed",
+          "attribution_mode": "direct_quote",
+          "quote": "In sum, it appears that the justification for 252 is weak, and that the long-term adverse effects are probably more severe than claimed in the impact statement.",
+          "evidence_pages": [
+            "74"
+          ],
+          "stance_basis": "Argues justification for Route 252 is weak and long-term adverse effects are understated",
+          "chunk_index": 1
+        },
+        {
+          "entity": "San Diego Clean Air Council",
+          "kind": "organization",
+          "role": "environmental advocacy organization / commenter",
+          "stance": "opposed",
+          "attribution_mode": "paraphrased",
+          "quote": "Mr. Bill Turley, Chairman of the San Diego Clean Air Council, has asked me to comment on your draft environmental impact statement for State Route 252 in the City of San Diego.",
+          "evidence_pages": [
+            "74"
+          ],
+          "stance_basis": "Council chairman solicited opposition comments citing poor location, unnecessary construction, and air quality concerns",
+          "chunk_index": 1
+        },
+        {
+          "entity": "Bill Turley",
+          "kind": "individual",
+          "role": "Chairman, San Diego Clean Air Council",
+          "stance": "opposed",
+          "attribution_mode": "paraphrased",
+          "quote": "Mr. Bill Turley, Chairman of the San Diego Clean Air Council, has asked me to comment on your draft environmental impact statement for State Route 252 in the City of San Diego.",
+          "evidence_pages": [
+            "74"
+          ],
+          "stance_basis": "Solicited opposition comments on the draft EIS through a council member",
+          "chunk_index": 1
+        },
+        {
+          "entity": "Environmental Protection Agency",
+          "kind": "agency",
+          "role": "federal agency commenter, Region IX",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "EPA suggests that the Final Environmental Statement include a full discussion of the relationship of Route 252 to the Transportation Control Plan (as promulgated by EPA on November 12, 1973, 38 Federal Register 217; or as adopted by the Caltrans Task Force); and a discussion of the feasibility implementing public transit options on this Route.",
+          "evidence_pages": [
+            "77"
+          ],
+          "stance_basis": "Raises concerns about VMT reduction claims and requires additional analysis of TCP relationship and transit options",
+          "chunk_index": 1
+        },
+        {
+          "entity": "Paul De Falco, Jr.",
+          "kind": "official",
+          "role": "Regional Administrator, EPA Region IX",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "EPA suggests that the Final Environmental Statement include a full discussion of the relationship of Route 252 to the Transportation Control Plan",
+          "evidence_pages": [
+            "77"
+          ],
+          "stance_basis": "Classified EIS as ER-2 and required additional analysis before final statement",
+          "chunk_index": 1
+        },
+        {
+          "entity": "County of San Diego Department of Transportation",
+          "kind": "agency",
+          "role": "county agency commenter",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "We have reviewed the draft environmental impact report for this project and find it in conformance with CEQA requirements.",
+          "evidence_pages": [
+            "80"
+          ],
+          "stance_basis": "Finds EIS in conformance but conditions full support on building overcrossings with sufficient width for pedestrian and bicycle facilities",
+          "chunk_index": 1
+        },
+        {
+          "entity": "Rudolph J. Massman",
+          "kind": "official",
+          "role": "Director (Acting), County of San Diego Department of Transportation",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "We suggest that these structures be built to sufficient widths so that separate pedestrian and bicycle facilities may be provided on the structures.",
+          "evidence_pages": [
+            "80"
+          ],
+          "stance_basis": "Supports project with condition that overcrossings accommodate pedestrian and bicycle facilities",
+          "chunk_index": 1
+        },
+        {
+          "entity": "Comprehensive Planning Organization of the San Diego Region",
+          "kind": "organization",
+          "role": "regional planning agency / commenter",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "That the Board of Directors of the Comprehensive Planning Organization submit the following comments to the California Department of Transportation for inclusion in the Route 252 Final Environmental Impact Report:",
+          "evidence_pages": [
+            "82"
+          ],
+          "stance_basis": "Acknowledges Route 252 as well-planned but recommends additional analysis of unmitigated impacts, viable alternatives, and connector ramp redesign",
+          "chunk_index": 1
+        },
+        {
+          "entity": "CPO Board of Directors",
+          "kind": "organization",
+          "role": "governing board of Comprehensive Planning Organization",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "The CPO Board of Directors, on December 16, 1974, passed a resolution approving the submission of the attached comments concerning unmitigated environmental impacts which will result from the completion of the Route 252 project and which are recommended for further analysis in the final EIR.",
+          "evidence_pages": [
+            "82"
+          ],
+          "stance_basis": "Passed resolution requesting additional analysis of unmitigated impacts before final EIR approval",
+          "chunk_index": 1
+        },
+        {
+          "entity": "Model Cities Citizen's Advisory Board",
+          "kind": "organization",
+          "role": "community advisory board / commenter",
+          "stance": "opposed",
+          "attribution_mode": "direct_quote",
+          "quote": "The Citizen's Advisory Board along with the other groups and organizations in Southeast are opposed to this freeway and will remain so as long as CALTRANS continues to ignore the effects of these freeways in the community.",
+          "evidence_pages": [
+            "86"
+          ],
+          "stance_basis": "Explicitly states opposition to the freeway on behalf of the board and other Southeast San Diego organizations",
+          "chunk_index": 1
+        },
+        {
+          "entity": "Albert McCain",
+          "kind": "individual",
+          "role": "Chairman, Model Cities Citizen's Advisory Board",
+          "stance": "opposed",
+          "attribution_mode": "direct_quote",
+          "quote": "The Citizen's Advisory Board along with the other groups and organizations in Southeast are opposed to this freeway and will remain so as long as CALTRANS continues to ignore the effects of these freeways in the community.",
+          "evidence_pages": [
+            "86"
+          ],
+          "stance_basis": "Signed letter explicitly opposing the freeway as chairman of the advisory board",
+          "chunk_index": 1
+        },
+        {
+          "entity": "Port of San Diego",
+          "kind": "organization",
+          "role": "commenter / no remarks",
+          "stance": "neutral",
+          "attribution_mode": "sectional",
+          "quote": "Replies to Draft Environmental Impact Statement Requiring No Response.",
+          "evidence_pages": [
+            "88"
+          ],
+          "stance_basis": "Listed under 'Requiring No Response' heading; letter states 'We have no remarks on the proposed project'",
+          "chunk_index": 1
+        },
+        {
+          "entity": "State Clearinghouse",
+          "kind": "agency",
+          "role": "state review body",
+          "stance": "neutral",
+          "attribution_mode": "sectional",
+          "quote": "Replies to Draft Environmental Impact Statement Requiring No Response.",
+          "evidence_pages": [
+            "88"
+          ],
+          "stance_basis": "Listed under 'Requiring No Response' heading; letter states no comments were received from state agencies",
+          "chunk_index": 1
+        },
+        {
+          "entity": "Department of Health, Education and Welfare",
+          "kind": "agency",
+          "role": "federal agency commenter",
+          "stance": "neutral",
+          "attribution_mode": "sectional",
+          "quote": "Replies to Draft Environmental Impact Statement Requiring No Response.",
+          "evidence_pages": [
+            "88"
+          ],
+          "stance_basis": "Listed under 'Requiring No Response' heading; review did not identify problems related to health concerns",
+          "chunk_index": 1
+        },
+        {
+          "entity": "Automobile Club of Southern California",
+          "kind": "organization",
+          "role": "commenter / advocacy organization",
+          "stance": "in_favor",
+          "attribution_mode": "sectional",
+          "quote": "Replies to Draft Environmental Impact Statement Requiring No Response.",
+          "evidence_pages": [
+            "88"
+          ],
+          "stance_basis": "Listed under 'Requiring No Response' heading; letter explicitly states 'the Auto Club of Southern California supports the completion of Route 252 as proposed'",
+          "chunk_index": 1
+        },
+        {
+          "entity": "Vince Desimone",
+          "kind": "individual",
+          "role": "Transportation Planning Engineer, Automobile Club of Southern California",
+          "stance": "in_favor",
+          "attribution_mode": "direct_quote",
+          "quote": "In light of the substantial benefits to the citizens of San Diego, the Auto Club of Southern California supports the completion of Route 252 as proposed.",
+          "evidence_pages": [
+            "89"
+          ],
+          "stance_basis": "Explicitly supports completion of Route 252 as proposed",
+          "chunk_index": 1
+        },
+        {
+          "entity": "Tomas E. Firle",
+          "kind": "individual",
+          "role": "Coordinator, Environmental Management, Port of San Diego",
+          "stance": "neutral",
+          "attribution_mode": "direct_quote",
+          "quote": "We have no remarks on the proposed project.",
+          "evidence_pages": [
+            "88"
+          ],
+          "stance_basis": "Explicitly states no remarks on the proposed project while praising EIS format",
+          "chunk_index": 1
+        },
+        {
+          "entity": "William G. Kirkham",
+          "kind": "official",
+          "role": "Management Systems Officer, State Clearinghouse",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "The above listed environmental document was submitted by the State Clearinghouse to numerous State agencies for review. The review has been completed, and there were no comments on the environmental document.",
+          "evidence_pages": [
+            "88"
+          ],
+          "stance_basis": "Reports no comments from state agencies; verifies compliance with environmental review requirements",
+          "chunk_index": 1
+        },
+        {
+          "entity": "James D. Knochenhauer",
+          "kind": "official",
+          "role": "Regional Environmental Officer, Department of Health, Education and Welfare",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "The material provided appears to describe adequately the impacts of the proposed action as well as the alternatives that were presented. Our review does not identify problems related to these specific concerns.",
+          "evidence_pages": [
+            "89"
+          ],
+          "stance_basis": "Finds EIS adequate and identifies no problems related to HEW concerns",
+          "chunk_index": 1
+        },
+        {
+          "entity": "Air Resources Board",
+          "kind": "agency",
+          "role": "state agency commenter",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "Without the RTP evaluation, we cannot conclude, as the EIR does, that this proposal is consistent with the State's Implementation Plan (SIP) even though localized vehicle miles are projected to be a few percent lower and CO levels will probably be within adopted standards.",
+          "evidence_pages": [
+            "90"
+          ],
+          "stance_basis": "Cannot confirm consistency with State Implementation Plan until regional transportation plan is evaluated for air quality effects",
+          "chunk_index": 1
+        },
+        {
+          "entity": "William C. Lockett",
+          "kind": "official",
+          "role": "Chief, Evaluation and Planning, Air Resources Board",
+          "stance": "conditional",
+          "attribution_mode": "direct_quote",
+          "quote": "Without the RTP evaluation, we cannot conclude, as the EIR does, that this proposal is consistent with the State's Implementation Plan (SIP) even though localized vehicle miles are projected to be a few percent lower and CO levels will probably be within adopted standards.",
+          "evidence_pages": [
+            "90"
+          ],
+          "stance_basis": "Withholds confirmation of SIP consistency pending RTP air quality evaluation",
+          "chunk_index": 1
+        },
+        {
+          "entity": "Department of Parks and Recreation",
+          "kind": "agency",
+          "role": "state agency / State Historic Preservation Officer staff",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "As staff to the State Historic Preservation Officer, we have determined that there are no State Historical Landmarks, State Points of Historical Interest, or sites on the National Register of Historic Places which would be affected by the project.",
+          "evidence_pages": [
+            "90"
+          ],
+          "stance_basis": "Finds no historic or cultural sites affected; raises procedural note about verification process but takes no position on project",
+          "chunk_index": 1
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 21076,
+        "output_tokens": 3969,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    }
+  ]
+}

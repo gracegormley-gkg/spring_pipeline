@@ -1,0 +1,36 @@
+{
+  "title": {
+    "value": "Yellow Creek Nuclear Plant : environmental impact statement.",
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  },
+  "year": {
+    "value": 2026,
+    "confidence": "low",
+    "sources": [
+      "NUL",
+      "regex (first 3 pages)"
+    ],
+    "note": "NUL=2026 disagrees with regex=1985 — flag"
+  },
+  "eis_type": {
+    "value": "Final",
+    "confidence": "high",
+    "sources": [
+      "regex (first page)",
+      "Sonnet (first 2 pages)"
+    ],
+    "evidence": "Final environmental statement was sent to the Environmental Protection Agency and made available to the public on January 30, 1978"
+  },
+  "lead_agency": {
+    "value": [
+      "Tennessee Valley Authority"
+    ],
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  }
+}

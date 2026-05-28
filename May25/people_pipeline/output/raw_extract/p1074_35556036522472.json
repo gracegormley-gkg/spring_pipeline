@@ -1,0 +1,1533 @@
+{
+  "doc_id": "p1074_35556036522472",
+  "work_id": "c079de3e-b9ae-42fa-9e52-f0fe3cdd8eb9",
+  "title": "Bedford-Pine urban renewal area : environmental impact statement.",
+  "n_chunks": 9,
+  "per_chunk": [
+    {
+      "chunk_index": 0,
+      "start_page": 1,
+      "end_page": 51,
+      "ceq_chapter": null,
+      "entities": [
+        {
+          "entity": "Housing Authority of the City of Atlanta",
+          "kind": "organization",
+          "role": "local public agency / project sponsor",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "On October 15, 1973, the bids were opened and on December 12, 1973, Park Central Communities was conditionally awarded an option to purchase all 78 acres for a disposition price of approximately 11 million dollars.",
+          "evidence_pages": [
+            "1-51"
+          ],
+          "stance_basis": "Authority advertised and conditionally awarded sale of 78 acres, advancing the project",
+          "chunk_index": 0
+        },
+        {
+          "entity": "Park Central Communities",
+          "kind": "organization",
+          "role": "conditional purchaser / redeveloper of 78-acre CDP tract",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "On October 15, 1973, the bids were opened and on December 12, 1973, Park Central Communities was conditionally awarded an option to purchase all 78 acres for a disposition price of approximately 11 million dollars.",
+          "evidence_pages": [
+            "1-51"
+          ],
+          "stance_basis": "Submitted winning bid and accepted conditional option to purchase and develop the 78-acre CDP tract",
+          "chunk_index": 0
+        },
+        {
+          "entity": "Bedford-Pine Project Area Committee",
+          "kind": "organization",
+          "role": "affected citizen group / commenter",
+          "stance": "neutral",
+          "attribution_mode": "sectional",
+          "quote": "Federal, State, and Local Agencies And Affected Citizen Groups from which Comments are being Requested: ... Bedford-Pine Project Area Committee.",
+          "evidence_pages": [
+            "1-51"
+          ],
+          "stance_basis": "Listed as a group from which comments are being requested; CDP must be approved by the Project Area Committee",
+          "chunk_index": 0
+        },
+        {
+          "entity": "Atlanta Audubon Society",
+          "kind": "organization",
+          "role": "affected citizen group / commenter",
+          "stance": "neutral",
+          "attribution_mode": "sectional",
+          "quote": "Federal, State, and Local Agencies And Affected Citizen Groups from which Comments are being Requested: ... Atlanta Audubon Society, Georgia Conservancy, and Georgia Wildlife Federation",
+          "evidence_pages": [
+            "1-51"
+          ],
+          "stance_basis": "Listed as a group from which comments are being requested",
+          "chunk_index": 0
+        },
+        {
+          "entity": "Georgia Conservancy",
+          "kind": "organization",
+          "role": "affected citizen group / commenter",
+          "stance": "neutral",
+          "attribution_mode": "sectional",
+          "quote": "Federal, State, and Local Agencies And Affected Citizen Groups from which Comments are being Requested: ... Atlanta Audubon Society, Georgia Conservancy, and Georgia Wildlife Federation",
+          "evidence_pages": [
+            "1-51"
+          ],
+          "stance_basis": "Listed as a group from which comments are being requested",
+          "chunk_index": 0
+        },
+        {
+          "entity": "Georgia Wildlife Federation",
+          "kind": "organization",
+          "role": "affected citizen group / commenter",
+          "stance": "neutral",
+          "attribution_mode": "sectional",
+          "quote": "Federal, State, and Local Agencies And Affected Citizen Groups from which Comments are being Requested: ... Atlanta Audubon Society, Georgia Conservancy, and Georgia Wildlife Federation",
+          "evidence_pages": [
+            "1-51"
+          ],
+          "stance_basis": "Listed as a group from which comments are being requested",
+          "chunk_index": 0
+        },
+        {
+          "entity": "U. S. Department of Housing and Urban Development",
+          "kind": "agency",
+          "role": "lead federal agency / EIS preparer",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The revision was given a Special Environmental Clearance on November 20, 1973, (see Appendix 1) with the finding that an Environmental Impact Statement would be necessary prior to the revision because of significance of impact by such a Comprehensive Development Plan in the area.",
+          "evidence_pages": [
+            "1-51"
+          ],
+          "stance_basis": "HUD prepared the EIS and granted special environmental clearances advancing the project",
+          "chunk_index": 0
+        },
+        {
+          "entity": "Mrs. Arnold",
+          "kind": "individual",
+          "role": "staff nurse, Fulton County Health Department Northeast Branch",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "According to Mrs. Arnold, a staff nurse, the following health services are provided at the center, all at no cost to the patient except for those of the Maternal Health Clinic. Mrs. Arnold also stated that the Well Baby Clinic is well used, and the Family Planning Clinic receives very good community support.",
+          "evidence_pages": [
+            "1-51"
+          ],
+          "stance_basis": "Provided factual information about health services; no stance on the project taken",
+          "chunk_index": 0
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 21194,
+        "output_tokens": 1224,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 1,
+      "start_page": 49,
+      "end_page": 99,
+      "ceq_chapter": null,
+      "entities": [],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 23166,
+        "output_tokens": 210,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 2,
+      "start_page": 97,
+      "end_page": 147,
+      "ceq_chapter": null,
+      "entities": [
+        {
+          "entity": "Atlanta Housing Authority",
+          "kind": "agency",
+          "role": "cooperating agency / verifier of redeveloper calculations",
+          "stance": "in_favor",
+          "attribution_mode": "sectional",
+          "quote": "Source: Redeveloper Calculations, verified by Atlanta Housing Authority and HUD.",
+          "evidence_pages": [
+            "97"
+          ],
+          "stance_basis": "verified redeveloper noise penetration calculations, indicating acceptance of methodology",
+          "chunk_index": 2
+        },
+        {
+          "entity": "HUD",
+          "kind": "agency",
+          "role": "federal oversight agency",
+          "stance": "in_favor",
+          "attribution_mode": "sectional",
+          "quote": "Source: Redeveloper Calculations, verified by Atlanta Housing Authority and HUD.",
+          "evidence_pages": [
+            "97"
+          ],
+          "stance_basis": "verified redeveloper calculations for noise penetration and open space/population tables",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Dr. Womack",
+          "kind": "official",
+          "role": "representative of Atlanta Public Schools (APS)",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "According to Dr. Womack of APS, there is a decline in school enrollment on all levels, (eg., elementary, middle, and high); therefore the excess 103 students would not be a problem.",
+          "evidence_pages": [
+            "103"
+          ],
+          "stance_basis": "assessed that projected excess middle school demand would not be a problem given enrollment decline trends",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Atlanta Public Schools",
+          "kind": "organization",
+          "role": "school system providing enrollment projections and capacity assessments",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "The Atlanta Public School System estimates the existing capacity of Walden to be 852 students.",
+          "evidence_pages": [
+            "115"
+          ],
+          "stance_basis": "provided capacity estimates for Walden Middle School relevant to project impact assessment",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Atlanta Public Library staff",
+          "kind": "organization",
+          "role": "library service provider",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "the Atlanta Public Library staff expressed interest in leasing space within the completed project to provide an expanded branch library.",
+          "evidence_pages": [
+            "104"
+          ],
+          "stance_basis": "expressed interest in leasing space within the project to expand library services",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Fire Department",
+          "kind": "agency",
+          "role": "local fire protection service provider",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The Fire Department believes it has adequate capacity to meet fire protection needs in the area.",
+          "evidence_pages": [
+            "105"
+          ],
+          "stance_basis": "affirmed adequate capacity and willingness to upgrade service levels as needed for the project",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Jackqueline T. Cook",
+          "kind": "individual",
+          "role": "representative of Community Coordinated Child Care Program",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "Jackqueline T. Cook of the Community Coordinated Child Care Program recommended that a logical percentage distribution of service by age groups would be:",
+          "evidence_pages": [
+            "108"
+          ],
+          "stance_basis": "provided technical recommendations on age-group distribution for day care demand planning",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Atlanta Housing Authority",
+          "kind": "agency",
+          "role": "cooperating agency on open space standards",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "Any evaluation of how Park Central's proposed project will affect the open space environment described in Section F is based upon the open space standards established specifically for the project by the redeveloper and agreed upon by the Atlanta Housing Authority, Project Area Committee, and City Planning Department.",
+          "evidence_pages": [
+            "111"
+          ],
+          "stance_basis": "agreed upon open space standards for the project",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Project Area Committee",
+          "kind": "organization",
+          "role": "citizen participation body / project oversight committee",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "Any evaluation of how Park Central's proposed project will affect the open space environment described in Section F is based upon the open space standards established specifically for the project by the redeveloper and agreed upon by the Atlanta Housing Authority, Project Area Committee, and City Planning Department.",
+          "evidence_pages": [
+            "111"
+          ],
+          "stance_basis": "agreed upon open space standards for the project",
+          "chunk_index": 2
+        },
+        {
+          "entity": "City Planning Department",
+          "kind": "agency",
+          "role": "municipal planning authority",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "Any evaluation of how Park Central's proposed project will affect the open space environment described in Section F is based upon the open space standards established specifically for the project by the redeveloper and agreed upon by the Atlanta Housing Authority, Project Area Committee, and City Planning Department.",
+          "evidence_pages": [
+            "111"
+          ],
+          "stance_basis": "agreed upon open space standards for the project",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Parks and Recreation Department",
+          "kind": "agency",
+          "role": "municipal parks and recreation authority",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "the Parks and Recreation Department has said that the recreation center now under construction is meant to serve the existing community and its expanded service area.",
+          "evidence_pages": [
+            "110"
+          ],
+          "stance_basis": "indicated existing recreation center may not be adequate to serve new project demand, raising concern without opposing",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Mrs. Arnold",
+          "kind": "individual",
+          "role": "representative of Northeast Branch Office, Fulton County Health Department",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "Mrs. Arnold of the Northeast Branch Office of the Fulton County Health Department indicated that facilities were presently not being used to capacity, and that they were developing a mechanism to ensure that area residents become more knowledgeable about their services.",
+          "evidence_pages": [
+            "119"
+          ],
+          "stance_basis": "indicated health facilities had capacity and were developing outreach mechanisms for project area residents",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Educational Facilities Planning Center, College of Education, University of Georgia",
+          "kind": "organization",
+          "role": "educational facilities survey provider",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "An Educational facilities survey prepared by the Educational Facilities Planning Center, College of Education, University of Georgia indicated that Walden could possibly house 996 students.",
+          "evidence_pages": [
+            "115"
+          ],
+          "stance_basis": "provided higher capacity estimate for Walden Middle School, suggesting project demand could be met",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Bedford-Pine Project Area Committee (P.A.C.)",
+          "kind": "organization",
+          "role": "citizen participation body for Bedford-Pine redevelopment area",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "In order for the Project Area Committee to approve the Comprehensive Development Plan, the plan must have adequate controls that will benefit existing residents of the area.",
+          "evidence_pages": [
+            "133"
+          ],
+          "stance_basis": "approval of Comprehensive Development Plan conditioned on adequate controls benefiting existing residents",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Atlanta Housing Authority Board of Commissioners",
+          "kind": "agency",
+          "role": "approving authority for Comprehensive Development Plan",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "the land cannot be conveyed without approval of the Comprehensive Development Plan by the Atlanta Housing Authority Board of Commissioners, the council of the City of Atlanta, the Department of Housing and Urban Development, and the Project Area Committee.",
+          "evidence_pages": [
+            "133"
+          ],
+          "stance_basis": "identified as required approving authority for land conveyance under the project",
+          "chunk_index": 2
+        },
+        {
+          "entity": "council of the City of Atlanta",
+          "kind": "government",
+          "role": "approving authority for Comprehensive Development Plan",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "the land cannot be conveyed without approval of the Comprehensive Development Plan by the Atlanta Housing Authority Board of Commissioners, the council of the City of Atlanta, the Department of Housing and Urban Development, and the Project Area Committee.",
+          "evidence_pages": [
+            "133"
+          ],
+          "stance_basis": "identified as required approving authority for land conveyance under the project",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Department of Housing and Urban Development",
+          "kind": "agency",
+          "role": "federal approving authority for Comprehensive Development Plan",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "the land cannot be conveyed without approval of the Comprehensive Development Plan by the Atlanta Housing Authority Board of Commissioners, the council of the City of Atlanta, the Department of Housing and Urban Development, and the Project Area Committee.",
+          "evidence_pages": [
+            "133"
+          ],
+          "stance_basis": "identified as required approving authority for land conveyance under the project",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Joseph G. Martin, Jr.",
+          "kind": "individual",
+          "role": "Vice President, Park Central Communities, Inc.",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "SOURCE: Land Development Analysts' interview with Joseph G. Martin, Jr., Vice President, Park Central Communities, Inc., May 17, 1974, for number of households by income group.",
+          "evidence_pages": [
+            "127"
+          ],
+          "stance_basis": "provided household income data supporting commercial demand analysis for the project",
+          "chunk_index": 2
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 20842,
+        "output_tokens": 2481,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 3,
+      "start_page": 145,
+      "end_page": 195,
+      "ceq_chapter": "Alternatives",
+      "entities": [
+        {
+          "entity": "Atlanta Housing Authority",
+          "kind": "agency",
+          "role": "project applicant/implementing agency",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The Atlanta Housing Authority will: (1) utilize the generous monetary benefits provided by the Uniform Relocation Act, (2) make every effort, legally possible, to relocate any residents who so desire back into the Bedford-Pine renewal area, and (3) creating design standards to provide for new housing within the project which clearly answers the social and recreation needs of the area residents.",
+          "evidence_pages": [
+            "379"
+          ],
+          "stance_basis": "commits to implementing relocation and redevelopment per the proposed action",
+          "chunk_index": 3
+        },
+        {
+          "entity": "HUD",
+          "kind": "agency",
+          "role": "lead federal agency preparing EIS",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "After weighing all environmental impacts, HUD decides it appropriate and feasible to proceed with Design Alternative C as discussed on page 387 and Section I (c)(3).",
+          "evidence_pages": [
+            "195"
+          ],
+          "stance_basis": "recommends proceeding with Design Alternative C (proposed action)",
+          "chunk_index": 3
+        },
+        {
+          "entity": "Atlanta Regional Commission",
+          "kind": "agency",
+          "role": "regional planning/A-95 review agency, commenter",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "ARC requests that immediate contact be made with ARC's Chief of Transportation Planning, Mr. Joel Stone, and that steps be taken to incorporate the proposed improvements into the transportation planning process for the Atlanta Region.",
+          "evidence_pages": [
+            "145"
+          ],
+          "stance_basis": "requests coordination of street improvements with regional transportation planning process before proceeding",
+          "chunk_index": 3
+        },
+        {
+          "entity": "Bedford-Pine Project Area Committee",
+          "kind": "organization",
+          "role": "project area committee, commenter",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "Whether the Draft Environmental Impact Statement actually does evaluate all the ramifications of those plans is questionable. We think it does not, and that it requires further revision in order to do so.",
+          "evidence_pages": [
+            "145"
+          ],
+          "stance_basis": "finds Draft EIS deficient and requires further revision before acceptance",
+          "chunk_index": 3
+        },
+        {
+          "entity": "Metropolitan Atlanta Rapid Transit Authority",
+          "kind": "agency",
+          "role": "transit authority, commenter",
+          "stance": "conditional",
+          "attribution_mode": "direct_quote",
+          "quote": "We believe that the implication that MARTA will construct a rubber-tired, fixed guideway system between the Civic Center and Civic Center Station is premature.",
+          "evidence_pages": [
+            "145"
+          ],
+          "stance_basis": "objects to specific implication in Draft EIS regarding MARTA system construction",
+          "chunk_index": 3
+        },
+        {
+          "entity": "Park Central Communities, Inc.",
+          "kind": "organization",
+          "role": "selected redeveloper, commenter",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "The status of the various phases of Project Rehab has changed. For instance, the reservation of funds for Parkway/Boulevard Phase III has now been cancelled.",
+          "evidence_pages": [
+            "145"
+          ],
+          "stance_basis": "requests corrections and clarifications to Draft EIS to accurately reflect redeveloper commitments and current status",
+          "chunk_index": 3
+        },
+        {
+          "entity": "United States Department of Transportation",
+          "kind": "agency",
+          "role": "federal commenting agency",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "It is suggested that the recommended transportation improvements (pages 220-225 and page 382) be coordinated with the Atlanta Regional Commission (ARC) concerning inclusion of suggested improvements in the Atlanta Metro Transportation Improvement Program (TIP).",
+          "evidence_pages": [
+            "145"
+          ],
+          "stance_basis": "suggests coordination conditions for transportation improvements before proceeding",
+          "chunk_index": 3
+        },
+        {
+          "entity": "United States Environmental Protection Agency",
+          "kind": "agency",
+          "role": "federal commenting agency",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "We have reviewed the Draft Environmental Impact Statement for Bedford-Pine Urban Renewal Area in Atlanta, Georgia, and believe it could be improved by giving additional details. Details for erosion control measures to be used should be more explicit.",
+          "evidence_pages": [
+            "145"
+          ],
+          "stance_basis": "requests additional detail on erosion control and air quality analysis before EIS is adequate",
+          "chunk_index": 3
+        },
+        {
+          "entity": "United States Federal Power Commission",
+          "kind": "agency",
+          "role": "federal commenting agency",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "We note major deficiencies in your presentation of the impact of the proposed project on \"Energy\" (Section II.F(1)(d), for there is no mention of any quantitative energy analysis.",
+          "evidence_pages": [
+            "145"
+          ],
+          "stance_basis": "identifies major deficiencies in energy analysis and requires quantitative energy assessment in final EIS",
+          "chunk_index": 3
+        },
+        {
+          "entity": "United States Department of Interior",
+          "kind": "agency",
+          "role": "federal commenting agency",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "The statement does not adequately identify cultural resources, nor does it adequately assess the project's potential environmental impacts on these resources.",
+          "evidence_pages": [
+            "145"
+          ],
+          "stance_basis": "finds EIS inadequate regarding cultural resource identification and assessment, requires additional studies",
+          "chunk_index": 3
+        },
+        {
+          "entity": "City of Atlanta Bureau of Planning",
+          "kind": "agency",
+          "role": "local planning agency, commenter",
+          "stance": "neutral",
+          "attribution_mode": "sectional",
+          "quote": "As a result of the circulation of the Draft Environmental Impact Statement, comments were received from the following agencies:",
+          "evidence_pages": [
+            "145"
+          ],
+          "stance_basis": "listed as agency that submitted comments on Draft EIS; no specific stance attributable beyond participation",
+          "chunk_index": 3
+        },
+        {
+          "entity": "DeKalb County Planning Department",
+          "kind": "agency",
+          "role": "county planning agency, commenter",
+          "stance": "neutral",
+          "attribution_mode": "sectional",
+          "quote": "As a result of the circulation of the Draft Environmental Impact Statement, comments were received from the following agencies:",
+          "evidence_pages": [
+            "145"
+          ],
+          "stance_basis": "listed as agency that submitted comments on Draft EIS; no specific stance attributable beyond participation",
+          "chunk_index": 3
+        },
+        {
+          "entity": "United States Dept. of Agriculture",
+          "kind": "agency",
+          "role": "federal commenting agency",
+          "stance": "neutral",
+          "attribution_mode": "sectional",
+          "quote": "As a result of the circulation of the Draft Environmental Impact Statement, comments were received from the following agencies:",
+          "evidence_pages": [
+            "145"
+          ],
+          "stance_basis": "listed as agency that submitted comments on Draft EIS; no specific stance attributable beyond participation",
+          "chunk_index": 3
+        },
+        {
+          "entity": "United States Dept. of the Army Corps of Engineers",
+          "kind": "agency",
+          "role": "federal commenting agency",
+          "stance": "neutral",
+          "attribution_mode": "sectional",
+          "quote": "As a result of the circulation of the Draft Environmental Impact Statement, comments were received from the following agencies:",
+          "evidence_pages": [
+            "145"
+          ],
+          "stance_basis": "listed as agency that submitted comments on Draft EIS; no specific stance attributable beyond participation",
+          "chunk_index": 3
+        },
+        {
+          "entity": "United States Dept. of Health, Education, and Welfare",
+          "kind": "agency",
+          "role": "federal commenting agency",
+          "stance": "neutral",
+          "attribution_mode": "sectional",
+          "quote": "As a result of the circulation of the Draft Environmental Impact Statement, comments were received from the following agencies:",
+          "evidence_pages": [
+            "145"
+          ],
+          "stance_basis": "listed as agency that submitted comments on Draft EIS; no specific stance attributable beyond participation",
+          "chunk_index": 3
+        },
+        {
+          "entity": "United States Department of Interior Geological Survey",
+          "kind": "agency",
+          "role": "federal commenting agency",
+          "stance": "neutral",
+          "attribution_mode": "sectional",
+          "quote": "As a result of the circulation of the Draft Environmental Impact Statement, comments were received from the following agencies:",
+          "evidence_pages": [
+            "145"
+          ],
+          "stance_basis": "listed as agency that submitted comments on Draft EIS; no specific stance attributable beyond participation",
+          "chunk_index": 3
+        },
+        {
+          "entity": "United States Dept. of Interior Office of Secretary",
+          "kind": "agency",
+          "role": "federal commenting agency",
+          "stance": "neutral",
+          "attribution_mode": "sectional",
+          "quote": "As a result of the circulation of the Draft Environmental Impact Statement, comments were received from the following agencies:",
+          "evidence_pages": [
+            "145"
+          ],
+          "stance_basis": "listed as agency that submitted comments on Draft EIS; no specific stance attributable beyond participation",
+          "chunk_index": 3
+        },
+        {
+          "entity": "United States General Services Administration",
+          "kind": "agency",
+          "role": "federal commenting agency",
+          "stance": "neutral",
+          "attribution_mode": "sectional",
+          "quote": "As a result of the circulation of the Draft Environmental Impact Statement, comments were received from the following agencies:",
+          "evidence_pages": [
+            "145"
+          ],
+          "stance_basis": "listed as agency that submitted comments on Draft EIS; no specific stance attributable beyond participation",
+          "chunk_index": 3
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 19857,
+        "output_tokens": 2418,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 4,
+      "start_page": 193,
+      "end_page": 243,
+      "ceq_chapter": "Alternatives",
+      "entities": [
+        {
+          "entity": "Council of the City of Atlanta",
+          "kind": "government",
+          "role": "Municipal legislative body",
+          "stance": "in_favor",
+          "attribution_mode": "direct_quote",
+          "quote": "That the Comprehensive Development Plans, as attached hereto, having been duly received and considered, are hereby approved",
+          "evidence_pages": [
+            "193"
+          ],
+          "stance_basis": "Formally approved the Comprehensive Development Plans and pledged cooperation in carrying them out",
+          "chunk_index": 4
+        },
+        {
+          "entity": "Mayor of the City of Atlanta",
+          "kind": "official",
+          "role": "Mayor, City of Atlanta",
+          "stance": "in_favor",
+          "attribution_mode": "sectional",
+          "quote": "APPROVED by the Mayor Mar. 25, 1975",
+          "evidence_pages": [
+            "193"
+          ],
+          "stance_basis": "Formally approved the Comprehensive Development Plans on March 25, 1975",
+          "chunk_index": 4
+        },
+        {
+          "entity": "Board of Commissioners of The Housing Authority of the City of Atlanta",
+          "kind": "agency",
+          "role": "Governing board of the Housing Authority of the City of Atlanta",
+          "stance": "in_favor",
+          "attribution_mode": "direct_quote",
+          "quote": "That the Comprehensive Development Plan attached hereto, pertaining to Parcels 16N, 16S, and (42, 44 and 45), and the Comprehensive Development Plan attached hereto, pertaining to Parcels 17, 18, 19, 57 and 58 in the Bedford-Pine Urban Redevelopment Area, Project-Georgia A-2-1, are hereby approved.",
+          "evidence_pages": [
+            "193",
+            "194"
+          ],
+          "stance_basis": "Unanimously adopted resolution approving Comprehensive Development Plans and accepting Park Central Communities proposals",
+          "chunk_index": 4
+        },
+        {
+          "entity": "Park Central Communities, Inc.",
+          "kind": "organization",
+          "role": "Redeveloper/proposer of Comprehensive Development Plans",
+          "stance": "in_favor",
+          "attribution_mode": "sectional",
+          "quote": "Submitted By Park Central Communities, Inc., With Concurrence By The Bedford-Pine Project Area Committee On February 26, 1975",
+          "evidence_pages": [
+            "194"
+          ],
+          "stance_basis": "Submitted the Comprehensive Development Plans for the Bedford-Pine Urban Redevelopment Area parcels",
+          "chunk_index": 4
+        },
+        {
+          "entity": "Bedford-Pine Project Area Committee",
+          "kind": "organization",
+          "role": "Community project area committee",
+          "stance": "in_favor",
+          "attribution_mode": "sectional",
+          "quote": "Submitted By Park Central Communities, Inc., With Concurrence By The Bedford-Pine Project Area Committee On February 26, 1975",
+          "evidence_pages": [
+            "194"
+          ],
+          "stance_basis": "Concurred with the submission of the Comprehensive Development Plans on February 26, 1975",
+          "chunk_index": 4
+        },
+        {
+          "entity": "Director of Redevelopment and the staff of the Housing Authority",
+          "kind": "official",
+          "role": "Staff of the Housing Authority of the City of Atlanta",
+          "stance": "in_favor",
+          "attribution_mode": "direct_quote",
+          "quote": "the Director of Redevelopment and the staff of the Housing Authority recommend that the said Comprehensive Development Plans be approved by the Board of Commissioners and that the proposals of said redeveloper be accepted",
+          "evidence_pages": [
+            "193",
+            "194"
+          ],
+          "stance_basis": "Formally recommended approval of the Comprehensive Development Plans and acceptance of the redeveloper's proposals",
+          "chunk_index": 4
+        },
+        {
+          "entity": "City of Atlanta",
+          "kind": "government",
+          "role": "Municipal government",
+          "stance": "in_favor",
+          "attribution_mode": "direct_quote",
+          "quote": "the City of Atlanta guarantees that it will use every resource at its command to assure that the Redeveloper fulfills this obligation.",
+          "evidence_pages": [
+            "243"
+          ],
+          "stance_basis": "Guaranteed use of all resources to ensure the redeveloper fulfills assisted housing obligations",
+          "chunk_index": 4
+        },
+        {
+          "entity": "Mrs. Louise Watley",
+          "kind": "individual",
+          "role": "Commissioner, Housing Authority of the City of Atlanta",
+          "stance": "in_favor",
+          "attribution_mode": "direct_quote",
+          "quote": "Upon motion made by Mrs. Louise Watley and seconded by Mr. Benjamin W. Spaulding, the following resolution was unanimously adopted",
+          "evidence_pages": [
+            "193",
+            "194"
+          ],
+          "stance_basis": "Made the motion to adopt the resolution approving the Comprehensive Development Plans",
+          "chunk_index": 4
+        },
+        {
+          "entity": "Mr. Benjamin W. Spaulding",
+          "kind": "individual",
+          "role": "Commissioner, Housing Authority of the City of Atlanta",
+          "stance": "in_favor",
+          "attribution_mode": "direct_quote",
+          "quote": "Upon motion made by Mrs. Louise Watley and seconded by Mr. Benjamin W. Spaulding, the following resolution was unanimously adopted",
+          "evidence_pages": [
+            "193",
+            "194"
+          ],
+          "stance_basis": "Seconded the motion to adopt the resolution approving the Comprehensive Development Plans",
+          "chunk_index": 4
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 21952,
+        "output_tokens": 1317,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 5,
+      "start_page": 241,
+      "end_page": 291,
+      "ceq_chapter": "Alternatives",
+      "entities": [
+        {
+          "entity": "King & Spalding",
+          "kind": "organization",
+          "role": "Counsel for The Housing Authority of the City of Atlanta",
+          "stance": "in_favor",
+          "attribution_mode": "direct_quote",
+          "quote": "The Plan in form and substance is in accordance with Chapter 69-11, Georgia Code Annotated. The Plan has been duly approved by the Mayor and City Council of the City of Atlanta and by the Board of Commissioners of the Local Public Agency, and as approved is valid, meeting all the requirements of State and local law and of Title I of the Housing Act of 1949, as amended.",
+          "evidence_pages": [
+            "291"
+          ],
+          "stance_basis": "Legal counsel opines the Bedford-Pine Urban Redevelopment Plan is valid and meets all legal requirements",
+          "chunk_index": 5
+        },
+        {
+          "entity": "Mayor and City Council of the City of Atlanta",
+          "kind": "government",
+          "role": "Governing body of the City of Atlanta",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The Plan has been duly approved by the Mayor and City Council of the City of Atlanta and by the Board of Commissioners of the Local Public Agency, and as approved is valid, meeting all the requirements of State and local law and of Title I of the Housing Act of 1949, as amended.",
+          "evidence_pages": [
+            "291"
+          ],
+          "stance_basis": "Formally approved the Bedford-Pine Urban Redevelopment Plan",
+          "chunk_index": 5
+        },
+        {
+          "entity": "The Housing Authority of the City of Atlanta, Georgia",
+          "kind": "agency",
+          "role": "Local Public Agency / project authority",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The Plan has been duly approved by the Mayor and City Council of the City of Atlanta and by the Board of Commissioners of the Local Public Agency, and as approved is valid, meeting all the requirements of State and local law and of Title I of the Housing Act of 1949, as amended.",
+          "evidence_pages": [
+            "291"
+          ],
+          "stance_basis": "Board of Commissioners approved the Bedford-Pine Urban Redevelopment Plan",
+          "chunk_index": 5
+        },
+        {
+          "entity": "Freeman, et al.",
+          "kind": "individual",
+          "role": "Plaintiff, Civil Action No. 16901, U.S. District Court, Northern District of Georgia",
+          "stance": "opposed",
+          "attribution_mode": "paraphrased",
+          "quote": "The case of Freeman, et al. v. The housing Authority of the City of Atlanta, Caorgia, Civil Action No. 16901, United States District Court, Northern District of Georgia, has a potential affect upon the Local Public Agency's urban renewal activities in the Bedford-Pine Urban Redevelopment Area. It involves a number of issues, primarily the alleged non-compliance with the National Environmental Policies Act, and seeks injunctive relief against various activities in that area.",
+          "evidence_pages": [
+            "291"
+          ],
+          "stance_basis": "Filed suit alleging non-compliance with NEPA and seeking injunctive relief against urban renewal activities",
+          "chunk_index": 5
+        },
+        {
+          "entity": "Park Central Communities, Inc.",
+          "kind": "organization",
+          "role": "Redeveloper",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "Redeveloper - Park Central Communities, Inc., (PCC), its successor, assigns, agents, or any other entity accepting obligations in behalf of PCC.",
+          "evidence_pages": [
+            "241"
+          ],
+          "stance_basis": "Designated Redeveloper responsible for implementing the Comprehensive Development Plan",
+          "chunk_index": 5
+        },
+        {
+          "entity": "Metropolitan Atlanta Rapid Transit Authority",
+          "kind": "agency",
+          "role": "Mass transit authority",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "Seek compliance by the Metropolitan Atlanta Rapid Transit Authority in its commitment to provide a people-mover link from the rail rapid transit line to the Civic Center.",
+          "evidence_pages": [
+            "241"
+          ],
+          "stance_basis": "Has made a commitment to provide a people-mover link supporting the redevelopment plan",
+          "chunk_index": 5
+        },
+        {
+          "entity": "Georgia Department of Transportation",
+          "kind": "agency",
+          "role": "State transportation agency",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "Widen Pine Street to four moving lanes between Piedmont Avenue and the off-ramp from the Downtown Connector and work with the Georgia Department of Transportation (DOT) to improve the design of this off-ramp.",
+          "evidence_pages": [
+            "241"
+          ],
+          "stance_basis": "Identified as a partner to work with on road improvements associated with the redevelopment",
+          "chunk_index": 5
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 23643,
+        "output_tokens": 1191,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 6,
+      "start_page": 289,
+      "end_page": 339,
+      "ceq_chapter": "Alternatives",
+      "entities": [
+        {
+          "entity": "Housing Authority of the City of Atlanta, Georgia",
+          "kind": "agency",
+          "role": "Local Public Agency / project proponent",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "NOW, THEREFORE, BE IT RESOLVED BY THE BOARD OF COMMISSIONERS OF THE HOUSING AUTHORITY OF THE CITY OF ATLANTA, GEORGIA: 1. That the Executive Director of the Local Public Agency is hereby authorized and directed to execute and to file any necessary revisions to the agency's previously filed application with the Department as a result of this amendment to the Bedford-Pine Urban Redevelopment Plan",
+          "evidence_pages": [
+            "289"
+          ],
+          "stance_basis": "Board resolution authorizing execution of amended Urban Redevelopment Plan and all associated actions",
+          "chunk_index": 6
+        },
+        {
+          "entity": "City Council of the City of Atlanta",
+          "kind": "government",
+          "role": "Local governing body",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "following action by the Development Committee, the City Council of the City of Atlanta, Georgia, did on March 17, 1975 adopt a resolution approving said Urban Redevelopment Plan, as amended, and making, with respect to the Area, the findings and determinations prescribed in Section 69-1119 of the Georgia Code Annotated",
+          "evidence_pages": [
+            "289"
+          ],
+          "stance_basis": "Adopted resolution approving the amended Bedford-Pine Urban Redevelopment Plan",
+          "chunk_index": 6
+        },
+        {
+          "entity": "Development Committee of the City Council of the City of Atlanta",
+          "kind": "government",
+          "role": "City Council committee",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "the Development Committee of the City Council of the City of Atlanta, Georgia, has, after due notice and in accordance with Section 69-1106 of the Georgia Code Annotated, presented the Bedford-Pine Urban Redevelopment Plan, as amended, at a public hearing on March 14, 1975",
+          "evidence_pages": [
+            "289"
+          ],
+          "stance_basis": "Presented the amended Urban Redevelopment Plan at public hearing, facilitating its approval",
+          "chunk_index": 6
+        },
+        {
+          "entity": "Park Central Communities, Inc.",
+          "kind": "organization",
+          "role": "Proposed redeveloper / purchaser of parcels",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "Approving the Comprehensive Development Plans for Parcels 16N, 16S, 17, 18, 19, (42, 44 and 45) 57 and 58 in the Bedford-Pine Urban Redevelopment Area, Project Georgia A-2-1, and accepting the proposals of Park Central Communities, Inc., to purchase and redevelop said parcels.",
+          "evidence_pages": [
+            "289"
+          ],
+          "stance_basis": "Submitted proposals to purchase and redevelop parcels in the Bedford-Pine Urban Redevelopment Area",
+          "chunk_index": 6
+        },
+        {
+          "entity": "City of Atlanta Bureau of Planning",
+          "kind": "agency",
+          "role": "Municipal planning agency",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The planning proposals contained in this Plan as they relate to land uses, thoroughfare, street changes, and other redevelopment actions contemplated were reviewed and approved by the City of Atlanta Bureau of Planning.",
+          "evidence_pages": [
+            "289"
+          ],
+          "stance_basis": "Reviewed and approved the planning proposals contained in the Urban Redevelopment Plan",
+          "chunk_index": 6
+        },
+        {
+          "entity": "Jack F. Glenn",
+          "kind": "individual",
+          "role": "Commissioner, Housing Authority of the City of Atlanta",
+          "stance": "in_favor",
+          "attribution_mode": "sectional",
+          "quote": "We, the undersigned Commissioners of The Housing Authority of The City of Atlanta, Georgia, do hereby accept service of the NOTICE OF SPECIAL MEETING waiving any and all irregularities in such service and in such Notice and Consent and agree that the said Commissioners of said Authority shall meet at the time and place named in such Notice and for the purpose stated therein.",
+          "evidence_pages": [
+            "289"
+          ],
+          "stance_basis": "Signed waiver consenting to special meeting to approve the amended Urban Redevelopment Plan",
+          "chunk_index": 6
+        },
+        {
+          "entity": "Michael P. Rich",
+          "kind": "individual",
+          "role": "Commissioner, Housing Authority of the City of Atlanta",
+          "stance": "in_favor",
+          "attribution_mode": "sectional",
+          "quote": "We, the undersigned Commissioners of The Housing Authority of The City of Atlanta, Georgia, do hereby accept service of the NOTICE OF SPECIAL MEETING waiving any and all irregularities in such service and in such Notice and Consent and agree that the said Commissioners of said Authority shall meet at the time and place named in such Notice and for the purpose stated therein.",
+          "evidence_pages": [
+            "289"
+          ],
+          "stance_basis": "Signed waiver consenting to special meeting to approve the amended Urban Redevelopment Plan",
+          "chunk_index": 6
+        },
+        {
+          "entity": "Mrs. Tompie Jackson",
+          "kind": "individual",
+          "role": "Commissioner, Housing Authority of the City of Atlanta",
+          "stance": "in_favor",
+          "attribution_mode": "sectional",
+          "quote": "We, the undersigned Commissioners of The Housing Authority of The City of Atlanta, Georgia, do hereby accept service of the NOTICE OF SPECIAL MEETING waiving any and all irregularities in such service and in such Notice and Consent and agree that the said Commissioners of said Authority shall meet at the time and place named in such Notice and for the purpose stated therein.",
+          "evidence_pages": [
+            "289"
+          ],
+          "stance_basis": "Signed waiver consenting to special meeting to approve the amended Urban Redevelopment Plan",
+          "chunk_index": 6
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 27008,
+        "output_tokens": 1469,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 7,
+      "start_page": 337,
+      "end_page": 387,
+      "ceq_chapter": "Alternatives",
+      "entities": [
+        {
+          "entity": "Atlanta Public Schools (APS)",
+          "kind": "agency",
+          "role": "public school system serving Bedford-Pine community",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "While there are many factors which contribute to Bedford-Pine schools' low achievement rating, socio-economic factors are considered by Atlanta Public School officials as being foremost.",
+          "evidence_pages": [
+            "337"
+          ],
+          "stance_basis": "APS attributes low achievement to socio-economic factors rather than school quality deficiencies",
+          "chunk_index": 7
+        },
+        {
+          "entity": "ABC Management Consultants, Incorporated",
+          "kind": "organization",
+          "role": "consultant preparing institutional development plan for Bedford-Pine",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "We recommend that in the short range the Community Development Corporation with assistance from the developer establish a mechanism to meet these objectives.",
+          "evidence_pages": [
+            "360"
+          ],
+          "stance_basis": "recommends comprehensive social service programs conditional on developer and CDC funding commitments",
+          "chunk_index": 7
+        },
+        {
+          "entity": "Bedford-Pine Community residents",
+          "kind": "other",
+          "role": "existing community residents",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "Residents of the Bedford-Pine Community have indicated strong interest in this approach to delivering Health Services.",
+          "evidence_pages": [
+            "362"
+          ],
+          "stance_basis": "expressed strong interest in Health Maintenance Operation (HMO) approach",
+          "chunk_index": 7
+        },
+        {
+          "entity": "Atlanta Police Department",
+          "kind": "agency",
+          "role": "city law enforcement agency",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The Atlanta Police Department is presently in the implementation phase of instituting several community assistance programs in the area of security.",
+          "evidence_pages": [
+            "378"
+          ],
+          "stance_basis": "actively implementing THOR community security assistance programs in the Bedford-Pine area",
+          "chunk_index": 7
+        },
+        {
+          "entity": "Howard High School Director",
+          "kind": "individual",
+          "role": "Director of Howard High School community program",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The Director of Howard's program is very enthusiastic about having the community utilize the services Howard provides, as well as adding programs based on the desires of the community.",
+          "evidence_pages": [
+            "347"
+          ],
+          "stance_basis": "enthusiastic support for expanding community use of Howard High School programs",
+          "chunk_index": 7
+        },
+        {
+          "entity": "Area Target Director, Department of Human Resources",
+          "kind": "official",
+          "role": "State of Georgia Department of Human Resources official",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "The Area Target Director, Department of Human Resources, indicated that the $1,600 maximum figure could possibly be increased under special program conditions.",
+          "evidence_pages": [
+            "371"
+          ],
+          "stance_basis": "provided informational clarification on per-child cost maximums without taking a position on the project",
+          "chunk_index": 7
+        },
+        {
+          "entity": "State of Georgia, Department of Human Resources",
+          "kind": "government",
+          "role": "state agency administering day care funding",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "According to sources at the office of contract services, State Department of Human Resources, an organization such as a Community Development Corporation can provide day care services for profit and non-profit purposes under one roof.",
+          "evidence_pages": [
+            "370"
+          ],
+          "stance_basis": "confirmed eligibility of CDC structure for day care services without endorsing or opposing the project",
+          "chunk_index": 7
+        },
+        {
+          "entity": "Atlanta University Center, School for Community Services",
+          "kind": "organization",
+          "role": "technical assistance provider for School Community Councils",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "Atlanta University Center, School for Community Services, provides technical assistance in organizing councils.",
+          "evidence_pages": [
+            "348"
+          ],
+          "stance_basis": "actively providing technical assistance to organize School Community Councils in Bedford-Pine",
+          "chunk_index": 7
+        },
+        {
+          "entity": "PAC",
+          "kind": "organization",
+          "role": "existing Bedford-Pine community organization",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "Existing community organizations (PAC, EOA East Central Neighborhood office) would be extensively involved in this development process.",
+          "evidence_pages": [
+            "355"
+          ],
+          "stance_basis": "designated as extensively involved in developing the community forum/association for Bedford-Pine",
+          "chunk_index": 7
+        },
+        {
+          "entity": "EOA East Central Neighborhood Office",
+          "kind": "organization",
+          "role": "existing Bedford-Pine community organization",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "Existing community organizations (PAC, EOA East Central Neighborhood office) would be extensively involved in this development process.",
+          "evidence_pages": [
+            "355"
+          ],
+          "stance_basis": "designated as extensively involved in developing the community forum/association for Bedford-Pine",
+          "chunk_index": 7
+        },
+        {
+          "entity": "present area residents",
+          "kind": "other",
+          "role": "existing Bedford-Pine on-site and off-site residents",
+          "stance": "opposed",
+          "attribution_mode": "paraphrased",
+          "quote": "Present area residents have often stated that the police presence and response to calls is inadequate and on occasion non-existent.",
+          "evidence_pages": [
+            "377"
+          ],
+          "stance_basis": "opposed to inadequate police protection in the Bedford-Pine area",
+          "chunk_index": 7
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 19599,
+        "output_tokens": 1445,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 8,
+      "start_page": 385,
+      "end_page": 399,
+      "ceq_chapter": "Alternatives",
+      "entities": [
+        {
+          "entity": "Atlanta Regional Commission",
+          "kind": "agency",
+          "role": "regional planning review body",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "The major comments of the Atlanta Regional Commission's staff are are follows: The Draft EIS for the Bedford-Pine Project shows recommended street widenings and other roadway improvements proposed as part of the project construction. These improvements, which are listed below, have not been coordinated with the Atlanta Region transportation planning process.",
+          "evidence_pages": [
+            "385"
+          ],
+          "stance_basis": "requests coordination of proposed street improvements with regional transportation planning process before proceeding",
+          "chunk_index": 8
+        },
+        {
+          "entity": "Harry West",
+          "kind": "official",
+          "role": "Executive Director, Atlanta Regional Commission",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "If the City of Atlanta and HUD wish to pursue these proposed improvements, the staff of the Atlanta Regional Commission would request that an immediate contact be made with ARC's Chief of Transportation Planning, Mr. Joel Stone, at the above address and that steps be taken to incorporate the proposed improvements into the transportation planning process for the Atlanta Region.",
+          "evidence_pages": [
+            "386"
+          ],
+          "stance_basis": "conditions support on incorporation of improvements into regional transportation planning process",
+          "chunk_index": 8
+        },
+        {
+          "entity": "MARTA",
+          "kind": "organization",
+          "role": "Metropolitan Atlanta Rapid Transit Authority",
+          "stance": "opposed",
+          "attribution_mode": "paraphrased",
+          "quote": "the major request for change from these agencies is in the MARTA response wherein they state that they believe the implication that MARTA will construct a rubber-tired, fixed guideway system between the Civic Center and Civic Center Station is premature.",
+          "evidence_pages": [
+            "385"
+          ],
+          "stance_basis": "objects to characterization that MARTA will construct a specific transit system as premature",
+          "chunk_index": 8
+        },
+        {
+          "entity": "E. W. Castellani",
+          "kind": "official",
+          "role": "Manager of Urban Planning, Metropolitan Atlanta Rapid Transit Authority",
+          "stance": "opposed",
+          "attribution_mode": "direct_quote",
+          "quote": "We believe that the implication that MARTA will construct a rubber-tired, fixed guideway system between the Civic Center and Civic Center Station is premature.",
+          "evidence_pages": [
+            "390"
+          ],
+          "stance_basis": "directly states that the EIS implication about MARTA constructing a specific transit system is premature",
+          "chunk_index": 8
+        },
+        {
+          "entity": "Collier B. Gladin",
+          "kind": "official",
+          "role": "Director, Bureau of Planning, City of Atlanta",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The Bureau of Planning recommends approval of these program applications.",
+          "evidence_pages": [
+            "387"
+          ],
+          "stance_basis": "recommends approval of the Bedford Pine Renewal Area EIS program application",
+          "chunk_index": 8
+        },
+        {
+          "entity": "DeKalb County Planning Department",
+          "kind": "agency",
+          "role": "county planning agency, commenter",
+          "stance": "neutral",
+          "attribution_mode": "direct_quote",
+          "quote": "DeKalb County is in general agreement that the central city needs a greater diversity of housing. We have no information on this EIS and have no specific comments.",
+          "evidence_pages": [
+            "388"
+          ],
+          "stance_basis": "general agreement with housing diversity goal but no specific comments on the EIS",
+          "chunk_index": 8
+        },
+        {
+          "entity": "David O. Benner",
+          "kind": "official",
+          "role": "Special Projects Director, DeKalb County Planning Department",
+          "stance": "neutral",
+          "attribution_mode": "direct_quote",
+          "quote": "DeKalb County is in general agreement that the central city needs a greater diversity of housing. We have no information on this EIS and have no specific comments.",
+          "evidence_pages": [
+            "388"
+          ],
+          "stance_basis": "general agreement with housing diversity goal but no specific comments on the EIS",
+          "chunk_index": 8
+        },
+        {
+          "entity": "Federal Power Commission",
+          "kind": "agency",
+          "role": "federal regulatory agency, commenter",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "We note major deficiencies in your presentation of the impact of the proposed project on \"Energy\" (Section II.F(1)(d)), for there is no mention of any quantitative energy analysis.",
+          "evidence_pages": [
+            "391"
+          ],
+          "stance_basis": "identifies major deficiencies in energy analysis and requires additional information in final EIS",
+          "chunk_index": 8
+        },
+        {
+          "entity": "Jack M. Heinemann",
+          "kind": "official",
+          "role": "Acting Assistant Director for Environmental Quality, Federal Power Commission",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "We note major deficiencies in your presentation of the impact of the proposed project on \"Energy\" (Section II.F(1)(d)), for there is no mention of any quantitative energy analysis.",
+          "evidence_pages": [
+            "391"
+          ],
+          "stance_basis": "identifies major deficiencies in energy analysis and requires additional information in final EIS",
+          "chunk_index": 8
+        },
+        {
+          "entity": "General Services Administration",
+          "kind": "agency",
+          "role": "federal agency, commenter",
+          "stance": "in_favor",
+          "attribution_mode": "direct_quote",
+          "quote": "The project should have a most beneficial impact upon downtown Atlanta as well as upon GSA activities.",
+          "evidence_pages": [
+            "392"
+          ],
+          "stance_basis": "supports project as beneficial to downtown Atlanta and GSA activities",
+          "chunk_index": 8
+        },
+        {
+          "entity": "Andrew E. Kauders",
+          "kind": "official",
+          "role": "Director, Environmental Affairs, General Services Administration",
+          "stance": "in_favor",
+          "attribution_mode": "direct_quote",
+          "quote": "The project should have a most beneficial impact upon downtown Atlanta as well as upon GSA activities.",
+          "evidence_pages": [
+            "392"
+          ],
+          "stance_basis": "supports project as beneficial to downtown Atlanta and GSA activities",
+          "chunk_index": 8
+        },
+        {
+          "entity": "Federal Highway Administration",
+          "kind": "agency",
+          "role": "federal transportation agency, commenter",
+          "stance": "conditional",
+          "attribution_mode": "direct_quote",
+          "quote": "We have reviewed the statement with regard to impacts on the Federal-aid highway system in the vicinity of the proposed action and have no adverse comments.",
+          "evidence_pages": [
+            "393"
+          ],
+          "stance_basis": "no adverse comments but suggests coordination with ARC and use of RDP traffic projections in final EIS",
+          "chunk_index": 8
+        },
+        {
+          "entity": "Herschel Bryant",
+          "kind": "official",
+          "role": "Division Administrator, Federal Highway Administration",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "It is suggested that the recommended transportation improvements (pages 220-225 and page 382) be coordinated with the Atlanta Regional Commission (ARC) concerning inclusion of suggested improvements in the Atlanta Metro Transportation Improvement Program (TIP)",
+          "evidence_pages": [
+            "393"
+          ],
+          "stance_basis": "no adverse comments but conditions on coordination with ARC and use of updated traffic projections",
+          "chunk_index": 8
+        },
+        {
+          "entity": "Donald G. Jordan",
+          "kind": "official",
+          "role": "Staff Hydrologist, U.S. Department of the Interior, Water Resources Division",
+          "stance": "neutral",
+          "attribution_mode": "direct_quote",
+          "quote": "I have no comments to offer on the subject Draft Environmental Impact Statement.",
+          "evidence_pages": [
+            "395"
+          ],
+          "stance_basis": "declines to comment, deferring to Office of Environmental Project Review",
+          "chunk_index": 8
+        },
+        {
+          "entity": "Bruce Blanchard",
+          "kind": "official",
+          "role": "Director, Environmental Project Review, U.S. Department of the Interior",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "This is to inform you that the Department will have comments but will be unable to reply within the allotted time as we have just received your transmittal. Please consider this letter as a request for an extension of time in which to comment on the statement.",
+          "evidence_pages": [
+            "395"
+          ],
+          "stance_basis": "requests extension of time to comment, neither supporting nor opposing",
+          "chunk_index": 8
+        },
+        {
+          "entity": "United States Department of the Interior, Office of the Secretary",
+          "kind": "agency",
+          "role": "federal agency, commenter",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "The statement does not adequately identify cultural resources, nor does it adequately assess the project's potential environmental impacts on these resources.",
+          "evidence_pages": [
+            "396"
+          ],
+          "stance_basis": "identifies deficiencies in cultural resources analysis and requires additional studies before approval",
+          "chunk_index": 8
+        },
+        {
+          "entity": "June Whelan",
+          "kind": "official",
+          "role": "Special Assistant to the Secretary, U.S. Department of the Interior",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "The statement does not adequately identify cultural resources, nor does it adequately assess the project's potential environmental impacts on these resources.",
+          "evidence_pages": [
+            "396"
+          ],
+          "stance_basis": "identifies deficiencies in cultural resources analysis and requires additional studies",
+          "chunk_index": 8
+        },
+        {
+          "entity": "Department of Health, Education, and Welfare Region IV",
+          "kind": "agency",
+          "role": "federal agency, commenter",
+          "stance": "in_favor",
+          "attribution_mode": "direct_quote",
+          "quote": "Based upon the data contained in the draft, it is our opinion that the proposed action will have only a minor impact upon the human environment within the scope of this Department's review. The impact statement has been adequately addressed for our comments.",
+          "evidence_pages": [
+            "398"
+          ],
+          "stance_basis": "finds only minor impact and considers EIS adequately addressed",
+          "chunk_index": 8
+        },
+        {
+          "entity": "Philip P. Sayre",
+          "kind": "official",
+          "role": "Regional Environmental Officer, DHEW Region IV",
+          "stance": "in_favor",
+          "attribution_mode": "direct_quote",
+          "quote": "Based upon the data contained in the draft, it is our opinion that the proposed action will have only a minor impact upon the human environment within the scope of this Department's review. The impact statement has been adequately addressed for our comments.",
+          "evidence_pages": [
+            "398"
+          ],
+          "stance_basis": "finds only minor impact and considers EIS adequately addressed",
+          "chunk_index": 8
+        },
+        {
+          "entity": "Department of the Army, Mobile District, Corps of Engineers",
+          "kind": "agency",
+          "role": "federal agency, commenter",
+          "stance": "in_favor",
+          "attribution_mode": "direct_quote",
+          "quote": "The statement is considered adequate as related to the Corps of Engineers responsibilities. We have no specific comments.",
+          "evidence_pages": [
+            "398"
+          ],
+          "stance_basis": "considers EIS adequate with no specific comments",
+          "chunk_index": 8
+        },
+        {
+          "entity": "Lawrence R. Green",
+          "kind": "official",
+          "role": "Chief, Planning Division, Department of the Army Mobile District Corps of Engineers",
+          "stance": "in_favor",
+          "attribution_mode": "direct_quote",
+          "quote": "The statement is considered adequate as related to the Corps of Engineers responsibilities. We have no specific comments.",
+          "evidence_pages": [
+            "398"
+          ],
+          "stance_basis": "considers EIS adequate with no specific comments",
+          "chunk_index": 8
+        },
+        {
+          "entity": "United States Department of Agriculture, Soil Conservation Service",
+          "kind": "agency",
+          "role": "federal agency, commenter",
+          "stance": "in_favor",
+          "attribution_mode": "direct_quote",
+          "quote": "As a result of this review, we find that all areas of our concern are adequately covered in this draft. Your agency is to be complimented on the quality of this draft EIS.",
+          "evidence_pages": [
+            "399"
+          ],
+          "stance_basis": "finds all areas of concern adequately covered and compliments quality of draft EIS",
+          "chunk_index": 8
+        },
+        {
+          "entity": "Dwight M. Treadway",
+          "kind": "official",
+          "role": "State Conservationist, USDA Soil Conservation Service",
+          "stance": "in_favor",
+          "attribution_mode": "direct_quote",
+          "quote": "As a result of this review, we find that all areas of our concern are adequately covered in this draft. Your agency is to be complimented on the quality of this draft EIS.",
+          "evidence_pages": [
+            "399"
+          ],
+          "stance_basis": "finds all areas of concern adequately covered and compliments quality of draft EIS",
+          "chunk_index": 8
+        },
+        {
+          "entity": "Central Communities, Inc.",
+          "kind": "organization",
+          "role": "redeveloper organization, commenter",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "With respect to the above-referenced Draft Environmental Impact Statement, we would like to submit the following comments:",
+          "evidence_pages": [
+            "399"
+          ],
+          "stance_basis": "submits multiple factual corrections and clarifications to the draft EIS on behalf of the redeveloper",
+          "chunk_index": 8
+        },
+        {
+          "entity": "Joseph G. Martin, Jr.",
+          "kind": "official",
+          "role": "Vice President, Central Communities, Inc.",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "With respect to the above-referenced Draft Environmental Impact Statement, we would like to submit the following comments:",
+          "evidence_pages": [
+            "399"
+          ],
+          "stance_basis": "submits multiple factual corrections and clarifications to the draft EIS",
+          "chunk_index": 8
+        },
+        {
+          "entity": "Bedford-Pine Project Area Committee",
+          "kind": "organization",
+          "role": "community project area committee, commenter",
+          "stance": "opposed",
+          "attribution_mode": "direct_quote",
+          "quote": "This draft EIS is unbalanced and incomplete in that it concentrates on the 78 acre redevelopment proposal and on physical impacts. It is inadequate in its appraisal of the impacts of the Project Rehab program.",
+          "evidence_pages": [
+            "399"
+          ],
+          "stance_basis": "finds draft EIS unbalanced, incomplete, and technically deficient in multiple respects",
+          "chunk_index": 8
+        },
+        {
+          "entity": "Rev. Ted Clark",
+          "kind": "individual",
+          "role": "Chairman, Bedford-Pine Project Area Committee",
+          "stance": "opposed",
+          "attribution_mode": "direct_quote",
+          "quote": "This draft EIS is unbalanced and incomplete in that it concentrates on the 78 acre redevelopment proposal and on physical impacts. It is inadequate in its appraisal of the impacts of the Project Rehab program.",
+          "evidence_pages": [
+            "399"
+          ],
+          "stance_basis": "finds draft EIS unbalanced, incomplete, and technically deficient in multiple respects",
+          "chunk_index": 8
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 10295,
+        "output_tokens": 3771,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    }
+  ]
+}

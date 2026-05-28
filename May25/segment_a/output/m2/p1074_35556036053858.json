@@ -1,0 +1,185 @@
+{
+  "summary": {
+    "project_description": {
+      "text": "HUD proposes to adopt Project Selection Criteria to set priorities for processing applications under four subsidized housing programs: Section 235(i) home mortgage interest supplements, Section 236 rental and cooperative housing interest supplements, Low-Rent Public Housing (including Leased Public Housing), and Rent Supplement. The criteria are an administrative tool to help HUD Area and insuring offices rank applications based on national needs, orderly urban development, equal opportunity, and environmental quality.",
+      "source_pages": [
+        "1-10"
+      ]
+    },
+    "affected_community": {
+      "text": "The programs serve low- and moderate-income families, including minority households, who need decent, safe, and sanitary housing, with particular attention to metropolitan areas where integration or concentration of low-income residents is a concern. The reach is nationwide, covering hundreds of thousands of units, including roughly 325,000 Section 236 units across 50 states and 1,081 cities, 135,000 rent supplement units, 575,000 Section 235 homes, and about 929,000 public housing units.",
+      "source_pages": [
+        "1-10"
+      ]
+    },
+    "alternatives_overview": {
+      "text": "The main alternative considered was having no formal criteria and relying on the varied judgment of Area Office staff, which past experience showed made it hard to meet program goals. Many versions of criteria were possible, ranging from more detailed standards to broader ones; the proposed version balances specificity with staff discretion and was refined through two earlier drafts published in the Federal Register.",
+      "source_pages": [
+        "1-10"
+      ]
+    },
+    "environmental_impact": {
+      "text": "No adverse environmental impact is expected from this administrative action, and the criteria are expected to produce generally positive environmental effects by disqualifying proposals that receive a 'poor' rating on the physical environment criterion. Criterion #5 favors projects in attractive, well-planned settings free of adverse conditions and rules out projects that would harm ecologically valuable or significant natural, historic, or archeological areas, while Criterion #4 ties approval to consistency with official land-use plans.",
+      "source_pages": [
+        "1-10"
+      ]
+    },
+    "public_response": {
+      "text": "Comments came from a wide range of federal agencies (including HEW, AEC, Army Corps of Engineers, USDA, GSA, Interior, DOT, EPA, the Appalachian Regional Commission, and the National Capital Planning Commission) and outside groups such as the U.S. Civil Rights Commission, NAACP, League of Women Voters, National Urban Coalition, NAHB, and the Mortgage Bankers Association. In response, HUD reworded Criterion #5 to address harm to ecologically valuable or significant natural and historic areas and clarified that both long- and short-term environmental effects are considered, though it declined to add a formal appeals process or specific references to federal employee housing and public transportation.",
+      "source_pages": [
+        "1-10"
+      ],
+      "based_on_main_doc_only": true
+    }
+  },
+  "alternatives": {
+    "value": [],
+    "confidence": "low",
+    "source_pages": [],
+    "note": "Alternatives chapter not detected structurally — skipped per v2 plan (no word-regex fallback)."
+  },
+  "themes": {
+    "value": {
+      "themes": [
+        "Urban Development",
+        "Governance and Institutional Control"
+      ],
+      "subthemes": [
+        "Housing, Planning, and Built Environment",
+        "Environmental Regulation and Policy",
+        "Urban Expansion and Land Use Change",
+        "Institutional Power and Resource Management"
+      ]
+    },
+    "confidence": "high",
+    "justification": "The project centers on HUD's administrative criteria for subsidized housing programs serving low- and moderate-income families across metropolitan areas, directly reflecting 'Housing, Planning, and Built Environment' and 'Urban Expansion and Land Use Change.' The criteria function as a regulatory and institutional tool prioritizing environmental quality, land-use consistency, and equal opportunity, aligning with 'Environmental Regulation and Policy' and 'Institutional Power and Resource Management.'",
+    "source_pages": [
+      "summary"
+    ]
+  },
+  "location": {
+    "value": {
+      "places": [
+        {
+          "name": "United States",
+          "kind": "region",
+          "state": null
+        }
+      ],
+      "is_multi_site": false,
+      "geocoded": [
+        {
+          "name": "United States",
+          "lat": 39.78373,
+          "lon": -100.445882,
+          "address": "United States"
+        }
+      ]
+    },
+    "confidence": "high",
+    "source_pages": [
+      "1-9"
+    ],
+    "note": "This is a nationwide administrative/programmatic EIS for HUD subsidized housing project selection criteria, covering all 50 states. No specific geographic project site."
+  },
+  "key_people": {
+    "value": {
+      "agency_preparers": [],
+      "cooperating_agencies": [
+        {
+          "name": "Department of Health, Education and Welfare"
+        },
+        {
+          "name": "Atomic Energy Commission"
+        },
+        {
+          "name": "Department of the Army, Corps of Engineers"
+        },
+        {
+          "name": "Department of Agriculture"
+        },
+        {
+          "name": "General Services Administration"
+        },
+        {
+          "name": "Department of the Interior"
+        },
+        {
+          "name": "Appalachian Regional Commission"
+        },
+        {
+          "name": "Department of Transportation"
+        },
+        {
+          "name": "Environmental Protection Agency"
+        },
+        {
+          "name": "National Capital Planning Commission"
+        }
+      ],
+      "public_commenters": [
+        {
+          "name": "Department of the Interior",
+          "kind": "official",
+          "stance": "conditional",
+          "quote": "The statement should include a discussion of the potential for misuse of the criteria to place proposed projects in a low priority group to discourage subsidized housing developments in certain areas.",
+          "source_pages": [
+            "8"
+          ],
+          "quote_verified": true
+        },
+        {
+          "name": "Environmental Protection Agency",
+          "kind": "official",
+          "stance": "conditional",
+          "quote": "Summarize in the environmental impact statement the other specific environmental requirements which must be met by project applications.",
+          "source_pages": [
+            "8",
+            "9"
+          ],
+          "quote_verified": true
+        },
+        {
+          "name": "Department of Transportation",
+          "kind": "official",
+          "stance": "conditional",
+          "quote": "Item 3 of the questionnaire should be revised to include specific reference to the availability of public transportation which is a critical concern for lower income families.",
+          "source_pages": [
+            "9",
+            "10"
+          ],
+          "quote_verified": false,
+          "note": "Quote not found verbatim — flagged for HUMAN_REVIEW"
+        },
+        {
+          "name": "National Capital Planning Commission",
+          "kind": "official",
+          "stance": "conditional",
+          "quote": "Expand Criterion #4 to include the following: 'To assure that the low- and/or moderate-income housing needs of the Federal employees affected by new, expanded or relocated work centers in the locality are met.'",
+          "source_pages": [
+            "10"
+          ],
+          "quote_verified": false,
+          "note": "Quote not found verbatim — flagged for HUMAN_REVIEW"
+        }
+      ],
+      "comment_response_present": true
+    },
+    "confidence": "medium",
+    "source_pages": {
+      "preparers": [
+        "1-30"
+      ],
+      "commenters": [
+        "2-10"
+      ]
+    }
+  },
+  "chunking_meta": {
+    "n_chunks": 1,
+    "n_chapters_detected": 0,
+    "chapters": [],
+    "chunk_size_pages": 50,
+    "note": "Page numbers are ESTIMATED from char offsets at 2500 chars/page."
+  }
+}

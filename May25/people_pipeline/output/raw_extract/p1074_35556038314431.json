@@ -1,0 +1,742 @@
+{
+  "doc_id": "p1074_35556038314431",
+  "work_id": "760952eb-290e-4c72-ac06-0277603570e5",
+  "title": "Havasupai Indian Reservation addition : environmental impact statement.",
+  "n_chunks": 7,
+  "per_chunk": [
+    {
+      "chunk_index": 0,
+      "start_page": 1,
+      "end_page": 51,
+      "ceq_chapter": "Environmental Consequences",
+      "entities": [
+        {
+          "entity": "Havasupai Tribal Council",
+          "kind": "organization",
+          "role": "governing body of the Havasupai Tribe, plan proponent",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The Havasupai Tribal Council designated approximately 6700-plus acres of Pasture Wash as a gardening area.",
+          "evidence_pages": [
+            "5"
+          ],
+          "stance_basis": "Tribal Council designated land uses and developed the Land Use Plan for the reservation addition",
+          "chunk_index": 0
+        },
+        {
+          "entity": "Havasupai Tribe of Arizona",
+          "kind": "tribe",
+          "role": "beneficiary tribe and plan author",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "Now, however, Congress has placed 185,000 acres between Havasu Canyon and Grand Canyon Village in the hands of the Havasupai and they feel the integrity of these lands is assured under their protection.",
+          "evidence_pages": [
+            "5"
+          ],
+          "stance_basis": "Tribe authored and supports the Secretarial Land Use Plan for the reservation addition",
+          "chunk_index": 0
+        },
+        {
+          "entity": "National Park Service",
+          "kind": "agency",
+          "role": "cooperating agency / adjacent land manager",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "Cooperative enforcement will be worked out between the Tribe and National Park Service for management and enforcement on the Havasupai Traditional Use Area.",
+          "evidence_pages": [
+            "9"
+          ],
+          "stance_basis": "Identified as cooperating partner for enforcement; no explicit stance on the plan taken",
+          "chunk_index": 0
+        },
+        {
+          "entity": "Bureau of Indian Affairs",
+          "kind": "agency",
+          "role": "preparing agency / plan administrator",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "Annual assessments will be made by the Bureau of Indian Affairs Agency Superintendent, pursuant to Section 10(b) and 10(c) of P.L. 93-620 and 25 CFR 151, of the forage, range conditions, and water availability in relation to the livestock and wild game birds to establish and maintain a stable balance and prevent any degradation of the area.",
+          "evidence_pages": [
+            "10"
+          ],
+          "stance_basis": "BIA prepared the EIS and is designated as the implementing/oversight agency for the plan",
+          "chunk_index": 0
+        },
+        {
+          "entity": "Office of Arid Lands Studies, University of Arizona",
+          "kind": "organization",
+          "role": "technical assistance provider",
+          "stance": "neutral",
+          "attribution_mode": "sectional",
+          "quote": "With the Assistance of Office of Arid Lands Studies University of Arizona, Tucson",
+          "evidence_pages": [
+            "1"
+          ],
+          "stance_basis": "Listed as technical contributor to the EIS preparation; no independent stance expressed",
+          "chunk_index": 0
+        },
+        {
+          "entity": "Arizona State Highway Department",
+          "kind": "agency",
+          "role": "state transportation agency",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "At this time, an interchange has been constructed on I-40 at the desired location, but there is no road connecting it with Peach Springs, nor are there any plans in the near future by the Arizona State Highway Department to construct one.",
+          "evidence_pages": [
+            "19"
+          ],
+          "stance_basis": "Has no plans to construct a related road; no position on the Land Use Plan expressed",
+          "chunk_index": 0
+        },
+        {
+          "entity": "Hualapai Indian Tribe",
+          "kind": "tribe",
+          "role": "neighboring tribe / potential joint venture partner",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "If any road is built, it will likely have to be a joint venture between the Hualapai Indian Tribe and Mohave County, and there are no plans for such a project.",
+          "evidence_pages": [
+            "19"
+          ],
+          "stance_basis": "Identified as potential partner for road construction; no explicit stance on the Land Use Plan",
+          "chunk_index": 0
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 21442,
+        "output_tokens": 1054,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 1,
+      "start_page": 49,
+      "end_page": 99,
+      "ceq_chapter": "Environmental Consequences",
+      "entities": [],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 21977,
+        "output_tokens": 118,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 2,
+      "start_page": 97,
+      "end_page": 147,
+      "ceq_chapter": "Environmental Consequences",
+      "entities": [
+        {
+          "entity": "U.S. Forest Service",
+          "kind": "agency",
+          "role": "federal agency with road improvement authority",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "the amount of traffic to Topocoba Hilltop, potentially the most heavily visited area after Hualapai Hilltop, is heavily dependent on whether or not the U.S. Forest Service improves the road from Tusayan to Pasture Wash.",
+          "evidence_pages": [
+            "101"
+          ],
+          "stance_basis": "document notes Forest Service road improvement decision affects tourist traffic outcomes but no position attributed",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Arizona Game and Fish Department",
+          "kind": "agency",
+          "role": "state wildlife agency; research biologist assisted in survey",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "an Arizona Game and Fish Department research biologist specializing in mountain lion assisted in the survey.",
+          "evidence_pages": [
+            "97"
+          ],
+          "stance_basis": "agency biologist participated in survey and offered technical observations on lion population",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Game Department Biologist",
+          "kind": "official",
+          "role": "Arizona Game and Fish Department research biologist",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "The Game Department Biologist surmized that the low deer population prevented a larger number of lions from working the area. His research around Prescott, Arizona also indicates that a cow-calf livestock operation is of considerably more benefit to lions than a yearling steer operation.",
+          "evidence_pages": [
+            "97"
+          ],
+          "stance_basis": "biologist offered technical findings on lion population dynamics relative to livestock operations",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Havasupai Tribe",
+          "kind": "tribe",
+          "role": "reservation landowner and plan proponent",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "the tribe alludes to 17 sheep residing in Havasu Canyon.",
+          "evidence_pages": [
+            "97"
+          ],
+          "stance_basis": "tribe is the proponent of the land use plan and its proposed developments throughout the document",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Bill Beck, B.I.A.",
+          "kind": "official",
+          "role": "Bureau of Indian Affairs official",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "Well-managed cow-calf operations of these sizes with 70 to 75% calf crops would gross $37,500 and $45,000 respectively (Bill Beck, B.I.A.).",
+          "evidence_pages": [
+            "121"
+          ],
+          "stance_basis": "cited as source for economic projections on cattle operations; no explicit position on the proposal attributed",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Pope, Evans, & Robbins",
+          "kind": "organization",
+          "role": "consultant employed by the tribe on waste management",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "The tribe has employed a reputable consultant to examine the problem in Havasu Creek (Pope, Evans, & Robbins 1973).",
+          "evidence_pages": [
+            "112"
+          ],
+          "stance_basis": "cited as consultant engaged to examine water pollution problem; no explicit stance on the proposal",
+          "chunk_index": 2
+        },
+        {
+          "entity": "USDA Soil Conservation Service",
+          "kind": "agency",
+          "role": "federal agency providing soil data",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "The USDA Soil Conservation Service, General Soil Map of Coconino County lists the development limitations of these series.",
+          "evidence_pages": [
+            "116"
+          ],
+          "stance_basis": "cited as data source for soil development limitations; no explicit stance attributed",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Tribal Council",
+          "kind": "government",
+          "role": "Havasupai tribal governing body",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The second provision under Agriculture, the proposed land use code to be developed by the Tribal Council, cannot be evaluated as it presently does not exist.",
+          "evidence_pages": [
+            "125"
+          ],
+          "stance_basis": "Tribal Council tasked with developing land use code as part of the plan, indicating support for the proposal",
+          "chunk_index": 2
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 19220,
+        "output_tokens": 1136,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 3,
+      "start_page": 145,
+      "end_page": 195,
+      "ceq_chapter": "Consultation",
+      "entities": [
+        {
+          "entity": "Havasupai Tribal Council",
+          "kind": "organization",
+          "role": "tribal governing body, commenter/adopter of Range Management Plan",
+          "stance": "in_favor",
+          "attribution_mode": "direct_quote",
+          "quote": "This letter is to advise that the Havasupai Tribal Council has adopted, Plan A of the Range Management Plan developed by the Kaibab Forest of U,S, National Forest in 1967 This plan is to be used for the Environmental Impact Statement together with the Land Use Plan for lands added to the Havasupai Reservation under PL 93-620,",
+          "evidence_pages": [
+            "195"
+          ],
+          "stance_basis": "formally adopted Range Management Plan for use with the EIS",
+          "chunk_index": 3
+        },
+        {
+          "entity": "Reed Watahomigie, Chairman",
+          "kind": "official",
+          "role": "Chairman, Havasupai Tribal Council",
+          "stance": "in_favor",
+          "attribution_mode": "direct_quote",
+          "quote": "This letter is to advise that the Havasupai Tribal Council has adopted, Plan A of the Range Management Plan developed by the Kaibab Forest of U,S, National Forest in 1967 This plan is to be used for the Environmental Impact Statement together with the Land Use Plan for lands added to the Havasupai Reservation under PL 93-620,",
+          "evidence_pages": [
+            "195"
+          ],
+          "stance_basis": "signed letter confirming tribal adoption of the Range Management Plan for the EIS",
+          "chunk_index": 3
+        },
+        {
+          "entity": "the tribe",
+          "kind": "tribe",
+          "role": "Havasupai Tribe, project proponent",
+          "stance": "opposed",
+          "attribution_mode": "paraphrased",
+          "quote": "An alternative, strongly opposed by the tribe, to the proposed continued use of the Hualapai and Topocoba Trails for tourists and the transport of supplies into Havasu Canyon would be the construction of (1) a motor road and (2) a chairlift into Havasu Canyon.",
+          "evidence_pages": [
+            "195"
+          ],
+          "stance_basis": "tribe strongly opposed motor road and chairlift alternatives to trail use",
+          "chunk_index": 3
+        },
+        {
+          "entity": "Havasupai Tribe of Arizona",
+          "kind": "tribe",
+          "role": "subject tribe / field assessment consultant",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The Tribe will benefit more from the proposed actions than from no action.",
+          "evidence_pages": [
+            "195"
+          ],
+          "stance_basis": "narrator attributes greater benefit to the tribe from proposed actions versus no action",
+          "chunk_index": 3
+        },
+        {
+          "entity": "Bureau of Indian Affairs",
+          "kind": "agency",
+          "role": "federal agency, cooperating agency, Truxton Canyon Agency / Phoenix Area Office",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "an environmental assessment was prepared in December, 1975 by the Truxton Canyon Agency of the Bureau of Indian Affairs in consultation with the Havasupai Tribal Council.",
+          "evidence_pages": [
+            "195"
+          ],
+          "stance_basis": "prepared environmental assessment supporting the land use plan process",
+          "chunk_index": 3
+        },
+        {
+          "entity": "University of Arizona (Office of Arid Lands Studies)",
+          "kind": "organization",
+          "role": "EIS preparer / contractor",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "The University of Arizona (Office of Arid Lands Studies) was invited during February, 1977 to submit a proposal to prepare an environmental impact statement concerning the 185,000 acre addition.",
+          "evidence_pages": [
+            "195"
+          ],
+          "stance_basis": "contracted to prepare the EIS; no independent position on the project attributed",
+          "chunk_index": 3
+        },
+        {
+          "entity": "Council of Environmental Quality (CEQ)",
+          "kind": "agency",
+          "role": "federal regulatory body providing EIS guidelines",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "a Statement Outline was prepared in which specific tasks were outlined using guidelines provided by the Council of Environmental Quality (CEQ).",
+          "evidence_pages": [
+            "195"
+          ],
+          "stance_basis": "provided procedural guidelines; no project stance attributed",
+          "chunk_index": 3
+        },
+        {
+          "entity": "State Historic Preservation Officer",
+          "kind": "official",
+          "role": "Arizona state official, field assessment consultant",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "consultation with the State Historic Preservation Officer would be appropriate.",
+          "evidence_pages": [
+            "195"
+          ],
+          "stance_basis": "recommended for consultation on cultural resource impacts; no project stance attributed",
+          "chunk_index": 3
+        },
+        {
+          "entity": "Mr. Harley Shaw, Research Biologist, Arizona Game and Fish Department",
+          "kind": "individual",
+          "role": "Research Biologist, Arizona Game and Fish Department; field assessment consultant",
+          "stance": "neutral",
+          "attribution_mode": "sectional",
+          "quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+          "evidence_pages": [
+            "195"
+          ],
+          "stance_basis": "listed as providing field assessment consultation; no project stance attributed",
+          "chunk_index": 3
+        },
+        {
+          "entity": "Mr. Tom Britt, Regional Wildlife Specialist, Arizona Game and Fish Department",
+          "kind": "individual",
+          "role": "Regional Wildlife Specialist, Arizona Game and Fish Department; field assessment consultant",
+          "stance": "neutral",
+          "attribution_mode": "sectional",
+          "quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+          "evidence_pages": [
+            "195"
+          ],
+          "stance_basis": "listed as providing field assessment consultation; no project stance attributed",
+          "chunk_index": 3
+        },
+        {
+          "entity": "Dr. Robert Euler, Archaeologist, Grand Canyon National Park",
+          "kind": "individual",
+          "role": "Archaeologist, Grand Canyon National Park; field assessment consultant",
+          "stance": "neutral",
+          "attribution_mode": "sectional",
+          "quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+          "evidence_pages": [
+            "195"
+          ],
+          "stance_basis": "listed as providing field assessment consultation; no project stance attributed",
+          "chunk_index": 3
+        },
+        {
+          "entity": "Mr. Jim Walters, Resource Specialist, Grand Canyon National Park",
+          "kind": "individual",
+          "role": "Resource Specialist, Grand Canyon National Park; field assessment consultant",
+          "stance": "neutral",
+          "attribution_mode": "sectional",
+          "quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+          "evidence_pages": [
+            "195"
+          ],
+          "stance_basis": "listed as providing field assessment consultation; no project stance attributed",
+          "chunk_index": 3
+        },
+        {
+          "entity": "Mr. Hubert Lauzon, Rancher, Grand Canyon, Arizona",
+          "kind": "individual",
+          "role": "local rancher; field assessment consultant",
+          "stance": "neutral",
+          "attribution_mode": "sectional",
+          "quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+          "evidence_pages": [
+            "195"
+          ],
+          "stance_basis": "listed as providing field assessment consultation; no project stance attributed",
+          "chunk_index": 3
+        },
+        {
+          "entity": "Mr. Martin Freshour, USDI Forest Service, Tusayan, Arizona",
+          "kind": "individual",
+          "role": "USDI Forest Service, Tusayan District; field assessment consultant",
+          "stance": "neutral",
+          "attribution_mode": "sectional",
+          "quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+          "evidence_pages": [
+            "195"
+          ],
+          "stance_basis": "listed as providing field assessment consultation; no project stance attributed",
+          "chunk_index": 3
+        },
+        {
+          "entity": "Mr. Sam Wolfskill, USDI Forest Service, Tusayan, Arizona",
+          "kind": "individual",
+          "role": "USDI Forest Service, Tusayan District; field assessment consultant",
+          "stance": "neutral",
+          "attribution_mode": "sectional",
+          "quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+          "evidence_pages": [
+            "195"
+          ],
+          "stance_basis": "listed as providing field assessment consultation; no project stance attributed",
+          "chunk_index": 3
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 21722,
+        "output_tokens": 2124,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 4,
+      "start_page": 193,
+      "end_page": 243,
+      "ceq_chapter": "Consultation",
+      "entities": [],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 24774,
+        "output_tokens": 134,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 5,
+      "start_page": 241,
+      "end_page": 291,
+      "ceq_chapter": "Consultation",
+      "entities": [
+        {
+          "entity": "Havasupai Tribe Planning Committee",
+          "kind": "organization",
+          "role": "tribal planning body, co-preparer of Secretarial Land Use Plan",
+          "stance": "in_favor",
+          "attribution_mode": "sectional",
+          "quote": "Prepared by: Havasupai Tribe Planning Commit and Phoenix Area Office Bureau of Indian Affairs Department of the Interior",
+          "evidence_pages": [
+            "270"
+          ],
+          "stance_basis": "co-prepared the Land Use Plan for the addition to the Havasupai Indian Reservation, expressing tribal desires for the land",
+          "chunk_index": 5
+        },
+        {
+          "entity": "Phoenix Area Office, Bureau of Indian Affairs",
+          "kind": "agency",
+          "role": "co-preparer of Secretarial Land Use Plan",
+          "stance": "in_favor",
+          "attribution_mode": "sectional",
+          "quote": "Prepared by: Havasupai Tribe Planning Commit and Phoenix Area Office Bureau of Indian Affairs Department of the Interior",
+          "evidence_pages": [
+            "270"
+          ],
+          "stance_basis": "co-prepared the Land Use Plan implementing the reservation enlargement under P.L. 93-620",
+          "chunk_index": 5
+        },
+        {
+          "entity": "Havasupai Tribal Council",
+          "kind": "tribe",
+          "role": "tribal governing body",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The Havasupai Tribal Council interpreted the provisions of P. L. 93-620 as a request for a set of general guidelines and intentions from the Havasupai Tribe.",
+          "evidence_pages": [
+            "271"
+          ],
+          "stance_basis": "interpreted and acted upon P.L. 93-620 to develop land use plan expressing tribal goals for the enlarged reservation",
+          "chunk_index": 5
+        },
+        {
+          "entity": "Congressional sponsors",
+          "kind": "other",
+          "role": "sponsors of S. 1296 / P.L. 93-620",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "To all: Congressional sponsors of the measure wro guarantees into the legislation.",
+          "evidence_pages": [
+            "271"
+          ],
+          "stance_basis": "wrote safeguards/guarantees into the legislation to protect against uncontrolled development of Havasupai lands",
+          "chunk_index": 5
+        },
+        {
+          "entity": "State of Arizona",
+          "kind": "government",
+          "role": "state government",
+          "stance": "opposed",
+          "attribution_mode": "paraphrased",
+          "quote": "The State of Ari zona that this section represents a school sec not be included within the reservation.",
+          "evidence_pages": [
+            "273"
+          ],
+          "stance_basis": "argued that Section 13 of Range 6 West is a school section that cannot be included within the reservation",
+          "chunk_index": 5
+        },
+        {
+          "entity": "Havasupai Tribe",
+          "kind": "tribe",
+          "role": "tribal nation",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The Havasupai argue the 1 never out of public status.",
+          "evidence_pages": [
+            "273"
+          ],
+          "stance_basis": "argued that disputed sections were never out of public status and should be included within the reservation",
+          "chunk_index": 5
+        },
+        {
+          "entity": "private landowner south of the reservation",
+          "kind": "individual",
+          "role": "private landowner",
+          "stance": "opposed",
+          "attribution_mode": "paraphrased",
+          "quote": "The private lando south of the reservation argues these sec sent private land that the Congress canno public status.",
+          "evidence_pages": [
+            "273"
+          ],
+          "stance_basis": "argued that disputed sections represent private land that Congress cannot restore to public status",
+          "chunk_index": 5
+        },
+        {
+          "entity": "Bureau of Indian Affairs",
+          "kind": "agency",
+          "role": "federal agency, cooperating in plan preparation",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The tary made the assistance of the Interior available to them whenever this was deeme or requested by the Havasupai Tribal Coun sponsibility for coordinating all necessa and for final preparation and distributio completed plan was delegated to the Burea Affairs by the Secretarial Order of Septe",
+          "evidence_pages": [
+            "271"
+          ],
+          "stance_basis": "delegated responsibility for coordinating and finalizing the land use plan, supporting implementation of P.L. 93-620",
+          "chunk_index": 5
+        },
+        {
+          "entity": "Arizona Game and Fish",
+          "kind": "agency",
+          "role": "state wildlife agency",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "the only hunting the Havasupai were allowed, on the lands included in their reservation today, was on the southern part under public permits from the Arizona Game and Fish who furnished the following deer harvest estimates:",
+          "evidence_pages": [
+            "291"
+          ],
+          "stance_basis": "furnished deer harvest estimates and issued public hunting permits on Havasupai lands without an attributed position on the project",
+          "chunk_index": 5
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 22872,
+        "output_tokens": 1297,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 6,
+      "start_page": 289,
+      "end_page": 292,
+      "ceq_chapter": "Consultation",
+      "entities": [
+        {
+          "entity": "Havasupai Tribal Council",
+          "kind": "organization",
+          "role": "tribal governing body, reservation land manager",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The plan for the use of the 185,000 acre addition to the Havasupai Reservation, developed by the Secretary of the Interior in consultation with the Havasupai Tribal Council, pursuant to Section 10(b)(4) of Public Law 93-620, is hereby respectfully submitted to the Committees on Interior and Insular Affairs of the United States Congress",
+          "evidence_pages": [
+            "289"
+          ],
+          "stance_basis": "participated in developing the land use plan submitted to Congress",
+          "chunk_index": 6
+        },
+        {
+          "entity": "Havasupai Tribe",
+          "kind": "tribe",
+          "role": "reservation landowner and wildlife manager",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "the Havasupai Tribe will restrict public hunting on the reservation.",
+          "evidence_pages": [
+            "289"
+          ],
+          "stance_basis": "supports wildlife management plan including hunting restrictions and wildlife diversity goals on the reservation",
+          "chunk_index": 6
+        },
+        {
+          "entity": "National Park Service",
+          "kind": "agency",
+          "role": "cooperating agency for wildlife management",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "the Havasupai Tribal Council ... operate with the National Park Service in",
+          "evidence_pages": [
+            "289"
+          ],
+          "stance_basis": "cooperating with Havasupai Tribe in wildlife/exotic species control on the reservation",
+          "chunk_index": 6
+        },
+        {
+          "entity": "Secretary of Interior",
+          "kind": "official",
+          "role": "Secretary of the Interior, plan developer and signatory",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The plan for the use of the 185,000 acre addition to the Havasupai Reservation, developed by the Secretary of the Interior in consultation with the Havasupai Tribal Council, pursuant to Section 10(b)(4) of Public Law 93-620, is hereby respectfully submitted to the Committees on Interior and Insular Affairs of the United States Congress",
+          "evidence_pages": [
+            "289"
+          ],
+          "stance_basis": "developed and submitted the land use plan to Congress",
+          "chunk_index": 6
+        },
+        {
+          "entity": "Commissioner of Indian Affairs",
+          "kind": "official",
+          "role": "Bureau of Indian Affairs, plan signatory",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The plan for the use of the 185,000 acre addition to the Havasupai Reservation, developed by the Secretary of the Interior in consultation with the Havasupai Tribal Council, pursuant to Section 10(b)(4) of Public Law 93-620, is hereby respectfully submitted to the Committees on Interior and Insular Affairs of the United States Congress on this date, Area Director, Phoenix Area Office (Date) Commissioner of Indian Affairs (Date) Secretary of Interior (Date)",
+          "evidence_pages": [
+            "289"
+          ],
+          "stance_basis": "co-signatory on submission of the land use plan to Congress",
+          "chunk_index": 6
+        },
+        {
+          "entity": "Area Director, Phoenix Area Office",
+          "kind": "official",
+          "role": "Bureau of Indian Affairs, Phoenix Area Office, plan signatory",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The plan for the use of the 185,000 acre addition to the Havasupai Reservation, developed by the Secretary of the Interior in consultation with the Havasupai Tribal Council, pursuant to Section 10(b)(4) of Public Law 93-620, is hereby respectfully submitted to the Committees on Interior and Insular Affairs of the United States Congress on this date, Area Director, Phoenix Area Office",
+          "evidence_pages": [
+            "289"
+          ],
+          "stance_basis": "co-signatory submitting the land use plan to Congress",
+          "chunk_index": 6
+        },
+        {
+          "entity": "U. S. Bureau of Sports Fisheries and Wildlife Management",
+          "kind": "agency",
+          "role": "wildlife survey authority authorized by Tribal Council",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The Tribal Council will then authorize annual resurveys by the U. S. Bureau of Sports Fisheries and Wildlife Management, by the Arizona State Game & Fish Department, or by trained rangers from their own Tribe.",
+          "evidence_pages": [
+            "289"
+          ],
+          "stance_basis": "authorized to conduct annual wildlife resurveys under the reservation management plan",
+          "chunk_index": 6
+        },
+        {
+          "entity": "Arizona State Game & Fish Department",
+          "kind": "agency",
+          "role": "wildlife survey authority authorized by Tribal Council",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The Tribal Council will then authorize annual resurveys by the U. S. Bureau of Sports Fisheries and Wildlife Management, by the Arizona State Game & Fish Department, or by trained rangers from their own Tribe.",
+          "evidence_pages": [
+            "289"
+          ],
+          "stance_basis": "authorized to conduct annual wildlife resurveys under the reservation management plan",
+          "chunk_index": 6
+        },
+        {
+          "entity": "Phoenix Area Office, Bureau of Indian Affairs",
+          "kind": "agency",
+          "role": "land planning section, plan preparer",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "Prepared By: The Land Planning Section Phoenix Area Office, Bureau of Indian Affairs",
+          "evidence_pages": [
+            "290"
+          ],
+          "stance_basis": "prepared the land use and management maps submitted as part of the plan",
+          "chunk_index": 6
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 3337,
+        "output_tokens": 1464,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,288 @@
+{
+  "seed": 20260525,
+  "n_selected": 20,
+  "plan_targets": {
+    "short": 5,
+    "medium": 10,
+    "long": 5
+  },
+  "adjusted_targets": {
+    "short": 5,
+    "medium": 12,
+    "long": 3
+  },
+  "available_per_bucket": {
+    "short": 128,
+    "medium": 50,
+    "long": 3
+  },
+  "bucket_counts": {
+    "short": 5,
+    "medium": 12,
+    "long": 3
+  },
+  "type_counts": {
+    "Draft": 8,
+    "Final": 8,
+    "Unknown": 2,
+    "Supplemental": 2
+  },
+  "bureau_counts": {
+    "United States. Forest Service": 2,
+    "United States. Federal Highway Administration": 1,
+    "United States. National Oceanic and Atmospheric Administration": 1,
+    "United States. Department of Housing and Urban Development": 4,
+    "Unknown": 2,
+    "U.S. Nuclear Regulatory Commission": 1,
+    "United States. Environmental Protection Agency": 2,
+    "United States. Bureau of Indian Affairs": 2,
+    "United States. Bureau of Land Management": 1,
+    "United States. Urban Mass Transportation Administration": 1,
+    "Tennessee Valley Authority": 1,
+    "United States. Energy Research and Development Administration": 1,
+    "United States. Economic Development Administration": 1
+  },
+  "type_cap": 7,
+  "max_per_bureau": 4,
+  "selected": [
+    {
+      "work_id": "04f934e3-8c84-4e39-9827-5b062d04ae04",
+      "doc_id": "P0491_35556036107910",
+      "title": "Off-road vehicle regulations, proposed : environmental impact statement.",
+      "estimated_pages": 64,
+      "ocr_chars": 159048,
+      "eis_type_guess": "Draft",
+      "bureau_guess": "United States. Forest Service",
+      "contributors": [
+        "United States. Forest Service (Contributor)"
+      ]
+    },
+    {
+      "work_id": "74b6a128-27b7-4877-b7d4-a22842139fb7",
+      "doc_id": "p1074_35556036548337",
+      "title": "SR-252 construction connecting I-5 and I-805, San Diego : environmental impact statement.",
+      "estimated_pages": 90,
+      "ocr_chars": 223390,
+      "eis_type_guess": "Final",
+      "bureau_guess": "United States. Federal Highway Administration",
+      "contributors": [
+        "United States. Federal Highway Administration (Contributor)"
+      ]
+    },
+    {
+      "work_id": "bbae926c-0ea9-401d-9b66-a08e1513a8c1",
+      "doc_id": "P0491_35556036806768",
+      "title": "Project STORMFURY, Atlantic weather modification : environmental impact statement.",
+      "estimated_pages": 36,
+      "ocr_chars": 89122,
+      "eis_type_guess": "Unknown",
+      "bureau_guess": "United States. National Oceanic and Atmospheric Administration",
+      "contributors": [
+        "United States. National Oceanic and Atmospheric Administration (Contributor)"
+      ]
+    },
+    {
+      "work_id": "39985efa-66b9-4eef-8f44-3e1a6fc27645",
+      "doc_id": "p1074_35556036544583",
+      "title": "Philadelphia, Eastwick urban renewal : environmental impact statement.",
+      "estimated_pages": 108,
+      "ocr_chars": 268545,
+      "eis_type_guess": "Final",
+      "bureau_guess": "United States. Department of Housing and Urban Development",
+      "contributors": [
+        "United States. Department of Housing and Urban Development (Contributor)"
+      ]
+    },
+    {
+      "work_id": "8e2b9830-6017-4644-a596-831a4a55b359",
+      "doc_id": "p1074_35556036053858",
+      "title": "Environmental Impact Statement, Proposed HUD Project Selection Criteria for Subsidized Housing",
+      "estimated_pages": 10,
+      "ocr_chars": 22632,
+      "eis_type_guess": "Supplemental",
+      "bureau_guess": "Unknown",
+      "contributors": []
+    },
+    {
+      "work_id": "a09ad3f4-1191-442f-8219-545f2e0a62a0",
+      "doc_id": "P0491_35556036532349",
+      "title": "Sundesert Nuclear Power Plant units 1-2, construction : environmental impact statement.",
+      "estimated_pages": 648,
+      "ocr_chars": 1619672,
+      "eis_type_guess": "Draft",
+      "bureau_guess": "U.S. Nuclear Regulatory Commission",
+      "contributors": [
+        "U.S. Nuclear Regulatory Commission (Contributor)"
+      ]
+    },
+    {
+      "work_id": "c079de3e-b9ae-42fa-9e52-f0fe3cdd8eb9",
+      "doc_id": "p1074_35556036522472",
+      "title": "Bedford-Pine urban renewal area : environmental impact statement.",
+      "estimated_pages": 399,
+      "ocr_chars": 995760,
+      "eis_type_guess": "Final",
+      "bureau_guess": "United States. Department of Housing and Urban Development",
+      "contributors": [
+        "United States. Department of Housing and Urban Development (Contributor)"
+      ]
+    },
+    {
+      "work_id": "be007e4b-d662-4e2f-81c0-53f93844929c",
+      "doc_id": "P0491_35556036808186",
+      "title": "TARP tunnel component, Lower Des Plaines : environmental impact statement.",
+      "estimated_pages": 354,
+      "ocr_chars": 882757,
+      "eis_type_guess": "Draft",
+      "bureau_guess": "United States. Environmental Protection Agency",
+      "contributors": [
+        "United States. Environmental Protection Agency (Contributor)"
+      ]
+    },
+    {
+      "work_id": "29e993fd-c646-46b9-b599-e0fe041c5f14",
+      "doc_id": "p1074_35556037530615",
+      "title": "Motorcycle noise emission regulations : environmental impact statement.",
+      "estimated_pages": 211,
+      "ocr_chars": 527010,
+      "eis_type_guess": "Unknown",
+      "bureau_guess": "United States. Environmental Protection Agency",
+      "contributors": [
+        "United States. Environmental Protection Agency (Contributor)"
+      ]
+    },
+    {
+      "work_id": "760952eb-290e-4c72-ac06-0277603570e5",
+      "doc_id": "p1074_35556038314431",
+      "title": "Havasupai Indian Reservation addition : environmental impact statement.",
+      "estimated_pages": 292,
+      "ocr_chars": 728076,
+      "eis_type_guess": "Draft",
+      "bureau_guess": "United States. Bureau of Indian Affairs",
+      "contributors": [
+        "United States. Bureau of Indian Affairs (Contributor)"
+      ]
+    },
+    {
+      "work_id": "1d34f20c-a8e0-4cb3-9887-fdbc1ce50bd5",
+      "doc_id": "p1074_35556036464337",
+      "title": "Kanab/Escalante grazing management : environmental impact statement.",
+      "estimated_pages": 503,
+      "ocr_chars": 1257336,
+      "eis_type_guess": "Draft",
+      "bureau_guess": "United States. Bureau of Land Management",
+      "contributors": [
+        "United States. Bureau of Land Management (Contributor)"
+      ]
+    },
+    {
+      "work_id": "d3e9092b-810f-4b1a-9e9e-def1c7b8a699",
+      "doc_id": "p1074_35556038062394",
+      "title": "Dade County metro rail transit : environmental impact statement.",
+      "estimated_pages": 286,
+      "ocr_chars": 714086,
+      "eis_type_guess": "Final",
+      "bureau_guess": "United States. Urban Mass Transportation Administration",
+      "contributors": [
+        "United States. Urban Mass Transportation Administration (Contributor)"
+      ]
+    },
+    {
+      "work_id": "fe841cfc-70d7-4c1f-8121-6af4b14fc4a0",
+      "doc_id": "p1074_35556039354196",
+      "title": "Havasupai Indian Reservation addition : environmental impact statement.",
+      "estimated_pages": 317,
+      "ocr_chars": 791602,
+      "eis_type_guess": "Draft",
+      "bureau_guess": "United States. Bureau of Indian Affairs",
+      "contributors": [
+        "United States. Bureau of Indian Affairs (Contributor)"
+      ]
+    },
+    {
+      "work_id": "28ae4c66-5926-430b-bf02-c22b6929adc9",
+      "doc_id": "p1074_35556036532315",
+      "title": "Yellow Creek Nuclear Plant : environmental impact statement.",
+      "estimated_pages": 358,
+      "ocr_chars": 893611,
+      "eis_type_guess": "Final",
+      "bureau_guess": "Tennessee Valley Authority",
+      "contributors": [
+        "Tennessee Valley Authority (Contributor)"
+      ]
+    },
+    {
+      "work_id": "2d55f0a5-2241-49ef-a135-cd5785cc36de",
+      "doc_id": "p1074_35556036796886",
+      "title": "Kendall Square urban renewal : environmental impact statement.",
+      "estimated_pages": 364,
+      "ocr_chars": 908613,
+      "eis_type_guess": "Draft",
+      "bureau_guess": "United States. Department of Housing and Urban Development",
+      "contributors": [
+        "United States. Department of Housing and Urban Development (Contributor)"
+      ]
+    },
+    {
+      "work_id": "2b36982f-0ab3-43ef-a590-c2144b815bf9",
+      "doc_id": "p1074_35556036807915",
+      "title": "Loring Park Development District, Loring 100 apartments : environmental impact statement.",
+      "estimated_pages": 269,
+      "ocr_chars": 672391,
+      "eis_type_guess": "Final",
+      "bureau_guess": "United States. Department of Housing and Urban Development",
+      "contributors": [
+        "United States. Department of Housing and Urban Development (Contributor)"
+      ]
+    },
+    {
+      "work_id": "a97f5f02-c891-4d22-895d-b4e5a1bf7e5c",
+      "doc_id": "p1074_35556036046811",
+      "title": "Environmental Impact Statement, Los Angeles Harbor Deepening Project",
+      "estimated_pages": 358,
+      "ocr_chars": 894858,
+      "eis_type_guess": "Supplemental",
+      "bureau_guess": "Unknown",
+      "contributors": []
+    },
+    {
+      "work_id": "8208c84c-fe4c-406e-9c20-76ebbed71475",
+      "doc_id": "p1074_35556036532208",
+      "title": "Alternative fuels demonstration program : environmental impact statement.",
+      "estimated_pages": 1353,
+      "ocr_chars": 3380528,
+      "eis_type_guess": "Final",
+      "bureau_guess": "United States. Energy Research and Development Administration",
+      "contributors": [
+        "United States. Energy Research and Development Administration (Contributor)"
+      ]
+    },
+    {
+      "work_id": "1d9ca3fe-6260-4990-b4aa-081821da89a5",
+      "doc_id": "p1074_35556036862068",
+      "title": "Olympic Winter Games, 1980, Lake Placid, North Elba and Wilmington and vicinity : environmental impact statement.",
+      "estimated_pages": 961,
+      "ocr_chars": 2401853,
+      "eis_type_guess": "Draft",
+      "bureau_guess": "United States. Economic Development Administration",
+      "contributors": [
+        "United States. Economic Development Administration (Contributor)"
+      ]
+    },
+    {
+      "work_id": "04086999-628d-4959-bd39-6f6c8dc9dad2",
+      "doc_id": "p1074_35556039346242",
+      "title": "The 1980 Report to Congress on the nation's renewable resources : environmental impact statement.",
+      "estimated_pages": 1226,
+      "ocr_chars": 3064724,
+      "eis_type_guess": "Final",
+      "bureau_guess": "United States. Forest Service",
+      "contributors": [
+        "United States. Forest Service (Contributor)"
+      ]
+    }
+  ],
+  "notes": [
+    "long: only 3 docs available (plan asked for 5); taking all 3 and redistributing the deficit."
+  ]
+}

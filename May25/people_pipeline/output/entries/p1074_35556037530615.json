@@ -1,0 +1,2637 @@
+{
+  "doc_id": "p1074_35556037530615",
+  "work_id": "29e993fd-c646-46b9-b599-e0fe041c5f14",
+  "title": "Motorcycle noise emission regulations : environmental impact statement.",
+  "estimated_pages": 211,
+  "n_chunks": 5,
+  "n_raw_rows": 44,
+  "n_entries": 39,
+  "verdict_counts": {
+    "PASS": 9,
+    "PASS_WITH_NOTE": 0,
+    "RE_EXTRACT": 11,
+    "HUMAN_REVIEW": 19
+  },
+  "stance_counts": {
+    "conditional": 2,
+    "in_favor": 13,
+    "neutral": 22,
+    "opposed": 2
+  },
+  "elapsed_sec": 140.5,
+  "usage": {
+    "extract": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 5,
+          "input_tokens": 104214,
+          "output_tokens": 6473,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.4097
+        }
+      ],
+      "total": {
+        "calls": 5,
+        "input_tokens": 104214,
+        "output_tokens": 6473,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.4097
+      }
+    },
+    "critic": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 39,
+          "input_tokens": 427710,
+          "output_tokens": 17713,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 1.5488
+        }
+      ],
+      "total": {
+        "calls": 39,
+        "input_tokens": 427710,
+        "output_tokens": 17713,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 1.5488
+      }
+    },
+    "total": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 44,
+          "input_tokens": 531924,
+          "output_tokens": 24186,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 1.9586
+        }
+      ],
+      "total": {
+        "calls": 44,
+        "input_tokens": 531924,
+        "output_tokens": 24186,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 1.9586
+      }
+    }
+  },
+  "schema": {
+    "stance_vocabulary": [
+      "in_favor",
+      "opposed",
+      "conditional",
+      "neutral"
+    ],
+    "kind_vocabulary": [
+      "individual",
+      "official",
+      "organization",
+      "agency",
+      "tribe",
+      "government",
+      "other"
+    ],
+    "verdicts": [
+      "PASS",
+      "PASS_WITH_NOTE",
+      "RE_EXTRACT",
+      "HUMAN_REVIEW"
+    ],
+    "page_numbers": "ESTIMATED from char offsets at 2500 chars/page.",
+    "merge_rule": "One row per (entity, stance) — stance changes produce separate rows.",
+    "cost_note": "USD costs are ESTIMATES from settings.PRICES_USD_PER_M; verify against AWS Bedrock invoice."
+  },
+  "entries": [
+    {
+      "sequence": 1,
+      "entity": "AMF/Harley-Davidson",
+      "kind": "organization",
+      "role": "Principal domestic motorcycle manufacturer",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The economic impact of the proposed 78 dB(A) standard on AMF/Harley-Davidson, the principal domestic manufacturer, is expected to be primarily manifested in terms of the ability of the firm to manufacture large displacement motorcycles which conform to EPA standards.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "19"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "19"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The economic impact of the proposed 78 dB(A) standard on AMF/Harley-Davidson, the principal domestic manufacturer, is expected to be primarily manifested in terms of the ability of the firm to manufacture large displacement motorcycles which conform to EPA standards.",
+          "quote_verified": false,
+          "stance_basis": "78 dB(A) standard considered not achievable with current engine designs; compliance would require complete redesign",
+          "entity_as_written": "AMF/Harley-Davidson",
+          "role_as_written": "Principal domestic motorcycle manufacturer"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page text does not contain the summary quote about AMF/Harley-Davidson and the 78 dB(A) standard; the page text covers public participation and state/local government controls."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "AMF/Harley-Davidson is not mentioned anywhere in the cited page text, so no paraphrased attribution can be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as 'conditional' because the relevant text is absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "AMF/Harley-Davidson is a recognizable official organization name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention AMF/Harley-Davidson or describe it as the principal domestic motorcycle manufacturer."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page (19) does not contain the summary quote or any reference to AMF/Harley-Davidson. The extracted quote and attribution appear to come from a different page of the document. The extractor should locate the correct page(s) where the AMF/Harley-Davidson economic impact discussion appears and re-cite accordingly. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 2,
+      "entity": "Bombardier, Ltd.",
+      "kind": "organization",
+      "role": "Canadian motorcycle manufacturer (Can-Am)",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "However, it is questionable whether Bombardier or many of the European manufacturers would continue exporting street motorcycles to the United States with the establishment of the 78 dB(A) standard.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "20"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "20"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "However, it is questionable whether Bombardier or many of the European manufacturers would continue exporting street motorcycles to the United States with the establishment of the 78 dB(A) standard.",
+          "quote_verified": false,
+          "stance_basis": "78 dB(A) standard may cause Bombardier to exit the U.S. market",
+          "entity_as_written": "Bombardier, Ltd.",
+          "role_as_written": "Canadian motorcycle manufacturer (Can-Am)"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page text is a table of contents and foreword; the summary quote about Bombardier and the 78 dB(A) standard does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The cited pages contain no mention of Bombardier, Ltd. or any stance attributed to them."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance label as the relevant text is not present in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Bombardier, Ltd. is a recognized organization name; acceptable format."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited pages do not mention Bombardier or Can-Am motorcycles."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The cited page text provided consists only of front matter (title page, foreword, and table of contents) and does not contain the summary quote or any reference to Bombardier, Ltd. The quote may exist on page 20 of the actual document, but the text pulled in does not correspond to that page. A human reviewer should verify the quote against the actual page 20 of the source document before accepting or rejecting this extraction."
+      }
+    },
+    {
+      "sequence": 3,
+      "entity": "Congress",
+      "kind": "government",
+      "role": "Legislative authority / enactor of Noise Control Act of 1972",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Through the Noise Control Act of 1972 (86 Stat. 1234), Congress established a national policy \"to promote an environment for all Americans free from noise that jeopardizes their health and welfare.\"",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "27"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "27"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Through the Noise Control Act of 1972 (86 Stat. 1234), Congress established a national policy \"to promote an environment for all Americans free from noise that jeopardizes their health and welfare.\"",
+          "quote_verified": true,
+          "stance_basis": "Congress mandated federal noise regulation through the Noise Control Act of 1972",
+          "entity_as_written": "Congress",
+          "role_as_written": "Legislative authority / enactor of Noise Control Act of 1972"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 27 text is entirely about mopeds, motorcycle categories, and manufacturers. The Noise Control Act of 1972 quote does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links Congress to stated stance",
+            "result": "no",
+            "note": "Congress is not mentioned anywhere in the cited page text; no paraphrase linking Congress to the Noise Control Act appears on page 27 as provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot evaluate stance match since the relevant text is absent from the cited page."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Congress' is an appropriate name for the U.S. legislative body."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of the Noise Control Act of 1972 or Congress's role as its enactor."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page 27 contains only content about moped specifications, motorcycle categories, and manufacturer lists. The Noise Control Act of 1972 quote and any reference to Congress are entirely absent from the provided text. The extraction likely references a different page number; the correct evidence page should be identified and re-extracted."
+      }
+    },
+    {
+      "sequence": 4,
+      "entity": "Department of the Interior (Bureau of Land Management)",
+      "kind": "agency",
+      "role": "Federal cooperating agency with enforcement responsibility",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The Department of the Interior (Bureau of Land Management) and the Department of Agriculture (U.S. Forest Service) will have responsibility for ensuring that motorcycles manufactured after January 1, 1979 which are operated on public lands and parks comply with EPA noise emission regulations.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "22"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "22"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The Department of the Interior (Bureau of Land Management) and the Department of Agriculture (U.S. Forest Service) will have responsibility for ensuring that motorcycles manufactured after January 1, 1979 which are operated on public lands and parks comply with EPA noise emission regulations.",
+          "quote_verified": false,
+          "stance_basis": "Assigned enforcement responsibility under the proposed regulation; no explicit support or opposition stated",
+          "entity_as_written": "Department of the Interior (Bureau of Land Management)",
+          "role_as_written": "Federal cooperating agency with enforcement responsibility"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 22 text does not contain the summary quote about BLM and Forest Service enforcement responsibility for motorcycles on public lands."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The cited text does not mention the Department of the Interior, Bureau of Land Management, or any enforcement role on public lands/parks. The text is about EPA's statutory basis for noise regulation."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance as the entity and quote are not present in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Department of the Interior (Bureau of Land Management) is a properly formed official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of BLM having enforcement responsibility; it focuses on EPA's authority under the Noise Control Act of 1972."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote and entity attribution are not present anywhere in the cited page 22 text, which covers only the statutory basis for EPA noise regulation under the Noise Control Act of 1972. The extraction appears to reference content from a different page of the EIS. The extractor should locate the correct page where BLM and Forest Service enforcement responsibilities are actually described. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 5,
+      "entity": "Department of the Treasury",
+      "kind": "agency",
+      "role": "Federal agency coordinated with during rulemaking",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "EPA carefully coordinated this effort with responsible officials in the Federal government, including: the U.S. Forest Service (Department of Agriculture); U.S. Bureau of Land Management (Department of Interior); Department of Transportation; National Bureau of Standards (Department of Commerce) and the Department of the Treasury.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "23"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "23"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "EPA carefully coordinated this effort with responsible officials in the Federal government, including: the U.S. Forest Service (Department of Agriculture); U.S. Bureau of Land Management (Department of Interior); Department of Transportation; National Bureau of Standards (Department of Commerce) and the Department of the Treasury.",
+          "quote_verified": false,
+          "stance_basis": "Coordinated with EPA during rulemaking; no explicit stance attributed",
+          "entity_as_written": "Department of the Treasury",
+          "role_as_written": "Federal agency coordinated with during rulemaking"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 23 text does not contain the summary quote about coordinating with Treasury and other federal agencies."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The Department of the Treasury is not mentioned anywhere in the provided page 23 text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance as the quote and entity are absent from the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Department of the Treasury is a properly formed official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention coordination with the Department of the Treasury or any of the other listed agencies."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote does not appear anywhere in the provided page 23 text, which discusses preemption, labeling, and study approach for motorcycle noise regulations. The quote about federal coordination with Treasury and other agencies likely appears on a different page. The extractor should identify the correct page number where this coordination language appears. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 6,
+      "entity": "Department of Transportation",
+      "kind": "agency",
+      "role": "Federal agency coordinated with during rulemaking",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "EPA carefully coordinated this effort with responsible officials in the Federal government, including: the U.S. Forest Service (Department of Agriculture); U.S. Bureau of Land Management (Department of Interior); Department of Transportation; National Bureau of Standards (Department of Commerce) and the Department of the Treasury.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "23"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "23"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "EPA carefully coordinated this effort with responsible officials in the Federal government, including: the U.S. Forest Service (Department of Agriculture); U.S. Bureau of Land Management (Department of Interior); Department of Transportation; National Bureau of Standards (Department of Commerce) and the Department of the Treasury.",
+          "quote_verified": false,
+          "stance_basis": "Coordinated with EPA during rulemaking; no explicit stance attributed",
+          "entity_as_written": "Department of Transportation",
+          "role_as_written": "Federal agency coordinated with during rulemaking"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 23 text does not contain the summary quote about coordinating with Department of Transportation and other agencies."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The cited text does not mention Department of Transportation or the coordination sentence at all."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since the quote is not present in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Department of Transportation is a properly named federal agency."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page 23 text does not support the role description; the coordination sentence is absent."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote does not appear anywhere in the provided page 23 text. The quote about EPA coordinating with the Department of Transportation and other federal agencies must come from a different page. The extractor should locate the correct page number where this coordination statement appears and re-extract with the proper citation. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 7,
+      "entity": "National Bureau of Standards (Department of Commerce)",
+      "kind": "agency",
+      "role": "Federal agency coordinated with during rulemaking",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "EPA carefully coordinated this effort with responsible officials in the Federal government, including: the U.S. Forest Service (Department of Agriculture); U.S. Bureau of Land Management (Department of Interior); Department of Transportation; National Bureau of Standards (Department of Commerce) and the Department of the Treasury.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "23"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "23"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "EPA carefully coordinated this effort with responsible officials in the Federal government, including: the U.S. Forest Service (Department of Agriculture); U.S. Bureau of Land Management (Department of Interior); Department of Transportation; National Bureau of Standards (Department of Commerce) and the Department of the Treasury.",
+          "quote_verified": false,
+          "stance_basis": "Coordinated with EPA during rulemaking; no explicit stance attributed",
+          "entity_as_written": "National Bureau of Standards (Department of Commerce)",
+          "role_as_written": "Federal agency coordinated with during rulemaking"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 23 text does not contain the summary quote about coordination with federal agencies including National Bureau of Standards."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The cited text does not mention National Bureau of Standards or the coordination sentence at all."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since the quote is not present in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "National Bureau of Standards (Department of Commerce) is a properly formed official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page 23 text does not support the role description; the coordination sentence is absent."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote does not appear anywhere in the provided page 23 text. The cited pages appear to cover preemption provisions and study approach sections, not the federal coordination passage. The extraction likely references a different page number; the correct page should be identified and re-extracted. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 8,
+      "entity": "state and local government officials",
+      "kind": "government",
+      "role": "Concerned state and local officials contacted by EPA",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Concerned state and local government officials have reported that use of off-road motorcycles both in wilderness and near-residential areas is a significant noise problem.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "8"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "8"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Concerned state and local government officials have reported that use of off-road motorcycles both in wilderness and near-residential areas is a significant noise problem.",
+          "quote_verified": true,
+          "stance_basis": "Officials reported off-road motorcycle noise as a significant problem, supporting need for regulation",
+          "entity_as_written": "state and local government officials",
+          "role_as_written": "Concerned state and local officials contacted by EPA"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted sentence about 'state and local government officials' reporting off-road motorcycles as a 'significant noise problem' does not appear anywhere in the cited page 8 text provided."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The cited page text does not mention 'state and local government officials' reporting noise problems; it discusses regulatory options and impact tables."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since the quote and attribution are not present in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'State and local government officials' is a reasonable collective descriptor for a government entity."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page does not reference officials being contacted by EPA or reporting noise problems."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote does not appear verbatim or in paraphrased form on the cited page 8. The page content covers regulatory options and impact tables for motorcycle noise standards, with no mention of state/local officials reporting noise problems. The extraction likely references a different page in the document and needs to be re-extracted with the correct page citation."
+      }
+    },
+    {
+      "sequence": 9,
+      "entity": "state and local officials",
+      "kind": "government",
+      "role": "State and local officials contacted by EPA regarding competition motorcycles",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Virtually all state and local officials contacted felt that reduced sound levels would help the problem and either urged EPA to establish regulatory sound levels or were establishing new off-road motorcycle sound level limits themselves.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "10",
+        "193"
+      ],
+      "n_mentions": 2,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "10"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "these motorcycles are appearing in great numbers in general off-road environments and are causing some significant noise disturbance, according to the state and local officials contacted by EPA.",
+          "quote_verified": true,
+          "stance_basis": "Officials confirmed competition motorcycle noise disturbance, supporting regulatory need",
+          "entity_as_written": "state and local officials",
+          "role_as_written": "State and local officials contacted by EPA regarding competition motorcycles"
+        },
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "193"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Virtually all state and local officials contacted felt that reduced sound levels would help the problem and either urged EPA to establish regulatory sound levels or were establishing new off-road motorcycle sound level limits themselves.",
+          "quote_verified": true,
+          "stance_basis": "urged EPA to establish regulatory sound levels or were establishing their own limits",
+          "entity_as_written": "state and local officials",
+          "role_as_written": "state and local government officials contacted during rulemaking"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact sentence appears verbatim in the cited page text: 'Virtually all state and local officials contacted felt that reduced sound levels would help the problem and either urged EPA to establish regulatory sound levels or were establishing new off-road motorcycle sound level limits themselves.'"
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "yes",
+            "note": "The paraphrased attribution correctly identifies 'state and local officials' as the entity and the cited narrator sentence directly names them and describes their position favoring reduced sound levels/regulatory standards."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The officials either urged EPA to establish regulatory sound levels or were establishing their own limits — clearly in_favor of noise regulation/reduced sound levels."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'state and local officials' is a collective government entity reference, appropriate for this context."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text confirms these are state and local officials contacted by EPA in the context of competition/off-road motorcycles, consistent with the role description."
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "The summary quote is present verbatim in the cited pages, the attribution is clear and direct, and the stance label 'in_favor' accurately reflects the officials' position of supporting reduced sound levels and regulatory standards. All checks pass without issue."
+      }
+    },
+    {
+      "sequence": 10,
+      "entity": "U.S. Environmental Protection Agency (EPA)",
+      "kind": "agency",
+      "role": "Proposing agency / regulatory authority",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The U.S. Environmental Protection Agency (EPA) has issued proposed noise emission regulations for newly manufactured motorcycles and motorcycle replacement exhaust systems.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "1"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The U.S. Environmental Protection Agency (EPA) has issued proposed noise emission regulations for newly manufactured motorcycles and motorcycle replacement exhaust systems.",
+          "quote_verified": false,
+          "stance_basis": "EPA is the proponent issuing the proposed motorcycle noise emission regulations",
+          "entity_as_written": "U.S. Environmental Protection Agency (EPA)",
+          "role_as_written": "Proposing agency / regulatory authority"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The exact quote 'The U.S. Environmental Protection Agency (EPA) has issued proposed noise emission regulations for newly manufactured motorcycles and motorcycle replacement exhaust systems.' does not appear verbatim. The cited text says 'Notice of Proposed Rulemaking (NPRM) to establish noise emission limits for newly manufactured street and off-road motorcycles and motorcycle replacement exhaust systems.' under 'Action:'"
+          },
+          {
+            "check": "Attribution links EPA to stated stance (paraphrased)",
+            "result": "yes",
+            "note": "The document clearly identifies EPA/ONAC as the agency proposing motorcycle noise emission regulations, supporting the paraphrased attribution."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "EPA is the proposing agency issuing the NPRM, so 'in_favor' of the proposed regulations is appropriate."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "U.S. Environmental Protection Agency (EPA) is the official name and matches the document."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The document identifies EPA as the agency issuing the proposed rulemaking, consistent with 'Proposing agency / regulatory authority'."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote is a paraphrase rather than a verbatim extract; the actual text uses 'Notice of Proposed Rulemaking (NPRM) to establish noise emission limits' rather than 'has issued proposed noise emission regulations.' However, the substance is accurate and the attribution, stance, entity, and role are all well-supported by the cited page. The extraction is trustworthy despite the non-verbatim quote. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 11,
+      "entity": "U.S. Forest Service (Department of Agriculture)",
+      "kind": "agency",
+      "role": "Federal cooperating agency with enforcement responsibility",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "In a U.S. Forest Service study, seven experienced recreation guards at the Oregon Dunes National Recreation Area rated the noisiness of dune buggies as to acceptance by the public (Ref. 21).",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "22",
+        "97-147"
+      ],
+      "n_mentions": 2,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "22"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The Department of the Interior (Bureau of Land Management) and the Department of Agriculture (U.S. Forest Service) will have responsibility for ensuring that motorcycles manufactured after January 1, 1979 which are operated on public lands and parks comply with EPA noise emission regulations.",
+          "quote_verified": false,
+          "stance_basis": "Assigned enforcement responsibility under the proposed regulation; no explicit support or opposition stated",
+          "entity_as_written": "U.S. Forest Service (Department of Agriculture)",
+          "role_as_written": "Federal cooperating agency with enforcement responsibility"
+        },
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "97-147"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "In a U.S. Forest Service study, seven experienced recreation guards at the Oregon Dunes National Recreation Area rated the noisiness of dune buggies as to acceptance by the public (Ref. 21).",
+          "quote_verified": true,
+          "stance_basis": "conducted noise acceptability study; no explicit stance on federal motorcycle noise regulation attributed",
+          "entity_as_written": "U.S. Forest Service",
+          "role_as_written": "federal land management agency / study conductor"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact sentence 'In a U.S. Forest Service study, seven experienced recreation guards at the Oregon Dunes National Recreation Area rated the noisiness of dune buggies as to acceptance by the public (Ref. 21).' appears verbatim in the cited text."
+          },
+          {
+            "check": "Attribution links entity to stated stance (paraphrased)",
+            "result": "no",
+            "note": "The U.S. Forest Service is mentioned only as the source of a study being cited by EPA. The text does not state the Forest Service's position or stance on motorcycle noise regulation; it is merely referenced as a data source."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The Forest Service is not expressing any stance here — it conducted a study that is being cited. 'Neutral' might be the closest label, but the entity is functioning as a data source, not a commenter with a discernible stance on the regulatory action."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'U.S. Forest Service (Department of Agriculture)' is a reasonable official name, though the parenthetical is not in the text."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The text does not describe the Forest Service as having 'enforcement responsibility'; it is cited only as the sponsor of a noise study at Oregon Dunes National Recreation Area."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The quote is verbatim and the Forest Service is correctly identified as the study source, but the role ('Federal cooperating agency with enforcement responsibility') is not supported by the text, and the Forest Service is not expressing a stance on the regulation — it is merely cited as a data source. The extraction conflates being a cited research source with being a stakeholder with a stance. This row should be re-extracted or removed, as the Forest Service does not qualify as a commenter with a discernible stance in this context."
+      }
+    },
+    {
+      "sequence": 12,
+      "entity": "AMF Harley-Davidson",
+      "kind": "organization",
+      "role": "motorcycle manufacturer / test procedure contributor",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "With the same rationale basic to the F-76a test, a staff member of AMF Harley-Davidson submitted (prior to development of the F-76a test) a candidate moving vehicle acceleration test procedure designated R-60.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "49-99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "49-99"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "With the same rationale basic to the F-76a test, a staff member of AMF Harley-Davidson submitted (prior to development of the F-76a test) a candidate moving vehicle acceleration test procedure designated R-60.",
+          "quote_verified": true,
+          "stance_basis": "submitted candidate test procedure R-60 to address noise measurement challenges",
+          "entity_as_written": "AMF Harley-Davidson",
+          "role_as_written": "motorcycle manufacturer / test procedure contributor"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact sentence 'With the same rationale basic to the F-76a test, a staff member of AMF Harley-Davidson submitted (prior to development of the F-76a test) a candidate moving vehicle acceleration test procedure designated R-60.' appears verbatim in the cited text under the R-60 section."
+          },
+          {
+            "check": "Attribution links AMF Harley-Davidson to stated stance",
+            "result": "yes",
+            "note": "The paraphrased narrator sentence names AMF Harley-Davidson as the submitter of the R-60 test procedure, linking the organization to participation in the test procedure development process."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "Submitting a candidate test procedure indicates support/engagement with the regulatory process; 'in_favor' is a reasonable characterization of an entity actively contributing a test methodology."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'AMF Harley-Davidson' matches the name used in the cited text exactly."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text confirms AMF Harley-Davidson is a motorcycle manufacturer whose staff member submitted a candidate test procedure (R-60), supporting the role description 'motorcycle manufacturer / test procedure contributor'."
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "The summary quote is present verbatim in the cited pages. AMF Harley-Davidson is clearly identified as the submitter of the R-60 candidate test procedure, and the 'in_favor' stance is well-supported by their active contribution to the regulatory test methodology development. All checks pass without issue."
+      }
+    },
+    {
+      "sequence": 13,
+      "entity": "California Highway Patrol",
+      "kind": "agency",
+      "role": "state law enforcement agency / test procedure adopter",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Representatives of the U.S. Suzuki Motor Corporation, and the California Highway Patrol, submitted premliminary drafts of test procedures designed to eliminate the above objections.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "49-99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "49-99"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Representatives of the U.S. Suzuki Motor Corporation, and the California Highway Patrol, submitted premliminary drafts of test procedures designed to eliminate the above objections.",
+          "quote_verified": false,
+          "stance_basis": "submitted preliminary drafts of test procedures to improve upon existing methods",
+          "entity_as_written": "California Highway Patrol",
+          "role_as_written": "state law enforcement agency / test procedure adopter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact text 'Representatives of the U.S. Suzuki Motor Corporation, and the California Highway Patrol, submitted premliminary drafts of test procedures designed to eliminate the above objections.' appears verbatim in the cited pages (including the misspelling 'premliminary')."
+          },
+          {
+            "check": "Attribution links CHP to stated stance",
+            "result": "yes",
+            "note": "The paraphrased attribution is valid: the narrator sentence names the California Highway Patrol as an entity that submitted preliminary drafts of test procedures, indicating support/participation in developing the F76 procedure."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "CHP submitted draft test procedures to help develop the EPA regulation, which is consistent with an 'in_favor' stance toward the regulatory effort."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'California Highway Patrol' is the official name of the agency and matches the text exactly."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text confirms CHP adopted the J-331a method for type approval (test procedure adopter) and is a state law enforcement agency; both aspects of the role description are supported."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote appears verbatim in the cited pages (including the typo 'premliminary'), the California Highway Patrol is clearly named as submitting draft test procedures, and the 'in_favor' stance is well-supported by their active participation in developing noise test methodology for the EPA regulation. All checks pass cleanly. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 14,
+      "entity": "Economic Commission for Europe",
+      "kind": "organization",
+      "role": "international regulatory body",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The Economic Commission for Europe (ECE) has adopted the ISO/R-362 method and has prescribed noise standards for various categories of motorcycles.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "49-99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "49-99"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The Economic Commission for Europe (ECE) has adopted the ISO/R-362 method and has prescribed noise standards for various categories of motorcycles.",
+          "quote_verified": true,
+          "stance_basis": "adopted ISO/R-362 method and prescribed noise standards for motorcycles",
+          "entity_as_written": "Economic Commission for Europe",
+          "role_as_written": "international regulatory body"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact sentence 'The Economic Commission for Europe (ECE) has adopted the ISO/R-362 method and has prescribed noise standards for various categories of motorcycles.' appears verbatim in the cited text."
+          },
+          {
+            "check": "Attribution links ECE to stated stance",
+            "result": "yes",
+            "note": "The paraphrased attribution correctly identifies ECE as the entity that adopted ISO/R-362 and prescribed noise standards, linking the organization to its regulatory action."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "ECE adopted the ISO/R-362 method and prescribed noise standards, indicating active support/endorsement — 'in_favor' is appropriate."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Economic Commission for Europe' is the official name of the organization as used in the source text."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text shows ECE adopting a measurement method and prescribing noise standards for motorcycles, consistent with the role of 'international regulatory body.'"
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "The summary quote is present verbatim in the cited pages. The ECE is clearly identified as adopting the ISO/R-362 method and prescribing noise standards, which supports both the 'in_favor' stance and the 'international regulatory body' role description. All checks pass without issue."
+      }
+    },
+    {
+      "sequence": 15,
+      "entity": "International Standards Organization",
+      "kind": "organization",
+      "role": "international standards body",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The International Standards Organization, (ISO) Recommendation R-362, \"Measurement of Noise Emitted by Vehicles\", was approved in May 1962 by the following ISO Member Bodies*.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "49-99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "49-99"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The International Standards Organization, (ISO) Recommendation R-362, \"Measurement of Noise Emitted by Vehicles\", was approved in May 1962 by the following ISO Member Bodies*.",
+          "quote_verified": true,
+          "stance_basis": "approved and promulgated ISO/R-362 noise measurement standard for vehicles",
+          "entity_as_written": "International Standards Organization",
+          "role_as_written": "international standards body"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact text 'The International Standards Organization, (ISO) Recommendation R-362, \"Measurement of Noise Emitted by Vehicles\", was approved in May 1962 by the following ISO Member Bodies*.' appears verbatim in the cited pages under the ISO/R-362 section."
+          },
+          {
+            "check": "Attribution links entity to stated stance (paraphrased)",
+            "result": "no",
+            "note": "The cited text is a factual description of the ISO/R-362 standard and its approval by member bodies. It does not express a stance by ISO toward the EPA regulation or motorcycle noise standards. The ISO is described as having approved a measurement standard, not as being 'in favor' of anything in the EIS context."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The text merely describes ISO's recommendation and which member bodies approved it. There is no expression of support or opposition to any regulatory proposal; 'in_favor' is not supported by the evidence."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'International Standards Organization' is the official name used in the document (though commonly known as ISO)."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text clearly identifies ISO as an international standards body that approved a measurement recommendation."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The quote is verbatim and the entity/role are correctly identified, but the stance 'in_favor' is not supported. The cited text simply describes ISO's existing measurement standard (ISO/R-362) and its approval by member bodies; it does not express ISO's position on the EPA motorcycle noise regulation. The correct stance should be 'neutral' or this row should be dropped, as ISO is referenced as a technical source rather than a stakeholder expressing a position."
+      }
+    },
+    {
+      "sequence": 16,
+      "entity": "Motorcycle Industry Council",
+      "kind": "organization",
+      "role": "industry trade association / test procedure proposer",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Motorcycle Industry Council (MIC) Proposed Field Test Procedure for Sound Levels of Competition Motorcycles, Rev. 1-30-76",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "49-99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "49-99"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Motorcycle Industry Council (MIC) Proposed Field Test Procedure for Sound Levels of Competition Motorcycles, Rev. 1-30-76",
+          "quote_verified": true,
+          "stance_basis": "proposed a field test procedure for sound levels of competition motorcycles",
+          "entity_as_written": "Motorcycle Industry Council",
+          "role_as_written": "industry trade association / test procedure proposer"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact phrase 'Motorcycle Industry Council (MIC) Proposed Field Test Procedure for Sound Levels of Competition Motorcycles, Rev. 1-30-76' appears verbatim in the cited text as a section heading."
+          },
+          {
+            "check": "Attribution links MIC to stated stance",
+            "result": "yes",
+            "note": "The cited text names the Motorcycle Industry Council as the proposer of this field test procedure, and the document describes and critiques it as a candidate procedure, linking MIC to the proposal."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "MIC proposed this test procedure, indicating they are in favor of it as a methodology for testing competition motorcycles."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Motorcycle Industry Council' is the official name of the industry trade association, used consistently in the document."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text confirms MIC is an industry trade association (referenced as a data source for dealership and employment data) and is identified as the proposer of the test procedure, supporting 'industry trade association / test procedure proposer'."
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "The summary quote appears verbatim as a section heading in the cited pages. The Motorcycle Industry Council is clearly identified as the entity that proposed the field test procedure for competition motorcycles, and the 'in_favor' stance is appropriate since they submitted the procedure as a candidate methodology. All checks pass cleanly."
+      }
+    },
+    {
+      "sequence": 17,
+      "entity": "U.S. Suzuki Motor Corporation",
+      "kind": "organization",
+      "role": "motorcycle manufacturer / test procedure contributor",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Representatives of the U.S. Suzuki Motor Corporation, and the California Highway Patrol, submitted premliminary drafts of test procedures designed to eliminate the above objections.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "49-99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "49-99"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Representatives of the U.S. Suzuki Motor Corporation, and the California Highway Patrol, submitted premliminary drafts of test procedures designed to eliminate the above objections.",
+          "quote_verified": false,
+          "stance_basis": "submitted preliminary drafts of test procedures to improve upon existing methods",
+          "entity_as_written": "U.S. Suzuki Motor Corporation",
+          "role_as_written": "motorcycle manufacturer / test procedure contributor"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact text 'Representatives of the U.S. Suzuki Motor Corporation, and the California Highway Patrol, submitted premliminary drafts of test procedures designed to eliminate the above objections.' appears verbatim in the cited pages, including the misspelling 'premliminary'."
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "yes",
+            "note": "The paraphrased attribution directly names U.S. Suzuki Motor Corporation as submitting preliminary drafts of test procedures to eliminate shortcomings, indicating support for developing improved test procedures."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "Submitting draft test procedures to improve the regulatory process indicates support (in_favor) for the EPA noise regulation effort and test procedure development."
+          },
+          {
+            "check": "Entity name is well-formed",
+            "result": "yes",
+            "note": "'U.S. Suzuki Motor Corporation' is the official organizational name as it appears in the document."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text confirms U.S. Suzuki Motor Corporation submitted preliminary drafts of test procedures, supporting the role description of 'motorcycle manufacturer / test procedure contributor'."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote is present verbatim in the cited pages, including the original misspelling 'premliminary'. The entity is clearly named and linked to the action of submitting test procedure drafts, which supports an in_favor stance toward the EPA regulatory process. All checks pass cleanly. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 18,
+      "entity": "Bureau of Land Management (BLM)",
+      "kind": "agency",
+      "role": "federal land management agency",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "BLM has the authority to close certain areas to off-road vehicle use, if such use endangers soils, vegetation, archeological sites or other valuable resources. Designation of lands as closed to ORV use involves a public notification and participation process which can take a number of months to complete. The Bureau is currently in the process of evaluating all lands under its control to determine their designation either as closed or open to ORV use.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "97-147"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "97-147"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "BLM has the authority to close certain areas to off-road vehicle use, if such use endangers soils, vegetation, archeological sites or other valuable resources. Designation of lands as closed to ORV use involves a public notification and participation process which can take a number of months to complete. The Bureau is currently in the process of evaluating all lands under its control to determine their designation either as closed or open to ORV use.",
+          "quote_verified": true,
+          "stance_basis": "described as evaluating ORV land designations but no explicit stance on federal noise regulation taken",
+          "entity_as_written": "Bureau of Land Management (BLM)",
+          "role_as_written": "federal land management agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact text 'BLM has the authority to close certain areas to off-road vehicle use, if such use endangers soils, vegetation, archeological sites or other valuable resources. Designation of lands as closed to ORV use involves a public notification and participation process which can take a number of months to complete. The Bureau is currently in the process of evaluating all lands under its control to determine their designation either as closed or open to ORV use.' appears verbatim in the cited pages."
+          },
+          {
+            "check": "Attribution links BLM to stated stance (paraphrased mode)",
+            "result": "yes",
+            "note": "The cited text names BLM/Bureau explicitly and describes its authority and current activities regarding ORV use designation."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The text describes BLM's authority and ongoing evaluation process without expressing support or opposition to motorcycle noise regulation; neutral is appropriate."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Bureau of Land Management (BLM) is the official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text confirms BLM administers approximately half of all recreational off-road vehicle use lands and manages federal lands, consistent with 'federal land management agency'."
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "The summary quote is present verbatim in the cited pages. BLM is clearly named as the entity and the passage describes its regulatory authority and evaluation process in a factual, neutral manner. All checks pass without issue."
+      }
+    },
+    {
+      "sequence": 19,
+      "entity": "Department of Ecology, State of Washington",
+      "kind": "government",
+      "role": "state environmental agency / reference document author",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Environmental Impact Statement for Proposed Noise Abatement Regulations, Noise Section, Department of Ecology, State of Washington, Olympia, WN 98504, 16 April 1975.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "97-147"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "97-147"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Environmental Impact Statement for Proposed Noise Abatement Regulations, Noise Section, Department of Ecology, State of Washington, Olympia, WN 98504, 16 April 1975.",
+          "quote_verified": true,
+          "stance_basis": "authored an EIS for proposed noise abatement regulations, indicating support for noise regulation",
+          "entity_as_written": "Department of Ecology, State of Washington",
+          "role_as_written": "state environmental agency / reference document author"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The summary quote 'Environmental Impact Statement for Proposed Noise Abatement Regulations, Noise Section, Department of Ecology, State of Washington, Olympia, WN 98504, 16 April 1975.' does not appear verbatim in the cited pages (97-147). It reads like a bibliographic reference, not text from the body of the document."
+          },
+          {
+            "check": "Attribution links named entity to stated stance (paraphrased)",
+            "result": "no",
+            "note": "The cited pages do not mention the Department of Ecology, State of Washington, nor attribute any stance to them. The text is EPA's own analysis of motorcycle noise impacts."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "No stance (in_favor or otherwise) for the Department of Ecology, State of Washington can be identified in the cited pages. The entity appears to be a cited reference source, not a commenter expressing a stance."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "The entity name 'Department of Ecology, State of Washington' is an official agency name and is well-formed."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited pages do not reference the Department of Ecology, State of Washington at all, so the role of 'state environmental agency / reference document author' cannot be confirmed from these pages."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote appears to be a bibliographic citation rather than a verbatim passage from the body of the EIS, and the Department of Ecology, State of Washington does not appear anywhere in the cited pages (97-147). This entity seems to be a reference document author cited elsewhere in the EIS, not a commenter with a discernible stance. The extraction should be corrected to find the actual page where this reference is cited and determine whether any stance can be attributed, or the row should be removed if no stance is expressed."
+      }
+    },
+    {
+      "sequence": 20,
+      "entity": "EPA",
+      "kind": "agency",
+      "role": "lead regulatory agency / document author",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "It is apparent that the most effective means of reducing the noise impact of street motorcycles is to control the numbers of exhaust system modifications while at the same time lowering the sound levels of unmodified vehicles.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "97-147",
+        "193"
+      ],
+      "n_mentions": 2,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "97-147"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "It is apparent that the most effective means of reducing the noise impact of street motorcycles is to control the numbers of exhaust system modifications while at the same time lowering the sound levels of unmodified vehicles.",
+          "quote_verified": true,
+          "stance_basis": "agency narrator concludes regulation of motorcycle noise is necessary and effective",
+          "entity_as_written": "EPA",
+          "role_as_written": "lead regulatory agency / document author"
+        },
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "193"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "EPA has concluded that reduced sound levels from the majority of unmodified off-road motorcycles are a necessary complement to state and local in-use and land-use regulation.",
+          "quote_verified": true,
+          "stance_basis": "concluded that reduced sound levels are necessary; proposed Federal noise emission standards",
+          "entity_as_written": "EPA",
+          "role_as_written": "regulatory agency / document author"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact sentence appears verbatim in the cited text: 'It is apparent that the most effective means of reducing the noise impact of street motorcycles is to control the numbers of exhaust system modifications while at the same time lowering the sound levels of unmodified vehicles.'"
+          },
+          {
+            "check": "Attribution links EPA to the stated stance",
+            "result": "yes",
+            "note": "The quote appears in the body of the EIS document authored by EPA; as a paraphrased/sectional attribution, the document narrator (EPA) is making this analytical conclusion directly."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The statement advocates for regulatory action to reduce motorcycle noise, consistent with an 'in_favor' stance toward noise regulation."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'EPA' is the correct official abbreviation for the U.S. Environmental Protection Agency, the document author."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The document is an EPA-authored regulatory analysis; EPA is clearly the lead agency producing this EIS/regulatory support document."
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "The summary quote is present verbatim in the cited pages. EPA, as the document author, is clearly the source of this analytical conclusion advocating for dual regulatory action (controlling modifications and lowering unmodified vehicle sound levels). All checks pass without issue."
+      }
+    },
+    {
+      "sequence": 21,
+      "entity": "Harley-Davidson",
+      "kind": "organization",
+      "role": "motorcycle manufacturer / data supplier",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "In addition, Harley Davidson estimates labeling would add approximately $0.5 to unit costs.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "97-147",
+        "145-195"
+      ],
+      "n_mentions": 2,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "97-147"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Most data was supplied by: Honda, Yamaha, Kawasaki, Suzuki and Harley-Davidson.",
+          "quote_verified": false,
+          "stance_basis": "supplied diagnostic noise source data to EPA on a confidential basis; no stance on regulation attributed",
+          "entity_as_written": "Harley-Davidson",
+          "role_as_written": "motorcycle manufacturer / data supplier"
+        },
+        {
+          "chunk_index": 3,
+          "evidence_pages": [
+            "145-195"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "In addition, Harley Davidson estimates labeling would add approximately $0.5 to unit costs.",
+          "quote_verified": true,
+          "stance_basis": "provided cost estimate for labeling compliance without taking a position on the regulation itself",
+          "entity_as_written": "Harley Davidson",
+          "role_as_written": "motorcycle manufacturer / commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quote 'In addition, Harley Davidson estimates labeling would add approximately $0.5 to unit costs.' does not appear anywhere in the provided page text, which covers noise impact analysis topics."
+          },
+          {
+            "check": "Attribution links Harley-Davidson to stated stance",
+            "result": "no",
+            "note": "Harley-Davidson is not mentioned anywhere in the cited page text; no paraphrased attribution exists in the provided content."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Harley-Davidson is a recognized official organization name, though the quote spells it 'Harley Davidson' without hyphen."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited pages contain no reference to Harley-Davidson as a motorcycle manufacturer or data supplier."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and any mention of Harley-Davidson are entirely absent from the provided page text, which covers motorcycle noise impact analysis (speech interference, sleep disturbance, off-road operations). The quote about labeling costs ($0.5 per unit) belongs to a cost-benefit or economic analysis section not present in these pages. The extraction likely pulled from the wrong page range; the correct pages should be re-identified."
+      }
+    },
+    {
+      "sequence": 22,
+      "entity": "Honda",
+      "kind": "organization",
+      "role": "motorcycle manufacturer / data supplier",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Most data was supplied by: Honda, Yamaha, Kawasaki, Suzuki and Harley-Davidson.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "97-147"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "97-147"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Most data was supplied by: Honda, Yamaha, Kawasaki, Suzuki and Harley-Davidson.",
+          "quote_verified": false,
+          "stance_basis": "supplied diagnostic noise source data to EPA on a confidential basis; no stance on regulation attributed",
+          "entity_as_written": "Honda",
+          "role_as_written": "motorcycle manufacturer / data supplier"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The exact phrase 'Most data was supplied by: Honda, Yamaha, Kawasaki, Suzuki and Harley-Davidson.' does not appear anywhere in the provided text from pages 97-147."
+          },
+          {
+            "check": "Attribution links Honda to stated stance",
+            "result": "no",
+            "note": "Honda is not mentioned by name anywhere in the cited page text provided. There is no paraphrased sentence naming Honda and linking it to any position."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot assess stance match since neither the quote nor Honda's mention appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Honda is a well-formed official organization name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'motorcycle manufacturer / data supplier' is not supported by anything in the provided cited pages, as Honda does not appear in the text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote does not appear verbatim in the cited pages, and Honda is not mentioned anywhere in the provided text from pages 97-147. The quote likely comes from a different section of the document (possibly an appendix or data sources section). The extractor should locate the correct page range where this statement about data suppliers appears. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 23,
+      "entity": "Kawasaki",
+      "kind": "organization",
+      "role": "motorcycle manufacturer / data supplier",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Most data was supplied by: Honda, Yamaha, Kawasaki, Suzuki and Harley-Davidson.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "97-147"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "97-147"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Most data was supplied by: Honda, Yamaha, Kawasaki, Suzuki and Harley-Davidson.",
+          "quote_verified": false,
+          "stance_basis": "supplied diagnostic noise source data to EPA on a confidential basis; no stance on regulation attributed",
+          "entity_as_written": "Kawasaki",
+          "role_as_written": "motorcycle manufacturer / data supplier"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The exact phrase 'Most data was supplied by: Honda, Yamaha, Kawasaki, Suzuki and Harley-Davidson.' does not appear anywhere in the provided text from pages 97-147."
+          },
+          {
+            "check": "Attribution links Kawasaki to stated stance",
+            "result": "no",
+            "note": "Kawasaki is not mentioned anywhere in the cited page text. There is no paraphrased sentence naming Kawasaki and linking it to any position."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Kawasaki is a recognized organization/manufacturer name and is well-formed."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'motorcycle manufacturer / data supplier' is not supported by the cited text, which makes no mention of Kawasaki."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote and entity (Kawasaki) do not appear anywhere in the provided page text. The quote about data being supplied by Honda, Yamaha, Kawasaki, Suzuki, and Harley-Davidson likely comes from a different section of the document (possibly a data sources or methodology section) not included in the cited pages 97-147. The extractor should locate the correct page reference for this quote. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 24,
+      "entity": "land management officials contacted by EPA",
+      "kind": "other",
+      "role": "senior federal and state land managers",
+      "stance": "opposed",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "most land management officials contacted by EPA reported that such vehicles constitute a very significant part of the off-road vehicle noise problem.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "97-147"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "97-147"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "most land management officials contacted by EPA reported that such vehicles constitute a very significant part of the off-road vehicle noise problem.",
+          "quote_verified": false,
+          "stance_basis": "identified competition motorcycles as a very significant off-road noise problem, implying support for controls",
+          "entity_as_written": "land management officials contacted by EPA",
+          "role_as_written": "senior federal and state land managers"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The text on the cited pages contains: 'most land management officials contacted by EPA reported that such vehicles constitute a very significant part of the off-road vehicle noise problem.' This matches the summary quote verbatim."
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "yes",
+            "note": "The paraphrased attribution correctly identifies 'land management officials contacted by EPA' as the source of the reported opinion about competition motorcycles being a significant noise problem."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The officials are reporting that competition off-road vehicles constitute a 'very significant part of the off-road vehicle noise problem,' which aligns with an 'opposed' stance toward unregulated off-road motorcycle noise."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'land management officials contacted by EPA' is a reasonable collective descriptor for the group referenced in the text, though it is a descriptive phrase rather than an official name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text references 'senior Federal and state managers of public lands, forests, lakes, parks and wilderness areas,' supporting the role description of 'senior federal and state land managers.'"
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote appears verbatim in the cited pages, and the attribution correctly links the entity to the stated stance. The role description is well-supported by the surrounding context describing a survey of senior Federal and state land managers. The 'opposed' stance label is appropriate given the officials' characterization of competition motorcycles as a 'very significant' noise problem. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 25,
+      "entity": "Motorcycle Industry Council (MIC)",
+      "kind": "organization",
+      "role": "industry data provider / commenter",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Table 5-19 shows the off-road motorcycle mileage mix estimated by the Motorcycle Industry Council (MIC). According to MIC, 57 percent of all off-road mileage is accumulated by street and dual purpose motorcycles.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "97-147",
+        "145-195"
+      ],
+      "n_mentions": 2,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "97-147"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Table 5-19 shows the off-road motorcycle mileage mix estimated by the Motorcycle Industry Council (MIC). According to MIC, 57 percent of all off-road mileage is accumulated by street and dual purpose motorcycles.",
+          "quote_verified": true,
+          "stance_basis": "provides mileage data used in regulatory analysis without taking a position on regulation",
+          "entity_as_written": "Motorcycle Industry Council (MIC)",
+          "role_as_written": "industry council / data provider"
+        },
+        {
+          "chunk_index": 3,
+          "evidence_pages": [
+            "145-195"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Complete monthly sales data from January 1973 through December 1975 for total motorcycle unit sales, retail and wholesale, and regional sales data has been provided by the Motorcycle Industry Council to the EPA.",
+          "quote_verified": true,
+          "stance_basis": "provided sales data to EPA for regulatory analysis without an attributed position on the regulation",
+          "entity_as_written": "Motorcycle Industry Council",
+          "role_as_written": "industry data provider / commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact text 'Table 5-19 shows the off-road motorcycle mileage mix estimated by the Motorcycle Industry Council (MIC). According to MIC, 57 percent of all off-road mileage is accumulated by street and dual purpose motorcycles.' appears verbatim in the cited text."
+          },
+          {
+            "check": "Attribution links MIC to stated stance",
+            "result": "yes",
+            "note": "The narrator sentence explicitly names the Motorcycle Industry Council (MIC) as the source of the mileage mix data, and the quote attributes the 57% figure directly to MIC."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "MIC is cited purely as a data provider with no expressed support or opposition to regulation; neutral is appropriate."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Motorcycle Industry Council (MIC)' is the official name of the organization."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text confirms MIC provided industry mileage data (Reference 8), consistent with 'industry data provider / commenter'."
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "The summary quote is present verbatim in the cited pages. MIC is clearly identified as the source of the off-road mileage mix data with no stance on regulation expressed, making 'neutral' the correct label. All checks pass without issue."
+      }
+    },
+    {
+      "sequence": 26,
+      "entity": "senior Federal and state managers of public lands, forests, lakes, parks and wilderness areas",
+      "kind": "other",
+      "role": "survey respondents / land managers",
+      "stance": "opposed",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "In a survey of 250 senior Federal and state managers of public lands, forests, lakes, parks and wilderness areas of the United States regarding the adverse effects of off-road recreational vehicles (which included other factors besides noise), trail motorcycles were rated as the 'most urgent problem for them to solve' (Ref. 3).",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "97-147"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "97-147"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "In a survey of 250 senior Federal and state managers of public lands, forests, lakes, parks and wilderness areas of the United States regarding the adverse effects of off-road recreational vehicles (which included other factors besides noise), trail motorcycles were rated as the 'most urgent problem for them to solve' (Ref. 3).",
+          "quote_verified": false,
+          "stance_basis": "rated trail motorcycles as the most urgent problem to solve among off-road recreational vehicles",
+          "entity_as_written": "senior Federal and state managers of public lands, forests, lakes, parks and wilderness areas",
+          "role_as_written": "survey respondents / land managers"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The quote appears verbatim on the cited pages: 'In a survey of 250 senior Federal and state managers of public lands, forests, lakes, parks and wilderness areas of the United States regarding the adverse effects of off-road recreational vehicles (which included other factors besides noise), trail motorcycles were rated as the \"most urgent problem for them to solve\" (Ref. 3).'"
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "yes",
+            "note": "The paraphrased narrator sentence names the entity (senior Federal and state managers) and states their position (rating trail motorcycles as the most urgent problem), linking them to opposition to off-road motorcycle noise."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "Rating trail motorcycles as the 'most urgent problem to solve' clearly indicates opposition to off-road motorcycle noise, consistent with the 'opposed' label."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "The entity is a descriptive group label (survey respondents/land managers), not a private individual, so the full descriptive name is appropriate."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The cited text explicitly describes these individuals as survey respondents who are senior Federal and state managers of public lands, forests, lakes, parks and wilderness areas."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote is present verbatim in the cited pages. The entity is correctly identified as the survey respondents (senior land managers), and their stance of opposition to off-road motorcycle noise is clearly supported by their rating of trail motorcycles as the 'most urgent problem for them to solve.' All checks pass without issue. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 27,
+      "entity": "Suzuki",
+      "kind": "organization",
+      "role": "motorcycle manufacturer / data supplier",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Most data was supplied by: Honda, Yamaha, Kawasaki, Suzuki and Harley-Davidson.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "97-147"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "97-147"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Most data was supplied by: Honda, Yamaha, Kawasaki, Suzuki and Harley-Davidson.",
+          "quote_verified": false,
+          "stance_basis": "supplied diagnostic noise source data to EPA on a confidential basis; no stance on regulation attributed",
+          "entity_as_written": "Suzuki",
+          "role_as_written": "motorcycle manufacturer / data supplier"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The exact phrase 'Most data was supplied by: Honda, Yamaha, Kawasaki, Suzuki and Harley-Davidson.' does not appear anywhere in the provided text from pages 97-147."
+          },
+          {
+            "check": "Attribution links Suzuki to stated stance",
+            "result": "no",
+            "note": "Suzuki is not mentioned anywhere in the cited page text. There is no paraphrased or direct attribution linking Suzuki to any stance."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Suzuki is a recognized organization/manufacturer name and is well-formed."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'motorcycle manufacturer / data supplier' is not supported by the cited text, which makes no mention of Suzuki."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote and entity (Suzuki) do not appear anywhere in the provided cited pages (97-147). The quote about data being supplied by Honda, Yamaha, Kawasaki, Suzuki, and Harley-Davidson likely comes from a different section of the document, possibly a data sources or methodology section not included here. The extraction should be re-done with the correct page citation where this quote actually appears. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 28,
+      "entity": "Yamaha",
+      "kind": "organization",
+      "role": "motorcycle manufacturer / data supplier",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Most data was supplied by: Honda, Yamaha, Kawasaki, Suzuki and Harley-Davidson.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "97-147"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "97-147"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Most data was supplied by: Honda, Yamaha, Kawasaki, Suzuki and Harley-Davidson.",
+          "quote_verified": false,
+          "stance_basis": "supplied diagnostic noise source data to EPA on a confidential basis; no stance on regulation attributed",
+          "entity_as_written": "Yamaha",
+          "role_as_written": "motorcycle manufacturer / data supplier"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The exact phrase 'Most data was supplied by: Honda, Yamaha, Kawasaki, Suzuki and Harley-Davidson.' does not appear anywhere in the provided text from pages 97-147."
+          },
+          {
+            "check": "Attribution links Yamaha to stated stance",
+            "result": "no",
+            "note": "Yamaha is not mentioned anywhere in the cited page text. There is no paraphrased sentence naming Yamaha and linking it to any position."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot assess stance match since neither the quote nor Yamaha appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Yamaha is a recognized organization/manufacturer name and is well-formed."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention Yamaha as a motorcycle manufacturer or data supplier; the role cannot be verified from the provided pages."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote does not appear verbatim in the cited pages (97-147), and Yamaha is not mentioned anywhere in the provided text. The quote likely comes from a different section of the document (possibly an appendix or data methodology section) that was not included in the cited pages. The extraction should be re-done with the correct page citation where this manufacturer data attribution actually appears. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 29,
+      "entity": "AMF/Harley-Davidson",
+      "kind": "organization",
+      "role": "motorcycle manufacturer / commenter on exhaust emission rulemaking",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "AMF/Harley-Davidson's reply to Exhaust Emission Notice of Proposed Rulemaking, January 30, 1976.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "145-195"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 3,
+          "evidence_pages": [
+            "145-195"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "AMF/Harley-Davidson's reply to Exhaust Emission Notice of Proposed Rulemaking, January 30, 1976.",
+          "quote_verified": true,
+          "stance_basis": "cited as source of compliance cost data in rulemaking reply",
+          "entity_as_written": "AMF/Harley-Davidson",
+          "role_as_written": "motorcycle manufacturer / commenter on exhaust emission rulemaking"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact text 'AMF/Harley-Davidson's reply to Exhaust Emission Notice of Proposed Rulemaking, January 30, 1976.' appears verbatim in the cited pages, as a footnote/reference near Table 7-19."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The quote is a bibliographic citation/footnote reference, not a statement of stance. It appears as a source citation near compliance testing cost discussion. No stance (neutral, opposed, etc.) is conveyed by this citation alone."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The citation does not convey any stance. 'Neutral' is not supported — the text merely cites AMF/Harley-Davidson as a data source for labeling cost estimates (~$0.5/unit). No position on the rulemaking is expressed."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "AMF/Harley-Davidson is the official name used in the document."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text references AMF/Harley-Davidson in the context of exhaust emission NPRM reply and labeling cost estimates, consistent with 'motorcycle manufacturer / commenter on exhaust emission rulemaking'."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote is a bibliographic footnote citation, not a stance-bearing statement. The extraction incorrectly assigns a 'neutral' stance based solely on a source citation. The entity's actual position on the rulemaking cannot be determined from this citation alone — the document only uses AMF/Harley-Davidson as a data source for labeling cost (~$0.5/unit). The stance and attribution mode need to be re-evaluated; if no substantive position is expressed in the cited pages, this row should not be extracted as a stance entry."
+      }
+    },
+    {
+      "sequence": 30,
+      "entity": "EPA",
+      "kind": "agency",
+      "role": "regulatory agency / document author",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Although EPA estimates of test and administration costs are considerably lower, manufacturer estimates were used in computing unit cost increases for testing and compliance requirements.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "145-195"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 3,
+          "evidence_pages": [
+            "145-195"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Although EPA estimates of test and administration costs are considerably lower, manufacturer estimates were used in computing unit cost increases for testing and compliance requirements.",
+          "quote_verified": false,
+          "stance_basis": "EPA produced lower cost estimates for testing/certification but deferred to manufacturer data for analysis",
+          "entity_as_written": "EPA",
+          "role_as_written": "regulatory agency / document author"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact sentence 'Although EPA estimates of test and administration costs are considerably lower, manufacturer estimates were used in computing unit cost increases for testing and compliance requirements.' appears verbatim in the cited text under section 7.1.5."
+          },
+          {
+            "check": "Attribution links EPA to stated stance",
+            "result": "yes",
+            "note": "The paraphrased/direct text names EPA explicitly ('EPA estimates of test and administration costs are considerably lower') and the narrator describes EPA's role in the cost methodology, linking EPA to the neutral/informational stance."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The quote is a factual/methodological statement by the document authors about EPA's cost estimates versus manufacturer estimates. 'Neutral' is appropriate as EPA is neither advocating for nor against the regulation here, merely providing cost data."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'EPA' is the standard abbreviation for the U.S. Environmental Protection Agency, appropriate for an agency entity."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text references EPA's motorcycle test program and EPA's cost estimates (Table 7-20), confirming EPA's role as a regulatory agency and document author/contributor."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote is present verbatim in the cited pages within section 7.1.5 (Testing and Certification Costs). EPA is clearly named in the sentence and the neutral stance label is appropriate for a methodological/factual statement about cost estimation. All checks pass cleanly. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 31,
+      "entity": "Frost and Sullivan",
+      "kind": "organization",
+      "role": "market research firm / referenced study source",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Frost and Sullivan \"Motorcycle Original Equipment and Aftermarket Study Announcement\", April 1975.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "145-195"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 3,
+          "evidence_pages": [
+            "145-195"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Frost and Sullivan \"Motorcycle Original Equipment and Aftermarket Study Announcement\", April 1975.",
+          "quote_verified": true,
+          "stance_basis": "cited as data source for aftermarket growth estimates; no stance on regulation attributed",
+          "entity_as_written": "Frost and Sullivan",
+          "role_as_written": "market research firm / referenced study source"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The text 'Frost and Sullivan \"Motorcycle Original Equipment and Aftermarket Study Announcement\", April 1975.' does not appear verbatim anywhere in the provided page text."
+          },
+          {
+            "check": "Attribution links Frost and Sullivan to stated stance",
+            "result": "no",
+            "note": "Frost and Sullivan is not mentioned anywhere in the cited page text; no paraphrase or reference to them appears in pages 145-195 as provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since the entity and quote are absent from the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Frost and Sullivan is a recognized market research organization; name is properly formed."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention Frost and Sullivan or any role they play as a market research firm or study source."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "Frost and Sullivan and the cited quote do not appear anywhere in the provided page text for pages 145-195. The extraction likely references a footnote or bibliography entry on a different page not included in this pull. The correct evidence pages need to be identified and verified before this row can be accepted."
+      }
+    },
+    {
+      "sequence": 32,
+      "entity": "International Research and Technology Corporation",
+      "kind": "organization",
+      "role": "referenced study source",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "A. International Research and Technology Corporation, \"The Impact of Noise Abatement Standards on the Motorcycle Industry\".",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "145-195"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 3,
+          "evidence_pages": [
+            "145-195"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "A. International Research and Technology Corporation, \"The Impact of Noise Abatement Standards on the Motorcycle Industry\".",
+          "quote_verified": true,
+          "stance_basis": "cited as reference source for price mark-up data; no stance attributed",
+          "entity_as_written": "International Research and Technology Corporation",
+          "role_as_written": "referenced study source"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The text in Table 7-24 sources section reads: 'A. International Research and Technology Corporation, \"The Impact of Noise Abatement Standards on the Motorcycle Industry\".' — verbatim match found."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "yes",
+            "note": "The organization is listed as a reference source (Source A) in Table 7-24 for motorcycle price mark-up data, consistent with paraphrased attribution as a referenced study source."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The entity is cited as a data/study source with no expressed opinion for or against the regulation; neutral is appropriate."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official organization name used as it appears in the document."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text explicitly lists the organization as a source reference (Source A) for price mark-up data in Table 7-24, confirming 'referenced study source' role."
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "The summary quote appears verbatim in Table 7-24's sources section. The entity is clearly identified as a referenced study source providing price mark-up data, with no stance expressed beyond providing factual reference material. All checks pass cleanly."
+      }
+    },
+    {
+      "sequence": 33,
+      "entity": "Ziff-Davis Publishing Company",
+      "kind": "organization",
+      "role": "aftermarket study source",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The 1974 data point obtained from Ziff-Davis Publishing Company, \"Motorcycle Aftermarket Study\".",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "145-195"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 3,
+          "evidence_pages": [
+            "145-195"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The 1974 data point obtained from Ziff-Davis Publishing Company, \"Motorcycle Aftermarket Study\".",
+          "quote_verified": false,
+          "stance_basis": "cited as data source for aftermarket sales; no stance on regulation attributed",
+          "entity_as_written": "Ziff-Davis Publishing Company",
+          "role_as_written": "aftermarket study source"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The phrase 'The 1974 data point obtained from Ziff-Davis Publishing Company, \"Motorcycle Aftermarket Study\"' does not appear verbatim in the provided text of pages 145-195."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "Ziff-Davis Publishing Company is not mentioned anywhere in the cited page text provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since the entity and quote are not found in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Ziff-Davis Publishing Company is a properly formed organization name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'aftermarket study source' cannot be confirmed as Ziff-Davis does not appear in the provided text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "Ziff-Davis Publishing Company and the 'Motorcycle Aftermarket Study' quote do not appear anywhere in the provided page text (pages 145-195). The extraction may reference a different page range or a footnote/reference section not included in the pull. The row should be re-extracted with correct page citations where Ziff-Davis is actually mentioned. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 34,
+      "entity": "concerned state and local officials",
+      "kind": "other",
+      "role": "state and local government officials",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "almost all concerned state and local officials believed that Federal regulation of new off-road motorcycles would help to solve the noise problem in their jurisdictions.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "194"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "194"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "almost all concerned state and local officials believed that Federal regulation of new off-road motorcycles would help to solve the noise problem in their jurisdictions.",
+          "quote_verified": true,
+          "stance_basis": "believed Federal regulation of new off-road motorcycles would help solve noise problems",
+          "entity_as_written": "concerned state and local officials",
+          "role_as_written": "state and local government officials"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact phrase 'almost all concerned state and local officials believed that Federal regulation of new off-road motorcycles would help to solve the noise problem in their jurisdictions.' appears verbatim on page 194."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "yes",
+            "note": "The cited text names 'concerned state and local officials' as the group holding this belief, consistent with paraphrased attribution mode."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The officials believed Federal regulation would help solve the noise problem, indicating support/in_favor of Federal regulation."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'concerned state and local officials' is a descriptive group label drawn directly from the text; acceptable as a collective entity reference."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text references 'state and local officials' and 'state and local enforcement officials,' consistent with the role 'state and local government officials.'"
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "The summary quote is present verbatim on the cited page. The entity, stance, and role are all clearly supported by the text. No issues identified."
+      }
+    },
+    {
+      "sequence": 35,
+      "entity": "Exhaust system manufacturers",
+      "kind": "organization",
+      "role": "aftermarket exhaust system manufacturers / commenters",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Exhaust system manufacturers have commented that they do not know how the sound level performance of their mufflers varies from one model motorcycle to another. They further maintain that it would not be possible to categorize motorcycles in order to test a worst case to assure that all other motorcycle models in that category would meet the standard with the same replacement exhaust system.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "199"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "199"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Exhaust system manufacturers have commented that they do not know how the sound level performance of their mufflers varies from one model motorcycle to another. They further maintain that it would not be possible to categorize motorcycles in order to test a worst case to assure that all other motorcycle models in that category would meet the standard with the same replacement exhaust system.",
+          "quote_verified": true,
+          "stance_basis": "raised concerns about feasibility of universal muffler categorization testing requirements",
+          "entity_as_written": "Exhaust system manufacturers",
+          "role_as_written": "aftermarket exhaust system manufacturers / commenters"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The summary quote ('Exhaust system manufacturers have commented that they do not know how the sound level performance of their mufflers varies from one model motorcycle to another...') does not appear verbatim in the cited page 199 text provided."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The cited page text does not mention exhaust system manufacturers commenting about not knowing how sound level performance varies; the text discusses labeling strategies and production verification, not the specific comments attributed."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since the quote and attribution are not found in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Exhaust system manufacturers' is a reasonable collective organizational descriptor."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does mention exhaust system manufacturers in context of labeling, but does not support the specific role as 'commenters' making the attributed statements."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "medium",
+        "notes": "The summary quote does not appear verbatim in the provided page 199 text, and the specific content attributed to exhaust system manufacturers (not knowing how sound level performance varies across motorcycle models) is absent from the cited passage. The correct page containing this quote likely differs from page 199. The extractor should locate the correct page where this paraphrased content actually appears."
+      }
+    },
+    {
+      "sequence": 36,
+      "entity": "Manufacturers of replacement exhaust systems",
+      "kind": "organization",
+      "role": "aftermarket exhaust system manufacturers / commenters",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Manufacturers of replacement exhaust systems have indicated that requiring the use of the acceleration test procedure for all testing could pose a major problem, due to the difficulty of acquiring new motorcycles for testing purposes",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "197"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "197"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Manufacturers of replacement exhaust systems have indicated that requiring the use of the acceleration test procedure for all testing could pose a major problem, due to the difficulty of acquiring new motorcycles for testing purposes",
+          "quote_verified": true,
+          "stance_basis": "raised concern that acceleration test procedure poses major problem for exhaust system manufacturers",
+          "entity_as_written": "Manufacturers of replacement exhaust systems",
+          "role_as_written": "aftermarket exhaust system manufacturers / commenters"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The quote appears verbatim on page 197: 'Manufacturers of replacement exhaust systems have indicated that requiring the use of the acceleration test procedure for all testing could pose a major problem, due to the difficulty of acquiring new motorcycles for testing purposes'"
+          },
+          {
+            "check": "Attribution links entity to stance (paraphrased)",
+            "result": "yes",
+            "note": "The cited text names 'Manufacturers of replacement exhaust systems' and describes their indicated concern, linking the entity to the stated position."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The entity is raising a concern/objection about a specific requirement (acceleration test procedure), which is more accurately 'conditional' or 'opposed' to that requirement, not 'neutral'. They are not indifferent; they are flagging a major problem with the proposed approach."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Manufacturers of replacement exhaust systems' is a collective organizational descriptor consistent with the cited text."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text clearly identifies them as aftermarket exhaust system manufacturers who commented on the enforcement procedures."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The quote is verbatim and the attribution is correct, but the stance label 'neutral' does not match the evidence. The manufacturers are expressing opposition or a conditional concern about requiring the acceleration test procedure for all testing, calling it 'a major problem.' The stance should be 'opposed' or 'conditional' (conditional if they would accept an alternative like the stationary test). Given that they propose an alternative (stationary test), 'conditional' is likely the most accurate label."
+      }
+    },
+    {
+      "sequence": 37,
+      "entity": "motorcycle users",
+      "kind": "other",
+      "role": "off-road motorcycle users / commenters",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "An additional problem mentioned by both motorcycle users and some government officials is that there may be an increased tendency for motorcyclists to either modify their off-road motorcycle or switch to an unregulated competition motorcycle to counteract severe performance penalties.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "195"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "195"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "An additional problem mentioned by both motorcycle users and some government officials is that there may be an increased tendency for motorcyclists to either modify their off-road motorcycle or switch to an unregulated competition motorcycle to counteract severe performance penalties.",
+          "quote_verified": true,
+          "stance_basis": "raised concern about potential for increased modifications or switching to unregulated competition motorcycles",
+          "entity_as_written": "motorcycle users",
+          "role_as_written": "off-road motorcycle users / commenters"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact text 'An additional problem mentioned by both motorcycle users and some government officials is that there may be an increased tendency for motorcyclists to either modify their off-road motorcycle or switch to an unregulated competition motorcycle to counteract severe performance penalties.' appears verbatim on page 195."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "yes",
+            "note": "The cited narrator sentence names 'motorcycle users' as a source of the mentioned problem, linking them to the paraphrased content."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The quote describes motorcycle users raising a concern/problem about performance penalties and likely non-compliance behavior. This reflects opposition or conditional concern about the regulation, not a neutral stance. 'Neutral' is not well-supported; 'opposed' or 'conditional' would be more accurate."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'motorcycle users' is a reasonable group descriptor consistent with the cited text."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text references 'motorcycle users' as commenters raising concerns, consistent with the role 'off-road motorcycle users / commenters'."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote is verbatim and the entity attribution is correct, but the stance label 'neutral' does not match the evidence. Motorcycle users are raising a concern about performance penalties and potential non-compliance, which reflects opposition or at minimum a conditional/concerned stance toward the regulation. The stance should be re-labeled as 'opposed' or 'conditional'."
+      }
+    },
+    {
+      "sequence": 38,
+      "entity": "One manufacturer",
+      "kind": "organization",
+      "role": "motorcycle manufacturer commenter",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "One manufacturer suggested that, in conjunction with the vehicle label, engines or other components of competition motorcycles be of a distinctive color to aid enforcement officials in identifying and controlling their use off-road.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "193"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "193"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "One manufacturer suggested that, in conjunction with the vehicle label, engines or other components of competition motorcycles be of a distinctive color to aid enforcement officials in identifying and controlling their use off-road.",
+          "quote_verified": false,
+          "stance_basis": "suggested distinctive color coding for competition motorcycle components to aid enforcement",
+          "entity_as_written": "One manufacturer",
+          "role_as_written": "motorcycle manufacturer commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The quote appears nearly verbatim on page 193, with only a line break difference ('distinc-tive' vs 'distinctive')."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "yes",
+            "note": "The cited text states 'One manufacturer suggested that...' directly attributing the suggestion to 'One manufacturer'."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The manufacturer is making a constructive suggestion (a recommendation for enforcement aid), which is more 'conditional' or 'in_favor' of regulation with a specific proposal, not neutral. However, the suggestion is about a labeling/color-coding mechanism rather than a clear stance on the regulation itself, making 'neutral' debatable."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'One manufacturer' is anonymous and not identified by name; this is acceptable as the source text does not name them."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text identifies the commenter as a manufacturer commenting on competition motorcycle regulation."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "The quote is verbatim and attribution is clear, but the stance label 'neutral' is questionable — the manufacturer is actively suggesting a specific enforcement mechanism, which could indicate conditional support for regulation rather than neutrality. Additionally, the entity is anonymous ('One manufacturer'), which warrants human review to confirm whether the neutral label is appropriate or whether 'conditional' or 'in_favor' better captures the stance."
+      }
+    },
+    {
+      "sequence": 39,
+      "entity": "some government officials",
+      "kind": "other",
+      "role": "government officials / commenters",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "An additional problem mentioned by both motorcycle users and some government officials is that there may be an increased tendency for motorcyclists to either modify their off-road motorcycle or switch to an unregulated competition motorcycle to counteract severe performance penalties.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "195"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "195"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "An additional problem mentioned by both motorcycle users and some government officials is that there may be an increased tendency for motorcyclists to either modify their off-road motorcycle or switch to an unregulated competition motorcycle to counteract severe performance penalties.",
+          "quote_verified": true,
+          "stance_basis": "raised concern about potential for increased modifications or switching to unregulated competition motorcycles under strict performance standards",
+          "entity_as_written": "some government officials",
+          "role_as_written": "government officials / commenters"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact sentence appears verbatim on page 195: 'An additional problem mentioned by both motorcycle users and some government officials is that there may be an increased tendency for motorcyclists to either modify their off-road motorcycle or switch to an unregulated competition motorcycle to counteract severe performance penalties.'"
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "yes",
+            "note": "The paraphrased narrator sentence names 'some government officials' as one of the groups who mentioned this problem, linking them to the cited content."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The entity is raising a concern/problem about a potential negative consequence of regulation, which is more accurately 'conditional' or 'opposed' rather than 'neutral'. They are flagging a risk, not expressing a neutral position."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "no",
+            "note": "'some government officials' is vague and not an official name of any org/agency/tribe. It is an anonymous collective reference with no specific identity."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text does refer to 'some government officials' as commenters who mentioned this problem, consistent with the role description."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "The quote is verbatim and the attribution is technically correct, but the entity 'some government officials' is anonymous and vague, warranting human review. Additionally, the stance label 'neutral' is questionable — raising a concern about negative consequences of regulation suggests a more conditional or cautious position rather than neutrality. A human should assess whether this entity can be better identified and whether the stance should be re-labeled."
+      }
+    }
+  ]
+}

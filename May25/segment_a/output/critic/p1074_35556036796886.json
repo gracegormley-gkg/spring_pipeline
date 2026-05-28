@@ -1,0 +1,282 @@
+{
+  "title": {
+    "rubric_results": [
+      {
+        "check": "Title is non-empty and plausibly the document's title?",
+        "result": "yes",
+        "note": "Title references Kendall Square urban renewal and EIS, which is a plausible and coherent document title."
+      },
+      {
+        "check": "Length is reasonable (not a sentence fragment, not the whole abstract)?",
+        "result": "yes",
+        "note": "Title is concise and appropriately scoped for a document title."
+      },
+      {
+        "check": "If two sources (NUL + Haiku) — do they roughly agree?",
+        "result": "n/a",
+        "note": "Only one source (NUL) provided; no Haiku source to compare."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "medium",
+    "notes": "The extracted title 'Kendall Square urban renewal : environmental impact statement.' is plausible and well-formed, consistent with standard EIS document titling conventions. Only one source (NUL) was provided with no cited page text to verify against, which slightly reduces confidence. The trailing period suggests this may be a library catalog record title, which is acceptable.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "year": {
+    "rubric_results": [
+      {
+        "check": "Year falls within 1969 ≤ year ≤ current year?",
+        "result": "no",
+        "note": "2026 is in the future and exceeds the current year (2025), failing the upper bound check"
+      },
+      {
+        "check": "Year present in NUL metadata OR found on first 3 pages?",
+        "result": "yes",
+        "note": "NUL metadata reportedly returns 2026, though no cited page text was provided to verify regex result of 1977"
+      },
+      {
+        "check": "If NUL and regex disagree, value reflects this with a low-confidence flag?",
+        "result": "yes",
+        "note": "Extraction correctly flags the NUL=2026 vs regex=1977 disagreement with a low-confidence marker"
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "The extracted year of 2026 is a future date and fails the valid range check, making it almost certainly erroneous for an EIS document. The regex result of 1977 is far more plausible for an Environmental Impact Statement but cannot be confirmed without cited page text. A human reviewer should inspect the source document directly to determine the correct publication year, with 1977 being the more credible candidate.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "eis_type": {
+    "rubric_results": [
+      {
+        "check": "Type is one of: Draft, Final, Supplemental, ROD, Unknown?",
+        "result": "yes",
+        "note": "'Draft' is a valid recognized EIS type in the rubric."
+      },
+      {
+        "check": "Regex hit on first page and Sonnet on first 2 pages agree?",
+        "result": "yes",
+        "note": "Both sources listed as 'regex (first page)' and 'Sonnet (first 2 pages)' agree on 'Draft'."
+      },
+      {
+        "check": "Evidence phrase supports the chosen type?",
+        "result": "yes",
+        "note": "Evidence phrase 'Draft Environmental Impact Statement' directly and unambiguously supports the 'Draft' classification."
+      },
+      {
+        "check": "Cited pages provided for verification?",
+        "result": "no",
+        "note": "No cited page text was provided, preventing independent verification of the evidence phrase in context."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "high",
+    "notes": "The extracted value 'Draft' is well-supported by the evidence phrase 'Draft Environmental Impact Statement,' and both extraction methods agree. However, no cited page text was provided, making it impossible to independently verify the evidence in context. The extraction is accepted with the caveat that source text should be retained for audit purposes.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "lead_agency": {
+    "rubric_results": [
+      {
+        "check": "All listed agencies appear in NUL contributors OR on cited title pages?",
+        "result": "yes",
+        "note": "United States. Department of Housing and Urban Development is sourced from NUL and is a recognized federal agency name in standard catalog form."
+      },
+      {
+        "check": "Joint-lead (>2 agencies) flagged for human review?",
+        "result": "n/a",
+        "note": "Only one agency listed; joint-lead flag not required."
+      },
+      {
+        "check": "No role text (e.g., '(issuing body)') left in the agency names?",
+        "result": "yes",
+        "note": "The agency name contains no parenthetical role text or extraneous descriptors."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "A single lead agency, United States. Department of Housing and Urban Development, is extracted in clean authority-file form with no role text appended. It is confirmed present in the NUL source. No cited title pages were provided, but the NUL attribution is sufficient for a passing verdict.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "summary": {
+    "rubric_results": [
+      {
+        "check": "project_description text supported by cited pages",
+        "result": "yes",
+        "note": "The cited pages confirm the CRA project, the bounded site (Main, Third, Binney, Penn Central/B&A tracks), the mix of uses (light industry, office, retail, hotel, housing, fire station, parking, open space), street improvements including rotary elimination and connectors, the $40M Federal Capital Grant with $6.4M local share, and 1990 marketing target. Employment figures (5,830–7,970) are referenced in Table I.3 on page I-31 which is within the cited range."
+      },
+      {
+        "check": "Numbers, places, and dates match cited pages",
+        "result": "yes",
+        "note": "The $40M grant and $6.4M local share are confirmed on page I-4. The 1990 completion assumption is confirmed on page I-34. The site boundary description matches pages I-3 and I-8. The 22–24 acre figure is consistent with Table I.1 (Parcels 3+4 = ~22–24 acres for the triangle/quadrangle development area). The 2.5 acres of public open space is stated in Table I.2 (I-30). Employment ranges are in Table I.3 (I-31)."
+      },
+      {
+        "check": "affected_community text supported by cited pages",
+        "result": "yes",
+        "note": "The four neighborhoods, East Cambridge's Portuguese/blue-collar character, MIT dominance in Neighborhood 2, lower-middle-income and low-income areas with Black and Hispanic populations, ~25,000 residents and ~32,000 employees, major employers (MIT, Technology Square, Draper Lab), and remaining 10 families/6 businesses are all supported by the cited pages (especially II-2-3 through II-2-14 and the socioeconomic chapter). The Margaret Fuller House and Boardman School are referenced in Appendix D (D-1-1) which is within cited page range 337–364."
+      },
+      {
+        "check": "alternatives_overview text supported by cited pages",
+        "result": "yes",
+        "note": "All five alternatives (Preferred/Neighborhood Plan, Task Force Plan, CCM Plan, Maximum Plan, No-Build) are described in Part I and Part III within the cited page ranges. The 500–606 housing units for Preferred Plan, Task Force being primarily industrial with no housing/hotel, CCM similar to Preferred but without residential, Maximum Plan eliminating Central Connector, and 95% cleared site are all confirmed in the cited pages."
+      },
+      {
+        "check": "environmental_impact text supported by cited pages",
+        "result": "yes",
+        "note": "Positive effects (blight elimination, tax base, aesthetics, utilities, neighborhood stabilization) and negative effects (6 businesses relocated, traffic increase, noise, construction impacts) are confirmed in the Summary (S-1 to S-2) and Part II chapters within cited ranges. The tax rate reduction of $1.63–$6.46, ~15% traffic increase, HUD noise standards characterization, pile-driving noise up to 80 dBA, and dewatering settlement are supported by the cited technical chapters."
+      },
+      {
+        "check": "public_response text supported by cited pages",
+        "result": "yes",
+        "note": "The 1972 concept plan abandonment, July 1973 City Council order, Task Force formation, Neighborhood Plan support from East Cambridge Planning Team/MIT/Kendall Square Businessmen's Association, October 1974 City Council endorsement, December 14 1976 hearing, ~20 community meetings, and Cambridge Tenants Organizing Committee concerns are all referenced in Part I (History) and Part VII (Public Participation) within the cited page ranges."
+      },
+      {
+        "check": "public_response based_on_main_doc_only=true",
+        "result": "yes",
+        "note": "All public response information is drawn from the main DEIS document (Parts I and VII), with no external sources cited."
+      },
+      {
+        "check": "No invention or hallucinated detail beyond cited content",
+        "result": "yes",
+        "note": "All specific details (dates, organizations, figures, plan names, geographic references) are traceable to the cited pages. No details appear fabricated or beyond what the document contains."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "All extracted fields are well-supported by the cited pages. Key figures such as the $40M grant, $6.4M local share, site boundaries, five alternatives, employment ranges, and public participation details are confirmed in the cited content. The extraction is accurate and complete with no hallucinated details detected.",
+    "source_pages": [
+      "1-51",
+      "49-99",
+      "97-147",
+      "289-339",
+      "241-291",
+      "337-364",
+      "193-243",
+      "145-195"
+    ]
+  },
+  "alternatives": {
+    "rubric_results": [
+      {
+        "check": "Each listed alternative is actually discussed on its cited page?",
+        "result": "yes",
+        "note": "All five alternatives (Neighborhood/Preferred Plan, Task Force Plan, City Manager's Plan, Maximum Plan, No Build Plan) are explicitly discussed in the cited pages (III-3 through III-15), which correspond to pages 235-248 in the document."
+      },
+      {
+        "check": "The No Action alternative is included if the cited text includes it?",
+        "result": "yes",
+        "note": "The 'No Build' Alternative is explicitly included in the extraction and is discussed at length in the cited text under 'THE NO BUILD ALTERNATIVE' section."
+      },
+      {
+        "check": "Names and descriptions match terminology used in the cited text?",
+        "result": "yes",
+        "note": "All names match: 'Neighborhood Plan (Preferred Plan)', 'Task Force Plan', 'City Manager's Plan' (also called 'CCM Plan' in the text), 'Maximum Plan', and 'No Build Plan'. Descriptions accurately reflect the text, including the 50% building area figure for Task Force, 266-room hotel for CCM, 400-room hotel and 606 residential units for Maximum, and the open space/no development characterization of No Build."
+      },
+      {
+        "check": "No outside-knowledge alternatives added that aren't in the chapter?",
+        "result": "yes",
+        "note": "The extraction lists exactly the five plans enumerated in the cited text (Neighborhood Plan, Task Force Plan, City Manager's Plan, Maximum Plan, No Build Plan) with no additional alternatives introduced from outside sources."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "All five alternatives listed in the extraction are present and accurately described in the cited text. The terminology, descriptions, and quantitative details (e.g., hotel room counts, density comparisons, open space figures) align closely with the source document. The No Build alternative is properly included and characterized as the no-action scenario requiring only demolition completion and minimum improvements.",
+    "source_pages": [
+      "235-314"
+    ]
+  },
+  "themes": {
+    "rubric_results": [
+      {
+        "check": "Each chosen theme is supported by the doc summary fields?",
+        "result": "no",
+        "note": "No cited pages were provided, so there is no verifiable textual evidence from the document to confirm the themes. The justification references summary fields but no actual text was pulled in."
+      },
+      {
+        "check": "Theme names come from the fixed taxonomy verbatim?",
+        "result": "n/a",
+        "note": "Cannot confirm without access to the fixed taxonomy, but 'Urban Development', 'Place Based Development Conflicts', and 'Transportation Infrastructure' appear plausible as taxonomy entries. Unable to verify verbatim match."
+      },
+      {
+        "check": "Subthemes belong to the chosen theme(s) per the taxonomy?",
+        "result": "n/a",
+        "note": "Without cited page text or taxonomy reference, subtheme-to-theme mapping cannot be verified. 'Community Resistance and Activism' and 'Land Rights and Displacement' seem more aligned with 'Place Based Development Conflicts'; others align reasonably with stated themes."
+      },
+      {
+        "check": "1–3 themes and 2–5 subthemes selected (within range)?",
+        "result": "yes",
+        "note": "3 themes and 5 subthemes selected — both within the allowed ranges."
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "No cited page text was provided, making it impossible to verify that the chosen themes and subthemes are grounded in the actual document content. The count ranges are satisfied, and the selections are internally coherent, but the absence of source text is a critical gap. A human reviewer should confirm the extraction against the original EIS summary fields before accepting.",
+    "source_pages": []
+  },
+  "location": {
+    "rubric_results": [
+      {
+        "check": "Place names appear in cited pages",
+        "result": "yes",
+        "note": "Page 1-30 (Table I.1 'Acreage Information for Kendall Square Project') and surrounding pages repeatedly reference Kendall Square, Cambridge, Massachusetts. The boundary description (Binney St, Main St, Third St, Penn Central Railroad Tracks) appears on the summary pages included in the cited text."
+      },
+      {
+        "check": "is_multi_site set correctly",
+        "result": "yes",
+        "note": "Single urban renewal project site in Cambridge, MA; is_multi_site=false is correct."
+      },
+      {
+        "check": "For corridor projects: endpoints named, not just a midpoint",
+        "result": "n/a",
+        "note": "This is a point/area project, not a corridor project."
+      },
+      {
+        "check": "State abbreviations match U.S. conventions",
+        "result": "yes",
+        "note": "MA is the correct USPS abbreviation for Massachusetts."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "The extracted location 'Kendall Square, Cambridge, MA' is well-supported throughout the cited pages, including explicit mention on the cover pages and in Table I.1 on page 1-30. The boundary description in the note (Binney Street, Main Street, Third Street, Penn Central Railroad Tracks) matches the document text verbatim. All rubric checks pass.",
+    "source_pages": [
+      "1-30"
+    ]
+  },
+  "key_people": {
+    "rubric_results": [
+      {
+        "check": "Each agency preparer named in the cited Preparers/Consultation text?",
+        "result": "yes",
+        "note": "Marvin Siflinger is named in the transmittal letter as Acting Area Office Director, and 'Boston Area Office, U.S. Department of Housing and Urban Development' is explicitly listed as preparer on the cover page."
+      },
+      {
+        "check": "Cooperating agencies / tribal nations actually listed in the cited text?",
+        "result": "yes",
+        "note": "All 28 cooperating agencies listed in the extraction appear verbatim in Section 5 ('Federal, State and Local Agencies From Which Comments Have Been Requested') of the cited text, including federal, regional, state, and local entities."
+      },
+      {
+        "check": "For public_commenters: stance present on cited page? Quote verbatim? Speaker clear?",
+        "result": "n/a",
+        "note": "No public commenters were extracted; the field is an empty array, which is consistent with the cited pages not containing public comment responses."
+      },
+      {
+        "check": "Private individuals: last-name-only or 'private commenter' convention followed?",
+        "result": "n/a",
+        "note": "No private individuals were listed as commenters in the extraction."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "All extracted agency preparers and cooperating agencies are directly verifiable in the cited text. The empty public_commenters list is appropriate given the cited pages are from the front matter and project description sections of the DEIS, not the public participation section. No convention violations were identified.",
+    "source_pages": [
+      "1-30"
+    ]
+  }
+}

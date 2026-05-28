@@ -1,0 +1,115 @@
+{
+  "summary": {
+    "project_description": {
+      "text": "Project STORMFURY is a NOAA-led scientific experiment, with NASA and Department of Defense cooperation, to test whether seeding hurricane clouds with silver iodide can reduce maximum winds by 10-15 percent by redistributing energy away from the storm's eyewall. The 1977 plan proposes seeding one Atlantic hurricane between August 15 and October 15, using five instrumented aircraft based in Miami, Puerto Rico, or Bermuda to drop about 5,000 pyrotechnic flares over an 8-hour period at altitudes of 26,000 to 30,000 feet.",
+      "source_pages": [
+        "1-36"
+      ]
+    },
+    "affected_community": {
+      "text": "To protect people on land, a hurricane is only eligible for seeding if there is less than a 10 percent chance its center will come within 50 nautical miles of a populated land mass in the 24 hours after seeding, and seeding aircraft will not operate within 50 nautical miles of populated areas. Compared with Western Pacific alternatives, the Atlantic experimental area places fewer countries and smaller populations at immediate risk, although Atlantic hurricanes can still directly threaten the United States.",
+      "source_pages": [
+        "1-36"
+      ]
+    },
+    "alternatives_overview": {
+      "text": "Four alternatives are considered: do not perform the experiment, postpone it, conduct it in another ocean region such as the Western or Eastern North Pacific, or use a different modification technique. Other techniques considered include spreading thin films on the ocean to reduce evaporation and dispersing carbon dust to cause localized heating, but both are still in early research stages and lack working delivery systems, leaving silver iodide seeding as the only near-term option.",
+      "source_pages": [
+        "1-36"
+      ]
+    },
+    "environmental_impact": {
+      "text": "Worst-case estimated concentrations of silver and iodine released by the flares are well below levels considered harmful to marine life, air quality, or human health, and risks from bioaccumulation or chemical conversion are judged to be negligible. Seeding may temporarily change a storm's intensity, size, wind pattern, surge, and waves—possibly increasing winds and waves at outer distances of 50 to 200 nautical miles—but storms are expected to return to their natural state within 6 to 18 hours, with no significant changes to total rainfall or storm tracks.",
+      "source_pages": [
+        "1-36"
+      ]
+    },
+    "public_response": {
+      "text": "",
+      "source_pages": [],
+      "based_on_main_doc_only": true
+    }
+  },
+  "alternatives": {
+    "value": [],
+    "confidence": "low",
+    "source_pages": [],
+    "note": "Alternatives chapter not detected structurally — skipped per v2 plan (no word-regex fallback)."
+  },
+  "themes": {
+    "value": {
+      "themes": [
+        "Climate and Weather Modification",
+        "Governance and Institutional Control"
+      ],
+      "subthemes": [
+        "Climate Engineering and Intervention",
+        "Adaptation to Climate Variability",
+        "Environmental Regulation and Policy",
+        "Institutional Power and Resource Management"
+      ]
+    },
+    "confidence": "high",
+    "justification": "The project_description explicitly describes hurricane cloud seeding with silver iodide to modify storm intensity, directly mapping to 'Climate Engineering and Intervention' and 'Adaptation to Climate Variability.' The multi-agency (NOAA, NASA, DoD) coordination, eligibility criteria, and geographic restrictions reflect 'Environmental Regulation and Policy' and 'Institutional Power and Resource Management.'",
+    "source_pages": [
+      "summary"
+    ]
+  },
+  "location": {
+    "value": {
+      "places": [
+        {
+          "name": "Western Atlantic Ocean",
+          "kind": "region",
+          "state": null
+        }
+      ],
+      "is_multi_site": false,
+      "geocoded": [
+        {
+          "name": "Western Atlantic Ocean",
+          "lat": -34.285129,
+          "lon": 18.449738,
+          "address": "View over lowland and Atlantic ocean, Cape of Good Hope Drive, Cape Town Ward 61, City of Cape Town, Western Cape, South Africa"
+        }
+      ]
+    },
+    "confidence": "high",
+    "source_pages": [
+      "1-30"
+    ],
+    "note": "Project STORMFURY-Atlantic involves seeding hurricanes in the western Atlantic Ocean within 600 nautical miles of Miami, Puerto Rico, or Bermuda. The experimental area is an open-ocean region with no fixed land-based site."
+  },
+  "key_people": {
+    "value": {
+      "agency_preparers": [],
+      "cooperating_agencies": [
+        {
+          "name": "National Oceanic and Atmospheric Administration (NOAA)"
+        },
+        {
+          "name": "National Aeronautics and Space Administration (NASA)"
+        },
+        {
+          "name": "Department of Defense (DOD)"
+        }
+      ],
+      "public_commenters": [],
+      "comment_response_present": false
+    },
+    "confidence": "medium",
+    "source_pages": {
+      "preparers": [
+        "1-30"
+      ],
+      "commenters": []
+    }
+  },
+  "chunking_meta": {
+    "n_chunks": 1,
+    "n_chapters_detected": 0,
+    "chapters": [],
+    "chunk_size_pages": 50,
+    "note": "Page numbers are ESTIMATED from char offsets at 2500 chars/page."
+  }
+}

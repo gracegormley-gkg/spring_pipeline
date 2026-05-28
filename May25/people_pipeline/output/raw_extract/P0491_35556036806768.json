@@ -1,0 +1,102 @@
+{
+  "doc_id": "P0491_35556036806768",
+  "work_id": "bbae926c-0ea9-401d-9b66-a08e1513a8c1",
+  "title": "Project STORMFURY, Atlantic weather modification : environmental impact statement.",
+  "n_chunks": 1,
+  "per_chunk": [
+    {
+      "chunk_index": 0,
+      "start_page": 1,
+      "end_page": 36,
+      "ceq_chapter": null,
+      "entities": [
+        {
+          "entity": "National Oceanic and Atmospheric Administration (NOAA)",
+          "kind": "agency",
+          "role": "Project director of STORMFURY",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The project has continually evolved and is today an effort directed by the National Oceanic and Atmospheric Administration (NOAA) with cooperation from the National Aeronautics and Space Administration (NASA) and the Department of Defense (DOD).",
+          "evidence_pages": [
+            "1"
+          ],
+          "stance_basis": "NOAA directs the project and initiated a $30 million modernization program to resume it",
+          "chunk_index": 0
+        },
+        {
+          "entity": "National Aeronautics and Space Administration (NASA)",
+          "kind": "agency",
+          "role": "Cooperating agency on STORMFURY",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The project has continually evolved and is today an effort directed by the National Oceanic and Atmospheric Administration (NOAA) with cooperation from the National Aeronautics and Space Administration (NASA) and the Department of Defense (DOD).",
+          "evidence_pages": [
+            "1"
+          ],
+          "stance_basis": "NASA cooperates in the project, providing aircraft and support",
+          "chunk_index": 0
+        },
+        {
+          "entity": "Department of Defense (DOD)",
+          "kind": "agency",
+          "role": "Cooperating agency on STORMFURY",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The project has continually evolved and is today an effort directed by the National Oceanic and Atmospheric Administration (NOAA) with cooperation from the National Aeronautics and Space Administration (NASA) and the Department of Defense (DOD).",
+          "evidence_pages": [
+            "1"
+          ],
+          "stance_basis": "DOD cooperates in the project as a participating agency",
+          "chunk_index": 0
+        },
+        {
+          "entity": "Project STORMFURY personnel",
+          "kind": "organization",
+          "role": "Project scientific staff",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "Project STORMFURY personnel feel that this particular rule is very conservative and provides a significant margin of safety.",
+          "evidence_pages": [
+            "8"
+          ],
+          "stance_basis": "Project personnel affirm the safety margin of the seeding eligibility criteria",
+          "chunk_index": 0
+        },
+        {
+          "entity": "American Conference of Governmental Industrial Hygienists",
+          "kind": "organization",
+          "role": "Standards body cited for silver threshold limits",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "The threshold limit for silver was reported to be 10 µg/m³ by the American Conference of Governmental Industrial Hygienists in 1966.",
+          "evidence_pages": [
+            "36"
+          ],
+          "stance_basis": "Cited as authority for air quality threshold limits; no stance on the project itself, only provides reference standard",
+          "chunk_index": 0
+        },
+        {
+          "entity": "National Hurricane and Experimental Meteorological Laboratory (NHEML)",
+          "kind": "agency",
+          "role": "Modeling group developing 3-D tropical cyclone model",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The Modeling Group at the National Hurricane and Experimental Meteorological Laboratory (NHEML), Miami, Florida, is now developing a three-dimensional tropical cyclone with three nested grids capable of simulating the track, intensity, and inner core structure of tropical cyclones.",
+          "evidence_pages": [
+            "14"
+          ],
+          "stance_basis": "NHEML is actively developing models specifically designed to support STORMFURY modification strategies",
+          "chunk_index": 0
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 20903,
+        "output_tokens": 951,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    }
+  ]
+}

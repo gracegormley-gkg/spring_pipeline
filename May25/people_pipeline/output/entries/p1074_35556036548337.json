@@ -1,0 +1,2635 @@
+{
+  "doc_id": "p1074_35556036548337",
+  "work_id": "74b6a128-27b7-4877-b7d4-a22842139fb7",
+  "title": "SR-252 construction connecting I-5 and I-805, San Diego : environmental impact statement.",
+  "estimated_pages": 90,
+  "n_chunks": 2,
+  "n_raw_rows": 40,
+  "n_entries": 40,
+  "verdict_counts": {
+    "PASS": 0,
+    "PASS_WITH_NOTE": 0,
+    "RE_EXTRACT": 12,
+    "HUMAN_REVIEW": 28
+  },
+  "stance_counts": {
+    "neutral": 9,
+    "in_favor": 10,
+    "opposed": 7,
+    "conditional": 14
+  },
+  "elapsed_sec": 148.2,
+  "usage": {
+    "extract": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 2,
+          "input_tokens": 44047,
+          "output_tokens": 5726,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.218
+        }
+      ],
+      "total": {
+        "calls": 2,
+        "input_tokens": 44047,
+        "output_tokens": 5726,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.218
+      }
+    },
+    "critic": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 40,
+          "input_tokens": 47635,
+          "output_tokens": 16683,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.3931
+        }
+      ],
+      "total": {
+        "calls": 40,
+        "input_tokens": 47635,
+        "output_tokens": 16683,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.3931
+      }
+    },
+    "total": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 42,
+          "input_tokens": 91682,
+          "output_tokens": 22409,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.6112
+        }
+      ],
+      "total": {
+        "calls": 42,
+        "input_tokens": 91682,
+        "output_tokens": 22409,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.6112
+      }
+    }
+  },
+  "schema": {
+    "stance_vocabulary": [
+      "in_favor",
+      "opposed",
+      "conditional",
+      "neutral"
+    ],
+    "kind_vocabulary": [
+      "individual",
+      "official",
+      "organization",
+      "agency",
+      "tribe",
+      "government",
+      "other"
+    ],
+    "verdicts": [
+      "PASS",
+      "PASS_WITH_NOTE",
+      "RE_EXTRACT",
+      "HUMAN_REVIEW"
+    ],
+    "page_numbers": "ESTIMATED from char offsets at 2500 chars/page.",
+    "merge_rule": "One row per (entity, stance) — stance changes produce separate rows.",
+    "cost_note": "USD costs are ESTIMATES from settings.PRICES_USD_PER_M; verify against AWS Bedrock invoice."
+  },
+  "entries": [
+    {
+      "sequence": 1,
+      "entity": "California Department of Fish and Game",
+      "kind": "agency",
+      "role": "state wildlife agency, consulted commenter",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "An advance copy of the environmental impact statement was transmitted to the California Department of Fish and Game for consultative purposes. No issues were turned up by this consultation.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "17"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "17"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "An advance copy of the environmental impact statement was transmitted to the California Department of Fish and Game for consultative purposes. No issues were turned up by this consultation.",
+          "quote_verified": false,
+          "stance_basis": "raised no issues upon consultation regarding vegetation and wildlife",
+          "entity_as_written": "California Department of Fish and Game",
+          "role_as_written": "state wildlife agency, consulted commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 17 contains demographic and land use information about Route 252/Southeast San Diego. There is no mention of the California Department of Fish and Game or any consultation with that agency."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The California Department of Fish and Game does not appear anywhere in the cited text; no paraphrased attribution is possible."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the entity and quote are absent from the cited page."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "California Department of Fish and Game is a properly formed official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not reference this agency or any consultative role."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 17 contains only demographic statistics and a land use map description for the Route 252 corridor in Southeast San Diego. There is no mention of the California Department of Fish and Game or any agency consultation. The extraction appears to reference content from a different page; the correct evidence page needs to be identified and re-extracted. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 2,
+      "entity": "California Department of Transportation",
+      "kind": "agency",
+      "role": "state transportation agency, project proponent",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The tentative finding of the California Department of Transportation is as follows: 1. The proposed project is consistent with the State Implementation Plan since it reduces emissions. 2. The alternatives would result in greater emissions of hydrocarbons. This would be inconsistent with the oxidant control strategy of the State Implementation Plan.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "51"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "51"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The tentative finding of the California Department of Transportation is as follows: 1. The proposed project is consistent with the State Implementation Plan since it reduces emissions. 2. The alternatives would result in greater emissions of hydrocarbons. This would be inconsistent with the oxidant control strategy of the State Implementation Plan.",
+          "quote_verified": true,
+          "stance_basis": "found project consistent with State Implementation Plan and superior to alternatives on emissions",
+          "entity_as_written": "California Department of Transportation",
+          "role_as_written": "state transportation agency, project proponent"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 51 text provided does not contain the quoted text about California Department of Transportation's tentative finding regarding the State Implementation Plan."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The provided page text does not mention California Department of Transportation or any tentative finding about the State Implementation Plan. The text is about City of San Diego comments and responses."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance as the relevant text is not present in the cited pages provided."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "California Department of Transportation is the official name of the state agency."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention California Department of Transportation at all, so the role cannot be verified from these pages."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The text provided for page 51 does not contain the quoted material about California Department of Transportation's tentative finding regarding the State Implementation Plan. The page content appears to be from a different section discussing City of San Diego comments. It is possible the wrong page was pulled, or the page numbering is off. A human reviewer should locate the correct page containing the Caltrans tentative finding quote."
+      }
+    },
+    {
+      "sequence": 3,
+      "entity": "California Highway Commission",
+      "kind": "agency",
+      "role": "state highway commission",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "On June 29, 1965, the California Highway Commission adopted the route alignment followed by the proposed project because it was most economical, required less right of way, displaced fewer people and would have a less disruptive effect on the community since it follows a natural terrain feature (South Chollas Creek).",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "12"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "12"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "On June 29, 1965, the California Highway Commission adopted the route alignment followed by the proposed project because it was most economical, required less right of way, displaced fewer people and would have a less disruptive effect on the community since it follows a natural terrain feature (South Chollas Creek).",
+          "quote_verified": false,
+          "stance_basis": "adopted the Route 252 alignment on stated grounds",
+          "entity_as_written": "California Highway Commission",
+          "role_as_written": "state highway commission"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 12 text does not contain the summary quote about the California Highway Commission adopting a route alignment on June 29, 1965. The page discusses demographic data and topographic features of Southeast San Diego."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The California Highway Commission is not mentioned anywhere in the cited page 12 text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance as the entity and quote are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "California Highway Commission is an official agency name and is properly formatted."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention the California Highway Commission or its role as a state highway commission."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote and entity are entirely absent from the cited page 12. The page contains demographic data and topographic descriptions of Southeast San Diego, with no reference to the California Highway Commission or its 1965 route adoption decision. The correct page citation needs to be identified — the quote likely appears on a different page of the EIS. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 4,
+      "entity": "City of San Diego",
+      "kind": "government",
+      "role": "local government, freeway agreement signatory",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "On June 29, 1965, the California Highway Commission adopted the route alignment followed by the proposed project because it was most economical, required less right of way, displaced fewer people and would have a less disruptive effect on the community since it follows a natural terrain feature (South Chollas Creek). This alignment is in the City of San Diego. Its adoption was urged by a resolution of the City.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "12"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "12"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "On June 29, 1965, the California Highway Commission adopted the route alignment followed by the proposed project because it was most economical, required less right of way, displaced fewer people and would have a less disruptive effect on the community since it follows a natural terrain feature (South Chollas Creek). This alignment is in the City of San Diego. Its adoption was urged by a resolution of the City.",
+          "quote_verified": false,
+          "stance_basis": "urged adoption of the Route 252 alignment by resolution",
+          "entity_as_written": "City of San Diego",
+          "role_as_written": "local government, freeway agreement signatory"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 12 text does not contain the summary quote about the June 29, 1965 California Highway Commission route adoption or the City of San Diego resolution. The page discusses demographic data and topographic features."
+          },
+          {
+            "check": "Attribution links City of San Diego to in_favor stance",
+            "result": "no",
+            "note": "The cited page 12 text does not mention the City of San Diego urging adoption of the route alignment by resolution, nor any freeway agreement. The text only references City of San Diego as a data source in a table footnote."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify the in_favor stance from the cited page; the relevant content is simply absent from page 12."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "City of San Diego is a properly named government entity."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page 12 does not describe the City of San Diego as a freeway agreement signatory or local government advocate for the route alignment."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote and supporting evidence do not appear on page 12 as cited. The quote about the June 29, 1965 California Highway Commission adoption and the City of San Diego resolution urging the alignment is likely located on a different page of the EIS. The extractor should identify the correct page(s) containing this specific passage. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 5,
+      "entity": "City of San Diego City Council",
+      "kind": "government",
+      "role": "local legislative body",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "These culminated in a vote on February 6, 1975, at which time the City Council reaffirmed the building of Route 252.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "20"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "20"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "These culminated in a vote on February 6, 1975, at which time the City Council reaffirmed the building of Route 252.",
+          "quote_verified": true,
+          "stance_basis": "voted to reaffirm building of Route 252",
+          "entity_as_written": "City of San Diego City Council",
+          "role_as_written": "local legislative body"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quote 'These culminated in a vote on February 6, 1975, at which time the City Council reaffirmed the building of Route 252.' does not appear anywhere in the cited page 20 text provided."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The cited page text contains no mention of the City of San Diego City Council, a vote on February 6, 1975, or any reaffirmation of Route 252 construction."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the relevant text is absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "City of San Diego City Council is a properly formed official government body name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention the City Council or any legislative body; the role cannot be confirmed from the provided pages."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and all supporting evidence are entirely absent from the cited page 20 text, which only discusses topographic and physical corridor features. The extraction appears to reference content from a different page of the EIS. The correct evidence page should be identified and re-extracted."
+      }
+    },
+    {
+      "sequence": 6,
+      "entity": "Comprehensive Planning Organization (CPO)",
+      "kind": "organization",
+      "role": "regional planning agency",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Route 252 is included in the Regional Transportation Plan. It is one of the freeways that would be built to implement the plan. Compatibility of the project with regional development policies is insured.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "11"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "11"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Route 252 is included in the Regional Transportation Plan. It is one of the freeways that would be built to implement the plan. Compatibility of the project with regional development policies is insured.",
+          "quote_verified": true,
+          "stance_basis": "included Route 252 in the Regional Transportation Plan",
+          "entity_as_written": "Comprehensive Planning Organization (CPO)",
+          "role_as_written": "regional planning agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page text contains no mention of Route 252, Regional Transportation Plan, or CPO. The quote is entirely absent from the provided page 11 text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The Comprehensive Planning Organization (CPO) does not appear anywhere in the cited page text, so no link can be established."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "CPO is a plausible official organization name format."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no reference to a regional planning agency or CPO."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page 11 text is entirely about neighborhood demographics and housing conditions, with no mention of Route 252, the Regional Transportation Plan, or the Comprehensive Planning Organization. The summary quote and entity attribution appear to belong to a different page entirely. The extractor should locate the correct page(s) where CPO and the Regional Transportation Plan are actually discussed."
+      }
+    },
+    {
+      "sequence": 7,
+      "entity": "Federal Highway Administration",
+      "kind": "agency",
+      "role": "federal co-lead agency, project approver",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Federal Highway Administration design approval of this connection to Interstate 5 was granted December 8, 1970.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "12"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "12"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Federal Highway Administration design approval of this connection to Interstate 5 was granted December 8, 1970.",
+          "quote_verified": true,
+          "stance_basis": "granted design approval for the Interstate 5 connection",
+          "entity_as_written": "Federal Highway Administration",
+          "role_as_written": "federal co-lead agency, project approver"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page text does not contain the phrase 'Federal Highway Administration design approval of this connection to Interstate 5 was granted December 8, 1970.' The page content is about demographic data and topographic features of Southeast San Diego."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The Federal Highway Administration is not mentioned anywhere in the cited page text, so no link between the entity and the stated stance can be confirmed."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the quote and entity are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Federal Highway Administration is the correct official name for the agency."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention FHWA or its role as federal co-lead agency or project approver."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and the entity (Federal Highway Administration) do not appear anywhere in the cited page 12 text provided. The page content covers demographic data and topographic features unrelated to FHWA approval. The correct page reference needs to be identified and the extraction re-done from the appropriate page."
+      }
+    },
+    {
+      "sequence": 8,
+      "entity": "San Diego Unified School District",
+      "kind": "organization",
+      "role": "local school district",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "It was also preferred by the San Diego Unified School District.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "12"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "12"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "It was also preferred by the San Diego Unified School District.",
+          "quote_verified": true,
+          "stance_basis": "preferred the adopted Route 252 alignment",
+          "entity_as_written": "San Diego Unified School District",
+          "role_as_written": "local school district"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The phrase 'It was also preferred by the San Diego Unified School District.' does not appear anywhere in the cited page 12 text provided."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The cited page text makes no mention of San Diego Unified School District at all."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the entity and quote are absent from the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "San Diego Unified School District is a properly formed official organization name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not reference the San Diego Unified School District or its role."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and the entity (San Diego Unified School District) are entirely absent from the cited page 12 text. The page content covers demographic data and topographic features of Southeast San Diego and San Ysidro. The correct page citation needs to be identified, or this row may have been extracted from a different section of the document entirely."
+      }
+    },
+    {
+      "sequence": 9,
+      "entity": "Secretary of Transportation",
+      "kind": "official",
+      "role": "U.S. Secretary of Transportation",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "A Section 4(f) Statement for this project relative to Southcrest Park was approved by the Secretary of Transportation on July 29, 1971.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "12"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "12"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "A Section 4(f) Statement for this project relative to Southcrest Park was approved by the Secretary of Transportation on July 29, 1971.",
+          "quote_verified": true,
+          "stance_basis": "approved Section 4(f) Statement permitting use of Southcrest Park for the project",
+          "entity_as_written": "Secretary of Transportation",
+          "role_as_written": "U.S. Secretary of Transportation"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 12 text contains demographic and topographic information about Southeast San Diego; the quote about Section 4(f) and Secretary of Transportation approval does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The Secretary of Transportation is not mentioned anywhere in the cited page text, so no link can be established."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the quote and entity are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Secretary of Transportation is a properly formed official title."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention the Secretary of Transportation or their role."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote about the Section 4(f) Statement approval by the Secretary of Transportation on July 29, 1971 does not appear anywhere in the provided page 12 text. The cited page contains only demographic and topographic data about Southeast San Diego. The evidence_pages citation appears to be incorrect; the correct page reference needs to be identified and the extraction redone."
+      }
+    },
+    {
+      "sequence": 10,
+      "entity": "Southeast San Diego Development Committee",
+      "kind": "organization",
+      "role": "community planning committee, commenter",
+      "stance": "opposed",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "Another motion was passed, \"to oppose Route 252 for the following reasons: \"1. Route 252 will further serve to divide the community. \"2. The Route does not primarily serve the community its in. \"3. The proposed interchange cannot meet the EPA complex source regulation. \"4. Division Street if improved could serve as an alternative. \"5. The additional cost to construct will be prohibitive. \"6. The Development Committee gave its approval at a time when much attention was directed toward Route 157.\"",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "20"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "20"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "Another motion was passed, \"to oppose Route 252 for the following reasons: \"1. Route 252 will further serve to divide the community. \"2. The Route does not primarily serve the community its in. \"3. The proposed interchange cannot meet the EPA complex source regulation. \"4. Division Street if improved could serve as an alternative. \"5. The additional cost to construct will be prohibitive. \"6. The Development Committee gave its approval at a time when much attention was directed toward Route 157.\"",
+          "quote_verified": false,
+          "stance_basis": "passed motion to oppose Route 252 construction for six stated reasons",
+          "entity_as_written": "Southeast San Diego Development Committee",
+          "role_as_written": "community planning committee, commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 20 text contains corridor description, topographic features, and photo descriptions — no mention of the Southeast San Diego Development Committee or the quoted motion text."
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "no",
+            "note": "The entity and its opposition stance do not appear anywhere in the provided page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance because the quote and entity are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official committee name appears properly formatted."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not reference the Southeast San Diego Development Committee or any community planning committee role."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote and entity are entirely absent from the provided page 20 text, which covers only physical corridor and topographic descriptions. The quote may exist on a different page of the EIS (likely a public comments or community response section). A human reviewer should locate the correct page reference before accepting or re-extracting this row."
+      }
+    },
+    {
+      "sequence": 11,
+      "entity": "Southeast San Diego Development Committee member",
+      "kind": "individual",
+      "role": "member of Southeast San Diego Development Committee, commenter",
+      "stance": "opposed",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "\"These are people who feel isolated now. The freeway will make them feel more isolated.\"",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "46"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "46"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "\"These are people who feel isolated now. The freeway will make them feel more isolated.\"",
+          "quote_verified": true,
+          "stance_basis": "expressed concern that freeway would increase community isolation",
+          "entity_as_written": "Southeast San Diego Development Committee member",
+          "role_as_written": "member of Southeast San Diego Development Committee, commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The quote 'These are people who feel isolated now. The freeway will make them feel more isolated.' does not appear anywhere in the cited page 46 text provided."
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "no",
+            "note": "The cited text mentions the Southeast San Diego Development Committee but only in the context of discussing Route 252 extension alternatives, not in connection with the quoted statement."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance label since the quote is not present in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "no",
+            "note": "The entity is listed as 'Southeast San Diego Development Committee member' — a private individual commenter should use last-name only or 'private commenter'; the committee itself is referenced but not a specific named member."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text references the Southeast San Diego Development Committee as an organization consulted, but does not identify any individual member or their specific role as a commenter making this statement."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote does not appear verbatim (or at all) in the cited page 46 text. The quote may exist on a different page of the EIS. The entity attribution is also problematic — an unnamed individual member of a committee should be labeled 'private commenter' rather than by their committee affiliation. The extraction needs to locate the correct page where this quote appears and reassess the entity label. [Forced HUMAN_REVIEW: stance attribution for a private individual always goes to a human (v2 policy override).]"
+      }
+    },
+    {
+      "sequence": 12,
+      "entity": "State Air Resources Board",
+      "kind": "agency",
+      "role": "state environmental regulatory agency, consulted commenter",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The Air Resources Board responded (See Appendix E) that they could not reach a conclusion because the future regional transportation plan has yet to be evaluated. This would apply to any alternative, including the alternative of doing nothing.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "51"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "51"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The Air Resources Board responded (See Appendix E) that they could not reach a conclusion because the future regional transportation plan has yet to be evaluated. This would apply to any alternative, including the alternative of doing nothing.",
+          "quote_verified": true,
+          "stance_basis": "could not reach a conclusion on consistency with State Implementation Plan",
+          "entity_as_written": "State Air Resources Board",
+          "role_as_written": "state environmental regulatory agency, consulted commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 51 text provided does not contain the summary quote about the Air Resources Board. The text shown is about City of San Diego Environmental Quality Department comments and responses."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The State Air Resources Board is not mentioned anywhere in the provided page text. Cannot verify the paraphrased attribution."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot assess stance match since the entity and quote are not found in the provided text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'State Air Resources Board' is a recognizable official agency name (California Air Resources Board), though slightly informal."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page text does not mention the State Air Resources Board or support the described role."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The provided page 51 text does not contain the summary quote or any mention of the State Air Resources Board. The text shown pertains to City of San Diego comments, not the Air Resources Board. It is possible the wrong page was pulled or the evidence page reference is incorrect. Human review is needed to locate the correct page containing the Air Resources Board response."
+      }
+    },
+    {
+      "sequence": 13,
+      "entity": "Air Resources Board",
+      "kind": "agency",
+      "role": "state agency commenter",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Without the RTP evaluation, we cannot conclude, as the EIR does, that this proposal is consistent with the State's Implementation Plan (SIP) even though localized vehicle miles are projected to be a few percent lower and CO levels will probably be within adopted standards.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "90"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "90"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Without the RTP evaluation, we cannot conclude, as the EIR does, that this proposal is consistent with the State's Implementation Plan (SIP) even though localized vehicle miles are projected to be a few percent lower and CO levels will probably be within adopted standards.",
+          "quote_verified": false,
+          "stance_basis": "Cannot confirm consistency with State Implementation Plan until regional transportation plan is evaluated for air quality effects",
+          "entity_as_written": "Air Resources Board",
+          "role_as_written": "state agency commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 90 text discusses transit planning decisions and ballot issues; the summary quote about RTP evaluation, SIP consistency, vehicle miles, and CO levels does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links Air Resources Board to stated stance",
+            "result": "no",
+            "note": "The cited page text makes no mention of the Air Resources Board whatsoever."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify the conditional stance as the entity and quote are absent from the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Air Resources Board is a recognizable official agency name (California Air Resources Board)."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not reference the Air Resources Board or any state agency commenter role."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 90 text is entirely about regional transit planning decisions and ballot measures, with no mention of the Air Resources Board, SIP consistency, vehicle miles, or CO levels. The summary quote and entity attribution appear to belong to a different page entirely. The correct evidence page needs to be identified and re-extracted. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 14,
+      "entity": "Albert McCain",
+      "kind": "individual",
+      "role": "Chairman, Model Cities Citizen's Advisory Board",
+      "stance": "opposed",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "The Citizen's Advisory Board along with the other groups and organizations in Southeast are opposed to this freeway and will remain so as long as CALTRANS continues to ignore the effects of these freeways in the community.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "86"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "86"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "The Citizen's Advisory Board along with the other groups and organizations in Southeast are opposed to this freeway and will remain so as long as CALTRANS continues to ignore the effects of these freeways in the community.",
+          "quote_verified": false,
+          "stance_basis": "Signed letter explicitly opposing the freeway as chairman of the advisory board",
+          "entity_as_written": "Albert McCain",
+          "role_as_written": "Chairman, Model Cities Citizen's Advisory Board"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 86 text is about regional transportation ridership and travel times; the quoted statement about the Citizen's Advisory Board opposing the freeway does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Albert McCain and the Model Cities Citizen's Advisory Board are not mentioned anywhere in the cited page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Full name used for an individual; acceptable for a named public official/representative."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'Chairman, Model Cities Citizen's Advisory Board' is not mentioned in the cited page text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 86 text is entirely about regional transit ridership and travel time comparisons and contains no reference to Albert McCain, the Model Cities Citizen's Advisory Board, or any opposition to a freeway. The quote and entity appear to belong to a different page entirely. A human should locate the correct page where this testimony appears before accepting or re-extracting this row."
+      }
+    },
+    {
+      "sequence": 15,
+      "entity": "Automobile Club of Southern California",
+      "kind": "organization",
+      "role": "commenter / advocacy organization",
+      "stance": "in_favor",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Replies to Draft Environmental Impact Statement Requiring No Response.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "88"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "88"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Replies to Draft Environmental Impact Statement Requiring No Response.",
+          "quote_verified": false,
+          "stance_basis": "Listed under 'Requiring No Response' heading; letter explicitly states 'the Auto Club of Southern California supports the completion of Route 252 as proposed'",
+          "entity_as_written": "Automobile Club of Southern California",
+          "role_as_written": "commenter / advocacy organization"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The phrase 'Replies to Draft Environmental Impact Statement Requiring No Response' does not appear anywhere in the cited page 88 text provided."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional mode)",
+            "result": "no",
+            "note": "The Automobile Club of Southern California does not appear in the cited page text at all; no list or table under any stance heading includes this entity."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify 'in_favor' stance since neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official organization name appears properly formatted."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of the Automobile Club of Southern California as a commenter or in any other capacity."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote ('Replies to Draft Environmental Impact Statement Requiring No Response') is not present in the cited page 88 text, and the Automobile Club of Southern California is not mentioned anywhere in the provided excerpt. The cited page appears to discuss transit system capacity and costs, unrelated to the extracted row. The evidence page reference is likely incorrect and needs to be re-identified. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 16,
+      "entity": "Bill Turley",
+      "kind": "individual",
+      "role": "Chairman, San Diego Clean Air Council",
+      "stance": "opposed",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Mr. Bill Turley, Chairman of the San Diego Clean Air Council, has asked me to comment on your draft environmental impact statement for State Route 252 in the City of San Diego.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "74"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "74"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Mr. Bill Turley, Chairman of the San Diego Clean Air Council, has asked me to comment on your draft environmental impact statement for State Route 252 in the City of San Diego.",
+          "quote_verified": true,
+          "stance_basis": "Solicited opposition comments on the draft EIS through a council member",
+          "entity_as_written": "Bill Turley",
+          "role_as_written": "Chairman, San Diego Clean Air Council"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 74 text contains letters from James D. Knochenhauer and the Automobile Club of Southern California. No text mentioning Bill Turley or the San Diego Clean Air Council appears on this page."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Bill Turley and the San Diego Clean Air Council do not appear anywhere in the provided page text; no paraphrase or direct reference exists."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the entity and quote are absent from the cited page."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Name format is acceptable for a named individual with an organizational role."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of Bill Turley or the San Diego Clean Air Council, so the role cannot be verified."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 74 contains correspondence from James D. Knochenhauer (Regional Environmental Officer) and the Automobile Club of Southern California, with no mention of Bill Turley or the San Diego Clean Air Council. The summary quote and entity attribution appear to belong to a different page. The extractor should locate the correct page number where the San Diego Clean Air Council letter appears. [Forced HUMAN_REVIEW: stance attribution for a private individual always goes to a human (v2 policy override).]"
+      }
+    },
+    {
+      "sequence": 17,
+      "entity": "City of San Diego Environmental Quality Department",
+      "kind": "agency",
+      "role": "commenter / reviewer of draft EIS",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Highway 252 may not be the most effective means of serving the long-term transportation needs of the region. Based upon data presented in the draft EIS, it appears to be intended to prevent additional freeway congestion rather than relieve current traffic problems. The final EIS could more fully evaluate all alternatives which might similarly or better accomplish the project objectives.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "49"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "49"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Highway 252 may not be the most effective means of serving the long-term transportation needs of the region. Based upon data presented in the draft EIS, it appears to be intended to prevent additional freeway congestion rather than relieve current traffic problems. The final EIS could more fully evaluate all alternatives which might similarly or better accomplish the project objectives.",
+          "quote_verified": false,
+          "stance_basis": "Supports project only if EIS is substantially revised to address alternatives, impacts on open space, community cohesion, noise, air quality, and visual impacts",
+          "entity_as_written": "City of San Diego Environmental Quality Department",
+          "role_as_written": "commenter / reviewer of draft EIS"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The exact summary quote ('Highway 252 may not be the most effective means of serving the long-term transportation needs of the region...') does not appear verbatim in the cited page 49 text provided."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "n/a",
+            "note": "Since the quote is not found verbatim, attribution cannot be confirmed. The page text does not explicitly name 'City of San Diego Environmental Quality Department' as the author of the statements shown."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot confirm stance label without verifying the quote and entity attribution. The text on page 49 does suggest conditional support (requesting improvements to the EIS), which is consistent with 'conditional', but the specific quote is unverified."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "City of San Diego Environmental Quality Department is an official agency name and appears well-formed."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The cited text is clearly a comment on a draft EIS, consistent with the role of 'commenter / reviewer of draft EIS'."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "The summary quote does not appear verbatim in the provided page 49 text, making it impossible to confirm the extraction. The page text does contain thematically related content (criticism of alternatives analysis, congestion relief, mass transit), and the partial reference 'Dekema / Mr J' at the bottom may indicate a different letter or section boundary. A human reviewer should check whether the summary quote appears on an adjacent page or in a different portion of the document attributed to the City of San Diego Environmental Quality Department."
+      }
+    },
+    {
+      "sequence": 18,
+      "entity": "Comprehensive Planning Organization of the San Diego Region",
+      "kind": "organization",
+      "role": "regional planning agency / commenter",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "That the Board of Directors of the Comprehensive Planning Organization submit the following comments to the California Department of Transportation for inclusion in the Route 252 Final Environmental Impact Report:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "82"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "82"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "That the Board of Directors of the Comprehensive Planning Organization submit the following comments to the California Department of Transportation for inclusion in the Route 252 Final Environmental Impact Report:",
+          "quote_verified": true,
+          "stance_basis": "Acknowledges Route 252 as well-planned but recommends additional analysis of unmitigated impacts, viable alternatives, and connector ramp redesign",
+          "entity_as_written": "Comprehensive Planning Organization of the San Diego Region",
+          "role_as_written": "regional planning agency / commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 82 text contains content about Regional Development Alternatives and goal achievement; the summary quote about 'Board of Directors of the Comprehensive Planning Organization submit the following comments...' does not appear anywhere in the provided page text."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The Comprehensive Planning Organization of the San Diego Region is not mentioned in the cited page text at all; no paraphrased attribution can be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as 'conditional' because neither the entity nor any conditional language tied to it appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official organization name appears properly formatted."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page text does not reference the Comprehensive Planning Organization or its role as a regional planning agency/commenter."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and entity attribution are not present anywhere in the cited page 82 text, which discusses Regional Development Alternatives for a regional comprehensive plan. The quote about the Board of Directors submitting comments to Caltrans for the Route 252 Final EIR likely comes from a different page. The evidence page citation needs to be corrected to the actual page where this resolution/comment appears."
+      }
+    },
+    {
+      "sequence": 19,
+      "entity": "County of San Diego Department of Transportation",
+      "kind": "agency",
+      "role": "county agency commenter",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "We have reviewed the draft environmental impact report for this project and find it in conformance with CEQA requirements.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "80"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "80"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "We have reviewed the draft environmental impact report for this project and find it in conformance with CEQA requirements.",
+          "quote_verified": false,
+          "stance_basis": "Finds EIS in conformance but conditions full support on building overcrossings with sufficient width for pedestrian and bicycle facilities",
+          "entity_as_written": "County of San Diego Department of Transportation",
+          "role_as_written": "county agency commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The phrase 'We have reviewed the draft environmental impact report for this project and find it in conformance with CEQA requirements.' does not appear anywhere in the cited page 80 text."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The County of San Diego Department of Transportation is not mentioned in the cited text; only 'COUNTY OF SAN DIEGO' (represented by Supervisor Dick Brown) appears in a CPO Board of Directors membership list, with no stance expressed."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "No stance (conditional or otherwise) is expressed by the entity in the cited text; the text is a membership/organizational listing."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "no",
+            "note": "The cited text references 'County of San Diego' not 'County of San Diego Department of Transportation'; the department-level specificity is unsupported."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text shows the County of San Diego as a CPO member agency, not as a commenter on an EIR."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote does not appear verbatim or in paraphrase in the cited page. The cited page is a CPO Board of Directors membership list, not an EIR comment letter. The extraction appears to have pulled the wrong source page or fabricated the quote; the entity, role, stance, and quote all need to be re-verified against the correct source document. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 20,
+      "entity": "CPO Board of Directors",
+      "kind": "organization",
+      "role": "governing board of Comprehensive Planning Organization",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The CPO Board of Directors, on December 16, 1974, passed a resolution approving the submission of the attached comments concerning unmitigated environmental impacts which will result from the completion of the Route 252 project and which are recommended for further analysis in the final EIR.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "82"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "82"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The CPO Board of Directors, on December 16, 1974, passed a resolution approving the submission of the attached comments concerning unmitigated environmental impacts which will result from the completion of the Route 252 project and which are recommended for further analysis in the final EIR.",
+          "quote_verified": false,
+          "stance_basis": "Passed resolution requesting additional analysis of unmitigated impacts before final EIR approval",
+          "entity_as_written": "CPO Board of Directors",
+          "role_as_written": "governing board of Comprehensive Planning Organization"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 82 text contains content about Regional Development Alternatives and goal achievement; the summary quote about CPO Board of Directors resolution of December 16, 1974 is not present anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "no",
+            "note": "The CPO Board of Directors is not mentioned anywhere in the cited page text provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the entity and quote are absent from the cited page."
+          },
+          {
+            "check": "Entity name is well-formed",
+            "result": "yes",
+            "note": "CPO Board of Directors is a plausible official organizational name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention CPO or its Board of Directors at all."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 82 text is entirely about Regional Development Alternatives (Existing Trends, Radial Corridors, Controlled Trends) and contains no reference to the CPO Board of Directors or the December 16, 1974 resolution. The summary quote is not present verbatim or in any paraphrased form in the provided text. The extraction likely references the wrong page number and needs to be re-extracted with the correct page citation. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 21,
+      "entity": "Department of Health, Education and Welfare",
+      "kind": "agency",
+      "role": "federal agency commenter",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Replies to Draft Environmental Impact Statement Requiring No Response.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "88"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "88"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Replies to Draft Environmental Impact Statement Requiring No Response.",
+          "quote_verified": false,
+          "stance_basis": "Listed under 'Requiring No Response' heading; review did not identify problems related to health concerns",
+          "entity_as_written": "Department of Health, Education and Welfare",
+          "role_as_written": "federal agency commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim on cited pages",
+            "result": "no",
+            "note": "The text 'Replies to Draft Environmental Impact Statement Requiring No Response' does not appear anywhere in the cited page 88 content provided."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Department of Health, Education and Welfare is not mentioned anywhere in the cited page 88 text; no sectional heading or list containing this entity is visible."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official agency name is properly formatted."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page 88 text discusses transit system alternatives and costs; no federal agency commenter role is established for this entity here."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 88 content is entirely about transit system capacity and cost comparisons and contains no reference to the Department of Health, Education and Welfare or the quoted heading about 'Replies to Draft Environmental Impact Statement Requiring No Response.' The correct page for this sectional attribution is likely a different page in the document (possibly a correspondence/response section). The extraction should be re-done with the correct evidence page. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 22,
+      "entity": "Department of Parks and Recreation",
+      "kind": "agency",
+      "role": "state agency / State Historic Preservation Officer staff",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "As staff to the State Historic Preservation Officer, we have determined that there are no State Historical Landmarks, State Points of Historical Interest, or sites on the National Register of Historic Places which would be affected by the project.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "90"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "90"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "As staff to the State Historic Preservation Officer, we have determined that there are no State Historical Landmarks, State Points of Historical Interest, or sites on the National Register of Historic Places which would be affected by the project.",
+          "quote_verified": true,
+          "stance_basis": "Finds no historic or cultural sites affected; raises procedural note about verification process but takes no position on project",
+          "entity_as_written": "Department of Parks and Recreation",
+          "role_as_written": "state agency / State Historic Preservation Officer staff"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 90 text is about transit planning and ballot decisions; the quoted text about State Historic Preservation Officer and historical landmarks does not appear anywhere in the provided page text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The Department of Parks and Recreation is not mentioned anywhere in the cited page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance because the relevant text is not present on the cited page."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Department of Parks and Recreation is a properly formed agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page contains no reference to the Department of Parks and Recreation or the State Historic Preservation Officer role."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page 90 contains text about regional transit planning and ballot decisions, with no mention of the Department of Parks and Recreation, historic landmarks, or the State Historic Preservation Officer. The quote and entity appear to belong to a different page entirely. The extractor should locate the correct page number where the historic preservation determination appears."
+      }
+    },
+    {
+      "sequence": 23,
+      "entity": "Department of the Interior",
+      "kind": "agency",
+      "role": "federal agency commenter",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "we recommend that the statement include the Section 4(f) documentation (including comments by the departments of the Interior, Agriculture, and Housing and Urban Development) and the approval document executed by the Secretary of Transportation.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "71"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "71"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "we recommend that the statement include the Section 4(f) documentation (including comments by the departments of the Interior, Agriculture, and Housing and Urban Development) and the approval document executed by the Secretary of Transportation.",
+          "quote_verified": true,
+          "stance_basis": "No objection to project but recommends inclusion of Section 4(f) material and archaeological monitoring as conditions",
+          "entity_as_written": "Department of the Interior",
+          "role_as_written": "federal agency commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 71 text contains a letter from Albert McCain/Citizens Advisory Board. The summary quote about Section 4(f) documentation and departments of Interior, Agriculture, and HUD does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links Department of the Interior to stated stance",
+            "result": "no",
+            "note": "The Department of the Interior is not mentioned anywhere in the cited page text. The text is entirely about a letter from the Citizens Advisory Board opposing Route 252."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the entity and quote are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Department of the Interior is a properly formed official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not reference the Department of the Interior as a federal agency commenter or in any other capacity."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and entity (Department of the Interior) do not appear anywhere in the cited page 71 text. The page contains a letter from Albert McCain of the Citizens Advisory Board opposing Route 252. The extraction appears to reference a different page entirely — the Section 4(f) documentation quote likely comes from a different section of the EIS. The evidence_pages citation is incorrect and needs to be corrected."
+      }
+    },
+    {
+      "sequence": 24,
+      "entity": "Environmental Protection Agency",
+      "kind": "agency",
+      "role": "federal agency commenter, Region IX",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "EPA suggests that the Final Environmental Statement include a full discussion of the relationship of Route 252 to the Transportation Control Plan (as promulgated by EPA on November 12, 1973, 38 Federal Register 217; or as adopted by the Caltrans Task Force); and a discussion of the feasibility implementing public transit options on this Route.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "77"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "77"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "EPA suggests that the Final Environmental Statement include a full discussion of the relationship of Route 252 to the Transportation Control Plan (as promulgated by EPA on November 12, 1973, 38 Federal Register 217; or as adopted by the Caltrans Task Force); and a discussion of the feasibility implementing public transit options on this Route.",
+          "quote_verified": false,
+          "stance_basis": "Raises concerns about VMT reduction claims and requires additional analysis of TCP relationship and transit options",
+          "entity_as_written": "Environmental Protection Agency",
+          "role_as_written": "federal agency commenter, Region IX"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 77 text provided is actually page 2112 content (a mailing list/appendix D), and does not contain the quoted text about EPA's suggestions regarding Route 252 and the Transportation Control Plan."
+          },
+          {
+            "check": "Attribution links EPA to stated stance",
+            "result": "no",
+            "note": "The provided text does not mention EPA Region IX, Route 252, Transportation Control Plan, or any conditional stance by EPA. The text is a list of agency addresses."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify the conditional stance label as the relevant text is not present in the cited pages provided."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Environmental Protection Agency is a properly formed official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not reference EPA Region IX or any federal agency commenter role for EPA in this context."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The text provided for page 77 appears to actually be from a different page (labeled 2112) containing a mailing list of agencies and officials. The summary quote about EPA's suggestions regarding Route 252 and the Transportation Control Plan is not present anywhere in the provided text. It is possible the wrong page was pulled, or there is a page numbering discrepancy. A human reviewer should locate the correct page containing the EPA comment to verify the extraction."
+      }
+    },
+    {
+      "sequence": 25,
+      "entity": "Frank J. Krbec",
+      "kind": "official",
+      "role": "Regional Engineer, Urban Mass Transportation Administration",
+      "stance": "conditional",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "consideration should be given to exclusive busway lane planning for transit vehicles.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "68"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "68"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "consideration should be given to exclusive busway lane planning for transit vehicles.",
+          "quote_verified": true,
+          "stance_basis": "Recommends exclusive busway lanes and freeway bus stops as condition for adequate transit planning",
+          "entity_as_written": "Frank J. Krbec",
+          "role_as_written": "Regional Engineer, Urban Mass Transportation Administration"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The phrase 'consideration should be given to exclusive busway lane planning for transit vehicles' does not appear anywhere in the provided page 68 text."
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "no",
+            "note": "Frank J. Krbec is not mentioned anywhere in the cited page text; no direct quote from him is present."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance without the quote or entity appearing in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Full name with title is acceptable for an official/agency representative."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'Regional Engineer, Urban Mass Transportation Administration' is not mentioned or supported anywhere in the provided page 68 text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The cited page 68 text does not contain the summary quote, the entity name Frank J. Krbec, or any reference to the Urban Mass Transportation Administration. The extracted row may reference a different page or a different section of the document entirely. Human review is needed to locate the correct source passage."
+      }
+    },
+    {
+      "sequence": 26,
+      "entity": "James D. Knochenhauer",
+      "kind": "official",
+      "role": "Regional Environmental Officer, Department of Health, Education and Welfare",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The material provided appears to describe adequately the impacts of the proposed action as well as the alternatives that were presented. Our review does not identify problems related to these specific concerns.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "89"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "89"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The material provided appears to describe adequately the impacts of the proposed action as well as the alternatives that were presented. Our review does not identify problems related to these specific concerns.",
+          "quote_verified": false,
+          "stance_basis": "Finds EIS adequate and identifies no problems related to HEW concerns",
+          "entity_as_written": "James D. Knochenhauer",
+          "role_as_written": "Regional Environmental Officer, Department of Health, Education and Welfare"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted text about 'adequately describe impacts' and 'Our review does not identify problems' does not appear anywhere in the provided page 89 text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "James D. Knochenhauer and the Department of Health, Education and Welfare are not mentioned anywhere in the cited page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Name appears to be a properly formatted official name with title and agency."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text contains no reference to the Department of Health, Education and Welfare or any regional environmental officer role."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 89 text is entirely about regional development alternatives, transit system comparisons, and CPO planning decisions — with no mention of James D. Knochenhauer or HEW. The summary quote appears to be from a federal agency review letter that likely exists elsewhere in the document. The correct evidence page needs to be identified and re-extracted. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 27,
+      "entity": "James F. Gleason",
+      "kind": "official",
+      "role": "Environmental Quality Director, City of San Diego",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The Environmental Quality Department of the City of San Diego has reviewed the draft Environmental Impact Statement for Highway Route 252, and in accordance with the requirements of the California Environmental Quality Act, wishes to make the following comments:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "49"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "49"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The Environmental Quality Department of the City of San Diego has reviewed the draft Environmental Impact Statement for Highway Route 252, and in accordance with the requirements of the California Environmental Quality Act, wishes to make the following comments:",
+          "quote_verified": true,
+          "stance_basis": "Signed letter raising multiple deficiencies requiring revision before project can be supported",
+          "entity_as_written": "James F. Gleason",
+          "role_as_written": "Environmental Quality Director, City of San Diego"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 49 text does not contain the summary quote about the Environmental Quality Department reviewing the draft EIS for Highway Route 252. The text shown covers traffic, alternatives, and Southcrest Park noise issues, but not the opening statement attributed to Gleason."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "James F. Gleason is not named in the cited page text. Only 'Dekema' and 'Mr J' appear as partial fragments at the bottom, suggesting a different letter/author context."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since the quote and entity are not confirmed in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "James F. Gleason is a named official, which is acceptable formatting for an agency representative."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention James F. Gleason or the title 'Environmental Quality Director, City of San Diego'."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and entity attribution are not present in the cited page 49 text. The visible text appears to be from a different commenter's letter (possibly 'Dekema' based on the fragment at the bottom). The correct page containing Gleason's introductory statement needs to be identified and cited. The extraction should be re-done with the correct evidence page."
+      }
+    },
+    {
+      "sequence": 28,
+      "entity": "Mark Abelson",
+      "kind": "official",
+      "role": "Staff Assistant to the Secretary, Department of the Interior",
+      "stance": "conditional",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "we recommend that the statement include the Section 4(f) documentation (including comments by the departments of the Interior, Agriculture, and Housing and Urban Development) and the approval document executed by the Secretary of Transportation.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "71"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "71"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "we recommend that the statement include the Section 4(f) documentation (including comments by the departments of the Interior, Agriculture, and Housing and Urban Development) and the approval document executed by the Secretary of Transportation.",
+          "quote_verified": true,
+          "stance_basis": "Recommends additions to EIS and archaeological monitoring as conditions",
+          "entity_as_written": "Mark Abelson",
+          "role_as_written": "Staff Assistant to the Secretary, Department of the Interior"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 71 text contains a letter from Albert McCain about Route 252 and Southeast San Diego. The summary quote about 'Section 4(f) documentation' and 'Secretary of Transportation' does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links Mark Abelson to the stated stance",
+            "result": "no",
+            "note": "Mark Abelson does not appear anywhere in the cited page text. The text is from Albert McCain, Chairman of the Citizen's Advisory Board."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Mark Abelson is a named official; format is acceptable."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "No mention of Mark Abelson or the Department of the Interior in the cited page text."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page 71 text is entirely about a letter from Albert McCain opposing Route 252 on behalf of the Citizen's Advisory Board. The summary quote referencing Section 4(f) documentation and the Secretary of Transportation, attributed to Mark Abelson of the Department of the Interior, does not appear anywhere in the provided text. The evidence pages appear to be incorrect — the quote likely exists elsewhere in the document and was assigned the wrong page number."
+      }
+    },
+    {
+      "sequence": 29,
+      "entity": "Model Cities Citizen's Advisory Board",
+      "kind": "organization",
+      "role": "community advisory board / commenter",
+      "stance": "opposed",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "The Citizen's Advisory Board along with the other groups and organizations in Southeast are opposed to this freeway and will remain so as long as CALTRANS continues to ignore the effects of these freeways in the community.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "86"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "86"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "The Citizen's Advisory Board along with the other groups and organizations in Southeast are opposed to this freeway and will remain so as long as CALTRANS continues to ignore the effects of these freeways in the community.",
+          "quote_verified": false,
+          "stance_basis": "Explicitly states opposition to the freeway on behalf of the board and other Southeast San Diego organizations",
+          "entity_as_written": "Model Cities Citizen's Advisory Board",
+          "role_as_written": "community advisory board / commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 86 text is about regional transportation ridership and travel times; the quoted statement about the Model Cities Citizen's Advisory Board opposing the freeway does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "no",
+            "note": "The entity 'Model Cities Citizen's Advisory Board' does not appear in the cited page text at all."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name is well-formed",
+            "result": "yes",
+            "note": "Organization name appears properly formatted as an official advisory board name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text contains no reference to the Model Cities Citizen's Advisory Board or any community advisory board role."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 86 contains content about regional transit ridership and travel time comparisons, with no mention of the Model Cities Citizen's Advisory Board or the quoted opposition statement. The quote and entity appear to belong to a different page — likely a public comments or community response section. The extraction should be re-done with the correct page citation. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 30,
+      "entity": "Paul De Falco, Jr.",
+      "kind": "official",
+      "role": "Regional Administrator, EPA Region IX",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "EPA suggests that the Final Environmental Statement include a full discussion of the relationship of Route 252 to the Transportation Control Plan",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "77"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "77"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "EPA suggests that the Final Environmental Statement include a full discussion of the relationship of Route 252 to the Transportation Control Plan",
+          "quote_verified": false,
+          "stance_basis": "Classified EIS as ER-2 and required additional analysis before final statement",
+          "entity_as_written": "Paul De Falco, Jr.",
+          "role_as_written": "Regional Administrator, EPA Region IX"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 77 text provided is actually page 2112 content (a list of addresses/contacts). The summary quote about EPA and Route 252/Transportation Control Plan does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Paul De Falco, Jr. is not mentioned anywhere in the provided cited text. No EPA Regional Administrator is referenced in the supplied page content."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the provided text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Paul De Falco, Jr. is a named official; format is acceptable for an agency official."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'Regional Administrator, EPA Region IX' is not mentioned in the provided text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The text provided for page 77 appears to be a mailing list of agencies and officials (labeled as page 2112), and does not contain the summary quote or any reference to Paul De Falco, Jr. or EPA Region IX. It is possible the wrong page was pulled, or there is a page numbering mismatch. A human reviewer should locate the correct page containing the EPA comment about Route 252 and the Transportation Control Plan to verify the extraction."
+      }
+    },
+    {
+      "sequence": 31,
+      "entity": "Port of San Diego",
+      "kind": "organization",
+      "role": "commenter / no remarks",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Replies to Draft Environmental Impact Statement Requiring No Response.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "88"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "88"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Replies to Draft Environmental Impact Statement Requiring No Response.",
+          "quote_verified": false,
+          "stance_basis": "Listed under 'Requiring No Response' heading; letter states 'We have no remarks on the proposed project'",
+          "entity_as_written": "Port of San Diego",
+          "role_as_written": "commenter / no remarks"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The phrase 'Replies to Draft Environmental Impact Statement Requiring No Response' does not appear anywhere in the cited page 88 text provided."
+          },
+          {
+            "check": "Attribution links Port of San Diego to neutral stance",
+            "result": "no",
+            "note": "Port of San Diego is not mentioned anywhere in the cited page text; no sectional heading or list establishes their stance."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Port of San Diego is an official organization name and is well-formed."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'commenter / no remarks' is not supported by the cited page text, which discusses transit system capacity and costs with no reference to the Port of San Diego."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 88 text is entirely about transit system alternatives, capacity, and costs — it contains no mention of the Port of San Diego, no sectional heading about replies requiring no response, and no verbatim quote match. The summary quote likely belongs to a different section of the EIS (typically a comment-response appendix). The evidence page citation appears to be incorrect and needs to be re-extracted with the correct page reference. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 32,
+      "entity": "Richard B. Olney",
+      "kind": "individual",
+      "role": "Member, Clean Air Council / commenter",
+      "stance": "opposed",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "In sum, it appears that the justification for 252 is weak, and that the long-term adverse effects are probably more severe than claimed in the impact statement.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "74"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "74"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "In sum, it appears that the justification for 252 is weak, and that the long-term adverse effects are probably more severe than claimed in the impact statement.",
+          "quote_verified": true,
+          "stance_basis": "Argues justification for Route 252 is weak and long-term adverse effects are understated",
+          "entity_as_written": "Richard B. Olney",
+          "role_as_written": "Member, Clean Air Council / commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 74 text contains only letters from James D. Knochenhauer and the Automobile Club of Southern California. Richard B. Olney's quote is not present anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Richard B. Olney does not appear anywhere in the cited page text; no direct quote from him is present."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since the entity and quote are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Full name format is acceptable for a named individual commenter."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "No mention of Richard B. Olney or Clean Air Council on the cited page."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 74 contains letters from James D. Knochenhauer (Regional Environmental Officer) and the Automobile Club of Southern California, neither of which is Richard B. Olney. The summary quote and entity are entirely absent from the provided text. The correct page reference for Olney's comment needs to be identified and re-extracted. [Forced HUMAN_REVIEW: stance attribution for a private individual always goes to a human (v2 policy override).]"
+      }
+    },
+    {
+      "sequence": 33,
+      "entity": "Rudolph J. Massman",
+      "kind": "official",
+      "role": "Director (Acting), County of San Diego Department of Transportation",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "We suggest that these structures be built to sufficient widths so that separate pedestrian and bicycle facilities may be provided on the structures.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "80"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "80"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "We suggest that these structures be built to sufficient widths so that separate pedestrian and bicycle facilities may be provided on the structures.",
+          "quote_verified": false,
+          "stance_basis": "Supports project with condition that overcrossings accommodate pedestrian and bicycle facilities",
+          "entity_as_written": "Rudolph J. Massman",
+          "role_as_written": "Director (Acting), County of San Diego Department of Transportation"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quote 'We suggest that these structures be built to sufficient widths so that separate pedestrian and bicycle facilities may be provided on the structures.' does not appear anywhere in the cited page 80 text provided."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Rudolph J. Massman is not mentioned anywhere in the cited page text. The page content discusses CPO Board of Directors and member agencies, with no reference to this individual."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Name appears to be a properly formatted official name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of Rudolph J. Massman or the County of San Diego Department of Transportation Director role."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 80 text contains CPO Board of Directors membership information and has no connection to the extracted entity or quote. The quote about pedestrian and bicycle facilities on structures is plausible for an EIS comment but is simply not found on the cited page. The correct page reference needs to be identified and verified. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 34,
+      "entity": "San Diego Clean Air Council",
+      "kind": "organization",
+      "role": "environmental advocacy organization / commenter",
+      "stance": "opposed",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Mr. Bill Turley, Chairman of the San Diego Clean Air Council, has asked me to comment on your draft environmental impact statement for State Route 252 in the City of San Diego.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "74"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "74"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Mr. Bill Turley, Chairman of the San Diego Clean Air Council, has asked me to comment on your draft environmental impact statement for State Route 252 in the City of San Diego.",
+          "quote_verified": true,
+          "stance_basis": "Council chairman solicited opposition comments citing poor location, unnecessary construction, and air quality concerns",
+          "entity_as_written": "San Diego Clean Air Council",
+          "role_as_written": "environmental advocacy organization / commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 74 text contains only letters from James D. Knochenhauer and the Automobile Club of Southern California. The summary quote referencing 'Mr. Bill Turley, Chairman of the San Diego Clean Air Council' does not appear anywhere in the provided page text."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "San Diego Clean Air Council does not appear in the cited page text at all; no stance can be confirmed from this page."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify 'opposed' stance since the entity and quote are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "San Diego Clean Air Council is a properly formed organizational name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of the San Diego Clean Air Council or any environmental advocacy organization by that name."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page 74 contains letters from the Regional Environmental Officer and the Automobile Club of Southern California, with no mention of the San Diego Clean Air Council or Bill Turley. The summary quote and entity are entirely absent from the provided text. The correct page reference for this entity needs to be identified and re-extracted."
+      }
+    },
+    {
+      "sequence": 35,
+      "entity": "State Clearinghouse",
+      "kind": "agency",
+      "role": "state review body",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Replies to Draft Environmental Impact Statement Requiring No Response.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "88"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "88"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Replies to Draft Environmental Impact Statement Requiring No Response.",
+          "quote_verified": false,
+          "stance_basis": "Listed under 'Requiring No Response' heading; letter states no comments were received from state agencies",
+          "entity_as_written": "State Clearinghouse",
+          "role_as_written": "state review body"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim on cited pages",
+            "result": "no",
+            "note": "The text 'Replies to Draft Environmental Impact Statement Requiring No Response.' does not appear anywhere in the provided page 88 content."
+          },
+          {
+            "check": "Attribution links State Clearinghouse to neutral stance",
+            "result": "no",
+            "note": "The State Clearinghouse is not mentioned anywhere in the cited page text; no sectional heading or list establishes this entity's stance."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'State Clearinghouse' is a recognizable official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page text contains no reference to the State Clearinghouse or its role as a state review body."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 88 contains only transit system capacity and cost comparisons with no mention of the State Clearinghouse or the quoted heading. The summary quote 'Replies to Draft Environmental Impact Statement Requiring No Response.' is a section heading that likely appears on a different page. The correct evidence page needs to be identified and re-extracted. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 36,
+      "entity": "Tomas E. Firle",
+      "kind": "individual",
+      "role": "Coordinator, Environmental Management, Port of San Diego",
+      "stance": "neutral",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "We have no remarks on the proposed project.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "88"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "88"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "We have no remarks on the proposed project.",
+          "quote_verified": true,
+          "stance_basis": "Explicitly states no remarks on the proposed project while praising EIS format",
+          "entity_as_written": "Tomas E. Firle",
+          "role_as_written": "Coordinator, Environmental Management, Port of San Diego"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The text on page 88 discusses transit systems, capacity, and costs. The quote 'We have no remarks on the proposed project.' does not appear anywhere in the provided page text."
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "no",
+            "note": "Tomas E. Firle and the Port of San Diego are not mentioned anywhere in the cited page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Name appears properly formatted for an individual with a title/role."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "No mention of Port of San Diego or any coordinator role in the cited page text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 88 contains content about transit system alternatives, capacity, and costs — nothing related to the Port of San Diego or Tomas E. Firle. The summary quote 'We have no remarks on the proposed project.' does not appear in the provided text. This row may reference a different page or document section entirely, and requires human review to locate the correct source."
+      }
+    },
+    {
+      "sequence": 37,
+      "entity": "Urban Mass Transportation Administration",
+      "kind": "agency",
+      "role": "federal agency commenter, Region IX",
+      "stance": "conditional",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "consideration should be given to exclusive busway lane planning for transit vehicles.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "68"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "68"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "consideration should be given to exclusive busway lane planning for transit vehicles.",
+          "quote_verified": true,
+          "stance_basis": "Supports project but conditions approval on incorporation of exclusive busway lane planning and transit facilities",
+          "entity_as_written": "Urban Mass Transportation Administration",
+          "role_as_written": "federal agency commenter, Region IX"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The phrase 'consideration should be given to exclusive busway lane planning for transit vehicles' does not appear anywhere in the cited page 68 text provided."
+          },
+          {
+            "check": "Attribution links Urban Mass Transportation Administration to the stated stance",
+            "result": "no",
+            "note": "The Urban Mass Transportation Administration is not mentioned anywhere in the cited page text; the text discusses Route 252 environmental impacts and community effects."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name is well-formed",
+            "result": "yes",
+            "note": "Urban Mass Transportation Administration is a legitimate federal agency name (predecessor to FTA)."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention the Urban Mass Transportation Administration or any Region IX federal agency commenter."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page 68 text does not contain the summary quote or any reference to the Urban Mass Transportation Administration. The page appears to discuss Route 252's environmental impacts on Southeast San Diego communities. The extraction likely references a different page or a different section of the EIS entirely and needs to be re-extracted with the correct page citation."
+      }
+    },
+    {
+      "sequence": 38,
+      "entity": "Vince Desimone",
+      "kind": "individual",
+      "role": "Transportation Planning Engineer, Automobile Club of Southern California",
+      "stance": "in_favor",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "In light of the substantial benefits to the citizens of San Diego, the Auto Club of Southern California supports the completion of Route 252 as proposed.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "89"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "89"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "In light of the substantial benefits to the citizens of San Diego, the Auto Club of Southern California supports the completion of Route 252 as proposed.",
+          "quote_verified": true,
+          "stance_basis": "Explicitly supports completion of Route 252 as proposed",
+          "entity_as_written": "Vince Desimone",
+          "role_as_written": "Transportation Planning Engineer, Automobile Club of Southern California"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 89 text contains no mention of Route 252, Auto Club of Southern California, or the quoted sentence."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Vince Desimone and the Automobile Club of Southern California do not appear anywhere in the cited page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance because neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Name appears to be a properly formed individual name with organizational affiliation."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "No mention of Vince Desimone, Transportation Planning Engineer, or Automobile Club of Southern California in the cited text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 89 text is entirely about regional transit alternatives and development policies, with no reference to Route 252, the Auto Club of Southern California, or Vince Desimone. The quote and entity appear to belong to a different page or document section entirely. The extractor should locate the correct page(s) containing this testimony. [Forced HUMAN_REVIEW: stance attribution for a private individual always goes to a human (v2 policy override).]"
+      }
+    },
+    {
+      "sequence": 39,
+      "entity": "William C. Lockett",
+      "kind": "official",
+      "role": "Chief, Evaluation and Planning, Air Resources Board",
+      "stance": "conditional",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "Without the RTP evaluation, we cannot conclude, as the EIR does, that this proposal is consistent with the State's Implementation Plan (SIP) even though localized vehicle miles are projected to be a few percent lower and CO levels will probably be within adopted standards.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "90"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "90"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "Without the RTP evaluation, we cannot conclude, as the EIR does, that this proposal is consistent with the State's Implementation Plan (SIP) even though localized vehicle miles are projected to be a few percent lower and CO levels will probably be within adopted standards.",
+          "quote_verified": false,
+          "stance_basis": "Withholds confirmation of SIP consistency pending RTP air quality evaluation",
+          "entity_as_written": "William C. Lockett",
+          "role_as_written": "Chief, Evaluation and Planning, Air Resources Board"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 90 text contains nothing about Air Resources Board, SIP, RTP evaluation, or the quoted sentence. The quote is entirely absent from the provided text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "William C. Lockett and the Air Resources Board do not appear anywhere in the cited page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Full name with title is appropriate for an official/agency representative."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'Chief, Evaluation and Planning, Air Resources Board' is not mentioned anywhere in the cited page text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 90 text is entirely about transit planning decisions and ballot measures, with no mention of William C. Lockett, the Air Resources Board, SIP consistency, or the quoted language. The extraction appears to reference a different page entirely. The correct page citation needs to be identified and verified. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 40,
+      "entity": "William G. Kirkham",
+      "kind": "official",
+      "role": "Management Systems Officer, State Clearinghouse",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The above listed environmental document was submitted by the State Clearinghouse to numerous State agencies for review. The review has been completed, and there were no comments on the environmental document.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "88"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "88"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The above listed environmental document was submitted by the State Clearinghouse to numerous State agencies for review. The review has been completed, and there were no comments on the environmental document.",
+          "quote_verified": true,
+          "stance_basis": "Reports no comments from state agencies; verifies compliance with environmental review requirements",
+          "entity_as_written": "William G. Kirkham",
+          "role_as_written": "Management Systems Officer, State Clearinghouse"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 88 text contains content about transit systems, capacity, and costs — no mention of William G. Kirkham, State Clearinghouse, or the quoted sentence about agency review."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "William G. Kirkham and the State Clearinghouse do not appear anywhere in the provided page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance without the entity appearing in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Full name with title is acceptable for an official/agency representative."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "No reference to 'Management Systems Officer' or 'State Clearinghouse' in the provided page 88 text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 88 text is entirely about transit system alternatives, capacity, and costs — it contains no reference to William G. Kirkham, the State Clearinghouse, or the quoted sentence about agency review completion. The extraction may reference a different page or document section entirely. Human review is needed to locate the correct source page for this entity and quote."
+      }
+    }
+  ]
+}

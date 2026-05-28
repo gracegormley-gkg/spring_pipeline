@@ -1,0 +1,660 @@
+{
+  "doc_id": "p1074_35556037530615",
+  "work_id": "29e993fd-c646-46b9-b599-e0fe041c5f14",
+  "title": "Motorcycle noise emission regulations : environmental impact statement.",
+  "n_chunks": 5,
+  "per_chunk": [
+    {
+      "chunk_index": 0,
+      "start_page": 1,
+      "end_page": 51,
+      "ceq_chapter": "Alternatives",
+      "entities": [
+        {
+          "entity": "U.S. Environmental Protection Agency (EPA)",
+          "kind": "agency",
+          "role": "Proposing agency / regulatory authority",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The U.S. Environmental Protection Agency (EPA) has issued proposed noise emission regulations for newly manufactured motorcycles and motorcycle replacement exhaust systems.",
+          "evidence_pages": [
+            "1"
+          ],
+          "stance_basis": "EPA is the proponent issuing the proposed motorcycle noise emission regulations",
+          "chunk_index": 0
+        },
+        {
+          "entity": "state and local government officials",
+          "kind": "government",
+          "role": "Concerned state and local officials contacted by EPA",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "Concerned state and local government officials have reported that use of off-road motorcycles both in wilderness and near-residential areas is a significant noise problem.",
+          "evidence_pages": [
+            "8"
+          ],
+          "stance_basis": "Officials reported off-road motorcycle noise as a significant problem, supporting need for regulation",
+          "chunk_index": 0
+        },
+        {
+          "entity": "state and local officials",
+          "kind": "government",
+          "role": "State and local officials contacted by EPA regarding competition motorcycles",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "these motorcycles are appearing in great numbers in general off-road environments and are causing some significant noise disturbance, according to the state and local officials contacted by EPA.",
+          "evidence_pages": [
+            "10"
+          ],
+          "stance_basis": "Officials confirmed competition motorcycle noise disturbance, supporting regulatory need",
+          "chunk_index": 0
+        },
+        {
+          "entity": "Department of the Interior (Bureau of Land Management)",
+          "kind": "agency",
+          "role": "Federal cooperating agency with enforcement responsibility",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "The Department of the Interior (Bureau of Land Management) and the Department of Agriculture (U.S. Forest Service) will have responsibility for ensuring that motorcycles manufactured after January 1, 1979 which are operated on public lands and parks comply with EPA noise emission regulations.",
+          "evidence_pages": [
+            "22"
+          ],
+          "stance_basis": "Assigned enforcement responsibility under the proposed regulation; no explicit support or opposition stated",
+          "chunk_index": 0
+        },
+        {
+          "entity": "U.S. Forest Service (Department of Agriculture)",
+          "kind": "agency",
+          "role": "Federal cooperating agency with enforcement responsibility",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "The Department of the Interior (Bureau of Land Management) and the Department of Agriculture (U.S. Forest Service) will have responsibility for ensuring that motorcycles manufactured after January 1, 1979 which are operated on public lands and parks comply with EPA noise emission regulations.",
+          "evidence_pages": [
+            "22"
+          ],
+          "stance_basis": "Assigned enforcement responsibility under the proposed regulation; no explicit support or opposition stated",
+          "chunk_index": 0
+        },
+        {
+          "entity": "Department of Transportation",
+          "kind": "agency",
+          "role": "Federal agency coordinated with during rulemaking",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "EPA carefully coordinated this effort with responsible officials in the Federal government, including: the U.S. Forest Service (Department of Agriculture); U.S. Bureau of Land Management (Department of Interior); Department of Transportation; National Bureau of Standards (Department of Commerce) and the Department of the Treasury.",
+          "evidence_pages": [
+            "23"
+          ],
+          "stance_basis": "Coordinated with EPA during rulemaking; no explicit stance attributed",
+          "chunk_index": 0
+        },
+        {
+          "entity": "National Bureau of Standards (Department of Commerce)",
+          "kind": "agency",
+          "role": "Federal agency coordinated with during rulemaking",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "EPA carefully coordinated this effort with responsible officials in the Federal government, including: the U.S. Forest Service (Department of Agriculture); U.S. Bureau of Land Management (Department of Interior); Department of Transportation; National Bureau of Standards (Department of Commerce) and the Department of the Treasury.",
+          "evidence_pages": [
+            "23"
+          ],
+          "stance_basis": "Coordinated with EPA during rulemaking; no explicit stance attributed",
+          "chunk_index": 0
+        },
+        {
+          "entity": "Department of the Treasury",
+          "kind": "agency",
+          "role": "Federal agency coordinated with during rulemaking",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "EPA carefully coordinated this effort with responsible officials in the Federal government, including: the U.S. Forest Service (Department of Agriculture); U.S. Bureau of Land Management (Department of Interior); Department of Transportation; National Bureau of Standards (Department of Commerce) and the Department of the Treasury.",
+          "evidence_pages": [
+            "23"
+          ],
+          "stance_basis": "Coordinated with EPA during rulemaking; no explicit stance attributed",
+          "chunk_index": 0
+        },
+        {
+          "entity": "AMF/Harley-Davidson",
+          "kind": "organization",
+          "role": "Principal domestic motorcycle manufacturer",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "The economic impact of the proposed 78 dB(A) standard on AMF/Harley-Davidson, the principal domestic manufacturer, is expected to be primarily manifested in terms of the ability of the firm to manufacture large displacement motorcycles which conform to EPA standards.",
+          "evidence_pages": [
+            "19"
+          ],
+          "stance_basis": "78 dB(A) standard considered not achievable with current engine designs; compliance would require complete redesign",
+          "chunk_index": 0
+        },
+        {
+          "entity": "Bombardier, Ltd.",
+          "kind": "organization",
+          "role": "Canadian motorcycle manufacturer (Can-Am)",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "However, it is questionable whether Bombardier or many of the European manufacturers would continue exporting street motorcycles to the United States with the establishment of the 78 dB(A) standard.",
+          "evidence_pages": [
+            "20"
+          ],
+          "stance_basis": "78 dB(A) standard may cause Bombardier to exit the U.S. market",
+          "chunk_index": 0
+        },
+        {
+          "entity": "Congress",
+          "kind": "government",
+          "role": "Legislative authority / enactor of Noise Control Act of 1972",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "Through the Noise Control Act of 1972 (86 Stat. 1234), Congress established a national policy \"to promote an environment for all Americans free from noise that jeopardizes their health and welfare.\"",
+          "evidence_pages": [
+            "27"
+          ],
+          "stance_basis": "Congress mandated federal noise regulation through the Noise Control Act of 1972",
+          "chunk_index": 0
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 20542,
+        "output_tokens": 1714,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 1,
+      "start_page": 49,
+      "end_page": 99,
+      "ceq_chapter": "Alternatives",
+      "entities": [
+        {
+          "entity": "California Highway Patrol",
+          "kind": "agency",
+          "role": "state law enforcement agency / test procedure adopter",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "Representatives of the U.S. Suzuki Motor Corporation, and the California Highway Patrol, submitted premliminary drafts of test procedures designed to eliminate the above objections.",
+          "evidence_pages": [
+            "49-99"
+          ],
+          "stance_basis": "submitted preliminary drafts of test procedures to improve upon existing methods",
+          "chunk_index": 1
+        },
+        {
+          "entity": "U.S. Suzuki Motor Corporation",
+          "kind": "organization",
+          "role": "motorcycle manufacturer / test procedure contributor",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "Representatives of the U.S. Suzuki Motor Corporation, and the California Highway Patrol, submitted premliminary drafts of test procedures designed to eliminate the above objections.",
+          "evidence_pages": [
+            "49-99"
+          ],
+          "stance_basis": "submitted preliminary drafts of test procedures to improve upon existing methods",
+          "chunk_index": 1
+        },
+        {
+          "entity": "AMF Harley-Davidson",
+          "kind": "organization",
+          "role": "motorcycle manufacturer / test procedure contributor",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "With the same rationale basic to the F-76a test, a staff member of AMF Harley-Davidson submitted (prior to development of the F-76a test) a candidate moving vehicle acceleration test procedure designated R-60.",
+          "evidence_pages": [
+            "49-99"
+          ],
+          "stance_basis": "submitted candidate test procedure R-60 to address noise measurement challenges",
+          "chunk_index": 1
+        },
+        {
+          "entity": "Motorcycle Industry Council",
+          "kind": "organization",
+          "role": "industry trade association / test procedure proposer",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "Motorcycle Industry Council (MIC) Proposed Field Test Procedure for Sound Levels of Competition Motorcycles, Rev. 1-30-76",
+          "evidence_pages": [
+            "49-99"
+          ],
+          "stance_basis": "proposed a field test procedure for sound levels of competition motorcycles",
+          "chunk_index": 1
+        },
+        {
+          "entity": "International Standards Organization",
+          "kind": "organization",
+          "role": "international standards body",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The International Standards Organization, (ISO) Recommendation R-362, \"Measurement of Noise Emitted by Vehicles\", was approved in May 1962 by the following ISO Member Bodies*.",
+          "evidence_pages": [
+            "49-99"
+          ],
+          "stance_basis": "approved and promulgated ISO/R-362 noise measurement standard for vehicles",
+          "chunk_index": 1
+        },
+        {
+          "entity": "Economic Commission for Europe",
+          "kind": "organization",
+          "role": "international regulatory body",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The Economic Commission for Europe (ECE) has adopted the ISO/R-362 method and has prescribed noise standards for various categories of motorcycles.",
+          "evidence_pages": [
+            "49-99"
+          ],
+          "stance_basis": "adopted ISO/R-362 method and prescribed noise standards for motorcycles",
+          "chunk_index": 1
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 24490,
+        "output_tokens": 868,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 2,
+      "start_page": 97,
+      "end_page": 147,
+      "ceq_chapter": "Alternatives",
+      "entities": [
+        {
+          "entity": "Motorcycle Industry Council (MIC)",
+          "kind": "organization",
+          "role": "industry council / data provider",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "Table 5-19 shows the off-road motorcycle mileage mix estimated by the Motorcycle Industry Council (MIC). According to MIC, 57 percent of all off-road mileage is accumulated by street and dual purpose motorcycles.",
+          "evidence_pages": [
+            "97-147"
+          ],
+          "stance_basis": "provides mileage data used in regulatory analysis without taking a position on regulation",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Bureau of Land Management (BLM)",
+          "kind": "agency",
+          "role": "federal land management agency",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "BLM has the authority to close certain areas to off-road vehicle use, if such use endangers soils, vegetation, archeological sites or other valuable resources. Designation of lands as closed to ORV use involves a public notification and participation process which can take a number of months to complete. The Bureau is currently in the process of evaluating all lands under its control to determine their designation either as closed or open to ORV use.",
+          "evidence_pages": [
+            "97-147"
+          ],
+          "stance_basis": "described as evaluating ORV land designations but no explicit stance on federal noise regulation taken",
+          "chunk_index": 2
+        },
+        {
+          "entity": "EPA",
+          "kind": "agency",
+          "role": "lead regulatory agency / document author",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "It is apparent that the most effective means of reducing the noise impact of street motorcycles is to control the numbers of exhaust system modifications while at the same time lowering the sound levels of unmodified vehicles.",
+          "evidence_pages": [
+            "97-147"
+          ],
+          "stance_basis": "agency narrator concludes regulation of motorcycle noise is necessary and effective",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Honda",
+          "kind": "organization",
+          "role": "motorcycle manufacturer / data supplier",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "Most data was supplied by: Honda, Yamaha, Kawasaki, Suzuki and Harley-Davidson.",
+          "evidence_pages": [
+            "97-147"
+          ],
+          "stance_basis": "supplied diagnostic noise source data to EPA on a confidential basis; no stance on regulation attributed",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Yamaha",
+          "kind": "organization",
+          "role": "motorcycle manufacturer / data supplier",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "Most data was supplied by: Honda, Yamaha, Kawasaki, Suzuki and Harley-Davidson.",
+          "evidence_pages": [
+            "97-147"
+          ],
+          "stance_basis": "supplied diagnostic noise source data to EPA on a confidential basis; no stance on regulation attributed",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Kawasaki",
+          "kind": "organization",
+          "role": "motorcycle manufacturer / data supplier",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "Most data was supplied by: Honda, Yamaha, Kawasaki, Suzuki and Harley-Davidson.",
+          "evidence_pages": [
+            "97-147"
+          ],
+          "stance_basis": "supplied diagnostic noise source data to EPA on a confidential basis; no stance on regulation attributed",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Suzuki",
+          "kind": "organization",
+          "role": "motorcycle manufacturer / data supplier",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "Most data was supplied by: Honda, Yamaha, Kawasaki, Suzuki and Harley-Davidson.",
+          "evidence_pages": [
+            "97-147"
+          ],
+          "stance_basis": "supplied diagnostic noise source data to EPA on a confidential basis; no stance on regulation attributed",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Harley-Davidson",
+          "kind": "organization",
+          "role": "motorcycle manufacturer / data supplier",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "Most data was supplied by: Honda, Yamaha, Kawasaki, Suzuki and Harley-Davidson.",
+          "evidence_pages": [
+            "97-147"
+          ],
+          "stance_basis": "supplied diagnostic noise source data to EPA on a confidential basis; no stance on regulation attributed",
+          "chunk_index": 2
+        },
+        {
+          "entity": "U.S. Forest Service",
+          "kind": "agency",
+          "role": "federal land management agency / study conductor",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "In a U.S. Forest Service study, seven experienced recreation guards at the Oregon Dunes National Recreation Area rated the noisiness of dune buggies as to acceptance by the public (Ref. 21).",
+          "evidence_pages": [
+            "97-147"
+          ],
+          "stance_basis": "conducted noise acceptability study; no explicit stance on federal motorcycle noise regulation attributed",
+          "chunk_index": 2
+        },
+        {
+          "entity": "land management officials contacted by EPA",
+          "kind": "other",
+          "role": "senior federal and state land managers",
+          "stance": "opposed",
+          "attribution_mode": "paraphrased",
+          "quote": "most land management officials contacted by EPA reported that such vehicles constitute a very significant part of the off-road vehicle noise problem.",
+          "evidence_pages": [
+            "97-147"
+          ],
+          "stance_basis": "identified competition motorcycles as a very significant off-road noise problem, implying support for controls",
+          "chunk_index": 2
+        },
+        {
+          "entity": "senior Federal and state managers of public lands, forests, lakes, parks and wilderness areas",
+          "kind": "other",
+          "role": "survey respondents / land managers",
+          "stance": "opposed",
+          "attribution_mode": "paraphrased",
+          "quote": "In a survey of 250 senior Federal and state managers of public lands, forests, lakes, parks and wilderness areas of the United States regarding the adverse effects of off-road recreational vehicles (which included other factors besides noise), trail motorcycles were rated as the 'most urgent problem for them to solve' (Ref. 3).",
+          "evidence_pages": [
+            "97-147"
+          ],
+          "stance_basis": "rated trail motorcycles as the most urgent problem to solve among off-road recreational vehicles",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Department of Ecology, State of Washington",
+          "kind": "government",
+          "role": "state environmental agency / reference document author",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "Environmental Impact Statement for Proposed Noise Abatement Regulations, Noise Section, Department of Ecology, State of Washington, Olympia, WN 98504, 16 April 1975.",
+          "evidence_pages": [
+            "97-147"
+          ],
+          "stance_basis": "authored an EIS for proposed noise abatement regulations, indicating support for noise regulation",
+          "chunk_index": 2
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 22754,
+        "output_tokens": 1790,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 3,
+      "start_page": 145,
+      "end_page": 195,
+      "ceq_chapter": "Alternatives",
+      "entities": [
+        {
+          "entity": "Harley Davidson",
+          "kind": "organization",
+          "role": "motorcycle manufacturer / commenter",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "In addition, Harley Davidson estimates labeling would add approximately $0.5 to unit costs.",
+          "evidence_pages": [
+            "145-195"
+          ],
+          "stance_basis": "provided cost estimate for labeling compliance without taking a position on the regulation itself",
+          "chunk_index": 3
+        },
+        {
+          "entity": "AMF/Harley-Davidson",
+          "kind": "organization",
+          "role": "motorcycle manufacturer / commenter on exhaust emission rulemaking",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "AMF/Harley-Davidson's reply to Exhaust Emission Notice of Proposed Rulemaking, January 30, 1976.",
+          "evidence_pages": [
+            "145-195"
+          ],
+          "stance_basis": "cited as source of compliance cost data in rulemaking reply",
+          "chunk_index": 3
+        },
+        {
+          "entity": "Motorcycle Industry Council",
+          "kind": "organization",
+          "role": "industry data provider / commenter",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "Complete monthly sales data from January 1973 through December 1975 for total motorcycle unit sales, retail and wholesale, and regional sales data has been provided by the Motorcycle Industry Council to the EPA.",
+          "evidence_pages": [
+            "145-195"
+          ],
+          "stance_basis": "provided sales data to EPA for regulatory analysis without an attributed position on the regulation",
+          "chunk_index": 3
+        },
+        {
+          "entity": "EPA",
+          "kind": "agency",
+          "role": "regulatory agency / document author",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "Although EPA estimates of test and administration costs are considerably lower, manufacturer estimates were used in computing unit cost increases for testing and compliance requirements.",
+          "evidence_pages": [
+            "145-195"
+          ],
+          "stance_basis": "EPA produced lower cost estimates for testing/certification but deferred to manufacturer data for analysis",
+          "chunk_index": 3
+        },
+        {
+          "entity": "International Research and Technology Corporation",
+          "kind": "organization",
+          "role": "referenced study source",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "A. International Research and Technology Corporation, \"The Impact of Noise Abatement Standards on the Motorcycle Industry\".",
+          "evidence_pages": [
+            "145-195"
+          ],
+          "stance_basis": "cited as reference source for price mark-up data; no stance attributed",
+          "chunk_index": 3
+        },
+        {
+          "entity": "Ziff-Davis Publishing Company",
+          "kind": "organization",
+          "role": "aftermarket study source",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "The 1974 data point obtained from Ziff-Davis Publishing Company, \"Motorcycle Aftermarket Study\".",
+          "evidence_pages": [
+            "145-195"
+          ],
+          "stance_basis": "cited as data source for aftermarket sales; no stance on regulation attributed",
+          "chunk_index": 3
+        },
+        {
+          "entity": "Frost and Sullivan",
+          "kind": "organization",
+          "role": "market research firm / referenced study source",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "Frost and Sullivan \"Motorcycle Original Equipment and Aftermarket Study Announcement\", April 1975.",
+          "evidence_pages": [
+            "145-195"
+          ],
+          "stance_basis": "cited as data source for aftermarket growth estimates; no stance on regulation attributed",
+          "chunk_index": 3
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 25957,
+        "output_tokens": 929,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 4,
+      "start_page": 193,
+      "end_page": 211,
+      "ceq_chapter": null,
+      "entities": [
+        {
+          "entity": "state and local officials",
+          "kind": "other",
+          "role": "state and local government officials contacted during rulemaking",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "Virtually all state and local officials contacted felt that reduced sound levels would help the problem and either urged EPA to establish regulatory sound levels or were establishing new off-road motorcycle sound level limits themselves.",
+          "evidence_pages": [
+            "193"
+          ],
+          "stance_basis": "urged EPA to establish regulatory sound levels or were establishing their own limits",
+          "chunk_index": 4
+        },
+        {
+          "entity": "EPA",
+          "kind": "agency",
+          "role": "regulatory agency / document author",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "EPA has concluded that reduced sound levels from the majority of unmodified off-road motorcycles are a necessary complement to state and local in-use and land-use regulation.",
+          "evidence_pages": [
+            "193"
+          ],
+          "stance_basis": "concluded that reduced sound levels are necessary; proposed Federal noise emission standards",
+          "chunk_index": 4
+        },
+        {
+          "entity": "One manufacturer",
+          "kind": "organization",
+          "role": "motorcycle manufacturer commenter",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "One manufacturer suggested that, in conjunction with the vehicle label, engines or other components of competition motorcycles be of a distinctive color to aid enforcement officials in identifying and controlling their use off-road.",
+          "evidence_pages": [
+            "193"
+          ],
+          "stance_basis": "suggested distinctive color coding for competition motorcycle components to aid enforcement",
+          "chunk_index": 4
+        },
+        {
+          "entity": "concerned state and local officials",
+          "kind": "other",
+          "role": "state and local government officials",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "almost all concerned state and local officials believed that Federal regulation of new off-road motorcycles would help to solve the noise problem in their jurisdictions.",
+          "evidence_pages": [
+            "194"
+          ],
+          "stance_basis": "believed Federal regulation of new off-road motorcycles would help solve noise problems",
+          "chunk_index": 4
+        },
+        {
+          "entity": "Manufacturers of replacement exhaust systems",
+          "kind": "organization",
+          "role": "aftermarket exhaust system manufacturers / commenters",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "Manufacturers of replacement exhaust systems have indicated that requiring the use of the acceleration test procedure for all testing could pose a major problem, due to the difficulty of acquiring new motorcycles for testing purposes",
+          "evidence_pages": [
+            "197"
+          ],
+          "stance_basis": "raised concern that acceleration test procedure poses major problem for exhaust system manufacturers",
+          "chunk_index": 4
+        },
+        {
+          "entity": "Exhaust system manufacturers",
+          "kind": "organization",
+          "role": "aftermarket exhaust system manufacturers / commenters",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "Exhaust system manufacturers have commented that they do not know how the sound level performance of their mufflers varies from one model motorcycle to another. They further maintain that it would not be possible to categorize motorcycles in order to test a worst case to assure that all other motorcycle models in that category would meet the standard with the same replacement exhaust system.",
+          "evidence_pages": [
+            "199"
+          ],
+          "stance_basis": "raised concerns about feasibility of universal muffler categorization testing requirements",
+          "chunk_index": 4
+        },
+        {
+          "entity": "motorcycle users",
+          "kind": "other",
+          "role": "off-road motorcycle users / commenters",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "An additional problem mentioned by both motorcycle users and some government officials is that there may be an increased tendency for motorcyclists to either modify their off-road motorcycle or switch to an unregulated competition motorcycle to counteract severe performance penalties.",
+          "evidence_pages": [
+            "195"
+          ],
+          "stance_basis": "raised concern about potential for increased modifications or switching to unregulated competition motorcycles",
+          "chunk_index": 4
+        },
+        {
+          "entity": "some government officials",
+          "kind": "other",
+          "role": "government officials / commenters",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "An additional problem mentioned by both motorcycle users and some government officials is that there may be an increased tendency for motorcyclists to either modify their off-road motorcycle or switch to an unregulated competition motorcycle to counteract severe performance penalties.",
+          "evidence_pages": [
+            "195"
+          ],
+          "stance_basis": "raised concern about potential for increased modifications or switching to unregulated competition motorcycles under strict performance standards",
+          "chunk_index": 4
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 10471,
+        "output_tokens": 1172,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    }
+  ]
+}

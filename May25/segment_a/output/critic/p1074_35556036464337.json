@@ -1,0 +1,282 @@
+{
+  "title": {
+    "rubric_results": [
+      {
+        "check": "Title is non-empty and plausibly the document's title?",
+        "result": "yes",
+        "note": "The title references a specific geographic area (Kanab/Escalante), a subject (grazing management), and document type (environmental impact statement), which is highly plausible for an EIS."
+      },
+      {
+        "check": "Length is reasonable (not a sentence fragment, not the whole abstract)?",
+        "result": "yes",
+        "note": "The title is concise and appropriately scoped for a document title."
+      },
+      {
+        "check": "If two sources (NUL + Haiku) — do they roughly agree?",
+        "result": "n/a",
+        "note": "Only one source (NUL) was provided; no Haiku source to compare."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "medium",
+    "notes": "The extracted title is plausible and well-formed for an EIS document covering grazing management in the Kanab/Escalante area. However, no cited page text was provided to verify the extraction, and only a single source (NUL) was used. Confidence is medium due to the lack of corroborating text evidence.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "year": {
+    "rubric_results": [
+      {
+        "check": "Year falls within 1969 ≤ year ≤ current year?",
+        "result": "no",
+        "note": "2026 is in the future and exceeds the current year (2025), failing the upper bound check"
+      },
+      {
+        "check": "Year present in NUL metadata OR found on first 3 pages?",
+        "result": "yes",
+        "note": "NUL metadata reportedly returns 2026, though no cited page text was provided to verify regex finding of 1980"
+      },
+      {
+        "check": "If NUL and regex disagree, value reflects this with a low-confidence flag?",
+        "result": "yes",
+        "note": "Extraction correctly flags the NUL=2026 vs regex=1980 disagreement with low confidence"
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "The extracted year of 2026 is a future date and fails the valid range check, making it an implausible publication year for an EIS. The regex finding of 1980 is more plausible for an EIS document but cannot be confirmed without cited page text. A human reviewer should inspect the source document directly to resolve the NUL/regex conflict and determine the correct year.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "eis_type": {
+    "rubric_results": [
+      {
+        "check": "Type is one of: Draft, Final, Supplemental, ROD, Unknown?",
+        "result": "yes",
+        "note": "Draft is a valid type, but the evidence phrase strongly suggests Final is correct"
+      },
+      {
+        "check": "Regex hit on first page and Sonnet on first 2 pages agree?",
+        "result": "no",
+        "note": "Extractor explicitly notes regex=Draft disagrees with Sonnet=Final; they do not agree"
+      },
+      {
+        "check": "Evidence phrase supports the chosen type?",
+        "result": "no",
+        "note": "Evidence phrase '(X) Final Environmental Impact Statement' directly contradicts the extracted value of Draft"
+      }
+    ],
+    "verdict": "RE_EXTRACT",
+    "model_confidence": "low",
+    "notes": "The extracted value of 'Draft' is contradicted by the cited evidence phrase '(X) Final Environmental Impact Statement', which clearly indicates a Final EIS. The extractor's own confidence is low and it flags a disagreement between regex and Sonnet. The correct value is almost certainly 'Final', but re-extraction with cited pages provided is recommended to confirm before accepting.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "lead_agency": {
+    "rubric_results": [
+      {
+        "check": "All listed agencies appear in NUL contributors OR on cited title pages?",
+        "result": "yes",
+        "note": "United States. Bureau of Land Management is sourced from NUL and is a well-known BLM identifier; no title page text provided to cross-check, but NUL source is cited."
+      },
+      {
+        "check": "Joint-lead (>2 agencies) flagged for human review?",
+        "result": "n/a",
+        "note": "Only one agency listed; joint-lead flag not required."
+      },
+      {
+        "check": "No role text left in agency names?",
+        "result": "yes",
+        "note": "The agency name 'United States. Bureau of Land Management' contains no role descriptors such as '(issuing body)' or similar."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "medium",
+    "notes": "The single extracted agency, United States. Bureau of Land Management, is cleanly formatted and sourced from NUL with no role text artifacts. Confidence is medium rather than high because no cited title page text was provided to independently corroborate the NUL attribution. The extraction appears valid based on available evidence.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "summary": {
+    "rubric_results": [
+      {
+        "check": "project_description text supported by cited pages",
+        "result": "yes",
+        "note": "The abstract on the cover pages confirms 2,567,466 acres, Washington/Kane/Garfield/Coconino counties, Alternative 5 with 129/60/21 allotments, 68,298 initial AUMs growing to 91,444 over 24 years. The roughly 210 allotments figure (129+60+21=210) is derivable from the text."
+      },
+      {
+        "check": "affected_community text supported by cited pages",
+        "result": "no",
+        "note": "The cited pages do not contain the specific claims about 282 ranch operations, BLM forage providing ~40% of annual feed, the list of specific towns, agriculture providing under 15% of employment and less than 5% of personal income, or ranching since the 1870s. The Wool Growers letter mentions 15% employment figure but attributes it to figure 3-24, not directly visible in the pulled text. Most of these details are not visible in the cited page content provided."
+      },
+      {
+        "check": "alternatives_overview text supported by cited pages",
+        "result": "yes",
+        "note": "The abstract lists all six alternatives by name. AUM figures (109,708, 68,298, 91,444, 104,343) are referenced in the document. The Kane/Garfield County Commissions recommending a hybrid of Alternatives 1 and 6 is not directly visible in the pulled text, though the county commissioners are listed as commenters."
+      },
+      {
+        "check": "environmental_impact text supported by cited pages",
+        "result": "no",
+        "note": "Specific figures like 38% of rangeland in poor forage condition, 12% of soils in severe/critical erosion, 44% of riparian miles in poor condition, mule deer at 5,539 vs. 17,044, and 211,366 acres of critical erosion improved under Alt. 2 are not visible in the pulled page text. The FWS letter references 5,539 deer and 96% of critical habitat in fair/poor condition, partially supporting some figures, but many specific numbers are not confirmed."
+      },
+      {
+        "check": "public_response text supported by cited pages",
+        "result": "no",
+        "note": "The pulled text confirms public hearings in Kanab and Escalante (June 10-11, 1980), comment period extended to July 16 (45 to 60 days is not explicitly stated), and EPA involvement. However, '16 scoping meetings (April–November 1979)' is mentioned in Response 5-2 as 'sixteen scoping meetings.' The EPA ER-2 rating is not visible in the pulled text. The 68-71% cumulative cuts figure is not confirmed in the pulled pages."
+      },
+      {
+        "check": "Numbers, places, and dates match cited pages",
+        "result": "no",
+        "note": "The comment period was extended to July 16, 1980 (from July 1), which is a 15-day extension, not necessarily '45 to 60 days' as stated. The DEIS was filed April 29, 1980, not matching 'April–November 1979' for scoping. Several specific numbers in the extraction are not verifiable from the pulled text."
+      },
+      {
+        "check": "public_response based_on_main_doc_only=true",
+        "result": "yes",
+        "note": "The public_response field references the main EIS document and its coordination/review section, which is appropriate."
+      },
+      {
+        "check": "No invention or hallucinated detail beyond cited content",
+        "result": "no",
+        "note": "Several specific figures (282 ranch operations, 40% BLM forage dependency, 17,044 historical deer, 211,366 acres, EPA ER-2 rating, 68-71% cumulative cuts, specific town names as permittee residences) are not visible in the pulled text and may be hallucinated or drawn from pages not included in the citation pull."
+      }
+    ],
+    "verdict": "RE_EXTRACT",
+    "model_confidence": "high",
+    "notes": "The extraction contains numerous specific figures and claims that are not verifiable from the pulled page text provided. While the project description and alternatives overview are largely supported, the affected_community, environmental_impact, and public_response sections contain many specific numbers (282 operations, 40% forage dependency, 17,044 deer, 211,366 acres, EPA ER-2 rating, 68-71% cumulative cuts) that do not appear in the cited pages. The comment period extension is described as '45 to 60 days' but the pulled text shows it went from July 1 to July 16 (15 days). Re-extraction with verification against actual page content is needed.",
+    "source_pages": [
+      "1-51",
+      "97-147",
+      "145-195",
+      "481-503",
+      "193-243",
+      "49-99",
+      "241-291",
+      "289-339"
+    ]
+  },
+  "alternatives": {
+    "rubric_results": [
+      {
+        "check": "Each listed alternative is actually discussed on its cited page?",
+        "result": "yes",
+        "note": "All six alternatives (Alt 1–6) are described in the cited text. The text contains full descriptions of each alternative with matching AUM figures, management details, and purposes. Page numbers 162–184 are not directly verifiable from the raw text (no page headers visible), but the content clearly covers all six alternatives in sequence within the provided chapter text."
+      },
+      {
+        "check": "No Action alternative included if cited text includes it?",
+        "result": "n/a",
+        "note": "This EIS uses 'Continuation of Present Management' (Alternative 1) as the baseline/comparison alternative rather than a traditional 'No Action' alternative. The extraction correctly captures Alternative 1 in this role; no separate 'No Action' label appears in the cited text."
+      },
+      {
+        "check": "Names and descriptions match terminology used in the cited text?",
+        "result": "yes",
+        "note": "All alternative names match exactly: 'Continuation of Present Management,' 'Elimination of Livestock Grazing,' 'Multiple Resource Enhancement,' 'Adjustment to Grazing Capacity,' 'Rangeland Management Recommendation,' and 'Livestock Optimization.' AUM figures and key descriptive details align with the source text."
+      },
+      {
+        "check": "No outside-knowledge alternatives added that aren't in the chapter?",
+        "result": "yes",
+        "note": "Only the six alternatives explicitly described in Chapter 2 of the cited text are included. No extraneous alternatives have been introduced."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "All six alternatives are accurately named, described, and sourced from the cited chapter text. AUM figures, management descriptions, and purposes in the extraction closely match the source language. The absence of a standalone 'No Action' alternative is consistent with the document's structure, which uses Alternative 1 (Continuation of Present Management) as the baseline comparator.",
+    "source_pages": [
+      "162-231"
+    ]
+  },
+  "themes": {
+    "rubric_results": [
+      {
+        "check": "Each chosen theme is supported by the doc summary fields?",
+        "result": "no",
+        "note": "No cited pages were provided, so direct documentary support cannot be verified. The justification references summary fields but no actual text is supplied to confirm."
+      },
+      {
+        "check": "Theme names come from the fixed taxonomy verbatim?",
+        "result": "n/a",
+        "note": "Cannot confirm taxonomy compliance without access to the fixed taxonomy list; names appear plausible but unverifiable."
+      },
+      {
+        "check": "Subthemes belong to the chosen theme(s) per the taxonomy?",
+        "result": "n/a",
+        "note": "Without the taxonomy document, subtheme-to-theme mapping (e.g., 'Institutional Power and Resource Management' under 'Governance and Institutional Control'; 'Land Rights and Displacement' under 'Place Based Development Conflicts') cannot be confirmed."
+      },
+      {
+        "check": "1–3 themes and 2–5 subthemes selected (within range)?",
+        "result": "yes",
+        "note": "3 themes and 5 subthemes selected — both counts are within the allowed ranges."
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "The extraction is internally coherent and the counts are within range, but no cited page text was provided, making it impossible to verify that the chosen themes and subthemes are grounded in the actual document. Additionally, taxonomy conformance for both theme names and subtheme assignments cannot be confirmed without the reference taxonomy. A human reviewer should validate against the source document and taxonomy before accepting.",
+    "source_pages": []
+  },
+  "location": {
+    "rubric_results": [
+      {
+        "check": "Place names appear in cited pages?",
+        "result": "yes",
+        "note": "Kanab/Escalante Area, Utah; Washington County; Kane County; Garfield County; and Coconino County (AZ) all appear explicitly in the cited page text, including in the abstract and throughout the document."
+      },
+      {
+        "check": "is_multi_site set correctly?",
+        "result": "no",
+        "note": "The EIS covers a large contiguous management area spanning multiple counties in two states (UT and AZ) totaling 2,567,466 acres — this is effectively a multi-site/corridor-type coverage. is_multi_site should be true, not false."
+      },
+      {
+        "check": "For corridor projects: endpoints named, not just a midpoint?",
+        "result": "n/a",
+        "note": "This is a grazing management area, not a linear corridor project; endpoint naming convention does not apply."
+      },
+      {
+        "check": "State abbreviations match U.S. conventions?",
+        "result": "yes",
+        "note": "UT for Utah and AZ for Arizona are both correct U.S. postal abbreviations."
+      },
+      {
+        "check": "Geocoded coordinates match stated states?",
+        "result": "no",
+        "note": "Washington County geocoded to Texas, Kane County to Illinois, and Garfield County to Colorado — all wrong states. Only Coconino County (AZ) geocoded correctly. The geocoder failed to disambiguate to Utah context."
+      }
+    ],
+    "verdict": "RE_EXTRACT",
+    "model_confidence": "high",
+    "notes": "The place names and state abbreviations are correctly identified from the source text. However, is_multi_site is incorrectly set to false — the project spans multiple counties across two states (Utah and Arizona) covering over 2.5 million acres, which clearly qualifies as multi-site. Additionally, the geocoding for Washington, Kane, and Garfield Counties resolved to wrong states (Texas, Illinois, and Colorado respectively), indicating the geocoder did not apply the Utah state context. These errors warrant re-extraction with corrected is_multi_site flag and state-qualified geocoding.",
+    "source_pages": [
+      "1-30"
+    ]
+  },
+  "key_people": {
+    "rubric_results": [
+      {
+        "check": "Each agency preparer named in cited Preparers text?",
+        "result": "yes",
+        "note": "All 20 agency preparers (Dennis Curtis, Bob Dusenbury, Dave Kauffman, Ervin Larsen, Bill Wiley, Ron Tucker, Glen Yankus, Doug McFadden, Jay K. Carlson, Al Larson, Paul Ernst, Terry Lewis, Connie Murdock, Don Cain, Jerry Sintz, William McMahan, Merrill DeSpain, Richard Page, Don Duff, Donny Sparks) appear verbatim in the LIST OF PREPARERS and MAJOR CONTRIBUTORS sections of the cited text."
+      },
+      {
+        "check": "Cooperating agencies / tribal nations actually listed in cited text?",
+        "result": "yes",
+        "note": "All 31 cooperating agencies/entities are confirmed in the LIST OF AGENCIES section. Note: 'Water and Power Posources Service' appears as a typo in the source text but is correctly rendered as 'Water and Power Resources Service' in the extraction — minor OCR artifact, not an extraction error. No tribal nations are listed in the cited text and none were extracted."
+      },
+      {
+        "check": "For public_commenters: stance present on cited page? Quote verbatim? Speaker clear?",
+        "result": "n/a",
+        "note": "No public commenters were extracted; the cited pages contain no public comment responses, only preparers, distribution lists, and appendices."
+      },
+      {
+        "check": "Private individuals: last-name-only or 'private commenter' convention followed?",
+        "result": "n/a",
+        "note": "No private individuals were extracted as public commenters. The permittee list in the cited text was not extracted as key people, which is appropriate."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "All agency preparers and cooperating agencies in the extraction are directly confirmed in the cited text. No public commenters were extracted, consistent with the cited pages containing no comment-response sections. The 'Water and Power Resources Service' name discrepancy is a minor OCR artifact in the source ('Posources' vs. 'Resources') and does not represent an extraction error.",
+    "source_pages": [
+      "339-456"
+    ]
+  }
+}

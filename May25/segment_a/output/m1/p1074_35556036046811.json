@@ -1,0 +1,39 @@
+{
+  "title": {
+    "value": "Environmental Impact Statement, Los Angeles Harbor Deepening Project",
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  },
+  "year": {
+    "value": 2026,
+    "confidence": "low",
+    "sources": [
+      "NUL",
+      "regex (first 3 pages)"
+    ],
+    "note": "NUL=2026 disagrees with regex=1980 — flag"
+  },
+  "eis_type": {
+    "value": "Supplemental",
+    "confidence": "low",
+    "sources": [
+      "regex (first page)",
+      "Sonnet (first 2 pages)"
+    ],
+    "note": "regex=Supplemental disagrees with Sonnet=Final",
+    "evidence": "(X) Final Environmental Impact Statement"
+  },
+  "lead_agency": {
+    "value": [
+      "U.S. Army Corps of Engineers – Los Angeles District",
+      "Los Angeles Harbor Department"
+    ],
+    "confidence": "medium",
+    "sources": [
+      "Sonnet (first 4 pages)"
+    ],
+    "note": null
+  }
+}

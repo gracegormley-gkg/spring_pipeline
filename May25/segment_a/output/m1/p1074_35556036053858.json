@@ -1,0 +1,48 @@
+{
+  "title": {
+    "value": "Environmental Impact Statement, Proposed HUD Project Selection Criteria for Subsidized Housing",
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  },
+  "year": {
+    "value": 2026,
+    "confidence": "low",
+    "sources": [
+      "NUL",
+      "regex (first 3 pages)"
+    ],
+    "note": "NUL=2026 disagrees with regex=1971 — flag"
+  },
+  "eis_type": {
+    "value": "Supplemental",
+    "confidence": "low",
+    "sources": [
+      "regex (first page)",
+      "Sonnet (first 2 pages)"
+    ],
+    "note": "regex=Supplemental disagrees with Sonnet=Final",
+    "evidence": "FINAL ENVIRONMENTAL STATEMENT on Proposed HUD Project Selection Criteria for Subsidized Housing"
+  },
+  "lead_agency": {
+    "value": [
+      "Department of Housing and Urban Development",
+      "Department of Health, Education and Welfare",
+      "Atomic Energy Commission",
+      "Department of the Army, Corps of Engineers",
+      "Department of Agriculture",
+      "General Services Administration",
+      "Department of the Interior",
+      "Appalachian Regional Commission",
+      "Department of Transportation",
+      "Environmental Protection Agency",
+      "National Capital Planning Commission"
+    ],
+    "confidence": "medium",
+    "sources": [
+      "Sonnet (first 4 pages)"
+    ],
+    "note": "More than 2 agencies — likely joint-lead; verify."
+  }
+}

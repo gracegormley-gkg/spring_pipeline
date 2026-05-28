@@ -1,0 +1,249 @@
+{
+  "title": {
+    "rubric_results": [
+      {
+        "check": "Title is non-empty and plausibly the document's title?",
+        "result": "yes",
+        "note": "The title references a specific highway construction project (SR-252) connecting two major interstates in San Diego, with 'environmental impact statement' — highly plausible as an EIS document title."
+      },
+      {
+        "check": "Length is reasonable (not a sentence fragment, not the whole abstract)?",
+        "result": "yes",
+        "note": "Title is concise and appropriately descriptive at ~12 words."
+      },
+      {
+        "check": "If two sources (NUL + Haiku) — do they roughly agree?",
+        "result": "n/a",
+        "note": "Only one source (NUL) provided; no second source to compare."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "medium",
+    "notes": "The extracted title is plausible and well-formed for an EIS document, referencing SR-252 construction in San Diego connecting I-5 and I-805. However, no cited page text was provided to verify the extraction, and only a single source (NUL) was used. Confidence is medium due to the absence of corroborating page text or a second source.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "year": {
+    "rubric_results": [
+      {
+        "check": "Year falls within 1969 ≤ year ≤ current year?",
+        "result": "no",
+        "note": "2026 is in the future and exceeds the current year (2025), failing the upper bound; regex value 1971 would pass"
+      },
+      {
+        "check": "Year present in NUL metadata OR found on first 3 pages?",
+        "result": "yes",
+        "note": "NUL metadata reports 2026 and regex found 1971 on first 3 pages; both sources present but conflicting"
+      },
+      {
+        "check": "If NUL and regex disagree, value reflects this with a low-confidence flag?",
+        "result": "yes",
+        "note": "Extraction correctly flags the disagreement and assigns low confidence"
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "NUL metadata yields 2026, which is a future year and implausible for an EIS document, strongly suggesting a metadata error. The regex value of 1971 falls within the valid range and is far more plausible for an EIS. Human review is required to confirm the correct publication year, with 1971 being the likely correct value.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "eis_type": {
+    "rubric_results": [
+      {
+        "check": "Type is one of: Draft, Final, Supplemental, ROD, Unknown?",
+        "result": "yes",
+        "note": "Final is a valid EIS type within the accepted taxonomy"
+      },
+      {
+        "check": "Regex hit on first page and Sonnet on first 2 pages agree?",
+        "result": "yes",
+        "note": "Both sources listed agree on 'Final'; no conflict detected"
+      },
+      {
+        "check": "Evidence phrase supports the chosen type?",
+        "result": "yes",
+        "note": "'FINAL ENVIRONMENTAL IMPACT STATEMENT' directly and unambiguously supports the type 'Final'"
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "high",
+    "notes": "The extracted value 'Final' is strongly supported by the evidence phrase 'FINAL ENVIRONMENTAL IMPACT STATEMENT,' and both extraction methods agree. However, no cited page text was provided for independent verification of the source document, which prevents full confirmation. The extraction itself appears reliable, but the absence of cited page content warrants a note rather than a clean PASS.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "lead_agency": {
+    "rubric_results": [
+      {
+        "check": "All listed agencies appear in NUL contributors OR on cited title pages?",
+        "result": "yes",
+        "note": "United States. Federal Highway Administration is sourced from NUL and is a well-known standard authority form for FHWA."
+      },
+      {
+        "check": "Joint-lead (>2 agencies) flagged for human review?",
+        "result": "n/a",
+        "note": "Only one agency listed; joint-lead flag not required."
+      },
+      {
+        "check": "No role text left in agency names?",
+        "result": "yes",
+        "note": "No parenthetical role text such as '(issuing body)' is present in the extracted value."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "The single extracted agency, 'United States. Federal Highway Administration,' is a standard authority form sourced from NUL with no extraneous role text. Only one lead agency is listed, so no joint-lead review is needed. Extraction appears clean and reliable.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "summary": {
+    "rubric_results": [
+      {
+        "check": "project_description text supported by cited pages",
+        "result": "yes",
+        "note": "1.2 miles, six-lane freeway, I-5 to I-805, overcrossings at 38th/40th/43rd Streets, pedestrian bridge to Southcrest Park, I-5/Route 252 connector, South Chollas Creek realignment all confirmed in cited text. 44 acres ROW confirmed. $12.4 million unspent balance confirmed. 1977 construction start confirmed ('Construction could begin around 1977')."
+      },
+      {
+        "check": "Numbers, places, dates match cited pages",
+        "result": "yes",
+        "note": "44 acres, $12.4M, 1977, 48% Afro-American, 29% Mexican-American, 16% Anglo, 6% Asian-American, ~50,000 residents, 24% poverty, 280 housing units removed, 350-foot corridor width, 0.15 acre Southcrest Park, 70 dBA threshold all verified in cited text. Minor note: the pedestrian bridge is described as near 41st Street in the document, not explicitly '41st Street pedestrian bridge to Southcrest Park' but this is consistent."
+      },
+      {
+        "check": "public_response limited to main doc (based_on_main_doc_only=true)",
+        "result": "yes",
+        "note": "All public response details (1965 hearing, 1969 Community Plan, November 1973 Development Committee opposition, February 1975 City Council vote, agency positions) are drawn from the main EIS document text visible in cited pages."
+      },
+      {
+        "check": "No invention or hallucinated detail beyond cited content",
+        "result": "yes",
+        "note": "The claim about '4,300 accidents prevented' is not directly visible in the cited page text provided, which is a concern. The text mentions accident reduction as a project purpose but no specific figure of 4,300 is visible in the extracted pages. All other details are traceable. The 'tens of thousands' VMT reduction figure is supported (1,584,000 vs 1,536,000 = ~48,000 VMT reduction). The 'seven commercial buildings along 43rd Street' noise claim is plausible from Figure 17 discussion but not explicitly enumerated in the visible text."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "high",
+    "notes": "The extraction is largely accurate and well-supported by the cited pages. The specific figure of '4,300 accidents prevented' does not appear in the visible cited text and may be drawn from a page not included in the extraction, representing a potential hallucination or unsupported detail. The '~50,000 residents' figure refers to the Model Neighborhood population per the source, not the broader Southeast San Diego community of ~74,000, which is a subtle but acceptable characterization. All other numerical, geographic, and organizational details check out against the cited content.",
+    "source_pages": [
+      "1-51",
+      "49-90"
+    ]
+  },
+  "alternatives": {
+    "rubric_results": [
+      {
+        "check": "Each listed alternative is actually discussed on its cited page?",
+        "result": "n/a",
+        "note": "No alternatives were extracted and no cited pages were provided, so this check cannot be performed."
+      },
+      {
+        "check": "The No Action alternative is included if the cited text includes it?",
+        "result": "n/a",
+        "note": "No cited text was provided, so it is impossible to verify whether a No Action alternative should have been included."
+      },
+      {
+        "check": "Names and descriptions match terminology used in the cited text?",
+        "result": "n/a",
+        "note": "No extracted names or descriptions exist to compare against any source text."
+      },
+      {
+        "check": "No outside-knowledge alternatives added that aren't in the chapter?",
+        "result": "yes",
+        "note": "No alternatives were added at all, so no outside-knowledge contamination is present."
+      }
+    ],
+    "verdict": "RE_EXTRACT",
+    "model_confidence": "high",
+    "notes": "The extraction returned an empty value with no cited pages, citing a structural detection failure and a deliberate skip per the v2 plan. Because no alternatives data was captured and no source text was provided for verification, the rubric checks are almost entirely non-applicable. The field must be re-extracted using a fallback method (e.g., keyword/regex search for 'Alternative', 'No Action', section headers) to ensure the alternatives chapter content is not missed.",
+    "source_pages": []
+  },
+  "themes": {
+    "rubric_results": [
+      {
+        "check": "Each chosen theme is supported by the doc summary fields?",
+        "result": "no",
+        "note": "No cited pages or summary text were provided, making it impossible to verify that the three themes are grounded in actual document content. The justification is plausible but unverifiable without source text."
+      },
+      {
+        "check": "Theme names come from the fixed taxonomy verbatim?",
+        "result": "no",
+        "note": "'Place Based Development Conflicts' does not appear to be a standard fixed-taxonomy theme name; it may be a paraphrase or non-canonical entry. 'Transportation Infrastructure' and 'Urban Development' are plausible taxonomy entries but cannot be confirmed without the taxonomy reference."
+      },
+      {
+        "check": "Subthemes belong to the chosen theme(s) per the taxonomy?",
+        "result": "no",
+        "note": "'Community Resistance and Activism' and 'Land Rights and Displacement' are more naturally subthemes of 'Place Based Development Conflicts' (if that theme exists), but without the taxonomy document this assignment cannot be verified. Cross-theme subtheme assignment is a risk."
+      },
+      {
+        "check": "1–3 themes and 2–5 subthemes selected (within range)?",
+        "result": "yes",
+        "note": "3 themes and 5 subthemes are selected, both within the allowed ranges."
+      }
+    ],
+    "verdict": "RE_EXTRACT",
+    "model_confidence": "low",
+    "notes": "No cited page text was provided, making source verification impossible. The theme 'Place Based Development Conflicts' does not appear to be a verbatim taxonomy entry, raising a taxonomy compliance concern. The extraction should be re-run with explicit cited page content and verified against the fixed taxonomy to confirm all theme and subtheme names are canonical.",
+    "source_pages": []
+  },
+  "location": {
+    "rubric_results": [
+      {
+        "check": "Place names appear in cited pages?",
+        "result": "yes",
+        "note": "The cited page text explicitly states 'STATE ROUTE 252 FROM INTERSTATE ROUTE 5 TO 0.4 MILE WEST OF INTERSTATE ROUTE 805 IN THE CITY OF SAN DIEGO, SAN DIEGO COUNTY, CALIFORNIA' and repeatedly references these locations throughout."
+      },
+      {
+        "check": "is_multi_site set correctly?",
+        "result": "yes",
+        "note": "Set to false; the project is a single corridor (1.2-mile freeway segment) within one city, not multiple discrete sites. This is correct."
+      },
+      {
+        "check": "For corridor projects: endpoints named, not just a midpoint?",
+        "result": "yes",
+        "note": "Both endpoints are clearly named: Interstate Route 5 (western terminus) and 0.4 mile west of Interstate Route 805 (eastern terminus)."
+      },
+      {
+        "check": "State abbreviations match U.S. conventions?",
+        "result": "yes",
+        "note": "CA is the correct USPS abbreviation for California."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "The extracted location value precisely matches the document title and body text on the cited pages. Both corridor endpoints are named, the state abbreviation is correct, and is_multi_site is appropriately set to false for this single-corridor urban freeway project in San Diego, CA.",
+    "source_pages": [
+      "1-30"
+    ]
+  },
+  "key_people": {
+    "rubric_results": [
+      {
+        "check": "Each agency preparer named in the cited Preparers/Consultation text?",
+        "result": "yes",
+        "note": "James R. Gordon (Chief, Environmental Planning), N. White (signatory), F.E. Hawley (Regional Federal Highway Administrator), James T. Cheshire (Chief, Environmental Branch, CalTrans District 11), and David L. Eyres (District Engineer, FHWA) all appear on the cover/summary sheet of the cited text."
+      },
+      {
+        "check": "Cooperating agencies / tribal nations actually listed in the cited text?",
+        "result": "yes",
+        "note": "FHWA and CalTrans are named as joint preparers on the cover. California Department of Fish and Game, State Air Resources Board, State Historic Preservation Officer, CPO, City of San Diego, and U.S. Army Corps of Engineers are all referenced in the cited text as consulted or involved entities."
+      },
+      {
+        "check": "For public_commenters: stance present on cited page? Quote verbatim? Speaker clear?",
+        "result": "n/a",
+        "note": "No public commenters were extracted; the field is an empty array, which is consistent with the cited text not presenting individual public commenter entries on these pages."
+      },
+      {
+        "check": "Private individuals: last-name-only or 'private commenter' convention followed?",
+        "result": "n/a",
+        "note": "No private individuals were extracted as commenters, so the convention check is not applicable."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "All five agency preparers are clearly identifiable on the cover and summary sheet of the cited text, and all eight cooperating/consulted agencies appear within the document body. The absence of public commenters is consistent with the cited pages, which note comments are in Appendix D and page 86 et seq., neither of which appears in the pulled text. No convention issues arise since no private individuals were extracted.",
+    "source_pages": [
+      "1-30"
+    ]
+  }
+}

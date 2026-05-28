@@ -1,0 +1,201 @@
+{
+  "summary": {
+    "project_description": {
+      "text": "The Tennessee Valley Authority (TVA) proposes to build and operate the Yellow Creek Nuclear Plant, consisting of two pressurized water reactor units on a 1,160-acre site along the Yellow Creek embayment of Pickwick Lake in Tishomingo County, Mississippi, about nine miles north of Iuka. Each unit has a net electrical output of about 1,285-1,339 MW, with heat dissipated through two natural-draft cooling towers and blowdown discharged to the Tennessee River. The project also includes new highway and rail access, an intake on Pickwick Lake, and roughly 120 miles of new 500-kV and 161-kV transmission line corridors. Construction was planned to begin in late 1977, with commercial operation of Unit 1 in March 1985 and Unit 2 in March 1986.",
+      "source_pages": [
+        "1-51",
+        "97-147",
+        "145-195",
+        "193-243",
+        "241-291",
+        "337-358"
+      ]
+    },
+    "affected_community": {
+      "text": "The site is in a rural, primarily agricultural and forested area, with about 6,125 people living within 10 miles, including the small towns of Iuka and Burnsville, Mississippi, and Waterloo, Alabama. Larger nearby communities within 50 miles include Corinth, Mississippi, and the Florence-Muscle Shoals-Sheffield-Tuscumbia area in Alabama, and the Yellow Creek embayment is heavily used for recreation, with about 3.37 million visits in 1974. Construction would bring up to 2,600 workers at peak, adding around 470 students to local schools and increasing demand for housing, water and sewer services, and emergency services in Alcorn and Tishomingo Counties, Mississippi, and Hardin County, Tennessee. Nearby recreation areas such as J.P. Coleman State Park, Pickwick Landing State Park, and Goat Island are also within or close to the project's influence area.",
+      "source_pages": [
+        "1-51",
+        "49-99",
+        "97-147",
+        "145-195",
+        "241-291",
+        "289-339",
+        "337-358"
+      ]
+    },
+    "alternatives_overview": {
+      "text": "TVA evaluated taking no action, delaying the plant, purchasing power, reactivating older facilities, and using existing peaking units as base load, as well as new generation from hydroelectric, geothermal, natural gas, oil, coal, and nuclear sources. Nuclear was chosen over high-sulfur coal—the next cheapest option—based on an estimated $126 million per year cost advantage and lower environmental impacts, while energy conservation was incorporated into demand forecasts and solar and municipal solid waste were judged not yet practical at this scale. Two candidate sites were compared, Yellow Creek and Saltillo in Hardin County, Tennessee, with Yellow Creek selected because of possible faulting and flooding concerns at Saltillo. Alternative plant designs were also considered for cooling towers, intake and discharge locations, biocide treatment, waste handling, transmission corridors, rail access, and three levels of eventual decommissioning.",
+      "source_pages": [
+        "1-51",
+        "193-243",
+        "241-291",
+        "289-339",
+        "337-358"
+      ]
+    },
+    "environmental_impact": {
+      "text": "Routine operations are expected to release radioactive, chemical, and heated discharges within regulatory limits, with radiation doses to nearby populations a small fraction of the natural background of about 115-150 mrem per year. Cooling tower operation will evaporate water, add small amounts of drift and heat, and slightly raise discharge temperatures, while entrainment could affect 7-10 percent of larval fish in the Yellow Creek embayment, with negligible effects on the wider reservoir. Construction will clear about 440 acres at the site and disturb roughly 3,985 acres overall (including transmission corridors and access routes), causing temporary turbidity, erosion, dust, and noise, and converting forested land and about 105 acres of prime farmland to industrial use. No threatened or endangered species are expected to be significantly harmed, and an on-site archaeological district eligible for the National Register has been addressed through an approved mitigation plan.",
+      "source_pages": [
+        "1-51",
+        "49-99",
+        "97-147",
+        "145-195",
+        "193-243",
+        "241-291",
+        "289-339",
+        "337-358"
+      ]
+    },
+    "public_response": {
+      "text": "TVA circulated the draft statement in May 1977 and the final statement in January 1978 to federal agencies (including EPA, CEQ, Interior, Agriculture, HUD, and ERDA) and to state and local agencies in Mississippi, Tennessee, and Alabama. The Tennessee State Planning Office and Hardin County officials requested stronger commitments to mitigate impacts on schools, water and sewer systems, recreation, ambulance, law enforcement, and civil defense, and asked about cumulative effects with the Tennessee-Tombigbee Waterway and Pickwick Lock projects. Residents of Oxford, Mississippi, the Sierra Club's Choctaw Group, and the Southeastern Human Rights Center criticized the statement's treatment of sabotage, severe (Class 9) accidents, high-level and transuranic waste disposal, geologic and seismic risks, and recreation conflicts at nearby state parks. TVA responded by designating a full-time project coordinator based in Iuka to work with local governments and citizens, and the Advisory Council on Historic Preservation concurred in a No Adverse Effect finding for the archaeological district.",
+      "source_pages": [
+        "1-51",
+        "145-195",
+        "193-243",
+        "289-339",
+        "337-358"
+      ],
+      "based_on_main_doc_only": true
+    }
+  },
+  "alternatives": {
+    "value": [],
+    "confidence": "low",
+    "source_pages": [],
+    "note": "Alternatives chapter not detected structurally — skipped per v2 plan (no word-regex fallback)."
+  },
+  "themes": {
+    "value": {
+      "themes": [
+        "Energy Systems",
+        "Transportation Infrastructure",
+        "Water Systems"
+      ],
+      "subthemes": [
+        "Energy Extraction and Production",
+        "Energy Distribution and Consumption",
+        "Mobility Networks and Connectivity",
+        "Water Infrastructure and Management",
+        "Water Scarcity and Environmental Change"
+      ]
+    },
+    "confidence": "high",
+    "justification": "The project centers on nuclear power generation (Energy Extraction and Production) and ~120 miles of new transmission corridors (Energy Distribution and Consumption), while also requiring new highway/rail access (Mobility Networks and Connectivity) and a lake intake with cooling tower blowdown affecting the Tennessee River (Water Infrastructure and Management, Water Scarcity and Environmental Change).",
+    "source_pages": [
+      "summary"
+    ]
+  },
+  "location": {
+    "value": {
+      "places": [
+        {
+          "name": "Yellow Creek, Tishomingo County, MS",
+          "kind": "point",
+          "state": "MS"
+        }
+      ],
+      "is_multi_site": false,
+      "geocoded": [
+        {
+          "name": "Yellow Creek, Tishomingo County, MS",
+          "lat": 34.958893,
+          "lon": -88.215923,
+          "address": "Yellow Creek Nuclear Plant Ruins, Tishomingo County, Mississippi, United States"
+        }
+      ]
+    },
+    "confidence": "high",
+    "source_pages": [
+      "1-30"
+    ],
+    "note": "Nuclear plant proposed for construction and operation in Tishomingo County, Mississippi, on Yellow Creek embayment of Pickwick Lake."
+  },
+  "key_people": {
+    "value": {
+      "agency_preparers": [
+        {
+          "name": "Harry G. Moore, Jr.",
+          "role": "Acting Director, Division of Environmental Planning, Tennessee Valley Authority"
+        }
+      ],
+      "cooperating_agencies": [
+        {
+          "name": "Advisory Council on Historical Preservation"
+        },
+        {
+          "name": "Appalachian Regional Commission"
+        },
+        {
+          "name": "Energy Research and Development Administration"
+        },
+        {
+          "name": "Council on Environmental Quality"
+        },
+        {
+          "name": "Environmental Protection Agency"
+        },
+        {
+          "name": "Federal Power Commission"
+        },
+        {
+          "name": "Department of Energy"
+        },
+        {
+          "name": "Department of Agriculture"
+        },
+        {
+          "name": "Federal Energy Administration"
+        },
+        {
+          "name": "Department of Commerce"
+        },
+        {
+          "name": "Department of the Army"
+        },
+        {
+          "name": "Department of Health, Education and Welfare"
+        },
+        {
+          "name": "Department of Housing and Urban Development"
+        },
+        {
+          "name": "Department of the Interior"
+        },
+        {
+          "name": "Department of Transportation"
+        },
+        {
+          "name": "Office of the Governor of Mississippi"
+        },
+        {
+          "name": "Federal State Programs, State of Mississippi"
+        },
+        {
+          "name": "Office of Federal and Urban Affairs, Tennessee"
+        },
+        {
+          "name": "Alabama Development Office"
+        },
+        {
+          "name": "Northeast Mississippi Planning and Development District"
+        }
+      ],
+      "public_commenters": [],
+      "comment_response_present": false
+    },
+    "confidence": "high",
+    "source_pages": {
+      "preparers": [
+        "1-30"
+      ],
+      "commenters": []
+    }
+  },
+  "chunking_meta": {
+    "n_chunks": 8,
+    "n_chapters_detected": 0,
+    "chapters": [],
+    "chunk_size_pages": 50,
+    "note": "Page numbers are ESTIMATED from char offsets at 2500 chars/page."
+  }
+}

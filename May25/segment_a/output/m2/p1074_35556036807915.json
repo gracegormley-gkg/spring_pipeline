@@ -1,0 +1,258 @@
+{
+  "summary": {
+    "project_description": {
+      "text": "The Loring Park Development is a tax-increment-financed urban renewal project covering nine blocks (about 40 acres) in downtown Minneapolis adjacent to Loring Park and the central business district. It is planned to deliver roughly 2,000 housing units, 800-1,100 hotel units, and supporting commercial space, all linked by a raised pedestrian Greenway connecting an extension of the Nicollet Mall to Loring Park. Key components include the 102-unit Loring 100 Section 8 elderly housing project (the HUD action triggering this EIS), Nicollet Towers, townhouses, and a Hyatt Regency convention hotel, financed through about $21 million in general obligation bonds with build-out staged over 5-10 years.",
+      "source_pages": [
+        "1-51",
+        "49-99",
+        "97-147",
+        "145-195",
+        "241-269"
+      ]
+    },
+    "affected_community": {
+      "text": "Before redevelopment, the project area held about 1,000 residents in older walk-up apartments and rooming houses, with a largely low-income, single-person, and elderly population (51% earning under $4,000) and a high crime rate more than five times the city average. About 921 persons and 22 small businesses were slated for relocation, and most displaced residents could not afford the new market-rate units; many were elderly tenants of buildings such as the Naulhaka Flats, Imperial, Elmhurst, and Roosevelt Hotel. Surrounding institutions include Loring Park itself, Eitel and Abbott hospitals, Metropolitan Community College, the YWCA, and several churches and social-service providers.",
+      "source_pages": [
+        "1-51",
+        "49-99",
+        "97-147",
+        "145-195",
+        "193-243",
+        "241-269"
+      ]
+    },
+    "alternatives_overview": {
+      "text": "The EIS evaluates a wide range of alternatives, including no project, building only on already-cleared parcels, rehabilitating existing structures (especially the Naulhaka Flats), and changing land use to office or industrial. Density and design alternatives include reduced density with more family townhouses, increased high-rise density, and a low-rise/high-density (roughly 50 units per acre) option, along with dispersing subsidized units instead of concentrating them and adding more family rather than elderly subsidized housing. Other alternatives address project staging, alternative financing such as CDBG funds, keeping Willow Street and Harmon Place open, eliminating covered parcel-court parking, consolidated parking ramps, and a revised hotel design (the Second Hotel Alternative) to reduce shadow and wind effects.",
+      "source_pages": [
+        "1-51",
+        "49-99",
+        "97-147",
+        "145-195",
+        "193-243",
+        "241-269"
+      ]
+    },
+    "environmental_impact": {
+      "text": "Adverse impacts include displacement of low-income and elderly residents, demolition of older but potentially rehabilitable buildings, shadow and wind effects from tall hotel and apartment towers, and short-term construction dust and noise. Vacating Willow, Harmon, 13th, and Spruce streets is expected to shift traffic onto LaSalle, Marquette, Hennepin, and 12th Street, risking carbon monoxide violations at intersections such as 12th/LaSalle and producing noise levels above state standards on most parcels. Beneficial impacts include separation of pedestrians from vehicles, energy-efficient housing close to downtown and transit, renewed utilities, reduced polluted runoff into Loring Pond, a stronger tax base, and new subsidized elderly housing; soils, groundwater, and ecological conditions on the already-urbanized site are not significantly affected.",
+      "source_pages": [
+        "1-51",
+        "49-99",
+        "97-147",
+        "145-195",
+        "193-243",
+        "241-269"
+      ]
+    },
+    "public_response": {
+      "text": "Federal and state agencies including EPA, DOT, the Department of the Interior, the Minnesota Pollution Control Agency, and the Metropolitan Council raised concerns about air quality from street closures, noise standards, energy conservation, bicycle facilities, and overconcentration of subsidized elderly housing, with EPA giving the project an 'environmental reservations' rating. Citizen and neighborhood groups such as Citizens for a Loring Park Community, the Loring-Nicollet Community Council, the Naulhaka Flats Residents Association, the Elliot Park Neighborhood, and the Harmon-Hennepin Commercial Association criticized the demolition of sound low-rent housing, weak citizen participation, street closings, and the project's scale and financing. Supporters including the Salvation Army, the Loring 100 developer, and the City of Minneapolis backed the redevelopment and the new subsidized elderly housing, while HUD responded by conditioning federal assistance on MPCA air-quality and noise approvals and by recommending more rehabilitation, better citizen participation, and study of low-rise/high-density alternatives.",
+      "source_pages": [
+        "1-51",
+        "49-99",
+        "97-147",
+        "145-195",
+        "193-243",
+        "241-269"
+      ],
+      "based_on_main_doc_only": true
+    }
+  },
+  "alternatives": {
+    "value": [],
+    "confidence": "low",
+    "source_pages": [],
+    "note": "Alternatives chapter not detected structurally — skipped per v2 plan (no word-regex fallback)."
+  },
+  "themes": {
+    "value": {
+      "themes": [
+        "Urban Development",
+        "Place Based Development Conflicts"
+      ],
+      "subthemes": [
+        "Urban Expansion and Land Use Change",
+        "Housing, Planning, and Built Environment",
+        "Community Resistance and Activism",
+        "Land Rights and Displacement"
+      ]
+    },
+    "confidence": "high",
+    "justification": "The project description and affected_community fields describe a large-scale urban renewal effort reshaping 40 acres of downtown Minneapolis with mixed-use housing and commercial development, while the public_response and affected_community fields document significant displacement of low-income and elderly residents and organized community opposition from multiple neighborhood groups.",
+    "source_pages": [
+      "summary"
+    ]
+  },
+  "location": {
+    "value": {
+      "places": [
+        {
+          "name": "Loring Park Development District, Minneapolis, MN",
+          "kind": "region",
+          "state": "MN"
+        }
+      ],
+      "is_multi_site": false,
+      "geocoded": [
+        {
+          "name": "Loring Park Development District, Minneapolis, MN",
+          "lat": null,
+          "lon": null
+        }
+      ]
+    },
+    "confidence": "high",
+    "source_pages": [
+      "1-30"
+    ],
+    "note": "Nine-block urban redevelopment district in Minneapolis, Minnesota, bounded by the Central Business District, Loring Park, and Interstate 94."
+  },
+  "key_people": {
+    "value": {
+      "agency_preparers": [
+        {
+          "name": "Minneapolis/St. Paul Area Office, U.S. Department of Housing and Urban Development",
+          "role": "Preparing Office"
+        },
+        {
+          "name": "Chicago Regional Office, U.S. Department of Housing and Urban Development",
+          "role": "Preparing Office"
+        }
+      ],
+      "cooperating_agencies": [
+        {
+          "name": "Council on Environmental Quality"
+        },
+        {
+          "name": "National Environmental Protection Agency"
+        },
+        {
+          "name": "Department of Transportation"
+        },
+        {
+          "name": "Advisory Council on Historic Preservation"
+        },
+        {
+          "name": "Department of Commerce"
+        },
+        {
+          "name": "Federal Power Commission"
+        },
+        {
+          "name": "General Services Administration"
+        },
+        {
+          "name": "Department of Health, Education and Welfare"
+        },
+        {
+          "name": "Department of the Interior"
+        },
+        {
+          "name": "U.S. Water Resources Council"
+        },
+        {
+          "name": "Upper Mississippi River Basin Commission"
+        },
+        {
+          "name": "Atomic Energy Commission"
+        },
+        {
+          "name": "Department of Defense"
+        },
+        {
+          "name": "Veterans Administration"
+        },
+        {
+          "name": "Minnesota Historical Society"
+        },
+        {
+          "name": "Minnesota State Planning Agency"
+        },
+        {
+          "name": "Minnesota Environmental Quality Council"
+        },
+        {
+          "name": "Minnesota Highway Department"
+        },
+        {
+          "name": "Minnesota Pollution Control Agency"
+        },
+        {
+          "name": "Minnesota Department of Natural Resources"
+        },
+        {
+          "name": "Minnesota Housing Finance Agency"
+        },
+        {
+          "name": "State Community College Board"
+        },
+        {
+          "name": "Metropolitan Council"
+        },
+        {
+          "name": "Metropolitan Waste Control Commission"
+        },
+        {
+          "name": "Hennepin County"
+        },
+        {
+          "name": "Hennepin County Park Reserve District"
+        },
+        {
+          "name": "Hennepin County Board of Commissioners"
+        },
+        {
+          "name": "Hennepin County Health and Social Services Department"
+        },
+        {
+          "name": "Hennepin County Historical Society"
+        },
+        {
+          "name": "Metropolitan Transit Commission"
+        },
+        {
+          "name": "City of Minneapolis, Loring Park Development District"
+        },
+        {
+          "name": "Minneapolis Park and Recreation Board"
+        },
+        {
+          "name": "Minneapolis City Planning Department"
+        },
+        {
+          "name": "Minneapolis Department of Public Works"
+        },
+        {
+          "name": "Minneapolis Housing and Redevelopment Authority"
+        },
+        {
+          "name": "Minneapolis Library Board"
+        },
+        {
+          "name": "Minneapolis Board of Education"
+        }
+      ],
+      "public_commenters": [],
+      "comment_response_present": false
+    },
+    "confidence": "high",
+    "source_pages": {
+      "preparers": [
+        "1-30"
+      ],
+      "commenters": []
+    }
+  },
+  "chunking_meta": {
+    "n_chunks": 6,
+    "n_chapters_detected": 1,
+    "chapters": [
+      {
+        "label": "ENVIRONMENTAL IMPACTS OF HOTEL PROPOSALS",
+        "ceq_chapter": "Environmental Consequences",
+        "start_page": 246,
+        "end_page": 269
+      }
+    ],
+    "chunk_size_pages": 50,
+    "note": "Page numbers are ESTIMATED from char offsets at 2500 chars/page."
+  }
+}

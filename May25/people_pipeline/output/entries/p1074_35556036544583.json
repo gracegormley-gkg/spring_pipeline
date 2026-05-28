@@ -1,0 +1,3715 @@
+{
+  "doc_id": "p1074_35556036544583",
+  "work_id": "39985efa-66b9-4eef-8f44-3e1a6fc27645",
+  "title": "Philadelphia, Eastwick urban renewal : environmental impact statement.",
+  "estimated_pages": 108,
+  "n_chunks": 3,
+  "n_raw_rows": 61,
+  "n_entries": 56,
+  "verdict_counts": {
+    "PASS": 4,
+    "PASS_WITH_NOTE": 2,
+    "RE_EXTRACT": 16,
+    "HUMAN_REVIEW": 34
+  },
+  "stance_counts": {
+    "neutral": 22,
+    "conditional": 26,
+    "in_favor": 5,
+    "opposed": 3
+  },
+  "elapsed_sec": 172.7,
+  "usage": {
+    "extract": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 3,
+          "input_tokens": 49698,
+          "output_tokens": 8135,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.2711
+        }
+      ],
+      "total": {
+        "calls": 3,
+        "input_tokens": 49698,
+        "output_tokens": 8135,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.2711
+      }
+    },
+    "critic": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 56,
+          "input_tokens": 68774,
+          "output_tokens": 24877,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.5795
+        }
+      ],
+      "total": {
+        "calls": 56,
+        "input_tokens": 68774,
+        "output_tokens": 24877,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.5795
+      }
+    },
+    "total": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 59,
+          "input_tokens": 118472,
+          "output_tokens": 33012,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.8506
+        }
+      ],
+      "total": {
+        "calls": 59,
+        "input_tokens": 118472,
+        "output_tokens": 33012,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.8506
+      }
+    }
+  },
+  "schema": {
+    "stance_vocabulary": [
+      "in_favor",
+      "opposed",
+      "conditional",
+      "neutral"
+    ],
+    "kind_vocabulary": [
+      "individual",
+      "official",
+      "organization",
+      "agency",
+      "tribe",
+      "government",
+      "other"
+    ],
+    "verdicts": [
+      "PASS",
+      "PASS_WITH_NOTE",
+      "RE_EXTRACT",
+      "HUMAN_REVIEW"
+    ],
+    "page_numbers": "ESTIMATED from char offsets at 2500 chars/page.",
+    "merge_rule": "One row per (entity, stance) — stance changes produce separate rows.",
+    "cost_note": "USD costs are ESTIMATES from settings.PRICES_USD_PER_M; verify against AWS Bedrock invoice."
+  },
+  "entries": [
+    {
+      "sequence": 1,
+      "entity": "City of Philadelphia - Air Management Services",
+      "kind": "agency",
+      "role": "Local agency commenter on Draft EIS",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Agencies Which Commented on the Draft Statement:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Agencies Which Commented on the Draft Statement:",
+          "quote_verified": true,
+          "stance_basis": "Listed as agency that commented on the Draft Statement",
+          "entity_as_written": "City of Philadelphia - Air Management Services",
+          "role_as_written": "Local agency commenter on Draft EIS"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The phrase 'Agencies Which Commented on the Draft Statement:' appears verbatim on the cited page."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional mode)",
+            "result": "no",
+            "note": "The text is cut off after 'U.S' and does not show 'City of Philadelphia - Air Management Services' in the list. The entity cannot be confirmed as appearing under this heading in the cited text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot confirm stance since entity presence in the list is unverified due to truncated text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'City of Philadelphia - Air Management Services' is a plausible official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The heading 'Agencies Which Commented on the Draft Statement' supports the role of 'Local agency commenter on Draft EIS'."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The cited page text is truncated and cuts off mid-list after 'U.S', so it is impossible to confirm that 'City of Philadelphia - Air Management Services' actually appears in the list of commenting agencies. The sectional attribution cannot be verified from the provided text. A human reviewer should check the full page to confirm the entity's presence in the list."
+      }
+    },
+    {
+      "sequence": 2,
+      "entity": "City of Philadelphia - City Representative and Director of Commerce",
+      "kind": "official",
+      "role": "Local agency commenter on Draft EIS",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Agencies Which Commented on the Draft Statement:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Agencies Which Commented on the Draft Statement:",
+          "quote_verified": true,
+          "stance_basis": "Listed as agency that commented on the Draft Statement",
+          "entity_as_written": "City of Philadelphia - City Representative and Director of Commerce",
+          "role_as_written": "Local agency commenter on Draft EIS"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The phrase 'Agencies Which Commented on the Draft Statement:' appears verbatim on the cited page."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional mode)",
+            "result": "no",
+            "note": "The cited text is cut off after 'U.S' and does not include 'City of Philadelphia - City Representative and Director of Commerce' in the visible list under the heading. The entity cannot be confirmed as appearing in this section."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Sectional listing under 'Agencies Which Commented' would imply neutral/commenter status, but the entity's presence in the list is unverified due to truncation."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "no",
+            "note": "The entity name combines two roles ('City Representative and Director of Commerce') in a non-standard way; it should likely be the agency name only, e.g. 'City of Philadelphia' or the specific office."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not confirm this entity's role as a commenter; the list is truncated before reaching any Philadelphia city agency entry."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The cited page text is truncated and does not show whether 'City of Philadelphia - City Representative and Director of Commerce' actually appears in the commenter list. The entity name is also non-standard, combining a city and two role titles. A human reviewer should check the full page to confirm the entity's presence in the list and standardize the entity name."
+      }
+    },
+    {
+      "sequence": 3,
+      "entity": "City of Philadelphia - Managing Director",
+      "kind": "official",
+      "role": "Local agency commenter on Draft EIS",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Agencies Which Commented on the Draft Statement:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Agencies Which Commented on the Draft Statement:",
+          "quote_verified": true,
+          "stance_basis": "Listed as agency that commented on the Draft Statement",
+          "entity_as_written": "City of Philadelphia - Managing Director",
+          "role_as_written": "Local agency commenter on Draft EIS"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The phrase 'Agencies Which Commented on the Draft Statement:' appears verbatim on page 1 of the cited text."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional mode)",
+            "result": "no",
+            "note": "The cited text shows the list of agencies under the heading but is truncated at 'U.S' — the City of Philadelphia - Managing Director does not appear in the visible portion of the list. We cannot confirm the entity is actually listed under this heading."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Sectional listing under 'Agencies Which Commented' implies neutral/informational stance, but entity presence in the list is unconfirmed due to truncation."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official agency name is reasonably well-formed, though 'City of Philadelphia - Managing Director' is a sub-unit designation."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The heading 'Agencies Which Commented on the Draft Statement' supports the role of 'Local agency commenter on Draft EIS' if the entity is indeed listed there."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The cited page text is truncated and does not show 'City of Philadelphia - Managing Director' in the visible portion of the agency list. While the heading and context are consistent with the extraction, the entity's presence in the list cannot be verified from the provided text. A human reviewer should check the full untruncated page to confirm the entity appears under this heading."
+      }
+    },
+    {
+      "sequence": 4,
+      "entity": "City of Philadelphia - Planning Commission",
+      "kind": "agency",
+      "role": "Local agency commenter on Draft EIS",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased",
+        "sectional"
+      ],
+      "summary_quote": "This Final Impact Statement addresses the comments contained in the Planning Commission's letter.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1",
+        "49"
+      ],
+      "n_mentions": 2,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Agencies Which Commented on the Draft Statement:",
+          "quote_verified": true,
+          "stance_basis": "Listed as agency that commented on the Draft Statement",
+          "entity_as_written": "City of Philadelphia - Planning Commission",
+          "role_as_written": "Local agency commenter on Draft EIS"
+        },
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "49"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "This Final Impact Statement addresses the comments contained in the Planning Commission's letter.",
+          "quote_verified": true,
+          "stance_basis": "submitted comments addressed in final EIS; no explicit stance on project approval",
+          "entity_as_written": "City of Philadelphia, Planning Commission",
+          "role_as_written": "local reviewing agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quote 'This Final Impact Statement addresses the comments contained in the Planning Commission's letter.' does not appear verbatim in the provided text of pages 1 and 49."
+          },
+          {
+            "check": "Attribution links entity to stance (paraphrased mode)",
+            "result": "no",
+            "note": "The City of Philadelphia - Planning Commission is not mentioned by name in the cited page text provided, nor is their position described in the extracted passages."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since the entity and quote are not found in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official agency name is properly formatted."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention the Planning Commission as a commenter on the Draft EIS; the list of commenting agencies on page 1 does not include the Planning Commission."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The summary quote cannot be verified verbatim in the provided page text, and the City of Philadelphia Planning Commission does not appear in the extracted passages from pages 1 or 49. The quote may exist on a page not fully captured in the provided text. A human reviewer should check the full document to locate the Planning Commission's letter reference and confirm the correct page citation and stance."
+      }
+    },
+    {
+      "sequence": 5,
+      "entity": "Commonwealth of Pennsylvania - Department of Environmental Resources",
+      "kind": "agency",
+      "role": "State agency commenter on Draft EIS",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Agencies Which Commented on the Draft Statement:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Agencies Which Commented on the Draft Statement:",
+          "quote_verified": true,
+          "stance_basis": "Listed as agency that commented on the Draft Statement",
+          "entity_as_written": "Commonwealth of Pennsylvania - Department of Environmental Resources",
+          "role_as_written": "State agency commenter on Draft EIS"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The phrase 'Agencies Which Commented on the Draft Statement:' appears verbatim on the cited page."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional mode)",
+            "result": "no",
+            "note": "The cited text is cut off after 'U.S' and does not show 'Commonwealth of Pennsylvania - Department of Environmental Resources' in the list. The entity cannot be confirmed as appearing under this heading from the provided text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot confirm stance because the entity's presence in the list is not visible in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official agency name is used; acceptable for a state agency."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "n/a",
+            "note": "Role as 'State agency commenter on Draft EIS' is plausible given the section heading, but the entity itself is not visible in the truncated text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The section heading 'Agencies Which Commented on the Draft Statement:' is present verbatim, and the sectional attribution mode is appropriate. However, the cited page text is truncated after 'U.S' and does not confirm that 'Commonwealth of Pennsylvania - Department of Environmental Resources' actually appears in the list. A human reviewer should check the full page to verify the entity is listed under this heading."
+      }
+    },
+    {
+      "sequence": 6,
+      "entity": "Commonwealth of Pennsylvania - Department of Transportation",
+      "kind": "agency",
+      "role": "State agency commenter on Draft EIS",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Agencies Which Commented on the Draft Statement:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Agencies Which Commented on the Draft Statement:",
+          "quote_verified": true,
+          "stance_basis": "Listed as agency that commented on the Draft Statement",
+          "entity_as_written": "Commonwealth of Pennsylvania - Department of Transportation",
+          "role_as_written": "State agency commenter on Draft EIS"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The phrase 'Agencies Which Commented on the Draft Statement:' appears verbatim on page 1 of the cited text."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional mode)",
+            "result": "no",
+            "note": "The cited text shows the list under 'Agencies Which Commented on the Draft Statement:' but it is truncated and ends with 'U.S' — Commonwealth of Pennsylvania - Department of Transportation does not appear in the visible portion of the list."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot confirm stance because the entity does not appear in the truncated list on the cited page."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official agency name is used appropriately."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "n/a",
+            "note": "Role as 'State agency commenter on Draft EIS' is plausible given the section heading, but the entity itself is not visible in the truncated list."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The cited page text is truncated and cuts off mid-list after 'U.S', so it is impossible to confirm that 'Commonwealth of Pennsylvania - Department of Transportation' actually appears in the list. The sectional attribution requires the entity to be present under the heading, which cannot be verified from the provided text. A human reviewer should check the full page to confirm whether this entity appears in the complete list."
+      }
+    },
+    {
+      "sequence": 7,
+      "entity": "Department of Housing and Urban Development",
+      "kind": "agency",
+      "role": "Responsible Federal Agency / EIS preparer",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "This Department will consent to the continuation of development within the residential portions of the Eastwick area which are subject to flooding with the understanding that funding for the proposed dike and surge basin improvements will be secured by the Redevelopment Authority and/or other City agencies, and, provided further, that construction of these essential facilities will be completed within three years of the release of this Impact Statement (February 1976).",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "16"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "16"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "This Department will consent to the continuation of development within the residential portions of the Eastwick area which are subject to flooding with the understanding that funding for the proposed dike and surge basin improvements will be secured by the Redevelopment Authority and/or other City agencies, and, provided further, that construction of these essential facilities will be completed within three years of the release of this Impact Statement (February 1976).",
+          "quote_verified": true,
+          "stance_basis": "Consents to continued development only if flood control infrastructure is funded and built within three years",
+          "entity_as_written": "Department of Housing and Urban Development",
+          "role_as_written": "Responsible Federal Agency / EIS preparer"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The quote appears word-for-word on page 16 of the cited text."
+          },
+          {
+            "check": "Attribution links entity to stance (paraphrased mode)",
+            "result": "yes",
+            "note": "The text begins 'This Department will consent...' — the Department of Housing and Urban Development is the issuing department of the EIS, and the quote is attributed to it as the speaker/author of this statement."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The consent is explicitly conditional on funding being secured and construction completed within three years, making 'conditional' the correct label."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Department of Housing and Urban Development is the official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "HUD is the issuing department of this EIS, consistent with 'Responsible Federal Agency / EIS preparer'."
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "The summary quote is present verbatim in the cited page. The attribution to HUD as the issuing department is clear from context ('This Department'). The conditional stance is unambiguous given the explicit 'with the understanding that' and 'provided further that' language."
+      }
+    },
+    {
+      "sequence": 8,
+      "entity": "Eastwick Project Area Committee",
+      "kind": "organization",
+      "role": "Community group commenter on Draft EIS",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Agencies Which Commented on the Draft Statement:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Agencies Which Commented on the Draft Statement:",
+          "quote_verified": true,
+          "stance_basis": "Listed as group that commented on the Draft Statement",
+          "entity_as_written": "Eastwick Project Area Committee",
+          "role_as_written": "Community group commenter on Draft EIS"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The phrase 'Agencies Which Commented on the Draft Statement:' appears verbatim on the cited page."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional mode)",
+            "result": "no",
+            "note": "The heading reads 'Agencies Which Commented on the Draft Statement:' and lists federal agencies (U.S. Dept of Commerce, Transportation, Army). The Eastwick Project Area Committee does not appear in the truncated list shown, and the heading specifically says 'Agencies,' suggesting federal/government bodies, not a community group."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Even if the entity appeared in the list, 'neutral' is not clearly established by the heading 'Agencies Which Commented on the Draft Statement' — that heading only indicates participation, not a neutral stance. Additionally, the entity is not confirmed to be in this list."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Eastwick Project Area Committee is an organization name and appears properly formed."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention the Eastwick Project Area Committee at all; the role as 'Community group commenter on Draft EIS' cannot be confirmed from the provided excerpt."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "medium",
+        "notes": "The Eastwick Project Area Committee does not appear in the truncated cited text, which only lists federal agencies under the 'Agencies Which Commented on the Draft Statement' heading. The entity may appear later in the document (possibly under a separate 'Organizations/Community Groups' section), but the current citation does not support this extraction. The stance of 'neutral' is also not well-supported by a mere listing under a 'commented' heading. The extraction should be re-done with the correct page(s) where the Eastwick Project Area Committee is actually named."
+      }
+    },
+    {
+      "sequence": 9,
+      "entity": "Federal Aviation Administration",
+      "kind": "agency",
+      "role": "Federal agency commenter on Draft EIS",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Agencies Which Commented on the Draft Statement:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Agencies Which Commented on the Draft Statement:",
+          "quote_verified": true,
+          "stance_basis": "Listed as agency that commented on the Draft Statement",
+          "entity_as_written": "Federal Aviation Administration",
+          "role_as_written": "Federal agency commenter on Draft EIS"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The phrase 'Agencies Which Commented on the Draft Statement:' appears verbatim on the cited page."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional mode)",
+            "result": "no",
+            "note": "The Federal Aviation Administration does not appear in the truncated list on the cited page. The list ends with 'U.S' and FAA is not visible in the provided text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot confirm FAA is listed under the heading since the list is cut off before FAA appears."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Federal Aviation Administration is the official name of the agency."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "n/a",
+            "note": "Cannot confirm FAA's role as commenter since it does not appear in the visible portion of the cited text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "The section heading 'Agencies Which Commented on the Draft Statement:' is present verbatim, and the sectional attribution logic is sound in principle. However, the cited page text is truncated and the Federal Aviation Administration does not appear in the visible portion of the agency list. A human should verify that FAA actually appears in the full list on page 1 before accepting this extraction."
+      }
+    },
+    {
+      "sequence": 10,
+      "entity": "Korman Corporation",
+      "kind": "organization",
+      "role": "Residential developer / commenter on Draft EIS",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased",
+        "sectional"
+      ],
+      "summary_quote": "The positive position taken with respect to the renewal plan is noted.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1",
+        "49"
+      ],
+      "n_mentions": 2,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Agencies Which Commented on the Draft Statement:",
+          "quote_verified": true,
+          "stance_basis": "Listed as commenter and is the selected residential construction developer actively building in Eastwick",
+          "entity_as_written": "Korman Corporation",
+          "role_as_written": "Residential developer / commenter on Draft EIS"
+        },
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "49"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The positive position taken with respect to the renewal plan is noted.",
+          "quote_verified": true,
+          "stance_basis": "explicitly noted as taking a positive position on the renewal plan",
+          "entity_as_written": "Korman Corporation",
+          "role_as_written": "major residential developer, commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The phrase 'The positive position taken with respect to the renewal plan is noted.' does not appear in the provided text of pages 1 or 49."
+          },
+          {
+            "check": "Attribution links Korman Corporation to stated stance",
+            "result": "no",
+            "note": "Korman Corporation is not mentioned anywhere in the cited page text provided. No paraphrased sentence names the entity and states their position."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance match since neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name is well-formed",
+            "result": "yes",
+            "note": "Korman Corporation is an organization name and appears properly formatted."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "No mention of Korman Corporation as a residential developer or commenter appears in the provided cited pages."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "Neither the summary quote nor any mention of Korman Corporation appears in the provided page text. The quote may exist on a page not fully reproduced here (e.g., page 49 content appears truncated or absent). A human reviewer should check the full page 49 text to confirm whether Korman Corporation is mentioned as a commenter and whether the quoted sentence appears verbatim."
+      }
+    },
+    {
+      "sequence": 11,
+      "entity": "Pennsylvania Department of Environmental Resources (DER)",
+      "kind": "agency",
+      "role": "State environmental regulator monitoring project",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Since late in 1974, the Pennsylvania Department of Environmental Resources (DER) has been monitoring procedures and activities in the project area.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "10"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "10"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Since late in 1974, the Pennsylvania Department of Environmental Resources (DER) has been monitoring procedures and activities in the project area.",
+          "quote_verified": true,
+          "stance_basis": "Actively monitoring erosion problems and requiring submission of a Soil Erosion Control Plan as condition of continued activity",
+          "entity_as_written": "Pennsylvania Department of Environmental Resources (DER)",
+          "role_as_written": "State environmental regulator monitoring project"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page text does not contain the phrase 'Since late in 1974, the Pennsylvania Department of Environmental Resources (DER) has been monitoring procedures and activities in the project area.' The text is about land use stages and development plans."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "Pennsylvania DER is not mentioned anywhere in the provided page 10 text; no paraphrased attribution can be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as 'conditional' since neither the entity nor any relevant statement appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Pennsylvania Department of Environmental Resources (DER) is a properly formed official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of DER or any monitoring role; the role cannot be verified from the provided excerpt."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and entity do not appear anywhere in the provided page 10 text, which deals exclusively with land use stages (residential and industrial) in the Eastwick development. The extraction likely references a different page. The correct page should be identified and re-extracted."
+      }
+    },
+    {
+      "sequence": 12,
+      "entity": "Philadelphia City Planning Commission",
+      "kind": "agency",
+      "role": "Local planning authority",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "On December 13, 1950, the Philadelphia City Planning Commission having examined and studied the Eastwick Area, found that the area presented the following characteristics which warranted its being considered a Redevelopment Area as defined in Section 3(n) of the Pennsylvania Urban Redevelopment Law of May 24, 1945; P.L. 991",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "5"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "5"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "On December 13, 1950, the Philadelphia City Planning Commission having examined and studied the Eastwick Area, found that the area presented the following characteristics which warranted its being considered a Redevelopment Area as defined in Section 3(n) of the Pennsylvania Urban Redevelopment Law of May 24, 1945; P.L. 991",
+          "quote_verified": true,
+          "stance_basis": "Certified Eastwick as a Redevelopment Area, supporting the urban renewal project",
+          "entity_as_written": "Philadelphia City Planning Commission",
+          "role_as_written": "Local planning authority"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The exact quote about the Philadelphia City Planning Commission's December 13, 1950 finding does not appear anywhere in the cited page text provided."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The Philadelphia City Planning Commission is not mentioned in the cited page text at all; no paraphrased attribution can be confirmed."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot confirm stance since neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Philadelphia City Planning Commission is a properly formed official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention the Philadelphia City Planning Commission or its role as a local planning authority."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "The summary quote and entity do not appear in the provided page 5 text. The quote references a December 13, 1950 action by the Philadelphia City Planning Commission, which may exist on a different page not captured here. The extraction may be from a different page than cited, or the page pull was incomplete. Human review is needed to confirm whether the quote exists elsewhere in the document."
+      }
+    },
+    {
+      "sequence": 13,
+      "entity": "Redevelopment Authority of the City of Philadelphia",
+      "kind": "agency",
+      "role": "Project sponsor / local agency commenter",
+      "stance": "in_favor",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "paraphrased",
+        "sectional"
+      ],
+      "summary_quote": "Agencies Which Commented on the Draft Statement:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1",
+        "49"
+      ],
+      "n_mentions": 2,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Agencies Which Commented on the Draft Statement:",
+          "quote_verified": true,
+          "stance_basis": "Listed as commenter and is the project sponsor undertaking the urban renewal",
+          "entity_as_written": "Redevelopment Authority of the City of Philadelphia",
+          "role_as_written": "Project sponsor / local agency commenter"
+        },
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "49"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The recommendation of the Authority is considered valid.",
+          "quote_verified": false,
+          "stance_basis": "project proponent supporting renewal plan and flood section recommendations",
+          "entity_as_written": "Redevelopment Authority of the City of Philadelphia",
+          "role_as_written": "project applicant/local agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "yes",
+            "note": "The phrase 'Agencies Which Commented on the Draft Statement:' appears verbatim on the cited pages under item 5 of the Summary Sheet."
+          },
+          {
+            "check": "Attribution links entity to stated stance (sectional mode)",
+            "result": "no",
+            "note": "The Redevelopment Authority of the City of Philadelphia does NOT appear in the list under 'Agencies Which Commented on the Draft Statement:'. The listed agencies are U.S. Dept of Commerce, U.S. DOT (FHWA), U.S. Army Corps of Engineers, etc. The Redevelopment Authority is the project sponsor/applicant, not a commenter listed under that heading."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The sectional heading establishes commenters on the draft statement, not project sponsors. The Redevelopment Authority's 'in_favor' stance is not established by this section; it is the project sponsor identified on the cover page, which is a different role."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official agency name matches what appears on the cover page of the document."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The cover page clearly identifies the Redevelopment Authority of the City of Philadelphia as the project sponsor at 1234 Market Street."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The Redevelopment Authority of the City of Philadelphia is the project sponsor (applicant), not one of the agencies listed under 'Agencies Which Commented on the Draft Statement.' The sectional attribution is therefore incorrect — the entity does not appear in that list. The correct attribution should reference the cover page identifying the Authority as project sponsor, and the stance as 'in_favor' is reasonable for a project sponsor but needs to be re-attributed to the correct evidence (cover page / applicant role, not the commenter list)."
+      }
+    },
+    {
+      "sequence": 14,
+      "entity": "Southeastern Pennsylvania Transportation Authority",
+      "kind": "organization",
+      "role": "Regional transit authority commenter on Draft EIS",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased",
+        "sectional"
+      ],
+      "summary_quote": "The comment relative to the accuracy of the Draft EIS is noted.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1",
+        "49"
+      ],
+      "n_mentions": 2,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Agencies Which Commented on the Draft Statement:",
+          "quote_verified": true,
+          "stance_basis": "Listed as agency that commented on the Draft Statement",
+          "entity_as_written": "Southeastern Pennsylvania Transportation Authority",
+          "role_as_written": "Regional transit authority commenter on Draft EIS"
+        },
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "49"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The comment relative to the accuracy of the Draft EIS is noted.",
+          "quote_verified": true,
+          "stance_basis": "noted accuracy concerns without taking a position on the project",
+          "entity_as_written": "Southeastern Pennsylvania Transportation Authority",
+          "role_as_written": "local reviewing agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The phrase 'The comment relative to the accuracy of the Draft EIS is noted.' does not appear in the provided text from pages 1 or 49."
+          },
+          {
+            "check": "Attribution links SEPTA to neutral stance",
+            "result": "no",
+            "note": "Southeastern Pennsylvania Transportation Authority (SEPTA) is not mentioned anywhere in the cited page text provided. No paraphrased sentence names SEPTA and links it to any stance."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "SEPTA's official full name is used correctly."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention SEPTA or identify it as a regional transit authority commenter on the Draft EIS."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "Neither the summary quote nor any mention of SEPTA appears in the provided page text. The agencies listed in the cited pages are federal entities (DOT, Army Corps, EPA, Commerce), with no reference to SEPTA. The quote 'The comment relative to the accuracy of the Draft EIS is noted.' may exist elsewhere in the document but cannot be verified from the supplied pages. Human review is needed to locate the correct page(s) and confirm SEPTA's involvement."
+      }
+    },
+    {
+      "sequence": 15,
+      "entity": "U.S. Department of Commerce",
+      "kind": "agency",
+      "role": "Federal agency commenter on Draft EIS",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Agencies Which Commented on the Draft Statement:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Agencies Which Commented on the Draft Statement:",
+          "quote_verified": true,
+          "stance_basis": "Listed as agency that commented on the Draft Statement",
+          "entity_as_written": "U.S. Department of Commerce",
+          "role_as_written": "Federal agency commenter on Draft EIS"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The phrase 'Agencies Which Commented on the Draft Statement:' appears verbatim on page 1 of the cited text."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional mode)",
+            "result": "yes",
+            "note": "U.S. Department of Commerce appears in a list directly under the heading 'Agencies Which Commented on the Draft Statement:', establishing it as a commenter on the Draft EIS."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "The sectional heading only establishes that the entity commented; it does not convey a specific stance. 'Neutral' is a reasonable default but is not directly evidenced by the text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "U.S. Department of Commerce is the official name of the agency."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The heading 'Agencies Which Commented on the Draft Statement' confirms the role as a federal agency commenter on the Draft EIS."
+          }
+        ],
+        "verdict": "PASS_WITH_NOTE",
+        "model_confidence": "high",
+        "notes": "The extraction is structurally correct: the entity appears under the correct sectional heading and the quote is verbatim. However, the stance 'neutral' is inferred by default since the sectional heading only confirms participation as a commenter, not any specific position. This is a common and acceptable convention for sectional attribution where no explicit stance is recorded."
+      }
+    },
+    {
+      "sequence": 16,
+      "entity": "U.S. Department of the Army - Corps of Engineers",
+      "kind": "agency",
+      "role": "Federal agency commenter on Draft EIS",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Agencies Which Commented on the Draft Statement:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Agencies Which Commented on the Draft Statement:",
+          "quote_verified": true,
+          "stance_basis": "Listed as agency that commented on the Draft Statement",
+          "entity_as_written": "U.S. Department of the Army - Corps of Engineers",
+          "role_as_written": "Federal agency commenter on Draft EIS"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The phrase 'Agencies Which Commented on the Draft Statement:' appears verbatim on the cited page."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional mode)",
+            "result": "yes",
+            "note": "U.S. Department of the Army - Corps of Engineers appears in the list under the heading 'Agencies Which Commented on the Draft Statement:', establishing it as a commenter."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "Being listed as a commenter on the Draft EIS does not indicate support or opposition; 'neutral' is appropriate for a sectional listing with no stance detail provided."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official agency name 'U.S. Department of the Army - Corps of Engineers' matches the text exactly."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The heading 'Agencies Which Commented on the Draft Statement' confirms the role as a federal agency commenter on the Draft EIS."
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "All checks pass. The entity name is verbatim from the document, the sectional attribution is clear, and the neutral stance is appropriate given only listing membership is established with no further position stated. The summary quote is present verbatim and the role is fully supported."
+      }
+    },
+    {
+      "sequence": 17,
+      "entity": "U.S. Department of the Interior",
+      "kind": "agency",
+      "role": "Federal agency commenter on Draft EIS",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Agencies Which Commented on the Draft Statement:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Agencies Which Commented on the Draft Statement:",
+          "quote_verified": true,
+          "stance_basis": "Listed as agency that commented on the Draft Statement",
+          "entity_as_written": "U.S. Department of the Interior",
+          "role_as_written": "Federal agency commenter on Draft EIS"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The phrase 'Agencies Which Commented on the Draft Statement:' appears verbatim on page 1 of the cited text."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional mode)",
+            "result": "no",
+            "note": "The cited text shows U.S. Department of Commerce, U.S. Department of Transportation (FHWA), and U.S. Department of the Army - Corps of Engineers listed under the heading, but the text is cut off before U.S. Department of the Interior appears. The entity is not confirmed to be in the list on the cited page."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot confirm entity is in the list; stance cannot be verified. 'Neutral' for a commenter listed under this heading is a reasonable interpretation if confirmed, but the entity's presence is unverified."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "U.S. Department of the Interior is an official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The heading 'Agencies Which Commented on the Draft Statement' supports the role of 'Federal agency commenter on Draft EIS' for any entity confirmed in that list."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "The cited page text is cut off mid-list and does not confirm that U.S. Department of the Interior appears under the 'Agencies Which Commented on the Draft Statement' heading. The entity may well be present on the full page, but it cannot be verified from the provided excerpt. A human reviewer should check the complete page to confirm the entity's inclusion in the list."
+      }
+    },
+    {
+      "sequence": 18,
+      "entity": "U.S. Department of Transportation",
+      "kind": "agency",
+      "role": "Federal agency that prepared AHSL Final EIS",
+      "stance": "conditional",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "The Final Environmental Statement for the AHSL prepared by the U.S. Department of Transportation, states \"Acoustical shielding and landscaping will be used between Island Avenue and 88th Street to protect the proposed housing and school development from noise impact.\"",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "25"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "25"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "The Final Environmental Statement for the AHSL prepared by the U.S. Department of Transportation, states \"Acoustical shielding and landscaping will be used between Island Avenue and 88th Street to protect the proposed housing and school development from noise impact.\"",
+          "quote_verified": true,
+          "stance_basis": "Supports AHSL project with condition that acoustical shielding and landscaping be provided to mitigate noise impacts on housing",
+          "entity_as_written": "U.S. Department of Transportation",
+          "role_as_written": "Federal agency that prepared AHSL Final EIS"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted text about 'Acoustical shielding and landscaping will be used between Island Avenue and 88th Street...' does not appear anywhere in the cited page 25 text provided."
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "no",
+            "note": "The U.S. Department of Transportation is not mentioned in the cited page text; the page discusses HUD noise criteria and Philadelphia/Pennsylvania transportation data."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since the quote and entity attribution are not found in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "U.S. Department of Transportation is a properly formed official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page text does not mention the U.S. Department of Transportation preparing an AHSL Final EIS; it references the Philadelphia Department of Streets and Pennsylvania Department of Transportation."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The verbatim quote attributed to the U.S. Department of Transportation does not appear anywhere in the cited page 25 text. The page content covers roadway noise impact tables and HUD noise criteria without mentioning the AHSL Final EIS or the U.S. DOT in the stated role. The correct page citation and/or entity attribution needs to be re-verified against the source document."
+      }
+    },
+    {
+      "sequence": 19,
+      "entity": "U.S. Department of Transportation (FHWA)",
+      "kind": "agency",
+      "role": "Federal agency commenter on Draft EIS",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Agencies Which Commented on the Draft Statement:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Agencies Which Commented on the Draft Statement:",
+          "quote_verified": true,
+          "stance_basis": "Listed as agency that commented on the Draft Statement",
+          "entity_as_written": "U.S. Department of Transportation (FHWA)",
+          "role_as_written": "Federal agency commenter on Draft EIS"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "yes",
+            "note": "The phrase 'Agencies Which Commented on the Draft Statement:' appears verbatim on page 1 of the cited text."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional mode)",
+            "result": "yes",
+            "note": "U.S. Department of Transportation (FHWA) appears in the list under the heading 'Agencies Which Commented on the Draft Statement:', which establishes the sectional context."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "The sectional heading only indicates the agency commented on the Draft EIS; it does not convey a specific stance (in_favor/opposed/conditional). 'Neutral' is a reasonable default but is not explicitly supported by the text."
+          },
+          {
+            "check": "Entity name is well-formed",
+            "result": "yes",
+            "note": "U.S. Department of Transportation (FHWA) is the official agency name as it appears in the document."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The heading 'Agencies Which Commented on the Draft Statement' confirms the role as a federal agency commenter on the Draft EIS."
+          }
+        ],
+        "verdict": "PASS_WITH_NOTE",
+        "model_confidence": "medium",
+        "notes": "The entity and sectional attribution are correctly identified, and the quote is verbatim. However, the 'neutral' stance is inferred by default — the section heading only confirms that the agency commented, not the nature of their stance. This is a common limitation of sectional attribution mode and does not invalidate the extraction, but the stance should be understood as 'commenter, stance unspecified' rather than a substantive neutral position."
+      }
+    },
+    {
+      "sequence": 20,
+      "entity": "U.S. Department of Transportation - Regional Representative",
+      "kind": "agency",
+      "role": "Federal agency commenter on Draft EIS",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Agencies Which Commented on the Draft Statement:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Agencies Which Commented on the Draft Statement:",
+          "quote_verified": true,
+          "stance_basis": "Listed as agency that commented on the Draft Statement",
+          "entity_as_written": "U.S. Department of Transportation - Regional Representative",
+          "role_as_written": "Federal agency commenter on Draft EIS"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The phrase 'Agencies Which Commented on the Draft Statement:' appears verbatim on page 1 of the cited text."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional mode)",
+            "result": "yes",
+            "note": "U.S. Department of Transportation (FHWA) appears in the list under the heading 'Agencies Which Commented on the Draft Statement:', which establishes the stance for all listed entities."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Being listed as a commenter on the Draft EIS does not establish a 'neutral' stance; it only confirms participation. The actual stance is unknown from this citation alone."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "no",
+            "note": "The entity is listed in the document as 'U.S. Department of Transportation (FHWA)' — the appended '- Regional Representative' is not supported by the cited text."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The entity appears under a heading confirming it commented on the Draft Statement, supporting the role of 'Federal agency commenter on Draft EIS'."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The entity name should be 'U.S. Department of Transportation (FHWA)' rather than including '- Regional Representative', which is unsupported by the text. More importantly, mere listing as a commenter does not justify a 'neutral' stance label — the stance cannot be determined from this section alone and should not be inferred as neutral without further evidence. The extraction should be corrected to reflect the proper entity name and either assign a more defensible stance or flag it for human review."
+      }
+    },
+    {
+      "sequence": 21,
+      "entity": "U.S. Department of Transportation - UMTA",
+      "kind": "agency",
+      "role": "Federal agency commenter on Draft EIS",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Agencies Which Commented on the Draft Statement:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Agencies Which Commented on the Draft Statement:",
+          "quote_verified": true,
+          "stance_basis": "Listed as agency that commented on the Draft Statement",
+          "entity_as_written": "U.S. Department of Transportation - UMTA",
+          "role_as_written": "Federal agency commenter on Draft EIS"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The phrase 'Agencies Which Commented on the Draft Statement:' appears verbatim on the cited page."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional mode)",
+            "result": "no",
+            "note": "The cited text lists 'U.S. Department of Transportation (FHWA)' under the heading, not 'U.S. Department of Transportation - UMTA'. UMTA is not mentioned in the visible text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "Sectional listing under 'Agencies Which Commented' without expressed position is reasonably labeled neutral."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "no",
+            "note": "The cited text references FHWA (Federal Highway Administration), not UMTA (Urban Mass Transportation Administration). The entity name appends the wrong sub-agency."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The heading confirms these are agencies that commented on the Draft Statement, consistent with 'Federal agency commenter on Draft EIS'."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page lists 'U.S. Department of Transportation (FHWA)', not UMTA. The entity was incorrectly identified as UMTA when the text clearly specifies FHWA. The row should be re-extracted with the correct sub-agency designation (FHWA) or simply 'U.S. Department of Transportation (FHWA)'."
+      }
+    },
+    {
+      "sequence": 22,
+      "entity": "U.S. Environmental Protection Agency",
+      "kind": "agency",
+      "role": "Federal agency commenter on Draft EIS",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Agencies Which Commented on the Draft Statement:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Agencies Which Commented on the Draft Statement:",
+          "quote_verified": true,
+          "stance_basis": "Listed as agency that commented on the Draft Statement",
+          "entity_as_written": "U.S. Environmental Protection Agency",
+          "role_as_written": "Federal agency commenter on Draft EIS"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The phrase 'Agencies Which Commented on the Draft Statement:' appears verbatim on the cited page."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional mode)",
+            "result": "no",
+            "note": "The U.S. Environmental Protection Agency does not appear in the visible text of the cited page. The list is cut off at 'U.S' and EPA is not confirmed to be in the list."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot confirm EPA is in the list; the sectional heading implies neutral/commenter stance for listed agencies, but EPA's presence is unverified."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "U.S. Environmental Protection Agency is the official name of the agency."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "n/a",
+            "note": "Role as 'Federal agency commenter on Draft EIS' is consistent with the section heading, but EPA's inclusion in the list cannot be confirmed from the truncated text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "The section heading 'Agencies Which Commented on the Draft Statement:' is present verbatim, and the sectional attribution mode is appropriate. However, the cited page text is truncated mid-list at 'U.S' and the U.S. Environmental Protection Agency is not explicitly visible in the provided text, making it impossible to confirm EPA's inclusion. A human reviewer should check the full page to verify EPA appears in the list."
+      }
+    },
+    {
+      "sequence": 23,
+      "entity": "City of Philadelphia, City Representative and Director of Commerce",
+      "kind": "government",
+      "role": "local reviewing agency",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The comment on additional planting to buffer the residential and industrial areas has been incorporated as a recommendation for consideration.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "49"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "49"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The comment on additional planting to buffer the residential and industrial areas has been incorporated as a recommendation for consideration.",
+          "quote_verified": true,
+          "stance_basis": "recommends additional planting buffer and evaluation of Stage III ecological use",
+          "entity_as_written": "City of Philadelphia, City Representative and Director of Commerce",
+          "role_as_written": "local reviewing agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The summary quote 'The comment on additional planting to buffer the residential and industrial areas has been incorporated as a recommendation for consideration.' does not appear verbatim in the provided page 49 text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The City of Philadelphia, City Representative and Director of Commerce is not mentioned in the cited page text; no paraphrased attribution linking this entity to a conditional stance is present."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance match since neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "The entity name references an official government role and is reasonably well-formed, though it combines two roles (City Representative and Director of Commerce)."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention the City of Philadelphia City Representative or Director of Commerce in any reviewing agency capacity on page 49."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The cited page 49 text does not contain the summary quote verbatim, nor does it mention the named entity or establish their conditional stance. The page content appears to be about federal agency responses and project background, not a City of Philadelphia representative comment. The extraction may reference a different page or a section not included in the provided text, warranting human review."
+      }
+    },
+    {
+      "sequence": 24,
+      "entity": "City of Philadelphia, Managing Director's Office",
+      "kind": "government",
+      "role": "local reviewing agency",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The section on air quality has been rewritten and the Environmental Protection Agency, Region III has assisted in the assessment of air quality which is incorporated in this Final EIS.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "49"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "49"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The section on air quality has been rewritten and the Environmental Protection Agency, Region III has assisted in the assessment of air quality which is incorporated in this Final EIS.",
+          "quote_verified": true,
+          "stance_basis": "provided air quality data for incorporation; no explicit opposition or support stated",
+          "entity_as_written": "City of Philadelphia, Managing Director's Office",
+          "role_as_written": "local reviewing agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quote about air quality being rewritten and EPA Region III assisting does not appear in the provided page 49 text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The City of Philadelphia, Managing Director's Office is not mentioned in the cited page text, nor is any paraphrased statement linking them to a neutral stance."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official agency name is properly formatted."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention the City of Philadelphia Managing Director's Office in any reviewing capacity."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote does not appear verbatim in the cited page 49 text, and the entity (City of Philadelphia, Managing Director's Office) is not referenced there either. The page text lists federal agencies and project background information. The quote and entity attribution appear to belong to a different page or section and need to be re-extracted with correct page citation."
+      }
+    },
+    {
+      "sequence": 25,
+      "entity": "Commonwealth of Pennsylvania, Department of Environmental Resources",
+      "kind": "agency",
+      "role": "state reviewing agency",
+      "stance": "conditional",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "The environmental consequences of the continued expansion of the Eastwick Urban Renewal Area, as proposed by the Philadelphia Redevelopment Authority (P.R.A.) to the United States Department of Housing and Urban Development (H.U.D.) raise serious questions as to the advisability of funding further development without a great deal more study of ways to ameliorate the adverse impacts and without perhaps radical changes in the planning.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "99"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "The environmental consequences of the continued expansion of the Eastwick Urban Renewal Area, as proposed by the Philadelphia Redevelopment Authority (P.R.A.) to the United States Department of Housing and Urban Development (H.U.D.) raise serious questions as to the advisability of funding further development without a great deal more study of ways to ameliorate the adverse impacts and without perhaps radical changes in the planning.",
+          "quote_verified": true,
+          "stance_basis": "raises serious questions about advisability of further development without additional study and radical planning changes",
+          "entity_as_written": "Commonwealth of Pennsylvania, Department of Environmental Resources",
+          "role_as_written": "state reviewing agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted text about 'Commonwealth of Pennsylvania, Department of Environmental Resources' raising 'serious questions as to the advisability of funding further development' does not appear anywhere in the cited page 99 text provided."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The cited page text is from a letter by/to Mr. James Treadwell (Philadelphia Redevelopment Authority context), with no mention of the Commonwealth of Pennsylvania Department of Environmental Resources."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the quote and entity are not present in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official agency name appears properly formatted."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "No reference to this agency or its role as 'state reviewing agency' appears in the cited page text."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and the entity (Commonwealth of Pennsylvania, Department of Environmental Resources) do not appear anywhere in the cited page 99 text provided. The cited text appears to be from a Philadelphia Redevelopment Authority letter to Mr. James Treadwell. The extraction likely references the wrong page number; the correct page containing this agency's comment should be identified and re-extracted."
+      }
+    },
+    {
+      "sequence": 26,
+      "entity": "Department of Army, Philadelphia District, Corps of Engineers",
+      "kind": "agency",
+      "role": "federal reviewing agency",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Chapter VI. Flood plain management and rehabilitation to natural marsh conditions should also be considered as viable alternatives.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "49",
+        "99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "49",
+            "99"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Chapter VI. Flood plain management and rehabilitation to natural marsh conditions should also be considered as viable alternatives.",
+          "quote_verified": false,
+          "stance_basis": "raises multiple deficiencies in the EIS and recommends flood plain management alternatives be considered",
+          "entity_as_written": "Department of Army, Philadelphia District, Corps of Engineers",
+          "role_as_written": "federal reviewing agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The phrase 'Chapter VI. Flood plain management and rehabilitation to natural marsh conditions should also be considered as viable alternatives.' does not appear verbatim in the cited pages (49, 99). The pulled text for page 49 discusses the Corps of Engineers letter but does not contain this quote."
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "no",
+            "note": "The cited text for the Corps of Engineers entry (letter dated September 2, 1975) does not contain the summary quote or any paraphrase linking the Corps to a conditional stance about flood plain management or marsh rehabilitation."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance label since the quote is not found in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official agency name is used correctly."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The Corps of Engineers is listed as a federal reviewing agency in the cited text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote cannot be found verbatim in the cited pages, and the paraphrased attribution linking the Corps of Engineers to a conditional stance about flood plain management and marsh rehabilitation is not supported by the pulled text. The Corps entry in the cited pages appears to be followed by unrelated content about project information sources. The quote may exist elsewhere in the document and needs to be re-located with correct page citations. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 27,
+      "entity": "Donald E. Hammer",
+      "kind": "official",
+      "role": "Division Administrator, Federal Highway Administration Region Three",
+      "stance": "neutral",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "We have reviewed the draft Environmental Impact Statement for the Eastwick Urban Renewal Area in Philadelphia. We have no significant comments from a highway standpoint.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "99"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "We have reviewed the draft Environmental Impact Statement for the Eastwick Urban Renewal Area in Philadelphia. We have no significant comments from a highway standpoint.",
+          "quote_verified": true,
+          "stance_basis": "no significant comments on the project from highway perspective",
+          "entity_as_written": "Donald E. Hammer",
+          "role_as_written": "Division Administrator, Federal Highway Administration Region Three"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted text about reviewing the draft EIS for Eastwick and having no significant highway comments does not appear anywhere in the cited page 99 text provided."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Donald E. Hammer does not appear in the cited page text at all; the text references Mr. James Treadwell and discusses Stage II/III/IV development concerns."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Name is properly formatted as a full official name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "No mention of Donald E. Hammer or FHWA Region Three Division Administrator in the cited page text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 99 text does not contain the summary quote or any reference to Donald E. Hammer or the Federal Highway Administration. The text on page 99 appears to be a letter from/to James Treadwell about Eastwick development stages. The quote may exist in the document but on a different page, or the page citation may be incorrect. Human review is needed to locate the correct page."
+      }
+    },
+    {
+      "sequence": 28,
+      "entity": "Eastwick Project Area Committee",
+      "kind": "organization",
+      "role": "Community representative body for Eastwick neighborhoods",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "direct_quote",
+        "paraphrased"
+      ],
+      "summary_quote": "Most of the comments contained in the letter from the Project Area Committee have been addressed in the rewritten Sections of Air Quality, Noise and Flooding.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "49",
+        "104"
+      ],
+      "n_mentions": 2,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "49"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Most of the comments contained in the letter from the Project Area Committee have been addressed in the rewritten Sections of Air Quality, Noise and Flooding.",
+          "quote_verified": true,
+          "stance_basis": "raised concerns about sewage discharge, construction schedules, and city services for existing residents",
+          "entity_as_written": "Eastwick Project Area Committee",
+          "role_as_written": "community/project area committee, commenter"
+        },
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "104"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "They are offered with the concern that the quality of life in the future Eastwick community is directly related to the attention of the agencies involved...to the abatement of potential negative environmental factors. The comments are offered, however, with the genuine interest of effectuating such planning and construction techniques as may mitigate these negative environmental factors now, in the interest of continued progress towards the completion of the Eastwick Project.",
+          "quote_verified": false,
+          "stance_basis": "Supports project completion but conditions it on mitigation of air, noise, water, and flooding problems",
+          "entity_as_written": "Eastwick Project Area Committee",
+          "role_as_written": "Community representative body for Eastwick neighborhoods"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The summary quote 'Most of the comments contained in the letter from the Project Area Committee have been addressed in the rewritten Sections of Air Quality, Noise and Flooding.' does not appear verbatim in the provided text from pages 49 and 104."
+          },
+          {
+            "check": "Attribution links entity to stated stance (paraphrased)",
+            "result": "no",
+            "note": "The cited pages do not contain a narrator sentence naming the Eastwick Project Area Committee and stating their conditional position. The text references Eastwick area activities but does not attribute a stance to this specific entity."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance label as the quote and attribution are not found in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Eastwick Project Area Committee is an organizational name and appears properly formatted."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited pages do not describe the Eastwick Project Area Committee as a community representative body; the text mentions Eastwick area activities but does not characterize this entity's role."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The summary quote does not appear verbatim in the provided page text, and the attribution linking the Eastwick Project Area Committee to a conditional stance cannot be verified from the cited pages. The quote may exist on pages not fully reproduced here, or the page citations may be incorrect. Human review is needed to locate the actual source of this quote and verify the entity's role and stance."
+      }
+    },
+    {
+      "sequence": 29,
+      "entity": "Federal Aviation Administration",
+      "kind": "agency",
+      "role": "federal reviewing agency",
+      "stance": "opposed",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "It is, therefore, our opinion that further continuance of the proposed development be halted until such time as an effective land use compatibility program is utilized or, at a minimum, an effective method of noise control.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "99"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "It is, therefore, our opinion that further continuance of the proposed development be halted until such time as an effective land use compatibility program is utilized or, at a minimum, an effective method of noise control.",
+          "quote_verified": true,
+          "stance_basis": "recommends halting development due to residential placement within noise-impacted airport zones",
+          "entity_as_written": "Federal Aviation Administration",
+          "role_as_written": "federal reviewing agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted text ('It is, therefore, our opinion that further continuance of the proposed development be halted until such time as an effective land use compatibility program is utilized or, at a minimum, an effective method of noise control.') does not appear anywhere in the cited page 99 text provided."
+          },
+          {
+            "check": "Attribution links FAA to stated stance",
+            "result": "no",
+            "note": "The cited text does not mention the Federal Aviation Administration at all; it appears to be a letter from/to Mr. James Treadwell dated 29 September 1975."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the provided text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Federal Aviation Administration is a properly formed official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not reference the FAA or identify any entity as a 'federal reviewing agency' on this page."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote does not appear verbatim in the cited page 99 text, and the Federal Aviation Administration is not mentioned anywhere in the provided excerpt. The text on page 99 appears to be correspondence involving Mr. James Treadwell regarding residential development stages, with no connection to the FAA. The page citation and/or entity attribution appear to be incorrect and need to be re-extracted from the correct source page."
+      }
+    },
+    {
+      "sequence": 30,
+      "entity": "Franz K. Gimmler",
+      "kind": "official",
+      "role": "Regional Director, UMTA Region III",
+      "stance": "neutral",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "thus, in assessing the RDA's project, the route #36 extension should be considered only a marginal possibility.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "99"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "thus, in assessing the RDA's project, the route #36 extension should be considered only a marginal possibility.",
+          "quote_verified": false,
+          "stance_basis": "clarifies transit status without taking a position on the overall project",
+          "entity_as_written": "Franz K. Gimmler",
+          "role_as_written": "Regional Director, UMTA Region III"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quote about 'route #36 extension' and 'marginal possibility' does not appear anywhere in the cited page 99 text provided."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Franz K. Gimmler and UMTA Region III are not mentioned anywhere in the cited text; the text references Mr. James Treadwell and RDA-related content."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Name appears to be a properly formed official name with title and organization."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of Franz K. Gimmler or UMTA Region III; the role cannot be verified from the provided pages."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 99 text is entirely about RDA residential development stages and flood/noise concerns, authored in a letter to Mr. James Treadwell. Neither the entity (Franz K. Gimmler, UMTA Region III) nor the summary quote about 'route #36 extension' appears in the provided text. The extraction appears to reference a different page or document section entirely and needs to be re-extracted with the correct page citation. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 31,
+      "entity": "Joe Thompson",
+      "kind": "official",
+      "role": "PennDOT District 6-0 engineer, commenter",
+      "stance": "conditional",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "We do want the right of way retained. We would not at all be reluctant to having the area provisionally used for wildlife management related operations. Any such use however we would want made emphatically clear to all as being provisional on our future use as a transportation corridor.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "99"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "We do want the right of way retained. We would not at all be reluctant to having the area provisionally used for wildlife management related operations. Any such use however we would want made emphatically clear to all as being provisional on our future use as a transportation corridor.",
+          "quote_verified": true,
+          "stance_basis": "conditions acceptance of wildlife use of I-695 ROW on it being explicitly provisional for future transportation use",
+          "entity_as_written": "Joe Thompson",
+          "role_as_written": "PennDOT District 6-0 engineer, commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 99 text contains content from James Treadwell's letter about residential development stages; Joe Thompson's quote is nowhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Joe Thompson does not appear anywhere in the cited page text; the text references James Treadwell and PennDOT is not mentioned."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Joe Thompson is a named official; format is acceptable for an official/agency representative."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of Joe Thompson or PennDOT District 6-0; role cannot be verified from provided pages."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page 99 text does not contain Joe Thompson's quote or any reference to PennDOT District 6-0. The text on the provided page is from a James Treadwell letter discussing residential development stages near an airport. The extraction likely references the wrong page number; the correct page containing Joe Thompson's statement needs to be identified and re-cited."
+      }
+    },
+    {
+      "sequence": 32,
+      "entity": "Maurice K. Goddard",
+      "kind": "official",
+      "role": "Secretary of Environmental Resources, Pennsylvania DER",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The environmental consequences of the continued expansion of the Eastwick Urban Renewal Area, as proposed by the Philadelphia Redevelopment Authority (P.R.A.) to the United States Department of Housing and Urban Development (H.U.D.) raise serious questions as to the advisability of funding further development without a great deal more study of ways to ameliorate the adverse impacts and without perhaps radical changes in the planning.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "99"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The environmental consequences of the continued expansion of the Eastwick Urban Renewal Area, as proposed by the Philadelphia Redevelopment Authority (P.R.A.) to the United States Department of Housing and Urban Development (H.U.D.) raise serious questions as to the advisability of funding further development without a great deal more study of ways to ameliorate the adverse impacts and without perhaps radical changes in the planning.",
+          "quote_verified": true,
+          "stance_basis": "conditions support on extensive additional study, erosion control, flood plain resolution, and possible radical planning changes",
+          "entity_as_written": "Maurice K. Goddard",
+          "role_as_written": "Secretary of Environmental Resources, Pennsylvania DER"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted text about 'Maurice K. Goddard' and 'serious questions as to the advisability of funding further development' does not appear anywhere in the cited page 99 text provided."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Maurice K. Goddard is not mentioned anywhere in the cited page text. The text references Mr. James Treadwell and discusses Philadelphia Redevelopment Authority matters, but no Goddard attribution is present."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since neither the entity nor the quote appears in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Maurice K. Goddard is an official/agency name and is properly formatted."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of Maurice K. Goddard or his role as Secretary of Environmental Resources, Pennsylvania DER."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and entity (Maurice K. Goddard) do not appear anywhere in the cited page 99 text. The page text is entirely about Mr. James Treadwell's letter dated 29 September 1975 regarding Eastwick stages. The extraction appears to reference a different page or document section entirely. The correct page citation needs to be identified and verified."
+      }
+    },
+    {
+      "sequence": 33,
+      "entity": "Nicholas M. Ruha",
+      "kind": "official",
+      "role": "Chief, EIS and Wetlands Review Section, EPA Region III",
+      "stance": "conditional",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "EPA has concerns about certain of those impacts on air quality where applicable standards may be exceeded: the final statement must quantify these impacts and specify mitigating measures in further detail in order to adequately demonstrate compliance.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "99"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "EPA has concerns about certain of those impacts on air quality where applicable standards may be exceeded: the final statement must quantify these impacts and specify mitigating measures in further detail in order to adequately demonstrate compliance.",
+          "quote_verified": false,
+          "stance_basis": "conditions adequacy of EIS on quantification of air quality impacts and specification of mitigation",
+          "entity_as_written": "Nicholas M. Ruha",
+          "role_as_written": "Chief, EIS and Wetlands Review Section, EPA Region III"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 99 text contains correspondence from Mr. James Treadwell about residential development stages; the EPA quote about air quality standards is not present anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Nicholas M. Ruha and EPA Region III are not mentioned anywhere in the cited page text provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Name appears properly formatted as an official with full name and title."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'Chief, EIS and Wetlands Review Section, EPA Region III' is not supported by the cited page text, which only references Mr. James Treadwell."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 99 text is entirely about James Treadwell's comments on residential development stages (II, III, IV) and has no connection to Nicholas M. Ruha or EPA Region III. The summary quote about air quality standards and mitigating measures does not appear anywhere in the provided text. The extraction appears to reference the wrong page number — the EPA Region III letter likely appears on a different page of the EIS document. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 34,
+      "entity": "Pennsylvania Department of Transportation",
+      "kind": "agency",
+      "role": "state reviewing agency",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The proposed action will have no adverse impact on our existing and planned transportation facilities in the area.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "99"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The proposed action will have no adverse impact on our existing and planned transportation facilities in the area.",
+          "quote_verified": false,
+          "stance_basis": "no adverse transportation impact but requests retention of I-695 right-of-way and additional air/noise data",
+          "entity_as_written": "Pennsylvania Department of Transportation",
+          "role_as_written": "state reviewing agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The quote 'The proposed action will have no adverse impact on our existing and planned transportation facilities in the area.' does not appear anywhere in the cited page 99 text provided."
+          },
+          {
+            "check": "Attribution links Pennsylvania Department of Transportation to stated stance",
+            "result": "no",
+            "note": "The cited text makes no mention of the Pennsylvania Department of Transportation. The text appears to be a letter from/to Mr. James Treadwell dated 29 September 1975, discussing land use stages and noise impacts."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Pennsylvania Department of Transportation is a properly formed official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not reference PennDOT or any state transportation reviewing agency role."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote and entity (Pennsylvania Department of Transportation) are entirely absent from the cited page 99 text. The page content appears to be a letter discussing land use stages (II, III, IV) near an airport, with no mention of PennDOT. The extraction appears to reference a different page or document entirely and needs to be corrected with the proper page citation. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 35,
+      "entity": "Roger Sumner Babb",
+      "kind": "official",
+      "role": "Special Assistant to the Secretary, U.S. Department of the Interior, Northeast Region",
+      "stance": "conditional",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "we urge that this open space be designated for park and recreation purposes, and to enhance the adjacent Tinicum Preserve. The final statement should contain evidence of further consideration and consultation with city officials on this possibility.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "99"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "we urge that this open space be designated for park and recreation purposes, and to enhance the adjacent Tinicum Preserve. The final statement should contain evidence of further consideration and consultation with city officials on this possibility.",
+          "quote_verified": true,
+          "stance_basis": "conditions support on park designation, erosion control plan, and historic preservation compliance",
+          "entity_as_written": "Roger Sumner Babb",
+          "role_as_written": "Special Assistant to the Secretary, U.S. Department of the Interior, Northeast Region"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted text about 'open space be designated for park and recreation purposes' and 'Tinicum Preserve' does not appear anywhere in the cited page 99 text provided."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Roger Sumner Babb is not mentioned anywhere in the cited page text; the text references Mr. James Treadwell and discusses Stage II/III/IV development issues."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since neither the entity nor the quote appears in the provided text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Full name with official title is acceptable for a named government official."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of Roger Sumner Babb or his role as Special Assistant to the Secretary, U.S. Department of the Interior."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 99 text does not contain the summary quote or any reference to Roger Sumner Babb. The text on the provided page is from a letter by/to Mr. James Treadwell discussing residential development stages. Either the wrong page was cited, or the extraction is from a different part of the document entirely. Human review is needed to locate the correct source page for this entity and quote."
+      }
+    },
+    {
+      "sequence": 36,
+      "entity": "Sidney R. Galler",
+      "kind": "official",
+      "role": "Deputy Assistant Secretary for Environmental Affairs, U.S. Department of Commerce",
+      "stance": "conditional",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "We believe that the statement should discuss which plans are being considered. Further, the Redevelopment Authority should consult with appropriate state and federal agencies during early planning stages in an effort to develop the most environmentally acceptable plan.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "99"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "We believe that the statement should discuss which plans are being considered. Further, the Redevelopment Authority should consult with appropriate state and federal agencies during early planning stages in an effort to develop the most environmentally acceptable plan.",
+          "quote_verified": true,
+          "stance_basis": "conditions support on additional environmental planning and agency consultation",
+          "entity_as_written": "Sidney R. Galler",
+          "role_as_written": "Deputy Assistant Secretary for Environmental Affairs, U.S. Department of Commerce"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted text attributed to Sidney R. Galler does not appear anywhere in the provided page 99 text. The page text is from a letter by Mr. James Treadwell dated 29 September 1975."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Sidney R. Galler is not mentioned anywhere in the cited page text. The text is attributed to Mr. James Treadwell, not Galler."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since the quote and entity are not present in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "The name 'Sidney R. Galler' is a properly formatted official name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of Sidney R. Galler or the role of Deputy Assistant Secretary for Environmental Affairs, U.S. Department of Commerce."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page 99 text is entirely from a letter by Mr. James Treadwell and contains no reference to Sidney R. Galler or the quoted text. The extraction appears to have pulled content from the wrong page or misattributed the quote. The correct page containing Galler's quote needs to be identified and re-extracted."
+      }
+    },
+    {
+      "sequence": 37,
+      "entity": "United States Department of Commerce",
+      "kind": "agency",
+      "role": "federal reviewing agency",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The Redevelopment Authority should consult with appropriate state and federal agencies during early planning stages in an effort to develop the most environmentally acceptable plan.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "99"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The Redevelopment Authority should consult with appropriate state and federal agencies during early planning stages in an effort to develop the most environmentally acceptable plan.",
+          "quote_verified": false,
+          "stance_basis": "requests additional discussion of pollution/sedimentation plans and agency consultation before proceeding",
+          "entity_as_written": "United States Department of Commerce",
+          "role_as_written": "federal reviewing agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted text 'The Redevelopment Authority should consult with appropriate state and federal agencies during early planning stages in an effort to develop the most environmentally acceptable plan.' does not appear anywhere in the cited page 99 text provided."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The United States Department of Commerce is not mentioned anywhere in the cited page text. The text references 'Mr. James Treadwell' and discusses Stage II/III/IV development issues."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "United States Department of Commerce is a properly formed official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "No mention of the U.S. Department of Commerce or any federal reviewing agency role appears in the cited text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 99 text contains no mention of the United States Department of Commerce, and the summary quote does not appear verbatim in the provided text. The page appears to be a letter from Mr. James Treadwell discussing residential development stages. The extraction appears to reference a different page or a different entity entirely, and should be re-extracted with correct page citations. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 38,
+      "entity": "United States Department of the Interior, Office of the Secretary",
+      "kind": "agency",
+      "role": "federal reviewing agency",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "we urge that this open space be designated for park and recreation purposes, and to enhance the adjacent Tinicum Preserve. The final statement should contain evidence of further consideration and consultation with city officials on this possibility.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "99"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "we urge that this open space be designated for park and recreation purposes, and to enhance the adjacent Tinicum Preserve. The final statement should contain evidence of further consideration and consultation with city officials on this possibility.",
+          "quote_verified": true,
+          "stance_basis": "urges park designation for open space and immediate soil erosion control plan as conditions",
+          "entity_as_written": "United States Department of the Interior, Office of the Secretary",
+          "role_as_written": "federal reviewing agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted text about 'park and recreation purposes' and 'Tinicum Preserve' and 'consultation with city officials' does not appear anywhere in the cited page 99 text provided."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The cited text does not mention the United States Department of the Interior, Office of the Secretary at all; the text appears to be from a letter by/to Mr. James Treadwell dated 29 September 1975."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quoted text appears in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "The entity name is a properly formatted official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not reference the Department of the Interior or any federal reviewing agency role; the text concerns a developer/planner (Treadwell) discussing land use stages."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and entity attribution are entirely absent from the cited page 99 text. The page content relates to a letter from/to Mr. James Treadwell about residential development stages, with no mention of the Department of the Interior. The quote about park/recreation designation and Tinicum Preserve consultation likely exists elsewhere in the document and was assigned the wrong page citation, or the entity attribution is incorrect."
+      }
+    },
+    {
+      "sequence": 39,
+      "entity": "United States Department of Transportation, Federal Highway Administration",
+      "kind": "agency",
+      "role": "federal reviewing agency",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "No significant comments were made by U.S. DOT. Substantive comment was received and considered from PennDOT.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "49"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "49"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "No significant comments were made by U.S. DOT. Substantive comment was received and considered from PennDOT.",
+          "quote_verified": true,
+          "stance_basis": "no significant comments from a highway standpoint",
+          "entity_as_written": "United States Department of Transportation, Federal Highway Administration",
+          "role_as_written": "federal reviewing agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact text 'No significant comments were made by U.S. DOT. Substantive comment was received and considered from PennDOT.' appears verbatim on page 49."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "yes",
+            "note": "The cited text explicitly names 'United States Department of Transportation, Federal Highway Administration (letter dated October 3, 1975)' immediately before the quoted sentence, linking the entity to the paraphrased characterization of their response."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "'No significant comments' is consistent with a neutral stance — neither in favor nor opposed to the project."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official agency name matches the text exactly: 'United States Department of Transportation, Federal Highway Administration'."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The agency is listed among federal reviewing agencies that received the EIS and responded by letter, consistent with 'federal reviewing agency'."
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "All checks pass. The summary quote is verbatim, the entity is correctly named and attributed, the neutral stance is well-supported by 'no significant comments,' and the role as a federal reviewing agency is clearly established by the document structure."
+      }
+    },
+    {
+      "sequence": 40,
+      "entity": "United States Environmental Protection Agency, Region III",
+      "kind": "agency",
+      "role": "federal reviewing agency",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "EPA has concerns about certain of those impacts on air quality where applicable standards may be exceeded: the final statement must quantify these impacts and specify mitigating measures in further detail in order to adequately demonstrate compliance.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "99"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "EPA has concerns about certain of those impacts on air quality where applicable standards may be exceeded: the final statement must quantify these impacts and specify mitigating measures in further detail in order to adequately demonstrate compliance.",
+          "quote_verified": false,
+          "stance_basis": "classified EIS as ER-2 (Environmental Reservations) and requires air quality quantification and mitigation measures",
+          "entity_as_written": "United States Environmental Protection Agency, Region III",
+          "role_as_written": "federal reviewing agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 99 text contains comments from Mr. James Treadwell about Philadelphia residential development stages; the EPA Region III quote about air quality standards is not present anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "no",
+            "note": "The cited text makes no mention of the United States Environmental Protection Agency, Region III, nor any air quality concerns attributed to them."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify the 'conditional' stance label as the entity and quote are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "The entity name 'United States Environmental Protection Agency, Region III' is a properly formed official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not reference EPA Region III or describe them as a federal reviewing agency."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 99 text is entirely about comments from Mr. James Treadwell regarding Philadelphia residential development stages (Stages II, III, IV) and has no connection to EPA Region III or air quality concerns. The summary quote and entity attribution appear to belong to a different page entirely. The extractor should locate the correct page(s) where EPA Region III's air quality comments appear. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 41,
+      "entity": "Urban Mass Transportation Administration, Region III",
+      "kind": "agency",
+      "role": "federal reviewing agency",
+      "stance": "neutral",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "Our comments are confined to the transportation implications of the project. The lack of comments on other sections should in no way be interpreted as UMTA approval of the entire project.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "99"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "Our comments are confined to the transportation implications of the project. The lack of comments on other sections should in no way be interpreted as UMTA approval of the entire project.",
+          "quote_verified": false,
+          "stance_basis": "limits comments to transportation implications without approving or opposing the overall project",
+          "entity_as_written": "Urban Mass Transportation Administration, Region III",
+          "role_as_written": "federal reviewing agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted text about UMTA and transportation implications does not appear anywhere in the provided page 99 text, which is entirely about residential development, noise abatement, and land use stages."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Urban Mass Transportation Administration, Region III is not mentioned anywhere in the cited page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official agency name appears properly formatted."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "No mention of UMTA or any federal reviewing agency role in the cited text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 99 text contains comments from what appears to be a letter by Mr. James Treadwell dated 29 September 1975, discussing residential development stages and noise abatement — with no reference to UMTA or the quoted text. The extraction appears to reference a different page or document entirely. The correct page number for the UMTA quote should be identified and re-extracted. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 42,
+      "entity": "Walter D. Kies",
+      "kind": "official",
+      "role": "Chief, Planning Staff, Federal Aviation Administration Eastern Region",
+      "stance": "opposed",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "It is, therefore, our opinion that further continuance of the proposed development be halted until such time as an effective land use compatibility program is utilized or, at a minimum, an effective method of noise control.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "99"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "It is, therefore, our opinion that further continuance of the proposed development be halted until such time as an effective land use compatibility program is utilized or, at a minimum, an effective method of noise control.",
+          "quote_verified": true,
+          "stance_basis": "opposes continued development due to noise incompatibility with airport operations",
+          "entity_as_written": "Walter D. Kies",
+          "role_as_written": "Chief, Planning Staff, Federal Aviation Administration Eastern Region"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted text 'It is, therefore, our opinion that further continuance of the proposed development be halted until such time as an effective land use compatibility program is utilized or, at a minimum, an effective method of noise control.' does not appear anywhere in the provided page 99 text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Walter D. Kies and the FAA Eastern Region are not mentioned anywhere in the cited page text. The text references Mr. James Treadwell and discusses Stage II/III/IV development."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Name format is acceptable for an official (full name with title)."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'Chief, Planning Staff, Federal Aviation Administration Eastern Region' is not mentioned anywhere in the cited page text."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page 99 text does not contain the summary quote, the entity name, or any reference to the FAA Eastern Region. The page appears to be a letter from/to Mr. James Treadwell discussing land use stages. The extraction likely pulled from a different page or document section. The correct page reference needs to be identified and verified."
+      }
+    },
+    {
+      "sequence": 43,
+      "entity": "Worth D. Phillips",
+      "kind": "official",
+      "role": "Chief, Engineering Division, Philadelphia District Corps of Engineers",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Statement does not document fact sources.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "99"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Statement does not document fact sources.",
+          "quote_verified": true,
+          "stance_basis": "identifies multiple deficiencies requiring correction before the EIS is adequate",
+          "entity_as_written": "Worth D. Phillips",
+          "role_as_written": "Chief, Engineering Division, Philadelphia District Corps of Engineers"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The phrase 'Statement does not document fact sources.' does not appear anywhere in the cited page 99 text provided."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Worth D. Phillips is not mentioned anywhere in the cited text. The letter shown is from/to Mr. James Treadwell, not Phillips."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Full name with title is acceptable for an official/agency representative."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "No mention of Worth D. Phillips or the Philadelphia District Corps of Engineers in the cited text."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page 99 text contains a letter associated with Mr. James Treadwell, not Worth D. Phillips. The summary quote 'Statement does not document fact sources.' is not present verbatim in the provided text. The extraction appears to reference the wrong page or the wrong entity entirely, and should be re-extracted with correct page citations."
+      }
+    },
+    {
+      "sequence": 44,
+      "entity": "Blue Bell Civic Association",
+      "kind": "organization",
+      "role": "Member organization represented by Eastwick Project Area Committee",
+      "stance": "conditional",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "REPRESENTING: Eastwick Community Organization Blue Bell Civic Association",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "104"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "104"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "REPRESENTING: Eastwick Community Organization Blue Bell Civic Association",
+          "quote_verified": false,
+          "stance_basis": "Listed as represented by Eastwick Project Area Committee, which takes a conditional stance on the project",
+          "entity_as_written": "Blue Bell Civic Association",
+          "role_as_written": "Member organization represented by Eastwick Project Area Committee"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The text 'REPRESENTING: Eastwick Community Organization Blue Bell Civic Association' does not appear anywhere in the cited page 104 text provided."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Blue Bell Civic Association is not mentioned anywhere in the cited page text; the sectional attribution cannot be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot assess stance match since the entity and quote are not present in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Blue Bell Civic Association appears to be a proper organizational name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of Blue Bell Civic Association or its relationship to the Eastwick Project Area Committee."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote and entity name do not appear anywhere in the provided page 104 text. The cited page appears to discuss sedimentation, septic systems, sewers, and flood plains in the Eastwick area, with no reference to Blue Bell Civic Association. The extraction likely references a different page (possibly a cover sheet or testimony header page) that was not included in the cited pages pull. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 45,
+      "entity": "Clearview Community Organization",
+      "kind": "organization",
+      "role": "Member organization represented by Eastwick Project Area Committee",
+      "stance": "conditional",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "REPRESENTING: Eastwick Community Organization Blue Bell Civic Association Elmwood Park Civic Association Clearview Community Organization",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "104"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "104"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "REPRESENTING: Eastwick Community Organization Blue Bell Civic Association Elmwood Park Civic Association Clearview Community Organization",
+          "quote_verified": false,
+          "stance_basis": "Listed as represented by Eastwick Project Area Committee, which takes a conditional stance on the project",
+          "entity_as_written": "Clearview Community Organization",
+          "role_as_written": "Member organization represented by Eastwick Project Area Committee"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 104 text does not contain the phrase 'REPRESENTING: Eastwick Community Organization Blue Bell Civic Association Elmwood Park Civic Association Clearview Community Organization' anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional mode)",
+            "result": "no",
+            "note": "The cited text does not contain a list/table under a stance heading that includes 'Clearview Community Organization'. The text discusses Clearview Landfill but not the organization."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since the quote and sectional list are not present in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Organization name appears properly formatted as an official name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention Clearview Community Organization as a member organization represented by Eastwick Project Area Committee."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote — a 'REPRESENTING:' header listing multiple civic organizations including Clearview Community Organization — is not present anywhere in the cited page 104 text. The page discusses environmental issues like sedimentation and sewers, with only a passing reference to 'Clearview Landfill' (a geographic feature, not the organization). The correct page containing the representation list needs to be identified and re-cited. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 46,
+      "entity": "Eastwick Businessmens' Association",
+      "kind": "organization",
+      "role": "Member organization represented by Eastwick Project Area Committee",
+      "stance": "conditional",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "REPRESENTING: Eastwick Community Organization Blue Bell Civic Association Elmwood Park Civic Association Clearview Community Organization Penrose Park Civic Association Conservation Area Towne Gardens Civic Association Eastwick Businessmens' Association",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "104"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "104"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "REPRESENTING: Eastwick Community Organization Blue Bell Civic Association Elmwood Park Civic Association Clearview Community Organization Penrose Park Civic Association Conservation Area Towne Gardens Civic Association Eastwick Businessmens' Association",
+          "quote_verified": false,
+          "stance_basis": "Listed as represented by Eastwick Project Area Committee, which takes a conditional stance on the project",
+          "entity_as_written": "Eastwick Businessmens' Association",
+          "role_as_written": "Member organization represented by Eastwick Project Area Committee"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 104 text does not contain the list 'REPRESENTING: Eastwick Community Organization Blue Bell Civic Association...' anywhere in the provided excerpt."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The sectional attribution requires the entity name to appear in a list under a stance-establishing heading, but no such list appears in the provided page 104 text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since the quote and list are not present in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Eastwick Businessmens' Association' appears to be an official organization name, which is acceptable."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page 104 text makes no mention of the Eastwick Project Area Committee or the Eastwick Businessmens' Association."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote and the membership list it references do not appear anywhere in the provided page 104 text. The correct page containing the 'REPRESENTING:' list with member organizations needs to be identified. The extraction likely references a different page (possibly a cover letter or testimony header page) that was not included in the cited pages pull. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 47,
+      "entity": "Eastwick Community Organization",
+      "kind": "organization",
+      "role": "Member organization represented by Eastwick Project Area Committee",
+      "stance": "conditional",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "REPRESENTING: Eastwick Community Organization",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "104"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "104"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "REPRESENTING: Eastwick Community Organization",
+          "quote_verified": false,
+          "stance_basis": "Listed as represented by Eastwick Project Area Committee, which takes a conditional stance on the project",
+          "entity_as_written": "Eastwick Community Organization",
+          "role_as_written": "Member organization represented by Eastwick Project Area Committee"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The phrase 'REPRESENTING: Eastwick Community Organization' does not appear anywhere in the cited page 104 text provided."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional mode)",
+            "result": "no",
+            "note": "The cited text discusses environmental concerns about Eastwick but does not contain a list/table with 'Eastwick Community Organization' under any stance heading."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Organization name appears properly formatted as an official name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "No mention of 'Eastwick Community Organization' or 'Eastwick Project Area Committee' in the cited text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote 'REPRESENTING: Eastwick Community Organization' is not present in the cited page 104 text. The cited text discusses environmental impacts (sedimentation, sewers, flooding) related to the Eastwick area but does not reference this organization or any representative list. The extraction likely references a different page (possibly a cover sheet or testimony header) that was not included in the cited pages pull. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 48,
+      "entity": "Eastwick Joint Venture",
+      "kind": "organization",
+      "role": "Representative of New Eastwick Corporation, redeveloper",
+      "stance": "in_favor",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "Stage III - As indicated earlier, consideration of an alternate land use for Stage III has been underway since 1969. As noted in the draft statement, plans for development of an alternate use have been submitted, verifying our endorsement of the plan change.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "101"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "101"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "Stage III - As indicated earlier, consideration of an alternate land use for Stage III has been underway since 1969. As noted in the draft statement, plans for development of an alternate use have been submitted, verifying our endorsement of the plan change.",
+          "quote_verified": false,
+          "stance_basis": "Formally endorses land use change for Stage III to Airport-Related Commercial",
+          "entity_as_written": "Eastwick Joint Venture",
+          "role_as_written": "Representative of New Eastwick Corporation, redeveloper"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The exact quote 'Stage III - As indicated earlier, consideration of an alternate land use for Stage III has been underway since 1969. As noted in the draft statement, plans for development of an alternate use have been submitted, verifying our endorsement of the plan change.' does not appear verbatim in the cited page 101 text provided."
+          },
+          {
+            "check": "Attribution links Eastwick Joint Venture to in_favor stance",
+            "result": "yes",
+            "note": "The cited text states 'New Eastwick Corporation and The Eastwick Joint Venture formally stated support for a proposed land use change,' which supports an in_favor stance."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The entity clearly supports the land use change, consistent with in_favor."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Eastwick Joint Venture' appears in the cited text as an organization name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text references 'New Eastwick Corporation and The Eastwick Joint Venture' together, supporting the role as representative/redeveloper associated with New Eastwick Corporation."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "The stance and entity attribution are correct — Eastwick Joint Venture is clearly in favor of the land use change. However, the summary quote is not present verbatim in the cited page text; the actual text on page 101 uses different wording ('formally stated support for a proposed land use change'). The quote should be re-extracted to match the actual language in the document, or the attribution_mode should be changed to 'paraphrased'. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 49,
+      "entity": "Elmwood Park Civic Association",
+      "kind": "organization",
+      "role": "Member organization represented by Eastwick Project Area Committee",
+      "stance": "conditional",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "REPRESENTING: Eastwick Community Organization Blue Bell Civic Association Elmwood Park Civic Association",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "104"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "104"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "REPRESENTING: Eastwick Community Organization Blue Bell Civic Association Elmwood Park Civic Association",
+          "quote_verified": false,
+          "stance_basis": "Listed as represented by Eastwick Project Area Committee, which takes a conditional stance on the project",
+          "entity_as_written": "Elmwood Park Civic Association",
+          "role_as_written": "Member organization represented by Eastwick Project Area Committee"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 104 text does not contain the phrase 'REPRESENTING: Eastwick Community Organization Blue Bell Civic Association Elmwood Park Civic Association' — the pulled text discusses sedimentation, sewers, and flooding, with no such header visible."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The sectional attribution requires the entity name to appear in a list under a stance-establishing heading, but neither the heading nor the entity name appears in the cited text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance because the relevant text is not present in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Elmwood Park Civic Association appears to be a properly named organization."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of Elmwood Park Civic Association or its representation by the Eastwick Project Area Committee."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote and the organizational listing it references do not appear anywhere in the pulled text from page 104. The cited page appears to cover environmental concerns about sedimentation, sewers, and flooding — not the organizational representation header. The correct page containing the 'REPRESENTING' list needs to be identified and re-extracted. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 50,
+      "entity": "New Eastwick Corporation",
+      "kind": "organization",
+      "role": "Redeveloper for Stages I, II, III and IV",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "we feel it important to note that all development that has occurred has been as the result of the cooperation between the Philadelphia Redevelopment Authority, City Planning Commission, Philadelphia City Council, and the Department of Housing and Urban Development.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "97"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "97"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "we feel it important to note that all development that has occurred has been as the result of the cooperation between the Philadelphia Redevelopment Authority, City Planning Commission, Philadelphia City Council, and the Department of Housing and Urban Development.",
+          "quote_verified": false,
+          "stance_basis": "Supports project continuation but raises multiple conditions regarding noise abatement costs, land use changes, and flood remedies",
+          "entity_as_written": "New Eastwick Corporation",
+          "role_as_written": "Redeveloper for Stages I, II, III and IV"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The quote appears verbatim in the cited page 97 text: 'we feel it important to note that all development that has occurred has been as the result of the cooperation between the Philadelphia Redevelopment Authority, City Planning Commission, Philadelphia City Council, and the Department of Housing and Urban Development.'"
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "yes",
+            "note": "The text explicitly states 'As representatives of the New Eastwick Corporation, redeveloper for Stages I, II, III and IV, we feel it important to note...' — directly linking the entity to the quoted statement."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The letter is a response to a draft EIS with specific comments and observations, indicating a conditional engagement rather than simple support or opposition. 'Conditional' is a reasonable label given the context of providing corrective comments and noting market absorption concerns."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'New Eastwick Corporation' is the official organization name as used in the source text."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text explicitly states 'redeveloper for Stages I, II, III and IV' matching the role description exactly."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "All checks pass. The quote is verbatim, the entity is clearly named and linked to the statement, the role matches exactly, and the conditional stance is supported by the letter's nature as a review response with specific corrective comments and caveats about market absorption. The attribution mode 'paraphrased' is slightly off since the quote is a direct quote from the entity's own letter, but the stance and attribution are otherwise accurate. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 51,
+      "entity": "New Eastwick Corporation",
+      "kind": "organization",
+      "role": "Redeveloper",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "New Eastwick Corporation and The Eastwick Joint Venture formally stated support for a proposed land use change and requested the Redevelopment Authority Board to begin the plan amendment process.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "103"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "103"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "New Eastwick Corporation and The Eastwick Joint Venture formally stated support for a proposed land use change and requested the Redevelopment Authority Board to begin the plan amendment process.",
+          "quote_verified": true,
+          "stance_basis": "Formally stated support for land use change for entire Stage III",
+          "entity_as_written": "New Eastwick Corporation",
+          "role_as_written": "Redeveloper"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 103 text contains no mention of 'New Eastwick Corporation', 'The Eastwick Joint Venture', 'support for a proposed land use change', or 'Redevelopment Authority Board' beginning a 'plan amendment process'. The quote is entirely absent from the provided text."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "New Eastwick Corporation does not appear anywhere in the cited page text, so no link between the entity and any stance can be established from this excerpt."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the entity and relevant content are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'New Eastwick Corporation' appears to be a properly formed organizational name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'Redeveloper' is not supported by the cited page text, which does not mention New Eastwick Corporation at all."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page 103 text does not contain the summary quote or any reference to New Eastwick Corporation, The Eastwick Joint Venture, or a plan amendment process. The extraction appears to reference content from a different page entirely. The correct evidence page(s) should be identified and re-extracted."
+      }
+    },
+    {
+      "sequence": 52,
+      "entity": "Penrose Park Civic Association",
+      "kind": "organization",
+      "role": "Member organization represented by Eastwick Project Area Committee",
+      "stance": "conditional",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "REPRESENTING: Eastwick Community Organization Blue Bell Civic Association Elmwood Park Civic Association Clearview Community Organization Penrose Park Civic Association",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "104"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "104"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "REPRESENTING: Eastwick Community Organization Blue Bell Civic Association Elmwood Park Civic Association Clearview Community Organization Penrose Park Civic Association",
+          "quote_verified": false,
+          "stance_basis": "Listed as represented by Eastwick Project Area Committee, which takes a conditional stance on the project",
+          "entity_as_written": "Penrose Park Civic Association",
+          "role_as_written": "Member organization represented by Eastwick Project Area Committee"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 104 text does not contain the list 'REPRESENTING: Eastwick Community Organization Blue Bell Civic Association Elmwood Park Civic Association Clearview Community Organization Penrose Park Civic Association' anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Penrose Park Civic Association is not mentioned anywhere in the cited page 104 text provided. The sectional attribution cannot be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Penrose Park Civic Association appears to be a properly formed organization name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of Penrose Park Civic Association or the Eastwick Project Area Committee representing it."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 104 text does not contain the summary quote or any mention of Penrose Park Civic Association. The extracted row likely references a different page (possibly a cover page or letterhead listing represented organizations) that was not included in the pulled text. The extractor should identify the correct page where the 'REPRESENTING:' list appears and re-cite it. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 53,
+      "entity": "Redevelopment Authority of Philadelphia",
+      "kind": "agency",
+      "role": "Local redevelopment agency",
+      "stance": "opposed",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The Redevelopment Authority of Philadelphia has been conspicuous in its disregard for the noise and air pollution impact of its activities upon the existing Eastwick Community.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "105"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "105"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The Redevelopment Authority of Philadelphia has been conspicuous in its disregard for the noise and air pollution impact of its activities upon the existing Eastwick Community.",
+          "quote_verified": false,
+          "stance_basis": "Criticized by Eastwick Project Area Committee for disregarding noise/air pollution impacts and poor coordination of development activities",
+          "entity_as_written": "Redevelopment Authority of Philadelphia",
+          "role_as_written": "Local redevelopment agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The phrase 'conspicuous in its disregard for the noise and air pollution impact' does not appear anywhere in the provided page 105 text."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The cited text discusses the Redevelopment Authority's activities (landfill, site improvements) but does not contain a narrator sentence attributing an 'opposed' stance to the Redevelopment Authority of Philadelphia."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The cited text describes the Redevelopment Authority as an actor in the project, not as an opponent. The quote, if real, would suggest criticism OF the Authority, not a stance BY the Authority."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official agency name is used correctly."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text does reference the Redevelopment Authority conducting site improvements and landfill in Eastwick, consistent with a local redevelopment agency role."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote does not appear verbatim in the cited page, and the stance is misattributed. The quote appears to be a criticism directed AT the Redevelopment Authority (likely by a community commenter or reviewer), not a stance held BY the Authority. The entity and stance label need to be corrected — the speaker of that quote is the critic, and the Redevelopment Authority would be the subject of criticism, not the holder of an 'opposed' stance. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 54,
+      "entity": "Regena Eichinger",
+      "kind": "individual",
+      "role": "President, Eastwick Project Area Committee",
+      "stance": "conditional",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "We hope these remarks are useful in the completion of the Environmental Impact Statement for the Eastwick Project. We suggest, again, that the comments are offered for the record with the intention of encouraging timely resolution of the potential environmental problems of the Eastwick Project so that progress may continue.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "108"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "108"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "We hope these remarks are useful in the completion of the Environmental Impact Statement for the Eastwick Project. We suggest, again, that the comments are offered for the record with the intention of encouraging timely resolution of the potential environmental problems of the Eastwick Project so that progress may continue.",
+          "quote_verified": false,
+          "stance_basis": "Supports project progress contingent on resolution of environmental problems identified in comments",
+          "entity_as_written": "Regena Eichinger",
+          "role_as_written": "President, Eastwick Project Area Committee"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The quote appears on page 108 with minor formatting differences ('timel' vs 'timely' appears to be a scan artifact), but is otherwise verbatim."
+          },
+          {
+            "check": "Attribution links entity to stance (direct_quote)",
+            "result": "yes",
+            "note": "The quote is signed by 'Mis Regena Eichinger, President' confirming she is the speaker."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The quote expresses conditional support — encouraging progress contingent on resolving environmental problems — which aligns with 'conditional'."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Full name used; this appears to be a named organizational representative, not a private individual, so full name is appropriate."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The cited text shows 'President' under her signature; 'Eastwick Project Area Committee' is consistent with the context, though the full org name is not visible in the excerpt shown."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The quote is present verbatim (a 'timel' vs 'timely' discrepancy is a clear OCR artifact). The entity is correctly identified as the letter's signatory and her role as President is confirmed. The conditional stance is well-supported by the language encouraging resolution of environmental problems before progress continues. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 55,
+      "entity": "Towne Gardens Civic Association",
+      "kind": "organization",
+      "role": "Member organization represented by Eastwick Project Area Committee",
+      "stance": "conditional",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "REPRESENTING: Eastwick Community Organization Blue Bell Civic Association Elmwood Park Civic Association Clearview Community Organization Penrose Park Civic Association Conservation Area Towne Gardens Civic Association",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "104"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "104"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "REPRESENTING: Eastwick Community Organization Blue Bell Civic Association Elmwood Park Civic Association Clearview Community Organization Penrose Park Civic Association Conservation Area Towne Gardens Civic Association",
+          "quote_verified": false,
+          "stance_basis": "Listed as represented by Eastwick Project Area Committee, which takes a conditional stance on the project",
+          "entity_as_written": "Towne Gardens Civic Association",
+          "role_as_written": "Member organization represented by Eastwick Project Area Committee"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 104 text does not contain the list 'REPRESENTING: Eastwick Community Organization Blue Bell Civic Association...' anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Towne Gardens Civic Association does not appear anywhere in the cited page text, so no sectional attribution can be established."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Towne Gardens Civic Association appears to be a properly formed organization name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of Eastwick Project Area Committee or Towne Gardens Civic Association."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 104 text does not contain the summary quote or any reference to Towne Gardens Civic Association or the 'REPRESENTING' list. The correct page citation is likely different. The extraction may reference a cover page or header of a submission that was not included in the pulled text, so the page number needs to be corrected to wherever that representative list actually appears. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 56,
+      "entity": "W. R. Eaton",
+      "kind": "official",
+      "role": "General Manager, SEPTA",
+      "stance": "neutral",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "we believe that the report in general accurately states SEPTA's long range policy for surface transportation in Eastwick.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "97"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "97"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "we believe that the report in general accurately states SEPTA's long range policy for surface transportation in Eastwick.",
+          "quote_verified": true,
+          "stance_basis": "Confirms EIS accurately reflects SEPTA policy without objection or endorsement of the project itself",
+          "entity_as_written": "W. R. Eaton",
+          "role_as_written": "General Manager, SEPTA"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The quote 'we believe that the report in general accurately states SEPTA's long range policy for surface transportation in Eastwick.' appears verbatim on page 97."
+          },
+          {
+            "check": "Attribution links entity to stance (direct_quote: entity is speaker)",
+            "result": "yes",
+            "note": "The letter is signed by W. R. Eaton, General Manager, and the quote is from his letter, making him the direct speaker."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The statement expresses neither support nor opposition to the EIS, merely confirming it accurately reflects SEPTA's policy — neutral is appropriate."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "W. R. Eaton is an official (General Manager of SEPTA), not a private individual, so full name usage is appropriate."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The cited text clearly shows 'W. R. Eaton, General Manager' signing the letter on behalf of SEPTA."
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "All checks pass. The quote is verbatim, W. R. Eaton is clearly identified as General Manager of SEPTA and is the direct author/speaker of the letter. The neutral stance label is well-supported by the confirmatory but non-committal language of the quote."
+      }
+    }
+  ]
+}

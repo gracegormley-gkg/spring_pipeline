@@ -1,0 +1,2009 @@
+{
+  "doc_id": "P0491_35556036808186",
+  "work_id": "be007e4b-d662-4e2f-81c0-53f93844929c",
+  "title": "TARP tunnel component, Lower Des Plaines : environmental impact statement.",
+  "estimated_pages": 354,
+  "n_chunks": 8,
+  "n_raw_rows": 38,
+  "n_entries": 28,
+  "verdict_counts": {
+    "PASS": 1,
+    "PASS_WITH_NOTE": 0,
+    "RE_EXTRACT": 13,
+    "HUMAN_REVIEW": 14
+  },
+  "stance_counts": {
+    "conditional": 5,
+    "in_favor": 12,
+    "neutral": 11
+  },
+  "elapsed_sec": 103.3,
+  "usage": {
+    "extract": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 8,
+          "input_tokens": 169775,
+          "output_tokens": 5804,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.5964
+        }
+      ],
+      "total": {
+        "calls": 8,
+        "input_tokens": 169775,
+        "output_tokens": 5804,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.5964
+      }
+    },
+    "critic": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 28,
+          "input_tokens": 37602,
+          "output_tokens": 12227,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.2962
+        }
+      ],
+      "total": {
+        "calls": 28,
+        "input_tokens": 37602,
+        "output_tokens": 12227,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.2962
+      }
+    },
+    "total": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 36,
+          "input_tokens": 207377,
+          "output_tokens": 18031,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.8926
+        }
+      ],
+      "total": {
+        "calls": 36,
+        "input_tokens": 207377,
+        "output_tokens": 18031,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.8926
+      }
+    }
+  },
+  "schema": {
+    "stance_vocabulary": [
+      "in_favor",
+      "opposed",
+      "conditional",
+      "neutral"
+    ],
+    "kind_vocabulary": [
+      "individual",
+      "official",
+      "organization",
+      "agency",
+      "tribe",
+      "government",
+      "other"
+    ],
+    "verdicts": [
+      "PASS",
+      "PASS_WITH_NOTE",
+      "RE_EXTRACT",
+      "HUMAN_REVIEW"
+    ],
+    "page_numbers": "ESTIMATED from char offsets at 2500 chars/page.",
+    "merge_rule": "One row per (entity, stance) — stance changes produce separate rows.",
+    "cost_note": "USD costs are ESTIMATES from settings.PRICES_USD_PER_M; verify against AWS Bedrock invoice."
+  },
+  "entries": [
+    {
+      "sequence": 1,
+      "entity": "EPA",
+      "kind": "agency",
+      "role": "Administering agency",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Maintenance costs can either be covered through an ad valorem property tax, or through a user charge system based on water consumption. EPA favors the latter approach and has awarded the MSDGC two grants to develop such a user charge system.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "15"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "15"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Maintenance costs can either be covered through an ad valorem property tax, or through a user charge system based on water consumption. EPA favors the latter approach and has awarded the MSDGC two grants to develop such a user charge system.",
+          "quote_verified": true,
+          "stance_basis": "EPA favors user charge system over ad valorem tax for O&M financing",
+          "entity_as_written": "EPA",
+          "role_as_written": "Administering agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 15 text contains no mention of EPA, ad valorem property tax, user charge system, water consumption, or MSDGC grants. The quote is entirely absent from the provided text."
+          },
+          {
+            "check": "Attribution links EPA to the stated stance",
+            "result": "no",
+            "note": "EPA is not mentioned anywhere in the cited page text; no paraphrased attribution can be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the relevant text is not present in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "EPA is a standard, well-formed agency abbreviation."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention EPA or its role as an administering agency in this context."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and all associated content about EPA, user charge systems, and MSDGC grants are completely absent from the cited page 15 text. The page text discusses the FCCC's plan selection process and TARP development. The correct page reference needs to be identified and the extraction re-done with the proper citation."
+      }
+    },
+    {
+      "sequence": 2,
+      "entity": "Flood Control Coordinating Committee (FCCC)",
+      "kind": "organization",
+      "role": "intergovernmental coordinating committee evaluating alternative plans",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "direct_quote",
+        "paraphrased"
+      ],
+      "summary_quote": "In November 1970, the Flood Control Coordinating Committee (FCCC) was reactivated to review and evaluate the plans developed and formulate additional ones to address both the flooding and water pollution problems.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "18",
+        "140",
+        "340"
+      ],
+      "n_mentions": 3,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "18"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "These alternatives are less costly and more environmentally acceptable to the community than any of the other plans presented. Detail studies along the lines of these alternatives should proceed to develop the final plan layout.",
+          "quote_verified": false,
+          "stance_basis": "FCCC unanimously recommended TARP-type underflow plans as best alternative",
+          "entity_as_written": "Flood Control Coordinating Committee (FCCC)",
+          "role_as_written": "Intergovernmental committee evaluating flood/pollution control plans"
+        },
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "140"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "In November 1970, the Flood Control Coordinating Committee (FCCC) was reactivated to review and evaluate the plans developed and formulate additional ones to address both the flooding and water pollution problems.",
+          "quote_verified": true,
+          "stance_basis": "Evaluated and recommended TARP through systematic elimination of alternatives",
+          "entity_as_written": "Flood Control Coordinating Committee",
+          "role_as_written": "intergovernmental technical committee"
+        },
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "340"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "These alternatives are less costly and more environmentally acceptable to the community than any of the other plans presented. Detail studies along the lines of these alternatives should proceed to develop the final plan layout.",
+          "quote_verified": false,
+          "stance_basis": "FCCC unanimously concluded Chicago Underflow plans were best and recommended TARP development",
+          "entity_as_written": "Flood Control Coordinating Committee (FCCC)",
+          "role_as_written": "intergovernmental coordinating committee evaluating alternative plans"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The exact quote about FCCC being 'reactivated in November 1970 to review and evaluate the plans...' does not appear in the pulled text from pages 18, 140, or 340. The cited pages discuss TARP tunnel systems, costs, and FCCC conclusions but not the reactivation sentence."
+          },
+          {
+            "check": "Attribution links FCCC to stated stance",
+            "result": "yes",
+            "note": "The cited text does mention FCCC concluding that TARP had the highest ranking and was selected as the most suitable plan, supporting an in_favor stance toward TARP."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The FCCC selected TARP as the most suitable plan, which is consistent with an in_favor stance."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Flood Control Coordinating Committee (FCCC) is an official organizational name and is properly formatted."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The cited text confirms FCCC analyzed and ranked alternative plans, supporting the role of 'intergovernmental coordinating committee evaluating alternative plans.'"
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "medium",
+        "notes": "The summary quote about FCCC being 'reactivated in November 1970' is not present verbatim in any of the cited pages provided. While the stance (in_favor) and entity are well-supported by the text that does appear (FCCC selected TARP as the highest-ranked plan), the specific summary quote needs to be re-verified against the correct page. The extractor should locate the exact page where the reactivation sentence appears and update the evidence_pages accordingly."
+      }
+    },
+    {
+      "sequence": 3,
+      "entity": "George R. Alexander, Jr.",
+      "kind": "official",
+      "role": "Regional Administrator, U.S. EPA Region V",
+      "stance": "in_favor",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "APPROVED BY: GEORGE R. ALEXANDER, JR. REGIONAL ADMINISTRATOR",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "APPROVED BY: GEORGE R. ALEXANDER, JR. REGIONAL ADMINISTRATOR",
+          "quote_verified": true,
+          "stance_basis": "Approved and issued the Draft EIS supporting the TARP tunnel project",
+          "entity_as_written": "George R. Alexander, Jr.",
+          "role_as_written": "Regional Administrator, U.S. EPA Region V"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact text 'APPROVED BY: GEORGE R. ALEXANDER, JR. REGIONAL ADMINISTRATOR' appears on page 1 of the cited text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "yes",
+            "note": "For sectional attribution, the 'APPROVED BY' heading establishes Alexander as the approving official, linking him to the document's approval/endorsement."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "Signing off as the approving official of the EIS indicates support/approval (in_favor) of the document and its contents."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "George R. Alexander, Jr. is an official/agency representative, not a private individual, so full name is appropriate."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The cited text explicitly identifies him as 'REGIONAL ADMINISTRATOR' and the document is from 'U.S. ENVIRONMENTAL PROTECTION AGENCY REGION V', confirming the role."
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "All checks pass. The quote is verbatim, the entity is correctly identified as the Regional Administrator of EPA Region V who approved the EIS, and the 'in_favor' stance is appropriate given his role as the approving official of the document."
+      }
+    },
+    {
+      "sequence": 4,
+      "entity": "Metropolitan Sanitary District of Greater Chicago (MSDGC)",
+      "kind": "organization",
+      "role": "Construction grant applicant and project proponent",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The Metropolitan Sanitary District of Greater Chicago (MSDGC) is the construction grant applicant for the component of Tunnel and Reservoir Plan (TARP) addressed by this EIS.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "4"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "4"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The Metropolitan Sanitary District of Greater Chicago (MSDGC) is the construction grant applicant for the component of Tunnel and Reservoir Plan (TARP) addressed by this EIS.",
+          "quote_verified": false,
+          "stance_basis": "MSDGC initiated and is the applicant for the TARP tunnel project",
+          "entity_as_written": "Metropolitan Sanitary District of Greater Chicago (MSDGC)",
+          "role_as_written": "Construction grant applicant and project proponent"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact text 'The Metropolitan Sanitary District of Greater Chicago (MSDGC) is the construction grant applicant for the component of Tunnel and Reservoir Plan (TARP) addressed by this EIS.' appears verbatim in the cited page text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "yes",
+            "note": "The cited text names MSDGC as the construction grant applicant, directly linking the organization to its role as project proponent in favor of the TARP construction."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "MSDGC is the applicant seeking construction grants for TARP, making 'in_favor' the correct stance label."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official organization name 'Metropolitan Sanitary District of Greater Chicago (MSDGC)' matches the text exactly."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text confirms MSDGC is the construction grant applicant and describes its responsibilities for providing drainage and constructing facilities, supporting 'project proponent'."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "All checks pass. The summary quote is verbatim, the entity is correctly named, the role is well-supported, and the in_favor stance is appropriate for a construction grant applicant. No issues identified. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 5,
+      "entity": "U.S. Environmental Protection Agency",
+      "kind": "agency",
+      "role": "Administering agency and EIS preparer",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The EPA has prepared this EIS because it expects the environmental effects of the tunnel system to be significant.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "4"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "4"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The EPA has prepared this EIS because it expects the environmental effects of the tunnel system to be significant.",
+          "quote_verified": false,
+          "stance_basis": "EPA prepared the EIS and is considering granting funds to construct the tunnels",
+          "entity_as_written": "U.S. Environmental Protection Agency",
+          "role_as_written": "Administering agency and EIS preparer"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The exact phrase 'The EPA has prepared this EIS because it expects the environmental effects of the tunnel system to be significant' does not appear verbatim in the cited page text."
+          },
+          {
+            "check": "Attribution links EPA to stated stance (paraphrased)",
+            "result": "no",
+            "note": "The cited text discusses EPA's role in considering construction grants and the scope of the EIS, but does not explicitly state EPA prepared the EIS because it expects effects to be significant, nor does it clearly express EPA's favor toward the project."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The cited text describes EPA's administrative/regulatory role (grant consideration, EIS preparation) rather than expressing a stance 'in_favor' of the tunnel system. The role is procedural, not advocacy."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "U.S. Environmental Protection Agency is a properly formed official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text confirms EPA is considering whether to grant funds and is involved in the EIS process, supporting the role as administering agency and EIS preparer."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote is not verbatim in the cited pages and appears to be a fabricated paraphrase. The stance 'in_favor' is not supported — EPA's role here is procedural/regulatory (grant review, EIS preparation), not advocacy for the project. The entity and role are correctly identified, but the stance label and quote need correction; EPA's stance would be better characterized as 'neutral' or the row should reflect its administrative function rather than project support. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 6,
+      "entity": "Chicago District Corps of Engineers",
+      "kind": "agency",
+      "role": "Corps of Engineers district office",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The Chicago District Corps of Engineers has prepared a report entitled Urban Water Damage Study, The Chicagoland Underflow Plan, dated December 1975.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "133"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "133"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The Chicago District Corps of Engineers has prepared a report entitled Urban Water Damage Study, The Chicagoland Underflow Plan, dated December 1975.",
+          "quote_verified": true,
+          "stance_basis": "Prepared study on Underflow Plan but final recommendations pending higher review",
+          "entity_as_written": "Chicago District Corps of Engineers",
+          "role_as_written": "Corps of Engineers district office"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 133 text contains content about tunnel dewatering, sludge disposal, and land reclamation — no mention of 'Chicago District Corps of Engineers' or 'Urban Water Damage Study, The Chicagoland Underflow Plan, dated December 1975'."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The entity 'Chicago District Corps of Engineers' does not appear anywhere in the provided page 133 text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since the entity and quote are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Chicago District Corps of Engineers is a recognizable official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention the Corps of Engineers or any district office role."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and entity are entirely absent from the provided page 133 text, which covers tunnel dewatering and sludge disposal topics. The extraction appears to reference a different page. The correct evidence page should be identified and re-extracted."
+      }
+    },
+    {
+      "sequence": 7,
+      "entity": "city of Chicago, Bureau of Engineering",
+      "kind": "government",
+      "role": "municipal engineering department, plan author",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The Composite plan, outlined in the city of Chicago, Bureau of Engineering Report of September 1968, included a series of tunnels in Niagaran and Galena-Platteville formation to transfer overflows to the West-Southwest, Calumet, North-Side, or O'Hare Sewage Treatment Plants.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "145"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "145"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The Composite plan, outlined in the city of Chicago, Bureau of Engineering Report of September 1968, included a series of tunnels in Niagaran and Galena-Platteville formation to transfer overflows to the West-Southwest, Calumet, North-Side, or O'Hare Sewage Treatment Plants.",
+          "quote_verified": false,
+          "stance_basis": "Authored multiple alternative underflow/tunnel plans contributing to TARP development",
+          "entity_as_written": "city of Chicago, Bureau of Engineering",
+          "role_as_written": "municipal engineering department, plan author"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 145 text discusses Des Plaines tunnel segments, rock formations, and dewatering rates. The summary quote about the 'Composite plan' and 'city of Chicago, Bureau of Engineering Report of September 1968' does not appear anywhere in the provided page text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The city of Chicago, Bureau of Engineering is not mentioned anywhere in the cited page text. No paraphrase linking this entity to any stance is present."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance because the entity and quote are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "The entity name 'city of Chicago, Bureau of Engineering' is a plausible official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention the Bureau of Engineering or any plan authorship role for this entity."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote and the entity (city of Chicago, Bureau of Engineering) are entirely absent from the cited page 145 text, which covers Des Plaines tunnel segment descriptions and dewatering rates. The evidence page citation appears to be incorrect. The extractor should locate the correct page(s) where the September 1968 Bureau of Engineering Composite plan is actually discussed. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 8,
+      "entity": "Cook County Forest Preserve District",
+      "kind": "organization",
+      "role": "landowner and stakeholder along tunnel route",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The Cook County Forest Preserve District has requested that all rock taken from under Forest Preserve Lands be placed in stockpile areas on Forest Preserve Property.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "97",
+        "VI-24"
+      ],
+      "n_mentions": 2,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "97"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The Cook County Forest Preserve District has requested that all rock taken from under Forest Preserve lands be placed in stockpile areas on Forest Preserve property.",
+          "quote_verified": false,
+          "stance_basis": "Requests specific rock disposal conditions on Forest Preserve property",
+          "entity_as_written": "Cook County Forest Preserve District",
+          "role_as_written": "landowner and stakeholder along tunnel route"
+        },
+        {
+          "chunk_index": 3,
+          "evidence_pages": [
+            "VI-24"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The Cook County Forest Preserve District has requested that all rock taken from under Forest Preserve Lands be placed in stockpile areas on Forest Preserve Property.",
+          "quote_verified": true,
+          "stance_basis": "Requests specific spoil disposal conditions on Forest Preserve lands",
+          "entity_as_written": "Cook County Forest Preserve District",
+          "role_as_written": "landowner/commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The pulled text from pages 97/VI-24 does not contain the sentence 'The Cook County Forest Preserve District has requested that all rock taken from under Forest Preserve Lands be placed in stockpile areas on Forest Preserve Property.' The text cuts off before reaching that content."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "n/a",
+            "note": "Cannot confirm attribution since the quote is not present in the provided page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance without the quote being present in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Cook County Forest Preserve District is an official organization name and is mentioned in the cited text."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The cited text clearly states the tunnel routes traverse lands owned by the Cook County Forest Preserve District for nearly the full length of the project, confirming the landowner/stakeholder role."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "The summary quote about the Forest Preserve District requesting rock stockpiling on its property is not present in the provided page text, which appears to be cut off mid-section. The quote may exist on the cited pages but was not captured in the pull. The entity, role, and conditional stance are plausible given context, but the verbatim quote cannot be confirmed. A human should verify the full text of pages 97/VI-24."
+      }
+    },
+    {
+      "sequence": 9,
+      "entity": "Corps of Engineers",
+      "kind": "agency",
+      "role": "Federal agency responsible for waterway dredging",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The Corps of Engineers is responsible for dredging the waterways to maintain adequate water depth for navigation, and control of suspended solids by the Des Plaines tunnel system would slow down the sedimentation rate and help reduce dredging frequency.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "133",
+        "234"
+      ],
+      "n_mentions": 2,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "133"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The Corps of Engineers is now in the process of determining the Federal interest in providing funding for the total Underflow Plan.",
+          "quote_verified": true,
+          "stance_basis": "Studying federal interest in reservoir funding but has not committed or opposed",
+          "entity_as_written": "Corps of Engineers",
+          "role_as_written": "federal flood control authority"
+        },
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "234"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The Corps of Engineers is responsible for dredging the waterways to maintain adequate water depth for navigation, and control of suspended solids by the Des Plaines tunnel system would slow down the sedimentation rate and help reduce dredging frequency.",
+          "quote_verified": true,
+          "stance_basis": "Referenced for their dredging role; no explicit stance on TARP attributed",
+          "entity_as_written": "Corps of Engineers",
+          "role_as_written": "Federal agency responsible for waterway dredging"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted text about Corps of Engineers dredging waterways and Des Plaines tunnel system reducing sedimentation does not appear anywhere in the cited page text provided."
+          },
+          {
+            "check": "Attribution links Corps of Engineers to neutral stance",
+            "result": "no",
+            "note": "The Corps of Engineers is not mentioned anywhere in the cited pages; no paraphrased sentence names the entity or states their position."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the entity and quote are absent from the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Corps of Engineers' is a recognizable official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited pages discuss sludge disposal, tunnel drainage, and water quality tables — no mention of Corps of Engineers or waterway dredging for navigation."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and the Corps of Engineers entity do not appear anywhere in the provided cited page text (pages 133 and 234). The cited pages cover sludge disposal alternatives, tunnel drainage specifications, and water quality data tables, with no reference to dredging or the Corps of Engineers. The extraction likely references a different page or section of the EIS that was not included in the pulled text."
+      }
+    },
+    {
+      "sequence": 10,
+      "entity": "EPA",
+      "kind": "agency",
+      "role": "federal environmental regulator / EIS author",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "It is EPA's opinion that these alternatives have been thoroughly weighed and evaluated in past studies and that the proposed action (TARP) is clearly the most effective and least costly.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "139",
+        "337"
+      ],
+      "n_mentions": 2,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "139"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "It is EPA's opinion that these alternatives have been thoroughly weighed and evaluated in past studies and that the proposed action (TARP) is clearly the most effective and least costly.",
+          "quote_verified": true,
+          "stance_basis": "Explicitly endorses TARP as the most effective and least costly alternative",
+          "entity_as_written": "EPA",
+          "role_as_written": "federal environmental regulator / EIS author"
+        },
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "337"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "EPA favors the latter approach and has awarded the MSDGC two grants to develop such a user charge system.",
+          "quote_verified": true,
+          "stance_basis": "EPA favors user charge system over ad valorem tax and has funded its development",
+          "entity_as_written": "EPA",
+          "role_as_written": "federal environmental regulatory agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The exact quote 'It is EPA's opinion that these alternatives have been thoroughly weighed and evaluated in past studies and that the proposed action (TARP) is clearly the most effective and least costly.' does not appear in the provided text from pages 139 or 337."
+          },
+          {
+            "check": "Attribution links EPA to stated stance (paraphrased)",
+            "result": "no",
+            "note": "The cited pages mention EPA only in the context of favoring a user charge system for maintenance costs, not in relation to evaluating alternatives or endorsing TARP as most effective and least costly."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot confirm stance label since the quote and its context are not found in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "EPA is the correct official abbreviation for the U.S. Environmental Protection Agency."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not identify EPA as the EIS author; the EIS appears to be authored by MSDGC or a related entity. EPA is mentioned only as a grantor/regulator."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "medium",
+        "notes": "The summary quote does not appear verbatim in the cited pages, and the cited pages do not support the attribution of EPA endorsing TARP as the most effective and least costly alternative. The quote may exist elsewhere in the document but is not on pages 139 or 337 as provided. The role description of 'EIS author' is also unsupported by the cited text. The correct page citation should be identified and verified."
+      }
+    },
+    {
+      "sequence": 11,
+      "entity": "EPA headquarters",
+      "kind": "agency",
+      "role": "federal environmental regulator",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "EPA headquarters has requested an increase of $42 billion in the future Federal Pollution Control funding authorization under PL 92-500. EPA recommends an annual appropriation of $7 billion for FY 1977-1982.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "127",
+        "129"
+      ],
+      "n_mentions": 2,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "127"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "EPA headquarters has requested an increase of $42 billion in the future Federal Pollution Control funding authorization under PL 92-500. EPA recommends an annual appropriation of $7 billion for FY 1977-1982.",
+          "quote_verified": false,
+          "stance_basis": "Recommends increased federal funding to support pollution control programs including TARP",
+          "entity_as_written": "EPA headquarters",
+          "role_as_written": "federal environmental regulator"
+        },
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "129"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "EPA headquarters has contended, however, that 'a properly formulated user charge system based on ad valorem taxes is a viable and appropriate method of funding operation and maintenance costs.'",
+          "quote_verified": false,
+          "stance_basis": "Endorses ad valorem tax-based user charge system for MSDGC operations",
+          "entity_as_written": "EPA headquarters",
+          "role_as_written": "federal environmental regulator"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited pages (127, 129) contain no text about EPA headquarters requesting $42 billion in Federal Pollution Control funding or recommending $7 billion annual appropriation for FY 1977-1982."
+          },
+          {
+            "check": "Attribution links EPA headquarters to stated stance",
+            "result": "no",
+            "note": "EPA headquarters is not mentioned anywhere in the provided page text; no paraphrased attribution exists in the cited pages."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the underlying evidence is absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'EPA headquarters' is a recognizable agency designation, though 'U.S. Environmental Protection Agency' would be more official."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited pages make no mention of EPA headquarters or its role as federal environmental regulator in this context."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote and all supporting evidence are entirely absent from the cited pages (127, 129), which discuss construction/operation environmental impacts and alternative plan comparisons. The extraction appears to reference content from different pages entirely. The correct source pages for the EPA funding recommendation should be identified and re-cited. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 12,
+      "entity": "Illinois EPA",
+      "kind": "agency",
+      "role": "state environmental agency",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The Illinois EPA, however, has committed funds for the instream aeration phase of the project.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "130"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "130"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The Illinois EPA, however, has committed funds for the instream aeration phase of the project.",
+          "quote_verified": false,
+          "stance_basis": "Committed state funds to support instream aeration component of the project",
+          "entity_as_written": "Illinois EPA",
+          "role_as_written": "state environmental agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quote 'The Illinois EPA, however, has committed funds for the instream aeration phase of the project.' does not appear anywhere in the provided page 130 text."
+          },
+          {
+            "check": "Attribution links Illinois EPA to stated stance",
+            "result": "no",
+            "note": "Illinois EPA is not mentioned anywhere in the cited page text; no paraphrased sentence names them or their position."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Illinois EPA is an official agency name and is well-formed."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention Illinois EPA or confirm its role as a state environmental agency in this context."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 130 text is entirely about the FCCC advisory committee recommendations and TARP plan selection; it contains no mention of Illinois EPA or the instream aeration phase. The quote and attribution appear to belong to a different page. The extractor should locate the correct page where Illinois EPA's commitment of funds for instream aeration is actually discussed. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 13,
+      "entity": "MSDGC",
+      "kind": "organization",
+      "role": "Metropolitan Sanitary District of Greater Chicago, project proponent",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "This amount, however, represents a very modest proportion of the additional $200-400 million bonding authorization for which MSDGC is currently formulating plans to ask the State of Illinois.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "140",
+        "VI-20",
+        "222",
+        "349"
+      ],
+      "n_mentions": 4,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "140"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The overall project objectives were established by the MSDGC to comply with Illinois Pollution Control Board (IPCB) standards.",
+          "quote_verified": false,
+          "stance_basis": "Established project objectives and is actively pursuing TARP implementation",
+          "entity_as_written": "MSDGC",
+          "role_as_written": "Metropolitan Sanitary District of Greater Chicago, project proponent"
+        },
+        {
+          "chunk_index": 3,
+          "evidence_pages": [
+            "VI-20"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "It is the MSDGC's stated policy that construction contractors shall be responsible for the disposal of material excavated from each Phase I tunnel segment.",
+          "quote_verified": false,
+          "stance_basis": "Project proponent actively directing construction and disposal policy for TARP tunnel system",
+          "entity_as_written": "MSDGC",
+          "role_as_written": "project proponent/operator"
+        },
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "222"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The MSDGC estimates that sludge generation from the Mainstream and Des Plaines systems will increase the sludge load of the West-Southwest plant by 70 to 100 tons per day (tpd), or by about 15 percent over the current sludge-handling rate.",
+          "quote_verified": false,
+          "stance_basis": "Project proponent providing technical planning data in support of TARP implementation",
+          "entity_as_written": "MSDGC",
+          "role_as_written": "Metropolitan Sanitary District of Greater Chicago, project proponent"
+        },
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "349"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "This amount, however, represents a very modest proportion of the additional $200-400 million bonding authorization for which MSDGC is currently formulating plans to ask the State of Illinois.",
+          "quote_verified": true,
+          "stance_basis": "MSDGC is actively pursuing additional bonding authority to finance TARP implementation",
+          "entity_as_written": "MSDGC",
+          "role_as_written": "Metropolitan Sanitary District of Greater Chicago, project proponent"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quote about '$200-400 million bonding authorization' and MSDGC formulating plans to ask the State of Illinois does not appear anywhere in the provided cited page text."
+          },
+          {
+            "check": "Attribution links MSDGC to in_favor stance via paraphrase",
+            "result": "no",
+            "note": "The cited pages mention MSDGC in contexts related to spoil disposal and construction, but no paraphrased statement linking MSDGC to a favorable stance on the project via the quoted financial language is present."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance match since the quote is not found in the provided text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "MSDGC is the standard abbreviation for the Metropolitan Sanitary District of Greater Chicago, an official organization name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The cited text does reference MSDGC as the entity responsible for TARP planning and construction, consistent with a project proponent role."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote about '$200-400 million bonding authorization' is not present in any of the provided cited page text, making it impossible to verify verbatim presence or proper attribution. The quote may exist elsewhere in the document but the cited pages (140, VI-20, 222, 349) as provided do not contain it. The extraction should be re-done with correct page references where this specific financial statement actually appears."
+      }
+    },
+    {
+      "sequence": 14,
+      "entity": "Region V EPA",
+      "kind": "agency",
+      "role": "EPA regional office",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Region V EPA has awarded two grants to the MSDGC to develop a user charge system to comply with the requirements of PL 92-500.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "129"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "129"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Region V EPA has awarded two grants to the MSDGC to develop a user charge system to comply with the requirements of PL 92-500.",
+          "quote_verified": true,
+          "stance_basis": "Awarded grants supporting MSDGC compliance with federal requirements",
+          "entity_as_written": "Region V EPA",
+          "role_as_written": "EPA regional office"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 129 text does not contain the phrase 'Region V EPA has awarded two grants to the MSDGC to develop a user charge system to comply with the requirements of PL 92-500' or any portion of it."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Region V EPA is not mentioned anywhere in the provided page 129 text; no paraphrased attribution can be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot assess stance match since neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Region V EPA' is a recognizable official agency name for the EPA's regional office."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of Region V EPA or its role as an EPA regional office."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and entity (Region V EPA) do not appear anywhere in the provided page 129 text, which discusses environmental impacts, flood control alternatives, and recreational resources. The evidence page citation appears to be incorrect. The extractor should locate the correct page(s) where the grant award to MSDGC and Region V EPA are actually discussed."
+      }
+    },
+    {
+      "sequence": 15,
+      "entity": "Staff members of the Senate Public Works Subcommittee",
+      "kind": "other",
+      "role": "congressional staff",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Staff members of the Senate Public Works Subcommittee have indicated that the Office of Management and Budget (OMB) recommendation to the President will probably entail a multiyear appropriation of $5 billion annually.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "127"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "127"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Staff members of the Senate Public Works Subcommittee have indicated that the Office of Management and Budget (OMB) recommendation to the President will probably entail a multiyear appropriation of $5 billion annually.",
+          "quote_verified": true,
+          "stance_basis": "Provides information on anticipated federal funding levels without taking a position on TARP",
+          "entity_as_written": "Staff members of the Senate Public Works Subcommittee",
+          "role_as_written": "congressional staff"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 127 text contains only construction/environmental impact discussion; the quote about Senate Public Works Subcommittee staff and OMB's $5 billion recommendation does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The entity (Senate Public Works Subcommittee staff) does not appear anywhere in the cited page text, so no attribution can be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the relevant text is absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "The entity name is a recognizable official congressional staff designation."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of congressional staff or any related role."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page 127 text is entirely about construction environmental impacts (traffic, noise, rock/spoil disposal, navigation disruption) and contains no reference to the Senate Public Works Subcommittee, OMB, or any $5 billion appropriation figure. The summary quote and entity attribution appear to belong to a different page entirely. The correct page reference needs to be identified and re-extracted."
+      }
+    },
+    {
+      "sequence": 16,
+      "entity": "State of Illinois",
+      "kind": "government",
+      "role": "state government, funding partner",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "By approval of the bond issue referendum of 1970, the State of Illinois was authorized to issue bonds up to a maximum of $750 million.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "123",
+        "337"
+      ],
+      "n_mentions": 2,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "123"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "By approval of the bond issue referendum of 1970, the State of Illinois was authorized to issue bonds up to a maximum of $750 million.",
+          "quote_verified": true,
+          "stance_basis": "Authorized bond funding targeted for TARP implementation",
+          "entity_as_written": "State of Illinois",
+          "role_as_written": "state government"
+        },
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "337"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "In view of the sound fiscal posture of the MSDGC, the high funding priority assigned TARP by the State, and the very conservative estimates of future Federal appropriations, it can be reasonably assumed that future financing requirements can be satisfied.",
+          "quote_verified": false,
+          "stance_basis": "State has assigned high funding priority to TARP",
+          "entity_as_written": "State of Illinois",
+          "role_as_written": "state government, funding partner"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quote about the 1970 bond issue referendum and $750 million authorization does not appear in the pulled text from pages 123 or 337."
+          },
+          {
+            "check": "Attribution links State of Illinois to in_favor stance",
+            "result": "no",
+            "note": "The cited pages mention 'the State' in passing as a funding source, but do not contain the specific bond referendum language or clearly attribute an in_favor stance to the State of Illinois."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance label without the verbatim quote being present in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'State of Illinois' is a properly formed official government entity name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The cited text does reference 'the State' as a funding partner for TARP, partially supporting the role description."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote about the 1970 bond issue referendum authorizing up to $750 million in bonds is not present in the pulled text from the cited pages (123 and 337). The cited pages discuss financial resources and funding in general terms but do not contain the specific verbatim language attributed. The extraction should be re-done with correct page citations where this bond referendum language actually appears."
+      }
+    },
+    {
+      "sequence": 17,
+      "entity": "Federal Aviation Agency",
+      "kind": "agency",
+      "role": "federal regulatory agency",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "For reasons of air traffic safety, the Federal Aviation Agency recently indicated that the maximum elevation of stockpiles should not be permitted to extend more than approximately 200 feet above street grade.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "VI-21"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 3,
+          "evidence_pages": [
+            "VI-21"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "For reasons of air traffic safety, the Federal Aviation Agency recently indicated that the maximum elevation of stockpiles should not be permitted to extend more than approximately 200 feet above street grade.",
+          "quote_verified": false,
+          "stance_basis": "Imposed height restriction on spoil stockpiles near McCook Quarry for air traffic safety",
+          "entity_as_written": "Federal Aviation Agency",
+          "role_as_written": "federal regulatory agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "No cited-page text was provided, so verbatim presence cannot be confirmed."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "n/a",
+            "note": "Cannot verify without cited-page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify without cited-page text; however, 'conditional' is plausible given the quote's limiting language ('should not be permitted to extend more than approximately 200 feet')."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Federal Aviation Agency' is the historically correct name for the pre-1967 agency (later FAA under DOT); acceptable as official name for the period."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "n/a",
+            "note": "Cannot verify without cited-page text, but 'federal regulatory agency' is consistent with the FAA's known role."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "No cited-page text was supplied, making it impossible to confirm the verbatim quote, attribution, or stance label. The extracted content is internally plausible (conditional stance, correct agency name, reasonable role), but verification requires access to page VI-21 of the source document. A human reviewer should pull the actual page text to confirm or reject this row."
+      }
+    },
+    {
+      "sequence": 18,
+      "entity": "HEC",
+      "kind": "organization",
+      "role": "engineering consultant (Harza Engineering Company)",
+      "stance": "neutral",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "... the water pressure test results combined with the finite element computer program used give an accurate estimate of relative tunnel inflow and a reasonable, but generally low estimate of actual inflows.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "VI-6"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 3,
+          "evidence_pages": [
+            "VI-6"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "... the water pressure test results combined with the finite element computer program used give an accurate estimate of relative tunnel inflow and a reasonable, but generally low estimate of actual inflows.",
+          "quote_verified": true,
+          "stance_basis": "Technical assessment of inflow estimation methodology without taking a project stance",
+          "entity_as_written": "HEC",
+          "role_as_written": "engineering consultant (Harza Engineering Company)"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "No cited-page text was provided, so the quote cannot be verified as verbatim."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Without the cited-page text, it is impossible to confirm that HEC (Harza Engineering Company) is the speaker or author of this quote."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot assess stance match without the source text; 'neutral' is plausible for a technical finding statement but unverifiable."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "HEC is an acronym for Harza Engineering Company, an organization; the parenthetical clarification is acceptable."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "n/a",
+            "note": "No cited-page text available to confirm the role of 'engineering consultant.'"
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The cited page text (VI-6) was not provided, making it impossible to verify the verbatim quote, the speaker attribution, or the role description. The stance label 'neutral' is plausible for a technical assessment statement, but all key checks require human verification against the actual document page."
+      }
+    },
+    {
+      "sequence": 19,
+      "entity": "Northeastern Illinois Planning Commission (NIPC)",
+      "kind": "agency",
+      "role": "designated 208 planning agency",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "This is not expected to occur, however, since the construction shafts for each tunnel segment have been identified clearly on reports available to the Northeastern Illinois Planning Commission (NIPC), the designated 208 planning agency.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "VI-8"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 3,
+          "evidence_pages": [
+            "VI-8"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "This is not expected to occur, however, since the construction shafts for each tunnel segment have been identified clearly on reports available to the Northeastern Illinois Planning Commission (NIPC), the designated 208 planning agency.",
+          "quote_verified": false,
+          "stance_basis": "Identified as having access to construction shaft locations to avoid monitoring interference; no opposition or support stated",
+          "entity_as_written": "Northeastern Illinois Planning Commission (NIPC)",
+          "role_as_written": "designated 208 planning agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "No cited-page text was provided, so verbatim presence cannot be confirmed."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "n/a",
+            "note": "Without the cited-page text, the paraphrased attribution cannot be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot assess stance match without the source text; however, the quote describes NIPC as a recipient of information rather than expressing a position, which could support 'neutral' but is unverifiable."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official agency name with acronym is properly formatted."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "n/a",
+            "note": "Cannot verify role description without the cited-page text, though the quote itself references NIPC as 'the designated 208 planning agency.'"
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "No cited-page text was provided, making it impossible to verify the verbatim quote, attribution, stance label, or role description. The extracted quote does reference NIPC as a '208 planning agency,' which aligns with the role field, and 'neutral' is plausible given the descriptive nature of the sentence, but all checks require human verification against the actual page VI-8 text."
+      }
+    },
+    {
+      "sequence": 20,
+      "entity": "Illinois EPA",
+      "kind": "agency",
+      "role": "State environmental agency",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "According to recent estimates by the Illinois EPA, some 31 non-MSDGC projects are in jeopardy of not being ready by September 30, 1977 for Step 3 FWPCA funding.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "193"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "193"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "According to recent estimates by the Illinois EPA, some 31 non-MSDGC projects are in jeopardy of not being ready by September 30, 1977 for Step 3 FWPCA funding.",
+          "quote_verified": false,
+          "stance_basis": "Provides technical assessment of funding readiness without taking a position on TARP itself",
+          "entity_as_written": "Illinois EPA",
+          "role_as_written": "State environmental agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact phrase 'According to recent estimates by the Illinois EPA, some 31 non-MSDGC projects are in jeopardy of not being ready by September 30, 1977 for Step 3 FWPCA funding.' appears verbatim on page 193."
+          },
+          {
+            "check": "Attribution links Illinois EPA to stated stance",
+            "result": "yes",
+            "note": "The cited text names Illinois EPA as the source of the estimate about 31 non-MSDGC projects, consistent with paraphrased attribution mode."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "Illinois EPA is providing factual/technical information (estimates) without expressing support or opposition; 'neutral' is appropriate."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Illinois EPA' is the official abbreviated name used in the text and is appropriate for an agency."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "Illinois EPA is referenced in the context of statewide FWPCA fund allocation and project readiness, consistent with its role as a state environmental agency."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote is present verbatim in the cited page. Illinois EPA is clearly named as the source of the estimate, and the neutral stance is appropriate given that the agency is providing technical data rather than expressing a position on the project. All checks pass without issue. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 21,
+      "entity": "Northern Illinois Planning Commission (NIPC)",
+      "kind": "organization",
+      "role": "208 planning agency",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Work being conducted by the Northern Illinois Planning Commission (NIPC) under section 208 of the 1972 Water Pollution Control Act Amendments will provide the basis upon which to judge what additional steps, if any, will be required to maintain and enhance water quality along the Des Plaines River.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "206"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "206"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Work being conducted by the Northern Illinois Planning Commission (NIPC) under section 208 of the 1972 Water Pollution Control Act Amendments will provide the basis upon which to judge what additional steps, if any, will be required to maintain and enhance water quality along the Des Plaines River.",
+          "quote_verified": false,
+          "stance_basis": "Conducting planning work relevant to TARP but no explicit stance on the project attributed",
+          "entity_as_written": "Northern Illinois Planning Commission (NIPC)",
+          "role_as_written": "208 planning agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted text about NIPC and section 208 of the 1972 Water Pollution Control Act Amendments does not appear anywhere in the cited page 206 text provided."
+          },
+          {
+            "check": "Attribution links NIPC to neutral stance via paraphrase",
+            "result": "no",
+            "note": "NIPC is not mentioned anywhere in the cited page text; no paraphrase linking NIPC to any stance is present."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the entity and quote are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Northern Illinois Planning Commission (NIPC) is a properly formed official organization name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of NIPC or its role as a 208 planning agency."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 206 text is entirely about groundwater observation wells, wastewater treatment plant effluent characteristics, and tunnel dewatering — with no mention of NIPC or section 208 planning. The summary quote and attribution are not present in the provided page text. The extraction likely references a different page number; the correct page should be identified and re-extracted. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 22,
+      "entity": "Region V EPA",
+      "kind": "agency",
+      "role": "EPA regional office",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "According to Region V EPA, any funds not obligated within the appropriate deadline (September 30, 1977) would probably be reallocated by EPA headquarters among the other states according to the current allocation formula.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "193"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "193"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "According to Region V EPA, any funds not obligated within the appropriate deadline (September 30, 1977) would probably be reallocated by EPA headquarters among the other states according to the current allocation formula.",
+          "quote_verified": true,
+          "stance_basis": "Provides technical assessment of fund reallocation procedures without taking a position on TARP",
+          "entity_as_written": "Region V EPA",
+          "role_as_written": "EPA regional office"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The exact phrase 'According to Region V EPA, any funds not obligated within the appropriate deadline (September 30, 1977) would probably be reallocated by EPA headquarters among the other states according to the current allocation formula' does not appear verbatim in the cited page text."
+          },
+          {
+            "check": "Attribution links Region V EPA to stated stance",
+            "result": "no",
+            "note": "The cited page text references 'Illinois EPA' and 'FWPCA funds' but does not mention 'Region V EPA' at all. The reallocation discussion is attributed to Illinois EPA, not Region V EPA."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot confirm stance since the entity itself is not found in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Region V EPA' is a recognizable official name for the EPA regional office."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "Region V EPA is not mentioned in the cited page; the text only references Illinois EPA and federal FWPCA funding mechanisms."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page (193) does not mention 'Region V EPA' at all; the reallocation discussion references 'Illinois EPA' instead. The summary quote is not verbatim and appears to conflate or misattribute a statement. The extraction should be revisited to correctly identify the entity (likely Illinois EPA) and locate the actual source text for any Region V EPA attribution."
+      }
+    },
+    {
+      "sequence": 23,
+      "entity": "Bureau of Mines, U.S. Department of the Interior",
+      "kind": "agency",
+      "role": "federal mining safety regulatory agency",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Conformance with applicable regulation of the Occupational Health and Safety Administration, U.S. Department of Labor, and the Bureau of Mines, U.S. Department of the Interior is essential for safety of construction workers.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "354"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "354"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Conformance with applicable regulation of the Occupational Health and Safety Administration, U.S. Department of Labor, and the Bureau of Mines, U.S. Department of the Interior is essential for safety of construction workers.",
+          "quote_verified": false,
+          "stance_basis": "Agency regulations cited as essential compliance requirement for worker safety",
+          "entity_as_written": "Bureau of Mines, U.S. Department of the Interior",
+          "role_as_written": "federal mining safety regulatory agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page text provided does not contain the summary quote. The text shown is a brief excerpt about dust at construction/disposal sites and does not include any mention of Bureau of Mines, OSHA, or the quoted sentence."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The provided page text does not mention the Bureau of Mines or link it to any stance; cannot verify paraphrased attribution."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot assess stance match since the relevant text is not present in the cited pages provided."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Bureau of Mines, U.S. Department of the Interior is an official agency name and is well-formed."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention the Bureau of Mines or its regulatory role; role cannot be confirmed from the provided excerpt."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The cited page text provided (page 354) does not contain the summary quote or any reference to the Bureau of Mines. It is possible the wrong page was pulled or the text extraction was incomplete. The quote itself is plausible for an EIS document, but it cannot be verified against the supplied text. A human reviewer should check the actual page 354 of the source document."
+      }
+    },
+    {
+      "sequence": 24,
+      "entity": "Congress",
+      "kind": "government",
+      "role": "U.S. federal legislature",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Congress, however, has not yet approved any additional appropriation beyond the initial $18 billion which was authorized under PL 92-500 and totally allocated over the FY 1972-1976 period.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "349"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "349"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Congress, however, has not yet approved any additional appropriation beyond the initial $18 billion which was authorized under PL 92-500 and totally allocated over the FY 1972-1976 period.",
+          "quote_verified": true,
+          "stance_basis": "Congress has not yet approved additional appropriations needed for TARP beyond initial authorization",
+          "entity_as_written": "Congress",
+          "role_as_written": "U.S. federal legislature"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted text about Congress and PL 92-500 appropriations does not appear anywhere in the provided page 349 text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The cited page text makes no mention of Congress, PL 92-500, or any appropriation figures; the paraphrased attribution cannot be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot assess stance match since the relevant text is absent from the cited page."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Congress' is an acceptable name for the U.S. federal legislature."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page text does not reference Congress or its role at all."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and all supporting evidence for the Congress/appropriations claim are entirely absent from the provided page 349 text, which covers rock spoil disposal and construction employment topics. The extraction likely references a different page. The correct evidence page should be identified and re-extracted."
+      }
+    },
+    {
+      "sequence": 25,
+      "entity": "FCCC",
+      "kind": "organization",
+      "role": "intergovernmental coordinating committee evaluating alternative plans",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The FCCC concluded that very few negative impacts are expected for any of the alternatives incorporating conveyance tunnels, and that adverse impacts will occur if the \"no-action\" alternative is chosen.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "341"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "341"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The FCCC concluded that very few negative impacts are expected for any of the alternatives incorporating conveyance tunnels, and that adverse impacts will occur if the \"no-action\" alternative is chosen.",
+          "quote_verified": false,
+          "stance_basis": "FCCC concluded TARP had highest ranking and was most suitable plan",
+          "entity_as_written": "FCCC",
+          "role_as_written": "intergovernmental coordinating committee evaluating alternative plans"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page text (page 341) contains only technical descriptions of TARP subsystems and reservoir locations; no mention of FCCC or the quoted conclusion appears anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links FCCC to stated stance",
+            "result": "no",
+            "note": "FCCC is not mentioned anywhere in the cited page text, so no attribution can be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the entity and quote are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "n/a",
+            "note": "FCCC as an acronym is plausible for an intergovernmental coordinating committee, but cannot be confirmed from the cited text."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no reference to FCCC or any intergovernmental coordinating committee evaluating alternative plans."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page (341) contains only technical descriptions of TARP tunnel subsystems, drop shafts, collecting structures, and pumping stations. There is no mention of FCCC, its conclusions, or any evaluation of alternatives. The extraction appears to reference content from a different page entirely and needs to be re-extracted with the correct page citation. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 26,
+      "entity": "IEPA",
+      "kind": "agency",
+      "role": "Illinois Environmental Protection Agency, monitoring program partner",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Chapter X discusses particular aspects of the monitoring program, which will be developed in conjunction with the MSDGC, IEPA and USEPA.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "353"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "353"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Chapter X discusses particular aspects of the monitoring program, which will be developed in conjunction with the MSDGC, IEPA and USEPA.",
+          "quote_verified": true,
+          "stance_basis": "IEPA is involved in developing monitoring program as a grant condition for project approval",
+          "entity_as_written": "IEPA",
+          "role_as_written": "Illinois Environmental Protection Agency, monitoring program partner"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact sentence 'Chapter X discusses particular aspects of the monitoring program, which will be developed in conjunction with the MSDGC, IEPA and USEPA.' appears verbatim on page 353."
+          },
+          {
+            "check": "Attribution links IEPA to stated stance",
+            "result": "no",
+            "note": "The cited text merely lists IEPA as a partner in developing a monitoring program; it does not attribute any conditional stance or position to IEPA. IEPA is named as a collaborator, not as an entity expressing a conditional opinion or requirement."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The text does not convey a 'conditional' stance from IEPA. IEPA is simply listed as a co-developer of the monitoring program. No condition, approval contingency, or qualified support is attributed to IEPA."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "IEPA is the standard abbreviation for the Illinois Environmental Protection Agency, which is an official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text confirms IEPA is involved in developing the monitoring program alongside MSDGC and USEPA, supporting the 'monitoring program partner' role description."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote is verbatim and the entity name/role are accurate, but the stance 'conditional' is not supported by the evidence. The text only identifies IEPA as a collaborator in developing a monitoring program; no conditional position or qualified stance is expressed by or attributed to IEPA. The stance should likely be 'neutral' or the row should be reconsidered entirely, as mere mention as a program partner does not constitute a stance."
+      }
+    },
+    {
+      "sequence": 27,
+      "entity": "Occupational Health and Safety Administration, U.S. Department of Labor",
+      "kind": "agency",
+      "role": "federal worker safety regulatory agency",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Conformance with applicable regulation of the Occupational Health and Safety Administration, U.S. Department of Labor, and the Bureau of Mines, U.S. Department of the Interior is essential for safety of construction workers.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "354"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "354"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Conformance with applicable regulation of the Occupational Health and Safety Administration, U.S. Department of Labor, and the Bureau of Mines, U.S. Department of the Interior is essential for safety of construction workers.",
+          "quote_verified": false,
+          "stance_basis": "Agency regulations cited as essential compliance requirement for worker safety",
+          "entity_as_written": "Occupational Health and Safety Administration, U.S. Department of Labor",
+          "role_as_written": "federal worker safety regulatory agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page text does not contain the summary quote. The provided page 354 text is a brief excerpt about dust at construction and disposal sites, with no mention of OSHA or Bureau of Mines."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The cited page text does not mention the Occupational Health and Safety Administration or any related content that would link the entity to any stance."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the relevant text is absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official agency name is properly formatted."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page text does not reference OSHA or worker safety regulation at all."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page text (page 354) does not contain the summary quote or any reference to OSHA or the Bureau of Mines. The quote may exist elsewhere in the document but the wrong page was cited. The extractor should locate the correct page(s) where this quote appears and re-extract with accurate evidence_pages. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 28,
+      "entity": "USEPA",
+      "kind": "agency",
+      "role": "U.S. Environmental Protection Agency, monitoring program partner and grant authority",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Additionally the MSDGC will be required to inform USEPA of their spoil disposal program as it is developed through discussion with the Contractor. This will be a condition of any grant awarded to the MSDGC for the Lower Des Plaines Tunnel System.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "353"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "353"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Additionally the MSDGC will be required to inform USEPA of their spoil disposal program as it is developed through discussion with the Contractor. This will be a condition of any grant awarded to the MSDGC for the Lower Des Plaines Tunnel System.",
+          "quote_verified": true,
+          "stance_basis": "USEPA supports project but imposes conditions including spoil disposal reporting and monitoring program as grant conditions",
+          "entity_as_written": "USEPA",
+          "role_as_written": "U.S. Environmental Protection Agency, monitoring program partner and grant authority"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The exact quote about 'spoil disposal program' and 'condition of any grant awarded to the MSDGC for the Lower Des Plaines Tunnel System' does not appear verbatim on page 353. The page does contain a similar grant condition sentence but about dewatering flows, not spoil disposal."
+          },
+          {
+            "check": "Attribution links USEPA to conditional stance",
+            "result": "yes",
+            "note": "USEPA is mentioned on page 353 as a partner in the monitoring program that 'will also be a grant condition,' supporting a conditional stance."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The text describes conditions attached to grants, consistent with a 'conditional' stance."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "USEPA is an acceptable abbreviation for the U.S. Environmental Protection Agency."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "Page 353 confirms USEPA's involvement in the monitoring program and grant conditions."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "medium",
+        "notes": "The summary quote references a 'spoil disposal program' condition, but the cited page 353 does not contain this text verbatim — it discusses dewatering flows as a grant condition and the monitoring program as a grant condition, with no mention of a spoil disposal program. The quote appears to be from a different page. The stance and entity are otherwise reasonable, but the verbatim quote is not present on the cited page and needs to be corrected with the proper source page."
+      }
+    }
+  ]
+}

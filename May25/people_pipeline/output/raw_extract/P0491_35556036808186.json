@@ -1,0 +1,627 @@
+{
+  "doc_id": "P0491_35556036808186",
+  "work_id": "be007e4b-d662-4e2f-81c0-53f93844929c",
+  "title": "TARP tunnel component, Lower Des Plaines : environmental impact statement.",
+  "n_chunks": 8,
+  "per_chunk": [
+    {
+      "chunk_index": 0,
+      "start_page": 1,
+      "end_page": 51,
+      "ceq_chapter": null,
+      "entities": [
+        {
+          "entity": "George R. Alexander, Jr.",
+          "kind": "official",
+          "role": "Regional Administrator, U.S. EPA Region V",
+          "stance": "in_favor",
+          "attribution_mode": "sectional",
+          "quote": "APPROVED BY: GEORGE R. ALEXANDER, JR. REGIONAL ADMINISTRATOR",
+          "evidence_pages": [
+            "1"
+          ],
+          "stance_basis": "Approved and issued the Draft EIS supporting the TARP tunnel project",
+          "chunk_index": 0
+        },
+        {
+          "entity": "U.S. Environmental Protection Agency",
+          "kind": "agency",
+          "role": "Administering agency and EIS preparer",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The EPA has prepared this EIS because it expects the environmental effects of the tunnel system to be significant.",
+          "evidence_pages": [
+            "4"
+          ],
+          "stance_basis": "EPA prepared the EIS and is considering granting funds to construct the tunnels",
+          "chunk_index": 0
+        },
+        {
+          "entity": "Flood Control Coordinating Committee (FCCC)",
+          "kind": "organization",
+          "role": "Intergovernmental committee evaluating flood/pollution control plans",
+          "stance": "in_favor",
+          "attribution_mode": "direct_quote",
+          "quote": "These alternatives are less costly and more environmentally acceptable to the community than any of the other plans presented. Detail studies along the lines of these alternatives should proceed to develop the final plan layout.",
+          "evidence_pages": [
+            "18"
+          ],
+          "stance_basis": "FCCC unanimously recommended TARP-type underflow plans as best alternative",
+          "chunk_index": 0
+        },
+        {
+          "entity": "Metropolitan Sanitary District of Greater Chicago (MSDGC)",
+          "kind": "organization",
+          "role": "Construction grant applicant and project proponent",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The Metropolitan Sanitary District of Greater Chicago (MSDGC) is the construction grant applicant for the component of Tunnel and Reservoir Plan (TARP) addressed by this EIS.",
+          "evidence_pages": [
+            "4"
+          ],
+          "stance_basis": "MSDGC initiated and is the applicant for the TARP tunnel project",
+          "chunk_index": 0
+        },
+        {
+          "entity": "EPA",
+          "kind": "agency",
+          "role": "Administering agency",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "Maintenance costs can either be covered through an ad valorem property tax, or through a user charge system based on water consumption. EPA favors the latter approach and has awarded the MSDGC two grants to develop such a user charge system.",
+          "evidence_pages": [
+            "15"
+          ],
+          "stance_basis": "EPA favors user charge system over ad valorem tax for O&M financing",
+          "chunk_index": 0
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 23046,
+        "output_tokens": 732,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 1,
+      "start_page": 49,
+      "end_page": 99,
+      "ceq_chapter": null,
+      "entities": [],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 25163,
+        "output_tokens": 17,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 2,
+      "start_page": 97,
+      "end_page": 147,
+      "ceq_chapter": null,
+      "entities": [
+        {
+          "entity": "Cook County Forest Preserve District",
+          "kind": "organization",
+          "role": "landowner and stakeholder along tunnel route",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "The Cook County Forest Preserve District has requested that all rock taken from under Forest Preserve lands be placed in stockpile areas on Forest Preserve property.",
+          "evidence_pages": [
+            "97"
+          ],
+          "stance_basis": "Requests specific rock disposal conditions on Forest Preserve property",
+          "chunk_index": 2
+        },
+        {
+          "entity": "EPA headquarters",
+          "kind": "agency",
+          "role": "federal environmental regulator",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "EPA headquarters has requested an increase of $42 billion in the future Federal Pollution Control funding authorization under PL 92-500. EPA recommends an annual appropriation of $7 billion for FY 1977-1982.",
+          "evidence_pages": [
+            "127"
+          ],
+          "stance_basis": "Recommends increased federal funding to support pollution control programs including TARP",
+          "chunk_index": 2
+        },
+        {
+          "entity": "EPA headquarters",
+          "kind": "agency",
+          "role": "federal environmental regulator",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "EPA headquarters has contended, however, that 'a properly formulated user charge system based on ad valorem taxes is a viable and appropriate method of funding operation and maintenance costs.'",
+          "evidence_pages": [
+            "129"
+          ],
+          "stance_basis": "Endorses ad valorem tax-based user charge system for MSDGC operations",
+          "chunk_index": 2
+        },
+        {
+          "entity": "EPA",
+          "kind": "agency",
+          "role": "federal environmental regulator / EIS author",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "It is EPA's opinion that these alternatives have been thoroughly weighed and evaluated in past studies and that the proposed action (TARP) is clearly the most effective and least costly.",
+          "evidence_pages": [
+            "139"
+          ],
+          "stance_basis": "Explicitly endorses TARP as the most effective and least costly alternative",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Region V EPA",
+          "kind": "agency",
+          "role": "EPA regional office",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "Region V EPA has awarded two grants to the MSDGC to develop a user charge system to comply with the requirements of PL 92-500.",
+          "evidence_pages": [
+            "129"
+          ],
+          "stance_basis": "Awarded grants supporting MSDGC compliance with federal requirements",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Staff members of the Senate Public Works Subcommittee",
+          "kind": "other",
+          "role": "congressional staff",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "Staff members of the Senate Public Works Subcommittee have indicated that the Office of Management and Budget (OMB) recommendation to the President will probably entail a multiyear appropriation of $5 billion annually.",
+          "evidence_pages": [
+            "127"
+          ],
+          "stance_basis": "Provides information on anticipated federal funding levels without taking a position on TARP",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Flood Control Coordinating Committee",
+          "kind": "organization",
+          "role": "intergovernmental technical committee",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "In November 1970, the Flood Control Coordinating Committee (FCCC) was reactivated to review and evaluate the plans developed and formulate additional ones to address both the flooding and water pollution problems.",
+          "evidence_pages": [
+            "140"
+          ],
+          "stance_basis": "Evaluated and recommended TARP through systematic elimination of alternatives",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Illinois EPA",
+          "kind": "agency",
+          "role": "state environmental agency",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The Illinois EPA, however, has committed funds for the instream aeration phase of the project.",
+          "evidence_pages": [
+            "130"
+          ],
+          "stance_basis": "Committed state funds to support instream aeration component of the project",
+          "chunk_index": 2
+        },
+        {
+          "entity": "State of Illinois",
+          "kind": "government",
+          "role": "state government",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "By approval of the bond issue referendum of 1970, the State of Illinois was authorized to issue bonds up to a maximum of $750 million.",
+          "evidence_pages": [
+            "123"
+          ],
+          "stance_basis": "Authorized bond funding targeted for TARP implementation",
+          "chunk_index": 2
+        },
+        {
+          "entity": "MSDGC",
+          "kind": "organization",
+          "role": "Metropolitan Sanitary District of Greater Chicago, project proponent",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The overall project objectives were established by the MSDGC to comply with Illinois Pollution Control Board (IPCB) standards.",
+          "evidence_pages": [
+            "140"
+          ],
+          "stance_basis": "Established project objectives and is actively pursuing TARP implementation",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Corps of Engineers",
+          "kind": "agency",
+          "role": "federal flood control authority",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "The Corps of Engineers is now in the process of determining the Federal interest in providing funding for the total Underflow Plan.",
+          "evidence_pages": [
+            "133"
+          ],
+          "stance_basis": "Studying federal interest in reservoir funding but has not committed or opposed",
+          "chunk_index": 2
+        },
+        {
+          "entity": "Chicago District Corps of Engineers",
+          "kind": "agency",
+          "role": "Corps of Engineers district office",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "The Chicago District Corps of Engineers has prepared a report entitled Urban Water Damage Study, The Chicagoland Underflow Plan, dated December 1975.",
+          "evidence_pages": [
+            "133"
+          ],
+          "stance_basis": "Prepared study on Underflow Plan but final recommendations pending higher review",
+          "chunk_index": 2
+        },
+        {
+          "entity": "city of Chicago, Bureau of Engineering",
+          "kind": "government",
+          "role": "municipal engineering department, plan author",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The Composite plan, outlined in the city of Chicago, Bureau of Engineering Report of September 1968, included a series of tunnels in Niagaran and Galena-Platteville formation to transfer overflows to the West-Southwest, Calumet, North-Side, or O'Hare Sewage Treatment Plants.",
+          "evidence_pages": [
+            "145"
+          ],
+          "stance_basis": "Authored multiple alternative underflow/tunnel plans contributing to TARP development",
+          "chunk_index": 2
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 21729,
+        "output_tokens": 1799,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 3,
+      "start_page": 145,
+      "end_page": 195,
+      "ceq_chapter": null,
+      "entities": [
+        {
+          "entity": "Cook County Forest Preserve District",
+          "kind": "organization",
+          "role": "landowner/commenter",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "The Cook County Forest Preserve District has requested that all rock taken from under Forest Preserve Lands be placed in stockpile areas on Forest Preserve Property.",
+          "evidence_pages": [
+            "VI-24"
+          ],
+          "stance_basis": "Requests specific spoil disposal conditions on Forest Preserve lands",
+          "chunk_index": 3
+        },
+        {
+          "entity": "Federal Aviation Agency",
+          "kind": "agency",
+          "role": "federal regulatory agency",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "For reasons of air traffic safety, the Federal Aviation Agency recently indicated that the maximum elevation of stockpiles should not be permitted to extend more than approximately 200 feet above street grade.",
+          "evidence_pages": [
+            "VI-21"
+          ],
+          "stance_basis": "Imposed height restriction on spoil stockpiles near McCook Quarry for air traffic safety",
+          "chunk_index": 3
+        },
+        {
+          "entity": "Northeastern Illinois Planning Commission (NIPC)",
+          "kind": "agency",
+          "role": "designated 208 planning agency",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "This is not expected to occur, however, since the construction shafts for each tunnel segment have been identified clearly on reports available to the Northeastern Illinois Planning Commission (NIPC), the designated 208 planning agency.",
+          "evidence_pages": [
+            "VI-8"
+          ],
+          "stance_basis": "Identified as having access to construction shaft locations to avoid monitoring interference; no opposition or support stated",
+          "chunk_index": 3
+        },
+        {
+          "entity": "MSDGC",
+          "kind": "agency",
+          "role": "project proponent/operator",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "It is the MSDGC's stated policy that construction contractors shall be responsible for the disposal of material excavated from each Phase I tunnel segment.",
+          "evidence_pages": [
+            "VI-20"
+          ],
+          "stance_basis": "Project proponent actively directing construction and disposal policy for TARP tunnel system",
+          "chunk_index": 3
+        },
+        {
+          "entity": "HEC",
+          "kind": "organization",
+          "role": "engineering consultant (Harza Engineering Company)",
+          "stance": "neutral",
+          "attribution_mode": "direct_quote",
+          "quote": "... the water pressure test results combined with the finite element computer program used give an accurate estimate of relative tunnel inflow and a reasonable, but generally low estimate of actual inflows.",
+          "evidence_pages": [
+            "VI-6"
+          ],
+          "stance_basis": "Technical assessment of inflow estimation methodology without taking a project stance",
+          "chunk_index": 3
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 21978,
+        "output_tokens": 715,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 4,
+      "start_page": 193,
+      "end_page": 243,
+      "ceq_chapter": null,
+      "entities": [
+        {
+          "entity": "Illinois EPA",
+          "kind": "agency",
+          "role": "State environmental agency",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "According to recent estimates by the Illinois EPA, some 31 non-MSDGC projects are in jeopardy of not being ready by September 30, 1977 for Step 3 FWPCA funding.",
+          "evidence_pages": [
+            "193"
+          ],
+          "stance_basis": "Provides technical assessment of funding readiness without taking a position on TARP itself",
+          "chunk_index": 4
+        },
+        {
+          "entity": "Region V EPA",
+          "kind": "agency",
+          "role": "EPA regional office",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "According to Region V EPA, any funds not obligated within the appropriate deadline (September 30, 1977) would probably be reallocated by EPA headquarters among the other states according to the current allocation formula.",
+          "evidence_pages": [
+            "193"
+          ],
+          "stance_basis": "Provides technical assessment of fund reallocation procedures without taking a position on TARP",
+          "chunk_index": 4
+        },
+        {
+          "entity": "Northern Illinois Planning Commission (NIPC)",
+          "kind": "organization",
+          "role": "208 planning agency",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "Work being conducted by the Northern Illinois Planning Commission (NIPC) under section 208 of the 1972 Water Pollution Control Act Amendments will provide the basis upon which to judge what additional steps, if any, will be required to maintain and enhance water quality along the Des Plaines River.",
+          "evidence_pages": [
+            "206"
+          ],
+          "stance_basis": "Conducting planning work relevant to TARP but no explicit stance on the project attributed",
+          "chunk_index": 4
+        },
+        {
+          "entity": "MSDGC",
+          "kind": "organization",
+          "role": "Metropolitan Sanitary District of Greater Chicago, project proponent",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The MSDGC estimates that sludge generation from the Mainstream and Des Plaines systems will increase the sludge load of the West-Southwest plant by 70 to 100 tons per day (tpd), or by about 15 percent over the current sludge-handling rate.",
+          "evidence_pages": [
+            "222"
+          ],
+          "stance_basis": "Project proponent providing technical planning data in support of TARP implementation",
+          "chunk_index": 4
+        },
+        {
+          "entity": "Corps of Engineers",
+          "kind": "agency",
+          "role": "Federal agency responsible for waterway dredging",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "The Corps of Engineers is responsible for dredging the waterways to maintain adequate water depth for navigation, and control of suspended solids by the Des Plaines tunnel system would slow down the sedimentation rate and help reduce dredging frequency.",
+          "evidence_pages": [
+            "234"
+          ],
+          "stance_basis": "Referenced for their dredging role; no explicit stance on TARP attributed",
+          "chunk_index": 4
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 21389,
+        "output_tokens": 805,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 5,
+      "start_page": 241,
+      "end_page": 291,
+      "ceq_chapter": null,
+      "entities": [],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 23343,
+        "output_tokens": 149,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 6,
+      "start_page": 289,
+      "end_page": 339,
+      "ceq_chapter": null,
+      "entities": [],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 21060,
+        "output_tokens": 100,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 7,
+      "start_page": 337,
+      "end_page": 354,
+      "ceq_chapter": null,
+      "entities": [
+        {
+          "entity": "EPA",
+          "kind": "agency",
+          "role": "federal environmental regulatory agency",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "EPA favors the latter approach and has awarded the MSDGC two grants to develop such a user charge system.",
+          "evidence_pages": [
+            "337"
+          ],
+          "stance_basis": "EPA favors user charge system over ad valorem tax and has funded its development",
+          "chunk_index": 7
+        },
+        {
+          "entity": "Flood Control Coordinating Committee (FCCC)",
+          "kind": "organization",
+          "role": "intergovernmental coordinating committee evaluating alternative plans",
+          "stance": "in_favor",
+          "attribution_mode": "direct_quote",
+          "quote": "These alternatives are less costly and more environmentally acceptable to the community than any of the other plans presented. Detail studies along the lines of these alternatives should proceed to develop the final plan layout.",
+          "evidence_pages": [
+            "340"
+          ],
+          "stance_basis": "FCCC unanimously concluded Chicago Underflow plans were best and recommended TARP development",
+          "chunk_index": 7
+        },
+        {
+          "entity": "FCCC",
+          "kind": "organization",
+          "role": "intergovernmental coordinating committee evaluating alternative plans",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "The FCCC concluded that very few negative impacts are expected for any of the alternatives incorporating conveyance tunnels, and that adverse impacts will occur if the \"no-action\" alternative is chosen.",
+          "evidence_pages": [
+            "341"
+          ],
+          "stance_basis": "FCCC concluded TARP had highest ranking and was most suitable plan",
+          "chunk_index": 7
+        },
+        {
+          "entity": "MSDGC",
+          "kind": "organization",
+          "role": "Metropolitan Sanitary District of Greater Chicago, project proponent",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "This amount, however, represents a very modest proportion of the additional $200-400 million bonding authorization for which MSDGC is currently formulating plans to ask the State of Illinois.",
+          "evidence_pages": [
+            "349"
+          ],
+          "stance_basis": "MSDGC is actively pursuing additional bonding authority to finance TARP implementation",
+          "chunk_index": 7
+        },
+        {
+          "entity": "Congress",
+          "kind": "government",
+          "role": "U.S. federal legislature",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "Congress, however, has not yet approved any additional appropriation beyond the initial $18 billion which was authorized under PL 92-500 and totally allocated over the FY 1972-1976 period.",
+          "evidence_pages": [
+            "349"
+          ],
+          "stance_basis": "Congress has not yet approved additional appropriations needed for TARP beyond initial authorization",
+          "chunk_index": 7
+        },
+        {
+          "entity": "State of Illinois",
+          "kind": "government",
+          "role": "state government, funding partner",
+          "stance": "in_favor",
+          "attribution_mode": "paraphrased",
+          "quote": "In view of the sound fiscal posture of the MSDGC, the high funding priority assigned TARP by the State, and the very conservative estimates of future Federal appropriations, it can be reasonably assumed that future financing requirements can be satisfied.",
+          "evidence_pages": [
+            "337"
+          ],
+          "stance_basis": "State has assigned high funding priority to TARP",
+          "chunk_index": 7
+        },
+        {
+          "entity": "Occupational Health and Safety Administration, U.S. Department of Labor",
+          "kind": "agency",
+          "role": "federal worker safety regulatory agency",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "Conformance with applicable regulation of the Occupational Health and Safety Administration, U.S. Department of Labor, and the Bureau of Mines, U.S. Department of the Interior is essential for safety of construction workers.",
+          "evidence_pages": [
+            "354"
+          ],
+          "stance_basis": "Agency regulations cited as essential compliance requirement for worker safety",
+          "chunk_index": 7
+        },
+        {
+          "entity": "Bureau of Mines, U.S. Department of the Interior",
+          "kind": "agency",
+          "role": "federal mining safety regulatory agency",
+          "stance": "neutral",
+          "attribution_mode": "paraphrased",
+          "quote": "Conformance with applicable regulation of the Occupational Health and Safety Administration, U.S. Department of Labor, and the Bureau of Mines, U.S. Department of the Interior is essential for safety of construction workers.",
+          "evidence_pages": [
+            "354"
+          ],
+          "stance_basis": "Agency regulations cited as essential compliance requirement for worker safety",
+          "chunk_index": 7
+        },
+        {
+          "entity": "IEPA",
+          "kind": "agency",
+          "role": "Illinois Environmental Protection Agency, monitoring program partner",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "Chapter X discusses particular aspects of the monitoring program, which will be developed in conjunction with the MSDGC, IEPA and USEPA.",
+          "evidence_pages": [
+            "353"
+          ],
+          "stance_basis": "IEPA is involved in developing monitoring program as a grant condition for project approval",
+          "chunk_index": 7
+        },
+        {
+          "entity": "USEPA",
+          "kind": "agency",
+          "role": "U.S. Environmental Protection Agency, monitoring program partner and grant authority",
+          "stance": "conditional",
+          "attribution_mode": "paraphrased",
+          "quote": "Additionally the MSDGC will be required to inform USEPA of their spoil disposal program as it is developed through discussion with the Contractor. This will be a condition of any grant awarded to the MSDGC for the Lower Des Plaines Tunnel System.",
+          "evidence_pages": [
+            "353"
+          ],
+          "stance_basis": "USEPA supports project but imposes conditions including spoil disposal reporting and monitoring program as grant conditions",
+          "chunk_index": 7
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 12067,
+        "output_tokens": 1487,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    }
+  ]
+}

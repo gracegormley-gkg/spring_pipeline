@@ -1,0 +1,995 @@
+{
+  "doc_id": "p1074_35556036053858",
+  "work_id": "8e2b9830-6017-4644-a596-831a4a55b359",
+  "title": "Environmental Impact Statement, Proposed HUD Project Selection Criteria for Subsidized Housing",
+  "estimated_pages": 10,
+  "n_chunks": 1,
+  "n_raw_rows": 14,
+  "n_entries": 14,
+  "verdict_counts": {
+    "PASS": 1,
+    "PASS_WITH_NOTE": 0,
+    "RE_EXTRACT": 3,
+    "HUMAN_REVIEW": 10
+  },
+  "stance_counts": {
+    "neutral": 13,
+    "in_favor": 1
+  },
+  "elapsed_sec": 65.2,
+  "usage": {
+    "extract": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 1,
+          "input_tokens": 5874,
+          "output_tokens": 2711,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.0583
+        }
+      ],
+      "total": {
+        "calls": 1,
+        "input_tokens": 5874,
+        "output_tokens": 2711,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.0583
+      }
+    },
+    "critic": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 14,
+          "input_tokens": 78391,
+          "output_tokens": 6533,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.3332
+        }
+      ],
+      "total": {
+        "calls": 14,
+        "input_tokens": 78391,
+        "output_tokens": 6533,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.3332
+      }
+    },
+    "total": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 15,
+          "input_tokens": 84265,
+          "output_tokens": 9244,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.3915
+        }
+      ],
+      "total": {
+        "calls": 15,
+        "input_tokens": 84265,
+        "output_tokens": 9244,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.3915
+      }
+    }
+  },
+  "schema": {
+    "stance_vocabulary": [
+      "in_favor",
+      "opposed",
+      "conditional",
+      "neutral"
+    ],
+    "kind_vocabulary": [
+      "individual",
+      "official",
+      "organization",
+      "agency",
+      "tribe",
+      "government",
+      "other"
+    ],
+    "verdicts": [
+      "PASS",
+      "PASS_WITH_NOTE",
+      "RE_EXTRACT",
+      "HUMAN_REVIEW"
+    ],
+    "page_numbers": "ESTIMATED from char offsets at 2500 chars/page.",
+    "merge_rule": "One row per (entity, stance) — stance changes produce separate rows.",
+    "cost_note": "USD costs are ESTIMATES from settings.PRICES_USD_PER_M; verify against AWS Bedrock invoice."
+  },
+  "entries": [
+    {
+      "sequence": 1,
+      "entity": "Americans for Indian Opportunity",
+      "kind": "organization",
+      "role": "commenter on proposed criteria",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The criteria have been revised twice as a result of comments received from a large number and wide variety of sources ranging from other HUD elements in Central and Field Offices, public groups such as local housing and redevelopment agencies, individual cities, the U.S. Civil Rights Commission, the Housing Opportunity Council of Metropolitan Washington and innumerable private groups ranging from the National Urban Coalition, the NAACP, League of Women Voters, Americans for Indian Opportunity, and the Citizens Advocate Center, to the National Association of Home Builders, Mortgage Bankers Association of America, and private companies.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "1-10"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1-10"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The criteria have been revised twice as a result of comments received from a large number and wide variety of sources ranging from other HUD elements in Central and Field Offices, public groups such as local housing and redevelopment agencies, individual cities, the U.S. Civil Rights Commission, the Housing Opportunity Council of Metropolitan Washington and innumerable private groups ranging from the National Urban Coalition, the NAACP, League of Women Voters, Americans for Indian Opportunity, and the Citizens Advocate Center, to the National Association of Home Builders, Mortgage Bankers Association of America, and private companies.",
+          "quote_verified": false,
+          "stance_basis": "listed as having submitted comments that led to revisions of the criteria",
+          "entity_as_written": "Americans for Indian Opportunity",
+          "role_as_written": "commenter on proposed criteria"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact quote appears verbatim in the 'Alternatives to the Proposed Criteria' section of the cited pages."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "yes",
+            "note": "Americans for Indian Opportunity is named in the paraphrased list of commenters whose input led to criteria revisions; the narrator sentence establishes this linkage."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The text only identifies Americans for Indian Opportunity as a commenter/source of comments; no specific position (for or against) is stated, making 'neutral' appropriate."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Americans for Indian Opportunity' is the official organization name and matches the text exactly."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text confirms they were among the 'innumerable private groups' that provided comments on the proposed criteria."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote is present verbatim in the cited pages. Americans for Indian Opportunity is listed among commenters whose feedback led to criteria revisions, supporting the 'neutral' stance label and 'commenter on proposed criteria' role. No specific position for or against the criteria is attributed to the organization. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 2,
+      "entity": "Citizens Advocate Center",
+      "kind": "organization",
+      "role": "commenter on proposed criteria",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The criteria have been revised twice as a result of comments received from a large number and wide variety of sources ranging from other HUD elements in Central and Field Offices, public groups such as local housing and redevelopment agencies, individual cities, the U.S. Civil Rights Commission, the Housing Opportunity Council of Metropolitan Washington and innumerable private groups ranging from the National Urban Coalition, the NAACP, League of Women Voters, Americans for Indian Opportunity, and the Citizens Advocate Center, to the National Association of Home Builders, Mortgage Bankers Association of America, and private companies.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "1-10"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1-10"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The criteria have been revised twice as a result of comments received from a large number and wide variety of sources ranging from other HUD elements in Central and Field Offices, public groups such as local housing and redevelopment agencies, individual cities, the U.S. Civil Rights Commission, the Housing Opportunity Council of Metropolitan Washington and innumerable private groups ranging from the National Urban Coalition, the NAACP, League of Women Voters, Americans for Indian Opportunity, and the Citizens Advocate Center, to the National Association of Home Builders, Mortgage Bankers Association of America, and private companies.",
+          "quote_verified": false,
+          "stance_basis": "listed as having submitted comments that led to revisions of the criteria",
+          "entity_as_written": "Citizens Advocate Center",
+          "role_as_written": "commenter on proposed criteria"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The quote appears verbatim in the 'Alternatives to the Proposed Criteria' section of the cited pages."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "yes",
+            "note": "Citizens Advocate Center is named in the paraphrased list of commenters whose input led to criteria revisions."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The text only identifies Citizens Advocate Center as a commenter; no stance (neutral, opposed, in_favor, conditional) is discernible from the passage. However, 'neutral' is arguably the most defensible label for an entity merely listed as a commenter with no stated position."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Citizens Advocate Center is an organization name and matches the text exactly."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text confirms they were among the sources that provided comments on the proposed criteria."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "The Citizens Advocate Center is listed among a broad range of commenters, but no specific stance is attributed to them — only that they submitted comments. Labeling this 'neutral' is a reasonable inference but not directly supported by the text. A human should determine whether 'neutral' is appropriate or whether this entity should be excluded from stance-coded rows entirely, as the passage conveys no directional position."
+      }
+    },
+    {
+      "sequence": 3,
+      "entity": "Department of Housing and Urban Development",
+      "kind": "agency",
+      "role": "responsible agency / proponent",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Recommendation That the attached criteria, as revised in the light of comments, be issued as guidance to HUD field offices.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1-10"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1-10"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Recommendation That the attached criteria, as revised in the light of comments, be issued as guidance to HUD field offices.",
+          "quote_verified": true,
+          "stance_basis": "recommends issuance of the proposed criteria as revised",
+          "entity_as_written": "Department of Housing and Urban Development",
+          "role_as_written": "responsible agency / proponent"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact text 'Recommendation That the attached criteria, as revised in the light of comments, be issued as guidance to HUD field offices.' appears verbatim in the cited pages."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "yes",
+            "note": "The document is authored by HUD (the Responsible Agency listed on the Summary Sheet), and the Recommendation section is part of HUD's own Final Environmental Statement, making HUD the implicit author of this recommendation."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "HUD is recommending issuance of its own criteria, clearly indicating support/favor for the proposed action."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Department of Housing and Urban Development' is the official agency name as used in the document."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The Summary Sheet explicitly identifies HUD as the 'Responsible Agency,' supporting the 'responsible agency / proponent' role description."
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "All checks pass. The quote is verbatim, HUD is clearly the responsible agency and author of the recommendation, and the in_favor stance is unambiguous given that HUD is recommending issuance of its own proposed criteria. The attribution mode of 'paraphrased' is slightly loose since the quote is a direct statement from the document itself, but this does not affect the overall accuracy of the extraction."
+      }
+    },
+    {
+      "sequence": 4,
+      "entity": "Department of the Interior",
+      "kind": "agency",
+      "role": "commenting agency",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Comment: The statement should include a discussion of the potential for misuse of the criteria to place proposed projects in a low priority group to discourage subsidized housing developments in certain areas.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1-10"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1-10"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Comment: The statement should include a discussion of the potential for misuse of the criteria to place proposed projects in a low priority group to discourage subsidized housing developments in certain areas.",
+          "quote_verified": true,
+          "stance_basis": "raises concerns about misuse potential and requests procedural/textual improvements without opposing or supporting the proposal overall",
+          "entity_as_written": "Department of the Interior",
+          "role_as_written": "commenting agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact quote appears verbatim under the 'Department of the Interior' section on the cited pages: 'The statement should include a discussion of the potential for misuse of the criteria to place proposed projects in a low priority group to discourage subsidized housing developments in certain areas.'"
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "yes",
+            "note": "The text clearly attributes this comment to 'Department of the Interior' as a commenter on the draft environmental statement."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The Department of the Interior is raising a concern/criticism about potential misuse of the criteria — this is more accurately 'conditional' or 'opposed' to the criteria as written, not 'neutral'. They are flagging a deficiency in the statement and the criteria."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Department of the Interior' is the official agency name and matches the text exactly."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The Department of the Interior is listed among agencies from which comments were received, and their comments appear in the 'External Comments' section, confirming the role of 'commenting agency'."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The quote is verbatim and the attribution is correct, but the stance label 'neutral' is inaccurate. The Department of the Interior is raising a substantive criticism about a deficiency in the statement and potential for misuse of the criteria, which is better characterized as 'conditional' (supporting the criteria only if the misuse concern is addressed) or possibly 'opposed' to the criteria as written. The stance should be re-labeled as 'conditional' at minimum."
+      }
+    },
+    {
+      "sequence": 5,
+      "entity": "Department of Transportation",
+      "kind": "agency",
+      "role": "commenting agency",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Comment: Item 3 of the questionnaire should be revised to include specific reference to the availability of public transportation which is a critical concern for lower income families.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "1-10"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1-10"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Comment: Item 3 of the questionnaire should be revised to include specific reference to the availability of public transportation which is a critical concern for lower income families.",
+          "quote_verified": false,
+          "stance_basis": "requests specific revisions to criteria without opposing or endorsing the proposal",
+          "entity_as_written": "Department of Transportation",
+          "role_as_written": "commenting agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The quote 'Comment: Item 3 of the questionnaire should be revised to include specific reference to the availability of public transportation which is a critical concern for lower income families.' appears verbatim on page 1-10 under the Department of Transportation section."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "yes",
+            "note": "The text clearly attributes this comment to the Department of Transportation under a heading labeled 'Department of Transportation', with the comment directly following."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The Department of Transportation is making a specific recommendation/request to revise the questionnaire, which is a 'conditional' stance (suggesting improvement) rather than 'neutral'. This is a substantive comment requesting a change."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Department of Transportation' is the official agency name as used in the document."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The Department of Transportation is listed among agencies from which comments were received, confirming the 'commenting agency' role."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote is verbatim and the attribution is correct. However, the stance label 'neutral' is incorrect — the Department of Transportation is making a specific recommendation to revise the questionnaire, which constitutes a 'conditional' stance (supporting the proposal with suggested modifications). The stance should be re-labeled as 'conditional'. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 6,
+      "entity": "Environmental Protection Agency",
+      "kind": "agency",
+      "role": "commenting agency",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Comment: Summarize in the environmental impact statement the other specific environmental requirements which must be met by project applications.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1-10"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1-10"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Comment: Summarize in the environmental impact statement the other specific environmental requirements which must be met by project applications.",
+          "quote_verified": true,
+          "stance_basis": "requests expansions and clarifications to criteria without opposing or endorsing the proposal",
+          "entity_as_written": "Environmental Protection Agency",
+          "role_as_written": "commenting agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact text 'Summarize in the environmental impact statement the other specific environmental requirements which must be met by project applications.' appears verbatim on page 1-10 under the EPA section."
+          },
+          {
+            "check": "Attribution links EPA to the stated stance",
+            "result": "yes",
+            "note": "The cited text clearly attributes this comment to 'Environmental Protection Agency' as a commenter, with the quote appearing directly under that heading."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The EPA is making a substantive recommendation/request to expand the EIS content, which is more accurately 'conditional' (requesting improvement) rather than 'neutral'. A neutral stance would imply no position taken."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Environmental Protection Agency' is the correct official name for this federal agency."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "EPA appears in the list of agencies from which comments were received, and their comments are presented in the External Comments section, confirming 'commenting agency' role."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The quote is verbatim and the attribution is correct, but the stance label 'neutral' is inaccurate. The EPA is making specific recommendations for improvement to the EIS and criteria, which constitutes a 'conditional' stance — supporting the proposal but requesting modifications. The stance should be re-labeled as 'conditional' to accurately reflect the EPA's position."
+      }
+    },
+    {
+      "sequence": 7,
+      "entity": "Housing Opportunity Council of Metropolitan Washington",
+      "kind": "organization",
+      "role": "commenter on proposed criteria",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The criteria have been revised twice as a result of comments received from a large number and wide variety of sources ranging from other HUD elements in Central and Field Offices, public groups such as local housing and redevelopment agencies, individual cities, the U.S. Civil Rights Commission, the Housing Opportunity Council of Metropolitan Washington and innumerable private groups ranging from the National Urban Coalition, the NAACP, League of Women Voters, Americans for Indian Opportunity, and the Citizens Advocate Center, to the National Association of Home Builders, Mortgage Bankers Association of America, and private companies.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "1-10"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1-10"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The criteria have been revised twice as a result of comments received from a large number and wide variety of sources ranging from other HUD elements in Central and Field Offices, public groups such as local housing and redevelopment agencies, individual cities, the U.S. Civil Rights Commission, the Housing Opportunity Council of Metropolitan Washington and innumerable private groups ranging from the National Urban Coalition, the NAACP, League of Women Voters, Americans for Indian Opportunity, and the Citizens Advocate Center, to the National Association of Home Builders, Mortgage Bankers Association of America, and private companies.",
+          "quote_verified": false,
+          "stance_basis": "listed as having submitted comments that led to revisions of the criteria",
+          "entity_as_written": "Housing Opportunity Council of Metropolitan Washington",
+          "role_as_written": "commenter on proposed criteria"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The quote appears verbatim in the 'Alternatives to the Proposed Criteria' section of the cited pages."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "yes",
+            "note": "The Housing Opportunity Council of Metropolitan Washington is named in the paraphrased sentence as one of many sources that provided comments leading to criteria revisions."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The entity is listed as a commenter whose input led to revisions, but no specific stance (in_favor, opposed, conditional, or neutral) is attributed to them. The text only confirms they submitted comments; 'neutral' is an assumption not supported by the text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official organization name matches exactly as it appears in the document."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text confirms they were among the sources from which comments were received on the proposed criteria."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "The Housing Opportunity Council of Metropolitan Washington is confirmed as a commenter, but the cited text provides no information about the content or direction of their comments. Assigning a 'neutral' stance is not supported — the entity could have been in favor, opposed, or conditional. A human reviewer should determine whether additional pages contain the actual substance of their comments, or whether this entity should be excluded from stance coding entirely."
+      }
+    },
+    {
+      "sequence": 8,
+      "entity": "League of Women Voters",
+      "kind": "organization",
+      "role": "commenter on proposed criteria",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The criteria have been revised twice as a result of comments received from a large number and wide variety of sources ranging from other HUD elements in Central and Field Offices, public groups such as local housing and redevelopment agencies, individual cities, the U.S. Civil Rights Commission, the Housing Opportunity Council of Metropolitan Washington and innumerable private groups ranging from the National Urban Coalition, the NAACP, League of Women Voters, Americans for Indian Opportunity, and the Citizens Advocate Center, to the National Association of Home Builders, Mortgage Bankers Association of America, and private companies.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "1-10"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1-10"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The criteria have been revised twice as a result of comments received from a large number and wide variety of sources ranging from other HUD elements in Central and Field Offices, public groups such as local housing and redevelopment agencies, individual cities, the U.S. Civil Rights Commission, the Housing Opportunity Council of Metropolitan Washington and innumerable private groups ranging from the National Urban Coalition, the NAACP, League of Women Voters, Americans for Indian Opportunity, and the Citizens Advocate Center, to the National Association of Home Builders, Mortgage Bankers Association of America, and private companies.",
+          "quote_verified": false,
+          "stance_basis": "listed as having submitted comments that led to revisions of the criteria",
+          "entity_as_written": "League of Women Voters",
+          "role_as_written": "commenter on proposed criteria"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The quote appears verbatim in the cited page text under 'Alternatives to the Proposed Criteria' section, with only minor formatting differences (line breaks)."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "yes",
+            "note": "The League of Women Voters is named in the paraphrased narrator sentence as one of many sources that provided comments on the criteria. The attribution mode is paraphrased and the entity is listed among commenters."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The text only identifies the League of Women Voters as a commenter/source of comments; no specific stance (neutral, in_favor, opposed, or conditional) is attributed to them. 'Neutral' is a reasonable default but the text provides no basis to assign any stance — the entity is merely listed as a commenter."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "League of Women Voters is the official name of the organization."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text confirms the League of Women Voters was among the sources from which comments were received on the proposed criteria."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "The League of Women Voters is only listed as one of many commenters with no specific stance articulated in the text. Assigning 'neutral' is speculative — the document does not describe their position at all. This is a case where the entity's actual stance is unknown from the cited text, making human review appropriate to determine whether a stance can legitimately be assigned or whether this row should be dropped."
+      }
+    },
+    {
+      "sequence": 9,
+      "entity": "Mortgage Bankers Association of America",
+      "kind": "organization",
+      "role": "commenter on proposed criteria",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The criteria have been revised twice as a result of comments received from a large number and wide variety of sources ranging from other HUD elements in Central and Field Offices, public groups such as local housing and redevelopment agencies, individual cities, the U.S. Civil Rights Commission, the Housing Opportunity Council of Metropolitan Washington and innumerable private groups ranging from the National Urban Coalition, the NAACP, League of Women Voters, Americans for Indian Opportunity, and the Citizens Advocate Center, to the National Association of Home Builders, Mortgage Bankers Association of America, and private companies.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "1-10"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1-10"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The criteria have been revised twice as a result of comments received from a large number and wide variety of sources ranging from other HUD elements in Central and Field Offices, public groups such as local housing and redevelopment agencies, individual cities, the U.S. Civil Rights Commission, the Housing Opportunity Council of Metropolitan Washington and innumerable private groups ranging from the National Urban Coalition, the NAACP, League of Women Voters, Americans for Indian Opportunity, and the Citizens Advocate Center, to the National Association of Home Builders, Mortgage Bankers Association of America, and private companies.",
+          "quote_verified": false,
+          "stance_basis": "listed as having submitted comments that led to revisions of the criteria",
+          "entity_as_written": "Mortgage Bankers Association of America",
+          "role_as_written": "commenter on proposed criteria"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The quote appears verbatim in the 'Alternatives to the Proposed Criteria' section of the cited pages, beginning with 'The criteria have been revised twice as a result of comments received from a large number and wide variety of sources...'"
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "yes",
+            "note": "The Mortgage Bankers Association of America is named in the paraphrased passage as one of many commenters on the proposed criteria, consistent with paraphrased attribution mode."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The text merely lists the Mortgage Bankers Association of America as one of many commenters without indicating their stance. 'Neutral' is a reasonable default, but the text provides no information about whether they were in favor, opposed, or conditional. The stance is indeterminate rather than clearly neutral."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Mortgage Bankers Association of America' matches the name as it appears in the document."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text confirms they were among the private groups that submitted comments on the proposed criteria."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "The quote is verbatim and the entity is correctly named and attributed as a commenter. However, the stance 'neutral' is an inference by default — the document only lists the Mortgage Bankers Association of America as a commenter without characterizing their position. The extraction is technically accurate in identifying them as a commenter, but the stance label is indeterminate rather than affirmatively neutral. This is a minor issue that does not invalidate the extraction. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 10,
+      "entity": "NAACP",
+      "kind": "organization",
+      "role": "commenter on proposed criteria",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The criteria have been revised twice as a result of comments received from a large number and wide variety of sources ranging from other HUD elements in Central and Field Offices, public groups such as local housing and redevelopment agencies, individual cities, the U.S. Civil Rights Commission, the Housing Opportunity Council of Metropolitan Washington and innumerable private groups ranging from the National Urban Coalition, the NAACP, League of Women Voters, Americans for Indian Opportunity, and the Citizens Advocate Center, to the National Association of Home Builders, Mortgage Bankers Association of America, and private companies.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "1-10"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1-10"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The criteria have been revised twice as a result of comments received from a large number and wide variety of sources ranging from other HUD elements in Central and Field Offices, public groups such as local housing and redevelopment agencies, individual cities, the U.S. Civil Rights Commission, the Housing Opportunity Council of Metropolitan Washington and innumerable private groups ranging from the National Urban Coalition, the NAACP, League of Women Voters, Americans for Indian Opportunity, and the Citizens Advocate Center, to the National Association of Home Builders, Mortgage Bankers Association of America, and private companies.",
+          "quote_verified": false,
+          "stance_basis": "listed as having submitted comments that led to revisions of the criteria",
+          "entity_as_written": "NAACP",
+          "role_as_written": "commenter on proposed criteria"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The quote appears verbatim in the 'Alternatives to the Proposed Criteria' section of the cited pages."
+          },
+          {
+            "check": "Attribution links NAACP to stated stance",
+            "result": "yes",
+            "note": "NAACP is named in a list of commenters whose input led to criteria revisions; the paraphrased attribution is accurate."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The text only identifies NAACP as a commenter who provided input; no stance (neutral, opposed, in_favor, conditional) is discernible. 'Neutral' is an assumption — the text does not characterize their position at all."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "NAACP is an official organization name and is correctly used."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text confirms NAACP was among the sources from which comments were received on the proposed criteria."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote is verbatim and the entity/role are correct, but the stance 'neutral' is not supported by the text. The passage merely lists NAACP as one of many commenters without characterizing their position. The stance should not be assigned as 'neutral' (which implies a known position of neutrality) but rather left unclassified or marked as 'unknown,' as no substantive stance is expressed. The extraction should be revised to reflect that no stance can be determined from this citation. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 11,
+      "entity": "National Association of Home Builders",
+      "kind": "organization",
+      "role": "commenter on proposed criteria",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The criteria have been revised twice as a result of comments received from a large number and wide variety of sources ranging from other HUD elements in Central and Field Offices, public groups such as local housing and redevelopment agencies, individual cities, the U.S. Civil Rights Commission, the Housing Opportunity Council of Metropolitan Washington and innumerable private groups ranging from the National Urban Coalition, the NAACP, League of Women Voters, Americans for Indian Opportunity, and the Citizens Advocate Center, to the National Association of Home Builders, Mortgage Bankers Association of America, and private companies.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "1-10"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1-10"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The criteria have been revised twice as a result of comments received from a large number and wide variety of sources ranging from other HUD elements in Central and Field Offices, public groups such as local housing and redevelopment agencies, individual cities, the U.S. Civil Rights Commission, the Housing Opportunity Council of Metropolitan Washington and innumerable private groups ranging from the National Urban Coalition, the NAACP, League of Women Voters, Americans for Indian Opportunity, and the Citizens Advocate Center, to the National Association of Home Builders, Mortgage Bankers Association of America, and private companies.",
+          "quote_verified": false,
+          "stance_basis": "listed as having submitted comments that led to revisions of the criteria",
+          "entity_as_written": "National Association of Home Builders",
+          "role_as_written": "commenter on proposed criteria"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The quote appears verbatim in the 'Alternatives to the Proposed Criteria' section of the cited pages, beginning with 'The criteria have been revised twice as a result of comments received...'"
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The National Association of Home Builders is merely listed as one of many commenters in a long enumeration. The text does not attribute any specific position or stance to NAHB; it only notes they were among the sources from which comments were received."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The text provides no basis for any stance label for NAHB specifically. 'Neutral' is not supported — the entity is simply listed as a commenter with no characterization of their position."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "National Association of Home Builders is the official name and matches the text exactly."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text confirms NAHB was among the sources from which comments were received, supporting the role of 'commenter on proposed criteria'."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The quote is verbatim and the entity name and role are correct, but no specific stance for NAHB can be derived from this passage. NAHB is merely listed among dozens of commenters with no indication of their position. A stance of 'neutral' is not supported; the entity should either be excluded or flagged as having an indeterminate stance. The extraction should be revised to reflect that no stance is attributable from this citation. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 12,
+      "entity": "National Capital Planning Commission",
+      "kind": "agency",
+      "role": "commenting agency",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Comment: Expand Criterion #4 to include the following: \"To assure that the low- and/or moderate-income housing needs of the Federal employees affected by new, expanded or relocated work centers in the locality. are met.\"",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1-10"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1-10"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Comment: Expand Criterion #4 to include the following: \"To assure that the low- and/or moderate-income housing needs of the Federal employees affected by new, expanded or relocated work centers in the locality. are met.\"",
+          "quote_verified": true,
+          "stance_basis": "requests expansion of criteria to address federal employee housing needs without opposing or endorsing the proposal",
+          "entity_as_written": "National Capital Planning Commission",
+          "role_as_written": "commenting agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The quote appears verbatim under the 'National Capital Planning Commission' section on page 1-10: 'Comment: Expand Criterion #4 to include the following: \"To assure that the low- and/or moderate-income housing needs of the Federal employees affected by new, expanded or relocated work centers in the locality. are met.\"'"
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "yes",
+            "note": "The text clearly attributes this comment to the National Capital Planning Commission as the commenter/speaker of the quoted text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The National Capital Planning Commission is making a specific recommendation to expand Criterion #4, which is a 'conditional' or 'in_favor' stance (suggesting improvement), not 'neutral'. The comment proposes an addition to the criteria, indicating support with conditions rather than neutrality."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "National Capital Planning Commission is the official name of the agency and is correctly formatted."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The National Capital Planning Commission is listed among agencies from which comments were received, confirming its role as a commenting agency."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote is verbatim and correctly attributed to the National Capital Planning Commission. However, the stance label 'neutral' is incorrect — the Commission is actively recommending an expansion of Criterion #4, which reflects a 'conditional' stance (supportive of the criteria but with suggested modifications). The stance should be re-labeled as 'conditional' to accurately reflect the nature of the comment."
+      }
+    },
+    {
+      "sequence": 13,
+      "entity": "National Urban Coalition",
+      "kind": "organization",
+      "role": "commenter on proposed criteria",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The criteria have been revised twice as a result of comments received from a large number and wide variety of sources ranging from other HUD elements in Central and Field Offices, public groups such as local housing and redevelopment agencies, individual cities, the U.S. Civil Rights Commission, the Housing Opportunity Council of Metropolitan Washington and innumerable private groups ranging from the National Urban Coalition, the NAACP, League of Women Voters, Americans for Indian Opportunity, and the Citizens Advocate Center, to the National Association of Home Builders, Mortgage Bankers Association of America, and private companies.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "1-10"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1-10"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The criteria have been revised twice as a result of comments received from a large number and wide variety of sources ranging from other HUD elements in Central and Field Offices, public groups such as local housing and redevelopment agencies, individual cities, the U.S. Civil Rights Commission, the Housing Opportunity Council of Metropolitan Washington and innumerable private groups ranging from the National Urban Coalition, the NAACP, League of Women Voters, Americans for Indian Opportunity, and the Citizens Advocate Center, to the National Association of Home Builders, Mortgage Bankers Association of America, and private companies.",
+          "quote_verified": false,
+          "stance_basis": "listed as having submitted comments that led to revisions of the criteria",
+          "entity_as_written": "National Urban Coalition",
+          "role_as_written": "commenter on proposed criteria"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact quote appears verbatim in the 'Alternatives to the Proposed Criteria' section of the cited pages."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "yes",
+            "note": "The National Urban Coalition is named in the paraphrased narrator sentence as one of many sources that provided comments leading to criteria revisions."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The text only identifies the National Urban Coalition as a commenter; no specific stance (in_favor, opposed, conditional, or neutral) is discernible from the passage. However, 'neutral' is the most defensible label given the lack of stance information — the entity is merely listed as a source of comments."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "National Urban Coalition is an official organization name and is correctly formatted."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text confirms the National Urban Coalition was among the private groups that submitted comments on the proposed criteria."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "The quote is verbatim and the entity is correctly identified as a commenter. However, the stance 'neutral' is inferred by default since the passage only lists the National Urban Coalition as one of many commenters without specifying their position. The neutral label is reasonable given no stance information is provided, but this extraction conveys no substantive stance information beyond participation. A human reviewer may wish to confirm whether additional pages contain more specific stance information for this entity. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 14,
+      "entity": "U.S. Civil Rights Commission",
+      "kind": "agency",
+      "role": "commenter on proposed criteria",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The criteria have been revised twice as a result of comments received from a large number and wide variety of sources ranging from other HUD elements in Central and Field Offices, public groups such as local housing and redevelopment agencies, individual cities, the U.S. Civil Rights Commission, the Housing Opportunity Council of Metropolitan Washington and innumerable private groups ranging from the National Urban Coalition, the NAACP, League of Women Voters, Americans for Indian Opportunity, and the Citizens Advocate Center, to the National Association of Home Builders, Mortgage Bankers Association of America, and private companies.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "1-10"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1-10"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The criteria have been revised twice as a result of comments received from a large number and wide variety of sources ranging from other HUD elements in Central and Field Offices, public groups such as local housing and redevelopment agencies, individual cities, the U.S. Civil Rights Commission, the Housing Opportunity Council of Metropolitan Washington and innumerable private groups ranging from the National Urban Coalition, the NAACP, League of Women Voters, Americans for Indian Opportunity, and the Citizens Advocate Center, to the National Association of Home Builders, Mortgage Bankers Association of America, and private companies.",
+          "quote_verified": false,
+          "stance_basis": "listed as having submitted comments that led to revisions of the criteria",
+          "entity_as_written": "U.S. Civil Rights Commission",
+          "role_as_written": "commenter on proposed criteria"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The quote appears verbatim in the 'Alternatives to the Proposed Criteria' section of the cited pages."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "yes",
+            "note": "The U.S. Civil Rights Commission is named in the paraphrased passage as one of many sources that provided comments on the criteria."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The text only identifies the U.S. Civil Rights Commission as a commenter; no stance (in_favor, opposed, conditional, or neutral) is discernible from the passage. 'Neutral' is an assumption, not supported by the text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'U.S. Civil Rights Commission' is the official name used in the document."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text confirms the Commission was among those who submitted comments on the proposed criteria."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "The U.S. Civil Rights Commission is mentioned only as one of many commenters in a list; no specific stance is attributed to it in the cited text. The 'neutral' label is not supported by any evidence — the entity's actual position (supportive, critical, or neutral) cannot be determined from this passage alone. A human reviewer should determine whether additional pages contain the Commission's specific comments or whether this entity should be excluded as unstanceable."
+      }
+    }
+  ]
+}

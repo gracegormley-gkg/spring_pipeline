@@ -1,0 +1,37 @@
+{
+  "title": {
+    "value": "Olympic Winter Games, 1980, Lake Placid, North Elba and Wilmington and vicinity : environmental impact statement.",
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  },
+  "year": {
+    "value": 2026,
+    "confidence": "low",
+    "sources": [
+      "NUL",
+      "regex (first 3 pages)"
+    ],
+    "note": "NUL=2026 disagrees with regex=1980 — flag"
+  },
+  "eis_type": {
+    "value": "Draft",
+    "confidence": "low",
+    "sources": [
+      "regex (first page)",
+      "Sonnet (first 2 pages)"
+    ],
+    "note": "regex=Draft disagrees with Sonnet=Final",
+    "evidence": "Check one ( ) Draft (X) Final Environmental Statement"
+  },
+  "lead_agency": {
+    "value": [
+      "United States. Economic Development Administration"
+    ],
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  }
+}

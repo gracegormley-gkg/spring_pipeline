@@ -1,0 +1,251 @@
+{
+  "summary": {
+    "project_description": {
+      "text": "The EIS evaluates EPA construction grant funding for the Phase I conveyance tunnels of the Tunnel and Reservoir Plan (TARP), proposed by the Metropolitan Sanitary District of Greater Chicago, with focus on the Lower Des Plaines Tunnel System. The Des Plaines component includes about 26 miles of tunnel located 150-325 feet underground in dolomite, 55 drop shafts, 10 access shafts, 5 construction shafts, 80 collecting structures, and one pumping station, all designed to capture combined-sewer overflows and convey them to treatment plants. The Des Plaines system alone is estimated at $346.9 million, while total Phase I tunnel construction cost is roughly $1.46 billion.",
+      "source_pages": [
+        "1-51",
+        "97-147",
+        "145-195",
+        "337-354"
+      ]
+    },
+    "affected_community": {
+      "text": "The MSDGC service area covers about 860 square miles in Cook County, Illinois, including Chicago and roughly 120 municipalities with a population near 5.5 million. The Des Plaines tunnel route passes through highly urbanized, mostly residential watersheds and Cook County Forest Preserve lands, serving suburbs such as Des Plaines, Park Ridge, Maywood, Riverside, Brookfield, and Forest Park. The area has experienced higher-than-national unemployment (about 9.6% in Cook County and 11.2% in Chicago in 1975), and households face potential property tax increases tied to the project.",
+      "source_pages": [
+        "1-51",
+        "49-99",
+        "97-147",
+        "145-195",
+        "193-243",
+        "289-339",
+        "337-354"
+      ]
+    },
+    "alternatives_overview": {
+      "text": "The Flood Control Coordinating Committee developed 23 alternative plans over two decades, eliminated 6, and modified the remaining 17 into 51 subplans evaluated against eight parameters including cost, benefits, and construction impacts. Four favorable Chicago Underflow plans were consolidated into TARP, which ranked highest against alternatives (including no-action) on 15 environmental criteria as the least costly and most environmentally acceptable option. If TARP were not built, alternatives such as instream aeration, treatment plant expansion, or reallocation of about $300 million in federal funds to other states were considered, and additional alternatives were evaluated for spoil disposal, sludge handling, and tunnel-dewatering effluent discharge.",
+      "source_pages": [
+        "1-51",
+        "97-147",
+        "145-195",
+        "193-243",
+        "241-291",
+        "337-354"
+      ]
+    },
+    "environmental_impact": {
+      "text": "The tunnels would capture about 90 percent of combined-sewer overflow pollutant load and reduce overflow frequency from roughly 100 to 10 times per year, but Illinois water quality standards for dissolved oxygen and ammonia would not be fully met without additional treatment upgrades, reservoirs, and instream aeration. Construction will generate about 3.78 million cubic yards of mostly non-marketable rock spoil, cause localized noise, dust, vibration, traffic disruption, and glare, and pose worker safety risks (an estimated 84 disabling injuries for the Des Plaines system). Risks include groundwater infiltration or exfiltration affecting the upper aquifer if grouting fails, possible damage from a Modified Mercalli Intensity VIII earthquake (about 1-in-100-year probability), and continued Lake Michigan backflows until storage reservoirs are built; long-term benefits include improved water quality in the Des Plaines River and Salt Creek and enhanced recreation, with no expected major harm to fish and wildlife.",
+      "source_pages": [
+        "1-51",
+        "49-99",
+        "97-147",
+        "145-195",
+        "193-243",
+        "289-339",
+        "337-354"
+      ]
+    },
+    "public_response": {
+      "text": "MSDGC held public meetings in October 1972 and July 1973 on the TARP plan and its environmental issues, and additional hearings were conducted by the Northern Illinois Planning Commission (1974), MSDGC (July 1975), Illinois EPA (September 1975), and the U.S. Army Corps of Engineers (November 1975). The Cook County Forest Preserve District formally requested that rock excavated from beneath its lands be stockpiled on Forest Preserve property for use in bicycle paths, equestrian trails, and winter recreation, and initial public reaction to the related NuEarth sludge-as-fertilizer program was positive. Residents near construction and drop shaft sites are expected to experience temporary annoyance from blasting vibration, noise, traffic, and nighttime lighting, and the draft EIS was circulated for a 45-day public review.",
+      "source_pages": [
+        "1-51",
+        "97-147",
+        "145-195",
+        "337-354"
+      ],
+      "based_on_main_doc_only": true
+    }
+  },
+  "alternatives": {
+    "value": [],
+    "confidence": "low",
+    "source_pages": [],
+    "note": "Alternatives chapter not detected structurally — skipped per v2 plan (no word-regex fallback)."
+  },
+  "themes": {
+    "value": {
+      "themes": [
+        "Water Systems",
+        "Urban Development",
+        "Industrial Production and Materials"
+      ],
+      "subthemes": [
+        "Water Infrastructure and Management",
+        "Urban Expansion and Land Use Change",
+        "Resource Extraction and Material Flows",
+        "Industrial Manufacturing and Pollution"
+      ]
+    },
+    "confidence": "high",
+    "justification": "The project centers on a massive underground tunnel and reservoir system to manage combined-sewer overflows and improve water quality (Water Infrastructure and Management; Industrial Manufacturing and Pollution), situated within a densely urbanized 860-square-mile service area (Urban Expansion and Land Use Change), and involves the excavation and disposal of approximately 3.78 million cubic yards of rock spoil (Resource Extraction and Material Flows).",
+    "source_pages": [
+      "summary"
+    ]
+  },
+  "location": {
+    "value": {
+      "places": [
+        {
+          "name": "Chicago metropolitan area (Cook County), IL",
+          "kind": "region",
+          "state": "IL"
+        },
+        {
+          "name": "Lower Des Plaines Tunnel System, Chicago, IL",
+          "kind": "corridor",
+          "state": "IL"
+        }
+      ],
+      "is_multi_site": false,
+      "geocoded": [
+        {
+          "name": "Chicago metropolitan area (Cook County), IL",
+          "lat": null,
+          "lon": null
+        },
+        {
+          "name": "Lower Des Plaines Tunnel System, Chicago, IL",
+          "lat": null,
+          "lon": null
+        }
+      ]
+    },
+    "confidence": "high",
+    "source_pages": [
+      "1-30"
+    ],
+    "note": "The EIS covers the Lower Des Plaines Tunnel System component of TARP, located within the Metropolitan Sanitary District of Greater Chicago service area in Cook County, Illinois."
+  },
+  "key_people": {
+    "value": {
+      "agency_preparers": [
+        {
+          "name": "United States Environmental Protection Agency, Region V",
+          "role": "Preparing Agency"
+        },
+        {
+          "name": "Booz, Allen and Hamilton, Inc.",
+          "role": "Contractor/Co-preparer"
+        },
+        {
+          "name": "George R. Alexander, Jr.",
+          "role": "Regional Administrator (Approving Official)"
+        }
+      ],
+      "cooperating_agencies": [
+        {
+          "name": "Water Resources Council"
+        },
+        {
+          "name": "Council on Environmental Quality"
+        },
+        {
+          "name": "Department of the Interior – Bureau of Outdoor Recreation"
+        },
+        {
+          "name": "Department of the Interior – Fish and Wildlife Service"
+        },
+        {
+          "name": "Department of the Interior – National Park Service"
+        },
+        {
+          "name": "Department of the Interior – Geological Survey"
+        },
+        {
+          "name": "Department of the Interior – Bureau of Mines"
+        },
+        {
+          "name": "Department of Defense – Army Corps of Engineers, North Central Division"
+        },
+        {
+          "name": "Department of Defense – Army Corps of Engineers, Chicago District Office"
+        },
+        {
+          "name": "Department of Agriculture – Soil Conservation Service"
+        },
+        {
+          "name": "Department of Agriculture – Forest Service"
+        },
+        {
+          "name": "Department of Health, Education, and Welfare"
+        },
+        {
+          "name": "Department of Housing and Urban Development"
+        },
+        {
+          "name": "Department of Transportation – Federal Aviation Administrator"
+        },
+        {
+          "name": "Department of Transportation – Coast Guard"
+        },
+        {
+          "name": "Department of Commerce – National Oceanic and Atmospheric Administration"
+        },
+        {
+          "name": "Department of Labor – Occupational Health and Safety Administration"
+        },
+        {
+          "name": "Great Lakes Basin Commission"
+        },
+        {
+          "name": "Illinois Institute for Environmental Quality"
+        },
+        {
+          "name": "Illinois Environmental Protection Agency"
+        },
+        {
+          "name": "Illinois Division of Waterways"
+        },
+        {
+          "name": "Illinois Department of Public Health"
+        },
+        {
+          "name": "Illinois Department of Conservation"
+        },
+        {
+          "name": "State Historic Preservation Office"
+        },
+        {
+          "name": "Northeastern Illinois Planning Commission"
+        },
+        {
+          "name": "Cook County Department of Environmental Control"
+        },
+        {
+          "name": "Metropolitan Sanitary District of Greater Chicago"
+        },
+        {
+          "name": "City of Chicago – Department of Environment Control"
+        },
+        {
+          "name": "City of Chicago – Department of Development and Planning"
+        },
+        {
+          "name": "City of Chicago – Department of Aviation"
+        }
+      ],
+      "public_commenters": [],
+      "comment_response_present": false
+    },
+    "confidence": "high",
+    "source_pages": {
+      "preparers": [
+        "1-30"
+      ],
+      "commenters": []
+    }
+  },
+  "chunking_meta": {
+    "n_chunks": 8,
+    "n_chapters_detected": 1,
+    "chapters": [
+      {
+        "label": "ENVIRONMENTAL IMPACTS ASSOCIATED WITH DISPOSAL OF THE",
+        "ceq_chapter": "Environmental Consequences",
+        "start_page": 349,
+        "end_page": 354
+      }
+    ],
+    "chunk_size_pages": 50,
+    "note": "Page numbers are ESTIMATED from char offsets at 2500 chars/page."
+  }
+}

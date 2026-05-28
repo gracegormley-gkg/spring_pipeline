@@ -1,0 +1,277 @@
+{
+  "title": {
+    "rubric_results": [
+      {
+        "check": "Title is non-empty and plausibly the document's title?",
+        "result": "yes",
+        "note": "The value clearly identifies an EIS for the Los Angeles Harbor Deepening Project, which is a plausible and well-formed document title."
+      },
+      {
+        "check": "Length is reasonable (not a sentence fragment, not the whole abstract)?",
+        "result": "yes",
+        "note": "The title is concise and appropriately scoped — not too short nor too long."
+      },
+      {
+        "check": "If two sources (NUL + Haiku) — do they roughly agree?",
+        "result": "n/a",
+        "note": "Only one source (NUL) was provided; no Haiku source to compare."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "medium",
+    "notes": "The extracted title is plausible and well-formed for an Environmental Impact Statement document. However, no cited page text was provided to verify the extraction against the source document, and only a single source (NUL) was used. Confidence is medium due to the lack of corroborating evidence from cited pages or a second source.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "year": {
+    "rubric_results": [
+      {
+        "check": "Year falls within 1969 ≤ year ≤ current year?",
+        "result": "no",
+        "note": "2026 is in the future and exceeds the current year (2025), failing the upper bound check"
+      },
+      {
+        "check": "Year present in NUL metadata OR found on first 3 pages?",
+        "result": "yes",
+        "note": "NUL metadata reports 2026; however, no cited page text was provided to confirm or deny regex finding of 1980"
+      },
+      {
+        "check": "If NUL and regex disagree, value reflects this with a low-confidence flag?",
+        "result": "yes",
+        "note": "Extraction correctly flags disagreement between NUL=2026 and regex=1980 with low confidence"
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "The extracted year of 2026 is a future date and fails the upper-bound validity check for an EIS document. The NUL metadata and regex disagree significantly (2026 vs. 1980), and no cited page text was provided to adjudicate. The regex value of 1980 is plausible for an EIS, while 2026 is not; human review is required to determine the correct publication year.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "eis_type": {
+    "rubric_results": [
+      {
+        "check": "Type is one of allowed values",
+        "result": "yes",
+        "note": "Supplemental is an allowed type, but so is Final — the question is which is correct"
+      },
+      {
+        "check": "Regex and Sonnet agree",
+        "result": "no",
+        "note": "Extractor explicitly notes regex=Supplemental disagrees with Sonnet=Final; sources conflict"
+      },
+      {
+        "check": "Evidence phrase supports chosen type",
+        "result": "no",
+        "note": "Evidence phrase '(X) Final Environmental Impact Statement' directly supports Final, not Supplemental — the extracted value contradicts its own evidence"
+      }
+    ],
+    "verdict": "RE_EXTRACT",
+    "model_confidence": "low",
+    "notes": "The extracted value of 'Supplemental' is directly contradicted by the cited evidence phrase '(X) Final Environmental Impact Statement', which clearly indicates a Final EIS. The extractor's own confidence is low and it flags a disagreement between regex and Sonnet. The evidence strongly favors 'Final' as the correct type, and the extraction should be re-run with the Final classification applied.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "lead_agency": {
+    "rubric_results": [
+      {
+        "check": "All listed agencies appear in NUL contributors OR on cited title pages?",
+        "result": "no",
+        "note": "No cited pages were provided, so agency names cannot be verified against source text. Extraction is unverifiable."
+      },
+      {
+        "check": "Joint-lead (>2 agencies) flagged with a note for human review?",
+        "result": "n/a",
+        "note": "Only 2 agencies listed; joint-lead flag not required, though dual-lead arrangements still warrant confirmation."
+      },
+      {
+        "check": "No role text (e.g., '(issuing body)') left in the agency names?",
+        "result": "yes",
+        "note": "No parenthetical role text present in either agency name. District designator '– Los Angeles District' is a geographic qualifier, not a role label, and is acceptable."
+      }
+    ],
+    "verdict": "RE_EXTRACT",
+    "model_confidence": "low",
+    "notes": "No cited pages were provided alongside the extraction, making it impossible to confirm that either agency name appears on the title pages or contributor lists of the source document. The agency names themselves are plausible and cleanly formatted, but without source text the first rubric check fails. The extraction should be re-run with supporting page citations included so the values can be verified.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "summary": {
+    "rubric_results": [
+      {
+        "check": "project_description text supported by cited pages",
+        "result": "yes",
+        "note": "Dredging ~14.7M CY (Section 2.36), -45ft MLLW (Section 1.03), -51ft in some areas (Section 1.07), 190-acre landfill on south side of Terminal Island (Section 1.08), shallow-water habitat, TITP outfall relocation (Section 1.20), utility relocations (Section 1.15), 30-month construction (Section 1.28), ~$59.1M first cost (Economic Data table), hydraulic cutterhead suction dredges (Section 1.03) all confirmed."
+      },
+      {
+        "check": "Numbers, places, dates match cited pages",
+        "result": "yes",
+        "note": "$59,125,000 total project cost matches Economic Data table; 190 acres confirmed in Sections 1.08 and 1.32; 30 months in Section 1.28; 100-200 workers in Section 1.29; -45ft and -51ft depths confirmed in Sections 1.03 and 1.07; 14.7M CY in Section 2.36."
+      },
+      {
+        "check": "affected_community figures (32,746 residents, 14,500 jobs, $2.56B payrolls, 6,000-berth shortage) supported by cited pages",
+        "result": "no",
+        "note": "These specific figures (32,746 residents within 1,000 yards, 14,500 direct jobs, $2.56 billion payrolls, 6,000-berth shortage) do not appear in the cited page text provided. The cited pages do not contain these socioeconomic statistics."
+      },
+      {
+        "check": "alternatives_overview supported by cited pages",
+        "result": "yes",
+        "note": "No action, ocean disposal, land disposal, size/location of landfill alternatives confirmed in Section 4 of Executive Summary. Reduction from larger fill to 190 acres and preservation of Reeves Field/seaplane anchorage confirmed in Section 1.32 and mitigation discussion. Hydraulic cutterhead suction dredges confirmed in Section 1.03."
+      },
+      {
+        "check": "environmental_impact text supported by cited pages",
+        "result": "no",
+        "note": "The 3:1 water column gain ratio is confirmed in the Summary table. Air emissions types (HC, NOx, SOx, CO, particulates) are confirmed. However, specific figures like '150 metric tons of benthic biomass,' 'several tons of fish,' '40 percent of feeding habitat for least tern,' and 'Catalina quarry' as an air emission source are not visible in the cited pages provided."
+      },
+      {
+        "check": "public_response text supported by cited pages",
+        "result": "yes",
+        "note": "Distribution to ~400 individuals/agencies confirmed in 'Comments Requested' section. December 1979 public hearing in San Pedro, USFWS jeopardy opinion, NMFS, California Fish and Game, Coastal Commission, SCAG, SCAQMD involvement, and Reeves Field preservation are referenced in the index and correspondence sections of the cited pages, though some details rely on sections not fully reproduced."
+      },
+      {
+        "check": "public_response based_on_main_doc_only=true",
+        "result": "yes",
+        "note": "All public response content references the main EIS/EIR document and its appendices; no external sources cited."
+      },
+      {
+        "check": "No invention or hallucinated detail beyond cited content",
+        "result": "no",
+        "note": "Specific figures in affected_community (32,746 residents, 14,500 jobs, $2.56B payrolls, 6,000-berth shortage) and environmental_impact (150 metric tons benthic biomass, 40% least tern feeding habitat, Catalina quarry as air emission source) are not visible in the provided cited page text and may be hallucinated or drawn from pages not reproduced here."
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "medium",
+    "notes": "Core project description figures (14.7M CY, 190 acres, $59.1M, 30 months, -45/-51ft depths, 100-200 workers) are well-supported by the cited pages. However, several specific figures in the affected_community field (32,746 residents, 14,500 jobs, $2.56B payrolls, 6,000-berth shortage) and environmental_impact field (150 metric tons benthic biomass, 40% least tern feeding habitat) do not appear in the provided cited page text, raising concerns about hallucination or citation of pages not reproduced. Human review is recommended to verify whether these figures appear in the full document at the cited page ranges.",
+    "source_pages": [
+      "1-51",
+      "49-99",
+      "97-147",
+      "145-195",
+      "193-243",
+      "289-339",
+      "337-358",
+      "241-291"
+    ]
+  },
+  "alternatives": {
+    "rubric_results": [
+      {
+        "check": "Each listed alternative is actually discussed on its cited page?",
+        "result": "yes",
+        "note": "All five alternatives (NED Plan, EQ Plan, Ocean Disposal, Land Disposal, No Action) are explicitly discussed in section VII of the cited text, which corresponds to pages 127-130 per the extraction."
+      },
+      {
+        "check": "No Action alternative is included if cited text includes it?",
+        "result": "yes",
+        "note": "The No Action alternative is present in the extracted value and is discussed in the cited text as 'no project alternative' and nonstructural alternatives (lightering, diversion) under section 7.2e and 7.3."
+      },
+      {
+        "check": "Names and descriptions match terminology used in the cited text?",
+        "result": "yes",
+        "note": "The cited text explicitly uses 'National Economic Development Plan (NED)', 'Environmental Quality Plan (EQ)', and 'Ocean Disposal Plan' — all matching the extraction. 'Land disposal of dredged material' and 'no project alternative' also match. The EQ plan acreage discrepancy (extraction says 103-187 acres; text says 103 acres for EQ vs 200/187 for NED) is minor and reflects the range across both plans."
+      },
+      {
+        "check": "No outside-knowledge alternatives added that aren't in the chapter?",
+        "result": "yes",
+        "note": "All five alternatives in the extraction are directly sourced from section VII of the cited text. No extraneous alternatives were introduced."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "All five alternatives in the extraction are clearly present and accurately described in the cited text. Terminology matches the source document precisely, including the NED/EQ/Ocean Disposal plan names. The EQ plan acreage description (103-187 acres) in the extraction conflates the EQ plan figure (103 acres) with the NED figure (187-200 acres), but this is a minor interpretive note rather than a fabrication, and the overall description remains accurate.",
+    "source_pages": [
+      "127-206"
+    ]
+  },
+  "themes": {
+    "rubric_results": [
+      {
+        "check": "Each chosen theme is supported by the doc summary fields?",
+        "result": "no",
+        "note": "No cited pages or summary text were provided, making it impossible to verify that the doc summary fields actually support these themes. The justification references specific details (190 acres of benthic habitat, California least tern) but no source text is available to confirm."
+      },
+      {
+        "check": "Theme names come from the fixed taxonomy verbatim?",
+        "result": "n/a",
+        "note": "Without access to the fixed taxonomy, verbatim match cannot be confirmed. The names 'Transportation Infrastructure', 'Wildlife and Natural Areas', and 'Water Systems' appear plausible but cannot be verified."
+      },
+      {
+        "check": "Subthemes belong to the chosen theme(s) per the taxonomy?",
+        "result": "n/a",
+        "note": "Cannot verify subtheme-to-theme assignments without the taxonomy. 'Infrastructure Impacts on Landscapes' assigned under Transportation Infrastructure or Water Systems is ambiguous; it may belong to Wildlife and Natural Areas instead."
+      },
+      {
+        "check": "1–3 themes and 2–5 subthemes selected (within range)?",
+        "result": "yes",
+        "note": "3 themes and 4 subthemes are selected, both within the allowed ranges."
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "No cited page text was provided, making source verification impossible for all substantive checks. The count of themes and subthemes is within range, but taxonomy verbatim matching and subtheme-to-theme assignments cannot be confirmed without the taxonomy or source document text. A human reviewer should validate theme/subtheme names against the fixed taxonomy and confirm the summary supports these selections.",
+    "source_pages": []
+  },
+  "location": {
+    "rubric_results": [
+      {
+        "check": "Place names appear in cited pages?",
+        "result": "yes",
+        "note": "Los Angeles Harbor, Los Angeles, CA, Terminal Island, San Pedro Bay, and Long Beach are all explicitly mentioned throughout the cited page text."
+      },
+      {
+        "check": "is_multi_site set correctly?",
+        "result": "no",
+        "note": "The document title reads 'LOS ANGELES-LONG BEACH HARBORS, CALIFORNIA' and references both harbors throughout (Port of Long Beach Master Plan, Long Beach emissions data, joint harbor tables). The project is primarily LA Harbor but the EIS/EIR scope spans both harbors, suggesting is_multi_site should be true."
+      },
+      {
+        "check": "For corridor projects: endpoints named, not just a midpoint?",
+        "result": "n/a",
+        "note": "This is a harbor deepening project, not a corridor/linear project; endpoint check does not apply."
+      },
+      {
+        "check": "State abbreviations match U.S. conventions?",
+        "result": "yes",
+        "note": "CA is used correctly for California throughout the extracted value and source pages."
+      }
+    ],
+    "verdict": "RE_EXTRACT",
+    "model_confidence": "high",
+    "notes": "The extraction correctly identifies Los Angeles Harbor as the primary project site, but the document title and scope explicitly cover 'LOS ANGELES-LONG BEACH HARBORS, CALIFORNIA,' with Long Beach Harbor referenced substantively throughout (joint biological surveys, emissions data, master plan coordination). The is_multi_site flag should be set to true and Long Beach Harbor should be added as a second place entry. The extraction note acknowledges Long Beach but incorrectly dismisses it as mere context.",
+    "source_pages": [
+      "1-30"
+    ]
+  },
+  "key_people": {
+    "rubric_results": [
+      {
+        "check": "Each agency preparer named in the cited Preparers/Consultation text?",
+        "result": "n/a",
+        "note": "No agency preparers were extracted; the cited pages (260-358) contain consultation correspondence and comment letters, not a preparers section. The empty list is consistent with the cited text."
+      },
+      {
+        "check": "Cooperating agencies / tribal nations actually listed in the cited text?",
+        "result": "yes",
+        "note": "U.S. Army Corps of Engineers LA District, U.S. Fish and Wildlife Service, National Marine Fisheries Service, California Department of Fish and Game, Port of Los Angeles, California Least Tern Recovery Team, U.S. EPA Region IX, U.S. Dept. of Interior Office of the Secretary, U.S. Coast Guard Eleventh District, California Coastal Commission, California Air Resources Board, and LA Regional Water Quality Control Board all appear in the cited text (comment letters list and correspondence)."
+      },
+      {
+        "check": "For public_commenters: stance present on cited page? Quote verbatim? Speaker clear?",
+        "result": "n/a",
+        "note": "No public commenters were extracted. The cited text does include public hearing speakers (e.g., Dr. Rimmon Fay, Jack Fancher) but the extractor left this field empty, which is a gap rather than an error in what was extracted."
+      },
+      {
+        "check": "Private individuals: last-name-only or 'private commenter' convention followed?",
+        "result": "n/a",
+        "note": "No private individuals were extracted, so convention compliance cannot be assessed."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "medium",
+    "notes": "All twelve cooperating agencies listed in the extraction are verifiably present in the cited text. Agency preparers are correctly left empty as the cited pages contain consultation/comment material rather than a preparers section. However, the public_commenters field is empty despite the cited text containing named public hearing speakers with stances (e.g., Dr. Rimmon Fay opposing the project, Jack Fancher of FWS presenting critical comments); these were not extracted, representing an omission rather than an error in what was captured. A re-extraction or human review of the public commenters section may be warranted if completeness is required.",
+    "source_pages": [
+      "260-358"
+    ]
+  }
+}

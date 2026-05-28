@@ -1,0 +1,401 @@
+{
+  "summary": {
+    "project_description": {
+      "text": "The Alternative Fuels Demonstration Program (formerly the Synthetic Fuels Commercialization Program) is a federal effort to prove that fuels made from coal, oil shale, and organic wastes can be produced at commercial scale. The program would build large plants using technologies such as high- and low-Btu coal gasification, coal liquefaction, oil shale surface and in-place processing, and solid waste pyrolysis. Production options range from 350,000 to 1.7 million barrels per day of oil-equivalent fuel by 1985, supported by federal incentives like loan guarantees. Plants would be built across five coal regions and one oil shale region, with each unit plant covering hundreds of acres and operating for about 20 years.",
+      "source_pages": [
+        "1-51",
+        "49-99",
+        "97-147",
+        "337-387",
+        "385-435",
+        "433-483",
+        "481-531"
+      ]
+    },
+    "affected_community": {
+      "text": "The program would affect six regions: the Appalachian, Eastern Interior, Fort Union, Powder River, and Four Corners coal regions, and the Oil Shale Region in Colorado, Utah, and Wyoming. Permanent population increases could reach tens of thousands per region, with the largest impacts in sparsely populated rural Western counties and on Indian reservations including the Navajo, Crow, Northern Cheyenne, Fort Peck, Fort Berthold, and Uintah and Ouray. Many affected counties have predominantly blue-collar workforces, below-average incomes, aging or substandard housing, and economies dependent on agriculture and mining. Rapid growth could strain housing, schools, health care, and public services, while shifting workers from other industries and regions.",
+      "source_pages": [
+        "1-51",
+        "49-99",
+        "97-147",
+        "145-195",
+        "193-243",
+        "241-291",
+        "289-339",
+        "385-435",
+        "433-483",
+        "481-531"
+      ]
+    },
+    "alternatives_overview": {
+      "text": "Thirteen main alternatives are evaluated, including no action (increased oil and gas imports or accepting an energy shortfall), direct use of coal, increased energy conservation, nuclear, geothermal, solar, wind, hydroelectric, tidal, tar sands, more domestic oil and gas, a hydrogen economy, and energy from solid wastes. Different program sizes are also analyzed, from 350,000 up to 1.7 million barrels per day, along with $2, $4, and $6 billion budget options. Except for varying production levels, none of the alternatives would meet all program goals, and renewables like solar, wind, geothermal, and waste-to-energy could only partially replace the proposed output. The document also compares synthetic fuel technologies against one another, noting tradeoffs in water use, emissions, land disturbance, and labor.",
+      "source_pages": [
+        "1-51",
+        "49-99",
+        "337-387",
+        "433-483",
+        "481-531",
+        "817-867"
+      ]
+    },
+    "environmental_impact": {
+      "text": "Plants would emit sulfur oxides, nitrogen oxides, particulates, hydrocarbons, carbon monoxide, aldehydes, and trace amounts of toxic metals and polycyclic aromatic compounds that may pose chronic health risks, including cancer. Water demand is large—up to about 60,000 acre-feet per year per plant for some technologies—and could strain limited supplies in the Powder River, Fort Union, Four Corners, and Oil Shale regions, while raising salinity in the Colorado River and threatening groundwater from mining and spent shale leachate. Land impacts include up to roughly 171,000 acres disturbed cumulatively, with loss of vegetation, wildlife habitat, and farmland, and slow or incomplete reclamation in arid Western areas. Sensitive species such as big sagebrush, Appalachian forests, the black-footed ferret, peregrine falcon, Colorado squawfish, and humpback chub could be harmed by salt drift, habitat loss, and water withdrawals.",
+      "source_pages": [
+        "1-51",
+        "49-99",
+        "97-147",
+        "145-195",
+        "193-243",
+        "241-291",
+        "289-339",
+        "337-387",
+        "385-435",
+        "433-483",
+        "481-531",
+        "817-867"
+      ]
+    },
+    "public_response": {
+      "text": "After the Draft EIS was filed in January 1976, ERDA received 49 written comments during and after the two-month public comment period from federal agencies, many state governments, industry groups, environmental organizations, and Indian tribes, in addition to testimony at public meetings and Congressional hearings. In response, the Final EIS was substantially revised, expanding analysis of water availability and quality, socioeconomic effects, community growth mitigation, surface mine reclamation, and coal slurry pipelines. Concerns raised included unresolved Indian water rights claims in the Northern Great Plains, Montana's Yellowstone water moratorium, Colorado River salinity, and local social strains such as housing shortages, unequal benefits, increased crime, and loss of community identity in rapidly growing rural areas. ERDA also proposed an Environmental Advisory Panel including governors, tribes, industry, environmental groups, and the public to advise on program impacts.",
+      "source_pages": [
+        "1-51",
+        "49-99",
+        "193-243",
+        "289-339",
+        "385-435",
+        "433-483"
+      ],
+      "based_on_main_doc_only": true
+    }
+  },
+  "alternatives": {
+    "value": [
+      {
+        "name": "No Action (Increased Oil and Gas Imports)",
+        "description": "Assumes all parts of the 1975 Energy Program except the synthetic fuels commercialization program are adopted, with the resulting domestic energy shortfall of 1 million barrels per day oil equivalent met by increased oil and gas imports. Includes a sub-option of an energy shortfall if import constraints prevent additional imports.",
+        "source_pages": [
+          "823",
+          "835"
+        ]
+      },
+      {
+        "name": "Direct Utilization of Coal",
+        "description": "An increase in direct coal combustion equivalent to 1 million barrels of oil per day in 1985, requiring conversion of existing oil and gas consumption to coal use in power plants and industrial utility boilers. Would not meet the informational objectives of the proposed program.",
+        "source_pages": [
+          "845",
+          "852"
+        ]
+      },
+      {
+        "name": "Alternative Incentives",
+        "description": "Alternative financial incentive mechanisms (e.g., construction grants vs. utility rate pass-throughs) that could shift the burden of program costs between taxpayers and utility ratepayers without necessarily changing program levels or environmental impacts.",
+        "source_pages": [
+          "823",
+          "824"
+        ]
+      },
+      {
+        "name": "Alternative (Lower) Level – 350,000 bbl/day",
+        "description": "A reduced program level of approximately 350,000 barrels per day, characterized as an information option that would provide some but lesser achievement of the program's information, security, and supply objectives.",
+        "source_pages": [
+          "824",
+          "824"
+        ]
+      },
+      {
+        "name": "Alternative (Higher) Level – 1,700,000 bbl/day",
+        "description": "An expanded program level of approximately 1.7 million barrels per day maximum production option, providing greater energy supply contribution but with correspondingly larger environmental impacts.",
+        "source_pages": [
+          "824",
+          "824"
+        ]
+      },
+      {
+        "name": "Alternative Mixes of Technologies",
+        "description": "Different combinations of synthetic fuel technologies (high-Btu gas, liquid fuels, utility fuels; mine-mouth vs. consuming center production) that could eliminate one or more program components, with environmental impacts estimable from individual technology data.",
+        "source_pages": [
+          "824",
+          "825"
+        ]
+      },
+      {
+        "name": "Biomass Conversion",
+        "description": "Conversion of biomass resources (including urban and other wastes) to synthetic fuels as an alternative or supplement to coal and oil shale-based processes; program and environmental impacts differ significantly in nature and are relatively small compared to coal/oil shale processes.",
+        "source_pages": [
+          "825",
+          "825"
+        ]
+      },
+      {
+        "name": "Delay",
+        "description": "Deferral of program implementation by one or more years, which would vitiate achievement of program objectives—particularly the information objective—and whose consequences approach those of the no-action alternative through continued increased imports.",
+        "source_pages": [
+          "825",
+          "826"
+        ]
+      },
+      {
+        "name": "Increased Energy Conservation",
+        "description": "Abandoning the energy supply objective while retaining the security objective, relying on demand reduction measures to address the domestic energy gap rather than new domestic production.",
+        "source_pages": [
+          "826",
+          "827"
+        ]
+      },
+      {
+        "name": "Nuclear Energy",
+        "description": "Increased use of nuclear energy as a domestic secure energy source, considered as an alternative if the synthetic fuels information objective were abandoned while retaining security and supply objectives.",
+        "source_pages": [
+          "826",
+          "827"
+        ]
+      },
+      {
+        "name": "Geothermal Energy",
+        "description": "Increased use of geothermal energy as a domestic secure energy source, considered as an alternative to synthetic fuels if the information objective were abandoned.",
+        "source_pages": [
+          "826",
+          "827"
+        ]
+      },
+      {
+        "name": "Solar Energy",
+        "description": "Increased use of solar energy (including biomass conversion of non-waste resources) as a domestic energy alternative if the synthetic fuels information objective were abandoned.",
+        "source_pages": [
+          "826",
+          "827"
+        ]
+      },
+      {
+        "name": "Wind Energy",
+        "description": "Increased use of wind energy as a domestic energy alternative if the synthetic fuels information objective were abandoned; considered a more remote option relative to near-term program objectives.",
+        "source_pages": [
+          "826",
+          "827"
+        ]
+      },
+      {
+        "name": "Hydroelectric Energy",
+        "description": "Increased use of hydroelectric power as a domestic secure energy source, considered as an alternative to synthetic fuels if the information objective were abandoned.",
+        "source_pages": [
+          "826",
+          "827"
+        ]
+      },
+      {
+        "name": "Tidal Energy",
+        "description": "Increased use of tidal energy as a domestic energy alternative if the synthetic fuels information objective were abandoned; considered a more remote option.",
+        "source_pages": [
+          "826",
+          "827"
+        ]
+      },
+      {
+        "name": "Tar Sands",
+        "description": "Development of tar sands as a domestic energy resource alternative to synthetic fuels from coal and oil shale, considered if the information objective were abandoned.",
+        "source_pages": [
+          "826",
+          "827"
+        ]
+      },
+      {
+        "name": "Increased Domestic Oil and Gas Production",
+        "description": "Increased exploitation of conventional domestic oil and gas resources as an alternative to synthetic fuels, though limited domestic resource potential constrains this option's contribution.",
+        "source_pages": [
+          "826",
+          "827"
+        ]
+      },
+      {
+        "name": "Hydrogen Economy",
+        "description": "Development of hydrogen as an energy carrier and fuel source as a longer-term alternative to synthetic fuels from coal and oil shale.",
+        "source_pages": [
+          "826",
+          "827"
+        ]
+      },
+      {
+        "name": "Energy from Solid Wastes",
+        "description": "Recovery of energy from urban and other solid wastes (including pyrolysis and other conversion processes) as an alternative or supplement to the proposed synthetic fuels program.",
+        "source_pages": [
+          "827",
+          "827"
+        ]
+      }
+    ],
+    "confidence": "high",
+    "source_pages": [
+      "823-852"
+    ]
+  },
+  "themes": {
+    "value": {
+      "themes": [
+        "Energy Systems",
+        "Wildlife and Natural Areas",
+        "Indigenous Narratives and Sovereignty"
+      ],
+      "subthemes": [
+        "Energy Extraction and Production",
+        "Habitat Conservation and Biodiversity",
+        "Water Scarcity and Environmental Change",
+        "Sovereignty, Rights, and Self-Determination",
+        "Indigenous Knowledge and Environmental Stewardship"
+      ]
+    },
+    "confidence": "high",
+    "justification": "The project centers on large-scale synthetic fuel production from coal, oil shale, and waste, directly implicating energy extraction and significant environmental impacts including habitat loss, water strain, and threats to sensitive species. Indian reservations (Navajo, Crow, Northern Cheyenne, etc.) are explicitly named as affected communities with unresolved water rights claims, invoking indigenous sovereignty and stewardship concerns.",
+    "source_pages": [
+      "summary"
+    ]
+  },
+  "location": {
+    "value": {
+      "places": [
+        {
+          "name": "Appalachian Region",
+          "kind": "region",
+          "state": null
+        },
+        {
+          "name": "Eastern Interior Region",
+          "kind": "region",
+          "state": null
+        },
+        {
+          "name": "Fort Union Region",
+          "kind": "region",
+          "state": null
+        },
+        {
+          "name": "Powder River Region",
+          "kind": "region",
+          "state": null
+        },
+        {
+          "name": "Four Corners Region",
+          "kind": "region",
+          "state": null
+        },
+        {
+          "name": "Oil Shale Region (Colorado, Utah, Wyoming)",
+          "kind": "region",
+          "state": null
+        }
+      ],
+      "is_multi_site": true,
+      "geocoded": [
+        {
+          "name": "Appalachian Region",
+          "lat": 41.982255,
+          "lon": -73.406854,
+          "address": "Appalachian Trail, Salisbury, Northwest Hills Planning Region, Connecticut, 06068, United States"
+        },
+        {
+          "name": "Eastern Interior Region",
+          "lat": 8.471621,
+          "lon": 124.722378,
+          "address": "CDO Eastern Interior Road, Baloy, Linangohan, F. S. Catanico, Cagayan de Oro, Northern Mindanao, 9000, Philippines"
+        },
+        {
+          "name": "Fort Union Region",
+          "lat": 16.216376,
+          "lon": -61.525853,
+          "address": "Fort l'Union, Impasse du Madrepore, Bas du Fort, Le Gosier, Pointe-à-Pitre, Guadeloupe, 97190, France"
+        },
+        {
+          "name": "Powder River Region",
+          "lat": 41.502317,
+          "lon": -72.738466,
+          "address": "Powder Ridge Ski Area, Baileyville, Middlefield, Lower Connecticut River Valley Planning Region, Connecticut, United States"
+        },
+        {
+          "name": "Four Corners Region",
+          "lat": 41.449542,
+          "lon": -72.194801,
+          "address": "Four Corners, Montville, Southeastern Connecticut Planning Region, Connecticut, 06353, United States"
+        },
+        {
+          "name": "Oil Shale Region (Colorado, Utah, Wyoming)",
+          "lat": null,
+          "lon": null
+        }
+      ]
+    },
+    "confidence": "high",
+    "source_pages": [
+      "1-30"
+    ],
+    "note": "Generic/programmatic EIS for the Alternative Fuels Demonstration Program covering multiple coal and oil shale regions across the western and eastern US; no single specific site identified."
+  },
+  "key_people": {
+    "value": {
+      "agency_preparers": [
+        {
+          "name": "James L. Liverman",
+          "role": "Assistant Administrator for Environment and Safety, Responsible Official"
+        }
+      ],
+      "cooperating_agencies": [
+        {
+          "name": "Energy Research and Development Administration (ERDA)"
+        },
+        {
+          "name": "U.S. Department of the Interior"
+        },
+        {
+          "name": "U.S. Environmental Protection Agency (EPA)"
+        }
+      ],
+      "public_commenters": [
+        {
+          "name": "Columbia Gas System Service Corporation",
+          "kind": "organization",
+          "stance": "conditional",
+          "quote": "Initially, it should be pointed out that there are no commercial plants in operation in the U.S. today; consequently, the DES was to be written in general terms and was not intended to be process specific. Therefore, it follows that, the calculations, data and conclusions presented were to be generalized impacts and not considered absolute.",
+          "source_pages": [
+            "1048"
+          ],
+          "quote_verified": false,
+          "note": "Quote not found verbatim — flagged for HUMAN_REVIEW"
+        }
+      ],
+      "comment_response_present": true
+    },
+    "confidence": "high",
+    "source_pages": {
+      "preparers": [
+        "1-30"
+      ],
+      "commenters": [
+        "1011-1035"
+      ]
+    }
+  },
+  "chunking_meta": {
+    "n_chunks": 29,
+    "n_chapters_detected": 3,
+    "chapters": [
+      {
+        "label": "4. Environmental Impacts",
+        "ceq_chapter": "Environmental Consequences",
+        "start_page": 10,
+        "end_page": 341
+      },
+      {
+        "label": "3. Alternatives Deriving from Consideration of Objectives",
+        "ceq_chapter": "Alternatives",
+        "start_page": 823,
+        "end_page": 852
+      },
+      {
+        "label": "53. Mitigation of Socioeconomic Impacts",
+        "ceq_chapter": "Mitigation",
+        "start_page": 1006,
+        "end_page": 1013
+      }
+    ],
+    "chunk_size_pages": 50,
+    "note": "Page numbers are ESTIMATED from char offsets at 2500 chars/page."
+  }
+}
