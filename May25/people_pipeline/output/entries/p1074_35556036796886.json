@@ -1,0 +1,2432 @@
+{
+  "doc_id": "p1074_35556036796886",
+  "work_id": "2d55f0a5-2241-49ef-a135-cd5785cc36de",
+  "title": "Kendall Square urban renewal : environmental impact statement.",
+  "estimated_pages": 364,
+  "n_chunks": 8,
+  "n_raw_rows": 40,
+  "n_entries": 36,
+  "verdict_counts": {
+    "PASS": 1,
+    "PASS_WITH_NOTE": 0,
+    "RE_EXTRACT": 7,
+    "HUMAN_REVIEW": 28
+  },
+  "stance_counts": {
+    "in_favor": 14,
+    "neutral": 17,
+    "conditional": 2,
+    "opposed": 3
+  },
+  "elapsed_sec": 142.4,
+  "usage": {
+    "extract": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 8,
+          "input_tokens": 182899,
+          "output_tokens": 6113,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.6404
+        }
+      ],
+      "total": {
+        "calls": 8,
+        "input_tokens": 182899,
+        "output_tokens": 6113,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.6404
+      }
+    },
+    "critic": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 36,
+          "input_tokens": 137525,
+          "output_tokens": 15567,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.6461
+        }
+      ],
+      "total": {
+        "calls": 36,
+        "input_tokens": 137525,
+        "output_tokens": 15567,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.6461
+      }
+    },
+    "total": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 44,
+          "input_tokens": 320424,
+          "output_tokens": 21680,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 1.2865
+        }
+      ],
+      "total": {
+        "calls": 44,
+        "input_tokens": 320424,
+        "output_tokens": 21680,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 1.2865
+      }
+    }
+  },
+  "schema": {
+    "stance_vocabulary": [
+      "in_favor",
+      "opposed",
+      "conditional",
+      "neutral"
+    ],
+    "kind_vocabulary": [
+      "individual",
+      "official",
+      "organization",
+      "agency",
+      "tribe",
+      "government",
+      "other"
+    ],
+    "verdicts": [
+      "PASS",
+      "PASS_WITH_NOTE",
+      "RE_EXTRACT",
+      "HUMAN_REVIEW"
+    ],
+    "page_numbers": "ESTIMATED from char offsets at 2500 chars/page.",
+    "merge_rule": "One row per (entity, stance) — stance changes produce separate rows.",
+    "cost_note": "USD costs are ESTIMATES from settings.PRICES_USD_PER_M; verify against AWS Bedrock invoice."
+  },
+  "entries": [
+    {
+      "sequence": 1,
+      "entity": "Cambridge City Council",
+      "kind": "government",
+      "role": "Municipal legislative body, City of Cambridge",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "On October 9, 1974, the City Council passed a resolution which endorsed the Neighborhood Plan in principle and called upon the City Manager, the Redevelopment Authority and City Staff to move forward as rapidly as possible to attract development to the site which would provide jobs, a decent and human environment and a substantial increase in the City's tax base.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "6",
+        "49-99"
+      ],
+      "n_mentions": 3,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "6"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The City Council order of October 9, 1974 designated the Neighborhood Plan as the 'Preferred Plan of the City Council' and ordered that the Task Force and City Manager's Plans be submitted to HUD as alternatives.",
+          "quote_verified": false,
+          "stance_basis": "Designated Neighborhood Plan as preferred and unanimously approved Amendment No. 1 to the Urban Renewal Plan",
+          "entity_as_written": "Cambridge City Council",
+          "role_as_written": "local legislative body, Cambridge MA"
+        },
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "49-99"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "On July 2, 1973, the Cambridge City Council passed a City order specifying that the Kendall Square site be used to create and provide maximum blue collar and nonprofessional white collar jobs for Cambridge residents.",
+          "quote_verified": true,
+          "stance_basis": "Passed City order directing Kendall Square site development for job creation for Cambridge residents",
+          "entity_as_written": "Cambridge City Council",
+          "role_as_written": "Municipal legislative body, City of Cambridge"
+        },
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "49-99"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "On October 9, 1974, the City Council passed a resolution which endorsed the Neighborhood Plan in principle and called upon the City Manager, the Redevelopment Authority and City Staff to move forward as rapidly as possible to attract development to the site which would provide jobs, a decent and human environment and a substantial increase in the City's tax base.",
+          "quote_verified": true,
+          "stance_basis": "Endorsed the Neighborhood Plan and called for rapid development of the Kendall Square site",
+          "entity_as_written": "Cambridge City Council",
+          "role_as_written": "Municipal legislative body, City of Cambridge"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited pages (6 and 49-99, rendered as socioeconomic chapter pages II-3-x) do not contain the quoted text about the October 9, 1974 City Council resolution. The text cuts off mid-sentence referencing a July 2, 1973 City Council order, but the specific October 9, 1974 resolution quote is not present in the provided text."
+          },
+          {
+            "check": "Attribution links Cambridge City Council to stated stance",
+            "result": "no",
+            "note": "The provided text does not contain the passage attributing the October 9, 1974 resolution to the Cambridge City Council endorsing the Neighborhood Plan. The text is cut off before reaching that content."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since the relevant passage is not present in the provided text excerpts."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Cambridge City Council is the official name of the municipal legislative body."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text does reference the Cambridge City Council passing orders, consistent with the role of municipal legislative body."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "The summary quote about the October 9, 1974 City Council resolution endorsing the Neighborhood Plan is not present in the provided page excerpts. The text cuts off mid-sentence referencing a July 2, 1973 City Council order, suggesting the relevant content may be on page 6 or in a portion of pages 49-99 not captured here. The extraction may be correct but cannot be verified from the provided text; the quote likely appears on page 6 (Part I) which was not fully rendered. Human review is needed to confirm the verbatim quote and attribution."
+      }
+    },
+    {
+      "sequence": 2,
+      "entity": "Cambridge Planning Board",
+      "kind": "agency",
+      "role": "local planning board",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "On January 11, 1977, the Cambridge Planning Board issued its required finding that the Urban Renewal Plan as amended by Amendment No. 1 is based on a local survey and conforms to a comprehensive plan for the locality as a whole.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "8"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "8"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "On January 11, 1977, the Cambridge Planning Board issued its required finding that the Urban Renewal Plan as amended by Amendment No. 1 is based on a local survey and conforms to a comprehensive plan for the locality as a whole.",
+          "quote_verified": true,
+          "stance_basis": "Issued finding that Amendment No. 1 conforms to comprehensive plan, enabling project to proceed",
+          "entity_as_written": "Cambridge Planning Board",
+          "role_as_written": "local planning board"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page text is entirely a list of figures/tables (table of contents material). The quoted sentence about the Cambridge Planning Board's January 11, 1977 finding does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The Cambridge Planning Board is not mentioned anywhere in the cited page text provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance because the quote and entity are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Cambridge Planning Board is a properly named official agency."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text contains no reference to the Cambridge Planning Board or its role."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "The cited page 8 text provided consists entirely of a list of figures (table of contents), with no mention of the Cambridge Planning Board or the quoted finding. The quote itself is plausible for an EIS document of this era, and the extraction may be correct but pointing to the wrong page. A human should verify the actual page 8 of the document body (not the list of figures) to confirm whether the quote appears there."
+      }
+    },
+    {
+      "sequence": 3,
+      "entity": "East Cambridge Planning Team",
+      "kind": "organization",
+      "role": "community planning organization",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "This plan was supported by the East Cambridge Planning Team, MIT and the Kendall Square Businessmen's Association.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "7"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "7"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "This plan was supported by the East Cambridge Planning Team, MIT and the Kendall Square Businessmen's Association.",
+          "quote_verified": false,
+          "stance_basis": "Supported the Neighborhood Plan (Preferred Plan)",
+          "entity_as_written": "East Cambridge Planning Team",
+          "role_as_written": "community planning organization"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page text is a table of contents/list of figures with no narrative text containing the summary quote."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The East Cambridge Planning Team is not mentioned anywhere in the cited page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance as the quote and entity are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "East Cambridge Planning Team is a plausible official organization name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited pages contain only table/figure listings and do not reference the entity or its role."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page (page 7) appears to be a table of contents or list of figures/tables with no narrative content. The summary quote and entity attribution are entirely absent from the provided text. The extractor likely cited the wrong page number; the actual supporting text needs to be located on a different page. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 4,
+      "entity": "Kendall Square Businessmen's Association",
+      "kind": "organization",
+      "role": "local business association",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "This plan was supported by the East Cambridge Planning Team, MIT and the Kendall Square Businessmen's Association.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "7"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "7"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "This plan was supported by the East Cambridge Planning Team, MIT and the Kendall Square Businessmen's Association.",
+          "quote_verified": false,
+          "stance_basis": "Supported the Neighborhood Plan (Preferred Plan)",
+          "entity_as_written": "Kendall Square Businessmen's Association",
+          "role_as_written": "local business association"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page text (page 7) contains only a list of tables and figures; the summary quote does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The Kendall Square Businessmen's Association is not mentioned anywhere in the cited page text, so no link can be confirmed."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot assess stance match since the quote and entity are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "The organization name appears to be a proper official-style name for a local business association."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention the entity or its role at all."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The cited page (page 7) contains only a list of tables and figures (a table of contents section), and the summary quote does not appear anywhere in the provided text. The quote and entity attribution may exist on a different page of the document. A human reviewer should locate the correct page where this quote appears and verify the attribution."
+      }
+    },
+    {
+      "sequence": 5,
+      "entity": "MIT",
+      "kind": "organization",
+      "role": "university/institutional stakeholder",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "This plan was supported by the East Cambridge Planning Team, MIT and the Kendall Square Businessmen's Association.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "7"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "7"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "This plan was supported by the East Cambridge Planning Team, MIT and the Kendall Square Businessmen's Association.",
+          "quote_verified": false,
+          "stance_basis": "Supported the Neighborhood Plan (Preferred Plan)",
+          "entity_as_written": "MIT",
+          "role_as_written": "university/institutional stakeholder"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page text (page 7) contains only a list of tables and figures; the summary quote about MIT, East Cambridge Planning Team, and Kendall Square Businessmen's Association does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links MIT to stated stance",
+            "result": "no",
+            "note": "MIT is not mentioned anywhere in the cited page text, so no attribution can be confirmed."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the quote and entity are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "MIT is a recognized official institutional abbreviation for Massachusetts Institute of Technology."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention MIT or any role description for it."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The cited page (page 7) appears to be a table of contents/list of tables and figures with no substantive text matching the summary quote. The quote about MIT, East Cambridge Planning Team, and Kendall Square Businessmen's Association supporting a plan cannot be verified from the provided text. The correct page reference may be wrong, or the text extraction for page 7 may be incomplete; a human should locate the actual source page for this quote."
+      }
+    },
+    {
+      "sequence": 6,
+      "entity": "Cambridge Police Department",
+      "kind": "agency",
+      "role": "Municipal police agency, City of Cambridge",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "There are several reasons given by the Cambridge Police Department for the crime in the vicinity of Kendall Square.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "49-99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "49-99"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "There are several reasons given by the Cambridge Police Department for the crime in the vicinity of Kendall Square.",
+          "quote_verified": true,
+          "stance_basis": "Provided analysis of crime factors near Kendall Square without taking a position on the project",
+          "entity_as_written": "Cambridge Police Department",
+          "role_as_written": "Municipal police agency, City of Cambridge"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact sentence 'There are several reasons given by the Cambridge Police Department for the crime in the vicinity of Kendall Square.' appears on page II-3-35."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "yes",
+            "note": "The paraphrased sentence names the Cambridge Police Department as the source of reasons given for crime near Kendall Square; the department is cited as providing factual/descriptive information."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The Cambridge Police Department is providing factual crime data and explanations, not expressing support or opposition to the project; 'neutral' is appropriate."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Cambridge Police Department' is the official name used in the document."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text references the Cambridge Police Department as the source of crime statistics and explanations, consistent with a municipal police agency role in Cambridge."
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "The summary quote is present verbatim on page II-3-35. The Cambridge Police Department is clearly identified as providing factual crime information, making 'neutral' the correct stance label. All checks pass without issue."
+      }
+    },
+    {
+      "sequence": 7,
+      "entity": "local planners",
+      "kind": "other",
+      "role": "Cambridge planning professionals",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Local planners believe that rent control is a significant force in preserving the existing socioeconomic makeup of the neighborhoods in Cambridge and has reduced the out-migration of low income workers.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "49-99"
+      ],
+      "n_mentions": 2,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "49-99"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Local planners believe that rent control is a significant force in preserving the existing socioeconomic makeup of the neighborhoods in Cambridge and has reduced the out-migration of low income workers.",
+          "quote_verified": true,
+          "stance_basis": "Expressed view on rent control's role in neighborhood preservation, not directly on the project",
+          "entity_as_written": "local planners",
+          "role_as_written": "Cambridge planning professionals"
+        },
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "49-99"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The shortage of recreational and open space in Cambridge is considered to be a problem by local planners.",
+          "quote_verified": true,
+          "stance_basis": "Identified open space shortage as a problem relevant to project context",
+          "entity_as_written": "local planners",
+          "role_as_written": "Cambridge planning professionals"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact sentence appears on page II-3-14: 'Local planners believe that rent control is a significant force in preserving the existing socioeconomic makeup of the neighborhoods in Cambridge and has reduced the out-migration of low income workers.'"
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "yes",
+            "note": "The narrator sentence names 'Local planners' as the subject holding this belief, consistent with paraphrased attribution mode."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The statement expresses a positive view of rent control's effects; 'neutral' does not fit. The planners are expressing a favorable/supportive position toward rent control, which would be 'in_favor' or at minimum 'conditional'. However, the stance may be neutral with respect to the Kendall Square project itself rather than rent control policy."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'local planners' is a generic group descriptor used in the source text; acceptable as an entity label."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text references 'local planners' in the context of Cambridge housing and open space issues, consistent with 'Cambridge planning professionals'."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "The summary quote is verbatim and the attribution is correct. However, the stance label 'neutral' is questionable: the planners are expressing a positive belief about rent control's effects, which could be coded as 'in_favor' of rent control. The ambiguity arises because the EIS context is the Kendall Square project, and the planners' view on rent control may be tangential rather than a direct stance on the project itself. Human review is warranted to determine the appropriate stance label given the broader EIS context."
+      }
+    },
+    {
+      "sequence": 8,
+      "entity": "Cambridge Department of Traffic and Parking",
+      "kind": "agency",
+      "role": "city traffic management agency",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "It is designated by the Cambridge Department of Traffic and Parking as the worst intersection in Cambridge. This designation is based on accidents, volume and controlability.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "130"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "130"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "It is designated by the Cambridge Department of Traffic and Parking as the worst intersection in Cambridge. This designation is based on accidents, volume and controlability.",
+          "quote_verified": false,
+          "stance_basis": "designated Kendall Square rotary as worst intersection in Cambridge, raising concern about existing conditions",
+          "entity_as_written": "Cambridge Department of Traffic and Parking",
+          "role_as_written": "city traffic management agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 130 text does not contain the phrase 'worst intersection in Cambridge' or any mention of the Cambridge Department of Traffic and Parking designation based on accidents, volume and controlability."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The Cambridge Department of Traffic and Parking is not mentioned anywhere in the provided page text; no paraphrase linking them to any stance is present."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the entity and quote are absent from the cited text. The quote, if real, would suggest a factual/informational role rather than a clear neutral stance on a project."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "The entity name appears to be a plausible official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention the Cambridge Department of Traffic and Parking or confirm its role as a city traffic management agency."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote and entity are entirely absent from the provided page 130 text, which covers bicycle traffic, truck service, and East Cambridge corridors. The extraction likely references a different page. The correct page containing the 'worst intersection in Cambridge' designation should be identified and re-extracted. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 9,
+      "entity": "Cambridge Historical Commission",
+      "kind": "agency",
+      "role": "local historic preservation commission",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "A section of East Cambridge was proposed for the establishment of a \"Historical District\" by the Cambridge Historical Commission. The proposed regulations were designed to \"control commercial and high-rise development, demolition and destructive alterations of residential properties\".",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "107"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "107"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "A section of East Cambridge was proposed for the establishment of a \"Historical District\" by the Cambridge Historical Commission. The proposed regulations were designed to \"control commercial and high-rise development, demolition and destructive alterations of residential properties\".",
+          "quote_verified": false,
+          "stance_basis": "proposed historic district regulations to control development but proposal was voted down; no direct stance on Kendall Square build plans",
+          "entity_as_written": "Cambridge Historical Commission",
+          "role_as_written": "local historic preservation commission"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 107 text contains no mention of the Cambridge Historical Commission, 'Historical District', or the quoted language about 'control commercial and high-rise development, demolition and destructive alterations of residential properties'."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The Cambridge Historical Commission does not appear anywhere in the provided page text, so no attribution can be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the entity and quote are absent from the cited page."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Cambridge Historical Commission is a properly formed official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page makes no reference to the Cambridge Historical Commission or its role as a local historic preservation commission."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page (107) contains text about landscape features, open space, and architectural descriptions of the Kendall Square area, but contains no mention of the Cambridge Historical Commission or the quoted language about a 'Historical District'. The extraction appears to reference content from a different page. The correct page citation needs to be identified and the quote verified against it. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 10,
+      "entity": "CRA",
+      "kind": "agency",
+      "role": "Cambridge Redevelopment Authority, project proponent",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The CRA believes there are limits in specifying design controls beyond which an Urban Renewal Plan cannot go without unduly limiting the flexibility of a renewal agency in dealing with specific development proposals.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "118"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "118"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The CRA believes there are limits in specifying design controls beyond which an Urban Renewal Plan cannot go without unduly limiting the flexibility of a renewal agency in dealing with specific development proposals.",
+          "quote_verified": true,
+          "stance_basis": "expresses belief about limits of design controls in urban renewal plan",
+          "entity_as_written": "CRA",
+          "role_as_written": "Cambridge Redevelopment Authority, project proponent"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 118 text contains only transportation analysis content; the summary quote about CRA's beliefs on design controls is not present anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links CRA to stated stance",
+            "result": "no",
+            "note": "The cited text does not contain any statement attributing a position on design controls to the CRA; the CRA only appears as a label on a figure."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the relevant text is absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "CRA / Cambridge Redevelopment Authority is an official agency name and is acceptable."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text only shows CRA as a label on a transportation figure; 'project proponent' role is not explicitly supported by the provided excerpt."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote about design controls and Urban Renewal Plan flexibility does not appear anywhere in the cited page 118 text, which is entirely about transportation impact analysis assumptions. The evidence page is almost certainly wrong. The quote may exist elsewhere in the document and should be re-extracted with the correct page citation."
+      }
+    },
+    {
+      "sequence": 11,
+      "entity": "State Archaeologist",
+      "kind": "official",
+      "role": "state government archaeologist",
+      "stance": "neutral",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "As the project area has been previously disturbed and now cleared, it would appear that no adverse archaeological impact may be expected within it. I would assume from the general occupation of the study area that sites within it would also have been destroyed.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "108"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 2,
+          "evidence_pages": [
+            "108"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "As the project area has been previously disturbed and now cleared, it would appear that no adverse archaeological impact may be expected within it. I would assume from the general occupation of the study area that sites within it would also have been destroyed.",
+          "quote_verified": false,
+          "stance_basis": "states no adverse archaeological impact expected from project",
+          "entity_as_written": "State Archaeologist",
+          "role_as_written": "state government archaeologist"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 108 text contains content about aesthetic environment, shadows, wind, and landscape — no mention of archaeological impact or the quoted text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The State Archaeologist is not mentioned anywhere in the provided page text; no direct quote from this entity appears."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since the quote and entity are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'State Archaeologist' is a reasonable official title/role designation."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not reference the State Archaeologist or any archaeological role."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 108 text is entirely about aesthetic environment, shadows, wind, and open space — it contains no archaeological content and no mention of the State Archaeologist. The summary quote appears to belong to a different page (likely in an archaeology/cultural resources section). The extractor should locate the correct page number where the State Archaeologist's letter or statement appears. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 12,
+      "entity": "Environmental Protection Agency",
+      "kind": "agency",
+      "role": "Federal regulatory agency, proposer of MBTCP",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The MBTCP requires that a \"Build\" Plan not result in greater total emissions than would occur if the project was not built.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "184"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 3,
+          "evidence_pages": [
+            "184"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The MBTCP requires that a \"Build\" Plan not result in greater total emissions than would occur if the project was not built.",
+          "quote_verified": true,
+          "stance_basis": "EPA requires Build plans not exceed No-Build emissions as condition of consistency with MBTCP",
+          "entity_as_written": "Environmental Protection Agency",
+          "role_as_written": "Federal regulatory agency, proposer of MBTCP"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted text about MBTCP requiring a 'Build' Plan not result in greater total emissions does not appear anywhere in the cited page 184 text provided."
+          },
+          {
+            "check": "Attribution links EPA to stated stance",
+            "result": "no",
+            "note": "The cited page text makes no mention of the Environmental Protection Agency or the MBTCP emissions requirement."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify the conditional stance as the relevant text is absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Environmental Protection Agency is a properly formed official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page text contains only noise analysis content; no mention of EPA or its role as proposer of MBTCP."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page 184 text is entirely about traffic noise exposure analysis and contains no reference to the Environmental Protection Agency, MBTCP, or emissions requirements. The summary quote does not appear verbatim or in any paraphrased form in the provided text. The extraction appears to reference the wrong page; the correct page should be identified and re-extracted."
+      }
+    },
+    {
+      "sequence": 13,
+      "entity": "Gilbert M. Nelson",
+      "kind": "individual",
+      "role": "Transportation Consultant",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Source: Gilbert M. Nelson, Transportation Consultant",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "163"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 3,
+          "evidence_pages": [
+            "163"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Source: Gilbert M. Nelson, Transportation Consultant",
+          "quote_verified": true,
+          "stance_basis": "Cited as source of public transportation needs estimates by plan",
+          "entity_as_written": "Gilbert M. Nelson",
+          "role_as_written": "Transportation Consultant"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The text 'Source: Gilbert M. Nelson, Transportation Consultant' does not appear anywhere in the provided page 163 text, which covers air quality topics."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Gilbert M. Nelson is not mentioned anywhere in the cited page text; no sectional heading or list connects this entity to any stance."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since entity and quote are absent from cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Full name used for what appears to be a named consultant/professional, which is acceptable."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited pages contain no reference to Gilbert M. Nelson or the role of Transportation Consultant."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 163 text covers air quality topics and contains no mention of Gilbert M. Nelson or the source attribution quote. The extraction likely references a different page (possibly in the transportation chapter, around II-5-76/77) where Nelson is cited as a source. The correct evidence page needs to be identified and re-extracted. [Forced HUMAN_REVIEW: stance attribution for a private individual always goes to a human (v2 policy override).]"
+      }
+    },
+    {
+      "sequence": 14,
+      "entity": "MBTA",
+      "kind": "agency",
+      "role": "Massachusetts Bay Transportation Authority",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "While analysis of all plans has assumed that MBTA policy of expanding services to meet needs will be actualized, the Maximum Plan may place an unreasonable demand on the system at Kendall Square.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "162"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 3,
+          "evidence_pages": [
+            "162"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "While analysis of all plans has assumed that MBTA policy of expanding services to meet needs will be actualized, the Maximum Plan may place an unreasonable demand on the system at Kendall Square.",
+          "quote_verified": true,
+          "stance_basis": "MBTA policy committed to expanding services to meet needs of Build plans",
+          "entity_as_written": "MBTA",
+          "role_as_written": "Massachusetts Bay Transportation Authority"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted text about MBTA policy and Maximum Plan demand on Kendall Square does not appear anywhere in the provided page 162 text, which focuses on street network and traffic impacts."
+          },
+          {
+            "check": "Attribution links MBTA to stated stance",
+            "result": "no",
+            "note": "MBTA is not mentioned anywhere in the cited page text; no paraphrased sentence names MBTA or links it to any stance."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "MBTA is the standard abbreviation for Massachusetts Bay Transportation Authority, which is an official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page text does not mention MBTA or its role at all."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote does not appear verbatim in the cited page 162 text, and MBTA is not mentioned anywhere on that page. The quote appears to be from a different section of the document discussing transit/MBTA service impacts. The extractor should locate the correct page(s) where MBTA and this specific quote appear."
+      }
+    },
+    {
+      "sequence": 15,
+      "entity": "Walden Division of Abcor, Inc.",
+      "kind": "organization",
+      "role": "Air quality analysis contractor",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Source: Walden Division of Abcor, Inc.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "186"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 3,
+          "evidence_pages": [
+            "186"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Source: Walden Division of Abcor, Inc.",
+          "quote_verified": true,
+          "stance_basis": "Cited as source of total emissions analysis data for Build plans",
+          "entity_as_written": "Walden Division of Abcor, Inc.",
+          "role_as_written": "Air quality analysis contractor"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim on cited pages",
+            "result": "no",
+            "note": "The text 'Source: Walden Division of Abcor, Inc.' does not appear anywhere in the cited page 186 text provided."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The entity name does not appear in the provided page text at all; no sectional heading or list connects Walden Division of Abcor, Inc. to any stance."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since the entity and quote are not present in the provided text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Organization name appears properly formatted as an official entity name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text discusses noise analysis but does not mention Walden Division of Abcor, Inc. or identify them as an air quality analysis contractor."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The summary quote 'Source: Walden Division of Abcor, Inc.' does not appear in the provided page 186 text, and the entity is not mentioned anywhere in the cited passage. The role as 'air quality analysis contractor' is also unverifiable from the provided text. The quote may exist on a figure caption or table source line not captured in the text extraction, warranting human review."
+      }
+    },
+    {
+      "sequence": 16,
+      "entity": "Cambridge Electric Light Company",
+      "kind": "organization",
+      "role": "electric utility, user of Broad Canal",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Electric Company officials stated that when definitive plans for the Kendall Square project are established, the anticipated power demand would be estimated and evaluation with respect to the power system's existing capabilities would be undertaken.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "193-243"
+      ],
+      "n_mentions": 2,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "193-243"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Electric Company officials stated that when definitive plans for the Kendall Square project are established, the anticipated power demand would be estimated and evaluation with respect to the power system's existing capabilities would be undertaken.",
+          "quote_verified": true,
+          "stance_basis": "officials committed to evaluate and upgrade system as needed, neither supporting nor opposing the project",
+          "entity_as_written": "Cambridge Electric Light Company",
+          "role_as_written": "electric utility serving Cambridge"
+        },
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "193-243"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Cambridge Electric Light Company considers use of the canal to be essential for remaining at their present location.",
+          "quote_verified": false,
+          "stance_basis": "company asserted essential need for canal access, raising concern about project impacts on canal",
+          "entity_as_written": "Cambridge Electric Light Company",
+          "role_as_written": "electric utility, user of Broad Canal"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The exact quote 'Electric Company officials stated that when definitive plans for the Kendall Square project are established, the anticipated power demand would be estimated and evaluation with respect to the power system's existing capabilities would be undertaken' does not appear verbatim in the cited pages (193-243). The pages provided discuss geology, utilities, water, sewerage, and mention Cambridge Electric Light Company only in the context of Broad Canal usage and electric power supply description."
+          },
+          {
+            "check": "Attribution links Cambridge Electric Light Company to stated stance",
+            "result": "no",
+            "note": "The cited text mentions Cambridge Electric Light Company as a user of Broad Canal for fuel oil and cooling water, and as the electric power supplier, but does not contain the paraphrased statement about officials discussing power demand estimation for the Kendall Square project."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since the supporting quote/paraphrase is not found in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Cambridge Electric Light Company is the official name used in the document."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The cited text confirms Cambridge Electric Light Company is an electric utility and user of Broad Canal for fuel oil shipments and cooling water intake."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote describing Electric Company officials discussing power demand estimation for the Kendall Square project is not present in the provided page text. The cited pages do reference Cambridge Electric Light Company but only in the context of Broad Canal usage and as the general electric power supplier. The quote likely comes from a different section of the EIS (possibly the electric power impacts subsection, pages around II-9-22 to II-9-25) that was not included in the pulled text. The extraction should be re-done with the correct page range."
+      }
+    },
+    {
+      "sequence": 17,
+      "entity": "Cambridge Steam Corporation officials",
+      "kind": "official",
+      "role": "officials of Cambridge Steam Corporation, steam utility",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "the Cambridge Steam Corporation officials believe that Kendall Square project demands can be met with their existing facilities and without any difficulty.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "193-243"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "193-243"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "the Cambridge Steam Corporation officials believe that Kendall Square project demands can be met with their existing facilities and without any difficulty.",
+          "quote_verified": false,
+          "stance_basis": "officials affirmed existing facilities sufficient to meet project steam demands",
+          "entity_as_written": "Cambridge Steam Corporation officials",
+          "role_as_written": "officials of Cambridge Steam Corporation, steam utility"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The exact phrase 'Cambridge Steam Corporation officials believe that Kendall Square project demands can be met with their existing facilities and without any difficulty' does not appear verbatim in the cited pages."
+          },
+          {
+            "check": "Attribution links entity to stance (paraphrased)",
+            "result": "no",
+            "note": "The cited text describes Cambridge Steam Corporation's capacity (400,000 lbs/hr, only half utilized) but does not contain a narrator sentence explicitly attributing a belief or stance to 'Cambridge Steam Corporation officials' about meeting project demands without difficulty."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "The capacity information implies the system could handle demand, but no explicit stance is attributed to officials in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Cambridge Steam Corporation officials' is a recognizable organizational reference, though 'officials' is appended; the org name itself is correct."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text confirms Cambridge Steam Corporation is a steam utility serving the Kendall Square area."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "The cited pages do discuss Cambridge Steam Corporation and its capacity (approximately 400,000 lbs/hr with only half utilized), which could support an inference that demand can be met. However, the summary quote is not verbatim, and no narrator sentence explicitly attributes a stance or belief to 'Cambridge Steam Corporation officials.' The extraction appears to be an over-interpretation of capacity data rather than a direct or clearly paraphrased attribution. The entity should likely be 'Cambridge Steam Corporation' and the stance/quote should be re-extracted from the actual text about steam capacity. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 18,
+      "entity": "Commonwealth Gas Company officials",
+      "kind": "official",
+      "role": "officials of Commonwealth Gas Company, natural gas utility",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Commonwealth Gas Company officials believe that there is adequate natural gas supply and an adequate distribution system to accommodate any anticipated demand generated by the Kendall Square project.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "193-243"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "193-243"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Commonwealth Gas Company officials believe that there is adequate natural gas supply and an adequate distribution system to accommodate any anticipated demand generated by the Kendall Square project.",
+          "quote_verified": false,
+          "stance_basis": "officials affirmed capacity to serve project demands without difficulty",
+          "entity_as_written": "Commonwealth Gas Company officials",
+          "role_as_written": "officials of Commonwealth Gas Company, natural gas utility"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The exact quote 'Commonwealth Gas Company officials believe that there is adequate natural gas supply and an adequate distribution system to accommodate any anticipated demand generated by the Kendall Square project.' does not appear verbatim in the cited pages. The pages discuss Commonwealth Gas Company's existing infrastructure but do not contain this specific sentence."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The cited pages describe Commonwealth Gas Company's existing gas supply infrastructure and consumption figures, but do not contain a statement attributing a belief about adequacy of supply to company officials in the context of the Kendall Square project's anticipated demand."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot confirm stance since the quote is not found verbatim and the paraphrased attribution is not clearly present in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Commonwealth Gas Company officials' is a reasonable organizational reference, though 'officials' is somewhat vague."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The cited text confirms Commonwealth Gas Company is a natural gas utility serving Cambridge."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "The summary quote is not found verbatim in the cited pages (pp. 193-243 as provided). While the cited text does discuss Commonwealth Gas Company's infrastructure and consumption figures, the specific statement about adequacy of supply and distribution to accommodate Kendall Square project demand is not present in the extracted text. This quote likely appears elsewhere in the document (possibly in the 'Probable Environmental Impacts - Natural Gas' subsection which is listed in the chapter contents but not fully reproduced here). The extraction may be correct in substance but the evidence pages may need to be more precisely identified, or the quote may be paraphrased from a section not included in the provided text. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 19,
+      "entity": "Cambridge Community Development Department",
+      "kind": "agency",
+      "role": "city department providing tax revenue estimates",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Estimates of net tax effect, i.e., gross tax revenues less gross city service cost, were made by the Cambridge Community Development Department. These estimates are projected to 1990 and indicate that when fully developed the Maximum Plan offers the greatest positive impact by generating about $2 million per year in net tax revenues",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "277"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "277"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Estimates of net tax effect, i.e., gross tax revenues less gross city service cost, were made by the Cambridge Community Development Department. These estimates are projected to 1990 and indicate that when fully developed the Maximum Plan offers the greatest positive impact by generating about $2 million per year in net tax revenues",
+          "quote_verified": true,
+          "stance_basis": "Provided analysis showing positive net tax revenues from development plans",
+          "entity_as_written": "Cambridge Community Development Department",
+          "role_as_written": "city department providing tax revenue estimates"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 277 text does not contain the summary quote about net tax effect estimates by the Cambridge Community Development Department. The text is about Kendall Square Urban Renewal planning priorities and a Joint Subcommittee report."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The Cambridge Community Development Department is not mentioned anywhere in the cited page text. No paraphrased attribution can be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the relevant text is absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Cambridge Community Development Department is a properly formed agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention the Cambridge Community Development Department providing tax revenue estimates."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page (277) does not contain the summary quote or any reference to the Cambridge Community Development Department or tax revenue estimates. The text pulled in is entirely about Kendall Square Urban Renewal planning priorities and a Joint Subcommittee report. The extraction appears to reference content from a different page; the correct evidence page needs to be identified and verified."
+      }
+    },
+    {
+      "sequence": 20,
+      "entity": "Cambridge Redevelopment Authority",
+      "kind": "agency",
+      "role": "project proponent / EIR preparer",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The Authority has encouraged public participation in the Kendall Square Environmental Impact Study (EIS) process by holding one public hearing and 20 meetings with the public and various citizens' groups in connection with the preparation of the Environmental Impact Report (EIR) for the Kendall Square Project.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "261"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "261"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The Authority has encouraged public participation in the Kendall Square Environmental Impact Study (EIS) process by holding one public hearing and 20 meetings with the public and various citizens' groups in connection with the preparation of the Environmental Impact Report (EIR) for the Kendall Square Project.",
+          "quote_verified": false,
+          "stance_basis": "Authority actively promotes and manages the Kendall Square project EIR process",
+          "entity_as_written": "Cambridge Redevelopment Authority",
+          "role_as_written": "project proponent / EIR preparer"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted text about 'encouraged public participation,' 'one public hearing,' and '20 meetings' does not appear anywhere in the cited page 261 text provided."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The Cambridge Redevelopment Authority is not explicitly named in the cited page text in connection with the paraphrased stance statement."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance label since the quote is not present in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Cambridge Redevelopment Authority is an official agency name and is well-formed."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The cited text references EIR preparation activities consistent with a project proponent/EIR preparer role, though the CRA is not explicitly named on this page."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote is not present verbatim or even paraphrased on the cited page 261. The page contains meeting notes and preliminary findings but does not include the specific language about '20 meetings' or 'encouraged public participation.' The extraction likely references a different page in the document. The correct evidence page should be identified and re-extracted. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 21,
+      "entity": "Cambridge Tenants Organizing Committee (CTOC)",
+      "kind": "organization",
+      "role": "community advocacy group / commenter",
+      "stance": "opposed",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Five people from the audience delivered prepared public comments at the meeting. All were members or people speaking on behalf of the Cambridge Tenants Organizing Committee (CTOC). Remarks included expressions of concern about possible conflict of interest respecting Metcalf & Eddy (M&E); M&E's qualifications to do the study; expansion and development plans by MIT and others in the area surrounding Kendall Square and effect of same on Kendall Square development and adjacent residential areas; the trend toward high intensity development in Cambridge; loss of manufacturing jobs; and, in general, that implementation of \"MIT's downtown Boston-type plan\" will force more low-income families out of Cambridge.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "268"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "268"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Five people from the audience delivered prepared public comments at the meeting. All were members or people speaking on behalf of the Cambridge Tenants Organizing Committee (CTOC). Remarks included expressions of concern about possible conflict of interest respecting Metcalf & Eddy (M&E); M&E's qualifications to do the study; expansion and development plans by MIT and others in the area surrounding Kendall Square and effect of same on Kendall Square development and adjacent residential areas; the trend toward high intensity development in Cambridge; loss of manufacturing jobs; and, in general, that implementation of \"MIT's downtown Boston-type plan\" will force more low-income families out of Cambridge.",
+          "quote_verified": false,
+          "stance_basis": "Expressed opposition to high-intensity development, citing displacement of low-income families and loss of manufacturing jobs",
+          "entity_as_written": "Cambridge Tenants Organizing Committee (CTOC)",
+          "role_as_written": "community advocacy group / commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 268 text does not contain the summary quote about CTOC, Metcalf & Eddy, or any of the specific remarks attributed to CTOC members. The page discusses housing objections, tax inducements, job priorities, and traffic concerns in a generic comment/response format."
+          },
+          {
+            "check": "Attribution links CTOC to the stated stance",
+            "result": "no",
+            "note": "CTOC is not mentioned anywhere in the cited page text. The paraphrased attribution cannot be verified from the provided page content."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance label since the entity and quote are absent from the cited page."
+          },
+          {
+            "check": "Entity name is well-formed",
+            "result": "yes",
+            "note": "Cambridge Tenants Organizing Committee (CTOC) is a properly named organization."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page does not mention CTOC or any community advocacy group by that name, so the role cannot be confirmed from the provided text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page (268) does not contain the summary quote or any mention of CTOC, Metcalf & Eddy, or the specific public comment meeting described. The extraction appears to reference a different page than what was cited. The correct page number should be identified and re-extracted, as the content about CTOC's public comments likely exists elsewhere in the document. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 22,
+      "entity": "City of Cambridge",
+      "kind": "government",
+      "role": "local government / City Council",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Furthermore, the goals established by City Council for the project include more jobs, a decent environment and an increase in the City's tax base.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "284"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "284"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Furthermore, the goals established by City Council for the project include more jobs, a decent environment and an increase in the City's tax base.",
+          "quote_verified": true,
+          "stance_basis": "City Council established goals for the project including jobs and tax base increase",
+          "entity_as_written": "City of Cambridge",
+          "role_as_written": "local government / City Council"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The exact phrase 'Furthermore, the goals established by City Council for the project include more jobs, a decent environment and an increase in the City's tax base' does not appear verbatim in the cited page 284 text provided."
+          },
+          {
+            "check": "Attribution links City of Cambridge to stated stance",
+            "result": "no",
+            "note": "The cited text references the Cambridge Redevelopment Authority and Urban Renewal Plan objectives, but does not explicitly attribute the quoted language to the City Council or City of Cambridge in the paraphrased form given."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot confirm stance match since the quote is not found verbatim and attribution is unclear."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'City of Cambridge' is a properly formed official government entity name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text references the Cambridge Redevelopment Authority as the document preparer, not the City Council specifically; the role 'local government / City Council' is not directly supported."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The summary quote does not appear verbatim in the provided page 284 text, and the attribution to the City Council is not clearly established in the cited passage. The text references the Cambridge Redevelopment Authority and Urban Renewal Plan objectives but does not contain the specific language about 'City Council goals' for 'more jobs, a decent environment and an increase in the City's tax base.' Human review is needed to locate the correct source page for this quote."
+      }
+    },
+    {
+      "sequence": 23,
+      "entity": "Councillor Ackermann",
+      "kind": "official",
+      "role": "City Councillor, Cambridge",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Councillor Ackermann expressed concern for preserving neighborhoods, in accordance with the City's policy.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "267"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "267"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Councillor Ackermann expressed concern for preserving neighborhoods, in accordance with the City's policy.",
+          "quote_verified": true,
+          "stance_basis": "Expressed concern for neighborhood preservation as a condition of acceptable development",
+          "entity_as_written": "Councillor Ackermann",
+          "role_as_written": "City Councillor, Cambridge"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The text on page 267 contains no mention of 'Councillor Ackermann' or the quoted phrase about 'preserving neighborhoods, in accordance with the City's policy.' The page discusses housing demand and neighborhood characteristics near Kendall Square."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Councillor Ackermann does not appear anywhere in the cited page text. There is no paraphrased or direct statement attributable to this individual."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify any stance since the entity is absent from the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "The name 'Councillor Ackermann' follows the format for an official/public figure."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page makes no reference to a City Councillor from Cambridge or anyone named Ackermann."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page (267) contains no mention of Councillor Ackermann, the summary quote, or any related statement about preserving neighborhoods per City policy. The extraction appears to reference a different page or document section entirely. The correct evidence page should be identified and re-extracted."
+      }
+    },
+    {
+      "sequence": 24,
+      "entity": "East Cambridge Planning Team",
+      "kind": "organization",
+      "role": "neighborhood group / OEO-recognized representative for East Cambridge",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Four meetings were held with the East Cambridge Planning Team, the neighborhood group recognized by OEO as the representative for East Cambridge. The EIR was discussed as one of the items of business on the Team's agenda.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "261"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "261"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Four meetings were held with the East Cambridge Planning Team, the neighborhood group recognized by OEO as the representative for East Cambridge. The EIR was discussed as one of the items of business on the Team's agenda.",
+          "quote_verified": false,
+          "stance_basis": "Participated in EIR meetings but no specific stance on the project is attributed",
+          "entity_as_written": "East Cambridge Planning Team",
+          "role_as_written": "neighborhood group / OEO-recognized representative for East Cambridge"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 261 (VII-12 to VII-14) contains no text mentioning 'East Cambridge Planning Team', 'OEO', or the quoted language about four meetings."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "East Cambridge Planning Team is not mentioned anywhere in the cited text; no paraphrase linking them to any stance is present."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot assess stance match since the entity and quote are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "East Cambridge Planning Team is an organization name and appears properly formed."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention OEO recognition or East Cambridge Planning Team in any capacity."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote and entity are entirely absent from the cited page 261. The extracted text appears to be from a different section of the EIR (a public meeting summary about Kendall Square). The correct page citation needs to be identified — the quote about four meetings with the East Cambridge Planning Team likely appears elsewhere in the document. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 25,
+      "entity": "Fr. Spillane",
+      "kind": "individual",
+      "role": "commenter at public meeting",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Fr. Spillane expressed concern about the delay in getting development underway in Kendall Square and the need to provide jobs in Kendall Square for people living in the area",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "269"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "269"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Fr. Spillane expressed concern about the delay in getting development underway in Kendall Square and the need to provide jobs in Kendall Square for people living in the area",
+          "quote_verified": true,
+          "stance_basis": "Urged faster development and job creation at Kendall Square",
+          "entity_as_written": "Fr. Spillane",
+          "role_as_written": "commenter at public meeting"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The text on page 269 (VII-23/VII-24) contains no mention of Fr. Spillane or the quoted content about delay in development and jobs in Kendall Square."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Fr. Spillane does not appear anywhere in the cited page text; no paraphrase linking this entity to any stance is present."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the entity and quote are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Fr. Spillane is a named individual (clergy title + last name), acceptable for a public commenter."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no reference to Fr. Spillane or any public meeting commenter by that name."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page (269) contains only traffic-related EIR responses about truck traffic, parking, and pedestrian concerns, with no mention of Fr. Spillane or the summarized quote about development delay and jobs. The evidence page reference appears to be incorrect. The extractor should locate the correct page where Fr. Spillane's comment is actually recorded. [Forced HUMAN_REVIEW: stance attribution for a private individual always goes to a human (v2 policy override).]"
+      }
+    },
+    {
+      "sequence": 26,
+      "entity": "Metcalf & Eddy, Inc.",
+      "kind": "organization",
+      "role": "environmental consulting firm / EIR preparer",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The tentative preliminary findings of the technical materials submitted to date suggest that the environmental impacts likely to result from implementation of the main \"build\" alternatives, namely, the Neighborhood Plan, City Manager's Plan and Task Force Plan, may be contained within acceptable levels provided certain special measures to minimize adverse impacts are taken both within and outside of the project area.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "271"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "271"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The tentative preliminary findings of the technical materials submitted to date suggest that the environmental impacts likely to result from implementation of the main \"build\" alternatives, namely, the Neighborhood Plan, City Manager's Plan and Task Force Plan, may be contained within acceptable levels provided certain special measures to minimize adverse impacts are taken both within and outside of the project area.",
+          "quote_verified": true,
+          "stance_basis": "Concluded build alternatives' impacts can be contained within acceptable levels with mitigation",
+          "entity_as_written": "Metcalf & Eddy, Inc.",
+          "role_as_written": "environmental consulting firm / EIR preparer"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim on cited pages",
+            "result": "no",
+            "note": "The cited page 271 text does not contain the summary quote about 'tentative preliminary findings' or 'Neighborhood Plan, City Manager's Plan and Task Force Plan.' The page discusses open space, Charles River Bank, and aesthetics."
+          },
+          {
+            "check": "Attribution links Metcalf & Eddy to stated stance",
+            "result": "no",
+            "note": "Metcalf & Eddy, Inc. is not mentioned anywhere in the cited page text provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since neither the entity nor the quote appears on the cited page."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Metcalf & Eddy, Inc. is a properly formed organization name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention Metcalf & Eddy or their role as environmental consulting firm/EIR preparer."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote does not appear anywhere in the cited page 271 text, and Metcalf & Eddy, Inc. is not referenced on that page. The quote about 'tentative preliminary findings' and the three named plans likely comes from a different page in the document. The extractor should locate the correct page(s) where this quote and entity attribution actually appear."
+      }
+    },
+    {
+      "sequence": 27,
+      "entity": "Model Cities Citizens Board",
+      "kind": "organization",
+      "role": "citizens board for Model Cities Area (Neighborhoods 3 and 4)",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Two meetings were held with the Model Cities Citizens Board. The Model Cities Area includes Neighborhoods 3 and 4. The EIR was discussed as one of the items of business on the Board's agenda.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "262"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "262"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Two meetings were held with the Model Cities Citizens Board. The Model Cities Area includes Neighborhoods 3 and 4. The EIR was discussed as one of the items of business on the Board's agenda.",
+          "quote_verified": false,
+          "stance_basis": "Participated in EIR meetings but no specific stance on the project is attributed",
+          "entity_as_written": "Model Cities Citizens Board",
+          "role_as_written": "citizens board for Model Cities Area (Neighborhoods 3 and 4)"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 262 text does not contain the phrase 'Two meetings were held with the Model Cities Citizens Board' or any mention of 'Model Cities Citizens Board', 'Neighborhoods 3 and 4', or the quoted sentence about the Board's agenda."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The entity 'Model Cities Citizens Board' does not appear anywhere in the extracted page text, so no attribution can be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot assess stance as the entity and quote are absent from the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "The name 'Model Cities Citizens Board' appears to be a proper organizational name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention the Model Cities Area, Neighborhoods 3 and 4, or this board in any capacity."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page (262) does not contain the summary quote or any reference to the Model Cities Citizens Board. The page appears to contain questionnaire survey results and a citizen EIS questionnaire, unrelated to the extracted content. The correct page citation needs to be identified and the extraction re-verified against the proper source page. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 28,
+      "entity": "Mr. Cole",
+      "kind": "individual",
+      "role": "commenter at public meeting",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Some questions respecting the validity of tax revenue versus service cost data were asked by Mr. Cole",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "269"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "269"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Some questions respecting the validity of tax revenue versus service cost data were asked by Mr. Cole",
+          "quote_verified": true,
+          "stance_basis": "Questioned validity of tax revenue data without taking a clear position on the project",
+          "entity_as_written": "Mr. Cole",
+          "role_as_written": "commenter at public meeting"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The text on page 269 (VII-23/VII-24) contains only traffic-related discussion; the quote about Mr. Cole and tax revenue/service cost data does not appear anywhere in the provided cited page text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Mr. Cole is not mentioned anywhere in the cited page text provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Mr. Cole is a named individual; acceptable as a last-name reference for a public commenter."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention Mr. Cole or any public meeting commenter by that name."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The summary quote and entity (Mr. Cole) do not appear anywhere in the provided page 269 text, which deals exclusively with traffic flow, truck traffic, and parking concerns. The extraction may reference a different page or section not included here. A human reviewer should locate the correct page containing the Mr. Cole tax revenue/service cost comment to verify the extraction."
+      }
+    },
+    {
+      "sequence": 29,
+      "entity": "Mr. D'Onofrio",
+      "kind": "individual",
+      "role": "commenter at public meeting",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Mr. D'Onofrio wondered why so many people from out of town were playing major roles in the study",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "269"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "269"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Mr. D'Onofrio wondered why so many people from out of town were playing major roles in the study",
+          "quote_verified": true,
+          "stance_basis": "Raised procedural concern about outside involvement without taking a position on the project itself",
+          "entity_as_written": "Mr. D'Onofrio",
+          "role_as_written": "commenter at public meeting"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 269 text (VII-23 to VII-24) contains only traffic-related discussion; the quote about Mr. D'Onofrio wondering why out-of-town people were playing major roles does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Mr. D'Onofrio is not mentioned anywhere in the cited page text, so no attribution can be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the entity and quote are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Last-name format with honorific is acceptable for an individual commenter."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of Mr. D'Onofrio or any public meeting comment by him."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page (269) contains only traffic impact discussion (truck traffic, parking, pedestrian traffic) and does not include any mention of Mr. D'Onofrio or the quoted statement about out-of-town participants. The evidence page reference appears to be incorrect. The extractor should locate the correct page where Mr. D'Onofrio's comment appears and re-extract with the proper citation. [Forced HUMAN_REVIEW: stance attribution for a private individual always goes to a human (v2 policy override).]"
+      }
+    },
+    {
+      "sequence": 30,
+      "entity": "Mr. Donham",
+      "kind": "individual",
+      "role": "commenter at public meeting",
+      "stance": "opposed",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Mr. Donham commented on the inadvisability of having a maximum plan alternative, the need for including a response to objections, as well as objectives, in the various alternatives and questioned if the contract cost estimate might have to be renegotiated if the work program review resulted in significant additional work",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "269"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "269"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Mr. Donham commented on the inadvisability of having a maximum plan alternative, the need for including a response to objections, as well as objectives, in the various alternatives and questioned if the contract cost estimate might have to be renegotiated if the work program review resulted in significant additional work",
+          "quote_verified": false,
+          "stance_basis": "Opposed inclusion of a maximum plan alternative and raised procedural concerns",
+          "entity_as_written": "Mr. Donham",
+          "role_as_written": "commenter at public meeting"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page text (VII-23 to VII-24) contains no mention of Mr. Donham or the quoted summary text about 'maximum plan alternative,' 'response to objections,' or 'contract cost estimate renegotiation.'"
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "no",
+            "note": "Mr. Donham does not appear anywhere in the provided page text; no paraphrase linking him to any stance is present."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the entity and quote are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Last-name format with honorific is acceptable for a private commenter."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "No reference to Mr. Donham as a commenter at a public meeting appears in the provided text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page text (pages around VII-23/VII-24) deals entirely with traffic, truck, and parking impact responses and contains no mention of Mr. Donham or the summarized comments attributed to him. The evidence pages appear to be wrong or the extraction pulled content from a different section of the document. A human reviewer should locate the correct page where Mr. Donham's comments appear before accepting or rejecting this row."
+      }
+    },
+    {
+      "sequence": 31,
+      "entity": "Mr. Nardone",
+      "kind": "individual",
+      "role": "commenter at public meeting",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Mr. Nardone expressed concern about the lack of local contractors being involved in the study.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "269"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "269"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Mr. Nardone expressed concern about the lack of local contractors being involved in the study.",
+          "quote_verified": true,
+          "stance_basis": "Raised concern about local contractor exclusion without taking a position on the project itself",
+          "entity_as_written": "Mr. Nardone",
+          "role_as_written": "commenter at public meeting"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The text on page 269 does not contain any mention of 'Mr. Nardone' or the quoted concern about 'lack of local contractors being involved in the study.'"
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "no",
+            "note": "Mr. Nardone does not appear anywhere in the cited page text; no paraphrase linking him to any stance is present."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the entity and quote are absent from the cited text. A concern about lack of local contractors would more likely be 'opposed' or 'conditional' than 'neutral'."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Last name with honorific is acceptable for an individual commenter, though 'private commenter' or last name only would be preferred."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no reference to Mr. Nardone or a public meeting commenter by that name."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page (269) contains discussion of traffic, parking, and pedestrian concerns in the Kendall Square EIR, with no mention of Mr. Nardone or local contractors. The extraction appears to reference a different page entirely. The correct page should be re-identified, and the stance label should also be reconsidered — a concern about exclusion of local contractors is more likely 'opposed' or 'conditional' than 'neutral'. [Forced HUMAN_REVIEW: stance attribution for a private individual always goes to a human (v2 policy override).]"
+      }
+    },
+    {
+      "sequence": 32,
+      "entity": "Mr. Whalen",
+      "kind": "individual",
+      "role": "commenter at public meeting",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "He talked about what the neighborhoods in the Kendall Square and surrounding areas were like years ago and discussed the theories of how and why they have changed. Mr. Whalen also had some comments on the distribution of land uses among various parcels in the Neighborhood Plan.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "269"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "269"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "He talked about what the neighborhoods in the Kendall Square and surrounding areas were like years ago and discussed the theories of how and why they have changed. Mr. Whalen also had some comments on the distribution of land uses among various parcels in the Neighborhood Plan.",
+          "quote_verified": true,
+          "stance_basis": "Commented on historical neighborhood character and land use distribution without a clear stance",
+          "entity_as_written": "Mr. Whalen",
+          "role_as_written": "commenter at public meeting"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 269 text (VII-23/VII-24) contains only traffic-related discussion; the summary quote about Mr. Whalen and Kendall Square neighborhoods/land uses does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Mr. Whalen is not mentioned anywhere in the cited page text provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Mr. Whalen is a named individual; using last name only or 'private commenter' would be preferable, but this is a minor issue."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not reference Mr. Whalen or any public meeting commenter by that name."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The cited page text (page 269) does not contain the summary quote or any mention of Mr. Whalen; the text is entirely about traffic impacts. The extraction may reference a different page or the page pull was incorrect. A human should verify the correct page reference and whether the quote and attribution are accurate."
+      }
+    },
+    {
+      "sequence": 33,
+      "entity": "Neighborhood Advisory Group (NAG)",
+      "kind": "organization",
+      "role": "advisory group comprising East Cambridge, M.I.T., Kendall Square Businessmen's Association and Neighborhood 2 representatives",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "NAG's main objectives are to promote local adoption of the Neighborhood Plan and to participate in the development of the Kendall Square Project in an unofficial advisory capacity.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "262"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "262"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "NAG's main objectives are to promote local adoption of the Neighborhood Plan and to participate in the development of the Kendall Square Project in an unofficial advisory capacity.",
+          "quote_verified": true,
+          "stance_basis": "Explicitly promotes local adoption of the Neighborhood Plan (Preferred Plan basis)",
+          "entity_as_written": "Neighborhood Advisory Group (NAG)",
+          "role_as_written": "advisory group comprising East Cambridge, M.I.T., Kendall Square Businessmen's Association and Neighborhood 2 representatives"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 262 text is largely garbled/OCR-corrupted and does not contain the quoted sentence about NAG's objectives."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The Neighborhood Advisory Group (NAG) is not mentioned anywhere in the retrieved page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance as the entity and quote are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official organization name with acronym is acceptable."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "No mention of NAG or its composition in the retrieved text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The cited page 262 appears to be heavily OCR-corrupted and contains citizen questionnaire survey material, with no mention of the Neighborhood Advisory Group (NAG) or the quoted sentence. The extraction may reference a different page or the text may be unreadable due to OCR issues. Human review is needed to locate the correct source page and verify the quote."
+      }
+    },
+    {
+      "sequence": 34,
+      "entity": "residents of East Cambridge",
+      "kind": "other",
+      "role": "community members / meeting attendees",
+      "stance": "opposed",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Some residents of East Cambridge challenged, from the floor, some of the remarks made by CTOC representatives, particularly those relating to alleged problems associated with housing for the elderly.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "268"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "268"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Some residents of East Cambridge challenged, from the floor, some of the remarks made by CTOC representatives, particularly those relating to alleged problems associated with housing for the elderly.",
+          "quote_verified": true,
+          "stance_basis": "Challenged CTOC's opposition arguments, implicitly defending the project or its housing components",
+          "entity_as_written": "residents of East Cambridge",
+          "role_as_written": "community members / meeting attendees"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 268 text does not contain the summary quote about 'residents of East Cambridge' challenging 'CTOC representatives' or remarks about 'housing for the elderly'. The provided text covers different topics (luxury housing, tax inducements, job priorities, traffic)."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The cited page text does not mention 'residents of East Cambridge' challenging CTOC representatives; the entity and their opposition cannot be confirmed from the provided text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify the 'opposed' stance label since the relevant passage is absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Residents of East Cambridge' is a reasonable group descriptor, though somewhat vague."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not reference meeting attendees from East Cambridge or a public meeting context matching the described role."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The summary quote does not appear anywhere in the provided page 268 text, which covers entirely different subject matter (luxury housing, tax inducements, job priorities, traffic). The quote references a specific public meeting exchange involving CTOC representatives and housing for the elderly, which is not present in the cited passage. The correct page may differ, or the extraction may be from a different section of the document entirely."
+      }
+    },
+    {
+      "sequence": 35,
+      "entity": "Wellington-Harrington Citizens Committee",
+      "kind": "organization",
+      "role": "Project Area Committee for Wellington-Harrington Urban Renewal Area",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Five meetings were held with the Wellington-Harrington Citizens Committee, the Project Area Committee for the Wellington-Harrington Urban Renewal Area which encompasses practically all of Neighborhood 3 and a part of Neighborhood 4. The EIR was discussed as one of the items of business on the Committee's agenda.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "262"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "262"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Five meetings were held with the Wellington-Harrington Citizens Committee, the Project Area Committee for the Wellington-Harrington Urban Renewal Area which encompasses practically all of Neighborhood 3 and a part of Neighborhood 4. The EIR was discussed as one of the items of business on the Committee's agenda.",
+          "quote_verified": false,
+          "stance_basis": "Participated in EIR meetings but no specific stance on the project is attributed",
+          "entity_as_written": "Wellington-Harrington Citizens Committee",
+          "role_as_written": "Project Area Committee for Wellington-Harrington Urban Renewal Area"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 262 text does not contain the summary quote about Wellington-Harrington Citizens Committee meetings. The page appears to contain questionnaire survey results and unrelated fragmented text."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The entity 'Wellington-Harrington Citizens Committee' does not appear anywhere in the cited page text provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance as the entity and quote are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Organization name appears properly formatted as an official committee name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'Project Area Committee for Wellington-Harrington Urban Renewal Area' is not mentioned anywhere in the cited page text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 262 does not contain the summary quote or any mention of the Wellington-Harrington Citizens Committee. The page appears to show questionnaire survey results and fragmented OCR text unrelated to the extracted row. The correct page reference needs to be identified, as the quote likely exists elsewhere in the document. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 36,
+      "entity": "Tice Kobbins",
+      "kind": "official",
+      "role": "State Archaeologist, Commonwealth of Massachusetts",
+      "stance": "neutral",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "As the Project are has been previously disturbed and now cleared it would appear that no adverse archaeological impact may be expected within it.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "337"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "337"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "As the Project are has been previously disturbed and now cleared it would appear that no adverse archaeological impact may be expected within it.",
+          "quote_verified": true,
+          "stance_basis": "Concludes no adverse archaeological impact expected within project area due to prior disturbance, while noting sites in broader study area might warrant checking",
+          "entity_as_written": "Tice Kobbins",
+          "role_as_written": "State Archaeologist, Commonwealth of Massachusetts"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 337 text contains only tables of historical structures in Cambridge neighborhoods; the quoted sentence about archaeological impact does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "no",
+            "note": "The name 'Tice Kobbins' and the role 'State Archaeologist, Commonwealth of Massachusetts' do not appear anywhere in the cited page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the provided text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "n/a",
+            "note": "Cannot verify the name 'Tice Kobbins' from the provided text; the name may be misspelled or fabricated."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "No mention of a State Archaeologist or Commonwealth of Massachusetts official appears in the cited page text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The cited page 337 text contains only architectural/historical structure tables for Cambridge neighborhoods and bears no relation to the extracted quote about archaeological impact or the named entity. The quote and entity may exist on a different page not provided, or the extraction may be erroneous. Human review is needed to locate the correct source page and verify the entity name spelling."
+      }
+    }
+  ]
+}

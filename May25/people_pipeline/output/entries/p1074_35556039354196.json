@@ -1,0 +1,3482 @@
+{
+  "doc_id": "p1074_35556039354196",
+  "work_id": "fe841cfc-70d7-4c1f-8121-6af4b14fc4a0",
+  "title": "Havasupai Indian Reservation addition : environmental impact statement.",
+  "estimated_pages": 317,
+  "n_chunks": 7,
+  "n_raw_rows": 53,
+  "n_entries": 53,
+  "verdict_counts": {
+    "PASS": 0,
+    "PASS_WITH_NOTE": 1,
+    "RE_EXTRACT": 23,
+    "HUMAN_REVIEW": 29
+  },
+  "stance_counts": {
+    "conditional": 2,
+    "in_favor": 23,
+    "neutral": 25,
+    "opposed": 3
+  },
+  "elapsed_sec": 144.9,
+  "usage": {
+    "extract": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 7,
+          "input_tokens": 152953,
+          "output_tokens": 7667,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.5739
+        }
+      ],
+      "total": {
+        "calls": 7,
+        "input_tokens": 152953,
+        "output_tokens": 7667,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.5739
+      }
+    },
+    "critic": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 53,
+          "input_tokens": 70065,
+          "output_tokens": 22420,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.5465
+        }
+      ],
+      "total": {
+        "calls": 53,
+        "input_tokens": 70065,
+        "output_tokens": 22420,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.5465
+      }
+    },
+    "total": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 60,
+          "input_tokens": 223018,
+          "output_tokens": 30087,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 1.1204
+        }
+      ],
+      "total": {
+        "calls": 60,
+        "input_tokens": 223018,
+        "output_tokens": 30087,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 1.1204
+      }
+    }
+  },
+  "schema": {
+    "stance_vocabulary": [
+      "in_favor",
+      "opposed",
+      "conditional",
+      "neutral"
+    ],
+    "kind_vocabulary": [
+      "individual",
+      "official",
+      "organization",
+      "agency",
+      "tribe",
+      "government",
+      "other"
+    ],
+    "verdicts": [
+      "PASS",
+      "PASS_WITH_NOTE",
+      "RE_EXTRACT",
+      "HUMAN_REVIEW"
+    ],
+    "page_numbers": "ESTIMATED from char offsets at 2500 chars/page.",
+    "merge_rule": "One row per (entity, stance) — stance changes produce separate rows.",
+    "cost_note": "USD costs are ESTIMATES from settings.PRICES_USD_PER_M; verify against AWS Bedrock invoice."
+  },
+  "entries": [
+    {
+      "sequence": 1,
+      "entity": "Arizona State Land Department",
+      "kind": "agency",
+      "role": "state agency reviewer, commenter",
+      "stance": "conditional",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "We support, with one exception, the Land Use Plan which is intended to enlarge the land base of the Havasupai within which future developments on the reservation will operate.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "X-21"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "X-21"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "We support, with one exception, the Land Use Plan which is intended to enlarge the land base of the Havasupai within which future developments on the reservation will operate.",
+          "quote_verified": true,
+          "stance_basis": "supports plan but objects to inclusion of Section 16 within reservation boundaries",
+          "entity_as_written": "Arizona State Land Department",
+          "role_as_written": "state agency reviewer, commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "n/a",
+            "note": "No cited-page text was provided; cannot verify verbatim presence of the quote."
+          },
+          {
+            "check": "Attribution links entity to stance (direct_quote: entity is speaker)",
+            "result": "n/a",
+            "note": "Without page text, cannot confirm Arizona State Land Department is the speaker of this quote."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Quote text ('support, with one exception') is consistent with a conditional stance, but cannot verify against source."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Arizona State Land Department is a recognized official state agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "n/a",
+            "note": "No page text available to confirm role."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "No cited-page text was provided, making it impossible to verify the verbatim quote, speaker attribution, or role description. The extracted data is internally plausible—'support, with one exception' aligns well with a conditional stance, and the entity name is well-formed—but all key checks are unverifiable without the source text. A human reviewer should confirm against page X-21 of the EIS."
+      }
+    },
+    {
+      "sequence": 2,
+      "entity": "Environmental Protection Agency",
+      "kind": "agency",
+      "role": "federal reviewer of DEIS",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The EPA's comments on the DEIS have been classified as Category LO-1.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "X-24"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "X-24"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The EPA's comments on the DEIS have been classified as Category LO-1.",
+          "quote_verified": true,
+          "stance_basis": "classified DEIS as LO (Lack of Objections) / Category 1 (Adequate), indicating no objection to proposed action",
+          "entity_as_written": "Environmental Protection Agency",
+          "role_as_written": "federal reviewer of DEIS"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "No cited-page text was provided, so verbatim presence cannot be confirmed."
+          },
+          {
+            "check": "Attribution links EPA to stated stance",
+            "result": "no",
+            "note": "Without page text, the paraphrased attribution cannot be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "EPA Category LO-1 typically means 'Lack Objections' — this is closer to neutral or conditional, not 'in_favor'. The stance label appears incorrect even on its face."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Environmental Protection Agency is the official name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "n/a",
+            "note": "No page text available to verify role."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "medium",
+        "notes": "The stance label 'in_favor' is almost certainly wrong. EPA's LO-1 rating stands for 'Lack Objections' (with minor comments), which is a neutral-to-conditional posture, not active support. Additionally, no cited-page text was supplied, making verbatim and attribution checks impossible. The stance should be re-labeled as 'neutral' or 'conditional' and the page text should be retrieved to confirm the quote."
+      }
+    },
+    {
+      "sequence": 3,
+      "entity": "Friends of the Earth",
+      "kind": "organization",
+      "role": "commenter (represented by Jeffrey Ingram)",
+      "stance": "in_favor",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "we wish to re-emphasize our appreciation for preparation of the environmental statement and our feeling that the Land Use Plan is a suitable expression of the intent of the act transferring part of the Grand Canyon to Havasupai stewardship.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "X-29"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "X-29"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "we wish to re-emphasize our appreciation for preparation of the environmental statement and our feeling that the Land Use Plan is a suitable expression of the intent of the act transferring part of the Grand Canyon to Havasupai stewardship.",
+          "quote_verified": true,
+          "stance_basis": "co-signatory to letter expressing support for the Land Use Plan",
+          "entity_as_written": "Friends of the Earth",
+          "role_as_written": "commenter (represented by Jeffrey Ingram)"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "No cited-page text was provided, so verbatim presence cannot be confirmed."
+          },
+          {
+            "check": "Attribution links entity to stance (direct_quote: entity is speaker)",
+            "result": "n/a",
+            "note": "Cannot verify without cited-page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify without cited-page text; however, the quote content ('appreciation', 'suitable expression') is consistent with in_favor."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Friends of the Earth is a recognized organization name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "n/a",
+            "note": "Cannot verify Jeffrey Ingram as representative without cited-page text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "No cited-page text was supplied, making it impossible to verify the verbatim quote, speaker attribution, or role description. The quote content and stance label appear internally consistent (appreciation for the EIS and Land Use Plan aligns with in_favor), but all checks requiring page text return n/a. A human reviewer should confirm against page X-29 of the source document."
+      }
+    },
+    {
+      "sequence": 4,
+      "entity": "Havasupai Indian Tribe",
+      "kind": "tribe",
+      "role": "proponent / plan developer",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The draft and this final environmental statement (FES) were prepared under contract by the Havasupai Indian Tribe and the Office of Arid Land Studies, University of Arizona.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The draft and this final environmental statement (FES) were prepared under contract by the Havasupai Indian Tribe and the Office of Arid Land Studies, University of Arizona.",
+          "quote_verified": true,
+          "stance_basis": "co-prepared the EIS and Land Use Plan; plan reflects their development and preservation intentions for the reservation addition",
+          "entity_as_written": "Havasupai Indian Tribe",
+          "role_as_written": "proponent / plan developer"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The exact quote 'The draft and this final environmental statement (FES) were prepared under contract by the Havasupai Indian Tribe and the Office of Arid Land Studies, University of Arizona.' does not appear verbatim. The cited text says the BIA 'prepared the Draft Environmental Statement with the assistance of the Havasupai Indian Tribe and the University of Arizona, Office of Arid Land Studies.'"
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "yes",
+            "note": "The Havasupai Indian Tribe is named in the cited text as providing assistance in preparing the environmental statement, supporting an in_favor/proponent role."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The Tribe assisted in preparing the plan document, consistent with being in favor of it."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official tribal name used correctly."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text confirms the Tribe assisted in preparing the EIS, consistent with 'proponent / plan developer,' though 'developer' is a slight overstatement since BIA is the lead preparer."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote is not verbatim — the actual text states BIA prepared the statement 'with the assistance of' the Tribe, not that the Tribe prepared it under contract. The quote misattributes the lead preparer role to the Tribe. The stance and entity are otherwise correct, but the summary quote needs to be corrected to match the actual language in the document."
+      }
+    },
+    {
+      "sequence": 5,
+      "entity": "Jeffrey Ingram",
+      "kind": "individual",
+      "role": "commenter, representing Friends of the Earth, Southern Arizona Hiking Club, Sierra Club Grand Canyon chapter",
+      "stance": "in_favor",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "we wish to re-emphasize our appreciation for preparation of the environmental statement and our feeling that the Land Use Plan is a suitable expression of the intent of the act transferring part of the Grand Canyon to Havasupai stewardship.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "X-29"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "X-29"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "we wish to re-emphasize our appreciation for preparation of the environmental statement and our feeling that the Land Use Plan is a suitable expression of the intent of the act transferring part of the Grand Canyon to Havasupai stewardship.",
+          "quote_verified": true,
+          "stance_basis": "expresses support for the Land Use Plan as suitable expression of the transfer act's intent",
+          "entity_as_written": "Jeffrey Ingram",
+          "role_as_written": "commenter, representing Friends of the Earth, Southern Arizona Hiking Club, Sierra Club Grand Canyon chapter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "n/a",
+            "note": "No cited-page text was provided; cannot verify verbatim presence."
+          },
+          {
+            "check": "Attribution links entity to stance (direct_quote: entity is speaker)",
+            "result": "n/a",
+            "note": "No cited-page text available to confirm Jeffrey Ingram is the speaker of this quote."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot assess without page text, though 'appreciation' and 'suitable expression' language is consistent with in_favor."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Full name used for an individual commenter; acceptable for named public commenters in EIS documents."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "n/a",
+            "note": "Cannot verify organizational affiliations without page text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "No cited-page text was supplied, making it impossible to verify the verbatim quote, speaker attribution, or role description. The extracted content is internally plausible (the quote's tone aligns with an in_favor stance, and the entity name is well-formed), but all substantive checks require a human to consult page X-29 directly."
+      }
+    },
+    {
+      "sequence": 6,
+      "entity": "Joe T. Fallini",
+      "kind": "official",
+      "role": "State Land Commissioner, Arizona State Land Department",
+      "stance": "conditional",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "We support, with one exception, the Land Use Plan which is intended to enlarge the land base of the Havasupai within which future developments on the reservation will operate.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "X-21"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "X-21"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "We support, with one exception, the Land Use Plan which is intended to enlarge the land base of the Havasupai within which future developments on the reservation will operate.",
+          "quote_verified": true,
+          "stance_basis": "supports plan but objects to inclusion of Section 16 within reservation boundaries",
+          "entity_as_written": "Joe T. Fallini",
+          "role_as_written": "State Land Commissioner, Arizona State Land Department"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "n/a",
+            "note": "No cited-page text was provided; cannot verify verbatim presence."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "n/a",
+            "note": "No cited-page text available to confirm Joe T. Fallini is the speaker of this quote."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify; however, 'support with one exception' is consistent with a conditional stance label."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Named as 'Joe T. Fallini' — appears to be an official/agency representative, not a private individual, so full name is acceptable."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "n/a",
+            "note": "No cited-page text available to confirm the role of State Land Commissioner, Arizona State Land Department."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "No cited-page text was provided, making it impossible to verify the verbatim quote, speaker attribution, role, or stance label. The conditional stance label is logically consistent with the phrasing 'support, with one exception,' but all checks require human verification against the actual page X-21 text. Additionally, the role attribution (Arizona State Land Commissioner) should be confirmed, as the name 'Joe T. Fallini' is more commonly associated with Nevada ranching interests in EIS contexts."
+      }
+    },
+    {
+      "sequence": 7,
+      "entity": "Kaibab National Forest",
+      "kind": "agency",
+      "role": "federal reviewer of DEIS",
+      "stance": "neutral",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "The Kaibab National Forest feels that the proper boundary is along the section lines, the situation has been settled and should not be a continuing issue.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "X-26"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "X-26"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "The Kaibab National Forest feels that the proper boundary is along the section lines, the situation has been settled and should not be a continuing issue.",
+          "quote_verified": true,
+          "stance_basis": "disputes Havasupai claim to eastern boundary 660 feet east of section lines; no objection to plan overall",
+          "entity_as_written": "Kaibab National Forest",
+          "role_as_written": "federal reviewer of DEIS"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "No cited-page text was provided, so verbatim presence cannot be confirmed."
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "n/a",
+            "note": "Cannot verify attribution without cited-page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "The quote suggests a settled position ('should not be a continuing issue'), which could be read as 'conditional' or even 'in_favor' of a boundary resolution rather than strictly 'neutral'. Cannot confirm without text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Kaibab National Forest is an official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "n/a",
+            "note": "Cannot verify role without cited-page text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "No cited-page text was provided, making it impossible to verify the verbatim quote, attribution, or role. Additionally, the stance label 'neutral' may be questionable given the quote's assertive language ('has been settled and should not be a continuing issue'), which could indicate a more definitive position. A human reviewer should pull page X-26 and confirm both the quote and the appropriate stance label."
+      }
+    },
+    {
+      "sequence": 8,
+      "entity": "Leonard A. Lindquist",
+      "kind": "official",
+      "role": "Forest Supervisor, Kaibab National Forest",
+      "stance": "neutral",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "The Kaibab National Forest feels that the proper boundary is along the section lines, the situation has been settled and should not be a continuing issue.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "X-26"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "X-26"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "The Kaibab National Forest feels that the proper boundary is along the section lines, the situation has been settled and should not be a continuing issue.",
+          "quote_verified": true,
+          "stance_basis": "disputes eastern boundary claim but raises no objection to the plan itself",
+          "entity_as_written": "Leonard A. Lindquist",
+          "role_as_written": "Forest Supervisor, Kaibab National Forest"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "No cited-page text was provided, so verbatim presence cannot be confirmed."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "n/a",
+            "note": "Cannot verify attribution without cited-page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot assess stance match without cited-page text; however, the quote ('settled and should not be a continuing issue') could suggest a position closer to 'in_favor' of a specific boundary resolution rather than purely neutral."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Named official with full name is acceptable for a Forest Supervisor role."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "n/a",
+            "note": "Cannot verify role without cited-page text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "No cited-page text was provided, making it impossible to verify the verbatim quote, attribution, or role. Additionally, the stance label 'neutral' is questionable given the quote implies a definitive position (the boundary is settled), which may warrant 'in_favor' or 'conditional' instead. A human reviewer should pull page X-26 and verify all elements."
+      }
+    },
+    {
+      "sequence": 9,
+      "entity": "National Park Service",
+      "kind": "agency",
+      "role": "federal agency; denied Havasupai request regarding springs in Traditional Use Area",
+      "stance": "opposed",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "when the Tribe approached the National Park Service about applying their measure to several traditionally-used springs in the Traditional Use Area of Grand Canyon National Park, they met with a refusal.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "X-13"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "X-13"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "when the Tribe approached the National Park Service about applying their measure to several traditionally-used springs in the Traditional Use Area of Grand Canyon National Park, they met with a refusal.",
+          "quote_verified": false,
+          "stance_basis": "refused Havasupai request to apply water collection measures to springs in Grand Canyon National Park Traditional Use Area",
+          "entity_as_written": "National Park Service",
+          "role_as_written": "federal agency; denied Havasupai request regarding springs in Traditional Use Area"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "No cited-page text was provided, so verbatim presence cannot be confirmed."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "n/a",
+            "note": "Cannot verify without cited-page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify without cited-page text; however, 'opposed' for a refusal is plausible if the quote is accurate."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "National Park Service is the official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "n/a",
+            "note": "Cannot verify without cited-page text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "No cited-page text was supplied, making it impossible to verify the verbatim quote, the attribution, or the stance label. The entity name is well-formed and the 'opposed' label is logically consistent with a described refusal, but all substantive checks require a human to pull and review page X-13 directly."
+      }
+    },
+    {
+      "sequence": 10,
+      "entity": "Sierra Club, Grand Canyon chapter",
+      "kind": "organization",
+      "role": "commenter (represented by Jeffrey Ingram)",
+      "stance": "in_favor",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "we wish to re-emphasize our appreciation for preparation of the environmental statement and our feeling that the Land Use Plan is a suitable expression of the intent of the act transferring part of the Grand Canyon to Havasupai stewardship.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "X-29"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "X-29"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "we wish to re-emphasize our appreciation for preparation of the environmental statement and our feeling that the Land Use Plan is a suitable expression of the intent of the act transferring part of the Grand Canyon to Havasupai stewardship.",
+          "quote_verified": true,
+          "stance_basis": "co-signatory to letter expressing support for the Land Use Plan",
+          "entity_as_written": "Sierra Club, Grand Canyon chapter",
+          "role_as_written": "commenter (represented by Jeffrey Ingram)"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "No cited-page text was provided, so verbatim presence cannot be confirmed."
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "n/a",
+            "note": "Cannot verify without cited-page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify without cited-page text; however, the quote content ('appreciation' and 'suitable expression') is consistent with in_favor."
+          },
+          {
+            "check": "Entity name is well-formed",
+            "result": "yes",
+            "note": "Official organization name with chapter specified; appears properly formed."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "n/a",
+            "note": "Cannot verify without cited-page text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "No cited-page text was made available for verification, making it impossible to confirm the verbatim quote, attribution, or role description. The quote content and stance label are internally consistent (expressing appreciation and support), and the entity name is well-formed, but all substantive checks require a human to pull page X-29 and verify directly."
+      }
+    },
+    {
+      "sequence": 11,
+      "entity": "Southern Arizona Hiking Club",
+      "kind": "organization",
+      "role": "commenter (represented by Jeffrey Ingram)",
+      "stance": "in_favor",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "we wish to re-emphasize our appreciation for preparation of the environmental statement and our feeling that the Land Use Plan is a suitable expression of the intent of the act transferring part of the Grand Canyon to Havasupai stewardship.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "X-29"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "X-29"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "we wish to re-emphasize our appreciation for preparation of the environmental statement and our feeling that the Land Use Plan is a suitable expression of the intent of the act transferring part of the Grand Canyon to Havasupai stewardship.",
+          "quote_verified": true,
+          "stance_basis": "co-signatory to letter expressing support for the Land Use Plan",
+          "entity_as_written": "Southern Arizona Hiking Club",
+          "role_as_written": "commenter (represented by Jeffrey Ingram)"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "No cited-page text was provided, so verbatim presence cannot be confirmed."
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "n/a",
+            "note": "Cannot verify attribution without cited-page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot assess stance match without cited-page text; however, the quote content ('appreciation' and calling the Land Use Plan 'suitable') is consistent with in_favor."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Southern Arizona Hiking Club is an organization name and appears properly formed."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "n/a",
+            "note": "Cannot verify role or representative (Jeffrey Ingram) without cited-page text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "No cited-page text was supplied, making it impossible to verify the verbatim quote, attribution, stance, or role. The extracted content is internally plausible (the quote language aligns with an in_favor stance, and the entity name is well-formed), but all key checks require human verification against page X-29 of the source document."
+      }
+    },
+    {
+      "sequence": 12,
+      "entity": "Stephen M. Hirst",
+      "kind": "individual",
+      "role": "former assistant to Havasupai Land Use Planning Committee, commenter",
+      "stance": "in_favor",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "To sum up this lengthy commentary, I would strongly urge prompt acceptance of the Tribe's plan—not just because of the wait but because the plan merits acceptance.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "X-14"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "X-14"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "To sum up this lengthy commentary, I would strongly urge prompt acceptance of the Tribe's plan—not just because of the wait but because the plan merits acceptance.",
+          "quote_verified": false,
+          "stance_basis": "explicitly urges prompt acceptance of the Tribe's Land Use Plan",
+          "entity_as_written": "Stephen M. Hirst",
+          "role_as_written": "former assistant to Havasupai Land Use Planning Committee, commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "No cited-page text was provided, so the quote cannot be verified as verbatim."
+          },
+          {
+            "check": "Attribution links entity to stance (direct_quote: entity is speaker)",
+            "result": "n/a",
+            "note": "Cannot verify speaker attribution without the cited page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Quote content ('strongly urge prompt acceptance') is consistent with in_favor, but cannot confirm without page text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Full name used for an individual commenter; acceptable for a named public commenter in an EIS context."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "n/a",
+            "note": "Cannot verify role without cited page text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "No cited-page text was made available, making it impossible to verify the verbatim quote, speaker attribution, or role description. The quote content is semantically consistent with an 'in_favor' stance, but all checks requiring page text are unverifiable. A human reviewer should pull page X-14 and confirm the quote, speaker, and role."
+      }
+    },
+    {
+      "sequence": 13,
+      "entity": "Stephen M. Hirst",
+      "kind": "individual",
+      "role": "former assistant to Havasupai Land Use Planning Committee, commenter",
+      "stance": "opposed",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "locating a trailside camp around the source of Havasu Creek seems especially risky because of the pollution potential (Plan p. 30)... I would urge this site be dropped.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "X-13"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "X-13"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "locating a trailside camp around the source of Havasu Creek seems especially risky because of the pollution potential (Plan p. 30)... I would urge this site be dropped.",
+          "quote_verified": false,
+          "stance_basis": "opposes specific campsite location near Havasu Creek source due to pollution risk",
+          "entity_as_written": "Stephen M. Hirst",
+          "role_as_written": "former assistant to Havasupai Land Use Planning Committee, commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "No cited-page text was provided, so the quote cannot be verified as verbatim."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "n/a",
+            "note": "Cannot verify attribution without cited-page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot confirm 'opposed' stance without cited-page text, though the quote content ('I would urge this site be dropped') is consistent with opposition."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Full name used for a named individual commenter; acceptable for public EIS commenters who are identified by name in the document."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "n/a",
+            "note": "Cannot verify role without cited-page text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "No cited-page text was supplied, making it impossible to verify the verbatim quote, attribution, stance, or role. The quote content is internally consistent with an 'opposed' stance, but all checks requiring page text return n/a. A human reviewer should pull page X-13 and confirm the quote, speaker identity, and role description before accepting this row."
+      }
+    },
+    {
+      "sequence": 14,
+      "entity": "U.S. Bureau of Land Management",
+      "kind": "agency",
+      "role": "federal reviewer of DEIS",
+      "stance": "neutral",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "We appreciate the opportunity to review this generally well written and detailed document. The above comments may be of some help to you in the development of the final statement.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "X-18"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "X-18"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "We appreciate the opportunity to review this generally well written and detailed document. The above comments may be of some help to you in the development of the final statement.",
+          "quote_verified": true,
+          "stance_basis": "offered technical comments and corrections but no objection to the proposed action",
+          "entity_as_written": "U.S. Bureau of Land Management",
+          "role_as_written": "federal reviewer of DEIS"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "No cited-page text was provided, so verbatim presence cannot be confirmed."
+          },
+          {
+            "check": "Attribution links entity to stance (direct_quote: entity is speaker)",
+            "result": "n/a",
+            "note": "Cannot verify without cited-page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Quote language ('appreciate the opportunity', 'generally well written') is consistent with a neutral/constructive reviewer stance, but cannot confirm without source text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "U.S. Bureau of Land Management is the official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "n/a",
+            "note": "Cannot verify without cited-page text; 'federal reviewer of DEIS' is plausible given the quote content."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "No cited-page text was supplied, making it impossible to verify the verbatim quote, speaker attribution, or role description. The quote content and neutral stance label are internally consistent and plausible for a BLM comment letter, but all key checks require human verification against the actual page X-18 text."
+      }
+    },
+    {
+      "sequence": 15,
+      "entity": "U.S. Fish and Wildlife Service",
+      "kind": "agency",
+      "role": "federal reviewer of DEIS",
+      "stance": "neutral",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "Our review indicates that the subject draft environmental statement adequately considers matters of jurisdictional concern to this Service. We therefore have no comments.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "X-7"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "X-7"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "Our review indicates that the subject draft environmental statement adequately considers matters of jurisdictional concern to this Service. We therefore have no comments.",
+          "quote_verified": true,
+          "stance_basis": "no objections, found statement adequate for their jurisdictional concerns",
+          "entity_as_written": "U.S. Fish and Wildlife Service",
+          "role_as_written": "federal reviewer of DEIS"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "No cited-page text was provided, so verbatim presence cannot be confirmed."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "n/a",
+            "note": "Cannot verify attribution without cited-page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "The quote ('no comments') is consistent with a neutral stance, but cannot confirm without page text. Neutral seems plausible given the language."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "U.S. Fish and Wildlife Service is the official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "n/a",
+            "note": "Cannot verify role without cited-page text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "No cited-page text was provided, making it impossible to verify the verbatim quote, attribution, or role. The extracted content is internally plausible — the quote language ('no comments') aligns with a neutral stance, and U.S. Fish and Wildlife Service is a real federal agency — but all checks requiring page text are unverifiable. A human reviewer should confirm against page X-7 of the source document."
+      }
+    },
+    {
+      "sequence": 16,
+      "entity": "U.S. Geological Survey",
+      "kind": "agency",
+      "role": "federal reviewer of DEIS",
+      "stance": "neutral",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "Local problems resulting from floods are briefly mentioned (p. IV-1, par. 4 and 5). A broader discussion of any potential impacts from high-intensity summer thunderstorms would be useful.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "X-8"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "X-8"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "Local problems resulting from floods are briefly mentioned (p. IV-1, par. 4 and 5). A broader discussion of any potential impacts from high-intensity summer thunderstorms would be useful.",
+          "quote_verified": false,
+          "stance_basis": "requested broader discussion of flood impacts but did not oppose the plan",
+          "entity_as_written": "U.S. Geological Survey",
+          "role_as_written": "federal reviewer of DEIS"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "No cited-page text was provided, so verbatim presence of the quote on page X-8 cannot be confirmed."
+          },
+          {
+            "check": "Attribution links entity to stance (direct_quote: entity is speaker)",
+            "result": "n/a",
+            "note": "Without the cited page text, it cannot be verified that U.S. Geological Survey is the speaker of this quote."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot assess stance match without the source text; the quote itself reads as a constructive/conditional comment rather than purely neutral."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "U.S. Geological Survey is the official name of the federal agency."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "n/a",
+            "note": "Cannot verify 'federal reviewer of DEIS' role without the cited page text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "No cited-page text was supplied, making it impossible to verify the verbatim quote, speaker attribution, or role description. Additionally, the quote's tone (requesting a 'broader discussion') suggests a conditional or constructive comment rather than a purely neutral stance, which may warrant re-evaluation of the stance label. A human reviewer should confirm the quote and attribution on page X-8."
+      }
+    },
+    {
+      "sequence": 17,
+      "entity": "Andy Sandoval",
+      "kind": "official",
+      "role": "Executive Director, NACOG Region III",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "No comment on this project",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "66",
+        "67"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "66",
+            "67"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "No comment on this project",
+          "quote_verified": true,
+          "stance_basis": "Checked 'No comment on this project' on review form",
+          "entity_as_written": "Andy Sandoval",
+          "role_as_written": "Executive Director, NACOG Region III"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The phrase 'No comment on this project' does not appear anywhere in the cited page text, which contains only legal/statutory language and a location map description."
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "no",
+            "note": "Andy Sandoval and NACOG Region III are not mentioned anywhere in the cited pages (66-67). No sectional list or table containing this entity is present."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor any relevant content appears in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Name appears to be a named official with an organizational role; format is acceptable if the entity is a public official rather than a private individual."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "No mention of Andy Sandoval, Executive Director, or NACOG Region III anywhere in the cited pages."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited pages (66-67) contain only statutory/legal text about the Havasupai Indian Reservation and a location map — there is no mention of Andy Sandoval, NACOG Region III, or the summary quote 'No comment on this project.' The extraction appears to reference the wrong pages entirely. The correct source pages for this entity and quote need to be identified and re-extracted."
+      }
+    },
+    {
+      "sequence": 18,
+      "entity": "Bette DeGraw",
+      "kind": "official",
+      "role": "Asst. Dir., Div. of Planning & Policy Dev., Dept. of Economic Security",
+      "stance": "in_favor",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Proposal is supported as written",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "67",
+        "68"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "67",
+            "68"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Proposal is supported as written",
+          "quote_verified": true,
+          "stance_basis": "Checked 'Proposal is supported as written' on review form",
+          "entity_as_written": "Bette DeGraw",
+          "role_as_written": "Asst. Dir., Div. of Planning & Policy Dev., Dept. of Economic Security"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The phrase 'Proposal is supported as written' does not appear anywhere in the cited page text provided."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Bette DeGraw is not mentioned anywhere in the cited pages (67-68). No list, table, or heading referencing her or her department appears in the provided text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance because neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Name appears to be a named official; format is acceptable for an agency representative."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'Asst. Dir., Div. of Planning & Policy Dev., Dept. of Economic Security' is not mentioned or corroborated anywhere in the cited pages."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited pages (67-68) contain legislative and planning text about the Havasupai Indian Reservation and make no mention of Bette DeGraw, her agency role, or the phrase 'Proposal is supported as written.' The extraction appears to reference a comment letter or agency response section that is not present in the provided page text. The correct source pages need to be identified and re-extracted."
+      }
+    },
+    {
+      "sequence": 19,
+      "entity": "Clinton M. Pattea",
+      "kind": "official",
+      "role": "Executive Secretary, Indian Affairs Commission",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "No comment on this project",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "62",
+        "63"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "62",
+            "63"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "No comment on this project",
+          "quote_verified": true,
+          "stance_basis": "Checked 'No comment on this project' on review form",
+          "entity_as_written": "Clinton M. Pattea",
+          "role_as_written": "Executive Secretary, Indian Affairs Commission"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The phrase 'No comment on this project' does not appear anywhere in the cited page text provided."
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "no",
+            "note": "Clinton M. Pattea and 'Indian Affairs Commission' do not appear anywhere in the cited pages (62-63). The pages show a table of contents and a list of agencies consulted, with no mention of this individual or entity."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name is well-formed",
+            "result": "yes",
+            "note": "Name appears to be a named official; format is acceptable for an official/agency representative."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'Executive Secretary, Indian Affairs Commission' is not mentioned anywhere in the cited pages."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited pages (62-63) contain a table of contents and a list of federal/state/other agencies from whom comments were requested, but Clinton M. Pattea, the Indian Affairs Commission, and the quote 'No comment on this project' are entirely absent from the provided text. The extraction appears to reference a different page or document section. The correct evidence pages should be located and re-extracted."
+      }
+    },
+    {
+      "sequence": 20,
+      "entity": "Facility Engineering Directorate, Fort Huachuca",
+      "kind": "agency",
+      "role": "Arizona State Clearinghouse reviewer",
+      "stance": "in_favor",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Proposal is supported as written",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "57",
+        "58"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "57",
+            "58"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Proposal is supported as written",
+          "quote_verified": true,
+          "stance_basis": "Checked 'Proposal is supported as written' on review form",
+          "entity_as_written": "Facility Engineering Directorate, Fort Huachuca",
+          "role_as_written": "Arizona State Clearinghouse reviewer"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The phrase 'Proposal is supported as written' does not appear anywhere in the cited pages 57-58 (which contain statements by Wayne Sinyella, Joe P. Sparks, and Havasupai Tribe materials)."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Facility Engineering Directorate, Fort Huachuca is not mentioned anywhere in the cited text. The text concerns Havasupai Tribe legal and land use matters."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "The entity name is a plausible official agency name, though it does not appear in the cited text."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "'Arizona State Clearinghouse reviewer' role is not supported by the cited pages, which contain no reference to Fort Huachuca or any clearinghouse review."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited pages (57-58) contain statements from Wayne Sinyella and Joe P. Sparks regarding the Havasupai Indian Tribe Land Use Plan — there is no mention of Facility Engineering Directorate, Fort Huachuca, or the phrase 'Proposal is supported as written.' This extraction appears to reference entirely wrong source pages. The entity and quote likely belong to a different section of the document (possibly an Arizona State Clearinghouse response table) that was not included in the cited pages."
+      }
+    },
+    {
+      "sequence": 21,
+      "entity": "Havasupai Tribe",
+      "kind": "tribe",
+      "role": "subject tribe / commenter",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "such reimbursement is not opposed by the Havasupai Tribe.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "49"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "49"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "such reimbursement is not opposed by the Havasupai Tribe.",
+          "quote_verified": true,
+          "stance_basis": "Tribe does not oppose reimbursement to Arizona Game and Fish Department and supports the overall Land Use Plan",
+          "entity_as_written": "Havasupai Tribe",
+          "role_as_written": "subject tribe / commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact phrase 'such reimbursement is not opposed by the Havasupai Tribe.' appears verbatim on page 49."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "yes",
+            "note": "The cited narrator sentence explicitly names the Havasupai Tribe and states their position (not opposed to reimbursement)."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "'Not opposed' aligns with 'in_favor' or at minimum neutral/conditional; however, 'not opposed' is closer to neutral or conditional than actively in_favor. Still, 'in_favor' is a reasonable interpretation in context."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Havasupai Tribe' is the official tribal name as used in the document."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The Tribe is referenced as a subject party in the EIS discussion; role as 'subject tribe / commenter' is reasonable."
+          }
+        ],
+        "verdict": "PASS_WITH_NOTE",
+        "model_confidence": "medium",
+        "notes": "The quote is verbatim and the attribution is clear. However, 'not opposed' is technically a neutral or conditional stance rather than actively 'in_favor'; the stance label is a slight overstatement. The extraction is still trustworthy but the stance could more precisely be labeled 'neutral' or 'conditional'."
+      }
+    },
+    {
+      "sequence": 22,
+      "entity": "Hopi Tribal Council",
+      "kind": "tribe",
+      "role": "commenting tribe",
+      "stance": "in_favor",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "On behalf of the Hopi Tribe, I support the Havasupai Tribe's efforts to make plans for its economic self-sufficiency for its people on the additional acreage of land provided under this Act.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "68",
+        "69"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "68",
+            "69"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "On behalf of the Hopi Tribe, I support the Havasupai Tribe's efforts to make plans for its economic self-sufficiency for its people on the additional acreage of land provided under this Act.",
+          "quote_verified": true,
+          "stance_basis": "Explicitly supports Havasupai efforts and the EIS as written",
+          "entity_as_written": "Hopi Tribal Council",
+          "role_as_written": "commenting tribe"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The quote 'On behalf of the Hopi Tribe, I support the Havasupai Tribe's efforts...' does not appear anywhere in the provided text from pages 68-69."
+          },
+          {
+            "check": "Attribution links Hopi Tribal Council to stated stance",
+            "result": "no",
+            "note": "The Hopi Tribal Council is not mentioned in the cited pages at all; the text is about the Havasupai Land Use Plan and its divisions."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Hopi Tribal Council' is a recognizable official tribal government name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited pages contain no reference to the Hopi Tribal Council as a commenting tribe or in any other capacity."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited pages (68-69) contain only text about the Havasupai Land Use Plan's general provisions and specific divisions (Agriculture, Cultural Resources, Domestic Water, etc.). The Hopi Tribal Council is not mentioned, and the quoted statement does not appear anywhere in the provided text. The quote likely comes from a different section of the EIS (possibly a comments/consultation section) and the page citations are incorrect. The extraction should be re-done with the correct page references."
+      }
+    },
+    {
+      "sequence": 23,
+      "entity": "Hopi Tribe of Arizona",
+      "kind": "tribe",
+      "role": "commenting tribe",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The record of these hearings contains statements from other Indian tribes in Arizona, such as the Hualapai Tribe of Arizona and the Hopi Tribe of Arizona, supporting the Land Use Plan.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "79"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "79"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The record of these hearings contains statements from other Indian tribes in Arizona, such as the Hualapai Tribe of Arizona and the Hopi Tribe of Arizona, supporting the Land Use Plan.",
+          "quote_verified": true,
+          "stance_basis": "Presented testimony supporting the Land Use Plan at hearings",
+          "entity_as_written": "Hopi Tribe of Arizona",
+          "role_as_written": "commenting tribe"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 79 text contains content about the Havasupai Tribe's land use plan details (roads, trails, visitor use), but does not contain the summary quote about the Hopi Tribe or Hualapai Tribe supporting the Land Use Plan."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The Hopi Tribe of Arizona is not mentioned anywhere in the provided page text; the attribution cannot be verified from the cited pages."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot assess stance match since the quote and entity are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Hopi Tribe of Arizona is an official tribal name and is well-formed."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of the Hopi Tribe of Arizona or any commenting role for them."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page 79 text is entirely about the Havasupai Tribe's land use plan specifics (roads, trails, visitor use) and contains no reference to the Hopi Tribe of Arizona or the summary quote. The extraction appears to reference a different page. The correct page containing the statement about the Hopi Tribe and Hualapai Tribe supporting the Land Use Plan needs to be identified and re-cited."
+      }
+    },
+    {
+      "sequence": 24,
+      "entity": "Hualapai Tribe of Arizona",
+      "kind": "tribe",
+      "role": "commenting tribe",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The record of these hearings contains statements from other Indian tribes in Arizona, such as the Hualapai Tribe of Arizona and the Hopi Tribe of Arizona, supporting the Land Use Plan.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "79"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "79"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The record of these hearings contains statements from other Indian tribes in Arizona, such as the Hualapai Tribe of Arizona and the Hopi Tribe of Arizona, supporting the Land Use Plan.",
+          "quote_verified": true,
+          "stance_basis": "Presented testimony supporting the Land Use Plan at hearings",
+          "entity_as_written": "Hualapai Tribe of Arizona",
+          "role_as_written": "commenting tribe"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 79 text contains no mention of the Hualapai Tribe of Arizona, the Hopi Tribe, or any statement about tribes supporting a Land Use Plan. The text is about Havasupai Tribe road/trail/visitor use policies."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The Hualapai Tribe of Arizona does not appear anywhere in the provided page text, so no attribution can be confirmed."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the entity and quote are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Hualapai Tribe of Arizona is a properly formed official tribal name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no reference to the Hualapai Tribe of Arizona as a commenting tribe or in any other capacity."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and the entity (Hualapai Tribe of Arizona) do not appear anywhere in the provided page 79 text, which is entirely about Havasupai Tribe land use policies regarding roads, trails, and visitor access. The evidence page citation appears to be incorrect. The extractor should locate the correct page where the Hualapai Tribe's support for the Land Use Plan is actually mentioned."
+      }
+    },
+    {
+      "sequence": 25,
+      "entity": "James R. Carter",
+      "kind": "official",
+      "role": "Director, Agriculture & Horticulture Dept.",
+      "stance": "in_favor",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Proposal is supported as written",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "60",
+        "61"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "60",
+            "61"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Proposal is supported as written",
+          "quote_verified": true,
+          "stance_basis": "Checked 'Proposal is supported as written' on review form",
+          "entity_as_written": "James R. Carter",
+          "role_as_written": "Director, Agriculture & Horticulture Dept."
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The phrase 'Proposal is supported as written' does not appear verbatim anywhere in the cited pages (pp. 60-61 text provided)."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "James R. Carter and 'Director, Agriculture & Horticulture Dept.' do not appear anywhere in the cited text. The text references Wayne Sinyella, Joe P. Sparks, and the Havasupai Tribe."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance because the entity is not present in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Name format is acceptable for an official, but the entity cannot be verified in the cited text."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "No mention of James R. Carter or 'Director, Agriculture & Horticulture Dept.' in the cited pages."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited pages (60-61) contain statements from Wayne Sinyella and Joe P. Sparks on behalf of the Havasupai Tribe, with no mention of James R. Carter or an Agriculture & Horticulture Department. The summary quote 'Proposal is supported as written' is also absent verbatim. This row appears to reference a different page or section entirely and needs to be re-extracted from the correct source location."
+      }
+    },
+    {
+      "sequence": 26,
+      "entity": "Joe P. Sparks",
+      "kind": "individual",
+      "role": "Tribal Counsel, Sparks & Siler P.C., attorneys for the Havasupai Tribe",
+      "stance": "in_favor",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "I urge on behalf of my clients, the Havasupai Tribe of Indians of Arizona, that the Plan be implemented forthwith in compliance with the requirements of Public Law 5",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "77",
+        "78"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "77",
+            "78"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "I urge on behalf of my clients, the Havasupai Tribe of Indians of Arizona, that the Plan be implemented forthwith in compliance with the requirements of Public Law 5",
+          "quote_verified": false,
+          "stance_basis": "Urges implementation of the Land Use Plan on behalf of the Havasupai Tribe",
+          "entity_as_written": "Joe P. Sparks",
+          "role_as_written": "Tribal Counsel, Sparks & Siler P.C., attorneys for the Havasupai Tribe"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted text 'I urge on behalf of my clients, the Havasupai Tribe of Indians of Arizona, that the Plan be implemented forthwith in compliance with the requirements of Public Law 5' does not appear anywhere in the cited pages 77-78 as provided."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Joe P. Sparks is not mentioned anywhere in the cited page text provided; no direct quote from him appears."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance without the quote being present in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Full name with professional title is appropriate for an attorney acting in official capacity."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'Tribal Counsel, Sparks & Siler P.C., attorneys for the Havasupai Tribe' is not supported by the cited page text provided."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "The summary quote and the entity Joe P. Sparks do not appear in the cited pages as provided. The cited text discusses Havasupai land use planning details but contains no letter or statement from an attorney. The quote may exist elsewhere in the document (e.g., a comment letter appended to the EIS), but the page citations 77-78 do not support it based on the text pulled in. Human review is needed to locate the correct pages."
+      }
+    },
+    {
+      "sequence": 27,
+      "entity": "Michael A. Ramnes",
+      "kind": "official",
+      "role": "Director, Arizona State Parks Board",
+      "stance": "in_favor",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Proposal is supported as written",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "61",
+        "62"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "61",
+            "62"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Proposal is supported as written",
+          "quote_verified": true,
+          "stance_basis": "Checked 'Proposal is supported as written' on review form",
+          "entity_as_written": "Michael A. Ramnes",
+          "role_as_written": "Director, Arizona State Parks Board"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The phrase 'Proposal is supported as written' does not appear verbatim anywhere in the cited page text provided."
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "no",
+            "note": "Michael A. Ramnes and Arizona State Parks Board do not appear anywhere in the cited pages text provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance without finding the entity or quote in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Name appears to be a properly formatted official name with title and organization."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "No mention of Michael A. Ramnes or Arizona State Parks Board in the cited pages."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The cited pages (61-62) as provided do not contain any reference to Michael A. Ramnes, the Arizona State Parks Board, or the summary quote 'Proposal is supported as written.' The text provided covers Wayne Sinyella's concluding statement and the Draft EIS cover/table of contents pages, which are unrelated to the extracted row. It is possible the wrong pages were pulled or the page numbering is inconsistent; a human reviewer should locate the correct pages containing the Arizona State Parks Board comment."
+      }
+    },
+    {
+      "sequence": 28,
+      "entity": "Stanley Honanie",
+      "kind": "official",
+      "role": "Vice-Chairman, Hopi Tribal Council",
+      "stance": "in_favor",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "It is hereby supported that the Environmental Impact Statement prepared by the Interior Department be approved as written and discussed with the Hopi Tribe.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "68",
+        "69"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "68",
+            "69"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "It is hereby supported that the Environmental Impact Statement prepared by the Interior Department be approved as written and discussed with the Hopi Tribe.",
+          "quote_verified": true,
+          "stance_basis": "Explicitly supports approval of the EIS as written on behalf of the Hopi Tribe",
+          "entity_as_written": "Stanley Honanie",
+          "role_as_written": "Vice-Chairman, Hopi Tribal Council"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The cited pages (68-69) contain text about the Havasupai Land Use Plan and EIS description, but the quoted sentence about the Hopi Tribe supporting the EIS does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links Stanley Honanie to the stated stance",
+            "result": "no",
+            "note": "Stanley Honanie and the Hopi Tribal Council are not mentioned anywhere in the cited page text provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance without the quote being present in the cited pages."
+          },
+          {
+            "check": "Entity name is well-formed",
+            "result": "yes",
+            "note": "Stanley Honanie is a named official; using full name for a public official is acceptable."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "No mention of Stanley Honanie or the Hopi Tribal Council Vice-Chairman role in the cited pages."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The cited pages (68-69) appear to contain introductory EIS content about the Havasupai Reservation Land Use Plan, with no mention of Stanley Honanie, the Hopi Tribal Council, or the quoted statement. The quote may exist elsewhere in the document (e.g., in a comments/responses section), but the page citations appear incorrect. Human review is needed to locate the correct pages and verify the attribution."
+      }
+    },
+    {
+      "sequence": 29,
+      "entity": "State Mine Inspector",
+      "kind": "agency",
+      "role": "Arizona State Clearinghouse reviewer",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "No comment on this project",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "63",
+        "64"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "63",
+            "64"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "No comment on this project",
+          "quote_verified": true,
+          "stance_basis": "Checked 'No comment on this project' on review form",
+          "entity_as_written": "State Mine Inspector",
+          "role_as_written": "Arizona State Clearinghouse reviewer"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The cited pages (63-64) contain table of contents and chapter text; the phrase 'No comment on this project' does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links State Mine Inspector to stated stance",
+            "result": "no",
+            "note": "The State Mine Inspector is not mentioned anywhere in the cited page text provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance without the relevant text being present in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "State Mine Inspector is an official agency/office title and is appropriately named."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "No mention of Arizona State Clearinghouse or the State Mine Inspector's role in the provided text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The cited pages (63-64) as provided contain only a table of contents and early chapter content with no reference to the State Mine Inspector or any Arizona State Clearinghouse review. The summary quote 'No comment on this project' cannot be verified in the supplied text. This extraction may reference a consultation/coordination section (Chapter IX) that was not included in the pulled text, so human review is warranted to confirm whether the quote and attribution exist on the actual pages 63-64 of the document."
+      }
+    },
+    {
+      "sequence": 30,
+      "entity": "Suzanne Dandoy",
+      "kind": "official",
+      "role": "Director, Department of Health Services",
+      "stance": "in_favor",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Proposal is supported as written",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "64",
+        "65"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "64",
+            "65"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Proposal is supported as written",
+          "quote_verified": true,
+          "stance_basis": "Checked 'Proposal is supported as written' on review form",
+          "entity_as_written": "Suzanne Dandoy",
+          "role_as_written": "Director, Department of Health Services"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The phrase 'Proposal is supported as written' does not appear anywhere in the cited page text provided."
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "no",
+            "note": "Suzanne Dandoy and the Department of Health Services are not mentioned anywhere in the cited pages (64-65). The text shown is a table of contents and Chapter I description of the proposed action."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Name appears to be a named official with full name and title, which is acceptable for an official/agency representative."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'Director, Department of Health Services' is not mentioned in the cited pages."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited pages (64-65) appear to contain a table of contents and the beginning of Chapter I, with no mention of Suzanne Dandoy, the Department of Health Services, or any consultation/comment section. The extraction likely references the wrong pages — the entity and quote likely appear in Chapter IX (Consultation and Coordination, page IX-1) or a similar section listing agency responses. The row should be re-extracted with correct page citations."
+      }
+    },
+    {
+      "sequence": 31,
+      "entity": "Wayne Sinyella",
+      "kind": "official",
+      "role": "Chairman, Havasupai Tribal Council",
+      "stance": "in_favor",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "The Havasupai people believe that the provisions of the Land Use Plan comply with the provisions of Public Law 93-620 and provide the Havasupai people with a way to use the land which they have so sorely needed for many, many years.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "69",
+        "70"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "69",
+            "70"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "The Havasupai people believe that the provisions of the Land Use Plan comply with the provisions of Public Law 93-620 and provide the Havasupai people with a way to use the land which they have so sorely needed for many, many years.",
+          "quote_verified": true,
+          "stance_basis": "Affirms the Land Use Plan complies with law and supports its implementation",
+          "entity_as_written": "Wayne Sinyella",
+          "role_as_written": "Chairman, Havasupai Tribal Council"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted text does not appear anywhere in the provided page excerpts (pages 69-70 content shown). The pages contain discussion of agriculture, cultural resources, and domestic water — no quote from Wayne Sinyella is present."
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "no",
+            "note": "Wayne Sinyella is not mentioned anywhere in the cited page text provided. No direct quote from him appears."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance without the quote being present in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Wayne Sinyella is an official/named individual in an official capacity; full name is appropriate for a tribal chairman."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited pages reference the Havasupai Tribal Council but do not mention Wayne Sinyella or his role as Chairman."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "The summary quote and attribution to Wayne Sinyella as Chairman of the Havasupai Tribal Council are not found in the provided page excerpts for pages 69-70. The quote itself is plausible and consistent with the document's subject matter, and the stance (in_favor) would logically fit a tribal chairman supporting the Land Use Plan. However, since the quote cannot be verified in the cited pages as provided, human review is needed to confirm the correct page reference and verbatim accuracy."
+      }
+    },
+    {
+      "sequence": 32,
+      "entity": "Wesley E. Steiner",
+      "kind": "official",
+      "role": "State Water Commission",
+      "stance": "in_favor",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Proposal is supported as written",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "59",
+        "60"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "59",
+            "60"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Proposal is supported as written",
+          "quote_verified": true,
+          "stance_basis": "Checked 'Proposal is supported as written' on review form",
+          "entity_as_written": "Wesley E. Steiner",
+          "role_as_written": "State Water Commission"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The phrase 'Proposal is supported as written' does not appear verbatim anywhere in the cited page text."
+          },
+          {
+            "check": "Attribution links Wesley E. Steiner to stated stance",
+            "result": "no",
+            "note": "Wesley E. Steiner is not mentioned anywhere in the cited pages. The speakers referenced are Joe P. Sparks (Tribal Counsel) and unnamed others."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot evaluate stance for Steiner since he does not appear in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Name format is acceptable for an official, though the entity cannot be verified in the cited pages."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "'State Water Commission' role for Wesley E. Steiner is not supported anywhere in the cited pages."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "Wesley E. Steiner and the 'State Water Commission' do not appear anywhere in the cited pages (59-60). The summary quote 'Proposal is supported as written' is also not present verbatim. The cited text only references Joe P. Sparks as Tribal Counsel. This row appears to have been extracted from a different section or page entirely and needs to be re-extracted with correct page citations."
+      }
+    },
+    {
+      "sequence": 33,
+      "entity": "William H. Dresler",
+      "kind": "official",
+      "role": "Director, Arizona Bureau of Geology & Mineral Technology",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "No comment on this project",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "65",
+        "66"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "65",
+            "66"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "No comment on this project",
+          "quote_verified": true,
+          "stance_basis": "Checked 'No comment on this project' on review form",
+          "entity_as_written": "William H. Dresler",
+          "role_as_written": "Director, Arizona Bureau of Geology & Mineral Technology"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The phrase 'No comment on this project' does not appear anywhere in the cited pages 65-66 text provided."
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "no",
+            "note": "William H. Dresler and the Arizona Bureau of Geology & Mineral Technology are not mentioned anywhere in the cited pages text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the provided text."
+          },
+          {
+            "check": "Entity name is well-formed",
+            "result": "yes",
+            "note": "The name 'William H. Dresler' is properly formatted as an official with full name and title."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'Director, Arizona Bureau of Geology & Mineral Technology' is not mentioned in the cited pages."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The cited pages (65-66) contain text about the Havasupai Indian Reservation and Public Law 93-620, with no mention of William H. Dresler, the Arizona Bureau of Geology & Mineral Technology, or the quote 'No comment on this project.' The extracted row may reference a different section of the EIS (likely a comment letter appendix) that was not included in the provided page text. Human review is needed to locate the correct source pages."
+      }
+    },
+    {
+      "sequence": 34,
+      "entity": "Arizona Fish and Game",
+      "kind": "agency",
+      "role": "field assessment consultant",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "243"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "243"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+          "quote_verified": true,
+          "stance_basis": "Listed as consultation entity; no stance attributed",
+          "entity_as_written": "Arizona Fish and Game",
+          "role_as_written": "field assessment consultant"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim on cited page",
+            "result": "no",
+            "note": "The cited page text (p.243) contains grazing management steps and appendix headers; the summary quote about 'field assessments' and consulting entities does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Arizona Fish and Game does not appear anywhere in the cited page text, so no sectional attribution can be confirmed."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neutral or otherwise; the entity and quote are absent from the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "no",
+            "note": "The agency is typically called 'Arizona Game and Fish Department' (AGFD), not 'Arizona Fish and Game'."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'field assessment consultant' is not supported by the cited page text, which covers grazing management cost estimates and appendix letters."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page (243) contains grazing management steps and cost tables, not any mention of field assessment consultants or Arizona Fish and Game. The summary quote does not appear verbatim in the provided text, and the entity name appears to be slightly incorrect (should likely be 'Arizona Game and Fish Department'). The extraction likely references a different page number; the correct page should be re-identified and the entity name corrected."
+      }
+    },
+    {
+      "sequence": 35,
+      "entity": "Arizona State Museum",
+      "kind": "organization",
+      "role": "field assessment consultant",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "243"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "243"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+          "quote_verified": true,
+          "stance_basis": "Listed as consultation entity; no stance attributed",
+          "entity_as_written": "Arizona State Museum",
+          "role_as_written": "field assessment consultant"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 243 text does not contain the phrase 'Aspects of field assessments have been reviewed and consultations provided by the following entities:' — the text shown is about grazing management steps and cost estimates."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Arizona State Museum does not appear anywhere in the cited page text provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance as neither the quote nor the entity appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Arizona State Museum is a properly named organization."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'field assessment consultant' is not supported by the cited page text, which covers grazing management and cost estimates."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page 243 text does not contain the summary quote or any mention of Arizona State Museum. The text shown relates to grazing management steps and cost estimates, not cultural resources assessment consultations. The correct page reference for this entity and quote needs to be identified — likely a different page number was intended."
+      }
+    },
+    {
+      "sequence": 36,
+      "entity": "Arizona State University",
+      "kind": "organization",
+      "role": "field assessment consultant",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "243"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "243"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+          "quote_verified": true,
+          "stance_basis": "Listed as consultation entity; no stance attributed",
+          "entity_as_written": "Arizona State University",
+          "role_as_written": "field assessment consultant"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim on cited page",
+            "result": "no",
+            "note": "The cited page text (243) does not contain the phrase 'Aspects of field assessments have been reviewed and consultations provided by the following entities:' — the provided text is about grazing management steps and cost estimates."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Arizona State University does not appear anywhere in the cited page text provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance as neither the quote nor the entity appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Arizona State University is a properly formed official organization name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'field assessment consultant' is not supported by the cited page text; the text deals with grazing management and cost estimates, not field assessment consultants."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page (243) does not contain the summary quote or any reference to Arizona State University. The text on the cited page is about livestock grazing management steps and cost estimates, completely unrelated to the extracted row. The correct page reference for the field assessment consultants list needs to be identified and re-extracted."
+      }
+    },
+    {
+      "sequence": 37,
+      "entity": "Bureau of Indian Affairs",
+      "kind": "agency",
+      "role": "federal trust agency / EIS contracting authority",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "As required by Section 10 (b)(4) of Public Law 93-620 an environmental assessment was prepared in December, 1975 by the Truxton Canyon Agency of the Bureau of Indian Affairs in consultation with the Havasupai Tribal Council.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "243"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "243"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "As required by Section 10 (b)(4) of Public Law 93-620 an environmental assessment was prepared in December, 1975 by the Truxton Canyon Agency of the Bureau of Indian Affairs in consultation with the Havasupai Tribal Council.",
+          "quote_verified": true,
+          "stance_basis": "BIA prepared environmental assessment and contracted the EIS in support of the land use plan",
+          "entity_as_written": "Bureau of Indian Affairs",
+          "role_as_written": "federal trust agency / EIS contracting authority"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 243 text contains grazing management steps and cost estimates; the quoted sentence about BIA/Truxton Canyon Agency/Section 10(b)(4)/PL 93-620 does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links BIA to in_favor stance via paraphrase",
+            "result": "no",
+            "note": "The cited text makes no mention of the Bureau of Indian Affairs, Truxton Canyon Agency, or any environmental assessment preparation."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance; the relevant text is absent from the cited page."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Bureau of Indian Affairs' is the correct official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page contains no text supporting the role of 'federal trust agency / EIS contracting authority' for BIA."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and all supporting evidence are entirely absent from the provided page 243 text, which covers only grazing management steps and cost tables. The correct page citation needs to be identified and the quote re-verified against the actual source page. The entity and quote content may be valid but are simply cited to the wrong page."
+      }
+    },
+    {
+      "sequence": 38,
+      "entity": "Council of Environmental Quality (CEQ)",
+      "kind": "agency",
+      "role": "federal regulatory body providing EIS guidelines",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "A Statement Outline was prepared in which specific tasks were outlined using guidelines provided by the Council of Environmental Quality (CEQ).",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "243"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "243"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "A Statement Outline was prepared in which specific tasks were outlined using guidelines provided by the Council of Environmental Quality (CEQ).",
+          "quote_verified": false,
+          "stance_basis": "Provided procedural guidelines; no substantive position on the project attributed",
+          "entity_as_written": "Council of Environmental Quality (CEQ)",
+          "role_as_written": "federal regulatory body providing EIS guidelines"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 243 contains text about grazing management steps and appendix content; the summary quote about CEQ guidelines and Statement Outline does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "CEQ is not mentioned anywhere in the cited page text; no paraphrased reference to CEQ or its guidelines appears."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance as the entity and quote are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Council of Environmental Quality (CEQ) is the correct official name for this federal body."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text contains no reference to CEQ or its role as a federal regulatory body providing EIS guidelines."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page (243) contains content about grazing management steps and appendix letters, with no mention of CEQ or the summary quote. The extraction appears to reference the wrong page number. The quote and entity may be valid but need to be re-extracted with the correct page citation. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 39,
+      "entity": "Dr. Robert Euler",
+      "kind": "individual",
+      "role": "Archaeologist, Grand Canyon National Park",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "243"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "243"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+          "quote_verified": true,
+          "stance_basis": "Listed as consultation entity; no stance attributed",
+          "entity_as_written": "Dr. Robert Euler",
+          "role_as_written": "Archaeologist, Grand Canyon National Park"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim on cited page",
+            "result": "no",
+            "note": "The cited page 243 text provided does not contain the phrase 'Aspects of field assessments have been reviewed and consultations provided by the following entities:' — the text shown is about grazing management steps and cost estimates."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Dr. Robert Euler does not appear anywhere in the provided page text; no sectional list containing his name is visible."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance because neither the quote nor the entity appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Named individual with title and full name is acceptable for a professional/expert cited in an EIS."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'Archaeologist, Grand Canyon National Park' is not supported by anything in the provided page text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page text (p. 243) contains grazing management cost tables and steps, not the cultural resources acknowledgment section where Dr. Robert Euler and the summary quote would appear. The extraction likely references a different page number. The correct page should be identified and re-extracted to confirm the quote and sectional attribution. [Forced HUMAN_REVIEW: stance attribution for a private individual always goes to a human (v2 policy override).]"
+      }
+    },
+    {
+      "sequence": 40,
+      "entity": "Havasupai Tribal Council",
+      "kind": "organization",
+      "role": "tribal governing body / cooperating party",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "As required by Section 10 (b)(4) of Public Law 93-620 an environmental assessment was prepared in December, 1975 by the Truxton Canyon Agency of the Bureau of Indian Affairs in consultation with the Havasupai Tribal Council.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "243"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "243"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "As required by Section 10 (b)(4) of Public Law 93-620 an environmental assessment was prepared in December, 1975 by the Truxton Canyon Agency of the Bureau of Indian Affairs in consultation with the Havasupai Tribal Council.",
+          "quote_verified": true,
+          "stance_basis": "Tribal Council consulted in preparation of the EIS and wrote the land use plan the statement evaluates",
+          "entity_as_written": "Havasupai Tribal Council",
+          "role_as_written": "tribal governing body / cooperating party"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 243 text contains grazing management steps and cost estimates; the summary quote about Section 10(b)(4) of Public Law 93-620 and the Havasupai Tribal Council is not present anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The Havasupai Tribal Council is not mentioned anywhere in the cited page text, so no attribution can be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the relevant text is absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Havasupai Tribal Council is an official tribal governing body name and is properly formed."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention the Havasupai Tribal Council or its role as a cooperating party."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and all related content about the Havasupai Tribal Council and Public Law 93-620 are entirely absent from the provided page 243 text, which covers only grazing management steps and cost estimates. The page citation appears to be incorrect. The extractor should locate the correct page where the environmental assessment and Havasupai Tribal Council consultation language actually appears."
+      }
+    },
+    {
+      "sequence": 41,
+      "entity": "Havasupai Tribe of Arizona",
+      "kind": "tribe",
+      "role": "reservation landowner / plan proponent",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The Tribe will benefit more from the proposed actions than from no action.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "243"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "243"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The Tribe will benefit more from the proposed actions than from no action.",
+          "quote_verified": true,
+          "stance_basis": "Tribe supports proposed land use plan actions over no-action alternative",
+          "entity_as_written": "Havasupai Tribe of Arizona",
+          "role_as_written": "reservation landowner / plan proponent"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The text on page 243 (as provided) contains only grazing management steps, cost estimates, and trail information. The quote 'The Tribe will benefit more from the proposed actions than from no action.' does not appear anywhere in the cited page text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The Havasupai Tribe of Arizona is not mentioned anywhere in the provided page text; no paraphrased attribution can be confirmed."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot assess stance match since neither the quote nor the entity appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Havasupai Tribe of Arizona is the official tribal name and is properly formatted."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention the Havasupai Tribe or their role as reservation landowner/plan proponent."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The provided page 243 text contains only grazing management implementation steps and cost tables with no reference to the Havasupai Tribe or the quoted statement. The summary quote and entity attribution cannot be verified from the cited pages. The extraction likely references a different page number; the correct page should be identified and re-extracted."
+      }
+    },
+    {
+      "sequence": 42,
+      "entity": "Havasupai Tribe of Arizona",
+      "kind": "tribe",
+      "role": "reservation landowner / plan proponent",
+      "stance": "opposed",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "An alternative, strongly opposed by the tribe, to the proposed continued use of the Hualapai and Topocoba Trails for tourists and the transport of supplies into Havasu Canyon would be the construction of (1) a motor road and (2) a chairlift into Havasu Canyon.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "243"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "243"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "An alternative, strongly opposed by the tribe, to the proposed continued use of the Hualapai and Topocoba Trails for tourists and the transport of supplies into Havasu Canyon would be the construction of (1) a motor road and (2) a chairlift into Havasu Canyon.",
+          "quote_verified": true,
+          "stance_basis": "Tribe strongly opposes motor road and chairlift alternatives into Havasu Canyon",
+          "entity_as_written": "Havasupai Tribe of Arizona",
+          "role_as_written": "reservation landowner / plan proponent"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 243 text contains trail maintenance and grazing management content; the summary quote about the Havasupai Tribe opposing a motor road/chairlift alternative is not present anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The Havasupai Tribe of Arizona is not mentioned anywhere in the cited page text provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the relevant content appears in the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official tribal name is properly formatted."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention the Havasupai Tribe or their role as reservation landowner/plan proponent."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The cited page 243 text does not contain the summary quote or any mention of the Havasupai Tribe, motor roads, chairlifts, or Havasu Canyon tourist access alternatives. The extracted content may be from a different page than cited, or the page pull was incorrect. The quote itself is plausible for an EIS document, but cannot be verified against the provided text, warranting human review to locate the correct source page."
+      }
+    },
+    {
+      "sequence": 43,
+      "entity": "Mr. Harley Shaw",
+      "kind": "individual",
+      "role": "Research Biologist, Arizona Game and Fish Department",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "243"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "243"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+          "quote_verified": true,
+          "stance_basis": "Listed as consultation entity; no stance attributed",
+          "entity_as_written": "Mr. Harley Shaw",
+          "role_as_written": "Research Biologist, Arizona Game and Fish Department"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim on cited pages",
+            "result": "no",
+            "note": "The cited page 243 text does not contain the phrase 'Aspects of field assessments have been reviewed and consultations provided by the following entities:' — the provided text is about grazing management steps and cost estimates."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Mr. Harley Shaw does not appear anywhere in the cited page text provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "no",
+            "note": "For a private individual or named professional, the extraction should use last-name only ('Shaw') or 'private commenter'; however, if this is a named professional in an official capacity, full name may be acceptable. This is borderline."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'Research Biologist, Arizona Game and Fish Department' cannot be verified from the cited page text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 243 text provided contains grazing management steps and cost estimates, with no mention of Mr. Harley Shaw, the Arizona Game and Fish Department, or the summary quote. The extraction appears to reference a different page or section entirely. The correct page containing the acknowledgment/consultation list should be identified and re-cited. [Forced HUMAN_REVIEW: stance attribution for a private individual always goes to a human (v2 policy override).]"
+      }
+    },
+    {
+      "sequence": 44,
+      "entity": "Mr. Hubert Lauzon",
+      "kind": "individual",
+      "role": "Rancher, Grand Canyon, Arizona",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "243"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "243"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+          "quote_verified": true,
+          "stance_basis": "Listed as consultation entity; no stance attributed",
+          "entity_as_written": "Mr. Hubert Lauzon",
+          "role_as_written": "Rancher, Grand Canyon, Arizona"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim on cited page",
+            "result": "no",
+            "note": "The cited page 243 text does not contain the phrase 'Aspects of field assessments have been reviewed and consultations provided by the following entities:' — the page content is about grazing management steps and cost estimates."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Mr. Hubert Lauzon does not appear anywhere in the cited page text provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "no",
+            "note": "A private individual should use last-name only or 'private commenter'; 'Mr. Hubert Lauzon' includes a first name and honorific."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page makes no mention of Mr. Hubert Lauzon or his role as a rancher in Grand Canyon, Arizona."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 243 contains content about grazing management steps and cost estimates, with no mention of Mr. Hubert Lauzon or the summary quote. The extraction appears to reference a different page where a list of consultants or reviewers is provided. The correct page citation needs to be identified and the entity name should be reformatted to last-name only per rubric guidelines. [Forced HUMAN_REVIEW: stance attribution for a private individual always goes to a human (v2 policy override).]"
+      }
+    },
+    {
+      "sequence": 45,
+      "entity": "Mr. Jim Walters",
+      "kind": "individual",
+      "role": "Resource Specialist, Grand Canyon National Park",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "243"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "243"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+          "quote_verified": true,
+          "stance_basis": "Listed as consultation entity; no stance attributed",
+          "entity_as_written": "Mr. Jim Walters",
+          "role_as_written": "Resource Specialist, Grand Canyon National Park"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim on cited page",
+            "result": "no",
+            "note": "The cited page 243 text provided does not contain the phrase 'Aspects of field assessments have been reviewed and consultations provided by the following entities:' — the text shown is about grazing management steps and cost estimates."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Mr. Jim Walters and Grand Canyon National Park Resource Specialist do not appear anywhere in the provided page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "no",
+            "note": "A private individual (or named staff member) should use last-name only or 'private commenter'; however, if this is an agency official, the name format may be acceptable — but cannot confirm from text."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'Resource Specialist, Grand Canyon National Park' is not mentioned anywhere in the provided page text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 243 text provided contains grazing management steps and cost estimates, with no mention of Mr. Jim Walters, Grand Canyon National Park, or the summary quote about field assessments and consultations. The extraction appears to reference a different page or section entirely. The correct page containing the acknowledgment/consultation list should be identified and re-extracted. [Forced HUMAN_REVIEW: stance attribution for a private individual always goes to a human (v2 policy override).]"
+      }
+    },
+    {
+      "sequence": 46,
+      "entity": "Mr. Martin Freshour",
+      "kind": "individual",
+      "role": "USDI Forest Service, Tusayan, Arizona",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "243"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "243"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+          "quote_verified": true,
+          "stance_basis": "Listed as consultation entity; no stance attributed",
+          "entity_as_written": "Mr. Martin Freshour",
+          "role_as_written": "USDI Forest Service, Tusayan, Arizona"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim on cited page",
+            "result": "no",
+            "note": "Page 243 text provided does not contain the phrase 'Aspects of field assessments have been reviewed and consultations provided by the following entities:' — the cited page content is about grazing management steps and cost estimates."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Mr. Martin Freshour does not appear anywhere in the cited page text provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "no",
+            "note": "Individual commenter should use last-name only ('Freshour') or 'private commenter'; full name with 'Mr.' is not preferred format."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page text makes no mention of USDI Forest Service, Tusayan, Arizona or Mr. Freshour."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page (243) contains content about grazing management steps and cost estimates, with no trace of the summary quote, the entity name, or the stated role. The extraction appears to reference a different page entirely — likely a consultants/acknowledgments section listing agency reviewers. The correct page number needs to be identified and the entity name reformatted to last-name only or official org name. [Forced HUMAN_REVIEW: stance attribution for a private individual always goes to a human (v2 policy override).]"
+      }
+    },
+    {
+      "sequence": 47,
+      "entity": "Mr. Sam Wolfskill",
+      "kind": "individual",
+      "role": "USDI Forest Service, Tusayan, Arizona",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "243"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "243"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+          "quote_verified": true,
+          "stance_basis": "Listed as consultation entity; no stance attributed",
+          "entity_as_written": "Mr. Sam Wolfskill",
+          "role_as_written": "USDI Forest Service, Tusayan, Arizona"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 243 text does not contain the phrase 'Aspects of field assessments have been reviewed and consultations provided by the following entities:' — the page content is about grazing management steps and appendix letters."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Mr. Sam Wolfskill does not appear anywhere in the cited page text provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "no",
+            "note": "A private individual should use last-name only or 'private commenter'; however, the role suggests this may be an agency employee, which would require verification."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'USDI Forest Service, Tusayan, Arizona' is not supported by the cited page text, which contains no reference to this entity or role."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 243 text is entirely about grazing management steps and an appendix on cultural resources letters — it contains neither the summary quote nor any mention of Mr. Sam Wolfskill. The extraction appears to reference a different page entirely. The correct page containing the acknowledgment/consultation list should be identified and re-extracted. [Forced HUMAN_REVIEW: stance attribution for a private individual always goes to a human (v2 policy override).]"
+      }
+    },
+    {
+      "sequence": 48,
+      "entity": "Mr. Tom Britt",
+      "kind": "individual",
+      "role": "Regional Wildlife Specialist, Arizona Game and Fish Department",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "243"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "243"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+          "quote_verified": true,
+          "stance_basis": "Listed as consultation entity; no stance attributed",
+          "entity_as_written": "Mr. Tom Britt",
+          "role_as_written": "Regional Wildlife Specialist, Arizona Game and Fish Department"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim on cited page",
+            "result": "no",
+            "note": "The cited page 243 text provided does not contain the phrase 'Aspects of field assessments have been reviewed and consultations provided by the following entities:' — the text shown is about grazing management steps and appendix letters."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Mr. Tom Britt and Arizona Game and Fish Department do not appear anywhere in the provided page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance as neither the quote nor the entity appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "no",
+            "note": "An individual commenter should use last-name only ('Britt') or 'private commenter'; however, this appears to be an agency official, so the full name may be acceptable, but cannot be verified."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'Regional Wildlife Specialist, Arizona Game and Fish Department' is not supported by any text on the cited page."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 243 text provided contains grazing management steps and appendix content unrelated to the extracted quote or entity. The summary quote and entity name do not appear anywhere in the supplied text, suggesting the wrong page was cited or the extraction is from a different section entirely. The row should be re-extracted with the correct page reference where the acknowledgment/consultation list actually appears. [Forced HUMAN_REVIEW: stance attribution for a private individual always goes to a human (v2 policy override).]"
+      }
+    },
+    {
+      "sequence": 49,
+      "entity": "Museum of Northern Arizona",
+      "kind": "organization",
+      "role": "field assessment consultant",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "243"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "243"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+          "quote_verified": true,
+          "stance_basis": "Listed as consultation entity; no stance attributed",
+          "entity_as_written": "Museum of Northern Arizona",
+          "role_as_written": "field assessment consultant"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 243 text does not contain the phrase 'Aspects of field assessments have been reviewed and consultations provided by the following entities:' — the text shown is about grazing management steps and cost estimates."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Museum of Northern Arizona does not appear anywhere in the cited page text provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance as neither the quote nor the entity appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Museum of Northern Arizona is a recognized official organization name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'field assessment consultant' is not supported by the cited page text, which covers grazing management and cost estimates."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page (243) contains content about grazing management steps and cost estimates, not cultural resources assessment consultants. The summary quote and entity name are entirely absent from the provided text. The correct page likely exists elsewhere in the document (possibly in Appendix E or a cultural resources section), and the page number needs to be corrected."
+      }
+    },
+    {
+      "sequence": 50,
+      "entity": "State Historic Preservation Officer",
+      "kind": "official",
+      "role": "state historic preservation authority",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "243"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "243"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+          "quote_verified": true,
+          "stance_basis": "Listed as consultation entity; no stance attributed beyond procedural consultation role",
+          "entity_as_written": "State Historic Preservation Officer",
+          "role_as_written": "state historic preservation authority"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 243 text contains grazing management steps and appendix headers; the summary quote 'Aspects of field assessments have been reviewed and consultations provided by the following entities:' does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "State Historic Preservation Officer is not mentioned anywhere in the cited page text provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "State Historic Preservation Officer is an official title and appropriate entity name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention the State Historic Preservation Officer or any historic preservation authority role."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page 243 text is entirely about grazing management steps and cost estimates, with no mention of the State Historic Preservation Officer or the summary quote. The extraction appears to reference the wrong page number. The correct page likely contains a list of consulting entities for cultural resources assessment, which should be re-identified and re-extracted with the correct page citation."
+      }
+    },
+    {
+      "sequence": 51,
+      "entity": "U.S. Forest Service",
+      "kind": "agency",
+      "role": "former land administrator / field assessment consultant",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "243"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "243"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+          "quote_verified": true,
+          "stance_basis": "Listed as consultation entity; no stance on the project attributed beyond providing technical review",
+          "entity_as_written": "U.S. Forest Service",
+          "role_as_written": "former land administrator / field assessment consultant"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The text on page 243 (as provided) contains no mention of 'field assessments' or 'consultations provided by the following entities' — it covers grazing management steps and cost estimates."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "U.S. Forest Service does not appear anywhere in the cited page text provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance; the quote and entity are absent from the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "U.S. Forest Service is a properly formed official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "'Former land administrator / field assessment consultant' is not supported by anything in the provided page text."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and all supporting evidence are entirely absent from the cited page 243, which contains only grazing management cost tables and step descriptions. The extraction appears to reference a different page entirely. The correct page number should be identified and the row re-extracted with the proper citation."
+      }
+    },
+    {
+      "sequence": 52,
+      "entity": "U.S. National Park Service",
+      "kind": "agency",
+      "role": "former land administrator / field assessment consultant",
+      "stance": "neutral",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "243"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "243"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "Aspects of field assessments have been reviewed and consultations provided by the following entities:",
+          "quote_verified": true,
+          "stance_basis": "Listed as consultation entity; no stance on the project attributed beyond providing technical review",
+          "entity_as_written": "U.S. National Park Service",
+          "role_as_written": "former land administrator / field assessment consultant"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The text on page 243 (as provided) contains no mention of 'Aspects of field assessments have been reviewed and consultations provided by the following entities:' — the page content is about grazing management steps and cost estimates."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "U.S. National Park Service does not appear anywhere in the cited page text provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the quote nor the entity appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "U.S. National Park Service is a properly formed official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page text contains no reference to field assessments or consultations involving NPS."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and the entity do not appear anywhere in the provided page 243 text, which covers grazing management cost steps and trail maintenance. The extraction appears to reference a different page entirely. The correct page containing the consultations list should be identified and re-extracted."
+      }
+    },
+    {
+      "sequence": 53,
+      "entity": "University of Arizona (Office of Arid Lands Studies)",
+      "kind": "organization",
+      "role": "EIS preparer / contractor",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The University of Arizona (Office of Arid Lands Studies) was invited during February, 1977 to submit a proposal to prepare an environmental impact statement concerning the 185,000 acre addition.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "243"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 4,
+          "evidence_pages": [
+            "243"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The University of Arizona (Office of Arid Lands Studies) was invited during February, 1977 to submit a proposal to prepare an environmental impact statement concerning the 185,000 acre addition.",
+          "quote_verified": true,
+          "stance_basis": "Contracted to prepare the EIS; presents analysis without taking a position on the plan itself",
+          "entity_as_written": "University of Arizona (Office of Arid Lands Studies)",
+          "role_as_written": "EIS preparer / contractor"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 243 text does not contain the sentence about the University of Arizona being invited in February 1977 to submit a proposal. The page shows grazing management steps and an appendix header."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The cited text only shows the University of Arizona Office of Arid Lands Studies as a letterhead/appendix header, with no narrative sentence attributing a role or stance to them."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance as the supporting quote is not present on the cited page."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "University of Arizona (Office of Arid Lands Studies) is an official organizational name and appears in the cited text as a letterhead."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not describe the University of Arizona as an EIS preparer/contractor; it only appears as a letterhead for Appendix E."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote does not appear verbatim on page 243. The cited page contains grazing management cost tables and an appendix header showing the University of Arizona letterhead, but no narrative about the February 1977 invitation to prepare an EIS. The correct page containing this quote needs to be identified and re-cited."
+      }
+    }
+  ]
+}

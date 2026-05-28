@@ -1,0 +1,2700 @@
+{
+  "doc_id": "p1074_35556036532315",
+  "work_id": "28ae4c66-5926-430b-bf02-c22b6929adc9",
+  "title": "Yellow Creek Nuclear Plant : environmental impact statement.",
+  "estimated_pages": 358,
+  "n_chunks": 8,
+  "n_raw_rows": 45,
+  "n_entries": 40,
+  "verdict_counts": {
+    "PASS": 7,
+    "PASS_WITH_NOTE": 0,
+    "RE_EXTRACT": 19,
+    "HUMAN_REVIEW": 14
+  },
+  "stance_counts": {
+    "neutral": 16,
+    "in_favor": 9,
+    "conditional": 5,
+    "opposed": 10
+  },
+  "elapsed_sec": 128.9,
+  "usage": {
+    "extract": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 8,
+          "input_tokens": 178709,
+          "output_tokens": 6739,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.6372
+        }
+      ],
+      "total": {
+        "calls": 8,
+        "input_tokens": 178709,
+        "output_tokens": 6739,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.6372
+      }
+    },
+    "critic": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 40,
+          "input_tokens": 66381,
+          "output_tokens": 17652,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.4639
+        }
+      ],
+      "total": {
+        "calls": 40,
+        "input_tokens": 66381,
+        "output_tokens": 17652,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.4639
+      }
+    },
+    "total": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 48,
+          "input_tokens": 245090,
+          "output_tokens": 24391,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 1.1011
+        }
+      ],
+      "total": {
+        "calls": 48,
+        "input_tokens": 245090,
+        "output_tokens": 24391,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 1.1011
+      }
+    }
+  },
+  "schema": {
+    "stance_vocabulary": [
+      "in_favor",
+      "opposed",
+      "conditional",
+      "neutral"
+    ],
+    "kind_vocabulary": [
+      "individual",
+      "official",
+      "organization",
+      "agency",
+      "tribe",
+      "government",
+      "other"
+    ],
+    "verdicts": [
+      "PASS",
+      "PASS_WITH_NOTE",
+      "RE_EXTRACT",
+      "HUMAN_REVIEW"
+    ],
+    "page_numbers": "ESTIMATED from char offsets at 2500 chars/page.",
+    "merge_rule": "One row per (entity, stance) — stance changes produce separate rows.",
+    "cost_note": "USD costs are ESTIMATES from settings.PRICES_USD_PER_M; verify against AWS Bedrock invoice."
+  },
+  "entries": [
+    {
+      "sequence": 1,
+      "entity": "Council on Environmental Quality",
+      "kind": "agency",
+      "role": "federal reviewing agency / guideline issuer",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The draft statement was sent to the Council on Environmental Quality and made available to the public on May 25, 1977.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The draft statement was sent to the Council on Environmental Quality and made available to the public on May 25, 1977.",
+          "quote_verified": true,
+          "stance_basis": "Recipient of draft statement for review; no position on the project attributed",
+          "entity_as_written": "Council on Environmental Quality",
+          "role_as_written": "federal reviewing agency / guideline issuer"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The text 'The draft statement was sent to the Council on Environmental Quality and made available to the public on May 25, 1977' does not appear in the provided page 1 text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The Council on Environmental Quality is not mentioned anywhere in the cited page text; no paraphrase linking them to any stance is present."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since neither the quote nor the entity appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Council on Environmental Quality is the correct official name for this federal agency."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page does not mention CEQ or describe their role; role cannot be confirmed from the provided text."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and the entity (Council on Environmental Quality) do not appear anywhere in the provided page 1 text. The quote likely comes from a different page of the document (possibly a transmittal or distribution section). The extractor should identify the correct page(s) where this sentence actually appears and re-cite accordingly."
+      }
+    },
+    {
+      "sequence": 2,
+      "entity": "Environmental Protection Agency",
+      "kind": "agency",
+      "role": "federal reviewing agency",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The final statement was sent to the Environmental Protection Agency and made available to the public on January 30, 1978.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The final statement was sent to the Environmental Protection Agency and made available to the public on January 30, 1978.",
+          "quote_verified": true,
+          "stance_basis": "Recipient of final statement for review; no position on the project attributed",
+          "entity_as_written": "Environmental Protection Agency",
+          "role_as_written": "federal reviewing agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The phrase 'The final statement was sent to the Environmental Protection Agency and made available to the public on January 30, 1978' does not appear anywhere in the provided page 1 text."
+          },
+          {
+            "check": "Attribution links EPA to neutral stance",
+            "result": "no",
+            "note": "The EPA is not mentioned at all in the cited page text; no paraphrase linking EPA to any stance is present."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot assess stance match since the quote and entity are absent from the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Environmental Protection Agency' is the correct official name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page does not mention EPA or describe it as a federal reviewing agency."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote does not appear verbatim (or at all) in the provided page 1 text, and the EPA is not mentioned anywhere on that page. The quote likely exists on a different page (possibly a cover sheet or distribution page). The extractor should locate the correct page where this sentence appears and re-cite it. The stance of 'neutral' may be reasonable for a distribution/notification reference, but cannot be confirmed without the correct source page."
+      }
+    },
+    {
+      "sequence": 3,
+      "entity": "S. David Freeman",
+      "kind": "official",
+      "role": "TVA Board member",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "TVA Board member S. David Freeman was appointed after this document had been substantially prepared and has not participated in the decisions leading to its preparation.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "TVA Board member S. David Freeman was appointed after this document had been substantially prepared and has not participated in the decisions leading to its preparation.",
+          "quote_verified": true,
+          "stance_basis": "Explicitly noted as not having participated in decisions leading to the document's preparation",
+          "entity_as_written": "S. David Freeman",
+          "role_as_written": "TVA Board member"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page text does not contain the phrase 'TVA Board member S. David Freeman was appointed after this document had been substantially prepared and has not participated in the decisions leading to its preparation.' The page shown is the summary sheet cover page with no mention of Freeman."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "S. David Freeman is not mentioned anywhere in the provided page text, so the paraphrased attribution cannot be verified from the cited pages."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot assess stance match without the quote being present in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "S. David Freeman is a named official; the name is well-formed for an official/public figure."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page does not mention Freeman or his role as TVA Board member."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "The summary quote and entity attribution cannot be verified from the single cited page provided, which is only the cover/summary sheet. The quote about Freeman being 'appointed after this document had been substantially prepared' is a common disclaimer found in EIS documents, typically on a signature or disclaimer page not shown here. The stance label 'neutral' is plausible for such a disclaimer, but the evidence page citation (page 1) does not contain the relevant text. A human should verify the correct page reference."
+      }
+    },
+    {
+      "sequence": 4,
+      "entity": "Tennessee Valley Authority",
+      "kind": "agency",
+      "role": "project proponent / EIS preparer",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The proposed action is the construction and operation of a 2-unit nuclear plant in Tishomingo County, Mississippi.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "1"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "1"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The proposed action is the construction and operation of a 2-unit nuclear plant in Tishomingo County, Mississippi.",
+          "quote_verified": true,
+          "stance_basis": "TVA prepared the EIS and proposes construction and operation of the Yellow Creek Nuclear Plant",
+          "entity_as_written": "Tennessee Valley Authority",
+          "role_as_written": "project proponent / EIS preparer"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact text 'The proposed action is the construction and operation of a 2-unit nuclear plant in Tishomingo County, Mississippi.' appears verbatim on the cited page."
+          },
+          {
+            "check": "Attribution links entity to stance (paraphrased)",
+            "result": "yes",
+            "note": "The cited page clearly states the EIS was 'prepared by the Tennessee Valley Authority,' establishing TVA as the proponent/preparer of this proposed action."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "TVA is the preparer and proponent of the nuclear plant construction; 'in_favor' is appropriate."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Tennessee Valley Authority' is the official name of the agency."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The page explicitly states the environmental statement was 'prepared by the Tennessee Valley Authority,' confirming both project proponent and EIS preparer roles."
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "All checks pass. The summary quote is verbatim, TVA is clearly identified as the EIS preparer and project proponent, the stance of 'in_favor' is well-supported, and the entity name and role are accurate per the cited text."
+      }
+    },
+    {
+      "sequence": 5,
+      "entity": "TVA",
+      "kind": "agency",
+      "role": "project applicant / commenter on EPA comments",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Therefore, although TVA considered both locations suitable for the proposed facility, based on an overall assessment of the engineering, environmental, and economic characteristics of both candidate sites TVA selected the Yellow Creek site as the preferred location for the proposed 2-unit plant.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "27",
+        "195",
+        "261",
+        "284",
+        "289",
+        "337"
+      ],
+      "n_mentions": 6,
+      "mentions": [
+        {
+          "chunk_index": 0,
+          "evidence_pages": [
+            "27"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "TVA's conclusion is that restructuring of rates within the requirements of the TVA Act cannot be shown to be a reliable means of reducing the peak demand for power and is thus not a feasible alternative to the construction of new generating capacity.",
+          "quote_verified": true,
+          "stance_basis": "TVA concludes rate restructuring is not a feasible alternative, supporting need for new generating capacity (the plant)",
+          "entity_as_written": "TVA",
+          "role_as_written": "project proponent"
+        },
+        {
+          "chunk_index": 3,
+          "evidence_pages": [
+            "195"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "TVA performs most of the work with its own forces, thus providing closer control over construction operations which could result in adverse environmental impacts.",
+          "quote_verified": true,
+          "stance_basis": "TVA described as actively managing and conducting construction of the Yellow Creek Nuclear Plant",
+          "entity_as_written": "TVA",
+          "role_as_written": "project proponent / construction authority"
+        },
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "261"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "TVA believes that effluent monitoring provides more effective data than instream monitoring to evaluate the potential for impact of plant discharges on water quality.",
+          "quote_verified": true,
+          "stance_basis": "TVA asserts its own monitoring approach and defends the adequacy of the plant's environmental program",
+          "entity_as_written": "TVA",
+          "role_as_written": "project proponent / plant operator"
+        },
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "284"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The addition of the Yellow Creek Nuclear Plant to the TVA system will enable TVA to continue to carry out its responsibility to provide an ample supply of electricity for the TVA region.",
+          "quote_verified": true,
+          "stance_basis": "TVA frames the plant as necessary to fulfill its regional electricity mandate",
+          "entity_as_written": "TVA",
+          "role_as_written": "project proponent"
+        },
+        {
+          "chunk_index": 6,
+          "evidence_pages": [
+            "289"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Therefore, although TVA considered both locations suitable for the proposed facility, based on an overall assessment of the engineering, environmental, and economic characteristics of both candidate sites TVA selected the Yellow Creek site as the preferred location for the proposed 2-unit plant.",
+          "quote_verified": true,
+          "stance_basis": "TVA selected Yellow Creek site as preferred location for the nuclear plant",
+          "entity_as_written": "TVA",
+          "role_as_written": "project proponent / EIS author"
+        },
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "337"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "TVA concurs with the EPA comment on the need to have the FES reflect the same flow rates as those in the NPDES permit application and in the draft NPDES permit.",
+          "quote_verified": true,
+          "stance_basis": "TVA repeatedly concurs with EPA comments and defends the adequacy of the Yellow Creek Nuclear Plant EIS and project",
+          "entity_as_written": "TVA",
+          "role_as_written": "project applicant / commenter on EPA comments"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The exact quote 'Therefore, although TVA considered both locations suitable for the proposed facility, based on an overall assessment of the engineering, environmental, and economic characteristics of both candidate sites TVA selected the Yellow Creek site as the preferred location for the proposed 2-unit plant.' does not appear verbatim in the provided page excerpts. The pages discuss site selection and candidate sites but do not contain this exact sentence."
+          },
+          {
+            "check": "Attribution links TVA to stated stance",
+            "result": "yes",
+            "note": "The cited pages clearly discuss TVA's site selection process, including evaluation of Yellow Creek and Saltillo sites, and TVA's role as project applicant is evident throughout."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "TVA is clearly in favor of the Yellow Creek Nuclear Plant project based on the content of the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "TVA (Tennessee Valley Authority) is an official agency name and is well-formed."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "TVA is clearly the project applicant and is shown commenting on EPA comments in the cited pages (pages 337 area), supporting the dual role description."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "medium",
+        "notes": "The summary quote is marked as verified but does not appear verbatim in the provided page excerpts. While the substance of the quote (TVA selecting Yellow Creek as preferred site after evaluating both candidate sites) is consistent with the content on page 289 discussing site selection, the exact sentence is not present in the pulled text. The quote may exist on one of the cited pages not fully reproduced here, but as presented it fails the verbatim check. The extractor should verify the exact page location of this quote and confirm verbatim presence."
+      }
+    },
+    {
+      "sequence": 6,
+      "entity": "Mississippi Historical Commission",
+      "kind": "agency",
+      "role": "state historic preservation reviewer",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The Mississippi Historical Commission has reviewed this proposed plant and does not identify any potential historical National Register properties that would be affected.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "49-99"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 1,
+          "evidence_pages": [
+            "49-99"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The Mississippi Historical Commission has reviewed this proposed plant and does not identify any potential historical National Register properties that would be affected.",
+          "quote_verified": true,
+          "stance_basis": "reviewed the project and found no historical National Register properties would be affected",
+          "entity_as_written": "Mississippi Historical Commission",
+          "role_as_written": "state historic preservation reviewer"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact sentence 'The Mississippi Historical Commission has reviewed this proposed plant and does not identify any potential historical National Register properties that would be affected.' appears verbatim in the HISTORICAL AND CULTURAL subsection of the cited text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "yes",
+            "note": "The paraphrased attribution is actually a direct quote from the document narrating the Mississippi Historical Commission's position; the entity is named and its finding is clearly stated."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The Commission found no affected properties, indicating neither support nor opposition to the project — a neutral informational finding is correctly labeled 'neutral'."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Mississippi Historical Commission' is the official name of the state agency as referenced in the text."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text shows the Commission reviewed the proposed plant for historical National Register impacts, consistent with a state historic preservation reviewer role."
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "The summary quote is present verbatim in the cited pages within the HISTORICAL AND CULTURAL subsection. The entity, role, and neutral stance are all clearly supported by the text. No issues identified."
+      }
+    },
+    {
+      "sequence": 7,
+      "entity": "Advisory Council on Historic Preservation (ACHP)",
+      "kind": "agency",
+      "role": "approving authority for archaeological research plan",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Intensive archaeological surveys and a data recovery program approved by the Advisory Council on Historic Preservation (ACHP) and the State Historic Preservation Office (SHPO) of the State of Mississippi have ensured that adequate samples of archaeological resources were removed and recorded.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "185"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 3,
+          "evidence_pages": [
+            "185"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Intensive archaeological surveys and a data recovery program approved by the Advisory Council on Historic Preservation (ACHP) and the State Historic Preservation Office (SHPO) of the State of Mississippi have ensured that adequate samples of archaeological resources were removed and recorded.",
+          "quote_verified": true,
+          "stance_basis": "ACHP approved the archaeological data recovery program as a condition for proceeding",
+          "entity_as_written": "Advisory Council on Historic Preservation (ACHP)",
+          "role_as_written": "approving authority for archaeological research plan"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 185 text is about land use, access roads, and natural resources. The summary quote about archaeological surveys and ACHP/SHPO approval does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links ACHP to stated stance",
+            "result": "no",
+            "note": "ACHP is not mentioned anywhere in the cited page text; no paraphrased sentence naming ACHP and its position appears."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the relevant text is absent from the cited page."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Advisory Council on Historic Preservation (ACHP) is the official name of the federal agency."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of ACHP or any archaeological research plan approval role."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page (185) contains text about land use, access roads, and natural resources — entirely unrelated to the extracted quote about archaeological surveys and ACHP/SHPO approval. The quote and attribution appear to belong to a different page. The extractor should locate the correct page number where the archaeological/ACHP content actually appears and re-extract from there."
+      }
+    },
+    {
+      "sequence": 8,
+      "entity": "Short-Coleman Park Water Association",
+      "kind": "organization",
+      "role": "water supply contractor (planned)",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "Definite arrangements have not yet been made for the potable water supply for construction plant and permanent plant needs, but present plans are to contract with the Short-Coleman Park Water Association.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "193"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 3,
+          "evidence_pages": [
+            "193"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "Definite arrangements have not yet been made for the potable water supply for construction plant and permanent plant needs, but present plans are to contract with the Short-Coleman Park Water Association.",
+          "quote_verified": true,
+          "stance_basis": "Identified as planned water supply contractor; no stance on project expressed",
+          "entity_as_written": "Short-Coleman Park Water Association",
+          "role_as_written": "water supply contractor (planned)"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page text (p.193) contains only school enrollment/capacity discussion; the quoted sentence about Short-Coleman Park Water Association does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The entity name and the quoted sentence are entirely absent from the provided page text, so no attribution can be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance; the relevant text is not present on the cited page."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Organization name appears properly formed as an official association name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page text makes no mention of water supply or the Short-Coleman Park Water Association."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and entity are entirely absent from the provided page 193 text, which deals exclusively with school enrollment impacts. The quote likely exists in the document but is cited on the wrong page. The extractor should locate the correct page reference for the water supply discussion and re-extract with the accurate page number."
+      }
+    },
+    {
+      "sequence": 9,
+      "entity": "State Game and Fish Commission",
+      "kind": "agency",
+      "role": "Mississippi state wildlife regulatory authority",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The population currently considered endangered by the state is disjunct and isolated to a single spring-fed stream near Vicksburg, Mississippi (State Game and Fish Commission, Public Notice No. 196, effective June 1, 1977).",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "194"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 3,
+          "evidence_pages": [
+            "194"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The population currently considered endangered by the state is disjunct and isolated to a single spring-fed stream near Vicksburg, Mississippi (State Game and Fish Commission, Public Notice No. 196, effective June 1, 1977).",
+          "quote_verified": true,
+          "stance_basis": "Commission cited for its endangered species listing determination; no project stance expressed",
+          "entity_as_written": "State Game and Fish Commission",
+          "role_as_written": "Mississippi state wildlife regulatory authority"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 194 text is about water/sewer facilities, recreation, and school districts — no mention of endangered species, Vicksburg, or the State Game and Fish Commission."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The State Game and Fish Commission does not appear anywhere in the cited page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance; the entity and quote are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official agency name is used appropriately."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "No reference to the State Game and Fish Commission or its role appears in the cited text."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page 194 contains content about water/sewer facilities and recreation inventories, with no mention of the State Game and Fish Commission, endangered species, or Vicksburg. The summary quote and entity are entirely absent from the provided page text. The correct page reference needs to be identified and the extraction re-done with the proper citation."
+      }
+    },
+    {
+      "sequence": 10,
+      "entity": "State Historic Preservation Office (SHPO)",
+      "kind": "agency",
+      "role": "state preservation authority, Mississippi",
+      "stance": "conditional",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "an archaeological research plan clearing the entire plant site has been approved by the SHPO and ACHP.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "185"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 3,
+          "evidence_pages": [
+            "185"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "an archaeological research plan clearing the entire plant site has been approved by the SHPO and ACHP.",
+          "quote_verified": true,
+          "stance_basis": "SHPO approved the archaeological research plan as a condition for site clearance",
+          "entity_as_written": "State Historic Preservation Office (SHPO)",
+          "role_as_written": "state preservation authority, Mississippi"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 185 text discusses land use, access roads, and natural resources committed during construction. The phrase 'an archaeological research plan clearing the entire plant site has been approved by the SHPO and ACHP' does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links SHPO to stated stance",
+            "result": "no",
+            "note": "SHPO is not mentioned anywhere in the cited page text provided. No paraphrased sentence names SHPO or links it to any stance."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "State Historic Preservation Office (SHPO) is a properly formed official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of SHPO or any state preservation authority role."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page 185 text deals entirely with land use, access roads, and natural resource commitments during construction — it contains no reference to SHPO, ACHP, or archaeological research plans. The summary quote and attribution appear to belong to a different page. The extractor should locate the correct page(s) where the archaeological research plan and SHPO/ACHP approval are actually discussed."
+      }
+    },
+    {
+      "sequence": 11,
+      "entity": "U.S. Coast Guard",
+      "kind": "agency",
+      "role": "navigation regulatory authority",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The U.S. Coast Guard and the U.S. Corps of Engineers will issue public notice to advise all navigation interests of the construction of plant facilities.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "193"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 3,
+          "evidence_pages": [
+            "193"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The U.S. Coast Guard and the U.S. Corps of Engineers will issue public notice to advise all navigation interests of the construction of plant facilities.",
+          "quote_verified": true,
+          "stance_basis": "U.S. Coast Guard will issue public notice regarding construction — procedural role, no stated opposition or support",
+          "entity_as_written": "U.S. Coast Guard",
+          "role_as_written": "navigation regulatory authority"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 193 text is entirely about school enrollment impacts; the quoted sentence about U.S. Coast Guard and Corps of Engineers issuing public notice does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The U.S. Coast Guard is not mentioned anywhere in the cited page text, so no attribution can be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the entity and quote are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "U.S. Coast Guard is a properly formed official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text contains no reference to navigation regulatory authority or the Coast Guard."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page 193 contains only text about school enrollment impacts in Alcorn, Tishomingo, and Hardin counties — there is no mention of the U.S. Coast Guard, Corps of Engineers, or navigation interests. The summary quote and entity attribution appear to belong to a different page entirely. The extractor should locate the correct page number where the navigation/Coast Guard statement appears."
+      }
+    },
+    {
+      "sequence": 12,
+      "entity": "U.S. Corps of Engineers",
+      "kind": "agency",
+      "role": "navigation regulatory authority",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The U.S. Coast Guard and the U.S. Corps of Engineers will issue public notice to advise all navigation interests of the construction of plant facilities.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "193"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 3,
+          "evidence_pages": [
+            "193"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The U.S. Coast Guard and the U.S. Corps of Engineers will issue public notice to advise all navigation interests of the construction of plant facilities.",
+          "quote_verified": true,
+          "stance_basis": "Corps of Engineers will issue public notice regarding construction — procedural role, no stated opposition or support",
+          "entity_as_written": "U.S. Corps of Engineers",
+          "role_as_written": "navigation regulatory authority"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 193 text is entirely about school enrollment impacts; the quoted sentence about U.S. Coast Guard and U.S. Corps of Engineers issuing public notice does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The entity (U.S. Corps of Engineers) does not appear in the cited page text at all, so no attribution can be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the relevant text is absent from the cited page."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "no",
+            "note": "The correct name is 'U.S. Army Corps of Engineers', not 'U.S. Corps of Engineers'."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of navigation regulatory authority or the Corps of Engineers."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page 193 contains only school enrollment impact information and does not include the quoted sentence about the U.S. Coast Guard and Corps of Engineers issuing public notice. The quote likely comes from a different page in the document. Additionally, the entity name is slightly malformed ('U.S. Corps of Engineers' vs. 'U.S. Army Corps of Engineers'). The extractor should locate the correct page containing the navigation notice sentence and re-extract with the proper entity name."
+      }
+    },
+    {
+      "sequence": 13,
+      "entity": "Alabama Department of Public Health",
+      "kind": "agency",
+      "role": "state public health agency / quality control partner",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "TVA has similar programs in effect with the Alabama Department of Public Health, Environmental Health Administration Laboratory; the Tennessee Department of Public Health Radiological Laboratory; and the Eastern Environmental Radiation Facility, Environmental Protection Agency, Montgomery, Alabama.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "274"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "274"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "TVA has similar programs in effect with the Alabama Department of Public Health, Environmental Health Administration Laboratory; the Tennessee Department of Public Health Radiological Laboratory; and the Eastern Environmental Radiation Facility, Environmental Protection Agency, Montgomery, Alabama.",
+          "quote_verified": true,
+          "stance_basis": "Agency described as participating in quality control coordination with TVA; no project stance expressed",
+          "entity_as_written": "Alabama Department of Public Health",
+          "role_as_written": "state public health agency / quality control partner"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 274 text covers employment, education, aesthetics, and economic costs for Yellow Creek Nuclear Plant. The summary quote about Alabama Department of Public Health and TVA quality control programs does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The entity (Alabama Department of Public Health) does not appear in the cited page text at all, so no attribution can be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot assess stance match since the quote and entity are absent from the cited pages."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Alabama Department of Public Health is a properly formed official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of the Alabama Department of Public Health or any quality control/laboratory partnership role."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and entity are entirely absent from the cited page 274, which discusses employment, education, and economic costs. The quote about TVA laboratory programs with the Alabama Department of Public Health likely exists elsewhere in the document but was assigned the wrong page number. The extractor should locate the correct page reference for this content."
+      }
+    },
+    {
+      "sequence": 14,
+      "entity": "Eastern Environmental Radiation Facility, Environmental Protection Agency",
+      "kind": "agency",
+      "role": "federal radiation monitoring facility / quality control partner",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "TVA has similar programs in effect with the Alabama Department of Public Health, Environmental Health Administration Laboratory; the Tennessee Department of Public Health Radiological Laboratory; and the Eastern Environmental Radiation Facility, Environmental Protection Agency, Montgomery, Alabama.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "274"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "274"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "TVA has similar programs in effect with the Alabama Department of Public Health, Environmental Health Administration Laboratory; the Tennessee Department of Public Health Radiological Laboratory; and the Eastern Environmental Radiation Facility, Environmental Protection Agency, Montgomery, Alabama.",
+          "quote_verified": true,
+          "stance_basis": "Facility described as participating in quality control coordination with TVA; no project stance expressed",
+          "entity_as_written": "Eastern Environmental Radiation Facility, Environmental Protection Agency",
+          "role_as_written": "federal radiation monitoring facility / quality control partner"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 274 text covers employment, wages, education, aesthetics, and economic costs for Yellow Creek Nuclear Plant. The summary quote about TVA programs with Alabama/Tennessee health departments and Eastern Environmental Radiation Facility does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "The entity and its role cannot be verified from the cited page text, as the relevant passage is entirely absent from page 274 as provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot assess stance match since the quote is not present in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "The entity name uses the official agency name and is reasonably well-formed, though slightly verbose."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page 274 text makes no mention of radiation monitoring, quality control, or the EPA facility; role cannot be confirmed from the provided excerpt."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote does not appear anywhere in the cited page 274 text, which covers entirely different subject matter (employment, wages, education, aesthetics, and costs). The correct page citation is likely elsewhere in the document where radiation monitoring programs are discussed. The extraction should be re-done with the correct page reference."
+      }
+    },
+    {
+      "sequence": 15,
+      "entity": "EPA",
+      "kind": "agency",
+      "role": "federal environmental regulator / NPDES permit issuer",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The construction effects monitoring program will include the monitoring of all point source discharges occurring during the construction period as specified in the NPDES permit No. MS0040568 issued by EPA.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "257"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "257"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The construction effects monitoring program will include the monitoring of all point source discharges occurring during the construction period as specified in the NPDES permit No. MS0040568 issued by EPA.",
+          "quote_verified": true,
+          "stance_basis": "EPA described as issuing the NPDES permit governing construction discharges; regulatory role only, no project stance expressed",
+          "entity_as_written": "EPA",
+          "role_as_written": "federal environmental regulator / NPDES permit issuer"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted text about 'construction effects monitoring program,' 'point source discharges,' and 'NPDES permit No. MS0040568 issued by EPA' does not appear anywhere in the provided page 257 text."
+          },
+          {
+            "check": "Attribution links EPA to stated stance (paraphrased)",
+            "result": "no",
+            "note": "The cited page text does not mention EPA, NPDES permit No. MS0040568, or construction effects monitoring in the context described. EPA is not named in the provided excerpt."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since the quote and attribution are not found in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'EPA' is an acceptable abbreviation for the U.S. Environmental Protection Agency as an agency entity."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page text does not reference EPA as an NPDES permit issuer or in any other capacity."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote does not appear verbatim or in paraphrased form on the cited page 257. The provided page text discusses larval fish entrainment, plankton/benthos monitoring, and aquatic macrophytes — with no mention of EPA, construction effects monitoring, or NPDES permit No. MS0040568. The extraction likely references a different page. The correct page should be identified and re-extracted."
+      }
+    },
+    {
+      "sequence": 16,
+      "entity": "NRC",
+      "kind": "agency",
+      "role": "federal nuclear regulator",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The NRC has performed a detailed study to assess these risks more quantitatively. The study, called the Reactor Safety Study, develops realistic data on the probabilities and consequences of accidents in water-cooled power reactors. The results of this study have been published in the document WASH-1400 and do indeed indicate that the probabilities and consequences of reactor accidents are very small.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "280"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "280"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The NRC has performed a detailed study to assess these risks more quantitatively. The study, called the Reactor Safety Study, develops realistic data on the probabilities and consequences of accidents in water-cooled power reactors. The results of this study have been published in the document WASH-1400 and do indeed indicate that the probabilities and consequences of reactor accidents are very small.",
+          "quote_verified": false,
+          "stance_basis": "NRC's Reactor Safety Study (WASH-1400) cited as supporting the conclusion that accident risks are very small",
+          "entity_as_written": "NRC",
+          "role_as_written": "federal nuclear regulator"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 280 text is entirely about NERC reliability reports and TVA power demands; the NRC/WASH-1400 quote does not appear anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links NRC to stated stance",
+            "result": "no",
+            "note": "NRC is not mentioned anywhere in the cited page text; no paraphrase or direct reference to NRC exists on page 280 as provided."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot assess stance match since the entity and quote are absent from the cited page."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "NRC is a standard abbreviation for the Nuclear Regulatory Commission, an official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of NRC or its role as federal nuclear regulator."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The summary quote and NRC attribution are entirely absent from the cited page 280, which discusses NERC reliability reports and TVA power supply planning. The extraction appears to reference a different page entirely. The correct page containing the WASH-1400/NRC reactor safety discussion should be identified and the evidence_pages field corrected. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 17,
+      "entity": "President",
+      "kind": "official",
+      "role": "U.S. President (transmitting TVA Act to Congress, 1933)",
+      "stance": "in_favor",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "TVA '. . . should be charged with the broadest duty of planning for the proper use, conservation, and development of the natural resources of the Tennessee River drainage basin and its adjoining territory for the general social and economic welfare of the Nation.'",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "283"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "283"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "TVA '. . . should be charged with the broadest duty of planning for the proper use, conservation, and development of the natural resources of the Tennessee River drainage basin and its adjoining territory for the general social and economic welfare of the Nation.'",
+          "quote_verified": false,
+          "stance_basis": "Presidential statement cited in support of TVA's mission and by extension the plant's regional development rationale",
+          "entity_as_written": "President",
+          "role_as_written": "U.S. President (transmitting TVA Act to Congress, 1933)"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim on cited pages",
+            "result": "no",
+            "note": "The cited page 283 text contains discussion of coal, oil, natural gas, and uranium as fuel alternatives. The quoted TVA Act transmittal language from the President does not appear anywhere in the provided page text."
+          },
+          {
+            "check": "Attribution links named entity (President) to stated stance",
+            "result": "no",
+            "note": "The cited page text makes no mention of the President, the TVA Act, or any 1933 transmittal message. No attribution can be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot assess stance match since the quote and entity are not present in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "no",
+            "note": "'President' is vague; should specify 'Franklin D. Roosevelt' or 'President Roosevelt' for the 1933 TVA Act transmittal context."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page text contains no reference to the U.S. President or the TVA Act transmittal of 1933."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 283 text is entirely about fuel alternatives (coal, oil, natural gas, uranium) for power generation and contains no trace of the extracted quote or any reference to the President or the TVA Act. The quote and entity appear to belong to a different page entirely. The extraction should be re-done with the correct page citation. Additionally, the entity name should be more specific (e.g., 'President Roosevelt'). [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 18,
+      "entity": "Tennessee Department of Public Health",
+      "kind": "agency",
+      "role": "state public health / water quality agency",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "TVA has similar programs in effect with the Alabama Department of Public Health, Environmental Health Administration Laboratory; the Tennessee Department of Public Health Radiological Laboratory; and the Eastern Environmental Radiation Facility, Environmental Protection Agency, Montgomery, Alabama.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "274"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "274"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "TVA has similar programs in effect with the Alabama Department of Public Health, Environmental Health Administration Laboratory; the Tennessee Department of Public Health Radiological Laboratory; and the Eastern Environmental Radiation Facility, Environmental Protection Agency, Montgomery, Alabama.",
+          "quote_verified": true,
+          "stance_basis": "Agency described as participating in quality control coordination with TVA; no project stance expressed",
+          "entity_as_written": "Tennessee Department of Public Health",
+          "role_as_written": "state public health / water quality agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 274 text covers employment, education, aesthetics, and economic costs for Yellow Creek Nuclear Plant. The summary quote about TVA programs with Alabama Department of Public Health, Tennessee Department of Public Health Radiological Laboratory, and EPA is not present anywhere in the provided text."
+          },
+          {
+            "check": "Attribution links entity to stated stance",
+            "result": "no",
+            "note": "Tennessee Department of Public Health does not appear in the cited page text at all; no paraphrased attribution can be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since the quote and entity are absent from the cited page."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official agency name is properly formatted."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page text does not mention Tennessee Department of Public Health or any radiological laboratory role."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and entity are entirely absent from the cited page 274, which discusses employment, education, aesthetics, and economic costs. The correct page reference for the TVA radiological monitoring program partnerships needs to be identified. The extraction should be re-done with the correct page citation where the radiological laboratory cooperation text actually appears."
+      }
+    },
+    {
+      "sequence": 19,
+      "entity": "Tennessee Division of Water Quality Control",
+      "kind": "agency",
+      "role": "state water quality monitoring agency",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The Tennessee Division of Water Quality Control has had routine chemical and bacteriological monitoring stations at Tennessee River mile 214.4 (Tennessee-Alabama state line), and Tennessee River mile 189.9 (Savannah). These stations were discontinued during July 1975 as a result of monitoring realignments affected between the state and TVA.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "275"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "275"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The Tennessee Division of Water Quality Control has had routine chemical and bacteriological monitoring stations at Tennessee River mile 214.4 (Tennessee-Alabama state line), and Tennessee River mile 189.9 (Savannah). These stations were discontinued during July 1975 as a result of monitoring realignments affected between the state and TVA.",
+          "quote_verified": true,
+          "stance_basis": "Agency described as coordinating monitoring with TVA; no stance on project approval expressed",
+          "entity_as_written": "Tennessee Division of Water Quality Control",
+          "role_as_written": "state water quality monitoring agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 275 text contains content about plant costs, construction employment, and housing — no mention of Tennessee Division of Water Quality Control or monitoring stations."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The entity does not appear anywhere in the provided page text, so no attribution can be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot assess stance match since the quote and entity are absent from the cited page."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Official agency name appears properly formatted."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page text does not mention water quality monitoring or this agency at all."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page 275 contains cost/construction content unrelated to water quality monitoring. The summary quote and entity are entirely absent from the provided text. The correct page reference for this monitoring station information needs to be identified and re-extracted."
+      }
+    },
+    {
+      "sequence": 20,
+      "entity": "U.S. Geological Survey",
+      "kind": "agency",
+      "role": "federal streamflow and water quality monitoring agency",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The U.S. Geological Survey is the principal agency collecting streamflow records in the Yellow Creek area. This agency also has a water quality monitoring station at Tennessee River mile 206.7 (Pickwick Landing Dam tailrace), which complements TVA's program.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "276"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 5,
+          "evidence_pages": [
+            "276"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The U.S. Geological Survey is the principal agency collecting streamflow records in the Yellow Creek area. This agency also has a water quality monitoring station at Tennessee River mile 206.7 (Pickwick Landing Dam tailrace), which complements TVA's program.",
+          "quote_verified": true,
+          "stance_basis": "Agency described as providing complementary monitoring data; no project stance expressed",
+          "entity_as_written": "U.S. Geological Survey",
+          "role_as_written": "federal streamflow and water quality monitoring agency"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 276 text contains no mention of U.S. Geological Survey, streamflow records, Yellow Creek, or water quality monitoring stations. The quote is entirely absent from the provided text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The entity (U.S. Geological Survey) does not appear anywhere in the cited page text, so no attribution can be verified."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot assess stance match since the entity and quote are not present in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "U.S. Geological Survey is the correct official name for this federal agency."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited page text does not mention USGS or any streamflow/water quality monitoring role."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The cited page (276) contains text about housing, education, water/sewer facilities, and local government services related to construction worker impacts — nothing about USGS or streamflow monitoring. The quote and entity appear to belong to a different page, likely in the hydrology or water quality section of the EIS. The extractor should identify the correct page number where USGS is actually discussed."
+      }
+    },
+    {
+      "sequence": 21,
+      "entity": "Advisory Committee on Reactor Safeguards (ACRS)",
+      "kind": "agency",
+      "role": "nuclear safety review body",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "This area has been studied extensively by TVA and its consultants, the results of which have been reviewed and approved by the Advisory Committee on Reactor Safeguards (ACRS).",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "289"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 6,
+          "evidence_pages": [
+            "289"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "This area has been studied extensively by TVA and its consultants, the results of which have been reviewed and approved by the Advisory Committee on Reactor Safeguards (ACRS).",
+          "quote_verified": true,
+          "stance_basis": "ACRS reviewed and approved seismic design criteria for the candidate sites",
+          "entity_as_written": "Advisory Committee on Reactor Safeguards (ACRS)",
+          "role_as_written": "nuclear safety review body"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted text about ACRS reviewing and approving results does not appear anywhere in the provided page 289 text, which discusses transmission system studies and site selection."
+          },
+          {
+            "check": "Attribution links ACRS to stated stance (paraphrased)",
+            "result": "no",
+            "note": "ACRS is not mentioned anywhere in the cited page text; no narrator sentence names ACRS or states their position."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Advisory Committee on Reactor Safeguards (ACRS) is the official name of the NRC advisory body."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of ACRS or any nuclear safety review body; it discusses transmission system planning and site selection."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote and ACRS attribution do not appear anywhere in the cited page 289 text, which is entirely about transmission system load studies and candidate site selection (Yellow Creek and Saltillo). The quote likely belongs to a different page discussing seismic or geological safety studies. The evidence page citation needs to be corrected to the actual page where ACRS review is discussed."
+      }
+    },
+    {
+      "sequence": 22,
+      "entity": "Jack Brown, Jr.",
+      "kind": "individual",
+      "role": "Principal Planner, Tennessee State Planning Office",
+      "stance": "conditional",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "In conclusion, it is our position that TVA should become more specific in the mitigation assistance offered and that it should be broadened to cover the subject areas mentioned above. Also, we feel that TVA should accept responsibility for mitigating indirect short-term impacts discussed in the Draft Environmental Statement.",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "330"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 6,
+          "evidence_pages": [
+            "330"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "In conclusion, it is our position that TVA should become more specific in the mitigation assistance offered and that it should be broadened to cover the subject areas mentioned above. Also, we feel that TVA should accept responsibility for mitigating indirect short-term impacts discussed in the Draft Environmental Statement.",
+          "quote_verified": false,
+          "stance_basis": "Raises multiple concerns about mitigation adequacy and requests TVA accept broader responsibility for impacts",
+          "entity_as_written": "Jack Brown, Jr.",
+          "role_as_written": "Principal Planner, Tennessee State Planning Office"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page 330 text does not contain the summary quote about TVA mitigation assistance and indirect short-term impacts. The page text is about geology, dewatering, and comments from the Department of the Interior."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "Jack Brown, Jr. and the Tennessee State Planning Office do not appear anywhere in the cited page text."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot verify stance since neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Named individual with full name and organizational affiliation — acceptable for a public official commenter."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The role 'Principal Planner, Tennessee State Planning Office' is not mentioned anywhere in the cited page text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The cited page 330 contains entirely different content (geology responses, dewatering calculations, and comments from the U.S. Department of the Interior), with no mention of Jack Brown, Jr., the Tennessee State Planning Office, or the quoted text about TVA mitigation assistance. The extraction appears to reference the wrong page number. The quote and entity may exist elsewhere in the document and should be re-extracted with the correct page citation. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 23,
+      "entity": "Tennessee State Planning Office",
+      "kind": "agency",
+      "role": "state planning agency / commenter",
+      "stance": "conditional",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "In conclusion, it is our position that TVA should become more specific in the mitigation assistance offered and that it should be broadened to cover the subject areas mentioned above.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "330"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 6,
+          "evidence_pages": [
+            "330"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "In conclusion, it is our position that TVA should become more specific in the mitigation assistance offered and that it should be broadened to cover the subject areas mentioned above.",
+          "quote_verified": true,
+          "stance_basis": "Supports project conditionally, requiring more specific and broader mitigation assistance from TVA",
+          "entity_as_written": "Tennessee State Planning Office",
+          "role_as_written": "state planning agency / commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote present verbatim in cited pages",
+            "result": "no",
+            "note": "The quote about TVA mitigation assistance does not appear anywhere in the provided page 330 text."
+          },
+          {
+            "check": "Attribution links Tennessee State Planning Office to stated stance",
+            "result": "no",
+            "note": "Tennessee State Planning Office is not mentioned anywhere in the provided text; the only named commenter is Larry E. Meierotto of an unspecified agency."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as neither the entity nor the quote appears in the cited text."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Tennessee State Planning Office is a properly formed agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not reference the Tennessee State Planning Office or confirm its role."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The provided page 330 text does not contain the summary quote or any reference to the Tennessee State Planning Office. The text instead covers U.S. Department of the Interior responses and a comment from Larry E. Meierotto about recreational impacts and radiological monitoring. The extraction appears to reference content from a different page or document section entirely and needs to be re-extracted with correct page citation."
+      }
+    },
+    {
+      "sequence": 24,
+      "entity": "Advisory Council on Historic Preservation",
+      "kind": "agency",
+      "role": "federal advisory body",
+      "stance": "in_favor",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "The Executive Director does not object to your determination.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "358"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "358"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "The Executive Director does not object to your determination.",
+          "quote_verified": true,
+          "stance_basis": "Did not object to TVA's no adverse effect determination for archaeological resources, allowing project to proceed",
+          "entity_as_written": "Advisory Council on Historic Preservation",
+          "role_as_written": "federal advisory body"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact phrase 'The Executive Director does not object to your determination.' appears verbatim on page 358."
+          },
+          {
+            "check": "Attribution links entity to stance (direct_quote speaker)",
+            "result": "yes",
+            "note": "The letter is signed by Robert M. Utley, Deputy Executive Director of the Advisory Council on Historic Preservation, and the closing line confirms the Council's identity as the authoring body."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The Council's non-objection to a 'no adverse effect' determination is effectively a favorable/concurring stance toward the undertaking proceeding as planned."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Advisory Council on Historic Preservation' is the official name confirmed in the cited text."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text explicitly states 'The Council is an independent unit of the Executive Branch of the Federal Government charged by the Act of October 15, 1966 to advise the President and Congress,' confirming its role as a federal advisory body."
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "All checks pass cleanly. The quote is verbatim, the entity is correctly identified as the authoring agency, and the 'in_favor' stance accurately reflects the Council's non-objection/concurrence with the no adverse effect determination. The role as a federal advisory body is explicitly confirmed in the cited text."
+      }
+    },
+    {
+      "sequence": 25,
+      "entity": "Bureau of Outdoor Recreation",
+      "kind": "agency",
+      "role": "federal agency commenter",
+      "stance": "opposed",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "the Bureau of Outdoor Recreation feels that the selection of the Yellow Creek site may not be compatible with the intense recreational activities in the area.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "342"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "342"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "the Bureau of Outdoor Recreation feels that the selection of the Yellow Creek site may not be compatible with the intense recreational activities in the area.",
+          "quote_verified": true,
+          "stance_basis": "Stated site selection may not be compatible with intense recreational activities in the area",
+          "entity_as_written": "Bureau of Outdoor Recreation",
+          "role_as_written": "federal agency commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact phrase 'the Bureau of Outdoor Recreation feels that the selection of the Yellow Creek site may not be compatible with the intense recreational activities in the area' appears verbatim in the cited page text."
+          },
+          {
+            "check": "Attribution links named entity to stated stance",
+            "result": "yes",
+            "note": "The Bureau of Outdoor Recreation is explicitly named as the speaker of the quoted statement, making the direct_quote attribution mode appropriate."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The quote expresses concern that the site 'may not be compatible' with recreational activities, indicating opposition to the Yellow Creek site selection."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Bureau of Outdoor Recreation is the official name of the federal agency referenced in the text."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The Bureau of Outdoor Recreation is a federal agency providing comments on the EIS, consistent with the role 'federal agency commenter'."
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "The summary quote is present verbatim in the cited page, the Bureau of Outdoor Recreation is clearly identified as the source of the statement, and the 'opposed' stance label accurately reflects the agency's expressed concern that the Yellow Creek site may be incompatible with recreational activities in the area. All checks pass without issue."
+      }
+    },
+    {
+      "sequence": 26,
+      "entity": "Burt Jones",
+      "kind": "individual",
+      "role": "commenter, Oxford, MS resident within 75 mi of site",
+      "stance": "opposed",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "The Comments are being made by the following individuals and groups:",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "338"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "338"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "The Comments are being made by the following individuals and groups:",
+          "quote_verified": false,
+          "stance_basis": "Listed as commenter raising multiple objections to adequacy of EIS and the Yellow Creek Nuclear Plant project",
+          "entity_as_written": "Burt Jones",
+          "role_as_written": "commenter, Oxford, MS resident within 75 mi of site"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The text 'The Comments are being made by the following indivi- duals and groups:' appears on page 338 (with a line break hyphen, but substantively verbatim)."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional mode)",
+            "result": "yes",
+            "note": "Burt Jones appears in the list under the heading establishing the commenters, and the comments that follow are opposed to the Yellow Creek Nuclear Plant EIS."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The listed comments criticize the EIS on multiple grounds (sabotage not discussed, unclear language, questionable conclusions), indicating opposition to the project as presented."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Burt Jones is listed by full name in the document; as a private individual, last name only would be preferred, but the full name is used consistently in the source."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text confirms Burt Jones is from Oxford, MS, and that all seven individuals reside within 75 miles of the Yellow Creek Site."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The extraction is well-supported. The sectional attribution is valid: Burt Jones is listed among commenters whose collective comments oppose the EIS. Minor note: per rubric, private individuals should use last-name only ('Jones'), but the full name 'Burt Jones' is used in the source document and is not ambiguous. The stance of 'opposed' is reasonable given the critical nature of the comments that follow the list. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 27,
+      "entity": "Catherine V. Kilgore",
+      "kind": "individual",
+      "role": "commenter, Oxford, MS resident within 75 mi of site",
+      "stance": "opposed",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "The Comments are being made by the following individuals and groups:",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "338"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "338"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "The Comments are being made by the following individuals and groups:",
+          "quote_verified": false,
+          "stance_basis": "Listed as commenter raising multiple objections to adequacy of EIS and the Yellow Creek Nuclear Plant project",
+          "entity_as_written": "Catherine V. Kilgore",
+          "role_as_written": "commenter, Oxford, MS resident within 75 mi of site"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The phrase 'The Comments are being made by the following indivi- duals and groups:' appears on page 338 (with a line break hyphen, but substantively verbatim)."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional mode)",
+            "result": "yes",
+            "note": "Catherine V. Kilgore appears in the list of commenters under the heading establishing who is making the comments opposing the EIS, with Oxford, Ms. noted."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The comments criticize the EIS on multiple grounds (sabotage not discussed, unclear language, etc.), indicating opposition to the project/EIS."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Full name used; for a private individual this could be last-name only, but full name is acceptable and appears verbatim in the document."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "Text confirms Oxford, MS residence and that all seven individuals reside within 75 miles of the Yellow Creek Site."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The extraction is well-supported. Catherine V. Kilgore is listed among the commenters on page 338, all of whom reside within 75 miles of the site and are making critical comments about the EIS. The only minor note is that for a private individual, convention suggests using last-name only ('Kilgore'), but the full name as it appears in the document is acceptable here. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 28,
+      "entity": "Choctaw Group of the Delta Chapter of the National Sierra Club",
+      "kind": "organization",
+      "role": "commenter / environmental group",
+      "stance": "opposed",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The EIS fails to discuss possibility of sabotage, accident, or nuclear theft at the reactor or in course of the fuel cycle.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "338"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "338"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The EIS fails to discuss possibility of sabotage, accident, or nuclear theft at the reactor or in course of the fuel cycle.",
+          "quote_verified": true,
+          "stance_basis": "Submitted extensive comments criticizing EIS inadequacies and opposing the Yellow Creek Nuclear Plant project",
+          "entity_as_written": "Choctaw Group of the Delta Chapter of the National Sierra Club",
+          "role_as_written": "commenter / environmental group"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The text on page 338 contains: 'The EIS fails to discuss possibility of sabotage, accident, or nuclear theft at the reactor or in course of the fuel cycle.' — exact match."
+          },
+          {
+            "check": "Attribution links entity to stance (paraphrased mode)",
+            "result": "yes",
+            "note": "The Choctaw Group of the Delta Chapter of the National Sierra Club is listed as one of the commenters submitting the comments block that includes comment #1, which is the quoted stance."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The comment criticizes the EIS for failing to discuss sabotage/accident/nuclear theft, clearly an opposed/critical stance toward the project/EIS."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Choctaw Group of the Delta Chapter of the National Sierra Club' matches the official name as listed in the cited text."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The entity is explicitly listed as a commenter submitting comments on the Draft EIS, and it is an environmental group (Sierra Club chapter)."
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "The summary quote is verbatim from the cited page. The Choctaw Group of the Delta Chapter of the National Sierra Club is clearly identified as one of the submitting parties for the comment block. The opposed stance is well-supported by the critical nature of the comment."
+      }
+    },
+    {
+      "sequence": 29,
+      "entity": "David G. Hill",
+      "kind": "individual",
+      "role": "commenter, Oxford, MS resident within 75 mi of site",
+      "stance": "opposed",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "The Comments are being made by the following individuals and groups:",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "338"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "338"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "The Comments are being made by the following individuals and groups:",
+          "quote_verified": false,
+          "stance_basis": "Listed as commenter raising multiple objections to adequacy of EIS and the Yellow Creek Nuclear Plant project",
+          "entity_as_written": "David G. Hill",
+          "role_as_written": "commenter, Oxford, MS resident within 75 mi of site"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The phrase 'The Comments are being made by the following indivi- duals and groups:' appears on page 338 (with a line break hyphen, but substantively verbatim)."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional mode)",
+            "result": "yes",
+            "note": "David G. Hill, Oxford, Ms. appears in the list under the heading establishing these commenters as opposing the EIS/project."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The comments listed (sabotage not discussed, environmental effects unclear, etc.) are critical of the EIS, consistent with 'opposed'."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "David G. Hill is a named individual commenter; full name is appropriate as it appears in the document."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "Text confirms David G. Hill is from Oxford, MS, and all seven individuals listed reside within 75 miles of the Yellow Creek Site."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "All checks pass. David G. Hill is explicitly listed among the commenters on page 338, residing in Oxford, MS within 75 miles of the site. The sectional attribution is valid as the list appears under the heading establishing the group of commenters, and the subsequent comments are clearly opposed to the project/EIS. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 30,
+      "entity": "Eddie S. Fuente",
+      "kind": "official",
+      "role": "Director, Division of Radiological Health, Mississippi State Board of Health",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The Division of Radiological Health has reviewed the Draft ES for Yellow Creek 1 and 2 and does herewith formally submit written comments concerning the NRC analyses: There are four (4) areas to be submitted for reconsideration by the NRC staff.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "353"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "353"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The Division of Radiological Health has reviewed the Draft ES for Yellow Creek 1 and 2 and does herewith formally submit written comments concerning the NRC analyses: There are four (4) areas to be submitted for reconsideration by the NRC staff.",
+          "quote_verified": true,
+          "stance_basis": "Signed letter submitting four areas for NRC reconsideration without taking explicit position on project approval",
+          "entity_as_written": "Eddie S. Fuente",
+          "role_as_written": "Director, Division of Radiological Health, Mississippi State Board of Health"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page text is cut off and does not contain the full quoted text about 'four (4) areas to be submitted for reconsideration by the NRC staff.' The page shows only the beginning of the Mississippi State Board of Health letter, ending mid-sentence."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The cited text does not mention Eddie S. Fuente by name, nor does it attribute the letter to a named Director of the Division of Radiological Health. The letter header is visible but the signatory is not shown in the excerpt."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "n/a",
+            "note": "Cannot fully assess stance since the quote is not confirmed verbatim; however, submitting comments with areas for reconsideration could be 'conditional' rather than 'neutral.'"
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Full name used for an official, which is acceptable for a named government official."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text shows the Mississippi State Board of Health letterhead and mentions the Division of Radiological Health, but does not confirm Eddie S. Fuente's name or title of Director in the visible excerpt."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "low",
+        "notes": "The cited page text is truncated and does not contain the full summary quote or the entity's name/title. The quote about 'four (4) areas to be submitted for reconsideration' is not visible in the provided text. Additionally, the stance of 'neutral' may be questionable for an entity submitting specific areas for reconsideration, which could indicate a 'conditional' stance. Human review is needed to verify the full page content and correct attribution."
+      }
+    },
+    {
+      "sequence": 31,
+      "entity": "Elbert Hilliard",
+      "kind": "official",
+      "role": "State Historic Preservation Officer, Mississippi Department of Archives and History",
+      "stance": "in_favor",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "His concurrence that TVA is in compliance with applicable regulations, that the data recovery program outlined in the enclosures hereto is an adequate mitigative effort and justifies a \"No Adverse Effect\" determination, and that construction activities may proceed anywhere in the plant site area upon completion of the 1977 field archaeology program is demonstrated by his signature below.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "357"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "357"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "His concurrence that TVA is in compliance with applicable regulations, that the data recovery program outlined in the enclosures hereto is an adequate mitigative effort and justifies a \"No Adverse Effect\" determination, and that construction activities may proceed anywhere in the plant site area upon completion of the 1977 field archaeology program is demonstrated by his signature below.",
+          "quote_verified": true,
+          "stance_basis": "Concurred that TVA is in compliance and that construction may proceed after completion of 1977 field archaeology program",
+          "entity_as_written": "Elbert Hilliard",
+          "role_as_written": "State Historic Preservation Officer, Mississippi Department of Archives and History"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The quote appears verbatim in the cited page 357 text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "yes",
+            "note": "The paraphrased text names 'Mississippi Historic Preservation Officer' and the signature block confirms this is Elbert Hilliard, State Historic Preservation Officer, Mississippi Department of Archives and History, who countersigned the document demonstrating concurrence/approval."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "Hilliard's signature demonstrates concurrence with TVA's determinations and approval of the data recovery program, consistent with 'in_favor'."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Elbert Hilliard is identified as an official (State Historic Preservation Officer), not a private individual, so full name is appropriate."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The signature block explicitly states 'State Historic Preservation Officer, Mississippi Department of Archives and History.'"
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "All checks pass. The summary quote is verbatim in the cited text, Elbert Hilliard is clearly identified by name and role in the signature block, and his countersignature directly demonstrates his in_favor stance toward TVA's data recovery program and 'No Adverse Effect' determination."
+      }
+    },
+    {
+      "sequence": 32,
+      "entity": "Energy Research and Development Administration (ERDA)",
+      "kind": "agency",
+      "role": "federal agency commenter",
+      "stance": "conditional",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "We have reviewed the statement and have determined that the proposed action will not conflict with current or known future ERDA programs and, therefore, have no objection to the proposed action.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "350"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "350"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "We have reviewed the statement and have determined that the proposed action will not conflict with current or known future ERDA programs and, therefore, have no objection to the proposed action.",
+          "quote_verified": true,
+          "stance_basis": "No objection to proposed action but raised staff comments requesting clarifications and additional discussion in final statement",
+          "entity_as_written": "Energy Research and Development Administration (ERDA)",
+          "role_as_written": "federal agency commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The quoted text 'We have reviewed the statement and have determined that the proposed action will not conflict with current or known future ERDA programs and, therefore, have no objection to the proposed action.' does not appear anywhere in the provided page 350 text."
+          },
+          {
+            "check": "Attribution links ERDA to stated stance",
+            "result": "no",
+            "note": "ERDA is not mentioned anywhere in the cited page text; no attribution can be confirmed."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "Cannot verify stance as the quote and entity are absent from the cited text. The quote itself sounds more like 'in_favor' or 'neutral' (no objection) rather than 'conditional'."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Energy Research and Development Administration (ERDA) is a properly formed official agency name."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text makes no mention of ERDA or any federal agency commenter role for ERDA."
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "high",
+        "notes": "The summary quote does not appear in the provided page 350 text, and ERDA is not mentioned anywhere on that page. The quote likely comes from a different page. Additionally, the stance label 'conditional' appears incorrect for the quoted text, which expresses no objection — more consistent with 'neutral' or 'in_favor'. The correct evidence page should be identified and the stance label reconsidered."
+      }
+    },
+    {
+      "sequence": 33,
+      "entity": "Janice S. Hill",
+      "kind": "individual",
+      "role": "commenter, Oxford, MS resident within 75 mi of site",
+      "stance": "opposed",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "The Comments are being made by the following individuals and groups:",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "338"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "338"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "The Comments are being made by the following individuals and groups:",
+          "quote_verified": false,
+          "stance_basis": "Listed as commenter raising multiple objections to adequacy of EIS and the Yellow Creek Nuclear Plant project",
+          "entity_as_written": "Janice S. Hill",
+          "role_as_written": "commenter, Oxford, MS resident within 75 mi of site"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The phrase 'The Comments are being made by the following indivi- duals and groups:' appears on page 338 (with a line break hyphen, but substantively verbatim)."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional mode)",
+            "result": "yes",
+            "note": "Janice S. Hill, Oxford, Ms. appears in the list under the heading establishing the commenters, and the comments that follow are opposed to the Yellow Creek Nuclear Plant EIS."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The listed comments criticize the EIS on multiple grounds (sabotage not discussed, unclear language, questionable conclusions), indicating opposition to the project."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Full name is used; for a private individual, last-name only or 'private commenter' would be preferred, but the full name is present in the document and not clearly a private individual in the sensitive sense."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "Text confirms Oxford, MS residence and that all seven individuals reside within 75 miles of the Yellow Creek Site."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The extraction is well-supported. The summary quote is present nearly verbatim (minor hyphenated line break). The entity is a private individual identified by full name in the document; convention would prefer last-name only or 'private commenter,' but the information is directly from the public record EIS. The sectional attribution is valid as Janice S. Hill is listed among the group making the opposed comments. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 34,
+      "entity": "Linda Lewis",
+      "kind": "individual",
+      "role": "commenter, Oxford, MS resident within 75 mi of site",
+      "stance": "opposed",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "The Comments are being made by the following individuals and groups:",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "338"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "338"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "The Comments are being made by the following individuals and groups:",
+          "quote_verified": false,
+          "stance_basis": "Listed as commenter raising multiple objections to adequacy of EIS and the Yellow Creek Nuclear Plant project",
+          "entity_as_written": "Linda Lewis",
+          "role_as_written": "commenter, Oxford, MS resident within 75 mi of site"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The phrase 'The Comments are being made by the following indivi- duals and groups:' appears on page 338 (with a line break after 'indivi-'), matching the extracted quote closely enough."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional)",
+            "result": "yes",
+            "note": "Linda Lewis appears in the list of commenters under the heading establishing who is making comments opposing the EIS; she is listed as 'Linda Lewis, Oxfords, Ms.' in the group."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The comments listed (failures of the EIS, questioning conclusions) are critical/opposed to the project as described in the EIS."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Linda Lewis is a named individual commenter; full name is appropriate here as she is listed explicitly in the document."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text confirms she is from Oxford, MS and that all seven individuals reside within 75 miles of the Yellow Creek Site."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "Linda Lewis is explicitly named in the list of commenters on page 338, residing in Oxford, MS within 75 miles of the site. The sectional attribution is valid as the heading establishes the stance for all listed individuals. The summary quote is present verbatim (with a hyphenated line break) in the cited page. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 35,
+      "entity": "Max G. Hill",
+      "kind": "individual",
+      "role": "commenter, Oxford, MS resident within 75 mi of site",
+      "stance": "opposed",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "The Comments are being made by the following individuals and groups:",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "338"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "338"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "The Comments are being made by the following individuals and groups:",
+          "quote_verified": false,
+          "stance_basis": "Listed as commenter raising multiple objections to adequacy of EIS and the Yellow Creek Nuclear Plant project",
+          "entity_as_written": "Max G. Hill",
+          "role_as_written": "commenter, Oxford, MS resident within 75 mi of site"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The phrase 'The Comments are being made by the following indivi- duals and groups:' appears on page 338 (with a line break hyphen, but substantively verbatim)."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional)",
+            "result": "yes",
+            "note": "Max G. Hill, Oxford, Ms. appears in the list immediately under the heading establishing who is making the comments (opposed comments on the EIS), satisfying sectional attribution."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The comments listed (sabotage risks, unclear environmental language, questioning conclusions) are critical/opposed to the project."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Full name 'Max G. Hill' is appropriate for a named individual commenter who is not a private anonymous person but a named public commenter."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "Text confirms Oxford, MS residence and that all seven individuals reside within 75 miles of the Yellow Creek Site."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "All checks pass. Max G. Hill is explicitly named in the list of commenters on page 338, the quote is present verbatim (minor line-break hyphen is not a substantive deviation), and the opposed stance is clearly supported by the critical nature of the comments submitted. Role description matches the cited text precisely. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 36,
+      "entity": "Mississippi State Board of Health",
+      "kind": "agency",
+      "role": "state agency commenter",
+      "stance": "neutral",
+      "attribution_mode": "paraphrased",
+      "attribution_modes_seen": [
+        "paraphrased"
+      ],
+      "summary_quote": "The Division of Radiological Health has reviewed the Draft ES for Yellow Creek 1 and 2 and does herewith formally submit written comments concerning the NRC analyses: There are four (4) areas to be submitted for reconsideration by the NRC staff.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "353"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "353"
+          ],
+          "attribution_mode": "paraphrased",
+          "quote": "The Division of Radiological Health has reviewed the Draft ES for Yellow Creek 1 and 2 and does herewith formally submit written comments concerning the NRC analyses: There are four (4) areas to be submitted for reconsideration by the NRC staff.",
+          "quote_verified": true,
+          "stance_basis": "Submitted four areas for reconsideration including water quality criteria, industrialization impacts, Class 9 accidents, and waste disposal without explicitly opposing or supporting the project",
+          "entity_as_written": "Mississippi State Board of Health",
+          "role_as_written": "state agency commenter"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "no",
+            "note": "The cited page text cuts off before the quoted sentence about 'four (4) areas to be submitted for reconsideration.' The quote is not present verbatim in the provided page 353 text."
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "yes",
+            "note": "The Mississippi State Board of Health (Division of Radiological Health) is clearly identified as the author of comments on the Yellow Creek Draft ES, consistent with paraphrased attribution."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "no",
+            "note": "The entity is submitting formal written comments with areas for reconsideration, which is more consistent with 'conditional' or 'opposed' than 'neutral.' Submitting four areas for reconsideration implies critique, not neutrality."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Mississippi State Board of Health is the official agency name as shown in the cited text."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The letter is from a state agency (Mississippi State Board of Health) submitting comments, consistent with 'state agency commenter.'"
+          }
+        ],
+        "verdict": "RE_EXTRACT",
+        "model_confidence": "medium",
+        "notes": "The summary quote is not verbatim in the provided page text (the text cuts off before the quoted portion), and the stance label 'neutral' is questionable given that the entity is submitting four areas for reconsideration, which suggests a conditional or critical stance rather than neutral. The stance should likely be re-evaluated as 'conditional' or 'opposed,' and the quote should be verified against the full page text."
+      }
+    },
+    {
+      "sequence": 37,
+      "entity": "Robert M. Utley",
+      "kind": "official",
+      "role": "Deputy Executive Director, Advisory Council on Historic Preservation",
+      "stance": "in_favor",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "The Executive Director does not object to your determination.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "358"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "358"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "The Executive Director does not object to your determination.",
+          "quote_verified": true,
+          "stance_basis": "Signed concurrence letter not objecting to TVA's no adverse effect determination",
+          "entity_as_written": "Robert M. Utley",
+          "role_as_written": "Deputy Executive Director, Advisory Council on Historic Preservation"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The exact phrase 'The Executive Director does not object to your determination.' appears on page 358."
+          },
+          {
+            "check": "Attribution links entity to stance (direct_quote)",
+            "result": "yes",
+            "note": "The letter is signed by 'Robert M. Utley, Deputy Executive Director,' making him the author/speaker of the quoted statement."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "'Does not object' to a no-adverse-effect determination is effectively in_favor of the project proceeding; in_favor is a reasonable label."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Robert M. Utley' is an official/organizational representative, not a private individual, so full name is appropriate."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text explicitly states 'Robert M. Utley, Deputy Executive Director' of the Advisory Council on Historic Preservation."
+          }
+        ],
+        "verdict": "PASS",
+        "model_confidence": "high",
+        "notes": "All checks pass cleanly. The quote is verbatim, the attribution is unambiguous (Utley signed the letter), the role matches the cited text exactly, and the in_favor stance is well-supported by the non-objection language."
+      }
+    },
+    {
+      "sequence": 38,
+      "entity": "Ron Lewis",
+      "kind": "individual",
+      "role": "commenter, Oxford, MS resident within 75 mi of site",
+      "stance": "opposed",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "The Comments are being made by the following individuals and groups:",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "338"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "338"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "The Comments are being made by the following individuals and groups:",
+          "quote_verified": false,
+          "stance_basis": "Listed as commenter raising multiple objections to adequacy of EIS and the Yellow Creek Nuclear Plant project",
+          "entity_as_written": "Ron Lewis",
+          "role_as_written": "commenter, Oxford, MS resident within 75 mi of site"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The text 'The Comments are being made by the following indivi- duals and groups:' appears on page 338 (with a line break hyphen, but substantively verbatim)."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional mode)",
+            "result": "yes",
+            "note": "Ron Lewis appears in the list under the heading establishing commenters opposing the EIS; the list sits under the cited stance context."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The comments criticize the EIS on multiple grounds, indicating opposition to the project as described."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Ron Lewis is a private individual; however, the extraction uses full first and last name rather than last-name only or 'private commenter', which is a minor formatting issue."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The text confirms Ron Lewis is listed as residing in Oxford, MS, and the document states all seven individuals reside within 75 miles of the Yellow Creek Site."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The extraction is substantively correct: Ron Lewis appears in the list of commenters on page 338, the quote is present (with a minor line-break hyphen in the original), and the role/location details are confirmed. The only minor issue is that private individuals should ideally be identified as 'Lewis' or 'private commenter' rather than by full name, but this does not affect the accuracy of the stance or attribution. [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 39,
+      "entity": "Southeastern Human Rights Center, Inc.",
+      "kind": "organization",
+      "role": "commenter, Oxford, MS",
+      "stance": "opposed",
+      "attribution_mode": "sectional",
+      "attribution_modes_seen": [
+        "sectional"
+      ],
+      "summary_quote": "The Comments are being made by the following individuals and groups:",
+      "summary_quote_verified": false,
+      "evidence_pages": [
+        "338"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "338"
+          ],
+          "attribution_mode": "sectional",
+          "quote": "The Comments are being made by the following individuals and groups:",
+          "quote_verified": false,
+          "stance_basis": "Listed as commenter raising multiple objections to adequacy of EIS and the Yellow Creek Nuclear Plant project",
+          "entity_as_written": "Southeastern Human Rights Center, Inc.",
+          "role_as_written": "commenter, Oxford, MS"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The phrase 'The Comments are being made by the following indivi- duals and groups:' appears on page 338 (with a line break hyphen, but substantively verbatim)."
+          },
+          {
+            "check": "Attribution links entity to stance (sectional)",
+            "result": "yes",
+            "note": "'Southeastern Human Rights Center, Inc., Oxford, Ms.' appears in the list under the heading establishing who is making the comments opposing the EIS."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The comments criticize the EIS on multiple grounds (sabotage not discussed, unclear language, etc.), indicating opposition to the project/EIS as presented."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "'Southeastern Human Rights Center, Inc.' matches the official name as listed in the cited text."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "yes",
+            "note": "The entity is listed as a commenter from Oxford, MS, consistent with the cited text."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "high",
+        "notes": "The entity appears explicitly in the list of commenters on page 338, and the sectional attribution is valid. The stance of 'opposed' is supported by the critical nature of the comments that follow. The summary quote is present verbatim (minor formatting hyphen at line break does not affect accuracy). [Forced HUMAN_REVIEW: quote not verbatim.]"
+      }
+    },
+    {
+      "sequence": 40,
+      "entity": "Thomas H. Ripley",
+      "kind": "official",
+      "role": "Director, Division of Forestry, Fisheries, and Wildlife Development, TVA",
+      "stance": "in_favor",
+      "attribution_mode": "direct_quote",
+      "attribution_modes_seen": [
+        "direct_quote"
+      ],
+      "summary_quote": "We believe the steps taken, as outlined in the enclosures, ensure that this project will not result in any adverse effect to any significant archaeological resources and request your concurrence in this conclusion.",
+      "summary_quote_verified": true,
+      "evidence_pages": [
+        "356"
+      ],
+      "n_mentions": 1,
+      "mentions": [
+        {
+          "chunk_index": 7,
+          "evidence_pages": [
+            "356"
+          ],
+          "attribution_mode": "direct_quote",
+          "quote": "We believe the steps taken, as outlined in the enclosures, ensure that this project will not result in any adverse effect to any significant archaeological resources and request your concurrence in this conclusion.",
+          "quote_verified": true,
+          "stance_basis": "Requested concurrence that project will not adversely affect archaeological resources, supporting project proceeding",
+          "entity_as_written": "Thomas H. Ripley",
+          "role_as_written": "Director, Division of Forestry, Fisheries, and Wildlife Development, TVA"
+        }
+      ],
+      "critic": {
+        "rubric_results": [
+          {
+            "check": "Summary quote verbatim in cited pages",
+            "result": "yes",
+            "note": "The quote appears verbatim on page 356: 'We believe the steps taken, as outlined in the enclosures, ensure that this project will not result in any adverse effect to any significant archaeological resources and request your concurrence in this conclusion.'"
+          },
+          {
+            "check": "Attribution links entity to stance",
+            "result": "no",
+            "note": "The letter is signed from 'Tennessee Valley Authority' and addressed from Norris, Tennessee, but the cited text does not name 'Thomas H. Ripley' as the author or signatory. The extracted text cuts off before any signature block."
+          },
+          {
+            "check": "Stance label matches evidence",
+            "result": "yes",
+            "note": "The letter expresses a favorable/supportive conclusion regarding the project's archaeological compliance, consistent with 'in_favor'."
+          },
+          {
+            "check": "Entity name well-formed",
+            "result": "yes",
+            "note": "Thomas H. Ripley is a named official; the format is appropriate for an identified individual in an official capacity."
+          },
+          {
+            "check": "Role description supported by cited text",
+            "result": "no",
+            "note": "The cited text does not mention 'Thomas H. Ripley' or the title 'Director, Division of Forestry, Fisheries, and Wildlife Development, TVA.' The signature block is not visible in the provided excerpt."
+          }
+        ],
+        "verdict": "HUMAN_REVIEW",
+        "model_confidence": "medium",
+        "notes": "The quote is verbatim and the stance label is appropriate, but the cited page excerpt does not include a signature block identifying Thomas H. Ripley as the author or his role. The attribution to Ripley may be correct if the full page includes a signature, but this cannot be confirmed from the provided text. A human should verify the signature block on page 356."
+      }
+    }
+  ]
+}
