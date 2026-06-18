@@ -25,7 +25,10 @@ RUN_SUMMARY_PATH = OUTPUT_DIR / "run_summary.json"
 
 # Reuse segment_a's calibration selection.
 SEGMENT_A_DIR = ROOT.parent / "segment_a"
-PEOPLE_PIPELINE_DIR = ROOT.parent / "people_pipeline"
+# people_pipeline currently lives under spring_pipeline/Old/, not under May25/.
+# We only need its `verify` module (extract + merge are now local). If you
+# move people_pipeline, update this path.
+PEOPLE_PIPELINE_DIR = ROOT.parent.parent / "Old" / "people_pipeline"
 SEGMENT_A_SELECTION_PATH = SEGMENT_A_DIR / "output" / "selection.json"
 
 # Make segment_a's and people_pipeline's modules importable. Local modules win
@@ -39,8 +42,10 @@ for _ext in (SEGMENT_A_DIR, PEOPLE_PIPELINE_DIR):
 # --- Parallelism / caps ------------------------------------------------------
 EXTRACT_PARALLEL = 4
 STATEMENT_PARALLEL = 4
-CRITIC_PARALLEL = 4
 
+# Read by people_pipeline/extract.py via `import settings`. Local-module-wins
+# means our value (this module) is what extract sees, so this constant must
+# stay set even though no code in statements_pipeline reads it directly.
 EXTRACT_CHAR_CAP = 80_000
 
 # Pages of margin on each side of the entity's evidence pages when building
@@ -52,6 +57,12 @@ WINDOW_CHAR_CAP = 60_000
 
 # Cap on the extracted statement.text length.
 STATEMENT_CHAR_CAP = 40_000
+
+# When matching opening/closing anchors inside the window, prefer occurrences
+# within this many characters of the entity's evidence pages. Falls back to
+# any match in the window if nothing is within range. Tunes the false-positive
+# vs miss tradeoff for generic anchors like "Sincerely yours,".
+ANCHOR_PROXIMITY_CHARS = 25_000
 
 # --- Closed stance vocabulary ------------------------------------------------
 STANCES = ("in_favor", "opposed", "conditional", "neutral")
@@ -73,6 +84,16 @@ STATEMENT_FORMS = (
     "narrator_paraphrase",   # narrator describes the position; no contiguous statement
     "sectional",             # entity appears in a list/table under a stance heading
     "none",                  # no statement, no clear paraphrase block
+)
+
+# Forms the response-finder may report. A "response" is the agency's /
+# preparer's reply to the entity's concern, usually appearing nearby in the
+# same window — often labeled 'Response:', 'Reply:', 'Discussion:'.
+RESPONSE_FORMS = (
+    "agency_response",       # explicit response from the lead/cooperating agency
+    "preparer_reply",        # less formal reply from the doc's preparers
+    "discussion",            # discussion paragraph addressing the comment without a label
+    "none",                  # no response present in the window
 )
 
 # --- Pricing (USD per 1M tokens) — same defaults as people_pipeline ----------

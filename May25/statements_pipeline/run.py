@@ -2,9 +2,13 @@
 statements_pipeline orchestrator.
 
 Per-doc flow:
-    chunk (segment_a) → extract (people_pipeline) → verify (people_pipeline) →
-    merge by (entity, stance) (people_pipeline) → find_statement (local) →
+    chunk (segment_a) → extract DISCOVERY-only (local) → verify (people_pipeline) →
+    merge by entity (local) → find_statement + stance (local) →
     write per-person folder + index.json (writer)
+
+Stance is decided downstream of merge by find_statement (off the full
+statement / paraphrase / sectional text). Each row carries `stance`,
+`stance_confidence` ∈ {high, medium, low}, and `stance_basis`.
 
 Doc source:
     By default, processes every doc found in segment_a's PAGES_DATA_DIR
@@ -50,7 +54,8 @@ from chunk import chunks_for_doc
 from pages import Doc, list_doc_ids, load_doc
 from inventory import lookup_work
 
-# people_pipeline imports (reused as-is)
+# extract + merge are LOCAL (shadow the upstream people_pipeline modules
+# via the sys.path-append trick in settings.py). verify is reused as-is.
 from extract import extract_doc
 from verify import verify_rows
 from merge import merge_rows
@@ -127,6 +132,18 @@ def process_doc(selection_entry: dict, doc: Doc, force: bool = False) -> dict:
     if raw is None:
         log.info(f"Extracting from {len(chunks)} chunks (parallel={settings.EXTRACT_PARALLEL})...")
         per_chunk = extract_doc(chunks, doc_id=doc_id)
+        # Refuse to checkpoint a fully-failed extract — otherwise the next
+        # run trusts an empty cache and writes 0 people without re-trying.
+        n_errored = sum(1 for rec in per_chunk if rec.get("error"))
+        n_total = len(per_chunk)
+        if n_total > 0 and n_errored == n_total:
+            raise RuntimeError(
+                f"Extract failed on every chunk ({n_errored}/{n_total}); "
+                f"refusing to write empty checkpoint to {raw_path}. "
+                f"Fix the underlying error (often missing creds / SDK) and re-run."
+            )
+        if n_errored:
+            log.warning(f"Extract: {n_errored}/{n_total} chunks errored; checkpoint will record partial results.")
         raw = {
             "doc_id": doc_id,
             "work_id": work_id,
@@ -152,9 +169,9 @@ def process_doc(selection_entry: dict, doc: Doc, force: bool = False) -> dict:
     n_verified = sum(1 for r in verified if r.get("quote_verified"))
     log.info(f"Quote verification: {n_verified}/{len(verified)} verbatim hits")
 
-    # ---- Merge by (entity, stance) ----
+    # ---- Merge by entity (stance is decided downstream by find_statement) ----
     merged = merge_rows(verified)
-    log.info(f"Merged into {len(merged)} (entity, stance) rows")
+    log.info(f"Merged into {len(merged)} entity rows")
 
     # ---- Find statement + summarize (per row, parallel) ----
     log.info(f"Finding statements for {len(merged)} rows (parallel={settings.STATEMENT_PARALLEL})...")
@@ -190,9 +207,14 @@ def process_doc(selection_entry: dict, doc: Doc, force: bool = False) -> dict:
     cost = total_usage_summary["total"]["cost_usd"]
     rc = summary.get("review_counts") or {}
     sc = summary.get("statement_counts") or {}
+    cc = summary.get("stance_confidence_counts") or {}
+    rsp = summary.get("response_counts") or {}
+    n_para = summary.get("n_paraphrases", 0)
     log.info(
-        f"Wrote {summary['out_dir']} ({summary['n_people']} people; "
+        f"Wrote {summary['out_dir']} ({summary['n_people']} people + {n_para} paraphrases; "
         f"statement_present={sc.get('present', 0)} "
+        f"response_present={rsp.get('present', 0)} "
+        f"conf=H{cc.get('high', 0)}/M{cc.get('medium', 0)}/L{cc.get('low', 0)} "
         f"needs_review={rc.get('needs_review', 0)}) "
         f"in {elapsed}s — est. cost ${cost:.4f}"
     )
@@ -238,12 +260,21 @@ def cmd_process(args) -> int:
             summary.append({"doc_id": doc_id, "error": str(e)})
 
     _write_json(settings.RUN_SUMMARY_PATH, {"runs": summary})
+    # usage shape from write_doc is usage = {extract, find_statement, total}, and
+    # each of those is itself {by_model, total} — so cost lives at usage.total.total.cost_usd.
+    ok_runs = [r for r in summary if "error" not in r]
+    n_errors = len(summary) - len(ok_runs)
     grand_cost = round(
-        sum((r.get("usage") or {}).get("total", {}).get("cost_usd", 0) for r in summary),
+        sum(
+            (((r.get("usage") or {}).get("total") or {}).get("total") or {}).get("cost_usd", 0)
+            for r in ok_runs
+        ),
         4,
     )
+    err_suffix = f" ({n_errors} failed)" if n_errors else ""
     log.info(
-        f"Done. Wrote run summary for {len(summary)} doc(s) → {settings.RUN_SUMMARY_PATH}. "
+        f"Done. Wrote run summary for {len(summary)} doc(s){err_suffix} → "
+        f"{settings.RUN_SUMMARY_PATH}. "
         f"Grand-total estimated cost across this run: ${grand_cost:.4f}"
     )
     return 0
@@ -261,7 +292,11 @@ def cmd_status(args) -> int:
     print(f"Per-person dirs: {have_people}/{len(doc_ids)}")
 
     # Aggregate counts across completed docs.
-    totals = {"people": 0, "needs_review": 0, "statement_present": 0}
+    totals = {
+        "people": 0, "paraphrases": 0,
+        "needs_review": 0, "statement_present": 0, "response_present": 0,
+    }
+    conf_totals = {"high": 0, "medium": 0, "low": 0, "unknown": 0}
     cost_total = 0.0
     in_total = 0
     out_total = 0
@@ -272,19 +307,34 @@ def cmd_status(args) -> int:
         with open(p) as f:
             data = json.load(f)
         totals["people"] += data.get("n_people", 0)
+        totals["paraphrases"] += data.get("n_paraphrases", 0)
         rc = data.get("review_counts") or {}
         totals["needs_review"] += rc.get("needs_review", 0)
         sc = data.get("statement_counts") or {}
         totals["statement_present"] += sc.get("present", 0)
+        rsp = data.get("response_counts") or {}
+        totals["response_present"] += rsp.get("present", 0)
+        cc = data.get("stance_confidence_counts") or {}
+        for k in conf_totals:
+            conf_totals[k] += cc.get(k, 0)
         usage_total = ((data.get("usage") or {}).get("total") or {}).get("total") or {}
         cost_total += usage_total.get("cost_usd", 0) or 0
         in_total += usage_total.get("input_tokens", 0) or 0
         out_total += usage_total.get("output_tokens", 0) or 0
-    if totals["people"]:
-        print(f"\nAcross completed docs: {totals['people']} (entity, stance) people files")
+    if totals["people"] or totals["paraphrases"]:
+        print(
+            f"\nAcross completed docs: {totals['people']} main people + "
+            f"{totals['paraphrases']} paraphrases"
+        )
         print(
             f"  statement_present={totals['statement_present']}  "
+            f"response_present={totals['response_present']}  "
             f"needs_review={totals['needs_review']}"
+        )
+        print(
+            f"  Stance confidence (main rows): high={conf_totals['high']}  "
+            f"medium={conf_totals['medium']}  low={conf_totals['low']}"
+            + (f"  unknown={conf_totals['unknown']}" if conf_totals["unknown"] else "")
         )
         print(
             f"  Tokens: input={in_total:,}  output={out_total:,}  "
