@@ -1,0 +1,49 @@
+{
+  "sequence": 11,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "Department of Defense, Deputy Assistant Secretary of Defense (Environmental Quality)",
+  "kind": "official",
+  "role": "Federal agency reviewer",
+  "stance": "in_favor",
+  "summary": "The Department of Defense, Deputy Assistant Secretary of Defense (Environmental Quality) reviewed the draft ORV environmental statement and found it satisfactory, offering no substantive objections or suggested revisions. This brief endorsement is paraphrased by the document narrator in a summary list of federal agency comments, with no contiguous statement block provided.",
+  "statement": {
+    "present": false,
+    "form": "narrator_paraphrase",
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false,
+    "window_pages": [
+      13,
+      33
+    ]
+  },
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "evidence_pages": [
+    "23"
+  ],
+  "summary_quote": "Department of Defense, Deputy Assistant Secretary of Defense (Environmental Quality) - indicated that environmental statement is satisfactory;",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "23"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Department of Defense, Deputy Assistant Secretary of Defense (Environmental Quality) - indicated that environmental statement is satisfactory;",
+      "quote_verified": true,
+      "stance_basis": "Indicated the environmental statement is satisfactory",
+      "entity_as_written": "Department of Defense, Deputy Assistant Secretary of Defense (Environmental Quality)",
+      "role_as_written": "Federal agency reviewer"
+    }
+  ]
+}

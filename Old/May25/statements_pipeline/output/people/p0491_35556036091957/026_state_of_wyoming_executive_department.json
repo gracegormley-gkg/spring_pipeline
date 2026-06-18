@@ -1,0 +1,49 @@
+{
+  "sequence": 26,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "State of Wyoming, Executive Department",
+  "kind": "government",
+  "role": "state government commenter",
+  "stance": "neutral",
+  "summary": "The State of Wyoming, Executive Department submitted the first response to the draft ORV environmental statement, dated June 12, 1972, and was assigned response number '1' in the appendix. The document only notes the existence and filing order of this response without describing its content or position. No substantive stance or opinion from Wyoming is summarized in the available text.",
+  "statement": {
+    "present": false,
+    "form": "narrator_paraphrase",
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false,
+    "window_pages": [
+      16,
+      36
+    ]
+  },
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "evidence_pages": [
+    "26"
+  ],
+  "summary_quote": "the first response was received from the State of Wyoming, Executive Department, and was dated 6-12-72; it was given the number \"1\" and filed as the first page in these responses.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "26"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "the first response was received from the State of Wyoming, Executive Department, and was dated 6-12-72; it was given the number \"1\" and filed as the first page in these responses.",
+      "quote_verified": true,
+      "stance_basis": "Listed as first commenter; no specific stance attributed beyond filing a response",
+      "entity_as_written": "State of Wyoming, Executive Department",
+      "role_as_written": "state government commenter"
+    }
+  ]
+}

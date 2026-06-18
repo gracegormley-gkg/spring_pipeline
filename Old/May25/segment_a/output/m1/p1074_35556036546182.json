@@ -1,0 +1,34 @@
+{
+  "title": {
+    "value": "Airport Spur connection, I-94 to General Mitchell Field, Milwaukee : environmental impact statement.",
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  },
+  "year": {
+    "value": 1976,
+    "confidence": "low",
+    "sources": [
+      "NUL",
+      "regex (first 3 pages)"
+    ],
+    "note": "NUL=1976 disagrees with regex=2015 — flag"
+  },
+  "eis_type": {
+    "value": "Final",
+    "confidence": "medium",
+    "sources": [
+      "Sonnet (first 2 pages)"
+    ]
+  },
+  "lead_agency": {
+    "value": [
+      "Federal Highway Administration"
+    ],
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  }
+}

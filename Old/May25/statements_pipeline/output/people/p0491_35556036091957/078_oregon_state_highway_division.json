@@ -1,0 +1,49 @@
+{
+  "sequence": 78,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "Oregon State Highway Division",
+  "kind": "agency",
+  "role": "state agency, commenter",
+  "stance": "neutral",
+  "summary": "The Oregon State Highway Division expressed general approval of the draft environmental impact statement, finding that it adequately covers expected environmental impacts and difficulties on public lands. They specifically highlighted the importance of the recommended operating criteria. However, they noted they were unable to fully evaluate the statement against the Off-Road Recreation Vehicle report due to its unavailability.",
+  "statement": {
+    "present": true,
+    "form": "letter",
+    "text": "OREGON STATE HIGHWAY DIVISION\nSALEM, OREGON HIGHWAY BUILDING 97310\nJuly 10, 1972\nMr. James G. Watt Director Bureau of Outdoor Recreation Washington, D. C. 20240\nDear Mr. Watt:\nRE: K14\nThank you for the opportunity to review and comment on the environmental statement pertaining to use of off-road vehicles on the public lands. In its necessarily general way, it seems to adequately cover the expected impacts upon our environment as well as the developing difficulties that must be faced on public lands.\nWe feel the operating criteria recommended for adoption are especially important. Because of the unavailability of the Off-Road Recreation Vehicle report, we were unable to evaluate the environmental statement from the standpoint of the report.\nVery truly yours,\n\nGeorge M. Baldwin\n\nAdministrator of Highways\nDavid G. Talbot\nState Parks Superintendent",
+    "opening_anchor": "OREGON STATE HIGHWAY DIVISION\nSALEM, OREGON HIGHWAY BUILDING 97310\n\nJuly 10, 1972\n\nMr. James G. Watt\nDirector\nBureau of Outdoor Recreation\nWashington, D. C. 20240\n\nDear Mr. Watt:\n\nRE: K14\n\nThank you for the opportunity to review and comment on the environmental statement pertaining to use of off-road vehicles on the public lands.",
+    "closing_anchor": "Very truly yours,\n\nGeorge M. Baldwin\n\nAdministrator of Highways\nDavid G. Talbot\nState Parks Superintendent",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true,
+    "window_pages": [
+      125,
+      145
+    ]
+  },
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "evidence_pages": [
+    "135"
+  ],
+  "summary_quote": "In its necessarily general way, it seems to adequately cover the expected impacts upon our environment as well as the developing difficulties that must be faced on public lands.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "135"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "In its necessarily general way, it seems to adequately cover the expected impacts upon our environment as well as the developing difficulties that must be faced on public lands.",
+      "quote_verified": true,
+      "stance_basis": "finds the EIS adequate in general terms; no strong objection or support expressed",
+      "entity_as_written": "Oregon State Highway Division",
+      "role_as_written": "state agency, commenter"
+    }
+  ]
+}

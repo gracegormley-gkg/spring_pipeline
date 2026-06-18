@@ -1,0 +1,36 @@
+{
+  "title": {
+    "value": "Operation Breakthrough : environmental impact statement.",
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  },
+  "year": {
+    "value": 1972,
+    "confidence": "low",
+    "sources": [
+      "NUL",
+      "regex (first 3 pages)"
+    ],
+    "note": "NUL=1972 disagrees with regex=1971 — flag"
+  },
+  "eis_type": {
+    "value": "Final",
+    "confidence": "high",
+    "sources": [
+      "regex (first page)",
+      "Sonnet (first 2 pages)"
+    ],
+    "evidence": "FINAL ENVIRONMENTAL STATEMENT ON OPERATION BREAKTHROUGH"
+  },
+  "lead_agency": {
+    "value": [
+      "Department of Housing and Urban Development"
+    ],
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  }
+}

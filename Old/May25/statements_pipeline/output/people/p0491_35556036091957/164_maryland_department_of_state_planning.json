@@ -1,0 +1,49 @@
+{
+  "sequence": 164,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "Maryland Department of State Planning",
+  "kind": "agency",
+  "role": "Maryland State Clearinghouse reviewer",
+  "stance": "conditional",
+  "summary": "The Maryland Department of State Planning, acting as the State Clearinghouse, reviewed the Draft Environmental Impact Statement and reported that its staff generally concurred with the statement. However, the Department suggested that a 'no access' alternative—completely prohibiting ORV use on public lands—should be presented alongside other alternatives. It also noted that the Maryland Department of Natural Resources provided favorable comments and requested to be kept informed of further regulatory developments.",
+  "statement": {
+    "present": true,
+    "form": "letter",
+    "text": "MARVIN MANDEL\nMARYLAND\nDEPARTMENT OF STATE PLANNING\n301 WEST PRESTON STREET\nBALTIMORE, MARYLAND 21201\nTELEPHONE: 301-383-2451\nAugust 2, 1972\nVLADIMIR A. WAHBE\nSECRETARY OF STATE PLANNING\nNORMAN HEBDEN\nDEPUTY SECRETARY\nMr. James G. Watt Director, Europa of Outdoor Recreation U. S. Department of the Interior 18th and C Streets, N. W. Washington, D. C. 20240\nSUBJECT: ENVIRONMENTAL IMPACT STATEMENT REVIEW\nApplicant: Bureau of Outdoor Recreation\nProject: Use of ORV - Public Lands\nState Clearinghouse Control Number: 72-6-239\nState Clearinghouse Contact: Mr. Edwin L. Powell, Jr. (383-2467)\nDear lir. Watt:\nThe State Clearinghouse has reviewed the above noted Environmental Impact Statement. In accordance with the procedures established by the Office of Management and Budget Circular A-95, the State Clearinghouse received comment (copy attached) from the Department of Natural Resources favorable to the statement. The Department requested that it be informed of further regulatory developments in this area.\nOur staff generally concurred with the statement, but suggested that a \"no access\" to public lands by ORV's should be presented as an alternative to such usage.\nWe hope that these cornents will assist you in the preparation of your final statement and look forward to continued cooperation with your agency in the Clearinghouse review of the complete project presentation.\nSincerely,\nVladimir Mahbe",
+    "opening_anchor": "MARVIN MANDEL\nMARYLAND\nDEPARTMENT OF STATE PLANNING\n301 WEST PRESTON STREET\nBALTIMORE, MARYLAND 21201",
+    "closing_anchor": "We hope that these cornents will assist you in the preparation of your final statement and look forward to continued cooperation with your agency in the Clearinghouse review of the complete project presentation.\n\nSincerely,\nVladimir Mahbe",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true,
+    "window_pages": [
+      261,
+      281
+    ]
+  },
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "evidence_pages": [
+    "271"
+  ],
+  "summary_quote": "Our staff generally concurred with the statement, but suggested that a \"no access\" to public lands by ORV's should be presented as an alternative to such usage.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "271"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Our staff generally concurred with the statement, but suggested that a \"no access\" to public lands by ORV's should be presented as an alternative to such usage.",
+      "quote_verified": true,
+      "stance_basis": "Generally concurs but suggests adding a 'no access' alternative",
+      "entity_as_written": "Maryland Department of State Planning",
+      "role_as_written": "Maryland State Clearinghouse reviewer"
+    }
+  ]
+}

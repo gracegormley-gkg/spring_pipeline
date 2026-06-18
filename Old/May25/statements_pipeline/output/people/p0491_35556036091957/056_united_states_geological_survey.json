@@ -1,0 +1,49 @@
+{
+  "sequence": 56,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "United States Geological Survey",
+  "kind": "agency",
+  "role": "federal agency / reviewer",
+  "stance": "neutral",
+  "summary": "The United States Geological Survey offered no substantive comment on the draft environmental impact statement for the proposed implementation of Executive Order 11644 regarding off-road vehicle use on public lands. Their entire response was a brief memorandum stating they had no comment on the document referred to them for review.",
+  "statement": {
+    "present": true,
+    "form": "letter",
+    "text": "United States Department of the Interior\nGEOLOGICAL SURVEY WASHINGTON, D.C. 20242\nJune 29, 1972\n32\nK14\nMemorandum\nTo:\nDirector, Bureau of Outdoor Recreation\nThrough Assistant Secretary--Mineral Resources\nFrom:\nDirector, Geological Survey\nSubject:\nDraft environmental statement for the proposed\nimplementation of Executive Order 11644\nWe have no comment on the subject draft environmental statement which was referred to us for review by your memorandum of June 1.\nDirector",
+    "opening_anchor": "United States Department of the Interior\nGEOLOGICAL SURVEY WASHINGTON, D.C. 20242\n\nJune 29, 1972\n\n32\nK14\n\nMemorandum\nTo:\nDirector, Bureau of Outdoor Recreation",
+    "closing_anchor": "We have no comment on the subject draft environmental statement which was referred to us for review by your memorandum of June 1.\nDirector",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true,
+    "window_pages": [
+      68,
+      88
+    ]
+  },
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "evidence_pages": [
+    "78"
+  ],
+  "summary_quote": "We have no comment on the subject draft environmental statement which was referred to us for review by your memorandum of June 1.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "78"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We have no comment on the subject draft environmental statement which was referred to us for review by your memorandum of June 1.",
+      "quote_verified": true,
+      "stance_basis": "No comment offered on the draft EIS",
+      "entity_as_written": "United States Geological Survey",
+      "role_as_written": "federal agency / reviewer"
+    }
+  ]
+}

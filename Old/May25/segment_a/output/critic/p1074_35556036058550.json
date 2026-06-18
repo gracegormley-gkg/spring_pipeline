@@ -1,0 +1,282 @@
+{
+  "title": {
+    "rubric_results": [
+      {
+        "check": "Title is non-empty and plausibly the document's title?",
+        "result": "yes",
+        "note": "'Operation Breakthrough: environmental impact statement' is a coherent, plausible EIS title referencing a named program."
+      },
+      {
+        "check": "Length is reasonable (not a sentence fragment, not the whole abstract)?",
+        "result": "yes",
+        "note": "Title is concise and appropriately scoped for a document title."
+      },
+      {
+        "check": "If two sources (NUL + Haiku) — do they roughly agree?",
+        "result": "n/a",
+        "note": "Only one source (NUL) provided; no second source to compare."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "medium",
+    "notes": "The extracted title 'Operation Breakthrough: environmental impact statement' is plausible and well-formed for an EIS document. Only one source (NUL) was provided with no cited page text to corroborate, which slightly reduces confidence. The title appears legitimate but cannot be fully verified without a second source or cited page content.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "year": {
+    "rubric_results": [
+      {
+        "check": "Year falls within 1969 ≤ year ≤ current year?",
+        "result": "yes",
+        "note": "1972 is within the valid range of 1969 to present"
+      },
+      {
+        "check": "Year present in NUL metadata OR found on first 3 pages?",
+        "result": "yes",
+        "note": "NUL metadata reports 1972; regex from first 3 pages reports 1971 — both sources present but disagree"
+      },
+      {
+        "check": "If NUL and regex disagree, value reflects this with a low-confidence flag?",
+        "result": "yes",
+        "note": "Extraction correctly flags the NUL=1972 vs regex=1971 disagreement and assigns low confidence"
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "NUL metadata (1972) and regex extraction from the first 3 pages (1971) disagree by one year, and no cited page text was provided to adjudicate between them. The extractor correctly applied a low-confidence flag, but the conflict cannot be resolved without reviewing the actual document pages. A human reviewer should inspect the cover page and metadata to confirm the correct publication year.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "eis_type": {
+    "rubric_results": [
+      {
+        "check": "Type is one of: Draft, Final, Supplemental, ROD, Unknown?",
+        "result": "yes",
+        "note": "Final is a valid EIS type from the allowed list"
+      },
+      {
+        "check": "Regex hit on first page and Sonnet on first 2 pages agree?",
+        "result": "yes",
+        "note": "Both sources listed as regex (first page) and Sonnet (first 2 pages) agree on Final"
+      },
+      {
+        "check": "Evidence phrase supports the chosen type?",
+        "result": "yes",
+        "note": "Evidence phrase 'FINAL ENVIRONMENTAL STATEMENT ON OPERATION BREAKTHROUGH' explicitly contains the word FINAL, directly supporting the extracted type"
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "high",
+    "notes": "The extracted value of 'Final' is strongly supported by the evidence phrase which explicitly states 'FINAL ENVIRONMENTAL STATEMENT.' Both extraction methods agree. However, no cited page text was provided for independent verification of the source document, which slightly limits full confirmation. The evidence phrase itself is unambiguous.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "lead_agency": {
+    "rubric_results": [
+      {
+        "check": "All listed agencies appear in NUL contributors OR on cited title pages?",
+        "result": "yes",
+        "note": "Department of Housing and Urban Development is sourced from NUL; no cited title pages provided to cross-check, but NUL source is acceptable per rubric."
+      },
+      {
+        "check": "Joint-lead (>2 agencies) flagged for human review?",
+        "result": "n/a",
+        "note": "Only one agency listed; joint-lead flag not required."
+      },
+      {
+        "check": "No role text (e.g., '(issuing body)') left in the agency names?",
+        "result": "yes",
+        "note": "Agency name is clean with no appended role descriptors."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "medium",
+    "notes": "A single agency, Department of Housing and Urban Development, is extracted cleanly from NUL with no role text artifacts. Confidence is medium rather than high because no cited title pages were provided to independently corroborate the NUL attribution, leaving the extraction unverified against primary document pages. No joint-lead concerns apply.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "summary": {
+    "rubric_results": [
+      {
+        "check": "Each schema field's text supported by content visible on the cited pages?",
+        "result": "yes",
+        "note": "All major claims in overview, project_description, affected_community, alternatives_overview, environmental_impact, and public_response fields are traceable to content on the cited pages."
+      },
+      {
+        "check": "Numbers, places, and dates in the text match what the cited pages say?",
+        "result": "yes",
+        "note": "Nine prototype sites, eight areas, twenty-two housing systems, the fuel figure of 'a little more than half,' and the list of cities all match the cited page content."
+      },
+      {
+        "check": "Every quote in evidence appears verbatim on its cited page?",
+        "result": "yes",
+        "note": "All quotes checked against cited page text match verbatim, including minor formatting quirks like 'eightareas' and the Pratt and Whitney quote with its typos ('stace,' 'deconstration')."
+      },
+      {
+        "check": "public_response is limited to the main doc (based_on_main_doc_only=true)?",
+        "result": "yes",
+        "note": "The public_response field has based_on_main_doc_only set to true, and all cited evidence comes from pages within the main EIS document."
+      },
+      {
+        "check": "No invention or hallucinated detail beyond cited content?",
+        "result": "yes",
+        "note": "No fabricated details detected. The mention of HEW in public_response text is not directly supported by a quote but is listed in the agency list on page 1 of the document. The summary accurately reflects the cited content without embellishment."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "The extraction is well-supported by the cited page content, with all verbatim quotes verified as accurate including typographical quirks in the source. All numerical claims, place names, and agency references align with the cited pages. The one minor observation is that HEW is mentioned in the public_response text but lacks a dedicated evidence quote; however, HEW appears in the agency list on page 1, so it is not invented.",
+    "source_pages": [
+      "1",
+      "7",
+      "19",
+      "13",
+      "15",
+      "52",
+      "34",
+      "41"
+    ]
+  },
+  "alternatives": {
+    "rubric_results": [
+      {
+        "check": "Each listed alternative is actually discussed on its cited page?",
+        "result": "yes",
+        "note": "All four alternatives (No Program, Program Directed Only at Housing Technology, Different Number and Character of Demonstration Sites, Different Site Design Philosophy) appear in the cited text under section 4. The first two are cited as page 2 (table of contents listing) and also appear in the body text. The latter two appear in the body text consistent with the chapter."
+      },
+      {
+        "check": "The No Action alternative is included if the cited text includes it?",
+        "result": "yes",
+        "note": "'No Program' is the functional No Action alternative and is included in the extraction, matching section 4.A in the cited text."
+      },
+      {
+        "check": "The verbatim quote in each alternative's evidence is present on the cited page and names/describes the alternative?",
+        "result": "yes",
+        "note": "All four quoted strings ('No Program', 'Program Directed Only at Housing Technology', 'Different Number and Character of Demonstration Sites', 'Different Site Design Philosophy') appear verbatim as section headers in the cited text. The page citations are approximate but consistent with the document structure shown."
+      },
+      {
+        "check": "No outside-knowledge alternatives added that aren't in the chapter?",
+        "result": "yes",
+        "note": "All four alternatives correspond directly to sections 4.A through 4.D in the cited text. No extraneous alternatives were introduced."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "All four alternatives extracted match the four subsections (A–D) of section 4 ('Alternatives to the Proposed Action') in the cited text. The verbatim quotes are present as section headers, descriptions accurately summarize the body text, and no outside-knowledge alternatives were added. The page-2 citation for the first two alternatives refers to their appearance in the Table of Contents, which is a minor but acceptable sourcing choice.",
+    "source_pages": [
+      "2",
+      "18",
+      "19"
+    ]
+  },
+  "themes": {
+    "rubric_results": [
+      {
+        "check": "Each chosen theme is supported by the doc summary fields?",
+        "result": "yes",
+        "note": "Urban Development is supported by the housing industrialization and nine prototype sites evidence; Energy Systems is supported by the total energy plant and fuel consumption references."
+      },
+      {
+        "check": "Theme names come from the fixed taxonomy verbatim?",
+        "result": "yes",
+        "note": "'Urban Development' and 'Energy Systems' are standard taxonomy theme names used verbatim."
+      },
+      {
+        "check": "Subthemes belong to the chosen theme(s) per the taxonomy?",
+        "result": "no",
+        "note": "'Industrial Manufacturing and Pollution' is not a standard subtheme under Urban Development or Energy Systems in typical EIS taxonomies; it would fall under an Industrial or Pollution theme. The other three subthemes appear correctly assigned."
+      },
+      {
+        "check": "1–3 themes and 2–5 subthemes selected (within range)?",
+        "result": "yes",
+        "note": "2 themes and 4 subthemes are selected, both within the allowed ranges."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "medium",
+    "notes": "The two chosen themes are well-supported by the quoted evidence and align with the project's focus on industrialized housing and energy demonstration systems. However, 'Industrial Manufacturing and Pollution' is a questionable subtheme assignment, as it does not cleanly belong under Urban Development or Energy Systems in standard taxonomy structures; a subtheme like 'Air Quality and Emissions' or 'Energy Infrastructure' would be more appropriate. No cited page text was provided for independent verification, which limits confidence.",
+    "source_pages": [
+      "1",
+      "1",
+      "4"
+    ]
+  },
+  "location": {
+    "rubric_results": [
+      {
+        "check": "Place names appear in the cited pages?",
+        "result": "yes",
+        "note": "All nine places (Indianapolis IN, Jersey City NJ, Kalamazoo MI, Macon GA, Memphis TN, Sacramento CA, St. Louis MO, Seattle WA, King County WA) appear in the cited pages text provided."
+      },
+      {
+        "check": "Each place's verbatim quote in evidence actually establishes that place on its cited page?",
+        "result": "yes",
+        "note": "Each city/state name appears verbatim in the pulled text. Memphis TN and King County WA are confirmed on page 9 text; all others confirmed on their respective cited pages (27-30). The page numbering in the extraction appears consistent with the document structure shown."
+      },
+      {
+        "check": "is_multi_site set correctly?",
+        "result": "yes",
+        "note": "is_multi_site=true is correct; this is a multi-site demonstration program (Operation BREAKTHROUGH) spanning nine sites across eight metropolitan areas in multiple states."
+      },
+      {
+        "check": "For corridor projects: endpoints named, not just a midpoint?",
+        "result": "n/a",
+        "note": "This is not a corridor project but a multi-site program; endpoint check does not apply."
+      },
+      {
+        "check": "State abbreviations match U.S. conventions?",
+        "result": "yes",
+        "note": "IN, NJ, MI, GA, TN, CA, MO, WA are all standard USPS two-letter state abbreviations and match the full state names provided."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "All nine prototype sites are confirmed verbatim in the cited page text. The multi-site designation is appropriate for Operation BREAKTHROUGH, a HUD program with dispersed demonstration sites across eight metropolitan areas. State abbreviations and geocoded coordinates are consistent with the named locations.",
+    "source_pages": [
+      "27",
+      "28",
+      "9",
+      "29",
+      "30"
+    ]
+  },
+  "key_people": {
+    "rubric_results": [
+      {
+        "check": "Agency preparers named with verbatim quote on cited page",
+        "result": "n/a",
+        "note": "No agency preparers were extracted; field is empty, consistent with no dedicated Preparers section visible in cited text."
+      },
+      {
+        "check": "Cooperating agencies listed with verbatim quote on cited page",
+        "result": "yes",
+        "note": "All major federal agencies (EPA, DOI, Army, FPC, Commerce, Agriculture, Transportation, HUD) appear verbatim on page 1 under 'Federal Agencies from which Written Comments were Received.' NBS appears on page 6, HEW on page 23, NAS-NRC on page 17, Indiana State Division of Water Resources on page 14, and Bibb County Planning Commission on page 15 — all confirmed in cited text. However, these latter entities are consulted/mentioned bodies, not formally listed as cooperating agencies on page 1; the extraction conflates 'agencies consulted' with 'cooperating agencies.'"
+      },
+      {
+        "check": "Public commenters: stance present, quote verbatim, speaker clear",
+        "result": "n/a",
+        "note": "No public commenters were extracted; field is empty."
+      },
+      {
+        "check": "Private individuals follow last-name-only or 'private commenter' convention",
+        "result": "n/a",
+        "note": "No private individuals were extracted."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "medium",
+    "notes": "The core federal agency entries on page 1 are verified verbatim and correctly cited. However, several entries (NBS, HEW, NAS-NRC, Indiana State Division of Water Resources, Bibb County Planning Commission) are drawn from body text where they appear as consulted or referenced bodies, not as formally designated cooperating agencies — this conflation should be flagged for review. No preparers or public commenters were extracted, which appears consistent with the cited text. The HUD quote contains a minor OCR artifact ('Tounsel') that is faithfully reproduced verbatim, which is acceptable.",
+    "source_pages": [
+      "1",
+      "6",
+      "23",
+      "17",
+      "14",
+      "15"
+    ]
+  }
+}

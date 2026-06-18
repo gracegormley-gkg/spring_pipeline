@@ -1,0 +1,51 @@
+{
+  "sequence": 28,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "Texas Gulf Sulphur",
+  "kind": "organization",
+  "role": "mining industry commenter",
+  "stance": "conditional",
+  "summary": "Texas Gulf Sulphur stressed the importance of miners having access to Federal lands and requested that mining interests be taken into account in the ORV regulations. Their comment was part of a broader group of mining industry responses opposing permit requirements and seeking exemptions or special consideration for mining vehicles. The Department ultimately responded by excepting mining, oil, and gas geophysical exploration equipment from the definition of off-road vehicles in the final environmental statement.",
+  "statement": {
+    "present": false,
+    "form": "narrator_paraphrase",
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false,
+    "window_pages": [
+      24,
+      44
+    ]
+  },
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "evidence_pages": [
+    "34"
+  ],
+  "summary_quote": "Texas Gulf Sulphur - stressed importance of access to Federal lands by miners and requested that mining interests be considered in regulations.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "34"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Texas Gulf Sulphur - stressed importance of access to Federal lands by miners and requested that mining interests be considered in regulations.",
+      "quote_verified": false,
+      "stance_basis": "Requested mining interests be considered — conditional on access provisions",
+      "entity_as_written": "Texas Gulf Sulphur",
+      "role_as_written": "mining industry commenter"
+    }
+  ]
+}

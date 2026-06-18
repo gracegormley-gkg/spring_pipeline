@@ -1,0 +1,49 @@
+{
+  "sequence": 55,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "State of Nevada",
+  "kind": "government",
+  "role": "state government / commenter",
+  "stance": "conditional",
+  "summary": "Nevada Governor Mike O'Callaghan expressed concern that implementation of Executive Order 11644 would ignore the needs of state and local governments, noting that Nevada is 87% federally owned and its residents have historically enjoyed open public lands. He urged the Secretary of the Interior to consult local entities before closing or restricting areas to off-road vehicles, and called for copies of the Draft Environmental Statement to be distributed to all 17 county commissioners and city officials, with hearings held in each county seat. He warned that failure to consider local needs could prompt Congressional intervention in federal land management practices.",
+  "statement": {
+    "present": true,
+    "form": "letter",
+    "text": "MIKE O'CALLAGHAN GOVERNOR\nTHE STATE OF NEVADA\n\nEXECUTIVE CHAMBER\n\nCARSON CITY, NEVADA 89701\nJuly 3, 1972\nAction Office...................................\nThe Honorable Rogers C. B. Morton Secretary of the Interior Washington, D. C. 20240\nDear Mr. Secretary:\nI have recently had the opportunity to review your letter of May 5, 1972, instructing your assistant secretaries of Public Land Management, Fish and Wild Life and Parks, and Water and Power of departmental policy on off-road vehicle use on federal lands.\nI have great concern that in implementing the President's Executive Order 11644, dated February 8, 1972, that consideration of local and state government needs will be ignored by your administrators. As you well know, Nevada is 87 percent federally owned and the people of Nevada have historically enjoyed the great open spaces. I urge you to seek advice and council of local entities prior to closing or restricting any areas to offroad vehicles.\nIn Nevada, I believe that the County Commissioners of the 17 counties plus the elected city officials in these counties should all receive copies of the Draft Environmental Statement immediately so they may make written comments to you. Furthermore, hearings by the Department of Interior should be held in each county seat prior to the implementation of Executive Order 11644 pertaining to use of off-road vehicles on the public lands.\nI feel that unless the needs and desires of the local people are given proper consideration, that eventually Congress will step in and prescribe off-road management practices for all federal land managing agencies.\nI look forward to you advising your staff of this important need.\nSincerely,\n12\nGovernor of Neva",
+    "opening_anchor": "MIKE O'CALLAGHAN GOVERNOR\n\nTHE STATE OF NEVADA\n\nEXECUTIVE CHAMBER\n\nCARSON CITY, NEVADA 89701\nJuly 3, 1972",
+    "closing_anchor": "I look forward to you advising your staff of this important need.\n\nSincerely,\n12\nGovernor of Neva",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true,
+    "window_pages": [
+      77,
+      97
+    ]
+  },
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "evidence_pages": [
+    "87"
+  ],
+  "summary_quote": "I urge you to seek advice and council of local entities prior to closing or restricting any areas to offroad vehicles.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "87"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "I urge you to seek advice and council of local entities prior to closing or restricting any areas to offroad vehicles.",
+      "quote_verified": true,
+      "stance_basis": "Supports local input before ORV restrictions given Nevada's 87% federal land ownership",
+      "entity_as_written": "State of Nevada",
+      "role_as_written": "state government / commenter"
+    }
+  ]
+}

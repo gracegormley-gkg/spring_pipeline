@@ -1,0 +1,76 @@
+{
+  "sequence": 2,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "American Mining Congress",
+  "kind": "organization",
+  "role": "national trade association, commenter",
+  "stance": "opposed",
+  "summary": "The American Mining Congress objected to permits being required for mining vehicles under the proposed ORV regulations. Their broader concern was that stringent regulations would hinder prospecting and mining on public lands. As a result of their comments and those of other mining interests, the Department revised its final statement to except mining, oil, and gas geophysical exploration equipment from the definition of off-road vehicles.",
+  "statement": {
+    "present": false,
+    "form": "narrator_paraphrase",
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false,
+    "window_pages": [
+      23,
+      224
+    ]
+  },
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "evidence_pages": [
+    "33",
+    "100",
+    "214"
+  ],
+  "summary_quote": "the American Mining Congress objects to the stringent regulations currently under consideration since they would have the effect of hindering prospecting and mining of minerals on public lands.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "33"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "American Mining Congress - objected to permits being required for mining vehicles.",
+      "quote_verified": false,
+      "stance_basis": "Objected to permit requirements for mining vehicles",
+      "entity_as_written": "American Mining Congress",
+      "role_as_written": "mining industry commenter"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "100"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "the American Mining Congress objects to the stringent regulations currently under consideration since they would have the effect of hindering prospecting and mining of minerals on public lands.",
+      "quote_verified": true,
+      "stance_basis": "objects to proposed ORV regulations as hindering mineral development on public lands",
+      "entity_as_written": "American Mining Congress",
+      "role_as_written": "national trade association, commenter"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "214"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The American Mining Congress has sent us a copy of its letter of July 6, 1972, objecting to proposed regulations pertaining to the use of off-road vehicles on the public lands.",
+      "quote_verified": true,
+      "stance_basis": "objected to proposed ORV regulations in letter of July 6, 1972",
+      "entity_as_written": "American Mining Congress",
+      "role_as_written": "industry association"
+    }
+  ]
+}

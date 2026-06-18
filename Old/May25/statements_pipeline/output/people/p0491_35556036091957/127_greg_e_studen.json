@@ -1,0 +1,51 @@
+{
+  "sequence": 127,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "Greg E. Studen",
+  "kind": "individual",
+  "role": "attorney, Grey & Studen, co-signer of NRDC letter",
+  "stance": "opposed",
+  "summary": "Greg E. Studen, as co-signer of the NRDC letter, argues that the Draft Environmental Impact Statement is totally inadequate and fails to comply with NEPA, Executive Order 11644, and other laws governing Interior Department responsibilities. He contends that the draft statement and the Secretary's May 16 memorandum must both be withdrawn, and that the entire process of implementing E.O. 11644 must begin again. He further argues that Interior must revise its policy to give environmental values the highest priority rather than accommodating all demands for ORV use.",
+  "statement": {
+    "present": false,
+    "form": "letter",
+    "text": null,
+    "opening_anchor": "Natural Resources Defense Council, Inc.\n1600 TWENTIETH STREET, N.W. WASHINGTON, D.C. 20009\n147\n202 387-2855\nJuly 17, 1972\n\nMr. G. Douglas Hofe, Jr. Director\nBureau of Outdoor Recreation\nDepartment of the Interior\nWashington, D. C. 20240\n\nDear Mr. Hofe:",
+    "closing_anchor": "cc: The Hon. Russell E. Train\n    Chairman\n    Council on Environmental Quality",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": true,
+    "window_pages": [
+      184,
+      204
+    ]
+  },
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "evidence_pages": [
+    "194"
+  ],
+  "summary_quote": "For these reasons we believe that the draft statement must be withdrawn.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "194"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "For these reasons we believe that the draft statement must be withdrawn.",
+      "quote_verified": true,
+      "stance_basis": "co-signed NRDC letter calling for withdrawal of draft EIS",
+      "entity_as_written": "Greg E. Studen",
+      "role_as_written": "attorney, Grey & Studen, co-signer of NRDC letter"
+    }
+  ]
+}

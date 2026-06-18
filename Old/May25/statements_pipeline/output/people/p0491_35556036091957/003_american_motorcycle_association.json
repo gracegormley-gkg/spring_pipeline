@@ -1,0 +1,49 @@
+{
+  "sequence": 3,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "American Motorcycle Association",
+  "kind": "organization",
+  "role": "ORV user group commenter",
+  "stance": "neutral",
+  "summary": "The American Motorcycle Association submitted a written response (dated 6-21-72, filed as response #2) to the draft ORV environmental statement. The document only notes the existence and filing of this response without describing its content or position, so the specific stance of the AMA cannot be determined from the available text beyond their identity as an ORV user group commenter.",
+  "statement": {
+    "present": false,
+    "form": "narrator_paraphrase",
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false,
+    "window_pages": [
+      16,
+      36
+    ]
+  },
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "evidence_pages": [
+    "26"
+  ],
+  "summary_quote": "The second response was from the American Motorcycle Association, and was dated 6-21-72; it was given the number \"2\" and filed after response number \"1.\"",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "26"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The second response was from the American Motorcycle Association, and was dated 6-21-72; it was given the number \"2\" and filed after response number \"1.\"",
+      "quote_verified": true,
+      "stance_basis": "Listed as commenter; no specific stance attributed beyond filing a response",
+      "entity_as_written": "American Motorcycle Association",
+      "role_as_written": "ORV user group commenter"
+    }
+  ]
+}

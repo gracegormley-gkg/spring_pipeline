@@ -1,0 +1,34 @@
+{
+  "title": {
+    "value": "Lincoln Hwy upgrade from Cicero Ave. to Chicago Road, Cook County : environmental impact statement.",
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  },
+  "year": {
+    "value": 1972,
+    "confidence": "low",
+    "sources": [
+      "NUL",
+      "regex (first 3 pages)"
+    ],
+    "note": "NUL=1972 disagrees with regex=1976 — flag"
+  },
+  "eis_type": {
+    "value": "ROD",
+    "confidence": "medium",
+    "sources": [
+      "Sonnet (first 2 pages)"
+    ]
+  },
+  "lead_agency": {
+    "value": [
+      "Federal Highway Administration"
+    ],
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "sequence": 49,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "Paul H. Westedt",
+  "kind": "official",
+  "role": "Director, Wyoming Recreation Commission",
+  "stance": "conditional",
+  "summary": "Paul H. Westedt, Director of the Wyoming Recreation Commission, conditionally supports ORV regulation but insists that rules must be flexible enough to accommodate Wyoming's unique situation, where ORV use is generally encouraged rather than problematic. He strongly advocates for an 'open until closed' policy rather than a 'closed until open' approach, arguing that applying regulations designed for heavily populated areas to Wyoming would create problems where none currently exist. He also calls for coordination between federal agencies and state/local governments, and raises concerns about inconsistent guidance from Washington to different federal land management agencies.",
+  "statement": {
+    "present": true,
+    "form": "letter",
+    "text": "Dear Mr. Watt:\nAttached please find our evaluation and comments with respect to the draft environmental statement for the proposed implementation of Executive Order 11644, pertaining to the use of off-road vehicles on the public lands. We greatly appreciate an opportunity to comment on this draft.\nSincerely,\nfor Paul H. Westedt\nDirector\nPHW:1c1 Encl.",
+    "opening_anchor": "Dear Mr. Watt:\n\nAttached please find our evaluation and comments with respect to the draft environmental statement for the proposed implementation of Executive Order 11644",
+    "closing_anchor": "Sincerely,\n\nfor Paul H. Westedt\nDirector\n\nPHW:1c1 Encl.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true,
+    "window_pages": [
+      69,
+      90
+    ]
+  },
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "evidence_pages": [
+    "79",
+    "80"
+  ],
+  "summary_quote": "The second recommendation relates to the above but more specifically to the Wyoming situation. If rules and regulations on this subject are to be successful in Wyoming, they must be based on the principle that all the areas under administration are open to use with only those areas already closed or where problems develop, closed to use.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "79",
+        "80"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The second recommendation relates to the above but more specifically to the Wyoming situation. If rules and regulations on this subject are to be successful in Wyoming, they must be based on the principle that all the areas under administration are open to use with only those areas already closed or where problems develop, closed to use.",
+      "quote_verified": false,
+      "stance_basis": "Supports open-until-closed ORV policy for Wyoming; objects to closed-until-open BLM approach",
+      "entity_as_written": "Paul H. Westedt",
+      "role_as_written": "Director, Wyoming Recreation Commission"
+    }
+  ]
+}

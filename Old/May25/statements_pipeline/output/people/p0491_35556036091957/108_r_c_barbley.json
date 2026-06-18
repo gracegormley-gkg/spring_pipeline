@@ -1,0 +1,51 @@
+{
+  "sequence": 108,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "R. C. Barbley",
+  "kind": "individual",
+  "role": "District Geologist, Continental Oil Company",
+  "stance": "conditional",
+  "summary": "R. C. Barbley protests Executive Order 11644 insofar as it would limit ORV use over a large percentage of public lands, arguing that insufficient consideration has been given to productive uses such as mining and mineral exploration. He conditionally supports some restrictions to prevent indiscriminate damage, but recommends a permit system for those with legitimate reasons to use ORVs on public lands, with permit holders bearing responsibility for any surface damage.",
+  "statement": {
+    "present": true,
+    "form": "letter",
+    "text": "Continental Oil Company 1024 South Plumer Avenue Tucson, Arizona 85719\n112-\nJuly 12, 1972\nDirector\nBureau of Outdoor Recreation\nRoom 44,10\nDepartment of Interior\nWashington, D. C. 20240\nDear Sir:\nI protest Executive Order 11644 where it would limit the use of offroad vehicles over a large percentage of all public lands. Little consideration has been given to the productive use of such vehicles, and in particular, mining and mineral exploration have been ignored.\nI agree that some restrictions should be placed on off-road vehicles where people indiscriminantly tear up the countryside. It is suggested that permits be established for a person or persons having legitimate reasons for entering on public lands with off-road vehicles. The person or persons obtaining the permit would then be responsible for any obvious surface damage.\nSincerely yours,\nR. C. Barbley\nDistrict Geologist",
+    "opening_anchor": "Continental Oil Company 1024 South Plumer Avenue Tucson, Arizona 85719\n112-\nJuly 12, 1972\nDirector\nBureau of Outdoor Recreation\nRoom 44,10\nDepartment of Interior\nWashington, D. C. 20240\n\nDear Sir:\n\nI protest Executive Order 11644 where it would limit the use of offroad vehicles over a large percentage of all public lands.",
+    "closing_anchor": "It is suggested that permits be established for a person or persons having legitimate reasons for entering on public lands with off-road vehicles. The person or persons obtaining the permit would then be responsible for any obvious surface damage.\n\nSincerely yours,\nR. C. Barbley\nDistrict Geologist",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true,
+    "window_pages": [
+      149,
+      169
+    ]
+  },
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "evidence_pages": [
+    "159"
+  ],
+  "summary_quote": "I protest Executive Order 11644 where it would limit the use of offroad vehicles over a large percentage of all public lands.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "159"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "I protest Executive Order 11644 where it would limit the use of offroad vehicles over a large percentage of all public lands.",
+      "quote_verified": true,
+      "stance_basis": "protests broad ORV limitations but supports permits for legitimate mining and mineral exploration",
+      "entity_as_written": "R. C. Barbley",
+      "role_as_written": "District Geologist, Continental Oil Company"
+    }
+  ]
+}

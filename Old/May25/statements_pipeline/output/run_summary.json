@@ -1,0 +1,101 @@
+{
+  "runs": [
+    {
+      "doc_id": "p0491_35556036091957",
+      "work_id": "csv:35556036091957",
+      "title": "Off-road vehicles on public lands, implementation of Executive Order 11644 : environmental impact statement.",
+      "n_people": 219,
+      "stance_counts": {
+        "opposed": 49,
+        "neutral": 24,
+        "in_favor": 37,
+        "conditional": 109
+      },
+      "review_counts": {
+        "needs_review": 74,
+        "auto_ok": 145,
+        "reasons": {
+          "quote_not_verbatim": 34,
+          "private_individual": 46
+        }
+      },
+      "statement_counts": {
+        "letter": 166,
+        "testimony": 0,
+        "written_comment": 22,
+        "narrator_paraphrase": 30,
+        "sectional": 0,
+        "none": 1,
+        "present": 174,
+        "absent": 45
+      },
+      "elapsed_sec": 510.7,
+      "usage": {
+        "extract": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 8,
+              "input_tokens": 140606,
+              "output_tokens": 32401,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 0.9078
+            }
+          ],
+          "total": {
+            "calls": 8,
+            "input_tokens": 140606,
+            "output_tokens": 32401,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.9078
+          }
+        },
+        "find_statement": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 219,
+              "input_tokens": 2092875,
+              "output_tokens": 54535,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 7.0967
+            }
+          ],
+          "total": {
+            "calls": 219,
+            "input_tokens": 2092875,
+            "output_tokens": 54535,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 7.0967
+          }
+        },
+        "total": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 227,
+              "input_tokens": 2233481,
+              "output_tokens": 86936,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 8.0045
+            }
+          ],
+          "total": {
+            "calls": 227,
+            "input_tokens": 2233481,
+            "output_tokens": 86936,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 8.0045
+          }
+        }
+      },
+      "out_dir": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/statements_pipeline/output/people/p0491_35556036091957"
+    }
+  ]
+}

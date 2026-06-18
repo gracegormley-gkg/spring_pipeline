@@ -1,0 +1,49 @@
+{
+  "sequence": 144,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "Bureau of Reclamation",
+  "kind": "agency",
+  "role": "Interior Department bureau reviewer",
+  "stance": "conditional",
+  "summary": "The Bureau of Reclamation generally concurred with the adequacy of the Draft Environmental Statement for the proposed implementation of Executive Order 11644. However, it recommended that Subsection III of the operating criteria on noise control be strengthened by replacing the vague phrase 'unusual or excessive noise' with more definitive provisions to ensure reasonably uniform application.",
+  "statement": {
+    "present": true,
+    "form": "letter",
+    "text": "United States Department of the Interior\nBUREAU OF RECLAMATION \nWASHINGTON, D.C. 20240\nIN REPLY 420 REFER TO: 120.1\nJUL7 1572\nMemorandum\nTo:\nDirector, Bureau of Outdoor Recreation\nFrom:\nCommissioner, Bureau of Reclamation\nSubject: Draft Environmental Statement for the Proposed\nImplementation of Executive Order 11644\nResponsive to your memorandum of June 1, 1972, the subject statement has been distributed in accordance with the Secretary's notice of availability dated May 26, 1972.\nResponses from review in this office and our field offices indicated general concurrence relative to adequacy of the subject statement. We suggest, however, that further consideration be given to Subsection III of the operating criteria pertaining to noise control. Specifically, we suggest more definitive provisions to replace the words \"unusual or excessive noise\" to insure that reasonably uniform application will be realized.",
+    "opening_anchor": "United States Department of the Interior\nBUREAU OF RECLAMATION \nWASHINGTON, D.C. 20240\nIN REPLY 420 REFER TO: 120.1",
+    "closing_anchor": "to replace the words \"unusual or excessive noise\" to insure that reasonably uniform application will be realized.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true,
+    "window_pages": [
+      259,
+      279
+    ]
+  },
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "evidence_pages": [
+    "269"
+  ],
+  "summary_quote": "Responses from review in this office and our field offices indicated general concurrence relative to adequacy of the subject statement. We suggest, however, that further consideration be given to Subsection III of the operating criteria pertaining to noise control.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "269"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "Responses from review in this office and our field offices indicated general concurrence relative to adequacy of the subject statement. We suggest, however, that further consideration be given to Subsection III of the operating criteria pertaining to noise control.",
+      "quote_verified": true,
+      "stance_basis": "Generally concurs with the statement but requests more definitive noise control provisions",
+      "entity_as_written": "Bureau of Reclamation",
+      "role_as_written": "Interior Department bureau reviewer"
+    }
+  ]
+}

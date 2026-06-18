@@ -1,0 +1,49 @@
+{
+  "sequence": 14,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "Environmental Protection Agency, Office of Federal Activities",
+  "kind": "agency",
+  "role": "Federal agency reviewer",
+  "stance": "neutral",
+  "summary": "The EPA's Office of Federal Activities expressed particular interest in the adverse noise impacts of ORVs and the measures needed to protect the public from excessive noise levels. The agency advised that it would be promulgating noise standards and regulations for recreational vehicles under Section 6 of the Noise Control Act of 1972, which would apply to vehicle manufacture but be based in part on conditions of use. EPA believed these standards would assist land managers in applying noise-level criteria for ORV use on Interior lands.",
+  "statement": {
+    "present": false,
+    "form": "narrator_paraphrase",
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false,
+    "window_pages": [
+      19,
+      39
+    ]
+  },
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "evidence_pages": [
+    "29"
+  ],
+  "summary_quote": "Environmental Protection Agency, Office of Federal Activities and indicated particular interest in adverse noise impacts of ORV and the measures to be taken to protect the public from noise levels.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "29"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Environmental Protection Agency, Office of Federal Activities and indicated particular interest in adverse noise impacts of ORV and the measures to be taken to protect the public from noise levels.",
+      "quote_verified": true,
+      "stance_basis": "Raised noise concerns and noted forthcoming EPA standards without opposing the action",
+      "entity_as_written": "Environmental Protection Agency, Office of Federal Activities",
+      "role_as_written": "Federal agency reviewer"
+    }
+  ]
+}

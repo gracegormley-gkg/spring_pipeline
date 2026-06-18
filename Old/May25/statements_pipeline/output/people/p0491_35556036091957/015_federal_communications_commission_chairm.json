@@ -1,0 +1,51 @@
+{
+  "sequence": 15,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "Federal Communications Commission, Chairman",
+  "kind": "official",
+  "role": "Federal agency reviewer",
+  "stance": "conditional",
+  "summary": "The Federal Communications Commission Chairman expressed general agreement with the objectives of the environmental statement regarding ORV management on public lands. However, the Chairman raised a conditional concern that provisions be made to ensure common carriers and others with wire, cable, or radio communications facilities on public lands retain reasonable access to those facilities for construction, operation, and maintenance purposes.",
+  "statement": {
+    "present": false,
+    "form": "narrator_paraphrase",
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false,
+    "window_pages": [
+      11,
+      31
+    ]
+  },
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "evidence_pages": [
+    "21"
+  ],
+  "summary_quote": "Federal Communications Commission, Chairman - indicated general agreement with the objectives of the environmental statement. Expressed concern that provisions be made so that common carriers and others who have wire, cable, or radio communications facilities on public lands have reasonable access to such facilities to the extent necessary for construction, operation, and maintenance for such facilities.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "21"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Federal Communications Commission, Chairman - indicated general agreement with the objectives of the environmental statement. Expressed concern that provisions be made so that common carriers and others who have wire, cable, or radio communications facilities on public lands have reasonable access to such facilities to the extent necessary for construction, operation, and maintenance for such facilities.",
+      "quote_verified": false,
+      "stance_basis": "Generally agreed but conditioned support on ensuring communications facility access",
+      "entity_as_written": "Federal Communications Commission, Chairman",
+      "role_as_written": "Federal agency reviewer"
+    }
+  ]
+}

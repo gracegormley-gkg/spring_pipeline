@@ -1,0 +1,51 @@
+{
+  "sequence": 20,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "Mine Finders, Inc.",
+  "kind": "organization",
+  "role": "mining industry commenter",
+  "stance": "opposed",
+  "summary": "Mine Finders, Inc. submitted a comment opposing undue restrictions on mining exploration activities on public lands. Their position was part of a broader group of mining industry commenters who objected to ORV regulations being applied to mining vehicles, with the Department ultimately responding by excepting mining, oil, and gas geophysical exploration equipment from the off-road vehicle definition.",
+  "statement": {
+    "present": false,
+    "form": "narrator_paraphrase",
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false,
+    "window_pages": [
+      24,
+      44
+    ]
+  },
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "evidence_pages": [
+    "34"
+  ],
+  "summary_quote": "Mine Finders, Inc. - wanted to be able to explore without undue restrictions.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "34"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Mine Finders, Inc. - wanted to be able to explore without undue restrictions.",
+      "quote_verified": false,
+      "stance_basis": "Opposed undue restrictions on exploration",
+      "entity_as_written": "Mine Finders, Inc.",
+      "role_as_written": "mining industry commenter"
+    }
+  ]
+}

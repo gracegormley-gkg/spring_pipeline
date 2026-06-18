@@ -1,0 +1,49 @@
+{
+  "sequence": 185,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "Florida Department of Community Affairs",
+  "kind": "agency",
+  "role": "state agency, commenter",
+  "stance": "conditional",
+  "summary": "The Florida Department of Community Affairs conditionally supports the ORV regulations, suggesting that Alternative B be adopted while acknowledging the popularity of off-road vehicles and the challenges their increasing use presents. They recommend strong interagency cooperation in coordinating, planning, and developing areas for ORV use. They also raise questions about the proposed age requirements for supervisors and express concern about potential damage to historical and archaeological structures.",
+  "statement": {
+    "present": true,
+    "form": "letter",
+    "text": "Dear Mr. Still:\nThank you for your letter and the opportunity to review and comment on the U.S. Bureau of Outdoor Recreation Statement Pertaining to Use of Off-Road Vehicles on Public Lands (SPDC Project No. 72-1336).\nWhile we might suggest that the Department of Interior choose \"Alternative B),\" we can appreciate the popularity of the vehicles and the problems that have arisen with their increasing use. We would recommend strong emphasis in the proposed cooperation between all agencies and levels of government in coordinating, planning and development of areas and facilities for the use of ORV.\nPoints of curiosity, with the voting age and, in some states, the age of majority being 18, why is it suggested that the supervisor be 21? Also, what number of persons under age can be supervise as conditions warrant? Finally, why do any historical or archeological structures have to be changed or destroyed by ORV use?\nWe feel the Department is to be commanded for their efforts in secking solutions to these very vexing problems.\nSincerely,\nR. Charles Shepherd\nDirector\nDivision of Technical Assistance",
+    "opening_anchor": "Dear Mr. Still:\n\nThank you for your letter and the opportunity to review and comment on the U.S. Bureau of Outdoor Recreation Statement Pertaining to Use of Off-Road Vehicles on Public Lands",
+    "closing_anchor": "We feel the Department is to be commanded for their efforts in secking solutions to these very vexing problems.\n\nSincerely,\nR. Charles Shepherd\nDirector\nDivision of Technical Assistance",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true,
+    "window_pages": [
+      304,
+      324
+    ]
+  },
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "evidence_pages": [
+    "314"
+  ],
+  "summary_quote": "While we might suggest that the Department of Interior choose \"Alternative B),\" we can appreciate the popularity of the vehicles and the problems that have arisen with their increasing use.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "314"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "While we might suggest that the Department of Interior choose \"Alternative B),\" we can appreciate the popularity of the vehicles and the problems that have arisen with their increasing use.",
+      "quote_verified": true,
+      "stance_basis": "suggests adoption of Alternative B and recommends strong inter-agency cooperation",
+      "entity_as_written": "Florida Department of Community Affairs",
+      "role_as_written": "state agency, commenter"
+    }
+  ]
+}

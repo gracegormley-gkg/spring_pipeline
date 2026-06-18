@@ -1,0 +1,49 @@
+{
+  "sequence": 187,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "Florida Department of Natural Resources",
+  "kind": "agency",
+  "role": "state agency, commenter",
+  "stance": "in_favor",
+  "summary": "The Florida Department of Natural Resources endorsed the proposal or offered no adverse comments on the draft environmental impact statement pertaining to use of off-road vehicles on public lands. Their letter is referenced as attached to the Florida Division of State Planning's clearinghouse response, but no separate statement from them appears in the document window. Their position is characterized as supportive or non-objecting to the proposed departmental implementation of Executive Order 11644.",
+  "statement": {
+    "present": false,
+    "form": "narrator_paraphrase",
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false,
+    "window_pages": [
+      302,
+      322
+    ]
+  },
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "evidence_pages": [
+    "312"
+  ],
+  "summary_quote": "Letters endorsing the proposal or offering no adverse comments on the proposal and statement from the following agencies are attached: Department of Agriculture and Consumer Services; Board of Trustees of the Internal Improvement Trust Fund; Game and Fresh Water Fish Commission; Department of Natural Resources",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "312"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Letters endorsing the proposal or offering no adverse comments on the proposal and statement from the following agencies are attached: Department of Agriculture and Consumer Services; Board of Trustees of the Internal Improvement Trust Fund; Game and Fresh Water Fish Commission; Department of Natural Resources",
+      "quote_verified": true,
+      "stance_basis": "listed among agencies endorsing the proposal",
+      "entity_as_written": "Florida Department of Natural Resources",
+      "role_as_written": "state agency, commenter"
+    }
+  ]
+}

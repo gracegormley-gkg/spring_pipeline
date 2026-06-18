@@ -1,0 +1,49 @@
+{
+  "sequence": 89,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "Continental Oil Company",
+  "kind": "organization",
+  "role": "mineral exploration company, commenter",
+  "stance": "conditional",
+  "summary": "Continental Oil Company's Minerals Department protests Executive Order 11644 for severely limiting off-road vehicle use on public lands without adequate provision for productive uses such as mineral and fossil fuel exploration. While acknowledging that some restrictions are warranted to prevent indiscriminate damage, the company supports a permit system that would allow those with legitimate purposes to use ORVs while holding them accountable for their actions.",
+  "statement": {
+    "present": true,
+    "form": "letter",
+    "text": "Minerals Department \nContinental Oil Company 1024 South Plumer Avenue Tucson, Arizona 85719\nJuly 12, 1972\nDirector\nBureau of Outdoor Recreation\nRoom 4410\nDepartment of the Interior\nWashington, D. C. 20240\nGentlemen:\nThis letter is in protest of Executive Order 11644 which would severly limit the use of off-the-road vehicles on public lands. Although I believe that some restrictions should be placed on off-the-road vehicles to prevent people from indiscriminately tearing up the countryside, little provision has been made for the productive use of such vehicles, such as in the exploration for and development of our mineral and fossil fuel resources.\nThe proposal that permits be readily available for those people having legitimate reasons for using off-the-road vehicles on public lands is a good one. Thus, constructive use of such vehicles would be encouraged, while at the same time those people obtaining said permits would be more responsible for their actions while using off-the-road vehicles.\nSincerely yours,\nR. C. Mebres II Geolopies",
+    "opening_anchor": "Minerals Department \nContinental Oil Company 1024 South Plumer Avenue Tucson, Arizona 85719\n\nJuly 12, 1972\n\nDirector\nBureau of Outdoor Recreation\nRoom 4410\nDepartment of the Interior\nWashington, D. C. 20240\n\nGentlemen:\n\nThis letter is in protest of Executive Order 11644 which would severly limit the use of off-the-road vehicles on public lands.",
+    "closing_anchor": "The proposal that permits be readily available for those people having legitimate reasons for using off-the-road vehicles on public lands is a good one. Thus, constructive use of such vehicles would be encouraged, while at the same time those people obtaining said permits would be more responsible for their actions while using off-the-road vehicles.\n\nSincerely yours,\nR. C. Mebres II Geolopies",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true,
+    "window_pages": [
+      148,
+      168
+    ]
+  },
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "evidence_pages": [
+    "158"
+  ],
+  "summary_quote": "This letter is in protest of Executive Order 11644 which would severly limit the use of off-the-road vehicles on public lands.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "158"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "This letter is in protest of Executive Order 11644 which would severly limit the use of off-the-road vehicles on public lands.",
+      "quote_verified": true,
+      "stance_basis": "protests severe ORV limitations but supports permits for productive uses like mineral exploration",
+      "entity_as_written": "Continental Oil Company",
+      "role_as_written": "mineral exploration company, commenter"
+    }
+  ]
+}

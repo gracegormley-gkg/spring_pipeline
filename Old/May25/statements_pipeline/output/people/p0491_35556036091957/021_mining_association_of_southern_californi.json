@@ -1,0 +1,63 @@
+{
+  "sequence": 21,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "Mining Association of Southern California",
+  "kind": "organization",
+  "role": "mining industry commenter",
+  "stance": "opposed",
+  "summary": "The Mining Association of Southern California objected to permits being required for miners using off-road vehicles on public lands. Their position aligned with other mining industry commenters who sought exemption from ORV regulations for mining-related vehicle use. The Department ultimately revised its proposed actions to except mining, oil, and gas geophysical exploration equipment from the ORV regulations in response to these objections.",
+  "statement": {
+    "present": false,
+    "form": "narrator_paraphrase",
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false,
+    "window_pages": [
+      24,
+      224
+    ]
+  },
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "evidence_pages": [
+    "34",
+    "214"
+  ],
+  "summary_quote": "The American Mining Congress has sent us a copy of its letter of July 6, 1972, objecting to proposed regulations pertaining to the use of off-road vehicles on the public lands. We agree with these objections.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "34"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Mining Association of Southern California - objected to permits being required for miners.",
+      "quote_verified": false,
+      "stance_basis": "Objected to permit requirements for miners",
+      "entity_as_written": "Mining Association of Southern California",
+      "role_as_written": "mining industry commenter"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "214"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The American Mining Congress has sent us a copy of its letter of July 6, 1972, objecting to proposed regulations pertaining to the use of off-road vehicles on the public lands. We agree with these objections.",
+      "quote_verified": true,
+      "stance_basis": "agrees with American Mining Congress objections to proposed ORV regulations",
+      "entity_as_written": "Mining Association of Southern California",
+      "role_as_written": "industry association"
+    }
+  ]
+}

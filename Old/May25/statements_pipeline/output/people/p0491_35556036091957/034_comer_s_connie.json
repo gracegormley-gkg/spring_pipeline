@@ -1,0 +1,49 @@
+{
+  "sequence": 34,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "Comer S. Connie",
+  "kind": "official",
+  "role": "Special Assistant to the Mayor-Commissioner, Government of the District of Columbia",
+  "stance": "in_favor",
+  "summary": "Comer S. Connie, writing on behalf of the District of Columbia State Clearinghouse, supports the proposed implementation of Executive Order 11644. He states that the D.C. review found controlled use of off-road vehicles on public lands to be necessary for the protection of those lands and their inhabitants, and recommends proceeding with the implementation.",
+  "statement": {
+    "present": true,
+    "form": "letter",
+    "text": "GOVERNMENT OF THE DISTRICT OF COLUMBIA\n\nEXECUTIVE OFFICE\nSPECIAL ASSISTANT TO THE ... MAYO FORM TO SIGNER.\nOFFICE OF BURGLET AND FINANCIAL MANAGEMENT\nREPLY TO:\nROOM 423. DISTRICT BUILDING\n14TH & E STREETS, N. W.\nWASHINGTON, D. C. 20004\nm 21 1672\nMr. G. Douglas Hofe, Jr. Pirector\nBureau of Outdoor Recreation\nDepartment of Interior\n18th and C Streets, N. W.\nWashington, D. C. 20240\nDear Mr. Hofe:\nIn conformance with ONB Circular A-95, the District of Columbia State Clearinghouse has completed its review of your draft environmental impact statement for the proposed implementation of Executive Order 11644 pertaining to the use of off-road vehicles on public lands.\nOur review has indicated that the controlled use of off-road vehicles on public lands is necessary for the protection of these lands and their inhabitants. We recommend that you proceed with the implementation of the Executive Order for this purpose.\nSincerely yours,\nComer S. Connie\nSpecial Assistant to the Mayor-Commissioner",
+    "opening_anchor": "GOVERNMENT OF THE DISTRICT OF COLUMBIA\n\nEXECUTIVE OFFICE\nSPECIAL ASSISTANT TO THE ... MAYO FORM TO SIGNER.\nOFFICE OF BURGLET AND FINANCIAL MANAGEMENT",
+    "closing_anchor": "We recommend that you proceed with the implementation of the Executive Order for this purpose.\n\nSincerely yours,\nComer S. Connie\nSpecial Assistant to the Mayor-Commissioner",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true,
+    "window_pages": [
+      42,
+      62
+    ]
+  },
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "evidence_pages": [
+    "52"
+  ],
+  "summary_quote": "Our review has indicated that the controlled use of off-road vehicles on public lands is necessary for the protection of these lands and their inhabitants. We recommend that you proceed with the implementation of the Executive Order for this purpose.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "52"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "Our review has indicated that the controlled use of off-road vehicles on public lands is necessary for the protection of these lands and their inhabitants. We recommend that you proceed with the implementation of the Executive Order for this purpose.",
+      "quote_verified": true,
+      "stance_basis": "Recommends proceeding with implementation of EO 11644",
+      "entity_as_written": "Comer S. Connie",
+      "role_as_written": "Special Assistant to the Mayor-Commissioner, Government of the District of Columbia"
+    }
+  ]
+}

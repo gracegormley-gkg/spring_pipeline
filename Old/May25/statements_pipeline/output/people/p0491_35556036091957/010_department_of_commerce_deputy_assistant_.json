@@ -1,0 +1,49 @@
+{
+  "sequence": 10,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "Department of Commerce, Deputy Assistant Secretary for Environmental Affairs",
+  "kind": "official",
+  "role": "Federal agency reviewer",
+  "stance": "neutral",
+  "summary": "The Department of Commerce's Deputy Assistant Secretary for Environmental Affairs offered two technical suggestions on the draft ORV environmental statement: that the statement more specifically delineate which resources would be affected and to what degree by the proposed action, and that attention be drawn to 16 USC 478, which provides for public land access for prospecting purposes. The comments were relatively narrow and procedural in nature, focused on improving the clarity and legal completeness of the document rather than opposing or endorsing the proposed ORV management policy.",
+  "statement": {
+    "present": false,
+    "form": "narrator_paraphrase",
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false,
+    "window_pages": [
+      18,
+      38
+    ]
+  },
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "evidence_pages": [
+    "28"
+  ],
+  "summary_quote": "Department of Commerce, Deputy Assistant Secretary for Environmental Affairs - suggested that environmental statement, on page 12, lines 3 and 4, delineate those resources affected and to what degree by the proposed action; called our attention to 16 USC 478 which provides for access to public lands for purpose of prospecting;",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "28"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Department of Commerce, Deputy Assistant Secretary for Environmental Affairs - suggested that environmental statement, on page 12, lines 3 and 4, delineate those resources affected and to what degree by the proposed action; called our attention to 16 USC 478 which provides for access to public lands for purpose of prospecting;",
+      "quote_verified": true,
+      "stance_basis": "Suggested clarifications but did not oppose or support the proposed action",
+      "entity_as_written": "Department of Commerce, Deputy Assistant Secretary for Environmental Affairs",
+      "role_as_written": "Federal agency reviewer"
+    }
+  ]
+}

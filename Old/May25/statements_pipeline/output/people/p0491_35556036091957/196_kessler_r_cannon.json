@@ -1,0 +1,49 @@
+{
+  "sequence": 196,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "Kessler R. Cannon",
+  "kind": "official",
+  "role": "Assistant to the Governor, Natural Resources, Oregon",
+  "stance": "neutral",
+  "summary": "Kessler R. Cannon, writing on behalf of Oregon's Governor, transmitted state agency comments on the Draft EIS for off-road vehicle use on public lands. His letter is largely procedural and neutral in tone, forwarding enclosed agency comments and noting that a copy was also sent to the Oregon State Police for potential additional input. He confirms the letter may serve as evidence of compliance with NEPA Section 102(2)(C) and OMB A-95.",
+  "statement": {
+    "present": true,
+    "form": "letter",
+    "text": "Dear Mr. Hofe:\nReview of the Draft Environmental Impact Statement is complete. Enclosed are comments from state agencies which we hope will help you to further evaluate your project.\nAlso enclosed is a comment from the Law Enforcement Council which does not have direct bearing on environmental alternatives but is significant in a programmatic sense. To further explore this area, we have forwarded a copy of the Off-Road Vehicles statement to Captain Walter Hershey of the Oregon State Police. Should he have any comments they will be sent directly to you.\nYou may use this letter as evidence of your compliance with Section 102(2)(C) of the National Environmental Policy Act of 1969 (83 Stat. 853), and OMB A-95 (Revised).\nSincerely\nKessler R. Cannon Assistant to the Governor\nNatural Resources\nKRC: Nm\nEnclosures",
+    "opening_anchor": "Dear Mr. Hofe:\n\nReview of the Draft Environmental Impact Statement is complete. Enclosed are comments from state agencies which we hope will help you to further evaluate your project.",
+    "closing_anchor": "Sincerely\nKessler R. Cannon\nAssistant to the Governor\nNatural Resources\nKRC: Nm\nEnclosures",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true,
+    "window_pages": [
+      320,
+      340
+    ]
+  },
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "evidence_pages": [
+    "330"
+  ],
+  "summary_quote": "Review of the Draft Environmental Impact Statement is complete. Enclosed are comments from state agencies which we hope will help you to further evaluate your project.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "330"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "Review of the Draft Environmental Impact Statement is complete. Enclosed are comments from state agencies which we hope will help you to further evaluate your project.",
+      "quote_verified": true,
+      "stance_basis": "transmits state agency comments without expressing a personal stance",
+      "entity_as_written": "Kessler R. Cannon",
+      "role_as_written": "Assistant to the Governor, Natural Resources, Oregon"
+    }
+  ]
+}

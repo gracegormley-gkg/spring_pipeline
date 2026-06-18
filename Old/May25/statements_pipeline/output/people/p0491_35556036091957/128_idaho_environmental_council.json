@@ -1,0 +1,51 @@
+{
+  "sequence": 128,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "Idaho Environmental Council",
+  "kind": "organization",
+  "role": "environmental organization, commenter",
+  "stance": "opposed",
+  "summary": "The Idaho Environmental Council opposes unregulated ORV use on public lands, arguing that the status quo of nearly unlimited off-road use must be changed before problems worsen. They support Executive Order 11644 as a basis for meaningful regulations and urge federal land administrators to take bold protective steps. They further contend that public lands are not playgrounds for machines and that the growing trend of ORV use is socially undesirable and should be reversed, not merely accepted.",
+  "statement": {
+    "present": false,
+    "form": "letter",
+    "text": null,
+    "opening_anchor": "Idaho Environmental Council\nP. O. Box 3371 - University Station Moscow, Idaho 83843\nJuly 22, 1972",
+    "closing_anchor": "our public lands are not playgrounds for machines, and the trend toward increasing OnV use represents a socially undesirable trend. As such, this trend should be changed, and not mackly accepted.\nSincerely,\nderald to Jayne\nrresident, 1.3 1565 Lole St.\nIdaho Folls, Idaho 03001",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": false,
+    "window_pages": [
+      208,
+      228
+    ]
+  },
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "evidence_pages": [
+    "218"
+  ],
+  "summary_quote": "We hope that these administrators will take bold steps now to protect our public lands, before the problems worsen.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "218"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "We hope that these administrators will take bold steps now to protect our public lands, before the problems worsen.",
+      "quote_verified": false,
+      "stance_basis": "opposes unregulated ORV use and calls for bold regulatory steps to protect public lands",
+      "entity_as_written": "Idaho Environmental Council",
+      "role_as_written": "environmental organization, commenter"
+    }
+  ]
+}

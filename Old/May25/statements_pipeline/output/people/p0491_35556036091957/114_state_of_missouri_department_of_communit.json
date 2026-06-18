@@ -1,0 +1,49 @@
+{
+  "sequence": 114,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "State of Missouri Department of Community Affairs",
+  "kind": "government",
+  "role": "state clearinghouse, commenter",
+  "stance": "in_favor",
+  "summary": "The Missouri Department of Community Affairs, acting as the State Clearinghouse, reviewed the pre-application for the ORV Executive Order implementation and found no negative comments from state agencies. The department concluded the project is not in conflict with the goals, objectives, or environmental standards of the various state agencies and that further review by the State Clearinghouse is not required.",
+  "statement": {
+    "present": false,
+    "form": "letter",
+    "text": null,
+    "opening_anchor": "STATE OF MISSOURI\nDEPARTMENT OF COMMUNITY AFFAIRS\nWARREN E. HEARNES\nGOVERNOR\n\nJuly 13, 1972\n\nMr. G. Douglas Hofe, Jr., Director United States Dept. of the Interior Bureau of Outdoor Recreation Washington, D. C. 20240\n\nRE: Implementation of Executive Order 11644 which pertains to use of Off-Road Vehicles on Public Lands.",
+    "closing_anchor": "A copy of this letter must be attached to the Federal Funding Agency's application as evidence that you have complied with the requirements of the State Clearinghouse's project notification and review system.\n\nTerry L. Rehma\nState Clearinghouse\nCoordinator",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": false,
+    "window_pages": [
+      152,
+      172
+    ]
+  },
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "evidence_pages": [
+    "162"
+  ],
+  "summary_quote": "There were no negative comments in regard to said project.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "162"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "There were no negative comments in regard to said project.",
+      "quote_verified": true,
+      "stance_basis": "no negative comments; project not in conflict with state agency goals",
+      "entity_as_written": "State of Missouri Department of Community Affairs",
+      "role_as_written": "state clearinghouse, commenter"
+    }
+  ]
+}

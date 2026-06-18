@@ -1,0 +1,44 @@
+{
+  "runs": [
+    {
+      "doc_id": "p0491_35556036091957",
+      "work_id": "csv:35556036091957",
+      "title": "Off-road vehicles on public lands, implementation of Executive Order 11644 : environmental impact statement.",
+      "elapsed_sec": 264.6,
+      "m1_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/m1/p0491_35556036091957.json",
+      "m2_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/m2/p0491_35556036091957.json",
+      "critic_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/critic/p0491_35556036091957.json",
+      "grading_sheet": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/grading_sheets/p0491_35556036091957.csv",
+      "usage": {
+        "by_model": [
+          {
+            "model": "us.anthropic.claude-sonnet-4-6",
+            "calls": 14,
+            "input_tokens": 95272,
+            "output_tokens": 5343,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.366
+          },
+          {
+            "model": "us.anthropic.claude-opus-4-7",
+            "calls": 9,
+            "input_tokens": 241954,
+            "output_tokens": 21675,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 5.2549
+          }
+        ],
+        "total": {
+          "calls": 23,
+          "input_tokens": 337226,
+          "output_tokens": 27018,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 5.6209
+        }
+      }
+    }
+  ]
+}

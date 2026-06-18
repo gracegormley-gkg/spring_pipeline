@@ -1,0 +1,49 @@
+{
+  "sequence": 200,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "New Mexico Department of Game and Fish",
+  "kind": "agency",
+  "role": "state wildlife agency, commenter",
+  "stance": "in_favor",
+  "summary": "The New Mexico Department of Game and Fish endorses the implementation of Executive Order 11644, viewing it as beneficial to wildlife. The agency has long been concerned about ORV impacts on hunting, fishing, and wildlife disturbance, and supports applying federal ORV guidelines to state lands as well. They outline several existing state regulations they have enacted to restrict off-road vehicle travel and express willingness to participate in meetings to discuss further coordination.",
+  "statement": {
+    "present": false,
+    "form": "letter",
+    "text": null,
+    "opening_anchor": "Dear David:\n\nWe have reviewed the Draft Environmental Statement prepared by the Bureau of Outdoor Recreation, Department of the Interior, proposing Department implementation of Executive Order 11644",
+    "closing_anchor": "We have worked closely with the Forest Service, Bureau of Land Management and local livestock boards to discourage off-road vehicle use, primarily through publicity.\n\nVery truly yours,\nLadd S. Gordon\nDirector",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": false,
+    "window_pages": [
+      299,
+      319
+    ]
+  },
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "evidence_pages": [
+    "309"
+  ],
+  "summary_quote": "We endorse the implementation of Executive Order 11644 as it should be beneficial to wildlife.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "309"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We endorse the implementation of Executive Order 11644 as it should be beneficial to wildlife.",
+      "quote_verified": true,
+      "stance_basis": "explicitly endorses implementation of Executive Order 11644 as beneficial to wildlife",
+      "entity_as_written": "New Mexico Department of Game and Fish",
+      "role_as_written": "state wildlife agency, commenter"
+    }
+  ]
+}

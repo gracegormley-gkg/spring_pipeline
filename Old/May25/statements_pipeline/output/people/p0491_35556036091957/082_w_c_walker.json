@@ -1,0 +1,51 @@
+{
+  "sequence": 82,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "W. C. Walker",
+  "kind": "individual",
+  "role": "Senior Staff Geologist, mineral exploration company (Douglas, Arizona)",
+  "stance": "opposed",
+  "summary": "W. C. Walker argues that Executive Order 11644 should explicitly exempt off-road vehicles used in mineral exploration, as such vehicles are essential for carrying geophysical equipment across public lands on grid patterns that require off-road travel. He contends that requiring advance permits would be burdensome and contrary to mining law requirements that public lands remain open for mineral exploration. He further warns that restricting ORV use in exploration would hinder discovery of the nation's mineral resources at a time when exploration is already failing to keep pace with national needs.",
+  "statement": {
+    "present": false,
+    "form": "letter",
+    "text": null,
+    "opening_anchor": "Juiparation Western Exploration Office, Drawer 1217, Douglas, Arizona 85607 • (602) 364-8414\n\nJuly 10, 1972\n\nThe Director\nBureau of Outdoor Recreation",
+    "closing_anchor": "Restrictions on the use of off-road vehicles would greatly hinder exploration work.\n\nVery truly yours,\nW. C. Walker\nSenior Staff Geologist",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": true,
+    "window_pages": [
+      121,
+      141
+    ]
+  },
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "evidence_pages": [
+    "131"
+  ],
+  "summary_quote": "The Departmental implementation of the Executive Order should specifically not include the use of off-road vehicles used in connection with the exploration for mineral deposits.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "131"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The Departmental implementation of the Executive Order should specifically not include the use of off-road vehicles used in connection with the exploration for mineral deposits.",
+      "quote_verified": true,
+      "stance_basis": "opposes application of ORV regulations to mineral exploration vehicles",
+      "entity_as_written": "W. C. Walker",
+      "role_as_written": "Senior Staff Geologist, mineral exploration company (Douglas, Arizona)"
+    }
+  ]
+}

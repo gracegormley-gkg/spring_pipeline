@@ -1,0 +1,49 @@
+{
+  "sequence": 97,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "Las Vegas Review-Journal",
+  "kind": "organization",
+  "role": "newspaper, commenter; BLM Multiple Use Advisory Board alternate member",
+  "stance": "conditional",
+  "summary": "William Vincent, writing on behalf of the Las Vegas Review-Journal and in his capacity as a BLM Multiple Use Advisory Board alternate member, strongly supports both the environmental statement and the proposed ORV regulations. However, he objects to the summation statement on page 25, which he believes gives the wrong emphasis and could be exploited by those who oppose even modest controls. He also calls for BLM to be granted enforcement powers, which he considers long overdue.",
+  "statement": {
+    "present": true,
+    "form": "letter",
+    "text": "LAS VEGAS\nNevada's largest daily newspaper. More than half a century of service to America's most exciting city.\nP.O. BOX 70, LAS VEGAS, NEVADA 89101 . . . PHONE (702) 385-4241\nJuly 17, 1972\nAction Office POR\nFor info only\nRogers C. B. Morton, Secretary, U. S. Department of Interior, Washington, D. C.\nDear Secretary Morton:\n4 50\nA draft of the environmental statement prepared in response to Executive Order 11644 has been sent to me for comment. Presumably, I was asked to respond as a member of the State Committee on Federal Land Laws and an alternate on the BLM Multiple Use Advisory Board. But I also would like to react as a fisherman, outdoorsman and frequent ORV user.\nI strongly support both the statement and the proposed regulations. However, I do object to the summation statement on page 25--Th short, it represents an attempt to maximize the types of public land uses... --as giving the wrong emphasis and providing an opening to those who oppose even the most modest controls and management practices.\nAlso, I believe it is absolutely necessary to give BLM enforcement powers. This authority is long overdue.\nSincerely yours,\nWilliam Vincent",
+    "opening_anchor": "LAS VEGAS\nNevada's largest daily newspaper. More than half a century of service to America's most exciting city.\nP.O. BOX 70, LAS VEGAS, NEVADA 89101 . . . PHONE (702) 385-4241\nJuly 17, 1972",
+    "closing_anchor": "Also, I believe it is absolutely necessary to give BLM enforcement powers. This authority is long overdue.\n\nSincerely yours,\nWilliam Vincent",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true,
+    "window_pages": [
+      177,
+      197
+    ]
+  },
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "evidence_pages": [
+    "187"
+  ],
+  "summary_quote": "I strongly support both the statement and the proposed regulations. However, I do object to the summation statement on page 25--Th short, it represents an attempt to maximize the types of public land uses... --as giving the wrong emphasis and providing an opening to those who oppose even the most modest controls and management practices.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "187"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "I strongly support both the statement and the proposed regulations. However, I do object to the summation statement on page 25--Th short, it represents an attempt to maximize the types of public land uses... --as giving the wrong emphasis and providing an opening to those who oppose even the most modest controls and management practices.",
+      "quote_verified": true,
+      "stance_basis": "strongly supports statement and regulations but objects to specific summation language and calls for BLM enforcement powers",
+      "entity_as_written": "Las Vegas Review-Journal",
+      "role_as_written": "newspaper, commenter; BLM Multiple Use Advisory Board alternate member"
+    }
+  ]
+}

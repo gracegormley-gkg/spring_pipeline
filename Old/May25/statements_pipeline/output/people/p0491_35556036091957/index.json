@@ -1,0 +1,2913 @@
+{
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "title": "Off-road vehicles on public lands, implementation of Executive Order 11644 : environmental impact statement.",
+  "n_pages": 356,
+  "n_chunks": 8,
+  "n_raw_rows": 227,
+  "n_people": 219,
+  "stance_counts": {
+    "opposed": 49,
+    "neutral": 24,
+    "in_favor": 37,
+    "conditional": 109
+  },
+  "review_counts": {
+    "needs_review": 74,
+    "auto_ok": 145,
+    "reasons": {
+      "quote_not_verbatim": 34,
+      "private_individual": 46
+    }
+  },
+  "statement_counts": {
+    "letter": 166,
+    "testimony": 0,
+    "written_comment": 22,
+    "narrator_paraphrase": 30,
+    "sectional": 0,
+    "none": 1,
+    "present": 174,
+    "absent": 45
+  },
+  "elapsed_sec": 510.7,
+  "usage": {
+    "extract": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 8,
+          "input_tokens": 140606,
+          "output_tokens": 32401,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.9078
+        }
+      ],
+      "total": {
+        "calls": 8,
+        "input_tokens": 140606,
+        "output_tokens": 32401,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.9078
+      }
+    },
+    "find_statement": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 219,
+          "input_tokens": 2092875,
+          "output_tokens": 54535,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 7.0967
+        }
+      ],
+      "total": {
+        "calls": 219,
+        "input_tokens": 2092875,
+        "output_tokens": 54535,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 7.0967
+      }
+    },
+    "total": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 227,
+          "input_tokens": 2233481,
+          "output_tokens": 86936,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 8.0045
+        }
+      ],
+      "total": {
+        "calls": 227,
+        "input_tokens": 2233481,
+        "output_tokens": 86936,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 8.0045
+      }
+    }
+  },
+  "schema": {
+    "stance_vocabulary": [
+      "in_favor",
+      "opposed",
+      "conditional",
+      "neutral"
+    ],
+    "kind_vocabulary": [
+      "individual",
+      "official",
+      "organization",
+      "agency",
+      "tribe",
+      "government",
+      "other"
+    ],
+    "statement_forms": [
+      "letter",
+      "testimony",
+      "written_comment",
+      "narrator_paraphrase",
+      "sectional",
+      "none"
+    ],
+    "page_numbers": "EXACT — from per-page JSON source.",
+    "statement_text": "Sliced from the doc text between verbatim opening/closing anchors. Null when either anchor doesn't verify.",
+    "needs_human_review": "True when kind=='individual' OR summary_quote_verified is False. No LLM critic in this pipeline; reasons are listed per person.",
+    "merge_rule": "One file per (entity, stance) — stance changes produce separate files.",
+    "cost_note": "USD costs are ESTIMATES from settings.PRICES_USD_PER_M; verify against AWS Bedrock invoice."
+  },
+  "people": [
+    {
+      "sequence": 1,
+      "file": "001_amax_exploration_inc.json",
+      "entity": "Amax Exploration, Inc.",
+      "kind": "organization",
+      "role": "mining industry commenter",
+      "stance": "opposed",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 2,
+      "file": "002_american_mining_congress.json",
+      "entity": "American Mining Congress",
+      "kind": "organization",
+      "role": "national trade association, commenter",
+      "stance": "opposed",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 3,
+      "file": "003_american_motorcycle_association.json",
+      "entity": "American Motorcycle Association",
+      "kind": "organization",
+      "role": "ORV user group commenter",
+      "stance": "neutral",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 4,
+      "file": "004_american_petroleum_institute.json",
+      "entity": "American Petroleum Institute",
+      "kind": "organization",
+      "role": "industry commenter",
+      "stance": "opposed",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 5,
+      "file": "005_bureau_of_indian_affairs_director_office.json",
+      "entity": "Bureau of Indian Affairs, Director, Office of Planning",
+      "kind": "official",
+      "role": "Interior bureau reviewer",
+      "stance": "in_favor",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 6,
+      "file": "006_bureau_of_land_management_director.json",
+      "entity": "Bureau of Land Management, Director",
+      "kind": "official",
+      "role": "Interior bureau reviewer",
+      "stance": "neutral",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 7,
+      "file": "007_bureau_of_reclamation_acting_commissione.json",
+      "entity": "Bureau of Reclamation, Acting Commissioner",
+      "kind": "official",
+      "role": "Interior bureau reviewer",
+      "stance": "in_favor",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 8,
+      "file": "008_bureau_of_sport_fisheries_and_wildlife_a.json",
+      "entity": "Bureau of Sport Fisheries and Wildlife, Acting Deputy Director",
+      "kind": "official",
+      "role": "Interior bureau reviewer",
+      "stance": "conditional",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 9,
+      "file": "009_colorado_mining_association.json",
+      "entity": "Colorado Mining Association",
+      "kind": "organization",
+      "role": "mining industry association, commenter",
+      "stance": "opposed",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 10,
+      "file": "010_department_of_commerce_deputy_assistant_.json",
+      "entity": "Department of Commerce, Deputy Assistant Secretary for Environmental Affairs",
+      "kind": "official",
+      "role": "Federal agency reviewer",
+      "stance": "neutral",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 11,
+      "file": "011_department_of_defense_deputy_assistant_s.json",
+      "entity": "Department of Defense, Deputy Assistant Secretary of Defense (Environmental Quality)",
+      "kind": "official",
+      "role": "Federal agency reviewer",
+      "stance": "in_favor",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 12,
+      "file": "012_department_of_health_education_and_welfa.json",
+      "entity": "Department of Health, Education, and Welfare, Assistant Secretary for Health and Scientific Affairs",
+      "kind": "official",
+      "role": "Federal agency reviewer",
+      "stance": "neutral",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 13,
+      "file": "013_department_of_transportation_assistant_s.json",
+      "entity": "Department of Transportation, Assistant Secretary for Environment and Urban Systems",
+      "kind": "official",
+      "role": "Federal agency reviewer",
+      "stance": "neutral",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 14,
+      "file": "014_environmental_protection_agency_office_o.json",
+      "entity": "Environmental Protection Agency, Office of Federal Activities",
+      "kind": "agency",
+      "role": "Federal agency reviewer",
+      "stance": "neutral",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 15,
+      "file": "015_federal_communications_commission_chairm.json",
+      "entity": "Federal Communications Commission, Chairman",
+      "kind": "official",
+      "role": "Federal agency reviewer",
+      "stance": "conditional",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 16,
+      "file": "016_geological_survey_acting_director.json",
+      "entity": "Geological Survey, Acting Director",
+      "kind": "official",
+      "role": "Interior bureau reviewer",
+      "stance": "neutral",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 17,
+      "file": "017_international_association_of_geophysical.json",
+      "entity": "International Association of Geophysical Contractors",
+      "kind": "organization",
+      "role": "industry commenter",
+      "stance": "opposed",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 18,
+      "file": "018_messrs_brady_bishop_dickenson_and_kantor.json",
+      "entity": "Messrs. Brady, Bishop, Dickenson, and Kantor",
+      "kind": "individual",
+      "role": "mineral exploration geologists, commenters",
+      "stance": "opposed",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 19,
+      "file": "019_messrs_r_c_barkley_and_r_c_moores_ii_dis.json",
+      "entity": "Messrs. R. C. Barkley and R. C. Moores, II, District Geologists, Continental Oil Company",
+      "kind": "individual",
+      "role": "oil company district geologists, commenters",
+      "stance": "opposed",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 20,
+      "file": "020_mine_finders_inc.json",
+      "entity": "Mine Finders, Inc.",
+      "kind": "organization",
+      "role": "mining industry commenter",
+      "stance": "opposed",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 21,
+      "file": "021_mining_association_of_southern_californi.json",
+      "entity": "Mining Association of Southern California",
+      "kind": "organization",
+      "role": "mining industry commenter",
+      "stance": "opposed",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 22,
+      "file": "022_mr_j_m_reynolds_member_of_governor_s_min.json",
+      "entity": "Mr. J. M. Reynolds, Member of Governor's Mining Adversary Board, State of Nevada",
+      "kind": "individual",
+      "role": "state mining board member, commenter",
+      "stance": "conditional",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 23,
+      "file": "023_national_park_service_assistant_director.json",
+      "entity": "National Park Service, Assistant Director, Cooperative Services",
+      "kind": "official",
+      "role": "Interior bureau reviewer",
+      "stance": "conditional",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 24,
+      "file": "024_phelps_dodge_corporation_western_explora.json",
+      "entity": "Phelps Dodge Corporation, Western Exploration Office, Arizona",
+      "kind": "organization",
+      "role": "mining industry commenter",
+      "stance": "opposed",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 25,
+      "file": "025_society_of_exploration_geophysicists.json",
+      "entity": "Society of Exploration Geophysicists",
+      "kind": "organization",
+      "role": "professional society commenter",
+      "stance": "opposed",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 26,
+      "file": "026_state_of_wyoming_executive_department.json",
+      "entity": "State of Wyoming, Executive Department",
+      "kind": "government",
+      "role": "state government commenter",
+      "stance": "neutral",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 27,
+      "file": "027_tennessee_valley_authority_director_of_e.json",
+      "entity": "Tennessee Valley Authority, Director of Environmental Research and Development",
+      "kind": "official",
+      "role": "Federal agency reviewer",
+      "stance": "in_favor",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 28,
+      "file": "028_texas_gulf_sulphur.json",
+      "entity": "Texas Gulf Sulphur",
+      "kind": "organization",
+      "role": "mining industry commenter",
+      "stance": "conditional",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 29,
+      "file": "029_ama_motorcycle_industry_council_combined.json",
+      "entity": "AMA-Motorcycle Industry Council Combined Committee on Land Use",
+      "kind": "organization",
+      "role": "joint AMA/MIC committee / commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 30,
+      "file": "030_american_motorcycle_association.json",
+      "entity": "American Motorcycle Association",
+      "kind": "organization",
+      "role": "national motorcycle organization / commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 31,
+      "file": "031_arctic_enterprises_inc.json",
+      "entity": "Arctic Enterprises, Inc.",
+      "kind": "organization",
+      "role": "snowmobile manufacturer / commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 32,
+      "file": "032_california_outdoor_recreation_league_inc.json",
+      "entity": "California Outdoor Recreation League, Inc.",
+      "kind": "organization",
+      "role": "statewide recreation advocacy organization / commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 33,
+      "file": "033_carl_h_savit.json",
+      "entity": "Carl H. Savit",
+      "kind": "individual",
+      "role": "President, Society of Exploration Geophysicists",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 34,
+      "file": "034_comer_s_connie.json",
+      "entity": "Comer S. Connie",
+      "kind": "official",
+      "role": "Special Assistant to the Mayor-Commissioner, Government of the District of Columbia",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 35,
+      "file": "035_commonwealth_of_virginia_commission_of_o.json",
+      "entity": "Commonwealth of Virginia Commission of Outdoor Recreation",
+      "kind": "agency",
+      "role": "state agency / commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 36,
+      "file": "036_ed_youngblood.json",
+      "entity": "Ed Youngblood",
+      "kind": "individual",
+      "role": "Associate Director, American Motorcycle Association",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 37,
+      "file": "037_eleanor_heller.json",
+      "entity": "Eleanor Heller",
+      "kind": "individual",
+      "role": "Chairman, Mazama Conservation Committee",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 38,
+      "file": "038_fred_a_priewert.json",
+      "entity": "Fred A. Priewert",
+      "kind": "official",
+      "role": "Director, Iowa Conservation Commission",
+      "stance": "neutral",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 39,
+      "file": "039_gilbert_c_lagasse.json",
+      "entity": "Gilbert C. Lagasse",
+      "kind": "official",
+      "role": "Director, Louisiana State Parks and Recreation Commission",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 40,
+      "file": "040_government_of_the_district_of_columbia.json",
+      "entity": "Government of the District of Columbia",
+      "kind": "government",
+      "role": "District of Columbia State Clearinghouse / commenter",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 41,
+      "file": "041_hildamae_voght.json",
+      "entity": "Hildamae Voght",
+      "kind": "individual",
+      "role": "Executive Secretary, California Outdoor Recreation League, Inc.",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 42,
+      "file": "042_international_snowmobile_industry_associ.json",
+      "entity": "International Snowmobile Industry Association",
+      "kind": "organization",
+      "role": "industry association / commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 43,
+      "file": "043_iowa_conservation_commission.json",
+      "entity": "Iowa Conservation Commission",
+      "kind": "agency",
+      "role": "state agency / commenter",
+      "stance": "neutral",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 44,
+      "file": "044_j_gordon_arbuckle.json",
+      "entity": "J. Gordon Arbuckle",
+      "kind": "individual",
+      "role": "Counsel, Patton, Boggs, Blow, Verrill, Brand & May (for ISIA)",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 45,
+      "file": "045_louisiana_state_parks_and_recreation_com.json",
+      "entity": "Louisiana State Parks and Recreation Commission",
+      "kind": "agency",
+      "role": "state agency / commenter",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 46,
+      "file": "046_mazamas.json",
+      "entity": "Mazamas",
+      "kind": "organization",
+      "role": "outdoor recreation/conservation club / commenter",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 47,
+      "file": "047_mike_o_callaghan.json",
+      "entity": "Mike O'Callaghan",
+      "kind": "official",
+      "role": "Governor of Nevada",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 48,
+      "file": "048_oregon_environmental_council.json",
+      "entity": "Oregon Environmental Council",
+      "kind": "organization",
+      "role": "environmental advocacy organization / commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 49,
+      "file": "049_paul_h_westedt.json",
+      "entity": "Paul H. Westedt",
+      "kind": "official",
+      "role": "Director, Wyoming Recreation Commission",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 50,
+      "file": "050_peter_j_mcniff.json",
+      "entity": "Peter J. McNiff",
+      "kind": "official",
+      "role": "Chief, Planning Division, Wyoming Recreation Commission",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "written_comment",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 51,
+      "file": "051_rob_r_blackmore.json",
+      "entity": "Rob R. Blackmore",
+      "kind": "official",
+      "role": "Director, Commonwealth of Virginia Commission of Outdoor Recreation",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 52,
+      "file": "052_roger_p_worth.json",
+      "entity": "Roger P. Worth",
+      "kind": "individual",
+      "role": "Legal Counsel, Arctic Enterprises, Inc.",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 53,
+      "file": "053_scott_m_bahley.json",
+      "entity": "Scott M. Bahley",
+      "kind": "individual",
+      "role": "private citizen / commenter",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 54,
+      "file": "054_society_of_exploration_geophysicists.json",
+      "entity": "Society of Exploration Geophysicists",
+      "kind": "organization",
+      "role": "professional scientific society / commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 55,
+      "file": "055_state_of_nevada.json",
+      "entity": "State of Nevada",
+      "kind": "government",
+      "role": "state government / commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 56,
+      "file": "056_united_states_geological_survey.json",
+      "entity": "United States Geological Survey",
+      "kind": "agency",
+      "role": "federal agency / reviewer",
+      "stance": "neutral",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 57,
+      "file": "057_wyoming_recreation_commission.json",
+      "entity": "Wyoming Recreation Commission",
+      "kind": "agency",
+      "role": "state agency / commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 58,
+      "file": "058_alabama_development_office_game_and_fish.json",
+      "entity": "Alabama Development Office, Game and Fish Division (via Reynolds W. Thrasher)",
+      "kind": "agency",
+      "role": "Alabama state agency reviewer",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "written_comment",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 59,
+      "file": "059_alaska_conservation_society.json",
+      "entity": "Alaska Conservation Society",
+      "kind": "organization",
+      "role": "commenter, conservation organization",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 60,
+      "file": "060_amax_exploration_inc.json",
+      "entity": "AMAX Exploration, Inc.",
+      "kind": "organization",
+      "role": "mineral exploration company, commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 61,
+      "file": "061_american_petroleum_institute_committee_o.json",
+      "entity": "American Petroleum Institute, Committee on Exploration",
+      "kind": "organization",
+      "role": "industry organization, commenter",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 62,
+      "file": "062_charles_clayton.json",
+      "entity": "Charles Clayton",
+      "kind": "individual",
+      "role": "Publisher, Cycle News, Inc.",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 63,
+      "file": "063_charles_s_watson_jr.json",
+      "entity": "Charles S. Watson, Jr.",
+      "kind": "individual",
+      "role": "Director, Nevada Outdoor Recreation Association, Inc.",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "written_comment",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 64,
+      "file": "064_city_of_wells.json",
+      "entity": "City of Wells",
+      "kind": "government",
+      "role": "municipal government, Wells, Nevada",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 65,
+      "file": "065_cycle_news_inc.json",
+      "entity": "Cycle News, Inc.",
+      "kind": "organization",
+      "role": "motorcycle press publisher, commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 66,
+      "file": "066_david_r_cole.json",
+      "entity": "David R. Cole",
+      "kind": "individual",
+      "role": "Manager, Colorado Mining Association",
+      "stance": "opposed",
+      "statement_present": false,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 67,
+      "file": "067_environmental_defense_fund.json",
+      "entity": "Environmental Defense Fund",
+      "kind": "organization",
+      "role": "national membership organization, commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 68,
+      "file": "068_ernst_mueller.json",
+      "entity": "Ernst Mueller",
+      "kind": "individual",
+      "role": "President, Alaska Conservation Society",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 69,
+      "file": "069_fairbanks_environmental_center_inc.json",
+      "entity": "Fairbanks Environmental Center, Inc.",
+      "kind": "organization",
+      "role": "commenter, community environmental organization",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 70,
+      "file": "070_friends_of_the_earth.json",
+      "entity": "Friends of the Earth",
+      "kind": "organization",
+      "role": "national conservation organization, commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 71,
+      "file": "071_governor_mike_o_callaghan.json",
+      "entity": "Governor Mike O'Callaghan",
+      "kind": "official",
+      "role": "Governor of Nevada",
+      "stance": "opposed",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 72,
+      "file": "072_j_a_jim_hunter.json",
+      "entity": "J.A. \"Jim\" Hunter",
+      "kind": "individual",
+      "role": "President, Fairbanks Environmental Center, Inc.",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 73,
+      "file": "073_john_w_grandy_iv.json",
+      "entity": "John W. Grandy, IV",
+      "kind": "individual",
+      "role": "Administrative Assistant for Wildlife, National Parks and Conservation Association",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 74,
+      "file": "074_mineral_exploration_geologists.json",
+      "entity": "mineral exploration geologists",
+      "kind": "other",
+      "role": "group of commenters, Tucson Arizona",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 75,
+      "file": "075_national_parks_and_conservation_associat.json",
+      "entity": "National Parks and Conservation Association",
+      "kind": "organization",
+      "role": "conservation organization, commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 76,
+      "file": "076_nevada_outdoor_recreation_association_in.json",
+      "entity": "Nevada Outdoor Recreation Association, Inc.",
+      "kind": "organization",
+      "role": "commenter, conservation/recreation organization",
+      "stance": "conditional",
+      "statement_present": false,
+      "statement_form": "written_comment",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 77,
+      "file": "077_north_dakota_state_highway_department.json",
+      "entity": "North Dakota State Highway Department",
+      "kind": "agency",
+      "role": "state agency reviewer, North Dakota",
+      "stance": "neutral",
+      "statement_present": false,
+      "statement_form": "none",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 78,
+      "file": "078_oregon_state_highway_division.json",
+      "entity": "Oregon State Highway Division",
+      "kind": "agency",
+      "role": "state agency, commenter",
+      "stance": "neutral",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 79,
+      "file": "079_shelley_m_mark.json",
+      "entity": "Shelley M. Mark",
+      "kind": "official",
+      "role": "Director, Hawaii Department of Planning and Economic Development",
+      "stance": "neutral",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 80,
+      "file": "080_state_of_hawaii_department_of_planning_a.json",
+      "entity": "State of Hawaii, Department of Planning and Economic Development",
+      "kind": "agency",
+      "role": "state agency, commenter",
+      "stance": "neutral",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 81,
+      "file": "081_state_of_wisconsin_department_of_natural.json",
+      "entity": "State of Wisconsin, Department of Natural Resources",
+      "kind": "agency",
+      "role": "state agency, commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 82,
+      "file": "082_w_c_walker.json",
+      "entity": "W. C. Walker",
+      "kind": "individual",
+      "role": "Senior Staff Geologist, mineral exploration company (Douglas, Arizona)",
+      "stance": "opposed",
+      "statement_present": false,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 83,
+      "file": "083_w_howard_gray.json",
+      "entity": "W. Howard Gray",
+      "kind": "individual",
+      "role": "Chairman, AMC Public Lands Committee",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 84,
+      "file": "084_wilson_m_laird.json",
+      "entity": "Wilson M. Laird",
+      "kind": "individual",
+      "role": "Director, Committee on Exploration, American Petroleum Institute",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 85,
+      "file": "085_alexander_m_taft.json",
+      "entity": "Alexander M. Taft",
+      "kind": "official",
+      "role": "Director of Comprehensive Planning, State of New Hampshire",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 86,
+      "file": "086_bernard_w_corson.json",
+      "entity": "Bernard W. Corson",
+      "kind": "official",
+      "role": "Director, New Hampshire Fish and Game",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 87,
+      "file": "087_beula_edmiston.json",
+      "entity": "Beula Edmiston",
+      "kind": "individual",
+      "role": "representative, The Desert Protective Council",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 88,
+      "file": "088_commissioner_nicholas_johnson.json",
+      "entity": "Commissioner Nicholas Johnson",
+      "kind": "official",
+      "role": "FCC Commissioner",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 89,
+      "file": "089_continental_oil_company.json",
+      "entity": "Continental Oil Company",
+      "kind": "organization",
+      "role": "mineral exploration company, commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 90,
+      "file": "090_david_morgan.json",
+      "entity": "David Morgan",
+      "kind": "individual",
+      "role": "Planner, Bureau of Outdoor Recreation, Office of Federal-State Relations, West Virginia",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "written_comment",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 91,
+      "file": "091_david_w_king.json",
+      "entity": "David W. King",
+      "kind": "official",
+      "role": "Director, State Planning Office, New Mexico",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 92,
+      "file": "092_department_of_commerce.json",
+      "entity": "Department of Commerce",
+      "kind": "agency",
+      "role": "federal agency commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 93,
+      "file": "093_department_of_defense.json",
+      "entity": "Department of Defense",
+      "kind": "agency",
+      "role": "federal agency commenter",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 94,
+      "file": "094_federal_communications_commission.json",
+      "entity": "Federal Communications Commission",
+      "kind": "agency",
+      "role": "federal agency commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 95,
+      "file": "095_gordon_e_harmston.json",
+      "entity": "Gordon E. Harmston",
+      "kind": "official",
+      "role": "Executive Director, Utah Department of Natural Resources",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 96,
+      "file": "096_herman_sharp.json",
+      "entity": "Herman Sharp",
+      "kind": "individual",
+      "role": "First Vice-President, Western Rockhound Association",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 97,
+      "file": "097_las_vegas_review_journal.json",
+      "entity": "Las Vegas Review-Journal",
+      "kind": "organization",
+      "role": "newspaper, commenter; BLM Multiple Use Advisory Board alternate member",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 98,
+      "file": "098_mary_louise_hancock.json",
+      "entity": "Mary Louise Hancock",
+      "kind": "official",
+      "role": "Director, State Planning, New Hampshire",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "written_comment",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 99,
+      "file": "099_michael_mccloskey.json",
+      "entity": "Michael McCloskey",
+      "kind": "official",
+      "role": "Executive Director, Sierra Club",
+      "stance": "conditional",
+      "statement_present": false,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 100,
+      "file": "100_min_thin_keller.json",
+      "entity": "Min Thin Keller",
+      "kind": "individual",
+      "role": "commenter, River Falls, Wisconsin",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 101,
+      "file": "101_mine_finders_inc.json",
+      "entity": "Mine Finders, Inc.",
+      "kind": "organization",
+      "role": "mineral exploration company, commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 102,
+      "file": "102_nebraska_game_and_parks_commission.json",
+      "entity": "Nebraska Game and Parks Commission",
+      "kind": "organization",
+      "role": "state agency commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 103,
+      "file": "103_new_hampshire_air_pollution_control_agen.json",
+      "entity": "New Hampshire Air Pollution Control Agency",
+      "kind": "agency",
+      "role": "state agency commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "written_comment",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 104,
+      "file": "104_new_hampshire_fish_and_game.json",
+      "entity": "New Hampshire Fish and Game",
+      "kind": "agency",
+      "role": "state agency commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 105,
+      "file": "105_new_hampshire_state_planning.json",
+      "entity": "New Hampshire State Planning",
+      "kind": "agency",
+      "role": "state agency commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "written_comment",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 106,
+      "file": "106_new_mexico_state_planning_office.json",
+      "entity": "New Mexico State Planning Office",
+      "kind": "government",
+      "role": "state planning agency, commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 107,
+      "file": "107_north_carolina_recreation_task_force.json",
+      "entity": "North Carolina Recreation Task Force",
+      "kind": "organization",
+      "role": "inter-agency state committee",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 108,
+      "file": "108_r_c_barbley.json",
+      "entity": "R. C. Barbley",
+      "kind": "individual",
+      "role": "District Geologist, Continental Oil Company",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 109,
+      "file": "109_r_c_mebres_ii.json",
+      "entity": "R. C. Mebres II",
+      "kind": "individual",
+      "role": "Geologist, Minerals Department, Continental Oil Company",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 110,
+      "file": "110_randolph_hendricks.json",
+      "entity": "Randolph Hendricks",
+      "kind": "official",
+      "role": "Planning Coordinator, State of North Carolina Department of Administration",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 111,
+      "file": "111_robert_v_barill.json",
+      "entity": "Robert V. Barill",
+      "kind": "official",
+      "role": "Deputy Director, Office of Federal-State Relations, West Virginia",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 112,
+      "file": "112_sidney_p_galler.json",
+      "entity": "Sidney P. Galler",
+      "kind": "official",
+      "role": "Deputy Assistant Secretary for Environmental Affairs, Department of Commerce",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 113,
+      "file": "113_sierra_club.json",
+      "entity": "Sierra Club",
+      "kind": "organization",
+      "role": "environmental organization, commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 114,
+      "file": "114_state_of_missouri_department_of_communit.json",
+      "entity": "State of Missouri Department of Community Affairs",
+      "kind": "government",
+      "role": "state clearinghouse, commenter",
+      "stance": "in_favor",
+      "statement_present": false,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 115,
+      "file": "115_state_of_utah_department_of_natural_reso.json",
+      "entity": "State of Utah Department of Natural Resources",
+      "kind": "government",
+      "role": "state agency commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 116,
+      "file": "116_stewart_r_wallace.json",
+      "entity": "Stewart R. Wallace",
+      "kind": "individual",
+      "role": "President, Mine Finders, Inc.; professional geologist",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 117,
+      "file": "117_terry_l_rehma.json",
+      "entity": "Terry L. Rehma",
+      "kind": "official",
+      "role": "State Clearinghouse Coordinator, Missouri Department of Community Affairs",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 118,
+      "file": "118_the_desert_protective_council.json",
+      "entity": "The Desert Protective Council",
+      "kind": "organization",
+      "role": "non-profit conservation organization, commenter",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 119,
+      "file": "119_western_rockhound_association.json",
+      "entity": "Western Rockhound Association",
+      "kind": "organization",
+      "role": "hobbyist organization, commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 120,
+      "file": "120_willard_r_barbee.json",
+      "entity": "Willard R. Barbee",
+      "kind": "official",
+      "role": "Director, Nebraska Game and Parks Commission",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 121,
+      "file": "121_william_denneen.json",
+      "entity": "William Denneen",
+      "kind": "individual",
+      "role": "commenter, Allan Hancock College area resident",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 122,
+      "file": "122_bureau_of_indian_affairs_office_of_plann.json",
+      "entity": "Bureau of Indian Affairs, Office of Planning",
+      "kind": "agency",
+      "role": "federal agency, commenter",
+      "stance": "neutral",
+      "statement_present": false,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 123,
+      "file": "123_c_r_agnew_jr.json",
+      "entity": "C. R. Agnew Jr.",
+      "kind": "individual",
+      "role": "Director, National Campground Owners Association; Member, Executive Committee, Ski Touring Council",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 124,
+      "file": "124_carl_j_hocevar.json",
+      "entity": "Carl J. Hocevar",
+      "kind": "individual",
+      "role": "director, Idaho Environmental Council; presenter",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "written_comment",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 125,
+      "file": "125_george_w_nilsson.json",
+      "entity": "George W. Nilsson",
+      "kind": "individual",
+      "role": "President, Mining Association of Southern California; mining lawyer",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 126,
+      "file": "126_gerald_d_jayne.json",
+      "entity": "Gerald D. Jayne",
+      "kind": "individual",
+      "role": "President, Idaho Environmental Council",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 127,
+      "file": "127_greg_e_studen.json",
+      "entity": "Greg E. Studen",
+      "kind": "individual",
+      "role": "attorney, Grey & Studen, co-signer of NRDC letter",
+      "stance": "opposed",
+      "statement_present": false,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 128,
+      "file": "128_idaho_environmental_council.json",
+      "entity": "Idaho Environmental Council",
+      "kind": "organization",
+      "role": "environmental organization, commenter",
+      "stance": "opposed",
+      "statement_present": false,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 129,
+      "file": "129_indiana_sassafras_audubon.json",
+      "entity": "Indiana Sassafras Audubon",
+      "kind": "organization",
+      "role": "environmental/conservation organization, commenter",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 130,
+      "file": "130_joe_gaines.json",
+      "entity": "Joe Gaines",
+      "kind": "official",
+      "role": "Project Administrator, commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 131,
+      "file": "131_joel_l_frykman.json",
+      "entity": "Joel L. Frykman",
+      "kind": "individual",
+      "role": "President, Wyoming-Utah-Nevada Chapter of Outdoors Unlimited, Inc.",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 132,
+      "file": "132_natural_resources_defense_council_inc.json",
+      "entity": "Natural Resources Defense Council, Inc.",
+      "kind": "organization",
+      "role": "environmental advocacy organization, commenter",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 133,
+      "file": "133_richard_h_slavin.json",
+      "entity": "Richard H. Slavin",
+      "kind": "official",
+      "role": "Director, Washington State Planning and Community Affairs Agency",
+      "stance": "neutral",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 134,
+      "file": "134_south_dakota_state_planning_agency.json",
+      "entity": "South Dakota State Planning Agency",
+      "kind": "government",
+      "role": "state agency, commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 135,
+      "file": "135_stanley_k_hathaway.json",
+      "entity": "Stanley K. Hathaway",
+      "kind": "official",
+      "role": "Governor of Wyoming",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 136,
+      "file": "136_state_of_washington_planning_and_communi.json",
+      "entity": "State of Washington, Planning and Community Affairs Agency",
+      "kind": "government",
+      "role": "state agency, commenter",
+      "stance": "neutral",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 137,
+      "file": "137_state_of_wyoming.json",
+      "entity": "State of Wyoming",
+      "kind": "government",
+      "role": "state government, commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 138,
+      "file": "138_thomas_b_stoel_jr.json",
+      "entity": "Thomas B. Stoel, Jr.",
+      "kind": "individual",
+      "role": "attorney, Natural Resources Defense Council",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 139,
+      "file": "139_walter_l_criley.json",
+      "entity": "Walter L. Criley",
+      "kind": "individual",
+      "role": "commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 140,
+      "file": "140_wyoming_utah_nevada_chapter_of_outdoors_.json",
+      "entity": "Wyoming-Utah-Nevada Chapter of Outdoors Unlimited, Inc.",
+      "kind": "organization",
+      "role": "outdoor recreation organization, commenter",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 141,
+      "file": "141_a_a_hunzicker.json",
+      "entity": "A. A. Hunzicker",
+      "kind": "official",
+      "role": "Executive Vice-President, International Association of Geophysical Contractors",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 142,
+      "file": "142_a_d_ropkins_jr.json",
+      "entity": "A. D. Ropkins Jr.",
+      "kind": "individual",
+      "role": "private commenter, Las Vegas, NV",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 143,
+      "file": "143_bureau_of_land_management.json",
+      "entity": "Bureau of Land Management",
+      "kind": "agency",
+      "role": "Interior Department bureau, cooperating agency reviewer",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "written_comment",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 144,
+      "file": "144_bureau_of_reclamation.json",
+      "entity": "Bureau of Reclamation",
+      "kind": "agency",
+      "role": "Interior Department bureau reviewer",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 145,
+      "file": "145_bureau_of_sport_fisheries_and_wildlife.json",
+      "entity": "Bureau of Sport Fisheries and Wildlife",
+      "kind": "agency",
+      "role": "Interior Department bureau reviewer",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 146,
+      "file": "146_claude_e_hastings.json",
+      "entity": "Claude E. Hastings",
+      "kind": "official",
+      "role": "Environmental Protection Coordinator, Georgia Department of Natural Resources, Game and Fish Division",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "written_comment",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 147,
+      "file": "147_continental_telephone_corporation.json",
+      "entity": "Continental Telephone Corporation",
+      "kind": "organization",
+      "role": "utility company commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 148,
+      "file": "148_daniel_w_varin.json",
+      "entity": "Daniel W. Varin",
+      "kind": "official",
+      "role": "Chief, Statewide Planning, Rhode Island Department of Administration",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 149,
+      "file": "149_division_of_the_budget_state_of_kansas.json",
+      "entity": "Division of the Budget, State of Kansas",
+      "kind": "agency",
+      "role": "Kansas State Clearinghouse",
+      "stance": "neutral",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 150,
+      "file": "150_er_jon_polisle.json",
+      "entity": "Er. Jon Polisle",
+      "kind": "individual",
+      "role": "private commenter, St. Paul, MN",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 151,
+      "file": "151_gary_j_white.json",
+      "entity": "Gary J. White",
+      "kind": "individual",
+      "role": "private commenter, Nevada",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 152,
+      "file": "152_george_c_gormley.json",
+      "entity": "George C. Gormley",
+      "kind": "official",
+      "role": "Maine Environmental Improvement Commission reviewer",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "written_comment",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 153,
+      "file": "153_georgia_department_of_natural_resources_.json",
+      "entity": "Georgia Department of Natural Resources, Game and Fish Division",
+      "kind": "agency",
+      "role": "Georgia state agency reviewer",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "written_comment",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 154,
+      "file": "154_indiana_department_of_natural_resources.json",
+      "entity": "Indiana Department of Natural Resources",
+      "kind": "agency",
+      "role": "Indiana state agency reviewer",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 155,
+      "file": "155_international_association_of_geophysical.json",
+      "entity": "International Association of Geophysical Contractors",
+      "kind": "organization",
+      "role": "industry association, commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 156,
+      "file": "156_john_e_hirten.json",
+      "entity": "John E. Hirten",
+      "kind": "official",
+      "role": "Assistant Secretary for Environment and Urban Systems (Designate), Office of the Secretary of Transportation",
+      "stance": "neutral",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 157,
+      "file": "157_kansas_forestry_fish_and_game_commission.json",
+      "entity": "Kansas Forestry, Fish and Game Commission",
+      "kind": "agency",
+      "role": "Kansas state agency reviewer",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "written_comment",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 158,
+      "file": "158_kansas_state_park_and_resources_authorit.json",
+      "entity": "Kansas State Park and Resources Authority",
+      "kind": "agency",
+      "role": "Kansas state agency reviewer",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "written_comment",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "sequence": 159,
+      "file": "159_karen_unsworth.json",
+      "entity": "Karen Unsworth",
+      "kind": "official",
+      "role": "Kansas Department of Economic Development, Planning Division",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "written_comment",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 160,
+      "file": "160_kentucky_program_development_office.json",
+      "entity": "Kentucky Program Development Office",
+      "kind": "agency",
+      "role": "Kentucky state agency reviewer",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 161,
+      "file": "161_l_w_true.json",
+      "entity": "L. W. True",
+      "kind": "official",
+      "role": "Administrator, Kentucky Program Development Office",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 162,
+      "file": "162_maine_environmental_improvement_commissi.json",
+      "entity": "Maine Environmental Improvement Commission",
+      "kind": "agency",
+      "role": "Maine state agency reviewer",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "written_comment",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 163,
+      "file": "163_maryland_department_of_natural_resources.json",
+      "entity": "Maryland Department of Natural Resources",
+      "kind": "agency",
+      "role": "Maryland state agency reviewer",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "written_comment",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 164,
+      "file": "164_maryland_department_of_state_planning.json",
+      "entity": "Maryland Department of State Planning",
+      "kind": "agency",
+      "role": "Maryland State Clearinghouse reviewer",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 165,
+      "file": "165_montebello_ecology_council.json",
+      "entity": "Montebello Ecology Council",
+      "kind": "organization",
+      "role": "environmental advocacy organization",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 166,
+      "file": "166_office_of_the_secretary_of_transportatio.json",
+      "entity": "Office of the Secretary of Transportation",
+      "kind": "agency",
+      "role": "federal agency reviewer",
+      "stance": "neutral",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 167,
+      "file": "167_ohio_department_of_natural_resources.json",
+      "entity": "Ohio Department of Natural Resources",
+      "kind": "agency",
+      "role": "Ohio state agency reviewer",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 168,
+      "file": "168_pennsylvania_office_of_state_planning_an.json",
+      "entity": "Pennsylvania Office of State Planning and Development",
+      "kind": "agency",
+      "role": "Pennsylvania state clearinghouse reviewer",
+      "stance": "neutral",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 169,
+      "file": "169_richard_spotts.json",
+      "entity": "Richard Spotts",
+      "kind": "individual",
+      "role": "President, Montebello Ecology Council",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 170,
+      "file": "170_robert_solles.json",
+      "entity": "Robert Solles",
+      "kind": "individual",
+      "role": "private commenter, Nevada",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 171,
+      "file": "171_ruth_f_weiner.json",
+      "entity": "Ruth F. Weiner",
+      "kind": "individual",
+      "role": "Chairman, Department of Physical Sciences; Associate Director, Joint Center for Environmental and Urban Problems, Florida International University",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 172,
+      "file": "172_s_donald_durfee.json",
+      "entity": "S. Donald Durfee",
+      "kind": "official",
+      "role": "Acting Director, Indiana Department of Natural Resources",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 173,
+      "file": "173_stan_elmer.json",
+      "entity": "Stan Elmer",
+      "kind": "official",
+      "role": "Chairman, Environmental Impact Evaluation Committee, Utah Department of Natural Resources",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "written_comment",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 174,
+      "file": "174_steven_k_burke.json",
+      "entity": "Steven K. Burke",
+      "kind": "individual",
+      "role": "private commenter, Nevada",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 175,
+      "file": "175_utah_department_of_natural_resources.json",
+      "entity": "Utah Department of Natural Resources",
+      "kind": "agency",
+      "role": "Utah state agency reviewer",
+      "stance": "conditional",
+      "statement_present": false,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 176,
+      "file": "176_william_b_nye.json",
+      "entity": "William B. Nye",
+      "kind": "official",
+      "role": "Director, Ohio Department of Natural Resources",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 177,
+      "file": "177_william_friedman.json",
+      "entity": "William Friedman",
+      "kind": "official",
+      "role": "Vice President — Governmental Relations, Continental Telephone Corporation",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 178,
+      "file": "178_board_of_trustees_of_the_internal_improv.json",
+      "entity": "Board of Trustees of the Internal Improvement Trust Fund",
+      "kind": "agency",
+      "role": "Florida state agency, commenter",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 179,
+      "file": "179_bryan_w_rowder.json",
+      "entity": "Bryan W. Rowder",
+      "kind": "official",
+      "role": "Manager, Bruneau Dunes State Park, Idaho",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 180,
+      "file": "180_david_h_scott.json",
+      "entity": "David H. Scott",
+      "kind": "official",
+      "role": "Director, Division of Planning, Florida Department of Transportation",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 181,
+      "file": "181_division_of_wildlife_denver_colorado.json",
+      "entity": "Division of Wildlife (Denver, Colorado)",
+      "kind": "agency",
+      "role": "state wildlife agency, commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 182,
+      "file": "182_don_l_spicer.json",
+      "entity": "Don L. Spicer",
+      "kind": "official",
+      "role": "Chief, Bureau of Intergovernmental Relations, Florida Division of State Planning",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 183,
+      "file": "183_doyle_conner.json",
+      "entity": "Doyle Conner",
+      "kind": "official",
+      "role": "Commissioner of Agriculture, Florida",
+      "stance": "neutral",
+      "statement_present": true,
+      "statement_form": "written_comment",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 184,
+      "file": "184_florida_department_of_agriculture_and_co.json",
+      "entity": "Florida Department of Agriculture and Consumer Services",
+      "kind": "agency",
+      "role": "state agency, commenter",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "written_comment",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 185,
+      "file": "185_florida_department_of_community_affairs.json",
+      "entity": "Florida Department of Community Affairs",
+      "kind": "agency",
+      "role": "state agency, commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 186,
+      "file": "186_florida_department_of_legal_affairs.json",
+      "entity": "Florida Department of Legal Affairs",
+      "kind": "agency",
+      "role": "state agency, commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 187,
+      "file": "187_florida_department_of_natural_resources.json",
+      "entity": "Florida Department of Natural Resources",
+      "kind": "agency",
+      "role": "state agency, commenter",
+      "stance": "in_favor",
+      "statement_present": false,
+      "statement_form": "narrator_paraphrase",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 188,
+      "file": "188_florida_department_of_state_division_of_.json",
+      "entity": "Florida Department of State - Division of Archives, History, and Records Management",
+      "kind": "agency",
+      "role": "state agency, commenter",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 189,
+      "file": "189_florida_department_of_transportation_div.json",
+      "entity": "Florida Department of Transportation - Division of Transportation Planning and Programming",
+      "kind": "agency",
+      "role": "state agency, commenter",
+      "stance": "in_favor",
+      "statement_present": false,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 190,
+      "file": "190_florida_game_and_fresh_water_fish_commis.json",
+      "entity": "Florida Game and Fresh Water Fish Commission",
+      "kind": "agency",
+      "role": "state wildlife agency, commenter",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 191,
+      "file": "191_h_e_wallace.json",
+      "entity": "H. E. Wallace",
+      "kind": "official",
+      "role": "Assistant Director, Florida Game and Fresh Water Fish Commission",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 192,
+      "file": "192_harry_r_woodward.json",
+      "entity": "Harry R. Woodward",
+      "kind": "official",
+      "role": "Director, Division of Wildlife, Denver, Colorado",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 193,
+      "file": "193_henry_n_barkhausen.json",
+      "entity": "Henry N. Barkhausen",
+      "kind": "official",
+      "role": "Director, Illinois Department of Conservation",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 194,
+      "file": "194_illinois_department_of_conservation.json",
+      "entity": "Illinois Department of Conservation",
+      "kind": "agency",
+      "role": "state agency, commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 195,
+      "file": "195_joel_kuperberg.json",
+      "entity": "Joel Kuperberg",
+      "kind": "official",
+      "role": "Executive Director, Board of Trustees of the Internal Improvement Trust Fund, Florida",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 196,
+      "file": "196_kessler_r_cannon.json",
+      "entity": "Kessler R. Cannon",
+      "kind": "official",
+      "role": "Assistant to the Governor, Natural Resources, Oregon",
+      "stance": "neutral",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 197,
+      "file": "197_ladd_s_gordon.json",
+      "entity": "Ladd S. Gordon",
+      "kind": "official",
+      "role": "Director, New Mexico Department of Game and Fish",
+      "stance": "in_favor",
+      "statement_present": false,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 198,
+      "file": "198_lee_w_moses.json",
+      "entity": "Lee W. Moses",
+      "kind": "official",
+      "role": "Director, Recreation Vehicle Division, Trailer Coach Association",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 199,
+      "file": "199_national_park_service.json",
+      "entity": "National Park Service",
+      "kind": "agency",
+      "role": "federal agency, cooperating agency commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 200,
+      "file": "200_new_mexico_department_of_game_and_fish.json",
+      "entity": "New Mexico Department of Game and Fish",
+      "kind": "agency",
+      "role": "state wildlife agency, commenter",
+      "stance": "in_favor",
+      "statement_present": false,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 201,
+      "file": "201_new_mexico_state_park_and_recreation_com.json",
+      "entity": "New Mexico State Park and Recreation Commission",
+      "kind": "agency",
+      "role": "state agency, regulator",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "written_comment",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 202,
+      "file": "202_ohio_department_of_natural_resources.json",
+      "entity": "Ohio Department of Natural Resources",
+      "kind": "agency",
+      "role": "state agency, commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 203,
+      "file": "203_r_charles_shepherd.json",
+      "entity": "R. Charles Shepherd",
+      "kind": "official",
+      "role": "Director, Division of Technical Assistance, Florida Department of Community Affairs",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 204,
+      "file": "204_ray_g_l_amoreaux.json",
+      "entity": "Ray G. L'Amoreaux",
+      "kind": "official",
+      "role": "Director, Division of Transportation Planning and Programming, Florida Department of Transportation",
+      "stance": "in_favor",
+      "statement_present": false,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 205,
+      "file": "205_robert_l_shevin.json",
+      "entity": "Robert L. Shevin",
+      "kind": "official",
+      "role": "Attorney General, State of Florida",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 206,
+      "file": "206_robert_williams.json",
+      "entity": "Robert Williams",
+      "kind": "official",
+      "role": "Director, Florida Division of Archives, History, and Records Management",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 207,
+      "file": "207_state_planning_office_new_mexico.json",
+      "entity": "State Planning Office (New Mexico)",
+      "kind": "agency",
+      "role": "state planning agency, commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 208,
+      "file": "208_trailer_coach_association.json",
+      "entity": "Trailer Coach Association",
+      "kind": "organization",
+      "role": "industry association, commenter",
+      "stance": "in_favor",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 209,
+      "file": "209_william_b_nye.json",
+      "entity": "William B. Nye",
+      "kind": "official",
+      "role": "Director, Ohio Department of Natural Resources",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 210,
+      "file": "210_antje_b_weaver.json",
+      "entity": "Antje B. Weaver",
+      "kind": "individual",
+      "role": "commenter",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 211,
+      "file": "211_david_tillotson.json",
+      "entity": "David Tillotson",
+      "kind": "individual",
+      "role": "President, Milwaukee Audubon Society",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 212,
+      "file": "212_environmental_protection_agency.json",
+      "entity": "Environmental Protection Agency",
+      "kind": "agency",
+      "role": "federal agency reviewer",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 213,
+      "file": "213_federated_conservationists_of_westcheste.json",
+      "entity": "Federated Conservationists of Westchester County, Inc.",
+      "kind": "organization",
+      "role": "environmental organization, commenter",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 214,
+      "file": "214_milwaukee_audubon_society.json",
+      "entity": "Milwaukee Audubon Society",
+      "kind": "organization",
+      "role": "conservation organization, commenter",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 215,
+      "file": "215_motor_vehicle_manufacturers_association_.json",
+      "entity": "Motor Vehicle Manufacturers Association of the United States, Inc.",
+      "kind": "organization",
+      "role": "trade association, commenter",
+      "stance": "conditional",
+      "statement_present": false,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 216,
+      "file": "216_mrs_david_c_donaldson.json",
+      "entity": "Mrs. David C. Donaldson",
+      "kind": "official",
+      "role": "President, Federated Conservationists of Westchester County, Inc.",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "sequence": 217,
+      "file": "217_r_h_schif.json",
+      "entity": "R. H. Schif",
+      "kind": "individual",
+      "role": "commenter, Glenwood Springs CO resident",
+      "stance": "opposed",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 218,
+      "file": "218_roger_a_dean.json",
+      "entity": "Roger A. Dean",
+      "kind": "individual",
+      "role": "commenter, Albuquerque NM resident",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "sequence": 219,
+      "file": "219_sheldon_meyers.json",
+      "entity": "Sheldon Meyers",
+      "kind": "official",
+      "role": "Director, Office of Federal Activities, EPA",
+      "stance": "conditional",
+      "statement_present": true,
+      "statement_form": "letter",
+      "needs_human_review": false,
+      "human_review_reasons": []
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "sequence": 191,
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "entity": "H. E. Wallace",
+  "kind": "official",
+  "role": "Assistant Director, Florida Game and Fresh Water Fish Commission",
+  "stance": "opposed",
+  "summary": "H. E. Wallace, on behalf of the Florida Game and Fresh Water Fish Commission, opposes permitting off-road vehicle use on most Department of Interior lands, arguing that such vehicles damage watersheds, plant and animal life, and disrupt wildlife feeding and breeding grounds. The Commission believes that limiting vehicle accessibility to recreational areas actually improves the quality of recreation.",
+  "statement": {
+    "present": true,
+    "form": "letter",
+    "text": "Dear Mr. Spicer:\nThe Floride Came and Fresh Water Fish Commission, through our biologist Mr. Jim McDaniels, has reviewed the above referenced environmental impact statement regarding the use of off-road vehicles and offers the following comments.\nOur agency, whose prime responsibility is the management of game and fish, believes that most Department of Interior lands should be closed to off-road vehicle use. Damage to watersheds, plant and animal life, disruption of feeding and breeding grounds for wildlife are but a few of the problems caused by the use of such vehicles. Limiting the accessibility of recreational areas provides better quality recreation.\nWe appreciate the opportunity to comment on this project. If we may be of further assistance, please advise.\nSincerely,\nH. E. Wallace\nAssistant Director",
+    "opening_anchor": "Dear Mr. Spicer:\n\nThe Floride Came and Fresh Water Fish Commission, through our biologist Mr. Jim McDaniels, has reviewed the above referenced environmental impact statement",
+    "closing_anchor": "We appreciate the opportunity to comment on this project. If we may be of further assistance, please advise.\n\nSincerely,\nH. E. Wallace\nAssistant Director",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true,
+    "window_pages": [
+      312,
+      332
+    ]
+  },
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "evidence_pages": [
+    "322"
+  ],
+  "summary_quote": "Our agency, whose prime responsibility is the management of game and fish, believes that most Department of Interior lands should be closed to off-road vehicle use.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "322"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "Our agency, whose prime responsibility is the management of game and fish, believes that most Department of Interior lands should be closed to off-road vehicle use.",
+      "quote_verified": true,
+      "stance_basis": "believes most Interior lands should be closed to ORV use",
+      "entity_as_written": "H. E. Wallace",
+      "role_as_written": "Assistant Director, Florida Game and Fresh Water Fish Commission"
+    }
+  ]
+}
