@@ -3,39 +3,44 @@ statements_pipeline orchestrator.
 
 Per-doc flow:
     chunk (segment_a) → extract DISCOVERY-only (local) → verify (people_pipeline) →
-    merge by entity (local) → find_statement + stance (local) →
-    write per-person folder + index.json (writer)
+    merge by entity (local) → find_statement + stance + response (local) →
+    write complaints/, responses/, sequential index.json (writer)
 
-Stance is decided downstream of merge by find_statement (off the full
-statement / paraphrase / sectional text). Each row carries `stance`,
-`stance_confidence` ∈ {high, medium, low}, and `stance_basis`.
+Stance is decided at the ENTITY level by find_statement (off the full
+statement / paraphrase / sectional text). Each entity can produce multiple
+COMPLAINTS — one per distinct mention in the doc-text window. Each complaint
+carries an optional agency RESPONSE (parent-child).
 
 Doc source:
     By default, processes every doc found in segment_a's PAGES_DATA_DIR
     (`Documents/output/<doc_id>/page_NNNN.json`). Per-page JSONs are joined
     into a single full_text by `pages.load_doc`; chunking and the
-    find_statement window slice contiguous spans from that joined text, so the
-    LLM never sees raw per-page boundaries.
+    find_statement window slice contiguous spans from that joined text.
 
     title/work_id come from `inventory.lookup_work(doc_id)` when the doc is
     in the local MARC-shaped inventory CSV; otherwise they're left empty.
 
 Subcommands:
     process              run pipeline against every doc in PAGES_DATA_DIR
-    process --doc D      run on a specific doc_id (need not be in the inventory)
+    process --doc D      run on a specific doc_id
     process --limit N    process at most N docs
     process --force      ignore the raw_extract checkpoint
     status               progress + cost summary
 
 Output:
     output/people/<doc_id>/
-    ├── index.json
-    ├── 001_sierra_club.json
-    └── 002_john_smith.json
-    ...
+    ├── index.json                    # sequential, link-only
+    ├── complaints/                   # parents
+    │   ├── <doc_id>_C001_sierra_club.json
+    │   └── ...
+    └── responses/                    # children
+        ├── <doc_id>_R001_blm.json
+        └── ...
 
-The extract step is checkpointed per-doc at output/raw_extract/<doc_id>.json so
-reruns of find_statement don't re-call the (expensive) per-chunk extractor.
+The extract step is checkpointed per-doc at output/raw_extract/<doc_id>.json
+so reruns of find_statement don't re-call the (expensive) per-chunk extractor.
+The writer wipes its doc dir at the start of each write so stale ghost files
+from prior runs don't accumulate.
 """
 
 from __future__ import annotations
@@ -206,14 +211,12 @@ def process_doc(selection_entry: dict, doc: Doc, force: bool = False) -> dict:
     )
     cost = total_usage_summary["total"]["cost_usd"]
     rc = summary.get("review_counts") or {}
-    sc = summary.get("statement_counts") or {}
     cc = summary.get("stance_confidence_counts") or {}
-    rsp = summary.get("response_counts") or {}
-    n_para = summary.get("n_paraphrases", 0)
     log.info(
-        f"Wrote {summary['out_dir']} ({summary['n_people']} people + {n_para} paraphrases; "
-        f"statement_present={sc.get('present', 0)} "
-        f"response_present={rsp.get('present', 0)} "
+        f"Wrote {summary['out_dir']} "
+        f"({summary['n_complainers']} complainers, "
+        f"{summary['n_complaints']} complaints, "
+        f"{summary['n_responses']} responses; "
         f"conf=H{cc.get('high', 0)}/M{cc.get('medium', 0)}/L{cc.get('low', 0)} "
         f"needs_review={rc.get('needs_review', 0)}) "
         f"in {elapsed}s — est. cost ${cost:.4f}"
@@ -284,17 +287,16 @@ def cmd_status(args) -> int:
     doc_ids = list_doc_ids()
     print(f"Docs available in PAGES_DATA_DIR: {len(doc_ids)}")
     have_raw = sum(1 for d in doc_ids if (settings.RAW_EXTRACT_DIR / f"{d}.json").exists())
-    have_people = sum(
+    have_complaints = sum(
         1 for d in doc_ids
         if (settings.PEOPLE_DIR / d / "index.json").exists()
     )
     print(f"Raw extract done: {have_raw}/{len(doc_ids)}")
-    print(f"Per-person dirs: {have_people}/{len(doc_ids)}")
+    print(f"Per-doc people/ dirs with index.json: {have_complaints}/{len(doc_ids)}")
 
     # Aggregate counts across completed docs.
     totals = {
-        "people": 0, "paraphrases": 0,
-        "needs_review": 0, "statement_present": 0, "response_present": 0,
+        "complainers": 0, "complaints": 0, "responses": 0, "needs_review": 0,
     }
     conf_totals = {"high": 0, "medium": 0, "low": 0, "unknown": 0}
     cost_total = 0.0
@@ -306,14 +308,11 @@ def cmd_status(args) -> int:
             continue
         with open(p) as f:
             data = json.load(f)
-        totals["people"] += data.get("n_people", 0)
-        totals["paraphrases"] += data.get("n_paraphrases", 0)
+        totals["complainers"] += data.get("n_complainers", 0)
+        totals["complaints"] += data.get("n_complaints", 0)
+        totals["responses"] += data.get("n_responses", 0)
         rc = data.get("review_counts") or {}
         totals["needs_review"] += rc.get("needs_review", 0)
-        sc = data.get("statement_counts") or {}
-        totals["statement_present"] += sc.get("present", 0)
-        rsp = data.get("response_counts") or {}
-        totals["response_present"] += rsp.get("present", 0)
         cc = data.get("stance_confidence_counts") or {}
         for k in conf_totals:
             conf_totals[k] += cc.get(k, 0)
@@ -321,18 +320,18 @@ def cmd_status(args) -> int:
         cost_total += usage_total.get("cost_usd", 0) or 0
         in_total += usage_total.get("input_tokens", 0) or 0
         out_total += usage_total.get("output_tokens", 0) or 0
-    if totals["people"] or totals["paraphrases"]:
+    if totals["complainers"]:
         print(
-            f"\nAcross completed docs: {totals['people']} main people + "
-            f"{totals['paraphrases']} paraphrases"
+            f"\nAcross completed docs: "
+            f"{totals['complainers']} complainers, "
+            f"{totals['complaints']} complaints, "
+            f"{totals['responses']} responses"
         )
         print(
-            f"  statement_present={totals['statement_present']}  "
-            f"response_present={totals['response_present']}  "
-            f"needs_review={totals['needs_review']}"
+            f"  needs_review={totals['needs_review']}"
         )
         print(
-            f"  Stance confidence (main rows): high={conf_totals['high']}  "
+            f"  Stance confidence (entity-level): high={conf_totals['high']}  "
             f"medium={conf_totals['medium']}  low={conf_totals['low']}"
             + (f"  unknown={conf_totals['unknown']}" if conf_totals["unknown"] else "")
         )
