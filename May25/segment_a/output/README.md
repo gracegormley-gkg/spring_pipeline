@@ -71,6 +71,8 @@ field alongside its evidence, critic verdict, and empty `your_grade` / `your_not
 columns for review. Header comment lines document grade options and page-number
 provenance.
 
+**I (Grace) am currently grading the data that we have. Following the first 9 being graded, I will adjust the process and continue with another 10, then repeating the process again. Please email me at gracegormley@gmail.com with questions!**
+
 ## Support files
 
 - **`selection.json`** — the sampling plan for this batch: RNG seed, per-length
