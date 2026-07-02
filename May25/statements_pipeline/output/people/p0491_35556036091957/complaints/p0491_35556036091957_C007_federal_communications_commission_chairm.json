@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p0491_35556036091957_C007",
+  "complainer_id": "p0491_35556036091957_K016",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 7,
+  "entity": "Federal Communications Commission, Chairman",
+  "kind": "official",
+  "role": "Federal agency reviewer",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase indicates general agreement with objectives but expresses specific concern about access for communications facilities on public lands",
+  "summary": "The Federal Communications Commission Chairman indicated general agreement with the objectives of the environmental statement but expressed concern that common carriers and others with wire, cable, or radio communications facilities on public lands retain reasonable access to those facilities for construction, operation, and maintenance. This position appears twice in the document window — once in the main body summary of agency comments and once in the appendix summary — both as narrator paraphrases of the same comment (response #41).",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The FCC Chairman indicated general agreement with the environmental statement's objectives but expressed concern that common carriers and others with wire, cable, or radio communications facilities on public lands have reasonable access to such facilities for construction, operation, and maintenance.",
+  "evidence_pages": [
+    "21"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "Federal Communications Commission, Chairman - indicated general agreement with the objectives of the environmental statement. Expressed concern that provisions be made so that common carriers and others who have wire, cable, or radio communications facilities on public lands have reasonable access to such facilities to the extent necessary for construction, operation, and maintenance for such facilities.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "21"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Federal Communications Commission, Chairman - indicated general agreement with the objectives of the environmental statement. Expressed concern that provisions be made so that common carriers and others who have wire, cable, or radio communications facilities on public lands have reasonable access to such facilities to the extent necessary for construction, operation, and maintenance for such facilities.",
+      "quote_verified": false,
+      "entity_as_written": "Federal Communications Commission, Chairman",
+      "role_as_written": "Federal agency reviewer"
+    }
+  ],
+  "window_pages": [
+    11,
+    31
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 16,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036811230_C044",
+  "complainer_id": "p1074_35556036811230_K046",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 44,
+  "entity": "Greater Buffalo Development Foundation",
+  "kind": "organization",
+  "role": "civic/development organization, commenter",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes Foundation's identification of landlocked businesses as factual input, neither supporting nor opposing the project",
+  "summary": "The Greater Buffalo Development Foundation is cited in the EIS as having identified, in conjunction with a 1971 mall/subway proposal, 55 businesses that would be 'landlocked' by closing the mall to service vehicles. This finding is used by the document to inform discussion of service vehicle access needs on the proposed pedestrian mall. The Foundation's position is presented as a factual reference rather than an expression of support or opposition to the current project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Greater Buffalo Development Foundation identified 55 businesses that would be 'landlocked' by closing the mall to service vehicles, necessitating either nonbusiness-hours service vehicle access or alternative transfer arrangements.",
+  "evidence_pages": [
+    "195"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036811230_R004"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "In conjunction with a 1971 proposal for a covered Main Street mall with a subway rail transit line (Ref. 24), the Greater Buffalo Development Foundation identified 55 businesses that would be \"landlocked\" by closing the mall to service vehicles",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "195"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In conjunction with a 1971 proposal for a covered Main Street mall with a subway rail transit line (Ref. 24), the Greater Buffalo Development Foundation identified 55 businesses that would be \"landlocked\" by closing the mall to service vehicles",
+      "quote_verified": true,
+      "entity_as_written": "Greater Buffalo Development Foundation",
+      "role_as_written": "civic/development organization, commenter"
+    }
+  ],
+  "window_pages": [
+    185,
+    205
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 46,
+  "synthetic_no_complaint": false
+}

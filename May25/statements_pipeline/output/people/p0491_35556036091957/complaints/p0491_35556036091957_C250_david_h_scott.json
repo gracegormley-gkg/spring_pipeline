@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C250",
+  "complainer_id": "p0491_35556036091957_K195",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 250,
+  "entity": "David H. Scott",
+  "kind": "official",
+  "role": "Director, Division of Planning, Florida Department of Transportation",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly stating support for the position of the Department of the Interior",
+  "summary": "David H. Scott, Director of the Division of Planning at the Florida Department of Transportation, reviewed the draft environmental impact statement pertaining to off-road vehicle use on public lands and expressed support for it. He stated that the document's intent is consistent with Department programs and that his agency supports the position of the Department of the Interior.",
+  "form": "letter",
+  "complaint_summary": "David H. Scott states that the draft EIS has been reviewed for possible impact on the agency, finds it consistent with Department programs, and supports the position of the Department of the Interior.",
+  "evidence_pages": [
+    "324"
+  ],
+  "statement": {
+    "text": "The deaft a viron model impact statement pertaining to the use of off read vahicles on public lands has been reviewed for possible impact on the regardity. We believe that the intent of this document is comes that with Department programs and we support the position of the forestory of the Interior.\nVery truly yours,\nDavid H. Scott, Director Division of Planning\nDHS: mi.j",
+    "opening_anchor": "The deaft a viron model impact statement pertaining to the use of off read vahicles on public lands has been reviewed for possible impact on the regardity.",
+    "closing_anchor": "David H. Scott, Director Division of Planning\nDHS: mi.j",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We believe that the intent of this document is comes that with Department programs and we support the position of the forestory of the Interior.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "324"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We believe that the intent of this document is comes that with Department programs and we support the position of the forestory of the Interior.",
+      "quote_verified": true,
+      "entity_as_written": "David H. Scott",
+      "role_as_written": "Director, Division of Planning, Florida Department of Transportation"
+    }
+  ],
+  "window_pages": [
+    314,
+    334
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 195,
+  "synthetic_no_complaint": false
+}

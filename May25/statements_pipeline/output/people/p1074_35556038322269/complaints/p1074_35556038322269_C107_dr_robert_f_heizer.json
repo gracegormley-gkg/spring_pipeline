@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556038322269_C107",
+  "complainer_id": "p1074_35556038322269_K075",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 107,
+  "entity": "Dr. Robert F. Heizer",
+  "kind": "individual",
+  "role": "Archaeologist who recorded Rancho La Brea deposits",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "mentioned only as the archaeologist who recorded the site in 1949, no position expressed on the project",
+  "summary": "Dr. Robert F. Heizer is referenced solely in his historical capacity as the archaeologist who recorded the Rancho La Brea deposits as archaeological site LAn-159 in 1949. He is cited as a source of record rather than as a commenter or stakeholder expressing any view on the proposed transit project. No position for or against the project is attributed to him.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "259"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual",
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "The Rancho La Brea deposits were recorded as an archaeological site LAn-159, by Dr. Robert F. Heizer in 1949.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "259"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Rancho La Brea deposits were recorded as an archaeological site LAn-159, by Dr. Robert F. Heizer in 1949.",
+      "quote_verified": true,
+      "entity_as_written": "Dr. Robert F. Heizer",
+      "role_as_written": "Archaeologist who recorded Rancho La Brea deposits"
+    }
+  ],
+  "window_pages": [
+    249,
+    269
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 75,
+  "synthetic_no_complaint": true
+}

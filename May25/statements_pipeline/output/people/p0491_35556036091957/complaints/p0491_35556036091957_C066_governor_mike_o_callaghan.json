@@ -1,0 +1,68 @@
+{
+  "complaint_id": "p0491_35556036091957_C066",
+  "complainer_id": "p0491_35556036091957_K042",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 66,
+  "entity": "Governor Mike O'Callaghan",
+  "kind": "official",
+  "role": "Governor of Nevada",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter urging local consultation before any closures or restrictions on ORV use",
+  "summary": "Governor Mike O'Callaghan wrote to Secretary Morton on July 3, 1972, expressing concern that local and state government needs would be ignored in implementing Executive Order 11644, and urging that county commissioners and city officials receive copies of the Draft Environmental Statement and that hearings be held in each county seat before implementation. He was also referenced critically by the Nevada Outdoor Recreation Association, which objected strenuously to remarks he made in the Nevada press on July 3-4 as naive and irrelevant, suggesting he had abandoned earlier environmental concerns.",
+  "form": "letter",
+  "complaint_summary": "Governor O'Callaghan urges Secretary Morton to consult local and state entities—specifically Nevada's 17 county commissioners and city officials—before closing or restricting any areas to off-road vehicles, and calls for public hearings in each county seat prior to implementing Executive Order 11644.",
+  "evidence_pages": [
+    "87"
+  ],
+  "statement": {
+    "text": "I have recently had the opportunity to review your letter of May 5, 1972, instructing your assistant secretaries of Public Land Management, Fish and Wild Life and Parks, and Water and Power of departmental policy on off-road vehicle use on federal lands.\nI have great concern that in implementing the President's Executive Order 11644, dated February 8, 1972, that consideration of local and state government needs will be ignored by your administrators. As you well know, Nevada is 87 percent federally owned and the people of Nevada have historically enjoyed the great open spaces. I urge you to seek advice and council of local entities prior to closing or restricting any areas to offroad vehicles.\nIn Nevada, I believe that the County Commissioners of the 17 counties plus the elected city officials in these counties should all receive copies of the Draft Environmental Statement immediately so they may make written comments to you. Furthermore, hearings by the Department of Interior should be held in each county seat prior to the implementation of Executive Order 11644 pertaining to use of off-road vehicles on the public lands.\nI feel that unless the needs and desires of the local people are given proper consideration, that eventually Congress will step in and prescribe off-road management practices for all federal land managing agencies.\nI look forward to you advising your staff of this important need.\nSincerely,\n12\nGovernor of Neva",
+    "opening_anchor": "I have recently had the opportunity to review your letter of May 5, 1972, instructing your assistant secretaries of Public Land Management",
+    "closing_anchor": "I look forward to you advising your staff of this important need.\n\nSincerely,\n12\nGovernor of Neva",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "we object-most strenuously—to the naive, irrelevant remarks attributed to Governor Mike O'Callaghan in the Nevada press last July 3 and 4.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "87"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "I urge you to seek advice and council of local entities prior to closing or restricting any areas to offroad vehicles.",
+      "quote_verified": true,
+      "entity_as_written": "Mike O'Callaghan",
+      "role_as_written": "Governor of Nevada"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "112"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "we object-most strenuously—to the naive, irrelevant remarks attributed to Governor Mike O'Callaghan in the Nevada press last July 3 and 4.",
+      "quote_verified": true,
+      "entity_as_written": "Governor Mike O'Callaghan",
+      "role_as_written": "Governor of Nevada"
+    }
+  ],
+  "window_pages": [
+    77,
+    112
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 42,
+  "synthetic_no_complaint": false
+}

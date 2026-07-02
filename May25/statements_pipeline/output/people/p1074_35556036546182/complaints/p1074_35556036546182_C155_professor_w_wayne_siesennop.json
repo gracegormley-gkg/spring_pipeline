@@ -1,0 +1,61 @@
+{
+  "complaint_id": "p1074_35556036546182_C155",
+  "complainer_id": "p1074_35556036546182_K127",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 155,
+  "entity": "Professor W. Wayne Siesennop",
+  "kind": "individual",
+  "role": "Assistant Professor of Mechanical Engineering, UWM, commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "testified and wrote that Draft EIS was deficient for not addressing combined airport and spur noise exposure",
+  "summary": "Professor W. Wayne Siesennop, an Assistant Professor of Mechanical Engineering at UWM, was requested by a private group of citizens to evaluate the noise exposure forecast in the Draft EIS. He testified at the public hearing and submitted a supplementary letter, both raising the same concern that the Draft EIS was deficient because it failed to address the combined noise exposure from the Airport Spur and aircraft noise together. His complaints received a response directing readers to pages 121 and 125 of the Final EIS.",
+  "form": "letter",
+  "complaint_summary": "Siesennop submitted a letter supplementing his public hearing testimony, reiterating his concern that the Draft EIS failed to address the combined noise exposure from the Airport Spur and aircraft noise.",
+  "evidence_pages": [
+    "248"
+  ],
+  "statement": {
+    "text": "Professor W. Wayne Siesennop\nAssistant Professor of\nMechanical Engineering - UWM\nThis letter supplements his\ne)\ntestimony at the public hearing.\nf)\ng)\nSee pages 121 and 125 for a response.",
+    "opening_anchor": "Professor W. Wayne Siesennop\nAssistant Professor of\nMechanical Engineering - UWM\nThis letter supplements his\ne)\ntestimony at the public hearing.",
+    "closing_anchor": "See pages 121 and 125 for a response.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036546182_R074"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual",
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "This letter supplements his testimony at the public hearing.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "243"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "This letter supplements his testimony at the public hearing.",
+      "quote_verified": false,
+      "entity_as_written": "Professor W. Wayne Siesennop",
+      "role_as_written": "Assistant Professor of Mechanical Engineering, UWM, commenter"
+    }
+  ],
+  "window_pages": [
+    233,
+    253
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 127,
+  "synthetic_no_complaint": false
+}

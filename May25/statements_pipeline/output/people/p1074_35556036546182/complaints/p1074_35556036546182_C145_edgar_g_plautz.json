@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C145",
+  "complainer_id": "p1074_35556036546182_K114",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 145,
+  "entity": "Edgar G. Plautz",
+  "kind": "individual",
+  "role": "Private Citizen, commenter",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase states Plautz represented a group supporting Airport Spur construction",
+  "summary": "Edgar G. Plautz appeared as a commenter representing a group of individuals who support construction of the Airport Spur, arguing it will relieve existing congestion and hazards on existing facilities in the area. The document notes no response was necessary to his supportive testimony.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Plautz represented a group of individuals who support construction of the Airport Spur because it will relieve existing congestion and hazards on existing facilities in the area.",
+  "evidence_pages": [
+    "246"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R064"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Represented a group of individuals who support construction of the Airport Spur because it will relieve the existing congestion and hazards on existing facilities in area.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "246"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Represented a group of individuals who support construction of the Airport Spur because it will relieve the existing congestion and hazards on existing facilities in area.",
+      "quote_verified": true,
+      "entity_as_written": "Edgar G. Plautz",
+      "role_as_written": "Private Citizen, commenter"
+    }
+  ],
+  "window_pages": [
+    236,
+    256
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 114,
+  "synthetic_no_complaint": false
+}

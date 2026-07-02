@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C217",
+  "complainer_id": "p0491_35556036091957_K207",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 217,
+  "entity": "Henry N. Barkhausen",
+  "kind": "official",
+  "role": "Director, Illinois Department of Conservation",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter commends the EIS but raises multiple concerns about ORV use, enforcement, environmental damage, and the need for limitations",
+  "summary": "Henry N. Barkhausen, Director of the Illinois Department of Conservation, submitted a letter and attached comments generally commending the Draft Environmental Statement as comprehensive while expressing significant reservations about ORV use on public lands. He argued that ORV use has been imposed by default rather than design, that the statement is overly promotional of ORV use, and that limitations must be imposed to prevent environmental damage. He also raised concerns about enforcement difficulties, the inadequacy of registration fees to cover environmental damage, and the risk that federal guidelines will create pressure on smaller state properties.",
+  "form": "letter",
+  "complaint_summary": "Barkhausen opens with general commendation of the EIS as comprehensive but signals that attached comments contain substantive concerns.",
+  "evidence_pages": [
+    "296"
+  ],
+  "statement": {
+    "text": "It is with pleasure the Illinois Department of Conservation responds to your invitation to review the draft \"Environmental Statement Pertaining to Use of Off-the-Road Recreation Vehicles\".\nIn general, we feel the Statement and the associated ORRV Task Force Study is very comprehensive and we wish to commend the Department of the Interior for taking the initiative regarding this work.\nWe do, however, have several comments regarding the Statement which I am attaching to this letter.\nSincerely,\nHenry N. Barkhausen Director",
+    "opening_anchor": "It is with pleasure the Illinois Department of Conservation responds to your invitation to review the draft \"Environmental Statement Pertaining to Use of Off-the-Road Recreation Vehicles\".",
+    "closing_anchor": "We do, however, have several comments regarding the Statement which I am attaching to this letter.\n\nSincerely,\nHenry N. Barkhausen\nDirector",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "In general, we feel the Statement and the associated ORRV Task Force Study is very comprehensive and we wish to commend the Department of the Interior for taking the initiative regarding this work.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "296"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "In general, we feel the Statement and the associated ORRV Task Force Study is very comprehensive and we wish to commend the Department of the Interior for taking the initiative regarding this work.",
+      "quote_verified": true,
+      "entity_as_written": "Henry N. Barkhausen",
+      "role_as_written": "Director, Illinois Department of Conservation"
+    }
+  ],
+  "window_pages": [
+    286,
+    306
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 207,
+  "synthetic_no_complaint": false
+}

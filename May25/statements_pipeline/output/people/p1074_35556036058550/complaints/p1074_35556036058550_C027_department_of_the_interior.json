@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036058550_C027",
+  "complainer_id": "p1074_35556036058550_K008",
+  "doc_id": "p1074_35556036058550",
+  "work_id": "csv:35556036058550",
+  "order": 27,
+  "entity": "Department of the Interior",
+  "kind": "agency",
+  "role": "Federal agency commenter on draft EIS",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "multiple paraphrased comments requesting more detail, raising concerns about site conditions, psychological impacts, mineral industries, and format corrections",
+  "summary": "The Department of the Interior submitted multiple comments on the draft Environmental Impact Statement for Operation BREAKTHROUGH, raising concerns about insufficient site-specific details, site conditions and amenities, psychological impacts of dense housing, future development controls, mineral industry impacts, prior use of new materials, solid waste utilization, and an incorrect format. HUD responded to each comment, generally pointing to the final statement for elaboration or explaining why certain issues were outside the scope of BREAKTHROUGH.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Department of the Interior raised concerns about the psychological reaction of residents to too-close living in massive multi-site housing.",
+  "evidence_pages": [
+    "21"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036058550_R021"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Comment: Develop details for each site.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "21"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Comment: Develop details for each site.",
+      "quote_verified": true,
+      "entity_as_written": "Department of the Interior",
+      "role_as_written": "Federal agency commenter on draft EIS"
+    }
+  ],
+  "window_pages": [
+    11,
+    31
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 8,
+  "synthetic_no_complaint": false
+}

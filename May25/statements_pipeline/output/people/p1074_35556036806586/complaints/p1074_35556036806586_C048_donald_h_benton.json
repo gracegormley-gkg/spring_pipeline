@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036806586_C048",
+  "complainer_id": "p1074_35556036806586_K050",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 48,
+  "entity": "Donald H. Benton",
+  "kind": "individual",
+  "role": "Duke's Vice President-Marketing",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "quoted supporting Duke's EES program as reducing need for new generating facilities, implicitly supporting conservation measures tied to the project context",
+  "summary": "Donald H. Benton, Duke's Vice President-Marketing, is quoted in the EIS in the context of energy conservation alternatives, stating that Duke Power's Energy Efficient Structure program will help reduce the utility's need to build new generating facilities. His quote is used by the document to illustrate Duke Power's conservation efforts, which are ultimately characterized as insufficient alternatives to the Bad Creek Project. His statement implicitly supports the applicant's broader narrative.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Donald H. Benton is quoted stating that Duke's Energy Efficient Structure program will help reduce the utility's need to build new generating facilities, a major factor affecting the cost of electricity.",
+  "evidence_pages": [
+    "205"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Donald H. Benton, Duke's Vice President-Marketing, said the \"Energy Efficient Structure (EES) program will also help reduce the utility's need to build new generating facilities, a major factor affecting the cost of electricity.\"",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "205"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "Donald H. Benton, Duke's Vice President-Marketing, said the \"Energy Efficient Structure (EES) program will also help reduce the utility's need to build new generating facilities, a major factor affecting the cost of electricity.\"",
+      "quote_verified": true,
+      "entity_as_written": "Donald H. Benton",
+      "role_as_written": "Duke's Vice President-Marketing"
+    }
+  ],
+  "window_pages": [
+    195,
+    215
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 50,
+  "synthetic_no_complaint": false
+}

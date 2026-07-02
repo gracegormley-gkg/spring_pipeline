@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556036806586_C029",
+  "complainer_id": "p1074_35556036806586_K025",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 29,
+  "entity": "FPC Staff",
+  "kind": "agency",
+  "role": "Federal Power Commission Staff conducting independent study of alternative sites",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "FPC Staff independently identifies undetermined-category species that may exist in the project area, and notes uncertainty about impacts on endangered species, without explicitly opposing or endorsing the project",
+  "summary": "The FPC Staff conducted an independent review of available literature to identify bird, mammal, and other species of concern that may exist in the proposed Bad Creek Project area, particularly those in the 'undetermined' category on North Carolina's preliminary endangered species list. The Staff also expressed uncertainty about the exact impact of the proposed action on endangered species populations, noting that some predatory bird species listed as undetermined might temporarily benefit from early construction stages while other species could be harmed. The Staff's role appears to be providing independent scientific analysis to supplement the Applicant's submissions rather than advocating for or against the project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The FPC Staff reviewed available literature and identified several bird species in the 'undetermined' endangered category (including sharp-shinned hawk, Cooper's hawk, red-shouldered hawk, osprey, Swainson's warbler, saw-whet owl, common raven, and black-capped chickadee) that may exist in the proposed project area, along with rare mammals and peripheral-undetermined fish species.",
+  "evidence_pages": [
+    "107"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The FPC Staff has reviewed available literature and believes that the following bird species in the undetermined category may exist in the proposed project sharp-shinned hawk (Accipiter striatus), Cooper's hawk (A. Cooperii), red-shouldered hawk (Buteo lineatus), osprey (Pandion haliaetus), Swainson's warbler (limnothlypis swainsonii), saw-whet owl (Aegolius acadicus), common raven (Corvus corvax), and the black-capped chickadee (Parus atricapillus).",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "107"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The FPC Staff has reviewed available literature and believes that the following bird species in the undetermined category may exist in the proposed project sharp-shinned hawk (Accipiter striatus), Cooper's hawk (A. Cooperii), red-shouldered hawk (Buteo lineatus), osprey (Pandion haliaetus), Swainson's warbler (limnothlypis swainsonii), saw-whet owl (Aegolius acadicus), common raven (Corvus corvax), and the black-capped chickadee (Parus atricapillus).",
+      "quote_verified": true,
+      "entity_as_written": "FPC Staff",
+      "role_as_written": "Federal Power Commission Staff, project reviewer"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "212"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The FPC Staff made an independent study of 20 potential sites, not limited to the vicinity of the Jocassee Reservoir area.",
+      "quote_verified": true,
+      "entity_as_written": "FPC Staff",
+      "role_as_written": "Federal Power Commission Staff conducting independent study of alternative sites"
+    }
+  ],
+  "window_pages": [
+    97,
+    137
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 25,
+  "synthetic_no_complaint": false
+}

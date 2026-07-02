@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036546182_C122",
+  "complainer_id": "p1074_35556036546182_K084",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 122,
+  "entity": "Gordon A. King",
+  "kind": "official",
+  "role": "Chairman, Milwaukee County Expressway and Transportation Commission",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "statement read on his behalf endorsing Alternate #5 as least disruptive with minimal adverse environmental impacts",
+  "summary": "Gordon A. King, Chairman of the Milwaukee County Expressway and Transportation Commission, submitted a statement (read by Roy Gardetto) expressing support for the Airport Spur project, specifically endorsing Alternate #5 as offering the least disruptive connection to the airport with minimal adverse environmental impacts. The Commission had participated in the development of the Airport Spur, lending institutional backing to the project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Gordon A. King's statement, read by Roy Gardetto, indicated that the Milwaukee County Expressway and Transportation Commission participated in developing the Airport Spur and that Alternate #5 appears to offer the least disruptive connection to the airport with minimal adverse environmental impacts.",
+  "evidence_pages": [
+    "232"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Read Statement by Gordon A. King, Chairman of the Milwaukee County Expressway and Transportation Commission. Stated the Commission participated in the development of the Airport Spur and that Alternate #5 appears to offer the least disruptive connection to the airport with minimal adverse environmental impacts.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "232"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Read Statement by Gordon A. King, Chairman of the Milwaukee County Expressway and Transportation Commission. Stated the Commission participated in the development of the Airport Spur and that Alternate #5 appears to offer the least disruptive connection to the airport with minimal adverse environmental impacts.",
+      "quote_verified": true,
+      "entity_as_written": "Gordon A. King",
+      "role_as_written": "Chairman, Milwaukee County Expressway and Transportation Commission"
+    }
+  ],
+  "window_pages": [
+    222,
+    242
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 84,
+  "synthetic_no_complaint": false
+}

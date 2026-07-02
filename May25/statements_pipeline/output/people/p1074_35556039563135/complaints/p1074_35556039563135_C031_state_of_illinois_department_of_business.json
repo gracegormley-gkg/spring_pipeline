@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556039563135_C031",
+  "complainer_id": "p1074_35556039563135_K035",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 31,
+  "entity": "State of Illinois Department of Business and Economic Development",
+  "kind": "agency",
+  "role": "State agency reviewer of EIS",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "letter confirming no adverse comments on the EIS",
+  "summary": "The State of Illinois Department of Business and Economic Development, through its Natural Resource Development Board, reviewed the Environmental Impact Statement for the Lincoln Highway improvement project and stated it had no adverse comments. The agency's position is one of non-objection rather than active support or opposition. This confirmation is cited in the EIS narrative and referenced as appearing in Appendix 'A'.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The State of Illinois Department of Business and Economic Development, via its Natural Resource Development Board, reviewed the EIS for this highway project and confirmed it has no adverse comments to make thereon, as stated in a letter dated May 2, 1972.",
+  "evidence_pages": [
+    "52"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Natural Resource Development Board has reviewed the Environmental Impact Statement\" for this highway project and \"has no adverse comments to make thereon.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "52"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The Natural Resource Development Board has reviewed the Environmental Impact Statement\" for this highway project and \"has no adverse comments to make thereon.",
+      "quote_verified": true,
+      "entity_as_written": "State of Illinois Department of Business and Economic Development",
+      "role_as_written": "State agency reviewer of EIS"
+    }
+  ],
+  "window_pages": [
+    42,
+    62
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 35,
+  "synthetic_no_complaint": false
+}

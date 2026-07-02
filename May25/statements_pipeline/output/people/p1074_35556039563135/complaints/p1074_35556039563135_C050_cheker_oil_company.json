@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C050",
+  "complainer_id": "p1074_35556039563135_K046",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 50,
+  "entity": "Cheker Oil Company",
+  "kind": "organization",
+  "role": "Business / early coordination meeting participant",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed only as meeting participant with no position recorded",
+  "summary": "Cheker Oil Company appears solely as a participant in an early coordination meeting held on October 3, 1972, alongside the Village of Olympia Fields. No comments, concerns, or positions attributed to Cheker Oil Company are recorded in the document window.",
+  "form": "sectional",
+  "complaint_summary": "Cheker Oil Company is listed as an attendee at the October 3, 1972 early coordination meeting with the Illinois Department of Transportation, but no specific comments or positions are attributed to them.",
+  "evidence_pages": [
+    "157"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence"
+  ],
+  "summary_quote": "MEETINGS BETWEEN ORGANIZATIONS AND ILLINOIS DEPARTMENT OF TRANSPORTATION",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "157"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "MEETINGS BETWEEN ORGANIZATIONS AND ILLINOIS DEPARTMENT OF TRANSPORTATION",
+      "quote_verified": true,
+      "entity_as_written": "Cheker Oil Company",
+      "role_as_written": "Business / early coordination meeting participant"
+    }
+  ],
+  "window_pages": [
+    147,
+    167
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 46,
+  "synthetic_no_complaint": false
+}

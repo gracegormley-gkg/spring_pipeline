@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036105336_C035",
+  "complainer_id": "p1074_35556036105336_K033",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 35,
+  "entity": "Robert J. Blanco, P.E.",
+  "kind": "official",
+  "role": "Chief, Environmental Impact Branch, EPA Region III",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter expressing support for project while requiring additional air quality data and clarifications",
+  "summary": "Robert J. Blanco, P.E., Chief of the Environmental Impact Branch at EPA Region III, submitted a formal review letter expressing general support for the Randolph Urban Renewal Project while identifying deficiencies in the draft EIS, particularly regarding air quality analysis related to the Downtown Expressway. He classified EPA's review as LO-2 (no objections but need for additional information) and requested specific air quality data and modeling, as well as clarifications on noise analysis. His support was conditioned on the provision of additional environmental information.",
+  "form": "letter",
+  "complaint_summary": "Blanco's letter supports the project overall but flags that air quality impacts from the Downtown Expressway have not been adequately addressed, requiring specific traffic volume, ambient air quality, and dispersion modeling data, and also requests three clarifications to the noise analysis; EPA classified the review as LO-2 (no objections, but additional information needed).",
+  "evidence_pages": [
+    "63"
+  ],
+  "statement": {
+    "text": "We have completed our review of the draft environmental impact statement for the Randolph Urban Renewal Project in Richmond. The statement, in general, was very well written, offering a comprehensive overview of the area's development objectives. Based on the information provided, we are inclined to give our support to the project.\nAs you know, assessing the environmental consequences of HUD actions often requires detailed study of the impact of other projects on the environs which eventually surround HUDassisted residents: because the Downtown Expressway, which will traverse the northern portion of Randolph, does not involve Federal aid, an impact statement for it will not be circulated. HUD correctly investigated the noise and air impacts of the expressway on Randolph. However, since the air quality affects have not been adequately addressed in the draft statement, we have reported this review in EPA reference category LO-2 (indicating our lack of objections to the project, as described, and the need for additional information for a more thorough environmental assessment). The date and classification of EPA's comments will be published in the Federal Register in accordance with our responsibility, under Section 309 of the Clean Air Act, to inform the public of our views on proposed actions.\n\nAir Quality\nThe conclusion expressed (page 24) that, on balance, the introduction of the Downtown Expressway, the changes in the internal street pattern, and the rearrangement of structures, will have a negative impact on local ambient air quality is surely an understatement. In order to meaningfully assess the impact of these various land use changes on Randolph's air quality, the following data are required:\na. Peak-hour volume (PHV) and average speed two years following highway completion,\nb. PHV and average speed in the design year,\nc. current ambient air quality,\nd. prevailing winds and air stability, and\ne. locations of sensitive land uses (already provided in draft).\nBased on these data, the final statement should use an applicable air dispersion model to predict CO concentrations two years after highway completion and in the design year. These levels should be compared to the Federal Ambient Air Quality Standard (published in the Federal Register, April 30, 1971). We realize that HUD is not responsible for the impact of the Expressway or for preparing its impact statement. However, the Virginia Department of Highways can assist HUD in performing this analysis. We know of no other way to determine the quality of air which will surround the Randolph area.\nOther environmental sections of the draft statement are very satisfactory:\n1. The discussion of noise impact and attenuation measures associated with the Expressway was more detailed than any we have reviewed in the Middle Atlantic region. Further, HUD is fortunate in having some control over structural remedial measures of housing built and rehabilitated in Randolph. There are three points, though, which should be clarified in the final statement: it is unclear from Exhibit 6 which combination of attenuation measures were assumed in deriving the three noise-location curves; the locations of the three observation points should be indicated on Figure 8;\n\nand, there should be some diurnal (around the clock) distribution shown for periods of high noise.\n2. We were pleased to read that the Randolph Plan includes funds for the separation of storm and sanitary sewers, and hope that this conversion will be funded for sections of Richmond that are not within the redevelopment areas.\nWe hope that Federal funding in the future will enable the Plan to be executed at the scale envisioned. If we may be of further assistance, please don't hesitate to contact this office. We would appreciate receiving a copy of the final statement to complete the NEPA review process.\nSincerely yours,\nRobert J. Blanco, P.E.",
+    "opening_anchor": "We have completed our review of the draft environmental impact statement for the Randolph Urban Renewal Project in Richmond. The statement, in general, was very well written",
+    "closing_anchor": "We would appreciate receiving a copy of the final statement to complete the NEPA review process.\n\nSincerely yours,\nRobert J. Blanco, P.E.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036105336_R003"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Based on the information provided, we are inclined to give our support to the project.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "63"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "Based on the information provided, we are inclined to give our support to the project.",
+      "quote_verified": true,
+      "entity_as_written": "Robert J. Blanco, P.E.",
+      "role_as_written": "Chief, Environmental Impact Branch, EPA Region III"
+    }
+  ],
+  "window_pages": [
+    53,
+    73
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 33,
+  "synthetic_no_complaint": false
+}

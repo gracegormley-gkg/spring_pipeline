@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556039563135_C153",
+  "complainer_id": "p1074_35556039563135_K024",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 153,
+  "entity": "President, Village of Matteson",
+  "kind": "official",
+  "role": "Local government recipient of draft EIS",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed only as recipient of draft EIS with no comment recorded",
+  "summary": "The President of the Village of Matteson appears only in the list of local agencies to which the draft Environmental Impact Statement was sent for review and comment. Notably, the Village of Matteson does not appear in the subsequent list of agencies that actually commented on the draft EIS, indicating no formal response was submitted. No position, complaint, or statement is attributed to this entity in the document window.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "21"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "President, Village of Matteson",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "21"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "President, Village of Matteson",
+      "quote_verified": true,
+      "entity_as_written": "President, Village of Matteson",
+      "role_as_written": "Local government recipient of draft EIS"
+    }
+  ],
+  "window_pages": [
+    11,
+    31
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 24,
+  "synthetic_no_complaint": true
+}

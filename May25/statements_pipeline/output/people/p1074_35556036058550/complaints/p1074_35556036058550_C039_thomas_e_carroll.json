@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036058550_C039",
+  "complainer_id": "p1074_35556036058550_K017",
+  "doc_id": "p1074_35556036058550",
+  "work_id": "csv:35556036058550",
+  "order": 39,
+  "entity": "Thomas E. Carroll",
+  "kind": "official",
+  "role": "Assistant Administrator for Planning and Management, Environmental Protection Agency",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "opens letter calling Operation Breakthrough 'a step forward in solving the problems of metropolitan housing'",
+  "summary": "Thomas E. Carroll, as Assistant Administrator for Planning and Management at the EPA, wrote a letter to HUD expressing general support for Operation Breakthrough, characterizing it as combining urban and environmental planning and representing progress on metropolitan housing problems. While supportive overall, Carroll's letter enclosed specific technical comments raising concerns about air quality evaluation, water quality, and noise standards that EPA believed needed to be addressed or expanded in the final statement.",
+  "form": "letter",
+  "complaint_summary": "Carroll's letter expresses general support for Operation Breakthrough while enclosing specific EPA comments on air, water, and noise issues requiring additional detail or action in the final statement.",
+  "evidence_pages": [
+    "33"
+  ],
+  "statement": {
+    "text": "This is in response to your letter of April 9, 1971, transmitting for comment the draft Environmental Impact Statement on Operation Breakthrough.\nOperation Broakthrough combines urban and environmental planning and is a step forward in solving the problems of metropolitan housing. We e-close sens specific community and would be happy to make available our program personnel to assist you if you think they can be helpful.\nSincerely/yours\nThemas E. Carroll\nAssistant Administrator\nfor Planning and Management\nEnclosure",
+    "opening_anchor": "This is in response to your letter of April 9, 1971, transmitting for comment the draft Environmental Impact Statement on Operation Breakthrough.",
+    "closing_anchor": "Themas E. Carroll\nAssistant Administrator\nfor Planning and Management\nEnclosure",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Operation Broakthrough combines urban and environmental planning and is a step forward in solving the problems of metropolitan housing.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "33"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "Operation Broakthrough combines urban and environmental planning and is a step forward in solving the problems of metropolitan housing.",
+      "quote_verified": true,
+      "entity_as_written": "Thomas E. Carroll",
+      "role_as_written": "Assistant Administrator for Planning and Management, Environmental Protection Agency"
+    }
+  ],
+  "window_pages": [
+    23,
+    43
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 17,
+  "synthetic_no_complaint": false
+}

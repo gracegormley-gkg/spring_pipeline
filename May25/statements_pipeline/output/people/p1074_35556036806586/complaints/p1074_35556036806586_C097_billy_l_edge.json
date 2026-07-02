@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036806586_C097",
+  "complainer_id": "p1074_35556036806586_K085",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 97,
+  "entity": "Billy L. Edge",
+  "kind": "individual",
+  "role": "researcher/author of study on Bad Creek pumped storage effects",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "cited as author of technical study on stratification effects, no personal position stated",
+  "summary": "Billy L. Edge is cited as the author of a technical study titled 'Effects of Bad Creek Pumped Storage on Stratification in Lake Jocassee,' which was submitted to the FPC on August 26, 1975. The study is referenced twice in Duke Power's comments on the Draft EIS: once in the context of the proposed underwater weir's ability to reduce disruption of stratification, and once in relation to the likely localized effects of Bad Creek discharge on Lake Jocassee stratification. Edge's work is used to support Duke's technical arguments but no personal stance toward the project is attributed to him.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Edge's study is cited again to support Duke's assessment that the effects of Bad Creek discharge on Lake Jocassee stratification will be very local, based on comparison with data from Jocassee Station units.",
+  "evidence_pages": [
+    "299"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036806586_R035"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Duke proposes to use approximately 400,000 cubic yards of rock excavated from underground tunnels to construct an underwater weir in the Whitewater arm of Lake Jocassee downstream of the Bad Creek discharge. Physical modeling studies have shown that such a weir, extending to within 60 ft. of full pool surface, will reduce the potential for disruption of stratification by discharge water (see \"Effects of Bad Creek Pumped Storage om Stratification in Lake Jocassed' by Billy L. Edge, which was mailed to FPC on 26 Aug. 1975).",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "296"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Duke proposes to use approximately 400,000 cubic yards of rock excavated from underground tunnels to construct an underwater weir in the Whitewater arm of Lake Jocassee downstream of the Bad Creek discharge. Physical modeling studies have shown that such a weir, extending to within 60 ft. of full pool surface, will reduce the potential for disruption of stratification by discharge water (see \"Effects of Bad Creek Pumped Storage om Stratification in Lake Jocassed' by Billy L. Edge, which was mailed to FPC on 26 Aug. 1975).",
+      "quote_verified": true,
+      "entity_as_written": "Billy L. Edge",
+      "role_as_written": "researcher/author of study on Bad Creek pumped storage effects"
+    }
+  ],
+  "window_pages": [
+    286,
+    306
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 85,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p0491_35556036091957_C203",
+  "complainer_id": "p0491_35556036091957_K179",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 203,
+  "entity": "Robert Solles",
+  "kind": "individual",
+  "role": "Private commenter, Nevada",
+  "stance": "opposed",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly protesting more restrictive federal ORV regulations on Nevada public lands",
+  "summary": "Robert Solles, along with other Nevada residents, signed a letter protesting more restrictive federal regulations on off-road vehicles on federally owned land in Nevada. The signatories argue that the rugged terrain of northern Nevada makes four-wheel drive vehicles a practical necessity for hunting, fishing, and accessing remote lakes and reservoirs, and that they cause no harm to the terrain. No agency response to this letter is present in the document window.",
+  "form": "letter",
+  "complaint_summary": "Robert Solles and co-signers protest proposed more restrictive federal ORV regulations, arguing that four-wheel drive vehicles are essential for accessing Nevada's remote hunting and fishing areas and that they cause no harm to the rugged terrain.",
+  "evidence_pages": [
+    "280"
+  ],
+  "statement": {
+    "text": "We wish to add our voice of protest to more restrictive regulations by the Federal Government of off road vehicles on federally owned land in the state of Nevada.\nWe have chosen to live in this large and sparsely populated area for the expressed purpose of being near free and open land areas and as you know we have less than one person per square mile in Nevada.\nThe terrain in northern and north eastern Nevada is so rugged it is almost an abstract to negotiate most of this area without four wheel drive vehicles.\nThe lakes and reserviors are in very remote areas, mostly without roads. Hunting and fishing is our most popular out door sport in Nevada. Deer and chuckar partridge country is located in the most rugged and remote sections of our state. Four wheel drive vehicles are virtually a must in the pursuit of this sport.\nFlease consider these sports and our feelings that these are our sacred rights. We feel we do no harm to the terrain hunting in these rugged areas where we go for weeks without seeing another person.",
+    "opening_anchor": "We wish to add our voice of protest to more restrictive regulations by the Federal Government of off road vehicles on federally owned land in the state of Nevada.",
+    "closing_anchor": "We feel we do no harm to the terrain hunting in these rugged areas where we go for weeks without seeing another person.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "We wish to add our voice of protest to more restrictive regulations by the Federal Government of off road vehicles on federally owned land in the state of Nevada.",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "280"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "We wish to add our voice of protest to more restrictive regulations by the Federal Government of off road vehicles on federally owned land in the state of Nevada.",
+      "quote_verified": true,
+      "entity_as_written": "Robert Solles",
+      "role_as_written": "Private commenter, Nevada"
+    }
+  ],
+  "window_pages": [
+    270,
+    290
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 179,
+  "synthetic_no_complaint": false
+}

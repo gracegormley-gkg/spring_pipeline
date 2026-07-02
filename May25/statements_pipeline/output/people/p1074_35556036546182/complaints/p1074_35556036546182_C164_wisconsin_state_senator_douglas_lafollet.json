@@ -1,0 +1,61 @@
+{
+  "complaint_id": "p1074_35556036546182_C164",
+  "complainer_id": "p1074_35556036546182_K022",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 164,
+  "entity": "Wisconsin State Senator Douglas LaFollette",
+  "kind": "individual",
+  "role": "Wisconsin State Senator, consulted agency/individual",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "entity appears only in a list of agencies/individuals from whom comments were requested, with no asterisk indicating a response was received",
+  "summary": "Wisconsin State Senator Douglas LaFollette appears solely in a roster of entities from whom comments were requested for the Airport Spur Environmental Impact Statement. No asterisk is present next to his name (unlike many others on the list), indicating no comment was received from him. No position, complaint, or statement is attributed to him in the document window.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "17"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual",
+    "quote_not_verbatim",
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "7. Comments were requested from the following: ... Wisconsin State Senator Douglas LaFollette",
+  "summary_quote_verified": false,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "17"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "7. Comments were requested from the following: ... Wisconsin State Senator Douglas LaFollette",
+      "quote_verified": false,
+      "entity_as_written": "Wisconsin State Senator Douglas LaFollette",
+      "role_as_written": "Wisconsin State Senator, consulted agency/individual"
+    }
+  ],
+  "window_pages": [
+    7,
+    27
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 22,
+  "synthetic_no_complaint": true
+}

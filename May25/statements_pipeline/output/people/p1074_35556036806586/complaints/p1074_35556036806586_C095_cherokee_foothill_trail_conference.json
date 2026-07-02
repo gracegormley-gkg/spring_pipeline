@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036806586_C095",
+  "complainer_id": "p1074_35556036806586_K086",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 95,
+  "entity": "Cherokee Foothill Trail Conference",
+  "kind": "organization",
+  "role": "trail organization commenter",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes Cherokee Foothill Trail Conference undertaking a public information/sign program, with agency noting applicant bears primary responsibility",
+  "summary": "The Cherokee Foothill Trail Conference is described as planning to meet and undertake a public information program, including placing strategically located signs, in connection with the Bad Creek Project's recreation impacts. The agency's response clarifies that while the Conference may undertake such a sign program, the applicant (Duke Power) would assume primary responsibility for ensuring the adequacy of the program pursuant to its commitments in Exhibit R. The organization appears supportive of the project's recreation component but is engaged in a cooperative role rather than opposition.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Cherokee Foothill Trail Conference will meet and undertake a public information program to inform the public of rules and information by placing strategically located signs along the trail corridor.",
+  "evidence_pages": [
+    "296"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036806586_R033"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Cherokee Foothill Trail Conference will meet and undertake a public information program to inform the public of rules and information by placing strategically located signs.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "296"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Cherokee Foothill Trail Conference will meet and undertake a public information program to inform the public of rules and information by placing strategically located signs.",
+      "quote_verified": true,
+      "entity_as_written": "Cherokee Foothill Trail Conference",
+      "role_as_written": "trail organization commenter"
+    }
+  ],
+  "window_pages": [
+    286,
+    306
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 86,
+  "synthetic_no_complaint": false
+}

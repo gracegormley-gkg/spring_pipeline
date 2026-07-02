@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556039563135_C107",
+  "complainer_id": "p1074_35556039563135_K087",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 107,
+  "entity": "Department of Local Governmental Affairs",
+  "kind": "agency",
+  "role": "Illinois state agency reviewer",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "internal memo states reviewer has no comment on the environmental statement",
+  "summary": "The Department of Local Governmental Affairs appears in a list of state agencies that received the draft environmental statement for review, and its reviewer Henry Holling submitted an internal memo dated May 1, 1972 stating he reviewed the statement and had no comment. The agency neither supported nor opposed the project.",
+  "form": "written_comment",
+  "complaint_summary": "Henry Holling of the Department of Local Governmental Affairs reviewed the environmental statement for FA Route 23, Section 22-23-12-R, Cook County and stated he had no comment.",
+  "evidence_pages": [
+    "198"
+  ],
+  "statement": {
+    "text": "I have reviewed the above environmental statement and have no comment.\nHung Holling",
+    "opening_anchor": "I have reviewed the above environmental statement and have no comment.",
+    "closing_anchor": "I have reviewed the above environmental statement and have no comment.\n\nHung Holling",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "STATE AGENCIES ... Department of Local Governmental Affairs",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "198"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "STATE AGENCIES ... Department of Local Governmental Affairs",
+      "quote_verified": true,
+      "entity_as_written": "Department of Local Governmental Affairs",
+      "role_as_written": "Illinois state agency reviewer"
+    }
+  ],
+  "window_pages": [
+    188,
+    208
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 87,
+  "synthetic_no_complaint": false
+}

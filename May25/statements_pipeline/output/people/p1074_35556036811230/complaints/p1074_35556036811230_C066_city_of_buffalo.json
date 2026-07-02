@@ -1,0 +1,95 @@
+{
+  "complaint_id": "p1074_35556036811230_C066",
+  "complainer_id": "p1074_35556036811230_K031",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 66,
+  "entity": "City of Buffalo",
+  "kind": "government",
+  "role": "local government with noise control regulations (Article XVII of Buffalo City Ordinances) applicable to construction activities",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "City of Buffalo mentioned only as property owner and regulatory reference, no position expressed in this window",
+  "summary": "In this window, the City of Buffalo is referenced only as a property owner (of a parcel at the Ellicott Yard site tentatively identified with a Waterfront Redevelopment Project) and implicitly as the jurisdiction whose noise control ordinances apply to construction activities. No position for or against the project is expressed or attributed to the City of Buffalo in this portion of the document.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "137",
+    "175",
+    "194",
+    "282"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "it is recommended that the City of Buffalo Police and Public Work Departments insure that adjacent streets are well-lighted and patrolled, and that criminal activity is discouraged by concentrated enforcement programs in the early years of operation to ensure that the transit line acquires an early reputation for security.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 4,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "137"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The abandoned Delaware, Lackawanna & Western terminal (background, Figure 4-5) now owned by the City of Buffalo was studied because it was felt that costly private property takings and relocations could be avoided, resulting in overall cost savings and minimizing the loss of taxable properties.",
+      "quote_verified": true,
+      "entity_as_written": "City of Buffalo",
+      "role_as_written": "property owner"
+    },
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "175"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "it is recommended that the City of Buffalo Police and Public Work Departments insure that adjacent streets are well-lighted and patrolled, and that criminal activity is discouraged by concentrated enforcement programs in the early years of operation to ensure that the transit line acquires an early reputation for security.",
+      "quote_verified": true,
+      "entity_as_written": "City of Buffalo",
+      "role_as_written": "Local government / coordinating entity"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "194"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The NFTA and the City of Buffalo could phase street closures during construction in a number of ways.",
+      "quote_verified": true,
+      "entity_as_written": "City of Buffalo",
+      "role_as_written": "municipal government / transportation planning partner"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "282"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Article XVII of the Buffalo City Ordinances contains the current noise control regulations for the City of Buffalo.",
+      "quote_verified": true,
+      "entity_as_written": "City of Buffalo",
+      "role_as_written": "local government with noise control regulations (Article XVII of Buffalo City Ordinances) applicable to construction activities"
+    }
+  ],
+  "window_pages": [
+    127,
+    174
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 31,
+  "synthetic_no_complaint": true
+}

@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556038322269_C076",
+  "complainer_id": "p1074_35556038322269_K083",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 76,
+  "entity": "Hollywood community groups",
+  "kind": "organization",
+  "role": "Community groups in the Hollywood area",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "expressed strong desire for specific station location at Cahuenga and Hollywood Boulevards",
+  "summary": "The Hollywood community groups participated in the community engagement process and expressed a strong preference for locating the Hollywood station at the intersection of Cahuenga and Hollywood Boulevards. Their position reflects conditional support for the rail project contingent on station placement meeting their desired location. The document notes this matter was still being evaluated at the time of the draft report.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Hollywood community groups expressed a strong desire for the Hollywood station to be located at Cahuenga and Hollywood Boulevards.",
+  "evidence_pages": [
+    "293"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556038322269_R007"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Hollywood community groups have expressed a strong desire for locating the Hollywood station at Cahuenga and Hollywood Boulevards.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "293"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Hollywood community groups have expressed a strong desire for locating the Hollywood station at Cahuenga and Hollywood Boulevards.",
+      "quote_verified": true,
+      "entity_as_written": "Hollywood community groups",
+      "role_as_written": "Community groups in the Hollywood area"
+    }
+  ],
+  "window_pages": [
+    283,
+    293
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 83,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C091",
+  "complainer_id": "p0491_35556036091957_K087",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 91,
+  "entity": "State of Hawaii, Department of Planning and Economic Development",
+  "kind": "agency",
+  "role": "state agency, commenter",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter finds draft thorough but raises specific concerns about age limit and implementation details",
+  "summary": "The State of Hawaii, Department of Planning and Economic Development submitted a letter generally praising the draft environmental statement as thorough, while raising two specific concerns: the 21-year minimum age limit for ORV operators (suggesting it may be too high given Hawaii's age of majority of 18), and the need for publicly circulated maps showing designated ORV areas in national parks. The department noted limited direct experience with ORV problems on Hawaii's federal public lands.",
+  "form": "letter",
+  "complaint_summary": "The Department of Planning and Economic Development found the draft statement thorough but raised concerns about the 21-year minimum age limit for ORV operators (suggesting it be lowered to 18 or 20 given Hawaii's age of majority), and called for publicly circulated draft maps showing ORV-permitted and prohibited areas within national parks before final adoption.",
+  "evidence_pages": [
+    "121"
+  ],
+  "statement": {
+    "text": "This is in response to your letter dated June 1, 1972, which we did not receive until July 3, 1972, transmitting a draft environmental statement for the proposed implementation of Executive Order 11644 pertaining to the use of off-road vehicles on the public lands.\nWe have studied the draft statement and find it to be quite thorough in its discussion of the subject matter. On page 5, under Operating Criteria, we note that 21 years is the minimum age limit set for operators unless they have a learner's permit or they are accompanied by a person 21 years of age or older if they are under licensing age for their state of residence. The licensing age in most states is under 21; likewise they can now vote at the age of 18; and in Hawaii they reach the age of majority at 18. You may want to give this age limit matter some more thought to decide if it should be lowered to 20 or 18 years. Otherwise, the operating criteria seem reasonable.\nOur other area of concern was to visualize how control of CRV's would actually be implemented. We would assume that each national park would have to prepare some maps indicating areas in the park which would permit CRV's and other areas where ORV's would be prohibited. Such maps should be prepared in draft form and be circulated and made available to the public before they are finally adopted. There could be a variety of arguments about the boundaries of such area designations.\nActually, we do not have any information about the ORV problem on public lands in Hawaii. Most of the Federal public lands in Hawaii are either military lands or the two National parks. I am sure the military commands can keep the problem under control on their bases. We have not heard of complaints of this nature in the two National parks. However, this is not to say they do not exist, or that ORV's are not causing damage; it is probable that such complaints would not be directed to our office.\n\nWe are forwarding one copy of your draft environmental statement to the Governor's Office of Environmental Quality Control. It is the agency in our State which reviews and processes all required Federal and State environmental statements. It also makes the statements available to other governmental agencies and the general public. Should further comments be forthcoming, we have asked that office to forward them to you. Our copy of the statement shall also be made available for public review. Thank you for the opportunity of reviewing your statement.\nSincerely,\nShellev M. Mark",
+    "opening_anchor": "This is in response to your letter dated June 1, 1972, which we did not receive until July 3, 1972, transmitting a draft environmental statement",
+    "closing_anchor": "Thank you for the opportunity of reviewing your statement.\n\nSincerely,\n\nShellev M. Mark",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We have studied the draft statement and find it to be quite thorough in its discussion of the subject matter.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "121"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We have studied the draft statement and find it to be quite thorough in its discussion of the subject matter.",
+      "quote_verified": true,
+      "entity_as_written": "State of Hawaii, Department of Planning and Economic Development",
+      "role_as_written": "state agency, commenter"
+    }
+  ],
+  "window_pages": [
+    111,
+    131
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 87,
+  "synthetic_no_complaint": false
+}

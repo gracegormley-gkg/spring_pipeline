@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556038322269_C057",
+  "complainer_id": "p1074_35556038322269_K066",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 57,
+  "entity": "Los Angeles City Fire Department",
+  "kind": "agency",
+  "role": "municipal fire department, commenter on fire protection impacts",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "supports project but requires more specific details before fire protection impacts can be determined, and recommends specific mitigation measures",
+  "summary": "The Los Angeles City Fire Department acknowledges that additional fire protection and rescue services will be required with implementation of several transit alternatives, but states that many more specific details—only available during preliminary engineering—are needed before accurate impacts can be determined. The department recommends emergency exits every 1000 feet and provides a list of mitigation measures for Alternatives I through VI, while noting no mitigation is required for Alternatives VIII through XI. The department's concerns would be resolved collaboratively during Preliminary Engineering.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Los Angeles City Fire Department states that many more specific details, only available during preliminary engineering, will be necessary before accurate impacts on the City's fire protection services can be determined, and recommends emergency exits every 1000 feet.",
+  "evidence_pages": [
+    "196"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556038322269_R004"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "However, the Los Angeles City Fire Department states that many more specific details, which would only become available during preliminary engineering, will be necessary before accurate impacts on the City's fire protection services can be determined.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "196"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "However, the Los Angeles City Fire Department states that many more specific details, which would only become available during preliminary engineering, will be necessary before accurate impacts on the City's fire protection services can be determined.",
+      "quote_verified": true,
+      "entity_as_written": "Los Angeles City Fire Department",
+      "role_as_written": "municipal fire department, commenter on fire protection impacts"
+    }
+  ],
+  "window_pages": [
+    186,
+    206
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 66,
+  "synthetic_no_complaint": false
+}

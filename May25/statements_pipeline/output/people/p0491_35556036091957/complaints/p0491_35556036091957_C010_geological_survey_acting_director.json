@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p0491_35556036091957_C010",
+  "complainer_id": "p0491_35556036091957_K017",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 10,
+  "entity": "Geological Survey, Acting Director",
+  "kind": "official",
+  "role": "Interior bureau reviewer",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "explicitly advised they have no comments on the ORV environmental statement",
+  "summary": "The Geological Survey, Acting Director, submitted no substantive comments on the draft ORV environmental statement, advising only that they had no comments to offer. This position is reported twice in the document window—once in the main body summary of agency reviews and once in the appendix listing of Federal Agency Comments—both times conveying the same neutral non-comment stance.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Geological Survey, Acting Director, advised that they have no comments on the subject ORV environmental statement.",
+  "evidence_pages": [
+    "22"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "Geological Survey, Acting Director - advised that they have no comments on subject ORV environmental statement.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "22"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Geological Survey, Acting Director - advised that they have no comments on subject ORV environmental statement.",
+      "quote_verified": false,
+      "entity_as_written": "Geological Survey, Acting Director",
+      "role_as_written": "Interior bureau reviewer"
+    }
+  ],
+  "window_pages": [
+    12,
+    32
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 17,
+  "synthetic_no_complaint": false
+}

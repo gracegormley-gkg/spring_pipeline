@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036546182_C116",
+  "complainer_id": "p1074_35556036546182_K093",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 116,
+  "entity": "Marvin Rusch",
+  "kind": "individual",
+  "role": "Representative, American Automobile Association",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes Rusch agreeing with SEWRPC findings and urging earliest possible construction of the Airport Spur",
+  "summary": "Marvin Rusch, representing the American Automobile Association, testified at the July 11, 1974 Environmental Public Hearing in support of the Airport Spur project. He agreed with SEWRPC's findings that the project is sound and in the public interest, and expressed hope that it would be constructed as soon as possible to save tax dollars and improve safety on the south side of Milwaukee.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Rusch, as AAA spokesman, agreed with SEWRPC findings and urged the earliest possible construction of the Airport Spur to save tax dollars and improve safety on Milwaukee's south side streets and highways.",
+  "evidence_pages": [
+    "226"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Spokesman for AAA agreed with SEWRPC findings and was hopeful that the Airport Spur would be constructed as soon as possible in order to save tax dollars and bring safety to the streets and highways of the south side of Milwaukee.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "226"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Spokesman for AAA agreed with SEWRPC findings and was hopeful that the Airport Spur would be constructed as soon as possible in order to save tax dollars and bring safety to the streets and highways of the south side of Milwaukee.",
+      "quote_verified": true,
+      "entity_as_written": "Marvin Rusch",
+      "role_as_written": "Representative, American Automobile Association"
+    }
+  ],
+  "window_pages": [
+    216,
+    236
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 93,
+  "synthetic_no_complaint": false
+}

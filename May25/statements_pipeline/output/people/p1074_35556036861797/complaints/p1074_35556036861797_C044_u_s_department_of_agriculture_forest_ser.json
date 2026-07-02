@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036861797_C044",
+  "complainer_id": "p1074_35556036861797_K029",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 44,
+  "entity": "U. S. Department of Agriculture, Forest Service",
+  "kind": "agency",
+  "role": "federal agency / commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase expressing concern that fuel economy goals will force limited vehicle design and push purchasers to heavier vehicles",
+  "summary": "The U.S. Department of Agriculture, Forest Service expressed concern that fuel economy goals would force manufacturers to design nonpassenger automobiles in a limited manner, inhibiting their usefulness across a variety of applications and pushing purchasers toward heavier, more costly vehicles. NHTSA responded that it had taken this problem into account when developing the standard and planned research for future rulemaking to better understand NPA usage patterns.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Forest Service expressed concern that fuel economy goals will force manufacturers to design trucks in a limited manner that inhibits their usefulness in a variety of applications, thereby forcing many purchasers to heavier, more costly vehicles.",
+  "evidence_pages": [
+    "110"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036861797_R026"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Forest Service expressed concern that fuel economy goals will force manufacturers to design tracks in a limited manner which inhibits their usefulness in a variety of applications.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "110"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Forest Service expressed concern that fuel economy goals will force manufacturers to design tracks in a limited manner which inhibits their usefulness in a variety of applications.",
+      "quote_verified": true,
+      "entity_as_written": "U. S. Department of Agriculture, Forest Service",
+      "role_as_written": "federal agency / commenter"
+    }
+  ],
+  "window_pages": [
+    100,
+    120
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 29,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036811230_C012",
+  "complainer_id": "p1074_35556036811230_K010",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 12,
+  "entity": "ENCRPB",
+  "kind": "agency",
+  "role": "population/employment projection author (Erie and Niagara Counties Regional Planning Board)",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "cited as data source for population and employment projections without expressing support or opposition to the project",
+  "summary": "ENCRPB (Erie and Niagara Counties Regional Planning Board) is cited throughout the document as a source of population and employment projections for the Buffalo SMSA, City of Buffalo, Amherst, and Tonawanda. The board's projections are used to characterize the regional economic and demographic context for the transit project, including forecasts of employment growth, labor force trends, and commuting patterns. ENCRPB does not express a position on the project itself; it functions solely as a data provider.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "ENCRPB is cited alongside the U.S. Department of Commerce for employment growth projections of 2,550–2,800 jobs annually between 1980 and 1995, with ENCRPB projecting a specific mix of growth sectors (services, trade, government, transportation/communications/utilities) and declining manufacturing employment.",
+  "evidence_pages": [
+    "56"
+  ],
+  "statement": {
+    "text": "Employment within the Buffalo SMSA is projected to increase an average of 2,550 to 2,800 annually between 1980 and 1995, according to the ENCRPB and the U.S. Department of Commerce. The Regional Planning Board estimates that essentially all this growth will occur within Erie County with about one-half of the increase within the City of Buffalo. The major\n\nsources of the projected increase in employment between 1980 and 1990 in declining order of importance according to the Department of Commerce will be in the areas of government, business/professional/service, finance/insurance/real estate, transportation/communications/utilities, and wholesale/retail trade. Manufacturing employment is projected to decrease slightly. The ENCRPB projects a different mix of employment increases for the 1980-90 decade: services (including finance/insurance/real estate), trade, government, and transportation/communications/utilities; with manufacturing employment declining. In both sets of projections, the categories accounting for the major increases will be the kinds of businesses predominating within the Buffalo CBD and the transit corridor study area.",
+    "opening_anchor": "Employment within the Buffalo SMSA is projected to increase an average of 2,550 to 2,800 annually between 1980 and 1995, according to the ENCRPB and the U.S. Department of Commerce.",
+    "closing_anchor": "the categories accounting for the major increases will be the kinds of businesses predominating within the Buffalo CBD and the transit corridor study area.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Employment within the Buffalo SMSA is projected to increase an average of 2,550 to 2,800 annually between 1980 and 1995, according to the ENCRPB and the U.S. Department of Commerce.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "56"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Employment within the Buffalo SMSA is projected to increase an average of 2,550 to 2,800 annually between 1980 and 1995, according to the ENCRPB and the U.S. Department of Commerce.",
+      "quote_verified": true,
+      "entity_as_written": "ENCRPB",
+      "role_as_written": "population/employment projection author (Erie and Niagara Counties Regional Planning Board)"
+    }
+  ],
+  "window_pages": [
+    46,
+    66
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 10,
+  "synthetic_no_complaint": false
+}

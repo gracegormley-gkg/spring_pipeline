@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556039563135_C132",
+  "complainer_id": "p1074_35556039563135_K108",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 132,
+  "entity": "Cook County Planning Commission",
+  "kind": "agency",
+  "role": "County planning agency, Cook County",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly states 'no comments' on the project after appropriate consultation",
+  "summary": "The Cook County Planning Commission, through its Department of Planning and Development, submitted a letter stating it had no comments on NIPC project 74-228 (Lincoln Highway widening) after appropriate consultation under OMB Circular A-95. The Commission neither supported nor opposed the project, simply declining to comment. No substantive position on the merits of the project was expressed.",
+  "form": "letter",
+  "complaint_summary": "The Cook County Planning Commission stated it had no comments on NIPC 74-228 (among other listed projects) after appropriate consultation under OMB Circular A-95.",
+  "evidence_pages": [
+    "246"
+  ],
+  "statement": {
+    "text": "The Department of Planning and Development, after appropriate consultation, has no comments on the following projects submitted to us for review under OMB Circular A-95:\nNIPC 74-209\nNIPC 74-215\nNIPC 74-216\nNIPC 74-218\nNIPC 74-220\nNIPC 74-230\nNIPC 74-233\nNIPC 74-240\nNIPC\nNIPC\nNIPC\nNIPC\n74-246\n74-254\n74-272\n74-276\n74-284\n74-285\nSincerely,\nTransit Diacres\nFrank W. Chesrow\nChairman\nCook County Planning Commission\nDaniel J. Ferronc\nDirector\nDepartment of Planning & Development",
+    "opening_anchor": "The Department of Planning and Development, after appropriate consultation, has no comments on the following projects submitted to us for review under OMB Circular A-95:",
+    "closing_anchor": "Frank W. Chesrow\nChairman\nCook County Planning Commission\nDaniel J. Ferronc\nDirector\nDepartment of Planning & Development",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Department of Planning and Development, after appropriate consultation, has no comments on the following projects submitted to us for review under OMB Circular A-95",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "246"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Department of Planning and Development, after appropriate consultation, has no comments on the following projects submitted to us for review under OMB Circular A-95",
+      "quote_verified": true,
+      "entity_as_written": "Cook County Planning Commission",
+      "role_as_written": "County planning agency, commenter"
+    },
+    {
+      "chunk_index": 7,
+      "evidence_pages": [
+        "246"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Department of Planning and Development, after appropriate consultation, has no comments on the following projects submitted to us for review under OMB Circular A-95",
+      "quote_verified": true,
+      "entity_as_written": "Cook County Planning Commission",
+      "role_as_written": "County planning agency, Cook County"
+    }
+  ],
+  "window_pages": [
+    236,
+    256
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 108,
+  "synthetic_no_complaint": false
+}

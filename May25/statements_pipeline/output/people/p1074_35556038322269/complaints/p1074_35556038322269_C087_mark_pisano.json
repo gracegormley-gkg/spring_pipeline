@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556038322269_C087",
+  "complainer_id": "p1074_35556038322269_K013",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 87,
+  "entity": "Mark Pisano",
+  "kind": "official",
+  "role": "Executive Director, Southern California Association of Governments; IACC member",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed as IACC member representing SCAG with no expressed position",
+  "summary": "Mark Pisano is listed solely as the Executive Director of the Southern California Association of Governments (SCAG) and a member of the Interagency Coordinating Committee (IACC), which provided policy oversight for the project. No individual statement, complaint, or position is attributed to him in this window; his appearance is purely in an organizational/roster context.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "18"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Interagency Coordinating Committee (IACC)",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "18"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Interagency Coordinating Committee (IACC)",
+      "quote_verified": true,
+      "entity_as_written": "Mark Pisano",
+      "role_as_written": "Executive Director, Southern California Association of Governments; IACC member"
+    }
+  ],
+  "window_pages": [
+    8,
+    28
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 13,
+  "synthetic_no_complaint": true
+}

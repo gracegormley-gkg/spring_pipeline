@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p0491_35556036091957_C271",
+  "complainer_id": "p0491_35556036091957_K007",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 271,
+  "entity": "Bureau of Outdoor Recreation",
+  "kind": "agency",
+  "role": "Preparer of Final Environmental Statement",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "preparer of the Final Environmental Statement implementing Executive Order 11644, presenting regulatory framework without taking a position for or against",
+  "summary": "The Bureau of Outdoor Recreation prepared the Final Environmental Statement on departmental implementation of Executive Order 11644 pertaining to ORV use on public lands. As the document's preparer, BOR presents the regulatory framework, environmental impacts, and alternatives in a neutral, administrative capacity rather than advocating for or against the proposed action. The Bureau coordinated comments from other agencies and the public and compiled the analysis and disposition of those comments.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "1"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Prepared by Bureau of Outdoor Recreation Department of the Interior",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "1"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Prepared by Bureau of Outdoor Recreation Department of the Interior",
+      "quote_verified": true,
+      "entity_as_written": "Bureau of Outdoor Recreation",
+      "role_as_written": "Preparer of Final Environmental Statement"
+    }
+  ],
+  "window_pages": [
+    1,
+    11
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 7,
+  "synthetic_no_complaint": true
+}

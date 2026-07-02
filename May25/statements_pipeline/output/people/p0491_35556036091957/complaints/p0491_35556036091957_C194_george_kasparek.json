@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C194",
+  "complainer_id": "p0491_35556036091957_K160",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 194,
+  "entity": "George Kasparek",
+  "kind": "official",
+  "role": "Assistant Director, Office of State Planning & Development, Pennsylvania",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly states 'This Office does not wish to comment upon this statement'",
+  "summary": "George Kasparek, Assistant Director of the Office of State Planning & Development for Pennsylvania, submitted a brief letter declining to comment on the draft environmental statement for Executive Order 11644 regarding off-road vehicles on public lands. He neither supported nor opposed the proposal, simply acknowledging receipt and declining to offer substantive comments.",
+  "form": "letter",
+  "complaint_summary": "Kasparek's letter on behalf of the Pennsylvania Office of State Planning & Development declines to offer any comment on the draft environmental statement for the proposed implementation of Executive Order 11644 on off-road vehicles.",
+  "evidence_pages": [
+    "270"
+  ],
+  "statement": {
+    "text": "The Pennsylvania State Planning Board, also known as the Office of State Planning and Development, has received a copy of the draft environmental statement for Executive Order 11644 - use of offroad vehicles.\nThis Office does not wish to comment upon this statement.\nThank you for the opportunity to review this environmental statement.\nSincerely.\nGeorge Kasparek Assistant Director\nOffice of State Planning & Development",
+    "opening_anchor": "The Pennsylvania State Planning Board, also known as the Office of State Planning and Development, has received a copy of the draft environmental statement for Executive Order 11644",
+    "closing_anchor": "Thank you for the opportunity to review this environmental statement.\n\nSincerely.\nGeorge Kasparek Assistant Director\nOffice of State Planning & Development",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "This Office does not wish to comment upon this statement.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "270"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "This Office does not wish to comment upon this statement.",
+      "quote_verified": true,
+      "entity_as_written": "George Kasparek",
+      "role_as_written": "Assistant Director, Office of State Planning & Development, Pennsylvania"
+    }
+  ],
+  "window_pages": [
+    260,
+    280
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 160,
+  "synthetic_no_complaint": false
+}

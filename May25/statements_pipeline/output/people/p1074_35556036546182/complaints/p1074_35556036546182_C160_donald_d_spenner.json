@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036546182_C160",
+  "complainer_id": "p1074_35556036546182_K110",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 160,
+  "entity": "Donald D. Spenner",
+  "kind": "official",
+  "role": "Real Estate Agent / District Relocation Agent, Wisconsin DOT Division of Highways",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "authored official relocation plan memos assessing housing availability without expressing support or opposition to the project",
+  "summary": "Donald D. Spenner, a Real Estate Agent and District Relocation Agent for the Wisconsin DOT Division of Highways, authored two official relocation planning documents for the Airport Spur project. His role was administrative and technical: assessing housing availability for displaced families and updating the relocation plan. He expressed no personal opinion on the project's merits, only confirming that sufficient housing existed to accommodate those displaced.",
+  "form": "written_comment",
+  "complaint_summary": "Spenner's March 24, 1972 Revised Relocation Program Plan updates the original relocation plans for the two Airport Spur projects, noting a reduction from 13 to 11 displaced families, surveying available rental and purchase housing in the area, and concluding that sufficient units are available with no significant change from the original plan.",
+  "evidence_pages": [
+    "253"
+  ],
+  "statement": {
+    "text": "REVISED\nRELOCATION PROGRAM PLAN\nAIRPORT SPUR\nProject ID 2015-1-21\nProject No. U 078-1(1)\n(I-94 Interchange - South Howell Avenue)\nand\nProject ID 1030-1-26\nProject No. I 94-5(49)317\n(N-S Freeway - Airport Spur Interchange)\nPrepared by:\nDonald D. Spenner District Relocation Agent March 24, 1972",
+    "opening_anchor": "REVISED\nRELOCATION PROGRAM PLAN\nAIRPORT SPUR\nProject ID 2015-1-21",
+    "closing_anchor": "Prepared by:\nDonald D. Spenner District Relocation Agent March 24, 1972",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The attached surveys indicate that there still should be sufficient housing available to adequately relocate those families and individuals affected by the subject projects.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "253"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The attached surveys indicate that there still should be sufficient housing available to adequately relocate those families and individuals affected by the subject projects.",
+      "quote_verified": true,
+      "entity_as_written": "Donald D. Spenner",
+      "role_as_written": "Real Estate Agent / District Relocation Agent, Wisconsin DOT Division of Highways"
+    }
+  ],
+  "window_pages": [
+    243,
+    263
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 110,
+  "synthetic_no_complaint": false
+}

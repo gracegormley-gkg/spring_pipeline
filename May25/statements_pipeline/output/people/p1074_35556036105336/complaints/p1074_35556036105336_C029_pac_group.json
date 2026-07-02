@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036105336_C029",
+  "complainer_id": "p1074_35556036105336_K029",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 29,
+  "entity": "PAC group",
+  "kind": "organization",
+  "role": "Citizen participation/advisory committee for Randolph Community",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes PAC group establishing elderly housing as early community priority and participating in discussions on redevelopment intensity",
+  "summary": "The PAC group for the Randolph Community is described as strongly supportive of the urban renewal project, having established elderly housing as an early community priority and actively participating in discussions about redevelopment plans. The group also engaged in deliberations on high-rise apartments and housing intensity, ultimately resolving in favor of two-story housing and pedestrian-oriented redevelopment. The PAC group is further noted as collaborating with other PAC groups in Richmond and beyond, underscoring its central role in citizen participation.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The PAC group is described as having established elderly housing projects as an early community priority, reflecting strong resident support for this component of the Randolph Urban Renewal Project.",
+  "evidence_pages": [
+    "50"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "the residents are very much in favor of elderly housing and through their PAC group have established these projects as an early community priority.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "50"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "the residents are very much in favor of elderly housing and through their PAC group have established these projects as an early community priority.",
+      "quote_verified": true,
+      "entity_as_written": "PAC group",
+      "role_as_written": "Citizen participation/advisory committee for Randolph Community"
+    }
+  ],
+  "window_pages": [
+    40,
+    60
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 29,
+  "synthetic_no_complaint": false
+}

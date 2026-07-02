@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036811230_C007",
+  "complainer_id": "p1074_35556036811230_K007",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 7,
+  "entity": "Cornell Aeronautical Lab",
+  "kind": "organization",
+  "role": "population projection author",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "cited as one of several population projection sources in a data table, with no expressed position on the project",
+  "summary": "Cornell Aeronautical Lab (noted as now renamed Calspan) is cited in Table 2-10 as the author of 1967 population projections for the Buffalo SMSA and City of Buffalo. Their projections, made in 1967, are presented alongside those of other organizations for comparative purposes, showing higher growth estimates than later studies. The lab expresses no position on the transit project itself.",
+  "form": "sectional",
+  "complaint_summary": "Cornell Aeronautical Lab's 1967 population projections for the Buffalo SMSA and City of Buffalo are listed in Table 2-10 alongside projections from other organizations, showing higher growth estimates (e.g., 1,557,000 for SMSA by 1980) that were later revised downward by more recent studies.",
+  "evidence_pages": [
+    "49"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "POPULATION PROJECTIONS FOR BUFFALO AREA",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "49"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "POPULATION PROJECTIONS FOR BUFFALO AREA",
+      "quote_verified": true,
+      "entity_as_written": "Cornell Aeronautical Lab",
+      "role_as_written": "population projection author"
+    }
+  ],
+  "window_pages": [
+    39,
+    59
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 7,
+  "synthetic_no_complaint": false
+}

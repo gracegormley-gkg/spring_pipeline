@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036811230_C056",
+  "complainer_id": "p1074_35556036811230_K059",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 56,
+  "entity": "Washington Metropolitan Area Transit Authority",
+  "kind": "agency",
+  "role": "transit authority with prior experience including noise restrictions in construction contract specifications",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "cited as precedent for including noise restrictions in construction contract specifications",
+  "summary": "The Washington Metropolitan Area Transit Authority is referenced as a prior example of a transit agency that has successfully included noise restrictions in construction contract specifications. The citation is used to support and justify the NFTA Metro Corridor's adoption of similar noise limit specifications. No position for or against the project is attributed to the authority.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Washington Metropolitan Area Transit Authority is cited as having included noise restrictions in construction contract specifications, with the experience showing considerable success in reducing construction noise.",
+  "evidence_pages": [
+    "276"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Recent projects of the New York City Transit Authority and the Washington Metropolitan Area Transit Authority have included noise restrictions in the contract specifications.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "276"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Recent projects of the New York City Transit Authority and the Washington Metropolitan Area Transit Authority have included noise restrictions in the contract specifications.",
+      "quote_verified": true,
+      "entity_as_written": "Washington Metropolitan Area Transit Authority",
+      "role_as_written": "transit authority with prior experience including noise restrictions in construction contract specifications"
+    }
+  ],
+  "window_pages": [
+    266,
+    284
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 59,
+  "synthetic_no_complaint": false
+}

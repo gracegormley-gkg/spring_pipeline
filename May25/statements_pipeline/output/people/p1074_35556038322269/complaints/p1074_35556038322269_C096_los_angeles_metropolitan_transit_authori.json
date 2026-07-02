@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556038322269_C096",
+  "complainer_id": "p1074_35556038322269_K027",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 96,
+  "entity": "Los Angeles Metropolitan Transit Authority (LAMTA)",
+  "kind": "agency",
+  "role": "Predecessor transit authority",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "described only as a historical predecessor agency that studied rapid transit needs and acquired bus systems, with no expressed position on the current project",
+  "summary": "LAMTA is referenced solely in a historical planning context as the predecessor agency to SCRTD, created in 1951 to study rapid transit needs in the Los Angeles area. The document describes LAMTA's acquisition of private bus systems in 1958 and its preparation of rapid transit studies, noting that funding problems prevented implementation of its proposals. LAMTA takes no position on the current project, as it was superseded by SCRTD in 1964.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "67"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "In 1951, the California State Legislature created the Los Angeles Metropolitan Transit Authority (LAMTA) to study the area's rapid transit needs.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "67"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In 1951, the California State Legislature created the Los Angeles Metropolitan Transit Authority (LAMTA) to study the area's rapid transit needs.",
+      "quote_verified": true,
+      "entity_as_written": "Los Angeles Metropolitan Transit Authority (LAMTA)",
+      "role_as_written": "Predecessor transit authority"
+    }
+  ],
+  "window_pages": [
+    57,
+    77
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 27,
+  "synthetic_no_complaint": true
+}

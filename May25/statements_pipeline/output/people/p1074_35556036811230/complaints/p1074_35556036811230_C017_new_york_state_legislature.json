@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036811230_C017",
+  "complainer_id": "p1074_35556036811230_K019",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 17,
+  "entity": "New York State Legislature",
+  "kind": "government",
+  "role": "state legislature",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "authorized NFTA and appropriated $86 million for rail transit and bus network",
+  "summary": "The New York State Legislature is described as having authorized the NFTA in 1967 and, in 1971, formally authorized the creation of a regional bus network and the design and construction of a rail transit line in the Buffalo-Amherst Corridor, appropriating $86 million for these activities plus a separate $7.8 million for the Transportation Center. In July 1975, the State allocated an additional $16 million for the rail transit system, demonstrating continued legislative support for the project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The New York State Legislature authorized the NFTA in 1967 and in 1971 authorized creation of a regional bus network and design/construction of a rail transit line in the Buffalo-Amherst Corridor, appropriating $86 million for these activities and a separate $7.8 million for the Transportation Center, with an additional $16 million allocated in July 1975.",
+  "evidence_pages": [
+    "78"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "In 1971, the New York State Legislature authorized the NFTA to proceed with creation of a regional bus network and the design and construction of a rail transit line in the Buffalo-Amherst Corridor; $86 million was appropriated for these activities.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "78"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In 1971, the New York State Legislature authorized the NFTA to proceed with creation of a regional bus network and the design and construction of a rail transit line in the Buffalo-Amherst Corridor; $86 million was appropriated for these activities.",
+      "quote_verified": false,
+      "entity_as_written": "New York State Legislature",
+      "role_as_written": "state legislature"
+    }
+  ],
+  "window_pages": [
+    68,
+    88
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 19,
+  "synthetic_no_complaint": false
+}

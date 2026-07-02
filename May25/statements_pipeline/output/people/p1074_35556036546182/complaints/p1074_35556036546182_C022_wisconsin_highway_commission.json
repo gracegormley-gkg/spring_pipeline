@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556036546182_C022",
+  "complainer_id": "p1074_35556036546182_K021",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 22,
+  "entity": "Wisconsin Highway Commission",
+  "kind": "agency",
+  "role": "State highway governing body",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "suspended right-of-way acquisition pending Final EIS completion, indicating procedural caution rather than opposition or support",
+  "summary": "The Wisconsin Highway Commission appears in the document primarily in a procedural capacity: it directed staff to prepare an environmental impact statement in October 1972 and then suspended all right-of-way acquisition activity in March 1973 until the Final EIS was completed and approved. These actions reflect regulatory compliance and procedural caution rather than a clear stance for or against the project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Wisconsin Highway Commission suspended all right-of-way acquisition activity on March 12, 1973, pending completion and approval of the Final Environmental Impact Statement.",
+  "evidence_pages": [
+    "21"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "March 12, 1973 Wisconsin Highway Commission suspended all right of way acquisition activity until Final Environmental Impact Statement is completed and approved.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "21"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "October 11, 1972 Wisconsin Highway Commission directed staff to prepare and circulate Draft Environmental Impact Statement according to WEPA guidelines.",
+      "quote_verified": true,
+      "entity_as_written": "Wisconsin Highway Commission",
+      "role_as_written": "State highway governing body"
+    },
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "21"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "March 12, 1973 Wisconsin Highway Commission suspended all right of way acquisition activity until Final Environmental Impact Statement is completed and approved.",
+      "quote_verified": true,
+      "entity_as_written": "Wisconsin Highway Commission",
+      "role_as_written": "State highway governing body"
+    }
+  ],
+  "window_pages": [
+    11,
+    31
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 21,
+  "synthetic_no_complaint": false
+}

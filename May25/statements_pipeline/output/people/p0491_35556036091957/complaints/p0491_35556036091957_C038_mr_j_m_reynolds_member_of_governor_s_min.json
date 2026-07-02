@@ -1,0 +1,61 @@
+{
+  "complaint_id": "p0491_35556036091957_C038",
+  "complainer_id": "p0491_35556036091957_K023",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 38,
+  "entity": "Mr. J. M. Reynolds, Member of Governor's Mining Adversary Board, State of Nevada",
+  "kind": "individual",
+  "role": "State mining board member, commenter",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase urging ORV regulations account for four-wheel drive vehicles used in mining, prospecting, and ranching",
+  "summary": "Mr. J. M. Reynolds, a member of Nevada's Governor's Mining Advisory Board, urged that ORV regulations take into consideration four-wheel drive vehicles used in mining, prospecting, and ranching. His comment was grouped among at least 15 responses from mining interests concerned about whether Executive Order 11644 and Departmental regulations applied to mining vehicles. In response, the Department revised its final environmental statement to except mining, oil, and gas geophysical exploration equipment from the definition of off-road vehicles.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Mr. Reynolds urged that ORV regulations take into consideration four-wheel drive vehicles used in the fields of mining, prospecting, and ranching.",
+  "evidence_pages": [
+    "39"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p0491_35556036091957_R014"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual",
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "Mr. J. M. Reynolds, Member of Governor's Mining Adversary Board, State of Nevada - urged that ORV regulations take into consideration four-wheel drive vehicles in field of mining, prospecting, and ranching.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "39"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Mr. J. M. Reynolds, Member of Governor's Mining Adversary Board, State of Nevada - urged that ORV regulations take into consideration four-wheel drive vehicles in field of mining, prospecting, and ranching.",
+      "quote_verified": false,
+      "entity_as_written": "Mr. J. M. Reynolds, Member of Governor's Mining Adversary Board, State of Nevada",
+      "role_as_written": "State mining board member, commenter"
+    }
+  ],
+  "window_pages": [
+    29,
+    49
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 23,
+  "synthetic_no_complaint": false
+}

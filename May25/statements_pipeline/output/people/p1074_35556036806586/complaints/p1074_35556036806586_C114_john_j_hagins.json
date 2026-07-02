@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036806586_C114",
+  "complainer_id": "p1074_35556036806586_K092",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 114,
+  "entity": "John J. Hagins",
+  "kind": "individual",
+  "role": "biologist, Joseph LeConte Chapter, Sierra Club",
+  "stance": "opposed",
+  "stance_confidence": "high",
+  "stance_basis": "closes letter with 'emphatic opposition to the Bad Creek Pumped Storage Project'",
+  "summary": "John J. Hagins, a biologist and member of the LeConte Chapter of the Sierra Club, submitted detailed written comments opposing the Bad Creek Pumped Storage Project on behalf of the Chapter, raising concerns about the saddle dike fuse design, wildlife and fishery impacts, energy waste, conservation alternatives, piecemeal environmental assessment, and the project's overall economic and environmental detriments. He followed up with a second letter enclosing a memo to Duke Power's Dr. L.L. Olmsted that elaborated on energy efficiency calculations and argued that peak demand elimination through rate restructuring was a superior alternative. He concluded with emphatic personal opposition, stating the project would be detrimental to the land, people, economy, and Duke Power itself.",
+  "form": "letter",
+  "complaint_summary": "Hagins writes a follow-up letter to the FPC Secretary noting that a memo to Dr. L.L. Olmsted of Duke Power was inadvertently omitted from his earlier submission and requests it be included as part of his comments.",
+  "evidence_pages": [
+    "371"
+  ],
+  "statement": {
+    "text": "Recently you recieved a conv of comments concerning the Draft\nFivironmental Statement for the 3rd Creek Funned Stormen Development\nFrought Do. 2200. In that copy of comments made on behalf of the\n\"Joseph JeConte Chanter of the Sierra Club I made reference to a\nletter to Dr. L.L. Olmsted of Tube Bower Co. which intended to have\\nincluded.\nUnfortunately, a conv of that letter was never inserted, hence this letter. A copy of that letter is included in this letter and I would appreciate your consideration of it as part of the convents. Please have sure that it is included with my letter of the third of April.\nThank you were much for your cooperation and your attention.\nColm Flair\nJoseph Leconte Chapter, Sierra Club",
+    "opening_anchor": "Recently you recieved a conv of comments concerning the Draft\nFivironmental Statement for the 3rd Creek Funned Stormen Development",
+    "closing_anchor": "Thank you were much for your cooperation and your attention.\nColm Flair\nJoseph Leconte Chapter, Sierra Club",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "I hereby stand with emphatic opposition to the Bad Creek Pumped Storage Project as in the long run it will be detrimental to the best interests of the land, the people, the economy, and therefore, Duke Power Company.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 7,
+      "evidence_pages": [
+        "371"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "I hereby stand with emphatic opposition to the Bad Creek Pumped Storage Project as in the long run it will be detrimental to the best interests of the land, the people, the economy, and therefore, Duke Power Company.",
+      "quote_verified": true,
+      "entity_as_written": "John J. Hagins",
+      "role_as_written": "biologist, Joseph LeConte Chapter, Sierra Club"
+    }
+  ],
+  "window_pages": [
+    361,
+    381
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 92,
+  "synthetic_no_complaint": false
+}

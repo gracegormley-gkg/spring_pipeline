@@ -1,0 +1,80 @@
+{
+  "complaint_id": "p1074_35556039563135_C137",
+  "complainer_id": "p1074_35556039563135_K042",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 137,
+  "entity": "Benjamin O. Davis, Jr.",
+  "kind": "official",
+  "role": "Assistant Secretary for Environment, Safety, and Consumer Affairs, U.S. Department of Transportation",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letter clarifies DOT policy on Section 4(f) applicability to school properties without opposing or supporting the project",
+  "summary": "Benjamin O. Davis, Jr., as Assistant Secretary for Environment, Safety, and Consumer Affairs at the U.S. Department of Transportation, authored a letter to the Department of the Interior clarifying DOT's position on when Section 4(f) applies to school properties. His letter is referenced by the Bureau of Outdoor Recreation as providing guidance on the Roosevelt School property question, and his opinion—that school property serving only as a school recreational area is not covered by Section 4(f), but community-serving recreational areas may be—is cited as the basis for the Bureau's own opinion. He does not take a position for or against the highway project itself.",
+  "form": "letter",
+  "complaint_summary": "Davis clarifies DOT's policy that school property used solely for school recreation is not covered by Section 4(f), but areas also serving community recreational needs may be covered if found significant by responsible local officials.",
+  "evidence_pages": [
+    "274",
+    "275"
+  ],
+  "statement": {
+    "text": "This is in reply to your letter of May 25, 1973, requesting clarification of the Department of Transportation's position regarding the applicability of Section 4(f) to certain public school proparties. A formal opinion of Counsel on this question has mot been prepared by the Department. However, the position which the Department has taken on previous occasions is as follows:\n1. School property serving only as a recreational area for the school has not been considered to be covered by Section 4(f).\n2. An area which serves the recreational needs of the community, as well as the school, is considered to be covered by Section 4(f) if found to be significant by the officials having responsibility for providing recreational opportunities to the community.\nIn view of your recent inquiry, we have raised this matter again with our Office of the General Counsel. It is currently under review in that office, and we will furnish you with any further information or changes in the above policy which may result from that review.\nSincerely,\nBenjamin O. Davis, Jr.\nAssistant Secretary for Environment,\nSafety, and Consumer Affairs",
+    "opening_anchor": "This is in reply to your letter of May 25, 1973, requesting clarification of the Department of Transportation's position regarding the applicability of Section 4(f) to certain public school proparties.",
+    "closing_anchor": "we will furnish you with any further information or changes in the above policy which may result from that review.\n\nSincerely,\nBenjamin O. Davis, Jr.\nAssistant Secretary for Environment,\nSafety, and Consumer Affairs",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The enclosed copy of correspondence from Benjamin O. Davis, Jr., Department of Transportation to Bruce Blanchard, Department of the Interior, would appear to provide an answer to your request.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "274"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The enclosed copy of correspondence from Benjamin O. Davis, Jr., Department of Transportation to Bruce Blanchard, Department of the Interior, would appear to provide an answer to your request.",
+      "quote_verified": true,
+      "entity_as_written": "Benjamin O. Davis, Jr.",
+      "role_as_written": "Department of Transportation official"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "275"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "School property serving only as a recreational area for the school has not been considered to be covered by Section 4(f).",
+      "quote_verified": true,
+      "entity_as_written": "Benjamin O. Davis, Jr.",
+      "role_as_written": "Assistant Secretary for Environment, Safety, and Consumer Affairs, U.S. Department of Transportation"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "275"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "School property serving only as a recreational area for the school has not been considered to be covered by Section 4(f).",
+      "quote_verified": true,
+      "entity_as_written": "Benjamin O. Davis, Jr.",
+      "role_as_written": "Assistant Secretary for Environment, Safety, and Consumer Affairs, U.S. Department of Transportation"
+    }
+  ],
+  "window_pages": [
+    264,
+    285
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 42,
+  "synthetic_no_complaint": false
+}

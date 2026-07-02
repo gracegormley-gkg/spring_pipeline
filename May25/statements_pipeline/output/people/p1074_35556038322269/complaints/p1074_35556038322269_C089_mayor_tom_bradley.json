@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556038322269_C089",
+  "complainer_id": "p1074_35556038322269_K015",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 89,
+  "entity": "Mayor Tom Bradley",
+  "kind": "official",
+  "role": "Mayor, City of Los Angeles; IACC member",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed as IACC member with no individual position expressed",
+  "summary": "Mayor Tom Bradley appears solely as a listed member of the Interagency Coordinating Committee (IACC) in the Acknowledgements and Credits section of the document. No individual statement, position, or complaint is attributed to him. His role is purely organizational, as a policy-level oversight member of the committee that reviewed the project work.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "18"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Interagency Coordinating Committee (IACC)",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "18"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Interagency Coordinating Committee (IACC)",
+      "quote_verified": true,
+      "entity_as_written": "Mayor Tom Bradley",
+      "role_as_written": "Mayor, City of Los Angeles; IACC member"
+    }
+  ],
+  "window_pages": [
+    8,
+    28
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 15,
+  "synthetic_no_complaint": true
+}

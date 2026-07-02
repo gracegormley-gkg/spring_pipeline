@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556038322269_C080",
+  "complainer_id": "p1074_35556038322269_K004",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 80,
+  "entity": "Councilman John Ferraro",
+  "kind": "official",
+  "role": "City Council member, City of Los Angeles; IACC member",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed as IACC member with no expressed position",
+  "summary": "Councilman John Ferraro appears solely as a member of the Interagency Coordinating Committee (IACC) representing the City of Los Angeles in the acknowledgements section of the document. No individual statement, position, or complaint is attributed to him; his listing is purely organizational/roster in nature.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "18"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Interagency Coordinating Committee (IACC)",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "18"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Interagency Coordinating Committee (IACC)",
+      "quote_verified": true,
+      "entity_as_written": "Councilman John Ferraro",
+      "role_as_written": "City Council member, City of Los Angeles; IACC member"
+    }
+  ],
+  "window_pages": [
+    8,
+    28
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 4,
+  "synthetic_no_complaint": true
+}

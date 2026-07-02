@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036861797_C034",
+  "complainer_id": "p1074_35556036861797_K017",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 34,
+  "entity": "The Society of the Plastics Industries, Inc.",
+  "kind": "organization",
+  "role": "Industry association / source cited on plastics incineration",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "cited as a data source reporting findings on plastics incineration without expressing support or opposition to the project",
+  "summary": "The Society of the Plastics Industries, Inc. is cited once in the document as a source reporting that burning 2 to 4 percent plastics with other refuse in incinerators does not damage the incinerators or significantly alter effluent gas composition. The agency notes the preliminary nature of the SPI study and neither endorses nor refutes its findings. The entity takes no position on the proposed action itself; it is referenced purely as an industry data source.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Society of the Plastics Industries, Inc. is cited as reporting that burning 2 to 4 percent plastics with other refuse in incinerators does not damage the incinerators or significantly change the composition of the effluent gas.",
+  "evidence_pages": [
+    "39"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036861797_R016"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Society of the Plastics Industries, Inc. reports that burning 2 to 4 percent plastics with other refuse in incinerators does not damage the incinerators or significantly change the composition of the effluent gas.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "39"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Society of the Plastics Industries, Inc. reports that burning 2 to 4 percent plastics with other refuse in incinerators does not damage the incinerators or significantly change the composition of the effluent gas.",
+      "quote_verified": true,
+      "entity_as_written": "The Society of the Plastics Industries, Inc.",
+      "role_as_written": "Industry association / source cited on plastics incineration"
+    }
+  ],
+  "window_pages": [
+    29,
+    49
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 17,
+  "synthetic_no_complaint": false
+}

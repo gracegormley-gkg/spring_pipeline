@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036546182_C054",
+  "complainer_id": "p1074_35556036546182_K037",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 54,
+  "entity": "Milwaukee Public Schools",
+  "kind": "agency",
+  "role": "public school system",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "spokesperson neither endorsed nor condemned the Airport Spur but expressed concern about noise and air pollution effects on Hamlin Garland School",
+  "summary": "Milwaukee Public Schools neither supported nor opposed the Airport Spur project, but expressed concern about the effects of air and noise pollution on Hamlin Garland School. The school system also conducted noise studies at Hamlin Garland School in 1970 and 1974, providing data used in the environmental analysis of the project's noise impacts.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "A spokesperson for the Milwaukee School Board neither endorsed nor condemned the Airport Spur but expressed concern about the effects of air and noise pollution on Hamlin Garland School.",
+  "evidence_pages": [
+    "102"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "In a noise study conducted in 1970 by the Milwaukee Public Schools, noise measurements at Hamlin Garland School ranged from 69-90dBC.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "112"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In a noise study conducted in 1970 by the Milwaukee Public Schools, noise measurements at Hamlin Garland School ranged from 69-90dBC.",
+      "quote_verified": true,
+      "entity_as_written": "Milwaukee Public Schools",
+      "role_as_written": "public school system"
+    }
+  ],
+  "window_pages": [
+    102,
+    122
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 37,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556036806586_C129",
+  "complainer_id": "p1074_35556036806586_K039",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 129,
+  "entity": "Foothills Trail Conference, Inc.",
+  "kind": "organization",
+  "role": "Advisory body for hiking trail management",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "mentioned only as an advisory body the Applicant would consult when altering or relocating the hiking trail",
+  "summary": "The Foothills Trail Conference, Inc. is referenced solely as an advisory body whose guidance the Applicant would seek if it becomes necessary to alter, discontinue, or relocate all or part of the proposed hiking trail. The organization is not described as taking a position for or against the project; it is presented as a consultative resource with membership drawn from State and Federal agencies and interested local organizations and individuals. No complaint, objection, or endorsement is attributed to the Conference in this window.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "176"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "the Applicant proposes to reserve the right to alter, discontinue, or relocate all or a portion of the proposed trail as needs may require, with the advice of the Foothills Trail Conference, Inc., whose membership includes several State and Federal agencies and interested local organizations and individuals.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "176"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "the Applicant proposes to reserve the right to alter, discontinue, or relocate all or a portion of the proposed trail as needs may require, with the advice of the Foothills Trail Conference, Inc., whose membership includes several State and Federal agencies and interested local organizations and individuals.",
+      "quote_verified": true,
+      "entity_as_written": "Foothills Trail Conference, Inc.",
+      "role_as_written": "Advisory body for hiking trail management"
+    }
+  ],
+  "window_pages": [
+    166,
+    186
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 39,
+  "synthetic_no_complaint": true
+}

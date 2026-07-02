@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036806586_C117",
+  "complainer_id": "p1074_35556036806586_K003",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 117,
+  "entity": "Department of the Interior",
+  "kind": "agency",
+  "role": "Federal agency requested to review draft EIS; responded",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed only in sectional roster of federal departments requested to review draft EIS; no position stated",
+  "summary": "The Department of the Interior appears only in a sectional listing of federal departments and offices that were requested to review the draft Environmental Impact Statement for the Bad Creek Pumped Storage Project. No substantive position, comment, or complaint from the Department of the Interior is present in this window of the document. Their stance cannot be determined from the available text.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "1"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim",
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Federal Departments and Offices ... *Department of the Interior",
+  "summary_quote_verified": false,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "1"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Federal Departments and Offices ... *Department of the Interior",
+      "quote_verified": false,
+      "entity_as_written": "Department of the Interior",
+      "role_as_written": "Federal agency requested to review draft EIS; responded"
+    }
+  ],
+  "window_pages": [
+    1,
+    11
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 3,
+  "synthetic_no_complaint": true
+}

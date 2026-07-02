@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036806586_C132",
+  "complainer_id": "p1074_35556036806586_K095",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 132,
+  "entity": "Robert F. Martin, P.E.",
+  "kind": "individual",
+  "role": "commenter, South Carolina Chapter of Trout Unlimited",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "find_statement call failed",
+  "summary": "",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "337"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual",
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "It is requested that time necessary for sufficient study of the spawning run and its success be granted prior to a decision on licensing.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 7,
+      "evidence_pages": [
+        "337"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "It is requested that time necessary for sufficient study of the spawning run and its success be granted prior to a decision on licensing.",
+      "quote_verified": true,
+      "entity_as_written": "Robert F. Martin, P.E.",
+      "role_as_written": "commenter, South Carolina Chapter of Trout Unlimited"
+    }
+  ],
+  "window_pages": [
+    327,
+    347
+  ],
+  "find_statement_error": "LLM did not return valid JSON: no JSON object found",
+  "merge_sequence": 95,
+  "synthetic_no_complaint": true
+}

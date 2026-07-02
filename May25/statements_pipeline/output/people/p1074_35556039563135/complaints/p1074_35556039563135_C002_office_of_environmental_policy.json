@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556039563135_C002",
+  "complainer_id": "p1074_35556039563135_K021",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 2,
+  "entity": "Office of Environmental Policy",
+  "kind": "agency",
+  "role": "FHWA office reviewing Section 4(f) statement",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "review finding that no feasible and prudent alternatives exist and all possible planning to minimize harm was included",
+  "summary": "The Office of Environmental Policy reviewed the Section 4(f) statement for the reconstruction of U.S. Route 30 and jointly found that there are no feasible and prudent alternatives to the temporary use of land from Woodrow Wilson Woods and that the project includes all possible planning to minimize harm. The office's review supported approval of the Section 4(f) determination, effectively endorsing the project as proposed.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Office of Environmental Policy reviewed the Section 4(f) statement and found no feasible and prudent alternatives to the use of Forest Preserve land and that all possible planning to minimize harm was included, supporting approval of the project.",
+  "evidence_pages": [
+    "1"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Section 4(f) statement for the subject project has been reviewed by the Office of Environmental Policy and the Office of the Chief Counsel.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "1"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Section 4(f) statement for the subject project has been reviewed by the Office of Environmental Policy and the Office of the Chief Counsel.",
+      "quote_verified": true,
+      "entity_as_written": "Office of Environmental Policy",
+      "role_as_written": "FHWA office reviewing Section 4(f) statement"
+    }
+  ],
+  "window_pages": [
+    1,
+    11
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 21,
+  "synthetic_no_complaint": false
+}

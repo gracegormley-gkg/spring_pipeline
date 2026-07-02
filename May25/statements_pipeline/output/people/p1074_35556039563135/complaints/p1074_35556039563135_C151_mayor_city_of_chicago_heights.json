@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556039563135_C151",
+  "complainer_id": "p1074_35556039563135_K019",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 151,
+  "entity": "Mayor, City of Chicago Heights",
+  "kind": "official",
+  "role": "Local government recipient of draft EIS",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed only as a draft EIS recipient with no comment recorded",
+  "summary": "The Mayor of the City of Chicago Heights appears only in the list of local agencies to which the draft Environmental Impact Statement was sent for review and comment. Notably, the Mayor does not appear in the subsequent list of agencies that actually commented on the draft EIS, indicating no formal response or position was submitted. No complaint, support, or other position is attributed to this entity in the document window.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "21"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Mayor, City of Chicago Heights",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "21"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Mayor, City of Chicago Heights",
+      "quote_verified": true,
+      "entity_as_written": "Mayor, City of Chicago Heights",
+      "role_as_written": "Local government recipient of draft EIS"
+    }
+  ],
+  "window_pages": [
+    11,
+    31
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 19,
+  "synthetic_no_complaint": true
+}

@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036546182_C029",
+  "complainer_id": "p1074_35556036546182_K003",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 29,
+  "entity": "Common Council for the City of Milwaukee",
+  "kind": "government",
+  "role": "Municipal legislative body",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "adopted the Regional Land Use and Transportation Plan that recommends the Airport Spur Freeway",
+  "summary": "The Common Council for the City of Milwaukee adopted the SEWRPC Regional Land Use and Transportation Plan in September 1967, which recommends construction of the Airport Spur Freeway connecting General Mitchell Field to Interstate Route I-94. The Council's adoption of this plan is cited as evidence of broad governmental endorsement of the regional transportation framework underlying the proposed project. No independent objection or condition is attributed to the Council in this window.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Common Council for the City of Milwaukee adopted the SEWRPC Regional Land Use and Transportation Plan in September 1967, lending municipal legislative support to the regional planning framework that includes the Airport Spur Freeway proposal.",
+  "evidence_pages": [
+    "33"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Common Council for the City of Milwaukee adopted it in September 1967 and the community of Oak Creek adopted it on March 6, 1968.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "33"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Common Council for the City of Milwaukee adopted it in September 1967 and the community of Oak Creek adopted it on March 6, 1968.",
+      "quote_verified": true,
+      "entity_as_written": "Common Council for the City of Milwaukee",
+      "role_as_written": "Municipal legislative body"
+    }
+  ],
+  "window_pages": [
+    23,
+    43
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 3,
+  "synthetic_no_complaint": false
+}

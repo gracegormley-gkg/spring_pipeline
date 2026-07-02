@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036058550_C019",
+  "complainer_id": "p1074_35556036058550_K010",
+  "doc_id": "p1074_35556036058550",
+  "work_id": "csv:35556036058550",
+  "order": 19,
+  "entity": "Environmental Protection Agency",
+  "kind": "agency",
+  "role": "Federal agency commenter on draft EIS",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "multiple paraphrased comments requesting additional details and raising environmental concerns, with HUD responses addressing each",
+  "summary": "The Environmental Protection Agency submitted comments on the draft Environmental Impact Statement for Operation BREAKTHROUGH, raising concerns about air pollution impacts, water siltration during construction, environmental implications of new materials, water management, and noise standards. Each comment was addressed by HUD in the final statement, with responses pointing to revised text or specific pages. The EPA's role also included evaluating solid waste handling on all prototype sites and conducting ongoing evaluations of solid waste management activities.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The EPA commented on water siltration during construction as an environmental concern.",
+  "evidence_pages": [
+    "20"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036058550_R013"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Comment: Air pollution impact and need for details.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "20"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Comment: Air pollution impact and need for details.",
+      "quote_verified": true,
+      "entity_as_written": "Environmental Protection Agency",
+      "role_as_written": "Federal agency commenter on draft EIS"
+    }
+  ],
+  "window_pages": [
+    10,
+    30
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 10,
+  "synthetic_no_complaint": false
+}

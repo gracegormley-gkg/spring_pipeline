@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036806586_C034",
+  "complainer_id": "p1074_35556036806586_K032",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 34,
+  "entity": "State Historic Preservation Officer",
+  "kind": "official",
+  "role": "state historic preservation authority",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased statement confirming no historic sites in project area, neither supporting nor opposing the project",
+  "summary": "The State Historic Preservation Officer is paraphrased as having confirmed that no historic sites or sites eligible for inclusion in the National Register of Historic Places are located in the area of the proposed Bad Creek Project. This statement is presented as factual background information supporting the conclusion that the project would not impact historic resources. The entity takes no explicit position on the project itself.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The State Historic Preservation Officer stated that no historic sites or sites eligible for inclusion in the National Register of Historic Places are in the area of the proposed project.",
+  "evidence_pages": [
+    "129"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The State Historic Preservation Officer has stated that no historic sites or sites eligible for inclusion in the Register are in the area of the proposed project.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "129"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The State Historic Preservation Officer has stated that no historic sites or sites eligible for inclusion in the Register are in the area of the proposed project.",
+      "quote_verified": true,
+      "entity_as_written": "State Historic Preservation Officer",
+      "role_as_written": "state historic preservation authority"
+    }
+  ],
+  "window_pages": [
+    119,
+    139
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 32,
+  "synthetic_no_complaint": false
+}

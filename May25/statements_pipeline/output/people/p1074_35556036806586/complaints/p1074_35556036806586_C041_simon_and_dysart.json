@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036806586_C041",
+  "complainer_id": "p1074_35556036806586_K045",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 41,
+  "entity": "Simon and Dysart",
+  "kind": "individual",
+  "role": "Researchers recommending storm flow augmentation",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase recommending storm flow augmentation as a post-construction mitigation measure for Howard Creek sediment recovery",
+  "summary": "Simon and Dysart (1975) are cited in the EIS as researchers who recommend storm flow augmentation after construction to flush sediment accumulations from Howard Creek and reduce recovery time. Their recommendation is presented as a mitigation measure in the context of construction impacts on Howard Creek, suggesting conditional support for the project provided such remediation steps are taken. No direct statement or letter from them appears in the document window.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Simon and Dysart (1975) recommend the use of storm flow augmentation after construction to flush Howard Creek of sediment accumulations and reduce the time required for stream recovery.",
+  "evidence_pages": [
+    "166"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036806586_R008"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Simon and Dysart (1975) and Langdon, et al. (1976) suggest the use of storm flow augmentation after construction to help flush Howard Creek of sediment accumulations from construction and reduce the time required for recovery of Howard Creek.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "166"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Simon and Dysart (1975) and Langdon, et al. (1976) suggest the use of storm flow augmentation after construction to help flush Howard Creek of sediment accumulations from construction and reduce the time required for recovery of Howard Creek.",
+      "quote_verified": true,
+      "entity_as_written": "Simon and Dysart",
+      "role_as_written": "Researchers recommending storm flow augmentation"
+    }
+  ],
+  "window_pages": [
+    156,
+    176
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 45,
+  "synthetic_no_complaint": false
+}

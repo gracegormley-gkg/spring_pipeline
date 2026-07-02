@@ -1,0 +1,47 @@
+# doc_id: p1074_35556036861797
+# work_id: csv:35556036861797
+# title: Average fuel economy standard for nonpassenger automobiles, model year 1979 : environmental impact statement.
+# n_commenters: 35
+# n_complaints: 69
+# n_responses: 41
+# grade options: correct|minor_issue|wrong|cant_tell
+# stance vocab: in_favor|opposed|conditional|neutral
+# kind vocab: individual|official|organization|agency|tribe|government|other
+# response_pages: resolved by searching source per-page JSON for the response opening_anchor; '?' means anchor did not match any page.
+
+complainer_id,entity,kind,role,stance,stance_confidence,comment_pages_from,comment_pages_to,comment_pages_all,n_complaints,responded,response_ids,response_pages,response_agency,needs_human_review,human_review_reasons,your_grade,your_notes
+p1074_35556036861797_K013,John W. Snow,official,"Administrator, National Highway Traffic Safety Administration",neutral,low,1,1,1,1,N,,,,yes,low_stance_confidence,,
+p1074_35556036861797_K015,National Highway Traffic Safety Administration,agency,Promulgating agency for Average Fuel Economy Standard,in_favor,high,2,4,"2,3,4",4,N,,,,no,,,
+p1074_35556036861797_K001,American Motors Corporation (AMC),organization,automotive manufacturer / commenter,opposed,medium,9,19,"9,19",3,Y,p1074_35556036861797_R002;p1074_35556036861797_R003,27;32,other,no,,,
+p1074_35556036861797_K007,Environmental Protection Agency (EPA),agency,Commenter / federal agency,conditional,medium,9,19,"9,19",2,Y,p1074_35556036861797_R006,31,National Highway Traffic Safety Administration,no,,,
+p1074_35556036861797_K010,Ford Motor Company,organization,automotive manufacturer / commenter,opposed,medium,9,19,"9,19",3,Y,p1074_35556036861797_R008;p1074_35556036861797_R009,27;32,NHTSA,no,,,
+p1074_35556036861797_K011,General Motors Corporation (GM),organization,automotive manufacturer / commenter,opposed,medium,9,57,"9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57",1,Y,p1074_35556036861797_R001,32,other,no,,,
+p1074_35556036861797_K012,International Harvester Corporation (IH),organization,automotive manufacturer / commenter,opposed,medium,9,19,"9,19",2,Y,p1074_35556036861797_R010,32,NHTSA,no,,,
+p1074_35556036861797_K003,Chrysler Corporation,organization,automotive manufacturer / commenter,opposed,medium,19,19,19,2,Y,p1074_35556036861797_R004;p1074_35556036861797_R005,27;32,other,no,,,
+p1074_35556036861797_K004,Consumers Union,organization,commenter (no substantive comments),neutral,medium,19,19,19,1,N,,,,no,,,
+p1074_35556036861797_K005,Department of Transportation,agency,Commenter / parent agency,neutral,low,19,19,19,1,N,,,,yes,low_stance_confidence,,
+p1074_35556036861797_K008,Federal Energy Administration (FEA),agency,Commenter / federal agency,conditional,medium,19,19,19,1,Y,p1074_35556036861797_R007,31,National Highway Traffic Safety Administration,no,,,
+p1074_35556036861797_K009,Federal Highway Administration,agency,commenter (no substantive comments),neutral,medium,19,19,19,1,N,,,,no,,,
+p1074_35556036861797_K014,National Conference of Governors' Highway Safety Representatives,organization,organization / commenter,in_favor,medium,19,19,19,1,N,,,,no,,,
+p1074_35556036861797_K018,"The Society of the Plastics Industry, Inc. (SPI)",organization,industry association / commenter,conditional,medium,19,19,19,2,Y,p1074_35556036861797_R011,39,National Highway Traffic Safety Administration,no,,,
+p1074_35556036861797_K019,U. S. Department of Agriculture,agency,Commenter / federal agency,neutral,low,19,19,19,1,N,,,,yes,low_stance_confidence,,
+p1074_35556036861797_K020,U. S. Department of Labor,agency,commenter (no substantive comments),neutral,medium,19,19,19,1,N,,,,no,,,
+p1074_35556036861797_K021,U. S. Department of the Interior,agency,Commenter / federal agency,neutral,low,19,19,19,1,N,,,,yes,low_stance_confidence,,
+p1074_35556036861797_K022,UAW,organization,labor union / commenter,opposed,medium,19,19,19,1,N,,,,no,,,
+p1074_35556036861797_K006,domestic manufacturers of NPA's,organization,Commenters / NPA manufacturers collectively,opposed,medium,28,34,"28,33,34",3,Y,p1074_35556036861797_R012;p1074_35556036861797_R014;p1074_35556036861797_R015,28;31;33,NHTSA,no,,,
+p1074_35556036861797_K016,several commenters,other,Commenters on classification issue,conditional,medium,28,28,28,1,Y,p1074_35556036861797_R013,28,National Highway Traffic Safety Administration,no,,,
+p1074_35556036861797_K017,"The Society of the Plastics Industries, Inc.",organization,Industry association / source cited on plastics incineration,neutral,medium,39,39,39,1,Y,p1074_35556036861797_R016,39,other,no,,,
+p1074_35556036861797_K024,NHTSA,agency,Federal fuel economy standards regulator,neutral,medium,83,146,"83,146",2,Y,p1074_35556036861797_R017,87,National Highway Traffic Safety Administration,no,,,
+p1074_35556036861797_K025,AMC,organization,automobile manufacturer / commenter,opposed,medium,97,97,97,8,Y,p1074_35556036861797_R018;p1074_35556036861797_R019;p1074_35556036861797_R020;p1074_35556036861797_R021;p1074_35556036861797_R022;p1074_35556036861797_R023;p1074_35556036861797_R024;p1074_35556036861797_R025,87;95;98;99;104;107;121;132,NHTSA,no,,,
+p1074_35556036861797_K029,"U. S. Department of Agriculture, Forest Service",agency,federal agency / commenter,opposed,medium,110,110,110,1,Y,p1074_35556036861797_R026,110,National Highway Traffic Safety Administration,no,,,
+p1074_35556036861797_K030,"U.S. Department of the Interior, Bureau of Mines",agency,federal agency / commenter,conditional,medium,112,112,112,1,N,,,,no,,,
+p1074_35556036861797_K031,U.S. Department of Transportation,agency,commenter (no substantive comments),neutral,medium,112,112,112,1,N,,,,no,,,
+p1074_35556036861797_K028,International Harvester,organization,automobile manufacturer / commenter,conditional,medium,120,146,"120,146",2,Y,p1074_35556036861797_R027;p1074_35556036861797_R034,119;146,National Highway Traffic Safety Administration,no,,,
+p1074_35556036861797_K026,Chrysler,organization,automobile manufacturer / commenter,opposed,medium,129,157,"129,146,155,157",5,Y,p1074_35556036861797_R033;p1074_35556036861797_R036;p1074_35556036861797_R038;p1074_35556036861797_R039,143;153;156;157,agency,no,,,
+p1074_35556036861797_K032,United Auto Workers (UAW),organization,labor union / commenter,opposed,medium,133,133,133,1,Y,p1074_35556036861797_R028,130,NHTSA,yes,quote_not_verbatim,,
+p1074_35556036861797_K027,General Motors,organization,automobile manufacturer / commenter,conditional,medium,134,160,"134,146,160",4,Y,p1074_35556036861797_R029;p1074_35556036861797_R030;p1074_35556036861797_R041,130;135;157,NHTSA,no,,,
+p1074_35556036861797_K035,Ford,organization,automobile manufacturer / commenter,opposed,medium,141,158,"141,143,146,158",4,Y,p1074_35556036861797_R031;p1074_35556036861797_R032;p1074_35556036861797_R035;p1074_35556036861797_R040,144;149;155;159,NHTSA,no,,,
+p1074_35556036861797_K034,EPA,agency,Federal emissions standards regulator,neutral,medium,145,152,"145,152",2,N,,,,no,,,
+p1074_35556036861797_K033,Congress,government,U.S. legislative body / established passenger automobile standard,neutral,medium,156,163,"156,163",2,Y,p1074_35556036861797_R037,157,National Highway Traffic Safety Administration,no,,,
+p1074_35556036861797_K002,"Assistant Secretary for Environment, Safety and Consumer Affairs",official,Commenter / DOT official,neutral,low,19,19,19,1,N,,,,yes,low_stance_confidence;no_complaints,,
+p1074_35556036861797_K023,University of Michigan (UM),organization,academic institution / commenter,neutral,low,19,108,"19,108",1,N,,,,yes,low_stance_confidence;no_complaints,,

@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036058550_C004",
+  "complainer_id": "p1074_35556036058550_K012",
+  "doc_id": "p1074_35556036058550",
+  "work_id": "csv:35556036058550",
+  "order": 4,
+  "entity": "Indiana State Division of Water Resources",
+  "kind": "agency",
+  "role": "State agency studying storm drainage design effectiveness at Indianapolis site",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "described as collaborating on a study of storm drainage design effectiveness at Indianapolis site, no position stated",
+  "summary": "The Indiana State Division of Water Resources is mentioned in the context of the Indianapolis prototype site, where it is collaborating with site planners to study the effectiveness of an innovative storm drainage design using holding basins to reduce downstream flooding. The agency is described as a research partner rather than as expressing support or opposition to the project. No independent statement or position from the agency is included in the document.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Indiana State Division of Water Resources is described as jointly studying with site planners the effectiveness of the Indianapolis site's storm drainage design approach, which uses earthwork holding basins to reduce instantaneous storm water flow and downstream flooding.",
+  "evidence_pages": [
+    "14"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The site planners and the Indiana State Division of Water Resources are studying the effectiveness of this design approach.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "14"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The site planners and the Indiana State Division of Water Resources are studying the effectiveness of this design approach.",
+      "quote_verified": true,
+      "entity_as_written": "Indiana State Division of Water Resources",
+      "role_as_written": "State agency studying storm drainage design effectiveness at Indianapolis site"
+    }
+  ],
+  "window_pages": [
+    4,
+    24
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 12,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036105336_C041",
+  "complainer_id": "p1074_35556036105336_K025",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 41,
+  "entity": "Council on Environmental Quality",
+  "kind": "agency",
+  "role": "Federal environmental policy body",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "cited as an authoritative reference body for NEPA clarification, not expressing its own position on the project",
+  "summary": "The Council on Environmental Quality (CEQ) is referenced in the document solely as an authoritative body whose guidelines HUD followed in preparing responses to agency comments, and to whom the Federal Highway Administration is directed for further clarification of NEPA provisions. CEQ does not itself express a position on the Randolph Urban Renewal Project; it appears only as a procedural and regulatory reference point.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "HUD's response to FHWA's comments directs the Federal Highway Administration to contact the Council on Environmental Quality for further clarification of NEPA provisions regarding the relevance of the Downtown Expressway to the EIS.",
+  "evidence_pages": [
+    "72"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Federal Highway Administration should contact the Council on Environmental Quality for further clarification of the provisions of the National Environmental Policy Act in this regard.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "72"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Federal Highway Administration should contact the Council on Environmental Quality for further clarification of the provisions of the National Environmental Policy Act in this regard.",
+      "quote_verified": true,
+      "entity_as_written": "Council on Environmental Quality",
+      "role_as_written": "Federal environmental policy body"
+    }
+  ],
+  "window_pages": [
+    62,
+    82
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 25,
+  "synthetic_no_complaint": false
+}

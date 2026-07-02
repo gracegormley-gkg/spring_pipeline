@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556039563135_C160",
+  "complainer_id": "p1074_35556039563135_K064",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 160,
+  "entity": "Illinois Central Gulf Railroad",
+  "kind": "organization",
+  "role": "Railroad / early coordination meeting participant",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed only as early coordination meeting participant with no position stated",
+  "summary": "Illinois Central Gulf Railroad participated in three early coordination meetings with the Illinois Department of Transportation (October 30, 1970; April 17, 1972; and July 6, 1972) regarding the Lincoln Highway improvement project. The document lists the railroad solely as a meeting participant in a table of early coordination meetings, with no positions, complaints, or comments attributed to them. The railroad's involvement appears related to the reconstruction of the ICG RR Bridge over Lincoln Highway, which is one of the five construction contracts described in the project.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "157"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "MEETINGS BETWEEN ORGANIZATIONS AND ILLINOIS DEPARTMENT OF TRANSPORTATION",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "157"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "MEETINGS BETWEEN ORGANIZATIONS AND ILLINOIS DEPARTMENT OF TRANSPORTATION",
+      "quote_verified": true,
+      "entity_as_written": "Illinois Central Gulf Railroad",
+      "role_as_written": "Railroad / early coordination meeting participant"
+    }
+  ],
+  "window_pages": [
+    147,
+    167
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 64,
+  "synthetic_no_complaint": true
+}

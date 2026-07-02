@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C073",
+  "complainer_id": "p1074_35556038322269_K092",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 73,
+  "entity": "SCRTD staff",
+  "kind": "agency",
+  "role": "Transit district staff assisting with community meetings",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "described as assisting with community meetings without expressing a position on the project",
+  "summary": "SCRTD staff are mentioned in the Community Participation chapter as having assisted Los Angeles City Planning staff in conducting four rounds of community meetings throughout the Regional Core. Their role is described as logistical and coordinative, with no position on the project alternatives expressed. Additionally, an SCRTD representative served as chairman of the Interagency Technical Committee's Marketing Sub-Committee for nine of fifteen months.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "SCRTD staff assisted Los Angeles City Planning staff in conducting four rounds of community meetings throughout the Regional Core as part of the Community Participation Program.",
+  "evidence_pages": [
+    "291"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "four rounds of community meetings were conducted throughout the Regional Core by Los Angeles City Planning staff with the assistance of SCRTD staff.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "291"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "four rounds of community meetings were conducted throughout the Regional Core by Los Angeles City Planning staff with the assistance of SCRTD staff.",
+      "quote_verified": true,
+      "entity_as_written": "SCRTD staff",
+      "role_as_written": "Transit district staff assisting with community meetings"
+    }
+  ],
+  "window_pages": [
+    281,
+    293
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 92,
+  "synthetic_no_complaint": false
+}

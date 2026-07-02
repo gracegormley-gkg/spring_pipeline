@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036546182_C036",
+  "complainer_id": "p1074_35556036546182_K029",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 36,
+  "entity": "Milwaukee & Suburban Transport Corporation",
+  "kind": "organization",
+  "role": "private mass transit operator serving Milwaukee Metropolitan Area",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "described as existing transit operator whose service would be affected by or complementary to the proposed spur, but no direct position stated",
+  "summary": "Milwaukee & Suburban Transport Corporation is described as the sole mass transit provider for the entire Milwaukee Metropolitan Area, operating a 'Freeway Flyer' rubber-tired bus service on the freeway system and frequent bus service between downtown Milwaukee and General Mitchell Field. The document discusses the corporation's existing operations in the context of evaluating transit alternatives to the proposed Airport Spur, noting that effective modified rapid transit to the airport would be difficult without the freeway connection. No direct position for or against the project is attributed to the corporation.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The document describes Milwaukee & Suburban Transport Corporation as the only mass transit system serving the entire Milwaukee Metropolitan Area, operating 'Freeway Flyer' express bus service on the freeway system and frequent bus service to General Mitchell Field, with the corporation's operations noted as context for evaluating transit alternatives to the proposed Airport Spur.",
+  "evidence_pages": [
+    "72"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "At the present time, the privately owned Milwaukee & Suburban Transport Corporation is the only mass transit system that serves the entire Milwaukee Metropolitan Area.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "72"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "At the present time, the privately owned Milwaukee & Suburban Transport Corporation is the only mass transit system that serves the entire Milwaukee Metropolitan Area.",
+      "quote_verified": false,
+      "entity_as_written": "Milwaukee & Suburban Transport Corporation",
+      "role_as_written": "private mass transit operator serving Milwaukee Metropolitan Area"
+    }
+  ],
+  "window_pages": [
+    62,
+    82
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 29,
+  "synthetic_no_complaint": false
+}

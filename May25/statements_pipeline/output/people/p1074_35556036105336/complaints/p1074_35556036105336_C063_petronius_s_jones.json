@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036105336_C063",
+  "complainer_id": "p1074_35556036105336_K045",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 63,
+  "entity": "Petronius S. Jones",
+  "kind": "individual",
+  "role": "Chairman, Randolph Planning Study Board",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "quoted saying residents are not concerned about the expressway because the master plan brings improvements regardless",
+  "summary": "Petronius S. Jones, as chairman of the Randolph Planning Study Board, indicated that residents of the Randolph area were not concerned about the proposed Downtown Expressway because the new master plan was designed to bring improvements to the area regardless of whether the expressway was built. His statement suggests a pragmatic acceptance of the project within the broader context of the urban renewal plan. He is also noted as a key figure in the history of the RPSB's formation and leadership.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Jones stated that residents of the Randolph area are not concerned over the proposed expressway construction because the new master plan is designed to bring improvements regardless of whether the expressway is built.",
+  "evidence_pages": [
+    "105"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Petronius S. Jones, chairman of the Randolph Planning Study Board, said residents of the area are not concerned over the proposed expressway construction because the new master plan is designed to bring regardless of whether the expressway is improvements,",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "105"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "Petronius S. Jones, chairman of the Randolph Planning Study Board, said residents of the area are not concerned over the proposed expressway construction because the new master plan is designed to bring regardless of whether the expressway is improvements,",
+      "quote_verified": true,
+      "entity_as_written": "Petronius S. Jones",
+      "role_as_written": "Chairman, Randolph Planning Study Board"
+    }
+  ],
+  "window_pages": [
+    95,
+    115
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 45,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036105336_C055",
+  "complainer_id": "p1074_35556036105336_K038",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 55,
+  "entity": "Alan Kiepper",
+  "kind": "individual",
+  "role": "City Manager, Richmond",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes Kiepper congratulating RPSB and agreeing with their proposal for street alignment and cemetery land use",
+  "summary": "Alan Kiepper, City Manager of Richmond, expressed support for the Randolph planning proposals at a December 7, 1971 meeting with the Randolph Planning Study Board. He congratulated the RPSB on their thorough studies and agreed with their proposal for a new street alignment and the use of approximately 2 acres of unused cemetery land for housing development. No complaints or objections are attributed to him in the document.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Alan Kiepper, City Manager, congratulated the RPSB on their thorough studies and agreed with their proposal for the new street alignment and to allow 2 acres of unused cemetery land to be used for development of housing.",
+  "evidence_pages": [
+    "103"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "At a meeting with the RPSB on December 7, 1971, the City Manager, Mr. Alan Kiepper, congratulated the RPSB on their thorough studies and agreed with their proposal for the new street alignment and to allow the 2 acres of unused cemetery land to be used for development of housing.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "103"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "At a meeting with the RPSB on December 7, 1971, the City Manager, Mr. Alan Kiepper, congratulated the RPSB on their thorough studies and agreed with their proposal for the new street alignment and to allow the 2 acres of unused cemetery land to be used for development of housing.",
+      "quote_verified": true,
+      "entity_as_written": "Alan Kiepper",
+      "role_as_written": "City Manager, Richmond"
+    }
+  ],
+  "window_pages": [
+    93,
+    113
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 38,
+  "synthetic_no_complaint": false
+}

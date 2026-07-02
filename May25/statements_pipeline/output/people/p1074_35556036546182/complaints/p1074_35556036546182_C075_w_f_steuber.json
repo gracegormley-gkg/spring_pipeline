@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036546182_C075",
+  "complainer_id": "p1074_35556036546182_K067",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 75,
+  "entity": "W. F. Steuber",
+  "kind": "official",
+  "role": "Assistant State Highway Engineer",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "presented hearing exhibits and read engineering statement without expressing personal opinion",
+  "summary": "W. F. Steuber, as Assistant State Highway Engineer, appeared at the March 25, 1969 Corridor Location Public Hearing where he described the hearing exhibits, explained the aerial photography color scheme and alternates, and read the engineering statement outlining the compelling needs for the highway improvement, the alternates considered, and the Division of Highways' recommended alignment. His role was procedural and informational rather than advocacy, presenting the agency's position rather than his own personal stance. No response was deemed necessary to his testimony.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Steuber gave a brief description of the hearing exhibits, explained the color scheme and alternates on the aerial photography, and read the engineering statement pointing out the compelling needs for the highway improvement, the various alternates considered, and the Division of Highways' recommended alignment.",
+  "evidence_pages": [
+    "157"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "Gave a brief description of the hearing exhibits and explained the color scheme and alternates shown on the aerial photography. Read the engineering statement which pointed out the compelling needs for the highway improvement, the various alternates considered, and the Division of Highways recommended alignment.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "157"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Gave a brief description of the hearing exhibits and explained the color scheme and alternates shown on the aerial photography. Read the engineering statement which pointed out the compelling needs for the highway improvement, the various alternates considered, and the Division of Highways recommended alignment.",
+      "quote_verified": false,
+      "entity_as_written": "W. F. Steuber",
+      "role_as_written": "Assistant State Highway Engineer"
+    }
+  ],
+  "window_pages": [
+    147,
+    167
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 67,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036806586_C083",
+  "complainer_id": "p1074_35556036806586_K076",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 83,
+  "entity": "Rudolph Mitchell",
+  "kind": "official",
+  "role": "Chairman, South Carolina Public Service Commission",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly states no comments to offer on the EIS, pending Duke's application under state siting act",
+  "summary": "Rudolph Mitchell, as Chairman of the South Carolina Public Service Commission, wrote a brief letter stating that because Duke Power Company had not yet applied for a certificate under South Carolina's Utility Facility Siting and Environmental Protection Act, his Commission had no comments to offer on the Federal Power Commission's Environmental Impact Statement. He noted that upon receipt of Duke's application, a hearing would be held and a certificate could be issued, and that the Commission was monitoring Duke's load growth plans.",
+  "form": "letter",
+  "complaint_summary": "The South Carolina Public Service Commission states it has no comments on the EIS because Duke Power has not yet applied for a state certificate, but notes it will hold a hearing upon application and is monitoring Duke's load growth plans.",
+  "evidence_pages": [
+    "280"
+  ],
+  "statement": {
+    "text": "At the present time Duke Power Company has not applied for a certificate under South Carolina's \"Utility Facility Siting and Environmental Protection Act\", and this Commission has no comments to offer in connection with the Environmental Impact Statement prepared by the Federal Power Commission on the Bad Creek Pumped Storage Facility.\nSee revised Table 1-1.\nOn receipt of Duke's Application, a Hearing will be held in accordance with the abovementioned Act, after which a certificate could be issued.\nNo comment required.\nThis Commission is looking very closely at the growth of load on the Duke System and Duke's plans for serving that load including reasonable reserves.\nNo comment required.\nShould you desire, we will provide your Commission with a copy of Duke's Application when it is received.",
+    "opening_anchor": "At the present time Duke Power Company has not applied for a certificate under South Carolina's \"Utility Facility Siting and Environmental Protection Act\", and this Commission has no comments to offer",
+    "closing_anchor": "Should you desire, we will provide your Commission with a copy of Duke's Application when it is received.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036806586_R024"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "At the present time Duke Power Company has not applied for a certificate under South Carolina's \"Utility Facility Siting and Environmental Protection Act\", and this Commission has no comments to offer in connection with the Environmental Impact Statement prepared by the Federal Power Commission on the Bad Creek Pumped Storage Facility.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "280"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "At the present time Duke Power Company has not applied for a certificate under South Carolina's \"Utility Facility Siting and Environmental Protection Act\", and this Commission has no comments to offer in connection with the Environmental Impact Statement prepared by the Federal Power Commission on the Bad Creek Pumped Storage Facility.",
+      "quote_verified": true,
+      "entity_as_written": "Rudolph Mitchell",
+      "role_as_written": "Chairman, South Carolina Public Service Commission"
+    }
+  ],
+  "window_pages": [
+    270,
+    290
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 76,
+  "synthetic_no_complaint": false
+}

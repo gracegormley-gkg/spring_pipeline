@@ -1,0 +1,80 @@
+{
+  "complaint_id": "p1074_35556036546182_C014",
+  "complainer_id": "p1074_35556036546182_K023",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 14,
+  "entity": "Wisconsin's Environmental Decade",
+  "kind": "organization",
+  "role": "Environmental advocacy organization, commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "listed among additional commenters submitting opposition to the proposed Airport Spur Highway Project",
+  "summary": "Wisconsin's Environmental Decade, represented by Thomas R. Burney, submitted comments opposing the proposed Airport Spur Highway Project and requested that their comments be included in the Final Environmental Impact Statement. The organization appears in the document as one of several additional commenters whose letters are contained in Section X of the EIS. No detailed summary of their specific objections is provided in this window of the document.",
+  "form": "sectional",
+  "complaint_summary": "Wisconsin's Environmental Decade (Thomas R. Burney) is listed among additional commenters who submitted letters of comment on the proposed Airport Spur Highway Project, with their letters contained in Section X of the Final EIS.",
+  "evidence_pages": [
+    "18"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "I submit to you here my opposition to the proposed Airport Spur Highway Project and request that the following comments be received, considered, and inserted in the Final Environmental Impact Statement.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased",
+    "sectional"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "18"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "8. Additional comments were received from the following: (Letters of comment are in Section X.) Wisconsin't Environmental Decade, Thomas R. Burney",
+      "quote_verified": false,
+      "entity_as_written": "Wisconsin's Environmental Decade",
+      "role_as_written": "Environmental advocacy organization, commenter"
+    },
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "190"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "I submit to you here my opposition to the proposed Airport Spur Highway Project and request that the following comments be received, considered, and inserted in the Final Environmental Impact Statement.",
+      "quote_verified": true,
+      "entity_as_written": "Wisconsin's Environmental Decade",
+      "role_as_written": "Environmental organization, commenter"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "196"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "STATEMENT O WISCONSIN'S ENVIRONMENTAL DECADE",
+      "quote_verified": true,
+      "entity_as_written": "Wisconsin's Environmental Decade",
+      "role_as_written": "commenter on Draft EIS"
+    }
+  ],
+  "window_pages": [
+    8,
+    56
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 23,
+  "synthetic_no_complaint": false
+}

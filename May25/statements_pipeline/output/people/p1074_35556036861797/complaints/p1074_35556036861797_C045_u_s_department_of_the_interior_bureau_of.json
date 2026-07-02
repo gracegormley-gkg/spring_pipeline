@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036861797_C045",
+  "complainer_id": "p1074_35556036861797_K030",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 45,
+  "entity": "U.S. Department of the Interior, Bureau of Mines",
+  "kind": "agency",
+  "role": "federal agency / commenter",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes Bureau of Mines encouraging extensions of GVWR scope and inclusion of MY 1980 and beyond",
+  "summary": "The U.S. Department of the Interior, Bureau of Mines encouraged NHTSA to extend the fuel economy standards beyond the 6,000-pound GVWR threshold and to include model years 1980 and beyond, suggesting the agency viewed the proposed MY 1979 rule as too narrow in scope. No agency response to this comment is provided in the document window.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Bureau of Mines encouraged extending the GVWR coverage of the fuel economy standards and expanding the rule to include MY 1980 and beyond.",
+  "evidence_pages": [
+    "112"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Department of the Interior encouraged extensions GYWR and to include MY 1980 and beyond.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "112"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Department of the Interior encouraged extensions GYWR and to include MY 1980 and beyond.",
+      "quote_verified": true,
+      "entity_as_written": "U.S. Department of the Interior, Bureau of Mines",
+      "role_as_written": "federal agency / commenter"
+    }
+  ],
+  "window_pages": [
+    102,
+    122
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 30,
+  "synthetic_no_complaint": false
+}

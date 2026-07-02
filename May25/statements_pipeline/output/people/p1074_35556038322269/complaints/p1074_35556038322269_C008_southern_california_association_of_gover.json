@@ -1,0 +1,100 @@
+{
+  "complaint_id": "p1074_35556038322269_C008",
+  "complainer_id": "p1074_35556038322269_K019",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 8,
+  "entity": "Southern California Association of Governments (SCAG)",
+  "kind": "organization",
+  "role": "Regional planning organization providing socio-economic and land use projections",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "described as a participating regional planning organization providing data and oversight, with no expressed position for or against the project",
+  "summary": "SCAG is described throughout this document window as a key regional planning and coordinating organization that participated in the September 1976 decision to pursue the Regional Transportation Development Program, serves on both the Interagency Coordinating Committee and Interagency Technical Committee, and is responsible for general regional transportation planning and administration of Federal grant monies in the Los Angeles region. SCAG also provided the regional population projections (SCAG-76 Growth Forecast Policy) used in the alternatives analysis. The document portrays SCAG as an institutional partner and data source rather than as an entity expressing a stance for or against any particular alternative.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "SCAG is listed among the regional and local agencies to receive five copies of the draft report and to be asked to comment on the Alternatives Analysis/Environmental Impact Report/Statement, specifically in its A-95 review capacity.",
+  "evidence_pages": [
+    "21"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "In September, 1976 representatives of the City of Los Angeles, CalTrans, Southern California Association of Governments; the County of Los Angeles and the Southern California Rapid Transit District, decided that the District should submit an application to the Urban Mass Transportation Administration (UMTA) for financing to proceed with a four-point Regional Transportation Development Program",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 5,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "21"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In September, 1976 representatives of the City of Los Angeles, CalTrans, Southern California Association of Governments; the County of Los Angeles and the Southern California Rapid Transit District, decided that the District should submit an application to the Urban Mass Transportation Administration (UMTA) for financing to proceed with a four-point Regional Transportation Development Program",
+      "quote_verified": true,
+      "entity_as_written": "Southern California Association of Governments (SCAG)",
+      "role_as_written": "Regional transportation planning agency; IACC participant"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "71"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In the area served by the proposed Los Angeles Regional Core Rapid Transit System, goals and objectives are developed by the following six governmental entities: ... (4) the Southern California Association of Governments",
+      "quote_verified": false,
+      "entity_as_written": "Southern California Association of Governments",
+      "role_as_written": "Regional planning agency"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "103"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Socio-economic and land use projections (SCAG '76) were input to the models by the Southern California Association of Governments (SCAG).",
+      "quote_verified": true,
+      "entity_as_written": "Southern California Association of Governments (SCAG)",
+      "role_as_written": "Regional planning organization providing socio-economic and land use projections"
+    },
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "150"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Southern California Association of Governments (SCAG) is coordinating a region-wide effort to develop an Air Quality Management District (AQMD) plan.",
+      "quote_verified": true,
+      "entity_as_written": "Southern California Association of Governments (SCAG)",
+      "role_as_written": "regional planning body coordinating Air Quality Management Plan"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "246"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Subject to concurrence of the State Department of Transportation, the Los Angeles County Transportation Commission and the Southern California Association of Governments, the State's portion of the Proposition 5 funds developed in Los Angeles County can provide the major portion of the local matching funds required for a rail rapid transit project.",
+      "quote_verified": true,
+      "entity_as_written": "Southern California Association of Governments",
+      "role_as_written": "Regional planning organization"
+    }
+  ],
+  "window_pages": [
+    11,
+    47
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 19,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p0491_35556036091957_C174",
+  "complainer_id": "p0491_35556036091957_K166",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 174,
+  "entity": "Kansas State Park and Resources Authority",
+  "kind": "agency",
+  "role": "Kansas state agency reviewer",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "direct written comment stating the statement is well presented and not conflicting with any of their policies",
+  "summary": "The Kansas State Park and Resources Authority reviewed the draft environmental impact statement on the implementation of Executive Order 11644 regarding off-road vehicles on public lands. They found the statement to be well presented and not in conflict with any policies administered by their agency. No objections or conditions were raised.",
+  "form": "written_comment",
+  "complaint_summary": "The Kansas State Park and Resources Authority states that it reviewed the draft environmental statement on ORV use on public lands and finds it well presented and not conflicting with any of its policies.",
+  "evidence_pages": [
+    "250"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "This is to advise that we have reviewed the above referred to clearinghouse project, no. 1277ES, submitted by the Bureau of Outdoor",
+    "closing_anchor": "well presented and not conflicting with any policies presently administered by the Kansas State Park and Resources Authority.",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "We find the statement to be well presented and not conflicting with any policies presently administered by the Kansas State Park and Resources Authority.",
+  "summary_quote_verified": false,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "250"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We find the statement to be well presented and not conflicting with any policies presently administered by the Kansas State Park and Resources Authority.",
+      "quote_verified": false,
+      "entity_as_written": "Kansas State Park and Resources Authority",
+      "role_as_written": "Kansas state agency reviewer"
+    }
+  ],
+  "window_pages": [
+    240,
+    260
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 166,
+  "synthetic_no_complaint": false
+}

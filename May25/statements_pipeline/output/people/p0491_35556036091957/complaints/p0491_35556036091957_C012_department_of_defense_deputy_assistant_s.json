@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C012",
+  "complainer_id": "p0491_35556036091957_K012",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 12,
+  "entity": "Department of Defense, Deputy Assistant Secretary of Defense (Environmental Quality)",
+  "kind": "official",
+  "role": "Federal agency reviewer",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase indicates environmental statement is satisfactory with no objections raised",
+  "summary": "The Department of Defense, Deputy Assistant Secretary of Defense (Environmental Quality) reviewed the draft ORV environmental statement and indicated it was satisfactory, offering no criticisms or conditions. This position is recorded twice in the document window—once in the main body summary of federal agency comments and once in the appendix—both times as a brief paraphrase with no substantive critique.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "In the appendix summary of federal agency comments, the Department of Defense, Deputy Assistant Secretary of Defense (Environmental Quality) (response #43) again indicated that the environmental statement is satisfactory, with no further elaboration.",
+  "evidence_pages": [
+    "23"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Department of Defense, Deputy Assistant Secretary of Defense (Environmental Quality) - indicated that environmental statement is satisfactory;",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "23"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Department of Defense, Deputy Assistant Secretary of Defense (Environmental Quality) - indicated that environmental statement is satisfactory;",
+      "quote_verified": true,
+      "entity_as_written": "Department of Defense, Deputy Assistant Secretary of Defense (Environmental Quality)",
+      "role_as_written": "Federal agency reviewer"
+    }
+  ],
+  "window_pages": [
+    13,
+    33
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 12,
+  "synthetic_no_complaint": false
+}

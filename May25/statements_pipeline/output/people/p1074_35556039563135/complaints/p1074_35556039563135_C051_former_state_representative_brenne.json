@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556039563135_C051",
+  "complainer_id": "p1074_35556039563135_K060",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 51,
+  "entity": "Former State Representative Brenne",
+  "kind": "individual",
+  "role": "Former state representative / early coordination meeting participant",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed only as a meeting participant in early coordination table with no position recorded",
+  "summary": "Former State Representative Brenne is mentioned solely as a participant in an early coordination meeting held on June 28, 1971, as part of the series of eleven meetings organized by the Illinois Department of Transportation regarding the Lincoln Highway improvement. No specific comments, concerns, or positions attributed to Brenne are recorded in the document window. The entity's appearance is limited to a roster entry in the coordination meetings table.",
+  "form": "sectional",
+  "complaint_summary": "Former State Representative Brenne is listed as a participant in an early coordination meeting on June 28, 1971, with no specific comments or positions attributed to them.",
+  "evidence_pages": [
+    "157"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual",
+    "low_stance_confidence"
+  ],
+  "summary_quote": "MEETINGS BETWEEN ORGANIZATIONS AND ILLINOIS DEPARTMENT OF TRANSPORTATION",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "157"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "MEETINGS BETWEEN ORGANIZATIONS AND ILLINOIS DEPARTMENT OF TRANSPORTATION",
+      "quote_verified": true,
+      "entity_as_written": "Former State Representative Brenne",
+      "role_as_written": "Former state representative / early coordination meeting participant"
+    }
+  ],
+  "window_pages": [
+    147,
+    167
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 60,
+  "synthetic_no_complaint": false
+}

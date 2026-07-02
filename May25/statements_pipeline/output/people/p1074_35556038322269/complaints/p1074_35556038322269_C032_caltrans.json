@@ -1,0 +1,89 @@
+{
+  "complaint_id": "p1074_35556038322269_C032",
+  "complainer_id": "p1074_35556038322269_K025",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 32,
+  "entity": "CalTrans",
+  "kind": "agency",
+  "role": "State transportation agency providing highway system information and modifying line speed data",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "CalTrans provides highway system data and modifies line speed data used in patronage modeling, with no expressed position on the project",
+  "summary": "CalTrans appears in this window in two distinct roles: as a participant in the Preferential Treatment Program under the TSM element, and as the provider of highway system information and road network speed data used by the LARTS branch to develop patronage forecasts for the eleven alternatives. CalTrans does not express support for or opposition to any alternative, functioning purely as a data and program contributor.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "CalTrans, through its LARTS branch, provided highway system information and modified SCRTD line speed data to be consistent with CalTrans predicted road network speeds, which were used as inputs to the UMTA UTPS patronage forecasting models for all eleven alternatives.",
+  "evidence_pages": [
+    "103"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Committee consists of representatives from SCAG, CALTRANS, The Los Angeles County Transportation Commission, the Los Angeles Community Redevelopment Agency, L. A. County and City and the SCRTD.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 4,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "79"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "CalTrans proposes to build an aerial structure along this freeway for exclusive bus and carpool use.",
+      "quote_verified": true,
+      "entity_as_written": "CalTrans",
+      "role_as_written": "State transportation agency"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "103"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "CalTrans provided information about the highway system. The various local transit operators input information regarding the transit network.",
+      "quote_verified": true,
+      "entity_as_written": "CalTrans",
+      "role_as_written": "State transportation agency providing highway system information and modifying line speed data"
+    },
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "158"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The California Department of Transportation (CalTrans) has developed a daily emissions inventory for the Los Angeles region on a five kilometer square grid basis.",
+      "quote_verified": true,
+      "entity_as_written": "CalTrans",
+      "role_as_written": "developer of daily emissions inventory for Los Angeles region"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "292"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Committee consists of representatives from SCAG, CALTRANS, The Los Angeles County Transportation Commission, the Los Angeles Community Redevelopment Agency, L. A. County and City and the SCRTD.",
+      "quote_verified": true,
+      "entity_as_written": "CALTRANS",
+      "role_as_written": "Member of Interagency Technical Committee Marketing Sub-Committee"
+    }
+  ],
+  "window_pages": [
+    69,
+    107
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 25,
+  "synthetic_no_complaint": false
+}

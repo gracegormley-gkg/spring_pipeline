@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036806586_C012",
+  "complainer_id": "p1074_35556036806586_K029",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 12,
+  "entity": "SERI",
+  "kind": "organization",
+  "role": "Southeast Reservoir Investigations, research body",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "SERI data cited as factual source for trout habitat volume estimates and gill netting samples, with no expressed position on the project",
+  "summary": "SERI (Southeast Reservoir Investigations) is cited as a research and data source providing gill netting samples and preliminary estimates of trout habitat volumes in Lake Jocassee. Their data show reductions in trout habitat volume between 1974 and 1975, and they use a dissolved oxygen criterion of 5.0 mg/l for optimum trout habitat assessments. SERI does not express a position for or against the Bad Creek Project; they are referenced solely as a scientific data provider.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "SERI gill netting data from 1974–1976 show species composition in Lake Jocassee, with brown trout and rainbow trout appearing in significant numbers alongside warmwater species.",
+  "evidence_pages": [
+    "95"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "SERI has made preliminary estimates of the volumes of the trout water band by an assumed prorating of percent of Lake Jocassee represented by each of their sampling stations.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "100"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "SERI has made preliminary estimates of the volumes of the trout water band by an assumed prorating of percent of Lake Jocassee represented by each of their sampling stations.",
+      "quote_verified": true,
+      "entity_as_written": "SERI",
+      "role_as_written": "Southeast Reservoir Investigations, research body"
+    }
+  ],
+  "window_pages": [
+    90,
+    110
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 29,
+  "synthetic_no_complaint": false
+}

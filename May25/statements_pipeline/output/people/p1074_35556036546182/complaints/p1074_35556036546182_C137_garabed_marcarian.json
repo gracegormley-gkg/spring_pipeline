@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C137",
+  "complainer_id": "p1074_35556036546182_K118",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 137,
+  "entity": "Garabed Marcarian",
+  "kind": "individual",
+  "role": "Private Citizen, commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "explicitly objected to Airport Spur and relocation of Grange Avenue in both oral testimony and written comment",
+  "summary": "Garabed Marcarian, a private citizen from South Milwaukee, opposed the Airport Spur project on the grounds that existing routes via College and Layton Avenues were sufficient. He also raised a specific concern that the relocation of Grange Avenue at 6th Street was depicted incorrectly on the hearing sketch. His objections appear both as oral testimony (Witness #25) and as a written comment (Witness #34).",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "In a written comment, Marcarian objected to both the Airport Spur and the relocation of Grange Avenue commencing west of 6th Street.",
+  "evidence_pages": [
+    "243"
+  ],
+  "statement": {
+    "text": "34. a) Garabed Marcarian \nb) 636 Park Avenue South Milwaukee\nc) Private Citizen\ne) Objected to both Airport Spur and relocation of Grange Avenue commencing west of 6th Street.\nf) ---\ng) See page 246 for a response to his oral testimony as Witness #25.",
+    "opening_anchor": "34. a) Garabed Marcarian \nb) 636 Park Avenue South Milwaukee\nc) Private Citizen\ne) Objected to both Airport Spur and relocation of Grange Avenue commencing west of 6th Street.",
+    "closing_anchor": "g) See page 246 for a response to his oral testimony as Witness #25.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036546182_R056"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Objected to both Airport Spur and relocation of Grange Avenue commencing west of 6th Street.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "243"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Objected to both Airport Spur and relocation of Grange Avenue commencing west of 6th Street.",
+      "quote_verified": true,
+      "entity_as_written": "Garabed Marcarian",
+      "role_as_written": "Private Citizen, commenter"
+    }
+  ],
+  "window_pages": [
+    233,
+    253
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 118,
+  "synthetic_no_complaint": false
+}

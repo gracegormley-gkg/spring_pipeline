@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036861797_C004",
+  "complainer_id": "p1074_35556036861797_K015",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 4,
+  "entity": "National Highway Traffic Safety Administration",
+  "kind": "agency",
+  "role": "Promulgating agency for Average Fuel Economy Standard",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "agency promulgates and defends the 17.2 mpg fuel economy standard as appropriate and representing maximum feasible average fuel economy",
+  "summary": "The National Highway Traffic Safety Administration (NHTSA) is the promulgating agency for the Average Fuel Economy Standard for Nonpassenger Automobiles for Model Year 1979, concluding that 17.2 mpg is the appropriate standard and that a separate 15.8 mpg standard should apply to four-wheel drive recreational vehicles. NHTSA prepared the Final Environmental Impact Statement, analyzing a range of possible standards (16.4–18.7 mpg) and their environmental impacts, and determined the standard represents the maximum feasible average fuel economy for MY 1979. The agency supports the action as beneficial due to significant gasoline savings and relatively minor adverse environmental impacts.",
+  "form": "written_comment",
+  "complaint_summary": "NHTSA justifies basing the AFES on manufacturers' voluntary product plans to avoid market shifts toward heavier vehicles and asserts the standard represents the maximum feasible average fuel economy for MY 1979.",
+  "evidence_pages": [
+    "3"
+  ],
+  "statement": {
+    "text": "The AFES is based on the manufacturers' voluntary product plans for MY 1979. The AFES is so based in order to avoid causing or aggravating a shift in the NPA market towards heavier, less fuel economical vehicles more than 6,000 pounds GVWR and less than 10,000 pounds GVWR, which are not subject to the AFES. Moreover, an anlysis of fuel\n\neconomy potential performed by the agency indicates that the AFES represents the level of maximum feasible average fuel economy for MY 1979.",
+    "opening_anchor": "The AFES is based on the manufacturers' voluntary product plans for MY 1979. The AFES is so based in order to avoid causing or aggravating a shift in the NPA market",
+    "closing_anchor": "an anlysis of fuel economy potential performed by the agency indicates that the AFES represents the level of maximum feasible average fuel economy for MY 1979.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The agency has concluded that the appropriate fuel economy standard for non-passenger automobiles in model year 1979 should be 17.2 mpg.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "2"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The agency has concluded that the appropriate fuel economy standard for non-passenger automobiles in model year 1979 should be 17.2 mpg.",
+      "quote_verified": true,
+      "entity_as_written": "National Highway Traffic Safety Administration",
+      "role_as_written": "Promulgating agency for Average Fuel Economy Standard"
+    }
+  ],
+  "window_pages": [
+    1,
+    12
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 15,
+  "synthetic_no_complaint": false
+}

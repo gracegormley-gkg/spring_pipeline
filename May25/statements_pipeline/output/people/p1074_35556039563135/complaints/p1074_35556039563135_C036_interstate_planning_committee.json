@@ -1,0 +1,79 @@
+{
+  "complaint_id": "p1074_35556039563135_C036",
+  "complainer_id": "p1074_35556039563135_K032",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 36,
+  "entity": "Interstate Planning Committee",
+  "kind": "agency",
+  "role": "Interstate planning body, NIPC/Northwestern Indiana Regional Planning Commission",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "narrator paraphrase states Interstate Planning Committee concurred with NIPC's position finding project consistent with regional planning",
+  "summary": "The Interstate Planning Committee reviewed the Lincoln Highway improvement project after it was judged to be of interstate significance under joint NIPC/Northwestern Indiana Regional Planning Commission procedures. At a meeting on May 22, 1974, the Committee concurred with NIPC's finding that the project was consistent with regional planning policies, effectively endorsing the project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Interstate Planning Committee, at its May 22, 1974 meeting, concurred with the Northeastern Illinois Planning Commission's position that the Lincoln Highway improvement project is consistent with regional planning policies.",
+  "evidence_pages": [
+    "71"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Committee was satisfied that there was no unresolved conflict between the two jurisdictions, N.E. Illinois and N.W. Indiana, and voted unanimously to endorse the application without additional comments.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "71"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "At a meeting held May 22, 1974 the Interstate Planning Committee concurred with the position taken by the Northeastern Illinois Planning Commission.",
+      "quote_verified": true,
+      "entity_as_written": "Interstate Planning Committee",
+      "role_as_written": "Interstate planning review body"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "248"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The Committee was satisfied that there was no unresolved conflict between the two jurisdictions, N.E. Illinois and N.W. Indiana, and voted unanimously to endorse the application without additional comments.",
+      "quote_verified": true,
+      "entity_as_written": "Interstate Planning Committee",
+      "role_as_written": "Interstate planning body, NIPC/Northwestern Indiana Regional Planning Commission"
+    },
+    {
+      "chunk_index": 7,
+      "evidence_pages": [
+        "345"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The Committee was satisfied that there was no unresolved conflict between the two jurisdictions. N.E. Illinois and N.W. Indiana, and voted unanimously to endorse the application without additional comments.",
+      "quote_verified": true,
+      "entity_as_written": "Interstate Planning Committee",
+      "role_as_written": "Interstate planning body, Northeastern Illinois/Northwestern Indiana"
+    }
+  ],
+  "window_pages": [
+    61,
+    88
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 32,
+  "synthetic_no_complaint": false
+}

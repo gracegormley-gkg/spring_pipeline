@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556038322269_C024",
+  "complainer_id": "p1074_35556038322269_K034",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 24,
+  "entity": "State of California",
+  "kind": "government",
+  "role": "State government",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "cited as one of six governmental entities whose goals and objectives inform the project planning framework",
+  "summary": "The State of California is identified as one of six governmental entities whose goals and objectives underpin the planning framework for the proposed Los Angeles Regional Core Rapid Transit System. The State's policy document, 'An Urban Strategy For California' (February 1978), is cited as a source for goals related to land use, urban conservation, and transportation. The State is referenced in a descriptive, informational context rather than as a party expressing support or opposition.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The State of California is listed as one of six governmental entities whose goals and objectives guide the development of alternatives for the Regional Core Rapid Transit System, with its policy document 'An Urban Strategy For California' cited for goals on curbing urban sprawl, revitalizing central cities, and protecting agricultural lands.",
+  "evidence_pages": [
+    "71"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "In the area served by the proposed Los Angeles Regional Core Rapid Transit System, goals and objectives are developed by the following six governmental entities: ... (5) the State of California",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "71"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In the area served by the proposed Los Angeles Regional Core Rapid Transit System, goals and objectives are developed by the following six governmental entities: ... (5) the State of California",
+      "quote_verified": false,
+      "entity_as_written": "State of California",
+      "role_as_written": "State government"
+    }
+  ],
+  "window_pages": [
+    61,
+    81
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 34,
+  "synthetic_no_complaint": false
+}

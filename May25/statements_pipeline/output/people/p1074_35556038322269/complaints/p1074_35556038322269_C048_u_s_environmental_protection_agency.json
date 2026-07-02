@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556038322269_C048",
+  "complainer_id": "p1074_35556038322269_K061",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 48,
+  "entity": "U.S. Environmental Protection Agency",
+  "kind": "agency",
+  "role": "source of emission factors",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "cited only as source of emission factors used in air quality analysis",
+  "summary": "The U.S. Environmental Protection Agency is referenced solely as a technical source whose emission factors were used in the air quality analysis for the Regional Core Rapid Transit study. The EPA is not described as taking any position on the project itself. A separate reference to EPA's Mobile Source Emission Factors (March 1978, EMFAC 5) appears in the station-vicinity air quality analysis.",
+  "form": "none",
+  "complaint_summary": "The EPA is cited as a source of the most recent emission factors used in calculating regional air quality impacts of the transit alternatives, with no position expressed on the project.",
+  "evidence_pages": [
+    "157"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence"
+  ],
+  "summary_quote": "The most recent emission factors were used as prepared by the U.S. Environmental Protection Agency and the California Air Resources Board.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "157"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The most recent emission factors were used as prepared by the U.S. Environmental Protection Agency and the California Air Resources Board.",
+      "quote_verified": true,
+      "entity_as_written": "U.S. Environmental Protection Agency",
+      "role_as_written": "source of emission factors"
+    }
+  ],
+  "window_pages": [
+    147,
+    167
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 61,
+  "synthetic_no_complaint": false
+}

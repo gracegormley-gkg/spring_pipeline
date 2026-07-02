@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036806586_C061",
+  "complainer_id": "p1074_35556036806586_K077",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 61,
+  "entity": "SCWMRD",
+  "kind": "agency",
+  "role": "South Carolina Wildlife and Marine Resources Department",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "SCWMRD directly quoted stating no adequate supplemental water source exists and that coldwater habitat loss adversely impacts the two-story fishery",
+  "summary": "SCWMRD expressed opposition to the Bad Creek Project on multiple fishery-related grounds, including the inadequacy of flow augmentation proposals for Howard Creek, the adverse impact on spawning trout runs, and the reduction of coldwater habitat in Lake Jocassee that would harm the two-story fishery they described as the only acceptable compensation for prior trout stream losses. The department also participated in mitigation discussions, including receiving a land conveyance of ~375 acres, though this was acknowledged as insufficient to replace lost trout habitat.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "SCWMRD and Trout Unlimited expressed concern that construction of the Bad Creek Project would adversely impact the spawning runs of trout observed in lower Howard Creek.",
+  "evidence_pages": [
+    "241"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036806586_R014"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Reductions of coldwater habitat in Lake Jocassee (Section 3.2.2.3) would have an adverse impact on the two-story fishery, stated by SCWMRD to be, \"... The only acceptable compensation for the loss of nearly one-forth of the trout streams in this State to the construction of Lake Jocassee\"",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "241"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "Reductions of coldwater habitat in Lake Jocassee (Section 3.2.2.3) would have an adverse impact on the two-story fishery, stated by SCWMRD to be, \"... The only acceptable compensation for the loss of nearly one-forth of the trout streams in this State to the construction of Lake Jocassee\"",
+      "quote_verified": true,
+      "entity_as_written": "SCWMRD",
+      "role_as_written": "South Carolina Wildlife and Marine Resources Department"
+    }
+  ],
+  "window_pages": [
+    231,
+    251
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 77,
+  "synthetic_no_complaint": false
+}

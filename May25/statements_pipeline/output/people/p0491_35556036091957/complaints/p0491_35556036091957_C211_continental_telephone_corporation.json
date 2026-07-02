@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C211",
+  "complainer_id": "p0491_35556036091957_K154",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 211,
+  "entity": "Continental Telephone Corporation",
+  "kind": "organization",
+  "role": "Private utility company commenter",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter requests exemption for utility vehicles from ORV permit requirements while not opposing the broader regulatory framework",
+  "summary": "Continental Telephone Corporation, the third largest independent telephone company in the US, submitted a comment letter expressing concern that the Executive Order and Draft Environmental Statement did not explicitly address utility company vehicles needing off-road access to maintain authorized communications facilities on public lands. The company requested either an exemption from permit requirements for utility maintenance vehicles or, at minimum, a clear permitting procedure specifying which federal land management agency would exercise transit authority. Their position is conditional — they support ORV regulation generally but want utility operations carved out or clearly accommodated.",
+  "form": "letter",
+  "complaint_summary": "Continental Telephone Corporation argues that neither the Executive Order nor the Draft Environmental Statement explicitly permits utility company vehicles to access public lands for maintenance of authorized communications facilities without a permit, and requests either a blanket exemption for such vehicles or a clear permitting procedure identifying the responsible federal land management agency.",
+  "evidence_pages": [
+    "287"
+  ],
+  "statement": {
+    "text": "Continental Telephone Corporation is the third largest independent telephone company in the United States. In our operations we have a number of installations which are located on public lands and require off road access.\nWe have followed with interest the subject Executive Order and the Draft Environmental Statement prepared by your office and published on May 26, 1972. We are obviously affected by any instructions which may be published on this matter. We are advised by your Mr. Stuart Davey and Mr. William Honore that an implementing order is soon to be published, but prior to its publication, they suggested we send you any comments that we may have.\nAs we can interpret, neither the Executive Order nor your draft memorandum specifically consider the problem of expressly permitting the use of vehicles off established roadways for the purpose of maintaining authorized communication (and other utilities) facilities without first requiring that a permit be obtained. We would hope that the intent of the Executive Order and Environmental Statement is to regulate pleasure off-road vehicles, and not to impede the servicing of communications equipment. Accordingly, you might wish to consider including a statement such as: \"Vehicles belonging to utility companies performing maintenance of authorized facilities on public lands may transit those lands without permit.\"\nFurther, may we suggest that any regulation which does require permits establish the procedure of obtaining its permits and the mechanism for determining what federal land management agency will be exercising transit authority over a particular piece of federal land on which we may have to operate.\nWe trust that these comments may be of use to you. We would be pleased to discuss this further with you if you desire.\nVery truly yours,\nWilliam Friedman",
+    "opening_anchor": "Continental Telephone Corporation is the third largest independent telephone company in the United States. In our operations we have a number of installations which are located on public lands and require off road access.",
+    "closing_anchor": "We would be pleased to discuss this further with you if you desire.\n\nVery truly yours,\nWilliam Friedman",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We would hope that the intent of the Executive Order and Environmental Statement is to regulate pleasure off-road vehicles, and not to impede the servicing of communications equipment.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "287"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "We would hope that the intent of the Executive Order and Environmental Statement is to regulate pleasure off-road vehicles, and not to impede the servicing of communications equipment.",
+      "quote_verified": true,
+      "entity_as_written": "Continental Telephone Corporation",
+      "role_as_written": "Private utility company commenter"
+    }
+  ],
+  "window_pages": [
+    277,
+    297
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 154,
+  "synthetic_no_complaint": false
+}

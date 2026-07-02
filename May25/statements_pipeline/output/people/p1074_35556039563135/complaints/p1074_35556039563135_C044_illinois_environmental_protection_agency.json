@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556039563135_C044",
+  "complainer_id": "p1074_35556039563135_K038",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 44,
+  "entity": "Illinois Environmental Protection Agency",
+  "kind": "agency",
+  "role": "state environmental regulatory agency",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "cited as data source for water quality monitoring and standards, no position expressed on the project",
+  "summary": "The Illinois Environmental Protection Agency is referenced in the EIS as a source of water quality data and regulatory standards, not as a commenting party. The document cites the Agency's long-running Water Quality Sampling Program (since 1958) and reproduces excerpts from its 1973 Water Quality Network Summary of Data for the Des Plaines River Basin, including data for Thorn Creek and Butterfield Creek relevant to the project area. The Agency does not express a position for or against the project in this window.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The document reproduces excerpts from the Illinois EPA's 1973 Water Quality Network Summary of Data (Volume 3, Des Plaines River Basin), including water quality data tables for Thorn Creek at Halsted Street and Butterfield Creek at Crawford Avenue, as background environmental data for the project.",
+  "evidence_pages": [
+    "106"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Illinois Environmental Protection Agency and its predecessor, the Stream Pollution Control Bureau of the Department of Public Health, have carried out a program of regular sampling of the streams and lakes of Illinois since 1958.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "106"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Illinois Environmental Protection Agency and its predecessor, the Stream Pollution Control Bureau of the Department of Public Health, have carried out a program of regular sampling of the streams and lakes of Illinois since 1958.",
+      "quote_verified": true,
+      "entity_as_written": "Illinois Environmental Protection Agency",
+      "role_as_written": "state environmental regulatory agency"
+    },
+    {
+      "chunk_index": 7,
+      "evidence_pages": [
+        "346"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The review indicates that the proposal does not conflict with any of the plans, programs, or priorities of any cognizant State agency.",
+      "quote_verified": true,
+      "entity_as_written": "Illinois Environmental Protection Agency",
+      "role_as_written": "State agency reviewing proposal"
+    }
+  ],
+  "window_pages": [
+    96,
+    131
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 38,
+  "synthetic_no_complaint": false
+}

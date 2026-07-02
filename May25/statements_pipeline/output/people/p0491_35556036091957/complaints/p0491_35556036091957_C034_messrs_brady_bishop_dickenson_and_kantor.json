@@ -1,0 +1,61 @@
+{
+  "complaint_id": "p0491_35556036091957_C034",
+  "complainer_id": "p0491_35556036091957_K019",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 34,
+  "entity": "Messrs. Brady, Bishop, Dickenson, and Kantor",
+  "kind": "individual",
+  "role": "Mineral exploration geologists, commenters",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes them seeking minerals exploration exception on all public lands open for mineral entry",
+  "summary": "Messrs. Brady, Bishop, Dickenson, and Kantor, a group of mineral exploration geologists, argued that minerals exploration should be treated as a vitally necessary exception on all public lands open for mineral entry, effectively opposing the application of ORV regulations to their activities. The Department of the Interior responded by revising the final environmental statement to except mining, oil, and gas geophysical exploration equipment from the definition of off-road vehicles, citing the U.S. Mining Law of 1872.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Messrs. Brady, Bishop, Dickenson, and Kantor argued that minerals exploration should be considered a vitally necessary exception on all public lands open for mineral entry, objecting to ORV regulations being applied to mineral exploration activities.",
+  "evidence_pages": [
+    "39"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p0491_35556036091957_R010"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual",
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "Messrs. Brady, Bishop, Dickenson, and Kantor, a group of mineral exploration geologists - felt that minerals exploration should be considered as a vitally necessary exception on all public lands open for mineral entry.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "39"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Messrs. Brady, Bishop, Dickenson, and Kantor, a group of mineral exploration geologists - felt that minerals exploration should be considered as a vitally necessary exception on all public lands open for mineral entry.",
+      "quote_verified": false,
+      "entity_as_written": "Messrs. Brady, Bishop, Dickenson, and Kantor",
+      "role_as_written": "Mineral exploration geologists, commenters"
+    }
+  ],
+  "window_pages": [
+    29,
+    49
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 19,
+  "synthetic_no_complaint": false
+}

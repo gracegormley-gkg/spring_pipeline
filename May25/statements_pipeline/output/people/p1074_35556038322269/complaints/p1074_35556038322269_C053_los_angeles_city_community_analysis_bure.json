@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556038322269_C053",
+  "complainer_id": "p1074_35556038322269_K056",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 53,
+  "entity": "Los Angeles City Community Analysis Bureau",
+  "kind": "agency",
+  "role": "source of median family income data",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "cited solely as a data source for median family income figures with no expressed position on the project",
+  "summary": "The Los Angeles City Community Analysis Bureau is cited exclusively as the source of 1977 median family income data by community area (Figure V.8). The bureau provides no commentary, recommendation, or position on the proposed transit alternatives; it functions purely as a statistical reference.",
+  "form": "none",
+  "complaint_summary": "The Los Angeles City Community Analysis Bureau is cited as the data source for Figure V.8, which presents 1977 median family income figures by community area, with no position expressed on the project.",
+  "evidence_pages": [
+    "179"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence"
+  ],
+  "summary_quote": "Source: Los Angeles City Community Analysis Bureau",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "179"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Source: Los Angeles City Community Analysis Bureau",
+      "quote_verified": true,
+      "entity_as_written": "Los Angeles City Community Analysis Bureau",
+      "role_as_written": "source of median family income data"
+    }
+  ],
+  "window_pages": [
+    169,
+    189
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 56,
+  "synthetic_no_complaint": false
+}

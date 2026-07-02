@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C242",
+  "complainer_id": "p0491_35556036091957_K219",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 242,
+  "entity": "R. Charles Shepherd",
+  "kind": "official",
+  "role": "Director, Division of Technical Assistance, Florida Department of Community Affairs",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter suggesting Alternative B while recommending strong inter-agency cooperation and raising specific regulatory questions",
+  "summary": "R. Charles Shepherd, Director of the Division of Technical Assistance at the Florida Department of Community Affairs, submitted a letter suggesting the Department of Interior adopt 'Alternative B' from the draft environmental statement, while acknowledging the popularity of ORVs. He recommended strong inter-agency cooperation in planning ORV areas and raised specific questions about the proposed age requirements for supervisors and the protection of historical and archaeological structures from ORV damage.",
+  "form": "letter",
+  "complaint_summary": "Shepherd recommends adoption of Alternative B, calls for strong inter-agency cooperation in ORV area planning, and raises questions about the proposed supervisor age requirement of 21, the number of minors one supervisor can oversee, and why historical or archaeological structures should be subject to damage or destruction from ORV use.",
+  "evidence_pages": [
+    "314"
+  ],
+  "statement": {
+    "text": "While we might suggest that the Department of Interior choose \"Alternative B),\" we can appreciate the popularity of the vehicles and the problems that have arisen with their increasing use. We would recommend strong emphasis in the proposed cooperation between all agencies and levels of government in coordinating, planning and development of areas and facilities for the use of ORV.\nPoints of curiosity, with the voting age and, in some states, the age of majority being 18, why is it suggested that the supervisor be 21? Also, what number of persons under age can be supervise as conditions warrant? Finally, why do any historical or archeological structures have to be changed or destroyed by ORV use?\nWe feel the Department is to be commanded for their efforts in secking solutions to these very vexing problems.\nSincerely,\nR. Charles Shepherd\nDirector\nDivision of Technical Assistance",
+    "opening_anchor": "While we might suggest that the Department of Interior choose \"Alternative B),\" we can appreciate the popularity of the vehicles and the problems that have arisen with their increasing use.",
+    "closing_anchor": "We feel the Department is to be commanded for their efforts in secking solutions to these very vexing problems.\n\nSincerely,\nR. Charles Shepherd\nDirector\nDivision of Technical Assistance",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "While we might suggest that the Department of Interior choose \"Alternative B),\" we can appreciate the popularity of the vehicles and the problems that have arisen with their increasing use.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "314"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "While we might suggest that the Department of Interior choose \"Alternative B),\" we can appreciate the popularity of the vehicles and the problems that have arisen with their increasing use.",
+      "quote_verified": true,
+      "entity_as_written": "R. Charles Shepherd",
+      "role_as_written": "Director, Division of Technical Assistance, Florida Department of Community Affairs"
+    }
+  ],
+  "window_pages": [
+    304,
+    324
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 219,
+  "synthetic_no_complaint": false
+}

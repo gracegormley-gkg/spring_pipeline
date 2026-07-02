@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556036811230_C070",
+  "complainer_id": "p1074_35556036811230_K053",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 70,
+  "entity": "New York State Department of Environmental Conservation",
+  "kind": "agency",
+  "role": "state agency whose proposed noise pollution regulations are cited as a reference",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "cited only as a reference document with no position expressed",
+  "summary": "The New York State Department of Environmental Conservation is cited solely as a bibliographic reference for its August 1973 Proposed Regulations for the Prevention and Control of Environmental Noise Pollution. No position or complaint is attributed to the agency in this window; it appears only as a source document consulted in developing the construction noise specifications for the NFTA Metro Corridor.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "284"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "New York State Department of Environmental Conservation, Proposed Regulations for the Prevention and Control of Environmental Noise Pollution, August 1973.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "284"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "New York State Department of Environmental Conservation, Proposed Regulations for the Prevention and Control of Environmental Noise Pollution, August 1973.",
+      "quote_verified": true,
+      "entity_as_written": "New York State Department of Environmental Conservation",
+      "role_as_written": "state agency whose proposed noise pollution regulations are cited as a reference"
+    }
+  ],
+  "window_pages": [
+    274,
+    284
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 53,
+  "synthetic_no_complaint": true
+}

@@ -1,0 +1,70 @@
+{
+  "complaint_id": "p1074_35556036546182_C130",
+  "complainer_id": "p1074_35556036546182_K082",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 130,
+  "entity": "Francis Biernat",
+  "kind": "official",
+  "role": "Supervisor, Milwaukee County",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "proposed tunnel section to mitigate noise while questioning impacts on school and noise levels from ramps",
+  "summary": "Francis Biernat, a Milwaukee County Supervisor, testified at the July 11, 1974 public hearing raising concerns about noise impacts from ramps at Howell Avenue and the effect on the learning and teaching process at Hamlin-Garland School. He proposed a 750-foot tunnel section from just east of I-94 to 14th Street at an additional cost of $5,000,000 as a noise mitigation measure, suggesting conditional rather than outright opposition to the project.",
+  "form": "testimony",
+  "complaint_summary": "Biernat questioned the noise impact of ramps at Howell Avenue on Hamlin-Garland School's learning environment and proposed a costly tunnel section as a noise reduction alternative.",
+  "evidence_pages": [
+    "241"
+  ],
+  "statement": {
+    "text": "Asked how noise levels would be affected by ramps at Howell Avenue. Questioned the effect on the learning and teaching process at Hamlin-Garland School. Proposed a tunnel section between I-94 and 14th Street.\nf) A noise study was supposed to be done to predict the change in noise levels by the design change of adding ramps to Howell Avenue.\nStated his concern that the noise levels would disturb the learning and teaching processes at Hamlin-Garland School.\nProposed a 750' tunnel section from just east of I-94 to 14th Street at an additional cost of $5,000,000 to reduce the noise in the area.",
+    "opening_anchor": "Asked how noise levels would be affected by ramps at Howell Avenue. Questioned the effect on the learning and teaching process at Hamlin-Garland School.",
+    "closing_anchor": "Proposed a 750' tunnel section from just east of I-94 to 14th Street at an additional cost of $5,000,000 to reduce the noise in the area.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036546182_R050"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Asked how noise levels would be affected by ramps at Howell Avenue. Questioned the effect on the learning and teaching process at Hamlin-Garland School. Proposed a tunnel section between I-94 and 14th Street.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased",
+    "sectional"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "219"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "The following individuals presented oral testimony at an Environmental Public Hearing, July 11, 1974 for the proposed freeway and their views have been made a part of the official transcript.",
+      "quote_verified": true,
+      "entity_as_written": "Francis Biernat",
+      "role_as_written": "Supervisor, Milwaukee County"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "241"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Asked how noise levels would be affected by ramps at Howell Avenue. Questioned the effect on the learning and teaching process at Hamlin-Garland School. Proposed a tunnel section between I-94 and 14th Street.",
+      "quote_verified": true,
+      "entity_as_written": "Francis Biernat",
+      "role_as_written": "Supervisor, Milwaukee County"
+    }
+  ],
+  "window_pages": [
+    209,
+    244
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 82,
+  "synthetic_no_complaint": false
+}

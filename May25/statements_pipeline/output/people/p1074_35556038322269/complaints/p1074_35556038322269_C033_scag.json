@@ -1,0 +1,78 @@
+{
+  "complaint_id": "p1074_35556038322269_C033",
+  "complainer_id": "p1074_35556038322269_K031",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 33,
+  "entity": "SCAG",
+  "kind": "organization",
+  "role": "Regional planning organization that adopted a 6% mode split target for transit in 1990",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "SCAG adopted a 6% transit mode split target and supports guideway transit development subject to sufficient patronage and public support",
+  "summary": "SCAG appears as a regional planning organization whose adopted policy goals and transportation targets are cited throughout the document. SCAG set a goal to increase transit ridership from 3.36% to 6% of all person trips by 1990, supports development of an initial guideway transit system, and provided socio-economic and land use projections used in the patronage modeling for the alternatives analysis. SCAG's stance is conditional in that it supports transit investment when justified by patronage and public support.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "SCAG provided socio-economic and land use projections (SCAG '76) as inputs to the LARTS/CalTrans patronage forecasting models used to estimate 1990 ridership for all eleven alternatives.",
+  "evidence_pages": [
+    "103"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Committee consists of representatives from SCAG, CALTRANS, The Los Angeles County Transportation Commission, the Los Angeles Community Redevelopment Agency, L. A. County and City and the SCRTD.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "73"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Reduce emissions attributable to the transportation system equivalent to a reduction of vehicle miles traveled of 5% in each five-year period from 1980 to 1995. (SCAG, p. 4)",
+      "quote_verified": true,
+      "entity_as_written": "SCAG",
+      "role_as_written": "Regional planning agency"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "108"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "As the graph shows, the SCAG has adopted a 6% mode split target for transit in 1990 in the Regional Transportation Plan.",
+      "quote_verified": true,
+      "entity_as_written": "SCAG",
+      "role_as_written": "Regional planning organization that adopted a 6% mode split target for transit in 1990"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "292"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Committee consists of representatives from SCAG, CALTRANS, The Los Angeles County Transportation Commission, the Los Angeles Community Redevelopment Agency, L. A. County and City and the SCRTD.",
+      "quote_verified": true,
+      "entity_as_written": "SCAG",
+      "role_as_written": "Member of Interagency Technical Committee Marketing Sub-Committee"
+    }
+  ],
+  "window_pages": [
+    63,
+    103
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 31,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556038322269_C082",
+  "complainer_id": "p1074_35556038322269_K007",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 82,
+  "entity": "Dee Jacobs",
+  "kind": "official",
+  "role": "Regional Director, UMTA; IACC member",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed as IACC member with no expressed position",
+  "summary": "Dee Jacobs is identified solely as the Regional Director of UMTA and a member of the Interagency Coordinating Committee (IACC), a policy oversight body for the project. No individual statement, position, or complaint is attributed to Dee Jacobs in the document window. The mention is purely organizational/roster in nature.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "18"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Interagency Coordinating Committee (IACC)",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "18"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Interagency Coordinating Committee (IACC)",
+      "quote_verified": true,
+      "entity_as_written": "Dee Jacobs",
+      "role_as_written": "Regional Director, UMTA; IACC member"
+    }
+  ],
+  "window_pages": [
+    8,
+    28
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 7,
+  "synthetic_no_complaint": true
+}

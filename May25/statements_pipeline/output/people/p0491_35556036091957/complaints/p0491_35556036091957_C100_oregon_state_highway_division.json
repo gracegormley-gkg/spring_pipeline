@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C100",
+  "complainer_id": "p0491_35556036091957_K083",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 100,
+  "entity": "Oregon State Highway Division",
+  "kind": "agency",
+  "role": "state agency, commenter",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "letter expresses general support but notes inability to fully evaluate due to unavailability of referenced report",
+  "summary": "The Oregon State Highway Division submitted a brief letter expressing appreciation for the opportunity to review the draft environmental statement and indicating it adequately covers expected impacts. They specifically highlighted the importance of the operating criteria recommended for adoption, but noted they could not fully evaluate the statement because the Off-Road Recreation Vehicle report referenced was unavailable to them.",
+  "form": "letter",
+  "complaint_summary": "The Oregon State Highway Division generally found the environmental statement adequate, emphasized the importance of the operating criteria, but flagged that the unavailability of the Off-Road Recreation Vehicle report prevented a full evaluation.",
+  "evidence_pages": [
+    "135"
+  ],
+  "statement": {
+    "text": "Thank you for the opportunity to review and comment on the environmental statement pertaining to use of off-road vehicles on the public lands. In its necessarily general way, it seems to adequately cover the expected impacts upon our environment as well as the developing difficulties that must be faced on public lands.\nWe feel the operating criteria recommended for adoption are especially important. Because of the unavailability of the Off-Road Recreation Vehicle report, we were unable to evaluate the environmental statement from the standpoint of the report.\nVery truly yours,",
+    "opening_anchor": "Thank you for the opportunity to review and comment on the environmental statement pertaining to use of off-road vehicles on the public lands.",
+    "closing_anchor": "we were unable to evaluate the environmental statement from the standpoint of the report.\n\nVery truly yours,",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We feel the operating criteria recommended for adoption are especially important.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "135"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We feel the operating criteria recommended for adoption are especially important.",
+      "quote_verified": true,
+      "entity_as_written": "Oregon State Highway Division",
+      "role_as_written": "state agency, commenter"
+    }
+  ],
+  "window_pages": [
+    125,
+    145
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 83,
+  "synthetic_no_complaint": false
+}

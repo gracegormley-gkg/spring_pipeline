@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C059",
+  "complainer_id": "p1074_35556038322269_K064",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 59,
+  "entity": "DWP",
+  "kind": "agency",
+  "role": "Los Angeles Department of Water and Power, commenter on power requirements",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes DWP finding power requirements insignificant and already accounted for in planned growth",
+  "summary": "The DWP provided information on current and projected power demands for the city and assessed the rail system's electricity requirements as an insignificant portion of total load growth, already incorporated into planned power system expansion. DWP's position is informational and accommodating rather than oppositional or explicitly supportive of the project itself. No concerns or objections were raised by DWP regarding the project's power demands.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "DWP states that the estimated power requirements for the proposed rail project are an insignificant part of the total load growth forecast for the city and have already been taken into account in the planned growth of the power system.",
+  "evidence_pages": [
+    "203"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The DWP states that the estimated power requirements for this proposed project are an insignificant part of the total load growth forecast for the city, and has been taken into account in the planned growth of the power system.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "203"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The DWP states that the estimated power requirements for this proposed project are an insignificant part of the total load growth forecast for the city, and has been taken into account in the planned growth of the power system.",
+      "quote_verified": true,
+      "entity_as_written": "DWP",
+      "role_as_written": "Los Angeles Department of Water and Power, commenter on power requirements"
+    }
+  ],
+  "window_pages": [
+    193,
+    213
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 64,
+  "synthetic_no_complaint": false
+}

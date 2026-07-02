@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C013",
+  "complainer_id": "p1074_35556036546182_K019",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 13,
+  "entity": "Thomas R. Burney",
+  "kind": "individual",
+  "role": "Representative of Wisconsin's Environmental Decade, commenter",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed only as a commenter in a sectional roster with no position stated",
+  "summary": "Thomas R. Burney, representing Wisconsin's Environmental Decade, is listed among additional commenters who submitted letters regarding the Airport Spur project. No substantive position or specific complaints are described in this window; only his name and affiliation appear in a roster of commenters. His actual letter is referenced as being in Section X of the document, which is outside this window.",
+  "form": "sectional",
+  "complaint_summary": "Thomas R. Burney of Wisconsin's Environmental Decade is listed as having submitted a comment letter (contained in Section X), but no position or substance is described in this window.",
+  "evidence_pages": [
+    "18"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual",
+    "quote_not_verbatim",
+    "low_stance_confidence"
+  ],
+  "summary_quote": "8. Additional comments were received from the following: (Letters of comment are in Section X.) Wisconsin't Environmental Decade, Thomas R. Burney",
+  "summary_quote_verified": false,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "18"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "8. Additional comments were received from the following: (Letters of comment are in Section X.) Wisconsin't Environmental Decade, Thomas R. Burney",
+      "quote_verified": false,
+      "entity_as_written": "Thomas R. Burney",
+      "role_as_written": "Representative of Wisconsin's Environmental Decade, commenter"
+    }
+  ],
+  "window_pages": [
+    8,
+    28
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 19,
+  "synthetic_no_complaint": false
+}

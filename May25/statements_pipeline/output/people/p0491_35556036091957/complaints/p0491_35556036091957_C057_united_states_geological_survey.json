@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C057",
+  "complainer_id": "p0491_35556036091957_K057",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 57,
+  "entity": "United States Geological Survey",
+  "kind": "agency",
+  "role": "federal agency reviewer",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "memo explicitly states 'We have no comment on the subject draft environmental statement'",
+  "summary": "The United States Geological Survey submitted a brief internal memorandum stating it had no comment on the draft environmental statement for the proposed implementation of Executive Order 11644. The agency took no position on the merits of the proposal and offered no substantive feedback.",
+  "form": "letter",
+  "complaint_summary": "The USGS stated it had no comment on the draft environmental statement referred to it for review.",
+  "evidence_pages": [
+    "78"
+  ],
+  "statement": {
+    "text": "We have no comment on the subject draft environmental statement which was referred to us for review by your memorandum of June 1.",
+    "opening_anchor": "We have no comment on the subject draft environmental statement which was referred to us for review by your memorandum of June 1.",
+    "closing_anchor": "We have no comment on the subject draft environmental statement which was referred to us for review by your memorandum of June 1.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We have no comment on the subject draft environmental statement which was referred to us for review by your memorandum of June 1.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "78"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We have no comment on the subject draft environmental statement which was referred to us for review by your memorandum of June 1.",
+      "quote_verified": true,
+      "entity_as_written": "United States Geological Survey",
+      "role_as_written": "federal agency reviewer"
+    }
+  ],
+  "window_pages": [
+    68,
+    88
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 57,
+  "synthetic_no_complaint": false
+}

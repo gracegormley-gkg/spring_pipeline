@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556038322269_C083",
+  "complainer_id": "p1074_35556038322269_K008",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 83,
+  "entity": "Deputy Mayor Ray Remy",
+  "kind": "official",
+  "role": "Deputy Mayor, City of Los Angeles; IACC member",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed as IACC member with no expressed position",
+  "summary": "Deputy Mayor Ray Remy is listed solely as a member of the Interagency Coordinating Committee (IACC) representing the City of Los Angeles in the acknowledgements section of the document. No statement, comment, or position is attributed to him individually. His inclusion is purely organizational/administrative.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "18"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Interagency Coordinating Committee (IACC)",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "18"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Interagency Coordinating Committee (IACC)",
+      "quote_verified": true,
+      "entity_as_written": "Deputy Mayor Ray Remy",
+      "role_as_written": "Deputy Mayor, City of Los Angeles; IACC member"
+    }
+  ],
+  "window_pages": [
+    8,
+    28
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 8,
+  "synthetic_no_complaint": true
+}

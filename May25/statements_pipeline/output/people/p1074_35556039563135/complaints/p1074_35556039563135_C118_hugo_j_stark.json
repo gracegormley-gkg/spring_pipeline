@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556039563135_C118",
+  "complainer_id": "p1074_35556039563135_K095",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 118,
+  "entity": "Hugo J. Stark",
+  "kind": "official",
+  "role": "Acting Superintendent of Highways, Cook County",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly concurring with proposed improvement along Lincoln Highway",
+  "summary": "Hugo J. Stark, Acting Superintendent of Highways for Cook County, wrote a letter on April 19, 1972 expressing concurrence with the proposed Lincoln Highway improvement project. He reviewed the Draft Environmental Statement and found the proposed design and research summary to adhere to Cook County policies, offering no objections or conditions.",
+  "form": "letter",
+  "complaint_summary": "Stark states that Cook County has reviewed the Draft Environmental Statement and finds the proposed design and research summary adhere to Cook County policies, and concurs with the proposed Lincoln Highway improvement.",
+  "evidence_pages": [
+    "211"
+  ],
+  "statement": {
+    "text": "We have reviewed your Draft Environmental Statement-Section 4(f) for the proposed subject improvement in its relationship to the National Environmental Policy Act of 1969 and find that your proposed design and research summary adhere to the policies required in Cook County.\nWe therefore concur with your proposed improvement along Lincoln Highway.",
+    "opening_anchor": "We have reviewed your Draft Environmental Statement-Section 4(f) for the proposed subject improvement in its relationship to the National Environmental Policy Act of 1969",
+    "closing_anchor": "We therefore concur with your proposed improvement along Lincoln Highway.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We therefore concur with your proposed improvement along Lincoln Highway.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "211"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We therefore concur with your proposed improvement along Lincoln Highway.",
+      "quote_verified": true,
+      "entity_as_written": "Hugo J. Stark",
+      "role_as_written": "Acting Superintendent of Highways, Cook County"
+    }
+  ],
+  "window_pages": [
+    201,
+    221
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 95,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,951 @@
+{
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "title": "Buffalo light rail rapid transit project construction : environmental impact statement.",
+  "n_chunks": 6,
+  "per_chunk": [
+    {
+      "chunk_index": 0,
+      "start_page": 1,
+      "end_page": 50,
+      "ceq_chapter": null,
+      "entities": [
+        {
+          "entity": "Peter Benjamin",
+          "kind": "official",
+          "role": "Director, Office of Program Analysis, Urban Mass Transportation Administration",
+          "attribution_mode": "paraphrased",
+          "quote": "In order to facilitate meaningful public participation and review, as well as desirable coordination of effort between UMTA and the NFTA, it was decided by these agencies to prepare jointly this EIS.",
+          "evidence_pages": [
+            "1"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "Urban Mass Transportation Administration (UMTA)",
+          "kind": "agency",
+          "role": "Federal transit funding agency, co-preparer of EIS",
+          "attribution_mode": "paraphrased",
+          "quote": "UMTA and the NFTA have been substantially involved in the preparation and development of this draft EIS.",
+          "evidence_pages": [
+            "1"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "Niagara Frontier Transportation Authority (NFTA)",
+          "kind": "organization",
+          "role": "Project applicant, co-preparer of EIS",
+          "attribution_mode": "paraphrased",
+          "quote": "The Niagara Frontier Transportation Authority of New York (NFTA) has filed an application with UMTA for Federal capital grant assistance to construct and equip a 6.4-mile Light Rail Rapid Transit (LRRT) System along Main Street in the Buffalo-Amherst Corridor, New York.",
+          "evidence_pages": [
+            "3"
+          ],
+          "chunk_index": 0
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 15183,
+        "output_tokens": 386,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 1,
+      "start_page": 49,
+      "end_page": 98,
+      "ceq_chapter": null,
+      "entities": [
+        {
+          "entity": "Cornell Aeronautical Lab",
+          "kind": "organization",
+          "role": "population projection author",
+          "attribution_mode": "sectional",
+          "quote": "POPULATION PROJECTIONS FOR BUFFALO AREA",
+          "evidence_pages": [
+            "49"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "Larry Smith & Company",
+          "kind": "organization",
+          "role": "population projection author",
+          "attribution_mode": "sectional",
+          "quote": "POPULATION PROJECTIONS FOR BUFFALO AREA",
+          "evidence_pages": [
+            "49"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "NFTC",
+          "kind": "agency",
+          "role": "population projection author / transit survey sponsor",
+          "attribution_mode": "sectional",
+          "quote": "POPULATION PROJECTIONS FOR BUFFALO AREA",
+          "evidence_pages": [
+            "49"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "NYS Economic Development Board",
+          "kind": "agency",
+          "role": "population projection author",
+          "attribution_mode": "sectional",
+          "quote": "POPULATION PROJECTIONS FOR BUFFALO AREA",
+          "evidence_pages": [
+            "49"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "Economic Consultants Organization, Inc.",
+          "kind": "organization",
+          "role": "population projection author",
+          "attribution_mode": "sectional",
+          "quote": "POPULATION PROJECTIONS FOR BUFFALO AREA",
+          "evidence_pages": [
+            "49"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "ENCRPB",
+          "kind": "agency",
+          "role": "population/employment projection author (Erie and Niagara Counties Regional Planning Board)",
+          "attribution_mode": "paraphrased",
+          "quote": "Employment within the Buffalo SMSA is projected to increase an average of 2,550 to 2,800 annually between 1980 and 1995, according to the ENCRPB and the U.S. Department of Commerce.",
+          "evidence_pages": [
+            "52"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "U.S. Census",
+          "kind": "agency",
+          "role": "population projection author",
+          "attribution_mode": "sectional",
+          "quote": "POPULATION PROJECTIONS FOR BUFFALO AREA",
+          "evidence_pages": [
+            "49"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "Erie and Niagara Counties Regional Planning Board",
+          "kind": "agency",
+          "role": "demographic data source / planning body",
+          "attribution_mode": "paraphrased",
+          "quote": "Since according to the Erie and Niagara Counties Regional Planning Board (ENCRPB), the proportion of women in the City of Buffalo is expected to remain about 53 percent in 1980 (Ref. 15) and the percentage of women in the nation's labor force is expected to continue to increase, the preponderance of women transit users can be expected to continue.",
+          "evidence_pages": [
+            "50"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "New York State Department of Labor",
+          "kind": "agency",
+          "role": "employment data source",
+          "attribution_mode": "paraphrased",
+          "quote": "According to the New York State Department of Labor, employment within the Buffalo SMSA dropped from 507,000 in 1970 to 501,000 in 1975.",
+          "evidence_pages": [
+            "52"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "U.S. Department of Commerce",
+          "kind": "agency",
+          "role": "employment data/projection source",
+          "attribution_mode": "paraphrased",
+          "quote": "Employment within the Buffalo SMSA is projected to increase an average of 2,550 to 2,800 annually between 1980 and 1995, according to the ENCRPB and the U.S. Department of Commerce.",
+          "evidence_pages": [
+            "52"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "NFTA",
+          "kind": "agency",
+          "role": "transit authority / project proponent",
+          "attribution_mode": "paraphrased",
+          "quote": "The NFTA is preparing the Niagara Frontier Elderly and Handicapped Study.",
+          "evidence_pages": [
+            "51"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "Niagara Frontier Transportation Authority (NFTA)",
+          "kind": "agency",
+          "role": "transit authority / project applicant",
+          "attribution_mode": "paraphrased",
+          "quote": "the NFTA, in July 1976, submitted an application to UMTA (Ref. 28) for a mass transportation capital improvement grant under the Urban Mass Transportation Act of 1964, as amended.",
+          "evidence_pages": [
+            "79"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "New York State Office of Planning Coordination (OPC)",
+          "kind": "agency",
+          "role": "planning study author",
+          "attribution_mode": "paraphrased",
+          "quote": "In March 1969, the New York State Office of Planning Coordination (OPC) completed the Buffalo-Amherst Corridor Urban Impact Study.",
+          "evidence_pages": [
+            "76"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "UMTA",
+          "kind": "agency",
+          "role": "federal transit funding agency",
+          "attribution_mode": "paraphrased",
+          "quote": "Following an UMTA \"commitment in principle\" to support a Metrorail System for Buffalo contingent on successful preparation and acceptance of this Environmental Impact Statement (EIS), the NFTA, in July 1976, submitted an application to UMTA (Ref. 28) for a mass transportation capital improvement grant under the Urban Mass Transportation Act of 1964, as amended.",
+          "evidence_pages": [
+            "79"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "Joint Executive Committee for Rapid Transit",
+          "kind": "organization",
+          "role": "community support body for rapid transit",
+          "attribution_mode": "paraphrased",
+          "quote": "In May 1975, at the request of the Erie County Executive and the Mayor of the City of Buffalo, the Joint Executive Committee for Rapid Transit was formed.",
+          "evidence_pages": [
+            "80"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "Erie County Executive",
+          "kind": "official",
+          "role": "Erie County Executive",
+          "attribution_mode": "paraphrased",
+          "quote": "In May 1975, at the request of the Erie County Executive and the Mayor of the City of Buffalo, the Joint Executive Committee for Rapid Transit was formed.",
+          "evidence_pages": [
+            "80"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "Mayor of the City of Buffalo",
+          "kind": "official",
+          "role": "Mayor, City of Buffalo",
+          "attribution_mode": "paraphrased",
+          "quote": "In May 1975, at the request of the Erie County Executive and the Mayor of the City of Buffalo, the Joint Executive Committee for Rapid Transit was formed.",
+          "evidence_pages": [
+            "80"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "Area Committee for Transit (ACT)",
+          "kind": "organization",
+          "role": "special interest community group supporting rapid transit",
+          "attribution_mode": "paraphrased",
+          "quote": "It was composed of the chairmen of the Mass Transit Advisory Committee, the Area Committee for Transit (ACT), and the No Overhead Transit (NOT) organization (the latter two being special interest community groups).",
+          "evidence_pages": [
+            "80"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "No Overhead Transit (NOT)",
+          "kind": "organization",
+          "role": "special interest community group",
+          "attribution_mode": "paraphrased",
+          "quote": "It was composed of the chairmen of the Mass Transit Advisory Committee, the Area Committee for Transit (ACT), and the No Overhead Transit (NOT) organization (the latter two being special interest community groups).",
+          "evidence_pages": [
+            "80"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "New York State Transportation Commissioner",
+          "kind": "official",
+          "role": "New York State Transportation Commissioner",
+          "attribution_mode": "paraphrased",
+          "quote": "In July 1975, the New York State Transportation Commissioner appointed a 50-member citizen's committee to support local efforts directed toward a favorable decision on the Buffalo-Amherst rail rapid transit project.",
+          "evidence_pages": [
+            "80"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "Committee for Federal Action",
+          "kind": "organization",
+          "role": "citizen committee supporting Buffalo-Amherst rail rapid transit project",
+          "attribution_mode": "paraphrased",
+          "quote": "Designated the Committee for Federal Action, the membership comprised a cross section of the area's business, civic, labor, and community leaders.",
+          "evidence_pages": [
+            "80"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "entire State of New York Congressional delegation",
+          "kind": "government",
+          "role": "Congressional delegation",
+          "attribution_mode": "paraphrased",
+          "quote": "In February 1976, the entire State of New York Congressional delegation united to press for approval of the Buffalo project.",
+          "evidence_pages": [
+            "80"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "New York State Legislature",
+          "kind": "government",
+          "role": "state legislature",
+          "attribution_mode": "paraphrased",
+          "quote": "In 1971, the New York State Legislature authorized the NFTA to proceed with creation of a regional bus network and the design and construction of a rail transit line in the Buffalo-Amherst Corridor; $86 million was appropriated for these activities.",
+          "evidence_pages": [
+            "78"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "Niagara Frontier Transportation Study (NFTS)",
+          "kind": "organization",
+          "role": "early transit planning study body",
+          "attribution_mode": "paraphrased",
+          "quote": "the Buffalo-Amherst and Buffalo-Tonawanda Corridors were identified as having high transit potential in work completed as early as 1965 by the Niagara Frontier Transportation Study (NFTS).",
+          "evidence_pages": [
+            "76"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "Mass Transit Advisory Committee",
+          "kind": "organization",
+          "role": "advisory group of Federal, State, and local governmental representatives and citizens",
+          "attribution_mode": "paraphrased",
+          "quote": "It was composed of the chairmen of the Mass Transit Advisory Committee, the Area Committee for Transit (ACT), and the No Overhead Transit (NOT) organization (the latter two being special interest community groups).",
+          "evidence_pages": [
+            "80"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "SUNYAB",
+          "kind": "organization",
+          "role": "university / land use stakeholder",
+          "attribution_mode": "paraphrased",
+          "quote": "The SUNYAB plans to cut the number of available parking spaces in accordance with the anticipated reduction in campus population.",
+          "evidence_pages": [
+            "68"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "Buffalo Sewer Authority",
+          "kind": "agency",
+          "role": "utility operator",
+          "attribution_mode": "paraphrased",
+          "quote": "The Sewer Authority plans to route a major new sewer line (the Scajaquada interceptor) across Main Street in the vicinity of Delavan Avenue.",
+          "evidence_pages": [
+            "70"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "Daniel, Mann, Johnson, & Mendenhall",
+          "kind": "organization",
+          "role": "consultant / data source",
+          "attribution_mode": "sectional",
+          "quote": "Transportation to Work - calculated by Daniel, Mann, Johnson, & Mendenhall from 1970 U.S. Census data",
+          "evidence_pages": [
+            "51"
+          ],
+          "chunk_index": 1
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 20084,
+        "output_tokens": 2934,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 2,
+      "start_page": 97,
+      "end_page": 146,
+      "ceq_chapter": null,
+      "entities": [
+        {
+          "entity": "Niagara Frontier Transportation Authority",
+          "kind": "organization",
+          "role": "project proponent",
+          "attribution_mode": "paraphrased",
+          "quote": "Hence, the Niagara Frontier Transportation Authority proposes an integrated rail/bus transit system comprising a 6.4-mile LRRT line along Main Street between the Buffalo CBD and the SUNYAB's South Campus and a realigned and rescheduled Metrobus system serving as feeder network for the rail transit line",
+          "evidence_pages": [
+            "139"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "NFTA",
+          "kind": "organization",
+          "role": "project proponent/transit authority",
+          "attribution_mode": "paraphrased",
+          "quote": "The NFTA has indicated no need for additional facilities to augment its current plant and yards for storage and maintenance of its bus fleet.",
+          "evidence_pages": [
+            "143"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "National Fuel Gas",
+          "kind": "organization",
+          "role": "property owner/commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "NFG intends to relocate their existing plant now just southwest of City Hall to this site.",
+          "evidence_pages": [
+            "144"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "City of Buffalo",
+          "kind": "government",
+          "role": "property owner",
+          "attribution_mode": "paraphrased",
+          "quote": "The abandoned Delaware, Lackawanna & Western terminal (background, Figure 4-5) now owned by the City of Buffalo was studied because it was felt that costly private property takings and relocations could be avoided, resulting in overall cost savings and minimizing the loss of taxable properties.",
+          "evidence_pages": [
+            "145"
+          ],
+          "chunk_index": 2
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 16072,
+        "output_tokens": 467,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 3,
+      "start_page": 145,
+      "end_page": 194,
+      "ceq_chapter": "Environmental Consequences",
+      "entities": [
+        {
+          "entity": "NFTA",
+          "kind": "agency",
+          "role": "Project proponent / transit authority",
+          "attribution_mode": "paraphrased",
+          "quote": "The NFTA has designated two areas that it owns as potential spoil disposal areas.",
+          "evidence_pages": [
+            "163"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "NFTA",
+          "kind": "agency",
+          "role": "Project proponent / transit authority",
+          "attribution_mode": "paraphrased",
+          "quote": "The NFTA will coordinate with City traffic personnel to select routes that will minimize problems with neighborhood air quality, noise, traffic, and roadway damage.",
+          "evidence_pages": [
+            "164"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "NFTA",
+          "kind": "agency",
+          "role": "Project proponent / transit authority",
+          "attribution_mode": "paraphrased",
+          "quote": "The NFTA will continue to coordinate with the City and the Urban Renewal Agency in evaluating the impacts of these possible takings.",
+          "evidence_pages": [
+            "178"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "NFTA",
+          "kind": "agency",
+          "role": "Project proponent / transit authority",
+          "attribution_mode": "paraphrased",
+          "quote": "The NFTA will continue to coordinate with the City's CZM Director.",
+          "evidence_pages": [
+            "178"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "NFTA",
+          "kind": "agency",
+          "role": "Project proponent / transit authority",
+          "attribution_mode": "paraphrased",
+          "quote": "The NFTA will continue to coordinate closely with the City's Commissioner of Transportation and the NFTC during the General Engineering and Architectural Phase to discuss means of best meeting the traffic needs of this area.",
+          "evidence_pages": [
+            "191"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "New York State Department of Transportation",
+          "kind": "agency",
+          "role": "Relocation specialists / state agency",
+          "attribution_mode": "paraphrased",
+          "quote": "However, in the opinion of relocation specialists at the New York State Department of Transportation, there are enough vacant industrially-zoned parcels within the City to accommodate all of these businesses that wish to remain in Buffalo.",
+          "evidence_pages": [
+            "177"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "American Public Transit Association",
+          "kind": "organization",
+          "role": "Industry standards body providing design guidelines",
+          "attribution_mode": "paraphrased",
+          "quote": "The American Public Transit Association guidelines used for design purposes recommend that the single event maximum noise level should be used for design purposes rather than any of the 'noise exposure level' evaluation schemes (Appendix, paragraph 7.1).",
+          "evidence_pages": [
+            "168"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "City of Buffalo",
+          "kind": "government",
+          "role": "Local government / coordinating entity",
+          "attribution_mode": "paraphrased",
+          "quote": "it is recommended that the City of Buffalo Police and Public Work Departments insure that adjacent streets are well-lighted and patrolled, and that criminal activity is discouraged by concentrated enforcement programs in the early years of operation to ensure that the transit line acquires an early reputation for security.",
+          "evidence_pages": [
+            "172"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "City of Chicago",
+          "kind": "government",
+          "role": "Local government with noise ordinance cited as example",
+          "attribution_mode": "paraphrased",
+          "quote": "As an example of the trend to quieter buses, the City of Chicago has a noise ordinance that controls the sale of new vehicles.",
+          "evidence_pages": [
+            "170"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "Buffalo Urban Renewal Agency",
+          "kind": "agency",
+          "role": "Public agency owning property in South Yard area",
+          "attribution_mode": "paraphrased",
+          "quote": "the block bounded by Main, Perry, and Washington Streets and South Park Avenue is owned by the City of Buffalo and the Buffalo Urban Renewal Agency.",
+          "evidence_pages": [
+            "178"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "New York State Thruway Authority",
+          "kind": "agency",
+          "role": "Public property owner in Ellicott Yard area",
+          "attribution_mode": "paraphrased",
+          "quote": "most of it is owned by the New York State Thruway Authority and some (between Washington Street and the Oak Street on-ramp) is owned by the City of Buffalo and used as a parking lot.",
+          "evidence_pages": [
+            "180"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "National Fuel Gas Company",
+          "kind": "organization",
+          "role": "Business with proposed relocation site in Ellicott Yard area",
+          "attribution_mode": "paraphrased",
+          "quote": "One of the vacant parcels bounded by Chicago, Carroll, Louisiana, and Exchange Streets, has been identified as the proposed relocation site of a National Fuel Gas Company facility now located in southwest Buffalo.",
+          "evidence_pages": [
+            "180"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "Erie-Lackawanna Railroad",
+          "kind": "organization",
+          "role": "Property owner in Terminal Yard area",
+          "attribution_mode": "paraphrased",
+          "quote": "Acquisitions for the yard and service facilities (Table 5-6 and 9-1) would include the Delaware, Lackawanna & Western Railroad depot (presently City-owned), a portion of the City-owned block bounded by South Park Avenue and Main, Perry, and Washington Streets, portions of the privately-owned blocks bounded by South Park Avenue and Washington, Perry, and Illinois Streets, and the land between the depot and South Park Avenue (owned by the Erie-Lackawanna Railroad)",
+          "evidence_pages": [
+            "181"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "City's Department of Transportation",
+          "kind": "agency",
+          "role": "Local traffic regulatory agency",
+          "attribution_mode": "paraphrased",
+          "quote": "The City's Department of Transportation could adopt traffic regulations for station areas to minimize this adverse impact.",
+          "evidence_pages": [
+            "173"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "Federal Highway Administration",
+          "kind": "agency",
+          "role": "Federal agency providing traffic capacity standards",
+          "attribution_mode": "paraphrased",
+          "quote": "Main Street should perform at level of service 'C,' as defined by the Highway Capacity Manual prepared by the Federal Highway Administration.",
+          "evidence_pages": [
+            "191"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "U.S. Department of Transportation, Federal Highway Administration",
+          "kind": "agency",
+          "role": "Federal agency providing noise standards",
+          "attribution_mode": "paraphrased",
+          "quote": "The APTA does not give a guideline for this land use, but the U.S. Department of Transportation, Federal Highway Administration's Standard PPM 90-2 recommends that L10 values not excee",
+          "evidence_pages": [
+            "194"
+          ],
+          "chunk_index": 3
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 18850,
+        "output_tokens": 1767,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 4,
+      "start_page": 193,
+      "end_page": 242,
+      "ceq_chapter": "Environmental Consequences",
+      "entities": [
+        {
+          "entity": "NFTA",
+          "kind": "agency",
+          "role": "project proponent / transit authority",
+          "attribution_mode": "paraphrased",
+          "quote": "The NFTA will continue working closely with City transportation planners to resolve these issues.",
+          "evidence_pages": [
+            "199"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "City of Buffalo",
+          "kind": "government",
+          "role": "municipal government / transportation planning partner",
+          "attribution_mode": "paraphrased",
+          "quote": "The NFTA and the City of Buffalo could phase street closures during construction in a number of ways.",
+          "evidence_pages": [
+            "194"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "Greater Buffalo Development Foundation",
+          "kind": "organization",
+          "role": "civic/development organization, commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "In conjunction with a 1971 proposal for a covered Main Street mall with a subway rail transit line (Ref. 24), the Greater Buffalo Development Foundation identified 55 businesses that would be \"landlocked\" by closing the mall to service vehicles",
+          "evidence_pages": [
+            "196"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "Buffalo Historical Society",
+          "kind": "organization",
+          "role": "historic preservation reviewer",
+          "attribution_mode": "paraphrased",
+          "quote": "The Buffalo Historical Society (under the direction of Dr. Walter S. Dunn, Jr.) and the Landmark Society of the Niagara Frontier (represented by Mr. Olaf Shelgren, Jr., Chairman) compiled a list of historic structures located along the proposed rail alignment.",
+          "evidence_pages": [
+            "218"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "Dr. Walter S. Dunn, Jr.",
+          "kind": "individual",
+          "role": "Director, Buffalo Historical Society",
+          "attribution_mode": "paraphrased",
+          "quote": "The Buffalo Historical Society (under the direction of Dr. Walter S. Dunn, Jr.) and the Landmark Society of the Niagara Frontier (represented by Mr. Olaf Shelgren, Jr., Chairman) compiled a list of historic structures located along the proposed rail alignment.",
+          "evidence_pages": [
+            "218"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "Landmark Society of the Niagara Frontier",
+          "kind": "organization",
+          "role": "historic preservation reviewer",
+          "attribution_mode": "paraphrased",
+          "quote": "The Buffalo Historical Society (under the direction of Dr. Walter S. Dunn, Jr.) and the Landmark Society of the Niagara Frontier (represented by Mr. Olaf Shelgren, Jr., Chairman) compiled a list of historic structures located along the proposed rail alignment.",
+          "evidence_pages": [
+            "218"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "Mr. Olaf Shelgren, Jr.",
+          "kind": "individual",
+          "role": "Chairman, Landmark Society of the Niagara Frontier",
+          "attribution_mode": "paraphrased",
+          "quote": "The Buffalo Historical Society (under the direction of Dr. Walter S. Dunn, Jr.) and the Landmark Society of the Niagara Frontier (represented by Mr. Olaf Shelgren, Jr., Chairman) compiled a list of historic structures located along the proposed rail alignment.",
+          "evidence_pages": [
+            "218"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "Buffalo Landmark and Preservation Board",
+          "kind": "agency",
+          "role": "historic preservation review board",
+          "attribution_mode": "paraphrased",
+          "quote": "The Buffalo Landmark and Preservation Board reviewed the list of sites and found no problems with the proposed rail transit project.",
+          "evidence_pages": [
+            "219"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "New York State Historic Preservation Officer",
+          "kind": "official",
+          "role": "State Historic Preservation Officer",
+          "attribution_mode": "paraphrased",
+          "quote": "The New York State Historic Preservation Officer has confirmed in a May 4, 1977 letter to UMTA, that the project will have no effect upon structures included in or eligible for inclusion in the National Register of Historic Places.",
+          "evidence_pages": [
+            "219"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "Mr. Neil Trubowitz",
+          "kind": "individual",
+          "role": "Director, Archeological Survey, SUNYAB Anthropology Department",
+          "attribution_mode": "paraphrased",
+          "quote": "It is the opinion of Mr. Neil Trubowitz, Director, Archeological Survey, of the SUNYAB's Anthropology Department that many of the sites have been destroyed by urban developments and that a major field effort, including test diggings, would be needed to determine the value of these sites.",
+          "evidence_pages": [
+            "221"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "Buffalo Sewer Authority",
+          "kind": "agency",
+          "role": "utility authority / negotiating party",
+          "attribution_mode": "paraphrased",
+          "quote": "This potential conflict has been recognized and negotiations are currently under way between the NFTA and the Sewer Authority and their design consultants to resolve the problem through a change in the planned alignment of the proposed transit tunnel.",
+          "evidence_pages": [
+            "214"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "U.S. Department of Transportation, Federal Highway Administration",
+          "kind": "agency",
+          "role": "federal agency providing noise standards",
+          "attribution_mode": "paraphrased",
+          "quote": "The APTA does not give a guideline for this land use, but the U.S. Department of Transportation, Federal Highway Administration's Standard PPM 90-2 recommends that L<sub>10</sub> values not exceed 70 dBA.",
+          "evidence_pages": [
+            "193"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "American Public Transit Association",
+          "kind": "organization",
+          "role": "standards body providing noise/vibration guidelines",
+          "attribution_mode": "paraphrased",
+          "quote": "The APTA ground-borne noise guideline of 30 dBA is appropriate for the War Memorial Auditorium and St. Paul's Cathedral.",
+          "evidence_pages": [
+            "193"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "SUNYAB",
+          "kind": "organization",
+          "role": "university / landowner at South Campus terminal site",
+          "attribution_mode": "paraphrased",
+          "quote": "NFTA plans to continue discussions with SUNYAB officials about the possibility of converting an existing lot for transit patron use.",
+          "evidence_pages": [
+            "211"
+          ],
+          "chunk_index": 4
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 16743,
+        "output_tokens": 1649,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 5,
+      "start_page": 241,
+      "end_page": 284,
+      "ceq_chapter": "Environmental Consequences",
+      "entities": [
+        {
+          "entity": "American Public Transit Association",
+          "kind": "organization",
+          "role": "industry association issuing noise/vibration design guidelines for rapid transit facilities",
+          "attribution_mode": "sectional",
+          "quote": "American Public Transit Association Guidelines (August 1976). GUIDELINES AND PRINCIPLES FOR DESIGN OF RAPID TRANSIT FACILITIES NOISE AND VIBRATION",
+          "evidence_pages": [
+            "241"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "New York City Transit Authority",
+          "kind": "agency",
+          "role": "transit authority with prior experience including noise restrictions in construction contract specifications",
+          "attribution_mode": "paraphrased",
+          "quote": "Recent projects of the New York City Transit Authority and the Washington Metropolitan Area Transit Authority have included noise restrictions in the contract specifications.",
+          "evidence_pages": [
+            "272"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "Washington Metropolitan Area Transit Authority",
+          "kind": "agency",
+          "role": "transit authority with prior experience including noise restrictions in construction contract specifications",
+          "attribution_mode": "paraphrased",
+          "quote": "Recent projects of the New York City Transit Authority and the Washington Metropolitan Area Transit Authority have included noise restrictions in the contract specifications.",
+          "evidence_pages": [
+            "272"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "NFTA",
+          "kind": "agency",
+          "role": "project sponsor committing to include noise limit specifications in Metro Corridor construction contracts",
+          "attribution_mode": "paraphrased",
+          "quote": "For the NFTA Metro Corridor, in addition to any city or state noise ordinances or standards, the construction contracts will include a section on noise limits.",
+          "evidence_pages": [
+            "272"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "Occupational Safety and Health Administration",
+          "kind": "agency",
+          "role": "regulatory body whose procedures govern permissible noise exposure calculations for construction workers and public",
+          "attribution_mode": "paraphrased",
+          "quote": "Permissible noise exposure shall be calculated in accordance with the procedures established by the Occupational Safety and Health Administration Act.",
+          "evidence_pages": [
+            "274"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "Society of Automotive Engineers, Inc.",
+          "kind": "organization",
+          "role": "standards body whose practices (SAE J366a and SAE J952b) govern construction equipment noise level measurements",
+          "attribution_mode": "paraphrased",
+          "quote": "Sound levels shall be measured in substantial conformity with Standards and Recommended Practices established by the Society of Automotive Engineers, Inc., including the latest revisions to SAE J366a and SAE J952b.",
+          "evidence_pages": [
+            "280"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "City of Buffalo",
+          "kind": "government",
+          "role": "local government with noise control regulations (Article XVII of Buffalo City Ordinances) applicable to construction activities",
+          "attribution_mode": "paraphrased",
+          "quote": "Article XVII of the Buffalo City Ordinances contains the current noise control regulations for the City of Buffalo.",
+          "evidence_pages": [
+            "281"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "U.S. Environmental Protection Agency",
+          "kind": "agency",
+          "role": "federal agency whose reports on community noise and noise criteria are cited as references for noise design guidelines",
+          "attribution_mode": "paraphrased",
+          "quote": "\"Community Noise\", U. S. Environmental Protection Agency Report #NTID300.3, December 31, 1971.",
+          "evidence_pages": [
+            "270"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "Institute for Rapid Transit Technical and Operations Committee, Subcommittee on Design Standards",
+          "kind": "organization",
+          "role": "standards body whose guidelines for rapid transit facility design are cited as a reference",
+          "attribution_mode": "paraphrased",
+          "quote": "Institute for Rapid Transit Technical and Operations Committee, Subcommittee on Design Standards, Guidelines and Principles for Design of Rapid Transit Facilities, May 1973.",
+          "evidence_pages": [
+            "283"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "New York State Department of Environmental Conservation",
+          "kind": "agency",
+          "role": "state agency whose proposed noise pollution regulations are cited as a reference",
+          "attribution_mode": "paraphrased",
+          "quote": "New York State Department of Environmental Conservation, Proposed Regulations for the Prevention and Control of Environmental Noise Pollution, August 1973.",
+          "evidence_pages": [
+            "284"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "U.S. Department of Transportation",
+          "kind": "agency",
+          "role": "federal agency whose publication on transportation noise is cited as a reference",
+          "attribution_mode": "paraphrased",
+          "quote": "U.S. Department of Transportation, Transportation Noise and Its Control, June 1972.",
+          "evidence_pages": [
+            "283"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "U.S. Department of Housing and Urban Development",
+          "kind": "agency",
+          "role": "federal agency whose noise abatement and control policy circular is cited as a reference",
+          "attribution_mode": "paraphrased",
+          "quote": "U.S. Department of Housing and Urban Development; Department Circular 1390.2, Noise Abatement and Control: Department Policy, Implementation Responsibilities, and Standards, August 1971.",
+          "evidence_pages": [
+            "283"
+          ],
+          "chunk_index": 5
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 12529,
+        "output_tokens": 1339,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    }
+  ]
+}

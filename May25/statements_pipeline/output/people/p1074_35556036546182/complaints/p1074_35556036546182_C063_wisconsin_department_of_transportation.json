@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036546182_C063",
+  "complainer_id": "p1074_35556036546182_K042",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 63,
+  "entity": "Wisconsin Department of Transportation",
+  "kind": "agency",
+  "role": "state transportation agency",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "prepared the Air Quality Report summarizing findings without expressing opposition or support",
+  "summary": "The Wisconsin Department of Transportation prepared the Air Quality Report for the Airport Spur, which was circulated to the Department of Natural Resources in October 1975. The report's findings, summarized in the EIS, conclude that the proposed Airport Spur will not violate national air quality standards and will not significantly degrade air quality at any receptor location studied. WisDOT's role here is that of a technical report preparer rather than a stakeholder expressing a position for or against the project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Wisconsin Department of Transportation prepared the Air Quality Report for the Airport Spur, summarized in this section, which found that the project will not cause or aggravate a violation of air quality standards and will not significantly degrade air quality at any receptor location.",
+  "evidence_pages": [
+    "118"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The information presented in this section is a summary of the Air Quality Report prepared by the Wisconsin Department of Transportation for the Airport Spur and circulated to the Department of Natural Resources in October 1975.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "118"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The information presented in this section is a summary of the Air Quality Report prepared by the Wisconsin Department of Transportation for the Airport Spur and circulated to the Department of Natural Resources in October 1975.",
+      "quote_verified": true,
+      "entity_as_written": "Wisconsin Department of Transportation",
+      "role_as_written": "state transportation agency"
+    }
+  ],
+  "window_pages": [
+    108,
+    128
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 42,
+  "synthetic_no_complaint": false
+}

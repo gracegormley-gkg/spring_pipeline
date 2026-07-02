@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556039563135_C119",
+  "complainer_id": "p1074_35556039563135_K105",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 119,
+  "entity": "Ralph G. Johnson",
+  "kind": "official",
+  "role": "Village President, Village of Park Forest",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter requests timely relocation of plantings as condition before construction proceeds",
+  "summary": "Ralph G. Johnson, Village President of Park Forest, wrote to the Regional Transportation Engineer raising two concerns about the Highway 30 widening: the need to relocate screen plantings within the Village's right-of-way before construction, and a minor note about increased storm water runoff. His letter does not oppose the project outright but conditions the preservation of existing plantings on their relocation in Fall 1972 or Spring 1973.",
+  "form": "letter",
+  "complaint_summary": "Johnson requests that screen plantings within the Village's 20-foot right-of-way be relocated in Fall 1972 or Spring 1973 before construction so they can re-establish themselves, and notes a minor increase in storm water runoff is expected but unlikely to cause unusual problems.",
+  "evidence_pages": [
+    "212"
+  ],
+  "statement": {
+    "text": "The Village of Park Forest has a 20-foot right-of-way along the south side of this highway. Screen plantings eight feet or more in height are located within this right-of-way. The proposed widening of Highway 30 will result in the loss of these plantings unless they are relocated in the Fall of 1972 or the Spring of 1973. This will give the plantings the opportunity to re-establish themselves before being subjected to the rigors of construction.\nPlease note the attached sketch which depicts the situation as it now exists.\nThere will be an increase in the rate of storm water runoff. This is not likely to create any unusual problems.\nVery truly yours,\nRalph G. Johnson\nVillage President\nRGJ: hco Enc.",
+    "opening_anchor": "The Village of Park Forest has a 20-foot right-of-way along the south side of this highway. Screen plantings eight feet or more in height are located within this right-of-way.",
+    "closing_anchor": "Very truly yours,\nRalph G. Johnson\nVillage President\nRGJ: hco Enc.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The proposed widening of Highway 30 will result in the loss of these plantings unless they are relocated in the Fall of 1972 or the Spring of 1973.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "212"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The proposed widening of Highway 30 will result in the loss of these plantings unless they are relocated in the Fall of 1972 or the Spring of 1973.",
+      "quote_verified": true,
+      "entity_as_written": "Ralph G. Johnson",
+      "role_as_written": "Village President, Village of Park Forest"
+    }
+  ],
+  "window_pages": [
+    202,
+    222
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 105,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,71 @@
+{
+  "complaint_id": "p1074_35556038322269_C092",
+  "complainer_id": "p1074_35556038322269_K020",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 92,
+  "entity": "Southern California Rapid Transit District (SCRTD)",
+  "kind": "organization",
+  "role": "Transit planning and operating agency",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "SCRTD is a co-author and co-sponsor of the EIS, not a commenting party in this window",
+  "summary": "In this window, the Southern California Rapid Transit District (SCRTD) appears solely as a co-author, co-sponsor, and organizational participant in the preparation of the Draft AA/EIS/EIR, not as a commenting or opposing stakeholder. SCRTD staff are listed as project contacts, its representatives sit on both the IACC and ITC coordinating committees, and the agency co-funded the study. No distinct complaint or position statement attributable to SCRTD as a separate stakeholder is present in this window.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "1",
+    "64"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "The Southern California Rapid Transit District understands the problems of their overloaded routes and shares the concerns of their customers relative to the quality and quantity of service on these routes.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "1"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "After publication of that document, the Southern California Rapid Transit District Board of Directors and Federal Urban Mass Transportation Administration will select one of the eleven alternatives as 'the' project.",
+      "quote_verified": false,
+      "entity_as_written": "Southern California Rapid Transit District",
+      "role_as_written": "Co-lead agency for the AA/EIS/EIR"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "64"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Southern California Rapid Transit District understands the problems of their overloaded routes and shares the concerns of their customers relative to the quality and quantity of service on these routes.",
+      "quote_verified": true,
+      "entity_as_written": "Southern California Rapid Transit District (SCRTD)",
+      "role_as_written": "Transit planning and operating agency"
+    }
+  ],
+  "window_pages": [
+    1,
+    39
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 20,
+  "synthetic_no_complaint": true
+}

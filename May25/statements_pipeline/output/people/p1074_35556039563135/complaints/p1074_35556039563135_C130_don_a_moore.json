@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556039563135_C130",
+  "complainer_id": "p1074_35556039563135_K110",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 130,
+  "entity": "Don A. Moore",
+  "kind": "official",
+  "role": "State Senator, 5th District, Illinois State Senate",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly recommending approval of the $9,229,000 federal grant for the project",
+  "summary": "State Senator Don A. Moore wrote a brief letter to the Northeastern Illinois Planning Commission recommending approval of the $9,229,000 federal grant for the Lincoln Highway improvement project (NIPC #74-228). His letter expresses unqualified support for the project without conditions or reservations.",
+  "form": "letter",
+  "complaint_summary": "Senator Moore recommends approval of the $9,229,000 federal grant to assist with the Lincoln Highway improvement project.",
+  "evidence_pages": [
+    "243"
+  ],
+  "statement": {
+    "text": "Please accept this correspondence in regard to the above captioned project. It is my recommendation that the Federal Grant requested of $9,229,000 be approved to assist with this project.\nIf I can be of any further assistance, please do not hesitate to contact me.\nVery truly yours,\nSENATOR DON A. MOORE",
+    "opening_anchor": "Please accept this correspondence in regard to the above captioned project. It is my recommendation that the Federal Grant requested of $9,229,000 be approved",
+    "closing_anchor": "If I can be of any further assistance, please do not hesitate to contact me.\n\nVery truly yours,\nSENATOR DON A. MOORE",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "It is my recommendation that the Federal Grant requested of $9,229,000 be approved to assist with this project.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "243"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "It is my recommendation that the Federal Grant requested of $9,229,000 be approved to assist with this project.",
+      "quote_verified": true,
+      "entity_as_written": "Don A. Moore",
+      "role_as_written": "State Senator, 5th District, Illinois State Senate"
+    },
+    {
+      "chunk_index": 7,
+      "evidence_pages": [
+        "243"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "It is my recommendation that the Federal Grant requested of $9,229,000 be approved to assist with this project.",
+      "quote_verified": true,
+      "entity_as_written": "DON A. MOORE",
+      "role_as_written": "State Senator, 9th District, Illinois"
+    }
+  ],
+  "window_pages": [
+    233,
+    253
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 110,
+  "synthetic_no_complaint": false
+}

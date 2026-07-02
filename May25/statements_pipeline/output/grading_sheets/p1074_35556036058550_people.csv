@@ -1,0 +1,37 @@
+# doc_id: p1074_35556036058550
+# work_id: csv:35556036058550
+# title: Operation Breakthrough : environmental impact statement.
+# n_commenters: 25
+# n_complaints: 51
+# n_responses: 34
+# grade options: correct|minor_issue|wrong|cant_tell
+# stance vocab: in_favor|opposed|conditional|neutral
+# kind vocab: individual|official|organization|agency|tribe|government|other
+# response_pages: resolved by searching source per-page JSON for the response opening_anchor; '?' means anchor did not match any page.
+
+complainer_id,entity,kind,role,stance,stance_confidence,comment_pages_from,comment_pages_to,comment_pages_all,n_complaints,responded,response_ids,response_pages,response_agency,needs_human_review,human_review_reasons,your_grade,your_notes
+p1074_35556036058550_K015,National Bureau of Standards,agency,Technical reviewer of housing system designs under HUD sponsorship,neutral,medium,5,5,5,3,N,,,,yes,quote_not_verbatim,,
+p1074_35556036058550_K012,Indiana State Division of Water Resources,agency,State agency studying storm drainage design effectiveness at Indianapolis site,neutral,medium,14,14,14,1,N,,,,no,,,
+p1074_35556036058550_K002,Bibb County Planning Commission,government,Local government undertaking ecological and water quality studies at Macon site for HUD,neutral,medium,15,15,15,1,N,,,,no,,,
+p1074_35556036058550_K014,National Academy of Sciences - National Research Council,organization,Commissioned by HUD to examine social mixing in housing,neutral,medium,17,17,17,1,N,,,,no,,,
+p1074_35556036058550_K007,Department of the Army,agency,Federal agency commenter on draft EIS,conditional,medium,19,19,19,3,Y,p1074_35556036058550_R001;p1074_35556036058550_R002;p1074_35556036058550_R003,22;22;23,Department of Housing and Urban Development,yes,quote_not_verbatim,,
+p1074_35556036058550_K003,Department of Agriculture,agency,Federal agency commenter on draft EIS,conditional,medium,20,20,20,8,Y,p1074_35556036058550_R004;p1074_35556036058550_R005;p1074_35556036058550_R006;p1074_35556036058550_R007;p1074_35556036058550_R008;p1074_35556036058550_R009;p1074_35556036058550_R010;p1074_35556036058550_R011,20;21;21;21;21;21;21;21,Department of Housing and Urban Development,no,,,
+p1074_35556036058550_K010,Environmental Protection Agency,agency,Federal agency commenter on draft EIS,conditional,medium,20,20,20,5,Y,p1074_35556036058550_R012;p1074_35556036058550_R013;p1074_35556036058550_R014;p1074_35556036058550_R015;p1074_35556036058550_R016,20;20;20;20;20,Department of Housing and Urban Development,no,,,
+p1074_35556036058550_K011,Federal Power Commission,agency,Federal agency commenter on draft EIS,conditional,medium,20,20,20,2,Y,p1074_35556036058550_R017;p1074_35556036058550_R018,23;24,Department of Housing and Urban Development,yes,quote_not_verbatim,,
+p1074_35556036058550_K008,Department of the Interior,agency,Federal agency commenter on draft EIS,conditional,medium,21,21,21,8,Y,p1074_35556036058550_R019;p1074_35556036058550_R020;p1074_35556036058550_R021;p1074_35556036058550_R022;p1074_35556036058550_R023;p1074_35556036058550_R024;p1074_35556036058550_R025;p1074_35556036058550_R026,21;21;21;22;22;22;22;22,Department of Housing and Urban Development,no,,,
+p1074_35556036058550_K004,Department of Commerce,agency,Federal agency commenter on draft EIS,neutral,medium,23,23,23,1,Y,p1074_35556036058550_R027,23,Department of Housing and Urban Development,no,,,
+p1074_35556036058550_K005,"Department of Health, Education, and Welfare",agency,Federal agency commenter on draft EIS,conditional,medium,23,23,23,2,Y,p1074_35556036058550_R028;p1074_35556036058550_R029,23;23,Department of Housing and Urban Development,no,,,
+p1074_35556036058550_K009,Department of Transportation,agency,Agency converting from CNR to NEF noise ratings,in_favor,medium,23,23,23,1,Y,p1074_35556036058550_R030,23,Department of Housing and Urban Development,no,,,
+p1074_35556036058550_K001,Assistant Secretary Finger,official,"Assistant Secretary, Department of Housing and Urban Development",neutral,medium,24,24,24,1,N,,,,no,,,
+p1074_35556036058550_K006,Department of Housing and Urban Development,agency,Lead agency / internal commenter on draft EIS,neutral,medium,24,24,24,1,Y,p1074_35556036058550_R031,24,Department of Housing and Urban Development,no,,,
+p1074_35556036058550_K017,Thomas E. Carroll,official,"Assistant Administrator for Planning and Management, Environmental Protection Agency",in_favor,high,33,33,33,2,N,,,,no,,,
+p1074_35556036058550_K024,Team to Advance Research for Gas Energy Transformation,organization,Research program sponsor for fuel cell development,neutral,medium,49,49,49,1,Y,p1074_35556036058550_R032,52,Department of Housing and Urban Development,yes,quote_not_verbatim,,
+p1074_35556036058550_K013,John N. Nassikas,individual,"Chairman, Federal Power Commission",neutral,high,50,52,"50,51,52",1,Y,p1074_35556036058550_R033,51,Department of Housing and Urban Development,yes,private_individual,,
+p1074_35556036058550_K019,Harold B. Finger,official,"Assistant Secretary, Department of Housing and Urban Development",neutral,high,50,50,50,1,N,,,,yes,quote_not_verbatim,,
+p1074_35556036058550_K020,Oak Ridge National Laboratory,organization,Supporting contractor for HUD energy systems research,neutral,medium,51,51,51,1,N,,,,yes,quote_not_verbatim,,
+p1074_35556036058550_K021,Pratt and Whitney,organization,Fuel cell program developer,neutral,medium,51,51,51,1,Y,p1074_35556036058550_R034,52,Department of Housing and Urban Development,yes,quote_not_verbatim,,
+p1074_35556036058550_K025,U. S. DEPARTMENT OF HOUSING AND URBAN DEVELOPMENT,agency,Federal agency issuing noise abatement policy,neutral,high,54,54,54,1,N,,,,no,,,
+p1074_35556036058550_K018,Federal Aviation Administration,agency,Agency providing CNR/NEF noise rating data for airports,neutral,medium,65,65,65,2,N,,,,no,,,
+p1074_35556036058550_K016,New Jersey Bell Telephone Company,organization,Telephone service provider at Jersey City site,neutral,low,14,14,14,1,N,,,,yes,low_stance_confidence;no_complaints,,
+p1074_35556036058550_K022,Richard C. Van Dusen,official,"Acting Secretary, HUD",neutral,low,13,13,13,1,N,,,,yes,low_stance_confidence;no_complaints,,
+p1074_35556036058550_K023,Secretary George Romney,official,"Secretary, HUD",neutral,low,71,71,71,1,N,,,,yes,low_stance_confidence;no_complaints,,

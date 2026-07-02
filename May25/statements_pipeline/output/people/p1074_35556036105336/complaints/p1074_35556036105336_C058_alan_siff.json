@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036105336_C058",
+  "complainer_id": "p1074_35556036105336_K039",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 58,
+  "entity": "Alan Siff",
+  "kind": "individual",
+  "role": "Consultant Planner, Harland Bartholomew and Associates",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as presenting the plan favorably, describing it as the result of three years of study by planners and citizen groups",
+  "summary": "Alan Siff, a consultant planner with Harland Bartholomew and Associates, participated in educational sessions with the Randolph Planning Study Board and community members about the urban renewal program. At a public hearing, he described the proposed master plan as the result of almost three years of study by planners and citizen groups, and noted that the proposed Downtown Expressway had brought the need for coordinated planning. He also indicated that HUD may approve the redevelopment plan in the spring.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Siff is paraphrased as stating that the proposed master plan resulted from nearly three years of study by planners and citizen groups including the Randolph Planning Study Board, and that the proposed expressway created the need for coordinated planning.",
+  "evidence_pages": [
+    "105"
+  ],
+  "statement": {
+    "text": "Siff said that the proposed master plan is the result of almost three years of study by planners and citizen groups in the area, including the Randolph planning study. board. Proposed development of the expressway has brought the need for Coordinated planning, he said.",
+    "opening_anchor": "Siff said that the proposed master plan is the result of almost three years of study by planners and citizen groups in the area, including the Randolph planning study. board.",
+    "closing_anchor": "Proposed development of the expressway has brought the need for Coordinated planning, he said.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Siff said that the proposed master plan is the result of almost three years of study by planners and citizen groups in the area, including the Randolph planning study. board.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "105"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Siff said that the proposed master plan is the result of almost three years of study by planners and citizen groups in the area, including the Randolph planning study. board.",
+      "quote_verified": true,
+      "entity_as_written": "Alan Siff",
+      "role_as_written": "Consultant Planner, Harland Bartholomew and Associates"
+    }
+  ],
+  "window_pages": [
+    95,
+    115
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 39,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,78 @@
+{
+  "complaint_id": "p1074_35556036105336_C008",
+  "complainer_id": "p1074_35556036105336_K015",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 8,
+  "entity": "Randolph Planning Study Board (RPSB)",
+  "kind": "organization",
+  "role": "Project Area Committee / community planning body for Randolph Urban Renewal Area",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "RPSB co-developed the Randolph Plan through 24 months of joint planning, adopted it, and established the goals and objectives driving the project",
+  "summary": "The Randolph Planning Study Board (RPSB) is the elected community planning body that co-developed the Randolph Urban Renewal Plan alongside the Richmond Redevelopment and Housing Authority over 24 months, ultimately adopting the plan. The RPSB established the community's goals and objectives for removing deficiencies, and the Regional Planning Commission specifically congratulated the RPSB on the excellence of the citizen-participation-driven plan. The RPSB is a proponent and co-author of the proposed action, not a critic.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The RPSB, as the elected representative body of Randolph citizens, established the community's goals and objectives for eliminating deficiencies through rehabilitation and redevelopment, which form the basis of the proposed project.",
+  "evidence_pages": [
+    "16"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The citizens of Randolph, after numerous meetings and in conjunction with their elected representatives of the Randolph Planning Study Board, established the following goals and objectives to be met in removing the deficiencies of their community:",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "16"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The citizens of Randolph, after numerous meetings and in conjunction with their elected representatives of the Randolph Planning Study Board, established the following goals and objectives to be met in removing the deficiencies of their community:",
+      "quote_verified": true,
+      "entity_as_written": "Randolph Planning Study Board",
+      "role_as_written": "Citizen planning board for Randolph community"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "53"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Randolph Planning Study Board, composed of elected members of the Randolph Community, has had a major role in developing the Plan and gaining popular support for the urban renewal project in Randolph",
+      "quote_verified": true,
+      "entity_as_written": "Randolph Planning Study Board",
+      "role_as_written": "Elected community planning body for Randolph Community"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "102"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Since its creation the Randolph Planning Study Board has worked very hard to insure that the Renewal Plan for this area will reflect the thinking and desires of the people of the entire project area.",
+      "quote_verified": true,
+      "entity_as_written": "Randolph Planning Study Board (RPSB)",
+      "role_as_written": "Project Area Committee / community planning body for Randolph Urban Renewal Area"
+    }
+  ],
+  "window_pages": [
+    6,
+    44
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 15,
+  "synthetic_no_complaint": false
+}

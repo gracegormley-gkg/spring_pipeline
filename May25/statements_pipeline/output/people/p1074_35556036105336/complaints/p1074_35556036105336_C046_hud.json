@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036105336_C046",
+  "complainer_id": "p1074_35556036105336_K026",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 46,
+  "entity": "HUD",
+  "kind": "agency",
+  "role": "U.S. Department of Housing and Urban Development, project sponsor and EIS preparer",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "HUD authored the EIS, prepared responses defending the project's analysis, and explicitly rebutted DOT objections to justify including the Downtown Expressway as a relevant environmental consideration",
+  "summary": "HUD is the project sponsor and EIS preparer for the Randolph Urban Renewal Project, and in this chapter it responds to comments from other agencies. HUD defends its methodology, particularly its decision to analyze the Downtown Expressway's impacts on the project area, citing NEPA requirements and EPA confirmation. HUD also addresses requests for additional air quality data, traffic documentation, and noise analysis clarifications, explaining constraints while maintaining the validity of its assessments.",
+  "form": "written_comment",
+  "complaint_summary": "HUD clarifies that DOT misread the 'no action' alternative discussion, explaining that references to continued deterioration referred to substandard building conditions already documented in the statement, not to impacts directly caused by the Expressway.",
+  "evidence_pages": [
+    "72"
+  ],
+  "statement": {
+    "text": "This statement indicates a misinterpretation of this section. The paragraph under discussion was explaining the consequences of a \"no action\" alternative. Given the alternative the impacts of the Expressway, whether positive, negative, or neutral, would continue to affect the primarily residential community that Randolph is now. The paragraph was not to imply that physical deterioration should be attributed directly to\n-55-\n\nthe Expressway. The statement that \"Deterioration would continue\" referred to the substandard building conditions and other environmental deficiencies that the Statement ascribed to many areas in Randolph on pages 2-4 and 8-13.",
+    "opening_anchor": "This statement indicates a misinterpretation of this section. The paragraph under discussion was explaining the consequences of a \"no action\" alternative.",
+    "closing_anchor": "The statement that \"Deterioration would continue\" referred to the substandard building conditions and other environmental deficiencies that the Statement ascribed to many areas in Randolph on pages 2-4 and 8-13.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We must take exception to the Department of Transportation's assertion that the Downtown Expressway is not a relevant consideration in the Randolph Environmenal Impact Statement.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "72"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "We must take exception to the Department of Transportation's assertion that the Downtown Expressway is not a relevant consideration in the Randolph Environmenal Impact Statement.",
+      "quote_verified": true,
+      "entity_as_written": "HUD",
+      "role_as_written": "U.S. Department of Housing and Urban Development, project sponsor and EIS preparer"
+    }
+  ],
+  "window_pages": [
+    62,
+    82
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 26,
+  "synthetic_no_complaint": false
+}

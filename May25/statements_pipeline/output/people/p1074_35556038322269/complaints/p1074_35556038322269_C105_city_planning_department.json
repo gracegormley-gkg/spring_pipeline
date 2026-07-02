@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556038322269_C105",
+  "complainer_id": "p1074_35556038322269_K072",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 105,
+  "entity": "City Planning Department",
+  "kind": "agency",
+  "role": "Source for archaeological sites and historic landmarks list",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "cited only as a data source for archaeological sites and historic landmarks list",
+  "summary": "The City Planning Department appears in this document solely as a data source, credited alongside the State Historical Preservation Office for providing the list of archaeological sites and historic landmarks (Figure VII.1) and the parks and recreational facilities table (Figure VII.5). The department does not express any position on the project itself; it is referenced only as a provider of factual inventory data used in the 4(f)/106 analysis.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "256"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Source: City Planning Department and State Historical Preservation Office",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "256"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Source: City Planning Department and State Historical Preservation Office",
+      "quote_verified": true,
+      "entity_as_written": "City Planning Department",
+      "role_as_written": "Source for archaeological sites and historic landmarks list"
+    }
+  ],
+  "window_pages": [
+    246,
+    266
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 72,
+  "synthetic_no_complaint": true
+}

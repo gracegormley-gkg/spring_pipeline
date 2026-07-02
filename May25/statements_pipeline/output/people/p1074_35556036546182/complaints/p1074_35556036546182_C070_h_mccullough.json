@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036546182_C070",
+  "complainer_id": "p1074_35556036546182_K053",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 70,
+  "entity": "H. McCullough",
+  "kind": "official",
+  "role": "City Engineer of the City of Milwaukee",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "authorized spokesman stating proposed connection is needed and in the public interest",
+  "summary": "H. McCullough, City Engineer of the City of Milwaukee, testified at the March 25, 1969 Corridor Location Public Hearing as the authorized spokesman for the Milwaukee Common Council. He stated that the interested departments within the City of Milwaukee had reviewed the maps and preliminary sketches and agreed that the proposed Airport Spur connection is needed and is in the public interest. No response from the Division of Highways was deemed necessary.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "H. McCullough, as authorized spokesman for the Milwaukee Common Council, stated that City of Milwaukee departments reviewed the maps and preliminary sketches and agree the proposed connection is needed and is in the public interest.",
+  "evidence_pages": [
+    "156"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Authorized spokesman for Milwaukee Common Council stating that the interested departments within the City of Milwaukee have reviewed the maps and preliminary sketches and agree that the proposed connection is needed and is in the public interest.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "156"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Authorized spokesman for Milwaukee Common Council stating that the interested departments within the City of Milwaukee have reviewed the maps and preliminary sketches and agree that the proposed connection is needed and is in the public interest.",
+      "quote_verified": true,
+      "entity_as_written": "H. McCullough",
+      "role_as_written": "City Engineer of the City of Milwaukee"
+    }
+  ],
+  "window_pages": [
+    146,
+    166
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 53,
+  "synthetic_no_complaint": false
+}

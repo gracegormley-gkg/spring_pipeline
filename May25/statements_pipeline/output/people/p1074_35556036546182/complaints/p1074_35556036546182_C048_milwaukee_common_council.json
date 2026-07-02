@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036546182_C048",
+  "complainer_id": "p1074_35556036546182_K035",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 48,
+  "entity": "Milwaukee Common Council",
+  "kind": "government",
+  "role": "city legislative body",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as favoring construction of the Airport Spur at the 1969 Location Public Hearing",
+  "summary": "The Milwaukee Common Council testified in favor of construction of the Airport Spur at the March 25, 1969 Location Public Hearing, as summarized by the document narrator. No further distinct mentions of the Milwaukee Common Council's position appear elsewhere in this window.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Milwaukee Common Council testified in favor of construction of the Airport Spur at the March 25, 1969 Location Public Hearing attended by 120 persons.",
+  "evidence_pages": [
+    "101"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Testimony revealed that the Milwaukee County Board, Milwaukee Common Council, SEWRPC, Federal Aviation Administration and the American Automobile Association favored construction of the Airport Spur.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "101"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Testimony revealed that the Milwaukee County Board, Milwaukee Common Council, SEWRPC, Federal Aviation Administration and the American Automobile Association favored construction of the Airport Spur.",
+      "quote_verified": true,
+      "entity_as_written": "Milwaukee Common Council",
+      "role_as_written": "city legislative body"
+    }
+  ],
+  "window_pages": [
+    91,
+    111
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 35,
+  "synthetic_no_complaint": false
+}

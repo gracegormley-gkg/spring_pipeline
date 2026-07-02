@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p0491_35556036091957_C042",
+  "complainer_id": "p0491_35556036091957_K030",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 42,
+  "entity": "Texas Gulf Sulphur",
+  "kind": "organization",
+  "role": "Mining industry commenter",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes Texas Gulf Sulphur stressing importance of miner access and requesting mining interests be considered in regulations",
+  "summary": "Texas Gulf Sulphur commented on the draft ORV environmental statement, stressing the importance of access to Federal lands by miners and requesting that mining interests be considered in the regulations. Their concern was part of a broader group of at least 15 mining-industry commenters who objected to permit requirements and sought exemptions or special consideration for mining vehicles. The Department responded by excepting mining, oil, and gas geophysical exploration equipment from the off-road vehicle definition in the final environmental statement.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Texas Gulf Sulphur stressed the importance of access to Federal lands by miners and requested that mining interests be considered in the ORV regulations.",
+  "evidence_pages": [
+    "39"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p0491_35556036091957_R018"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "Texas Gulf Sulphur - stressed importance of access to Federal lands by miners and requested that mining interests be considered in regulations.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "39"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Texas Gulf Sulphur - stressed importance of access to Federal lands by miners and requested that mining interests be considered in regulations.",
+      "quote_verified": false,
+      "entity_as_written": "Texas Gulf Sulphur",
+      "role_as_written": "Mining industry commenter"
+    }
+  ],
+  "window_pages": [
+    29,
+    49
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 30,
+  "synthetic_no_complaint": false
+}

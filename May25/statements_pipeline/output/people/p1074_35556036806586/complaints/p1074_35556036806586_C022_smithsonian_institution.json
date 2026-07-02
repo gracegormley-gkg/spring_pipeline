@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036806586_C022",
+  "complainer_id": "p1074_35556036806586_K030",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 22,
+  "entity": "Smithsonian Institution",
+  "kind": "organization",
+  "role": "scientific institution, threatened species identifier",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "cited as a reference source for identifying threatened plant species, no position on the project expressed",
+  "summary": "The Smithsonian Institution is referenced solely as a scientific authority that identified plant species of threatened status in the southeast (1975). The document uses this identification to contextualize the rare and threatened flora found in the Bad Creek Project area. The Smithsonian Institution does not express any position on the project itself.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Smithsonian Institution (1975) is cited as having identified plant species of threatened status in the southeast, providing a scientific basis for listing threatened flora in the project area.",
+  "evidence_pages": [
+    "104"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Many plant species of rare or uncommon status found in the southeast have been identified by the U.S. Forest Service (1970) and some of threatened status have been identified by the Smithsonian Institution (1975).",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "104"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Many plant species of rare or uncommon status found in the southeast have been identified by the U.S. Forest Service (1970) and some of threatened status have been identified by the Smithsonian Institution (1975).",
+      "quote_verified": true,
+      "entity_as_written": "Smithsonian Institution",
+      "role_as_written": "scientific institution, threatened species identifier"
+    }
+  ],
+  "window_pages": [
+    94,
+    114
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 30,
+  "synthetic_no_complaint": false
+}

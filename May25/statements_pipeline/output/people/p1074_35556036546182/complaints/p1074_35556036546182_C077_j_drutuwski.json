@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C077",
+  "complainer_id": "p1074_35556036546182_K055",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 77,
+  "entity": "J. Drutuwski",
+  "kind": "individual",
+  "role": "Private Citizen",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase questioning cost and need for the Airport Spur due to existing good access",
+  "summary": "J. Drutuwski, a private citizen, testified at the March 25, 1969 public hearing questioning both the cost and the necessity of the Airport Spur, arguing that existing access to the airport via Layton and Howell Avenues was already adequate. The Wisconsin Department of Transportation responded by acknowledging that current local streets handle present traffic but asserting they would be insufficient for future increased airport-oriented traffic.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "J. Drutuwski questioned the cost and need for the Airport Spur, arguing that present access to the airport via Layton and Howell Avenues is already good.",
+  "evidence_pages": [
+    "158"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R006"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Questioned the cost and the need for the Airport Spur because present access to the Airport is good.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "158"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Questioned the cost and the need for the Airport Spur because present access to the Airport is good.",
+      "quote_verified": true,
+      "entity_as_written": "J. Drutuwski",
+      "role_as_written": "Private Citizen"
+    }
+  ],
+  "window_pages": [
+    148,
+    168
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 55,
+  "synthetic_no_complaint": false
+}

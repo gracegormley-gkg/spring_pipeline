@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556038322269_C049",
+  "complainer_id": "p1074_35556038322269_K052",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 49,
+  "entity": "City Traffic Department",
+  "kind": "agency",
+  "role": "provider of traffic volume data for CO analysis",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "cited as data provider for traffic volumes used in CO analysis, no position expressed",
+  "summary": "The City Traffic Department is referenced solely as a data source that provided one-hour and eight-hour traffic volumes used in the CALINE 2 carbon monoxide analysis at the North Hollywood station area (Lankershim and Chandler Boulevards). The department is also cited as the source for VMT estimates in the Regional Core Traffic Impact Area used in energy calculations. No position on the project is expressed.",
+  "form": "none",
+  "complaint_summary": "The City Traffic Department provided one-hour and eight-hour traffic volumes used as input data for the CALINE 2 carbon monoxide concentration model at Lankershim and Chandler Boulevards near the North Hollywood station.",
+  "evidence_pages": [
+    "159"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence"
+  ],
+  "summary_quote": "The City Traffic Department provided the one hour and eight hour traffic volumes.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "159"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The City Traffic Department provided the one hour and eight hour traffic volumes.",
+      "quote_verified": true,
+      "entity_as_written": "City Traffic Department",
+      "role_as_written": "provider of traffic volume data for CO analysis"
+    }
+  ],
+  "window_pages": [
+    149,
+    169
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 52,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036811230_C010",
+  "complainer_id": "p1074_35556036811230_K012",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 10,
+  "entity": "Erie and Niagara Counties Regional Planning Board",
+  "kind": "agency",
+  "role": "demographic data source / planning body",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "cited multiple times as a demographic and planning data source with no expressed position on the project",
+  "summary": "The Erie and Niagara Counties Regional Planning Board (ENCRPB) is referenced throughout the document solely as a source of demographic, population, and employment projection data for the Buffalo SMSA and surrounding areas. It provides population projections for the SMSA, City of Buffalo, Amherst, and Tonawanda, as well as estimates of the proportion of women in Buffalo's population, labor force projections, and employment growth forecasts. The entity does not express any stance on the proposed transit project itself.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "ENCRPB's employment projections for 1980–1995 are cited, including its forecast of growth concentrated in services, trade, government, and transportation sectors, with manufacturing declining.",
+  "evidence_pages": [
+    "55"
+  ],
+  "statement": {
+    "text": "Employment within the Buffalo SMSA is projected to increase an average of 2,550 to 2,800 annually between 1980 and 1995, according to the ENCRPB and the U.S. Department of Commerce. The Regional Planning Board estimates that essentially all this growth will occur within Erie County with about one-half of the increase within the City of Buffalo. The major\n\nsources of the projected increase in employment between 1980 and 1990 in declining order of importance according to the Department of Commerce will be in the areas of government, business/professional/service, finance/insurance/real estate, transportation/communications/utilities, and wholesale/retail trade. Manufacturing employment is projected to decrease slightly. The ENCRPB projects a different mix of employment increases for the 1980-90 decade: services (including finance/insurance/real estate), trade, government, and transportation/communications/utilities; with manufacturing employment declining. In both sets of projections, the categories accounting for the major increases will be the kinds of businesses predominating within the Buffalo CBD and the transit corridor study area.",
+    "opening_anchor": "Employment within the Buffalo SMSA is projected to increase an average of 2,550 to 2,800 annually between 1980 and 1995, according to the ENCRPB and the U.S. Department of Commerce.",
+    "closing_anchor": "the categories accounting for the major increases will be the kinds of businesses predominating within the Buffalo CBD and the transit corridor study area.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Since according to the Erie and Niagara Counties Regional Planning Board (ENCRPB), the proportion of women in the City of Buffalo is expected to remain about 53 percent in 1980 (Ref. 15) and the percentage of women in the nation's labor force is expected to continue to increase, the preponderance of women transit users can be expected to continue.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "51"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Since according to the Erie and Niagara Counties Regional Planning Board (ENCRPB), the proportion of women in the City of Buffalo is expected to remain about 53 percent in 1980 (Ref. 15) and the percentage of women in the nation's labor force is expected to continue to increase, the preponderance of women transit users can be expected to continue.",
+      "quote_verified": true,
+      "entity_as_written": "Erie and Niagara Counties Regional Planning Board",
+      "role_as_written": "demographic data source / planning body"
+    }
+  ],
+  "window_pages": [
+    41,
+    61
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 12,
+  "synthetic_no_complaint": false
+}

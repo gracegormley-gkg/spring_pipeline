@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036806586_C072",
+  "complainer_id": "p1074_35556036806586_K063",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 72,
+  "entity": "DEPARTMENT OF AGRICULTURE",
+  "kind": "agency",
+  "role": "federal agency commenter",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly states the EIS is well-written and adequately reflects impacts, with no further comments",
+  "summary": "The Department of Agriculture reviewed the Draft Environmental Impact Statement for the Bad Creek Project and found it well-written and adequate in reflecting environmental impacts. The Department noted that no National Forest lands are affected by the project and offered no further comments or concerns.",
+  "form": "letter",
+  "complaint_summary": "The Department of Agriculture states that no National Forest lands are affected by the project, finds the DEIS well-written and adequate in reflecting environmental impacts, and offers no further comments.",
+  "evidence_pages": [
+    "261"
+  ],
+  "statement": {
+    "text": "This letter is in response to your letter PWR-LP, Project No. 2740-South Carolina, Duke Power Company, dated September 30, 1975. Your letter forwarded the Commission staff's Draft Environmental Impact Statement (DEIS) for review.\nReview of this DEIS by agencies of the Department of Agriculture has been completed. No National Forest lands are affected by the project. We found the statement to be well-written. It appears to reflect adequately the impacts of the project on the environment. We have no further comments to offer.\nWe appreciate the opportunity to review this statement.\nPAUL A. VANDER MYDE\nDeputy Assistant Secretary",
+    "opening_anchor": "This letter is in response to your letter PWR-LP, Project No. 2740-South Carolina, Duke Power Company, dated September 30, 1975.",
+    "closing_anchor": "We appreciate the opportunity to review this statement.\n\nPAUL A. VANDER MYDE\nDeputy Assistant Secretary",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We found the statement to be well-written. It appears to reflect adequately the impacts of the project on the environment. We have no further comments to offer.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "261"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We found the statement to be well-written. It appears to reflect adequately the impacts of the project on the environment. We have no further comments to offer.",
+      "quote_verified": true,
+      "entity_as_written": "DEPARTMENT OF AGRICULTURE",
+      "role_as_written": "federal agency commenter"
+    }
+  ],
+  "window_pages": [
+    251,
+    271
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 63,
+  "synthetic_no_complaint": false
+}

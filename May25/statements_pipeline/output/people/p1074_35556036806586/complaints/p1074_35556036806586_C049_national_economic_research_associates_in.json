@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036806586_C049",
+  "complainer_id": "p1074_35556036806586_K058",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 49,
+  "entity": "National Economic Research Associates, Inc. (NERA)",
+  "kind": "organization",
+  "role": "Contractor engaged by Duke Power Company to study marginal cost economics and peak-load metering",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as contractor engaged to study marginal cost economics and peak-load metering, with no expressed position on the project itself",
+  "summary": "NERA is described solely as a contractor hired by Duke Power Company to conduct a study on long and short-term marginal cost economics and peak-load/time-of-day metering. The document paraphrases NERA's role and the scope of their contracted work, noting that NERA would recommend rate schedule and metering changes if warranted and provide estimates of effects on system load factors. NERA does not express any position for or against the Bad Creek Project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "NERA is described as having been contracted by Duke Power to study marginal cost economics and peak-load/time-of-day metering, with a final report expected in late September or early October 1976, and tasked with recommending rate schedule and metering changes and estimating effects on system load factors and generating capacity additions.",
+  "evidence_pages": [
+    "207"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Duke Power Company has signed a contract with National Economic Research Associates, Inc. (NERA) to study long and short-term marginal cost economics as well as peakload and time-of-day metering as a means of reducing Applicant's peak loads and passing the marginal costs of peak demands to those customers who cause such peaks.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "207"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Duke Power Company has signed a contract with National Economic Research Associates, Inc. (NERA) to study long and short-term marginal cost economics as well as peakload and time-of-day metering as a means of reducing Applicant's peak loads and passing the marginal costs of peak demands to those customers who cause such peaks.",
+      "quote_verified": true,
+      "entity_as_written": "National Economic Research Associates, Inc. (NERA)",
+      "role_as_written": "Contractor engaged by Duke Power Company to study marginal cost economics and peak-load metering"
+    }
+  ],
+  "window_pages": [
+    197,
+    217
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 58,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,89 @@
+{
+  "complaint_id": "p1074_35556036806586_C046",
+  "complainer_id": "p1074_35556036806586_K037",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 46,
+  "entity": "Crescent Land and Timber Corporation",
+  "kind": "organization",
+  "role": "landowner asserting timber management rights in trail corridor",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "subsidiary providing land mitigation for trout habitat loss while applicant reserves timber management rights in trail corridor",
+  "summary": "Crescent Land and Timber Corporation, a subsidiary of the Applicant (Duke Power Company), is mentioned in two contexts: as the vehicle through which the Applicant provides a 375-acre parcel including a portion of Eastatoe Creek to SCWMRD to mitigate trout habitat losses from the Bad Creek Project, and implicitly in the Applicant's reservation of rights to alter or discontinue the hiking trail corridor while refraining from timber harvesting within most of it. The entity's role is cooperative with the project's mitigation framework while preserving future land management options.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Crescent Land and Timber Corporation, as the Applicant's subsidiary, is providing a 375-acre parcel including a portion of Eastatoe Creek to SCWMRD to mitigate for trout habitat lost to construction of the Bad Creek Project, as part of a broader mitigation agreement.",
+  "evidence_pages": [
+    "179"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Applicant, through its subsidiary, Crescent Land and Timber Corporation, is providing a 375-acre parcel of land including a portion of Eastatoe Creek to SCWMRD to mitigate for trout habitat lost to the construction of the project.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 4,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "179"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Applicant, through its subsidiary, Crescent Land and Timber Corporation, is providing a 375-acre parcel of land including a portion of Eastatoe Creek to SCWMRD to mitigate for trout habitat lost to the construction of the project.",
+      "quote_verified": true,
+      "entity_as_written": "Crescent Land and Timber Corporation",
+      "role_as_written": "Subsidiary of Applicant providing land for mitigation"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "292"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Data from Crescent Land and Timber Corporation show that no longleaf pine (P. australis), slash pine (P. elliotti), and loblolly (P. taeda) has been hervested.",
+      "quote_verified": true,
+      "entity_as_written": "Crescent Land and Timber Corporation",
+      "role_as_written": "landowner/timber company providing data on project area"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "293"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Personnel of Crescent Land and Timber Corporation report that the Pileated Woodpecker is common in the Jocassee area.",
+      "quote_verified": true,
+      "entity_as_written": "Crescent Land and Timber Corporation",
+      "role_as_written": "landowner/timber company commenting on wildlife"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "299"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Crescent has consistently maintained it reserves timber management and harvesting rights throughout the general area, including the trail corridor.",
+      "quote_verified": true,
+      "entity_as_written": "Crescent Land and Timber Corporation",
+      "role_as_written": "landowner asserting timber management rights in trail corridor"
+    }
+  ],
+  "window_pages": [
+    169,
+    201
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 37,
+  "synthetic_no_complaint": false
+}

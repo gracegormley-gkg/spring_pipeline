@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036806586_C120",
+  "complainer_id": "p1074_35556036806586_K008",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 120,
+  "entity": "Nuclear Regulatory Commission",
+  "kind": "agency",
+  "role": "Federal agency requested to review draft EIS; responded",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed only as a federal agency requested to review draft EIS with no position stated",
+  "summary": "The Nuclear Regulatory Commission appears only in a sectional listing of federal departments and offices that were sent the draft Environmental Impact Statement for review. No substantive comments, positions, or responses from the NRC are recorded in this window of the document.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "1"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim",
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Federal Departments and Offices ... *Nuclear Regulatory Commission",
+  "summary_quote_verified": false,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "1"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Federal Departments and Offices ... *Nuclear Regulatory Commission",
+      "quote_verified": false,
+      "entity_as_written": "Nuclear Regulatory Commission",
+      "role_as_written": "Federal agency requested to review draft EIS; responded"
+    }
+  ],
+  "window_pages": [
+    1,
+    11
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 8,
+  "synthetic_no_complaint": true
+}

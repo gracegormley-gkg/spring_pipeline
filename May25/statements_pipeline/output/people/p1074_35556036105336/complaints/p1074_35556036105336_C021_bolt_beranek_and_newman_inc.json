@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556036105336_C021",
+  "complainer_id": "p1074_35556036105336_K002",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 21,
+  "entity": "Bolt, Beranek and Newman, Inc.",
+  "kind": "organization",
+  "role": "Noise evaluation consultant (Cambridge, Massachusetts)",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "described as conducting noise evaluation study and recommending attenuation measures, no position on project itself",
+  "summary": "Bolt, Beranek and Newman, Inc. served as the noise evaluation consultant for the Randolph Urban Renewal project, conducting detailed computer-based noise level contour studies for areas adjacent to the proposed Downtown Expressway. The firm evaluated the effectiveness of various shielding barriers and recommended a combination of attenuation measures—including earth berms, fixed glazing, air-conditioning, and building orientation—to reduce noise exposure to HUD-acceptable levels. Their findings and recommendations were incorporated directly into the Randolph Project Plans.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Bolt, Beranek and Newman evaluated the effect of incorporating a shielding barrier along Grayland Avenue on site noise levels, assessing barriers of 10, 15, and 20 feet in height and concluding that the 10-foot barrier would have a greatly reduced effect and should be eliminated from further consideration.",
+  "evidence_pages": [
+    "34"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Bolt Beranek and Newman report described on pages 18-22 of the Draft Statement evaluated the effectiveness of a number of shielding barriers of various heights.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "34"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "A detailed noise evaluation study was conducted by Bolt, Beranek and Newman, Inc. (Cambridge, Massachusetts), one of the leading consultants in the field.",
+      "quote_verified": true,
+      "entity_as_written": "Bolt, Beranek and Newman, Inc.",
+      "role_as_written": "Noise evaluation consultant (Cambridge, Massachusetts)"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "85"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Bolt Beranek and Newman report described on pages 18-22 of the Draft Statement evaluated the effectiveness of a number of shielding barriers of various heights.",
+      "quote_verified": true,
+      "entity_as_written": "Bolt Beranek and Newman Inc.",
+      "role_as_written": "Acoustical consulting firm, noise study contractor"
+    }
+  ],
+  "window_pages": [
+    24,
+    57
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 2,
+  "synthetic_no_complaint": false
+}

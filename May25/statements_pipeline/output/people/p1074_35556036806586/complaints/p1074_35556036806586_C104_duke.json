@@ -1,0 +1,80 @@
+{
+  "complaint_id": "p1074_35556036806586_C104",
+  "complainer_id": "p1074_35556036806586_K089",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 104,
+  "entity": "Duke",
+  "kind": "organization",
+  "role": "project applicant (Duke Power Company)",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "Duke defends adequacy of existing studies while committing to future ecological investigations for other projects",
+  "summary": "Duke Power Company, as the project applicant, provides numerous corrections and clarifications to the DEIS throughout the document, generally defending the sufficiency of its environmental studies and mitigation measures. Duke maintains that its preconstruction botanical surveys are adequate and that further studies along access roads are not warranted, while acknowledging some environmental costs (e.g., loss of trout stream) as minor relative to project benefits. Duke also commits to cooperating with wildlife agencies and conducting future investigations for other planned projects.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Duke contends that further studies of rare or endangered species distribution in the general project area are not needed at this time, though it commits to thorough investigations for future planned projects.",
+  "evidence_pages": [
+    "304"
+  ],
+  "statement": {
+    "text": "Duke does not think further studies of the distribution of rare or endangered species in the general project area are warranted at this time. However, when other projects are planned, Duke will undertake thorough investigations of the flora and fauna of those project sites.",
+    "opening_anchor": "Duke does not think further studies of the distribution of rare or endangered species in the general project area are warranted at this time.",
+    "closing_anchor": "However, when other projects are planned, Duke will undertake thorough investigations of the flora and fauna of those project sites.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036806586_R042"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Duke maintains that the results of the above studies are sufficient, and that further studies, such as along access roads, are not warranted.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "302"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Duke does not see a viable method to realistically mitigate the loss of the 2.3 miles of trout stream that will be inundated.",
+      "quote_verified": true,
+      "entity_as_written": "Duke",
+      "role_as_written": "project applicant (Duke Power Company)"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "302"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Duke maintains that the results of the above studies are sufficient, and that further studies, such as along access roads, are not warranted.",
+      "quote_verified": true,
+      "entity_as_written": "Duke",
+      "role_as_written": "project applicant (Duke Power Company)"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "304"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Duke does not think further studies of the distribution of rare or endangered species in the general project area are warranted at this time.",
+      "quote_verified": true,
+      "entity_as_written": "Duke",
+      "role_as_written": "project applicant (Duke Power Company)"
+    }
+  ],
+  "window_pages": [
+    292,
+    308
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 89,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C149",
+  "complainer_id": "p1074_35556036546182_K117",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 149,
+  "entity": "Frank B. Duszynski",
+  "kind": "individual",
+  "role": "Private Citizen, commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes suggestion to relocate Mitchell Field due to health hazards and nuisances from aircraft",
+  "summary": "Frank B. Duszynski, a private citizen from St. Francis, suggested that Mitchell Field should be relocated due to health hazards and nuisances caused by aircraft. His comment implies opposition to the project as currently situated, advocating for relocation rather than expansion. The response directed him to letter M-1 on page 190.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Duszynski suggested that Mitchell Field should be relocated because of health hazards and nuisances caused by aircraft.",
+  "evidence_pages": [
+    "247"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R068"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Suggested that Mitchell Field should be relocated because of health hazards and nuisances caused by aircrafts.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "247"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Suggested that Mitchell Field should be relocated because of health hazards and nuisances caused by aircrafts.",
+      "quote_verified": true,
+      "entity_as_written": "Frank B. Duszynski",
+      "role_as_written": "Private Citizen, commenter"
+    }
+  ],
+  "window_pages": [
+    237,
+    257
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 117,
+  "synthetic_no_complaint": false
+}

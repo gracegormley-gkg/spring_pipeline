@@ -1,0 +1,72 @@
+{
+  "complaint_id": "p1074_35556039563135_C040",
+  "complainer_id": "p1074_35556039563135_K122",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 40,
+  "entity": "Chicago Heights Park District",
+  "kind": "organization",
+  "role": "park district / commenter on Roosevelt School area proposal",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "Park District was consulted about Roosevelt School playfield but their response was still pending at time of document preparation",
+  "summary": "The Chicago Heights Park District was identified as an official having responsibility for providing recreational opportunities to the community and was consulted regarding the Section 4(f) implications of the Roosevelt School property acquisition. A meeting was held with the Park District on December 16, 1974, to explain the improvement and seek their concurrence in the finding that the playfield was 'not significant to the recreational needs of the community.' The Park District deferred a final response, promising to consult with the School District and City of Chicago Heights first and to reply within thirty days, meaning no definitive position was recorded in this document.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Chicago Heights Park District, identified as officials responsible for community recreational opportunities, was consulted about the Roosevelt School playfield area and deferred concurrence pending further review with the School District and City, promising a response within thirty days.",
+  "evidence_pages": [
+    "78"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556039563135_R008"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence"
+  ],
+  "summary_quote": "Chicago Heights Park District",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "sectional"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "316"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "On the basis of the information provided by the School District, we do not find that the grassed area is significant to the recreational needs of the community. We conclude the proposed area will be safer and more conducive to use then the present area.",
+      "quote_verified": false,
+      "entity_as_written": "Chicago Heights Park District",
+      "role_as_written": "park district / commenter on Roosevelt School area proposal"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "78"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Chicago Heights Park District",
+      "quote_verified": true,
+      "entity_as_written": "Chicago Heights Park District",
+      "role_as_written": "commenter listed in NIPC project summary"
+    }
+  ],
+  "window_pages": [
+    68,
+    89
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 122,
+  "synthetic_no_complaint": false
+}

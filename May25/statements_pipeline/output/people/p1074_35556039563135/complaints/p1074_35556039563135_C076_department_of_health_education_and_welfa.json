@@ -1,0 +1,69 @@
+{
+  "complaint_id": "p1074_35556039563135_C076",
+  "complainer_id": "p1074_35556039563135_K055",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 76,
+  "entity": "Department of Health, Education, and Welfare",
+  "kind": "agency",
+  "role": "Federal agency / draft EIS commenter",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "direct statement that proposed highway construction does not appear to represent a hazard to public health and safety",
+  "summary": "The Department of Health, Education, and Welfare reviewed the health aspects of the proposed Lincoln Highway project and found no hazard to public health and safety, offering no objections or conditions. Their comment was brief and entirely non-adverse, resulting in a concurrence from the project preparers.",
+  "form": "written_comment",
+  "complaint_summary": "The Department of Health, Education, and Welfare reviewed the health aspects of the project and found that the proposed highway construction does not appear to represent a hazard to public health and safety.",
+  "evidence_pages": [
+    "176"
+  ],
+  "statement": {
+    "text": "This Department has reviewed the health aspects of the above project as presenting the documents submitted. The proposed highway construction does not appear to represent a hazard to public health and safety.",
+    "opening_anchor": "This Department has reviewed the health aspects of the above project as presenting the documents submitted.",
+    "closing_anchor": "The proposed highway construction does not appear to represent a hazard to public health and safety.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556039563135_R034"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The proposed highway construction does not appear to represent a hazard to public health and safety.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "176"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The proposed highway construction does not appear to represent a hazard to public health and safety.",
+      "quote_verified": true,
+      "entity_as_written": "Department of Health, Education, and Welfare",
+      "role_as_written": "Federal agency / draft EIS commenter"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "176"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The proposed highway construction does not appear to represent a hazard to public health and safety.",
+      "quote_verified": true,
+      "entity_as_written": "Department of Health, Education, and Welfare",
+      "role_as_written": "Federal agency reviewer"
+    }
+  ],
+  "window_pages": [
+    166,
+    186
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 55,
+  "synthetic_no_complaint": false
+}

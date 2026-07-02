@@ -1,0 +1,68 @@
+{
+  "complaint_id": "p1074_35556039563135_C101",
+  "complainer_id": "p1074_35556039563135_K066",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 101,
+  "entity": "Illinois State Geological Survey",
+  "kind": "agency",
+  "role": "State clearinghouse agency / draft EIS commenter",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "explicitly states no comments on geology or mineral resources",
+  "summary": "The Illinois State Geological Survey reviewed the draft environmental statement for the Lincoln Highway widening project and stated it had no comments to make relative to geology or mineral resources. The agency's position is neutral, offering neither support nor opposition to the project, simply indicating the project falls outside any concerns within their area of expertise.",
+  "form": "letter",
+  "complaint_summary": "The Illinois State Geological Survey's comment letter states it has no comments to make relative to geology or mineral resources for the proposed Lincoln Highway project.",
+  "evidence_pages": [
+    "197"
+  ],
+  "statement": {
+    "text": "We have no comments to make relative to Geology or Mineral resources.",
+    "opening_anchor": "We have no comments to make relative to Geology or Mineral resources.",
+    "closing_anchor": "We have no comments to make relative to Geology or Mineral resources.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We have no comments to make relative to Geology or Mineral resources.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "sectional"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "180"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We have no comments to make relative to Geology or Mineral resources.",
+      "quote_verified": true,
+      "entity_as_written": "Illinois State Geological Survey",
+      "role_as_written": "State clearinghouse agency / draft EIS commenter"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "197"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "STATE AGENCIES ... Illinois State Geological Survey",
+      "quote_verified": false,
+      "entity_as_written": "Illinois State Geological Survey",
+      "role_as_written": "Illinois state agency reviewer"
+    }
+  ],
+  "window_pages": [
+    170,
+    207
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 66,
+  "synthetic_no_complaint": false
+}

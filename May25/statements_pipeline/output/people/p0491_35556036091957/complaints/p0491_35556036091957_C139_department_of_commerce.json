@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C139",
+  "complainer_id": "p0491_35556036091957_K099",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 139,
+  "entity": "Department of Commerce",
+  "kind": "agency",
+  "role": "federal agency commenter",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letter offers two minor editorial/clarification suggestions without opposing or supporting the project",
+  "summary": "The Department of Commerce submitted a brief comment letter on the draft environmental impact statement, offering two specific editorial suggestions: a terminology correction in the Summary paragraph and a request to delineate affected resources more specifically on page 12. The letter also flagged a potential conflict with 16 USC 478 regarding prospecting access rights, while noting that environmental, health, and safety concerns should still apply to prospectors.",
+  "form": "letter",
+  "complaint_summary": "The Department of Commerce suggests a terminology correction (changing 'directive' to 'memorandum') in the Summary paragraph, requests that affected resources and degree of impact be more specifically delineated on page 12, and notes that restrictions on ORVs to designated areas could not apply to prospecting access rights under 16 USC 478, though environmental and safety concerns should still be made available to prospectors.",
+  "evidence_pages": [
+    "180"
+  ],
+  "statement": {
+    "text": "The draft environmental impact statement for \"Departmental Implementation of Executive Order 11644 Pertaining to Use of Off-Road Vehicles on the Public Lands\" which accompanied your letter of June 1, 1972, has been received by the Department of Commerce for review and comment.\nThe Department of Commerce has reviewed the draft environmental statement and has the following comments to offer for your consideration.\nSummary Paragraph 2 line 4 - We suggest that you amend the sentence that begins \"The directive establishes policies...\" to read \"The memorandum . . .\"\nPage 12 line 3 and 4 - In stating \"Further, many resource interests will be affected\" the implication derived is one of wide ranging affects. We suggest that you delineate those resources affected and to what degree of affectation this directive will have. We would call your attention to 16 USC 478 which provides for access to public lands for the purpose of prospecting. The restriction of ORV's to designated areas could not apply in this case. However, environmental, health and safety concerns should be made available to the prospector.\nWe hope these comments will be helpful to you in the preparation of the final statement.\nSincerely,\nSidney P. Galler\nDeputy Assistant Secretary for Environmental Affairs",
+    "opening_anchor": "The draft environmental impact statement for \"Departmental Implementation of Executive Order 11644 Pertaining to Use of Off-Road Vehicles on the Public Lands\" which accompanied your letter of June 1, 1972, has been received by the Department of Commerce for review and comment.",
+    "closing_anchor": "We hope these comments will be helpful to you in the preparation of the final statement.\n\nSincerely,\nSidney P. Galler\nDeputy Assistant Secretary for Environmental Affairs",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Department of Commerce has reviewed the draft environmental statement and has the following comments to offer for your consideration.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "180"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The Department of Commerce has reviewed the draft environmental statement and has the following comments to offer for your consideration.",
+      "quote_verified": true,
+      "entity_as_written": "Department of Commerce",
+      "role_as_written": "federal agency commenter"
+    }
+  ],
+  "window_pages": [
+    170,
+    190
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 99,
+  "synthetic_no_complaint": false
+}

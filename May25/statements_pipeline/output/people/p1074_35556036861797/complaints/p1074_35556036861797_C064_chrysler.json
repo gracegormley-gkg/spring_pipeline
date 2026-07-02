@@ -1,0 +1,91 @@
+{
+  "complaint_id": "p1074_35556036861797_C064",
+  "complainer_id": "p1074_35556036861797_K026",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 64,
+  "entity": "Chrysler",
+  "kind": "organization",
+  "role": "automobile manufacturer / commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "Chrysler repeatedly argues the proposed standard is too high and unsupported given emissions/testing penalties and differences from passenger automobile standards",
+  "summary": "Chrysler submitted comments challenging the proposed 18.7 mpg nonpassenger automobile fuel economy standard on multiple grounds, including the fuel economy penalties from EPA's revised 1979 emissions standards and testing procedures, the effect of California emissions standards on its fleet average, and the inappropriateness of a standard only 0.3 mpg below the passenger automobile standard given the inherent differences between vehicle classes. While Chrysler's own projections implicitly concede that 18.7 mpg under 1976 conditions is achievable, the company consistently argued for a lower final standard to account for these real-world penalties. NHTSA largely rejected Chrysler's arguments, finding the emissions penalty undemonstrated and the California standards insufficient justification for lowering the standard.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Chrysler argued that a nonpassenger automobile standard of only 0.3 mpg below the passenger automobile standard failed to account for differences between the two vehicle classes, and that 18.7 mpg would be equivalent to 21 mpg under the emissions and testing conditions Congress used when setting the 19.0 mpg passenger automobile standard.",
+  "evidence_pages": [
+    "157"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036861797_R039"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The estimated fuel economy penalty due to the emission standard, including the effect of increased NOx emissions resulting from higher engine loading due to the revised test procedures, was 5 percent for General Motors, 3 percent for Ford, and 7 percent for Chrysler.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 4,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "129"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Chrysler supported the inclusion of the captive imports because it believed this would allow the manufacturer to adopt the most cost-effective strategy for maximizing fleet fuel economy.",
+      "quote_verified": true,
+      "entity_as_written": "Chrysler",
+      "role_as_written": "automobile manufacturer / commenter"
+    },
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "146"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The estimated fuel economy penalty due to the emission standard, including the effect of increased NOx emissions resulting from higher engine loading due to the revised test procedures, was 5 percent for General Motors, 3 percent for Ford, and 7 percent for Chrysler.",
+      "quote_verified": true,
+      "entity_as_written": "Chrysler",
+      "role_as_written": "automobile manufacturer / commenter"
+    },
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "157"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Chrysler argued that an average fuel economy standard for nonpassenger automobiles which was only 0.3 mpg below that set for passenger automobiles failed to take into account the differences between passenger and nonpassenger automobiles.",
+      "quote_verified": true,
+      "entity_as_written": "Chrysler",
+      "role_as_written": "automobile manufacturer / commenter"
+    },
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "155"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Chrysler provided information showing that its California fleet will lower the average fuel economy of its 50 state fleet by 0.3 mpg.",
+      "quote_verified": true,
+      "entity_as_written": "Chrysler",
+      "role_as_written": "automobile manufacturer / commenter"
+    }
+  ],
+  "window_pages": [
+    119,
+    158
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 26,
+  "synthetic_no_complaint": false
+}

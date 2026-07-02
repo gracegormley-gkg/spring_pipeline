@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556039563135_C047",
+  "complainer_id": "p1074_35556039563135_K061",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 47,
+  "entity": "Howard W. Busch",
+  "kind": "individual",
+  "role": "State Conservationist, USDA Soil Conservation Service",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase acknowledging erosion control, drainage, and vegetation reestablishment as recognized concerns",
+  "summary": "Howard W. Busch, State Conservationist for the USDA Soil Conservation Service, is referenced in the document in connection with the project's environmental statement, specifically regarding erosion control, drainage, and vegetation reestablishment. His position appears to be conditionally supportive, acknowledging that these conservation concerns have been recognized in the statement. No full letter or testimony from Busch appears in this window.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Howard W. Busch acknowledged that the importance of erosion control, adequate drainage, and reestablishment of vegetation have been recognized in the environmental statement, implying these were his key concerns regarding the project.",
+  "evidence_pages": [
+    "145-194"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual",
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "The importance of erosion control, adequate drainage and reestablishment of vegetation have been recognized in the statement.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "145-194"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The importance of erosion control, adequate drainage and reestablishment of vegetation have been recognized in the statement.",
+      "quote_verified": false,
+      "entity_as_written": "Howard W. Busch",
+      "role_as_written": "State Conservationist, USDA Soil Conservation Service"
+    }
+  ],
+  "window_pages": [
+    135,
+    168
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 61,
+  "synthetic_no_complaint": false
+}

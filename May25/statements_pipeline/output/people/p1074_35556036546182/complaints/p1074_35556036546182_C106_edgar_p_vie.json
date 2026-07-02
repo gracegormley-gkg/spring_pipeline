@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036546182_C106",
+  "complainer_id": "p1074_35556036546182_K079",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 106,
+  "entity": "Edgar P. Vie",
+  "kind": "official",
+  "role": "Chief of the Airport District Office, Federal Aviation Administration, Minneapolis",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed as oral testimony witness with no abstract or details provided in the window",
+  "summary": "Edgar P. Vie, Chief of the Airport District Office of the Federal Aviation Administration in Minneapolis, is listed as Witness No. 29 who presented oral testimony at the Environmental Public Hearing on July 11, 1974. No abstract, details of testimony, or response to his testimony appear in the document window, making his position on the project impossible to determine from the available text.",
+  "form": "sectional",
+  "complaint_summary": "Edgar P. Vie is listed as Witness No. 29 who gave oral testimony at the July 11, 1974 Environmental Public Hearing, but no abstract or details of his testimony are provided in the document window.",
+  "evidence_pages": [
+    "219"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence"
+  ],
+  "summary_quote": "The following individuals presented oral testimony at an Environmental Public Hearing, July 11, 1974 for the proposed freeway and their views have been made a part of the official transcript.",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "219"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "The following individuals presented oral testimony at an Environmental Public Hearing, July 11, 1974 for the proposed freeway and their views have been made a part of the official transcript.",
+      "quote_verified": true,
+      "entity_as_written": "Edgar P. Vie",
+      "role_as_written": "Chief of the Airport District Office, Federal Aviation Administration, Minneapolis"
+    }
+  ],
+  "window_pages": [
+    209,
+    229
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 79,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036546182_C057",
+  "complainer_id": "p1074_35556036546182_K032",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 57,
+  "entity": "directors of the State and Milwaukee County Historical Societies",
+  "kind": "official",
+  "role": "historical society directors",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase confirms no historical/archeological sites affected, neither supporting nor opposing the project",
+  "summary": "The directors of the State and Milwaukee County Historical Societies are paraphrased as having confirmed that their records show no known historical or archeological sites would be affected by the proposed highway project. Their statement is informational and does not express support for or opposition to the project. They appear once in the document window in the context of environmental impact review.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The directors of the State and Milwaukee County Historical Societies confirmed that their records indicate no known historical or archeological sites would be affected by the proposed highway project.",
+  "evidence_pages": [
+    "103"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The directors of the State and Milwaukee County Historical Societies have confirmed that their records indicate no known historical or archeological sites would be affected by the proposed highway project.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "103"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The directors of the State and Milwaukee County Historical Societies have confirmed that their records indicate no known historical or archeological sites would be affected by the proposed highway project.",
+      "quote_verified": true,
+      "entity_as_written": "directors of the State and Milwaukee County Historical Societies",
+      "role_as_written": "historical society directors"
+    }
+  ],
+  "window_pages": [
+    93,
+    113
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 32,
+  "synthetic_no_complaint": false
+}

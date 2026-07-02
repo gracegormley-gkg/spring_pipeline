@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556036811230_C068",
+  "complainer_id": "p1074_35556036811230_K039",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 68,
+  "entity": "National Fuel Gas Company",
+  "kind": "organization",
+  "role": "Business with proposed relocation site in Ellicott Yard area",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "mentioned only as a business with a proposed relocation site in the Ellicott Yard area, no position stated",
+  "summary": "National Fuel Gas Company is mentioned solely as the entity that has identified a vacant parcel in the Ellicott Yard area as the proposed relocation site for one of its facilities currently located in southwest Buffalo. The document does not attribute any position, complaint, or opinion to the company regarding the transit project. Its mention is purely descriptive in the context of property takings and land use at the Ellicott Yard site.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "185"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "One of the vacant parcels bounded by Chicago, Carroll, Louisiana, and Exchange Streets, has been identified as the proposed relocation site of a National Fuel Gas Company facility now located in southwest Buffalo.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "185"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "One of the vacant parcels bounded by Chicago, Carroll, Louisiana, and Exchange Streets, has been identified as the proposed relocation site of a National Fuel Gas Company facility now located in southwest Buffalo.",
+      "quote_verified": true,
+      "entity_as_written": "National Fuel Gas Company",
+      "role_as_written": "Business with proposed relocation site in Ellicott Yard area"
+    }
+  ],
+  "window_pages": [
+    175,
+    195
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 39,
+  "synthetic_no_complaint": true
+}

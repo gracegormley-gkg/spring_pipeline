@@ -1,0 +1,72 @@
+{
+  "complaint_id": "p1074_35556036105336_C068",
+  "complainer_id": "p1074_35556036105336_K022",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 68,
+  "entity": "Virginia Department of Highways",
+  "kind": "agency",
+  "role": "State agency commenter",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed as contacted agency with no substantive position stated in window",
+  "summary": "The Virginia Department of Highways appears only in administrative/roster contexts within this window — listed among agencies from which comments were requested and among those from which comments were received. No substantive position, complaint, or opinion attributed to the agency is present in this portion of the document.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "2",
+    "66"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "The Virginia Department of Highways has been contacted relative to the use of its facilities but preliminary investigations have indicated that there would be a charge for the use of the program and facilities.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased",
+    "sectional"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "2"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Comments have been received from: d. Virginia Department of Highways",
+      "quote_verified": false,
+      "entity_as_written": "Virginia Department of Highways",
+      "role_as_written": "State agency commenter"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "66"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Virginia Department of Highways has been contacted relative to the use of its facilities but preliminary investigations have indicated that there would be a charge for the use of the program and facilities.",
+      "quote_verified": true,
+      "entity_as_written": "Virginia Department of Highways",
+      "role_as_written": "State highway agency"
+    }
+  ],
+  "window_pages": [
+    1,
+    42
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 22,
+  "synthetic_no_complaint": true
+}

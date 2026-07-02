@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036806586_C090",
+  "complainer_id": "p1074_35556036806586_K084",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 90,
+  "entity": "W. H. Owen",
+  "kind": "official",
+  "role": "Vice President, Design Engineering, Duke Power Company",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "submits detailed technical corrections and amendments to the Draft EIS on behalf of Duke Power Company while supporting the project's license application",
+  "summary": "W. H. Owen, Vice President of Design Engineering at Duke Power Company, submitted a formal letter on January 5, 1976 enclosing Amendment 1 to the license application and Duke's comments on the Draft Environmental Impact Statement. His submission included numerous technical corrections and clarifications to the DEIS, covering design specifications, environmental data, and factual errors, indicating support for the project contingent on accurate representation of Duke's plans. He also provided a sworn affidavit attesting to the accuracy of the submitted materials.",
+  "form": "letter",
+  "complaint_summary": "W. H. Owen submits Amendment 1 to the license application along with Duke's comments on the Draft EIS, proposing a schedule for further amendments pertaining to need for power and construction schedule to be submitted by March 29, 1976.",
+  "evidence_pages": [
+    "285"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "In accordance with our proposed schedule, we are enclosing 10 copies of the following:",
+    "closing_anchor": "W. H. Owen\n\nVice President, Design Engineering",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "In accordance with our proposed schedule, we are enclosing 10 copies of the following",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "285"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In accordance with our proposed schedule, we are enclosing 10 copies of the following",
+      "quote_verified": true,
+      "entity_as_written": "W. H. Owen",
+      "role_as_written": "Vice President, Design Engineering, Duke Power Company"
+    }
+  ],
+  "window_pages": [
+    275,
+    295
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 84,
+  "synthetic_no_complaint": false
+}

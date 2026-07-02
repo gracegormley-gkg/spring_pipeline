@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C224",
+  "complainer_id": "p0491_35556036091957_K225",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 224,
+  "entity": "U.S. Chamber of Commerce",
+  "kind": "organization",
+  "role": "business association, referenced commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "cited as evidence of preservationist economic harm, referenced in opposition to environmental preservation groups",
+  "summary": "The U.S. Chamber of Commerce is referenced in a letter from the Trailer Coach Association as evidence of the economic damage caused by preservationist groups, with the Chamber cited as having taken a stand against such groups and adopting a more aggressive role in shaping court and agency decisions on environmental protection laws. The Chamber is not a direct commenter but is invoked to support the argument that preservationist activism harms the U.S. economy. No direct statement from the Chamber itself appears in the window.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Trailer Coach Association references the U.S. Chamber of Commerce's decision to take a stand against preservationist groups and assume a more aggressive role in shaping decisions by courts and government agencies implementing environmental protection laws, citing it as evidence of the economic impact of preservationism.",
+  "evidence_pages": [
+    "304"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Evidence of the preservationist impact on the United States economy is evidenced by the U. S. Chamber of Commerce's decision to take a stand against such groups, and to assume a more aggressive roll in shaping decisions being made not only by the courts, but by government agencies responsible for implementing environmental protection laws.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "304"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Evidence of the preservationist impact on the United States economy is evidenced by the U. S. Chamber of Commerce's decision to take a stand against such groups, and to assume a more aggressive roll in shaping decisions being made not only by the courts, but by government agencies responsible for implementing environmental protection laws.",
+      "quote_verified": true,
+      "entity_as_written": "U.S. Chamber of Commerce",
+      "role_as_written": "business association, referenced commenter"
+    }
+  ],
+  "window_pages": [
+    294,
+    314
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 225,
+  "synthetic_no_complaint": false
+}

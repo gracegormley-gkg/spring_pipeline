@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556038322269_C042",
+  "complainer_id": "p1074_35556038322269_K053",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 42,
+  "entity": "Dr. Sieh",
+  "kind": "individual",
+  "role": "researcher/scientist (paleoseismologist)",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "research findings cited as factual background on earthquake recurrence intervals, no position on the project expressed",
+  "summary": "Dr. Kerry Sieh of Caltech is referenced in the EIS as a researcher whose paleoseismic work on the San Andreas Fault provides useful data for assessing seismic risk to the proposed transit project. His Carbon-14 dating of nine major earthquakes extending back to the fourth century, yielding an average recurrence interval of 160 years, is cited to support the conclusion that a major earthquake on the San Andreas Fault is highly probable within the next 100 years. Dr. Sieh does not express a position on the project itself; his work is used purely as scientific background.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Dr. Sieh's paleoseismic research on the San Andreas Fault near Palmdale is cited as providing Carbon-14 age-dated evidence of nine major earthquakes since the fourth century, with an average recurrence interval of 160 years, to support the assessment that a major earthquake is highly probable within the next 100 years.",
+  "evidence_pages": [
+    "145"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Dr. Sieh has Carbon-14 age-dated nine major earthquakes extending back to the fourth century.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "145"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Dr. Sieh has Carbon-14 age-dated nine major earthquakes extending back to the fourth century.",
+      "quote_verified": true,
+      "entity_as_written": "Dr. Sieh",
+      "role_as_written": "researcher/scientist (paleoseismologist)"
+    }
+  ],
+  "window_pages": [
+    135,
+    155
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 53,
+  "synthetic_no_complaint": false
+}

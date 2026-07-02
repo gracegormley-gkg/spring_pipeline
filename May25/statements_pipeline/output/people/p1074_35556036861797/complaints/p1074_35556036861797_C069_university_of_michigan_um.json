@@ -1,0 +1,72 @@
+{
+  "complaint_id": "p1074_35556036861797_C069",
+  "complainer_id": "p1074_35556036861797_K023",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 69,
+  "entity": "University of Michigan (UM)",
+  "kind": "organization",
+  "role": "academic institution / commenter",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed as commenter with no position statement visible in window",
+  "summary": "The University of Michigan appears only in the List of Commenters for this Environmental Impact Statement on Average Fuel Economy Standards for Nonpassenger Automobiles, MY 1979. No substantive position, complaint, or statement attributed to UM is present in this document window, though the exemplar quote indicates UM disagreed with NHTSA's truck mileage statistics elsewhere in the document. Within this window, UM's role is limited to being identified as one of sixteen commenters.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "19",
+    "108"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "UM stated that they disagreed with NHTSA's truck mileage statistics.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased",
+    "sectional"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "19"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "List of Commenters",
+      "quote_verified": true,
+      "entity_as_written": "The University of Michigan",
+      "role_as_written": "Commenter"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "108"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "UM stated that they disagreed with NHTSA's truck mileage statistics.",
+      "quote_verified": true,
+      "entity_as_written": "University of Michigan (UM)",
+      "role_as_written": "academic institution / commenter"
+    }
+  ],
+  "window_pages": [
+    9,
+    57
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 23,
+  "synthetic_no_complaint": true
+}

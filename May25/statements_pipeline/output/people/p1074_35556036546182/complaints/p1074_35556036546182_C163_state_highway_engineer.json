@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556036546182_C163",
+  "complainer_id": "p1074_35556036546182_K016",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 163,
+  "entity": "State Highway Engineer",
+  "kind": "official",
+  "role": "State of Wisconsin, Division of Highways signatory",
+  "stance": "in_favor",
+  "stance_confidence": "low",
+  "stance_basis": "signed and submitted the Final Environmental Impact Statement as State Highway Engineer",
+  "summary": "The State Highway Engineer signed and submitted the Final Environmental Impact Statement for the Airport Spur project on December 5, 1975, indicating official State of Wisconsin Division of Highways endorsement of the proposed I-94 to General Mitchell Field freeway connection. The signature represents formal state approval and submission of the document pursuant to federal environmental review requirements. No complaints or objections are attributed to this official; the role is that of a project proponent.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "1"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "12/5/15 Date State Highway Engineer",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "1"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "12/5/15 Date State Highway Engineer",
+      "quote_verified": true,
+      "entity_as_written": "State Highway Engineer",
+      "role_as_written": "State of Wisconsin, Division of Highways signatory"
+    }
+  ],
+  "window_pages": [
+    1,
+    11
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 16,
+  "synthetic_no_complaint": true
+}

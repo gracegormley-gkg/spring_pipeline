@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036546182_C088",
+  "complainer_id": "p1074_35556036546182_K060",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 88,
+  "entity": "Martin Convisser",
+  "kind": "official",
+  "role": "Director, Office of Environmental Affairs, Department of Transportation",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "memo explicitly states 'We have no specific comments to offer on the statement'",
+  "summary": "Martin Convisser, Director of the Office of Environmental Affairs at the U.S. Department of Transportation, submitted a brief memorandum acknowledging receipt of the draft EIS and stating that his office had no specific comments to offer. He expressed interest in receiving the final EIS along with comments from other agencies and the public.",
+  "form": "letter",
+  "complaint_summary": "Convisser's memo states that the Department of Transportation's Office of Environmental Affairs has no specific comments on the draft EIS and looks forward to receiving the final statement.",
+  "evidence_pages": [
+    "169"
+  ],
+  "statement": {
+    "text": "We appreciate the opportunity to review and comment on this draft environmental impact statement. We have no specific comments to offer on the statement.\nWe look forward to receiving the final environmental impact statement, including the comments received from other public agencies and the general public on the draft statement.\nMartin Convisser",
+    "opening_anchor": "We appreciate the opportunity to review and comment on this draft environmental impact statement. We have no specific comments to offer on the statement.",
+    "closing_anchor": "We look forward to receiving the final environmental impact statement, including the comments received from other public agencies and the general public on the draft statement.\n\nMartin Convisser",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036546182_R016"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We have no specific comments to offer on the statement.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "169"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "We have no specific comments to offer on the statement.",
+      "quote_verified": true,
+      "entity_as_written": "Martin Convisser",
+      "role_as_written": "Director, Office of Environmental Affairs, Department of Transportation"
+    }
+  ],
+  "window_pages": [
+    159,
+    179
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 60,
+  "synthetic_no_complaint": false
+}

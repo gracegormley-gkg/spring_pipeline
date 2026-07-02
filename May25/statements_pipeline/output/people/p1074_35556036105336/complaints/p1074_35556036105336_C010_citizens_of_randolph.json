@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036105336_C010",
+  "complainer_id": "p1074_35556036105336_K003",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 10,
+  "entity": "citizens of Randolph",
+  "kind": "other",
+  "role": "Community residents / voters",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "citizens voted to accept the Randolph Plan at a public meeting on November 19, 1972",
+  "summary": "The citizens of Randolph participated extensively in the planning process through the Randolph Planning Study Board and, at a public meeting on November 19, 1972, voted to accept the Randolph Plan. Their goals and objectives, established through numerous community meetings, focused on eliminating blight and providing new low- and moderate-income housing opportunities for existing residents. Their support is documented as a key step in the plan's approval process.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The citizens of Randolph voted to accept the Randolph Plan at a public meeting held on November 19, 1972, by the City of Richmond's Department of Planning and Community Development.",
+  "evidence_pages": [
+    "17"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "On November 19, 1972, at a public meeting in Randolph held by the City of Richmond's Department of Planning and Community Development the citizens of Randolph voted to accept the Plan",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "17"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "On November 19, 1972, at a public meeting in Randolph held by the City of Richmond's Department of Planning and Community Development the citizens of Randolph voted to accept the Plan",
+      "quote_verified": true,
+      "entity_as_written": "citizens of Randolph",
+      "role_as_written": "Community residents / voters"
+    }
+  ],
+  "window_pages": [
+    7,
+    27
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 3,
+  "synthetic_no_complaint": false
+}

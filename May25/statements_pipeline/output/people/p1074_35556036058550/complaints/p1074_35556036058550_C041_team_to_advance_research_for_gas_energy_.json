@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036058550_C041",
+  "complainer_id": "p1074_35556036058550_K024",
+  "doc_id": "p1074_35556036058550",
+  "work_id": "csv:35556036058550",
+  "order": 41,
+  "entity": "Team to Advance Research for Gas Energy Transformation",
+  "kind": "organization",
+  "role": "Research program sponsor for fuel cell development",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "mentioned as sponsor of fuel cell R&D program without expressing a position on Operation Breakthrough",
+  "summary": "The Team to Advance Research for Gas Energy Transformation (TARGET) is referenced in the Federal Power Commission's comment letter as the sponsor of a nine-year R&D program that installed an experimental prototype total energy fuel cell in a single-family dwelling in Farmington, Connecticut. The organization is cited as context for promising fuel cell technology relevant to Operation Breakthrough's advanced utility systems demonstration, but TARGET itself does not express a position on the project. HUD's response letter acknowledges awareness of the TARGET/Pratt and Whitney fuel cell program but notes that Pratt and Whitney has not suggested using the fuel cell at this stage of development.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "TARGET is described as the sponsor of a nine-year R&D program that installed an experimental prototype total energy fuel cell in a single-family dwelling in Farmington, Connecticut, with 31 additional installations planned, cited as evidence of promising fuel cell technology relevant to Operation Breakthrough.",
+  "evidence_pages": [
+    "49"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036058550_R032"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "an experimental prototype total energy fuel cell installation was made in a single family dwelling in Farmington, Connecticut, as part of a nine-year research and development program conducted under the auspices of the Team to Advance Research for Gas Energy Transformation.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "49"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "an experimental prototype total energy fuel cell installation was made in a single family dwelling in Farmington, Connecticut, as part of a nine-year research and development program conducted under the auspices of the Team to Advance Research for Gas Energy Transformation.",
+      "quote_verified": false,
+      "entity_as_written": "Team to Advance Research for Gas Energy Transformation",
+      "role_as_written": "Research program sponsor for fuel cell development"
+    }
+  ],
+  "window_pages": [
+    39,
+    59
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 24,
+  "synthetic_no_complaint": false
+}

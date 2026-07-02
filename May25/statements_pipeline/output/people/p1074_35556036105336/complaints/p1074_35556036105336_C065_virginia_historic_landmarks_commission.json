@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036105336_C065",
+  "complainer_id": "p1074_35556036105336_K048",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 65,
+  "entity": "Virginia Historic Landmarks Commission",
+  "kind": "agency",
+  "role": "Commonwealth of Virginia historic preservation agency",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter identifies most demolition zone structures as having little architectural value but recommends conservation boundary expansion for specific Randolph/Harrison Street blocks",
+  "summary": "The Virginia Historic Landmarks Commission conducted a windshield survey of the Randolph Urban Renewal Area and generally found the demolition zone structures to be dilapidated and of little architectural value, supporting the project's approach. However, the Commission identified specific blocks on Randolph Street and Harrison Street as potentially qualifying for conservation status, recommending they be preserved to maintain neighborhood continuity and soften the impact of new construction.",
+  "form": "letter",
+  "complaint_summary": "The Virginia Historic Landmarks Commission, following a staff survey, found most demolition-zone structures to be of little architectural value but flagged the 200-400 blocks of Randolph Street and 400-500 blocks of Harrison Street as potentially warranting inclusion within a conservation boundary due to their brick construction, unity of scale, and landmark structures such as Randolph School and the RCAP Center.",
+  "evidence_pages": [
+    "119"
+  ],
+  "statement": {
+    "text": "A BRIEF STATEMENT CONCERNING THE IMPACT OF THE RANDOLPH URBAN RENEVAL AREA PROJECT ON THE AESTHETIC-ARCHITECTURAL-HISTORIC ENVIRONMENT OF THAT NEIGHBORHOOD.\nThe Project is located partially within the old borders of the town of Sidney of which tere are no visible remains, and just west of the Oregon Hill neighborhood. Prominent city landmarks border the district: Byrd Park to the west and Riverview, Mount Calvary and Hollywood Cemeteries to the south. The project area was the object of a \"windshield survey\" in late January by two members of the Virginia Historic Landmarks Commission staff. The area consists of attractive early twentieth century middle-class residences in the west regions and more recent small dwellings to the south. Both of these groupings are in the Conservation area and will be preserved. Within the demolition zone, structures are in a generally dilapidated state and for the most part have little redeeming architectural value. We did find that one area, the 200-400 blocks of Randolph Street and the 400-500 blocks (west side) of Harrison displayed several characteristics that might qualify it for placement within a conservation boundary line.:\n1. Materials. Predominantly brick residences in good condition, at least in appearance from the street. This street includes the Randolph School, a fine Italianate structure. The frame RCAP Center at the corner of Idlewood and Randolph Streets is a frame building but its superb Queen Anne atvle makes it a real landmark at this important intersection.\n\n2. Unity. Consistency of low-scale, closely-spaced structures with related ornamentation. These two streets flank a conservation zone on Wallace Street of questionable architectural value but having few functional deficiencies, involving bathrooms, condition of roofs, walls, etc.\n\nAlthough the Randolph and Harrison Street structures may have some such deficiencies, their presence in the midst of new construction might retain for the neighborhood a sense of continuity from the past and a softening agent against the sometimes harsh nature of low-cost urban renewal-style architecture.",
+    "opening_anchor": "A BRIEF STATEMENT CONCERNING THE IMPACT OF THE RANDOLPH URBAN RENEVAL AREA PROJECT ON THE AESTHETIC-ARCHITECTURAL-HISTORIC ENVIRONMENT OF THAT NEIGHBORHOOD.",
+    "closing_anchor": "their presence in the midst of new construction might retain for the neighborhood a sense of continuity from the past and a softening agent against the sometimes harsh nature of low-cost urban renewal-style architecture.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The area consists of attractive early twentieth century middle-class residences in the west regions and more recent small dwellings to the south. Both of these groupings are in the Conservation area and will be preserved. Within the demolition zone, structures are in a generally dilapidated state and for the most part have little redeeming architectural value.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "119"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The area consists of attractive early twentieth century middle-class residences in the west regions and more recent small dwellings to the south. Both of these groupings are in the Conservation area and will be preserved. Within the demolition zone, structures are in a generally dilapidated state and for the most part have little redeeming architectural value.",
+      "quote_verified": true,
+      "entity_as_written": "Virginia Historic Landmarks Commission",
+      "role_as_written": "Commonwealth of Virginia historic preservation agency"
+    }
+  ],
+  "window_pages": [
+    109,
+    123
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 48,
+  "synthetic_no_complaint": false
+}

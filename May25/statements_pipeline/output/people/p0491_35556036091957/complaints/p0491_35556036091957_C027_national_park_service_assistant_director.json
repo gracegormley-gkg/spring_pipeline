@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p0491_35556036091957_C027",
+  "complainer_id": "p0491_35556036091957_K024",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 27,
+  "entity": "National Park Service, Assistant Director, Cooperative Services",
+  "kind": "official",
+  "role": "Interior bureau reviewer",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase details multiple specific conditions and concerns NPS requires be addressed before the statement is adequate",
+  "summary": "The National Park Service Assistant Director for Cooperative Services raised several substantive concerns about the draft ORV environmental statement, including the need for clearer language on 'reckless and careless manner,' evidence to support claims about family ties, greater attention to historic/archeological/paleontological resources, and assurance of compliance with Executive Order 11593 and the National Historic Preservation Act. These concerns appear twice in the document window—once in the main body summary and once in the appendix—reflecting the same set of comments. The Department responded by modifying the final statement and addressing the family-ties issue specifically, while noting that appended letters without specific responses are considered covered by the improved final statement.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "In the appendix's Federal Agency Comments section, the NPS Assistant Director's comments (response #106) are paraphrased again, reiterating concerns about operating criteria language, the family-ties claim, protection of historic/archeological/paleontological resources, and compliance with E.O. 11593 and the National Historic Preservation Act.",
+  "evidence_pages": [
+    "36-37"
+  ],
+  "statement": {
+    "text": "#106 National Park Service, Assistant Director, Cooperative Services - suggested that section on page 5 of environmental statement describing operating criteria for ORV use on Interior lands be made as clear as possible concerning \"reckless and careless manner\" and referred us to 36 CFR 4.14. Suggested that evidence be submitted to support claim that ORV can strengthen family ties. Expressed concern about lack of attention in environmental statement to protection of historic, archeological, and paleontological resources. Indicated belief that Section 2(b) of Executive Order 11593, dated 5/13/71, must be observed in contemplating use of ORV on federally-owned lands, and that statement should indicate whether compliance with E.O. 11593 will be assured during implementation of E.O. 11644. Also, indicated belief that statement should indicate whether compliance with Section 106 of the National Historic Preservation Act. (P.L. 89-665) will be assured during implementation of E.O. 11644;",
+    "opening_anchor": "#106 National Park Service, Assistant Director, Cooperative Services - suggested that section on page 5 of environmental statement describing operating criteria for ORV use on Interior lands be made as clear as possible concerning \"reckless and careless manner\"",
+    "closing_anchor": "whether compliance with Section 106 of the National Historic Preservation Act. (P.L. 89-665) will be assured during implementation of E.O. 11644;",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p0491_35556036091957_R004"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "National Park Service, Assistant Director, Cooperative Services - suggested that section on page 5 of environmental statement describing operating criteria for ORV use on Interior lands be made as clear as possible concerning \"reckless and careless manner\" and referred us to 36 CFR 4.14. Suggested that evidence be submitted to support claim that ORV can strengthen family ties. Expressed concern about lack of attention in environmental statement to protection of historic, archeological, and paleontological resources.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "30"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "National Park Service, Assistant Director, Cooperative Services - suggested that section on page 5 of environmental statement describing operating criteria for ORV use on Interior lands be made as clear as possible concerning \"reckless and careless manner\" and referred us to 36 CFR 4.14. Suggested that evidence be submitted to support claim that ORV can strengthen family ties. Expressed concern about lack of attention in environmental statement to protection of historic, archeological, and paleontological resources.",
+      "quote_verified": true,
+      "entity_as_written": "National Park Service, Assistant Director, Cooperative Services",
+      "role_as_written": "Interior bureau reviewer"
+    }
+  ],
+  "window_pages": [
+    20,
+    40
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 24,
+  "synthetic_no_complaint": false
+}

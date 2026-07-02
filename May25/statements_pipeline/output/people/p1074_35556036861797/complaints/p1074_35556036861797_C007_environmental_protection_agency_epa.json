@@ -1,0 +1,79 @@
+{
+  "complaint_id": "p1074_35556036861797_C007",
+  "complainer_id": "p1074_35556036861797_K007",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 7,
+  "entity": "Environmental Protection Agency (EPA)",
+  "kind": "agency",
+  "role": "Commenter / federal agency",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "EPA raised specific technical concerns about sulfate emissions projections and noble metal use, prompting revisions to the EIS",
+  "summary": "The EPA commented on the draft EIS for the MY 1979 nonpassenger automobile fuel economy standard, raising technical concerns about the projected increase in sulfate emissions and the use of noble metals in catalytic converters. The agency's comments, along with those of domestic manufacturers, led NHTSA to revise the final EIS, including dropping the sulfate emissions discussion and revising the noble metal use section. EPA is listed as one of the federal agencies that commented on the draft EIS.",
+  "form": "sectional",
+  "complaint_summary": "EPA is listed as one of the commenters (item 3) on the draft environmental impact statement for the MY 1979 nonpassenger automobile fuel economy standard.",
+  "evidence_pages": [
+    "9"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "EPA questioned the projected increase of 13.7 percent for sulphate emissions. To provide insight into their assessment they referenced their Environmental Impact Statement for the MY 1979 light duty truck emission standard which discusses the issue.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased",
+    "sectional"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "19"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "List of Commenters",
+      "quote_verified": true,
+      "entity_as_written": "Environmental Protection Agency",
+      "role_as_written": "Commenter / federal agency"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "89"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "EPA questioned the projected increase of 13.7 percent for sulphate emissions. To provide insight into their assessment they referenced their Environmental Impact Statement for the MY 1979 light duty truck emission standard which discusses the issue.",
+      "quote_verified": true,
+      "entity_as_written": "Environmental Protection Agency (EPA)",
+      "role_as_written": "federal agency / commenter"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "103"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "EPA stated that the discussion on market shifts should be broadened to include potential shifts to or from foreign production if these shifts are significant.",
+      "quote_verified": true,
+      "entity_as_written": "Environmental Protection Agency (EPA)",
+      "role_as_written": "federal agency / commenter"
+    }
+  ],
+  "window_pages": [
+    9,
+    57
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 7,
+  "synthetic_no_complaint": false
+}

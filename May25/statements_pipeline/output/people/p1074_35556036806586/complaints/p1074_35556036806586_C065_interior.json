@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036806586_C065",
+  "complainer_id": "p1074_35556036806586_K066",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 65,
+  "entity": "Interior",
+  "kind": "agency",
+  "role": "U.S. Department of the Interior",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "commends applicant cooperation but questions adequacy of wildlife mitigation measures",
+  "summary": "The U.S. Department of the Interior is paraphrased in the document as acknowledging the Applicant's cooperative efforts regarding wildlife management leasing arrangements, but raising doubts about whether those measures would fully compensate for expected wildlife losses from the Bad Creek Project. Interior's position is conditional in nature, recognizing some positive steps while questioning the sufficiency of mitigation for wildlife habitat loss.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Interior questions whether the Applicant's cooperation in leasing Keowee-Toxaway Project lands to the SCWMRD for wildlife management would fully compensate for the expected loss of wildlife associated with the proposed Bad Creek Project.",
+  "evidence_pages": [
+    "242"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036806586_R018"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Interior has commended the Applicant for its cooperation in leasing Keowee-Toxaway Project lands to the SCWMRD for wildlife management purposes, but Interior questions whether or not such measures would fully compensate for the expected loss of wildlife associated with the proposed Bad Creek Project.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "242"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Interior has commended the Applicant for its cooperation in leasing Keowee-Toxaway Project lands to the SCWMRD for wildlife management purposes, but Interior questions whether or not such measures would fully compensate for the expected loss of wildlife associated with the proposed Bad Creek Project.",
+      "quote_verified": true,
+      "entity_as_written": "Interior",
+      "role_as_written": "U.S. Department of the Interior"
+    }
+  ],
+  "window_pages": [
+    232,
+    252
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 66,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p0491_35556036091957_C022",
+  "complainer_id": "p0491_35556036091957_K029",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 22,
+  "entity": "Tennessee Valley Authority, Director of Environmental Research and Development",
+  "kind": "official",
+  "role": "Federal agency reviewer",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase states TVA felt the environmental statement covered all pertinent considerations",
+  "summary": "The Tennessee Valley Authority's Director of Environmental Research and Development reviewed the draft ORV environmental statement and expressed satisfaction that it adequately covered the considerations pertinent to the proposed policies and guidelines concerning ORV use. This positive assessment appears twice in the document window — once in the main body summary of agency comments and once in the appendix restatement of the same comments — both as narrator paraphrases. No specific criticisms or conditions were raised by TVA.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "In the appendix restatement of federal agency comments, TVA's Director of Environmental Research and Development is again paraphrased as having felt the environmental statement covered the considerations pertinent to the proposed ORV policies and guidelines.",
+  "evidence_pages": [
+    "31"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "Tennessee Valley Authority, Director of Environmental Research and Development - felt that environmental statement covered the considerations which are pertinent to the proposed policies and guidelines concerning ORV;",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "21"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Tennessee Valley Authority, Director of Environmental Research and Development - felt that environmental statement covered the considerations which are pertinent to the proposed policies and guidelines concerning ORV;",
+      "quote_verified": false,
+      "entity_as_written": "Tennessee Valley Authority, Director of Environmental Research and Development",
+      "role_as_written": "Federal agency reviewer"
+    }
+  ],
+  "window_pages": [
+    11,
+    31
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 29,
+  "synthetic_no_complaint": false
+}

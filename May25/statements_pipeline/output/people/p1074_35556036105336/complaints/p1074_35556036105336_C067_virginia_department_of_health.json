@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036105336_C067",
+  "complainer_id": "p1074_35556036105336_K021",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 67,
+  "entity": "Virginia Department of Health",
+  "kind": "agency",
+  "role": "State agency commenter",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed only as a commenter who responded, with no position stated in the window",
+  "summary": "The Virginia Department of Health is listed among the agencies from which comments were requested and from which comments were received regarding the Randolph Urban Renewal Project. No substantive position, complaint, or opinion attributed to the Virginia Department of Health appears in this window of the document.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "2"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim",
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Comments have been received from: i. Virginia Department of Health",
+  "summary_quote_verified": false,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "2"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Comments have been received from: i. Virginia Department of Health",
+      "quote_verified": false,
+      "entity_as_written": "Virginia Department of Health",
+      "role_as_written": "State agency commenter"
+    }
+  ],
+  "window_pages": [
+    1,
+    12
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 21,
+  "synthetic_no_complaint": true
+}

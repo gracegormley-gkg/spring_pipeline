@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556036811230_C057",
+  "complainer_id": "p1074_35556036811230_K003",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 57,
+  "entity": "Urban Mass Transportation Administration (UMTA)",
+  "kind": "agency",
+  "role": "Federal transit funding agency, co-preparer of EIS",
+  "stance": "in_favor",
+  "stance_confidence": "low",
+  "stance_basis": "co-preparer and co-signatory of the EIS supporting the Buffalo Light Rail Rapid Transit Project",
+  "summary": "UMTA is a co-preparer of this Draft Environmental Impact Statement alongside the NFTA, jointly documenting and supporting the proposed Buffalo Light Rail Rapid Transit Project. UMTA is the federal funding agency receiving the grant application and is responsible for making the required statutory findings before formally approving the project. The agency has been substantially involved in the preparation and development of the draft EIS and will jointly address all substantive comments in the final EIS.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "3"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "UMTA and the NFTA have been substantially involved in the preparation and development of this draft EIS.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "3"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "UMTA and the NFTA have been substantially involved in the preparation and development of this draft EIS.",
+      "quote_verified": true,
+      "entity_as_written": "Urban Mass Transportation Administration (UMTA)",
+      "role_as_written": "Federal transit funding agency, co-preparer of EIS"
+    }
+  ],
+  "window_pages": [
+    1,
+    13
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 3,
+  "synthetic_no_complaint": true
+}

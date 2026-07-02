@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C158",
+  "complainer_id": "p1074_35556036546182_K115",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 158,
+  "entity": "Ernest F. Vilter",
+  "kind": "individual",
+  "role": "Private Citizen, commenter",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "suggests an alternate alignment rather than opposing or endorsing the proposed project outright",
+  "summary": "Ernest F. Vilter, a private citizen, proposed an alternate alignment for the Airport Spur that would leave I-94 at approximately the point where it turns west and then head southwest of the buildings along Howell Avenue. His comment reflects a conditional or alternative-seeking position rather than outright opposition or support. The agency responded that his suggested alignment is similar to Alternate #4 already investigated in the Final EIS.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Ernest F. Vilter suggested an alternate alignment for the Airport Spur that would leave I-94 at about the point where it turns west and then head southwest of the buildings along Howell Avenue.",
+  "evidence_pages": [
+    "249"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R076"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Suggests an alternate which would leave I-94 at about the point where it turns west, and then heads southwest of the buildings along Howell Avenue.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "249"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Suggests an alternate which would leave I-94 at about the point where it turns west, and then heads southwest of the buildings along Howell Avenue.",
+      "quote_verified": true,
+      "entity_as_written": "Ernest F. Vilter",
+      "role_as_written": "Private Citizen, commenter"
+    }
+  ],
+  "window_pages": [
+    239,
+    259
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 115,
+  "synthetic_no_complaint": false
+}

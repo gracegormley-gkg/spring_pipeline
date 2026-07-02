@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C042",
+  "complainer_id": "p1074_35556039563135_K041",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 42,
+  "entity": "U.S. Public Health Service",
+  "kind": "agency",
+  "role": "federal public health authority",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased citation of chloride tolerance standard used as background reference in water quality discussion",
+  "summary": "The U.S. Public Health Service is cited once in the document as the source of the maximum tolerance standard for chloride concentration in domestic water (250 mg/l), with an additional note that a desirable level is less than 25 mg/l based on taste. The citation is used as a reference benchmark in the EIS's discussion of potential groundwater contamination from highway deicing salts, not as a complaint or endorsement of the project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The U.S. Public Health Service is paraphrased as stating that the maximum tolerance of chloride concentration in water for domestic purposes is 250 mg/l, with a desirable quality level of less than 25 mg/l based on taste and palatability rather than health concerns.",
+  "evidence_pages": [
+    "105"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556039563135_R010"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The U.S. Public Health Service states that the maximum tolerance of chloride concentration in water for domestic purposes is 250 mg/l.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "105"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The U.S. Public Health Service states that the maximum tolerance of chloride concentration in water for domestic purposes is 250 mg/l.",
+      "quote_verified": true,
+      "entity_as_written": "U.S. Public Health Service",
+      "role_as_written": "federal public health authority"
+    }
+  ],
+  "window_pages": [
+    95,
+    115
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 41,
+  "synthetic_no_complaint": false
+}

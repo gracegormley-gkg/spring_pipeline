@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C083",
+  "complainer_id": "p0491_35556036091957_K065",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 83,
+  "entity": "Committee For Environmental Information",
+  "kind": "organization",
+  "role": "environmental research institution, cited by NORA",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "cited by NORA as scientific authority concluding Great Basin desert is among most fragile environments in North America, threatened by man-made disturbances including ORV use",
+  "summary": "The Committee For Environmental Information (CEI) is cited by the Nevada Outdoor Recreation Association (NORA) as a respected environmental institution whose research concludes that the Great Basin desert and steppe environment is among the most fragile and threatened in North America. CEI's findings link man-made disturbances—including ORV use—to ecological catastrophe such as toxic plant infestations covering an estimated 20 million acres of western rangelands. CEI is not a direct commenter but is invoked as scientific backing for NORA's opposition to uncontrolled ORV use.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "NORA cites CEI's research concluding that the Great Basin desert and steppe environment is one of the most fragile and threatened in North America, with man-made disturbances (including ORV use) causing toxic plant infestations amounting to an ecological catastrophe across approximately 20 million acres of western rangelands.",
+  "evidence_pages": [
+    "110"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "recent investigations by CEI has developed information which tends to conclude that our Great Basin desert and steppe environment is one of the most fragile and most threatened in North America.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "110"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "recent investigations by CEI has developed information which tends to conclude that our Great Basin desert and steppe environment is one of the most fragile and most threatened in North America.",
+      "quote_verified": true,
+      "entity_as_written": "Committee For Environmental Information",
+      "role_as_written": "environmental research institution, cited by NORA"
+    }
+  ],
+  "window_pages": [
+    100,
+    120
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 65,
+  "synthetic_no_complaint": false
+}

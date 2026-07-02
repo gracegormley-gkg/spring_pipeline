@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C063",
+  "complainer_id": "p1074_35556038322269_K079",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 63,
+  "entity": "State Department of Transportation",
+  "kind": "agency",
+  "role": "California state transportation agency",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes State DOT making Prop. 5 funds available for planning, with future capital funding subject to its concurrence",
+  "summary": "The State Department of Transportation is described as having made its Proposition 5 funds available to cover most of the local share of rapid transit planning efforts, enabling the District to obtain federal planning grants. Future use of State Prop. 5 funds for capital implementation of a rail rapid transit project is described as subject to the concurrence of the State Department of Transportation, along with other agencies. The agency thus plays a supportive but conditional role in the project's financial feasibility.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The State Department of Transportation made its Prop. 5 funds available to provide most of the local share of rapid transit planning efforts, enabling the District to obtain federal rapid transit planning grants.",
+  "evidence_pages": [
+    "243"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Since that time, the State Department of Transportation has made its Prop. 5 funds available to provide most of the local share of rapid transit planning efforts -- thus enabling the District to obtain federal rapid transit planning grants.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "243"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Since that time, the State Department of Transportation has made its Prop. 5 funds available to provide most of the local share of rapid transit planning efforts -- thus enabling the District to obtain federal rapid transit planning grants.",
+      "quote_verified": true,
+      "entity_as_written": "State Department of Transportation",
+      "role_as_written": "California state transportation agency"
+    }
+  ],
+  "window_pages": [
+    233,
+    253
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 79,
+  "synthetic_no_complaint": false
+}

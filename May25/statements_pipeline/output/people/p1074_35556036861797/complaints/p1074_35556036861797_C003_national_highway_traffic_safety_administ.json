@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036861797_C003",
+  "complainer_id": "p1074_35556036861797_K015",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 3,
+  "entity": "National Highway Traffic Safety Administration",
+  "kind": "agency",
+  "role": "Promulgating agency for Average Fuel Economy Standard",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "agency promulgates and defends the 17.2 mpg fuel economy standard as appropriate and representing maximum feasible average fuel economy",
+  "summary": "The National Highway Traffic Safety Administration (NHTSA) is the promulgating agency for the Average Fuel Economy Standard for Nonpassenger Automobiles for Model Year 1979, concluding that 17.2 mpg is the appropriate standard and that a separate 15.8 mpg standard should apply to four-wheel drive recreational vehicles. NHTSA prepared the Final Environmental Impact Statement, analyzing a range of possible standards (16.4–18.7 mpg) and their environmental impacts, and determined the standard represents the maximum feasible average fuel economy for MY 1979. The agency supports the action as beneficial due to significant gasoline savings and relatively minor adverse environmental impacts.",
+  "form": "written_comment",
+  "complaint_summary": "NHTSA describes the action as promulgating an AFES for MY 1979 NPAs, noting the final standard will be between 16.4 and 18.7 mpg based on comments and analysis, with a separate class standard of 14.9–17.4 mpg for four-wheel drive recreational vehicles.",
+  "evidence_pages": [
+    "2-3"
+  ],
+  "statement": {
+    "text": "This action is the promulgation of an average fuel economy standard (AFES) for nonpassenger automobiles (NPA's) not more than 6,000 pounds gross vehicle weight rating (GVWR), which are manufactured in mcdel year (MY) 1979. Vehicles such as vans, pickup trucks, and general utility vehicles (jeeps and other off-road vehicles), not more than 6,000 pounds GVWR are affected. The final AFES has not been established since the comments to the Notice of Proposed Rulemaking (NPRM) for the AFES have not been fully analyzed. The primary issues yet to be resolved are the fuel economy penalty of the proposed MY 1979 emission standard and test procedure changes as described in the Environmental Protection Agency (EPA) Revised Light Duty Truck Regulation for 1979 and Later Hodel Years (40 FR 56316, December 28,\n\n1976), and the desirability of establishing two classes of NPA's with separate fuel economy standards for each class. The two classes would be (1) recreational type NPA's with off-road capabilities and (2) all other NPA's. Because of the uncertainty of the final resolution of these issues, the Environmental Impact Statement (EIS) describes the impact of a range of possible final fuel economy requirements and includes a provision for the two classes. Based on the comments to the Notice of Proposed Rulemaking and information already in the agency's possession, the NHTSA has concluded that the final standard will be between 16.4 mpg and 18.7 mpg. If a separate classification is established for four-wheel drive recreational vehicles, the NHTSA has concluded that the standard for that class of vehicles will be between 14.9 and 17.4 mpg.",
+    "opening_anchor": "This action is the promulgation of an average fuel economy standard (AFES) for nonpassenger automobiles (NPA's) not more than 6,000 pounds gross vehicle weight rating (GVWR)",
+    "closing_anchor": "the NHTSA has concluded that the standard for that class of vehicles will be between 14.9 and 17.4 mpg.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The agency has concluded that the appropriate fuel economy standard for non-passenger automobiles in model year 1979 should be 17.2 mpg.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "2"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The agency has concluded that the appropriate fuel economy standard for non-passenger automobiles in model year 1979 should be 17.2 mpg.",
+      "quote_verified": true,
+      "entity_as_written": "National Highway Traffic Safety Administration",
+      "role_as_written": "Promulgating agency for Average Fuel Economy Standard"
+    }
+  ],
+  "window_pages": [
+    1,
+    12
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 15,
+  "synthetic_no_complaint": false
+}

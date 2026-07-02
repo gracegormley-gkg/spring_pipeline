@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036861797_C067",
+  "complainer_id": "p1074_35556036861797_K033",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 67,
+  "entity": "Congress",
+  "kind": "government",
+  "role": "U.S. legislative body / established passenger automobile standard",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as having established the 19.0 mpg passenger automobile standard, with no position expressed on the nonpassenger standard",
+  "summary": "Congress is referenced in the document as having established a 19.0 mpg average fuel economy standard for passenger automobiles in model year 1979 under section 502(a)(1) of Title V, but set no standard for nonpassenger automobiles. The document also references Congress's role in establishing the mandatory fuel economy program due to diminishing gasoline resources. NHTSA explicitly states that its own current analysis deserves greater weight than Congress's earlier analysis when setting the nonpassenger automobile standard.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Congress is referenced as having established the mandatory fuel economy program due to diminishing gasoline resources and uncertainty of petroleum availability, which the agency uses to justify treating the current pump price of gasoline as an inadequate indicator of its true social value.",
+  "evidence_pages": [
+    "163"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "In section 502(a)(l) of Title V, Congress established an average fuel economy standard for passenger automobiles manufactured in model year 1979 of 19.0 mpg.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "156"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In section 502(a)(l) of Title V, Congress established an average fuel economy standard for passenger automobiles manufactured in model year 1979 of 19.0 mpg.",
+      "quote_verified": true,
+      "entity_as_written": "Congress",
+      "role_as_written": "U.S. legislative body / established passenger automobile standard"
+    }
+  ],
+  "window_pages": [
+    146,
+    165
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 33,
+  "synthetic_no_complaint": false
+}

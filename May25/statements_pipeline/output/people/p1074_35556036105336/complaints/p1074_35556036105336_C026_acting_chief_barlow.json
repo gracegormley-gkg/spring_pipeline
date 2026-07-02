@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036105336_C026",
+  "complainer_id": "p1074_35556036105336_K001",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 26,
+  "entity": "Acting Chief Barlow",
+  "kind": "official",
+  "role": "Acting Chief, Richmond Fire Department",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "directly quoted stating fire service is adequate and statistics don't justify a new station",
+  "summary": "Acting Chief Barlow of the Richmond Fire Department stated in a December 1971 meeting that the existing fire service to the Randolph Project Area is adequate and that statistics do not justify building a new fire station there. His remarks are cited in the EIS to support the conclusion that fire protection will not be adversely affected by the Redevelopment Plan. He neither supports nor opposes the project itself, but rather addresses the adequacy of existing fire services.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Acting Chief Barlow stated in a meeting that existing fire service to the Randolph Project Area is adequate and that statistics would not justify constructing a new fire station there.",
+  "evidence_pages": [
+    "45"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036105336_R001"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "\"no one could disprove our service is adequate\" and that \"statistics would not justify a new fire station in the Randolph Project Area.\"",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "45"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "\"no one could disprove our service is adequate\" and that \"statistics would not justify a new fire station in the Randolph Project Area.\"",
+      "quote_verified": true,
+      "entity_as_written": "Acting Chief Barlow",
+      "role_as_written": "Acting Chief, Richmond Fire Department"
+    }
+  ],
+  "window_pages": [
+    35,
+    55
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 1,
+  "synthetic_no_complaint": false
+}

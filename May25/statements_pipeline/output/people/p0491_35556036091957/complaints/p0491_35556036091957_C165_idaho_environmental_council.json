@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p0491_35556036091957_C165",
+  "complainer_id": "p0491_35556036091957_K132",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 165,
+  "entity": "Idaho Environmental Council",
+  "kind": "organization",
+  "role": "environmental advocacy organization, commenter",
+  "stance": "opposed",
+  "stance_confidence": "high",
+  "stance_basis": "letter urging bold steps to protect public lands from ORV use and calling for strict regulations",
+  "summary": "The Idaho Environmental Council, writing from Moscow, Idaho, submitted a letter dated July 22, 1972 opposing unrestricted ORV use on public lands, arguing that the status quo of largely unlimited off-road vehicle access must change. They enclosed a presentation by one of their directors detailing environmental harms from ORVs and calling for specific regulatory steps including trail closures, noise limits, and snowmobile restrictions in wildlife wintering areas. The Council urged federal land administrators to take bold protective action before problems worsen, and argued that public lands are not playgrounds for machines.",
+  "form": "letter",
+  "complaint_summary": "The Idaho Environmental Council submitted a letter arguing that ORV use causes serious problems on public lands, that the status quo of largely unlimited ORV access must change, and urging federal administrators to take bold protective steps, while also asserting that public lands should not be promoted as playgrounds for ORVs.",
+  "evidence_pages": [
+    "227"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "Idaho Environmental Council\nP. O. Box 3371 - University Station Moscow, Idaho 83843\nJuly 22, 1972",
+    "closing_anchor": "we have that these siministrators will take bold steps now to protect our public lands, before the problems worsen.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "We have that these siministrators will take bold steps now to protect our public lands, before the problems worsen.",
+  "summary_quote_verified": false,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "227"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We have that these siministrators will take bold steps now to protect our public lands, before the problems worsen.",
+      "quote_verified": false,
+      "entity_as_written": "Idaho Environmental Council",
+      "role_as_written": "environmental advocacy organization, commenter"
+    }
+  ],
+  "window_pages": [
+    217,
+    237
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 132,
+  "synthetic_no_complaint": false
+}

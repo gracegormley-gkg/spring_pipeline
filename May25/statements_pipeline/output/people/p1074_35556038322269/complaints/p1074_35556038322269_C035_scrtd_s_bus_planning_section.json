@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C035",
+  "complainer_id": "p1074_35556038322269_K047",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 35,
+  "entity": "SCRTD's Bus Planning Section",
+  "kind": "agency",
+  "role": "Section with West Los Angeles bus route/headway recommendations under consideration",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "described as having bus route/headway recommendations under consideration, with no expressed support or opposition to the project",
+  "summary": "SCRTD's Bus Planning Section is referenced in the document as the body whose West Los Angeles bus route and headway recommendations are under consideration and would be implemented as part of the TSM Alternative (X). The section is mentioned in a factual, descriptive context regarding the content of Alternative X, with no expressed position for or against the project. The Bus Planning Section also coordinated with the CRA on downtown bus routing to interface with the Downtown People Mover.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "SCRTD's Bus Planning Section is described as currently considering West Los Angeles bus route and headway recommendations that would be incorporated into the TSM Alternative (X), which also includes the 1330-bus replacement plans.",
+  "evidence_pages": [
+    "107"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The TSM Alternative (X) includes implementation of SCRTD's current 1330-bus replacement plans as well as West Los Angeles bus route/headway recommendations now under consideration by SCRTD's Bus Planning Section.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "107"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The TSM Alternative (X) includes implementation of SCRTD's current 1330-bus replacement plans as well as West Los Angeles bus route/headway recommendations now under consideration by SCRTD's Bus Planning Section.",
+      "quote_verified": true,
+      "entity_as_written": "SCRTD's Bus Planning Section",
+      "role_as_written": "Section with West Los Angeles bus route/headway recommendations under consideration"
+    }
+  ],
+  "window_pages": [
+    97,
+    117
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 47,
+  "synthetic_no_complaint": false
+}

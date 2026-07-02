@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C246",
+  "complainer_id": "p0491_35556036091957_K192",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 246,
+  "entity": "Board of Trustees of the Internal Improvement Trust Fund",
+  "kind": "agency",
+  "role": "state agency, commenter",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly states 'We have no objection to the statement and executive order 11644'",
+  "summary": "The Board of Trustees of the Internal Improvement Trust Fund reviewed the draft environmental impact statement pertaining to ORV use on public lands and raised no objections to either the statement or Executive Order 11644. Their brief letter, signed by Executive Director Joel Kuperberg, offered no adverse comments and was grouped among agencies endorsing the proposal. No substantive concerns or conditions were attached to their endorsement.",
+  "form": "letter",
+  "complaint_summary": "The Board of Trustees of the Internal Improvement Trust Fund states it has no objection to the draft environmental impact statement or Executive Order 11644 regarding ORV use on public lands.",
+  "evidence_pages": [
+    "321"
+  ],
+  "statement": {
+    "text": "The Trustees' staff has reviewed the draft environmental impact statement.\nWe have no objection to the statement and executive order 11644.\nEnclosed for your interest is a merom copy of an advertisement placed by the American Motorcycle Association in the July issue of CYCLE.",
+    "opening_anchor": "The Trustees' staff has reviewed the draft environmental impact statement.\nWe have no objection to the statement and executive order 11644.",
+    "closing_anchor": "Enclosed for your interest is a merom copy of an advertisement placed by the American Motorcycle Association in the July issue of CYCLE.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We have no objection to the statement and executive order 11644.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "321"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We have no objection to the statement and executive order 11644.",
+      "quote_verified": true,
+      "entity_as_written": "Board of Trustees of the Internal Improvement Trust Fund",
+      "role_as_written": "state agency, commenter"
+    }
+  ],
+  "window_pages": [
+    311,
+    331
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 192,
+  "synthetic_no_complaint": false
+}

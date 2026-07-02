@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036105336_C011",
+  "complainer_id": "p1074_35556036105336_K005",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 11,
+  "entity": "City of Richmond's Department of Planning and Community Development",
+  "kind": "agency",
+  "role": "City department hosting public meeting",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "hosted public meeting at which citizens voted to accept the Plan, facilitating the process without expressing independent support or opposition",
+  "summary": "The City of Richmond's Department of Planning and Community Development hosted a public meeting on November 19, 1972, at which the citizens of Randolph voted to accept the Randolph Plan. The department's role is described as procedural and facilitative within the sequence of decision-making events leading to plan adoption. No independent position for or against the project is attributed to the department itself.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The City of Richmond's Department of Planning and Community Development held a public meeting on November 19, 1972, at which Randolph citizens voted to accept the Plan, representing a key procedural milestone in the project's approval history.",
+  "evidence_pages": [
+    "17"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "On November 19, 1972, at a public meeting in Randolph held by the City of Richmond's Department of Planning and Community Development the citizens of Randolph voted to accept the Plan",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "17"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "On November 19, 1972, at a public meeting in Randolph held by the City of Richmond's Department of Planning and Community Development the citizens of Randolph voted to accept the Plan",
+      "quote_verified": true,
+      "entity_as_written": "City of Richmond's Department of Planning and Community Development",
+      "role_as_written": "City department hosting public meeting"
+    }
+  ],
+  "window_pages": [
+    7,
+    27
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 5,
+  "synthetic_no_complaint": false
+}

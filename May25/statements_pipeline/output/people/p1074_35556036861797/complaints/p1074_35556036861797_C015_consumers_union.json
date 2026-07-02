@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556036861797_C015",
+  "complainer_id": "p1074_35556036861797_K004",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 15,
+  "entity": "Consumers Union",
+  "kind": "organization",
+  "role": "commenter (no substantive comments)",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "listed as commenter without substantive comments under a roster heading",
+  "summary": "Consumers Union is listed among the commenters on the draft environmental impact statement for the Average Fuel Economy Standards for Nonpassenger Automobiles, MY 1979, but submitted no substantive comments. The document window contains no position statements, objections, or endorsements attributable to Consumers Union.",
+  "form": "sectional",
+  "complaint_summary": "Consumers Union is listed as one of sixteen commenters on the draft EIS but is noted as having responded without substantive comments.",
+  "evidence_pages": [
+    "19"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The following organizations responded without substantive comments: Consumers Union",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "19"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "List of Commenters",
+      "quote_verified": true,
+      "entity_as_written": "Consumers Union",
+      "role_as_written": "Commenter"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "112"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "The following organizations responded without substantive comments: Consumers Union",
+      "quote_verified": true,
+      "entity_as_written": "Consumers Union",
+      "role_as_written": "commenter (no substantive comments)"
+    }
+  ],
+  "window_pages": [
+    9,
+    57
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 4,
+  "synthetic_no_complaint": false
+}

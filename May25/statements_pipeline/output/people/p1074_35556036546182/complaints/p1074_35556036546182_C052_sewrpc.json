@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036546182_C052",
+  "complainer_id": "p1074_35556036546182_K040",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 52,
+  "entity": "SEWRPC",
+  "kind": "agency",
+  "role": "regional planning commission",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as testifying in favor of the Airport Spur at both the 1969 and 1974 public hearings",
+  "summary": "SEWRPC (Southeastern Wisconsin Regional Planning Commission) expressed support for construction of the Airport Spur at both the March 25, 1969 Location Public Hearing and the July 11, 1974 Environmental Impact Hearing. The recommended Build Alternative (Corridor No. 5) is also noted as consistent with the SEWRPC Land Use and Transportation Plan, further reflecting the agency's alignment with the project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "At the March 25, 1969 Location Public Hearing, SEWRPC was among the entities that testified in favor of construction of the Airport Spur.",
+  "evidence_pages": [
+    "101"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Testimony revealed that the Milwaukee County Board, Milwaukee Common Council, SEWRPC, Federal Aviation Administration and the American Automobile Association favored construction of the Airport Spur.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "101"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Testimony revealed that the Milwaukee County Board, Milwaukee Common Council, SEWRPC, Federal Aviation Administration and the American Automobile Association favored construction of the Airport Spur.",
+      "quote_verified": true,
+      "entity_as_written": "SEWRPC",
+      "role_as_written": "regional planning commission"
+    }
+  ],
+  "window_pages": [
+    91,
+    111
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 40,
+  "synthetic_no_complaint": false
+}

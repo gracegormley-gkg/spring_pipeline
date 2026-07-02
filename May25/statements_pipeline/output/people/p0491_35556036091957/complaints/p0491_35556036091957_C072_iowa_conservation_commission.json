@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C072",
+  "complainer_id": "p0491_35556036091957_K045",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 72,
+  "entity": "Iowa Conservation Commission",
+  "kind": "agency",
+  "role": "state agency commenter",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letter praises the EIS as complete and concise without objecting to or endorsing the project",
+  "summary": "The Iowa Conservation Commission reviewed the draft environmental statement and found it to be a complete and concise document addressing environmental, social, and economic issues. Their letter is brief and complimentary, noting they will make copies available to the public, and expresses no objections or conditions regarding the proposed ORV regulations.",
+  "form": "letter",
+  "complaint_summary": "The Iowa Conservation Commission reports that its Planning Section found the draft EIS to be a complete and concise statement covering environmental, social, and economic issues, and confirms copies will be made available to the public.",
+  "evidence_pages": [
+    "94"
+  ],
+  "statement": {
+    "text": "Our Planning Section has just reviewed the draft environmental statement for the proposed implementation of Executive Order 11644 pertaining to the use of off-road vehicles on public lands. They report this to be a complete and concise statement dealing not only with the environmental, but also social, and economic issues as well.\nAs you have requested, copies of the Off-Road Recreation Vehicle Report will be made available to the public for review in this office.\nWe appreciate your cooperation in allowing us to review this document.\nSincerely,\nFred A. Priewert, Director Iowa Conservation Commission",
+    "opening_anchor": "Our Planning Section has just reviewed the draft environmental statement for the proposed implementation of Executive Order 11644 pertaining to the use of off-road vehicles on public lands.",
+    "closing_anchor": "We appreciate your cooperation in allowing us to review this document.\n\nSincerely,\nFred A. Priewert, Director Iowa Conservation Commission",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "They report this to be a complete and concise statement dealing not only with the environmental, but also social, and economic issues as well.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "94"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "They report this to be a complete and concise statement dealing not only with the environmental, but also social, and economic issues as well.",
+      "quote_verified": true,
+      "entity_as_written": "Iowa Conservation Commission",
+      "role_as_written": "state agency commenter"
+    }
+  ],
+  "window_pages": [
+    84,
+    104
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 45,
+  "synthetic_no_complaint": false
+}

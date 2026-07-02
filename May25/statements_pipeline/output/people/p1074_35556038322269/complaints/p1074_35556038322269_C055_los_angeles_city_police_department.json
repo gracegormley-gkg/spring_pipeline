@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C055",
+  "complainer_id": "p1074_35556038322269_K067",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 55,
+  "entity": "Los Angeles City Police Department",
+  "kind": "agency",
+  "role": "municipal police department, commenter on security staffing needs",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "estimates 195 sworn personnel needed for Alternative II, implying support only with substantial security staffing",
+  "summary": "The Los Angeles City Police Department was asked to review the proposed transit alternatives from a security standpoint and concluded that Alternatives I–VI would likely produce a 5–10% increase in crime and traffic violations. The department estimated that 195 sworn personnel would be required to provide adequate police services for Alternative II, a figure far exceeding SCRTD's own estimate of 45 officers. The department's position implies the project is feasible only with significantly greater police resources than the transit district proposed.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Los Angeles City Police Department concluded that Alternatives I–VI would cause a possible 5–10% increase in crime and traffic violations, and provided station-by-station crime increase projections for a sample of five stations under Alternatives I and V.",
+  "evidence_pages": [
+    "195"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Based on its judgment, the Los Angeles City Police Department estimates that it would require 195 sworn personnel to provide adequate police services for Alternative II.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "195"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Based on its judgment, the Los Angeles City Police Department estimates that it would require 195 sworn personnel to provide adequate police services for Alternative II.",
+      "quote_verified": true,
+      "entity_as_written": "Los Angeles City Police Department",
+      "role_as_written": "municipal police department, commenter on security staffing needs"
+    }
+  ],
+  "window_pages": [
+    185,
+    205
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 67,
+  "synthetic_no_complaint": false
+}

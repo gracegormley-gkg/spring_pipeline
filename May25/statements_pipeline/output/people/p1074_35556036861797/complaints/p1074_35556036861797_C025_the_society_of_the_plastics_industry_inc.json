@@ -1,0 +1,70 @@
+{
+  "complaint_id": "p1074_35556036861797_C025",
+  "complainer_id": "p1074_35556036861797_K018",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 25,
+  "entity": "The Society of the Plastics Industry, Inc. (SPI)",
+  "kind": "organization",
+  "role": "industry association / commenter",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes SPI providing data to challenge draft EIS characterization of plastics incineration, while agency neither endorses nor refutes the finding",
+  "summary": "The Society of the Plastics Industry, Inc. (SPI) appears in the document as a listed commenter and as a source of data on plastics incineration. SPI provided findings that burning 2–4 percent plastics with other refuse in incinerators does not damage incinerators or significantly change effluent gas composition, challenging the draft EIS's negative characterization of plastics incineration. The agency acknowledged SPI's data but neither endorsed nor refuted it, citing its preliminary nature.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "SPI reported that burning 2 to 4 percent plastics with other refuse in incinerators does not damage the incinerators or significantly change the composition of the effluent gas, challenging the draft EIS's negative characterization of plastics incineration.",
+  "evidence_pages": [
+    "19"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036861797_R011"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "SPI disagreed with the statement in the draft EIS that, \"Despite their high heat value, most plastics are viewed as unsuitable for incineration because of damage to the incinerator and air pollution should the combustion be less than complete.\"",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased",
+    "sectional"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "19"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "List of Commenters",
+      "quote_verified": true,
+      "entity_as_written": "The Society of the Plastics Industry, Inc.",
+      "role_as_written": "Commenter"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "92"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "SPI disagreed with the statement in the draft EIS that, \"Despite their high heat value, most plastics are viewed as unsuitable for incineration because of damage to the incinerator and air pollution should the combustion be less than complete.\"",
+      "quote_verified": true,
+      "entity_as_written": "The Society of the Plastics Industry, Inc. (SPI)",
+      "role_as_written": "industry association / commenter"
+    }
+  ],
+  "window_pages": [
+    9,
+    57
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 18,
+  "synthetic_no_complaint": false
+}

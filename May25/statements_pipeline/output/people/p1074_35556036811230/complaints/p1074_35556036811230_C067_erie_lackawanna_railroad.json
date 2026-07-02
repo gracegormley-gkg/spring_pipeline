@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556036811230_C067",
+  "complainer_id": "p1074_35556036811230_K037",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 67,
+  "entity": "Erie-Lackawanna Railroad",
+  "kind": "organization",
+  "role": "Property owner in Terminal Yard area",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "mentioned only as a property owner whose land would be acquired; no stated position on the project",
+  "summary": "Erie-Lackawanna Railroad is mentioned solely as the owner of land between the Delaware, Lackawanna & Western Railroad depot and South Park Avenue, which would be acquired as part of the Terminal Yard site. The document does not record any statement, comment, or position from Erie-Lackawanna Railroad regarding the project. The entity appears only in a factual description of property ownership relevant to potential acquisitions.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "186"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Acquisitions for the yard and service facilities (Table 5-6 and 9-1) would include the Delaware, Lackawanna & Western Railroad depot (presently City-owned), a portion of the City-owned block bounded by South Park Avenue and Main, Perry, and Washington Streets, portions of the privately-owned blocks bounded by South Park Avenue and Washington, Perry, and Illinois Streets, and the land between the depot and South Park Avenue (owned by the Erie-Lackawanna Railroad)",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "186"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Acquisitions for the yard and service facilities (Table 5-6 and 9-1) would include the Delaware, Lackawanna & Western Railroad depot (presently City-owned), a portion of the City-owned block bounded by South Park Avenue and Main, Perry, and Washington Streets, portions of the privately-owned blocks bounded by South Park Avenue and Washington, Perry, and Illinois Streets, and the land between the depot and South Park Avenue (owned by the Erie-Lackawanna Railroad)",
+      "quote_verified": true,
+      "entity_as_written": "Erie-Lackawanna Railroad",
+      "role_as_written": "Property owner in Terminal Yard area"
+    }
+  ],
+  "window_pages": [
+    176,
+    196
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 37,
+  "synthetic_no_complaint": true
+}

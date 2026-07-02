@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p0491_35556036091957_C103",
+  "complainer_id": "p0491_35556036091957_K068",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 103,
+  "entity": "David R. Cole",
+  "kind": "individual",
+  "role": "Manager, Colorado Mining Association",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "letter explicitly states Colorado Mining Association objects to regulations and details adverse effects on mining",
+  "summary": "David R. Cole, Manager of the Colorado Mining Association, submitted a formal letter opposing the proposed implementation of Executive Order 11644, arguing that the regulations would adversely affect prospecting and mining on public lands. He specifically objected to a permit system for ORV use in mining, citing that it would hinder legitimate mineral exploration, that ORV needs cannot be anticipated far in advance, and that permit applications would reveal competitive exploration plans.",
+  "form": "letter",
+  "complaint_summary": "The Colorado Mining Association objects to the proposed ORV regulations, arguing that a permit system would unduly hinder legitimate mineral exploration and mining on public lands, that ORV needs cannot be anticipated far in advance, and that permit applications would expose competitive exploration plans.",
+  "evidence_pages": [
+    "138"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "The Colorado Mining Association objects to regulations currently under consideration. These regulations would have an adverse effect on prospecting for and mining of minerals on public lands.",
+    "closing_anchor": "Thank you for the opportunity to bring these views to your attention.\n\nSincerely yours,\n\nCOLORADO MINING ASSOCIATION\n\nDavid R. Cole\nManager",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "The Colorado Mining Association objects to regulations currently under consideration. These regulations would have an adverse effect on prospecting for and mining of minerals on public lands.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "138"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Colorado Mining Association objects to regulations currently under consideration. These regulations would have an adverse effect on prospecting for and mining of minerals on public lands.",
+      "quote_verified": true,
+      "entity_as_written": "David R. Cole",
+      "role_as_written": "Manager, Colorado Mining Association"
+    }
+  ],
+  "window_pages": [
+    128,
+    148
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 68,
+  "synthetic_no_complaint": false
+}

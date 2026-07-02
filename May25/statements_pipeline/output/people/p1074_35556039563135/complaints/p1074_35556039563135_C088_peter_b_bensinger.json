@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C088",
+  "complainer_id": "p1074_35556039563135_K103",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 88,
+  "entity": "Peter B. Bensinger",
+  "kind": "official",
+  "role": "Director, Illinois Department of Corrections",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "direct quote stating no adverse long range effect on department facilities",
+  "summary": "Peter B. Bensinger, as Director of the Illinois Department of Corrections, reviewed the draft environmental statement and found that the construction of the project would present no adverse long-range effect on the operation of facilities under his department's jurisdiction. His comment was purely informational and non-objecting, expressing neither support nor opposition to the project.",
+  "form": "sectional",
+  "complaint_summary": "The Department of Corrections, under Director Bensinger, stated that the construction of the project will present no adverse long-range effect on the operation of facilities under its jurisdiction.",
+  "evidence_pages": [
+    "179"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556039563135_R046"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "the construction of this project will present no adverse long range effect on the operation of facilities under the jurisdiction of this department.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "179"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "the construction of this project will present no adverse long range effect on the operation of facilities under the jurisdiction of this department.",
+      "quote_verified": true,
+      "entity_as_written": "Peter B. Bensinger",
+      "role_as_written": "Director, Illinois Department of Corrections"
+    }
+  ],
+  "window_pages": [
+    169,
+    189
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 103,
+  "synthetic_no_complaint": false
+}

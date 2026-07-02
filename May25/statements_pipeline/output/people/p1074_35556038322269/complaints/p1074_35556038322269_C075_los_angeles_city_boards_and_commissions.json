@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C075",
+  "complainer_id": "p1074_35556038322269_K086",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 75,
+  "entity": "Los Angeles City Boards and Commissions",
+  "kind": "agency",
+  "role": "City boards and commissions briefed on the project",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes interest and appreciation for early consultation without expressing support or opposition to any alternative",
+  "summary": "Los Angeles City Boards and Commissions were briefed on the Regional Core Transit Alternatives Analysis project during the planning stages. Eight of the ten commissions contacted requested presentations, and all expressed strong interest in the project, asking for follow-up presentations on the alternatives. They were pleased to be consulted early and appreciated having their comments solicited, but no specific stance for or against any alternative is attributed to them.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Eight of ten LA City Boards and Commissions contacted requested briefings, expressed keen interest in the project, asked for follow-up presentations on the alternatives, and appreciated being consulted early in the planning process.",
+  "evidence_pages": [
+    "292"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "All of the Commissions briefed were very interested in the project and asked for a follow-up presentation on the alternatives. They were pleased to be informed during the planning stages, and appreciated the fact that their comments were solicited this early in the Alternative Analysis.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "292"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "All of the Commissions briefed were very interested in the project and asked for a follow-up presentation on the alternatives. They were pleased to be informed during the planning stages, and appreciated the fact that their comments were solicited this early in the Alternative Analysis.",
+      "quote_verified": true,
+      "entity_as_written": "Los Angeles City Boards and Commissions",
+      "role_as_written": "City boards and commissions briefed on the project"
+    }
+  ],
+  "window_pages": [
+    282,
+    293
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 86,
+  "synthetic_no_complaint": false
+}

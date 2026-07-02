@@ -1,0 +1,69 @@
+{
+  "complaint_id": "p0491_35556036091957_C037",
+  "complainer_id": "p0491_35556036091957_K022",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 37,
+  "entity": "Mining Association of Southern California",
+  "kind": "organization",
+  "role": "industry association, commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as objecting to permits being required for miners",
+  "summary": "The Mining Association of Southern California objected to the requirement that miners obtain permits under the proposed ORV regulations, aligning with other mining industry groups seeking exemption from such requirements. The Department of the Interior responded to this and similar mining-industry complaints by excepting mining, oil, and gas geophysical exploration equipment from the definition of off-road vehicles in the final environmental statement and regulations.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Mining Association of Southern California objected to permits being required for miners under the proposed ORV regulations.",
+  "evidence_pages": [
+    "39"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p0491_35556036091957_R013"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The American Mining Congress has sent us a copy of its letter of July 6, 1972, objecting to proposed regulations pertaining to the use of off-road vehicles on the public lands. We agree with these objections.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "39"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Mining Association of Southern California - objected to permits being required for miners.",
+      "quote_verified": false,
+      "entity_as_written": "Mining Association of Southern California",
+      "role_as_written": "Mining industry commenter"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "214"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The American Mining Congress has sent us a copy of its letter of July 6, 1972, objecting to proposed regulations pertaining to the use of off-road vehicles on the public lands. We agree with these objections.",
+      "quote_verified": true,
+      "entity_as_written": "Mining Association of Southern California",
+      "role_as_written": "industry association, commenter"
+    }
+  ],
+  "window_pages": [
+    29,
+    54
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 22,
+  "synthetic_no_complaint": false
+}

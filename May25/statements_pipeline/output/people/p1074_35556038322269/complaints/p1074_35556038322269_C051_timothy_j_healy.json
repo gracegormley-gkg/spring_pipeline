@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556038322269_C051",
+  "complainer_id": "p1074_35556038322269_K059",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 51,
+  "entity": "Timothy J. Healy",
+  "kind": "individual",
+  "role": "researcher/author of BART energy study for Caltrans",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "cited as a data source for construction energy estimates, with no personal position expressed",
+  "summary": "Timothy J. Healy is referenced solely as the author of a 1973 Caltrans study on BART energy requirements, which is used to estimate that construction of grade-separated rapid transit alternatives could require up to 55% of propulsion energy. His work is cited as a data input rather than as an advocacy position, and the document notes his results have never been verified nor substantiated. He does not express any personal stance on the project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Healy's 1973 Caltrans study on BART energy requirements is cited to estimate that construction of grade-separated rapid transit alternatives (I-VI) could require as much as 55% of propulsion energy, though the document notes these results are unverified and purely hypothetical.",
+  "evidence_pages": [
+    "165"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556038322269_R001"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Based upon energy estimates for BART construction made by Timothy J. Healy, \"Energy Requirements of the BART System\", developed for Caltrans 1973, construction of the grade-separated rapid transit alternatives (I-VI) could require as much as 55 percent of the propulsion energy.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "165"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Based upon energy estimates for BART construction made by Timothy J. Healy, \"Energy Requirements of the BART System\", developed for Caltrans 1973, construction of the grade-separated rapid transit alternatives (I-VI) could require as much as 55 percent of the propulsion energy.",
+      "quote_verified": true,
+      "entity_as_written": "Timothy J. Healy",
+      "role_as_written": "researcher/author of BART energy study for Caltrans"
+    }
+  ],
+  "window_pages": [
+    155,
+    175
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 59,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,2445 @@
+{
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "title": "Average fuel economy standard for nonpassenger automobiles, model year 1979 : environmental impact statement.",
+  "n_pages": 165,
+  "n_chunks": 4,
+  "n_raw_rows": 66,
+  "n_complainers": 35,
+  "n_complaints": 69,
+  "n_responses": 41,
+  "stance_counts": {
+    "opposed": 12,
+    "neutral": 14,
+    "conditional": 7,
+    "in_favor": 2
+  },
+  "stance_confidence_counts": {
+    "high": 1,
+    "medium": 28,
+    "low": 6,
+    "unknown": 0
+  },
+  "review_counts": {
+    "needs_review": 7,
+    "auto_ok": 28,
+    "reasons": {
+      "low_stance_confidence": 6,
+      "no_complaints": 2,
+      "quote_not_verbatim": 1
+    }
+  },
+  "statement_form_counts": {
+    "letter": 0,
+    "testimony": 0,
+    "written_comment": 4,
+    "narrator_paraphrase": 48,
+    "sectional": 14,
+    "none": 3,
+    "present": 66,
+    "absent": 3
+  },
+  "response_form_counts": {
+    "agency_response": 11,
+    "preparer_reply": 0,
+    "discussion": 30,
+    "none": 0,
+    "present": 41,
+    "absent": 0
+  },
+  "elapsed_sec": 130.9,
+  "usage": {
+    "extract": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 4,
+          "input_tokens": 51864,
+          "output_tokens": 6420,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.2519
+        }
+      ],
+      "total": {
+        "calls": 4,
+        "input_tokens": 51864,
+        "output_tokens": 6420,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.2519
+      }
+    },
+    "find_statement": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 35,
+          "input_tokens": 426928,
+          "output_tokens": 22780,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 1.6225
+        }
+      ],
+      "total": {
+        "calls": 35,
+        "input_tokens": 426928,
+        "output_tokens": 22780,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 1.6225
+      }
+    },
+    "total": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 39,
+          "input_tokens": 478792,
+          "output_tokens": 29200,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 1.8744
+        }
+      ],
+      "total": {
+        "calls": 39,
+        "input_tokens": 478792,
+        "output_tokens": 29200,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 1.8744
+      }
+    }
+  },
+  "schema": {
+    "ids": {
+      "complainer_id": "<doc_id>_K<NNN> — one per merged entity",
+      "complaint_id": "<doc_id>_C<NNN> — one per complaint instance (entities can have multiple)",
+      "child_id": "<doc_id>_R<NNN> — one per agency response"
+    },
+    "stance_vocabulary": [
+      "in_favor",
+      "opposed",
+      "conditional",
+      "neutral"
+    ],
+    "stance_confidence_vocabulary": [
+      "high",
+      "medium",
+      "low"
+    ],
+    "kind_vocabulary": [
+      "individual",
+      "official",
+      "organization",
+      "agency",
+      "tribe",
+      "government",
+      "other"
+    ],
+    "statement_forms": [
+      "letter",
+      "testimony",
+      "written_comment",
+      "narrator_paraphrase",
+      "sectional",
+      "none"
+    ],
+    "response_forms": [
+      "agency_response",
+      "preparer_reply",
+      "discussion",
+      "none"
+    ],
+    "stance_source": "Decided by find_statement at the entity level — same stance applies to all complaints from the same entity. Capped to 'medium' when no contiguous statement is verified for any complaint; forced 'low' when there are no complaints.",
+    "page_numbers": "EXACT — from per-page JSON source.",
+    "statement_text": "Sliced from the doc text between verbatim opening/closing anchors. Null when either anchor doesn't verify.",
+    "response_text": "Sliced from the doc text between verbatim response anchors. Null when either anchor doesn't verify or no response is in the window.",
+    "needs_human_review": "True when kind=='individual' OR summary_quote_verified is False OR stance_confidence=='low' OR no complaints were produced.",
+    "merge_rule": "One row per entity. find_statement may then return multiple complaints per entity — each becomes its own complaint file.",
+    "cost_note": "USD costs are ESTIMATES; verify against AWS Bedrock invoice."
+  },
+  "sequence": [
+    {
+      "order": 1,
+      "complaint_id": "p1074_35556036861797_C001",
+      "complainer_id": "p1074_35556036861797_K013",
+      "complaint_file": "complaints/p1074_35556036861797_C001_john_w_snow.json",
+      "response_ids": []
+    },
+    {
+      "order": 2,
+      "complaint_id": "p1074_35556036861797_C002",
+      "complainer_id": "p1074_35556036861797_K015",
+      "complaint_file": "complaints/p1074_35556036861797_C002_national_highway_traffic_safety_administ.json",
+      "response_ids": []
+    },
+    {
+      "order": 3,
+      "complaint_id": "p1074_35556036861797_C003",
+      "complainer_id": "p1074_35556036861797_K015",
+      "complaint_file": "complaints/p1074_35556036861797_C003_national_highway_traffic_safety_administ.json",
+      "response_ids": []
+    },
+    {
+      "order": 4,
+      "complaint_id": "p1074_35556036861797_C004",
+      "complainer_id": "p1074_35556036861797_K015",
+      "complaint_file": "complaints/p1074_35556036861797_C004_national_highway_traffic_safety_administ.json",
+      "response_ids": []
+    },
+    {
+      "order": 5,
+      "complaint_id": "p1074_35556036861797_C005",
+      "complainer_id": "p1074_35556036861797_K015",
+      "complaint_file": "complaints/p1074_35556036861797_C005_national_highway_traffic_safety_administ.json",
+      "response_ids": []
+    },
+    {
+      "order": 6,
+      "complaint_id": "p1074_35556036861797_C006",
+      "complainer_id": "p1074_35556036861797_K001",
+      "complaint_file": "complaints/p1074_35556036861797_C006_american_motors_corporation_amc.json",
+      "response_ids": []
+    },
+    {
+      "order": 7,
+      "complaint_id": "p1074_35556036861797_C007",
+      "complainer_id": "p1074_35556036861797_K007",
+      "complaint_file": "complaints/p1074_35556036861797_C007_environmental_protection_agency_epa.json",
+      "response_ids": []
+    },
+    {
+      "order": 8,
+      "complaint_id": "p1074_35556036861797_C008",
+      "complainer_id": "p1074_35556036861797_K010",
+      "complaint_file": "complaints/p1074_35556036861797_C008_ford_motor_company.json",
+      "response_ids": []
+    },
+    {
+      "order": 9,
+      "complaint_id": "p1074_35556036861797_C009",
+      "complainer_id": "p1074_35556036861797_K011",
+      "complaint_file": "complaints/p1074_35556036861797_C009_general_motors_corporation_gm.json",
+      "response_ids": [
+        "p1074_35556036861797_R001"
+      ]
+    },
+    {
+      "order": 10,
+      "complaint_id": "p1074_35556036861797_C010",
+      "complainer_id": "p1074_35556036861797_K012",
+      "complaint_file": "complaints/p1074_35556036861797_C010_international_harvester_corporation_ih.json",
+      "response_ids": []
+    },
+    {
+      "order": 11,
+      "complaint_id": "p1074_35556036861797_C011",
+      "complainer_id": "p1074_35556036861797_K001",
+      "complaint_file": "complaints/p1074_35556036861797_C011_american_motors_corporation_amc.json",
+      "response_ids": [
+        "p1074_35556036861797_R002"
+      ]
+    },
+    {
+      "order": 12,
+      "complaint_id": "p1074_35556036861797_C012",
+      "complainer_id": "p1074_35556036861797_K001",
+      "complaint_file": "complaints/p1074_35556036861797_C012_american_motors_corporation_amc.json",
+      "response_ids": [
+        "p1074_35556036861797_R003"
+      ]
+    },
+    {
+      "order": 13,
+      "complaint_id": "p1074_35556036861797_C013",
+      "complainer_id": "p1074_35556036861797_K003",
+      "complaint_file": "complaints/p1074_35556036861797_C013_chrysler_corporation.json",
+      "response_ids": [
+        "p1074_35556036861797_R004"
+      ]
+    },
+    {
+      "order": 14,
+      "complaint_id": "p1074_35556036861797_C014",
+      "complainer_id": "p1074_35556036861797_K003",
+      "complaint_file": "complaints/p1074_35556036861797_C014_chrysler_corporation.json",
+      "response_ids": [
+        "p1074_35556036861797_R005"
+      ]
+    },
+    {
+      "order": 15,
+      "complaint_id": "p1074_35556036861797_C015",
+      "complainer_id": "p1074_35556036861797_K004",
+      "complaint_file": "complaints/p1074_35556036861797_C015_consumers_union.json",
+      "response_ids": []
+    },
+    {
+      "order": 16,
+      "complaint_id": "p1074_35556036861797_C016",
+      "complainer_id": "p1074_35556036861797_K005",
+      "complaint_file": "complaints/p1074_35556036861797_C016_department_of_transportation.json",
+      "response_ids": []
+    },
+    {
+      "order": 17,
+      "complaint_id": "p1074_35556036861797_C017",
+      "complainer_id": "p1074_35556036861797_K007",
+      "complaint_file": "complaints/p1074_35556036861797_C017_environmental_protection_agency_epa.json",
+      "response_ids": [
+        "p1074_35556036861797_R006"
+      ]
+    },
+    {
+      "order": 18,
+      "complaint_id": "p1074_35556036861797_C018",
+      "complainer_id": "p1074_35556036861797_K008",
+      "complaint_file": "complaints/p1074_35556036861797_C018_federal_energy_administration_fea.json",
+      "response_ids": [
+        "p1074_35556036861797_R007"
+      ]
+    },
+    {
+      "order": 19,
+      "complaint_id": "p1074_35556036861797_C019",
+      "complainer_id": "p1074_35556036861797_K009",
+      "complaint_file": "complaints/p1074_35556036861797_C019_federal_highway_administration.json",
+      "response_ids": []
+    },
+    {
+      "order": 20,
+      "complaint_id": "p1074_35556036861797_C020",
+      "complainer_id": "p1074_35556036861797_K010",
+      "complaint_file": "complaints/p1074_35556036861797_C020_ford_motor_company.json",
+      "response_ids": [
+        "p1074_35556036861797_R008"
+      ]
+    },
+    {
+      "order": 21,
+      "complaint_id": "p1074_35556036861797_C021",
+      "complainer_id": "p1074_35556036861797_K010",
+      "complaint_file": "complaints/p1074_35556036861797_C021_ford_motor_company.json",
+      "response_ids": [
+        "p1074_35556036861797_R009"
+      ]
+    },
+    {
+      "order": 22,
+      "complaint_id": "p1074_35556036861797_C022",
+      "complainer_id": "p1074_35556036861797_K012",
+      "complaint_file": "complaints/p1074_35556036861797_C022_international_harvester_corporation_ih.json",
+      "response_ids": [
+        "p1074_35556036861797_R010"
+      ]
+    },
+    {
+      "order": 23,
+      "complaint_id": "p1074_35556036861797_C023",
+      "complainer_id": "p1074_35556036861797_K014",
+      "complaint_file": "complaints/p1074_35556036861797_C023_national_conference_of_governors_highway.json",
+      "response_ids": []
+    },
+    {
+      "order": 24,
+      "complaint_id": "p1074_35556036861797_C024",
+      "complainer_id": "p1074_35556036861797_K018",
+      "complaint_file": "complaints/p1074_35556036861797_C024_the_society_of_the_plastics_industry_inc.json",
+      "response_ids": []
+    },
+    {
+      "order": 25,
+      "complaint_id": "p1074_35556036861797_C025",
+      "complainer_id": "p1074_35556036861797_K018",
+      "complaint_file": "complaints/p1074_35556036861797_C025_the_society_of_the_plastics_industry_inc.json",
+      "response_ids": [
+        "p1074_35556036861797_R011"
+      ]
+    },
+    {
+      "order": 26,
+      "complaint_id": "p1074_35556036861797_C026",
+      "complainer_id": "p1074_35556036861797_K019",
+      "complaint_file": "complaints/p1074_35556036861797_C026_u_s_department_of_agriculture.json",
+      "response_ids": []
+    },
+    {
+      "order": 27,
+      "complaint_id": "p1074_35556036861797_C027",
+      "complainer_id": "p1074_35556036861797_K020",
+      "complaint_file": "complaints/p1074_35556036861797_C027_u_s_department_of_labor.json",
+      "response_ids": []
+    },
+    {
+      "order": 28,
+      "complaint_id": "p1074_35556036861797_C028",
+      "complainer_id": "p1074_35556036861797_K021",
+      "complaint_file": "complaints/p1074_35556036861797_C028_u_s_department_of_the_interior.json",
+      "response_ids": []
+    },
+    {
+      "order": 29,
+      "complaint_id": "p1074_35556036861797_C029",
+      "complainer_id": "p1074_35556036861797_K022",
+      "complaint_file": "complaints/p1074_35556036861797_C029_uaw.json",
+      "response_ids": []
+    },
+    {
+      "order": 30,
+      "complaint_id": "p1074_35556036861797_C030",
+      "complainer_id": "p1074_35556036861797_K006",
+      "complaint_file": "complaints/p1074_35556036861797_C030_domestic_manufacturers_of_npa_s.json",
+      "response_ids": [
+        "p1074_35556036861797_R012"
+      ]
+    },
+    {
+      "order": 31,
+      "complaint_id": "p1074_35556036861797_C031",
+      "complainer_id": "p1074_35556036861797_K016",
+      "complaint_file": "complaints/p1074_35556036861797_C031_several_commenters.json",
+      "response_ids": [
+        "p1074_35556036861797_R013"
+      ]
+    },
+    {
+      "order": 32,
+      "complaint_id": "p1074_35556036861797_C032",
+      "complainer_id": "p1074_35556036861797_K006",
+      "complaint_file": "complaints/p1074_35556036861797_C032_domestic_manufacturers_of_npa_s.json",
+      "response_ids": [
+        "p1074_35556036861797_R014"
+      ]
+    },
+    {
+      "order": 33,
+      "complaint_id": "p1074_35556036861797_C033",
+      "complainer_id": "p1074_35556036861797_K006",
+      "complaint_file": "complaints/p1074_35556036861797_C033_domestic_manufacturers_of_npa_s.json",
+      "response_ids": [
+        "p1074_35556036861797_R015"
+      ]
+    },
+    {
+      "order": 34,
+      "complaint_id": "p1074_35556036861797_C034",
+      "complainer_id": "p1074_35556036861797_K017",
+      "complaint_file": "complaints/p1074_35556036861797_C034_the_society_of_the_plastics_industries_i.json",
+      "response_ids": [
+        "p1074_35556036861797_R016"
+      ]
+    },
+    {
+      "order": 35,
+      "complaint_id": "p1074_35556036861797_C035",
+      "complainer_id": "p1074_35556036861797_K024",
+      "complaint_file": "complaints/p1074_35556036861797_C035_nhtsa.json",
+      "response_ids": [
+        "p1074_35556036861797_R017"
+      ]
+    },
+    {
+      "order": 36,
+      "complaint_id": "p1074_35556036861797_C036",
+      "complainer_id": "p1074_35556036861797_K025",
+      "complaint_file": "complaints/p1074_35556036861797_C036_amc.json",
+      "response_ids": [
+        "p1074_35556036861797_R018"
+      ]
+    },
+    {
+      "order": 37,
+      "complaint_id": "p1074_35556036861797_C037",
+      "complainer_id": "p1074_35556036861797_K025",
+      "complaint_file": "complaints/p1074_35556036861797_C037_amc.json",
+      "response_ids": [
+        "p1074_35556036861797_R019"
+      ]
+    },
+    {
+      "order": 38,
+      "complaint_id": "p1074_35556036861797_C038",
+      "complainer_id": "p1074_35556036861797_K025",
+      "complaint_file": "complaints/p1074_35556036861797_C038_amc.json",
+      "response_ids": [
+        "p1074_35556036861797_R020"
+      ]
+    },
+    {
+      "order": 39,
+      "complaint_id": "p1074_35556036861797_C039",
+      "complainer_id": "p1074_35556036861797_K025",
+      "complaint_file": "complaints/p1074_35556036861797_C039_amc.json",
+      "response_ids": [
+        "p1074_35556036861797_R021"
+      ]
+    },
+    {
+      "order": 40,
+      "complaint_id": "p1074_35556036861797_C040",
+      "complainer_id": "p1074_35556036861797_K025",
+      "complaint_file": "complaints/p1074_35556036861797_C040_amc.json",
+      "response_ids": [
+        "p1074_35556036861797_R022"
+      ]
+    },
+    {
+      "order": 41,
+      "complaint_id": "p1074_35556036861797_C041",
+      "complainer_id": "p1074_35556036861797_K025",
+      "complaint_file": "complaints/p1074_35556036861797_C041_amc.json",
+      "response_ids": [
+        "p1074_35556036861797_R023"
+      ]
+    },
+    {
+      "order": 42,
+      "complaint_id": "p1074_35556036861797_C042",
+      "complainer_id": "p1074_35556036861797_K025",
+      "complaint_file": "complaints/p1074_35556036861797_C042_amc.json",
+      "response_ids": [
+        "p1074_35556036861797_R024"
+      ]
+    },
+    {
+      "order": 43,
+      "complaint_id": "p1074_35556036861797_C043",
+      "complainer_id": "p1074_35556036861797_K025",
+      "complaint_file": "complaints/p1074_35556036861797_C043_amc.json",
+      "response_ids": [
+        "p1074_35556036861797_R025"
+      ]
+    },
+    {
+      "order": 44,
+      "complaint_id": "p1074_35556036861797_C044",
+      "complainer_id": "p1074_35556036861797_K029",
+      "complaint_file": "complaints/p1074_35556036861797_C044_u_s_department_of_agriculture_forest_ser.json",
+      "response_ids": [
+        "p1074_35556036861797_R026"
+      ]
+    },
+    {
+      "order": 45,
+      "complaint_id": "p1074_35556036861797_C045",
+      "complainer_id": "p1074_35556036861797_K030",
+      "complaint_file": "complaints/p1074_35556036861797_C045_u_s_department_of_the_interior_bureau_of.json",
+      "response_ids": []
+    },
+    {
+      "order": 46,
+      "complaint_id": "p1074_35556036861797_C046",
+      "complainer_id": "p1074_35556036861797_K031",
+      "complaint_file": "complaints/p1074_35556036861797_C046_u_s_department_of_transportation.json",
+      "response_ids": []
+    },
+    {
+      "order": 47,
+      "complaint_id": "p1074_35556036861797_C047",
+      "complainer_id": "p1074_35556036861797_K028",
+      "complaint_file": "complaints/p1074_35556036861797_C047_international_harvester.json",
+      "response_ids": [
+        "p1074_35556036861797_R027"
+      ]
+    },
+    {
+      "order": 48,
+      "complaint_id": "p1074_35556036861797_C048",
+      "complainer_id": "p1074_35556036861797_K026",
+      "complaint_file": "complaints/p1074_35556036861797_C048_chrysler.json",
+      "response_ids": []
+    },
+    {
+      "order": 49,
+      "complaint_id": "p1074_35556036861797_C049",
+      "complainer_id": "p1074_35556036861797_K032",
+      "complaint_file": "complaints/p1074_35556036861797_C049_united_auto_workers_uaw.json",
+      "response_ids": [
+        "p1074_35556036861797_R028"
+      ]
+    },
+    {
+      "order": 50,
+      "complaint_id": "p1074_35556036861797_C050",
+      "complainer_id": "p1074_35556036861797_K027",
+      "complaint_file": "complaints/p1074_35556036861797_C050_general_motors.json",
+      "response_ids": [
+        "p1074_35556036861797_R029"
+      ]
+    },
+    {
+      "order": 51,
+      "complaint_id": "p1074_35556036861797_C051",
+      "complainer_id": "p1074_35556036861797_K027",
+      "complaint_file": "complaints/p1074_35556036861797_C051_general_motors.json",
+      "response_ids": [
+        "p1074_35556036861797_R030"
+      ]
+    },
+    {
+      "order": 52,
+      "complaint_id": "p1074_35556036861797_C052",
+      "complainer_id": "p1074_35556036861797_K035",
+      "complaint_file": "complaints/p1074_35556036861797_C052_ford.json",
+      "response_ids": [
+        "p1074_35556036861797_R031"
+      ]
+    },
+    {
+      "order": 53,
+      "complaint_id": "p1074_35556036861797_C053",
+      "complainer_id": "p1074_35556036861797_K035",
+      "complaint_file": "complaints/p1074_35556036861797_C053_ford.json",
+      "response_ids": [
+        "p1074_35556036861797_R032"
+      ]
+    },
+    {
+      "order": 54,
+      "complaint_id": "p1074_35556036861797_C054",
+      "complainer_id": "p1074_35556036861797_K034",
+      "complaint_file": "complaints/p1074_35556036861797_C054_epa.json",
+      "response_ids": []
+    },
+    {
+      "order": 55,
+      "complaint_id": "p1074_35556036861797_C055",
+      "complainer_id": "p1074_35556036861797_K024",
+      "complaint_file": "complaints/p1074_35556036861797_C055_nhtsa.json",
+      "response_ids": []
+    },
+    {
+      "order": 56,
+      "complaint_id": "p1074_35556036861797_C056",
+      "complainer_id": "p1074_35556036861797_K026",
+      "complaint_file": "complaints/p1074_35556036861797_C056_chrysler.json",
+      "response_ids": [
+        "p1074_35556036861797_R033"
+      ]
+    },
+    {
+      "order": 57,
+      "complaint_id": "p1074_35556036861797_C057",
+      "complainer_id": "p1074_35556036861797_K027",
+      "complaint_file": "complaints/p1074_35556036861797_C057_general_motors.json",
+      "response_ids": []
+    },
+    {
+      "order": 58,
+      "complaint_id": "p1074_35556036861797_C058",
+      "complainer_id": "p1074_35556036861797_K028",
+      "complaint_file": "complaints/p1074_35556036861797_C058_international_harvester.json",
+      "response_ids": [
+        "p1074_35556036861797_R034"
+      ]
+    },
+    {
+      "order": 59,
+      "complaint_id": "p1074_35556036861797_C059",
+      "complainer_id": "p1074_35556036861797_K035",
+      "complaint_file": "complaints/p1074_35556036861797_C059_ford.json",
+      "response_ids": [
+        "p1074_35556036861797_R035"
+      ]
+    },
+    {
+      "order": 60,
+      "complaint_id": "p1074_35556036861797_C060",
+      "complainer_id": "p1074_35556036861797_K034",
+      "complaint_file": "complaints/p1074_35556036861797_C060_epa.json",
+      "response_ids": []
+    },
+    {
+      "order": 61,
+      "complaint_id": "p1074_35556036861797_C061",
+      "complainer_id": "p1074_35556036861797_K026",
+      "complaint_file": "complaints/p1074_35556036861797_C061_chrysler.json",
+      "response_ids": [
+        "p1074_35556036861797_R036"
+      ]
+    },
+    {
+      "order": 62,
+      "complaint_id": "p1074_35556036861797_C062",
+      "complainer_id": "p1074_35556036861797_K033",
+      "complaint_file": "complaints/p1074_35556036861797_C062_congress.json",
+      "response_ids": [
+        "p1074_35556036861797_R037"
+      ]
+    },
+    {
+      "order": 63,
+      "complaint_id": "p1074_35556036861797_C063",
+      "complainer_id": "p1074_35556036861797_K026",
+      "complaint_file": "complaints/p1074_35556036861797_C063_chrysler.json",
+      "response_ids": [
+        "p1074_35556036861797_R038"
+      ]
+    },
+    {
+      "order": 64,
+      "complaint_id": "p1074_35556036861797_C064",
+      "complainer_id": "p1074_35556036861797_K026",
+      "complaint_file": "complaints/p1074_35556036861797_C064_chrysler.json",
+      "response_ids": [
+        "p1074_35556036861797_R039"
+      ]
+    },
+    {
+      "order": 65,
+      "complaint_id": "p1074_35556036861797_C065",
+      "complainer_id": "p1074_35556036861797_K035",
+      "complaint_file": "complaints/p1074_35556036861797_C065_ford.json",
+      "response_ids": [
+        "p1074_35556036861797_R040"
+      ]
+    },
+    {
+      "order": 66,
+      "complaint_id": "p1074_35556036861797_C066",
+      "complainer_id": "p1074_35556036861797_K027",
+      "complaint_file": "complaints/p1074_35556036861797_C066_general_motors.json",
+      "response_ids": [
+        "p1074_35556036861797_R041"
+      ]
+    },
+    {
+      "order": 67,
+      "complaint_id": "p1074_35556036861797_C067",
+      "complainer_id": "p1074_35556036861797_K033",
+      "complaint_file": "complaints/p1074_35556036861797_C067_congress.json",
+      "response_ids": []
+    },
+    {
+      "order": 68,
+      "complaint_id": "p1074_35556036861797_C068",
+      "complainer_id": "p1074_35556036861797_K002",
+      "complaint_file": "complaints/p1074_35556036861797_C068_assistant_secretary_for_environment_safe.json",
+      "response_ids": []
+    },
+    {
+      "order": 69,
+      "complaint_id": "p1074_35556036861797_C069",
+      "complainer_id": "p1074_35556036861797_K023",
+      "complaint_file": "complaints/p1074_35556036861797_C069_university_of_michigan_um.json",
+      "response_ids": []
+    }
+  ],
+  "complaints": [
+    {
+      "complaint_id": "p1074_35556036861797_C001",
+      "complainer_id": "p1074_35556036861797_K013",
+      "file": "complaints/p1074_35556036861797_C001_john_w_snow.json",
+      "order": 1,
+      "entity": "John W. Snow",
+      "kind": "official",
+      "role": "Administrator, National Highway Traffic Safety Administration",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C002",
+      "complainer_id": "p1074_35556036861797_K015",
+      "file": "complaints/p1074_35556036861797_C002_national_highway_traffic_safety_administ.json",
+      "order": 2,
+      "entity": "National Highway Traffic Safety Administration",
+      "kind": "agency",
+      "role": "Promulgating agency for Average Fuel Economy Standard",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "2"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C003",
+      "complainer_id": "p1074_35556036861797_K015",
+      "file": "complaints/p1074_35556036861797_C003_national_highway_traffic_safety_administ.json",
+      "order": 3,
+      "entity": "National Highway Traffic Safety Administration",
+      "kind": "agency",
+      "role": "Promulgating agency for Average Fuel Economy Standard",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "2-3"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C004",
+      "complainer_id": "p1074_35556036861797_K015",
+      "file": "complaints/p1074_35556036861797_C004_national_highway_traffic_safety_administ.json",
+      "order": 4,
+      "entity": "National Highway Traffic Safety Administration",
+      "kind": "agency",
+      "role": "Promulgating agency for Average Fuel Economy Standard",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "3"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C005",
+      "complainer_id": "p1074_35556036861797_K015",
+      "file": "complaints/p1074_35556036861797_C005_national_highway_traffic_safety_administ.json",
+      "order": 5,
+      "entity": "National Highway Traffic Safety Administration",
+      "kind": "agency",
+      "role": "Promulgating agency for Average Fuel Economy Standard",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "4"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C006",
+      "complainer_id": "p1074_35556036861797_K001",
+      "file": "complaints/p1074_35556036861797_C006_american_motors_corporation_amc.json",
+      "order": 6,
+      "entity": "American Motors Corporation (AMC)",
+      "kind": "organization",
+      "role": "automotive manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "9"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C007",
+      "complainer_id": "p1074_35556036861797_K007",
+      "file": "complaints/p1074_35556036861797_C007_environmental_protection_agency_epa.json",
+      "order": 7,
+      "entity": "Environmental Protection Agency (EPA)",
+      "kind": "agency",
+      "role": "Commenter / federal agency",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "9"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C008",
+      "complainer_id": "p1074_35556036861797_K010",
+      "file": "complaints/p1074_35556036861797_C008_ford_motor_company.json",
+      "order": 8,
+      "entity": "Ford Motor Company",
+      "kind": "organization",
+      "role": "automotive manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "9"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C009",
+      "complainer_id": "p1074_35556036861797_K011",
+      "file": "complaints/p1074_35556036861797_C009_general_motors_corporation_gm.json",
+      "order": 9,
+      "entity": "General Motors Corporation (GM)",
+      "kind": "organization",
+      "role": "automotive manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "9-57"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R001"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C010",
+      "complainer_id": "p1074_35556036861797_K012",
+      "file": "complaints/p1074_35556036861797_C010_international_harvester_corporation_ih.json",
+      "order": 10,
+      "entity": "International Harvester Corporation (IH)",
+      "kind": "organization",
+      "role": "automotive manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "9"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C011",
+      "complainer_id": "p1074_35556036861797_K001",
+      "file": "complaints/p1074_35556036861797_C011_american_motors_corporation_amc.json",
+      "order": 11,
+      "entity": "American Motors Corporation (AMC)",
+      "kind": "organization",
+      "role": "automotive manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R002"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C012",
+      "complainer_id": "p1074_35556036861797_K001",
+      "file": "complaints/p1074_35556036861797_C012_american_motors_corporation_amc.json",
+      "order": 12,
+      "entity": "American Motors Corporation (AMC)",
+      "kind": "organization",
+      "role": "automotive manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R003"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C013",
+      "complainer_id": "p1074_35556036861797_K003",
+      "file": "complaints/p1074_35556036861797_C013_chrysler_corporation.json",
+      "order": 13,
+      "entity": "Chrysler Corporation",
+      "kind": "organization",
+      "role": "automotive manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R004"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C014",
+      "complainer_id": "p1074_35556036861797_K003",
+      "file": "complaints/p1074_35556036861797_C014_chrysler_corporation.json",
+      "order": 14,
+      "entity": "Chrysler Corporation",
+      "kind": "organization",
+      "role": "automotive manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R005"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C015",
+      "complainer_id": "p1074_35556036861797_K004",
+      "file": "complaints/p1074_35556036861797_C015_consumers_union.json",
+      "order": 15,
+      "entity": "Consumers Union",
+      "kind": "organization",
+      "role": "commenter (no substantive comments)",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C016",
+      "complainer_id": "p1074_35556036861797_K005",
+      "file": "complaints/p1074_35556036861797_C016_department_of_transportation.json",
+      "order": 16,
+      "entity": "Department of Transportation",
+      "kind": "agency",
+      "role": "Commenter / parent agency",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C017",
+      "complainer_id": "p1074_35556036861797_K007",
+      "file": "complaints/p1074_35556036861797_C017_environmental_protection_agency_epa.json",
+      "order": 17,
+      "entity": "Environmental Protection Agency (EPA)",
+      "kind": "agency",
+      "role": "Commenter / federal agency",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R006"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C018",
+      "complainer_id": "p1074_35556036861797_K008",
+      "file": "complaints/p1074_35556036861797_C018_federal_energy_administration_fea.json",
+      "order": 18,
+      "entity": "Federal Energy Administration (FEA)",
+      "kind": "agency",
+      "role": "Commenter / federal agency",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R007"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C019",
+      "complainer_id": "p1074_35556036861797_K009",
+      "file": "complaints/p1074_35556036861797_C019_federal_highway_administration.json",
+      "order": 19,
+      "entity": "Federal Highway Administration",
+      "kind": "agency",
+      "role": "commenter (no substantive comments)",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C020",
+      "complainer_id": "p1074_35556036861797_K010",
+      "file": "complaints/p1074_35556036861797_C020_ford_motor_company.json",
+      "order": 20,
+      "entity": "Ford Motor Company",
+      "kind": "organization",
+      "role": "automotive manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R008"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C021",
+      "complainer_id": "p1074_35556036861797_K010",
+      "file": "complaints/p1074_35556036861797_C021_ford_motor_company.json",
+      "order": 21,
+      "entity": "Ford Motor Company",
+      "kind": "organization",
+      "role": "automotive manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R009"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C022",
+      "complainer_id": "p1074_35556036861797_K012",
+      "file": "complaints/p1074_35556036861797_C022_international_harvester_corporation_ih.json",
+      "order": 22,
+      "entity": "International Harvester Corporation (IH)",
+      "kind": "organization",
+      "role": "automotive manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R010"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C023",
+      "complainer_id": "p1074_35556036861797_K014",
+      "file": "complaints/p1074_35556036861797_C023_national_conference_of_governors_highway.json",
+      "order": 23,
+      "entity": "National Conference of Governors' Highway Safety Representatives",
+      "kind": "organization",
+      "role": "organization / commenter",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C024",
+      "complainer_id": "p1074_35556036861797_K018",
+      "file": "complaints/p1074_35556036861797_C024_the_society_of_the_plastics_industry_inc.json",
+      "order": 24,
+      "entity": "The Society of the Plastics Industry, Inc. (SPI)",
+      "kind": "organization",
+      "role": "industry association / commenter",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C025",
+      "complainer_id": "p1074_35556036861797_K018",
+      "file": "complaints/p1074_35556036861797_C025_the_society_of_the_plastics_industry_inc.json",
+      "order": 25,
+      "entity": "The Society of the Plastics Industry, Inc. (SPI)",
+      "kind": "organization",
+      "role": "industry association / commenter",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R011"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C026",
+      "complainer_id": "p1074_35556036861797_K019",
+      "file": "complaints/p1074_35556036861797_C026_u_s_department_of_agriculture.json",
+      "order": 26,
+      "entity": "U. S. Department of Agriculture",
+      "kind": "agency",
+      "role": "Commenter / federal agency",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C027",
+      "complainer_id": "p1074_35556036861797_K020",
+      "file": "complaints/p1074_35556036861797_C027_u_s_department_of_labor.json",
+      "order": 27,
+      "entity": "U. S. Department of Labor",
+      "kind": "agency",
+      "role": "commenter (no substantive comments)",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C028",
+      "complainer_id": "p1074_35556036861797_K021",
+      "file": "complaints/p1074_35556036861797_C028_u_s_department_of_the_interior.json",
+      "order": 28,
+      "entity": "U. S. Department of the Interior",
+      "kind": "agency",
+      "role": "Commenter / federal agency",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C029",
+      "complainer_id": "p1074_35556036861797_K022",
+      "file": "complaints/p1074_35556036861797_C029_uaw.json",
+      "order": 29,
+      "entity": "UAW",
+      "kind": "organization",
+      "role": "labor union / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C030",
+      "complainer_id": "p1074_35556036861797_K006",
+      "file": "complaints/p1074_35556036861797_C030_domestic_manufacturers_of_npa_s.json",
+      "order": 30,
+      "entity": "domestic manufacturers of NPA's",
+      "kind": "organization",
+      "role": "Commenters / NPA manufacturers collectively",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "28"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R012"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C031",
+      "complainer_id": "p1074_35556036861797_K016",
+      "file": "complaints/p1074_35556036861797_C031_several_commenters.json",
+      "order": 31,
+      "entity": "several commenters",
+      "kind": "other",
+      "role": "Commenters on classification issue",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "28"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R013"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C032",
+      "complainer_id": "p1074_35556036861797_K006",
+      "file": "complaints/p1074_35556036861797_C032_domestic_manufacturers_of_npa_s.json",
+      "order": 32,
+      "entity": "domestic manufacturers of NPA's",
+      "kind": "organization",
+      "role": "Commenters / NPA manufacturers collectively",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "33"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R014"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C033",
+      "complainer_id": "p1074_35556036861797_K006",
+      "file": "complaints/p1074_35556036861797_C033_domestic_manufacturers_of_npa_s.json",
+      "order": 33,
+      "entity": "domestic manufacturers of NPA's",
+      "kind": "organization",
+      "role": "Commenters / NPA manufacturers collectively",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "34"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R015"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C034",
+      "complainer_id": "p1074_35556036861797_K017",
+      "file": "complaints/p1074_35556036861797_C034_the_society_of_the_plastics_industries_i.json",
+      "order": 34,
+      "entity": "The Society of the Plastics Industries, Inc.",
+      "kind": "organization",
+      "role": "Industry association / source cited on plastics incineration",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "39"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R016"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C035",
+      "complainer_id": "p1074_35556036861797_K024",
+      "file": "complaints/p1074_35556036861797_C035_nhtsa.json",
+      "order": 35,
+      "entity": "NHTSA",
+      "kind": "agency",
+      "role": "Federal fuel economy standards regulator",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "83"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R017"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C036",
+      "complainer_id": "p1074_35556036861797_K025",
+      "file": "complaints/p1074_35556036861797_C036_amc.json",
+      "order": 36,
+      "entity": "AMC",
+      "kind": "organization",
+      "role": "automobile manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "97"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R018"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C037",
+      "complainer_id": "p1074_35556036861797_K025",
+      "file": "complaints/p1074_35556036861797_C037_amc.json",
+      "order": 37,
+      "entity": "AMC",
+      "kind": "organization",
+      "role": "automobile manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "97"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R019"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C038",
+      "complainer_id": "p1074_35556036861797_K025",
+      "file": "complaints/p1074_35556036861797_C038_amc.json",
+      "order": 38,
+      "entity": "AMC",
+      "kind": "organization",
+      "role": "automobile manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "97"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R020"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C039",
+      "complainer_id": "p1074_35556036861797_K025",
+      "file": "complaints/p1074_35556036861797_C039_amc.json",
+      "order": 39,
+      "entity": "AMC",
+      "kind": "organization",
+      "role": "automobile manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "97"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R021"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C040",
+      "complainer_id": "p1074_35556036861797_K025",
+      "file": "complaints/p1074_35556036861797_C040_amc.json",
+      "order": 40,
+      "entity": "AMC",
+      "kind": "organization",
+      "role": "automobile manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "97"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R022"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C041",
+      "complainer_id": "p1074_35556036861797_K025",
+      "file": "complaints/p1074_35556036861797_C041_amc.json",
+      "order": 41,
+      "entity": "AMC",
+      "kind": "organization",
+      "role": "automobile manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "97"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R023"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C042",
+      "complainer_id": "p1074_35556036861797_K025",
+      "file": "complaints/p1074_35556036861797_C042_amc.json",
+      "order": 42,
+      "entity": "AMC",
+      "kind": "organization",
+      "role": "automobile manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "97"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R024"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C043",
+      "complainer_id": "p1074_35556036861797_K025",
+      "file": "complaints/p1074_35556036861797_C043_amc.json",
+      "order": 43,
+      "entity": "AMC",
+      "kind": "organization",
+      "role": "automobile manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "97"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R025"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C044",
+      "complainer_id": "p1074_35556036861797_K029",
+      "file": "complaints/p1074_35556036861797_C044_u_s_department_of_agriculture_forest_ser.json",
+      "order": 44,
+      "entity": "U. S. Department of Agriculture, Forest Service",
+      "kind": "agency",
+      "role": "federal agency / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "110"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R026"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C045",
+      "complainer_id": "p1074_35556036861797_K030",
+      "file": "complaints/p1074_35556036861797_C045_u_s_department_of_the_interior_bureau_of.json",
+      "order": 45,
+      "entity": "U.S. Department of the Interior, Bureau of Mines",
+      "kind": "agency",
+      "role": "federal agency / commenter",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "112"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C046",
+      "complainer_id": "p1074_35556036861797_K031",
+      "file": "complaints/p1074_35556036861797_C046_u_s_department_of_transportation.json",
+      "order": 46,
+      "entity": "U.S. Department of Transportation",
+      "kind": "agency",
+      "role": "commenter (no substantive comments)",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "112"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C047",
+      "complainer_id": "p1074_35556036861797_K028",
+      "file": "complaints/p1074_35556036861797_C047_international_harvester.json",
+      "order": 47,
+      "entity": "International Harvester",
+      "kind": "organization",
+      "role": "automobile manufacturer / commenter",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "120"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R027"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C048",
+      "complainer_id": "p1074_35556036861797_K026",
+      "file": "complaints/p1074_35556036861797_C048_chrysler.json",
+      "order": 48,
+      "entity": "Chrysler",
+      "kind": "organization",
+      "role": "automobile manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "129"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C049",
+      "complainer_id": "p1074_35556036861797_K032",
+      "file": "complaints/p1074_35556036861797_C049_united_auto_workers_uaw.json",
+      "order": 49,
+      "entity": "United Auto Workers (UAW)",
+      "kind": "organization",
+      "role": "labor union / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "133"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R028"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C050",
+      "complainer_id": "p1074_35556036861797_K027",
+      "file": "complaints/p1074_35556036861797_C050_general_motors.json",
+      "order": 50,
+      "entity": "General Motors",
+      "kind": "organization",
+      "role": "automobile manufacturer / commenter",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "134"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R029"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C051",
+      "complainer_id": "p1074_35556036861797_K027",
+      "file": "complaints/p1074_35556036861797_C051_general_motors.json",
+      "order": 51,
+      "entity": "General Motors",
+      "kind": "organization",
+      "role": "automobile manufacturer / commenter",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "134"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R030"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C052",
+      "complainer_id": "p1074_35556036861797_K035",
+      "file": "complaints/p1074_35556036861797_C052_ford.json",
+      "order": 52,
+      "entity": "Ford",
+      "kind": "organization",
+      "role": "automobile manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "141"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R031"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C053",
+      "complainer_id": "p1074_35556036861797_K035",
+      "file": "complaints/p1074_35556036861797_C053_ford.json",
+      "order": 53,
+      "entity": "Ford",
+      "kind": "organization",
+      "role": "automobile manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "143"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R032"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C054",
+      "complainer_id": "p1074_35556036861797_K034",
+      "file": "complaints/p1074_35556036861797_C054_epa.json",
+      "order": 54,
+      "entity": "EPA",
+      "kind": "agency",
+      "role": "Federal emissions standards regulator",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "145"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C055",
+      "complainer_id": "p1074_35556036861797_K024",
+      "file": "complaints/p1074_35556036861797_C055_nhtsa.json",
+      "order": 55,
+      "entity": "NHTSA",
+      "kind": "agency",
+      "role": "Federal fuel economy standards regulator",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "146"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C056",
+      "complainer_id": "p1074_35556036861797_K026",
+      "file": "complaints/p1074_35556036861797_C056_chrysler.json",
+      "order": 56,
+      "entity": "Chrysler",
+      "kind": "organization",
+      "role": "automobile manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "146"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R033"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C057",
+      "complainer_id": "p1074_35556036861797_K027",
+      "file": "complaints/p1074_35556036861797_C057_general_motors.json",
+      "order": 57,
+      "entity": "General Motors",
+      "kind": "organization",
+      "role": "automobile manufacturer / commenter",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "146"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C058",
+      "complainer_id": "p1074_35556036861797_K028",
+      "file": "complaints/p1074_35556036861797_C058_international_harvester.json",
+      "order": 58,
+      "entity": "International Harvester",
+      "kind": "organization",
+      "role": "automobile manufacturer / commenter",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "146"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R034"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C059",
+      "complainer_id": "p1074_35556036861797_K035",
+      "file": "complaints/p1074_35556036861797_C059_ford.json",
+      "order": 59,
+      "entity": "Ford",
+      "kind": "organization",
+      "role": "automobile manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "146"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R035"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C060",
+      "complainer_id": "p1074_35556036861797_K034",
+      "file": "complaints/p1074_35556036861797_C060_epa.json",
+      "order": 60,
+      "entity": "EPA",
+      "kind": "agency",
+      "role": "Federal emissions standards regulator",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "152"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C061",
+      "complainer_id": "p1074_35556036861797_K026",
+      "file": "complaints/p1074_35556036861797_C061_chrysler.json",
+      "order": 61,
+      "entity": "Chrysler",
+      "kind": "organization",
+      "role": "automobile manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "155"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R036"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C062",
+      "complainer_id": "p1074_35556036861797_K033",
+      "file": "complaints/p1074_35556036861797_C062_congress.json",
+      "order": 62,
+      "entity": "Congress",
+      "kind": "government",
+      "role": "U.S. legislative body / established passenger automobile standard",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "156"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R037"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C063",
+      "complainer_id": "p1074_35556036861797_K026",
+      "file": "complaints/p1074_35556036861797_C063_chrysler.json",
+      "order": 63,
+      "entity": "Chrysler",
+      "kind": "organization",
+      "role": "automobile manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "157"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R038"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C064",
+      "complainer_id": "p1074_35556036861797_K026",
+      "file": "complaints/p1074_35556036861797_C064_chrysler.json",
+      "order": 64,
+      "entity": "Chrysler",
+      "kind": "organization",
+      "role": "automobile manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "157"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R039"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C065",
+      "complainer_id": "p1074_35556036861797_K035",
+      "file": "complaints/p1074_35556036861797_C065_ford.json",
+      "order": 65,
+      "entity": "Ford",
+      "kind": "organization",
+      "role": "automobile manufacturer / commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "158"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R040"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C066",
+      "complainer_id": "p1074_35556036861797_K027",
+      "file": "complaints/p1074_35556036861797_C066_general_motors.json",
+      "order": 66,
+      "entity": "General Motors",
+      "kind": "organization",
+      "role": "automobile manufacturer / commenter",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "160"
+      ],
+      "response_ids": [
+        "p1074_35556036861797_R041"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C067",
+      "complainer_id": "p1074_35556036861797_K033",
+      "file": "complaints/p1074_35556036861797_C067_congress.json",
+      "order": 67,
+      "entity": "Congress",
+      "kind": "government",
+      "role": "U.S. legislative body / established passenger automobile standard",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "163"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C068",
+      "complainer_id": "p1074_35556036861797_K002",
+      "file": "complaints/p1074_35556036861797_C068_assistant_secretary_for_environment_safe.json",
+      "order": 68,
+      "entity": "Assistant Secretary for Environment, Safety and Consumer Affairs",
+      "kind": "official",
+      "role": "Commenter / DOT official",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036861797_C069",
+      "complainer_id": "p1074_35556036861797_K023",
+      "file": "complaints/p1074_35556036861797_C069_university_of_michigan_um.json",
+      "order": 69,
+      "entity": "University of Michigan (UM)",
+      "kind": "organization",
+      "role": "academic institution / commenter",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "19",
+        "108"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "child_id": "p1074_35556036861797_R001",
+      "parent_id": "p1074_35556036861797_C009",
+      "file": "responses/p1074_35556036861797_R001_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R002",
+      "parent_id": "p1074_35556036861797_C011",
+      "file": "responses/p1074_35556036861797_R002_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R003",
+      "parent_id": "p1074_35556036861797_C012",
+      "file": "responses/p1074_35556036861797_R003_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R004",
+      "parent_id": "p1074_35556036861797_C013",
+      "file": "responses/p1074_35556036861797_R004_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R005",
+      "parent_id": "p1074_35556036861797_C014",
+      "file": "responses/p1074_35556036861797_R005_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R006",
+      "parent_id": "p1074_35556036861797_C017",
+      "file": "responses/p1074_35556036861797_R006_national_highway_traffic_safety_administ.json",
+      "agency": "National Highway Traffic Safety Administration",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R007",
+      "parent_id": "p1074_35556036861797_C018",
+      "file": "responses/p1074_35556036861797_R007_national_highway_traffic_safety_administ.json",
+      "agency": "National Highway Traffic Safety Administration",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R008",
+      "parent_id": "p1074_35556036861797_C020",
+      "file": "responses/p1074_35556036861797_R008_nhtsa.json",
+      "agency": "NHTSA",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R009",
+      "parent_id": "p1074_35556036861797_C021",
+      "file": "responses/p1074_35556036861797_R009_nhtsa.json",
+      "agency": "NHTSA",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R010",
+      "parent_id": "p1074_35556036861797_C022",
+      "file": "responses/p1074_35556036861797_R010_nhtsa.json",
+      "agency": "NHTSA",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R011",
+      "parent_id": "p1074_35556036861797_C025",
+      "file": "responses/p1074_35556036861797_R011_national_highway_traffic_safety_administ.json",
+      "agency": "National Highway Traffic Safety Administration",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R012",
+      "parent_id": "p1074_35556036861797_C030",
+      "file": "responses/p1074_35556036861797_R012_nhtsa.json",
+      "agency": "NHTSA",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R013",
+      "parent_id": "p1074_35556036861797_C031",
+      "file": "responses/p1074_35556036861797_R013_national_highway_traffic_safety_administ.json",
+      "agency": "National Highway Traffic Safety Administration",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R014",
+      "parent_id": "p1074_35556036861797_C032",
+      "file": "responses/p1074_35556036861797_R014_nhtsa.json",
+      "agency": "NHTSA",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R015",
+      "parent_id": "p1074_35556036861797_C033",
+      "file": "responses/p1074_35556036861797_R015_nhtsa.json",
+      "agency": "NHTSA",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R016",
+      "parent_id": "p1074_35556036861797_C034",
+      "file": "responses/p1074_35556036861797_R016_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R017",
+      "parent_id": "p1074_35556036861797_C035",
+      "file": "responses/p1074_35556036861797_R017_national_highway_traffic_safety_administ.json",
+      "agency": "National Highway Traffic Safety Administration",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R018",
+      "parent_id": "p1074_35556036861797_C036",
+      "file": "responses/p1074_35556036861797_R018_nhtsa.json",
+      "agency": "NHTSA",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R019",
+      "parent_id": "p1074_35556036861797_C037",
+      "file": "responses/p1074_35556036861797_R019_nhtsa.json",
+      "agency": "NHTSA",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R020",
+      "parent_id": "p1074_35556036861797_C038",
+      "file": "responses/p1074_35556036861797_R020_nhtsa.json",
+      "agency": "NHTSA",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R021",
+      "parent_id": "p1074_35556036861797_C039",
+      "file": "responses/p1074_35556036861797_R021_nhtsa.json",
+      "agency": "NHTSA",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R022",
+      "parent_id": "p1074_35556036861797_C040",
+      "file": "responses/p1074_35556036861797_R022_nhtsa.json",
+      "agency": "NHTSA",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R023",
+      "parent_id": "p1074_35556036861797_C041",
+      "file": "responses/p1074_35556036861797_R023_nhtsa.json",
+      "agency": "NHTSA",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R024",
+      "parent_id": "p1074_35556036861797_C042",
+      "file": "responses/p1074_35556036861797_R024_nhtsa.json",
+      "agency": "NHTSA",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R025",
+      "parent_id": "p1074_35556036861797_C043",
+      "file": "responses/p1074_35556036861797_R025_nhtsa.json",
+      "agency": "NHTSA",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R026",
+      "parent_id": "p1074_35556036861797_C044",
+      "file": "responses/p1074_35556036861797_R026_national_highway_traffic_safety_administ.json",
+      "agency": "National Highway Traffic Safety Administration",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R027",
+      "parent_id": "p1074_35556036861797_C047",
+      "file": "responses/p1074_35556036861797_R027_national_highway_traffic_safety_administ.json",
+      "agency": "National Highway Traffic Safety Administration",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R028",
+      "parent_id": "p1074_35556036861797_C049",
+      "file": "responses/p1074_35556036861797_R028_nhtsa.json",
+      "agency": "NHTSA",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R029",
+      "parent_id": "p1074_35556036861797_C050",
+      "file": "responses/p1074_35556036861797_R029_nhtsa.json",
+      "agency": "NHTSA",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R030",
+      "parent_id": "p1074_35556036861797_C051",
+      "file": "responses/p1074_35556036861797_R030_nhtsa.json",
+      "agency": "NHTSA",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R031",
+      "parent_id": "p1074_35556036861797_C052",
+      "file": "responses/p1074_35556036861797_R031_nhtsa.json",
+      "agency": "NHTSA",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R032",
+      "parent_id": "p1074_35556036861797_C053",
+      "file": "responses/p1074_35556036861797_R032_nhtsa.json",
+      "agency": "NHTSA",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R033",
+      "parent_id": "p1074_35556036861797_C056",
+      "file": "responses/p1074_35556036861797_R033_discussion.json",
+      "agency": "",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R034",
+      "parent_id": "p1074_35556036861797_C058",
+      "file": "responses/p1074_35556036861797_R034_national_highway_traffic_safety_administ.json",
+      "agency": "National Highway Traffic Safety Administration",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R035",
+      "parent_id": "p1074_35556036861797_C059",
+      "file": "responses/p1074_35556036861797_R035_nhtsa.json",
+      "agency": "NHTSA",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R036",
+      "parent_id": "p1074_35556036861797_C061",
+      "file": "responses/p1074_35556036861797_R036_discussion.json",
+      "agency": "",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R037",
+      "parent_id": "p1074_35556036861797_C062",
+      "file": "responses/p1074_35556036861797_R037_national_highway_traffic_safety_administ.json",
+      "agency": "National Highway Traffic Safety Administration",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R038",
+      "parent_id": "p1074_35556036861797_C063",
+      "file": "responses/p1074_35556036861797_R038_discussion.json",
+      "agency": "",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R039",
+      "parent_id": "p1074_35556036861797_C064",
+      "file": "responses/p1074_35556036861797_R039_discussion.json",
+      "agency": "",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R040",
+      "parent_id": "p1074_35556036861797_C065",
+      "file": "responses/p1074_35556036861797_R040_nhtsa.json",
+      "agency": "NHTSA",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036861797_R041",
+      "parent_id": "p1074_35556036861797_C066",
+      "file": "responses/p1074_35556036861797_R041_nhtsa.json",
+      "agency": "NHTSA",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    }
+  ]
+}

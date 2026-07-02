@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036806586_C058",
+  "complainer_id": "p1074_35556036806586_K056",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 58,
+  "entity": "H. Jesse Grove",
+  "kind": "individual",
+  "role": "Recreation resource rater (Dysart et al., 1973)",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "cited as technical resource rater providing comparative recreation scores with no expressed opinion on project approval",
+  "summary": "H. Jesse Grove is cited as the author of recreation ratings for the Bad Creek and alternative pumped storage sites, as part of the Dysart et al. (1973) study. Grove's ratings, based on field observations and factors such as accessibility, topographic suitability, stream quality, vegetative disruption, and public use, are referenced multiple times to compare recreational attributes across sites. Grove takes no discernible position for or against the project; the citations are purely technical and comparative in nature.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "H. Jesse Grove formulated recreation ratings for the Long Spur Ridge and Bad Creek sites (rating them 5 and 4 respectively on a 0–10 scale) based on field observations of factors including accessibility, topographic suitability, stream quality, vegetative disruption, and level of public use.",
+  "evidence_pages": [
+    "220"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "The recreation ratings of the sites were formulated by H. Jesse Grove (Dysart, et al., 1973) on the basis of field observations.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "220"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The recreation ratings of the sites were formulated by H. Jesse Grove (Dysart, et al., 1973) on the basis of field observations.",
+      "quote_verified": true,
+      "entity_as_written": "H. Jesse Grove",
+      "role_as_written": "Recreation resource rater (Dysart et al., 1973)"
+    }
+  ],
+  "window_pages": [
+    210,
+    230
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 56,
+  "synthetic_no_complaint": false
+}

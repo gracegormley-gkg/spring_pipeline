@@ -1,0 +1,69 @@
+{
+  "complaint_id": "p1074_35556039563135_C055",
+  "complainer_id": "p1074_35556039563135_K045",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 55,
+  "entity": "Bob Frantz",
+  "kind": "individual",
+  "role": "Bureau of Outdoor Recreation staff, commenter",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase indicates no objection and no further response needed, implying acceptance of the project's documentation",
+  "summary": "Bob Frantz of the Bureau of Outdoor Recreation (U.S. Department of the Interior) communicated via telephone that no additional response would be forthcoming regarding the Cook County Forest Preserve Property involvement, as the early coordination materials and cooperative efforts with the Forest Preserve District were considered well documented. His position is essentially one of non-objection, deferring to the existing documentation rather than raising concerns or expressing support.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Bob Frantz stated in a telephone conversation that no additional response was needed regarding the Cook County Forest Preserve Property because the early coordination materials and cooperative efforts with the Forest Preserve District were well documented.",
+  "evidence_pages": [
+    "159"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "In telephone conversation with Mr. Bob Frantz of the Bureau of Outdoor Recreation on November 14, 1974, Mr. Frantz said no additional response would be forthcoming concerning the Cook County Forest Preserve Property since the material submitted for early coordination and our cooperative efforts with the Forest Preserve District were well documented.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "159"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In telephone conversation with Mr. Bob Frantz of the Bureau of Outdoor Recreation on November 14, 1974, Mr. Frantz said no additional response would be forthcoming concerning the Cook County Forest Preserve Property since the material submitted for early coordination and our cooperative efforts with the Forest Preserve District were well documented.",
+      "quote_verified": true,
+      "entity_as_written": "Bob Frantz",
+      "role_as_written": "Bureau of Outdoor Recreation staff"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "159"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In telephone conversation with Mr. Bob Frantz of the Bureau of Outdoor Recreation on November 14, 1974, Mr. Frantz said no additional response would be forthcoming concerning the Cook County Forest Preserve Property since the material submitted for early coordination and our cooperative efforts with the Forest Preserve District were well documented.",
+      "quote_verified": true,
+      "entity_as_written": "Bob Frantz",
+      "role_as_written": "Bureau of Outdoor Recreation staff, commenter"
+    }
+  ],
+  "window_pages": [
+    149,
+    169
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 45,
+  "synthetic_no_complaint": false
+}

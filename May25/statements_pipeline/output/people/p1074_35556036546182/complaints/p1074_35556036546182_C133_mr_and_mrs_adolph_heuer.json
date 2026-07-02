@@ -1,0 +1,61 @@
+{
+  "complaint_id": "p1074_35556036546182_C133",
+  "complainer_id": "p1074_35556036546182_K122",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 133,
+  "entity": "Mr. and Mrs. Adolph Heuer",
+  "kind": "individual",
+  "role": "Private Citizens, commenters",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased concern about noise and air pollution from airplanes and trucks affecting children",
+  "summary": "Mr. and Mrs. Adolph Heuer, private citizens residing at 1501 West Goldcrest Avenue, expressed concern about noise and air pollution from airplanes and trucks and the effect on children in and out of school. Their comment was addressed by a referral to pages 141 and 150 of the Final EIS for a response on noise and air quality impacts.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Mr. and Mrs. Adolph Heuer stated their concern for noise and air pollution from airplanes and trucks and the effect on children in and out of school.",
+  "evidence_pages": [
+    "242"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R052"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual",
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "Stated their concern for noise and air pollution from airplanes and trucks and the affect on children in and out of school.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "242"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Stated their concern for noise and air pollution from airplanes and trucks and the affect on children in and out of school.",
+      "quote_verified": false,
+      "entity_as_written": "Mr. and Mrs. Adolph Heuer",
+      "role_as_written": "Private Citizens, commenters"
+    }
+  ],
+  "window_pages": [
+    232,
+    252
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 122,
+  "synthetic_no_complaint": false
+}

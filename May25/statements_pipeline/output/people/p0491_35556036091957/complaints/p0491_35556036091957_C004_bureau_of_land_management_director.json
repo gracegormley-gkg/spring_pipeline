@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p0491_35556036091957_C004",
+  "complainer_id": "p0491_35556036091957_K006",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 4,
+  "entity": "Bureau of Land Management - Director",
+  "kind": "official",
+  "role": "Interior bureau reviewer",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes BLM Director requesting additional discussion and clarification before the statement is adequate",
+  "summary": "The Bureau of Land Management Director submitted comments on the draft ORV environmental statement requesting that it contain additional discussion of the impacts of various types of ORV on different types of terrain, and that it clarify the status of all Interior lands prior to designation of ORV use. These concerns appear twice in the document window—once in the main body summary of agency comments and once in the appendix's Federal Agency Comments section—both as paraphrases of the same comment. No specific agency response to these requests is provided in the window.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The BLM Director felt the environmental statement should contain additional discussion of impacts of various types of ORV on different types of terrain and should clarify the status of all Interior lands prior to designation of ORV use.",
+  "evidence_pages": [
+    "21"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "Bureau of Land Management - Director - felt that environmental statement should contain additional discussion of impacts of various types of ORV and their impacts on different types of terrain; also felt that statement should clarify status of all Interior lands prior to designation of ORV use;",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "21"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Bureau of Land Management - Director - felt that environmental statement should contain additional discussion of impacts of various types of ORV and their impacts on different types of terrain; also felt that statement should clarify status of all Interior lands prior to designation of ORV use;",
+      "quote_verified": false,
+      "entity_as_written": "Bureau of Land Management - Director",
+      "role_as_written": "Interior bureau reviewer"
+    }
+  ],
+  "window_pages": [
+    11,
+    31
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 6,
+  "synthetic_no_complaint": false
+}

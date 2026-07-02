@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036811230_C048",
+  "complainer_id": "p1074_35556036811230_K044",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 48,
+  "entity": "Buffalo Landmark and Preservation Board",
+  "kind": "agency",
+  "role": "historic preservation review board",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase states board reviewed historic sites list and found no problems with the proposed rail transit project",
+  "summary": "The Buffalo Landmark and Preservation Board reviewed a list of historic structures along the proposed rail alignment and found no problems with the project. Their review is cited in the context of confirming that neither construction nor operation of the transit system should have adverse impact on any of the listed historic structures.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Buffalo Landmark and Preservation Board reviewed the list of historic sites along the proposed rail alignment and found no problems with the proposed rail transit project, with a note that the visual impact of the at-grade section would be reminiscent of the old trolley service.",
+  "evidence_pages": [
+    "219"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Buffalo Landmark and Preservation Board reviewed the list of sites and found no problems with the proposed rail transit project.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "219"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Buffalo Landmark and Preservation Board reviewed the list of sites and found no problems with the proposed rail transit project.",
+      "quote_verified": true,
+      "entity_as_written": "Buffalo Landmark and Preservation Board",
+      "role_as_written": "historic preservation review board"
+    }
+  ],
+  "window_pages": [
+    209,
+    229
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 44,
+  "synthetic_no_complaint": false
+}

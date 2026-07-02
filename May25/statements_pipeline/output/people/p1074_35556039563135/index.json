@@ -1,0 +1,5100 @@
+{
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "title": "Lincoln Hwy upgrade from Cicero Ave. to Chicago Road, Cook County : environmental impact statement.",
+  "n_pages": 347,
+  "n_chunks": 8,
+  "n_raw_rows": 201,
+  "n_complainers": 131,
+  "n_complaints": 164,
+  "n_responses": 54,
+  "stance_counts": {
+    "neutral": 85,
+    "in_favor": 22,
+    "conditional": 24
+  },
+  "stance_confidence_counts": {
+    "high": 59,
+    "medium": 40,
+    "low": 32,
+    "unknown": 0
+  },
+  "review_counts": {
+    "needs_review": 43,
+    "auto_ok": 88,
+    "reasons": {
+      "low_stance_confidence": 32,
+      "no_complaints": 18,
+      "private_individual": 8,
+      "quote_not_verbatim": 9
+    }
+  },
+  "statement_form_counts": {
+    "letter": 54,
+    "testimony": 0,
+    "written_comment": 20,
+    "narrator_paraphrase": 43,
+    "sectional": 29,
+    "none": 18,
+    "present": 146,
+    "absent": 18
+  },
+  "response_form_counts": {
+    "agency_response": 11,
+    "preparer_reply": 0,
+    "discussion": 43,
+    "none": 0,
+    "present": 54,
+    "absent": 0
+  },
+  "elapsed_sec": 287.5,
+  "usage": {
+    "extract": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 8,
+          "input_tokens": 130741,
+          "output_tokens": 19680,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.6874
+        }
+      ],
+      "total": {
+        "calls": 8,
+        "input_tokens": 130741,
+        "output_tokens": 19680,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.6874
+      }
+    },
+    "find_statement": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 131,
+          "input_tokens": 1306365,
+          "output_tokens": 53298,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 4.7186
+        }
+      ],
+      "total": {
+        "calls": 131,
+        "input_tokens": 1306365,
+        "output_tokens": 53298,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 4.7186
+      }
+    },
+    "total": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 139,
+          "input_tokens": 1437106,
+          "output_tokens": 72978,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 5.406
+        }
+      ],
+      "total": {
+        "calls": 139,
+        "input_tokens": 1437106,
+        "output_tokens": 72978,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 5.406
+      }
+    }
+  },
+  "schema": {
+    "ids": {
+      "complainer_id": "<doc_id>_K<NNN> — one per merged entity",
+      "complaint_id": "<doc_id>_C<NNN> — one per complaint instance (entities can have multiple)",
+      "child_id": "<doc_id>_R<NNN> — one per agency response"
+    },
+    "stance_vocabulary": [
+      "in_favor",
+      "opposed",
+      "conditional",
+      "neutral"
+    ],
+    "stance_confidence_vocabulary": [
+      "high",
+      "medium",
+      "low"
+    ],
+    "kind_vocabulary": [
+      "individual",
+      "official",
+      "organization",
+      "agency",
+      "tribe",
+      "government",
+      "other"
+    ],
+    "statement_forms": [
+      "letter",
+      "testimony",
+      "written_comment",
+      "narrator_paraphrase",
+      "sectional",
+      "none"
+    ],
+    "response_forms": [
+      "agency_response",
+      "preparer_reply",
+      "discussion",
+      "none"
+    ],
+    "stance_source": "Decided by find_statement at the entity level — same stance applies to all complaints from the same entity. Capped to 'medium' when no contiguous statement is verified for any complaint; forced 'low' when there are no complaints.",
+    "page_numbers": "EXACT — from per-page JSON source.",
+    "statement_text": "Sliced from the doc text between verbatim opening/closing anchors. Null when either anchor doesn't verify.",
+    "response_text": "Sliced from the doc text between verbatim response anchors. Null when either anchor doesn't verify or no response is in the window.",
+    "needs_human_review": "True when kind=='individual' OR summary_quote_verified is False OR stance_confidence=='low' OR no complaints were produced.",
+    "merge_rule": "One row per entity. find_statement may then return multiple complaints per entity — each becomes its own complaint file.",
+    "cost_note": "USD costs are ESTIMATES; verify against AWS Bedrock invoice."
+  },
+  "sequence": [
+    {
+      "order": 1,
+      "complaint_id": "p1074_35556039563135_C001",
+      "complainer_id": "p1074_35556039563135_K007",
+      "complaint_file": "complaints/p1074_35556039563135_C001_deputy_administrator.json",
+      "response_ids": []
+    },
+    {
+      "order": 2,
+      "complaint_id": "p1074_35556039563135_C002",
+      "complainer_id": "p1074_35556039563135_K021",
+      "complaint_file": "complaints/p1074_35556039563135_C002_office_of_environmental_policy.json",
+      "response_ids": []
+    },
+    {
+      "order": 3,
+      "complaint_id": "p1074_35556039563135_C003",
+      "complainer_id": "p1074_35556039563135_K022",
+      "complaint_file": "complaints/p1074_35556039563135_C003_office_of_the_chief_counsel.json",
+      "response_ids": []
+    },
+    {
+      "order": 4,
+      "complaint_id": "p1074_35556039563135_C004",
+      "complainer_id": "p1074_35556039563135_K004",
+      "complaint_file": "complaints/p1074_35556039563135_C004_bruce_blanchard.json",
+      "response_ids": []
+    },
+    {
+      "order": 5,
+      "complaint_id": "p1074_35556039563135_C005",
+      "complainer_id": "p1074_35556039563135_K022",
+      "complaint_file": "complaints/p1074_35556039563135_C005_office_of_the_chief_counsel.json",
+      "response_ids": [
+        "p1074_35556039563135_R001"
+      ]
+    },
+    {
+      "order": 6,
+      "complaint_id": "p1074_35556039563135_C006",
+      "complainer_id": "p1074_35556039563135_K015",
+      "complaint_file": "complaints/p1074_35556039563135_C006_donald_e_trull.json",
+      "response_ids": []
+    },
+    {
+      "order": 7,
+      "complaint_id": "p1074_35556039563135_C007",
+      "complainer_id": "p1074_35556039563135_K029",
+      "complaint_file": "complaints/p1074_35556039563135_C007_w_g_emrich.json",
+      "response_ids": []
+    },
+    {
+      "order": 8,
+      "complaint_id": "p1074_35556039563135_C008",
+      "complainer_id": "p1074_35556039563135_K006",
+      "complaint_file": "complaints/p1074_35556039563135_C008_department_of_the_interior.json",
+      "response_ids": []
+    },
+    {
+      "order": 9,
+      "complaint_id": "p1074_35556039563135_C009",
+      "complainer_id": "p1074_35556039563135_K009",
+      "complaint_file": "complaints/p1074_35556039563135_C009_deputy_assistant_secretary_of_the_interi.json",
+      "response_ids": []
+    },
+    {
+      "order": 10,
+      "complaint_id": "p1074_35556039563135_C010",
+      "complainer_id": "p1074_35556039563135_K018",
+      "complaint_file": "complaints/p1074_35556039563135_C010_manuel_a_marks.json",
+      "response_ids": []
+    },
+    {
+      "order": 11,
+      "complaint_id": "p1074_35556039563135_C011",
+      "complainer_id": "p1074_35556039563135_K018",
+      "complaint_file": "complaints/p1074_35556039563135_C011_manuel_a_marks.json",
+      "response_ids": []
+    },
+    {
+      "order": 12,
+      "complaint_id": "p1074_35556039563135_C012",
+      "complainer_id": "p1074_35556039563135_K017",
+      "complaint_file": "complaints/p1074_35556039563135_C012_jay_w_miller.json",
+      "response_ids": []
+    },
+    {
+      "order": 13,
+      "complaint_id": "p1074_35556039563135_C013",
+      "complainer_id": "p1074_35556039563135_K017",
+      "complaint_file": "complaints/p1074_35556039563135_C013_jay_w_miller.json",
+      "response_ids": []
+    },
+    {
+      "order": 14,
+      "complaint_id": "p1074_35556039563135_C014",
+      "complainer_id": "p1074_35556039563135_K017",
+      "complaint_file": "complaints/p1074_35556039563135_C014_jay_w_miller.json",
+      "response_ids": []
+    },
+    {
+      "order": 15,
+      "complaint_id": "p1074_35556039563135_C015",
+      "complainer_id": "p1074_35556039563135_K079",
+      "complaint_file": "complaints/p1074_35556039563135_C015_village_of_olympia_fields.json",
+      "response_ids": []
+    },
+    {
+      "order": 16,
+      "complaint_id": "p1074_35556039563135_C016",
+      "complainer_id": "p1074_35556039563135_K003",
+      "complaint_file": "complaints/p1074_35556039563135_C016_assistant_secretary_for_health_and_scien.json",
+      "response_ids": []
+    },
+    {
+      "order": 17,
+      "complaint_id": "p1074_35556039563135_C017",
+      "complainer_id": "p1074_35556039563135_K003",
+      "complaint_file": "complaints/p1074_35556039563135_C017_assistant_secretary_for_health_and_scien.json",
+      "response_ids": []
+    },
+    {
+      "order": 18,
+      "complaint_id": "p1074_35556039563135_C018",
+      "complainer_id": "p1074_35556039563135_K008",
+      "complaint_file": "complaints/p1074_35556039563135_C018_deputy_assistant_secretary_for_environme.json",
+      "response_ids": []
+    },
+    {
+      "order": 19,
+      "complaint_id": "p1074_35556039563135_C019",
+      "complainer_id": "p1074_35556039563135_K008",
+      "complaint_file": "complaints/p1074_35556039563135_C019_deputy_assistant_secretary_for_environme.json",
+      "response_ids": []
+    },
+    {
+      "order": 20,
+      "complaint_id": "p1074_35556039563135_C020",
+      "complainer_id": "p1074_35556039563135_K010",
+      "complaint_file": "complaints/p1074_35556039563135_C020_deputy_assistant_secretary_department_of.json",
+      "response_ids": []
+    },
+    {
+      "order": 21,
+      "complaint_id": "p1074_35556039563135_C021",
+      "complainer_id": "p1074_35556039563135_K010",
+      "complaint_file": "complaints/p1074_35556039563135_C021_deputy_assistant_secretary_department_of.json",
+      "response_ids": []
+    },
+    {
+      "order": 22,
+      "complaint_id": "p1074_35556039563135_C022",
+      "complainer_id": "p1074_35556039563135_K016",
+      "complaint_file": "complaints/p1074_35556039563135_C022_illinois_department_of_transportation.json",
+      "response_ids": []
+    },
+    {
+      "order": 23,
+      "complaint_id": "p1074_35556039563135_C023",
+      "complainer_id": "p1074_35556039563135_K037",
+      "complaint_file": "complaints/p1074_35556039563135_C023_village_of_park_forest.json",
+      "response_ids": []
+    },
+    {
+      "order": 24,
+      "complaint_id": "p1074_35556039563135_C024",
+      "complainer_id": "p1074_35556039563135_K001",
+      "complaint_file": "complaints/p1074_35556039563135_C024_acting_superintendent_cook_county_highwa.json",
+      "response_ids": []
+    },
+    {
+      "order": 25,
+      "complaint_id": "p1074_35556039563135_C025",
+      "complainer_id": "p1074_35556039563135_K013",
+      "complaint_file": "complaints/p1074_35556039563135_C025_director_northeastern_illinois_planning_.json",
+      "response_ids": []
+    },
+    {
+      "order": 26,
+      "complaint_id": "p1074_35556039563135_C026",
+      "complainer_id": "p1074_35556039563135_K026",
+      "complaint_file": "complaints/p1074_35556039563135_C026_president_village_of_park_forest.json",
+      "response_ids": []
+    },
+    {
+      "order": 27,
+      "complaint_id": "p1074_35556039563135_C027",
+      "complainer_id": "p1074_35556039563135_K026",
+      "complaint_file": "complaints/p1074_35556039563135_C027_president_village_of_park_forest.json",
+      "response_ids": []
+    },
+    {
+      "order": 28,
+      "complaint_id": "p1074_35556039563135_C028",
+      "complainer_id": "p1074_35556039563135_K016",
+      "complaint_file": "complaints/p1074_35556039563135_C028_illinois_department_of_transportation.json",
+      "response_ids": []
+    },
+    {
+      "order": 29,
+      "complaint_id": "p1074_35556039563135_C029",
+      "complainer_id": "p1074_35556039563135_K005",
+      "complaint_file": "complaints/p1074_35556039563135_C029_cook_county_forest_preserve_district.json",
+      "response_ids": []
+    },
+    {
+      "order": 30,
+      "complaint_id": "p1074_35556039563135_C030",
+      "complainer_id": "p1074_35556039563135_K033",
+      "complaint_file": "complaints/p1074_35556039563135_C030_natural_resource_development_board.json",
+      "response_ids": []
+    },
+    {
+      "order": 31,
+      "complaint_id": "p1074_35556039563135_C031",
+      "complainer_id": "p1074_35556039563135_K035",
+      "complaint_file": "complaints/p1074_35556039563135_C031_state_of_illinois_department_of_business.json",
+      "response_ids": []
+    },
+    {
+      "order": 32,
+      "complaint_id": "p1074_35556039563135_C032",
+      "complainer_id": "p1074_35556039563135_K030",
+      "complaint_file": "complaints/p1074_35556039563135_C032_chicago_area_transportation_study.json",
+      "response_ids": []
+    },
+    {
+      "order": 33,
+      "complaint_id": "p1074_35556039563135_C033",
+      "complainer_id": "p1074_35556039563135_K034",
+      "complaint_file": "complaints/p1074_35556039563135_C033_school_district.json",
+      "response_ids": [
+        "p1074_35556039563135_R002"
+      ]
+    },
+    {
+      "order": 34,
+      "complaint_id": "p1074_35556039563135_C034",
+      "complainer_id": "p1074_35556039563135_K020",
+      "complaint_file": "complaints/p1074_35556039563135_C034_northeastern_illinois_planning_commissio.json",
+      "response_ids": [
+        "p1074_35556039563135_R003"
+      ]
+    },
+    {
+      "order": 35,
+      "complaint_id": "p1074_35556039563135_C035",
+      "complainer_id": "p1074_35556039563135_K020",
+      "complaint_file": "complaints/p1074_35556039563135_C035_northeastern_illinois_planning_commissio.json",
+      "response_ids": [
+        "p1074_35556039563135_R004"
+      ]
+    },
+    {
+      "order": 36,
+      "complaint_id": "p1074_35556039563135_C036",
+      "complainer_id": "p1074_35556039563135_K032",
+      "complaint_file": "complaints/p1074_35556039563135_C036_interstate_planning_committee.json",
+      "response_ids": []
+    },
+    {
+      "order": 37,
+      "complaint_id": "p1074_35556039563135_C037",
+      "complainer_id": "p1074_35556039563135_K034",
+      "complaint_file": "complaints/p1074_35556039563135_C037_school_district.json",
+      "response_ids": [
+        "p1074_35556039563135_R005"
+      ]
+    },
+    {
+      "order": 38,
+      "complaint_id": "p1074_35556039563135_C038",
+      "complainer_id": "p1074_35556039563135_K031",
+      "complaint_file": "complaints/p1074_35556039563135_C038_city_of_chicago_heights_park_district.json",
+      "response_ids": [
+        "p1074_35556039563135_R006"
+      ]
+    },
+    {
+      "order": 39,
+      "complaint_id": "p1074_35556039563135_C039",
+      "complainer_id": "p1074_35556039563135_K036",
+      "complaint_file": "complaints/p1074_35556039563135_C039_superintendent_of_schools_chicago_height.json",
+      "response_ids": [
+        "p1074_35556039563135_R007"
+      ]
+    },
+    {
+      "order": 40,
+      "complaint_id": "p1074_35556039563135_C040",
+      "complainer_id": "p1074_35556039563135_K122",
+      "complaint_file": "complaints/p1074_35556039563135_C040_chicago_heights_park_district.json",
+      "response_ids": [
+        "p1074_35556039563135_R008"
+      ]
+    },
+    {
+      "order": 41,
+      "complaint_id": "p1074_35556039563135_C041",
+      "complainer_id": "p1074_35556039563135_K040",
+      "complaint_file": "complaints/p1074_35556039563135_C041_james_m_weigle.json",
+      "response_ids": [
+        "p1074_35556039563135_R009"
+      ]
+    },
+    {
+      "order": 42,
+      "complaint_id": "p1074_35556039563135_C042",
+      "complainer_id": "p1074_35556039563135_K041",
+      "complaint_file": "complaints/p1074_35556039563135_C042_u_s_public_health_service.json",
+      "response_ids": [
+        "p1074_35556039563135_R010"
+      ]
+    },
+    {
+      "order": 43,
+      "complaint_id": "p1074_35556039563135_C043",
+      "complainer_id": "p1074_35556039563135_K038",
+      "complaint_file": "complaints/p1074_35556039563135_C043_illinois_environmental_protection_agency.json",
+      "response_ids": []
+    },
+    {
+      "order": 44,
+      "complaint_id": "p1074_35556039563135_C044",
+      "complainer_id": "p1074_35556039563135_K038",
+      "complaint_file": "complaints/p1074_35556039563135_C044_illinois_environmental_protection_agency.json",
+      "response_ids": []
+    },
+    {
+      "order": 45,
+      "complaint_id": "p1074_35556039563135_C045",
+      "complainer_id": "p1074_35556039563135_K039",
+      "complaint_file": "complaints/p1074_35556039563135_C045_illinois_pollution_control_board.json",
+      "response_ids": []
+    },
+    {
+      "order": 46,
+      "complaint_id": "p1074_35556039563135_C046",
+      "complainer_id": "p1074_35556039563135_K057",
+      "complaint_file": "complaints/p1074_35556039563135_C046_department_of_transportation_office_of_t.json",
+      "response_ids": []
+    },
+    {
+      "order": 47,
+      "complaint_id": "p1074_35556039563135_C047",
+      "complainer_id": "p1074_35556039563135_K061",
+      "complaint_file": "complaints/p1074_35556039563135_C047_howard_w_busch.json",
+      "response_ids": []
+    },
+    {
+      "order": 48,
+      "complaint_id": "p1074_35556039563135_C048",
+      "complainer_id": "p1074_35556039563135_K070",
+      "complaint_file": "complaints/p1074_35556039563135_C048_robert_luedner.json",
+      "response_ids": [
+        "p1074_35556039563135_R011"
+      ]
+    },
+    {
+      "order": 49,
+      "complaint_id": "p1074_35556039563135_C049",
+      "complainer_id": "p1074_35556039563135_K076",
+      "complaint_file": "complaints/p1074_35556039563135_C049_united_states_department_of_the_interior.json",
+      "response_ids": [
+        "p1074_35556039563135_R012"
+      ]
+    },
+    {
+      "order": 50,
+      "complaint_id": "p1074_35556039563135_C050",
+      "complainer_id": "p1074_35556039563135_K046",
+      "complaint_file": "complaints/p1074_35556039563135_C050_cheker_oil_company.json",
+      "response_ids": []
+    },
+    {
+      "order": 51,
+      "complaint_id": "p1074_35556039563135_C051",
+      "complainer_id": "p1074_35556039563135_K060",
+      "complaint_file": "complaints/p1074_35556039563135_C051_former_state_representative_brenne.json",
+      "response_ids": []
+    },
+    {
+      "order": 52,
+      "complaint_id": "p1074_35556039563135_C052",
+      "complainer_id": "p1074_35556039563135_K068",
+      "complaint_file": "complaints/p1074_35556039563135_C052_metropolitan_sanitary_district.json",
+      "response_ids": []
+    },
+    {
+      "order": 53,
+      "complaint_id": "p1074_35556039563135_C053",
+      "complainer_id": "p1074_35556039563135_K059",
+      "complaint_file": "complaints/p1074_35556039563135_C053_forest_preserve_district_of_cook_county.json",
+      "response_ids": [
+        "p1074_35556039563135_R013"
+      ]
+    },
+    {
+      "order": 54,
+      "complaint_id": "p1074_35556039563135_C054",
+      "complainer_id": "p1074_35556039563135_K118",
+      "complaint_file": "complaints/p1074_35556039563135_C054_arthur_j_darek.json",
+      "response_ids": [
+        "p1074_35556039563135_R014"
+      ]
+    },
+    {
+      "order": 55,
+      "complaint_id": "p1074_35556039563135_C055",
+      "complainer_id": "p1074_35556039563135_K045",
+      "complaint_file": "complaints/p1074_35556039563135_C055_bob_frantz.json",
+      "response_ids": []
+    },
+    {
+      "order": 56,
+      "complaint_id": "p1074_35556039563135_C056",
+      "complainer_id": "p1074_35556039563135_K051",
+      "complaint_file": "complaints/p1074_35556039563135_C056_department_of_agriculture_forest_service.json",
+      "response_ids": [
+        "p1074_35556039563135_R015"
+      ]
+    },
+    {
+      "order": 57,
+      "complaint_id": "p1074_35556039563135_C057",
+      "complainer_id": "p1074_35556039563135_K075",
+      "complaint_file": "complaints/p1074_35556039563135_C057_united_states_department_of_housing_and_.json",
+      "response_ids": [
+        "p1074_35556039563135_R016"
+      ]
+    },
+    {
+      "order": 58,
+      "complaint_id": "p1074_35556039563135_C058",
+      "complainer_id": "p1074_35556039563135_K086",
+      "complaint_file": "complaints/p1074_35556039563135_C058_department_of_housing_and_urban_developm.json",
+      "response_ids": [
+        "p1074_35556039563135_R017"
+      ]
+    },
+    {
+      "order": 59,
+      "complaint_id": "p1074_35556039563135_C059",
+      "complainer_id": "p1074_35556039563135_K099",
+      "complaint_file": "complaints/p1074_35556039563135_C059_john_l_waner.json",
+      "response_ids": [
+        "p1074_35556039563135_R018"
+      ]
+    },
+    {
+      "order": 60,
+      "complaint_id": "p1074_35556039563135_C060",
+      "complainer_id": "p1074_35556039563135_K099",
+      "complaint_file": "complaints/p1074_35556039563135_C060_john_l_waner.json",
+      "response_ids": [
+        "p1074_35556039563135_R019"
+      ]
+    },
+    {
+      "order": 61,
+      "complaint_id": "p1074_35556039563135_C061",
+      "complainer_id": "p1074_35556039563135_K107",
+      "complaint_file": "complaints/p1074_35556039563135_C061_bureau_of_outdoor_recreation.json",
+      "response_ids": [
+        "p1074_35556039563135_R020"
+      ]
+    },
+    {
+      "order": 62,
+      "complaint_id": "p1074_35556039563135_C062",
+      "complainer_id": "p1074_35556039563135_K112",
+      "complaint_file": "complaints/p1074_35556039563135_C062_john_d_cherry.json",
+      "response_ids": [
+        "p1074_35556039563135_R021"
+      ]
+    },
+    {
+      "order": 63,
+      "complaint_id": "p1074_35556039563135_C063",
+      "complainer_id": "p1074_35556039563135_K128",
+      "complaint_file": "complaints/p1074_35556039563135_C063_united_states_department_of_the_interior.json",
+      "response_ids": [
+        "p1074_35556039563135_R022"
+      ]
+    },
+    {
+      "order": 64,
+      "complaint_id": "p1074_35556039563135_C064",
+      "complainer_id": "p1074_35556039563135_K128",
+      "complaint_file": "complaints/p1074_35556039563135_C064_united_states_department_of_the_interior.json",
+      "response_ids": [
+        "p1074_35556039563135_R023"
+      ]
+    },
+    {
+      "order": 65,
+      "complaint_id": "p1074_35556039563135_C065",
+      "complainer_id": "p1074_35556039563135_K043",
+      "complaint_file": "complaints/p1074_35556039563135_C065_board_of_education_district_no_170.json",
+      "response_ids": []
+    },
+    {
+      "order": 66,
+      "complaint_id": "p1074_35556039563135_C066",
+      "complainer_id": "p1074_35556039563135_K043",
+      "complaint_file": "complaints/p1074_35556039563135_C066_board_of_education_district_no_170.json",
+      "response_ids": [
+        "p1074_35556039563135_R024"
+      ]
+    },
+    {
+      "order": 67,
+      "complaint_id": "p1074_35556039563135_C067",
+      "complainer_id": "p1074_35556039563135_K043",
+      "complaint_file": "complaints/p1074_35556039563135_C067_board_of_education_district_no_170.json",
+      "response_ids": [
+        "p1074_35556039563135_R025"
+      ]
+    },
+    {
+      "order": 68,
+      "complaint_id": "p1074_35556039563135_C068",
+      "complainer_id": "p1074_35556039563135_K043",
+      "complaint_file": "complaints/p1074_35556039563135_C068_board_of_education_district_no_170.json",
+      "response_ids": [
+        "p1074_35556039563135_R026"
+      ]
+    },
+    {
+      "order": 69,
+      "complaint_id": "p1074_35556039563135_C069",
+      "complainer_id": "p1074_35556039563135_K084",
+      "complaint_file": "complaints/p1074_35556039563135_C069_charles_n_rellis.json",
+      "response_ids": [
+        "p1074_35556039563135_R027"
+      ]
+    },
+    {
+      "order": 70,
+      "complaint_id": "p1074_35556039563135_C070",
+      "complainer_id": "p1074_35556039563135_K119",
+      "complaint_file": "complaints/p1074_35556039563135_C070_board_of_education_district_no_170_cook_.json",
+      "response_ids": [
+        "p1074_35556039563135_R028"
+      ]
+    },
+    {
+      "order": 71,
+      "complaint_id": "p1074_35556039563135_C071",
+      "complainer_id": "p1074_35556039563135_K077",
+      "complaint_file": "complaints/p1074_35556039563135_C071_united_states_environmental_protection_a.json",
+      "response_ids": [
+        "p1074_35556039563135_R029"
+      ]
+    },
+    {
+      "order": 72,
+      "complaint_id": "p1074_35556039563135_C072",
+      "complainer_id": "p1074_35556039563135_K077",
+      "complaint_file": "complaints/p1074_35556039563135_C072_united_states_environmental_protection_a.json",
+      "response_ids": [
+        "p1074_35556039563135_R030"
+      ]
+    },
+    {
+      "order": 73,
+      "complaint_id": "p1074_35556039563135_C073",
+      "complainer_id": "p1074_35556039563135_K077",
+      "complaint_file": "complaints/p1074_35556039563135_C073_united_states_environmental_protection_a.json",
+      "response_ids": [
+        "p1074_35556039563135_R031"
+      ]
+    },
+    {
+      "order": 74,
+      "complaint_id": "p1074_35556039563135_C074",
+      "complainer_id": "p1074_35556039563135_K077",
+      "complaint_file": "complaints/p1074_35556039563135_C074_united_states_environmental_protection_a.json",
+      "response_ids": [
+        "p1074_35556039563135_R032"
+      ]
+    },
+    {
+      "order": 75,
+      "complaint_id": "p1074_35556039563135_C075",
+      "complainer_id": "p1074_35556039563135_K058",
+      "complaint_file": "complaints/p1074_35556039563135_C075_donald_a_wallgren.json",
+      "response_ids": [
+        "p1074_35556039563135_R033"
+      ]
+    },
+    {
+      "order": 76,
+      "complaint_id": "p1074_35556039563135_C076",
+      "complainer_id": "p1074_35556039563135_K055",
+      "complaint_file": "complaints/p1074_35556039563135_C076_department_of_health_education_and_welfa.json",
+      "response_ids": [
+        "p1074_35556039563135_R034"
+      ]
+    },
+    {
+      "order": 77,
+      "complaint_id": "p1074_35556039563135_C077",
+      "complainer_id": "p1074_35556039563135_K067",
+      "complaint_file": "complaints/p1074_35556039563135_C077_merlin_k_duval_m_d.json",
+      "response_ids": [
+        "p1074_35556039563135_R035"
+      ]
+    },
+    {
+      "order": 78,
+      "complaint_id": "p1074_35556039563135_C078",
+      "complainer_id": "p1074_35556039563135_K069",
+      "complaint_file": "complaints/p1074_35556039563135_C078_office_of_economic_opportunity.json",
+      "response_ids": [
+        "p1074_35556039563135_R036"
+      ]
+    },
+    {
+      "order": 79,
+      "complaint_id": "p1074_35556039563135_C079",
+      "complainer_id": "p1074_35556039563135_K071",
+      "complaint_file": "complaints/p1074_35556039563135_C079_sidney_r_galler.json",
+      "response_ids": [
+        "p1074_35556039563135_R037"
+      ]
+    },
+    {
+      "order": 80,
+      "complaint_id": "p1074_35556039563135_C080",
+      "complainer_id": "p1074_35556039563135_K073",
+      "complaint_file": "complaints/p1074_35556039563135_C080_the_assistant_secretary_of_commerce.json",
+      "response_ids": [
+        "p1074_35556039563135_R038"
+      ]
+    },
+    {
+      "order": 81,
+      "complaint_id": "p1074_35556039563135_C081",
+      "complainer_id": "p1074_35556039563135_K085",
+      "complaint_file": "complaints/p1074_35556039563135_C081_department_of_commerce.json",
+      "response_ids": [
+        "p1074_35556039563135_R039"
+      ]
+    },
+    {
+      "order": 82,
+      "complaint_id": "p1074_35556039563135_C082",
+      "complainer_id": "p1074_35556039563135_K072",
+      "complaint_file": "complaints/p1074_35556039563135_C082_state_of_illinois_governor_s_office_of_h.json",
+      "response_ids": [
+        "p1074_35556039563135_R040"
+      ]
+    },
+    {
+      "order": 83,
+      "complaint_id": "p1074_35556039563135_C083",
+      "complainer_id": "p1074_35556039563135_K050",
+      "complaint_file": "complaints/p1074_35556039563135_C083_department_of_aeronautics.json",
+      "response_ids": [
+        "p1074_35556039563135_R041"
+      ]
+    },
+    {
+      "order": 84,
+      "complaint_id": "p1074_35556039563135_C084",
+      "complainer_id": "p1074_35556039563135_K054",
+      "complaint_file": "complaints/p1074_35556039563135_C084_department_of_corrections.json",
+      "response_ids": [
+        "p1074_35556039563135_R042"
+      ]
+    },
+    {
+      "order": 85,
+      "complaint_id": "p1074_35556039563135_C085",
+      "complainer_id": "p1074_35556039563135_K056",
+      "complaint_file": "complaints/p1074_35556039563135_C085_department_of_local_government_affairs.json",
+      "response_ids": [
+        "p1074_35556039563135_R043"
+      ]
+    },
+    {
+      "order": 86,
+      "complaint_id": "p1074_35556039563135_C086",
+      "complainer_id": "p1074_35556039563135_K080",
+      "complaint_file": "complaints/p1074_35556039563135_C086_allan_f_landolt.json",
+      "response_ids": [
+        "p1074_35556039563135_R044"
+      ]
+    },
+    {
+      "order": 87,
+      "complaint_id": "p1074_35556039563135_C087",
+      "complainer_id": "p1074_35556039563135_K094",
+      "complaint_file": "complaints/p1074_35556039563135_C087_henry_holling.json",
+      "response_ids": [
+        "p1074_35556039563135_R045"
+      ]
+    },
+    {
+      "order": 88,
+      "complaint_id": "p1074_35556039563135_C088",
+      "complainer_id": "p1074_35556039563135_K103",
+      "complaint_file": "complaints/p1074_35556039563135_C088_peter_b_bensinger.json",
+      "response_ids": [
+        "p1074_35556039563135_R046"
+      ]
+    },
+    {
+      "order": 89,
+      "complaint_id": "p1074_35556039563135_C089",
+      "complainer_id": "p1074_35556039563135_K052",
+      "complaint_file": "complaints/p1074_35556039563135_C089_department_of_business_and_economic_deve.json",
+      "response_ids": [
+        "p1074_35556039563135_R047"
+      ]
+    },
+    {
+      "order": 90,
+      "complaint_id": "p1074_35556039563135_C090",
+      "complainer_id": "p1074_35556039563135_K062",
+      "complaint_file": "complaints/p1074_35556039563135_C090_illinois_archaeological_survey.json",
+      "response_ids": [
+        "p1074_35556039563135_R048"
+      ]
+    },
+    {
+      "order": 91,
+      "complaint_id": "p1074_35556039563135_C091",
+      "complainer_id": "p1074_35556039563135_K083",
+      "complaint_file": "complaints/p1074_35556039563135_C091_charles_j_bareis.json",
+      "response_ids": [
+        "p1074_35556039563135_R049"
+      ]
+    },
+    {
+      "order": 92,
+      "complaint_id": "p1074_35556039563135_C092",
+      "complainer_id": "p1074_35556039563135_K072",
+      "complaint_file": "complaints/p1074_35556039563135_C092_state_of_illinois_governor_s_office_of_h.json",
+      "response_ids": []
+    },
+    {
+      "order": 93,
+      "complaint_id": "p1074_35556039563135_C093",
+      "complainer_id": "p1074_35556039563135_K075",
+      "complaint_file": "complaints/p1074_35556039563135_C093_united_states_department_of_housing_and_.json",
+      "response_ids": [
+        "p1074_35556039563135_R050"
+      ]
+    },
+    {
+      "order": 94,
+      "complaint_id": "p1074_35556039563135_C094",
+      "complainer_id": "p1074_35556039563135_K086",
+      "complaint_file": "complaints/p1074_35556039563135_C094_department_of_housing_and_urban_developm.json",
+      "response_ids": [
+        "p1074_35556039563135_R051"
+      ]
+    },
+    {
+      "order": 95,
+      "complaint_id": "p1074_35556039563135_C095",
+      "complainer_id": "p1074_35556039563135_K104",
+      "complaint_file": "complaints/p1074_35556039563135_C095_phillip_sanchez.json",
+      "response_ids": []
+    },
+    {
+      "order": 96,
+      "complaint_id": "p1074_35556039563135_C096",
+      "complainer_id": "p1074_35556039563135_K050",
+      "complaint_file": "complaints/p1074_35556039563135_C096_department_of_aeronautics.json",
+      "response_ids": []
+    },
+    {
+      "order": 97,
+      "complaint_id": "p1074_35556039563135_C097",
+      "complainer_id": "p1074_35556039563135_K052",
+      "complaint_file": "complaints/p1074_35556039563135_C097_department_of_business_and_economic_deve.json",
+      "response_ids": []
+    },
+    {
+      "order": 98,
+      "complaint_id": "p1074_35556039563135_C098",
+      "complainer_id": "p1074_35556039563135_K054",
+      "complaint_file": "complaints/p1074_35556039563135_C098_department_of_corrections.json",
+      "response_ids": []
+    },
+    {
+      "order": 99,
+      "complaint_id": "p1074_35556039563135_C099",
+      "complainer_id": "p1074_35556039563135_K062",
+      "complaint_file": "complaints/p1074_35556039563135_C099_illinois_archaeological_survey.json",
+      "response_ids": []
+    },
+    {
+      "order": 100,
+      "complaint_id": "p1074_35556039563135_C100",
+      "complainer_id": "p1074_35556039563135_K066",
+      "complaint_file": "complaints/p1074_35556039563135_C100_illinois_state_geological_survey.json",
+      "response_ids": [
+        "p1074_35556039563135_R052"
+      ]
+    },
+    {
+      "order": 101,
+      "complaint_id": "p1074_35556039563135_C101",
+      "complainer_id": "p1074_35556039563135_K066",
+      "complaint_file": "complaints/p1074_35556039563135_C101_illinois_state_geological_survey.json",
+      "response_ids": []
+    },
+    {
+      "order": 102,
+      "complaint_id": "p1074_35556039563135_C102",
+      "complainer_id": "p1074_35556039563135_K081",
+      "complaint_file": "complaints/p1074_35556039563135_C102_board_of_vocational_education_and_rehabi.json",
+      "response_ids": []
+    },
+    {
+      "order": 103,
+      "complaint_id": "p1074_35556039563135_C103",
+      "complainer_id": "p1074_35556039563135_K081",
+      "complaint_file": "complaints/p1074_35556039563135_C103_board_of_vocational_education_and_rehabi.json",
+      "response_ids": []
+    },
+    {
+      "order": 104,
+      "complaint_id": "p1074_35556039563135_C104",
+      "complainer_id": "p1074_35556039563135_K093",
+      "complaint_file": "complaints/p1074_35556039563135_C104_governor_s_office_of_human_resources.json",
+      "response_ids": []
+    },
+    {
+      "order": 105,
+      "complaint_id": "p1074_35556039563135_C105",
+      "complainer_id": "p1074_35556039563135_K098",
+      "complaint_file": "complaints/p1074_35556039563135_C105_john_e_hirten.json",
+      "response_ids": []
+    },
+    {
+      "order": 106,
+      "complaint_id": "p1074_35556039563135_C106",
+      "complainer_id": "p1074_35556039563135_K087",
+      "complaint_file": "complaints/p1074_35556039563135_C106_department_of_local_governmental_affairs.json",
+      "response_ids": []
+    },
+    {
+      "order": 107,
+      "complaint_id": "p1074_35556039563135_C107",
+      "complainer_id": "p1074_35556039563135_K087",
+      "complaint_file": "complaints/p1074_35556039563135_C107_department_of_local_governmental_affairs.json",
+      "response_ids": []
+    },
+    {
+      "order": 108,
+      "complaint_id": "p1074_35556039563135_C108",
+      "complainer_id": "p1074_35556039563135_K053",
+      "complaint_file": "complaints/p1074_35556039563135_C108_department_of_children_family_services.json",
+      "response_ids": []
+    },
+    {
+      "order": 109,
+      "complaint_id": "p1074_35556039563135_C109",
+      "complainer_id": "p1074_35556039563135_K097",
+      "complaint_file": "complaints/p1074_35556039563135_C109_jimi_anne_lawrence.json",
+      "response_ids": []
+    },
+    {
+      "order": 110,
+      "complaint_id": "p1074_35556039563135_C110",
+      "complainer_id": "p1074_35556039563135_K044",
+      "complaint_file": "complaints/p1074_35556039563135_C110_board_of_vocational_rehabilitation_divis.json",
+      "response_ids": []
+    },
+    {
+      "order": 111,
+      "complaint_id": "p1074_35556039563135_C111",
+      "complainer_id": "p1074_35556039563135_K088",
+      "complaint_file": "complaints/p1074_35556039563135_C111_division_of_vocational_rehabilitation.json",
+      "response_ids": []
+    },
+    {
+      "order": 112,
+      "complaint_id": "p1074_35556039563135_C112",
+      "complainer_id": "p1074_35556039563135_K096",
+      "complaint_file": "complaints/p1074_35556039563135_C112_james_f_walker.json",
+      "response_ids": []
+    },
+    {
+      "order": 113,
+      "complaint_id": "p1074_35556039563135_C113",
+      "complainer_id": "p1074_35556039563135_K065",
+      "complaint_file": "complaints/p1074_35556039563135_C113_illinois_natural_history_survey.json",
+      "response_ids": []
+    },
+    {
+      "order": 114,
+      "complaint_id": "p1074_35556039563135_C114",
+      "complainer_id": "p1074_35556039563135_K092",
+      "complaint_file": "complaints/p1074_35556039563135_C114_george_sprugel_jr.json",
+      "response_ids": []
+    },
+    {
+      "order": 115,
+      "complaint_id": "p1074_35556039563135_C115",
+      "complainer_id": "p1074_35556039563135_K106",
+      "complaint_file": "complaints/p1074_35556039563135_C115_ray_c_dickerson.json",
+      "response_ids": []
+    },
+    {
+      "order": 116,
+      "complaint_id": "p1074_35556039563135_C116",
+      "complainer_id": "p1074_35556039563135_K082",
+      "complaint_file": "complaints/p1074_35556039563135_C116_carolyn_a_kruse.json",
+      "response_ids": []
+    },
+    {
+      "order": 117,
+      "complaint_id": "p1074_35556039563135_C117",
+      "complainer_id": "p1074_35556039563135_K049",
+      "complaint_file": "complaints/p1074_35556039563135_C117_cook_county_highway_department.json",
+      "response_ids": []
+    },
+    {
+      "order": 118,
+      "complaint_id": "p1074_35556039563135_C118",
+      "complainer_id": "p1074_35556039563135_K095",
+      "complaint_file": "complaints/p1074_35556039563135_C118_hugo_j_stark.json",
+      "response_ids": []
+    },
+    {
+      "order": 119,
+      "complaint_id": "p1074_35556039563135_C119",
+      "complainer_id": "p1074_35556039563135_K105",
+      "complaint_file": "complaints/p1074_35556039563135_C119_ralph_g_johnson.json",
+      "response_ids": []
+    },
+    {
+      "order": 120,
+      "complaint_id": "p1074_35556039563135_C120",
+      "complainer_id": "p1074_35556039563135_K100",
+      "complaint_file": "complaints/p1074_35556039563135_C120_matthew_l_rockwell.json",
+      "response_ids": []
+    },
+    {
+      "order": 121,
+      "complaint_id": "p1074_35556039563135_C121",
+      "complainer_id": "p1074_35556039563135_K091",
+      "complaint_file": "complaints/p1074_35556039563135_C121_george_r_bonick.json",
+      "response_ids": []
+    },
+    {
+      "order": 122,
+      "complaint_id": "p1074_35556039563135_C122",
+      "complainer_id": "p1074_35556039563135_K090",
+      "complaint_file": "complaints/p1074_35556039563135_C122_frank_e_glowacki.json",
+      "response_ids": [
+        "p1074_35556039563135_R053"
+      ]
+    },
+    {
+      "order": 123,
+      "complaint_id": "p1074_35556039563135_C123",
+      "complainer_id": "p1074_35556039563135_K090",
+      "complaint_file": "complaints/p1074_35556039563135_C123_frank_e_glowacki.json",
+      "response_ids": []
+    },
+    {
+      "order": 124,
+      "complaint_id": "p1074_35556039563135_C124",
+      "complainer_id": "p1074_35556039563135_K121",
+      "complaint_file": "complaints/p1074_35556039563135_C124_chicago_heights_human_relations.json",
+      "response_ids": []
+    },
+    {
+      "order": 125,
+      "complaint_id": "p1074_35556039563135_C125",
+      "complainer_id": "p1074_35556039563135_K127",
+      "complaint_file": "complaints/p1074_35556039563135_C125_park_forest_human_relations.json",
+      "response_ids": []
+    },
+    {
+      "order": 126,
+      "complaint_id": "p1074_35556039563135_C126",
+      "complainer_id": "p1074_35556039563135_K101",
+      "complaint_file": "complaints/p1074_35556039563135_C126_norman_e_tufford.json",
+      "response_ids": []
+    },
+    {
+      "order": 127,
+      "complaint_id": "p1074_35556039563135_C127",
+      "complainer_id": "p1074_35556039563135_K102",
+      "complaint_file": "complaints/p1074_35556039563135_C127_northwestern_indiana_regional_planning_c.json",
+      "response_ids": [
+        "p1074_35556039563135_R054"
+      ]
+    },
+    {
+      "order": 128,
+      "complaint_id": "p1074_35556039563135_C128",
+      "complainer_id": "p1074_35556039563135_K091",
+      "complaint_file": "complaints/p1074_35556039563135_C128_george_r_bonick.json",
+      "response_ids": []
+    },
+    {
+      "order": 129,
+      "complaint_id": "p1074_35556039563135_C129",
+      "complainer_id": "p1074_35556039563135_K089",
+      "complaint_file": "complaints/p1074_35556039563135_C129_dudley_onderdonk.json",
+      "response_ids": []
+    },
+    {
+      "order": 130,
+      "complaint_id": "p1074_35556039563135_C130",
+      "complainer_id": "p1074_35556039563135_K110",
+      "complaint_file": "complaints/p1074_35556039563135_C130_don_a_moore.json",
+      "response_ids": []
+    },
+    {
+      "order": 131,
+      "complaint_id": "p1074_35556039563135_C131",
+      "complainer_id": "p1074_35556039563135_K113",
+      "complaint_file": "complaints/p1074_35556039563135_C131_metropolitan_sanitary_district_of_greate.json",
+      "response_ids": []
+    },
+    {
+      "order": 132,
+      "complaint_id": "p1074_35556039563135_C132",
+      "complainer_id": "p1074_35556039563135_K108",
+      "complaint_file": "complaints/p1074_35556039563135_C132_cook_county_planning_commission.json",
+      "response_ids": []
+    },
+    {
+      "order": 133,
+      "complaint_id": "p1074_35556039563135_C133",
+      "complainer_id": "p1074_35556039563135_K109",
+      "complaint_file": "complaints/p1074_35556039563135_C133_daniel_j_ferrone.json",
+      "response_ids": []
+    },
+    {
+      "order": 134,
+      "complaint_id": "p1074_35556039563135_C134",
+      "complainer_id": "p1074_35556039563135_K111",
+      "complaint_file": "complaints/p1074_35556039563135_C134_frank_w_chesrow.json",
+      "response_ids": []
+    },
+    {
+      "order": 135,
+      "complaint_id": "p1074_35556039563135_C135",
+      "complainer_id": "p1074_35556039563135_K115",
+      "complaint_file": "complaints/p1074_35556039563135_C135_united_states_department_of_agriculture_.json",
+      "response_ids": []
+    },
+    {
+      "order": 136,
+      "complaint_id": "p1074_35556039563135_C136",
+      "complainer_id": "p1074_35556039563135_K116",
+      "complaint_file": "complaints/p1074_35556039563135_C136_alfred_h_troutt.json",
+      "response_ids": []
+    },
+    {
+      "order": 137,
+      "complaint_id": "p1074_35556039563135_C137",
+      "complainer_id": "p1074_35556039563135_K042",
+      "complaint_file": "complaints/p1074_35556039563135_C137_benjamin_o_davis_jr.json",
+      "response_ids": []
+    },
+    {
+      "order": 138,
+      "complaint_id": "p1074_35556039563135_C138",
+      "complainer_id": "p1074_35556039563135_K114",
+      "complaint_file": "complaints/p1074_35556039563135_C138_state_of_illinois_department_of_transpor.json",
+      "response_ids": []
+    },
+    {
+      "order": 139,
+      "complaint_id": "p1074_35556039563135_C139",
+      "complainer_id": "p1074_35556039563135_K120",
+      "complaint_file": "complaints/p1074_35556039563135_C139_charles_panici.json",
+      "response_ids": []
+    },
+    {
+      "order": 140,
+      "complaint_id": "p1074_35556039563135_C140",
+      "complainer_id": "p1074_35556039563135_K123",
+      "complaint_file": "complaints/p1074_35556039563135_C140_department_of_conservation_state_of_illi.json",
+      "response_ids": []
+    },
+    {
+      "order": 141,
+      "complaint_id": "p1074_35556039563135_C141",
+      "complainer_id": "p1074_35556039563135_K123",
+      "complaint_file": "complaints/p1074_35556039563135_C141_department_of_conservation_state_of_illi.json",
+      "response_ids": []
+    },
+    {
+      "order": 142,
+      "complaint_id": "p1074_35556039563135_C142",
+      "complainer_id": "p1074_35556039563135_K124",
+      "complaint_file": "complaints/p1074_35556039563135_C142_john_mcguire.json",
+      "response_ids": []
+    },
+    {
+      "order": 143,
+      "complaint_id": "p1074_35556039563135_C143",
+      "complainer_id": "p1074_35556039563135_K117",
+      "complaint_file": "complaints/p1074_35556039563135_C143_anthony_t_dean.json",
+      "response_ids": []
+    },
+    {
+      "order": 144,
+      "complaint_id": "p1074_35556039563135_C144",
+      "complainer_id": "p1074_35556039563135_K129",
+      "complaint_file": "complaints/p1074_35556039563135_C144_harlan_h_edmonds.json",
+      "response_ids": []
+    },
+    {
+      "order": 145,
+      "complaint_id": "p1074_35556039563135_C145",
+      "complainer_id": "p1074_35556039563135_K130",
+      "complaint_file": "complaints/p1074_35556039563135_C145_illinois_department_of_conservation.json",
+      "response_ids": []
+    },
+    {
+      "order": 146,
+      "complaint_id": "p1074_35556039563135_C146",
+      "complainer_id": "p1074_35556039563135_K131",
+      "complaint_file": "complaints/p1074_35556039563135_C146_illinois_nature_preserves_commission.json",
+      "response_ids": []
+    },
+    {
+      "order": 147,
+      "complaint_id": "p1074_35556039563135_C147",
+      "complainer_id": "p1074_35556039563135_K002",
+      "complaint_file": "complaints/p1074_35556039563135_C147_assistant_secretary_for_environment_and_.json",
+      "response_ids": []
+    },
+    {
+      "order": 148,
+      "complaint_id": "p1074_35556039563135_C148",
+      "complainer_id": "p1074_35556039563135_K011",
+      "complaint_file": "complaints/p1074_35556039563135_C148_director_chicago_area_office_department_.json",
+      "response_ids": []
+    },
+    {
+      "order": 149,
+      "complaint_id": "p1074_35556039563135_C149",
+      "complainer_id": "p1074_35556039563135_K012",
+      "complaint_file": "complaints/p1074_35556039563135_C149_director_cook_county_department_of_plann.json",
+      "response_ids": []
+    },
+    {
+      "order": 150,
+      "complaint_id": "p1074_35556039563135_C150",
+      "complainer_id": "p1074_35556039563135_K014",
+      "complaint_file": "complaints/p1074_35556039563135_C150_director_office_of_economic_opportunity.json",
+      "response_ids": []
+    },
+    {
+      "order": 151,
+      "complaint_id": "p1074_35556039563135_C151",
+      "complainer_id": "p1074_35556039563135_K019",
+      "complaint_file": "complaints/p1074_35556039563135_C151_mayor_city_of_chicago_heights.json",
+      "response_ids": []
+    },
+    {
+      "order": 152,
+      "complaint_id": "p1074_35556039563135_C152",
+      "complainer_id": "p1074_35556039563135_K023",
+      "complaint_file": "complaints/p1074_35556039563135_C152_office_of_the_secretary_department_of_ag.json",
+      "response_ids": []
+    },
+    {
+      "order": 153,
+      "complaint_id": "p1074_35556039563135_C153",
+      "complainer_id": "p1074_35556039563135_K024",
+      "complaint_file": "complaints/p1074_35556039563135_C153_president_village_of_matteson.json",
+      "response_ids": []
+    },
+    {
+      "order": 154,
+      "complaint_id": "p1074_35556039563135_C154",
+      "complainer_id": "p1074_35556039563135_K025",
+      "complaint_file": "complaints/p1074_35556039563135_C154_president_village_of_olympia_fields.json",
+      "response_ids": []
+    },
+    {
+      "order": 155,
+      "complaint_id": "p1074_35556039563135_C155",
+      "complainer_id": "p1074_35556039563135_K027",
+      "complaint_file": "complaints/p1074_35556039563135_C155_regional_office_environmental_protection.json",
+      "response_ids": []
+    },
+    {
+      "order": 156,
+      "complaint_id": "p1074_35556039563135_C156",
+      "complainer_id": "p1074_35556039563135_K028",
+      "complaint_file": "complaints/p1074_35556039563135_C156_sigmund_c_ziejewski.json",
+      "response_ids": []
+    },
+    {
+      "order": 157,
+      "complaint_id": "p1074_35556039563135_C157",
+      "complainer_id": "p1074_35556039563135_K047",
+      "complaint_file": "complaints/p1074_35556039563135_C157_city_of_chicago_heights.json",
+      "response_ids": []
+    },
+    {
+      "order": 158,
+      "complaint_id": "p1074_35556039563135_C158",
+      "complainer_id": "p1074_35556039563135_K048",
+      "complaint_file": "complaints/p1074_35556039563135_C158_comprehensive_state_health_planning_agen.json",
+      "response_ids": []
+    },
+    {
+      "order": 159,
+      "complaint_id": "p1074_35556039563135_C159",
+      "complainer_id": "p1074_35556039563135_K063",
+      "complaint_file": "complaints/p1074_35556039563135_C159_illinois_bell_telephone_company.json",
+      "response_ids": []
+    },
+    {
+      "order": 160,
+      "complaint_id": "p1074_35556039563135_C160",
+      "complainer_id": "p1074_35556039563135_K064",
+      "complaint_file": "complaints/p1074_35556039563135_C160_illinois_central_gulf_railroad.json",
+      "response_ids": []
+    },
+    {
+      "order": 161,
+      "complaint_id": "p1074_35556039563135_C161",
+      "complainer_id": "p1074_35556039563135_K074",
+      "complaint_file": "complaints/p1074_35556039563135_C161_united_states_department_of_agriculture_.json",
+      "response_ids": []
+    },
+    {
+      "order": 162,
+      "complaint_id": "p1074_35556039563135_C162",
+      "complainer_id": "p1074_35556039563135_K078",
+      "complaint_file": "complaints/p1074_35556039563135_C162_village_of_matteson.json",
+      "response_ids": []
+    },
+    {
+      "order": 163,
+      "complaint_id": "p1074_35556039563135_C163",
+      "complainer_id": "p1074_35556039563135_K125",
+      "complaint_file": "complaints/p1074_35556039563135_C163_matteson_park_district.json",
+      "response_ids": []
+    },
+    {
+      "order": 164,
+      "complaint_id": "p1074_35556039563135_C164",
+      "complainer_id": "p1074_35556039563135_K126",
+      "complaint_file": "complaints/p1074_35556039563135_C164_olympia_fields_park_district.json",
+      "response_ids": []
+    }
+  ],
+  "complaints": [
+    {
+      "complaint_id": "p1074_35556039563135_C001",
+      "complainer_id": "p1074_35556039563135_K007",
+      "file": "complaints/p1074_35556039563135_C001_deputy_administrator.json",
+      "order": 1,
+      "entity": "Deputy Administrator",
+      "kind": "official",
+      "role": "FHWA Deputy Administrator, issuing Section 4(f) determination",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C002",
+      "complainer_id": "p1074_35556039563135_K021",
+      "file": "complaints/p1074_35556039563135_C002_office_of_environmental_policy.json",
+      "order": 2,
+      "entity": "Office of Environmental Policy",
+      "kind": "agency",
+      "role": "FHWA office reviewing Section 4(f) statement",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C003",
+      "complainer_id": "p1074_35556039563135_K022",
+      "file": "complaints/p1074_35556039563135_C003_office_of_the_chief_counsel.json",
+      "order": 3,
+      "entity": "Office of the Chief Counsel",
+      "kind": "agency",
+      "role": "FHWA office reviewing Section 4(f) statement",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C004",
+      "complainer_id": "p1074_35556039563135_K004",
+      "file": "complaints/p1074_35556039563135_C004_bruce_blanchard.json",
+      "order": 4,
+      "entity": "Bruce Blanchard",
+      "kind": "official",
+      "role": "Director, Office of Environmental Project Review, Department of the Interior",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "2"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C005",
+      "complainer_id": "p1074_35556039563135_K022",
+      "file": "complaints/p1074_35556039563135_C005_office_of_the_chief_counsel.json",
+      "order": 5,
+      "entity": "Office of the Chief Counsel",
+      "kind": "agency",
+      "role": "FHWA office reviewing Section 4(f) statement",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "written_comment",
+      "evidence_pages": [
+        "3"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R001"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C006",
+      "complainer_id": "p1074_35556039563135_K015",
+      "file": "complaints/p1074_35556039563135_C006_donald_e_trull.json",
+      "order": 6,
+      "entity": "Donald E. Trull",
+      "kind": "official",
+      "role": "Regional Administrator, FHWA, Homewood, Illinois",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "6"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C007",
+      "complainer_id": "p1074_35556039563135_K029",
+      "file": "complaints/p1074_35556039563135_C007_w_g_emrich.json",
+      "order": 7,
+      "entity": "W. G. EMRICH",
+      "kind": "official",
+      "role": "Director, Office of Environment and Design, FHWA",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "6"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C008",
+      "complainer_id": "p1074_35556039563135_K006",
+      "file": "complaints/p1074_35556039563135_C008_department_of_the_interior.json",
+      "order": 8,
+      "entity": "Department of the Interior",
+      "kind": "agency",
+      "role": "Federal agency reviewing Section 4(f) statement",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "7"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C009",
+      "complainer_id": "p1074_35556039563135_K009",
+      "file": "complaints/p1074_35556039563135_C009_deputy_assistant_secretary_of_the_interi.json",
+      "order": 9,
+      "entity": "Deputy Assistant Secretary of the Interior",
+      "kind": "official",
+      "role": "Deputy Assistant Secretary, Department of the Interior",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "7"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C010",
+      "complainer_id": "p1074_35556039563135_K018",
+      "file": "complaints/p1074_35556039563135_C010_manuel_a_marks.json",
+      "order": 10,
+      "entity": "Manuel A. Marks",
+      "kind": "official",
+      "role": "Assistant Division Administrator, FHWA Illinois Division",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "9"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C011",
+      "complainer_id": "p1074_35556039563135_K018",
+      "file": "complaints/p1074_35556039563135_C011_manuel_a_marks.json",
+      "order": 11,
+      "entity": "Manuel A. Marks",
+      "kind": "official",
+      "role": "Assistant Division Administrator, FHWA Illinois Division",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "9"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C012",
+      "complainer_id": "p1074_35556039563135_K017",
+      "file": "complaints/p1074_35556039563135_C012_jay_w_miller.json",
+      "order": 12,
+      "entity": "Jay W. Miller",
+      "kind": "official",
+      "role": "Division Administrator / Division Engineer, FHWA Illinois Division",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "letter",
+      "evidence_pages": [
+        "10-11"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C013",
+      "complainer_id": "p1074_35556039563135_K017",
+      "file": "complaints/p1074_35556039563135_C013_jay_w_miller.json",
+      "order": 13,
+      "entity": "Jay W. Miller",
+      "kind": "official",
+      "role": "Division Administrator / Division Engineer, FHWA Illinois Division",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "letter",
+      "evidence_pages": [
+        "11-12"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C014",
+      "complainer_id": "p1074_35556039563135_K017",
+      "file": "complaints/p1074_35556039563135_C014_jay_w_miller.json",
+      "order": 14,
+      "entity": "Jay W. Miller",
+      "kind": "official",
+      "role": "Division Administrator / Division Engineer, FHWA Illinois Division",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "12"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C015",
+      "complainer_id": "p1074_35556039563135_K079",
+      "file": "complaints/p1074_35556039563135_C015_village_of_olympia_fields.json",
+      "order": 15,
+      "entity": "Village of Olympia Fields",
+      "kind": "government",
+      "role": "Local municipality / early coordination meeting participant",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "13"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C016",
+      "complainer_id": "p1074_35556039563135_K003",
+      "file": "complaints/p1074_35556039563135_C016_assistant_secretary_for_health_and_scien.json",
+      "order": 16,
+      "entity": "Assistant Secretary for Health and Science Affairs, Department of Health, Education & Welfare",
+      "kind": "official",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C017",
+      "complainer_id": "p1074_35556039563135_K003",
+      "file": "complaints/p1074_35556039563135_C017_assistant_secretary_for_health_and_scien.json",
+      "order": 17,
+      "entity": "Assistant Secretary for Health and Science Affairs, Department of Health, Education & Welfare",
+      "kind": "official",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C018",
+      "complainer_id": "p1074_35556039563135_K008",
+      "file": "complaints/p1074_35556039563135_C018_deputy_assistant_secretary_for_environme.json",
+      "order": 18,
+      "entity": "Deputy Assistant Secretary for Environmental Affairs, Department of Commerce",
+      "kind": "official",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C019",
+      "complainer_id": "p1074_35556039563135_K008",
+      "file": "complaints/p1074_35556039563135_C019_deputy_assistant_secretary_for_environme.json",
+      "order": 19,
+      "entity": "Deputy Assistant Secretary for Environmental Affairs, Department of Commerce",
+      "kind": "official",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C020",
+      "complainer_id": "p1074_35556039563135_K010",
+      "file": "complaints/p1074_35556039563135_C020_deputy_assistant_secretary_department_of.json",
+      "order": 20,
+      "entity": "Deputy Assistant Secretary, Department of the Interior",
+      "kind": "official",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C021",
+      "complainer_id": "p1074_35556039563135_K010",
+      "file": "complaints/p1074_35556039563135_C021_deputy_assistant_secretary_department_of.json",
+      "order": 21,
+      "entity": "Deputy Assistant Secretary, Department of the Interior",
+      "kind": "official",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C022",
+      "complainer_id": "p1074_35556039563135_K016",
+      "file": "complaints/p1074_35556039563135_C022_illinois_department_of_transportation.json",
+      "order": 22,
+      "entity": "Illinois Department of Transportation",
+      "kind": "agency",
+      "role": "state transportation agency / project proponent",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "21"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C023",
+      "complainer_id": "p1074_35556039563135_K037",
+      "file": "complaints/p1074_35556039563135_C023_village_of_park_forest.json",
+      "order": 23,
+      "entity": "Village of Park Forest",
+      "kind": "government",
+      "role": "Local municipality / public hearing and draft EIS commenter",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "21"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C024",
+      "complainer_id": "p1074_35556039563135_K001",
+      "file": "complaints/p1074_35556039563135_C024_acting_superintendent_cook_county_highwa.json",
+      "order": 24,
+      "entity": "Acting Superintendent, Cook County Highway Department",
+      "kind": "official",
+      "role": "Local agency commenter on draft EIS",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "24"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C025",
+      "complainer_id": "p1074_35556039563135_K013",
+      "file": "complaints/p1074_35556039563135_C025_director_northeastern_illinois_planning_.json",
+      "order": 25,
+      "entity": "Director, Northeastern Illinois Planning Commission (Metropolitan Clearinghouse)",
+      "kind": "official",
+      "role": "Local agency commenter on draft EIS",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "24"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C026",
+      "complainer_id": "p1074_35556039563135_K026",
+      "file": "complaints/p1074_35556039563135_C026_president_village_of_park_forest.json",
+      "order": 26,
+      "entity": "President, Village of Park Forest",
+      "kind": "official",
+      "role": "Local government commenter on draft EIS",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "24"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C027",
+      "complainer_id": "p1074_35556039563135_K026",
+      "file": "complaints/p1074_35556039563135_C027_president_village_of_park_forest.json",
+      "order": 27,
+      "entity": "President, Village of Park Forest",
+      "kind": "official",
+      "role": "Local government commenter on draft EIS",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "24"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C028",
+      "complainer_id": "p1074_35556039563135_K016",
+      "file": "complaints/p1074_35556039563135_C028_illinois_department_of_transportation.json",
+      "order": 28,
+      "entity": "Illinois Department of Transportation",
+      "kind": "agency",
+      "role": "state transportation agency / project proponent",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "31"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C029",
+      "complainer_id": "p1074_35556039563135_K005",
+      "file": "complaints/p1074_35556039563135_C029_cook_county_forest_preserve_district.json",
+      "order": 29,
+      "entity": "Cook County Forest Preserve District",
+      "kind": "organization",
+      "role": "Owner of Section 4(f) lands affected by project",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "43"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C030",
+      "complainer_id": "p1074_35556039563135_K033",
+      "file": "complaints/p1074_35556039563135_C030_natural_resource_development_board.json",
+      "order": 30,
+      "entity": "Natural Resource Development Board",
+      "kind": "agency",
+      "role": "State natural resources review board",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "52"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C031",
+      "complainer_id": "p1074_35556039563135_K035",
+      "file": "complaints/p1074_35556039563135_C031_state_of_illinois_department_of_business.json",
+      "order": 31,
+      "entity": "State of Illinois Department of Business and Economic Development",
+      "kind": "agency",
+      "role": "State agency reviewer of EIS",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "52"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C032",
+      "complainer_id": "p1074_35556039563135_K030",
+      "file": "complaints/p1074_35556039563135_C032_chicago_area_transportation_study.json",
+      "order": 32,
+      "entity": "Chicago Area Transportation Study",
+      "kind": "agency",
+      "role": "Regional transportation planning agency",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "63"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C033",
+      "complainer_id": "p1074_35556039563135_K034",
+      "file": "complaints/p1074_35556039563135_C033_school_district.json",
+      "order": 33,
+      "entity": "School District",
+      "kind": "organization",
+      "role": "Chicago Heights School District No. 170",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "65"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R002"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C034",
+      "complainer_id": "p1074_35556039563135_K020",
+      "file": "complaints/p1074_35556039563135_C034_northeastern_illinois_planning_commissio.json",
+      "order": 34,
+      "entity": "Northeastern Illinois Planning Commission (Metropolitan Clearinghouse)",
+      "kind": "agency",
+      "role": "Regional planning commission that adopted highway interim plan",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "70"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R003"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C035",
+      "complainer_id": "p1074_35556039563135_K020",
+      "file": "complaints/p1074_35556039563135_C035_northeastern_illinois_planning_commissio.json",
+      "order": 35,
+      "entity": "Northeastern Illinois Planning Commission (Metropolitan Clearinghouse)",
+      "kind": "agency",
+      "role": "Regional planning commission that adopted highway interim plan",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "70"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R004"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C036",
+      "complainer_id": "p1074_35556039563135_K032",
+      "file": "complaints/p1074_35556039563135_C036_interstate_planning_committee.json",
+      "order": 36,
+      "entity": "Interstate Planning Committee",
+      "kind": "agency",
+      "role": "Interstate planning body, NIPC/Northwestern Indiana Regional Planning Commission",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "71"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C037",
+      "complainer_id": "p1074_35556039563135_K034",
+      "file": "complaints/p1074_35556039563135_C037_school_district.json",
+      "order": 37,
+      "entity": "School District",
+      "kind": "organization",
+      "role": "Chicago Heights School District No. 170",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "75"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R005"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C038",
+      "complainer_id": "p1074_35556039563135_K031",
+      "file": "complaints/p1074_35556039563135_C038_city_of_chicago_heights_park_district.json",
+      "order": 38,
+      "entity": "City of Chicago Heights Park District",
+      "kind": "organization",
+      "role": "Local park district / early coordination meeting participant",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "78"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R006"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C039",
+      "complainer_id": "p1074_35556039563135_K036",
+      "file": "complaints/p1074_35556039563135_C039_superintendent_of_schools_chicago_height.json",
+      "order": 39,
+      "entity": "Superintendent of Schools (Chicago Heights, District No. 170, Cook County)",
+      "kind": "official",
+      "role": "School district superintendent",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "78"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R007"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C040",
+      "complainer_id": "p1074_35556039563135_K122",
+      "file": "complaints/p1074_35556039563135_C040_chicago_heights_park_district.json",
+      "order": 40,
+      "entity": "Chicago Heights Park District",
+      "kind": "organization",
+      "role": "park district / commenter on Roosevelt School area proposal",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "78"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R008"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C041",
+      "complainer_id": "p1074_35556039563135_K040",
+      "file": "complaints/p1074_35556039563135_C041_james_m_weigle.json",
+      "order": 41,
+      "entity": "James M. Weigle",
+      "kind": "individual",
+      "role": "U.S. Geological Survey researcher",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "105"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R009"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C042",
+      "complainer_id": "p1074_35556039563135_K041",
+      "file": "complaints/p1074_35556039563135_C042_u_s_public_health_service.json",
+      "order": 42,
+      "entity": "U.S. Public Health Service",
+      "kind": "agency",
+      "role": "federal public health authority",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "105"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R010"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C043",
+      "complainer_id": "p1074_35556039563135_K038",
+      "file": "complaints/p1074_35556039563135_C043_illinois_environmental_protection_agency.json",
+      "order": 43,
+      "entity": "Illinois Environmental Protection Agency",
+      "kind": "agency",
+      "role": "state environmental regulatory agency",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "106"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C044",
+      "complainer_id": "p1074_35556039563135_K038",
+      "file": "complaints/p1074_35556039563135_C044_illinois_environmental_protection_agency.json",
+      "order": 44,
+      "entity": "Illinois Environmental Protection Agency",
+      "kind": "agency",
+      "role": "state environmental regulatory agency",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "106"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C045",
+      "complainer_id": "p1074_35556039563135_K039",
+      "file": "complaints/p1074_35556039563135_C045_illinois_pollution_control_board.json",
+      "order": 45,
+      "entity": "Illinois Pollution Control Board",
+      "kind": "agency",
+      "role": "state pollution control regulatory body",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "106"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C046",
+      "complainer_id": "p1074_35556039563135_K057",
+      "file": "complaints/p1074_35556039563135_C046_department_of_transportation_office_of_t.json",
+      "order": 46,
+      "entity": "Department of Transportation, Office of the Secretary for the Environment and Urban Systems (TEU)",
+      "kind": "agency",
+      "role": "Federal agency / draft EIS commenter",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "145-194"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C047",
+      "complainer_id": "p1074_35556039563135_K061",
+      "file": "complaints/p1074_35556039563135_C047_howard_w_busch.json",
+      "order": 47,
+      "entity": "Howard W. Busch",
+      "kind": "individual",
+      "role": "State Conservationist, USDA Soil Conservation Service",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "145-194"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C048",
+      "complainer_id": "p1074_35556039563135_K070",
+      "file": "complaints/p1074_35556039563135_C048_robert_luedner.json",
+      "order": 48,
+      "entity": "Robert Luedner",
+      "kind": "individual",
+      "role": "Director of the Park District for Chicago Heights",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "145-168"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R011"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C049",
+      "complainer_id": "p1074_35556039563135_K076",
+      "file": "complaints/p1074_35556039563135_C049_united_states_department_of_the_interior.json",
+      "order": 49,
+      "entity": "United States Department of the Interior (BOR)",
+      "kind": "agency",
+      "role": "Federal agency commenter on Section 4(f) and environmental statement",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "145-168"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R012"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C050",
+      "complainer_id": "p1074_35556039563135_K046",
+      "file": "complaints/p1074_35556039563135_C050_cheker_oil_company.json",
+      "order": 50,
+      "entity": "Cheker Oil Company",
+      "kind": "organization",
+      "role": "Business / early coordination meeting participant",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "157"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C051",
+      "complainer_id": "p1074_35556039563135_K060",
+      "file": "complaints/p1074_35556039563135_C051_former_state_representative_brenne.json",
+      "order": 51,
+      "entity": "Former State Representative Brenne",
+      "kind": "individual",
+      "role": "Former state representative / early coordination meeting participant",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "157"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C052",
+      "complainer_id": "p1074_35556039563135_K068",
+      "file": "complaints/p1074_35556039563135_C052_metropolitan_sanitary_district.json",
+      "order": 52,
+      "entity": "Metropolitan Sanitary District",
+      "kind": "agency",
+      "role": "Regional sanitary district / early coordination meeting participant",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "157"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C053",
+      "complainer_id": "p1074_35556039563135_K059",
+      "file": "complaints/p1074_35556039563135_C053_forest_preserve_district_of_cook_county.json",
+      "order": 53,
+      "entity": "Forest Preserve District of Cook County",
+      "kind": "agency",
+      "role": "Forest preserve district, commenter on temporary construction easement",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "158"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R013"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C054",
+      "complainer_id": "p1074_35556039563135_K118",
+      "file": "complaints/p1074_35556039563135_C054_arthur_j_darek.json",
+      "order": 54,
+      "entity": "Arthur J. Darek",
+      "kind": "official",
+      "role": "Real Estate & License Engineer, Forest Preserve District of Cook County",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "158"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R014"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C055",
+      "complainer_id": "p1074_35556039563135_K045",
+      "file": "complaints/p1074_35556039563135_C055_bob_frantz.json",
+      "order": 55,
+      "entity": "Bob Frantz",
+      "kind": "individual",
+      "role": "Bureau of Outdoor Recreation staff, commenter",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "159"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C056",
+      "complainer_id": "p1074_35556039563135_K051",
+      "file": "complaints/p1074_35556039563135_C056_department_of_agriculture_forest_service.json",
+      "order": 56,
+      "entity": "Department of Agriculture - Forest Service",
+      "kind": "agency",
+      "role": "Federal agency / early coordination commenter",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "159"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R015"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C057",
+      "complainer_id": "p1074_35556039563135_K075",
+      "file": "complaints/p1074_35556039563135_C057_united_states_department_of_housing_and_.json",
+      "order": 57,
+      "entity": "United States Department of Housing and Urban Development",
+      "kind": "agency",
+      "role": "Federal agency commenter on Section 4(f)",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "159"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R016"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C058",
+      "complainer_id": "p1074_35556039563135_K086",
+      "file": "complaints/p1074_35556039563135_C058_department_of_housing_and_urban_developm.json",
+      "order": 58,
+      "entity": "Department of Housing and Urban Development",
+      "kind": "agency",
+      "role": "Federal agency, commenter on Section 4(f) land review",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "159"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R017"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C059",
+      "complainer_id": "p1074_35556039563135_K099",
+      "file": "complaints/p1074_35556039563135_C059_john_l_waner.json",
+      "order": 59,
+      "entity": "John L. Waner",
+      "kind": "official",
+      "role": "Director, Department of Housing and Urban Development Area Office, Chicago",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "159"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R018"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C060",
+      "complainer_id": "p1074_35556039563135_K099",
+      "file": "complaints/p1074_35556039563135_C060_john_l_waner.json",
+      "order": 60,
+      "entity": "John L. Waner",
+      "kind": "official",
+      "role": "Director, Department of Housing and Urban Development Area Office, Chicago",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "159"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R019"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C061",
+      "complainer_id": "p1074_35556039563135_K107",
+      "file": "complaints/p1074_35556039563135_C061_bureau_of_outdoor_recreation.json",
+      "order": 61,
+      "entity": "Bureau of Outdoor Recreation",
+      "kind": "agency",
+      "role": "Federal agency, commenter on Section 4(f) applicability",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "letter",
+      "evidence_pages": [
+        "160"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R020"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C062",
+      "complainer_id": "p1074_35556039563135_K112",
+      "file": "complaints/p1074_35556039563135_C062_john_d_cherry.json",
+      "order": 62,
+      "entity": "John D. Cherry",
+      "kind": "official",
+      "role": "Regional Director, Bureau of Outdoor Recreation, Lake Central Region",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "160"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R021"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C063",
+      "complainer_id": "p1074_35556039563135_K128",
+      "file": "complaints/p1074_35556039563135_C063_united_states_department_of_the_interior.json",
+      "order": 63,
+      "entity": "United States Department of the Interior Bureau of Outdoor Recreation",
+      "kind": "agency",
+      "role": "federal commenter on Section 4(f) / Roosevelt School property",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "letter",
+      "evidence_pages": [
+        "160"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R022"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C064",
+      "complainer_id": "p1074_35556039563135_K128",
+      "file": "complaints/p1074_35556039563135_C064_united_states_department_of_the_interior.json",
+      "order": 64,
+      "entity": "United States Department of the Interior Bureau of Outdoor Recreation",
+      "kind": "agency",
+      "role": "federal commenter on Section 4(f) / Roosevelt School property",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "160"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R023"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C065",
+      "complainer_id": "p1074_35556039563135_K043",
+      "file": "complaints/p1074_35556039563135_C065_board_of_education_district_no_170.json",
+      "order": 65,
+      "entity": "Board of Education District No. 170",
+      "kind": "agency",
+      "role": "School district / early coordination commenter",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "161"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C066",
+      "complainer_id": "p1074_35556039563135_K043",
+      "file": "complaints/p1074_35556039563135_C066_board_of_education_district_no_170.json",
+      "order": 66,
+      "entity": "Board of Education District No. 170",
+      "kind": "agency",
+      "role": "School district / early coordination commenter",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "written_comment",
+      "evidence_pages": [
+        "161"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R024"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C067",
+      "complainer_id": "p1074_35556039563135_K043",
+      "file": "complaints/p1074_35556039563135_C067_board_of_education_district_no_170.json",
+      "order": 67,
+      "entity": "Board of Education District No. 170",
+      "kind": "agency",
+      "role": "School district / early coordination commenter",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "161"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R025"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C068",
+      "complainer_id": "p1074_35556039563135_K043",
+      "file": "complaints/p1074_35556039563135_C068_board_of_education_district_no_170.json",
+      "order": 68,
+      "entity": "Board of Education District No. 170",
+      "kind": "agency",
+      "role": "School district / early coordination commenter",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "161"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R026"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C069",
+      "complainer_id": "p1074_35556039563135_K084",
+      "file": "complaints/p1074_35556039563135_C069_charles_n_rellis.json",
+      "order": 69,
+      "entity": "Charles N. Rellis",
+      "kind": "official",
+      "role": "Assistant Superintendent, Board of Education District No. 170, Chicago Heights",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "161",
+        "228"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R027"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C070",
+      "complainer_id": "p1074_35556039563135_K119",
+      "file": "complaints/p1074_35556039563135_C070_board_of_education_district_no_170_cook_.json",
+      "order": 70,
+      "entity": "Board of Education, District No. 170, Cook County",
+      "kind": "organization",
+      "role": "school district / commenter on Roosevelt School property",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "161"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R028"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C071",
+      "complainer_id": "p1074_35556039563135_K077",
+      "file": "complaints/p1074_35556039563135_C071_united_states_environmental_protection_a.json",
+      "order": 71,
+      "entity": "United States Environmental Protection Agency",
+      "kind": "agency",
+      "role": "Federal agency / draft EIS commenter",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "172"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R029"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C072",
+      "complainer_id": "p1074_35556039563135_K077",
+      "file": "complaints/p1074_35556039563135_C072_united_states_environmental_protection_a.json",
+      "order": 72,
+      "entity": "United States Environmental Protection Agency",
+      "kind": "agency",
+      "role": "Federal agency / draft EIS commenter",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "172"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R030"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C073",
+      "complainer_id": "p1074_35556039563135_K077",
+      "file": "complaints/p1074_35556039563135_C073_united_states_environmental_protection_a.json",
+      "order": 73,
+      "entity": "United States Environmental Protection Agency",
+      "kind": "agency",
+      "role": "Federal agency / draft EIS commenter",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "172"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R031"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C074",
+      "complainer_id": "p1074_35556039563135_K077",
+      "file": "complaints/p1074_35556039563135_C074_united_states_environmental_protection_a.json",
+      "order": 74,
+      "entity": "United States Environmental Protection Agency",
+      "kind": "agency",
+      "role": "Federal agency / draft EIS commenter",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "172"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R032"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C075",
+      "complainer_id": "p1074_35556039563135_K058",
+      "file": "complaints/p1074_35556039563135_C075_donald_a_wallgren.json",
+      "order": 75,
+      "entity": "Donald A. Wallgren",
+      "kind": "individual",
+      "role": "Acting Chief, Federal Activities Coordination Branch, EPA Region V",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "173"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R033"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C076",
+      "complainer_id": "p1074_35556039563135_K055",
+      "file": "complaints/p1074_35556039563135_C076_department_of_health_education_and_welfa.json",
+      "order": 76,
+      "entity": "Department of Health, Education, and Welfare",
+      "kind": "agency",
+      "role": "Federal agency / draft EIS commenter",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "176"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R034"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C077",
+      "complainer_id": "p1074_35556039563135_K067",
+      "file": "complaints/p1074_35556039563135_C077_merlin_k_duval_m_d.json",
+      "order": 77,
+      "entity": "Merlin K. DuVal, M.D.",
+      "kind": "individual",
+      "role": "Assistant Secretary for Health and Scientific Affairs, Department of Health, Education, and Welfare",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "176"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R035"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C078",
+      "complainer_id": "p1074_35556039563135_K069",
+      "file": "complaints/p1074_35556039563135_C078_office_of_economic_opportunity.json",
+      "order": 78,
+      "entity": "Office of Economic Opportunity",
+      "kind": "agency",
+      "role": "Federal agency / draft EIS commenter",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "176"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R036"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C079",
+      "complainer_id": "p1074_35556039563135_K071",
+      "file": "complaints/p1074_35556039563135_C079_sidney_r_galler.json",
+      "order": 79,
+      "entity": "Sidney R. Galler",
+      "kind": "individual",
+      "role": "Deputy Assistant Secretary for Environmental Affairs, Department of Commerce",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "176"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R037"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C080",
+      "complainer_id": "p1074_35556039563135_K073",
+      "file": "complaints/p1074_35556039563135_C080_the_assistant_secretary_of_commerce.json",
+      "order": 80,
+      "entity": "The Assistant Secretary of Commerce",
+      "kind": "agency",
+      "role": "Federal agency / draft EIS commenter",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "176"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R038"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C081",
+      "complainer_id": "p1074_35556039563135_K085",
+      "file": "complaints/p1074_35556039563135_C081_department_of_commerce.json",
+      "order": 81,
+      "entity": "Department of Commerce",
+      "kind": "agency",
+      "role": "Federal agency reviewer",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "176"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R039"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C082",
+      "complainer_id": "p1074_35556039563135_K072",
+      "file": "complaints/p1074_35556039563135_C082_state_of_illinois_governor_s_office_of_h.json",
+      "order": 82,
+      "entity": "State of Illinois - Governor's Office of Human Resources",
+      "kind": "agency",
+      "role": "State agency / relocation reviewer",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "177"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R040"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C083",
+      "complainer_id": "p1074_35556039563135_K050",
+      "file": "complaints/p1074_35556039563135_C083_department_of_aeronautics.json",
+      "order": 83,
+      "entity": "Department of Aeronautics",
+      "kind": "agency",
+      "role": "State clearinghouse agency / draft EIS commenter",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "179"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R041"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C084",
+      "complainer_id": "p1074_35556039563135_K054",
+      "file": "complaints/p1074_35556039563135_C084_department_of_corrections.json",
+      "order": 84,
+      "entity": "Department of Corrections",
+      "kind": "agency",
+      "role": "State clearinghouse agency / draft EIS commenter",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "179"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R042"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C085",
+      "complainer_id": "p1074_35556039563135_K056",
+      "file": "complaints/p1074_35556039563135_C085_department_of_local_government_affairs.json",
+      "order": 85,
+      "entity": "Department of Local Government Affairs",
+      "kind": "agency",
+      "role": "State clearinghouse agency / draft EIS commenter",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "179"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R043"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C086",
+      "complainer_id": "p1074_35556039563135_K080",
+      "file": "complaints/p1074_35556039563135_C086_allan_f_landolt.json",
+      "order": 86,
+      "entity": "Allan F. Landolt",
+      "kind": "official",
+      "role": "Director, Illinois Department of Aeronautics",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "179"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R044"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C087",
+      "complainer_id": "p1074_35556039563135_K094",
+      "file": "complaints/p1074_35556039563135_C087_henry_holling.json",
+      "order": 87,
+      "entity": "Henry Holling",
+      "kind": "official",
+      "role": "Reviewer, Illinois Department of Local Government Affairs",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "179"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R045"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C088",
+      "complainer_id": "p1074_35556039563135_K103",
+      "file": "complaints/p1074_35556039563135_C088_peter_b_bensinger.json",
+      "order": 88,
+      "entity": "Peter B. Bensinger",
+      "kind": "official",
+      "role": "Director, Illinois Department of Corrections",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "179"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R046"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C089",
+      "complainer_id": "p1074_35556039563135_K052",
+      "file": "complaints/p1074_35556039563135_C089_department_of_business_and_economic_deve.json",
+      "order": 89,
+      "entity": "Department of Business and Economic Development",
+      "kind": "agency",
+      "role": "State clearinghouse agency / draft EIS commenter",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "sectional",
+      "evidence_pages": [
+        "180"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R047"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C090",
+      "complainer_id": "p1074_35556039563135_K062",
+      "file": "complaints/p1074_35556039563135_C090_illinois_archaeological_survey.json",
+      "order": 90,
+      "entity": "Illinois Archaeological Survey",
+      "kind": "agency",
+      "role": "State clearinghouse agency / draft EIS commenter",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "180"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R048"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C091",
+      "complainer_id": "p1074_35556039563135_K083",
+      "file": "complaints/p1074_35556039563135_C091_charles_j_bareis.json",
+      "order": 91,
+      "entity": "Charles J. Bareis",
+      "kind": "official",
+      "role": "Secretary-Treasurer, Illinois Archaeological Survey",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "180"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R049"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C092",
+      "complainer_id": "p1074_35556039563135_K072",
+      "file": "complaints/p1074_35556039563135_C092_state_of_illinois_governor_s_office_of_h.json",
+      "order": 92,
+      "entity": "State of Illinois - Governor's Office of Human Resources",
+      "kind": "agency",
+      "role": "State agency / relocation reviewer",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "written_comment",
+      "evidence_pages": [
+        "183"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C093",
+      "complainer_id": "p1074_35556039563135_K075",
+      "file": "complaints/p1074_35556039563135_C093_united_states_department_of_housing_and_.json",
+      "order": 93,
+      "entity": "United States Department of Housing and Urban Development",
+      "kind": "agency",
+      "role": "Federal agency commenter on Section 4(f)",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "191"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R050"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C094",
+      "complainer_id": "p1074_35556039563135_K086",
+      "file": "complaints/p1074_35556039563135_C094_department_of_housing_and_urban_developm.json",
+      "order": 94,
+      "entity": "Department of Housing and Urban Development",
+      "kind": "agency",
+      "role": "Federal agency, commenter on Section 4(f) land review",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "191"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R051"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C095",
+      "complainer_id": "p1074_35556039563135_K104",
+      "file": "complaints/p1074_35556039563135_C095_phillip_sanchez.json",
+      "order": 95,
+      "entity": "Phillip Sanchez",
+      "kind": "official",
+      "role": "Director, Office of Economic Opportunity",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "196"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C096",
+      "complainer_id": "p1074_35556039563135_K050",
+      "file": "complaints/p1074_35556039563135_C096_department_of_aeronautics.json",
+      "order": 96,
+      "entity": "Department of Aeronautics",
+      "kind": "agency",
+      "role": "State clearinghouse agency / draft EIS commenter",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "197"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C097",
+      "complainer_id": "p1074_35556039563135_K052",
+      "file": "complaints/p1074_35556039563135_C097_department_of_business_and_economic_deve.json",
+      "order": 97,
+      "entity": "Department of Business and Economic Development",
+      "kind": "agency",
+      "role": "State clearinghouse agency / draft EIS commenter",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "197"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C098",
+      "complainer_id": "p1074_35556039563135_K054",
+      "file": "complaints/p1074_35556039563135_C098_department_of_corrections.json",
+      "order": 98,
+      "entity": "Department of Corrections",
+      "kind": "agency",
+      "role": "State clearinghouse agency / draft EIS commenter",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "197"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C099",
+      "complainer_id": "p1074_35556039563135_K062",
+      "file": "complaints/p1074_35556039563135_C099_illinois_archaeological_survey.json",
+      "order": 99,
+      "entity": "Illinois Archaeological Survey",
+      "kind": "agency",
+      "role": "State clearinghouse agency / draft EIS commenter",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "197"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C100",
+      "complainer_id": "p1074_35556039563135_K066",
+      "file": "complaints/p1074_35556039563135_C100_illinois_state_geological_survey.json",
+      "order": 100,
+      "entity": "Illinois State Geological Survey",
+      "kind": "agency",
+      "role": "State clearinghouse agency / draft EIS commenter",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "197"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R052"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C101",
+      "complainer_id": "p1074_35556039563135_K066",
+      "file": "complaints/p1074_35556039563135_C101_illinois_state_geological_survey.json",
+      "order": 101,
+      "entity": "Illinois State Geological Survey",
+      "kind": "agency",
+      "role": "State clearinghouse agency / draft EIS commenter",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "197"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C102",
+      "complainer_id": "p1074_35556039563135_K081",
+      "file": "complaints/p1074_35556039563135_C102_board_of_vocational_education_and_rehabi.json",
+      "order": 102,
+      "entity": "Board of Vocational Education and Rehabilitation Division of Vocational Rehabilitation",
+      "kind": "agency",
+      "role": "Illinois state agency reviewer",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "sectional",
+      "evidence_pages": [
+        "197"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C103",
+      "complainer_id": "p1074_35556039563135_K081",
+      "file": "complaints/p1074_35556039563135_C103_board_of_vocational_education_and_rehabi.json",
+      "order": 103,
+      "entity": "Board of Vocational Education and Rehabilitation Division of Vocational Rehabilitation",
+      "kind": "agency",
+      "role": "Illinois state agency reviewer",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "197"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C104",
+      "complainer_id": "p1074_35556039563135_K093",
+      "file": "complaints/p1074_35556039563135_C104_governor_s_office_of_human_resources.json",
+      "order": 104,
+      "entity": "Governor's Office of Human Resources",
+      "kind": "agency",
+      "role": "Illinois state agency reviewer",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "197"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C105",
+      "complainer_id": "p1074_35556039563135_K098",
+      "file": "complaints/p1074_35556039563135_C105_john_e_hirten.json",
+      "order": 105,
+      "entity": "John E. Hirten",
+      "kind": "official",
+      "role": "Acting Assistant Secretary for Environment and Urban Systems, U.S. Department of Transportation",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "197"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C106",
+      "complainer_id": "p1074_35556039563135_K087",
+      "file": "complaints/p1074_35556039563135_C106_department_of_local_governmental_affairs.json",
+      "order": 106,
+      "entity": "Department of Local Governmental Affairs",
+      "kind": "agency",
+      "role": "Illinois state agency reviewer",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "sectional",
+      "evidence_pages": [
+        "198"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C107",
+      "complainer_id": "p1074_35556039563135_K087",
+      "file": "complaints/p1074_35556039563135_C107_department_of_local_governmental_affairs.json",
+      "order": 107,
+      "entity": "Department of Local Governmental Affairs",
+      "kind": "agency",
+      "role": "Illinois state agency reviewer",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "198"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C108",
+      "complainer_id": "p1074_35556039563135_K053",
+      "file": "complaints/p1074_35556039563135_C108_department_of_children_family_services.json",
+      "order": 108,
+      "entity": "Department of Children & Family Services",
+      "kind": "agency",
+      "role": "State clearinghouse agency / draft EIS commenter",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "200"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C109",
+      "complainer_id": "p1074_35556039563135_K097",
+      "file": "complaints/p1074_35556039563135_C109_jimi_anne_lawrence.json",
+      "order": 109,
+      "entity": "Jimi Anne Lawrence",
+      "kind": "official",
+      "role": "Director, Illinois Department of Children and Family Services",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "200"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C110",
+      "complainer_id": "p1074_35556039563135_K044",
+      "file": "complaints/p1074_35556039563135_C110_board_of_vocational_rehabilitation_divis.json",
+      "order": 110,
+      "entity": "Board of Vocational Rehabilitation - Division of Vocational Rehabilitation",
+      "kind": "agency",
+      "role": "State clearinghouse agency / draft EIS commenter",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "203"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C111",
+      "complainer_id": "p1074_35556039563135_K088",
+      "file": "complaints/p1074_35556039563135_C111_division_of_vocational_rehabilitation.json",
+      "order": 111,
+      "entity": "Division of Vocational Rehabilitation",
+      "kind": "agency",
+      "role": "Illinois state agency reviewer",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "203"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C112",
+      "complainer_id": "p1074_35556039563135_K096",
+      "file": "complaints/p1074_35556039563135_C112_james_f_walker.json",
+      "order": 112,
+      "entity": "James F. Walker",
+      "kind": "official",
+      "role": "Official, Comprehensive State Health Planning Agency",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "204"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C113",
+      "complainer_id": "p1074_35556039563135_K065",
+      "file": "complaints/p1074_35556039563135_C113_illinois_natural_history_survey.json",
+      "order": 113,
+      "entity": "Illinois Natural History Survey",
+      "kind": "agency",
+      "role": "State clearinghouse agency / draft EIS commenter",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "205"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C114",
+      "complainer_id": "p1074_35556039563135_K092",
+      "file": "complaints/p1074_35556039563135_C114_george_sprugel_jr.json",
+      "order": 114,
+      "entity": "George Sprugel, Jr.",
+      "kind": "official",
+      "role": "Chief, Illinois Natural History Survey",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "205"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C115",
+      "complainer_id": "p1074_35556039563135_K106",
+      "file": "complaints/p1074_35556039563135_C115_ray_c_dickerson.json",
+      "order": 115,
+      "entity": "Ray C. Dickerson",
+      "kind": "official",
+      "role": "Director, Natural Resource Development Board / Department of Business and Economic Development, Illinois",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "206"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C116",
+      "complainer_id": "p1074_35556039563135_K082",
+      "file": "complaints/p1074_35556039563135_C116_carolyn_a_kruse.json",
+      "order": 116,
+      "entity": "Carolyn A. Kruse",
+      "kind": "official",
+      "role": "Acting Assistant Administrative Director, Governor's Office of Human Resources",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "208"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C117",
+      "complainer_id": "p1074_35556039563135_K049",
+      "file": "complaints/p1074_35556039563135_C117_cook_county_highway_department.json",
+      "order": 117,
+      "entity": "Cook County Highway Department",
+      "kind": "agency",
+      "role": "Local agency / draft EIS commenter",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "210",
+        "211"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C118",
+      "complainer_id": "p1074_35556039563135_K095",
+      "file": "complaints/p1074_35556039563135_C118_hugo_j_stark.json",
+      "order": 118,
+      "entity": "Hugo J. Stark",
+      "kind": "official",
+      "role": "Acting Superintendent of Highways, Cook County",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "211"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C119",
+      "complainer_id": "p1074_35556039563135_K105",
+      "file": "complaints/p1074_35556039563135_C119_ralph_g_johnson.json",
+      "order": 119,
+      "entity": "Ralph G. Johnson",
+      "kind": "official",
+      "role": "Village President, Village of Park Forest",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "212"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C120",
+      "complainer_id": "p1074_35556039563135_K100",
+      "file": "complaints/p1074_35556039563135_C120_matthew_l_rockwell.json",
+      "order": 120,
+      "entity": "Matthew L. Rockwell",
+      "kind": "official",
+      "role": "Executive Director, Northeastern Illinois Planning Commission",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "215"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C121",
+      "complainer_id": "p1074_35556039563135_K091",
+      "file": "complaints/p1074_35556039563135_C121_george_r_bonick.json",
+      "order": 121,
+      "entity": "George R. Bonick",
+      "kind": "official",
+      "role": "Mayor of Chicago Heights, Illinois",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "231"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C122",
+      "complainer_id": "p1074_35556039563135_K090",
+      "file": "complaints/p1074_35556039563135_C122_frank_e_glowacki.json",
+      "order": 122,
+      "entity": "Frank E. Glowacki",
+      "kind": "official",
+      "role": "Corporation Counsel, City of Chicago Heights",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "232"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R053"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C123",
+      "complainer_id": "p1074_35556039563135_K090",
+      "file": "complaints/p1074_35556039563135_C123_frank_e_glowacki.json",
+      "order": 123,
+      "entity": "Frank E. Glowacki",
+      "kind": "official",
+      "role": "Corporation Counsel, City of Chicago Heights",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "232"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C124",
+      "complainer_id": "p1074_35556039563135_K121",
+      "file": "complaints/p1074_35556039563135_C124_chicago_heights_human_relations.json",
+      "order": 124,
+      "entity": "Chicago Heights Human Relations",
+      "kind": "organization",
+      "role": "commenter listed in NIPC project summary",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "237"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C125",
+      "complainer_id": "p1074_35556039563135_K127",
+      "file": "complaints/p1074_35556039563135_C125_park_forest_human_relations.json",
+      "order": 125,
+      "entity": "Park Forest Human Relations",
+      "kind": "organization",
+      "role": "commenter listed in NIPC project summary",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "237"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C126",
+      "complainer_id": "p1074_35556039563135_K101",
+      "file": "complaints/p1074_35556039563135_C126_norman_e_tufford.json",
+      "order": 126,
+      "entity": "Norman E. Tufford",
+      "kind": "official",
+      "role": "Executive Director, Northwestern Indiana Regional Planning Commission",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "240"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C127",
+      "complainer_id": "p1074_35556039563135_K102",
+      "file": "complaints/p1074_35556039563135_C127_northwestern_indiana_regional_planning_c.json",
+      "order": 127,
+      "entity": "Northwestern Indiana Regional Planning Commission",
+      "kind": "agency",
+      "role": "interstate planning reviewer / commenter",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "240"
+      ],
+      "response_ids": [
+        "p1074_35556039563135_R054"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C128",
+      "complainer_id": "p1074_35556039563135_K091",
+      "file": "complaints/p1074_35556039563135_C128_george_r_bonick.json",
+      "order": 128,
+      "entity": "George R. Bonick",
+      "kind": "official",
+      "role": "Mayor of Chicago Heights, Illinois",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "241"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C129",
+      "complainer_id": "p1074_35556039563135_K089",
+      "file": "complaints/p1074_35556039563135_C129_dudley_onderdonk.json",
+      "order": 129,
+      "entity": "Dudley Onderdonk",
+      "kind": "official",
+      "role": "Village Planner, Village of Park Forest",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "242"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C130",
+      "complainer_id": "p1074_35556039563135_K110",
+      "file": "complaints/p1074_35556039563135_C130_don_a_moore.json",
+      "order": 130,
+      "entity": "Don A. Moore",
+      "kind": "official",
+      "role": "State Senator, 5th District, Illinois State Senate",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "243"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C131",
+      "complainer_id": "p1074_35556039563135_K113",
+      "file": "complaints/p1074_35556039563135_C131_metropolitan_sanitary_district_of_greate.json",
+      "order": 131,
+      "entity": "Metropolitan Sanitary District of Greater Chicago",
+      "kind": "agency",
+      "role": "Regional sanitary district, commenter",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "245"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C132",
+      "complainer_id": "p1074_35556039563135_K108",
+      "file": "complaints/p1074_35556039563135_C132_cook_county_planning_commission.json",
+      "order": 132,
+      "entity": "Cook County Planning Commission",
+      "kind": "agency",
+      "role": "County planning agency, Cook County",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "246"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C133",
+      "complainer_id": "p1074_35556039563135_K109",
+      "file": "complaints/p1074_35556039563135_C133_daniel_j_ferrone.json",
+      "order": 133,
+      "entity": "Daniel J. Ferrone",
+      "kind": "official",
+      "role": "Director, Department of Planning & Development, Cook County",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "246"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C134",
+      "complainer_id": "p1074_35556039563135_K111",
+      "file": "complaints/p1074_35556039563135_C134_frank_w_chesrow.json",
+      "order": 134,
+      "entity": "Frank W. Chesrow",
+      "kind": "official",
+      "role": "Chairman, Cook County Planning Commission",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "246"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C135",
+      "complainer_id": "p1074_35556039563135_K115",
+      "file": "complaints/p1074_35556039563135_C135_united_states_department_of_agriculture_.json",
+      "order": 135,
+      "entity": "United States Department of Agriculture - Forest Service",
+      "kind": "agency",
+      "role": "Federal agency, commenter on environmental impact",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "272"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C136",
+      "complainer_id": "p1074_35556039563135_K116",
+      "file": "complaints/p1074_35556039563135_C136_alfred_h_troutt.json",
+      "order": 136,
+      "entity": "ALFRED H. TROUTT",
+      "kind": "official",
+      "role": "Assistant Director, Environmental Protection & Improvement, USDA Forest Service Northeastern Area",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "272"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C137",
+      "complainer_id": "p1074_35556039563135_K042",
+      "file": "complaints/p1074_35556039563135_C137_benjamin_o_davis_jr.json",
+      "order": 137,
+      "entity": "Benjamin O. Davis, Jr.",
+      "kind": "official",
+      "role": "Assistant Secretary for Environment, Safety, and Consumer Affairs, U.S. Department of Transportation",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "274",
+        "275"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C138",
+      "complainer_id": "p1074_35556039563135_K114",
+      "file": "complaints/p1074_35556039563135_C138_state_of_illinois_department_of_transpor.json",
+      "order": 138,
+      "entity": "State of Illinois, Department of Transportation, District 1",
+      "kind": "agency",
+      "role": "State transportation agency, project proponent",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "287"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C139",
+      "complainer_id": "p1074_35556039563135_K120",
+      "file": "complaints/p1074_35556039563135_C139_charles_panici.json",
+      "order": 139,
+      "entity": "Charles Panici",
+      "kind": "official",
+      "role": "President, Chicago Heights Park District",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "316"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C140",
+      "complainer_id": "p1074_35556039563135_K123",
+      "file": "complaints/p1074_35556039563135_C140_department_of_conservation_state_of_illi.json",
+      "order": 140,
+      "entity": "Department of Conservation, State of Illinois",
+      "kind": "agency",
+      "role": "state historic preservation / archaeological review agency",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "320"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C141",
+      "complainer_id": "p1074_35556039563135_K123",
+      "file": "complaints/p1074_35556039563135_C141_department_of_conservation_state_of_illi.json",
+      "order": 141,
+      "entity": "Department of Conservation, State of Illinois",
+      "kind": "agency",
+      "role": "state historic preservation / archaeological review agency",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "320"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C142",
+      "complainer_id": "p1074_35556039563135_K124",
+      "file": "complaints/p1074_35556039563135_C142_john_mcguire.json",
+      "order": 142,
+      "entity": "John McGuire",
+      "kind": "official",
+      "role": "State Historic Preservation Officer, Illinois Department of Conservation",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "320"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C143",
+      "complainer_id": "p1074_35556039563135_K117",
+      "file": "complaints/p1074_35556039563135_C143_anthony_t_dean.json",
+      "order": 143,
+      "entity": "Anthony T. Dean",
+      "kind": "official",
+      "role": "Director, Illinois Department of Conservation; Historic Preservation Officer",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "321"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C144",
+      "complainer_id": "p1074_35556039563135_K129",
+      "file": "complaints/p1074_35556039563135_C144_harlan_h_edmonds.json",
+      "order": 144,
+      "entity": "Harlan H. Edmonds",
+      "kind": "official",
+      "role": "Director, Illinois State Clearinghouse",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "346"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C145",
+      "complainer_id": "p1074_35556039563135_K130",
+      "file": "complaints/p1074_35556039563135_C145_illinois_department_of_conservation.json",
+      "order": 145,
+      "entity": "Illinois Department of Conservation",
+      "kind": "agency",
+      "role": "State agency reviewing proposal",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "346"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C146",
+      "complainer_id": "p1074_35556039563135_K131",
+      "file": "complaints/p1074_35556039563135_C146_illinois_nature_preserves_commission.json",
+      "order": 146,
+      "entity": "Illinois Nature Preserves Commission",
+      "kind": "agency",
+      "role": "State agency reviewing proposal",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "346"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C147",
+      "complainer_id": "p1074_35556039563135_K002",
+      "file": "complaints/p1074_35556039563135_C147_assistant_secretary_for_environment_and_.json",
+      "order": 147,
+      "entity": "Assistant Secretary for Environment and Urban Systems, Department of Transportation",
+      "kind": "official",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C148",
+      "complainer_id": "p1074_35556039563135_K011",
+      "file": "complaints/p1074_35556039563135_C148_director_chicago_area_office_department_.json",
+      "order": 148,
+      "entity": "Director, Chicago Area Office Department of Housing and Urban Development",
+      "kind": "official",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C149",
+      "complainer_id": "p1074_35556039563135_K012",
+      "file": "complaints/p1074_35556039563135_C149_director_cook_county_department_of_plann.json",
+      "order": 149,
+      "entity": "Director, Cook County Department of Planning and Development",
+      "kind": "official",
+      "role": "Local agency recipient of draft EIS",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "21"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C150",
+      "complainer_id": "p1074_35556039563135_K014",
+      "file": "complaints/p1074_35556039563135_C150_director_office_of_economic_opportunity.json",
+      "order": 150,
+      "entity": "Director, Office of Economic Opportunity",
+      "kind": "official",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C151",
+      "complainer_id": "p1074_35556039563135_K019",
+      "file": "complaints/p1074_35556039563135_C151_mayor_city_of_chicago_heights.json",
+      "order": 151,
+      "entity": "Mayor, City of Chicago Heights",
+      "kind": "official",
+      "role": "Local government recipient of draft EIS",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "21"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C152",
+      "complainer_id": "p1074_35556039563135_K023",
+      "file": "complaints/p1074_35556039563135_C152_office_of_the_secretary_department_of_ag.json",
+      "order": 152,
+      "entity": "Office of the Secretary, Department of Agriculture",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C153",
+      "complainer_id": "p1074_35556039563135_K024",
+      "file": "complaints/p1074_35556039563135_C153_president_village_of_matteson.json",
+      "order": 153,
+      "entity": "President, Village of Matteson",
+      "kind": "official",
+      "role": "Local government recipient of draft EIS",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "21"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C154",
+      "complainer_id": "p1074_35556039563135_K025",
+      "file": "complaints/p1074_35556039563135_C154_president_village_of_olympia_fields.json",
+      "order": 154,
+      "entity": "President, Village of Olympia Fields",
+      "kind": "official",
+      "role": "Local government recipient of draft EIS",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "21"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C155",
+      "complainer_id": "p1074_35556039563135_K027",
+      "file": "complaints/p1074_35556039563135_C155_regional_office_environmental_protection.json",
+      "order": 155,
+      "entity": "Regional Office, Environmental Protection Agency",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C156",
+      "complainer_id": "p1074_35556039563135_K028",
+      "file": "complaints/p1074_35556039563135_C156_sigmund_c_ziejewski.json",
+      "order": 156,
+      "entity": "Sigmund C. Ziejewski",
+      "kind": "official",
+      "role": "District Engineer, Illinois Department of Transportation, Division of Highways",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "12"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C157",
+      "complainer_id": "p1074_35556039563135_K047",
+      "file": "complaints/p1074_35556039563135_C157_city_of_chicago_heights.json",
+      "order": 157,
+      "entity": "City of Chicago Heights",
+      "kind": "government",
+      "role": "Local municipality / early coordination meeting participant",
+      "stance": "in_favor",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "157",
+        "225",
+        "241",
+        "14"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C158",
+      "complainer_id": "p1074_35556039563135_K048",
+      "file": "complaints/p1074_35556039563135_C158_comprehensive_state_health_planning_agen.json",
+      "order": 158,
+      "entity": "Comprehensive State Health Planning Agency",
+      "kind": "agency",
+      "role": "State clearinghouse agency / draft EIS commenter",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "145-194",
+        "197"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C159",
+      "complainer_id": "p1074_35556039563135_K063",
+      "file": "complaints/p1074_35556039563135_C159_illinois_bell_telephone_company.json",
+      "order": 159,
+      "entity": "Illinois Bell Telephone Company",
+      "kind": "organization",
+      "role": "Utility company / early coordination meeting participant",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "157"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C160",
+      "complainer_id": "p1074_35556039563135_K064",
+      "file": "complaints/p1074_35556039563135_C160_illinois_central_gulf_railroad.json",
+      "order": 160,
+      "entity": "Illinois Central Gulf Railroad",
+      "kind": "organization",
+      "role": "Railroad / early coordination meeting participant",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "157"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C161",
+      "complainer_id": "p1074_35556039563135_K074",
+      "file": "complaints/p1074_35556039563135_C161_united_states_department_of_agriculture_.json",
+      "order": 161,
+      "entity": "United States Department of Agriculture, Soil Conservation Service",
+      "kind": "agency",
+      "role": "Federal agency / draft EIS commenter",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "145-194"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C162",
+      "complainer_id": "p1074_35556039563135_K078",
+      "file": "complaints/p1074_35556039563135_C162_village_of_matteson.json",
+      "order": 162,
+      "entity": "Village of Matteson",
+      "kind": "government",
+      "role": "Local municipality / early coordination meeting participant",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "157",
+        "21"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C163",
+      "complainer_id": "p1074_35556039563135_K125",
+      "file": "complaints/p1074_35556039563135_C163_matteson_park_district.json",
+      "order": 163,
+      "entity": "Matteson Park District",
+      "kind": "organization",
+      "role": "commenter listed in NIPC project summary",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "237"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556039563135_C164",
+      "complainer_id": "p1074_35556039563135_K126",
+      "file": "complaints/p1074_35556039563135_C164_olympia_fields_park_district.json",
+      "order": 164,
+      "entity": "Olympia Fields Park District",
+      "kind": "organization",
+      "role": "commenter listed in NIPC project summary",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "237"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "child_id": "p1074_35556039563135_R001",
+      "parent_id": "p1074_35556039563135_C005",
+      "file": "responses/p1074_35556039563135_R001_office_of_the_chief_counsel.json",
+      "agency": "Office of the Chief Counsel",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R002",
+      "parent_id": "p1074_35556039563135_C033",
+      "file": "responses/p1074_35556039563135_R002_illinois_department_of_transportation.json",
+      "agency": "Illinois Department of Transportation",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R003",
+      "parent_id": "p1074_35556039563135_C034",
+      "file": "responses/p1074_35556039563135_R003_illinois_department_of_transportation.json",
+      "agency": "Illinois Department of Transportation",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R004",
+      "parent_id": "p1074_35556039563135_C035",
+      "file": "responses/p1074_35556039563135_R004_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R005",
+      "parent_id": "p1074_35556039563135_C037",
+      "file": "responses/p1074_35556039563135_R005_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R006",
+      "parent_id": "p1074_35556039563135_C038",
+      "file": "responses/p1074_35556039563135_R006_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R007",
+      "parent_id": "p1074_35556039563135_C039",
+      "file": "responses/p1074_35556039563135_R007_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R008",
+      "parent_id": "p1074_35556039563135_C040",
+      "file": "responses/p1074_35556039563135_R008_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R009",
+      "parent_id": "p1074_35556039563135_C041",
+      "file": "responses/p1074_35556039563135_R009_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R010",
+      "parent_id": "p1074_35556039563135_C042",
+      "file": "responses/p1074_35556039563135_R010_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R011",
+      "parent_id": "p1074_35556039563135_C048",
+      "file": "responses/p1074_35556039563135_R011_board_of_education_district_no_170_chica.json",
+      "agency": "Board of Education District No. 170, Chicago Heights, Illinois",
+      "agency_kind": "government",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R012",
+      "parent_id": "p1074_35556039563135_C049",
+      "file": "responses/p1074_35556039563135_R012_illinois_department_of_transportation.json",
+      "agency": "Illinois Department of Transportation",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R013",
+      "parent_id": "p1074_35556039563135_C053",
+      "file": "responses/p1074_35556039563135_R013_illinois_department_of_transportation.json",
+      "agency": "Illinois Department of Transportation",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R014",
+      "parent_id": "p1074_35556039563135_C054",
+      "file": "responses/p1074_35556039563135_R014_illinois_department_of_transportation.json",
+      "agency": "Illinois Department of Transportation",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R015",
+      "parent_id": "p1074_35556039563135_C056",
+      "file": "responses/p1074_35556039563135_R015_illinois_department_of_transportation.json",
+      "agency": "Illinois Department of Transportation",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R016",
+      "parent_id": "p1074_35556039563135_C057",
+      "file": "responses/p1074_35556039563135_R016_illinois_department_of_transportation.json",
+      "agency": "Illinois Department of Transportation",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R017",
+      "parent_id": "p1074_35556039563135_C058",
+      "file": "responses/p1074_35556039563135_R017_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R018",
+      "parent_id": "p1074_35556039563135_C059",
+      "file": "responses/p1074_35556039563135_R018_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R019",
+      "parent_id": "p1074_35556039563135_C060",
+      "file": "responses/p1074_35556039563135_R019_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R020",
+      "parent_id": "p1074_35556039563135_C061",
+      "file": "responses/p1074_35556039563135_R020_illinois_department_of_transportation.json",
+      "agency": "Illinois Department of Transportation",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R021",
+      "parent_id": "p1074_35556039563135_C062",
+      "file": "responses/p1074_35556039563135_R021_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R022",
+      "parent_id": "p1074_35556039563135_C063",
+      "file": "responses/p1074_35556039563135_R022_illinois_department_of_transportation.json",
+      "agency": "Illinois Department of Transportation",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R023",
+      "parent_id": "p1074_35556039563135_C064",
+      "file": "responses/p1074_35556039563135_R023_illinois_department_of_transportation.json",
+      "agency": "Illinois Department of Transportation",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R024",
+      "parent_id": "p1074_35556039563135_C066",
+      "file": "responses/p1074_35556039563135_R024_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R025",
+      "parent_id": "p1074_35556039563135_C067",
+      "file": "responses/p1074_35556039563135_R025_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R026",
+      "parent_id": "p1074_35556039563135_C068",
+      "file": "responses/p1074_35556039563135_R026_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R027",
+      "parent_id": "p1074_35556039563135_C069",
+      "file": "responses/p1074_35556039563135_R027_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R028",
+      "parent_id": "p1074_35556039563135_C070",
+      "file": "responses/p1074_35556039563135_R028_illinois_department_of_transportation.json",
+      "agency": "Illinois Department of Transportation",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R029",
+      "parent_id": "p1074_35556039563135_C071",
+      "file": "responses/p1074_35556039563135_R029_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R030",
+      "parent_id": "p1074_35556039563135_C072",
+      "file": "responses/p1074_35556039563135_R030_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R031",
+      "parent_id": "p1074_35556039563135_C073",
+      "file": "responses/p1074_35556039563135_R031_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R032",
+      "parent_id": "p1074_35556039563135_C074",
+      "file": "responses/p1074_35556039563135_R032_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R033",
+      "parent_id": "p1074_35556039563135_C075",
+      "file": "responses/p1074_35556039563135_R033_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R034",
+      "parent_id": "p1074_35556039563135_C076",
+      "file": "responses/p1074_35556039563135_R034_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R035",
+      "parent_id": "p1074_35556039563135_C077",
+      "file": "responses/p1074_35556039563135_R035_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R036",
+      "parent_id": "p1074_35556039563135_C078",
+      "file": "responses/p1074_35556039563135_R036_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R037",
+      "parent_id": "p1074_35556039563135_C079",
+      "file": "responses/p1074_35556039563135_R037_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R038",
+      "parent_id": "p1074_35556039563135_C080",
+      "file": "responses/p1074_35556039563135_R038_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R039",
+      "parent_id": "p1074_35556039563135_C081",
+      "file": "responses/p1074_35556039563135_R039_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R040",
+      "parent_id": "p1074_35556039563135_C082",
+      "file": "responses/p1074_35556039563135_R040_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R041",
+      "parent_id": "p1074_35556039563135_C083",
+      "file": "responses/p1074_35556039563135_R041_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R042",
+      "parent_id": "p1074_35556039563135_C084",
+      "file": "responses/p1074_35556039563135_R042_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R043",
+      "parent_id": "p1074_35556039563135_C085",
+      "file": "responses/p1074_35556039563135_R043_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R044",
+      "parent_id": "p1074_35556039563135_C086",
+      "file": "responses/p1074_35556039563135_R044_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R045",
+      "parent_id": "p1074_35556039563135_C087",
+      "file": "responses/p1074_35556039563135_R045_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R046",
+      "parent_id": "p1074_35556039563135_C088",
+      "file": "responses/p1074_35556039563135_R046_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R047",
+      "parent_id": "p1074_35556039563135_C089",
+      "file": "responses/p1074_35556039563135_R047_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R048",
+      "parent_id": "p1074_35556039563135_C090",
+      "file": "responses/p1074_35556039563135_R048_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R049",
+      "parent_id": "p1074_35556039563135_C091",
+      "file": "responses/p1074_35556039563135_R049_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R050",
+      "parent_id": "p1074_35556039563135_C093",
+      "file": "responses/p1074_35556039563135_R050_illinois_department_of_transportation.json",
+      "agency": "Illinois Department of Transportation",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R051",
+      "parent_id": "p1074_35556039563135_C094",
+      "file": "responses/p1074_35556039563135_R051_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R052",
+      "parent_id": "p1074_35556039563135_C100",
+      "file": "responses/p1074_35556039563135_R052_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R053",
+      "parent_id": "p1074_35556039563135_C122",
+      "file": "responses/p1074_35556039563135_R053_illinois_division_of_highways.json",
+      "agency": "Illinois Division of Highways",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556039563135_R054",
+      "parent_id": "p1074_35556039563135_C127",
+      "file": "responses/p1074_35556039563135_R054_northeastern_illinois_planning_commissio.json",
+      "agency": "Northeastern Illinois Planning Commission",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    }
+  ]
+}

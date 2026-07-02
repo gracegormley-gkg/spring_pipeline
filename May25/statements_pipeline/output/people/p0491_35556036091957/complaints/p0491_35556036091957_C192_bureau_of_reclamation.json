@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C192",
+  "complainer_id": "p0491_35556036091957_K149",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 192,
+  "entity": "Bureau of Reclamation",
+  "kind": "agency",
+  "role": "Federal agency reviewer",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "memo expresses general concurrence but recommends more definitive noise control provisions",
+  "summary": "The Bureau of Reclamation generally concurred with the adequacy of the Draft Environmental Statement for the proposed implementation of Executive Order 11644 regarding off-road vehicles on public lands. However, the agency recommended that the noise control subsection (Subsection III of the operating criteria) be strengthened by replacing the vague phrase 'unusual or excessive noise' with more definitive provisions to ensure reasonably uniform application.",
+  "form": "letter",
+  "complaint_summary": "The Bureau of Reclamation indicated general concurrence with the adequacy of the Draft Environmental Statement but recommended more definitive noise control provisions to replace the vague phrase 'unusual or excessive noise' in Subsection III of the operating criteria.",
+  "evidence_pages": [
+    "269"
+  ],
+  "statement": {
+    "text": "Responsive to your memorandum of June 1, 1972, the subject statement has been distributed in accordance with the Secretary's notice of availability dated May 26, 1972.\nResponses from review in this office and our field offices indicated general concurrence relative to adequacy of the subject statement. We suggest, however, that further consideration be given to Subsection III of the operating criteria pertaining to noise control. Specifically, we suggest more definitive provisions to replace the words \"unusual or excessive noise\" to insure that reasonably uniform application will be realized.",
+    "opening_anchor": "Responsive to your memorandum of June 1, 1972, the subject statement has been distributed in accordance with the Secretary's notice of availability dated May 26, 1972.",
+    "closing_anchor": "more definitive provisions to replace the words \"unusual or excessive noise\" to insure that reasonably uniform application will be realized.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Responses from review in this office and our field offices indicated general concurrence relative to adequacy of the subject statement.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "269"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Responses from review in this office and our field offices indicated general concurrence relative to adequacy of the subject statement.",
+      "quote_verified": true,
+      "entity_as_written": "Bureau of Reclamation",
+      "role_as_written": "Federal agency reviewer"
+    }
+  ],
+  "window_pages": [
+    259,
+    279
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 149,
+  "synthetic_no_complaint": false
+}

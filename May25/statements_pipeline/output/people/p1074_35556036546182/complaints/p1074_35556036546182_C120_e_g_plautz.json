@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C120",
+  "complainer_id": "p1074_35556036546182_K078",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 120,
+  "entity": "E. G. Plautz",
+  "kind": "individual",
+  "role": "Private Citizen",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "explicitly represented a group of individuals in favor of construction of the proposed Airport Spur",
+  "summary": "E. G. Plautz (listed as Edgar G. Plautz in the written submissions roster) appeared at the Environmental Public Hearing and represented a group of individuals in favor of constructing the proposed Airport Spur, indicating a written statement of reasons would be submitted later. His subsequent written letter was received and summarized under witness No. 43, confirming his pro-project position.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "E. G. Plautz represented a group of individuals in favor of the construction of the proposed Airport Spur and indicated a written statement of reasons would be submitted later.",
+  "evidence_pages": [
+    "230"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R042"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Represented group of individuals in favor of the construction of the proposed Airport Spur. A written statement of reasons for their position will be submitted later.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "230"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Represented group of individuals in favor of the construction of the proposed Airport Spur. A written statement of reasons for their position will be submitted later.",
+      "quote_verified": true,
+      "entity_as_written": "E. G. Plautz",
+      "role_as_written": "Private Citizen"
+    }
+  ],
+  "window_pages": [
+    220,
+    240
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 78,
+  "synthetic_no_complaint": false
+}

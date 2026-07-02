@@ -1,0 +1,70 @@
+{
+  "complaint_id": "p1074_35556036105336_C001",
+  "complainer_id": "p1074_35556036105336_K011",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 1,
+  "entity": "Environmental Protection Agency",
+  "kind": "agency",
+  "role": "Federal environmental regulatory agency",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "EPA listed as commenter who responded to the draft EIS, confirming need to analyze expressway consequences",
+  "summary": "The Environmental Protection Agency is listed among the agencies from which comments were both requested and received on the draft environmental statement. The EPA is referenced in the exemplar quote (found on pages 2 and 79, outside this window) as having confirmed the need to analyze the consequences of the Downtown Expressway on the Randolph project area. Within this window, the EPA appears only in the summary sheet as a commenter, with no substantive position stated.",
+  "form": "sectional",
+  "complaint_summary": "The Environmental Protection Agency is listed among the agencies from which comments were requested and from which comments were received on the environmental statement.",
+  "evidence_pages": [
+    "1"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "The Environmental Protection Agency has specifically confirmed the need for analyzing the consequences of the Expressway in their letter of April 11, 1973: 'As you know, assessing the environmental consequence of HUD action often requires detailed study of the impact of other projects on the environs which eventually surround HUD-assisted residents . . . HUD correctly investigated the noise and an impacts of the expressway on Randolph.'",
+  "summary_quote_verified": false,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "sectional"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "2"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Comments have been received from: e. Environmental Protection Agency",
+      "quote_verified": false,
+      "entity_as_written": "Environmental Protection Agency",
+      "role_as_written": "Federal agency commenter"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "79"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The Environmental Protection Agency has specifically confirmed the need for analyzing the consequences of the Expressway in their letter of April 11, 1973: 'As you know, assessing the environmental consequence of HUD action often requires detailed study of the impact of other projects on the environs which eventually surround HUD-assisted residents . . . HUD correctly investigated the noise and an impacts of the expressway on Randolph.'",
+      "quote_verified": false,
+      "entity_as_written": "Environmental Protection Agency",
+      "role_as_written": "Federal environmental regulatory agency"
+    }
+  ],
+  "window_pages": [
+    1,
+    42
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 11,
+  "synthetic_no_complaint": false
+}

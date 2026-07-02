@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C071",
+  "complainer_id": "p0491_35556036091957_K039",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 71,
+  "entity": "Fred A. Priewert",
+  "kind": "official",
+  "role": "Director, Iowa Conservation Commission",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letter praises the draft EIS as complete and concise without objecting to or endorsing the project",
+  "summary": "Fred A. Priewert, Director of the Iowa Conservation Commission, wrote a brief letter to the Bureau of Outdoor Recreation indicating that his Planning Section found the draft environmental statement to be complete and concise, covering environmental, social, and economic issues. He offered no objections or recommendations, simply confirming that copies would be made available to the public for review and expressing appreciation for the opportunity to review the document.",
+  "form": "letter",
+  "complaint_summary": "Priewert reports that his Planning Section found the draft EIS to be a complete and concise statement addressing environmental, social, and economic issues, and confirms copies will be made available to the public.",
+  "evidence_pages": [
+    "94"
+  ],
+  "statement": {
+    "text": "Our Planning Section has just reviewed the draft environmental statement for the proposed implementation of Executive Order 11644 pertaining to the use of off-road vehicles on public lands. They report this to be a complete and concise statement dealing not only with the environmental, but also social, and economic issues as well.\nAs you have requested, copies of the Off-Road Recreation Vehicle Report will be made available to the public for review in this office.\nWe appreciate your cooperation in allowing us to review this document.\nSincerely,\nFred A. Priewert, Director Iowa Conservation Commission\nFAP/SLB/sk",
+    "opening_anchor": "Our Planning Section has just reviewed the draft environmental statement for the proposed implementation of Executive Order 11644 pertaining to the use of off-road vehicles on public lands.",
+    "closing_anchor": "Fred A. Priewert, Director Iowa Conservation Commission\nFAP/SLB/sk",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "They report this to be a complete and concise statement dealing not only with the environmental, but also social, and economic issues as well.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "94"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "They report this to be a complete and concise statement dealing not only with the environmental, but also social, and economic issues as well.",
+      "quote_verified": true,
+      "entity_as_written": "Fred A. Priewert",
+      "role_as_written": "Director, Iowa Conservation Commission"
+    }
+  ],
+  "window_pages": [
+    84,
+    104
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 39,
+  "synthetic_no_complaint": false
+}

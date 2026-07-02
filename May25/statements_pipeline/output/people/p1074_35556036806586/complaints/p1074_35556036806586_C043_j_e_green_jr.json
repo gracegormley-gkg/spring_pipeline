@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036806586_C043",
+  "complainer_id": "p1074_35556036806586_K041",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 43,
+  "entity": "J.E. Green, Jr.",
+  "kind": "individual",
+  "role": "Botanist, Furman University",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as conducting a botanical survey for the Applicant with findings reported, no personal stance expressed",
+  "summary": "J.E. Green, Jr., of Furman University, co-conducted a 1973 botanical survey of the project area alongside Dr. C. Leland Rodgers, identifying three major plant communities and four rare or uncommon plant species. The survey results informed the Applicant's mitigation measures, including transplanting rare plant specimens to areas outside the project. Green is mentioned only in a technical/professional capacity with no personal position on the project expressed.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "J.E. Green, Jr. co-conducted a 1973 botanical survey of the project area that identified three major plant communities and four rare plant species, with results contained in Appendix D of the Applicant's Exhibit W.",
+  "evidence_pages": [
+    "175"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "The Applicant arranged for a botanical survey of the project area by Dr. C. Leland Rodgers and J.E. Green, Jr., of Furman University.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "175"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Applicant arranged for a botanical survey of the project area by Dr. C. Leland Rodgers and J.E. Green, Jr., of Furman University.",
+      "quote_verified": true,
+      "entity_as_written": "J.E. Green, Jr.",
+      "role_as_written": "Botanist, Furman University"
+    }
+  ],
+  "window_pages": [
+    165,
+    185
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 41,
+  "synthetic_no_complaint": false
+}

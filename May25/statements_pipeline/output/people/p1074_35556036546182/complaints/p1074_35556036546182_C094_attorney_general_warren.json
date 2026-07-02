@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C094",
+  "complainer_id": "p1074_35556036546182_K044",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 94,
+  "entity": "Attorney General Warren",
+  "kind": "official",
+  "role": "Wisconsin Attorney General",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "quoted as calling for energy conservation and frugality, cited as evidence that the Airport Spur conflicts with state goals",
+  "summary": "Attorney General Warren is cited in a comment letter opposing the Airport Spur as a state-level voice calling for energy conservation and a change in transportation habits. His remarks to the Merrill Rotary Club are quoted to argue that the Airport Spur contradicts state policy by encouraging increased automobile use. Warren is not a direct commenter but is invoked as authority supporting opposition to the project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "A comment letter opposing the Airport Spur cites Attorney General Warren's speech calling for energy conservation and frugality as evidence that the project conflicts with state-level transportation and energy goals.",
+  "evidence_pages": [
+    "191"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R022"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "\"What we must now begin to do is to start thinking of ways to get warm or go to work using as few kilowatts or gallons of gasoline as possible. The time has come to change our habits and begin practicing energy conservation and energy frugality.\"",
+  "summary_quote_verified": false,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "191"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "\"What we must now begin to do is to start thinking of ways to get warm or go to work using as few kilowatts or gallons of gasoline as possible. The time has come to change our habits and begin practicing energy conservation and energy frugality.\"",
+      "quote_verified": false,
+      "entity_as_written": "Attorney General Warren",
+      "role_as_written": "Wisconsin Attorney General"
+    }
+  ],
+  "window_pages": [
+    181,
+    201
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 44,
+  "synthetic_no_complaint": false
+}

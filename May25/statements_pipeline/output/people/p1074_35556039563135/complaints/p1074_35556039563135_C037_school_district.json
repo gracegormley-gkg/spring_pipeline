@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C037",
+  "complainer_id": "p1074_35556039563135_K034",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 37,
+  "entity": "School District",
+  "kind": "organization",
+  "role": "Chicago Heights School District No. 170",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "agreed to accept Scheme A after early coordination procedures with conditions attached to land acquisition",
+  "summary": "The Chicago Heights School District No. 170 engaged in early coordination with the City of Chicago Heights and the Illinois Department of Transportation regarding the acquisition of frontage land from Roosevelt School for the Lincoln Highway improvement. The School District requested specific conditions be attached to the land acquisition to lessen its impact, including replacement of sidewalks, shrubbery, and replacement of a pedestrian underpass with an overpass. Through this coordination, the School District reached an agreement to accept Scheme 'A' for the improvement.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Through early coordination procedures, the School District, the City of Chicago Heights, and the Illinois Department of Transportation reached an agreement to accept Scheme 'A' for the Lincoln Highway improvement, resolving the question of how to handle the Sunnyside Avenue segment separating the school building from the playfield.",
+  "evidence_pages": [
+    "75"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556039563135_R005"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Through early coordination procedures, the School District, the City of Chicago Heights and the Illinois Department of Transportation have reached an agreement to accept Scheme \"A\" for the Lincoln Highway improvement.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "75"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Through early coordination procedures, the School District, the City of Chicago Heights and the Illinois Department of Transportation have reached an agreement to accept Scheme \"A\" for the Lincoln Highway improvement.",
+      "quote_verified": true,
+      "entity_as_written": "School District",
+      "role_as_written": "Chicago Heights School District No. 170"
+    }
+  ],
+  "window_pages": [
+    65,
+    85
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 34,
+  "synthetic_no_complaint": false
+}

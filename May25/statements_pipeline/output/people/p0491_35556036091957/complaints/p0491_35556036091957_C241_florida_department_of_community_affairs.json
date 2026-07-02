@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C241",
+  "complainer_id": "p0491_35556036091957_K199",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 241,
+  "entity": "Florida Department of Community Affairs",
+  "kind": "agency",
+  "role": "state agency, commenter",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter suggests Alternative B and recommends strong inter-agency cooperation with specific questions about age requirements and historical site protection",
+  "summary": "The Florida Department of Community Affairs reviewed the draft EIS on ORV use on public lands and suggested that the Department of Interior adopt Alternative B, while acknowledging the popularity of ORVs. The agency recommended strong emphasis on inter-agency cooperation and raised specific questions about the proposed supervisor age requirement and the potential destruction of historical and archaeological structures by ORV use.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Florida Division of State Planning's clearinghouse letter summarizes the Department of Community Affairs' position as recommending Alternative B and notes that the final EIS should adequately address the Department's points of concern.",
+  "evidence_pages": [
+    "314"
+  ],
+  "statement": {
+    "text": "The Department of Community Affairs suggests that alternate B in the statement be adopted and offers other comments which should be considered. See attached letter. The Department of Legal Affairs suggests that a test program to control off-road vehicles be instituted on a limited bas s; the Department offers comments on several other portions of the statement which should be considered. See attached letter. Letters endorsing the proposal or offering no adverse comments on the proposal and statement from the following agencies are attached: Department of Agriculture and Consumer Services; Board of Trustees of the Internal Improvement Trust Fund; Game and Fresh Water Fish Commission; Department of Natural Resources; Department of State - Division of Archives History, and Records\n\nMr. Douglas Hofe, Jr. Page 2 August 14, 1972\nManagement; and Department of Transportation - Division of Transportation Planning and Programming. No response was received from the Central and Southern Florida Flood Control District. The final environmental impact statement should adequately consider each point of concern contained in the attached letters from the Department of Community Affairs and Department of Legal Affairs.",
+    "opening_anchor": "The Department of Community Affairs suggests that alternate B in the statement be adopted and offers other comments which should be considered.",
+    "closing_anchor": "The final environmental impact statement should adequately consider each point of concern contained in the attached letters from the Department of Community Affairs and Department of Legal Affairs.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "While we might suggest that the Department of Interior choose \"Alternative B),\" we can appreciate the popularity of the vehicles and the problems that have arisen with their increasing use.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "314"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "While we might suggest that the Department of Interior choose \"Alternative B),\" we can appreciate the popularity of the vehicles and the problems that have arisen with their increasing use.",
+      "quote_verified": true,
+      "entity_as_written": "Florida Department of Community Affairs",
+      "role_as_written": "state agency, commenter"
+    }
+  ],
+  "window_pages": [
+    304,
+    324
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 199,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,89 @@
+{
+  "complaint_id": "p1074_35556036806586_C006",
+  "complainer_id": "p1074_35556036806586_K004",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 6,
+  "entity": "Duke Power Company",
+  "kind": "organization",
+  "role": "Applicant for Bad Creek Pumped Storage Project license",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "filed application for major license to construct and operate the Bad Creek Pumped Storage Project",
+  "summary": "Duke Power Company is the applicant seeking a Federal Power Commission license to construct, operate, and maintain the Bad Creek Pumped Storage Project No. 2740 in Oconee County, South Carolina. The company has filed detailed plans for a 1,000-MW underground pumped storage facility using Bad Creek as the upper reservoir and existing Lake Jocassee as the lower reservoir, along with associated transmission lines and a hiking trail as recreational mitigation. Duke Power owns all required lands through its subsidiary Crescent Land and Timber Corporation and has already begun preliminary construction activities.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Duke Power Company filed an application for a major license for construction, operation, and maintenance of the proposed Bad Creek Pumped Storage Project No. 2740, proposing a 1,000-MW underground pumped storage facility with associated transmission lines and recreational mitigation in the form of a 30-mile hiking trail.",
+  "evidence_pages": [
+    "19"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Duke Power Company (Applicant) has filed for Commission approval an application for a major license for construction, operation, and maintenance of the proposed Bad Creek Pumped Storage Project No. 2740",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 4,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "19"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Duke Power Company (Applicant) has filed for Commission approval an application for a major license for construction, operation, and maintenance of the proposed Bad Creek Pumped Storage Project No. 2740",
+      "quote_verified": true,
+      "entity_as_written": "Duke Power Company",
+      "role_as_written": "Applicant for Bad Creek Pumped Storage Project license"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "204"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Duke Power Company is instituting a broad, indepth study of load management which will involve the utility's residential, commercial and industrial customers.",
+      "quote_verified": true,
+      "entity_as_written": "Duke Power Company",
+      "role_as_written": "Applicant/utility company proposing Bad Creek Project"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "284"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "We have recently prepared a new system load forecast, which has the effect of reducing the former forecast of future peak loads significantly.",
+      "quote_verified": true,
+      "entity_as_written": "Duke Power Company",
+      "role_as_written": "project applicant"
+    },
+    {
+      "chunk_index": 7,
+      "evidence_pages": [
+        "347"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Applicant has developed data on the flows and water quality of the Whitewater River.",
+      "quote_verified": true,
+      "entity_as_written": "Duke Power Company",
+      "role_as_written": "applicant/project proponent"
+    }
+  ],
+  "window_pages": [
+    9,
+    53
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 4,
+  "synthetic_no_complaint": false
+}

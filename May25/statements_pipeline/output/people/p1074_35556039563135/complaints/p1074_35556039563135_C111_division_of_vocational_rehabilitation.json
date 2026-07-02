@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556039563135_C111",
+  "complainer_id": "p1074_35556039563135_K088",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 111,
+  "entity": "Division of Vocational Rehabilitation",
+  "kind": "agency",
+  "role": "Illinois state agency reviewer",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letter states no adverse environmental impact known and no material effect on agency functions",
+  "summary": "The Division of Vocational Rehabilitation reviewed the draft environmental statement for the Lincoln Highway project and stated it had little knowledge relevant to the construction and could identify no way the project could adversely affect the environment. The agency also noted the project would have no material effect on its own functions, and returned the documents due to storage constraints.",
+  "form": "letter",
+  "complaint_summary": "The Division of Vocational Rehabilitation states it has no knowledge of any way the proposed construction could adversely affect the environment and foresees no material effect on its own functions.",
+  "evidence_pages": [
+    "203"
+  ],
+  "statement": {
+    "text": "The Division of Vocational Rehabilitation has little, if any, knowledge relative to the construction referred to above. There is no way known to this office in which the proposed construction could adversely affect the environment. It is not foreseen that such a project could have any material effect on the functions of the Division of Vocational Rehabilitation.\nI am returning the documents which you forwarded on the subject. We are a little short of storage space and it appears unlikely that we will have any further necessity to refer to them.",
+    "opening_anchor": "The Division of Vocational Rehabilitation has little, if any, knowledge relative to the construction referred to above.",
+    "closing_anchor": "it appears unlikely that we will have any further necessity to refer to them.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "There is no way known to this office in which the proposed construction could adversely affect the environment.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "203"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "There is no way known to this office in which the proposed construction could adversely affect the environment.",
+      "quote_verified": true,
+      "entity_as_written": "Division of Vocational Rehabilitation",
+      "role_as_written": "Illinois state agency reviewer"
+    }
+  ],
+  "window_pages": [
+    193,
+    213
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 88,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,70 @@
+{
+  "complaint_id": "p0491_35556036091957_C030",
+  "complainer_id": "p0491_35556036091957_K001",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 30,
+  "entity": "Amax Exploration, Inc.",
+  "kind": "organization",
+  "role": "mineral exploration company, commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as objecting to permits being required for miners",
+  "summary": "Amax Exploration, Inc. objected to the requirement that miners obtain permits for ORV use on Interior lands, arguing that mineral exploration activities should not be subject to the same permitting burdens as recreational ORV users. The Department responded by revising its final environmental statement to except mining, oil, and gas geophysical exploration equipment from the definition of off-road vehicles, citing the U.S. Mining Law of 1872.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Amax Exploration, Inc. objected to permits being required for miners engaged in mineral exploration on Interior lands.",
+  "evidence_pages": [
+    "39"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p0491_35556036091957_R007"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We suggest, therefore, that provision be made for issuance of a country-wide general permit to those engaged in legitimate mineral exploration to eliminate the need for a permit for each ORV event",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "39"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Amax Exploration, Inc. - objected to permits being required for miners.",
+      "quote_verified": false,
+      "entity_as_written": "Amax Exploration, Inc.",
+      "role_as_written": "Mining industry commenter"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "127"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We suggest, therefore, that provision be made for issuance of a country-wide general permit to those engaged in legitimate mineral exploration to eliminate the need for a permit for each ORV event",
+      "quote_verified": true,
+      "entity_as_written": "AMAX Exploration, Inc.",
+      "role_as_written": "mineral exploration company, commenter"
+    }
+  ],
+  "window_pages": [
+    29,
+    54
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 1,
+  "synthetic_no_complaint": false
+}

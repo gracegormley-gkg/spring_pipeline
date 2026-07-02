@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556036058550_C050",
+  "complainer_id": "p1074_35556036058550_K022",
+  "doc_id": "p1074_35556036058550",
+  "work_id": "csv:35556036058550",
+  "order": 50,
+  "entity": "Richard C. Van Dusen",
+  "kind": "official",
+  "role": "Acting Secretary, HUD",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "cited only as source of HUD noise circular referenced in EIS text",
+  "summary": "Richard C. Van Dusen is referenced solely as the signatory authority behind HUD Circular 1390.2, 'Noise Abatement and Control: Departmental Policy, Implementation Responsibilities, and Standards,' which is cited in the context of the Memphis site's acoustical environment. He does not appear as a commenter or stakeholder expressing a position on Operation BREAKTHROUGH itself. No complaint, opinion, or stance is attributed to him in the document window.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "13"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Noise Abatement and Control: Departmental Policy, Implementation Responsibilities, and Standards",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "13"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Noise Abatement and Control: Departmental Policy, Implementation Responsibilities, and Standards",
+      "quote_verified": true,
+      "entity_as_written": "Richard C. Van Dusen",
+      "role_as_written": "Acting Secretary, HUD"
+    }
+  ],
+  "window_pages": [
+    3,
+    23
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 22,
+  "synthetic_no_complaint": true
+}

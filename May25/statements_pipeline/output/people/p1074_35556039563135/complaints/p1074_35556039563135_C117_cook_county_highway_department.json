@@ -1,0 +1,69 @@
+{
+  "complaint_id": "p1074_35556039563135_C117",
+  "complainer_id": "p1074_35556039563135_K049",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 117,
+  "entity": "Cook County Highway Department",
+  "kind": "agency",
+  "role": "Local agency / draft EIS commenter",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly concurring with proposed improvement along Lincoln Highway",
+  "summary": "The Cook County Highway Department reviewed the Draft Environmental Statement for the proposed Lincoln Highway improvement (FA Route 23/US Route 30) and found that the proposed design and research summary adhere to required policies. The department explicitly concurred with the proposed improvement, expressing no objections or conditions.",
+  "form": "letter",
+  "complaint_summary": "The Cook County Highway Department reviewed the Draft Environmental Statement and found the proposed design adheres to required policies, explicitly concurring with the proposed Lincoln Highway improvement.",
+  "evidence_pages": [
+    "210",
+    "211"
+  ],
+  "statement": {
+    "text": "We have reviewed your Draft Environmental Statement-Section 4(f) for the proposed subject improvement in its relationship to the National Environmental Policy Act of 1969 and find that your proposed design and research summary adhere to the policies required in Cook County.\nWe therefore concur with your proposed improvement along Lincoln Highway.\nVery truly yours,\nHugo J. Stark\nActing Superintendent of Highways\nCook County, Illinois",
+    "opening_anchor": "We have reviewed your Draft Environmental Statement-Section 4(f) for the proposed subject improvement in its relationship to the National Environmental Policy Act of 1969",
+    "closing_anchor": "We therefore concur with your proposed improvement along Lincoln Highway.\n\nVery truly yours,\nHugo J. Stark\nActing Superintendent of Highways\nCook County, Illinois",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We therefore concur with your proposed improvement along Lincoln Highway.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "sectional"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "211"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We therefore concur with your proposed improvement along Lincoln Highway.",
+      "quote_verified": true,
+      "entity_as_written": "Cook County Highway Department",
+      "role_as_written": "Local agency / draft EIS commenter"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "210"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "LOCAL AGENCIES ... Cook County Highway Department",
+      "quote_verified": true,
+      "entity_as_written": "Cook County Highway Department",
+      "role_as_written": "Local agency reviewer"
+    }
+  ],
+  "window_pages": [
+    200,
+    221
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 49,
+  "synthetic_no_complaint": false
+}

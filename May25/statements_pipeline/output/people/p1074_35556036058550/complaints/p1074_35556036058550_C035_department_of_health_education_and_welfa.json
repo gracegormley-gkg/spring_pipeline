@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036058550_C035",
+  "complainer_id": "p1074_35556036058550_K005",
+  "doc_id": "p1074_35556036058550",
+  "work_id": "csv:35556036058550",
+  "order": 35,
+  "entity": "Department of Health, Education, and Welfare",
+  "kind": "agency",
+  "role": "Federal agency commenter on draft EIS",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "comments requesting additional training/maintenance information and addressing renovation of substandard units, implying conditional acceptance",
+  "summary": "The Department of Health, Education, and Welfare submitted comments on the draft Environmental Impact Statement for Operation BREAKTHROUGH, raising two concerns: the need for training and maintenance information for residents, and the issue of renovation of substandard housing units. HUD responded to both comments, explaining provisions already in place for training and maintenance manuals, and noting that a separate Project Rehab program addresses renovation.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Department of Health, Education, and Welfare commented on the need to address renovation of substandard housing units within the BREAKTHROUGH program.",
+  "evidence_pages": [
+    "23"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036058550_R029"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Comment: Need for training and maintenance information.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "23"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Comment: Need for training and maintenance information.",
+      "quote_verified": true,
+      "entity_as_written": "Department of Health, Education, and Welfare",
+      "role_as_written": "Federal agency commenter on draft EIS"
+    }
+  ],
+  "window_pages": [
+    13,
+    33
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 5,
+  "synthetic_no_complaint": false
+}

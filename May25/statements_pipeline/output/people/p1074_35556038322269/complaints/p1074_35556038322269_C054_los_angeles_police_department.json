@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556038322269_C054",
+  "complainer_id": "p1074_35556038322269_K068",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 54,
+  "entity": "Los Angeles Police Department",
+  "kind": "agency",
+  "role": "municipal police department, commenter on crime impacts",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "LAPD projects 5-10% crime increase for rail alternatives and proposes 195 sworn officers as mitigation condition",
+  "summary": "The Los Angeles Police Department reviewed the proposed transit alternatives from a security standpoint and concluded that rail/bus Alternatives I–VI would likely cause a 5–10% increase in crime and traffic violations, while all-bus alternatives would have little or no adverse impact. LAPD analyzed five station locations and projected specific crime increases, and proposed 195 sworn personnel to provide adequate police services for Alternative II—a figure far exceeding SCRTD's own estimate of 45 officers. The department's concerns are conditional in nature: it supports the project only if substantial security staffing and hardware measures are implemented.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Los Angeles City Police Department concluded that Alternatives I–VI would cause a possible 5–10% increase in crime and traffic violations, analyzed five station locations projecting specific crime increases, and estimated that 195 sworn personnel would be needed to adequately police Alternative II—far more than SCRTD's estimate of 45 officers.",
+  "evidence_pages": [
+    "194"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556038322269_R002"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Police Department analyzed a sample of five proposed station locations for Alternatives I and V and projected the increases in crime shown in Figure V.23.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "194"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Police Department analyzed a sample of five proposed station locations for Alternatives I and V and projected the increases in crime shown in Figure V.23.",
+      "quote_verified": true,
+      "entity_as_written": "Los Angeles Police Department",
+      "role_as_written": "municipal police department, commenter on crime impacts"
+    }
+  ],
+  "window_pages": [
+    184,
+    204
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 68,
+  "synthetic_no_complaint": false
+}

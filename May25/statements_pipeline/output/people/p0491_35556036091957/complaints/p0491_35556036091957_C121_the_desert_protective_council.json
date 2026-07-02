@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p0491_35556036091957_C121",
+  "complainer_id": "p0491_35556036091957_K122",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 121,
+  "entity": "The Desert Protective Council",
+  "kind": "organization",
+  "role": "non-profit organization, commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "letter explicitly challenges the EIS as non-environmental, objects to ORV use in National Parks/Monuments/Wildlife Refuges, and endorses Sierra Club's position that ORV use should be prohibited on all public lands unless proven otherwise",
+  "summary": "The Desert Protective Council submitted a formal letter to the Secretary of the Interior objecting to the Draft Environmental Statement on ORV use, arguing it was more concerned with industry and user convenience than environmental protection. The Council challenged multiple unsupported claims in the statement, objected to opening National Parks, Monuments, and Wildlife Refuges to recreational ORV use, and called for full and complete implementation of Executive Order 11644 without equivocation. They endorsed the Sierra Club's position that ORV use should be presumed detrimental and prohibited on all public lands unless proven otherwise by impartial investigators.",
+  "form": "letter",
+  "complaint_summary": "The Desert Protective Council's letter to the Secretary of the Interior argues that the Environmental Statement fails to adequately address environmental impacts of ORV use, is improperly focused on industry and user convenience rather than environmental protection, challenges multiple unsupported claims, objects to ORV access in National Parks/Monuments/Wildlife Refuges, criticizes vague criteria for designating ORV areas, rejects 'mingling' as a mitigation strategy, finds economic arguments out of place in an environmental statement, and calls for full implementation of Executive Order 11644 with the presumption that ORV use is detrimental unless proven otherwise.",
+  "evidence_pages": [
+    "160",
+    "161"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "Careful reading of the Environmental Statement published in the Federal Register on June 2, 1972, on the proposed Departmental Implementation of Executive Order 11644",
+    "closing_anchor": "The Decert Frotestive Council\n--- END ---",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "The Desert Protective Council questions the Environmental Statement's employing on non-environmental considerations, challenges the unsupported claim that \"In most cases where properly council and reserved, the do lingued dimage to the human environment\"",
+  "summary_quote_verified": false,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "160",
+        "161"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The Desert Protective Council questions the Environmental Statement's employing on non-environmental considerations, challenges the unsupported claim that \"In most cases where properly council and reserved, the do lingued dimage to the human environment\"",
+      "quote_verified": false,
+      "entity_as_written": "The Desert Protective Council",
+      "role_as_written": "non-profit organization, commenter"
+    }
+  ],
+  "window_pages": [
+    150,
+    171
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 122,
+  "synthetic_no_complaint": false
+}

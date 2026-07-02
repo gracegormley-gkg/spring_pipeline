@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556036105336_C004",
+  "complainer_id": "p1074_35556036105336_K010",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 4,
+  "entity": "Department of Transportation  FHWA",
+  "kind": "agency",
+  "role": "Federal agency commenter",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed only as a commenter who responded, with no position stated in the window",
+  "summary": "The Department of Transportation FHWA is listed in the summary sheet as one of the agencies from which comments were received on the Randolph Urban Renewal Project Final Environmental Impact Statement. No substantive position, complaint, or opinion from FHWA is reproduced within this window of the document.",
+  "form": "sectional",
+  "complaint_summary": "The Department of Transportation FHWA is listed among the agencies that submitted comments on the draft environmental statement, but no content of those comments is provided in this portion of the document.",
+  "evidence_pages": [
+    "2"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim",
+    "low_stance_confidence"
+  ],
+  "summary_quote": "Comments have been received from: b. Department of Transportation  FHWA",
+  "summary_quote_verified": false,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "2"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Comments have been received from: b. Department of Transportation  FHWA",
+      "quote_verified": false,
+      "entity_as_written": "Department of Transportation  FHWA",
+      "role_as_written": "Federal agency commenter"
+    }
+  ],
+  "window_pages": [
+    1,
+    12
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 10,
+  "synthetic_no_complaint": false
+}

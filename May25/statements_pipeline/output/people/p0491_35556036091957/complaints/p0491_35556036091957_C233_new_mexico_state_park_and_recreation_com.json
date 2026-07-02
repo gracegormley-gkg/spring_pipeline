@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C233",
+  "complainer_id": "p0491_35556036091957_K216",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 233,
+  "entity": "New Mexico State Park and Recreation Commission",
+  "kind": "agency",
+  "role": "state agency, regulator",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "regulation text restricts ORV use in state parks without explicitly opposing or supporting the federal proposal",
+  "summary": "The New Mexico State Park and Recreation Commission is referenced in the context of a letter from the New Mexico State Planning Office, which coordinated review of the draft environmental statement with the Commission among other state agencies. The Commission's own Regulation No. 18 is reproduced as an enclosure, showing that it restricts motorcycle use to improved main roads and limits dune buggy and all-terrain vehicle use to designated areas within the state park system, with nighttime prohibitions. The regulation reflects a restrictive but managed-use approach to ORVs on state lands, neither explicitly endorsing nor opposing the federal proposal.",
+  "form": "sectional",
+  "complaint_summary": "The New Mexico State Park and Recreation Commission's Regulation No. 18 is reproduced as an enclosure to the State Planning Office letter, showing the Commission restricts ORV use in state parks to designated areas and improved roads only, with nighttime prohibitions.",
+  "evidence_pages": [
+    "311"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "STATE PARK AND RECREATION COMMISSION REGULATION NO. 18 STATE PARK REGULATIONS",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "311"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "STATE PARK AND RECREATION COMMISSION REGULATION NO. 18 STATE PARK REGULATIONS",
+      "quote_verified": true,
+      "entity_as_written": "New Mexico State Park and Recreation Commission",
+      "role_as_written": "state agency, regulator"
+    }
+  ],
+  "window_pages": [
+    301,
+    321
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 216,
+  "synthetic_no_complaint": false
+}

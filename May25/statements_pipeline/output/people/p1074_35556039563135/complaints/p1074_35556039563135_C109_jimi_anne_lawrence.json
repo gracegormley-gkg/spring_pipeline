@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556039563135_C109",
+  "complainer_id": "p1074_35556039563135_K097",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 109,
+  "entity": "Jimi Anne Lawrence",
+  "kind": "official",
+  "role": "Director, Illinois Department of Children and Family Services",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letter states project has no negative environmental effect on department facilities",
+  "summary": "Jimi Anne Lawrence, Director of the Illinois Department of Children and Family Services, submitted a brief letter stating that the proposed highway project has no negative environmental effect on facilities of her Department. Her comment is purely informational and neither supports nor opposes the project. No response from the agency or preparer was provided.",
+  "form": "letter",
+  "complaint_summary": "Lawrence states that the Department of Children and Family Services reviewed the environmental statement and found the proposed project has no negative environmental effect on its facilities.",
+  "evidence_pages": [
+    "200"
+  ],
+  "statement": {
+    "text": "The above statement has been reviewed in this Department and the proposed project has no negative environmental effect on facilities of this Department.\nYours truly,\n(Mrs.) Jimi Anne Lawrence\nDIRECTOR",
+    "opening_anchor": "The above statement has been reviewed in this Department and the proposed project has no negative environmental effect on facilities of this Department.",
+    "closing_anchor": "Yours truly,\n(Mrs.) Jimi Anne Lawrence\nDIRECTOR",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The above statement has been reviewed in this Department and the proposed project has no negative environmental effect on facilities of this Department.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "200"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The above statement has been reviewed in this Department and the proposed project has no negative environmental effect on facilities of this Department.",
+      "quote_verified": true,
+      "entity_as_written": "Jimi Anne Lawrence",
+      "role_as_written": "Director, Illinois Department of Children and Family Services"
+    }
+  ],
+  "window_pages": [
+    190,
+    210
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 97,
+  "synthetic_no_complaint": false
+}

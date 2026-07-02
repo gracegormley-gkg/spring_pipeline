@@ -1,0 +1,69 @@
+{
+  "complaint_id": "p1074_35556036058550_C002",
+  "complainer_id": "p1074_35556036058550_K015",
+  "doc_id": "p1074_35556036058550",
+  "work_id": "csv:35556036058550",
+  "order": 2,
+  "entity": "National Bureau of Standards",
+  "kind": "agency",
+  "role": "Technical reviewer of housing system designs under HUD sponsorship",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "described as technical reviewer developing and applying Guide Criteria under HUD sponsorship, with no independent position expressed",
+  "summary": "The National Bureau of Standards (NBS) is described as having developed the Guide Criteria for evaluating Operation BREAKTHROUGH housing systems under HUD sponsorship, reviewed and approved by ACHUD. NBS also conducted or monitored testing programs where prior evidence was insufficient to judge performance of materials or assemblies, and collaborated with HUD on documenting the total energy system at Jersey City. NBS appears throughout as a technical partner to HUD rather than as an independent commenter with its own stance on the project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "NBS is described as having been engaged by HUD to review detailed housing system designs against the Guide Criteria and to conduct or monitor testing programs where experience or prior evidence was insufficient to judge performance of a material or assembly.",
+  "evidence_pages": [
+    "5"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "These Guide Criteria were developed by the National Bureau of Standards under HUD sponsorship, and have been reviewed and approved by a joint Advisory Committee to the Department of Housing and Urban Development (ACHUD) of the National Academies of Sciences and Engineering.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "5"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "These Guide Criteria were developed by the National Bureau of Standards under HUD sponsorship, and have been reviewed and approved by a joint Advisory Committee to the Department of Housing and Urban Development (ACHUD) of the National Academies of Sciences and Engineering.",
+      "quote_verified": false,
+      "entity_as_written": "National Bureau of Standards",
+      "role_as_written": "Technical reviewer of housing system designs under HUD sponsorship"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "51"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "My staff and our supporting contractors (the National Bureau of Standards and the Oak Ridge National Laboratory) are knowledgable in the area of the TARGET/Pratt and Whitney fuel cell program.",
+      "quote_verified": false,
+      "entity_as_written": "National Bureau of Standards",
+      "role_as_written": "Supporting contractor for HUD energy systems research"
+    }
+  ],
+  "window_pages": [
+    1,
+    23
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 15,
+  "synthetic_no_complaint": false
+}

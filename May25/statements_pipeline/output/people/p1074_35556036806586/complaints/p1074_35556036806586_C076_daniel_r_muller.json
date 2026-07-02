@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036806586_C076",
+  "complainer_id": "p1074_35556036806586_K062",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 76,
+  "entity": "Daniel R. Muller",
+  "kind": "official",
+  "role": "Assistant Director for Environmental Projects, Division of Reactor Licensing, Nuclear Regulatory Commission",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly praises the Draft EIS as extremely well written with excellent treatment of alternatives and no radiological concerns",
+  "summary": "Daniel R. Muller, writing on behalf of the Nuclear Regulatory Commission, reviewed the Draft Environmental Impact Statement for the Bad Creek Pumped Storage Project and found no radiological health, safety, or regulatory concerns. He praised Section 8 on Alternatives as 'extremely well written' and commended the overall treatment of alternatives as 'excellent,' expressing a clearly favorable view of the document and implicitly the project.",
+  "form": "letter",
+  "complaint_summary": "Muller states the NRC found no radiological health, safety, or regulatory impacts from the proposed project, and commends Section 8 on Alternatives as extremely well written with an excellent overall treatment of alternatives.",
+  "evidence_pages": [
+    "264"
+  ],
+  "statement": {
+    "text": "This is in response to your letter of September 30, 1975 inviting our comments on the Draft Environmental Impact Statement prepared by your staff in connection with the application for a license filed by the Duke Power Company for the proposed Bad Creek Pumped Storage Project No. 2740.\nWe have reviewed the statement and determined that the proposed action has meither radiological health and safety impacts nor will it adversely affect any activities subject to regulation by the Nuclear Regulatory Commission. We would, however, like to comment on the statement as follows. We are of the opinion that Section 8, Alternatives to the Proposed Action, is extremely well written. The section on pumped storage facilities is instructional to anyone interested in their use and, in particular, their importance to the reliability and efficiency of the Duke Power Company System. In addition, the overall treatment of alternatives is excellent.\nThank you for providing us with the opportunity to review this Draft Environmental Impact Statement.\nSincerely,\nDaniel R. Muller, Assistant Director for Environmental Projects",
+    "opening_anchor": "This is in response to your letter of September 30, 1975 inviting our comments on the Draft Environmental Impact Statement prepared by your staff",
+    "closing_anchor": "Thank you for providing us with the opportunity to review this Draft Environmental Impact Statement.\n\nSincerely,\nDaniel R. Muller, Assistant Director for Environmental Projects",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We are of the opinion that Section 8, Alternatives to the Proposed Action, is extremely well written. The section on pumped storage facilities is instructional to anyone interested in their use and, in particular, their importance to the reliability and efficiency of the Duke Power Company System. In addition, the overall treatment of alternatives is excellent.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "264"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We are of the opinion that Section 8, Alternatives to the Proposed Action, is extremely well written. The section on pumped storage facilities is instructional to anyone interested in their use and, in particular, their importance to the reliability and efficiency of the Duke Power Company System. In addition, the overall treatment of alternatives is excellent.",
+      "quote_verified": true,
+      "entity_as_written": "Daniel R. Muller",
+      "role_as_written": "Assistant Director for Environmental Projects, Division of Reactor Licensing, Nuclear Regulatory Commission"
+    }
+  ],
+  "window_pages": [
+    254,
+    274
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 62,
+  "synthetic_no_complaint": false
+}

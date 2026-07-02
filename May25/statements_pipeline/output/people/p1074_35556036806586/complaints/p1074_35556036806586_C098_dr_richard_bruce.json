@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036806586_C098",
+  "complainer_id": "p1074_35556036806586_K088",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 98,
+  "entity": "Dr. Richard Bruce",
+  "kind": "individual",
+  "role": "herpetologist, Western Carolina University",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "research cited to correct taxonomic classification of salamander subspecies, no position on project itself",
+  "summary": "Dr. Richard Bruce is cited as a scientific authority whose 1967 herpetological research found that the color phases used to distinguish Plethodon jordani subspecies (including clemsonae) occur widely across the Blue Ridge Escarpment and cannot be geographically bounded, making subspecies recognition unwarranted. His work is paraphrased by the applicant (Duke Power) to support revising the EIS claim that the Bad Creek area is the only location for the Clemson salamander variant. Dr. Bruce takes no position on the project itself; his research is used as scientific evidence to correct a factual error in the DEIS.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Dr. Bruce's 1967 research is cited to demonstrate that the Clemson color phase of Plethodon jordani is not restricted to the Bad Creek area but occurs widely across the escarpment, making subspecies boundaries impossible to draw and thus correcting the DEIS statement in Section 7.2.2.",
+  "evidence_pages": [
+    "300"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036806586_R036"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Dr. Richard Bruce, herpetologist from Western Carolina University, (1967 - see enclosure #3) found that \"dorsal brassy flecking and lateral white spotting occur in many escarpment populatious, and the trend of variation is such that drawing geographic boundaries to the subspecies clemsonae and melaventris is impossible (p. 78 of his paper).",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "300"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Dr. Richard Bruce, herpetologist from Western Carolina University, (1967 - see enclosure #3) found that \"dorsal brassy flecking and lateral white spotting occur in many escarpment populatious, and the trend of variation is such that drawing geographic boundaries to the subspecies clemsonae and melaventris is impossible (p. 78 of his paper).",
+      "quote_verified": true,
+      "entity_as_written": "Dr. Richard Bruce",
+      "role_as_written": "herpetologist, Western Carolina University"
+    }
+  ],
+  "window_pages": [
+    290,
+    307
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 88,
+  "synthetic_no_complaint": false
+}

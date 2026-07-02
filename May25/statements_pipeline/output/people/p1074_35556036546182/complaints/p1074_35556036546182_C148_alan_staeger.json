@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C148",
+  "complainer_id": "p1074_35556036546182_K106",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 148,
+  "entity": "Alan Staeger",
+  "kind": "individual",
+  "role": "Private Citizen, commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes concern with air and noise pollution caused by the Airport Spur",
+  "summary": "Alan Staeger, a private citizen residing at 5801 South 15th Place, expressed concern about the increase in air and noise pollution that would result from the Airport Spur. His comment was addressed by a reference to pages 141 and 150 of the Final EIS, which contain the noise and air quality response sections.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Alan Staeger stated his concern with the increase in air and noise pollution caused by the Airport Spur.",
+  "evidence_pages": [
+    "247"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R067"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Stated his concern with the increase in air and noise pollution caused by the Airport Spur.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "247"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Stated his concern with the increase in air and noise pollution caused by the Airport Spur.",
+      "quote_verified": true,
+      "entity_as_written": "Alan Staeger",
+      "role_as_written": "Private Citizen, commenter"
+    }
+  ],
+  "window_pages": [
+    237,
+    257
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 106,
+  "synthetic_no_complaint": false
+}

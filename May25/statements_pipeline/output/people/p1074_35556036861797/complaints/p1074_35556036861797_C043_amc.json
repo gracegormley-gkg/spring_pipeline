@@ -1,0 +1,69 @@
+{
+  "complaint_id": "p1074_35556036861797_C043",
+  "complainer_id": "p1074_35556036861797_K025",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 43,
+  "entity": "AMC",
+  "kind": "organization",
+  "role": "automobile manufacturer / commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "AMC repeatedly contests the proposed standard as too high, disputes NHTSA's methodology, and argues its vehicles should be exempt or in a separate class",
+  "summary": "AMC raised multiple objections to the MY 1979 average fuel economy standard for nonpassenger automobiles, including a 10% fuel economy penalty claim from emission standards, disputes over NHTSA's CID/weight methodology, concerns about air quality certification margins, noise/muffler weight impacts, market shift limitations, and arguments that its Jeep CJ vehicles are off-road vehicles outside the scope of Title V. AMC also opposed the inclusion of captive imports as discriminatory against non-importers and argued that the 18.7 mpg standard was unattainable, contending it could only meet 17 mpg for its Jeep CJ vehicles.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "AMC opposed the inclusion of captive imports in domestic manufacturers' fleet calculations, arguing it would discriminate against non-importers and stimulate foreign production at the expense of domestic production.",
+  "evidence_pages": [
+    "97"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036861797_R025"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "AMC estimated the combined penalty to be greater than 10 percent.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "97"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "AMC states that they will have to reduce the margin of safety by which they pass the emission standards and increase sample size in order to improve the confidence of testing results.",
+      "quote_verified": false,
+      "entity_as_written": "AMC",
+      "role_as_written": "automobile manufacturer / commenter"
+    },
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "146"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "AMC estimated the combined penalty to be greater than 10 percent.",
+      "quote_verified": true,
+      "entity_as_written": "AMC",
+      "role_as_written": "automobile manufacturer / commenter"
+    }
+  ],
+  "window_pages": [
+    87,
+    133
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 25,
+  "synthetic_no_complaint": false
+}

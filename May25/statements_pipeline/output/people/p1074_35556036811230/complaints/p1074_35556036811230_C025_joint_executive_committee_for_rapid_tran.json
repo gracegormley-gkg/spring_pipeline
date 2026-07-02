@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036811230_C025",
+  "complainer_id": "p1074_35556036811230_K014",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 25,
+  "entity": "Joint Executive Committee for Rapid Transit",
+  "kind": "organization",
+  "role": "community support body for rapid transit",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "formed explicitly to unite community groups in demonstrating support for rapid transit",
+  "summary": "The Joint Executive Committee for Rapid Transit was formed in May 1975 at the request of the Erie County Executive and the Mayor of Buffalo to unite the Mass Transit Advisory Committee, the Area Committee for Transit (ACT), and the No Overhead Transit (NOT) organization in a demonstration of community support for rapid transit. The entity's sole described purpose was to consolidate these groups behind the rapid transit project, indicating a supportive stance toward the proposed Metrorail system.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Joint Executive Committee for Rapid Transit was formed in May 1975 at the request of local government leaders to unite community interest groups in demonstrating support for rapid transit.",
+  "evidence_pages": [
+    "83"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "In May 1975, at the request of the Erie County Executive and the Mayor of the City of Buffalo, the Joint Executive Committee for Rapid Transit was formed.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "83"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In May 1975, at the request of the Erie County Executive and the Mayor of the City of Buffalo, the Joint Executive Committee for Rapid Transit was formed.",
+      "quote_verified": true,
+      "entity_as_written": "Joint Executive Committee for Rapid Transit",
+      "role_as_written": "community support body for rapid transit"
+    }
+  ],
+  "window_pages": [
+    73,
+    93
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 14,
+  "synthetic_no_complaint": false
+}

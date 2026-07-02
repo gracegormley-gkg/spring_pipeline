@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036806586_C026",
+  "complainer_id": "p1074_35556036806586_K028",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 26,
+  "entity": "North Carolina Department of Natural and Economic Resources",
+  "kind": "agency",
+  "role": "state natural resources agency, endangered species classification",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "cited as source for endangered species classification, no position on project expressed",
+  "summary": "The North Carolina Department of Natural and Economic Resources is cited twice in the document window as a source for wildlife classification data: once for classifying the southern bald eagle, American peregrine falcon, and eastern cougar as endangered, and once for classifying the longtailed salamander and coal skink as rare and peripheral in their North Carolina distribution. The agency does not express a position for or against the Bad Creek Project; it is referenced solely as an authoritative source for species status designations.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The NC Department of Natural and Economic Resources (1973) is cited as having assigned the same endangered classification to the southern bald eagle, American peregrine falcon, and eastern cougar as the U.S. Fish and Wildlife Service.",
+  "evidence_pages": [
+    "106"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "An identical classification has been assigned these species by North and South Carolina; North Carolina Department of Natural and Economic Resources (1973); Joyner, (1974).",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "106"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "An identical classification has been assigned these species by North and South Carolina; North Carolina Department of Natural and Economic Resources (1973); Joyner, (1974).",
+      "quote_verified": true,
+      "entity_as_written": "North Carolina Department of Natural and Economic Resources",
+      "role_as_written": "state natural resources agency, endangered species classification"
+    }
+  ],
+  "window_pages": [
+    96,
+    116
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 28,
+  "synthetic_no_complaint": false
+}

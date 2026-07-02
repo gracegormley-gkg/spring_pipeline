@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036546182_C055",
+  "complainer_id": "p1074_35556036546182_K039",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 55,
+  "entity": "Several elected officials",
+  "kind": "other",
+  "role": "elected officials (unnamed)",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describing testimony against the Airport Spur due to noise and air pollution effects on school and neighborhood",
+  "summary": "Several elected officials testified against the Airport Spur at the July 11, 1974 Environmental Impact Hearing, citing concerns about the effects of noise and air pollution on Hamlin Garland School and the surrounding neighborhood. Their opposition is noted alongside that of many private citizens, contrasting with the support expressed by agencies such as SEWRPC, FAA, and the American Automobile Association. The document notes that detailed testimony and responses are contained in later sections of the EIS.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Several elected officials testified against the Airport Spur at the July 11, 1974 Environmental Impact Hearing because of the effects of noise and air pollution on Hamlin Garland School and the immediate neighborhood.",
+  "evidence_pages": [
+    "102"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R004"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Several elected officials and many private citizens testified against the Airport Spur because of the effects of noise and air pollution on Hamlin Garland School and the immediate neighborhood.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "102"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Several elected officials and many private citizens testified against the Airport Spur because of the effects of noise and air pollution on Hamlin Garland School and the immediate neighborhood.",
+      "quote_verified": true,
+      "entity_as_written": "Several elected officials",
+      "role_as_written": "elected officials (unnamed)"
+    }
+  ],
+  "window_pages": [
+    92,
+    112
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 39,
+  "synthetic_no_complaint": false
+}

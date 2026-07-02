@@ -1,0 +1,126 @@
+{
+  "complaint_id": "p1074_35556039563135_C034",
+  "complainer_id": "p1074_35556039563135_K020",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 34,
+  "entity": "Northeastern Illinois Planning Commission (Metropolitan Clearinghouse)",
+  "kind": "agency",
+  "role": "Regional planning commission that adopted highway interim plan",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter stating project conditionally consistent with regional planning, with construction contingent on Park Forest Consolidation Study findings, later upgraded to fully consistent after condition was resolved",
+  "summary": "The Northeastern Illinois Planning Commission (Metropolitan Clearinghouse) initially found the proposed Lincoln Highway project to be only conditionally consistent with comprehensive regional planning, requiring affirmative findings from the Park Forest Consolidation Study before construction could proceed. After that study was cancelled by the Village of Park Forest, the condition was lifted, and at a May 8, 1974 meeting the Commission found the project fully consistent with regional planning policies. The Interstate Planning Committee also concurred with this final positive finding.",
+  "form": "letter",
+  "complaint_summary": "In a letter dated August 14, 1973, NIPC found the project only conditionally consistent with regional planning, allowing land acquisition and design approval to proceed but prohibiting actual construction until affirmative findings were received from the Park Forest Consolidation Study.",
+  "evidence_pages": [
+    "70"
+  ],
+  "statement": {
+    "text": "\"The Commission, through its Planning Committee, found the proposed project to be conditionally consistent with comprehensive regional planning. While the Committee recommended that the Illinois Department of Transportation will be allowed to proceed with the acquisition of land and design approval for the project, actual construction is not to take place until a receipt of affirmative findings has been obtained from the Park Forest Consolidation Study.\"",
+    "opening_anchor": "\"The Commission, through its Planning Committee, found the proposed project to be conditionally consistent with comprehensive regional planning.",
+    "closing_anchor": "actual construction is not to take place until a receipt of affirmative findings has been obtained from the Park Forest Consolidation Study.\"",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556039563135_R003"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Commission, through its Planning Committee, found the proposed project to be conditionally consistent with comprehensive regional planning. While the Committee recommended that the Illinois Department of Transportation will be allowed to proceed with the acquisition of land and design approval for the project, actual construction is not to take place until a receipt of affirmative findings has been obtained from the Park Forest Consolidation Study.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased",
+    "sectional"
+  ],
+  "n_mentions": 7,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "47"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Lincoln Highway is shown as an arterial in the Chicago Area Transportation Study Highway Interim Plan which was adopted By the Northeastern Illinois Planning Commission on October 21, 1971, as one of its functional plans",
+      "quote_verified": false,
+      "entity_as_written": "Northeastern Illinois Planning Commission",
+      "role_as_written": "Regional planning commission that adopted highway interim plan"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "70"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The Commission, through its Planning Committee, found the proposed project to be conditionally consistent with comprehensive regional planning. While the Committee recommended that the Illinois Department of Transportation will be allowed to proceed with the acquisition of land and design approval for the project, actual construction is not to take place until a receipt of affirmative findings has been obtained from the Park Forest Consolidation Study.",
+      "quote_verified": true,
+      "entity_as_written": "Northeastern Illinois Planning Commission",
+      "role_as_written": "Regional planning agency"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "63"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "On November 21, 1974, the Northeastern Illinois Planning Commission adopted the 1995 Transportation System Plan as one of its functional plans.",
+      "quote_verified": true,
+      "entity_as_written": "Northeastern Illinois Planning Commission",
+      "role_as_written": "regional planning commission"
+    },
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "145-194"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "A. We have reviewed the draft environmental statement for the proposed Lincoln Highway improvement and find it generally consistent with Section 201 (2)(c) of the National Environmental Policy Act of 1969.",
+      "quote_verified": false,
+      "entity_as_written": "Northeastern Illinois Planning Commission",
+      "role_as_written": "Regional planning agency / draft EIS commenter"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "208"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "LOCAL AGENCIES ... Northeastern Illinois Planning Commission",
+      "quote_verified": false,
+      "entity_as_written": "Northeastern Illinois Planning Commission",
+      "role_as_written": "Regional planning agency reviewer"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "296"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "\"The project is found to be consistent with regional planning policies as set forth in the Comprehensive General Plan and with currently adopted Commission Plans and programs.\"",
+      "quote_verified": true,
+      "entity_as_written": "Northeastern Illinois Planning Commission",
+      "role_as_written": "regional planning / A-95 clearinghouse reviewer"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "328"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The project is found to be consistent with regional planning policies as set forth in the Comprehensive General Plan and with currently adopted Commission plans and programs.",
+      "quote_verified": false,
+      "entity_as_written": "Northeastern Illinois Planning Commission (Metropolitan Clearinghouse)",
+      "role_as_written": "A-95 metropolitan clearinghouse reviewer"
+    }
+  ],
+  "window_pages": [
+    37,
+    78
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 20,
+  "synthetic_no_complaint": false
+}

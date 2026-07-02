@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p0491_35556036091957_C018",
+  "complainer_id": "p0491_35556036091957_K015",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 18,
+  "entity": "Environmental Protection Agency, Office of Federal Activities",
+  "kind": "agency",
+  "role": "Federal agency reviewer",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describing EPA's interest in noise impacts and advisement that EPA will promulgate noise standards to assist land managers",
+  "summary": "The Environmental Protection Agency, Office of Federal Activities expressed particular interest in the adverse noise impacts of ORVs and the measures needed to protect the public from noise levels. EPA advised that it would be promulgating standards and regulations for recreational vehicles under Section 6 of the Noise Control Act of 1972, which would apply to vehicle manufacture and be based on conditions of use, and indicated these standards would assist land managers in applying noise-level criteria for ORV use on Interior lands. EPA's position is neither outright opposition nor full endorsement, but rather a conditional engagement contingent on adequate noise regulation.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "EPA's Office of Federal Activities indicated particular interest in adverse noise impacts of ORVs and the measures to protect the public from noise levels, and advised that EPA would promulgate noise standards for recreational vehicles under the Noise Control Act of 1972 that would assist land managers in applying noise-level criteria for ORV use on Interior lands.",
+  "evidence_pages": [
+    "29"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p0491_35556036091957_R002"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Environmental Protection Agency, Office of Federal Activities and indicated particular interest in adverse noise impacts of ORV and the measures to be taken to protect the public from noise levels.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "29"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Environmental Protection Agency, Office of Federal Activities and indicated particular interest in adverse noise impacts of ORV and the measures to be taken to protect the public from noise levels.",
+      "quote_verified": true,
+      "entity_as_written": "Environmental Protection Agency, Office of Federal Activities",
+      "role_as_written": "Federal agency reviewer"
+    }
+  ],
+  "window_pages": [
+    19,
+    39
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 15,
+  "synthetic_no_complaint": false
+}

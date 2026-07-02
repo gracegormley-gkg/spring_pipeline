@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556038322269_C102",
+  "complainer_id": "p1074_35556038322269_K057",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 102,
+  "entity": "Los Angeles City Planning Department",
+  "kind": "agency",
+  "role": "source of population, housing, and employment data",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "cited only as a data source for employment and school facility figures, no position expressed",
+  "summary": "The Los Angeles City Planning Department appears in this window solely as a data source, providing employment statistics for 1970 and 1990 projections as well as a list of school facilities within the Regional Core. The department does not express any stance on the proposed transit alternatives; it is referenced only for factual data attribution.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "191"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim",
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Source: City Planning Department, Estimate of Population by Race - August, 1978",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "191"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Source: City Planning Department, Estimate of Population by Race - August, 1978",
+      "quote_verified": false,
+      "entity_as_written": "Los Angeles City Planning Department",
+      "role_as_written": "source of population, housing, and employment data"
+    }
+  ],
+  "window_pages": [
+    181,
+    201
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 57,
+  "synthetic_no_complaint": true
+}

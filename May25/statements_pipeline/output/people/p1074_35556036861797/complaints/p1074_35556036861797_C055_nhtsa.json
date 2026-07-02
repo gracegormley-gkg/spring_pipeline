@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556036861797_C055",
+  "complainer_id": "p1074_35556036861797_K024",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 55,
+  "entity": "NHTSA",
+  "kind": "agency",
+  "role": "Federal fuel economy standards regulator",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "NHTSA is the issuing agency setting standards and responding to comments, not a commenter taking a stance on the project",
+  "summary": "NHTSA is the regulatory agency issuing the final rule establishing average fuel economy standards for nonpassenger automobiles for model year 1979. Throughout the document, NHTSA responds to manufacturer and agency comments, makes analytical determinations (e.g., rejecting manufacturer claims of fuel economy penalties from tighter emissions standards, correcting sulphate emissions estimates), and explains its rulemaking rationale. As the document's author and the promulgating agency, NHTSA does not take a stakeholder stance but rather adjudicates competing claims and issues the final standard.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "NHTSA concluded that the proposed standard of 18.7 mpg should be lowered to 17.2 mpg due to an 8 percent reduction in measured fuel economy from changes in MY 1979 testing procedures, while rejecting claims of a penalty from the 1979 Federal emissions standards.",
+  "evidence_pages": [
+    "146"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "the NHTSA has concluded that the manufacturers have failed to show that there will be any penalty due to the tighter emissions standard.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "83"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "NHTSA recognizes that to present a proper basis for considering fuel economy standards the scenerio used must be consistent.",
+      "quote_verified": true,
+      "entity_as_written": "NHTSA",
+      "role_as_written": "federal agency / rulemaking authority"
+    },
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "146"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "the NHTSA has concluded that the manufacturers have failed to show that there will be any penalty due to the tighter emissions standard.",
+      "quote_verified": true,
+      "entity_as_written": "NHTSA",
+      "role_as_written": "Federal fuel economy standards regulator"
+    }
+  ],
+  "window_pages": [
+    73,
+    123
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 24,
+  "synthetic_no_complaint": false
+}

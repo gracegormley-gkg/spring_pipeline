@@ -1,0 +1,101 @@
+{
+  "complaint_id": "p1074_35556038322269_C015",
+  "complainer_id": "p1074_35556038322269_K032",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 15,
+  "entity": "SCRTD",
+  "kind": "agency",
+  "role": "Transit agency providing transit system data input for alternatives",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "SCRTD described as data provider and planning participant, no explicit position stated",
+  "summary": "SCRTD appears in this window primarily as a data source and institutional actor: it provided bus ridership and route data used in the analysis, has an ongoing TSM program, and acquired articulated buses for Hollywood and Wilshire lines. The agency is described as understanding the problems of overloaded routes and sharing customer concerns, but no explicit stance for or against any specific alternative is expressed in this window.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "SCRTD has acquired thirty 3-door, 60-foot articulated buses for service on the Hollywood and Wilshire Boulevard lines as a planned improvement to provide some relief for future transit needs.",
+  "evidence_pages": [
+    "67"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The SCRTD provided the input on transit system data describing the alternatives, which included routings, station locations, speeds and frequencies.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 5,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "67"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "SCRTD proposed an 89-mile, 5-corridor system to the voters in 1968, which did not win approval.",
+      "quote_verified": true,
+      "entity_as_written": "SCRTD",
+      "role_as_written": "Transit planning and operating agency"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "103"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The SCRTD provided the input on transit system data describing the alternatives, which included routings, station locations, speeds and frequencies.",
+      "quote_verified": true,
+      "entity_as_written": "SCRTD",
+      "role_as_written": "Transit agency providing transit system data input for alternatives"
+    },
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "177"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Source: SCRTD Staff research",
+      "quote_verified": true,
+      "entity_as_written": "SCRTD",
+      "role_as_written": "source of bus energy/performance data and staff research"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "193",
+        "194"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "SCRTD estimates that a total of 45 sworn peace officers, employed by the Rapid Transit District, would be required to adequately patrol and protect the public for a rapid transit system with eighteen miles of guideway and 17 Stations; i.e., Alternative II.",
+      "quote_verified": false,
+      "entity_as_written": "SCRTD",
+      "role_as_written": "Southern California Rapid Transit District, project proponent"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "243"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The balance of the local share has been furnished by the SCRTD.",
+      "quote_verified": true,
+      "entity_as_written": "SCRTD",
+      "role_as_written": "Southern California Rapid Transit District, local transit agency"
+    }
+  ],
+  "window_pages": [
+    57,
+    95
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 32,
+  "synthetic_no_complaint": false
+}

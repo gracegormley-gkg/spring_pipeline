@@ -4,98 +4,1032 @@
       "doc_id": "p0491_35556036091957",
       "work_id": "csv:35556036091957",
       "title": "Off-road vehicles on public lands, implementation of Executive Order 11644 : environmental impact statement.",
-      "n_people": 219,
+      "n_complainers": 236,
+      "n_complaints": 273,
+      "n_responses": 22,
       "stance_counts": {
-        "opposed": 49,
-        "neutral": 24,
-        "in_favor": 37,
-        "conditional": 109
+        "opposed": 55,
+        "conditional": 127,
+        "in_favor": 30,
+        "neutral": 24
+      },
+      "stance_confidence_counts": {
+        "high": 173,
+        "medium": 56,
+        "low": 7,
+        "unknown": 0
       },
       "review_counts": {
-        "needs_review": 74,
-        "auto_ok": 145,
+        "needs_review": 82,
+        "auto_ok": 154,
         "reasons": {
-          "quote_not_verbatim": 34,
-          "private_individual": 46
+          "low_stance_confidence": 7,
+          "no_complaints": 4,
+          "quote_not_verbatim": 32,
+          "private_individual": 50
         }
       },
-      "statement_counts": {
-        "letter": 166,
+      "statement_form_counts": {
+        "letter": 170,
         "testimony": 0,
-        "written_comment": 22,
-        "narrator_paraphrase": 30,
-        "sectional": 0,
-        "none": 1,
-        "present": 174,
-        "absent": 45
+        "written_comment": 38,
+        "narrator_paraphrase": 53,
+        "sectional": 7,
+        "none": 5,
+        "present": 268,
+        "absent": 5
       },
-      "elapsed_sec": 510.7,
+      "response_form_counts": {
+        "agency_response": 0,
+        "preparer_reply": 0,
+        "discussion": 22,
+        "none": 0,
+        "present": 22,
+        "absent": 0
+      },
+      "elapsed_sec": 587.5,
       "usage": {
         "extract": {
           "by_model": [
             {
               "model": "us.anthropic.claude-sonnet-4-6",
               "calls": 8,
-              "input_tokens": 140606,
-              "output_tokens": 32401,
+              "input_tokens": 138966,
+              "output_tokens": 27719,
               "cache_creation_input_tokens": 0,
               "cache_read_input_tokens": 0,
-              "cost_usd": 0.9078
+              "cost_usd": 0.8327
             }
           ],
           "total": {
             "calls": 8,
-            "input_tokens": 140606,
-            "output_tokens": 32401,
+            "input_tokens": 138966,
+            "output_tokens": 27719,
             "cache_creation_input_tokens": 0,
             "cache_read_input_tokens": 0,
-            "cost_usd": 0.9078
+            "cost_usd": 0.8327
           }
         },
         "find_statement": {
           "by_model": [
             {
               "model": "us.anthropic.claude-sonnet-4-6",
-              "calls": 219,
-              "input_tokens": 2092875,
-              "output_tokens": 54535,
+              "calls": 236,
+              "input_tokens": 2477726,
+              "output_tokens": 105078,
               "cache_creation_input_tokens": 0,
               "cache_read_input_tokens": 0,
-              "cost_usd": 7.0967
+              "cost_usd": 9.0093
             }
           ],
           "total": {
-            "calls": 219,
-            "input_tokens": 2092875,
-            "output_tokens": 54535,
+            "calls": 236,
+            "input_tokens": 2477726,
+            "output_tokens": 105078,
             "cache_creation_input_tokens": 0,
             "cache_read_input_tokens": 0,
-            "cost_usd": 7.0967
+            "cost_usd": 9.0093
           }
         },
         "total": {
           "by_model": [
             {
               "model": "us.anthropic.claude-sonnet-4-6",
-              "calls": 227,
-              "input_tokens": 2233481,
-              "output_tokens": 86936,
+              "calls": 244,
+              "input_tokens": 2616692,
+              "output_tokens": 132797,
               "cache_creation_input_tokens": 0,
               "cache_read_input_tokens": 0,
-              "cost_usd": 8.0045
+              "cost_usd": 9.842
             }
           ],
           "total": {
-            "calls": 227,
-            "input_tokens": 2233481,
-            "output_tokens": 86936,
+            "calls": 244,
+            "input_tokens": 2616692,
+            "output_tokens": 132797,
             "cache_creation_input_tokens": 0,
             "cache_read_input_tokens": 0,
-            "cost_usd": 8.0045
+            "cost_usd": 9.842
           }
         }
       },
       "out_dir": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/statements_pipeline/output/people/p0491_35556036091957"
+    },
+    {
+      "doc_id": "p1074_35556036058550",
+      "work_id": "csv:35556036058550",
+      "title": "Operation Breakthrough : environmental impact statement.",
+      "n_complainers": 25,
+      "n_complaints": 51,
+      "n_responses": 34,
+      "stance_counts": {
+        "neutral": 17,
+        "conditional": 6,
+        "in_favor": 2
+      },
+      "stance_confidence_counts": {
+        "high": 4,
+        "medium": 18,
+        "low": 3,
+        "unknown": 0
+      },
+      "review_counts": {
+        "needs_review": 11,
+        "auto_ok": 14,
+        "reasons": {
+          "quote_not_verbatim": 7,
+          "private_individual": 1,
+          "low_stance_confidence": 3,
+          "no_complaints": 3
+        }
+      },
+      "statement_form_counts": {
+        "letter": 3,
+        "testimony": 0,
+        "written_comment": 2,
+        "narrator_paraphrase": 43,
+        "sectional": 0,
+        "none": 3,
+        "present": 48,
+        "absent": 3
+      },
+      "response_form_counts": {
+        "agency_response": 33,
+        "preparer_reply": 0,
+        "discussion": 1,
+        "none": 0,
+        "present": 34,
+        "absent": 0
+      },
+      "elapsed_sec": 73.6,
+      "usage": {
+        "extract": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 2,
+              "input_tokens": 27161,
+              "output_tokens": 2859,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 0.1244
+            }
+          ],
+          "total": {
+            "calls": 2,
+            "input_tokens": 27161,
+            "output_tokens": 2859,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.1244
+          }
+        },
+        "find_statement": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 25,
+              "input_tokens": 269618,
+              "output_tokens": 14536,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 1.0269
+            }
+          ],
+          "total": {
+            "calls": 25,
+            "input_tokens": 269618,
+            "output_tokens": 14536,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 1.0269
+          }
+        },
+        "total": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 27,
+              "input_tokens": 296779,
+              "output_tokens": 17395,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 1.1513
+            }
+          ],
+          "total": {
+            "calls": 27,
+            "input_tokens": 296779,
+            "output_tokens": 17395,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 1.1513
+          }
+        }
+      },
+      "out_dir": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/statements_pipeline/output/people/p1074_35556036058550"
+    },
+    {
+      "doc_id": "p1074_35556036105336",
+      "work_id": "csv:35556036105336",
+      "title": "Randolph urban renewal area : environmental impact statement.",
+      "n_complainers": 50,
+      "n_complaints": 68,
+      "n_responses": 11,
+      "stance_counts": {
+        "neutral": 23,
+        "in_favor": 12,
+        "conditional": 13,
+        "opposed": 2
+      },
+      "stance_confidence_counts": {
+        "high": 9,
+        "medium": 34,
+        "low": 7,
+        "unknown": 0
+      },
+      "review_counts": {
+        "needs_review": 15,
+        "auto_ok": 35,
+        "reasons": {
+          "quote_not_verbatim": 5,
+          "low_stance_confidence": 7,
+          "no_complaints": 3,
+          "private_individual": 7
+        }
+      },
+      "statement_form_counts": {
+        "letter": 8,
+        "testimony": 1,
+        "written_comment": 6,
+        "narrator_paraphrase": 45,
+        "sectional": 5,
+        "none": 3,
+        "present": 65,
+        "absent": 3
+      },
+      "response_form_counts": {
+        "agency_response": 4,
+        "preparer_reply": 0,
+        "discussion": 7,
+        "none": 0,
+        "present": 11,
+        "absent": 0
+      },
+      "elapsed_sec": 123.5,
+      "usage": {
+        "extract": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 3,
+              "input_tokens": 53719,
+              "output_tokens": 6601,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 0.2602
+            }
+          ],
+          "total": {
+            "calls": 3,
+            "input_tokens": 53719,
+            "output_tokens": 6601,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.2602
+          }
+        },
+        "find_statement": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 50,
+              "input_tokens": 570322,
+              "output_tokens": 21733,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 2.037
+            }
+          ],
+          "total": {
+            "calls": 50,
+            "input_tokens": 570322,
+            "output_tokens": 21733,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 2.037
+          }
+        },
+        "total": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 53,
+              "input_tokens": 624041,
+              "output_tokens": 28334,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 2.2971
+            }
+          ],
+          "total": {
+            "calls": 53,
+            "input_tokens": 624041,
+            "output_tokens": 28334,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 2.2971
+          }
+        }
+      },
+      "out_dir": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/statements_pipeline/output/people/p1074_35556036105336"
+    },
+    {
+      "doc_id": "p1074_35556036546182",
+      "work_id": "csv:35556036546182",
+      "title": "Airport Spur connection, I-94 to General Mitchell Field, Milwaukee : environmental impact statement.",
+      "n_complainers": 131,
+      "n_complaints": 165,
+      "n_responses": 77,
+      "stance_counts": {
+        "opposed": 35,
+        "conditional": 18,
+        "in_favor": 45,
+        "neutral": 33
+      },
+      "stance_confidence_counts": {
+        "high": 30,
+        "medium": 90,
+        "low": 11,
+        "unknown": 0
+      },
+      "review_counts": {
+        "needs_review": 56,
+        "auto_ok": 75,
+        "reasons": {
+          "quote_not_verbatim": 16,
+          "low_stance_confidence": 11,
+          "private_individual": 44,
+          "no_complaints": 3
+        }
+      },
+      "statement_form_counts": {
+        "letter": 20,
+        "testimony": 12,
+        "written_comment": 7,
+        "narrator_paraphrase": 112,
+        "sectional": 9,
+        "none": 5,
+        "present": 160,
+        "absent": 5
+      },
+      "response_form_counts": {
+        "agency_response": 45,
+        "preparer_reply": 0,
+        "discussion": 32,
+        "none": 0,
+        "present": 77,
+        "absent": 0
+      },
+      "elapsed_sec": 730.2,
+      "usage": {
+        "extract": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 6,
+              "input_tokens": 104562,
+              "output_tokens": 17377,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 0.5743
+            }
+          ],
+          "total": {
+            "calls": 6,
+            "input_tokens": 104562,
+            "output_tokens": 17377,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.5743
+          }
+        },
+        "find_statement": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 131,
+              "input_tokens": 1255193,
+              "output_tokens": 57210,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 4.6237
+            }
+          ],
+          "total": {
+            "calls": 131,
+            "input_tokens": 1255193,
+            "output_tokens": 57210,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 4.6237
+          }
+        },
+        "total": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 137,
+              "input_tokens": 1359755,
+              "output_tokens": 74587,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 5.1981
+            }
+          ],
+          "total": {
+            "calls": 137,
+            "input_tokens": 1359755,
+            "output_tokens": 74587,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 5.1981
+          }
+        }
+      },
+      "out_dir": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/statements_pipeline/output/people/p1074_35556036546182"
+    },
+    {
+      "doc_id": "p1074_35556036806586",
+      "work_id": "csv:35556036806586",
+      "title": "Bad Creek pumped storage project : environmental impact statement.",
+      "n_complainers": 98,
+      "n_complaints": 133,
+      "n_responses": 48,
+      "stance_counts": {
+        "neutral": 57,
+        "in_favor": 6,
+        "conditional": 22,
+        "opposed": 13
+      },
+      "stance_confidence_counts": {
+        "high": 22,
+        "medium": 58,
+        "low": 18,
+        "unknown": 0
+      },
+      "review_counts": {
+        "needs_review": 43,
+        "auto_ok": 55,
+        "reasons": {
+          "quote_not_verbatim": 16,
+          "low_stance_confidence": 18,
+          "no_complaints": 18,
+          "private_individual": 21
+        }
+      },
+      "statement_form_counts": {
+        "letter": 31,
+        "testimony": 0,
+        "written_comment": 5,
+        "narrator_paraphrase": 75,
+        "sectional": 4,
+        "none": 18,
+        "present": 115,
+        "absent": 18
+      },
+      "response_form_counts": {
+        "agency_response": 7,
+        "preparer_reply": 5,
+        "discussion": 36,
+        "none": 0,
+        "present": 48,
+        "absent": 0
+      },
+      "elapsed_sec": 257.0,
+      "usage": {
+        "extract": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 9,
+              "input_tokens": 161592,
+              "output_tokens": 14828,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 0.7072
+            }
+          ],
+          "total": {
+            "calls": 9,
+            "input_tokens": 161592,
+            "output_tokens": 14828,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.7072
+          }
+        },
+        "find_statement": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 97,
+              "input_tokens": 1089833,
+              "output_tokens": 44283,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 3.9337
+            }
+          ],
+          "total": {
+            "calls": 97,
+            "input_tokens": 1089833,
+            "output_tokens": 44283,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 3.9337
+          }
+        },
+        "total": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 106,
+              "input_tokens": 1251425,
+              "output_tokens": 59111,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 4.6409
+            }
+          ],
+          "total": {
+            "calls": 106,
+            "input_tokens": 1251425,
+            "output_tokens": 59111,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 4.6409
+          }
+        }
+      },
+      "out_dir": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/statements_pipeline/output/people/p1074_35556036806586"
+    },
+    {
+      "doc_id": "p1074_35556036811230",
+      "work_id": "csv:35556036811230",
+      "title": "Buffalo light rail rapid transit project construction : environmental impact statement.",
+      "n_complainers": 59,
+      "n_complaints": 74,
+      "n_responses": 10,
+      "stance_counts": {
+        "in_favor": 16,
+        "neutral": 42,
+        "conditional": 1
+      },
+      "stance_confidence_counts": {
+        "high": 0,
+        "medium": 38,
+        "low": 21,
+        "unknown": 0
+      },
+      "review_counts": {
+        "needs_review": 27,
+        "auto_ok": 32,
+        "reasons": {
+          "low_stance_confidence": 21,
+          "no_complaints": 18,
+          "quote_not_verbatim": 6,
+          "private_individual": 3
+        }
+      },
+      "statement_form_counts": {
+        "letter": 0,
+        "testimony": 0,
+        "written_comment": 0,
+        "narrator_paraphrase": 49,
+        "sectional": 2,
+        "none": 23,
+        "present": 51,
+        "absent": 23
+      },
+      "response_form_counts": {
+        "agency_response": 0,
+        "preparer_reply": 0,
+        "discussion": 10,
+        "none": 0,
+        "present": 10,
+        "absent": 0
+      },
+      "elapsed_sec": 118.1,
+      "usage": {
+        "extract": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 6,
+              "input_tokens": 99461,
+              "output_tokens": 8542,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 0.4265
+            }
+          ],
+          "total": {
+            "calls": 6,
+            "input_tokens": 99461,
+            "output_tokens": 8542,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.4265
+          }
+        },
+        "find_statement": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 59,
+              "input_tokens": 575680,
+              "output_tokens": 20138,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 2.0291
+            }
+          ],
+          "total": {
+            "calls": 59,
+            "input_tokens": 575680,
+            "output_tokens": 20138,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 2.0291
+          }
+        },
+        "total": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 65,
+              "input_tokens": 675141,
+              "output_tokens": 28680,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 2.4556
+            }
+          ],
+          "total": {
+            "calls": 65,
+            "input_tokens": 675141,
+            "output_tokens": 28680,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 2.4556
+          }
+        }
+      },
+      "out_dir": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/statements_pipeline/output/people/p1074_35556036811230"
+    },
+    {
+      "doc_id": "p1074_35556036861797",
+      "work_id": "csv:35556036861797",
+      "title": "Average fuel economy standard for nonpassenger automobiles, model year 1979 : environmental impact statement.",
+      "n_complainers": 35,
+      "n_complaints": 69,
+      "n_responses": 41,
+      "stance_counts": {
+        "opposed": 12,
+        "neutral": 14,
+        "conditional": 7,
+        "in_favor": 2
+      },
+      "stance_confidence_counts": {
+        "high": 1,
+        "medium": 28,
+        "low": 6,
+        "unknown": 0
+      },
+      "review_counts": {
+        "needs_review": 7,
+        "auto_ok": 28,
+        "reasons": {
+          "low_stance_confidence": 6,
+          "no_complaints": 2,
+          "quote_not_verbatim": 1
+        }
+      },
+      "statement_form_counts": {
+        "letter": 0,
+        "testimony": 0,
+        "written_comment": 4,
+        "narrator_paraphrase": 48,
+        "sectional": 14,
+        "none": 3,
+        "present": 66,
+        "absent": 3
+      },
+      "response_form_counts": {
+        "agency_response": 11,
+        "preparer_reply": 0,
+        "discussion": 30,
+        "none": 0,
+        "present": 41,
+        "absent": 0
+      },
+      "elapsed_sec": 130.9,
+      "usage": {
+        "extract": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 4,
+              "input_tokens": 51864,
+              "output_tokens": 6420,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 0.2519
+            }
+          ],
+          "total": {
+            "calls": 4,
+            "input_tokens": 51864,
+            "output_tokens": 6420,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.2519
+          }
+        },
+        "find_statement": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 35,
+              "input_tokens": 426928,
+              "output_tokens": 22780,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 1.6225
+            }
+          ],
+          "total": {
+            "calls": 35,
+            "input_tokens": 426928,
+            "output_tokens": 22780,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 1.6225
+          }
+        },
+        "total": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 39,
+              "input_tokens": 478792,
+              "output_tokens": 29200,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 1.8744
+            }
+          ],
+          "total": {
+            "calls": 39,
+            "input_tokens": 478792,
+            "output_tokens": 29200,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 1.8744
+          }
+        }
+      },
+      "out_dir": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/statements_pipeline/output/people/p1074_35556036861797"
+    },
+    {
+      "doc_id": "p1074_35556038322269",
+      "work_id": "csv:35556038322269",
+      "title": "Los Angeles regional core transit system improvements alternatives analysis : environmental impact statement.",
+      "n_complainers": 95,
+      "n_complaints": 115,
+      "n_responses": 7,
+      "stance_counts": {
+        "neutral": 83,
+        "in_favor": 2,
+        "conditional": 9,
+        "opposed": 1
+      },
+      "stance_confidence_counts": {
+        "high": 0,
+        "medium": 52,
+        "low": 43,
+        "unknown": 0
+      },
+      "review_counts": {
+        "needs_review": 50,
+        "auto_ok": 45,
+        "reasons": {
+          "low_stance_confidence": 43,
+          "no_complaints": 38,
+          "quote_not_verbatim": 9,
+          "private_individual": 7
+        }
+      },
+      "statement_form_counts": {
+        "letter": 0,
+        "testimony": 0,
+        "written_comment": 0,
+        "narrator_paraphrase": 68,
+        "sectional": 2,
+        "none": 45,
+        "present": 70,
+        "absent": 45
+      },
+      "response_form_counts": {
+        "agency_response": 0,
+        "preparer_reply": 0,
+        "discussion": 7,
+        "none": 0,
+        "present": 7,
+        "absent": 0
+      },
+      "elapsed_sec": 177.3,
+      "usage": {
+        "extract": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 7,
+              "input_tokens": 131840,
+              "output_tokens": 13173,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 0.5931
+            }
+          ],
+          "total": {
+            "calls": 7,
+            "input_tokens": 131840,
+            "output_tokens": 13173,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.5931
+          }
+        },
+        "find_statement": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 95,
+              "input_tokens": 1156950,
+              "output_tokens": 28378,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 3.8965
+            }
+          ],
+          "total": {
+            "calls": 95,
+            "input_tokens": 1156950,
+            "output_tokens": 28378,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 3.8965
+          }
+        },
+        "total": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 102,
+              "input_tokens": 1288790,
+              "output_tokens": 41551,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 4.4896
+            }
+          ],
+          "total": {
+            "calls": 102,
+            "input_tokens": 1288790,
+            "output_tokens": 41551,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 4.4896
+          }
+        }
+      },
+      "out_dir": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/statements_pipeline/output/people/p1074_35556038322269"
+    },
+    {
+      "doc_id": "p1074_35556039563135",
+      "work_id": "csv:35556039563135",
+      "title": "Lincoln Hwy upgrade from Cicero Ave. to Chicago Road, Cook County : environmental impact statement.",
+      "n_complainers": 131,
+      "n_complaints": 164,
+      "n_responses": 54,
+      "stance_counts": {
+        "neutral": 85,
+        "in_favor": 22,
+        "conditional": 24
+      },
+      "stance_confidence_counts": {
+        "high": 59,
+        "medium": 40,
+        "low": 32,
+        "unknown": 0
+      },
+      "review_counts": {
+        "needs_review": 43,
+        "auto_ok": 88,
+        "reasons": {
+          "low_stance_confidence": 32,
+          "no_complaints": 18,
+          "private_individual": 8,
+          "quote_not_verbatim": 9
+        }
+      },
+      "statement_form_counts": {
+        "letter": 54,
+        "testimony": 0,
+        "written_comment": 20,
+        "narrator_paraphrase": 43,
+        "sectional": 29,
+        "none": 18,
+        "present": 146,
+        "absent": 18
+      },
+      "response_form_counts": {
+        "agency_response": 11,
+        "preparer_reply": 0,
+        "discussion": 43,
+        "none": 0,
+        "present": 54,
+        "absent": 0
+      },
+      "elapsed_sec": 287.5,
+      "usage": {
+        "extract": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 8,
+              "input_tokens": 130741,
+              "output_tokens": 19680,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 0.6874
+            }
+          ],
+          "total": {
+            "calls": 8,
+            "input_tokens": 130741,
+            "output_tokens": 19680,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.6874
+          }
+        },
+        "find_statement": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 131,
+              "input_tokens": 1306365,
+              "output_tokens": 53298,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 4.7186
+            }
+          ],
+          "total": {
+            "calls": 131,
+            "input_tokens": 1306365,
+            "output_tokens": 53298,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 4.7186
+          }
+        },
+        "total": {
+          "by_model": [
+            {
+              "model": "us.anthropic.claude-sonnet-4-6",
+              "calls": 139,
+              "input_tokens": 1437106,
+              "output_tokens": 72978,
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 5.406
+            }
+          ],
+          "total": {
+            "calls": 139,
+            "input_tokens": 1437106,
+            "output_tokens": 72978,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 5.406
+          }
+        }
+      },
+      "out_dir": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/statements_pipeline/output/people/p1074_35556039563135"
     }
   ]
 }

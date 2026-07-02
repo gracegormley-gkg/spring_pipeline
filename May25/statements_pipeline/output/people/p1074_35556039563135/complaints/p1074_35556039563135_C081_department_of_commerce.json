@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C081",
+  "complainer_id": "p1074_35556039563135_K085",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 81,
+  "entity": "Department of Commerce",
+  "kind": "agency",
+  "role": "Federal agency reviewer",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "direct statement that the agency reviewed the draft and has no comment",
+  "summary": "The Department of Commerce reviewed the draft environmental statement for the Lincoln Highway improvement project and offered no comments or objections. Their response was a single neutral statement indicating no concerns with the proposal.",
+  "form": "written_comment",
+  "complaint_summary": "The Department of Commerce reviewed the draft environmental statement and offered no comments.",
+  "evidence_pages": [
+    "176"
+  ],
+  "statement": {
+    "text": "The Department of Commerce has reviewed\nthe draft environmental statement and\nhas no comment.",
+    "opening_anchor": "The Department of Commerce has reviewed\nthe draft environmental statement and\nhas no comment.",
+    "closing_anchor": "The Department of Commerce has reviewed\nthe draft environmental statement and\nhas no comment.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556039563135_R039"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Department of Commerce has reviewed the draft environmental statement and has no comment.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "176"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The Department of Commerce has reviewed the draft environmental statement and has no comment.",
+      "quote_verified": true,
+      "entity_as_written": "Department of Commerce",
+      "role_as_written": "Federal agency reviewer"
+    }
+  ],
+  "window_pages": [
+    166,
+    186
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 85,
+  "synthetic_no_complaint": false
+}

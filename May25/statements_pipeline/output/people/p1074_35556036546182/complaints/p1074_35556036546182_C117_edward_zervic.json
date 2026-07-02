@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C117",
+  "complainer_id": "p1074_35556036546182_K080",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 117,
+  "entity": "Edward Zervic",
+  "kind": "individual",
+  "role": "Private Citizen",
+  "stance": "opposed",
+  "stance_confidence": "high",
+  "stance_basis": "testimony arguing Airport Spur primarily benefits business/trucking, predictions invalid, and poses safety risks to children",
+  "summary": "Edward Zervic, a private citizen, testified at the July 11, 1974 Environmental Public Hearing opposing the Airport Spur. He argued that most airport-goers would use other routes, that the spur primarily benefits industry and trucking rather than residents, that 20-year traffic predictions are unreliable, and that errant trucks carrying hazardous chemicals near Hamlin-Garland School pose a danger to children. He also raised historical questions about why the spur was not built with I-94 and questioned the proportionality of air cargo versus passenger traffic growth.",
+  "form": "testimony",
+  "complaint_summary": "Zervic testified that most airport travelers would use other routes, that the Airport Spur primarily benefits industry and trucking, that 20-year traffic predictions are invalid, that errant trucks carrying hazardous chemicals near Hamlin-Garland School endanger children, and raised historical questions about why the spur was not built with I-94 and the intended use of College Avenue ramps.",
+  "evidence_pages": [
+    "227"
+  ],
+  "statement": {
+    "text": "He feels that the majority of the people going to the airport would use other routes and not the Airport Spur. The biggest users would be business and trucking interests.\nf) Predictions are not valid because no one knows what will happen in 20 years.\nFeels that the Airport Spur will only benefit industry, business, and trucking.\nExpressed concern for children if errant trucks tip over near Hamlin-Garland School, especially if carrying dangerous chemicals.\nhighway planning have all been tested over the years and proved accurate within acceptable tolerances. These procedures are continually being refined and any consequence of a variation between the predicted and the actual is minor compared with the consequences of not planning at all. Surveys indicate that 2/3 of those people going to General Mitchell Field will use the Airport Spur.\nAirport Spur will allow for more and faster movement of cargo and therefore, will benefit industry, business and trucking.\nThe movement of cargo, however, is not the primary benefit derived from the Airport Spur. It will also allow for safer and more efficient movement of passengers by both auto and rubber tired mass transit vehicles.\nTraffic projections for 1990 indicate 19,600 vehicles using the Airport Spur. Nine percent would be truck traffic.\nTo increase safety and contain errant vehicles in the vicninty of the school's playground, a concrete barrier will be constructed at the edge of the roadway shoulder. The the transportation of hazardous loads is safer using the freeway\n\nQuestioned why the Airport Spur was not built when I-94 was built and for what the ramps at College Avenue were intended if not access to the airport.\nQuestioned what Grange Avenue was originally planned for.\nQuestioned why air cargo tonnage increase is not proportional to the increase in air passenger traffic?",
+    "opening_anchor": "He feels that the majority of the people going to the airport would use other routes and not the Airport Spur. The biggest users would be business and trucking interests.",
+    "closing_anchor": "Questioned why air cargo tonnage increase is not proportional to the increase in air passenger traffic?",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036546182_R039"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "He feels that the majority of the people going to the airport would use other routes and not the Airport Spur. The biggest users would be business and trucking interests.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "227"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "He feels that the majority of the people going to the airport would use other routes and not the Airport Spur. The biggest users would be business and trucking interests.",
+      "quote_verified": true,
+      "entity_as_written": "Edward Zervic",
+      "role_as_written": "Private Citizen"
+    }
+  ],
+  "window_pages": [
+    217,
+    237
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 80,
+  "synthetic_no_complaint": false
+}

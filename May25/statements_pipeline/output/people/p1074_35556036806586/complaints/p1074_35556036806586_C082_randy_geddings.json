@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036806586_C082",
+  "complainer_id": "p1074_35556036806586_K074",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 82,
+  "entity": "Randy Geddings",
+  "kind": "official",
+  "role": "Fisheries Biologist, South Carolina Wildlife and Marine Resources Department",
+  "stance": "opposed",
+  "stance_confidence": "high",
+  "stance_basis": "letter correcting temperature data supporting department's opposition to the project",
+  "summary": "Randy Geddings, Fisheries Biologist with the South Carolina Wildlife and Marine Resources Department, appears in the document window in two contexts: first as a cc recipient on a 1975 letter from the department, and second as the author of a June 1976 letter to the Federal Power Commission correcting a graph depicting temperature profiles at Jocassee Dam. His letter provides corrected data showing the lower limit of trout habitat at 34 meters rather than 50 meters for 1973, supporting the department's broader opposition to the Bad Creek Pumped Storage Project on grounds of harm to trout habitat and fisheries.",
+  "form": "letter",
+  "complaint_summary": "Geddings submits a corrected temperature profile graph for Jocassee Dam showing the lower limit of trout habitat at 34 meters rather than 50 meters for 1973, providing more accurate data relevant to the department's concerns about trout habitat impacts.",
+  "evidence_pages": [
+    "278"
+  ],
+  "statement": {
+    "text": "As indicated during our telephone conversation of June 11, 1976, I am enclosing a corrected copy of the graph depicting temperature (°C) profiles at the Jocassee Dam - September for 1973, 1974 and 1975. As discussed the lower limit of trout habitat using 5.0 mg/l for the year 1973 would be at 34 meters rather than 50 meters.\nNo comment required.\nPlease replace the original copy with the one enclosed.\nSincerely,\nRandy Geddings; Fisheries Biologist",
+    "opening_anchor": "As indicated during our telephone conversation of June 11, 1976, I am enclosing a corrected copy of the graph depicting temperature (°C) profiles at the Jocassee Dam",
+    "closing_anchor": "Randy Geddings; Fisheries Biologist",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036806586_R023"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "As indicated during our telephone conversation of June 11, 1976, I am enclosing a corrected copy of the graph depicting temperature (°C) profiles at the Jocassee Dam - September for 1973, 1974 and 1975.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "278"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "As indicated during our telephone conversation of June 11, 1976, I am enclosing a corrected copy of the graph depicting temperature (°C) profiles at the Jocassee Dam - September for 1973, 1974 and 1975.",
+      "quote_verified": true,
+      "entity_as_written": "Randy Geddings",
+      "role_as_written": "Fisheries Biologist, South Carolina Wildlife and Marine Resources Department"
+    }
+  ],
+  "window_pages": [
+    268,
+    288
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 74,
+  "synthetic_no_complaint": false
+}

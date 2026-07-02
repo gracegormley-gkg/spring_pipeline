@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C061",
+  "complainer_id": "p1074_35556038322269_K069",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 61,
+  "entity": "UMTA",
+  "kind": "agency",
+  "role": "Urban Mass Transportation Administration, participant in safety criteria development",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "described as jointly developing safety criteria with APTA, with SCRTD participating—no position on the project itself",
+  "summary": "UMTA is mentioned in the context of jointly developing electrical conductor insulation safety criteria with the American Public Transit Association to minimize smoke and toxicity in rapid transit systems. The document notes that SCRTD is a participant in this ongoing effort. UMTA does not express a position for or against the project; its role is purely technical and regulatory in nature.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "UMTA and the American Public Transit Association are jointly developing criteria for electrical conductor insulation in rapid transit systems to minimize smoke and toxicity of burning insulation, and SCRTD is participating in this project.",
+  "evidence_pages": [
+    "206"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The American Public Transit Association and UMTA have been jointly developing criteria for electrical conductor insulation as applied to rapid transit systems, both on wayside and within vehicles, to minimize smoke and toxicity of burning insulation.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "206"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The American Public Transit Association and UMTA have been jointly developing criteria for electrical conductor insulation as applied to rapid transit systems, both on wayside and within vehicles, to minimize smoke and toxicity of burning insulation.",
+      "quote_verified": true,
+      "entity_as_written": "UMTA",
+      "role_as_written": "Urban Mass Transportation Administration, participant in safety criteria development"
+    }
+  ],
+  "window_pages": [
+    196,
+    216
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 69,
+  "synthetic_no_complaint": false
+}

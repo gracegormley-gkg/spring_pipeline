@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036105336_C052",
+  "complainer_id": "p1074_35556036105336_K040",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 52,
+  "entity": "City Council",
+  "kind": "government",
+  "role": "Richmond City Council",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as adopting CRP and approving Survey and Planning application, with no opposition or explicit endorsement of the specific EIS project",
+  "summary": "Richmond's City Council is mentioned in the Citizen Participation Report as having adopted the Community Renewal Program in 1966 and subsequently approved the Survey and Planning application for the Randolph Conservation Project in February 1967, also appropriating funds to begin detailed surveys. The Council's role is described as an administrative and procedural actor in the project's history, with no explicit stance for or against the urban renewal project as described in the EIS. The newspaper articles also note that City Council was expected to hold a public hearing and act on the master plan after the Planning Commission's recommendation.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Richmond's City Council adopted the Community Renewal Program in September 1966, approved the Survey and Planning application for the Randolph Conservation Project in February 1967, and appropriated funds to allow the Redevelopment and Housing Authority to begin detailed surveys of the area.",
+  "evidence_pages": [
+    "101"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "In September, 1966 Richmond's City Council adopted the Community Renewal Program (CRP) which presented a comprehensive study of the City and proposed action priorities.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "101"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In September, 1966 Richmond's City Council adopted the Community Renewal Program (CRP) which presented a comprehensive study of the City and proposed action priorities.",
+      "quote_verified": true,
+      "entity_as_written": "City Council",
+      "role_as_written": "Richmond City Council"
+    }
+  ],
+  "window_pages": [
+    91,
+    111
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 40,
+  "synthetic_no_complaint": false
+}

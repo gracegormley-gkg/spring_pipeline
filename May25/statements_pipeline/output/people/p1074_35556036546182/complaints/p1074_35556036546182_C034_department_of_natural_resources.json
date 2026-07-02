@@ -1,0 +1,89 @@
+{
+  "complaint_id": "p1074_35556036546182_C034",
+  "complainer_id": "p1074_35556036546182_K005",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 34,
+  "entity": "Department of Natural Resources",
+  "kind": "agency",
+  "role": "State environmental review agency, indirect source reviewing agency",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "DNR approved Air Quality Report and Notice of Intent, endorsing the project's air quality compliance",
+  "summary": "The Wisconsin Department of Natural Resources (DNR) served as the Indirect Source Review Agency for the Airport Spur project and reviewed the air quality assessment. DNR approved the Air Quality Report and Notice of Intent to Construct on November 20, 1975, pursuant to Wisconsin Administration Code NR 154.05, supporting the conclusion that the project would not violate National Ambient Air Quality Standards or significantly degrade air quality. DNR also indicated there would be no significant impact on fish or wildlife habitat in the project area.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The document notes that DNR, as the Indirect Source Review Agency, reviewed and approved the separate Air Quality Report, meeting the requirements of Wisconsin Administration Code NR 154.05.",
+  "evidence_pages": [
+    "51"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "DNR's approval pursuant to Wisconsin Administration Code NR 154.05 and endorsement of the Notice of Intent supports the conclusion that if the Airport Spur is constructed, the project will not violate the National Ambient Air Quality Standards or significantly degrade air quality.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 4,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "14"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "DNR's approval pursuant to Wisconsin Administration Code NR 154.05 and endorsement of the Notice of Intent supports the conclusion that if the Airport Spur is constructed, the project will not violate the National Ambient Air Quality Standards or significantly degrade air quality.",
+      "quote_verified": true,
+      "entity_as_written": "Department of Natural Resources",
+      "role_as_written": "Wisconsin state agency, Indirect Source Review Agency"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "51"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Department of Natural Resources has indicated that there will be no significant impact on fish or wildlife habitat and that there are no known rare or endangered species in the area.",
+      "quote_verified": true,
+      "entity_as_written": "Department of Natural Resources",
+      "role_as_written": "state agency commenter on environmental impact"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "216"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "we therefore approve construction of the Airport Spur along any of corridors 1, 2, 3, or 5.",
+      "quote_verified": true,
+      "entity_as_written": "Department of Natural Resources",
+      "role_as_written": "Wisconsin state agency, Air Pollution Control Section"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "285"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "We have found that the proposed Airport Spur is consistent with the requirements of the Indirect Source Rules.",
+      "quote_verified": true,
+      "entity_as_written": "Department of Natural Resources",
+      "role_as_written": "State environmental review agency, indirect source reviewing agency"
+    }
+  ],
+  "window_pages": [
+    4,
+    53
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 5,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036806586_C059",
+  "complainer_id": "p1074_35556036806586_K051",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 59,
+  "entity": "Dr. Leland Rodgers",
+  "kind": "individual",
+  "role": "Researcher/scientist recommending protective status for Upper Falls of Bearcamp Creek",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes Rodgers recommending protective status for Upper Falls of Bearcamp Creek, implying opposition to its inundation",
+  "summary": "Dr. Leland Rodgers is cited as having recommended that the Upper Falls of Bearcamp Creek receive protective status, noting it as an important habitat for the endangered Shortia galacifolia. This recommendation is referenced in the context of the Bearcamp Creek alternative site, where the upper reservoir would inundate the area in question. No direct statement from Rodgers appears; his position is conveyed through a paraphrase citing Bruce and Pittillo (1974).",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Dr. Leland Rodgers recommended that the Upper Falls of Bearcamp Creek receive protective status because it is an important habitat for the endangered Shortia galacifolia, implying the area should not be inundated by the proposed reservoir.",
+  "evidence_pages": [
+    "223"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Dr. Leland Rodgers has suggested that the Upper Falls of Bearcamp Creek should receive protective status (Bruce and Pittillo, 1974).",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "223"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Dr. Leland Rodgers has suggested that the Upper Falls of Bearcamp Creek should receive protective status (Bruce and Pittillo, 1974).",
+      "quote_verified": true,
+      "entity_as_written": "Dr. Leland Rodgers",
+      "role_as_written": "Researcher/scientist recommending protective status for Upper Falls of Bearcamp Creek"
+    }
+  ],
+  "window_pages": [
+    213,
+    233
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 51,
+  "synthetic_no_complaint": false
+}

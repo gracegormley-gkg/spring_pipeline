@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C254",
+  "complainer_id": "p0491_35556036091957_K210",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 254,
+  "entity": "Kessler R. Cannon",
+  "kind": "official",
+  "role": "Assistant to the Governor for Natural Resources, Oregon",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letter transmits state agency comments without expressing personal support or opposition",
+  "summary": "Kessler R. Cannon, Assistant to the Governor for Natural Resources (Oregon), wrote to the Bureau of Outdoor Recreation on August 16, 1972, transmitting enclosed comments from Oregon state agencies on the Draft EIS for off-road vehicle use on public lands. The letter is purely procedural in nature, forwarding agency input and noting compliance with NEPA Section 102(2)(C) and OMB A-95, without expressing any personal or gubernatorial stance on the merits of the proposal.",
+  "form": "letter",
+  "complaint_summary": "Cannon transmits Oregon state agency comments on the Draft EIS for off-road vehicle use on public lands, notes a forwarded Law Enforcement Council comment, and certifies compliance with NEPA and OMB A-95, without taking a substantive position on the proposal.",
+  "evidence_pages": [
+    "330"
+  ],
+  "statement": {
+    "text": "Review of the Draft Environmental Impact Statement is complete. Enclosed are comments from state agencies which we hope will help you to further evaluate your project.\nAlso enclosed is a comment from the Law Enforcement Council which does not have direct bearing on environmental alternatives but is significant in a programmatic sense. To further explore this area, we have forwarded a copy of the Off-Road Vehicles statement to Captain Walter Hershey of the Oregon State Police. Should he have any comments they will be sent directly to you.\nYou may use this letter as evidence of your compliance with Section 102(2)(C) of the National Environmental Policy Act of 1969 (83 Stat. 853), and OMB A-95 (Revised).\nSincerely\nKessler R. Cannon Assistant to the Governor\nNatural Resources\nKRC: Nm\nEnclosures",
+    "opening_anchor": "Review of the Draft Environmental Impact Statement is complete. Enclosed are comments from state agencies which we hope will help you to further evaluate your project.",
+    "closing_anchor": "Kessler R. Cannon Assistant to the Governor\nNatural Resources\nKRC: Nm\nEnclosures",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Review of the Draft Environmental Impact Statement is complete. Enclosed are comments from state agencies which we hope will help you to further evaluate your project.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "330"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Review of the Draft Environmental Impact Statement is complete. Enclosed are comments from state agencies which we hope will help you to further evaluate your project.",
+      "quote_verified": true,
+      "entity_as_written": "Kessler R. Cannon",
+      "role_as_written": "Assistant to the Governor for Natural Resources, Oregon"
+    }
+  ],
+  "window_pages": [
+    320,
+    340
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 210,
+  "synthetic_no_complaint": false
+}

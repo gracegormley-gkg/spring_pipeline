@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C135",
+  "complainer_id": "p1074_35556036546182_K111",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 135,
+  "entity": "Doreen Marcelini",
+  "kind": "individual",
+  "role": "Private Citizen, commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase states existing airport access is sufficient and spur wastes taxpayer money and endangers children",
+  "summary": "Doreen Marcelini, a private citizen, opposed the Airport Spur, arguing that sufficient airport access already exists and that building the spur would jeopardize children and waste taxpayer money. Her written comment was addressed by a cross-reference to the response given to Witness 28.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Marcelini stated that there is already enough access to the airport and that adding the spur would jeopardize children and waste taxpayers' money.",
+  "evidence_pages": [
+    "243"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R054"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Stated that there is enough access to the airport with jeopar-dizing our children and wasting taxpayers money by adding the spur.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "243"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Stated that there is enough access to the airport with jeopar-dizing our children and wasting taxpayers money by adding the spur.",
+      "quote_verified": true,
+      "entity_as_written": "Doreen Marcelini",
+      "role_as_written": "Private Citizen, commenter"
+    }
+  ],
+  "window_pages": [
+    233,
+    253
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 111,
+  "synthetic_no_complaint": false
+}

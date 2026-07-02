@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556039563135_C159",
+  "complainer_id": "p1074_35556039563135_K063",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 159,
+  "entity": "Illinois Bell Telephone Company",
+  "kind": "organization",
+  "role": "Utility company / early coordination meeting participant",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed only as a meeting participant with no position stated",
+  "summary": "Illinois Bell Telephone Company appears solely as a participant in an early coordination meeting held on March 12, 1974, listed in a table of organizations that met with the Illinois Department of Transportation. No position, complaint, or comment from Illinois Bell Telephone Company is recorded anywhere in the document window.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "157"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "MEETINGS BETWEEN ORGANIZATIONS AND ILLINOIS DEPARTMENT OF TRANSPORTATION",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "157"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "MEETINGS BETWEEN ORGANIZATIONS AND ILLINOIS DEPARTMENT OF TRANSPORTATION",
+      "quote_verified": true,
+      "entity_as_written": "Illinois Bell Telephone Company",
+      "role_as_written": "Utility company / early coordination meeting participant"
+    }
+  ],
+  "window_pages": [
+    147,
+    167
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 63,
+  "synthetic_no_complaint": true
+}

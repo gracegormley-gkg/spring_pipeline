@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036105336_C028",
+  "complainer_id": "p1074_35556036105336_K023",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 28,
+  "entity": "Virginia Transit Company",
+  "kind": "organization",
+  "role": "Public transit operator serving Randolph",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "described as operating a bus route through Randolph with service continuing unaffected by the project",
+  "summary": "The Virginia Transit Company is described as operating a single bus route ('Fairmont 43') through the Randolph Community. The document notes that public bus transportation will continue unaffected by the Redevelopment Plan, and that a regional transit study may lead to upgraded service in the mid-1970s. No position for or against the project is attributed to the Virginia Transit Company.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Virginia Transit Company is described as operating one bus route ('Fairmont 43') through the Randolph Community, with no complaint or position attributed to the company regarding the project.",
+  "evidence_pages": [
+    "47"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Virginia Transit Company operates one bus route through the Randolph Community.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "47"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Virginia Transit Company operates one bus route through the Randolph Community.",
+      "quote_verified": true,
+      "entity_as_written": "Virginia Transit Company",
+      "role_as_written": "Public transit operator serving Randolph"
+    }
+  ],
+  "window_pages": [
+    37,
+    57
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 23,
+  "synthetic_no_complaint": false
+}

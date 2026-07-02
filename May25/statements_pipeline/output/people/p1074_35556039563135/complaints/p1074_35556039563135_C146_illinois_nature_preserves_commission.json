@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556039563135_C146",
+  "complainer_id": "p1074_35556039563135_K131",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 146,
+  "entity": "Illinois Nature Preserves Commission",
+  "kind": "agency",
+  "role": "State agency reviewing proposal",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as finding no conflict with state plans or priorities",
+  "summary": "The Illinois Nature Preserves Commission is listed as one of the state agencies that reviewed the F.A.P. 23 (Lincoln Highway) proposal through the Illinois State Clearinghouse. The review concluded that the proposal does not conflict with any of the plans, programs, or priorities of any cognizant State agency, including the Illinois Nature Preserves Commission. No specific objections or endorsements were attributed to the Commission beyond this finding of no conflict.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Illinois Nature Preserves Commission is identified as one of the state agencies that reviewed the proposal, with the overall review finding no conflict with any state agency's plans, programs, or priorities.",
+  "evidence_pages": [
+    "346"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The review indicates that the proposal does not conflict with any of the plans, programs, or priorities of any cognizant State agency.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 7,
+      "evidence_pages": [
+        "346"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The review indicates that the proposal does not conflict with any of the plans, programs, or priorities of any cognizant State agency.",
+      "quote_verified": true,
+      "entity_as_written": "Illinois Nature Preserves Commission",
+      "role_as_written": "State agency reviewing proposal"
+    }
+  ],
+  "window_pages": [
+    336,
+    347
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 131,
+  "synthetic_no_complaint": false
+}

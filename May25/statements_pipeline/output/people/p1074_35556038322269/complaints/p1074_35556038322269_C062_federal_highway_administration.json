@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C062",
+  "complainer_id": "p1074_35556038322269_K076",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 62,
+  "entity": "Federal Highway Administration",
+  "kind": "agency",
+  "role": "Federal highway and transportation funding source",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "described only as a funding source with no expressed position on the project",
+  "summary": "The Federal Highway Administration is mentioned solely in its capacity as a federal funding source that allocates monies to highway and other transportation programs, with Federal Aid Urban (FAU) funds usable for either highway or transit capital projects at the discretion of county FAU committees. It also appears in financial summary figures as a capital funding contributor (FHWA) for the Regional Transit Development Program. No position for or against the project is expressed.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The FHWA is described as a federal funding source that allocates monies to highway and other transportation programs, with FAU funds available for highway or transit capital projects at county FAU committee discretion.",
+  "evidence_pages": [
+    "242"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Federal Highway Administration: The FHWA allocates monies to various highway and other transportation programs.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "242"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Federal Highway Administration: The FHWA allocates monies to various highway and other transportation programs.",
+      "quote_verified": true,
+      "entity_as_written": "Federal Highway Administration",
+      "role_as_written": "Federal highway and transportation funding source"
+    }
+  ],
+  "window_pages": [
+    232,
+    252
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 76,
+  "synthetic_no_complaint": false
+}

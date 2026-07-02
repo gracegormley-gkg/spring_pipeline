@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C124",
+  "complainer_id": "p1074_35556039563135_K121",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 124,
+  "entity": "Chicago Heights Human Relations",
+  "kind": "organization",
+  "role": "commenter listed in NIPC project summary",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed in NIPC project summary table with no comment date or position recorded",
+  "summary": "Chicago Heights Human Relations appears only in the NIPC project summary table as one of the agencies notified of NIPC Project #74-228. No comment date is recorded next to their entry, and no substantive position or statement from this organization appears anywhere in the document window.",
+  "form": "sectional",
+  "complaint_summary": "Chicago Heights Human Relations is listed in the NIPC project summary table as an agency notified of the Lincoln Highway improvement project, with a notification date of 4/23/74 but no recorded comment or position.",
+  "evidence_pages": [
+    "237"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence"
+  ],
+  "summary_quote": "Chicago Heights Human Relations",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "237"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Chicago Heights Human Relations",
+      "quote_verified": true,
+      "entity_as_written": "Chicago Heights Human Relations",
+      "role_as_written": "commenter listed in NIPC project summary"
+    }
+  ],
+  "window_pages": [
+    227,
+    247
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 121,
+  "synthetic_no_complaint": false
+}

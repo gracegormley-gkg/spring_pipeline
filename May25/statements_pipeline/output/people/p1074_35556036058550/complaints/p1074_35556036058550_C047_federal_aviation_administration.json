@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036058550_C047",
+  "complainer_id": "p1074_35556036058550_K018",
+  "doc_id": "p1074_35556036058550",
+  "work_id": "csv:35556036058550",
+  "order": 47,
+  "entity": "Federal Aviation Administration",
+  "kind": "agency",
+  "role": "Agency providing CNR/NEF noise rating data for airports",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "described as adopting CNR noise rating system and calculating CNR zones for airports, no position on the project itself",
+  "summary": "The Federal Aviation Administration (FAA) is referenced in the document solely in its technical role as the agency that adopted the Composite Noise Rating (CNR) system to describe aircraft noise near airports and calculated CNR zones for domestic airports. The FAA is also noted as the source for Noise Exposure Forecast (NEF) data, with requests for NEF ratings to be directed to FAA Airport Regional Offices. The FAA takes no position on the project itself; it is cited only as a technical authority and data source for noise assessment.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The FAA is described as having adopted the Composite Noise Rating (CNR) system to characterize aircraft noise near airports, accounting for sound magnitude, number of operations, runway use, and time of day, and as having calculated CNR zones for domestic airports corresponding to acceptable, discretionary, and unacceptable community response categories.",
+  "evidence_pages": [
+    "65"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "It has been adopted by the Federal Aviation Administration (FAA) to describe the noise produced by aircraft operations in the vicinity of airports.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "65"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "It has been adopted by the Federal Aviation Administration (FAA) to describe the noise produced by aircraft operations in the vicinity of airports.",
+      "quote_verified": true,
+      "entity_as_written": "Federal Aviation Administration",
+      "role_as_written": "Agency providing CNR/NEF noise rating data for airports"
+    }
+  ],
+  "window_pages": [
+    55,
+    72
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 18,
+  "synthetic_no_complaint": false
+}

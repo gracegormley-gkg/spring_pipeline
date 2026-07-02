@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556039563135_C140",
+  "complainer_id": "p1074_35556039563135_K123",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 140,
+  "entity": "Department of Conservation, State of Illinois",
+  "kind": "agency",
+  "role": "state historic preservation / archaeological review agency",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letter states project will not affect archaeological resources, offering clearance without objection or endorsement",
+  "summary": "The Department of Conservation, State of Illinois, reviewed the proposed FAP Route 23 (US Route 30) Lincoln Highway project and issued two clearance letters. The first, dated May 25, 1976, addressed historic and architectural resources, finding no effect. The second, dated September 10, 1976, addressed archaeological resources, determining the project would not affect any archaeological resources subject to protection under Section 106 or Section 4(f). The agency neither opposed nor advocated for the project, simply providing regulatory clearance.",
+  "form": "letter",
+  "complaint_summary": "The Department of Conservation's Historic Preservation Officer determined that the project will have no effect on historic or architectural properties in the area, while noting a separate letter on archaeological resources would follow.",
+  "evidence_pages": [
+    "320"
+  ],
+  "statement": {
+    "text": "This letter is to inform you that we have reviewed the specifications of your project on FAP Route 23 (U.S. Route 30). Lincoln Highway, Cicero Avenue to Chicago Road in Cook County.\nOur review of the records indicates that your project will have no effect on historic or architectural projects in the area. A separate letter concerning archaeological resources will be sent at a later date.\nThis letter of clearance relates only to cultural considerations and should not be viewed as a blanket write-off which would include natural areas or other concerns of the Department of Conservation.",
+    "opening_anchor": "This letter is to inform you that we have reviewed the specifications of your project on FAP Route 23 (U.S. Route 30). Lincoln Highway, Cicero Avenue to Chicago Road in Cook County.",
+    "closing_anchor": "This letter of clearance relates only to cultural considerations and should not be viewed as a blanket write-off which would include natural areas or other concerns of the Department of Conservation.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "It has been determined that the project will not affect any archaeological resources subject to protection under Section 106 of the Historic Preservation Act of 1966 or Section 4 (f) of the Department of Transportation Act of 1966.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "320"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "It has been determined that the project will not affect any archaeological resources subject to protection under Section 106 of the Historic Preservation Act of 1966 or Section 4 (f) of the Department of Transportation Act of 1966.",
+      "quote_verified": true,
+      "entity_as_written": "Department of Conservation, State of Illinois",
+      "role_as_written": "state historic preservation / archaeological review agency"
+    }
+  ],
+  "window_pages": [
+    310,
+    330
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 123,
+  "synthetic_no_complaint": false
+}

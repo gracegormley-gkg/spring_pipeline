@@ -1,0 +1,4263 @@
+{
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "title": "Bad Creek pumped storage project : environmental impact statement.",
+  "n_pages": 387,
+  "n_chunks": 9,
+  "n_raw_rows": 128,
+  "n_complainers": 98,
+  "n_complaints": 133,
+  "n_responses": 48,
+  "stance_counts": {
+    "neutral": 57,
+    "in_favor": 6,
+    "conditional": 22,
+    "opposed": 13
+  },
+  "stance_confidence_counts": {
+    "high": 22,
+    "medium": 58,
+    "low": 18,
+    "unknown": 0
+  },
+  "review_counts": {
+    "needs_review": 43,
+    "auto_ok": 55,
+    "reasons": {
+      "quote_not_verbatim": 16,
+      "low_stance_confidence": 18,
+      "no_complaints": 18,
+      "private_individual": 21
+    }
+  },
+  "statement_form_counts": {
+    "letter": 31,
+    "testimony": 0,
+    "written_comment": 5,
+    "narrator_paraphrase": 75,
+    "sectional": 4,
+    "none": 18,
+    "present": 115,
+    "absent": 18
+  },
+  "response_form_counts": {
+    "agency_response": 7,
+    "preparer_reply": 5,
+    "discussion": 36,
+    "none": 0,
+    "present": 48,
+    "absent": 0
+  },
+  "elapsed_sec": 257.0,
+  "usage": {
+    "extract": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 9,
+          "input_tokens": 161592,
+          "output_tokens": 14828,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.7072
+        }
+      ],
+      "total": {
+        "calls": 9,
+        "input_tokens": 161592,
+        "output_tokens": 14828,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.7072
+      }
+    },
+    "find_statement": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 97,
+          "input_tokens": 1089833,
+          "output_tokens": 44283,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 3.9337
+        }
+      ],
+      "total": {
+        "calls": 97,
+        "input_tokens": 1089833,
+        "output_tokens": 44283,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 3.9337
+      }
+    },
+    "total": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 106,
+          "input_tokens": 1251425,
+          "output_tokens": 59111,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 4.6409
+        }
+      ],
+      "total": {
+        "calls": 106,
+        "input_tokens": 1251425,
+        "output_tokens": 59111,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 4.6409
+      }
+    }
+  },
+  "schema": {
+    "ids": {
+      "complainer_id": "<doc_id>_K<NNN> — one per merged entity",
+      "complaint_id": "<doc_id>_C<NNN> — one per complaint instance (entities can have multiple)",
+      "child_id": "<doc_id>_R<NNN> — one per agency response"
+    },
+    "stance_vocabulary": [
+      "in_favor",
+      "opposed",
+      "conditional",
+      "neutral"
+    ],
+    "stance_confidence_vocabulary": [
+      "high",
+      "medium",
+      "low"
+    ],
+    "kind_vocabulary": [
+      "individual",
+      "official",
+      "organization",
+      "agency",
+      "tribe",
+      "government",
+      "other"
+    ],
+    "statement_forms": [
+      "letter",
+      "testimony",
+      "written_comment",
+      "narrator_paraphrase",
+      "sectional",
+      "none"
+    ],
+    "response_forms": [
+      "agency_response",
+      "preparer_reply",
+      "discussion",
+      "none"
+    ],
+    "stance_source": "Decided by find_statement at the entity level — same stance applies to all complaints from the same entity. Capped to 'medium' when no contiguous statement is verified for any complaint; forced 'low' when there are no complaints.",
+    "page_numbers": "EXACT — from per-page JSON source.",
+    "statement_text": "Sliced from the doc text between verbatim opening/closing anchors. Null when either anchor doesn't verify.",
+    "response_text": "Sliced from the doc text between verbatim response anchors. Null when either anchor doesn't verify or no response is in the window.",
+    "needs_human_review": "True when kind=='individual' OR summary_quote_verified is False OR stance_confidence=='low' OR no complaints were produced.",
+    "merge_rule": "One row per entity. find_statement may then return multiple complaints per entity — each becomes its own complaint file.",
+    "cost_note": "USD costs are ESTIMATES; verify against AWS Bedrock invoice."
+  },
+  "sequence": [
+    {
+      "order": 1,
+      "complaint_id": "p1074_35556036806586_C001",
+      "complainer_id": "p1074_35556036806586_K001",
+      "complaint_file": "complaints/p1074_35556036806586_C001_department_of_health_education_and_welfa.json",
+      "response_ids": []
+    },
+    {
+      "order": 2,
+      "complaint_id": "p1074_35556036806586_C002",
+      "complainer_id": "p1074_35556036806586_K006",
+      "complaint_file": "complaints/p1074_35556036806586_C002_forest_service_department_of_agriculture.json",
+      "response_ids": []
+    },
+    {
+      "order": 3,
+      "complaint_id": "p1074_35556036806586_C003",
+      "complainer_id": "p1074_35556036806586_K010",
+      "complaint_file": "complaints/p1074_35556036806586_C003_south_carolina_department_of_health_and_.json",
+      "response_ids": []
+    },
+    {
+      "order": 4,
+      "complaint_id": "p1074_35556036806586_C004",
+      "complainer_id": "p1074_35556036806586_K010",
+      "complaint_file": "complaints/p1074_35556036806586_C004_south_carolina_department_of_health_and_.json",
+      "response_ids": []
+    },
+    {
+      "order": 5,
+      "complaint_id": "p1074_35556036806586_C005",
+      "complainer_id": "p1074_35556036806586_K014",
+      "complaint_file": "complaints/p1074_35556036806586_C005_tennessee_valley_authority_tva.json",
+      "response_ids": []
+    },
+    {
+      "order": 6,
+      "complaint_id": "p1074_35556036806586_C006",
+      "complainer_id": "p1074_35556036806586_K004",
+      "complaint_file": "complaints/p1074_35556036806586_C006_duke_power_company.json",
+      "response_ids": []
+    },
+    {
+      "order": 7,
+      "complaint_id": "p1074_35556036806586_C007",
+      "complainer_id": "p1074_35556036806586_K018",
+      "complaint_file": "complaints/p1074_35556036806586_C007_north_carolina_wildlife_resources_commis.json",
+      "response_ids": []
+    },
+    {
+      "order": 8,
+      "complaint_id": "p1074_35556036806586_C008",
+      "complainer_id": "p1074_35556036806586_K020",
+      "complaint_file": "complaints/p1074_35556036806586_C008_south_carolina_wildlife_and_marine_resou.json",
+      "response_ids": []
+    },
+    {
+      "order": 9,
+      "complaint_id": "p1074_35556036806586_C009",
+      "complainer_id": "p1074_35556036806586_K019",
+      "complaint_file": "complaints/p1074_35556036806586_C009_scdhec.json",
+      "response_ids": []
+    },
+    {
+      "order": 10,
+      "complaint_id": "p1074_35556036806586_C010",
+      "complainer_id": "p1074_35556036806586_K016",
+      "complaint_file": "complaints/p1074_35556036806586_C010_abernathy_1975.json",
+      "response_ids": []
+    },
+    {
+      "order": 11,
+      "complaint_id": "p1074_35556036806586_C011",
+      "complainer_id": "p1074_35556036806586_K016",
+      "complaint_file": "complaints/p1074_35556036806586_C011_abernathy_1975.json",
+      "response_ids": [
+        "p1074_35556036806586_R001"
+      ]
+    },
+    {
+      "order": 12,
+      "complaint_id": "p1074_35556036806586_C012",
+      "complainer_id": "p1074_35556036806586_K029",
+      "complaint_file": "complaints/p1074_35556036806586_C012_seri.json",
+      "response_ids": []
+    },
+    {
+      "order": 13,
+      "complaint_id": "p1074_35556036806586_C013",
+      "complainer_id": "p1074_35556036806586_K021",
+      "complaint_file": "complaints/p1074_35556036806586_C013_southeast_reservoir_investigations.json",
+      "response_ids": []
+    },
+    {
+      "order": 14,
+      "complaint_id": "p1074_35556036806586_C014",
+      "complainer_id": "p1074_35556036806586_K021",
+      "complaint_file": "complaints/p1074_35556036806586_C014_southeast_reservoir_investigations.json",
+      "response_ids": []
+    },
+    {
+      "order": 15,
+      "complaint_id": "p1074_35556036806586_C015",
+      "complainer_id": "p1074_35556036806586_K021",
+      "complaint_file": "complaints/p1074_35556036806586_C015_southeast_reservoir_investigations.json",
+      "response_ids": []
+    },
+    {
+      "order": 16,
+      "complaint_id": "p1074_35556036806586_C016",
+      "complainer_id": "p1074_35556036806586_K029",
+      "complaint_file": "complaints/p1074_35556036806586_C016_seri.json",
+      "response_ids": []
+    },
+    {
+      "order": 17,
+      "complaint_id": "p1074_35556036806586_C017",
+      "complainer_id": "p1074_35556036806586_K021",
+      "complaint_file": "complaints/p1074_35556036806586_C017_southeast_reservoir_investigations.json",
+      "response_ids": []
+    },
+    {
+      "order": 18,
+      "complaint_id": "p1074_35556036806586_C018",
+      "complainer_id": "p1074_35556036806586_K021",
+      "complaint_file": "complaints/p1074_35556036806586_C018_southeast_reservoir_investigations.json",
+      "response_ids": []
+    },
+    {
+      "order": 19,
+      "complaint_id": "p1074_35556036806586_C019",
+      "complainer_id": "p1074_35556036806586_K029",
+      "complaint_file": "complaints/p1074_35556036806586_C019_seri.json",
+      "response_ids": [
+        "p1074_35556036806586_R002"
+      ]
+    },
+    {
+      "order": 20,
+      "complaint_id": "p1074_35556036806586_C020",
+      "complainer_id": "p1074_35556036806586_K026",
+      "complaint_file": "complaints/p1074_35556036806586_C020_highlands_biological_station_inc.json",
+      "response_ids": [
+        "p1074_35556036806586_R003"
+      ]
+    },
+    {
+      "order": 21,
+      "complaint_id": "p1074_35556036806586_C021",
+      "complainer_id": "p1074_35556036806586_K033",
+      "complaint_file": "complaints/p1074_35556036806586_C021_the_highlands_biological_station.json",
+      "response_ids": [
+        "p1074_35556036806586_R004"
+      ]
+    },
+    {
+      "order": 22,
+      "complaint_id": "p1074_35556036806586_C022",
+      "complainer_id": "p1074_35556036806586_K030",
+      "complaint_file": "complaints/p1074_35556036806586_C022_smithsonian_institution.json",
+      "response_ids": []
+    },
+    {
+      "order": 23,
+      "complaint_id": "p1074_35556036806586_C023",
+      "complainer_id": "p1074_35556036806586_K035",
+      "complaint_file": "complaints/p1074_35556036806586_C023_u_s_fish_and_wildlife_service.json",
+      "response_ids": []
+    },
+    {
+      "order": 24,
+      "complaint_id": "p1074_35556036806586_C024",
+      "complainer_id": "p1074_35556036806586_K035",
+      "complaint_file": "complaints/p1074_35556036806586_C024_u_s_fish_and_wildlife_service.json",
+      "response_ids": []
+    },
+    {
+      "order": 25,
+      "complaint_id": "p1074_35556036806586_C025",
+      "complainer_id": "p1074_35556036806586_K035",
+      "complaint_file": "complaints/p1074_35556036806586_C025_u_s_fish_and_wildlife_service.json",
+      "response_ids": []
+    },
+    {
+      "order": 26,
+      "complaint_id": "p1074_35556036806586_C026",
+      "complainer_id": "p1074_35556036806586_K028",
+      "complaint_file": "complaints/p1074_35556036806586_C026_north_carolina_department_of_natural_and.json",
+      "response_ids": []
+    },
+    {
+      "order": 27,
+      "complaint_id": "p1074_35556036806586_C027",
+      "complainer_id": "p1074_35556036806586_K024",
+      "complaint_file": "complaints/p1074_35556036806586_C027_dr_byron_ingram.json",
+      "response_ids": []
+    },
+    {
+      "order": 28,
+      "complaint_id": "p1074_35556036806586_C028",
+      "complainer_id": "p1074_35556036806586_K024",
+      "complaint_file": "complaints/p1074_35556036806586_C028_dr_byron_ingram.json",
+      "response_ids": []
+    },
+    {
+      "order": 29,
+      "complaint_id": "p1074_35556036806586_C029",
+      "complainer_id": "p1074_35556036806586_K025",
+      "complaint_file": "complaints/p1074_35556036806586_C029_fpc_staff.json",
+      "response_ids": []
+    },
+    {
+      "order": 30,
+      "complaint_id": "p1074_35556036806586_C030",
+      "complainer_id": "p1074_35556036806586_K028",
+      "complaint_file": "complaints/p1074_35556036806586_C030_north_carolina_department_of_natural_and.json",
+      "response_ids": []
+    },
+    {
+      "order": 31,
+      "complaint_id": "p1074_35556036806586_C031",
+      "complainer_id": "p1074_35556036806586_K025",
+      "complaint_file": "complaints/p1074_35556036806586_C031_fpc_staff.json",
+      "response_ids": []
+    },
+    {
+      "order": 32,
+      "complaint_id": "p1074_35556036806586_C032",
+      "complainer_id": "p1074_35556036806586_K031",
+      "complaint_file": "complaints/p1074_35556036806586_C032_south_carolina_department_of_health_and_.json",
+      "response_ids": []
+    },
+    {
+      "order": 33,
+      "complaint_id": "p1074_35556036806586_C033",
+      "complainer_id": "p1074_35556036806586_K027",
+      "complaint_file": "complaints/p1074_35556036806586_C033_john_d_combes.json",
+      "response_ids": []
+    },
+    {
+      "order": 34,
+      "complaint_id": "p1074_35556036806586_C034",
+      "complainer_id": "p1074_35556036806586_K032",
+      "complaint_file": "complaints/p1074_35556036806586_C034_state_historic_preservation_officer.json",
+      "response_ids": []
+    },
+    {
+      "order": 35,
+      "complaint_id": "p1074_35556036806586_C035",
+      "complainer_id": "p1074_35556036806586_K034",
+      "complaint_file": "complaints/p1074_35556036806586_C035_timmerman.json",
+      "response_ids": [
+        "p1074_35556036806586_R005"
+      ]
+    },
+    {
+      "order": 36,
+      "complaint_id": "p1074_35556036806586_C036",
+      "complainer_id": "p1074_35556036806586_K046",
+      "complaint_file": "complaints/p1074_35556036806586_C036_south_carolina_department_of_parks_recre.json",
+      "response_ids": []
+    },
+    {
+      "order": 37,
+      "complaint_id": "p1074_35556036806586_C037",
+      "complainer_id": "p1074_35556036806586_K047",
+      "complaint_file": "complaints/p1074_35556036806586_C037_staff.json",
+      "response_ids": []
+    },
+    {
+      "order": 38,
+      "complaint_id": "p1074_35556036806586_C038",
+      "complainer_id": "p1074_35556036806586_K047",
+      "complaint_file": "complaints/p1074_35556036806586_C038_staff.json",
+      "response_ids": []
+    },
+    {
+      "order": 39,
+      "complaint_id": "p1074_35556036806586_C039",
+      "complainer_id": "p1074_35556036806586_K036",
+      "complaint_file": "complaints/p1074_35556036806586_C039_boyne_and_ingram.json",
+      "response_ids": [
+        "p1074_35556036806586_R006"
+      ]
+    },
+    {
+      "order": 40,
+      "complaint_id": "p1074_35556036806586_C040",
+      "complainer_id": "p1074_35556036806586_K042",
+      "complaint_file": "complaints/p1074_35556036806586_C040_langdon_et_al.json",
+      "response_ids": [
+        "p1074_35556036806586_R007"
+      ]
+    },
+    {
+      "order": 41,
+      "complaint_id": "p1074_35556036806586_C041",
+      "complainer_id": "p1074_35556036806586_K045",
+      "complaint_file": "complaints/p1074_35556036806586_C041_simon_and_dysart.json",
+      "response_ids": [
+        "p1074_35556036806586_R008"
+      ]
+    },
+    {
+      "order": 42,
+      "complaint_id": "p1074_35556036806586_C042",
+      "complainer_id": "p1074_35556036806586_K038",
+      "complaint_file": "complaints/p1074_35556036806586_C042_dr_c_leland_rodgers.json",
+      "response_ids": [
+        "p1074_35556036806586_R009"
+      ]
+    },
+    {
+      "order": 43,
+      "complaint_id": "p1074_35556036806586_C043",
+      "complainer_id": "p1074_35556036806586_K041",
+      "complaint_file": "complaints/p1074_35556036806586_C043_j_e_green_jr.json",
+      "response_ids": []
+    },
+    {
+      "order": 44,
+      "complaint_id": "p1074_35556036806586_C044",
+      "complainer_id": "p1074_35556036806586_K044",
+      "complaint_file": "complaints/p1074_35556036806586_C044_r_a_cloninger.json",
+      "response_ids": []
+    },
+    {
+      "order": 45,
+      "complaint_id": "p1074_35556036806586_C045",
+      "complainer_id": "p1074_35556036806586_K037",
+      "complaint_file": "complaints/p1074_35556036806586_C045_crescent_land_and_timber_corporation.json",
+      "response_ids": []
+    },
+    {
+      "order": 46,
+      "complaint_id": "p1074_35556036806586_C046",
+      "complainer_id": "p1074_35556036806586_K037",
+      "complaint_file": "complaints/p1074_35556036806586_C046_crescent_land_and_timber_corporation.json",
+      "response_ids": []
+    },
+    {
+      "order": 47,
+      "complaint_id": "p1074_35556036806586_C047",
+      "complainer_id": "p1074_35556036806586_K040",
+      "complaint_file": "complaints/p1074_35556036806586_C047_institute_of_archeology_and_anthropology.json",
+      "response_ids": [
+        "p1074_35556036806586_R010"
+      ]
+    },
+    {
+      "order": 48,
+      "complaint_id": "p1074_35556036806586_C048",
+      "complainer_id": "p1074_35556036806586_K050",
+      "complaint_file": "complaints/p1074_35556036806586_C048_donald_h_benton.json",
+      "response_ids": []
+    },
+    {
+      "order": 49,
+      "complaint_id": "p1074_35556036806586_C049",
+      "complainer_id": "p1074_35556036806586_K058",
+      "complaint_file": "complaints/p1074_35556036806586_C049_national_economic_research_associates_in.json",
+      "response_ids": []
+    },
+    {
+      "order": 50,
+      "complaint_id": "p1074_35556036806586_C050",
+      "complainer_id": "p1074_35556036806586_K054",
+      "complaint_file": "complaints/p1074_35556036806586_C050_federal_energy_administration.json",
+      "response_ids": []
+    },
+    {
+      "order": 51,
+      "complaint_id": "p1074_35556036806586_C051",
+      "complainer_id": "p1074_35556036806586_K059",
+      "complaint_file": "complaints/p1074_35556036806586_C051_southeastern_electric_reliability_counci.json",
+      "response_ids": []
+    },
+    {
+      "order": 52,
+      "complaint_id": "p1074_35556036806586_C052",
+      "complainer_id": "p1074_35556036806586_K048",
+      "complaint_file": "complaints/p1074_35556036806586_C052_corps_of_engineers.json",
+      "response_ids": []
+    },
+    {
+      "order": 53,
+      "complaint_id": "p1074_35556036806586_C053",
+      "complainer_id": "p1074_35556036806586_K055",
+      "complaint_file": "complaints/p1074_35556036806586_C053_federal_power_commission.json",
+      "response_ids": []
+    },
+    {
+      "order": 54,
+      "complaint_id": "p1074_35556036806586_C054",
+      "complainer_id": "p1074_35556036806586_K055",
+      "complaint_file": "complaints/p1074_35556036806586_C054_federal_power_commission.json",
+      "response_ids": []
+    },
+    {
+      "order": 55,
+      "complaint_id": "p1074_35556036806586_C055",
+      "complainer_id": "p1074_35556036806586_K052",
+      "complaint_file": "complaints/p1074_35556036806586_C055_edison_electric_institute.json",
+      "response_ids": [
+        "p1074_35556036806586_R011"
+      ]
+    },
+    {
+      "order": 56,
+      "complaint_id": "p1074_35556036806586_C056",
+      "complainer_id": "p1074_35556036806586_K053",
+      "complaint_file": "complaints/p1074_35556036806586_C056_electric_power_research_institute.json",
+      "response_ids": []
+    },
+    {
+      "order": 57,
+      "complaint_id": "p1074_35556036806586_C057",
+      "complainer_id": "p1074_35556036806586_K057",
+      "complaint_file": "complaints/p1074_35556036806586_C057_national_association_of_regulatory_commi.json",
+      "response_ids": [
+        "p1074_35556036806586_R012"
+      ]
+    },
+    {
+      "order": 58,
+      "complaint_id": "p1074_35556036806586_C058",
+      "complainer_id": "p1074_35556036806586_K056",
+      "complaint_file": "complaints/p1074_35556036806586_C058_h_jesse_grove.json",
+      "response_ids": []
+    },
+    {
+      "order": 59,
+      "complaint_id": "p1074_35556036806586_C059",
+      "complainer_id": "p1074_35556036806586_K051",
+      "complaint_file": "complaints/p1074_35556036806586_C059_dr_leland_rodgers.json",
+      "response_ids": []
+    },
+    {
+      "order": 60,
+      "complaint_id": "p1074_35556036806586_C060",
+      "complainer_id": "p1074_35556036806586_K077",
+      "complaint_file": "complaints/p1074_35556036806586_C060_scwmrd.json",
+      "response_ids": [
+        "p1074_35556036806586_R013"
+      ]
+    },
+    {
+      "order": 61,
+      "complaint_id": "p1074_35556036806586_C061",
+      "complainer_id": "p1074_35556036806586_K077",
+      "complaint_file": "complaints/p1074_35556036806586_C061_scwmrd.json",
+      "response_ids": [
+        "p1074_35556036806586_R014"
+      ]
+    },
+    {
+      "order": 62,
+      "complaint_id": "p1074_35556036806586_C062",
+      "complainer_id": "p1074_35556036806586_K077",
+      "complaint_file": "complaints/p1074_35556036806586_C062_scwmrd.json",
+      "response_ids": [
+        "p1074_35556036806586_R015"
+      ]
+    },
+    {
+      "order": 63,
+      "complaint_id": "p1074_35556036806586_C063",
+      "complainer_id": "p1074_35556036806586_K080",
+      "complaint_file": "complaints/p1074_35556036806586_C063_trout_unlimited.json",
+      "response_ids": [
+        "p1074_35556036806586_R016"
+      ]
+    },
+    {
+      "order": 64,
+      "complaint_id": "p1074_35556036806586_C064",
+      "complainer_id": "p1074_35556036806586_K080",
+      "complaint_file": "complaints/p1074_35556036806586_C064_trout_unlimited.json",
+      "response_ids": [
+        "p1074_35556036806586_R017"
+      ]
+    },
+    {
+      "order": 65,
+      "complaint_id": "p1074_35556036806586_C065",
+      "complainer_id": "p1074_35556036806586_K066",
+      "complaint_file": "complaints/p1074_35556036806586_C065_interior.json",
+      "response_ids": [
+        "p1074_35556036806586_R018"
+      ]
+    },
+    {
+      "order": 66,
+      "complaint_id": "p1074_35556036806586_C066",
+      "complainer_id": "p1074_35556036806586_K065",
+      "complaint_file": "complaints/p1074_35556036806586_C066_deputy_assistant_secretary_of_the_interi.json",
+      "response_ids": [
+        "p1074_35556036806586_R019"
+      ]
+    },
+    {
+      "order": 67,
+      "complaint_id": "p1074_35556036806586_C067",
+      "complainer_id": "p1074_35556036806586_K081",
+      "complaint_file": "complaints/p1074_35556036806586_C067_united_states_department_of_the_interior.json",
+      "response_ids": [
+        "p1074_35556036806586_R020"
+      ]
+    },
+    {
+      "order": 68,
+      "complaint_id": "p1074_35556036806586_C068",
+      "complainer_id": "p1074_35556036806586_K061",
+      "complaint_file": "complaints/p1074_35556036806586_C068_charles_custard.json",
+      "response_ids": []
+    },
+    {
+      "order": 69,
+      "complaint_id": "p1074_35556036806586_C069",
+      "complainer_id": "p1074_35556036806586_K061",
+      "complaint_file": "complaints/p1074_35556036806586_C069_charles_custard.json",
+      "response_ids": []
+    },
+    {
+      "order": 70,
+      "complaint_id": "p1074_35556036806586_C070",
+      "complainer_id": "p1074_35556036806586_K064",
+      "complaint_file": "complaints/p1074_35556036806586_C070_department_of_the_army.json",
+      "response_ids": []
+    },
+    {
+      "order": 71,
+      "complaint_id": "p1074_35556036806586_C071",
+      "complainer_id": "p1074_35556036806586_K069",
+      "complaint_file": "complaints/p1074_35556036806586_C071_john_r_hill_jr.json",
+      "response_ids": []
+    },
+    {
+      "order": 72,
+      "complaint_id": "p1074_35556036806586_C072",
+      "complainer_id": "p1074_35556036806586_K063",
+      "complaint_file": "complaints/p1074_35556036806586_C072_department_of_agriculture.json",
+      "response_ids": []
+    },
+    {
+      "order": 73,
+      "complaint_id": "p1074_35556036806586_C073",
+      "complainer_id": "p1074_35556036806586_K071",
+      "complaint_file": "complaints/p1074_35556036806586_C073_paul_a_vander_myde.json",
+      "response_ids": []
+    },
+    {
+      "order": 74,
+      "complaint_id": "p1074_35556036806586_C074",
+      "complainer_id": "p1074_35556036806586_K082",
+      "complaint_file": "complaints/p1074_35556036806586_C074_united_states_environmental_protection_a.json",
+      "response_ids": []
+    },
+    {
+      "order": 75,
+      "complaint_id": "p1074_35556036806586_C075",
+      "complainer_id": "p1074_35556036806586_K067",
+      "complaint_file": "complaints/p1074_35556036806586_C075_jack_e_ravan.json",
+      "response_ids": []
+    },
+    {
+      "order": 76,
+      "complaint_id": "p1074_35556036806586_C076",
+      "complainer_id": "p1074_35556036806586_K062",
+      "complaint_file": "complaints/p1074_35556036806586_C076_daniel_r_muller.json",
+      "response_ids": []
+    },
+    {
+      "order": 77,
+      "complaint_id": "p1074_35556036806586_C077",
+      "complainer_id": "p1074_35556036806586_K083",
+      "complaint_file": "complaints/p1074_35556036806586_C077_united_states_nuclear_regulatory_commiss.json",
+      "response_ids": []
+    },
+    {
+      "order": 78,
+      "complaint_id": "p1074_35556036806586_C078",
+      "complainer_id": "p1074_35556036806586_K073",
+      "complaint_file": "complaints/p1074_35556036806586_C078_peter_a_krenkel.json",
+      "response_ids": []
+    },
+    {
+      "order": 79,
+      "complaint_id": "p1074_35556036806586_C079",
+      "complainer_id": "p1074_35556036806586_K068",
+      "complaint_file": "complaints/p1074_35556036806586_C079_james_a_timmerman_jr.json",
+      "response_ids": []
+    },
+    {
+      "order": 80,
+      "complaint_id": "p1074_35556036806586_C080",
+      "complainer_id": "p1074_35556036806586_K068",
+      "complaint_file": "complaints/p1074_35556036806586_C080_james_a_timmerman_jr.json",
+      "response_ids": [
+        "p1074_35556036806586_R021"
+      ]
+    },
+    {
+      "order": 81,
+      "complaint_id": "p1074_35556036806586_C081",
+      "complainer_id": "p1074_35556036806586_K068",
+      "complaint_file": "complaints/p1074_35556036806586_C081_james_a_timmerman_jr.json",
+      "response_ids": [
+        "p1074_35556036806586_R022"
+      ]
+    },
+    {
+      "order": 82,
+      "complaint_id": "p1074_35556036806586_C082",
+      "complainer_id": "p1074_35556036806586_K074",
+      "complaint_file": "complaints/p1074_35556036806586_C082_randy_geddings.json",
+      "response_ids": [
+        "p1074_35556036806586_R023"
+      ]
+    },
+    {
+      "order": 83,
+      "complaint_id": "p1074_35556036806586_C083",
+      "complainer_id": "p1074_35556036806586_K076",
+      "complaint_file": "complaints/p1074_35556036806586_C083_rudolph_mitchell.json",
+      "response_ids": [
+        "p1074_35556036806586_R024"
+      ]
+    },
+    {
+      "order": 84,
+      "complaint_id": "p1074_35556036806586_C084",
+      "complainer_id": "p1074_35556036806586_K079",
+      "complaint_file": "complaints/p1074_35556036806586_C084_state_of_south_carolina_the_public_servi.json",
+      "response_ids": [
+        "p1074_35556036806586_R025"
+      ]
+    },
+    {
+      "order": 85,
+      "complaint_id": "p1074_35556036806586_C085",
+      "complainer_id": "p1074_35556036806586_K060",
+      "complaint_file": "complaints/p1074_35556036806586_C085_c_barry_shedrow.json",
+      "response_ids": [
+        "p1074_35556036806586_R026"
+      ]
+    },
+    {
+      "order": 86,
+      "complaint_id": "p1074_35556036806586_C086",
+      "complainer_id": "p1074_35556036806586_K072",
+      "complaint_file": "complaints/p1074_35556036806586_C086_paul_w_cobb.json",
+      "response_ids": [
+        "p1074_35556036806586_R027"
+      ]
+    },
+    {
+      "order": 87,
+      "complaint_id": "p1074_35556036806586_C087",
+      "complainer_id": "p1074_35556036806586_K075",
+      "complaint_file": "complaints/p1074_35556036806586_C087_robert_e_gaillard.json",
+      "response_ids": []
+    },
+    {
+      "order": 88,
+      "complaint_id": "p1074_35556036806586_C088",
+      "complainer_id": "p1074_35556036806586_K078",
+      "complaint_file": "complaints/p1074_35556036806586_C088_south_carolina_state_highway_department.json",
+      "response_ids": [
+        "p1074_35556036806586_R028"
+      ]
+    },
+    {
+      "order": 89,
+      "complaint_id": "p1074_35556036806586_C089",
+      "complainer_id": "p1074_35556036806586_K070",
+      "complaint_file": "complaints/p1074_35556036806586_C089_l_c_dail.json",
+      "response_ids": []
+    },
+    {
+      "order": 90,
+      "complaint_id": "p1074_35556036806586_C090",
+      "complainer_id": "p1074_35556036806586_K084",
+      "complaint_file": "complaints/p1074_35556036806586_C090_w_h_owen.json",
+      "response_ids": []
+    },
+    {
+      "order": 91,
+      "complaint_id": "p1074_35556036806586_C091",
+      "complainer_id": "p1074_35556036806586_K084",
+      "complaint_file": "complaints/p1074_35556036806586_C091_w_h_owen.json",
+      "response_ids": [
+        "p1074_35556036806586_R029"
+      ]
+    },
+    {
+      "order": 92,
+      "complaint_id": "p1074_35556036806586_C092",
+      "complainer_id": "p1074_35556036806586_K070",
+      "complaint_file": "complaints/p1074_35556036806586_C092_l_c_dail.json",
+      "response_ids": [
+        "p1074_35556036806586_R030"
+      ]
+    },
+    {
+      "order": 93,
+      "complaint_id": "p1074_35556036806586_C093",
+      "complainer_id": "p1074_35556036806586_K090",
+      "complaint_file": "complaints/p1074_35556036806586_C093_joseph_e_green_jr.json",
+      "response_ids": [
+        "p1074_35556036806586_R031"
+      ]
+    },
+    {
+      "order": 94,
+      "complaint_id": "p1074_35556036806586_C094",
+      "complainer_id": "p1074_35556036806586_K085",
+      "complaint_file": "complaints/p1074_35556036806586_C094_billy_l_edge.json",
+      "response_ids": [
+        "p1074_35556036806586_R032"
+      ]
+    },
+    {
+      "order": 95,
+      "complaint_id": "p1074_35556036806586_C095",
+      "complainer_id": "p1074_35556036806586_K086",
+      "complaint_file": "complaints/p1074_35556036806586_C095_cherokee_foothill_trail_conference.json",
+      "response_ids": [
+        "p1074_35556036806586_R033"
+      ]
+    },
+    {
+      "order": 96,
+      "complaint_id": "p1074_35556036806586_C096",
+      "complainer_id": "p1074_35556036806586_K087",
+      "complaint_file": "complaints/p1074_35556036806586_C096_don_archer.json",
+      "response_ids": [
+        "p1074_35556036806586_R034"
+      ]
+    },
+    {
+      "order": 97,
+      "complaint_id": "p1074_35556036806586_C097",
+      "complainer_id": "p1074_35556036806586_K085",
+      "complaint_file": "complaints/p1074_35556036806586_C097_billy_l_edge.json",
+      "response_ids": [
+        "p1074_35556036806586_R035"
+      ]
+    },
+    {
+      "order": 98,
+      "complaint_id": "p1074_35556036806586_C098",
+      "complainer_id": "p1074_35556036806586_K088",
+      "complaint_file": "complaints/p1074_35556036806586_C098_dr_richard_bruce.json",
+      "response_ids": [
+        "p1074_35556036806586_R036"
+      ]
+    },
+    {
+      "order": 99,
+      "complaint_id": "p1074_35556036806586_C099",
+      "complainer_id": "p1074_35556036806586_K090",
+      "complaint_file": "complaints/p1074_35556036806586_C099_joseph_e_green_jr.json",
+      "response_ids": [
+        "p1074_35556036806586_R037"
+      ]
+    },
+    {
+      "order": 100,
+      "complaint_id": "p1074_35556036806586_C100",
+      "complainer_id": "p1074_35556036806586_K085",
+      "complaint_file": "complaints/p1074_35556036806586_C100_billy_l_edge.json",
+      "response_ids": [
+        "p1074_35556036806586_R038"
+      ]
+    },
+    {
+      "order": 101,
+      "complaint_id": "p1074_35556036806586_C101",
+      "complainer_id": "p1074_35556036806586_K089",
+      "complaint_file": "complaints/p1074_35556036806586_C101_duke.json",
+      "response_ids": [
+        "p1074_35556036806586_R039"
+      ]
+    },
+    {
+      "order": 102,
+      "complaint_id": "p1074_35556036806586_C102",
+      "complainer_id": "p1074_35556036806586_K089",
+      "complaint_file": "complaints/p1074_35556036806586_C102_duke.json",
+      "response_ids": [
+        "p1074_35556036806586_R040"
+      ]
+    },
+    {
+      "order": 103,
+      "complaint_id": "p1074_35556036806586_C103",
+      "complainer_id": "p1074_35556036806586_K091",
+      "complaint_file": "complaints/p1074_35556036806586_C103_u_s_department_of_the_interior.json",
+      "response_ids": [
+        "p1074_35556036806586_R041"
+      ]
+    },
+    {
+      "order": 104,
+      "complaint_id": "p1074_35556036806586_C104",
+      "complainer_id": "p1074_35556036806586_K089",
+      "complaint_file": "complaints/p1074_35556036806586_C104_duke.json",
+      "response_ids": [
+        "p1074_35556036806586_R042"
+      ]
+    },
+    {
+      "order": 105,
+      "complaint_id": "p1074_35556036806586_C105",
+      "complainer_id": "p1074_35556036806586_K096",
+      "complaint_file": "complaints/p1074_35556036806586_C105_south_carolina_chapter_of_trout_unlimite.json",
+      "response_ids": [
+        "p1074_35556036806586_R043"
+      ]
+    },
+    {
+      "order": 106,
+      "complaint_id": "p1074_35556036806586_C106",
+      "complainer_id": "p1074_35556036806586_K096",
+      "complaint_file": "complaints/p1074_35556036806586_C106_south_carolina_chapter_of_trout_unlimite.json",
+      "response_ids": []
+    },
+    {
+      "order": 107,
+      "complaint_id": "p1074_35556036806586_C107",
+      "complainer_id": "p1074_35556036806586_K096",
+      "complaint_file": "complaints/p1074_35556036806586_C107_south_carolina_chapter_of_trout_unlimite.json",
+      "response_ids": [
+        "p1074_35556036806586_R044"
+      ]
+    },
+    {
+      "order": 108,
+      "complaint_id": "p1074_35556036806586_C108",
+      "complainer_id": "p1074_35556036806586_K096",
+      "complaint_file": "complaints/p1074_35556036806586_C108_south_carolina_chapter_of_trout_unlimite.json",
+      "response_ids": [
+        "p1074_35556036806586_R045"
+      ]
+    },
+    {
+      "order": 109,
+      "complaint_id": "p1074_35556036806586_C109",
+      "complainer_id": "p1074_35556036806586_K097",
+      "complaint_file": "complaints/p1074_35556036806586_C109_south_carolina_wildlife_and_marine_resou.json",
+      "response_ids": []
+    },
+    {
+      "order": 110,
+      "complaint_id": "p1074_35556036806586_C110",
+      "complainer_id": "p1074_35556036806586_K093",
+      "complaint_file": "complaints/p1074_35556036806586_C110_john_j_weins.json",
+      "response_ids": [
+        "p1074_35556036806586_R046"
+      ]
+    },
+    {
+      "order": 111,
+      "complaint_id": "p1074_35556036806586_C111",
+      "complainer_id": "p1074_35556036806586_K094",
+      "complaint_file": "complaints/p1074_35556036806586_C111_leconte_chapter_of_the_sierra_club.json",
+      "response_ids": [
+        "p1074_35556036806586_R047"
+      ]
+    },
+    {
+      "order": 112,
+      "complaint_id": "p1074_35556036806586_C112",
+      "complainer_id": "p1074_35556036806586_K094",
+      "complaint_file": "complaints/p1074_35556036806586_C112_leconte_chapter_of_the_sierra_club.json",
+      "response_ids": []
+    },
+    {
+      "order": 113,
+      "complaint_id": "p1074_35556036806586_C113",
+      "complainer_id": "p1074_35556036806586_K092",
+      "complaint_file": "complaints/p1074_35556036806586_C113_john_j_hagins.json",
+      "response_ids": [
+        "p1074_35556036806586_R048"
+      ]
+    },
+    {
+      "order": 114,
+      "complaint_id": "p1074_35556036806586_C114",
+      "complainer_id": "p1074_35556036806586_K092",
+      "complaint_file": "complaints/p1074_35556036806586_C114_john_j_hagins.json",
+      "response_ids": []
+    },
+    {
+      "order": 115,
+      "complaint_id": "p1074_35556036806586_C115",
+      "complainer_id": "p1074_35556036806586_K092",
+      "complaint_file": "complaints/p1074_35556036806586_C115_john_j_hagins.json",
+      "response_ids": []
+    },
+    {
+      "order": 116,
+      "complaint_id": "p1074_35556036806586_C116",
+      "complainer_id": "p1074_35556036806586_K002",
+      "complaint_file": "complaints/p1074_35556036806586_C116_department_of_the_army_corps_of_engineer.json",
+      "response_ids": []
+    },
+    {
+      "order": 117,
+      "complaint_id": "p1074_35556036806586_C117",
+      "complainer_id": "p1074_35556036806586_K003",
+      "complaint_file": "complaints/p1074_35556036806586_C117_department_of_the_interior.json",
+      "response_ids": []
+    },
+    {
+      "order": 118,
+      "complaint_id": "p1074_35556036806586_C118",
+      "complainer_id": "p1074_35556036806586_K005",
+      "complaint_file": "complaints/p1074_35556036806586_C118_environmental_protection_agency.json",
+      "response_ids": []
+    },
+    {
+      "order": 119,
+      "complaint_id": "p1074_35556036806586_C119",
+      "complainer_id": "p1074_35556036806586_K007",
+      "complaint_file": "complaints/p1074_35556036806586_C119_joseph_leconte_chapter_sierra_club.json",
+      "response_ids": []
+    },
+    {
+      "order": 120,
+      "complaint_id": "p1074_35556036806586_C120",
+      "complainer_id": "p1074_35556036806586_K008",
+      "complaint_file": "complaints/p1074_35556036806586_C120_nuclear_regulatory_commission.json",
+      "response_ids": []
+    },
+    {
+      "order": 121,
+      "complaint_id": "p1074_35556036806586_C121",
+      "complainer_id": "p1074_35556036806586_K009",
+      "complaint_file": "complaints/p1074_35556036806586_C121_south_carolina_chapter_trout_unlimited.json",
+      "response_ids": []
+    },
+    {
+      "order": 122,
+      "complaint_id": "p1074_35556036806586_C122",
+      "complainer_id": "p1074_35556036806586_K011",
+      "complaint_file": "complaints/p1074_35556036806586_C122_south_carolina_department_of_highways.json",
+      "response_ids": []
+    },
+    {
+      "order": 123,
+      "complaint_id": "p1074_35556036806586_C123",
+      "complainer_id": "p1074_35556036806586_K012",
+      "complaint_file": "complaints/p1074_35556036806586_C123_south_carolina_public_service_commission.json",
+      "response_ids": []
+    },
+    {
+      "order": 124,
+      "complaint_id": "p1074_35556036806586_C124",
+      "complainer_id": "p1074_35556036806586_K013",
+      "complaint_file": "complaints/p1074_35556036806586_C124_south_carolina_wildlife_and_marine_resou.json",
+      "response_ids": []
+    },
+    {
+      "order": 125,
+      "complaint_id": "p1074_35556036806586_C125",
+      "complainer_id": "p1074_35556036806586_K015",
+      "complaint_file": "complaints/p1074_35556036806586_C125_town_of_walhalla_south_carolina.json",
+      "response_ids": []
+    },
+    {
+      "order": 126,
+      "complaint_id": "p1074_35556036806586_C126",
+      "complainer_id": "p1074_35556036806586_K017",
+      "complaint_file": "complaints/p1074_35556036806586_C126_applicant.json",
+      "response_ids": []
+    },
+    {
+      "order": 127,
+      "complaint_id": "p1074_35556036806586_C127",
+      "complainer_id": "p1074_35556036806586_K022",
+      "complaint_file": "complaints/p1074_35556036806586_C127_u_s_food_and_drug_administration_fda.json",
+      "response_ids": []
+    },
+    {
+      "order": 128,
+      "complaint_id": "p1074_35556036806586_C128",
+      "complainer_id": "p1074_35556036806586_K023",
+      "complaint_file": "complaints/p1074_35556036806586_C128_u_s_forest_service.json",
+      "response_ids": []
+    },
+    {
+      "order": 129,
+      "complaint_id": "p1074_35556036806586_C129",
+      "complainer_id": "p1074_35556036806586_K039",
+      "complaint_file": "complaints/p1074_35556036806586_C129_foothills_trail_conference_inc.json",
+      "response_ids": []
+    },
+    {
+      "order": 130,
+      "complaint_id": "p1074_35556036806586_C130",
+      "complainer_id": "p1074_35556036806586_K043",
+      "complaint_file": "complaints/p1074_35556036806586_C130_medical_entomologist_of_the_south_caroli.json",
+      "response_ids": []
+    },
+    {
+      "order": 131,
+      "complaint_id": "p1074_35556036806586_C131",
+      "complainer_id": "p1074_35556036806586_K049",
+      "complaint_file": "complaints/p1074_35556036806586_C131_crescent_land_and_timber_company.json",
+      "response_ids": []
+    },
+    {
+      "order": 132,
+      "complaint_id": "p1074_35556036806586_C132",
+      "complainer_id": "p1074_35556036806586_K095",
+      "complaint_file": "complaints/p1074_35556036806586_C132_robert_f_martin_p_e.json",
+      "response_ids": []
+    },
+    {
+      "order": 133,
+      "complaint_id": "p1074_35556036806586_C133",
+      "complainer_id": "p1074_35556036806586_K098",
+      "complaint_file": "complaints/p1074_35556036806586_C133_warren_h_oven.json",
+      "response_ids": []
+    }
+  ],
+  "complaints": [
+    {
+      "complaint_id": "p1074_35556036806586_C001",
+      "complainer_id": "p1074_35556036806586_K001",
+      "file": "complaints/p1074_35556036806586_C001_department_of_health_education_and_welfa.json",
+      "order": 1,
+      "entity": "Department of Health, Education, and Welfare",
+      "kind": "agency",
+      "role": "Federal agency requested to review draft EIS; responded",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C002",
+      "complainer_id": "p1074_35556036806586_K006",
+      "file": "complaints/p1074_35556036806586_C002_forest_service_department_of_agriculture.json",
+      "order": 2,
+      "entity": "Forest Service (Department of Agriculture)",
+      "kind": "agency",
+      "role": "Federal agency requested to review draft EIS; responded",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C003",
+      "complainer_id": "p1074_35556036806586_K010",
+      "file": "complaints/p1074_35556036806586_C003_south_carolina_department_of_health_and_.json",
+      "order": 3,
+      "entity": "South Carolina Department of Health and Environmental Control",
+      "kind": "agency",
+      "role": "State environmental/health agency — fish consumption advisory",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C004",
+      "complainer_id": "p1074_35556036806586_K010",
+      "file": "complaints/p1074_35556036806586_C004_south_carolina_department_of_health_and_.json",
+      "order": 4,
+      "entity": "South Carolina Department of Health and Environmental Control",
+      "kind": "agency",
+      "role": "State environmental/health agency — fish consumption advisory",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C005",
+      "complainer_id": "p1074_35556036806586_K014",
+      "file": "complaints/p1074_35556036806586_C005_tennessee_valley_authority_tva.json",
+      "order": 5,
+      "entity": "Tennessee Valley Authority (TVA)",
+      "kind": "agency",
+      "role": "Federal electric generating system considered as alternative developer/power source",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C006",
+      "complainer_id": "p1074_35556036806586_K004",
+      "file": "complaints/p1074_35556036806586_C006_duke_power_company.json",
+      "order": 6,
+      "entity": "Duke Power Company",
+      "kind": "organization",
+      "role": "Applicant for Bad Creek Pumped Storage Project license",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C007",
+      "complainer_id": "p1074_35556036806586_K018",
+      "file": "complaints/p1074_35556036806586_C007_north_carolina_wildlife_resources_commis.json",
+      "order": 7,
+      "entity": "North Carolina Wildlife Resources Commission",
+      "kind": "agency",
+      "role": "State agency managing wildlife land at Long Spur Ridge and Coley Creek sites",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "66"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C008",
+      "complainer_id": "p1074_35556036806586_K020",
+      "file": "complaints/p1074_35556036806586_C008_south_carolina_wildlife_and_marine_resou.json",
+      "order": 8,
+      "entity": "South Carolina Wildlife and Marine Resources Department",
+      "kind": "agency",
+      "role": "state wildlife agency referenced regarding wildlife management agreements",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "66"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C009",
+      "complainer_id": "p1074_35556036806586_K019",
+      "file": "complaints/p1074_35556036806586_C009_scdhec.json",
+      "order": 9,
+      "entity": "SCDHEC",
+      "kind": "agency",
+      "role": "South Carolina Department of Health and Environmental Control — permitting authority",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "77"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C010",
+      "complainer_id": "p1074_35556036806586_K016",
+      "file": "complaints/p1074_35556036806586_C010_abernathy_1975.json",
+      "order": 10,
+      "entity": "Abernathy (1975)",
+      "kind": "individual",
+      "role": "researcher/scientist — mercury study author",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "89"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C011",
+      "complainer_id": "p1074_35556036806586_K016",
+      "file": "complaints/p1074_35556036806586_C011_abernathy_1975.json",
+      "order": 11,
+      "entity": "Abernathy (1975)",
+      "kind": "individual",
+      "role": "researcher/scientist — mercury study author",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "89"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R001"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C012",
+      "complainer_id": "p1074_35556036806586_K029",
+      "file": "complaints/p1074_35556036806586_C012_seri.json",
+      "order": 12,
+      "entity": "SERI",
+      "kind": "organization",
+      "role": "Southeast Reservoir Investigations, research body",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "95"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C013",
+      "complainer_id": "p1074_35556036806586_K021",
+      "file": "complaints/p1074_35556036806586_C013_southeast_reservoir_investigations.json",
+      "order": 13,
+      "entity": "Southeast Reservoir Investigations",
+      "kind": "agency",
+      "role": "U.S. Fish and Wildlife Service unit — trout habitat assessment",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "97"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C014",
+      "complainer_id": "p1074_35556036806586_K021",
+      "file": "complaints/p1074_35556036806586_C014_southeast_reservoir_investigations.json",
+      "order": 14,
+      "entity": "Southeast Reservoir Investigations",
+      "kind": "agency",
+      "role": "U.S. Fish and Wildlife Service unit — trout habitat assessment",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "97"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C015",
+      "complainer_id": "p1074_35556036806586_K021",
+      "file": "complaints/p1074_35556036806586_C015_southeast_reservoir_investigations.json",
+      "order": 15,
+      "entity": "Southeast Reservoir Investigations",
+      "kind": "agency",
+      "role": "U.S. Fish and Wildlife Service unit — trout habitat assessment",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "98"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C016",
+      "complainer_id": "p1074_35556036806586_K029",
+      "file": "complaints/p1074_35556036806586_C016_seri.json",
+      "order": 16,
+      "entity": "SERI",
+      "kind": "organization",
+      "role": "Southeast Reservoir Investigations, research body",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "98"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C017",
+      "complainer_id": "p1074_35556036806586_K021",
+      "file": "complaints/p1074_35556036806586_C017_southeast_reservoir_investigations.json",
+      "order": 17,
+      "entity": "Southeast Reservoir Investigations",
+      "kind": "agency",
+      "role": "U.S. Fish and Wildlife Service unit — trout habitat assessment",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "99"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C018",
+      "complainer_id": "p1074_35556036806586_K021",
+      "file": "complaints/p1074_35556036806586_C018_southeast_reservoir_investigations.json",
+      "order": 18,
+      "entity": "Southeast Reservoir Investigations",
+      "kind": "agency",
+      "role": "U.S. Fish and Wildlife Service unit — trout habitat assessment",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "100"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C019",
+      "complainer_id": "p1074_35556036806586_K029",
+      "file": "complaints/p1074_35556036806586_C019_seri.json",
+      "order": 19,
+      "entity": "SERI",
+      "kind": "organization",
+      "role": "Southeast Reservoir Investigations, research body",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "100"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R002"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C020",
+      "complainer_id": "p1074_35556036806586_K026",
+      "file": "complaints/p1074_35556036806586_C020_highlands_biological_station_inc.json",
+      "order": 20,
+      "entity": "Highlands Biological Station, Inc.",
+      "kind": "organization",
+      "role": "Research organization identifying important bryophyte area in Thompson River Gorge",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "103"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R003"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C021",
+      "complainer_id": "p1074_35556036806586_K033",
+      "file": "complaints/p1074_35556036806586_C021_the_highlands_biological_station.json",
+      "order": 21,
+      "entity": "The Highlands Biological Station",
+      "kind": "organization",
+      "role": "biological survey organization",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "103"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R004"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C022",
+      "complainer_id": "p1074_35556036806586_K030",
+      "file": "complaints/p1074_35556036806586_C022_smithsonian_institution.json",
+      "order": 22,
+      "entity": "Smithsonian Institution",
+      "kind": "organization",
+      "role": "scientific institution, threatened species identifier",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "104"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C023",
+      "complainer_id": "p1074_35556036806586_K035",
+      "file": "complaints/p1074_35556036806586_C023_u_s_fish_and_wildlife_service.json",
+      "order": 23,
+      "entity": "U.S. Fish and Wildlife Service",
+      "kind": "agency",
+      "role": "federal wildlife agency, endangered species listing authority",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "104"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C024",
+      "complainer_id": "p1074_35556036806586_K035",
+      "file": "complaints/p1074_35556036806586_C024_u_s_fish_and_wildlife_service.json",
+      "order": 24,
+      "entity": "U.S. Fish and Wildlife Service",
+      "kind": "agency",
+      "role": "federal wildlife agency, endangered species listing authority",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "104"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C025",
+      "complainer_id": "p1074_35556036806586_K035",
+      "file": "complaints/p1074_35556036806586_C025_u_s_fish_and_wildlife_service.json",
+      "order": 25,
+      "entity": "U.S. Fish and Wildlife Service",
+      "kind": "agency",
+      "role": "federal wildlife agency, endangered species listing authority",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "104"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C026",
+      "complainer_id": "p1074_35556036806586_K028",
+      "file": "complaints/p1074_35556036806586_C026_north_carolina_department_of_natural_and.json",
+      "order": 26,
+      "entity": "North Carolina Department of Natural and Economic Resources",
+      "kind": "agency",
+      "role": "state natural resources agency, endangered species classification",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "106"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C027",
+      "complainer_id": "p1074_35556036806586_K024",
+      "file": "complaints/p1074_35556036806586_C027_dr_byron_ingram.json",
+      "order": 27,
+      "entity": "Dr. Byron Ingram",
+      "kind": "individual",
+      "role": "Clemson University herpetologist and Duke consultant",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "107"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C028",
+      "complainer_id": "p1074_35556036806586_K024",
+      "file": "complaints/p1074_35556036806586_C028_dr_byron_ingram.json",
+      "order": 28,
+      "entity": "Dr. Byron Ingram",
+      "kind": "individual",
+      "role": "Clemson University herpetologist and Duke consultant",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "107"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C029",
+      "complainer_id": "p1074_35556036806586_K025",
+      "file": "complaints/p1074_35556036806586_C029_fpc_staff.json",
+      "order": 29,
+      "entity": "FPC Staff",
+      "kind": "agency",
+      "role": "Federal Power Commission Staff conducting independent study of alternative sites",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "107"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C030",
+      "complainer_id": "p1074_35556036806586_K028",
+      "file": "complaints/p1074_35556036806586_C030_north_carolina_department_of_natural_and.json",
+      "order": 30,
+      "entity": "North Carolina Department of Natural and Economic Resources",
+      "kind": "agency",
+      "role": "state natural resources agency, endangered species classification",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "107"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C031",
+      "complainer_id": "p1074_35556036806586_K025",
+      "file": "complaints/p1074_35556036806586_C031_fpc_staff.json",
+      "order": 31,
+      "entity": "FPC Staff",
+      "kind": "agency",
+      "role": "Federal Power Commission Staff conducting independent study of alternative sites",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "121"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C032",
+      "complainer_id": "p1074_35556036806586_K031",
+      "file": "complaints/p1074_35556036806586_C032_south_carolina_department_of_health_and_.json",
+      "order": 32,
+      "entity": "South Carolina Department of Health and Environmental Control, Bureau of Air Quality Control",
+      "kind": "agency",
+      "role": "state air quality monitoring agency",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "126"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C033",
+      "complainer_id": "p1074_35556036806586_K027",
+      "file": "complaints/p1074_35556036806586_C033_john_d_combes.json",
+      "order": 33,
+      "entity": "John D. Combes",
+      "kind": "individual",
+      "role": "archaeologist, Institute of Archeology and Anthropology, University of South Carolina",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "129"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C034",
+      "complainer_id": "p1074_35556036806586_K032",
+      "file": "complaints/p1074_35556036806586_C034_state_historic_preservation_officer.json",
+      "order": 34,
+      "entity": "State Historic Preservation Officer",
+      "kind": "official",
+      "role": "state historic preservation authority",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "129"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C035",
+      "complainer_id": "p1074_35556036806586_K034",
+      "file": "complaints/p1074_35556036806586_C035_timmerman.json",
+      "order": 35,
+      "entity": "Timmerman",
+      "kind": "individual",
+      "role": "South Carolina Wildlife and Marine Resources Department representative",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "140"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R005"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C036",
+      "complainer_id": "p1074_35556036806586_K046",
+      "file": "complaints/p1074_35556036806586_C036_south_carolina_department_of_parks_recre.json",
+      "order": 36,
+      "entity": "South Carolina Department of Parks, Recreation, and Tourism",
+      "kind": "agency",
+      "role": "State agency providing trail rating classification",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "150"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C037",
+      "complainer_id": "p1074_35556036806586_K047",
+      "file": "complaints/p1074_35556036806586_C037_staff.json",
+      "order": 37,
+      "entity": "Staff",
+      "kind": "agency",
+      "role": "FPC Staff",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "159"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C038",
+      "complainer_id": "p1074_35556036806586_K047",
+      "file": "complaints/p1074_35556036806586_C038_staff.json",
+      "order": 38,
+      "entity": "Staff",
+      "kind": "agency",
+      "role": "FPC Staff",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "159"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C039",
+      "complainer_id": "p1074_35556036806586_K036",
+      "file": "complaints/p1074_35556036806586_C039_boyne_and_ingram.json",
+      "order": 39,
+      "entity": "Boyne and Ingram",
+      "kind": "individual",
+      "role": "Researchers/commenters on benthic organism protection",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "166"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R006"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C040",
+      "complainer_id": "p1074_35556036806586_K042",
+      "file": "complaints/p1074_35556036806586_C040_langdon_et_al.json",
+      "order": 40,
+      "entity": "Langdon, et al.",
+      "kind": "individual",
+      "role": "Researchers on Howard Creek sediment transport",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "166"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R007"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C041",
+      "complainer_id": "p1074_35556036806586_K045",
+      "file": "complaints/p1074_35556036806586_C041_simon_and_dysart.json",
+      "order": 41,
+      "entity": "Simon and Dysart",
+      "kind": "individual",
+      "role": "Researchers recommending storm flow augmentation",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "166"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R008"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C042",
+      "complainer_id": "p1074_35556036806586_K038",
+      "file": "complaints/p1074_35556036806586_C042_dr_c_leland_rodgers.json",
+      "order": 42,
+      "entity": "Dr. C. Leland Rodgers",
+      "kind": "individual",
+      "role": "Chairman, Department of Biology, Furman University; author of flora pamphlet",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "175"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R009"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C043",
+      "complainer_id": "p1074_35556036806586_K041",
+      "file": "complaints/p1074_35556036806586_C043_j_e_green_jr.json",
+      "order": 43,
+      "entity": "J.E. Green, Jr.",
+      "kind": "individual",
+      "role": "Botanist, Furman University",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "175"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C044",
+      "complainer_id": "p1074_35556036806586_K044",
+      "file": "complaints/p1074_35556036806586_C044_r_a_cloninger.json",
+      "order": 44,
+      "entity": "R. A. Cloninger",
+      "kind": "individual",
+      "role": "Forester for the Applicant",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "175"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C045",
+      "complainer_id": "p1074_35556036806586_K037",
+      "file": "complaints/p1074_35556036806586_C045_crescent_land_and_timber_corporation.json",
+      "order": 45,
+      "entity": "Crescent Land and Timber Corporation",
+      "kind": "organization",
+      "role": "landowner asserting timber management rights in trail corridor",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "179"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C046",
+      "complainer_id": "p1074_35556036806586_K037",
+      "file": "complaints/p1074_35556036806586_C046_crescent_land_and_timber_corporation.json",
+      "order": 46,
+      "entity": "Crescent Land and Timber Corporation",
+      "kind": "organization",
+      "role": "landowner asserting timber management rights in trail corridor",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "179"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C047",
+      "complainer_id": "p1074_35556036806586_K040",
+      "file": "complaints/p1074_35556036806586_C047_institute_of_archeology_and_anthropology.json",
+      "order": 47,
+      "entity": "Institute of Archeology and Anthropology, University of South Carolina",
+      "kind": "organization",
+      "role": "Conducting archaeological survey of proposed reservoir area",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "181"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R010"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C048",
+      "complainer_id": "p1074_35556036806586_K050",
+      "file": "complaints/p1074_35556036806586_C048_donald_h_benton.json",
+      "order": 48,
+      "entity": "Donald H. Benton",
+      "kind": "individual",
+      "role": "Duke's Vice President-Marketing",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "205"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C049",
+      "complainer_id": "p1074_35556036806586_K058",
+      "file": "complaints/p1074_35556036806586_C049_national_economic_research_associates_in.json",
+      "order": 49,
+      "entity": "National Economic Research Associates, Inc. (NERA)",
+      "kind": "organization",
+      "role": "Contractor engaged by Duke Power Company to study marginal cost economics and peak-load metering",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "207"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C050",
+      "complainer_id": "p1074_35556036806586_K054",
+      "file": "complaints/p1074_35556036806586_C050_federal_energy_administration.json",
+      "order": 50,
+      "entity": "Federal Energy Administration",
+      "kind": "agency",
+      "role": "Federal agency sponsoring studies of rate revision and load management",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "208"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C051",
+      "complainer_id": "p1074_35556036806586_K059",
+      "file": "complaints/p1074_35556036806586_C051_southeastern_electric_reliability_counci.json",
+      "order": 51,
+      "entity": "Southeastern Electric Reliability Council (SERC)",
+      "kind": "organization",
+      "role": "Regional reliability council providing capacity reserve forecasts",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "209"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C052",
+      "complainer_id": "p1074_35556036806586_K048",
+      "file": "complaints/p1074_35556036806586_C052_corps_of_engineers.json",
+      "order": 52,
+      "entity": "Corps of Engineers",
+      "kind": "agency",
+      "role": "Federal agency considered as potential developer of Bad Creek site",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "212"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C053",
+      "complainer_id": "p1074_35556036806586_K055",
+      "file": "complaints/p1074_35556036806586_C053_federal_power_commission.json",
+      "order": 53,
+      "entity": "Federal Power Commission",
+      "kind": "agency",
+      "role": "Licensing authority receiving comments from Federal agencies regarding Federal development",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "212"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C054",
+      "complainer_id": "p1074_35556036806586_K055",
+      "file": "complaints/p1074_35556036806586_C054_federal_power_commission.json",
+      "order": 54,
+      "entity": "Federal Power Commission",
+      "kind": "agency",
+      "role": "Licensing authority receiving comments from Federal agencies regarding Federal development",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "212"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C055",
+      "complainer_id": "p1074_35556036806586_K052",
+      "file": "complaints/p1074_35556036806586_C055_edison_electric_institute.json",
+      "order": 55,
+      "entity": "Edison Electric Institute",
+      "kind": "organization",
+      "role": "Organization conducting study of time-of-day metering and load management",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "213"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R011"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C056",
+      "complainer_id": "p1074_35556036806586_K053",
+      "file": "complaints/p1074_35556036806586_C056_electric_power_research_institute.json",
+      "order": 56,
+      "entity": "Electric Power Research Institute",
+      "kind": "organization",
+      "role": "Organization conducting study of time-of-day metering and load management",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "213"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C057",
+      "complainer_id": "p1074_35556036806586_K057",
+      "file": "complaints/p1074_35556036806586_C057_national_association_of_regulatory_commi.json",
+      "order": 57,
+      "entity": "National Association of Regulatory Commissioners (NARUC)",
+      "kind": "organization",
+      "role": "Regulatory body that requested major study of time-of-day metering and load management",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "213"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R012"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C058",
+      "complainer_id": "p1074_35556036806586_K056",
+      "file": "complaints/p1074_35556036806586_C058_h_jesse_grove.json",
+      "order": 58,
+      "entity": "H. Jesse Grove",
+      "kind": "individual",
+      "role": "Recreation resource rater (Dysart et al., 1973)",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "220"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C059",
+      "complainer_id": "p1074_35556036806586_K051",
+      "file": "complaints/p1074_35556036806586_C059_dr_leland_rodgers.json",
+      "order": 59,
+      "entity": "Dr. Leland Rodgers",
+      "kind": "individual",
+      "role": "Researcher/scientist recommending protective status for Upper Falls of Bearcamp Creek",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "223"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C060",
+      "complainer_id": "p1074_35556036806586_K077",
+      "file": "complaints/p1074_35556036806586_C060_scwmrd.json",
+      "order": 60,
+      "entity": "SCWMRD",
+      "kind": "agency",
+      "role": "South Carolina Wildlife and Marine Resources Department",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "241"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R013"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C061",
+      "complainer_id": "p1074_35556036806586_K077",
+      "file": "complaints/p1074_35556036806586_C061_scwmrd.json",
+      "order": 61,
+      "entity": "SCWMRD",
+      "kind": "agency",
+      "role": "South Carolina Wildlife and Marine Resources Department",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "241"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R014"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C062",
+      "complainer_id": "p1074_35556036806586_K077",
+      "file": "complaints/p1074_35556036806586_C062_scwmrd.json",
+      "order": 62,
+      "entity": "SCWMRD",
+      "kind": "agency",
+      "role": "South Carolina Wildlife and Marine Resources Department",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "241"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R015"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C063",
+      "complainer_id": "p1074_35556036806586_K080",
+      "file": "complaints/p1074_35556036806586_C063_trout_unlimited.json",
+      "order": 63,
+      "entity": "Trout Unlimited",
+      "kind": "organization",
+      "role": "commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "241"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R016"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C064",
+      "complainer_id": "p1074_35556036806586_K080",
+      "file": "complaints/p1074_35556036806586_C064_trout_unlimited.json",
+      "order": 64,
+      "entity": "Trout Unlimited",
+      "kind": "organization",
+      "role": "commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "241"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R017"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C065",
+      "complainer_id": "p1074_35556036806586_K066",
+      "file": "complaints/p1074_35556036806586_C065_interior.json",
+      "order": 65,
+      "entity": "Interior",
+      "kind": "agency",
+      "role": "U.S. Department of the Interior",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "242"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R018"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C066",
+      "complainer_id": "p1074_35556036806586_K065",
+      "file": "complaints/p1074_35556036806586_C066_deputy_assistant_secretary_of_the_interi.json",
+      "order": 66,
+      "entity": "Deputy Assistant Secretary of the Interior",
+      "kind": "official",
+      "role": "Deputy Assistant Secretary, U.S. Department of the Interior",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "256"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R019"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C067",
+      "complainer_id": "p1074_35556036806586_K081",
+      "file": "complaints/p1074_35556036806586_C067_united_states_department_of_the_interior.json",
+      "order": 67,
+      "entity": "United States Department of the Interior",
+      "kind": "agency",
+      "role": "federal agency commenter",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "256"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R020"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C068",
+      "complainer_id": "p1074_35556036806586_K061",
+      "file": "complaints/p1074_35556036806586_C068_charles_custard.json",
+      "order": 68,
+      "entity": "Charles Custard",
+      "kind": "official",
+      "role": "Director, Office of Environmental Affairs, Department of Health, Education, and Welfare",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "letter",
+      "evidence_pages": [
+        "259"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C069",
+      "complainer_id": "p1074_35556036806586_K061",
+      "file": "complaints/p1074_35556036806586_C069_charles_custard.json",
+      "order": 69,
+      "entity": "Charles Custard",
+      "kind": "official",
+      "role": "Director, Office of Environmental Affairs, Department of Health, Education, and Welfare",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "259"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C070",
+      "complainer_id": "p1074_35556036806586_K064",
+      "file": "complaints/p1074_35556036806586_C070_department_of_the_army.json",
+      "order": 70,
+      "entity": "DEPARTMENT OF THE ARMY",
+      "kind": "agency",
+      "role": "federal agency commenter",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "260"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C071",
+      "complainer_id": "p1074_35556036806586_K069",
+      "file": "complaints/p1074_35556036806586_C071_john_r_hill_jr.json",
+      "order": 71,
+      "entity": "JOHN R. HILL, JR.",
+      "kind": "official",
+      "role": "LTC, Corps of Engineers, Assistant Director of Civil Works, Environmental Programs",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "260"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C072",
+      "complainer_id": "p1074_35556036806586_K063",
+      "file": "complaints/p1074_35556036806586_C072_department_of_agriculture.json",
+      "order": 72,
+      "entity": "DEPARTMENT OF AGRICULTURE",
+      "kind": "agency",
+      "role": "federal agency commenter",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "261"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C073",
+      "complainer_id": "p1074_35556036806586_K071",
+      "file": "complaints/p1074_35556036806586_C073_paul_a_vander_myde.json",
+      "order": 73,
+      "entity": "PAUL A. VANDER MYDE",
+      "kind": "official",
+      "role": "Deputy Assistant Secretary, Department of Agriculture",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "261"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C074",
+      "complainer_id": "p1074_35556036806586_K082",
+      "file": "complaints/p1074_35556036806586_C074_united_states_environmental_protection_a.json",
+      "order": 74,
+      "entity": "UNITED STATES ENVIRONMENTAL PROTECTION AGENCY REGION IV",
+      "kind": "agency",
+      "role": "federal agency commenter",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "262"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C075",
+      "complainer_id": "p1074_35556036806586_K067",
+      "file": "complaints/p1074_35556036806586_C075_jack_e_ravan.json",
+      "order": 75,
+      "entity": "Jack E. Ravan",
+      "kind": "official",
+      "role": "Regional Administrator, EPA Region IV",
+      "stance": "opposed",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "263"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C076",
+      "complainer_id": "p1074_35556036806586_K062",
+      "file": "complaints/p1074_35556036806586_C076_daniel_r_muller.json",
+      "order": 76,
+      "entity": "Daniel R. Muller",
+      "kind": "official",
+      "role": "Assistant Director for Environmental Projects, Division of Reactor Licensing, Nuclear Regulatory Commission",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "264"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C077",
+      "complainer_id": "p1074_35556036806586_K083",
+      "file": "complaints/p1074_35556036806586_C077_united_states_nuclear_regulatory_commiss.json",
+      "order": 77,
+      "entity": "UNITED STATES NUCLEAR REGULATORY COMMISSION",
+      "kind": "agency",
+      "role": "federal agency commenter",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "264"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C078",
+      "complainer_id": "p1074_35556036806586_K073",
+      "file": "complaints/p1074_35556036806586_C078_peter_a_krenkel.json",
+      "order": 78,
+      "entity": "Peter A. Krenkel",
+      "kind": "official",
+      "role": "Director of Environmental Planning, Tennessee Valley Authority",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "265"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C079",
+      "complainer_id": "p1074_35556036806586_K068",
+      "file": "complaints/p1074_35556036806586_C079_james_a_timmerman_jr.json",
+      "order": 79,
+      "entity": "James A. Timmerman, Jr.",
+      "kind": "official",
+      "role": "Executive Director, South Carolina Wildlife and Marine Resources Department",
+      "stance": "opposed",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "267"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C080",
+      "complainer_id": "p1074_35556036806586_K068",
+      "file": "complaints/p1074_35556036806586_C080_james_a_timmerman_jr.json",
+      "order": 80,
+      "entity": "James A. Timmerman, Jr.",
+      "kind": "official",
+      "role": "Executive Director, South Carolina Wildlife and Marine Resources Department",
+      "stance": "opposed",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "267"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R021"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C081",
+      "complainer_id": "p1074_35556036806586_K068",
+      "file": "complaints/p1074_35556036806586_C081_james_a_timmerman_jr.json",
+      "order": 81,
+      "entity": "James A. Timmerman, Jr.",
+      "kind": "official",
+      "role": "Executive Director, South Carolina Wildlife and Marine Resources Department",
+      "stance": "opposed",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "267"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R022"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C082",
+      "complainer_id": "p1074_35556036806586_K074",
+      "file": "complaints/p1074_35556036806586_C082_randy_geddings.json",
+      "order": 82,
+      "entity": "Randy Geddings",
+      "kind": "official",
+      "role": "Fisheries Biologist, South Carolina Wildlife and Marine Resources Department",
+      "stance": "opposed",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "278"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R023"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C083",
+      "complainer_id": "p1074_35556036806586_K076",
+      "file": "complaints/p1074_35556036806586_C083_rudolph_mitchell.json",
+      "order": 83,
+      "entity": "Rudolph Mitchell",
+      "kind": "official",
+      "role": "Chairman, South Carolina Public Service Commission",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "280"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R024"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C084",
+      "complainer_id": "p1074_35556036806586_K079",
+      "file": "complaints/p1074_35556036806586_C084_state_of_south_carolina_the_public_servi.json",
+      "order": 84,
+      "entity": "STATE OF SOUTH CAROLINA THE PUBLIC SERVICE COMMISSION",
+      "kind": "agency",
+      "role": "state regulatory agency commenter",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "280"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R025"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C085",
+      "complainer_id": "p1074_35556036806586_K060",
+      "file": "complaints/p1074_35556036806586_C085_c_barry_shedrow.json",
+      "order": 85,
+      "entity": "C. Barry Shedrow",
+      "kind": "official",
+      "role": "Environmental Analysis Section, Programs Development Division, Bureau of Wastewater & Stream Quality Control, SC DHEC",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "281"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R026"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C086",
+      "complainer_id": "p1074_35556036806586_K072",
+      "file": "complaints/p1074_35556036806586_C086_paul_w_cobb.json",
+      "order": 86,
+      "entity": "Paul W. Cobb",
+      "kind": "official",
+      "role": "State Highway Engineer, South Carolina State Highway Department",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "letter",
+      "evidence_pages": [
+        "283"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R027"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C087",
+      "complainer_id": "p1074_35556036806586_K075",
+      "file": "complaints/p1074_35556036806586_C087_robert_e_gaillard.json",
+      "order": 87,
+      "entity": "Robert E. Gaillard",
+      "kind": "official",
+      "role": "Mayor, Walhalla, South Carolina",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "283"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C088",
+      "complainer_id": "p1074_35556036806586_K078",
+      "file": "complaints/p1074_35556036806586_C088_south_carolina_state_highway_department.json",
+      "order": 88,
+      "entity": "SOUTH CAROLINA STATE HIGHWAY DEPARTMENT",
+      "kind": "agency",
+      "role": "state agency commenter",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "letter",
+      "evidence_pages": [
+        "283"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R028"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C089",
+      "complainer_id": "p1074_35556036806586_K070",
+      "file": "complaints/p1074_35556036806586_C089_l_c_dail.json",
+      "order": 89,
+      "entity": "L. C. Dail",
+      "kind": "official",
+      "role": "Chief Engineer, Civil-Environmental Division, Duke Power Company",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "284"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C090",
+      "complainer_id": "p1074_35556036806586_K084",
+      "file": "complaints/p1074_35556036806586_C090_w_h_owen.json",
+      "order": 90,
+      "entity": "W. H. Owen",
+      "kind": "official",
+      "role": "Vice President, Design Engineering, Duke Power Company",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "letter",
+      "evidence_pages": [
+        "285"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C091",
+      "complainer_id": "p1074_35556036806586_K084",
+      "file": "complaints/p1074_35556036806586_C091_w_h_owen.json",
+      "order": 91,
+      "entity": "W. H. Owen",
+      "kind": "official",
+      "role": "Vice President, Design Engineering, Duke Power Company",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "written_comment",
+      "evidence_pages": [
+        "285-295"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R029"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C092",
+      "complainer_id": "p1074_35556036806586_K070",
+      "file": "complaints/p1074_35556036806586_C092_l_c_dail.json",
+      "order": 92,
+      "entity": "L. C. Dail",
+      "kind": "official",
+      "role": "Chief Engineer, Civil-Environmental Division, Duke Power Company",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "286-294"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R030"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C093",
+      "complainer_id": "p1074_35556036806586_K090",
+      "file": "complaints/p1074_35556036806586_C093_joseph_e_green_jr.json",
+      "order": 93,
+      "entity": "Joseph E. Green, Jr.",
+      "kind": "individual",
+      "role": "botanist/researcher contributing plant survey data",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "293"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R031"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C094",
+      "complainer_id": "p1074_35556036806586_K085",
+      "file": "complaints/p1074_35556036806586_C094_billy_l_edge.json",
+      "order": 94,
+      "entity": "Billy L. Edge",
+      "kind": "individual",
+      "role": "researcher/author of study on Bad Creek pumped storage effects",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "296"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R032"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C095",
+      "complainer_id": "p1074_35556036806586_K086",
+      "file": "complaints/p1074_35556036806586_C095_cherokee_foothill_trail_conference.json",
+      "order": 95,
+      "entity": "Cherokee Foothill Trail Conference",
+      "kind": "organization",
+      "role": "trail organization commenter",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "296"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R033"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C096",
+      "complainer_id": "p1074_35556036806586_K087",
+      "file": "complaints/p1074_35556036806586_C096_don_archer.json",
+      "order": 96,
+      "entity": "Don Archer",
+      "kind": "individual",
+      "role": "Fishery Biologist, South Carolina Wildlife and Marine Resource Department",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "296"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R034"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C097",
+      "complainer_id": "p1074_35556036806586_K085",
+      "file": "complaints/p1074_35556036806586_C097_billy_l_edge.json",
+      "order": 97,
+      "entity": "Billy L. Edge",
+      "kind": "individual",
+      "role": "researcher/author of study on Bad Creek pumped storage effects",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "299"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R035"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C098",
+      "complainer_id": "p1074_35556036806586_K088",
+      "file": "complaints/p1074_35556036806586_C098_dr_richard_bruce.json",
+      "order": 98,
+      "entity": "Dr. Richard Bruce",
+      "kind": "individual",
+      "role": "herpetologist, Western Carolina University",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "300"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R036"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C099",
+      "complainer_id": "p1074_35556036806586_K090",
+      "file": "complaints/p1074_35556036806586_C099_joseph_e_green_jr.json",
+      "order": 99,
+      "entity": "Joseph E. Green, Jr.",
+      "kind": "individual",
+      "role": "botanist/researcher contributing plant survey data",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "301"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R037"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C100",
+      "complainer_id": "p1074_35556036806586_K085",
+      "file": "complaints/p1074_35556036806586_C100_billy_l_edge.json",
+      "order": 100,
+      "entity": "Billy L. Edge",
+      "kind": "individual",
+      "role": "researcher/author of study on Bad Creek pumped storage effects",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "302"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R038"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C101",
+      "complainer_id": "p1074_35556036806586_K089",
+      "file": "complaints/p1074_35556036806586_C101_duke.json",
+      "order": 101,
+      "entity": "Duke",
+      "kind": "organization",
+      "role": "project applicant (Duke Power Company)",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "302"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R039"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C102",
+      "complainer_id": "p1074_35556036806586_K089",
+      "file": "complaints/p1074_35556036806586_C102_duke.json",
+      "order": 102,
+      "entity": "Duke",
+      "kind": "organization",
+      "role": "project applicant (Duke Power Company)",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "302"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R040"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C103",
+      "complainer_id": "p1074_35556036806586_K091",
+      "file": "complaints/p1074_35556036806586_C103_u_s_department_of_the_interior.json",
+      "order": 103,
+      "entity": "U. S. Department of the Interior",
+      "kind": "agency",
+      "role": "federal agency commenting on wildlife management",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "303"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R041"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C104",
+      "complainer_id": "p1074_35556036806586_K089",
+      "file": "complaints/p1074_35556036806586_C104_duke.json",
+      "order": 104,
+      "entity": "Duke",
+      "kind": "organization",
+      "role": "project applicant (Duke Power Company)",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "304"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R042"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C105",
+      "complainer_id": "p1074_35556036806586_K096",
+      "file": "complaints/p1074_35556036806586_C105_south_carolina_chapter_of_trout_unlimite.json",
+      "order": 105,
+      "entity": "South Carolina Chapter of Trout Unlimited",
+      "kind": "organization",
+      "role": "commenter on Draft Environmental Statement",
+      "stance": "opposed",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "335",
+        "336",
+        "337"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R043"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C106",
+      "complainer_id": "p1074_35556036806586_K096",
+      "file": "complaints/p1074_35556036806586_C106_south_carolina_chapter_of_trout_unlimite.json",
+      "order": 106,
+      "entity": "South Carolina Chapter of Trout Unlimited",
+      "kind": "organization",
+      "role": "commenter on Draft Environmental Statement",
+      "stance": "opposed",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "345"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C107",
+      "complainer_id": "p1074_35556036806586_K096",
+      "file": "complaints/p1074_35556036806586_C107_south_carolina_chapter_of_trout_unlimite.json",
+      "order": 107,
+      "entity": "South Carolina Chapter of Trout Unlimited",
+      "kind": "organization",
+      "role": "commenter on Draft Environmental Statement",
+      "stance": "opposed",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "345",
+        "346",
+        "347",
+        "348",
+        "349"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R044"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C108",
+      "complainer_id": "p1074_35556036806586_K096",
+      "file": "complaints/p1074_35556036806586_C108_south_carolina_chapter_of_trout_unlimite.json",
+      "order": 108,
+      "entity": "South Carolina Chapter of Trout Unlimited",
+      "kind": "organization",
+      "role": "commenter on Draft Environmental Statement",
+      "stance": "opposed",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "349",
+        "350",
+        "351",
+        "352",
+        "353"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R045"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C109",
+      "complainer_id": "p1074_35556036806586_K097",
+      "file": "complaints/p1074_35556036806586_C109_south_carolina_wildlife_and_marine_resou.json",
+      "order": 109,
+      "entity": "South Carolina Wildlife and Marine Resources",
+      "kind": "agency",
+      "role": "conducting ongoing studies of reproductive and nursery success in lower Howard Creek",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "352"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C110",
+      "complainer_id": "p1074_35556036806586_K093",
+      "file": "complaints/p1074_35556036806586_C110_john_j_weins.json",
+      "order": 110,
+      "entity": "John J. Weins",
+      "kind": "individual",
+      "role": "member, LeConte Chapter, Sierra Club",
+      "stance": "opposed",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "367"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R046"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C111",
+      "complainer_id": "p1074_35556036806586_K094",
+      "file": "complaints/p1074_35556036806586_C111_leconte_chapter_of_the_sierra_club.json",
+      "order": 111,
+      "entity": "LeConte Chapter of the Sierra Club",
+      "kind": "organization",
+      "role": "commenter on Draft Environmental Impact Statement",
+      "stance": "opposed",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "367"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R047"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C112",
+      "complainer_id": "p1074_35556036806586_K094",
+      "file": "complaints/p1074_35556036806586_C112_leconte_chapter_of_the_sierra_club.json",
+      "order": 112,
+      "entity": "LeConte Chapter of the Sierra Club",
+      "kind": "organization",
+      "role": "commenter on Draft Environmental Impact Statement",
+      "stance": "opposed",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "367"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C113",
+      "complainer_id": "p1074_35556036806586_K092",
+      "file": "complaints/p1074_35556036806586_C113_john_j_hagins.json",
+      "order": 113,
+      "entity": "John J. Hagins",
+      "kind": "individual",
+      "role": "biologist, Joseph LeConte Chapter, Sierra Club",
+      "stance": "opposed",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "371"
+      ],
+      "response_ids": [
+        "p1074_35556036806586_R048"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C114",
+      "complainer_id": "p1074_35556036806586_K092",
+      "file": "complaints/p1074_35556036806586_C114_john_j_hagins.json",
+      "order": 114,
+      "entity": "John J. Hagins",
+      "kind": "individual",
+      "role": "biologist, Joseph LeConte Chapter, Sierra Club",
+      "stance": "opposed",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "371"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C115",
+      "complainer_id": "p1074_35556036806586_K092",
+      "file": "complaints/p1074_35556036806586_C115_john_j_hagins.json",
+      "order": 115,
+      "entity": "John J. Hagins",
+      "kind": "individual",
+      "role": "biologist, Joseph LeConte Chapter, Sierra Club",
+      "stance": "opposed",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "371"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C116",
+      "complainer_id": "p1074_35556036806586_K002",
+      "file": "complaints/p1074_35556036806586_C116_department_of_the_army_corps_of_engineer.json",
+      "order": 116,
+      "entity": "Department of the Army--Corps of Engineers",
+      "kind": "agency",
+      "role": "Federal agency requested to review draft EIS; responded",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C117",
+      "complainer_id": "p1074_35556036806586_K003",
+      "file": "complaints/p1074_35556036806586_C117_department_of_the_interior.json",
+      "order": 117,
+      "entity": "Department of the Interior",
+      "kind": "agency",
+      "role": "Federal agency requested to review draft EIS; responded",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C118",
+      "complainer_id": "p1074_35556036806586_K005",
+      "file": "complaints/p1074_35556036806586_C118_environmental_protection_agency.json",
+      "order": 118,
+      "entity": "Environmental Protection Agency",
+      "kind": "agency",
+      "role": "Federal agency requested to review draft EIS; responded",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C119",
+      "complainer_id": "p1074_35556036806586_K007",
+      "file": "complaints/p1074_35556036806586_C119_joseph_leconte_chapter_sierra_club.json",
+      "order": 119,
+      "entity": "Joseph Leconte Chapter, Sierra Club",
+      "kind": "organization",
+      "role": "Commenter on draft EIS",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C120",
+      "complainer_id": "p1074_35556036806586_K008",
+      "file": "complaints/p1074_35556036806586_C120_nuclear_regulatory_commission.json",
+      "order": 120,
+      "entity": "Nuclear Regulatory Commission",
+      "kind": "agency",
+      "role": "Federal agency requested to review draft EIS; responded",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C121",
+      "complainer_id": "p1074_35556036806586_K009",
+      "file": "complaints/p1074_35556036806586_C121_south_carolina_chapter_trout_unlimited.json",
+      "order": 121,
+      "entity": "South Carolina Chapter, Trout Unlimited",
+      "kind": "organization",
+      "role": "Commenter on draft EIS",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C122",
+      "complainer_id": "p1074_35556036806586_K011",
+      "file": "complaints/p1074_35556036806586_C122_south_carolina_department_of_highways.json",
+      "order": 122,
+      "entity": "South Carolina Department of Highways",
+      "kind": "agency",
+      "role": "State agency requested to review draft EIS; responded",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C123",
+      "complainer_id": "p1074_35556036806586_K012",
+      "file": "complaints/p1074_35556036806586_C123_south_carolina_public_service_commission.json",
+      "order": 123,
+      "entity": "South Carolina Public Service Commission",
+      "kind": "agency",
+      "role": "State agency requested to review draft EIS; responded",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C124",
+      "complainer_id": "p1074_35556036806586_K013",
+      "file": "complaints/p1074_35556036806586_C124_south_carolina_wildlife_and_marine_resou.json",
+      "order": 124,
+      "entity": "South Carolina Wildlife and Marine Resources Commission",
+      "kind": "agency",
+      "role": "State agency requested to review draft EIS; responded",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C125",
+      "complainer_id": "p1074_35556036806586_K015",
+      "file": "complaints/p1074_35556036806586_C125_town_of_walhalla_south_carolina.json",
+      "order": 125,
+      "entity": "Town of Walhalla, South Carolina",
+      "kind": "government",
+      "role": "Local agency requested to review draft EIS; responded",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C126",
+      "complainer_id": "p1074_35556036806586_K017",
+      "file": "complaints/p1074_35556036806586_C126_applicant.json",
+      "order": 126,
+      "entity": "Applicant",
+      "kind": "organization",
+      "role": "Duke Power Company — project applicant",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "56",
+        "98",
+        "145"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C127",
+      "complainer_id": "p1074_35556036806586_K022",
+      "file": "complaints/p1074_35556036806586_C127_u_s_food_and_drug_administration_fda.json",
+      "order": 127,
+      "entity": "U.S. Food and Drug Administration (FDA)",
+      "kind": "agency",
+      "role": "Federal regulatory agency — setting maximum methylmercury limit for fish",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "89"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C128",
+      "complainer_id": "p1074_35556036806586_K023",
+      "file": "complaints/p1074_35556036806586_C128_u_s_forest_service.json",
+      "order": 128,
+      "entity": "U.S. Forest Service",
+      "kind": "agency",
+      "role": "Federal land management agency — managing Whitewater Falls Scenic Area",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "53",
+        "104"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C129",
+      "complainer_id": "p1074_35556036806586_K039",
+      "file": "complaints/p1074_35556036806586_C129_foothills_trail_conference_inc.json",
+      "order": 129,
+      "entity": "Foothills Trail Conference, Inc.",
+      "kind": "organization",
+      "role": "Advisory body for hiking trail management",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "176"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C130",
+      "complainer_id": "p1074_35556036806586_K043",
+      "file": "complaints/p1074_35556036806586_C130_medical_entomologist_of_the_south_caroli.json",
+      "order": 130,
+      "entity": "Medical Entomologist of the South Carolina State Board of Health and Environmental Control",
+      "kind": "official",
+      "role": "State health official consulted on insect problems",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "172"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C131",
+      "complainer_id": "p1074_35556036806586_K049",
+      "file": "complaints/p1074_35556036806586_C131_crescent_land_and_timber_company.json",
+      "order": 131,
+      "entity": "Crescent Land and Timber Company",
+      "kind": "organization",
+      "role": "Land owner with wildlife management agreement at Bearcamp Creek site",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "224"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C132",
+      "complainer_id": "p1074_35556036806586_K095",
+      "file": "complaints/p1074_35556036806586_C132_robert_f_martin_p_e.json",
+      "order": 132,
+      "entity": "Robert F. Martin, P.E.",
+      "kind": "individual",
+      "role": "commenter, South Carolina Chapter of Trout Unlimited",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "337"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036806586_C133",
+      "complainer_id": "p1074_35556036806586_K098",
+      "file": "complaints/p1074_35556036806586_C133_warren_h_oven.json",
+      "order": 133,
+      "entity": "Warren H. Oven",
+      "kind": "individual",
+      "role": "recipient of memo discussing Bad Creek project alternatives",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "370"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "child_id": "p1074_35556036806586_R001",
+      "parent_id": "p1074_35556036806586_C011",
+      "file": "responses/p1074_35556036806586_R001_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R002",
+      "parent_id": "p1074_35556036806586_C019",
+      "file": "responses/p1074_35556036806586_R002_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R003",
+      "parent_id": "p1074_35556036806586_C020",
+      "file": "responses/p1074_35556036806586_R003_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R004",
+      "parent_id": "p1074_35556036806586_C021",
+      "file": "responses/p1074_35556036806586_R004_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R005",
+      "parent_id": "p1074_35556036806586_C035",
+      "file": "responses/p1074_35556036806586_R005_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R006",
+      "parent_id": "p1074_35556036806586_C039",
+      "file": "responses/p1074_35556036806586_R006_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R007",
+      "parent_id": "p1074_35556036806586_C040",
+      "file": "responses/p1074_35556036806586_R007_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R008",
+      "parent_id": "p1074_35556036806586_C041",
+      "file": "responses/p1074_35556036806586_R008_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R009",
+      "parent_id": "p1074_35556036806586_C042",
+      "file": "responses/p1074_35556036806586_R009_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R010",
+      "parent_id": "p1074_35556036806586_C047",
+      "file": "responses/p1074_35556036806586_R010_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R011",
+      "parent_id": "p1074_35556036806586_C055",
+      "file": "responses/p1074_35556036806586_R011_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R012",
+      "parent_id": "p1074_35556036806586_C057",
+      "file": "responses/p1074_35556036806586_R012_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R013",
+      "parent_id": "p1074_35556036806586_C060",
+      "file": "responses/p1074_35556036806586_R013_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R014",
+      "parent_id": "p1074_35556036806586_C061",
+      "file": "responses/p1074_35556036806586_R014_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R015",
+      "parent_id": "p1074_35556036806586_C062",
+      "file": "responses/p1074_35556036806586_R015_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R016",
+      "parent_id": "p1074_35556036806586_C063",
+      "file": "responses/p1074_35556036806586_R016_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R017",
+      "parent_id": "p1074_35556036806586_C064",
+      "file": "responses/p1074_35556036806586_R017_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R018",
+      "parent_id": "p1074_35556036806586_C065",
+      "file": "responses/p1074_35556036806586_R018_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R019",
+      "parent_id": "p1074_35556036806586_C066",
+      "file": "responses/p1074_35556036806586_R019_preparer_reply.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "preparer_reply",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R020",
+      "parent_id": "p1074_35556036806586_C067",
+      "file": "responses/p1074_35556036806586_R020_preparer_reply.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "preparer_reply",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R021",
+      "parent_id": "p1074_35556036806586_C080",
+      "file": "responses/p1074_35556036806586_R021_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R022",
+      "parent_id": "p1074_35556036806586_C081",
+      "file": "responses/p1074_35556036806586_R022_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R023",
+      "parent_id": "p1074_35556036806586_C082",
+      "file": "responses/p1074_35556036806586_R023_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R024",
+      "parent_id": "p1074_35556036806586_C083",
+      "file": "responses/p1074_35556036806586_R024_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R025",
+      "parent_id": "p1074_35556036806586_C084",
+      "file": "responses/p1074_35556036806586_R025_preparer_reply.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "preparer_reply",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R026",
+      "parent_id": "p1074_35556036806586_C085",
+      "file": "responses/p1074_35556036806586_R026_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R027",
+      "parent_id": "p1074_35556036806586_C086",
+      "file": "responses/p1074_35556036806586_R027_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R028",
+      "parent_id": "p1074_35556036806586_C088",
+      "file": "responses/p1074_35556036806586_R028_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R029",
+      "parent_id": "p1074_35556036806586_C091",
+      "file": "responses/p1074_35556036806586_R029_preparer_reply.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "preparer_reply",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R030",
+      "parent_id": "p1074_35556036806586_C092",
+      "file": "responses/p1074_35556036806586_R030_preparer_reply.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "preparer_reply",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R031",
+      "parent_id": "p1074_35556036806586_C093",
+      "file": "responses/p1074_35556036806586_R031_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R032",
+      "parent_id": "p1074_35556036806586_C094",
+      "file": "responses/p1074_35556036806586_R032_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R033",
+      "parent_id": "p1074_35556036806586_C095",
+      "file": "responses/p1074_35556036806586_R033_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R034",
+      "parent_id": "p1074_35556036806586_C096",
+      "file": "responses/p1074_35556036806586_R034_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R035",
+      "parent_id": "p1074_35556036806586_C097",
+      "file": "responses/p1074_35556036806586_R035_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R036",
+      "parent_id": "p1074_35556036806586_C098",
+      "file": "responses/p1074_35556036806586_R036_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R037",
+      "parent_id": "p1074_35556036806586_C099",
+      "file": "responses/p1074_35556036806586_R037_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R038",
+      "parent_id": "p1074_35556036806586_C100",
+      "file": "responses/p1074_35556036806586_R038_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R039",
+      "parent_id": "p1074_35556036806586_C101",
+      "file": "responses/p1074_35556036806586_R039_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R040",
+      "parent_id": "p1074_35556036806586_C102",
+      "file": "responses/p1074_35556036806586_R040_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R041",
+      "parent_id": "p1074_35556036806586_C103",
+      "file": "responses/p1074_35556036806586_R041_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R042",
+      "parent_id": "p1074_35556036806586_C104",
+      "file": "responses/p1074_35556036806586_R042_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R043",
+      "parent_id": "p1074_35556036806586_C105",
+      "file": "responses/p1074_35556036806586_R043_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R044",
+      "parent_id": "p1074_35556036806586_C107",
+      "file": "responses/p1074_35556036806586_R044_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R045",
+      "parent_id": "p1074_35556036806586_C108",
+      "file": "responses/p1074_35556036806586_R045_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R046",
+      "parent_id": "p1074_35556036806586_C110",
+      "file": "responses/p1074_35556036806586_R046_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R047",
+      "parent_id": "p1074_35556036806586_C111",
+      "file": "responses/p1074_35556036806586_R047_federal_power_commission.json",
+      "agency": "Federal Power Commission",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036806586_R048",
+      "parent_id": "p1074_35556036806586_C113",
+      "file": "responses/p1074_35556036806586_R048_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    }
+  ]
+}

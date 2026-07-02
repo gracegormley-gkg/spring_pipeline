@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C038",
+  "complainer_id": "p1074_35556038322269_K046",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 38,
+  "entity": "SCRTD Bus Planning Department",
+  "kind": "agency",
+  "role": "Department coordinating interface between DPM and downtown L.A. bus system",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "described as coordinating DPM-bus interface modeling without expressing support or opposition",
+  "summary": "The SCRTD Bus Planning Department is described as having coordinated with the CRA on modeling the interface between the Downtown People Mover and the downtown L.A. bus system. Their work addressed downtown bus routing to maximize transfer opportunities with the DPM while avoiding forced transfers. No position for or against any specific alternative is attributed to them.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The SCRTD Bus Planning Department coordinated with the CRA to model the DPM-bus interface, focusing on orienting downtown bus routing to maximize DPM transfer opportunities while preserving through-routing so passengers could exercise modal preference.",
+  "evidence_pages": [
+    "110"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "For modeling purposes, the interface between the DPM and the downtown L.A. bus system was coordinated by the CRA and the SCRTD Bus Planning Department.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "110"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "For modeling purposes, the interface between the DPM and the downtown L.A. bus system was coordinated by the CRA and the SCRTD Bus Planning Department.",
+      "quote_verified": true,
+      "entity_as_written": "SCRTD Bus Planning Department",
+      "role_as_written": "Department coordinating interface between DPM and downtown L.A. bus system"
+    }
+  ],
+  "window_pages": [
+    100,
+    120
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 46,
+  "synthetic_no_complaint": false
+}

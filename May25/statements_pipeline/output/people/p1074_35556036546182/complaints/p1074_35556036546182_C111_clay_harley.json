@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036546182_C111",
+  "complainer_id": "p1074_35556036546182_K076",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 111,
+  "entity": "Clay Harley",
+  "kind": "official",
+  "role": "District Chief Freeway Engineer, Milwaukee Metropolitan District, Division of Highways",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "testified as a procedural/informational presenter, identifying exhibits and reading the project statement without expressing personal support or opposition",
+  "summary": "Clay Harley, District Chief Freeway Engineer for the Milwaukee Metropolitan District Division of Highways, testified at the July 11, 1974 Environmental Public Hearing in an official capacity. His testimony was purely procedural and informational: he identified and described the hearing exhibits on display and read the project statement summarizing the needs, benefits, alternates considered, and the Division of Highways' recommended alignment. No personal position for or against the project was expressed, and no response was deemed necessary.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Clay Harley identified and described the hearing exhibits on display and read the project statement summarizing the needs and benefits of the proposed highway improvement, the alternates considered, and the Division of Highways' recommended alignment.",
+  "evidence_pages": [
+    "223"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R035"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Identified and described the hearing exhibits on display. Read the project statement which summarized the needs and benefits of the proposed highway improvement, the alternates considered and the Division of Highways recommended alignment.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "223"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Identified and described the hearing exhibits on display. Read the project statement which summarized the needs and benefits of the proposed highway improvement, the alternates considered and the Division of Highways recommended alignment.",
+      "quote_verified": true,
+      "entity_as_written": "Clay Harley",
+      "role_as_written": "District Chief Freeway Engineer, Milwaukee Metropolitan District, Division of Highways"
+    }
+  ],
+  "window_pages": [
+    213,
+    233
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 76,
+  "synthetic_no_complaint": false
+}

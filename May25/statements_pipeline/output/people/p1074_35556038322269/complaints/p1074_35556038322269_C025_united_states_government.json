@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556038322269_C025",
+  "complainer_id": "p1074_35556038322269_K039",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 25,
+  "entity": "United States Government",
+  "kind": "government",
+  "role": "Federal government",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "UMTA policy cited as supporting rail transit only with sufficient patronage, public support, and incremental approach; U.S. Secretary of Transportation approved some elements but required additional environmental and engineering work for Element IV",
+  "summary": "The United States Government is listed as one of six governmental entities whose goals and objectives inform the proposed Los Angeles Regional Core Rapid Transit System. Its policy positions are represented primarily through UMTA's 'Policy Toward Rail Transit' (1978), which gives preference to initial rail segments in densely populated central areas and requires cost-effectiveness and local supportive policies, and through the U.S. Secretary of Transportation's December 1976 letter approving preliminary engineering on Elements I–III while requiring only 'initial' engineering and an EIS for Element IV (the rail rapid transit element). The U.S. Department of Transportation also approved the I-105 Century Freeway for construction and redesignated the Harbor Freeway as an interstate, enabling federal funding for related transit facilities.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The United States Government is identified as one of six governmental entities whose goals and objectives guide the proposed Regional Core Rapid Transit System, with its policy represented by UMTA's 'Policy Toward Rail Transit' (Federal Register, March 7, 1978), which gives preference to initial rail segments serving densely populated central portions of metropolitan areas and requires implementation of local supportive policies to enhance cost-effectiveness and economic viability.",
+  "evidence_pages": [
+    "71"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "In the area served by the proposed Los Angeles Regional Core Rapid Transit System, goals and objectives are developed by the following six governmental entities: ... (6) the United States Government",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "71"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In the area served by the proposed Los Angeles Regional Core Rapid Transit System, goals and objectives are developed by the following six governmental entities: ... (6) the United States Government",
+      "quote_verified": false,
+      "entity_as_written": "United States Government",
+      "role_as_written": "Federal government"
+    }
+  ],
+  "window_pages": [
+    61,
+    81
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 39,
+  "synthetic_no_complaint": false
+}

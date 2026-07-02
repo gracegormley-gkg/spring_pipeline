@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C122",
+  "complainer_id": "p1074_35556039563135_K090",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 122,
+  "entity": "Frank E. Glowacki",
+  "kind": "official",
+  "role": "Corporation Counsel, City of Chicago Heights",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "first letter conditions vacation of Sunnyside Avenue on just compensation; second letter confirms agreement to Scheme A",
+  "summary": "Frank E. Glowacki, Corporation Counsel for the City of Chicago Heights, first wrote to advise that the City would vacate Sunnyside Avenue only if it received just compensation from the State or the School District. He subsequently confirmed in a second letter that the City had agreed with School District No. 170 to adopt Scheme A for the recreational land replacement, contingent on the understandings set out in the Division of Highways' January 10, 1972 letter.",
+  "form": "letter",
+  "complaint_summary": "Glowacki states that the City will vacate Sunnyside Avenue only if it receives just compensation (for 8,100 sq ft) from either the State or the School District, and that any proposal must be approved by the City Council.",
+  "evidence_pages": [
+    "232"
+  ],
+  "statement": {
+    "text": "This is a follow-up of Mayor Bonick's letter of September 14, and in response to your letter of July 8, 1971 concerning closing Sunnyside Avenue. All of your proposals submitted with your letter are based on the assumption that Sunnyside would be vacated. The City will vacate Sunnyside provided it receives just compensation for the vacation, either from the State or the School District. This is an area of 8100 square feet. Any proposal you wish to submit must be approved by the City Council.",
+    "opening_anchor": "This is a follow-up of Mayor Bonick's letter of September 14, and in response to your letter of July 8, 1971 concerning closing Sunnyside Avenue.",
+    "closing_anchor": "This is an area of 8100 square feet. Any proposal you wish to submit must be approved by the City Council.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556039563135_R053"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "the City of Chicago Heights has agreed with School District No. 170 to adopt Scheme A, dated April 27, 1971, which accompanied your letter of July 8, 1971, addressed to Mayor George R. Bonick.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "232"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "the City of Chicago Heights has agreed with School District No. 170 to adopt Scheme A, dated April 27, 1971, which accompanied your letter of July 8, 1971, addressed to Mayor George R. Bonick.",
+      "quote_verified": true,
+      "entity_as_written": "Frank E. Glowacki",
+      "role_as_written": "Corporation Counsel, City of Chicago Heights"
+    }
+  ],
+  "window_pages": [
+    222,
+    242
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 90,
+  "synthetic_no_complaint": false
+}

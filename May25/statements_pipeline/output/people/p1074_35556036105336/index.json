@@ -1,0 +1,2055 @@
+{
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "title": "Randolph urban renewal area : environmental impact statement.",
+  "n_pages": 123,
+  "n_chunks": 3,
+  "n_raw_rows": 63,
+  "n_complainers": 50,
+  "n_complaints": 68,
+  "n_responses": 11,
+  "stance_counts": {
+    "neutral": 23,
+    "in_favor": 12,
+    "conditional": 13,
+    "opposed": 2
+  },
+  "stance_confidence_counts": {
+    "high": 9,
+    "medium": 34,
+    "low": 7,
+    "unknown": 0
+  },
+  "review_counts": {
+    "needs_review": 15,
+    "auto_ok": 35,
+    "reasons": {
+      "quote_not_verbatim": 5,
+      "low_stance_confidence": 7,
+      "no_complaints": 3,
+      "private_individual": 7
+    }
+  },
+  "statement_form_counts": {
+    "letter": 8,
+    "testimony": 1,
+    "written_comment": 6,
+    "narrator_paraphrase": 45,
+    "sectional": 5,
+    "none": 3,
+    "present": 65,
+    "absent": 3
+  },
+  "response_form_counts": {
+    "agency_response": 4,
+    "preparer_reply": 0,
+    "discussion": 7,
+    "none": 0,
+    "present": 11,
+    "absent": 0
+  },
+  "elapsed_sec": 123.5,
+  "usage": {
+    "extract": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 3,
+          "input_tokens": 53719,
+          "output_tokens": 6601,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.2602
+        }
+      ],
+      "total": {
+        "calls": 3,
+        "input_tokens": 53719,
+        "output_tokens": 6601,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.2602
+      }
+    },
+    "find_statement": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 50,
+          "input_tokens": 570322,
+          "output_tokens": 21733,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 2.037
+        }
+      ],
+      "total": {
+        "calls": 50,
+        "input_tokens": 570322,
+        "output_tokens": 21733,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 2.037
+      }
+    },
+    "total": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 53,
+          "input_tokens": 624041,
+          "output_tokens": 28334,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 2.2971
+        }
+      ],
+      "total": {
+        "calls": 53,
+        "input_tokens": 624041,
+        "output_tokens": 28334,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 2.2971
+      }
+    }
+  },
+  "schema": {
+    "ids": {
+      "complainer_id": "<doc_id>_K<NNN> — one per merged entity",
+      "complaint_id": "<doc_id>_C<NNN> — one per complaint instance (entities can have multiple)",
+      "child_id": "<doc_id>_R<NNN> — one per agency response"
+    },
+    "stance_vocabulary": [
+      "in_favor",
+      "opposed",
+      "conditional",
+      "neutral"
+    ],
+    "stance_confidence_vocabulary": [
+      "high",
+      "medium",
+      "low"
+    ],
+    "kind_vocabulary": [
+      "individual",
+      "official",
+      "organization",
+      "agency",
+      "tribe",
+      "government",
+      "other"
+    ],
+    "statement_forms": [
+      "letter",
+      "testimony",
+      "written_comment",
+      "narrator_paraphrase",
+      "sectional",
+      "none"
+    ],
+    "response_forms": [
+      "agency_response",
+      "preparer_reply",
+      "discussion",
+      "none"
+    ],
+    "stance_source": "Decided by find_statement at the entity level — same stance applies to all complaints from the same entity. Capped to 'medium' when no contiguous statement is verified for any complaint; forced 'low' when there are no complaints.",
+    "page_numbers": "EXACT — from per-page JSON source.",
+    "statement_text": "Sliced from the doc text between verbatim opening/closing anchors. Null when either anchor doesn't verify.",
+    "response_text": "Sliced from the doc text between verbatim response anchors. Null when either anchor doesn't verify or no response is in the window.",
+    "needs_human_review": "True when kind=='individual' OR summary_quote_verified is False OR stance_confidence=='low' OR no complaints were produced.",
+    "merge_rule": "One row per entity. find_statement may then return multiple complaints per entity — each becomes its own complaint file.",
+    "cost_note": "USD costs are ESTIMATES; verify against AWS Bedrock invoice."
+  },
+  "sequence": [
+    {
+      "order": 1,
+      "complaint_id": "p1074_35556036105336_C001",
+      "complainer_id": "p1074_35556036105336_K011",
+      "complaint_file": "complaints/p1074_35556036105336_C001_environmental_protection_agency.json",
+      "response_ids": []
+    },
+    {
+      "order": 2,
+      "complaint_id": "p1074_35556036105336_C002",
+      "complainer_id": "p1074_35556036105336_K004",
+      "complaint_file": "complaints/p1074_35556036105336_C002_city_of_richmond.json",
+      "response_ids": []
+    },
+    {
+      "order": 3,
+      "complaint_id": "p1074_35556036105336_C003",
+      "complainer_id": "p1074_35556036105336_K009",
+      "complaint_file": "complaints/p1074_35556036105336_C003_department_of_transportation_faa.json",
+      "response_ids": []
+    },
+    {
+      "order": 4,
+      "complaint_id": "p1074_35556036105336_C004",
+      "complainer_id": "p1074_35556036105336_K010",
+      "complaint_file": "complaints/p1074_35556036105336_C004_department_of_transportation_fhwa.json",
+      "response_ids": []
+    },
+    {
+      "order": 5,
+      "complaint_id": "p1074_35556036105336_C005",
+      "complainer_id": "p1074_35556036105336_K007",
+      "complaint_file": "complaints/p1074_35556036105336_C005_department_of_health_education_and_welfa.json",
+      "response_ids": []
+    },
+    {
+      "order": 6,
+      "complaint_id": "p1074_35556036105336_C006",
+      "complainer_id": "p1074_35556036105336_K014",
+      "complaint_file": "complaints/p1074_35556036105336_C006_maymont_civic_league.json",
+      "response_ids": []
+    },
+    {
+      "order": 7,
+      "complaint_id": "p1074_35556036105336_C007",
+      "complainer_id": "p1074_35556036105336_K013",
+      "complaint_file": "complaints/p1074_35556036105336_C007_l_s_mcbride.json",
+      "response_ids": []
+    },
+    {
+      "order": 8,
+      "complaint_id": "p1074_35556036105336_C008",
+      "complainer_id": "p1074_35556036105336_K015",
+      "complaint_file": "complaints/p1074_35556036105336_C008_randolph_planning_study_board_rpsb.json",
+      "response_ids": []
+    },
+    {
+      "order": 9,
+      "complaint_id": "p1074_35556036105336_C009",
+      "complainer_id": "p1074_35556036105336_K015",
+      "complaint_file": "complaints/p1074_35556036105336_C009_randolph_planning_study_board_rpsb.json",
+      "response_ids": []
+    },
+    {
+      "order": 10,
+      "complaint_id": "p1074_35556036105336_C010",
+      "complainer_id": "p1074_35556036105336_K003",
+      "complaint_file": "complaints/p1074_35556036105336_C010_citizens_of_randolph.json",
+      "response_ids": []
+    },
+    {
+      "order": 11,
+      "complaint_id": "p1074_35556036105336_C011",
+      "complainer_id": "p1074_35556036105336_K005",
+      "complaint_file": "complaints/p1074_35556036105336_C011_city_of_richmond_s_department_of_plannin.json",
+      "response_ids": []
+    },
+    {
+      "order": 12,
+      "complaint_id": "p1074_35556036105336_C012",
+      "complainer_id": "p1074_35556036105336_K006",
+      "complaint_file": "complaints/p1074_35556036105336_C012_city_planning_commission.json",
+      "response_ids": []
+    },
+    {
+      "order": 13,
+      "complaint_id": "p1074_35556036105336_C013",
+      "complainer_id": "p1074_35556036105336_K016",
+      "complaint_file": "complaints/p1074_35556036105336_C013_regional_planning_commission.json",
+      "response_ids": []
+    },
+    {
+      "order": 14,
+      "complaint_id": "p1074_35556036105336_C014",
+      "complainer_id": "p1074_35556036105336_K018",
+      "complaint_file": "complaints/p1074_35556036105336_C014_richmond_redevelopment_and_housing_autho.json",
+      "response_ids": []
+    },
+    {
+      "order": 15,
+      "complaint_id": "p1074_35556036105336_C015",
+      "complainer_id": "p1074_35556036105336_K018",
+      "complaint_file": "complaints/p1074_35556036105336_C015_richmond_redevelopment_and_housing_autho.json",
+      "response_ids": []
+    },
+    {
+      "order": 16,
+      "complaint_id": "p1074_35556036105336_C016",
+      "complainer_id": "p1074_35556036105336_K018",
+      "complaint_file": "complaints/p1074_35556036105336_C016_richmond_redevelopment_and_housing_autho.json",
+      "response_ids": []
+    },
+    {
+      "order": 17,
+      "complaint_id": "p1074_35556036105336_C017",
+      "complainer_id": "p1074_35556036105336_K018",
+      "complaint_file": "complaints/p1074_35556036105336_C017_richmond_redevelopment_and_housing_autho.json",
+      "response_ids": []
+    },
+    {
+      "order": 18,
+      "complaint_id": "p1074_35556036105336_C018",
+      "complainer_id": "p1074_35556036105336_K020",
+      "complaint_file": "complaints/p1074_35556036105336_C018_state_water_control_board.json",
+      "response_ids": []
+    },
+    {
+      "order": 19,
+      "complaint_id": "p1074_35556036105336_C019",
+      "complainer_id": "p1074_35556036105336_K020",
+      "complaint_file": "complaints/p1074_35556036105336_C019_state_water_control_board.json",
+      "response_ids": []
+    },
+    {
+      "order": 20,
+      "complaint_id": "p1074_35556036105336_C020",
+      "complainer_id": "p1074_35556036105336_K002",
+      "complaint_file": "complaints/p1074_35556036105336_C020_bolt_beranek_and_newman_inc.json",
+      "response_ids": []
+    },
+    {
+      "order": 21,
+      "complaint_id": "p1074_35556036105336_C021",
+      "complainer_id": "p1074_35556036105336_K002",
+      "complaint_file": "complaints/p1074_35556036105336_C021_bolt_beranek_and_newman_inc.json",
+      "response_ids": []
+    },
+    {
+      "order": 22,
+      "complaint_id": "p1074_35556036105336_C022",
+      "complainer_id": "p1074_35556036105336_K017",
+      "complaint_file": "complaints/p1074_35556036105336_C022_richmond_metropolitan_authority.json",
+      "response_ids": []
+    },
+    {
+      "order": 23,
+      "complaint_id": "p1074_35556036105336_C023",
+      "complainer_id": "p1074_35556036105336_K017",
+      "complaint_file": "complaints/p1074_35556036105336_C023_richmond_metropolitan_authority.json",
+      "response_ids": []
+    },
+    {
+      "order": 24,
+      "complaint_id": "p1074_35556036105336_C024",
+      "complainer_id": "p1074_35556036105336_K017",
+      "complaint_file": "complaints/p1074_35556036105336_C024_richmond_metropolitan_authority.json",
+      "response_ids": []
+    },
+    {
+      "order": 25,
+      "complaint_id": "p1074_35556036105336_C025",
+      "complainer_id": "p1074_35556036105336_K019",
+      "complaint_file": "complaints/p1074_35556036105336_C025_richmond_regional_planning_district_comm.json",
+      "response_ids": []
+    },
+    {
+      "order": 26,
+      "complaint_id": "p1074_35556036105336_C026",
+      "complainer_id": "p1074_35556036105336_K001",
+      "complaint_file": "complaints/p1074_35556036105336_C026_acting_chief_barlow.json",
+      "response_ids": [
+        "p1074_35556036105336_R001"
+      ]
+    },
+    {
+      "order": 27,
+      "complaint_id": "p1074_35556036105336_C027",
+      "complainer_id": "p1074_35556036105336_K012",
+      "complaint_file": "complaints/p1074_35556036105336_C027_harland_bartholomew_and_associates.json",
+      "response_ids": [
+        "p1074_35556036105336_R002"
+      ]
+    },
+    {
+      "order": 28,
+      "complaint_id": "p1074_35556036105336_C028",
+      "complainer_id": "p1074_35556036105336_K023",
+      "complaint_file": "complaints/p1074_35556036105336_C028_virginia_transit_company.json",
+      "response_ids": []
+    },
+    {
+      "order": 29,
+      "complaint_id": "p1074_35556036105336_C029",
+      "complainer_id": "p1074_35556036105336_K029",
+      "complaint_file": "complaints/p1074_35556036105336_C029_pac_group.json",
+      "response_ids": []
+    },
+    {
+      "order": 30,
+      "complaint_id": "p1074_35556036105336_C030",
+      "complainer_id": "p1074_35556036105336_K017",
+      "complaint_file": "complaints/p1074_35556036105336_C030_richmond_metropolitan_authority.json",
+      "response_ids": []
+    },
+    {
+      "order": 31,
+      "complaint_id": "p1074_35556036105336_C031",
+      "complainer_id": "p1074_35556036105336_K032",
+      "complaint_file": "complaints/p1074_35556036105336_C031_richmond_city_council.json",
+      "response_ids": []
+    },
+    {
+      "order": 32,
+      "complaint_id": "p1074_35556036105336_C032",
+      "complainer_id": "p1074_35556036105336_K036",
+      "complaint_file": "complaints/p1074_35556036105336_C032_virginia_historical_society.json",
+      "response_ids": []
+    },
+    {
+      "order": 33,
+      "complaint_id": "p1074_35556036105336_C033",
+      "complainer_id": "p1074_35556036105336_K029",
+      "complaint_file": "complaints/p1074_35556036105336_C033_pac_group.json",
+      "response_ids": []
+    },
+    {
+      "order": 34,
+      "complaint_id": "p1074_35556036105336_C034",
+      "complainer_id": "p1074_35556036105336_K031",
+      "complaint_file": "complaints/p1074_35556036105336_C034_randolph_pac.json",
+      "response_ids": []
+    },
+    {
+      "order": 35,
+      "complaint_id": "p1074_35556036105336_C035",
+      "complainer_id": "p1074_35556036105336_K033",
+      "complaint_file": "complaints/p1074_35556036105336_C035_robert_j_blanco_p_e.json",
+      "response_ids": [
+        "p1074_35556036105336_R003"
+      ]
+    },
+    {
+      "order": 36,
+      "complaint_id": "p1074_35556036105336_C036",
+      "complainer_id": "p1074_35556036105336_K035",
+      "complaint_file": "complaints/p1074_35556036105336_C036_united_states_environmental_protection_a.json",
+      "response_ids": [
+        "p1074_35556036105336_R004"
+      ]
+    },
+    {
+      "order": 37,
+      "complaint_id": "p1074_35556036105336_C037",
+      "complainer_id": "p1074_35556036105336_K030",
+      "complaint_file": "complaints/p1074_35556036105336_C037_parker_w_hirtle.json",
+      "response_ids": []
+    },
+    {
+      "order": 38,
+      "complaint_id": "p1074_35556036105336_C038",
+      "complainer_id": "p1074_35556036105336_K028",
+      "complaint_file": "complaints/p1074_35556036105336_C038_james_river_and_kanawha_canal_parks_inc.json",
+      "response_ids": []
+    },
+    {
+      "order": 39,
+      "complaint_id": "p1074_35556036105336_C039",
+      "complainer_id": "p1074_35556036105336_K027",
+      "complaint_file": "complaints/p1074_35556036105336_C039_hugh_w_burdll_jr.json",
+      "response_ids": [
+        "p1074_35556036105336_R005"
+      ]
+    },
+    {
+      "order": 40,
+      "complaint_id": "p1074_35556036105336_C040",
+      "complainer_id": "p1074_35556036105336_K034",
+      "complaint_file": "complaints/p1074_35556036105336_C040_u_s_department_of_transportation_federal.json",
+      "response_ids": [
+        "p1074_35556036105336_R006"
+      ]
+    },
+    {
+      "order": 41,
+      "complaint_id": "p1074_35556036105336_C041",
+      "complainer_id": "p1074_35556036105336_K025",
+      "complaint_file": "complaints/p1074_35556036105336_C041_council_on_environmental_quality.json",
+      "response_ids": []
+    },
+    {
+      "order": 42,
+      "complaint_id": "p1074_35556036105336_C042",
+      "complainer_id": "p1074_35556036105336_K026",
+      "complaint_file": "complaints/p1074_35556036105336_C042_hud.json",
+      "response_ids": []
+    },
+    {
+      "order": 43,
+      "complaint_id": "p1074_35556036105336_C043",
+      "complainer_id": "p1074_35556036105336_K026",
+      "complaint_file": "complaints/p1074_35556036105336_C043_hud.json",
+      "response_ids": []
+    },
+    {
+      "order": 44,
+      "complaint_id": "p1074_35556036105336_C044",
+      "complainer_id": "p1074_35556036105336_K026",
+      "complaint_file": "complaints/p1074_35556036105336_C044_hud.json",
+      "response_ids": []
+    },
+    {
+      "order": 45,
+      "complaint_id": "p1074_35556036105336_C045",
+      "complainer_id": "p1074_35556036105336_K026",
+      "complaint_file": "complaints/p1074_35556036105336_C045_hud.json",
+      "response_ids": []
+    },
+    {
+      "order": 46,
+      "complaint_id": "p1074_35556036105336_C046",
+      "complainer_id": "p1074_35556036105336_K026",
+      "complaint_file": "complaints/p1074_35556036105336_C046_hud.json",
+      "response_ids": []
+    },
+    {
+      "order": 47,
+      "complaint_id": "p1074_35556036105336_C047",
+      "complainer_id": "p1074_35556036105336_K026",
+      "complaint_file": "complaints/p1074_35556036105336_C047_hud.json",
+      "response_ids": []
+    },
+    {
+      "order": 48,
+      "complaint_id": "p1074_35556036105336_C048",
+      "complainer_id": "p1074_35556036105336_K024",
+      "complaint_file": "complaints/p1074_35556036105336_C048_city_administration.json",
+      "response_ids": [
+        "p1074_35556036105336_R007"
+      ]
+    },
+    {
+      "order": 49,
+      "complaint_id": "p1074_35556036105336_C049",
+      "complainer_id": "p1074_35556036105336_K037",
+      "complaint_file": "complaints/p1074_35556036105336_C049_william_j_leidinge.json",
+      "response_ids": [
+        "p1074_35556036105336_R008"
+      ]
+    },
+    {
+      "order": 50,
+      "complaint_id": "p1074_35556036105336_C050",
+      "complainer_id": "p1074_35556036105336_K047",
+      "complaint_file": "complaints/p1074_35556036105336_C050_redevelopment_and_housing_authority.json",
+      "response_ids": [
+        "p1074_35556036105336_R009"
+      ]
+    },
+    {
+      "order": 51,
+      "complaint_id": "p1074_35556036105336_C051",
+      "complainer_id": "p1074_35556036105336_K047",
+      "complaint_file": "complaints/p1074_35556036105336_C051_redevelopment_and_housing_authority.json",
+      "response_ids": []
+    },
+    {
+      "order": 52,
+      "complaint_id": "p1074_35556036105336_C052",
+      "complainer_id": "p1074_35556036105336_K040",
+      "complaint_file": "complaints/p1074_35556036105336_C052_city_council.json",
+      "response_ids": []
+    },
+    {
+      "order": 53,
+      "complaint_id": "p1074_35556036105336_C053",
+      "complainer_id": "p1074_35556036105336_K047",
+      "complaint_file": "complaints/p1074_35556036105336_C053_redevelopment_and_housing_authority.json",
+      "response_ids": []
+    },
+    {
+      "order": 54,
+      "complaint_id": "p1074_35556036105336_C054",
+      "complainer_id": "p1074_35556036105336_K049",
+      "complaint_file": "complaints/p1074_35556036105336_C054_voices_vehement_outcry_of_interested_cit.json",
+      "response_ids": []
+    },
+    {
+      "order": 55,
+      "complaint_id": "p1074_35556036105336_C055",
+      "complainer_id": "p1074_35556036105336_K038",
+      "complaint_file": "complaints/p1074_35556036105336_C055_alan_kiepper.json",
+      "response_ids": []
+    },
+    {
+      "order": 56,
+      "complaint_id": "p1074_35556036105336_C056",
+      "complainer_id": "p1074_35556036105336_K050",
+      "complaint_file": "complaints/p1074_35556036105336_C056_west_end_advisory_council_inc.json",
+      "response_ids": [
+        "p1074_35556036105336_R010"
+      ]
+    },
+    {
+      "order": 57,
+      "complaint_id": "p1074_35556036105336_C057",
+      "complainer_id": "p1074_35556036105336_K039",
+      "complaint_file": "complaints/p1074_35556036105336_C057_alan_siff.json",
+      "response_ids": []
+    },
+    {
+      "order": 58,
+      "complaint_id": "p1074_35556036105336_C058",
+      "complainer_id": "p1074_35556036105336_K039",
+      "complaint_file": "complaints/p1074_35556036105336_C058_alan_siff.json",
+      "response_ids": []
+    },
+    {
+      "order": 59,
+      "complaint_id": "p1074_35556036105336_C059",
+      "complainer_id": "p1074_35556036105336_K041",
+      "complaint_file": "complaints/p1074_35556036105336_C059_commission_of_architectural_review.json",
+      "response_ids": []
+    },
+    {
+      "order": 60,
+      "complaint_id": "p1074_35556036105336_C060",
+      "complainer_id": "p1074_35556036105336_K042",
+      "complaint_file": "complaints/p1074_35556036105336_C060_dr_allix_b_james.json",
+      "response_ids": []
+    },
+    {
+      "order": 61,
+      "complaint_id": "p1074_35556036105336_C061",
+      "complainer_id": "p1074_35556036105336_K043",
+      "complaint_file": "complaints/p1074_35556036105336_C061_frank_mattone.json",
+      "response_ids": []
+    },
+    {
+      "order": 62,
+      "complaint_id": "p1074_35556036105336_C062",
+      "complainer_id": "p1074_35556036105336_K044",
+      "complaint_file": "complaints/p1074_35556036105336_C062_mrs_douglas_c_burke.json",
+      "response_ids": [
+        "p1074_35556036105336_R011"
+      ]
+    },
+    {
+      "order": 63,
+      "complaint_id": "p1074_35556036105336_C063",
+      "complainer_id": "p1074_35556036105336_K045",
+      "complaint_file": "complaints/p1074_35556036105336_C063_petronius_s_jones.json",
+      "response_ids": []
+    },
+    {
+      "order": 64,
+      "complaint_id": "p1074_35556036105336_C064",
+      "complainer_id": "p1074_35556036105336_K046",
+      "complaint_file": "complaints/p1074_35556036105336_C064_planning_director_a_howe_todd.json",
+      "response_ids": []
+    },
+    {
+      "order": 65,
+      "complaint_id": "p1074_35556036105336_C065",
+      "complainer_id": "p1074_35556036105336_K048",
+      "complaint_file": "complaints/p1074_35556036105336_C065_virginia_historic_landmarks_commission.json",
+      "response_ids": []
+    },
+    {
+      "order": 66,
+      "complaint_id": "p1074_35556036105336_C066",
+      "complainer_id": "p1074_35556036105336_K008",
+      "complaint_file": "complaints/p1074_35556036105336_C066_department_of_housing_and_urban_developm.json",
+      "response_ids": []
+    },
+    {
+      "order": 67,
+      "complaint_id": "p1074_35556036105336_C067",
+      "complainer_id": "p1074_35556036105336_K021",
+      "complaint_file": "complaints/p1074_35556036105336_C067_virginia_department_of_health.json",
+      "response_ids": []
+    },
+    {
+      "order": 68,
+      "complaint_id": "p1074_35556036105336_C068",
+      "complainer_id": "p1074_35556036105336_K022",
+      "complaint_file": "complaints/p1074_35556036105336_C068_virginia_department_of_highways.json",
+      "response_ids": []
+    }
+  ],
+  "complaints": [
+    {
+      "complaint_id": "p1074_35556036105336_C001",
+      "complainer_id": "p1074_35556036105336_K011",
+      "file": "complaints/p1074_35556036105336_C001_environmental_protection_agency.json",
+      "order": 1,
+      "entity": "Environmental Protection Agency",
+      "kind": "agency",
+      "role": "Federal environmental regulatory agency",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C002",
+      "complainer_id": "p1074_35556036105336_K004",
+      "file": "complaints/p1074_35556036105336_C002_city_of_richmond.json",
+      "order": 2,
+      "entity": "City of Richmond",
+      "kind": "government",
+      "role": "Local government commenter",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "2"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C003",
+      "complainer_id": "p1074_35556036105336_K009",
+      "file": "complaints/p1074_35556036105336_C003_department_of_transportation_faa.json",
+      "order": 3,
+      "entity": "Department of Transportation  FAA",
+      "kind": "agency",
+      "role": "Federal agency commenter",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "2"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C004",
+      "complainer_id": "p1074_35556036105336_K010",
+      "file": "complaints/p1074_35556036105336_C004_department_of_transportation_fhwa.json",
+      "order": 4,
+      "entity": "Department of Transportation  FHWA",
+      "kind": "agency",
+      "role": "Federal agency commenter",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "2"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C005",
+      "complainer_id": "p1074_35556036105336_K007",
+      "file": "complaints/p1074_35556036105336_C005_department_of_health_education_and_welfa.json",
+      "order": 5,
+      "entity": "Department of Health, Education, and Welfare",
+      "kind": "agency",
+      "role": "Federal agency commenter",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "5"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C006",
+      "complainer_id": "p1074_35556036105336_K014",
+      "file": "complaints/p1074_35556036105336_C006_maymont_civic_league.json",
+      "order": 6,
+      "entity": "Maymont Civic League",
+      "kind": "organization",
+      "role": "Civic organization representing the Maymont Community",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "14"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C007",
+      "complainer_id": "p1074_35556036105336_K013",
+      "file": "complaints/p1074_35556036105336_C007_l_s_mcbride.json",
+      "order": 7,
+      "entity": "L. S. McBride",
+      "kind": "official",
+      "role": "Richmond Area Representative, Pollution Abatement Division, State Water Control Board",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "16"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C008",
+      "complainer_id": "p1074_35556036105336_K015",
+      "file": "complaints/p1074_35556036105336_C008_randolph_planning_study_board_rpsb.json",
+      "order": 8,
+      "entity": "Randolph Planning Study Board (RPSB)",
+      "kind": "organization",
+      "role": "Project Area Committee / community planning body for Randolph Urban Renewal Area",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "16"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C009",
+      "complainer_id": "p1074_35556036105336_K015",
+      "file": "complaints/p1074_35556036105336_C009_randolph_planning_study_board_rpsb.json",
+      "order": 9,
+      "entity": "Randolph Planning Study Board (RPSB)",
+      "kind": "organization",
+      "role": "Project Area Committee / community planning body for Randolph Urban Renewal Area",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "16"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C010",
+      "complainer_id": "p1074_35556036105336_K003",
+      "file": "complaints/p1074_35556036105336_C010_citizens_of_randolph.json",
+      "order": 10,
+      "entity": "citizens of Randolph",
+      "kind": "other",
+      "role": "Community residents / voters",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "17"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C011",
+      "complainer_id": "p1074_35556036105336_K005",
+      "file": "complaints/p1074_35556036105336_C011_city_of_richmond_s_department_of_plannin.json",
+      "order": 11,
+      "entity": "City of Richmond's Department of Planning and Community Development",
+      "kind": "agency",
+      "role": "City department hosting public meeting",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "17"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C012",
+      "complainer_id": "p1074_35556036105336_K006",
+      "file": "complaints/p1074_35556036105336_C012_city_planning_commission.json",
+      "order": 12,
+      "entity": "City Planning Commission",
+      "kind": "agency",
+      "role": "City planning body",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "17"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C013",
+      "complainer_id": "p1074_35556036105336_K016",
+      "file": "complaints/p1074_35556036105336_C013_regional_planning_commission.json",
+      "order": 13,
+      "entity": "Regional Planning Commission",
+      "kind": "agency",
+      "role": "Regional planning body",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "17"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C014",
+      "complainer_id": "p1074_35556036105336_K018",
+      "file": "complaints/p1074_35556036105336_C014_richmond_redevelopment_and_housing_autho.json",
+      "order": 14,
+      "entity": "Richmond Redevelopment and Housing Authority",
+      "kind": "agency",
+      "role": "Local urban renewal authority / project applicant",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "17"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C015",
+      "complainer_id": "p1074_35556036105336_K018",
+      "file": "complaints/p1074_35556036105336_C015_richmond_redevelopment_and_housing_autho.json",
+      "order": 15,
+      "entity": "Richmond Redevelopment and Housing Authority",
+      "kind": "agency",
+      "role": "Local urban renewal authority / project applicant",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "17"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C016",
+      "complainer_id": "p1074_35556036105336_K018",
+      "file": "complaints/p1074_35556036105336_C016_richmond_redevelopment_and_housing_autho.json",
+      "order": 16,
+      "entity": "Richmond Redevelopment and Housing Authority",
+      "kind": "agency",
+      "role": "Local urban renewal authority / project applicant",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "17"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C017",
+      "complainer_id": "p1074_35556036105336_K018",
+      "file": "complaints/p1074_35556036105336_C017_richmond_redevelopment_and_housing_autho.json",
+      "order": 17,
+      "entity": "Richmond Redevelopment and Housing Authority",
+      "kind": "agency",
+      "role": "Local urban renewal authority / project applicant",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "17"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C018",
+      "complainer_id": "p1074_35556036105336_K020",
+      "file": "complaints/p1074_35556036105336_C018_state_water_control_board.json",
+      "order": 18,
+      "entity": "State Water Control Board",
+      "kind": "agency",
+      "role": "Commonwealth of Virginia water quality regulatory agency",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "31"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C019",
+      "complainer_id": "p1074_35556036105336_K020",
+      "file": "complaints/p1074_35556036105336_C019_state_water_control_board.json",
+      "order": 19,
+      "entity": "State Water Control Board",
+      "kind": "agency",
+      "role": "Commonwealth of Virginia water quality regulatory agency",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "31"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C020",
+      "complainer_id": "p1074_35556036105336_K002",
+      "file": "complaints/p1074_35556036105336_C020_bolt_beranek_and_newman_inc.json",
+      "order": 20,
+      "entity": "Bolt, Beranek and Newman, Inc.",
+      "kind": "organization",
+      "role": "Noise evaluation consultant (Cambridge, Massachusetts)",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "34"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C021",
+      "complainer_id": "p1074_35556036105336_K002",
+      "file": "complaints/p1074_35556036105336_C021_bolt_beranek_and_newman_inc.json",
+      "order": 21,
+      "entity": "Bolt, Beranek and Newman, Inc.",
+      "kind": "organization",
+      "role": "Noise evaluation consultant (Cambridge, Massachusetts)",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "34"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C022",
+      "complainer_id": "p1074_35556036105336_K017",
+      "file": "complaints/p1074_35556036105336_C022_richmond_metropolitan_authority.json",
+      "order": 22,
+      "entity": "Richmond Metropolitan Authority",
+      "kind": "agency",
+      "role": "Regional authority responsible for expressway construction",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "34"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C023",
+      "complainer_id": "p1074_35556036105336_K017",
+      "file": "complaints/p1074_35556036105336_C023_richmond_metropolitan_authority.json",
+      "order": 23,
+      "entity": "Richmond Metropolitan Authority",
+      "kind": "agency",
+      "role": "Regional authority responsible for expressway construction",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "34"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C024",
+      "complainer_id": "p1074_35556036105336_K017",
+      "file": "complaints/p1074_35556036105336_C024_richmond_metropolitan_authority.json",
+      "order": 24,
+      "entity": "Richmond Metropolitan Authority",
+      "kind": "agency",
+      "role": "Regional authority responsible for expressway construction",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "34"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C025",
+      "complainer_id": "p1074_35556036105336_K019",
+      "file": "complaints/p1074_35556036105336_C025_richmond_regional_planning_district_comm.json",
+      "order": 25,
+      "entity": "Richmond Regional Planning District Commission (RRPDC)",
+      "kind": "agency",
+      "role": "Regional planning agency / transit grant recipient",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "40"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C026",
+      "complainer_id": "p1074_35556036105336_K001",
+      "file": "complaints/p1074_35556036105336_C026_acting_chief_barlow.json",
+      "order": 26,
+      "entity": "Acting Chief Barlow",
+      "kind": "official",
+      "role": "Acting Chief, Richmond Fire Department",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "45"
+      ],
+      "response_ids": [
+        "p1074_35556036105336_R001"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C027",
+      "complainer_id": "p1074_35556036105336_K012",
+      "file": "complaints/p1074_35556036105336_C027_harland_bartholomew_and_associates.json",
+      "order": 27,
+      "entity": "Harland Bartholomew and Associates",
+      "kind": "organization",
+      "role": "Consultant planners working with the Randolph Community",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "45"
+      ],
+      "response_ids": [
+        "p1074_35556036105336_R002"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C028",
+      "complainer_id": "p1074_35556036105336_K023",
+      "file": "complaints/p1074_35556036105336_C028_virginia_transit_company.json",
+      "order": 28,
+      "entity": "Virginia Transit Company",
+      "kind": "organization",
+      "role": "Public transit operator serving Randolph",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "47"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C029",
+      "complainer_id": "p1074_35556036105336_K029",
+      "file": "complaints/p1074_35556036105336_C029_pac_group.json",
+      "order": 29,
+      "entity": "PAC group",
+      "kind": "organization",
+      "role": "Citizen participation/advisory committee for Randolph Community",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "50"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C030",
+      "complainer_id": "p1074_35556036105336_K017",
+      "file": "complaints/p1074_35556036105336_C030_richmond_metropolitan_authority.json",
+      "order": 30,
+      "entity": "Richmond Metropolitan Authority",
+      "kind": "agency",
+      "role": "Regional authority responsible for expressway construction",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "54"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C031",
+      "complainer_id": "p1074_35556036105336_K032",
+      "file": "complaints/p1074_35556036105336_C031_richmond_city_council.json",
+      "order": 31,
+      "entity": "Richmond City Council",
+      "kind": "government",
+      "role": "Local legislative body, City of Richmond",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "54"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C032",
+      "complainer_id": "p1074_35556036105336_K036",
+      "file": "complaints/p1074_35556036105336_C032_virginia_historical_society.json",
+      "order": 32,
+      "entity": "Virginia Historical Society",
+      "kind": "organization",
+      "role": "State historical organization",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "54"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C033",
+      "complainer_id": "p1074_35556036105336_K029",
+      "file": "complaints/p1074_35556036105336_C033_pac_group.json",
+      "order": 33,
+      "entity": "PAC group",
+      "kind": "organization",
+      "role": "Citizen participation/advisory committee for Randolph Community",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "57"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C034",
+      "complainer_id": "p1074_35556036105336_K031",
+      "file": "complaints/p1074_35556036105336_C034_randolph_pac.json",
+      "order": 34,
+      "entity": "Randolph PAC",
+      "kind": "organization",
+      "role": "Citizen participation/advisory committee for Randolph Urban Renewal project",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "57"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C035",
+      "complainer_id": "p1074_35556036105336_K033",
+      "file": "complaints/p1074_35556036105336_C035_robert_j_blanco_p_e.json",
+      "order": 35,
+      "entity": "Robert J. Blanco, P.E.",
+      "kind": "official",
+      "role": "Chief, Environmental Impact Branch, EPA Region III",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "63"
+      ],
+      "response_ids": [
+        "p1074_35556036105336_R003"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C036",
+      "complainer_id": "p1074_35556036105336_K035",
+      "file": "complaints/p1074_35556036105336_C036_united_states_environmental_protection_a.json",
+      "order": 36,
+      "entity": "United States Environmental Protection Agency Region III",
+      "kind": "agency",
+      "role": "Federal environmental regulatory agency, commenter on Draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "63"
+      ],
+      "response_ids": [
+        "p1074_35556036105336_R004"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C037",
+      "complainer_id": "p1074_35556036105336_K030",
+      "file": "complaints/p1074_35556036105336_C037_parker_w_hirtle.json",
+      "order": 37,
+      "entity": "Parker W. Hirtle",
+      "kind": "individual",
+      "role": "Engineer, Bolt Beranek and Newman Inc., noise study consultant",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "69"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C038",
+      "complainer_id": "p1074_35556036105336_K028",
+      "file": "complaints/p1074_35556036105336_C038_james_river_and_kanawha_canal_parks_inc.json",
+      "order": 38,
+      "entity": "James River and Kanawha Canal Parks, Inc.",
+      "kind": "organization",
+      "role": "Litigant against Downtown Expressway project",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "70"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C039",
+      "complainer_id": "p1074_35556036105336_K027",
+      "file": "complaints/p1074_35556036105336_C039_hugh_w_burdll_jr.json",
+      "order": 39,
+      "entity": "Hugh W. Burdll, Jr.",
+      "kind": "official",
+      "role": "Regional Federal Highway Administrator, FHWA Region III",
+      "stance": "opposed",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "71"
+      ],
+      "response_ids": [
+        "p1074_35556036105336_R005"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C040",
+      "complainer_id": "p1074_35556036105336_K034",
+      "file": "complaints/p1074_35556036105336_C040_u_s_department_of_transportation_federal.json",
+      "order": 40,
+      "entity": "U. S. Department of Transportation Federal Highway Administration",
+      "kind": "agency",
+      "role": "Federal highway regulatory agency, commenter on Draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "71"
+      ],
+      "response_ids": [
+        "p1074_35556036105336_R006"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C041",
+      "complainer_id": "p1074_35556036105336_K025",
+      "file": "complaints/p1074_35556036105336_C041_council_on_environmental_quality.json",
+      "order": 41,
+      "entity": "Council on Environmental Quality",
+      "kind": "agency",
+      "role": "Federal environmental policy body",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "72"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C042",
+      "complainer_id": "p1074_35556036105336_K026",
+      "file": "complaints/p1074_35556036105336_C042_hud.json",
+      "order": 42,
+      "entity": "HUD",
+      "kind": "agency",
+      "role": "U.S. Department of Housing and Urban Development, project sponsor and EIS preparer",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "72"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C043",
+      "complainer_id": "p1074_35556036105336_K026",
+      "file": "complaints/p1074_35556036105336_C043_hud.json",
+      "order": 43,
+      "entity": "HUD",
+      "kind": "agency",
+      "role": "U.S. Department of Housing and Urban Development, project sponsor and EIS preparer",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "72"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C044",
+      "complainer_id": "p1074_35556036105336_K026",
+      "file": "complaints/p1074_35556036105336_C044_hud.json",
+      "order": 44,
+      "entity": "HUD",
+      "kind": "agency",
+      "role": "U.S. Department of Housing and Urban Development, project sponsor and EIS preparer",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "72"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C045",
+      "complainer_id": "p1074_35556036105336_K026",
+      "file": "complaints/p1074_35556036105336_C045_hud.json",
+      "order": 45,
+      "entity": "HUD",
+      "kind": "agency",
+      "role": "U.S. Department of Housing and Urban Development, project sponsor and EIS preparer",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "72"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C046",
+      "complainer_id": "p1074_35556036105336_K026",
+      "file": "complaints/p1074_35556036105336_C046_hud.json",
+      "order": 46,
+      "entity": "HUD",
+      "kind": "agency",
+      "role": "U.S. Department of Housing and Urban Development, project sponsor and EIS preparer",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "72"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C047",
+      "complainer_id": "p1074_35556036105336_K026",
+      "file": "complaints/p1074_35556036105336_C047_hud.json",
+      "order": 47,
+      "entity": "HUD",
+      "kind": "agency",
+      "role": "U.S. Department of Housing and Urban Development, project sponsor and EIS preparer",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "72"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C048",
+      "complainer_id": "p1074_35556036105336_K024",
+      "file": "complaints/p1074_35556036105336_C048_city_administration.json",
+      "order": 48,
+      "entity": "City Administration",
+      "kind": "government",
+      "role": "City of Richmond administration",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "83"
+      ],
+      "response_ids": [
+        "p1074_35556036105336_R007"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C049",
+      "complainer_id": "p1074_35556036105336_K037",
+      "file": "complaints/p1074_35556036105336_C049_william_j_leidinge.json",
+      "order": 49,
+      "entity": "William J. Leidinge",
+      "kind": "official",
+      "role": "City Manager, City of Richmond",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "84"
+      ],
+      "response_ids": [
+        "p1074_35556036105336_R008"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C050",
+      "complainer_id": "p1074_35556036105336_K047",
+      "file": "complaints/p1074_35556036105336_C050_redevelopment_and_housing_authority.json",
+      "order": 50,
+      "entity": "Redevelopment and Housing Authority",
+      "kind": "agency",
+      "role": "Local Public Agency administering Randolph Urban Renewal",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "93"
+      ],
+      "response_ids": [
+        "p1074_35556036105336_R009"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C051",
+      "complainer_id": "p1074_35556036105336_K047",
+      "file": "complaints/p1074_35556036105336_C051_redevelopment_and_housing_authority.json",
+      "order": 51,
+      "entity": "Redevelopment and Housing Authority",
+      "kind": "agency",
+      "role": "Local Public Agency administering Randolph Urban Renewal",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "93",
+        "94"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C052",
+      "complainer_id": "p1074_35556036105336_K040",
+      "file": "complaints/p1074_35556036105336_C052_city_council.json",
+      "order": 52,
+      "entity": "City Council",
+      "kind": "government",
+      "role": "Richmond City Council",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "101"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C053",
+      "complainer_id": "p1074_35556036105336_K047",
+      "file": "complaints/p1074_35556036105336_C053_redevelopment_and_housing_authority.json",
+      "order": 53,
+      "entity": "Redevelopment and Housing Authority",
+      "kind": "agency",
+      "role": "Local Public Agency administering Randolph Urban Renewal",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "101"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C054",
+      "complainer_id": "p1074_35556036105336_K049",
+      "file": "complaints/p1074_35556036105336_C054_voices_vehement_outcry_of_interested_cit.json",
+      "order": 54,
+      "entity": "VOICES (Vehement Outcry of Interested Citizens for an Equitable Society)",
+      "kind": "organization",
+      "role": "Community organizing group, Randolph area",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "101"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C055",
+      "complainer_id": "p1074_35556036105336_K038",
+      "file": "complaints/p1074_35556036105336_C055_alan_kiepper.json",
+      "order": 55,
+      "entity": "Alan Kiepper",
+      "kind": "individual",
+      "role": "City Manager, Richmond",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "103"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C056",
+      "complainer_id": "p1074_35556036105336_K050",
+      "file": "complaints/p1074_35556036105336_C056_west_end_advisory_council_inc.json",
+      "order": 56,
+      "entity": "West End Advisory Council, Inc.",
+      "kind": "organization",
+      "role": "Community advisory organization, West End Richmond",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "103"
+      ],
+      "response_ids": [
+        "p1074_35556036105336_R010"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C057",
+      "complainer_id": "p1074_35556036105336_K039",
+      "file": "complaints/p1074_35556036105336_C057_alan_siff.json",
+      "order": 57,
+      "entity": "Alan Siff",
+      "kind": "individual",
+      "role": "Consultant Planner, Harland Bartholomew and Associates",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "105"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C058",
+      "complainer_id": "p1074_35556036105336_K039",
+      "file": "complaints/p1074_35556036105336_C058_alan_siff.json",
+      "order": 58,
+      "entity": "Alan Siff",
+      "kind": "individual",
+      "role": "Consultant Planner, Harland Bartholomew and Associates",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "105"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C059",
+      "complainer_id": "p1074_35556036105336_K041",
+      "file": "complaints/p1074_35556036105336_C059_commission_of_architectural_review.json",
+      "order": 59,
+      "entity": "commission of architectural review",
+      "kind": "agency",
+      "role": "City architectural review body",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "105"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C060",
+      "complainer_id": "p1074_35556036105336_K042",
+      "file": "complaints/p1074_35556036105336_C060_dr_allix_b_james.json",
+      "order": 60,
+      "entity": "Dr. Allix B. James",
+      "kind": "individual",
+      "role": "Chairman, City Planning Commission",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "105"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C061",
+      "complainer_id": "p1074_35556036105336_K043",
+      "file": "complaints/p1074_35556036105336_C061_frank_mattone.json",
+      "order": 61,
+      "entity": "Frank Mattone",
+      "kind": "individual",
+      "role": "Member, City planning staff",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "105"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C062",
+      "complainer_id": "p1074_35556036105336_K044",
+      "file": "complaints/p1074_35556036105336_C062_mrs_douglas_c_burke.json",
+      "order": 62,
+      "entity": "Mrs. Douglas C. Burke",
+      "kind": "individual",
+      "role": "City Planning Commission member",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "105"
+      ],
+      "response_ids": [
+        "p1074_35556036105336_R011"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C063",
+      "complainer_id": "p1074_35556036105336_K045",
+      "file": "complaints/p1074_35556036105336_C063_petronius_s_jones.json",
+      "order": 63,
+      "entity": "Petronius S. Jones",
+      "kind": "individual",
+      "role": "Chairman, Randolph Planning Study Board",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "105"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C064",
+      "complainer_id": "p1074_35556036105336_K046",
+      "file": "complaints/p1074_35556036105336_C064_planning_director_a_howe_todd.json",
+      "order": 64,
+      "entity": "Planning Director A. Howe Todd",
+      "kind": "official",
+      "role": "Planning Director, City of Richmond",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "testimony",
+      "evidence_pages": [
+        "105"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C065",
+      "complainer_id": "p1074_35556036105336_K048",
+      "file": "complaints/p1074_35556036105336_C065_virginia_historic_landmarks_commission.json",
+      "order": 65,
+      "entity": "Virginia Historic Landmarks Commission",
+      "kind": "agency",
+      "role": "Commonwealth of Virginia historic preservation agency",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "119"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C066",
+      "complainer_id": "p1074_35556036105336_K008",
+      "file": "complaints/p1074_35556036105336_C066_department_of_housing_and_urban_developm.json",
+      "order": 66,
+      "entity": "Department of Housing and Urban Development",
+      "kind": "agency",
+      "role": "Preparing agency / project funder",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "13"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C067",
+      "complainer_id": "p1074_35556036105336_K021",
+      "file": "complaints/p1074_35556036105336_C067_virginia_department_of_health.json",
+      "order": 67,
+      "entity": "Virginia Department of Health",
+      "kind": "agency",
+      "role": "State agency commenter",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "2"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036105336_C068",
+      "complainer_id": "p1074_35556036105336_K022",
+      "file": "complaints/p1074_35556036105336_C068_virginia_department_of_highways.json",
+      "order": 68,
+      "entity": "Virginia Department of Highways",
+      "kind": "agency",
+      "role": "State agency commenter",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "2",
+        "66"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "child_id": "p1074_35556036105336_R001",
+      "parent_id": "p1074_35556036105336_C026",
+      "file": "responses/p1074_35556036105336_R001_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036105336_R002",
+      "parent_id": "p1074_35556036105336_C027",
+      "file": "responses/p1074_35556036105336_R002_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036105336_R003",
+      "parent_id": "p1074_35556036105336_C035",
+      "file": "responses/p1074_35556036105336_R003_hud_richmond_area_office.json",
+      "agency": "HUD Richmond Area Office",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036105336_R004",
+      "parent_id": "p1074_35556036105336_C036",
+      "file": "responses/p1074_35556036105336_R004_u_s_department_of_housing_and_urban_deve.json",
+      "agency": "U.S. Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036105336_R005",
+      "parent_id": "p1074_35556036105336_C039",
+      "file": "responses/p1074_35556036105336_R005_hud.json",
+      "agency": "HUD",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036105336_R006",
+      "parent_id": "p1074_35556036105336_C040",
+      "file": "responses/p1074_35556036105336_R006_u_s_department_of_housing_and_urban_deve.json",
+      "agency": "U.S. Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036105336_R007",
+      "parent_id": "p1074_35556036105336_C048",
+      "file": "responses/p1074_35556036105336_R007_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036105336_R008",
+      "parent_id": "p1074_35556036105336_C049",
+      "file": "responses/p1074_35556036105336_R008_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036105336_R009",
+      "parent_id": "p1074_35556036105336_C050",
+      "file": "responses/p1074_35556036105336_R009_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036105336_R010",
+      "parent_id": "p1074_35556036105336_C056",
+      "file": "responses/p1074_35556036105336_R010_randolph_planning_study_board.json",
+      "agency": "Randolph Planning Study Board",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036105336_R011",
+      "parent_id": "p1074_35556036105336_C062",
+      "file": "responses/p1074_35556036105336_R011_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    }
+  ]
+}

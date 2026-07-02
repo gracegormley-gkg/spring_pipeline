@@ -1,0 +1,81 @@
+{
+  "complaint_id": "p1074_35556036861797_C012",
+  "complainer_id": "p1074_35556036861797_K001",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 12,
+  "entity": "American Motors Corporation (AMC)",
+  "kind": "organization",
+  "role": "automotive manufacturer / commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as arguing the standard level is too high and weight reduction is impossible for their vehicles",
+  "summary": "American Motors Corporation (AMC) is listed as one of the commenters on the proposed average fuel economy standard for MY 1979 nonpassenger automobiles. AMC, along with virtually all other NPA manufacturers, indicated that the proposed standard level was too high given emissions and other factors, and argued for separate classification of four-wheel-drive general utility vehicles. The agency acknowledged manufacturers' comments on weight reduction impossibility but noted this concern was not incorporated into the final EIS because the weight reduction scenario applied only to GM.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Manufacturers' comments on the impossibility of weight reduction in NPA's were raised, but the agency declined to incorporate them into the final EIS because the weight reduction scenario applied only to GM, which did not claim weight reduction was impossible.",
+  "evidence_pages": [
+    "19"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036861797_R003"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "AMC stated that no weight reduction in the 1979 Jeep CJ vehicles is possible. They stated that NHTSA was informed that the Jeep CJ vehicles had necessarily increased in weight for 1977, over 1976, but that NHTSA ignored this trend.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased",
+    "sectional"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "19"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "List of Commenters",
+      "quote_verified": true,
+      "entity_as_written": "American Motors Corporation",
+      "role_as_written": "Commenter / NPA manufacturer"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "78"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "AMC stated that no weight reduction in the 1979 Jeep CJ vehicles is possible. They stated that NHTSA was informed that the Jeep CJ vehicles had necessarily increased in weight for 1977, over 1976, but that NHTSA ignored this trend.",
+      "quote_verified": true,
+      "entity_as_written": "American Motors Corporation (AMC)",
+      "role_as_written": "automotive manufacturer / commenter"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "98"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "AMC questioned the validity of the relationship of CID reduction versus the reduction in vehicle weight since their 232 CID and 258 CID engines exhibit little difference in fuel economy.",
+      "quote_verified": true,
+      "entity_as_written": "American Motors Corporation (AMC)",
+      "role_as_written": "automobile manufacturer / commenter"
+    }
+  ],
+  "window_pages": [
+    9,
+    57
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 1,
+  "synthetic_no_complaint": false
+}

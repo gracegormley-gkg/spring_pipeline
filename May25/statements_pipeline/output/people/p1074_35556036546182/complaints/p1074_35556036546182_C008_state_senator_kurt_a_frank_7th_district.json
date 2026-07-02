@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556036546182_C008",
+  "complainer_id": "p1074_35556036546182_K018",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 8,
+  "entity": "State Senator Kurt A. Frank, 7th District",
+  "kind": "individual",
+  "role": "Wisconsin State Senator, commenter",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed as additional commenter with no position described in window",
+  "summary": "State Senator Kurt A. Frank of the 7th District is listed among additional commenters whose letters are contained in Section X of the document. No position, argument, or stance is described or quoted in the available window of text, making it impossible to determine his views on the Airport Spur project from this excerpt alone.",
+  "form": "sectional",
+  "complaint_summary": "State Senator Kurt A. Frank, 7th District, is listed as one of the additional commenters whose letter of comment is contained in Section X of the Final Environmental Impact Statement.",
+  "evidence_pages": [
+    "15"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual",
+    "low_stance_confidence"
+  ],
+  "summary_quote": "8. Additional comments were received from the following: (Letters of comment are in Section X.) State Senator, Kurt A. Frank, 7th District",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "15"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "8. Additional comments were received from the following: (Letters of comment are in Section X.) State Senator, Kurt A. Frank, 7th District",
+      "quote_verified": true,
+      "entity_as_written": "State Senator Kurt A. Frank, 7th District",
+      "role_as_written": "Wisconsin State Senator, commenter"
+    }
+  ],
+  "window_pages": [
+    5,
+    25
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 18,
+  "synthetic_no_complaint": false
+}

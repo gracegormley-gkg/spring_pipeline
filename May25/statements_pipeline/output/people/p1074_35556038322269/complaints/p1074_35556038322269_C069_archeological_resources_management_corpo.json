@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C069",
+  "complainer_id": "p1074_35556038322269_K070",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 69,
+  "entity": "Archeological Resources Management Corporation",
+  "kind": "organization",
+  "role": "Consultant that prepared paleontological resources report",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "cited as consultant that prepared paleontological resources report, no position on project expressed",
+  "summary": "The Archeological Resources Management Corporation prepared the paleontological resources report included in Appendix II.J of the EIS. The document references their work only in passing, noting that paleontological resources were examined in their consultant report. No position on the project itself is attributed to the organization.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Archeological Resources Management Corporation prepared a consultant report examining paleontological resources in the project area, with results included in Appendix II.J, raising particular concern about the proposed station at Hauser and Wilshire Boulevards where paleontological discoveries are most likely.",
+  "evidence_pages": [
+    "264"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "In the consultant report prepared by the Archeological Resources Management Corporation, paleontological resources were examined.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "264"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In the consultant report prepared by the Archeological Resources Management Corporation, paleontological resources were examined.",
+      "quote_verified": true,
+      "entity_as_written": "Archeological Resources Management Corporation",
+      "role_as_written": "Consultant that prepared paleontological resources report"
+    }
+  ],
+  "window_pages": [
+    254,
+    274
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 70,
+  "synthetic_no_complaint": false
+}

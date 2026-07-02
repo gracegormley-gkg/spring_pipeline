@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556039563135_C156",
+  "complainer_id": "p1074_35556039563135_K028",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 156,
+  "entity": "Sigmund C. Ziejewski",
+  "kind": "official",
+  "role": "District Engineer, Illinois Department of Transportation, Division of Highways",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed as contact person for the project in the Final Environmental Impact Statement summary",
+  "summary": "Sigmund C. Ziejewski is identified as the District Engineer for the Illinois Department of Transportation, Division of Highways, and is listed alongside the FHWA Division Engineer as one of the two contact persons for information about the proposal and the Final Environmental Impact Statement. No independent position or complaint is attributed to him in the document window; he appears solely in an administrative/contact capacity.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "12"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Mr. Sigmund C. Ziejewski, District Engineer Illinois Department of Transportation Division of Highways",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "12"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Mr. Sigmund C. Ziejewski, District Engineer Illinois Department of Transportation Division of Highways",
+      "quote_verified": true,
+      "entity_as_written": "Sigmund C. Ziejewski",
+      "role_as_written": "District Engineer, Illinois Department of Transportation, Division of Highways"
+    }
+  ],
+  "window_pages": [
+    2,
+    22
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 28,
+  "synthetic_no_complaint": true
+}

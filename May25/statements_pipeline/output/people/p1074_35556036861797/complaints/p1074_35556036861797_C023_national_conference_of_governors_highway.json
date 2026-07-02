@@ -1,0 +1,68 @@
+{
+  "complaint_id": "p1074_35556036861797_C023",
+  "complainer_id": "p1074_35556036861797_K014",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 23,
+  "entity": "National Conference of Governors' Highway Safety Representatives",
+  "kind": "organization",
+  "role": "organization / commenter",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes Conference agreeing with the fuel economy standard as reasonable and acknowledging substantial fuel savings",
+  "summary": "The National Conference of Governors' Highway Safety Representatives appeared as a commenter on the proposed Average Fuel Economy Standards for Nonpassenger Automobiles for Model Year 1979. Based on the exemplar quote, they agreed that the proposed fuel economy standard appeared reasonable and that it would result in substantial fuel savings. Within the provided document window, they appear only in the List of Commenters without further elaboration of their position.",
+  "form": "sectional",
+  "complaint_summary": "The National Conference of Governors' Highway Safety Representatives is listed as one of the commenters on the draft environmental impact statement for the MY 1979 nonpassenger automobile fuel economy standard.",
+  "evidence_pages": [
+    "19"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "This Conference agreed with the fuel economy standard, which they concluded appeared reasonable. They also agreed that the standard will result in a substantial fuel savings.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased",
+    "sectional"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "19"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "List of Commenters",
+      "quote_verified": true,
+      "entity_as_written": "National Conference of Governors' Highway Safety Representatives",
+      "role_as_written": "Commenter"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "111"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "This Conference agreed with the fuel economy standard, which they concluded appeared reasonable. They also agreed that the standard will result in a substantial fuel savings.",
+      "quote_verified": true,
+      "entity_as_written": "National Conference of Governors' Highway Safety Representatives",
+      "role_as_written": "organization / commenter"
+    }
+  ],
+  "window_pages": [
+    9,
+    57
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 14,
+  "synthetic_no_complaint": false
+}

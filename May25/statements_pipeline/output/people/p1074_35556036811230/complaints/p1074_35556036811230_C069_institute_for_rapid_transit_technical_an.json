@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556036811230_C069",
+  "complainer_id": "p1074_35556036811230_K051",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 69,
+  "entity": "Institute for Rapid Transit Technical and Operations Committee, Subcommittee on Design Standards",
+  "kind": "organization",
+  "role": "standards body whose guidelines for rapid transit facility design are cited as a reference",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "cited only as a reference document in a bibliography, no position expressed",
+  "summary": "The Institute for Rapid Transit Technical and Operations Committee, Subcommittee on Design Standards, is cited solely as a bibliographic reference (item 3) in the construction noise specifications section of the EIS. No position, complaint, or opinion is attributed to the organization; it appears only as a source document for rapid transit facility design guidelines.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "284"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Institute for Rapid Transit Technical and Operations Committee, Subcommittee on Design Standards, Guidelines and Principles for Design of Rapid Transit Facilities, May 1973.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "284"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Institute for Rapid Transit Technical and Operations Committee, Subcommittee on Design Standards, Guidelines and Principles for Design of Rapid Transit Facilities, May 1973.",
+      "quote_verified": true,
+      "entity_as_written": "Institute for Rapid Transit Technical and Operations Committee, Subcommittee on Design Standards",
+      "role_as_written": "standards body whose guidelines for rapid transit facility design are cited as a reference"
+    }
+  ],
+  "window_pages": [
+    274,
+    284
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 51,
+  "synthetic_no_complaint": true
+}

@@ -1,0 +1,798 @@
+{
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "title": "Average fuel economy standard for nonpassenger automobiles, model year 1979 : environmental impact statement.",
+  "n_chunks": 4,
+  "per_chunk": [
+    {
+      "chunk_index": 0,
+      "start_page": 1,
+      "end_page": 50,
+      "ceq_chapter": null,
+      "entities": [
+        {
+          "entity": "John W. Snow",
+          "kind": "official",
+          "role": "Administrator, National Highway Traffic Safety Administration",
+          "attribution_mode": "sectional",
+          "quote": "John W. Snow, Administrator, National Highway Traffic Safety Administration",
+          "evidence_pages": [
+            "1"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "National Highway Traffic Safety Administration",
+          "kind": "agency",
+          "role": "Promulgating agency for Average Fuel Economy Standard",
+          "attribution_mode": "paraphrased",
+          "quote": "The agency has concluded that the appropriate fuel economy standard for non-passenger automobiles in model year 1979 should be 17.2 mpg.",
+          "evidence_pages": [
+            "1"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "American Motors Corporation",
+          "kind": "organization",
+          "role": "Commenter / NPA manufacturer",
+          "attribution_mode": "sectional",
+          "quote": "List of Commenters",
+          "evidence_pages": [
+            "22"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "Chrysler Corporation",
+          "kind": "organization",
+          "role": "Commenter / NPA manufacturer",
+          "attribution_mode": "sectional",
+          "quote": "List of Commenters",
+          "evidence_pages": [
+            "22"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "Environmental Protection Agency",
+          "kind": "agency",
+          "role": "Commenter / federal agency",
+          "attribution_mode": "sectional",
+          "quote": "List of Commenters",
+          "evidence_pages": [
+            "22"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "Ford Motor Company",
+          "kind": "organization",
+          "role": "Commenter / NPA manufacturer",
+          "attribution_mode": "sectional",
+          "quote": "List of Commenters",
+          "evidence_pages": [
+            "22"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "General Motors Corporation",
+          "kind": "organization",
+          "role": "Commenter / NPA manufacturer",
+          "attribution_mode": "sectional",
+          "quote": "List of Commenters",
+          "evidence_pages": [
+            "22"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "International Harvester Corporation",
+          "kind": "organization",
+          "role": "Commenter / NPA manufacturer",
+          "attribution_mode": "sectional",
+          "quote": "List of Commenters",
+          "evidence_pages": [
+            "22"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "UAW",
+          "kind": "organization",
+          "role": "Commenter",
+          "attribution_mode": "sectional",
+          "quote": "List of Commenters",
+          "evidence_pages": [
+            "22"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "Federal Energy Administration",
+          "kind": "agency",
+          "role": "Commenter / federal agency",
+          "attribution_mode": "sectional",
+          "quote": "List of Commenters",
+          "evidence_pages": [
+            "22"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "The Society of the Plastics Industry, Inc.",
+          "kind": "organization",
+          "role": "Commenter",
+          "attribution_mode": "sectional",
+          "quote": "List of Commenters",
+          "evidence_pages": [
+            "22"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "National Conference of Governors' Highway Safety Representatives",
+          "kind": "organization",
+          "role": "Commenter",
+          "attribution_mode": "sectional",
+          "quote": "List of Commenters",
+          "evidence_pages": [
+            "22"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "Department of Transportation",
+          "kind": "agency",
+          "role": "Commenter / parent agency",
+          "attribution_mode": "sectional",
+          "quote": "List of Commenters",
+          "evidence_pages": [
+            "22"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "Federal Highway Administration",
+          "kind": "agency",
+          "role": "Commenter / DOT sub-agency",
+          "attribution_mode": "sectional",
+          "quote": "List of Commenters",
+          "evidence_pages": [
+            "22"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "Assistant Secretary for Environment, Safety and Consumer Affairs",
+          "kind": "official",
+          "role": "Commenter / DOT official",
+          "attribution_mode": "sectional",
+          "quote": "List of Commenters",
+          "evidence_pages": [
+            "22"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "U. S. Department of Labor",
+          "kind": "agency",
+          "role": "Commenter / federal agency",
+          "attribution_mode": "sectional",
+          "quote": "List of Commenters",
+          "evidence_pages": [
+            "22"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "U. S. Department of the Interior",
+          "kind": "agency",
+          "role": "Commenter / federal agency",
+          "attribution_mode": "sectional",
+          "quote": "List of Commenters",
+          "evidence_pages": [
+            "22"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "U. S. Department of Agriculture",
+          "kind": "agency",
+          "role": "Commenter / federal agency",
+          "attribution_mode": "sectional",
+          "quote": "List of Commenters",
+          "evidence_pages": [
+            "22"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "The University of Michigan",
+          "kind": "organization",
+          "role": "Commenter",
+          "attribution_mode": "sectional",
+          "quote": "List of Commenters",
+          "evidence_pages": [
+            "22"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "Consumers Union",
+          "kind": "organization",
+          "role": "Commenter",
+          "attribution_mode": "sectional",
+          "quote": "List of Commenters",
+          "evidence_pages": [
+            "22"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "domestic manufacturers of NPA's",
+          "kind": "organization",
+          "role": "Commenters / NPA manufacturers collectively",
+          "attribution_mode": "paraphrased",
+          "quote": "Virtually all manufacturers of nonpassenger automobiles who submitted comments indicated their belief that the level of the standard was too high, in light of the effects of emissions and other factors.",
+          "evidence_pages": [
+            "35"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "several commenters",
+          "kind": "other",
+          "role": "Commenters on classification issue",
+          "attribution_mode": "paraphrased",
+          "quote": "Also, several commenters indicated that four wheel drive, general utility vehicles had special fuel economy characteristics which entitle them to separate treatment from other nonpassenger automobiles.",
+          "evidence_pages": [
+            "35"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "The Society of the Plastics Industries, Inc.",
+          "kind": "organization",
+          "role": "Industry association / source cited on plastics incineration",
+          "attribution_mode": "paraphrased",
+          "quote": "The Society of the Plastics Industries, Inc. reports that burning 2 to 4 percent plastics with other refuse in incinerators does not damage the incinerators or significantly change the composition of the effluent gas.",
+          "evidence_pages": [
+            "44"
+          ],
+          "chunk_index": 0
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 13987,
+        "output_tokens": 1830,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 1,
+      "start_page": 49,
+      "end_page": 98,
+      "ceq_chapter": "Alternatives",
+      "entities": [
+        {
+          "entity": "American Motors Corporation (AMC)",
+          "kind": "organization",
+          "role": "automotive manufacturer / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "AMC stated that no weight reduction in the 1979 Jeep CJ vehicles is possible. They stated that NHTSA was informed that the Jeep CJ vehicles had necessarily increased in weight for 1977, over 1976, but that NHTSA ignored this trend.",
+          "evidence_pages": [
+            "49-98"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "International Harvester Corporation (IH)",
+          "kind": "organization",
+          "role": "automotive manufacturer / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "IH stated that it is doubtful that savings in fuel economy could be demonstrated with a reduction of only 50 pounds in vehicle weight.",
+          "evidence_pages": [
+            "49-98"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "Chrysler Corporation",
+          "kind": "organization",
+          "role": "automotive manufacturer / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "Chrysler concluded that reductions in NPA inertia weight will not improve Chrysler's fuel economy. Chrysler claims that their nonpassenger automobiles are already weight efficient.",
+          "evidence_pages": [
+            "49-98"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "Ford Motor Company",
+          "kind": "organization",
+          "role": "automotive manufacturer / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "Ford disagrees with the implication in the NPRM that a 50-pound weight reduction is easily achievable for 1979 and that a significant fuel economy gain (1.7 percent) would result.",
+          "evidence_pages": [
+            "49-98"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "General Motors Corporation (GM)",
+          "kind": "organization",
+          "role": "automotive manufacturer / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "GM agrees with the NHTSA analysis that a 50-pound weight reduction in all vehicles would shift nearly 10 percent of the vehicles to the next lower inertia weight class. However, GM disagrees with the NHTSA estimate that an average 50-pound weight reduction will result in a 1.7 percent improvement of average fuel economy.",
+          "evidence_pages": [
+            "49-98"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "Environmental Protection Agency (EPA)",
+          "kind": "agency",
+          "role": "federal agency / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "EPA questioned the projected increase of 13.7 percent for sulphate emissions. To provide insight into their assessment they referenced their Environmental Impact Statement for the MY 1979 light duty truck emission standard which discusses the issue.",
+          "evidence_pages": [
+            "49-98"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "Federal Energy Administration (FEA)",
+          "kind": "agency",
+          "role": "federal agency / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "FEA stated that the draft EIS mentioned the possibility of increased sulphate emissions from the use of more and larger catalysts. They stated that an even more important consideration may be the increased emissions of unregulated pollutants (e.g., particulates) due to recalibration of engines or substitution of diesel engines.",
+          "evidence_pages": [
+            "49-98"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "The Society of the Plastics Industry, Inc. (SPI)",
+          "kind": "organization",
+          "role": "industry association / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "SPI disagreed with the statement in the draft EIS that, \"Despite their high heat value, most plastics are viewed as unsuitable for incineration because of damage to the incinerator and air pollution should the combustion be less than complete.\"",
+          "evidence_pages": [
+            "49-98"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "NHTSA",
+          "kind": "agency",
+          "role": "federal agency / rulemaking authority",
+          "attribution_mode": "paraphrased",
+          "quote": "NHTSA recognizes that to present a proper basis for considering fuel economy standards the scenerio used must be consistent.",
+          "evidence_pages": [
+            "49-98"
+          ],
+          "chunk_index": 1
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 15707,
+        "output_tokens": 1111,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 2,
+      "start_page": 97,
+      "end_page": 146,
+      "ceq_chapter": "Alternatives",
+      "entities": [
+        {
+          "entity": "AMC",
+          "kind": "organization",
+          "role": "automobile manufacturer / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "AMC states that they will have to reduce the margin of safety by which they pass the emission standards and increase sample size in order to improve the confidence of testing results.",
+          "evidence_pages": [
+            "97"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "Ford Motor Company",
+          "kind": "organization",
+          "role": "automobile manufacturer / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "Ford states that they will not reduce their margin of safety.",
+          "evidence_pages": [
+            "97"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "General Motors Corporation (GM)",
+          "kind": "organization",
+          "role": "automobile manufacturer / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "GM claims that the NHTSA HAS \"double counted\" by projecting the average GM fuel economy for nonpassenger automobiles in MY 1979 would be 18.3 mpg and then by reasoning that GM could raise this 18.3 mpg figure towards the proposed 18.7 mpg standard by further reductions in (CID) × (N/V).",
+          "evidence_pages": [
+            "98"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "American Motors Corporation (AMC)",
+          "kind": "organization",
+          "role": "automobile manufacturer / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "AMC questioned the validity of the relationship of CID reduction versus the reduction in vehicle weight since their 232 CID and 258 CID engines exhibit little difference in fuel economy.",
+          "evidence_pages": [
+            "98"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "Federal Energy Administration (FEA)",
+          "kind": "agency",
+          "role": "federal agency / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "FEA states that the increased fuel economy of NPA's may make them more attractive to consumers and thereby encourage a shift from passenger automobiles to NPA's.",
+          "evidence_pages": [
+            "100"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "Environmental Protection Agency (EPA)",
+          "kind": "agency",
+          "role": "federal agency / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "EPA stated that the discussion on market shifts should be broadened to include potential shifts to or from foreign production if these shifts are significant.",
+          "evidence_pages": [
+            "101"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "University of Michigan (UM)",
+          "kind": "organization",
+          "role": "academic institution / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "UM stated that they disagreed with NHTSA's truck mileage statistics.",
+          "evidence_pages": [
+            "104"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "U. S. Department of Agriculture, Forest Service",
+          "kind": "agency",
+          "role": "federal agency / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "The Forest Service expressed concern that fuel economy goals will force manufacturers to design tracks in a limited manner which inhibits their usefulness in a variety of applications.",
+          "evidence_pages": [
+            "106"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "National Conference of Governors' Highway Safety Representatives",
+          "kind": "organization",
+          "role": "organization / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "This Conference agreed with the fuel economy standard, which they concluded appeared reasonable. They also agreed that the standard will result in a substantial fuel savings.",
+          "evidence_pages": [
+            "107"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "U.S. Department of the Interior, Bureau of Mines",
+          "kind": "agency",
+          "role": "federal agency / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "The Department of the Interior encouraged extensions GYWR and to include MY 1980 and beyond.",
+          "evidence_pages": [
+            "107"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "Consumers Union",
+          "kind": "organization",
+          "role": "commenter (no substantive comments)",
+          "attribution_mode": "sectional",
+          "quote": "The following organizations responded without substantive comments: Consumers Union",
+          "evidence_pages": [
+            "107"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "U.S. Department of Labor",
+          "kind": "agency",
+          "role": "commenter (no substantive comments)",
+          "attribution_mode": "sectional",
+          "quote": "The following organizations responded without substantive comments: Consumers Union U.S. Department of Labor",
+          "evidence_pages": [
+            "107"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "U.S. Department of Transportation",
+          "kind": "agency",
+          "role": "commenter (no substantive comments)",
+          "attribution_mode": "sectional",
+          "quote": "The following organizations responded without substantive comments: Consumers Union U.S. Department of Labor U.S. Department of Transportation",
+          "evidence_pages": [
+            "107"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "Federal Highway Administration",
+          "kind": "agency",
+          "role": "commenter (no substantive comments)",
+          "attribution_mode": "sectional",
+          "quote": "The following organizations responded without substantive comments: Consumers Union U.S. Department of Labor U.S. Department of Transportation a. Federal Highway Administration",
+          "evidence_pages": [
+            "107"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "International Harvester",
+          "kind": "organization",
+          "role": "vehicle manufacturer / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "International Harvester commented that, although the preamble to the NPRM indicated that only vehicles 6,000 pounds or less, GVWR, were intended to be subject to the standard, the proposed standard as drafted includes in its scope vehicles less than 10,000 pounds GVWR.",
+          "evidence_pages": [
+            "120"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "Chrysler",
+          "kind": "organization",
+          "role": "automobile manufacturer / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "Chrysler supported the inclusion of the captive imports because it believed this would allow the manufacturer to adopt the most cost-effective strategy for maximizing fleet fuel economy.",
+          "evidence_pages": [
+            "133"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "United Auto Workers (UAW)",
+          "kind": "organization",
+          "role": "labor union / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "The UAW's opposition was based on its belief that the intent of the Title is to treat all imported and domestic vehicles separately, although it conceded that the language of the Title mandates this separate treatment only for passenger automobiles.",
+          "evidence_pages": [
+            "133"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "General Motors",
+          "kind": "organization",
+          "role": "automobile manufacturer / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "General Motors favored a single class for all nonpassenger automobiles, because such a system would allow a manufacturer maximum flexibility in meeting a standard.",
+          "evidence_pages": [
+            "137"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "UAW",
+          "kind": "organization",
+          "role": "labor union / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "The UAW does not agree with the NHTSA's policy calculating their fleet fuel economy.",
+          "evidence_pages": [
+            "106"
+          ],
+          "chunk_index": 2
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 15048,
+        "output_tokens": 1924,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 3,
+      "start_page": 145,
+      "end_page": 165,
+      "ceq_chapter": "Alternatives",
+      "entities": [
+        {
+          "entity": "EPA",
+          "kind": "agency",
+          "role": "Federal emissions standards regulator",
+          "attribution_mode": "paraphrased",
+          "quote": "EPA has established more stringent emission standards for model year 1979.",
+          "evidence_pages": [
+            "145"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "NHTSA",
+          "kind": "agency",
+          "role": "Federal fuel economy standards regulator",
+          "attribution_mode": "paraphrased",
+          "quote": "the NHTSA has concluded that the manufacturers have failed to show that there will be any penalty due to the tighter emissions standard.",
+          "evidence_pages": [
+            "146"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "General Motors",
+          "kind": "organization",
+          "role": "automobile manufacturer / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "The estimated fuel economy penalty due to the emission standard, including the effect of increased NOx emissions resulting from higher engine loading due to the revised test procedures, was 5 percent for General Motors",
+          "evidence_pages": [
+            "146"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "Ford",
+          "kind": "organization",
+          "role": "automobile manufacturer / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "The estimated fuel economy penalty due to the emission standard, including the effect of increased NOx emissions resulting from higher engine loading due to the revised test procedures, was 5 percent for General Motors, 3 percent for Ford",
+          "evidence_pages": [
+            "146"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "Chrysler",
+          "kind": "organization",
+          "role": "automobile manufacturer / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "The estimated fuel economy penalty due to the emission standard, including the effect of increased NOx emissions resulting from higher engine loading due to the revised test procedures, was 5 percent for General Motors, 3 percent for Ford, and 7 percent for Chrysler.",
+          "evidence_pages": [
+            "146"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "AMC",
+          "kind": "organization",
+          "role": "automobile manufacturer / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "AMC estimated the combined penalty to be greater than 10 percent.",
+          "evidence_pages": [
+            "146"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "International Harvester",
+          "kind": "organization",
+          "role": "automobile manufacturer / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "International Harvester believes the penalty due to the emission standard will be 10 - 15 percent.",
+          "evidence_pages": [
+            "146"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "General Motors",
+          "kind": "organization",
+          "role": "automobile manufacturer / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "General Motors stated, that there was an average difference in inertia weight of 500 pounds between passenger automobiles and nonpassenger automobiles and if the fuel economy costs of the extra 500 pounds were considered, the fuel economy standard for nonpassenger automobiles should be no more than 16.9 mpg to be consistent with the standard for passenger automobiles.",
+          "evidence_pages": [
+            "160"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "Chrysler",
+          "kind": "organization",
+          "role": "automobile manufacturer / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "Chrysler argued that an average fuel economy standard for nonpassenger automobiles which was only 0.3 mpg below that set for passenger automobiles failed to take into account the differences between passenger and nonpassenger automobiles.",
+          "evidence_pages": [
+            "160"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "Ford",
+          "kind": "organization",
+          "role": "automobile manufacturer / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "Ford stated that the NHTSA overstated the benefits and understated the costs of the proposed standard.",
+          "evidence_pages": [
+            "161"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "Ford",
+          "kind": "organization",
+          "role": "automobile manufacturer / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "Ford stated that the 1979 emissions standards for California, which are more stringent than the 1979 Federal standards, will result in its California fleet of nonpassenger automobiles having an average fuel economy approximately 6 percent lower than its Federal fleet.",
+          "evidence_pages": [
+            "158"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "Chrysler",
+          "kind": "organization",
+          "role": "automobile manufacturer / commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "Chrysler provided information showing that its California fleet will lower the average fuel economy of its 50 state fleet by 0.3 mpg.",
+          "evidence_pages": [
+            "158"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "EPA",
+          "kind": "agency",
+          "role": "Federal emissions standards regulator",
+          "attribution_mode": "paraphrased",
+          "quote": "EPA has stated in their rulemaking action for the MY 1979 emission standard that there does not have to be a fuel economy penalty associated with its standard if the manufacturers have enough leadtime to optimize calibrations and control system designs.",
+          "evidence_pages": [
+            "155"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "John W. Snow",
+          "kind": "official",
+          "role": "Administrator, National Highway Traffic Safety Administration",
+          "attribution_mode": "sectional",
+          "quote": "John W. Snow Administrator, National Highway Traffic Safety Administration",
+          "evidence_pages": [
+            "165"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "Congress",
+          "kind": "government",
+          "role": "U.S. legislative body / established passenger automobile standard",
+          "attribution_mode": "paraphrased",
+          "quote": "In section 502(a)(l) of Title V, Congress established an average fuel economy standard for passenger automobiles manufactured in model year 1979 of 19.0 mpg.",
+          "evidence_pages": [
+            "159"
+          ],
+          "chunk_index": 3
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 7122,
+        "output_tokens": 1555,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    }
+  ]
+}

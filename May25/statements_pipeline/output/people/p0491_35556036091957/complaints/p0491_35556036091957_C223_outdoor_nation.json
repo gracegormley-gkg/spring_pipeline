@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C223",
+  "complainer_id": "p0491_35556036091957_K218",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 223,
+  "entity": "Outdoor Nation",
+  "kind": "organization",
+  "role": "recreation advocacy organization, referenced commenter",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "referenced as a new organization expected to provide realistic pro-recreation viewpoint to the Department of Interior",
+  "summary": "Outdoor Nation is mentioned by the Trailer Coach Association in their comment letter as a newly formed organization that TCA hopes will provide the Department of Interior with a realistic viewpoint on solving problems related to ORV use and land management. The organization is cited as an attachment (#2) to TCA's letter and is characterized as a counterweight to preservationist groups. No direct statement from Outdoor Nation itself appears in the window.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Trailer Coach Association references Outdoor Nation as a prominent new organization they hope will provide the Department of Interior with a realistic viewpoint and approach to solving problems related to ORV use on public lands, positioning it as a pro-recreation counterbalance to preservationist groups.",
+  "evidence_pages": [
+    "303"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Among the most prominent of these new organizations is the \"Outdoor Nation\" (see Attachment #2). We are hopeful that this organization will provide your department with a realistic viewpoint and approach to solving some of the problems to which this statement is addressed.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "303"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Among the most prominent of these new organizations is the \"Outdoor Nation\" (see Attachment #2). We are hopeful that this organization will provide your department with a realistic viewpoint and approach to solving some of the problems to which this statement is addressed.",
+      "quote_verified": true,
+      "entity_as_written": "Outdoor Nation",
+      "role_as_written": "recreation advocacy organization, referenced commenter"
+    }
+  ],
+  "window_pages": [
+    293,
+    313
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 218,
+  "synthetic_no_complaint": false
+}

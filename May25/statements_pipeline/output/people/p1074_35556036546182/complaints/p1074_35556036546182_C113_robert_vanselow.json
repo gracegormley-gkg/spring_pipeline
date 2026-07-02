@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C113",
+  "complainer_id": "p1074_35556036546182_K100",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 113,
+  "entity": "Robert Vanselow",
+  "kind": "individual",
+  "role": "Private Citizen",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "testified that noise levels in Draft EIS failed to account for airport noise and raised multiple noise-related concerns",
+  "summary": "Robert Vanselow, a private citizen, testified at the July 11, 1974 Environmental Public Hearing that the noise levels presented in the Draft EIS did not adequately consider airport noise. He raised specific concerns about nighttime truck noise, the validity of aircraft noise readings taken from other areas, the timing of noise measurements during runway downtime, and the need to incorporate aircraft noise into the overall noise assessment.",
+  "form": "testimony",
+  "complaint_summary": "Vanselow testified that the Draft EIS noise analysis was inadequate because it failed to account for airport noise, used aircraft noise readings from other regions, was conducted when a runway was down, and did not reflect the higher proportion of trucks at night.",
+  "evidence_pages": [
+    "223"
+  ],
+  "statement": {
+    "text": "Stated that the noise levels presented in the Draft EIS did not consider airport noise.\nf) Indicated his concern that there are more trucks at night; noise levels for aircraft takeoffs and landings are based on readings taken in other areas of the nation; noise readings were taken when Runway 7R-25L was down; and that noise levels should consider aircraft noise.",
+    "opening_anchor": "Stated that the noise levels presented in the Draft EIS did not consider airport noise.",
+    "closing_anchor": "noise levels should consider aircraft noise.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036546182_R037"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Stated that the noise levels presented in the Draft EIS did not consider airport noise.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "223"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Stated that the noise levels presented in the Draft EIS did not consider airport noise.",
+      "quote_verified": true,
+      "entity_as_written": "Robert Vanselow",
+      "role_as_written": "Private Citizen"
+    }
+  ],
+  "window_pages": [
+    213,
+    233
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 100,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C039",
+  "complainer_id": "p1074_35556039563135_K036",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 39,
+  "entity": "Superintendent of Schools (Chicago Heights, District No. 170, Cook County)",
+  "kind": "official",
+  "role": "School district superintendent",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "superintendent's letter findings presented as basis for concurrence request regarding playfield non-significance",
+  "summary": "The Superintendent of Schools (Chicago Heights, District No. 170, Cook County) issued a letter dated August 30, 1974, in which he reached findings characterizing the Roosevelt School playfield area as 'not significant to the recreational needs of the community,' in the context of the Lincoln Highway improvement project's Section 4(f) land procedures. His findings were presented to the Chicago Heights Park District for concurrence, indicating conditional acceptance of the project's land acquisition scheme. The superintendent's position supported the agreed-upon Scheme 'A' for the highway improvement, which involved acquiring frontage land from Roosevelt School.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Superintendent of Schools reached findings in his August 30, 1974 letter characterizing the Roosevelt School playfield as 'not significant to the recreational needs of the community,' which were then presented to the Chicago Heights Park District for concurrence as part of Section 4(f) land procedures related to the Lincoln Highway improvement.",
+  "evidence_pages": [
+    "78"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556039563135_R007"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "A request for the Park District's concurrence in the findings reached by the Superintendent of Schools (Chicago Heights, District No. 170, Cook County) in his letter of August 30,1974, was presented.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "78"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "A request for the Park District's concurrence in the findings reached by the Superintendent of Schools (Chicago Heights, District No. 170, Cook County) in his letter of August 30,1974, was presented.",
+      "quote_verified": true,
+      "entity_as_written": "Superintendent of Schools (Chicago Heights, District No. 170, Cook County)",
+      "role_as_written": "School district superintendent"
+    }
+  ],
+  "window_pages": [
+    68,
+    88
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 36,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C158",
+  "complainer_id": "p0491_35556036091957_K126",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 158,
+  "entity": "Bureau of Indian Affairs, Office of Planning",
+  "kind": "agency",
+  "role": "federal agency, commenter",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "memo states statement adequately covers environmental considerations but recommends two specific deletions in Section V",
+  "summary": "The Bureau of Indian Affairs, Office of Planning reviewed the draft Environmental Impact Statement and found it generally adequate in covering environmental considerations. They noted that Indian lands are excluded from the Executive Order's definition of 'Public Lands' and are not subject to federal governmental controls for public use. They offered two specific recommendations for deletions in Section V of the document.",
+  "form": "letter",
+  "complaint_summary": "The BIA Office of Planning found the draft EIS generally adequate but recommended deleting language about stricter ORV operation methods being an adverse effect (arguing they are beneficial) and deleting the item about historical and archeological structures being damaged by ORV use as conflicting with other provisions in the document.",
+  "evidence_pages": [
+    "218"
+  ],
+  "statement": {
+    "text": "The subject statement has been reviewed and we believe adequately covers the environmental considerations. It is noted that the Executive Order specifically excludes Indian lands from it's definition of \"Public Lands.\" While the Secretary of the Interior is administratively responsible for Indian lands in trust status their lands are considered private lands under control of the related governing body and as such applying federal governmental controls for public use is not appropriate.\nWe have two recommendations both of which pertains to section V. Any Adverse Effect Which Cannot Be Avoided Should The Proposal Be Implemented, page 24.\nIn paragraph 2, delete all after, \"loss of freedom in areas used.\" In our opinion, stricter methods of operation would be a beneficial rather than adverse effect, both to the resource and operator of the ORV.\nDelete the last item in section V, \"Historical and archeological structures may be changed or destroyed by ORV use.\" This is in conflict with the statement contained in the duties of each Assistant Secretary, item 4 a, (v), page 4, which states, \"Areas and trails shall not be located in areas possessing unique natural,\n\nwildlife, historic or recreational values unless the Bureau head determines that these unique values will not be adversely affected.\"\nDirector of Planning",
+    "opening_anchor": "The subject statement has been reviewed and we believe adequately covers the environmental considerations.",
+    "closing_anchor": "Director of Planning",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The subject statement has been reviewed and we believe adequately covers the environmental considerations.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "218"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The subject statement has been reviewed and we believe adequately covers the environmental considerations.",
+      "quote_verified": true,
+      "entity_as_written": "Bureau of Indian Affairs, Office of Planning",
+      "role_as_written": "federal agency, commenter"
+    }
+  ],
+  "window_pages": [
+    208,
+    228
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 126,
+  "synthetic_no_complaint": false
+}

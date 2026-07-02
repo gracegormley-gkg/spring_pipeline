@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036546182_C076",
+  "complainer_id": "p1074_35556036546182_K070",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 76,
+  "entity": "W. Weber",
+  "kind": "official",
+  "role": "Spokesman for Milwaukee School Board",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "explicitly stated policy of neither endorsing nor condemning the proposed improvement",
+  "summary": "W. Weber, spokesman for the Milwaukee School Board, testified at the March 25, 1969 public hearing that the School Board's policy was to neither endorse nor condemn the proposed Airport Spur freeway improvement. He noted that while the Garland School site itself would not be directly affected, the broader school district would be impacted, particularly students living in the area to be acquired for the General Mitchell Field cargo area.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "W. Weber stated the School Board neither endorsed nor condemned the proposed improvement, noted the Garland School site would not be affected but the school district would, and that students in the area to be acquired for the cargo area would be affected.",
+  "evidence_pages": [
+    "157"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Spokesman for School Board stated that their policy was neither to endorse nor condemn the proposed improvement and that the Garland School site would not be affected but that the school district would.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "157"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Spokesman for School Board stated that their policy was neither to endorse nor condemn the proposed improvement and that the Garland School site would not be affected but that the school district would.",
+      "quote_verified": true,
+      "entity_as_written": "W. Weber",
+      "role_as_written": "Spokesman for Milwaukee School Board"
+    }
+  ],
+  "window_pages": [
+    147,
+    167
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 70,
+  "synthetic_no_complaint": false
+}

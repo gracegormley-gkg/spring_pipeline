@@ -1,0 +1,68 @@
+{
+  "complaint_id": "p1074_35556036105336_C007",
+  "complainer_id": "p1074_35556036105336_K013",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 7,
+  "entity": "L. S. McBride",
+  "kind": "official",
+  "role": "Richmond Area Representative, Pollution Abatement Division, State Water Control Board",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase states no additional water pollution problems if separate sanitary and storm sewers are provided",
+  "summary": "L. S. McBride, Richmond Area Representative of the State Water Control Board, expressed conditional approval of the Randolph Urban Renewal Project, stating it would not create additional water pollution problems provided that separate sanitary and storm sewers are installed to the fullest extent feasible. His position is cited in the infrastructure section of the EIS as evidence that the project has received State Water Control Board approval, with his letter referenced as Appendix Exhibit No. 4.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "McBride, in a letter dated July 10, 1972, stated that the redevelopment project would not create any additional water pollution problems if separate sanitary and storm sewers are provided.",
+  "evidence_pages": [
+    "16"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The staff is of the opinion that the redevelopment project .proposed will not create any additional water pollution problems if separate sanitary and storm sewers are provided to the fullest extent feasible.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "16"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "the \"redevelopment project proposed will not create any additional water pollution problems if separate sanitary and storm sewers are provided\"",
+      "quote_verified": false,
+      "entity_as_written": "L.S. McBride",
+      "role_as_written": "Richmond Area representative, State Water Control Board"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "106"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The staff is of the opinion that the redevelopment project .proposed will not create any additional water pollution problems if separate sanitary and storm sewers are provided to the fullest extent feasible.",
+      "quote_verified": true,
+      "entity_as_written": "L. S. McBride",
+      "role_as_written": "Richmond Area Representative, Pollution Abatement Division, State Water Control Board"
+    }
+  ],
+  "window_pages": [
+    6,
+    44
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 13,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556039563135_C075",
+  "complainer_id": "p1074_35556039563135_K058",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 75,
+  "entity": "Donald A. Wallgren",
+  "kind": "individual",
+  "role": "Acting Chief, Federal Activities Coordination Branch, EPA Region V",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "written comment stating EIS fails to provide adequate air quality information and specifying what information is required",
+  "summary": "Donald A. Wallgren, Acting Chief of EPA Region V's Federal Activities Coordination Branch, submitted comments on the Draft Environmental Statement identifying deficiencies in the air quality analysis. He noted that the EIS failed to provide adequate information to assess resulting ambient air quality, specifically requesting average route speeds for peak and non-peak hours before and after project completion so that emission rates as a function of speed could be applied. The agency responded by updating the Air Quality Data in conformance with PPM 90-7.",
+  "form": "written_comment",
+  "complaint_summary": "Wallgren states that the EIS fails to provide adequate information to assess resulting ambient air quality, and requests average route speeds for peak and non-peak hours before and after project completion so that the inverse relationship of emissions as a function of speed can be applied.",
+  "evidence_pages": [
+    "173"
+  ],
+  "statement": {
+    "text": "Although the EIS discusses the project from a traffic decongestion standpoint it fails to provide adequite information to assess the resulting ambient air quality. Information required would be average route speed for peak and non-peak hours before and anticipated after completion of the project. Then the inverse relationship of Completion of the project. Then the inverse relationship of Completions as a function of speed, can readily be applied.\n\nIt is felt that inclusion of the above information in the Final Impact Statement will allow a more comprehensive evaluation of the immediate area.",
+    "opening_anchor": "Although the EIS discusses the project from a traffic decongestion standpoint it fails to provide adequite information to assess the resulting ambient air quality.",
+    "closing_anchor": "It is felt that inclusion of the above information in the Final Impact Statement will allow a more comprehensive evaluation of the immediate area.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556039563135_R033"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Although the EIS discusses the project from a traffic decongestion standpoint it fails to provide adequite information to assess the resulting ambient air quality.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "173"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Although the EIS discusses the project from a traffic decongestion standpoint it fails to provide adequite information to assess the resulting ambient air quality.",
+      "quote_verified": true,
+      "entity_as_written": "Donald A. Wallgren",
+      "role_as_written": "Acting Chief, Federal Activities Coordination Branch, EPA Region V"
+    }
+  ],
+  "window_pages": [
+    163,
+    183
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 58,
+  "synthetic_no_complaint": false
+}

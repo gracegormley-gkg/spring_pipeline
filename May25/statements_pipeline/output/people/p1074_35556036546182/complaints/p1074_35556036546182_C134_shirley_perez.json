@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C134",
+  "complainer_id": "p1074_35556036546182_K130",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 134,
+  "entity": "Shirley Perez",
+  "kind": "individual",
+  "role": "Private Citizen, commenter",
+  "stance": "opposed",
+  "stance_confidence": "high",
+  "stance_basis": "explicitly stated opposition to the Airport Spur due to tax base reduction",
+  "summary": "Shirley Perez, a private citizen residing at 5713 South 21st Street, testified against the Airport Spur, arguing it would reduce the tax base by taking industrial land north of Grange Avenue. She also questioned the positions of the City of Milwaukee Common Council and Milwaukee County Board on the project.",
+  "form": "testimony",
+  "complaint_summary": "Shirley Perez stated opposition to the Airport Spur because it would reduce the tax base by taking approximately 5 acres of industrial land north of Grange Avenue, and questioned the positions of the City of Milwaukee Common Council and Milwaukee County Board on the project.",
+  "evidence_pages": [
+    "242"
+  ],
+  "statement": {
+    "text": "32. a) Shirley Perez \nh) 5713 South 21st Street\nc) Private Citizen\nd) 146\ne) Stated she is against the Spur because it would reduce the tax base.\nf) Questioned who owned the industrial g) land north of Grange Avenue between 6th Street and Howell Avenue and the affect of taking this land on the tax base.\nQuestioned how both the City of Milwaukee Common Council and the Milwaukee County Board stand on the Airport Spur.\nPresently this is a land bank owned by the City of Milwaukee. Approximately 5 acres is being taken by the Airport Spur and Relocated Grange Avenue. This is not significant.\nSee pages 20 and 21 for response.",
+    "opening_anchor": "32. a) Shirley Perez \nh) 5713 South 21st Street\nc) Private Citizen\nd) 146\ne) Stated she is against the Spur because it would reduce the tax base.",
+    "closing_anchor": "See pages 20 and 21 for response.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036546182_R053"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Stated she is against the Spur because it would reduce the tax base.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "242"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Stated she is against the Spur because it would reduce the tax base.",
+      "quote_verified": true,
+      "entity_as_written": "Shirley Perez",
+      "role_as_written": "Private Citizen, commenter"
+    }
+  ],
+  "window_pages": [
+    232,
+    252
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 130,
+  "synthetic_no_complaint": false
+}

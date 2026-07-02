@@ -1,0 +1,69 @@
+{
+  "complaint_id": "p1074_35556039563135_C015",
+  "complainer_id": "p1074_35556039563135_K079",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 15,
+  "entity": "Village of Olympia Fields",
+  "kind": "government",
+  "role": "Local municipality / early coordination meeting participant",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed as draft EIS recipient and early coordination participant with no recorded position",
+  "summary": "The Village of Olympia Fields appears in the document solely as a local agency that received the draft Environmental Statement for review and comment, and as a community whose comprehensive plan was considered in the alignment studies. No comment, objection, or position statement from the Village is recorded in this window.",
+  "form": "sectional",
+  "complaint_summary": "The Village of Olympia Fields is listed among local agencies to which the draft Environmental Statement was sent for review and comment, but no comment from the Village is recorded among those agencies that actually responded.",
+  "evidence_pages": [
+    "13"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence"
+  ],
+  "summary_quote": "MEETINGS BETWEEN ORGANIZATIONS AND ILLINOIS DEPARTMENT OF TRANSPORTATION",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "157"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "MEETINGS BETWEEN ORGANIZATIONS AND ILLINOIS DEPARTMENT OF TRANSPORTATION",
+      "quote_verified": true,
+      "entity_as_written": "Village of Olympia Fields",
+      "role_as_written": "Local municipality / early coordination meeting participant"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "13"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Village of Olympia Fields",
+      "quote_verified": true,
+      "entity_as_written": "Village of Olympia Fields",
+      "role_as_written": "commenter listed in NIPC project summary"
+    }
+  ],
+  "window_pages": [
+    3,
+    50
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 79,
+  "synthetic_no_complaint": false
+}

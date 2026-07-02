@@ -1,0 +1,68 @@
+{
+  "complaint_id": "p1074_35556038322269_C041",
+  "complainer_id": "p1074_35556038322269_K045",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 41,
+  "entity": "Los Angeles City Traffic Department",
+  "kind": "agency",
+  "role": "Agency conducting traffic forecasting and congestion analysis for the alternatives",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "described as performing technical traffic forecasting and congestion analysis without expressing a position on the project",
+  "summary": "The Los Angeles City Traffic Department conducted the traffic forecasting and congestion analysis for the Regional Core alternatives, using LARTS vehicle trip interchanges assigned to a highway network via UTPS programs. Their work produced auto trip forecasts, vehicle miles traveled data, volume-to-capacity ratios at station intersections, and parking impact analyses for all eleven alternatives. The department is cited as the source of key data tables but does not express a position for or against any alternative.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Los Angeles City Traffic Department's forecasting methodology is described: it took LARTS vehicle trip interchanges for each alternative and assigned them to a detailed highway network using UTPS programs, with adjustments for vehicle occupancy, speed, and trip length, and conducted localized congestion analyses along critical roadways.",
+  "evidence_pages": [
+    "128",
+    "129"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The forecasting methodology used by the City of Los Angeles Traffic Department involved taking LARTS vehicle trip interchanges for the different alternatives and assigning them to a detailed highway network using Urban Transportation Planning System (UTPS) programs developed by the Federal Highway (FHWA) and Urban Mass Transportation (UMTA) programs.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "128"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The forecasting methodology used by the City of Los Angeles Traffic Department involved taking LARTS vehicle trip interchanges for the different alternatives and assigning them to a detailed highway network using Urban Transportation Planning System (UTPS) programs developed by the Federal Highway (FHWA) and Urban Mass Transportation (UMTA) programs.",
+      "quote_verified": true,
+      "entity_as_written": "Los Angeles City Traffic Department",
+      "role_as_written": "Agency conducting traffic forecasting and congestion analysis for the alternatives"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "129"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "SOURCE: Los Angeles City Traffic Department",
+      "quote_verified": true,
+      "entity_as_written": "Los Angeles City Traffic Department",
+      "role_as_written": "Source for transit time savings calculations"
+    }
+  ],
+  "window_pages": [
+    118,
+    139
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 45,
+  "synthetic_no_complaint": false
+}

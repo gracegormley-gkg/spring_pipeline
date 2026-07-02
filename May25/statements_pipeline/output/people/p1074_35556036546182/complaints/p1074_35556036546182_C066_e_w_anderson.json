@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036546182_C066",
+  "complainer_id": "p1074_35556036546182_K046",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 66,
+  "entity": "E. W. Anderson",
+  "kind": "official",
+  "role": "Federal Aviation Administration Minneapolis Area Office",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "explicitly stated no objection to the proposed freeway serving General Mitchell terminal area",
+  "summary": "E. W. Anderson of the Federal Aviation Administration Minneapolis Area Office testified at the March 25, 1969 Corridor Location Public Hearing that the FAA has no objection to the proposed Airport Spur freeway serving the General Mitchell terminal area. His testimony was brief and supportive, requiring no response from the Division of Highways.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "E. W. Anderson stated that the Federal Aviation Administration has no objection to the proposed freeway which will serve General Mitchell terminal area.",
+  "evidence_pages": [
+    "154"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Stated that the Federal Aviation Administration has no objection to the proposed freeway which will serve General Mitchell terminal area.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "154"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Stated that the Federal Aviation Administration has no objection to the proposed freeway which will serve General Mitchell terminal area.",
+      "quote_verified": true,
+      "entity_as_written": "E. W. Anderson",
+      "role_as_written": "Federal Aviation Administration Minneapolis Area Office"
+    }
+  ],
+  "window_pages": [
+    144,
+    164
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 46,
+  "synthetic_no_complaint": false
+}

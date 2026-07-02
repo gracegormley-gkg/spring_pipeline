@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036806586_C116",
+  "complainer_id": "p1074_35556036806586_K002",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 116,
+  "entity": "Department of the Army--Corps of Engineers",
+  "kind": "agency",
+  "role": "Federal agency requested to review draft EIS; responded",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed only in sectional roster of federal agencies requested to review draft EIS; no position stated in window",
+  "summary": "The Department of the Army--Corps of Engineers appears only in a sectional listing of federal departments and offices that were requested to review the draft Environmental Impact Statement for the Bad Creek Pumped Storage Project. No substantive comments, positions, or complaints from the Corps of Engineers are present in this document window. No stance toward the project can be determined from the available text.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "1"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim",
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Federal Departments and Offices ... *Department of the Army--Corps of Engineers",
+  "summary_quote_verified": false,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "1"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Federal Departments and Offices ... *Department of the Army--Corps of Engineers",
+      "quote_verified": false,
+      "entity_as_written": "Department of the Army--Corps of Engineers",
+      "role_as_written": "Federal agency requested to review draft EIS; responded"
+    }
+  ],
+  "window_pages": [
+    1,
+    11
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 2,
+  "synthetic_no_complaint": true
+}

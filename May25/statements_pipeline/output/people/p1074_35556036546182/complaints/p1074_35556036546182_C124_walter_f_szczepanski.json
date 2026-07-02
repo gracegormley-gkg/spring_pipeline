@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C124",
+  "complainer_id": "p1074_35556036546182_K104",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 124,
+  "entity": "Walter F. Szczepanski",
+  "kind": "individual",
+  "role": "Private Citizen",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase explicitly states opposition to Airport Spur citing existing adequate access routes",
+  "summary": "Walter F. Szczepanski opposed the Airport Spur, arguing that adequate access to the airport already exists via Highway 100, Rawson Avenue, College Avenue, and Howell Avenue. He also raised concerns about jurisdictional responsibility for Grange Avenue relocation, noise measurement validity during a Northwest Airlines strike, and the impact of longer trucks on noise levels.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Szczepanski opposed the Airport Spur on grounds that good airport access already exists via Highway 100, Rawson Avenue, College Avenue, and Howell Avenue, and raised additional concerns about Grange Avenue jurisdictional responsibility, noise measurements taken during a strike, and longer trucks producing more noise.",
+  "evidence_pages": [
+    "232"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R044"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Opposed to the Airport Spur because we already have good access to the airport using Highway 100, Rawson Avenue and College Avenue via Howell Avenue.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "232"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Opposed to the Airport Spur because we already have good access to the airport using Highway 100, Rawson Avenue and College Avenue via Howell Avenue.",
+      "quote_verified": true,
+      "entity_as_written": "Walter F. Szczepanski",
+      "role_as_written": "Private Citizen"
+    }
+  ],
+  "window_pages": [
+    222,
+    242
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 104,
+  "synthetic_no_complaint": false
+}

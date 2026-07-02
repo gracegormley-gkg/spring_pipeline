@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C012",
+  "complainer_id": "p1074_35556038322269_K024",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 12,
+  "entity": "California State Legislature",
+  "kind": "government",
+  "role": "State legislative body",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as creating LAMTA to study rapid transit needs, with no expressed position on the current project",
+  "summary": "The California State Legislature is mentioned in a historical context as having created the Los Angeles Metropolitan Transit Authority (LAMTA) in 1951 to study the area's rapid transit needs, and later as having passed the Transit Development Act (SB 325) in 1971 earmarking sales tax revenues for local transit subsidies. These references are purely historical background with no expressed position on the current project alternatives.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The California State Legislature is described as having created LAMTA in 1951 to study rapid transit needs, and later passing the Transit Development Act in 1971 to earmark sales tax revenues for local transit subsidies, serving as historical background for the current planning effort.",
+  "evidence_pages": [
+    "67"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "In 1951, the California State Legislature created the Los Angeles Metropolitan Transit Authority (LAMTA) to study the area's rapid transit needs.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "67"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In 1951, the California State Legislature created the Los Angeles Metropolitan Transit Authority (LAMTA) to study the area's rapid transit needs.",
+      "quote_verified": true,
+      "entity_as_written": "California State Legislature",
+      "role_as_written": "State legislative body"
+    }
+  ],
+  "window_pages": [
+    57,
+    77
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 24,
+  "synthetic_no_complaint": false
+}

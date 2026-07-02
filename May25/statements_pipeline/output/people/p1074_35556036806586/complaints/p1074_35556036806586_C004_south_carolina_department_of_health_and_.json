@@ -1,0 +1,79 @@
+{
+  "complaint_id": "p1074_35556036806586_C004",
+  "complainer_id": "p1074_35556036806586_K010",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 4,
+  "entity": "South Carolina Department of Health and Environmental Control",
+  "kind": "agency",
+  "role": "State environmental/health agency — fish consumption advisory",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "agency listed as having responded to draft EIS and issued water quality certificate with permit conditions",
+  "summary": "The South Carolina Department of Health and Environmental Control (SCDHEC) responded to the Draft Environmental Impact Statement and is listed among the agencies that commented. The agency issued a Water Quality Certificate under Section 401 of the Federal Water Pollution Control Act Amendments of 1972, and additional NPDES and sewage facility permits are required from SCDHEC at various construction and operational stages. The agency's role is primarily regulatory — conditioning project approval on compliance with water quality and discharge requirements — rather than expressing outright support or opposition.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "SCDHEC issued a Water Quality Certificate to the Applicant and would require additional NPDES discharge permits and sewage facility permits during construction and operation, conditioning the project on compliance with water quality standards.",
+  "evidence_pages": [
+    "1"
+  ],
+  "statement": {
+    "text": "The Applicant has obtained a Water Quality Certificate pursuant to Section 401 of the Federal Water Pollution Control Act Amendments of 1972 (Act) from the State of South Carolina Department of Health and Environmental Control (DHEC). Applicant proposes to treat domestic wastes during construction by use of a portable sewage treatment plant. If the discharge from this plant is made into a stream or into Lake Jocassee, the Applicant would be required to obtain a water quality certificate and discharge permit pursuant to Sections 401 and 402 of the Act. Similar permits would be required during operation for the discharge from any treatment plant used to treat domestic wastes at the powerhouse.",
+    "opening_anchor": "The Applicant has obtained a Water Quality Certificate pursuant to Section 401 of the Federal Water Pollution Control Act Amendments of 1972 (Act) from the State of South Carolina Department of Health and Environmental Control (DHEC).",
+    "closing_anchor": "Similar permits would be required during operation for the discharge from any treatment plant used to treat domestic wastes at the powerhouse.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "This office has reviewed the Draft Environmental Impact Statement regarding the Bad Creek Pumped Storage Hydroelectric Project and offers the following comments for your consideration",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased",
+    "sectional"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "1"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "State Agencies ... *South Carolina Department of Health and Environmental Control",
+      "quote_verified": false,
+      "entity_as_written": "South Carolina Department of Health and Environmental Control",
+      "role_as_written": "State agency requested to review draft EIS; responded"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "91"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The South Carolina Department of Health and Environmental Control recommended that no more than 1.5 pounds of fish flesh from Lake Jocassee be eaten per week.",
+      "quote_verified": false,
+      "entity_as_written": "South Carolina Department of Health and Environmental Control",
+      "role_as_written": "State environmental/health agency — fish consumption advisory"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "281"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "This office has reviewed the Draft Environmental Impact Statement regarding the Bad Creek Pumped Storage Hydroelectric Project and offers the following comments for your consideration",
+      "quote_verified": true,
+      "entity_as_written": "SOUTH CAROLINA DEPARTMENT OF HEALTH AND ENVIRONMENTAL CONTROL",
+      "role_as_written": "state agency commenter"
+    }
+  ],
+  "window_pages": [
+    1,
+    51
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 10,
+  "synthetic_no_complaint": false
+}

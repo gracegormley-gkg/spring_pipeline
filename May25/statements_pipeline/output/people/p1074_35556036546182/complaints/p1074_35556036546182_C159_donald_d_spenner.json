@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036546182_C159",
+  "complainer_id": "p1074_35556036546182_K110",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 159,
+  "entity": "Donald D. Spenner",
+  "kind": "official",
+  "role": "Real Estate Agent / District Relocation Agent, Wisconsin DOT Division of Highways",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "authored official relocation plan memos assessing housing availability without expressing support or opposition to the project",
+  "summary": "Donald D. Spenner, a Real Estate Agent and District Relocation Agent for the Wisconsin DOT Division of Highways, authored two official relocation planning documents for the Airport Spur project. His role was administrative and technical: assessing housing availability for displaced families and updating the relocation plan. He expressed no personal opinion on the project's merits, only confirming that sufficient housing existed to accommodate those displaced.",
+  "form": "written_comment",
+  "complaint_summary": "Spenner's March 19, 1975 memo reports that attached housing surveys indicate sufficient housing remains available to adequately relocate all families and individuals affected by the Airport Spur projects, with no change to the approved relocation plan.",
+  "evidence_pages": [
+    "253"
+  ],
+  "statement": {
+    "text": "SUBJECT: \nProject I.D. 1030-1-26 Project I 94-5(49)317\nAirport Spur\n(I-94 - S. 13th St.) Milwaukee County\nand\nProject I.D. 2015-1-21\nProject U 078-1(1)\nAirport Spur\n(S. 13th St.-S. Howell Ave.)\nMilwaukee County\nRe: Relocation Plan\nThe attached surveys indicate that there still should be sufficient housing available to adequately relocate those families and individuals affected by the subject projects.\nThese surveys would indicate that there will be no change in the relocation plan as approved.\nDonald D. Spenner\nReal Estate Agent\nDDS:sc\nAttachments",
+    "opening_anchor": "SUBJECT: \nProject I.D. 1030-1-26 Project I 94-5(49)317\nAirport Spur\n(I-94 - S. 13th St.) Milwaukee County",
+    "closing_anchor": "Donald D. Spenner\nReal Estate Agent\nDDS:sc\nAttachments",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The attached surveys indicate that there still should be sufficient housing available to adequately relocate those families and individuals affected by the subject projects.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "253"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The attached surveys indicate that there still should be sufficient housing available to adequately relocate those families and individuals affected by the subject projects.",
+      "quote_verified": true,
+      "entity_as_written": "Donald D. Spenner",
+      "role_as_written": "Real Estate Agent / District Relocation Agent, Wisconsin DOT Division of Highways"
+    }
+  ],
+  "window_pages": [
+    243,
+    263
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 110,
+  "synthetic_no_complaint": false
+}

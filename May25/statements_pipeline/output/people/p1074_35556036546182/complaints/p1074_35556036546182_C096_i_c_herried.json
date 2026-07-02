@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036546182_C096",
+  "complainer_id": "p1074_35556036546182_K086",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 96,
+  "entity": "I.C. Herried",
+  "kind": "official",
+  "role": "Chief of Facilities Development, Wisconsin Division of Highways",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "serves as the addressee/recipient of all comment letters; never expresses a personal position",
+  "summary": "I.C. Herried, Chief of Facilities Development for the Wisconsin Division of Highways, is the addressee of all comment letters and statements in this window regarding the proposed Airport Spur Freeway. He is the official to whom commenters direct their concerns, objections, and supporting information, but he does not himself express a position in this document window. His name appears in the exemplar quote only as a paraphrase of a commenter's criticism of the impact statement's traffic volume assumptions.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "A commenter (the 'Lobbyist For Balanced Transportation') criticizes the impact statement—addressed to Herried—for assuming traffic volume to and from the airport will remain constant with or without the Airport Spur, arguing that additional highway facilities attract increased traffic and that the statement must be corrected before an adequate air quality assessment can be made.",
+  "evidence_pages": [
+    "193"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R024"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "the presentation in the impact statement assumes that traffic volume to and from the airport will remain constant with or without the Airport Spur.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "193"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "the presentation in the impact statement assumes that traffic volume to and from the airport will remain constant with or without the Airport Spur.",
+      "quote_verified": true,
+      "entity_as_written": "I.C. Herried",
+      "role_as_written": "Chief of Facilities Development, Wisconsin Division of Highways"
+    }
+  ],
+  "window_pages": [
+    183,
+    203
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 86,
+  "synthetic_no_complaint": false
+}

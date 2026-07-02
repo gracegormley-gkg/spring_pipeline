@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p0491_35556036091957_C110",
+  "complainer_id": "p0491_35556036091957_K097",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 110,
+  "entity": "David Morgan",
+  "kind": "individual",
+  "role": "Planner, Bureau of Outdoor Recreation, Office of Federal-State Relations, West Virginia",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes Morgan urging equitable treatment for ORV users and raising specific safety/licensing concerns about the draft",
+  "summary": "David Morgan, a Planner with the Bureau of Outdoor Recreation's Office of Federal-State Relations in West Virginia, submitted comments on the Draft Environmental Statement for implementation of Executive Order 11644. He argued that ORV users should receive equitable treatment on public lands and that no sound comprehensive ORV use approach emerged from the draft's alternatives. He also raised specific concerns about operator licensing requirements, uniform federal standards, and type-specific licensing for ORV operators.",
+  "form": "written_comment",
+  "complaint_summary": "Morgan argues that ORV users should receive equitable treatment on public lands, that the draft's alternatives (pages 26-31) fail to produce a comprehensive ORV use approach, and raises three specific concerns: unclear licensing rules for operators, the need for uniform federal licensing standards across all Interior lands, and the need for type-specific ORV operator licensing.",
+  "evidence_pages": [
+    "147"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "to ensure that ORV user For out of the alternatives mentioned in the draft",
+    "closing_anchor": "A serious attempt should be made to license the operator of a specific type of ORV. That an individual can successfully operate an automobile does not guarantee an equal competency in the safe operation of one or several of the many types of ORV's.",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual",
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "to ensure that ORV user For out of the alternatives mentioned in the draft approach to the overall problem emerges.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "147"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "to ensure that ORV user For out of the alternatives mentioned in the draft approach to the overall problem emerges.",
+      "quote_verified": false,
+      "entity_as_written": "David Morgan",
+      "role_as_written": "Planner, Bureau of Outdoor Recreation, Office of Federal-State Relations, West Virginia"
+    }
+  ],
+  "window_pages": [
+    137,
+    157
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 97,
+  "synthetic_no_complaint": false
+}

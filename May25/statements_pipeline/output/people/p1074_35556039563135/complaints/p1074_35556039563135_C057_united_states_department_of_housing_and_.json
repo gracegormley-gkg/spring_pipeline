@@ -1,0 +1,70 @@
+{
+  "complaint_id": "p1074_35556039563135_C057",
+  "complainer_id": "p1074_35556039563135_K075",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 57,
+  "entity": "United States Department of Housing and Urban Development",
+  "kind": "agency",
+  "role": "Federal agency commenter on Section 4(f)",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "states awareness of no significantly harmful effect from temporary 4(f) land use, and separately concurs with no adverse environmental impact on low-income neighborhoods",
+  "summary": "The United States Department of Housing and Urban Development provided two distinct comments: one during early coordination (September 17, 1974) stating awareness of no significantly harmful effect from the temporary use of Section 4(f) land west of Thorn Creek Bridge, and one in response to the Draft Environmental Statement indicating no reason to believe the proposed action would have an adverse environmental impact on low-income neighborhoods. Both comments are supportive or non-objecting in nature, reflecting a neutral/non-opposing stance rather than active advocacy for or against the project.",
+  "form": "written_comment",
+  "complaint_summary": "HUD stated during early coordination that it was aware of no significantly harmful effect that the temporary use of Section 4(f) land west of Thorn Creek Bridge would have on the area.",
+  "evidence_pages": [
+    "159"
+  ],
+  "statement": {
+    "text": "United States Department of Housing and Urban Development (September 17, 1974)\n3. We are aware of no significantly harmful effect that the temporary use of this 4(f) land west of Thorn Creek Bridge would have on this area.",
+    "opening_anchor": "United States Department of Housing and Urban Development (September 17, 1974)\n3. We are aware of no significantly harmful effect that the temporary use of this 4(f) land west of Thorn Creek Bridge would have on this area.",
+    "closing_anchor": "We are aware of no significantly harmful effect that the temporary use of this 4(f) land west of Thorn Creek Bridge would have on this area.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556039563135_R016"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We are aware of no significantly harmful effect that the temporary use of this 4(f) land west of Thorn Creek Bridge would have on this area.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "sectional"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "159"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We are aware of no significantly harmful effect that the temporary use of this 4(f) land west of Thorn Creek Bridge would have on this area.",
+      "quote_verified": true,
+      "entity_as_written": "United States Department of Housing and Urban Development",
+      "role_as_written": "Federal agency commenter on Section 4(f)"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "322"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "NAME OF AGENCY: United States Department of Housing and Urban Development (September 17, 1974)",
+      "quote_verified": false,
+      "entity_as_written": "United States Department of Housing and Urban Development",
+      "role_as_written": "commenter in early coordination table"
+    }
+  ],
+  "window_pages": [
+    149,
+    191
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 75,
+  "synthetic_no_complaint": false
+}

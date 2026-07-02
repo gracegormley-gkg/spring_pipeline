@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036806586_C056",
+  "complainer_id": "p1074_35556036806586_K053",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 56,
+  "entity": "Electric Power Research Institute",
+  "kind": "organization",
+  "role": "Organization conducting study of time-of-day metering and load management",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "cited as conducting a relevant study on time-of-day metering, no position on the project expressed",
+  "summary": "The Electric Power Research Institute is mentioned solely as a co-sponsor, along with the Edison Electric Institute, of a major study on time-of-day metering and load management systems undertaken at the request of NARUC. The entity is referenced only as a source of relevant research context within the document's discussion of conservation and rate revision as alternatives to the proposed Bad Creek Project. No position on the project itself is attributed to the organization.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Electric Power Research Institute, together with the Edison Electric Institute, is noted as having undertaken a major study of time-of-day metering and load management systems at the request of NARUC, cited as part of the broader discussion of whether rate revision and conservation measures could serve as alternatives to the proposed project.",
+  "evidence_pages": [
+    "213"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "A major study of time-of-day metering and load management systems by the Edison Electric Institute and the Electric Power Research Institute has been undertaken at the request of the National Association of Regulatory Commissioners (NARUC).",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "213"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "A major study of time-of-day metering and load management systems by the Edison Electric Institute and the Electric Power Research Institute has been undertaken at the request of the National Association of Regulatory Commissioners (NARUC).",
+      "quote_verified": false,
+      "entity_as_written": "Electric Power Research Institute",
+      "role_as_written": "Organization conducting study of time-of-day metering and load management"
+    }
+  ],
+  "window_pages": [
+    203,
+    223
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 53,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556038322269_C101",
+  "complainer_id": "p1074_35556038322269_K055",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 101,
+  "entity": "Jet Propulsion Laboratory",
+  "kind": "organization",
+  "role": "source of study on energy savings from dipped subway profile",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "cited as a technical source for energy savings data without expressing support or opposition",
+  "summary": "The Jet Propulsion Laboratory is cited as the source of a study finding that a dipped subway profile between stations could save 30% or more of the energy required for straight grade running. The document notes this finding but also states that since it has not been proven in actual operation, the savings were not included in computing energy costs. JPL appears solely as a technical reference, not as a stakeholder expressing a position on the project.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "165"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "According to a Jet Propulsion Laboratory Study, the use of a dipped subway profile between stations offers the potential of saving of 30% or more of the energy required for straight grade running.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "165"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "According to a Jet Propulsion Laboratory Study, the use of a dipped subway profile between stations offers the potential of saving of 30% or more of the energy required for straight grade running.",
+      "quote_verified": true,
+      "entity_as_written": "Jet Propulsion Laboratory",
+      "role_as_written": "source of study on energy savings from dipped subway profile"
+    }
+  ],
+  "window_pages": [
+    155,
+    175
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 55,
+  "synthetic_no_complaint": true
+}

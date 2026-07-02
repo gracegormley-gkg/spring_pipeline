@@ -1,0 +1,78 @@
+{
+  "complaint_id": "p1074_35556036105336_C022",
+  "complainer_id": "p1074_35556036105336_K017",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 22,
+  "entity": "Richmond Metropolitan Authority",
+  "kind": "agency",
+  "role": "Regional authority responsible for expressway construction",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "described as cooperating with the project and providing technical data, with no opposition or advocacy expressed",
+  "summary": "The Richmond Metropolitan Authority (RMA) is referenced throughout the document as the agency responsible for designing and constructing the Downtown Expressway, which forms the northern boundary of the Randolph Urban Renewal Area. RMA is described as cooperating with the Randolph Project, supplying roadway gradient data for noise studies, and proposing infrastructure improvements including bridges and a storm sewer relief line. The document notes two recommended changes to RMA's traffic proposals for the neighborhood, but RMA itself does not express any complaint or opposition.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The document notes that the Randolph Plan recommends two changes to the traffic proposals for the neighborhood as proposed by the Richmond Metropolitan Authority, indicating a minor divergence between RMA's plans and the renewal plan's street-pattern recommendations.",
+  "evidence_pages": [
+    "34"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "A 48\" diameter relief storm sewer is proposed by the Richmond Metropolitan Authority (RMA) from near the intersection of Lakeview and Shields Avenues to Swan Lake due to inadequate capacity of the existing 66\" diameter conduit.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "34"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Proposed roadway gradients were supplied by Richmond Metropolitan Authority.",
+      "quote_verified": true,
+      "entity_as_written": "Richmond Metropolitan Authority",
+      "role_as_written": "Authority responsible for Downtown Expressway"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "54"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "other official agencies such as the State Water Control Board and Richmond Metropolitan Authority are cooperating to make the project successful.",
+      "quote_verified": true,
+      "entity_as_written": "Richmond Metropolitan Authority",
+      "role_as_written": "Regional authority, Downtown Expressway developer"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "108"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "A 48\" diameter relief storm sewer is proposed by the Richmond Metropolitan Authority (RMA) from near the intersection of Lakeview and Shields Avenues to Swan Lake due to inadequate capacity of the existing 66\" diameter conduit.",
+      "quote_verified": true,
+      "entity_as_written": "Richmond Metropolitan Authority",
+      "role_as_written": "Regional authority responsible for expressway construction"
+    }
+  ],
+  "window_pages": [
+    24,
+    57
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 17,
+  "synthetic_no_complaint": false
+}

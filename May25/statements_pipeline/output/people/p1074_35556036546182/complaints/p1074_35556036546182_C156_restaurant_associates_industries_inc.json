@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036546182_C156",
+  "complainer_id": "p1074_35556036546182_K128",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 156,
+  "entity": "Restaurant Associates Industries, Inc.",
+  "kind": "organization",
+  "role": "Client of attorney James E. Sharpiro, commenter",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "urgent plea to proceed with Airport Spur construction due to economic impact from suspended right-of-way negotiations",
+  "summary": "Restaurant Associates Industries, Inc., represented by attorney James E. Sharpiro, expressed strong support for proceeding with the Airport Spur construction, citing economic hardship caused by the suspension of right-of-way negotiations and acquisition of their property. Their position was an urgent plea to move forward with the project. The agency responded that right-of-way negotiations and acquisition could not resume until the Final EIS was completed and accepted.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Restaurant Associates Industries, Inc., through attorney James E. Sharpiro, urgently pleaded for the Airport Spur construction to proceed due to economic impact from the suspension of right-of-way negotiation and acquisition of their property.",
+  "evidence_pages": [
+    "248"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R075"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The position of his client is an urgent plea to proceed with the construction of the Airport Spur because of the economic impact they are experiencing due to the suspension of the right of way negotiation and acquisition of their property.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "248"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The position of his client is an urgent plea to proceed with the construction of the Airport Spur because of the economic impact they are experiencing due to the suspension of the right of way negotiation and acquisition of their property.",
+      "quote_verified": true,
+      "entity_as_written": "Restaurant Associates Industries, Inc.",
+      "role_as_written": "Client of attorney James E. Sharpiro, commenter"
+    }
+  ],
+  "window_pages": [
+    238,
+    258
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 128,
+  "synthetic_no_complaint": false
+}

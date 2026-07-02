@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p0491_35556036091957_C191",
+  "complainer_id": "p0491_35556036091957_K189",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 191,
+  "entity": "Vladimir Mahbe",
+  "kind": "official",
+  "role": "Secretary of State Planning, Maryland",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter concurs with statement but recommends 'no access' alternative be added",
+  "summary": "Vladimir Wahbe, as Secretary of State Planning for Maryland, transmitted the Maryland State Clearinghouse review of the Draft EIS on ORV use on public lands. His office generally concurred with the statement but specifically recommended that a 'no access' to public lands by ORVs be presented as an alternative to ORV usage. The attached comment from the Maryland Department of Natural Resources was separately favorable to the statement.",
+  "form": "letter",
+  "complaint_summary": "Wahbe's office generally concurred with the Draft EIS but recommended that a 'no access' to public lands by ORVs be presented as an alternative to ORV usage.",
+  "evidence_pages": [
+    "267"
+  ],
+  "statement": {
+    "text": "The State Clearinghouse has reviewed the above noted Environmental Impact Statement. In accordance with the procedures established by the Office of Management and Budget Circular A-95, the State Clearinghouse received comment (copy attached) from the Department of Natural Resources favorable to the statement. The Department requested that it be informed of further regulatory developments in this area.\nOur staff generally concurred with the statement, but suggested that a \"no access\" to public lands by ORV's should be presented as an alternative to such usage.",
+    "opening_anchor": "The State Clearinghouse has reviewed the above noted Environmental Impact Statement. In accordance with the procedures established by the Office of Management and Budget Circular A-95",
+    "closing_anchor": "Our staff generally concurred with the statement, but suggested that a \"no access\" to public lands by ORV's should be presented as an alternative to such usage.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "Our staff generally concurred with the statement, but suggested that a 'no access' to public lands by ORV's should be presented as an alternative to such usage.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "267"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Our staff generally concurred with the statement, but suggested that a 'no access' to public lands by ORV's should be presented as an alternative to such usage.",
+      "quote_verified": false,
+      "entity_as_written": "Vladimir Mahbe",
+      "role_as_written": "Secretary of State Planning, Maryland"
+    }
+  ],
+  "window_pages": [
+    257,
+    277
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 189,
+  "synthetic_no_complaint": false
+}

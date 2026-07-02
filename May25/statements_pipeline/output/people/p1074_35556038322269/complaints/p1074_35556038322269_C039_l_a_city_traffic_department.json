@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C039",
+  "complainer_id": "p1074_35556038322269_K042",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 39,
+  "entity": "L.A. City Traffic Department",
+  "kind": "agency",
+  "role": "Agency estimating operational speeds for express buses in Alternative VII",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as providing a technical speed estimate for Alternative VII with no expressed support or opposition",
+  "summary": "The L.A. City Traffic Department is cited as the source of an average operational speed estimate of approximately 20 mph for express buses operating in exclusive median lanes under Alternative VII. The department's estimate is used as a technical input to the EIS analysis of bus speeds, with the document noting that this speed would be achievable off-peak but would drop to about 18 mph during peak hours due to loading delays. No position for or against any alternative is attributed to the department.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The L.A. City Traffic Department estimated an average operational speed of about 20 mph for express buses using exclusive median lanes on Wilshire and La Brea under Alternative VII, though peak-hour loading delays would reduce this to approximately 18 mph west of Alvarado.",
+  "evidence_pages": [
+    "113"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The L.A. City Traffic Department has estimated an average operational speed for the express buses in this alternative to be about 20 mph.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "113"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The L.A. City Traffic Department has estimated an average operational speed for the express buses in this alternative to be about 20 mph.",
+      "quote_verified": true,
+      "entity_as_written": "L.A. City Traffic Department",
+      "role_as_written": "Agency estimating operational speeds for express buses in Alternative VII"
+    }
+  ],
+  "window_pages": [
+    103,
+    123
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 42,
+  "synthetic_no_complaint": false
+}

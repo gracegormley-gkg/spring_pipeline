@@ -1,0 +1,68 @@
+{
+  "complaint_id": "p1074_35556039563135_C099",
+  "complainer_id": "p1074_35556039563135_K062",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 99,
+  "entity": "Illinois Archaeological Survey",
+  "kind": "agency",
+  "role": "State clearinghouse agency / draft EIS commenter",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letter states no archaeological sites recorded and no further reconnaissance required, neither supporting nor opposing the project",
+  "summary": "The Illinois Archaeological Survey reviewed the draft environmental statement for FA Route 23 and reported no archaeological sites recorded along the subject route. Because the highway area exists entirely in an urban setting, the Survey concluded that future archaeological reconnaissance would not be required. The agency raised no objections and took no position for or against the project.",
+  "form": "letter",
+  "complaint_summary": "In a letter dated April 24, 1972, the Illinois Archaeological Survey reported that a file check revealed no archaeological sites recorded along the subject route and that, because the area is entirely urban, future archaeological reconnaissance would not be required.",
+  "evidence_pages": [
+    "197"
+  ],
+  "statement": {
+    "text": "I have received for archaeological review the Environmental Statement for FA Route 23 (U.S. Route 30, Section 22-23-12-R, Cook County).\n2 3-3-17 ·\nA check of our files indicates that we have no archaeological sites recorded along subject route. Because the highway area exists entirely in an urban setting, future archaeological reconnaissance along this specific tract will not be required.\nCordially yours,\nCharles J. Bareis\nSecretary-Treasurer",
+    "opening_anchor": "I have received for archaeological review the Environmental Statement for FA Route 23 (U.S. Route 30, Section 22-23-12-R, Cook County).",
+    "closing_anchor": "future archaeological reconnaissance along this specific tract will not be required.\n\nCordially yours,\nCharles J. Bareis\nSecretary-Treasurer",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "A check of our files indicates that we have no archaeological sites recorded along subject route. Because the highway area exists entirely in an urban setting, future archaeological reconnaissance along this specific tract will not be required.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "sectional"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "180"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "A check of our files indicates that we have no archaeological sites recorded along subject route. Because the highway area exists entirely in an urban setting, future archaeological reconnaissance along this specific tract will not be required.",
+      "quote_verified": true,
+      "entity_as_written": "Illinois Archaeological Survey",
+      "role_as_written": "State clearinghouse agency / draft EIS commenter"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "197"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "STATE AGENCIES ... Illinois Archaeological Survey",
+      "quote_verified": false,
+      "entity_as_written": "Illinois Archaeological Survey",
+      "role_as_written": "Illinois state agency reviewer"
+    }
+  ],
+  "window_pages": [
+    170,
+    207
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 62,
+  "synthetic_no_complaint": false
+}

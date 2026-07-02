@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C072",
+  "complainer_id": "p1074_35556038322269_K085",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 72,
+  "entity": "League of Women Voters",
+  "kind": "organization",
+  "role": "Regional organization participating in Community Participation Program",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "listed as participant in Community Participation Program with results described as similar to other organizations",
+  "summary": "The League of Women Voters is mentioned as one of several regional organizations that participated in the Community Participation Program for the Regional Core Transit Alternatives Analysis. No specific position or complaint is attributed to them individually; their participation is described collectively alongside other organizations, with results noted as similar to those of other groups. No distinct objection or endorsement is recorded.",
+  "form": "sectional",
+  "complaint_summary": "The League of Women Voters is listed among regional organizations that participated in the Community Participation Program, with no individual position or complaint attributed to them.",
+  "evidence_pages": [
+    "291"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Such organizations as the League of Women Voters, the Sierra Club, Los Angeles County Organization for Economic Development Program (OEDP), the Urban League, the Los Angeles County Employees Association (LACEA), the Building Industry Associates and the Los Angeles NAACP all have participated.",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "291"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Such organizations as the League of Women Voters, the Sierra Club, Los Angeles County Organization for Economic Development Program (OEDP), the Urban League, the Los Angeles County Employees Association (LACEA), the Building Industry Associates and the Los Angeles NAACP all have participated.",
+      "quote_verified": true,
+      "entity_as_written": "League of Women Voters",
+      "role_as_written": "Regional organization participating in Community Participation Program"
+    }
+  ],
+  "window_pages": [
+    281,
+    293
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 85,
+  "synthetic_no_complaint": false
+}

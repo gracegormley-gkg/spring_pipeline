@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556038322269_C099",
+  "complainer_id": "p1074_35556038322269_K050",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 99,
+  "entity": "California Native Plant Society",
+  "kind": "organization",
+  "role": "source of rare and endangered plant list",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "cited as a reference source for rare and endangered plant list, no position expressed",
+  "summary": "The California Native Plant Society is referenced solely as a data source whose rare and endangered plant list (Powell, 1974) was consulted to identify species in the Regional Core area. The organization does not express any position on the project, and its list is used as part of the vegetation and wildlife impact assessment methodology. No complaints, objections, or endorsements are attributed to the organization.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "148"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "The California Native Plant Society's rare and endangered plant list (Powell, 1974) and U.S. Fish and Wildlife Services' rare and endangered animal species list were consulted for species located in the Regional Core area.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "148"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The California Native Plant Society's rare and endangered plant list (Powell, 1974) and U.S. Fish and Wildlife Services' rare and endangered animal species list were consulted for species located in the Regional Core area.",
+      "quote_verified": true,
+      "entity_as_written": "California Native Plant Society",
+      "role_as_written": "source of rare and endangered plant list"
+    }
+  ],
+  "window_pages": [
+    138,
+    158
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 50,
+  "synthetic_no_complaint": true
+}

@@ -1,0 +1,70 @@
+{
+  "complaint_id": "p0491_35556036091957_C041",
+  "complainer_id": "p0491_35556036091957_K027",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 41,
+  "entity": "Society of Exploration Geophysicists",
+  "kind": "organization",
+  "role": "professional society, commenter on draft EIS",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes urging exemption of geological/geophysical survey equipment from ORV regulations",
+  "summary": "The Society of Exploration Geophysicists, represented by Mr. Carl H. Savit, urged that geological and geophysical survey equipment be excepted from ORV regulations when used exclusively for their designed purposes, arguing that applying recreational-vehicle regulations to professional survey equipment would adversely affect their nearly 8,000 members. The Department responded favorably, revising the final environmental statement to except mining, oil, and gas geophysical exploration equipment from the definition of off-road vehicles.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Society of Exploration Geophysicists urged that geological and geophysical survey equipment be excepted from ORV regulations while being used exclusively for their designed purposes.",
+  "evidence_pages": [
+    "39"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p0491_35556036091957_R017"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Our nearly 8000 members would be adversely and vitally affected in their activities on the public lands of the United States by being required to adhere to regulations designed for recreational activities. On behalf of our membership, I strongly urge that you amend your instructions to the Assistant Secretaries to except geological and geophysical survey equipment, while being used exclusively for their designed purposes, from the general category of off-road vehicle to which the proposed regulations will apply.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "39"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Society of Exploration Geophysicists - urged that geological and geophysical survey equipment be excepted from ORV regulations while being used exclusively for their designed purposes.",
+      "quote_verified": false,
+      "entity_as_written": "Society of Exploration Geophysicists",
+      "role_as_written": "Professional society commenter"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "86"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "Our nearly 8000 members would be adversely and vitally affected in their activities on the public lands of the United States by being required to adhere to regulations designed for recreational activities. On behalf of our membership, I strongly urge that you amend your instructions to the Assistant Secretaries to except geological and geophysical survey equipment, while being used exclusively for their designed purposes, from the general category of off-road vehicle to which the proposed regulations will apply.",
+      "quote_verified": true,
+      "entity_as_written": "Society of Exploration Geophysicists",
+      "role_as_written": "professional society, commenter on draft EIS"
+    }
+  ],
+  "window_pages": [
+    29,
+    54
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 27,
+  "synthetic_no_complaint": false
+}

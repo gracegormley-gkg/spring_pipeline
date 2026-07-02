@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556036811230_C058",
+  "complainer_id": "p1074_35556036811230_K008",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 58,
+  "entity": "Daniel, Mann, Johnson, & Mendenhall",
+  "kind": "organization",
+  "role": "consultant / data source",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "cited only as a data source for commuter mode calculations, no position expressed",
+  "summary": "Daniel, Mann, Johnson, & Mendenhall is referenced solely as the source that calculated 'Transportation to Work' statistics from 1970 U.S. Census data for Table 2-11. The entity does not express any position on the project and appears only as a technical data provider. No complaints, opinions, or stance toward the project are attributable to this organization.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "53"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Transportation to Work - calculated by Daniel, Mann, Johnson, & Mendenhall from 1970 U.S. Census data",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "53"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Transportation to Work - calculated by Daniel, Mann, Johnson, & Mendenhall from 1970 U.S. Census data",
+      "quote_verified": true,
+      "entity_as_written": "Daniel, Mann, Johnson, & Mendenhall",
+      "role_as_written": "consultant / data source"
+    }
+  ],
+  "window_pages": [
+    43,
+    63
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 8,
+  "synthetic_no_complaint": true
+}

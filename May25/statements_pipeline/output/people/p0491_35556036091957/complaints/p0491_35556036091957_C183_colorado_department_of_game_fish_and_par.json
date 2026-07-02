@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C183",
+  "complainer_id": "p0491_35556036091957_K152",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 183,
+  "entity": "Colorado Department of Game, Fish and Parks",
+  "kind": "agency",
+  "role": "State wildlife agency",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased testimony citing deer and elk deaths directly attributable to snowmobile harassment",
+  "summary": "The Colorado Department of Game, Fish and Parks is described as having repeatedly testified that snowmobiles cause deer and elk deaths through frightening and harassment. This testimony is cited by a third party (Ruth F. Weiner) in her comment letter to support stricter ORV restrictions, particularly in wildlife refuges during seasons when animals are most vulnerable. The agency's position, as paraphrased, reflects strong concern about the harmful impact of ORVs on wildlife.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Colorado Department of Game, Fish and Parks repeatedly testified that deer and elk deaths are directly attributable to frightening or harassment by snowmobiles, as cited by commenter Ruth F. Weiner to support prohibiting ORV use in wildlife refuges during seasons when animals are weakest.",
+  "evidence_pages": [
+    "258"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Colorado Department of Game, Fish and Parks testified repeatedly to deer and elk deaths directly attributable to frightening or harassment by snowmobiles.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "258"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Colorado Department of Game, Fish and Parks testified repeatedly to deer and elk deaths directly attributable to frightening or harassment by snowmobiles.",
+      "quote_verified": true,
+      "entity_as_written": "Colorado Department of Game, Fish and Parks",
+      "role_as_written": "State wildlife agency"
+    }
+  ],
+  "window_pages": [
+    248,
+    268
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 152,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036861797_C031",
+  "complainer_id": "p1074_35556036861797_K016",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 31,
+  "entity": "several commenters",
+  "kind": "other",
+  "role": "Commenters on classification issue",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "commenters argued four-wheel-drive general utility vehicles deserve separate classification from other nonpassenger automobiles",
+  "summary": "Several commenters argued that four-wheel-drive, general utility vehicles have special fuel economy characteristics that entitle them to separate treatment from other nonpassenger automobiles under the proposed standard. The agency acknowledged this classification issue as unresolved and indicated the final EIS would consider a range of standards and alternative classification decisions. The final EIS ultimately did provide for two classes of nonpassenger automobiles, partly in response to these comments.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Several commenters argued that four-wheel-drive, general utility vehicles have special fuel economy characteristics that entitle them to separate treatment from other nonpassenger automobiles.",
+  "evidence_pages": [
+    "28"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036861797_R013"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Also, several commenters indicated that four wheel drive, general utility vehicles had special fuel economy characteristics which entitle them to separate treatment from other nonpassenger automobiles.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "28"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Also, several commenters indicated that four wheel drive, general utility vehicles had special fuel economy characteristics which entitle them to separate treatment from other nonpassenger automobiles.",
+      "quote_verified": true,
+      "entity_as_written": "several commenters",
+      "role_as_written": "Commenters on classification issue"
+    }
+  ],
+  "window_pages": [
+    18,
+    38
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 16,
+  "synthetic_no_complaint": false
+}

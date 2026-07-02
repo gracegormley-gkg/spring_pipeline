@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556036546182_C059",
+  "complainer_id": "p1074_35556036546182_K031",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 59,
+  "entity": "American Automobile Association",
+  "kind": "organization",
+  "role": "motoring advocacy organization",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as testifying in favor of the Airport Spur at both the 1969 and 1974 public hearings",
+  "summary": "The American Automobile Association expressed support for the Airport Spur project at both the March 25, 1969 Location Public Hearing and the July 11, 1974 Environmental Impact Hearing. At the 1969 hearing, a spokesman agreed with SEWRPC findings and hoped the Airport Spur would be constructed as soon as possible to save tax dollars and improve safety. At the 1974 hearing, the AAA again testified in favor of the Airport Spur alongside other supporting organizations.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "At the July 11, 1974 Environmental Impact Hearing, the American Automobile Association testified in favor of the Airport Spur alongside SEWRPC, the Federal Aviation Administration, and the Milwaukee Air Cargo Association.",
+  "evidence_pages": [
+    "107"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Spokesman for AAA agreed with SEWRPC findings and was hopeful that the Airport Spur would be constructed as soon as possible in order to save tax dollars and bring safety to the streets and highways of the south side of Milwaukee.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "101"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Testimony revealed that the Milwaukee County Board, Milwaukee Common Council, SEWRPC, Federal Aviation Administration and the American Automobile Association favored construction of the Airport Spur.",
+      "quote_verified": true,
+      "entity_as_written": "American Automobile Association",
+      "role_as_written": "motoring advocacy organization"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "226"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Spokesman for AAA agreed with SEWRPC findings and was hopeful that the Airport Spur would be constructed as soon as possible in order to save tax dollars and bring safety to the streets and highways of the south side of Milwaukee.",
+      "quote_verified": true,
+      "entity_as_written": "American Automobile Association",
+      "role_as_written": "commenter at public hearing"
+    }
+  ],
+  "window_pages": [
+    91,
+    130
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 31,
+  "synthetic_no_complaint": false
+}

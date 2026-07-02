@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C091",
+  "complainer_id": "p1074_35556039563135_K083",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 91,
+  "entity": "Charles J. Bareis",
+  "kind": "official",
+  "role": "Secretary-Treasurer, Illinois Archaeological Survey",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "states no archaeological sites recorded and no future reconnaissance required due to urban setting",
+  "summary": "Charles J. Bareis, as Secretary-Treasurer of the Illinois Archaeological Survey, reviewed the draft environmental statement and found no recorded archaeological sites along the project route. He concluded that because the highway area exists entirely in an urban setting, future archaeological reconnaissance would not be required. His comment is purely informational and neither supports nor opposes the project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Illinois Archaeological Survey reported no archaeological sites recorded along the subject route and stated that future archaeological reconnaissance would not be required because the highway area is entirely in an urban setting.",
+  "evidence_pages": [
+    "180"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556039563135_R049"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Because the highway area exists entirely in an urban setting, future archaeological reconnaissance along this specific tract will not be required.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "180"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "Because the highway area exists entirely in an urban setting, future archaeological reconnaissance along this specific tract will not be required.",
+      "quote_verified": true,
+      "entity_as_written": "Charles J. Bareis",
+      "role_as_written": "Secretary-Treasurer, Illinois Archaeological Survey"
+    }
+  ],
+  "window_pages": [
+    170,
+    190
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 83,
+  "synthetic_no_complaint": false
+}

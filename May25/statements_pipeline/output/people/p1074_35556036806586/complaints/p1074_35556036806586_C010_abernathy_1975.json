@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036806586_C010",
+  "complainer_id": "p1074_35556036806586_K016",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 10,
+  "entity": "Abernathy (1975)",
+  "kind": "individual",
+  "role": "researcher/scientist — mercury study author",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "directly quoted concluding that consumption of bass from Lake Jocassee is inadvisable due to mercury levels",
+  "summary": "Abernathy (1975) is a researcher whose study found dangerously high mercury levels in Lake Jocassee fish, particularly largemouth bass, exceeding the FDA maximum methylmercury limit of 0.5 ug/g. Abernathy concluded that consumption of bass from Lake Jocassee is inadvisable, noting that even small daily quantities of fish would exceed the allowable daily intake of mercury. The study also reported elevated mercury levels in fish from downstream Lakes Keowee and Hartwell.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Abernathy (1975) reported mercury levels in largemouth bass from Lake Jocassee above the FDA maximum methylmercury limit of 0.5 ug/g, and also reported elevated mercury in fish from downstream Lakes Keowee and Hartwell.",
+  "evidence_pages": [
+    "89"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Abernathy (1975) concludes that \"consumption of bass from Lake Jocassee is inadvisable.\"",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "89"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "Abernathy (1975) concludes that \"consumption of bass from Lake Jocassee is inadvisable.\"",
+      "quote_verified": true,
+      "entity_as_written": "Abernathy (1975)",
+      "role_as_written": "researcher/scientist — mercury study author"
+    }
+  ],
+  "window_pages": [
+    79,
+    99
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 16,
+  "synthetic_no_complaint": false
+}

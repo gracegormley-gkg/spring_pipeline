@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C017",
+  "complainer_id": "p1074_35556038322269_K030",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 17,
+  "entity": "Rapid Transit Advisory Committee (RTAC)",
+  "kind": "organization",
+  "role": "Advisory committee guiding transit planning",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "described as guiding transit planning effort with broader constituency, no explicit position stated",
+  "summary": "The Rapid Transit Advisory Committee (RTAC) was established in 1975 by the District Board to guide the continuing transit planning effort following the failed 1974 ballot measure. The RTAC had a broader constituency than its predecessor (the TAC) and included members from other cities in Los Angeles County. The committee identified eleven corridors for evaluation, narrowed them to three, and combined them into a Rapid Transit Starter Line Corridor, producing four published study volumes that fed into the current alternatives analysis.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The RTAC was established in 1975 to guide transit planning with a broader constituency than the prior TAC, identified eleven corridors (narrowed to three combined into a Starter Line Corridor), and developed fifteen alternatives across three modes, publishing results in four volumes that informed the present AA/EIS/EIR.",
+  "evidence_pages": [
+    "68"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "In 1975, the District Board established a Rapid Transit Advisory Committee (RTAC), to guide the continuing transit planning effort.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "68"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In 1975, the District Board established a Rapid Transit Advisory Committee (RTAC), to guide the continuing transit planning effort.",
+      "quote_verified": true,
+      "entity_as_written": "Rapid Transit Advisory Committee (RTAC)",
+      "role_as_written": "Advisory committee guiding transit planning"
+    }
+  ],
+  "window_pages": [
+    58,
+    78
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 30,
+  "synthetic_no_complaint": false
+}

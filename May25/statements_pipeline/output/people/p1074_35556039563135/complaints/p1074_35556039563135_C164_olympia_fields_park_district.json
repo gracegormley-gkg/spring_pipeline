@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556039563135_C164",
+  "complainer_id": "p1074_35556039563135_K126",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 164,
+  "entity": "Olympia Fields Park District",
+  "kind": "organization",
+  "role": "commenter listed in NIPC project summary",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed in NIPC notification roster with no comment recorded",
+  "summary": "Olympia Fields Park District appears only in the NIPC project summary as one of the agencies notified of NIPC Project #74-228 (Lincoln Highway widening). No comment or position from the district is recorded in the document window. No stance can be inferred beyond their inclusion in the notification list.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "237"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Olympia Fields Park District",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "237"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Olympia Fields Park District",
+      "quote_verified": true,
+      "entity_as_written": "Olympia Fields Park District",
+      "role_as_written": "commenter listed in NIPC project summary"
+    }
+  ],
+  "window_pages": [
+    227,
+    247
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 126,
+  "synthetic_no_complaint": true
+}

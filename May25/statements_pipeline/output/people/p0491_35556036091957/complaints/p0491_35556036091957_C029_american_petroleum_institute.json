@@ -1,0 +1,70 @@
+{
+  "complaint_id": "p0491_35556036091957_C029",
+  "complainer_id": "p0491_35556036091957_K004",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 29,
+  "entity": "American Petroleum Institute",
+  "kind": "organization",
+  "role": "Mining/petroleum industry commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes API wanting mining vehicles exempted and criticizing the statement's recreational focus",
+  "summary": "The American Petroleum Institute (response #33) commented on the draft ORV environmental statement, arguing that mining vehicles should be exempted from the proposed regulations and that the environmental statement focused almost entirely on recreational vehicles while neglecting mineral development needs. The Department responded by revising the final environmental statement to except mining, oil, and gas geophysical exploration equipment from the definition of off-road vehicles, citing the U.S. Mining Law of 1872.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The American Petroleum Institute wanted mining vehicles exempted from ORV regulations and felt the environmental statement's emphasis was almost entirely on recreational vehicles rather than mineral development.",
+  "evidence_pages": [
+    "38"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p0491_35556036091957_R006"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "it is strongly urged that geological, geophysical, and other vehicular equipment necessary to mineral development be exempted in a revised memorandum and impact statement and in the regulations being prepared to implement Executive Order 11644",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "38"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "American Petroleum Institute - wanted mining vehicles exempted from regulations and felt that environmental statement emphasis was almost entirely on recreational vehicles.",
+      "quote_verified": false,
+      "entity_as_written": "American Petroleum Institute",
+      "role_as_written": "Mining/petroleum industry commenter"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "134"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "it is strongly urged that geological, geophysical, and other vehicular equipment necessary to mineral development be exempted in a revised memorandum and impact statement and in the regulations being prepared to implement Executive Order 11644",
+      "quote_verified": true,
+      "entity_as_written": "American Petroleum Institute",
+      "role_as_written": "industry association, commenter"
+    }
+  ],
+  "window_pages": [
+    28,
+    53
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 4,
+  "synthetic_no_complaint": false
+}

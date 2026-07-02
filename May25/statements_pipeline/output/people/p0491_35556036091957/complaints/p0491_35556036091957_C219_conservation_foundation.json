@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p0491_35556036091957_C219",
+  "complainer_id": "p0491_35556036091957_K194",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 219,
+  "entity": "Conservation Foundation",
+  "kind": "organization",
+  "role": "conservation organization, referenced commenter",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "referenced only as source of a recreation extension service proposal, no direct position stated",
+  "summary": "The Conservation Foundation is referenced by the Illinois Department of Conservation solely as the source of a task force study that proposed a recreation extension service at the state level. No direct position by the Conservation Foundation on the ORV executive order is expressed; it is cited only as an authority whose proposal could help address demographic and resource management concerns. The entity does not appear elsewhere in the window.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Illinois Department of Conservation references the Conservation Foundation's task force study, which proposed a recreation extension service at the state level that would help bring unique demographic and resource factors into proper focus when planning ORV use.",
+  "evidence_pages": [
+    "297"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence"
+  ],
+  "summary_quote": "The recent task force study promulgated by the Conservation Foundation proposed a recreation extension service, which if operated at the state level, would serve to bring unique factors such as those mentioned, into proper focus.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "297"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The recent task force study promulgated by the Conservation Foundation proposed a recreation extension service, which if operated at the state level, would serve to bring unique factors such as those mentioned, into proper focus.",
+      "quote_verified": true,
+      "entity_as_written": "Conservation Foundation",
+      "role_as_written": "conservation organization, referenced commenter"
+    }
+  ],
+  "window_pages": [
+    287,
+    307
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 194,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C065",
+  "complainer_id": "p1074_35556038322269_K078",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 65,
+  "entity": "Southern California Association of Government",
+  "kind": "organization",
+  "role": "Regional planning organization, author of RTDP report",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "SCAG report recommends financially feasible implementation program including rail rapid transit and other transit elements",
+  "summary": "The Southern California Association of Governments (SCAG) is cited as the author of the February 1979 'Regional Transit Development Program' (RTDP) report, which is used to demonstrate the financial feasibility of the total RTDP in the SCAG region. The report recommends an initial phase implementation program including TSM improvements, freeway transit rideshare lanes, a Downtown People Mover, and a regional core rail rapid transit subway line, supported by a detailed breakdown of capital costs and funding sources. SCAG's role is that of a regional planning authority whose findings and recommendations are incorporated into the EIS to support the case for transit investment.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The EIS draws on SCAG's February 1979 RTDP report to demonstrate the financial feasibility of the total Regional Transit Development Program in the SCAG region, presenting SCAG's recommended implementation program including TSM improvements, freeway transit, a Downtown People Mover, and an 18-mile regional core rail rapid transit subway line, along with associated capital costs and funding sources.",
+  "evidence_pages": [
+    "248"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "To show the financial feasibility of the total RTDP in the SCAG region, the following discussion and three figures have been taken from the report by the Southern California Association of Government report of February, 1979, entitled \"Regional Transit Development Program.\"",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "248"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "To show the financial feasibility of the total RTDP in the SCAG region, the following discussion and three figures have been taken from the report by the Southern California Association of Government report of February, 1979, entitled \"Regional Transit Development Program.\"",
+      "quote_verified": true,
+      "entity_as_written": "Southern California Association of Government",
+      "role_as_written": "Regional planning organization, author of RTDP report"
+    }
+  ],
+  "window_pages": [
+    238,
+    258
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 78,
+  "synthetic_no_complaint": false
+}

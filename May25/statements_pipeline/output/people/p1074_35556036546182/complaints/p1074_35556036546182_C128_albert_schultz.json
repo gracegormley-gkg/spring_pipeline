@@ -1,0 +1,61 @@
+{
+  "complaint_id": "p1074_35556036546182_C128",
+  "complainer_id": "p1074_35556036546182_K071",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 128,
+  "entity": "Albert Schultz",
+  "kind": "individual",
+  "role": "Representative, Milwaukee School Board",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "explicitly stated the school board has not taken a position for or against construction of freeways",
+  "summary": "Albert Schultz, representing the Milwaukee School Board, explicitly stated that the board has not taken a position for or against freeway construction. He presented a 1973 school board report on air pollution and noise hazards, which contained recommendations for all Milwaukee schools concerning air and noise pollution and access problems. The agency response indicated that air quality near Hamlin-Garland School would not be significantly impacted and that noise abatement measures would be undertaken in cooperation with the School Board.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Schultz stated the Milwaukee School Board has not taken a position for or against freeway construction, and presented a 1973 school board report containing recommendations for all Milwaukee schools regarding air and noise pollution and access problems.",
+  "evidence_pages": [
+    "237"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R048"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual",
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "Stated the Milwaukee School Board has not taken a position for or against construction of freeways. The school board has adopted a 1973 report entitled \"A Study of Air Pollution and Noise Hazards\".",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "237"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Stated the Milwaukee School Board has not taken a position for or against construction of freeways. The school board has adopted a 1973 report entitled \"A Study of Air Pollution and Noise Hazards\".",
+      "quote_verified": false,
+      "entity_as_written": "Albert Schultz",
+      "role_as_written": "Representative, Milwaukee School Board"
+    }
+  ],
+  "window_pages": [
+    227,
+    247
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 71,
+  "synthetic_no_complaint": false
+}

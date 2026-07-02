@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C052",
+  "complainer_id": "p1074_35556039563135_K068",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 52,
+  "entity": "Metropolitan Sanitary District",
+  "kind": "agency",
+  "role": "Regional sanitary district / early coordination meeting participant",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed only as a meeting participant in early coordination table with no position stated",
+  "summary": "The Metropolitan Sanitary District appears solely as a participant in an early coordination meeting held on September 17, 1973, listed in a table of organizations that met with the Illinois Department of Transportation. No comments, concerns, or positions are attributed to the district anywhere in the document window.",
+  "form": "sectional",
+  "complaint_summary": "The Metropolitan Sanitary District is listed as having participated in an early coordination meeting on September 17, 1973, but no specific comments or positions are recorded.",
+  "evidence_pages": [
+    "157"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence"
+  ],
+  "summary_quote": "MEETINGS BETWEEN ORGANIZATIONS AND ILLINOIS DEPARTMENT OF TRANSPORTATION",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "157"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "MEETINGS BETWEEN ORGANIZATIONS AND ILLINOIS DEPARTMENT OF TRANSPORTATION",
+      "quote_verified": true,
+      "entity_as_written": "Metropolitan Sanitary District",
+      "role_as_written": "Regional sanitary district / early coordination meeting participant"
+    }
+  ],
+  "window_pages": [
+    147,
+    167
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 68,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C119",
+  "complainer_id": "p1074_35556036546182_K099",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 119,
+  "entity": "Robert Kernler",
+  "kind": "individual",
+  "role": "Private Citizen",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "questioned decisions about I-94 construction timing and land acquisition for air cargo area, implying skepticism toward the project",
+  "summary": "Robert Kernler, a private citizen, questioned why the Airport Spur was not built when I-94 was originally constructed in 1965-1966 and why the Grange Avenue overpass was built with a boulevard. He also questioned the acquisition of 125 land parcels and demolition of homes prior to the public hearing, suggesting concern about the process and decisions surrounding the project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Kernler questioned decisions made at the time I-94 was constructed and the acquiring of 60 acres for the air cargo area, and specifically why the Airport Spur wasn't built when I-94 was constructed in 1965-1966 and why the Grange Avenue overpass was built with a boulevard.",
+  "evidence_pages": [
+    "229"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R041"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Questioned decisions made at the time I-94 was constructed and the acquiring of 60 acres for air cargo area.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "229"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Questioned decisions made at the time I-94 was constructed and the acquiring of 60 acres for air cargo area.",
+      "quote_verified": true,
+      "entity_as_written": "Robert Kernler",
+      "role_as_written": "Private Citizen"
+    }
+  ],
+  "window_pages": [
+    219,
+    239
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 99,
+  "synthetic_no_complaint": false
+}

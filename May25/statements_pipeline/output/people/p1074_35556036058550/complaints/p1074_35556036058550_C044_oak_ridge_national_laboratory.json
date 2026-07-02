@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036058550_C044",
+  "complainer_id": "p1074_35556036058550_K020",
+  "doc_id": "p1074_35556036058550",
+  "work_id": "csv:35556036058550",
+  "order": 44,
+  "entity": "Oak Ridge National Laboratory",
+  "kind": "organization",
+  "role": "Supporting contractor for HUD energy systems research",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "mentioned as supporting contractor with relevant expertise, no independent position expressed",
+  "summary": "Oak Ridge National Laboratory is mentioned as one of HUD's supporting contractors, alongside the National Bureau of Standards, with expertise in the TARGET/Pratt and Whitney fuel cell program. The entity is referenced only in passing as part of HUD's technical support team and does not independently express any position on the Operation Breakthrough project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Oak Ridge National Laboratory is cited as a supporting contractor to HUD's staff with knowledge of the TARGET/Pratt and Whitney fuel cell program, with no independent complaint or position expressed.",
+  "evidence_pages": [
+    "51"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "My staff and our supporting contractors (the National Bureau of Standards and the Oak Ridge National Laboratory) are knowledgable in the area of the TARGET/Pratt and Whitney fuel cell program.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "51"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "My staff and our supporting contractors (the National Bureau of Standards and the Oak Ridge National Laboratory) are knowledgable in the area of the TARGET/Pratt and Whitney fuel cell program.",
+      "quote_verified": false,
+      "entity_as_written": "Oak Ridge National Laboratory",
+      "role_as_written": "Supporting contractor for HUD energy systems research"
+    }
+  ],
+  "window_pages": [
+    41,
+    61
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 20,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,68 @@
+{
+  "complaint_id": "p1074_35556036861797_C010",
+  "complainer_id": "p1074_35556036861797_K012",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 10,
+  "entity": "International Harvester Corporation (IH)",
+  "kind": "organization",
+  "role": "automotive manufacturer / commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as doubting fuel economy savings from 50-pound weight reduction",
+  "summary": "International Harvester Corporation (IH) is listed as one of the commenters on the draft EIS and the proposed fuel economy standard. IH expressed skepticism that a reduction of only 50 pounds in vehicle weight would produce demonstrable fuel economy savings, aligning with the broader industry position that the proposed standard was too high or its supporting assumptions were flawed. No detailed response specifically addressing IH's comment is visible in this window.",
+  "form": "sectional",
+  "complaint_summary": "IH is listed as one of the commenters (number 6) on the draft environmental impact statement and proposed fuel economy standard.",
+  "evidence_pages": [
+    "9"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "IH stated that it is doubtful that savings in fuel economy could be demonstrated with a reduction of only 50 pounds in vehicle weight.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased",
+    "sectional"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "19"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "List of Commenters",
+      "quote_verified": true,
+      "entity_as_written": "International Harvester Corporation",
+      "role_as_written": "Commenter / NPA manufacturer"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "78"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "IH stated that it is doubtful that savings in fuel economy could be demonstrated with a reduction of only 50 pounds in vehicle weight.",
+      "quote_verified": true,
+      "entity_as_written": "International Harvester Corporation (IH)",
+      "role_as_written": "automotive manufacturer / commenter"
+    }
+  ],
+  "window_pages": [
+    9,
+    57
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 12,
+  "synthetic_no_complaint": false
+}

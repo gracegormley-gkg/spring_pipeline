@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C146",
+  "complainer_id": "p1074_35556036546182_K119",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 146,
+  "entity": "Leona Stockmal",
+  "kind": "individual",
+  "role": "Private Citizen, commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase states she was against the Airport Spur because of air and noise pollution",
+  "summary": "Leona Stockmal, a private citizen residing at 5748 South 22nd Street, opposed the Airport Spur citing air and noise pollution concerns. Her position is captured only in a brief paraphrase in the hearing witness summary section, with the document directing readers to pages 141 and 150 for a response.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Leona Stockmal stated she was against the Airport Spur because of the air and noise pollution it would cause.",
+  "evidence_pages": [
+    "246"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R065"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Stated she was against the Airport Spur because of the air and noise pollution.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "246"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Stated she was against the Airport Spur because of the air and noise pollution.",
+      "quote_verified": true,
+      "entity_as_written": "Leona Stockmal",
+      "role_as_written": "Private Citizen, commenter"
+    }
+  ],
+  "window_pages": [
+    236,
+    256
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 119,
+  "synthetic_no_complaint": false
+}

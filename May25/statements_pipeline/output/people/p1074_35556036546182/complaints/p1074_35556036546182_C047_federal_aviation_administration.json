@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556036546182_C047",
+  "complainer_id": "p1074_35556036546182_K027",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 47,
+  "entity": "Federal Aviation Administration",
+  "kind": "agency",
+  "role": "federal aviation regulator reviewing corridor alignments",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "FAA raised safety concerns about Corridor 3 alignment but approved Corridor 5 with conditions (glare shielding required), and testified in favor of the Airport Spur at public hearings",
+  "summary": "The Federal Aviation Administration reviewed the proposed corridor alignments and raised specific safety objections to Corridors 2, 3, and 4 regarding glide slope clearance, control tower visibility, and runway alignment confusion. However, the FAA participated in developing the recommended Corridor 5 as a compatible alternative and testified in favor of the Airport Spur at both public hearings, with the condition that special glare shielding be applied to lights near Runway 7R.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The FAA testified in favor of the Airport Spur at the Environmental Impact Hearing on July 11, 1974.",
+  "evidence_pages": [
+    "101"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Federal Aviation Administration and airport officials have reviewed this corridor and were concerned that its straight alignment, and its parallel alignment to Runway 7R may be misleading to landing aircraft.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "89"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Federal Aviation Administration and airport officials have reviewed this corridor and were concerned that its straight alignment, and its parallel alignment to Runway 7R may be misleading to landing aircraft.",
+      "quote_verified": true,
+      "entity_as_written": "Federal Aviation Administration",
+      "role_as_written": "federal aviation regulator reviewing corridor alignments"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "101"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Testimony revealed that the Milwaukee County Board, Milwaukee Common Council, SEWRPC, Federal Aviation Administration and the American Automobile Association favored construction of the Airport Spur.",
+      "quote_verified": true,
+      "entity_as_written": "Federal Aviation Administration",
+      "role_as_written": "federal aviation regulatory agency"
+    }
+  ],
+  "window_pages": [
+    79,
+    111
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 27,
+  "synthetic_no_complaint": false
+}

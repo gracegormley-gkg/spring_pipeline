@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036806586_C063",
+  "complainer_id": "p1074_35556036806586_K080",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 63,
+  "entity": "Trout Unlimited",
+  "kind": "organization",
+  "role": "commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describing concern over loss of limited trout stream habitat due to project construction",
+  "summary": "Trout Unlimited, South Carolina Chapter, submitted a letter of comment expressing concern that construction of the Bad Creek Project would adversely impact trout spawning runs in lower Howard Creek and further reduce South Carolina's already limited trout stream resources, estimated at only about 250 miles, much of which is marginal. The organization's concerns are referenced alongside those of the SCWMRD regarding spawning run impacts and the scarcity of coldwater habitat in the state.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Trout Unlimited and the SCWMRD expressed concern that construction of the Bad Creek Project would adversely impact spawning runs of trout observed in lower Howard Creek.",
+  "evidence_pages": [
+    "241"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036806586_R016"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Trout Unlimited, in its letter of comment, indicated that the State's trout streams are now limited to about 250 miles, much of which is considered marginal.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "241"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Trout Unlimited, in its letter of comment, indicated that the State's trout streams are now limited to about 250 miles, much of which is considered marginal.",
+      "quote_verified": true,
+      "entity_as_written": "Trout Unlimited",
+      "role_as_written": "commenter"
+    }
+  ],
+  "window_pages": [
+    231,
+    251
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 80,
+  "synthetic_no_complaint": false
+}

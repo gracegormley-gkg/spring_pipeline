@@ -1,0 +1,68 @@
+{
+  "complaint_id": "p1074_35556036806586_C023",
+  "complainer_id": "p1074_35556036806586_K035",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 23,
+  "entity": "U.S. Fish and Wildlife Service",
+  "kind": "agency",
+  "role": "federal wildlife agency, endangered species listing authority",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "cited as data source and listing authority for endangered/threatened species, no position on project expressed",
+  "summary": "The U.S. Fish and Wildlife Service appears in this window primarily as a data source and regulatory authority: its Southeast Reservoir Investigations unit provided trout habitat volume data for Lake Jocassee, and its 1976 proposed list of endangered plants is cited as the basis for classifying Oconee bells (Shortia galacifolia) as a proposed endangered species found along the transmission line right-of-way. The agency's 1974 List of Endangered Fauna is also cited for the classification of the southern bald eagle, American peregrine falcon, and eastern cougar. No position for or against the Bad Creek Project is attributed to the agency in this window.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The U.S. Fish and Wildlife Service's Southeast Reservoir Investigations unit is cited as the source of estimated trout habitat volume data for Lake Jocassee (Table 2-10), providing scientific data used to assess potential project impacts on the two-story fishery.",
+  "evidence_pages": [
+    "104"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "This plant was encountered along the proposed transmission line right-of-way during the botanical survey. It is thought that this plant was first found by Andre Michaux during the 18th century at the junction of the Horsepasture and Toxaway Rivers.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "104"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "This plant was encountered along the proposed transmission line right-of-way during the botanical survey. It is thought that this plant was first found by Andre Michaux during the 18th century at the junction of the Horsepasture and Toxaway Rivers.",
+      "quote_verified": true,
+      "entity_as_written": "U.S. Fish and Wildlife Service",
+      "role_as_written": "federal wildlife agency, endangered species listing authority"
+    },
+    {
+      "chunk_index": 7,
+      "evidence_pages": [
+        "341",
+        "342"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "temperature and dissolved oxygen data collected over the past three years by the U.S. Fish and Wildlife Service raises questions concerning the effects of Jocassee operation and, in turn, the proposed project.",
+      "quote_verified": false,
+      "entity_as_written": "U.S. Fish and Wildlife Service",
+      "role_as_written": "data collector raising questions about project impacts"
+    }
+  ],
+  "window_pages": [
+    94,
+    135
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 35,
+  "synthetic_no_complaint": false
+}

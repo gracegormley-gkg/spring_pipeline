@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C064",
+  "complainer_id": "p1074_35556039563135_K128",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 64,
+  "entity": "United States Department of the Interior Bureau of Outdoor Recreation",
+  "kind": "agency",
+  "role": "federal commenter on Section 4(f) / Roosevelt School property",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "defers determination of recreation significance to another authority while noting opinion aligns with Mr. Davis",
+  "summary": "The United States Department of the Interior Bureau of Outdoor Recreation responded to requests regarding Section 4(f) applicability to the Roosevelt School property and the Cook County Forest Preserve District. In their November 7, 1974 letter, they deferred the determination of recreation significance to the Director of the Park District for Chicago Heights, and noted their opinion corresponded with that of Mr. Davis while clarifying it was provided only as technical assistance and did not necessarily represent the Department of the Interior's official position. They also indicated no additional response was needed regarding the Forest Preserve property given the well-documented coordination efforts.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "In the Draft Environmental Statement comments section, the Department of the Interior agreed there was no feasible and prudent alternative to the proposed project and recommended that replacement of trees, shrubs, and landscaping measures be included in the contract plans rather than the right-of-way settlement, if agreeable with School District No. 170.",
+  "evidence_pages": [
+    "160"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556039563135_R023"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "At this time our opinion corresponds with that of Mr. Davis. However, our opinion is provided on the basis of technical assistance and does not necessarily represent the position of the Department of the Interior.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "160"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "At this time our opinion corresponds with that of Mr. Davis. However, our opinion is provided on the basis of technical assistance and does not necessarily represent the position of the Department of the Interior.",
+      "quote_verified": true,
+      "entity_as_written": "United States Department of the Interior Bureau of Outdoor Recreation",
+      "role_as_written": "federal commenter on Section 4(f) / Roosevelt School property"
+    }
+  ],
+  "window_pages": [
+    150,
+    170
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 128,
+  "synthetic_no_complaint": false
+}

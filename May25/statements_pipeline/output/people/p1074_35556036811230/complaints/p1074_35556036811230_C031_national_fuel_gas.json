@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036811230_C031",
+  "complainer_id": "p1074_35556036811230_K032",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 31,
+  "entity": "National Fuel Gas",
+  "kind": "organization",
+  "role": "property owner/commenter",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "mentioned only as property owner of Ellicott Yard site with relocation plans, no position stated",
+  "summary": "National Fuel Gas (NFG) is mentioned solely as the owner of a block within the proposed Ellicott Yard site, with a note that the company intends to relocate its existing plant to that site. No opinion or position on the LRRT project is expressed or attributed to NFG in this window.",
+  "form": "none",
+  "complaint_summary": "National Fuel Gas is identified as the owner of the block between Carroll, Louisiana, Exchange, and Chicago Streets within the Ellicott Yard site, with plans to relocate their existing plant to that location — no position on the project is stated.",
+  "evidence_pages": [
+    "135"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence"
+  ],
+  "summary_quote": "NFG intends to relocate their existing plant now just southwest of City Hall to this site.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "135"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "NFG intends to relocate their existing plant now just southwest of City Hall to this site.",
+      "quote_verified": true,
+      "entity_as_written": "National Fuel Gas",
+      "role_as_written": "property owner/commenter"
+    }
+  ],
+  "window_pages": [
+    125,
+    145
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 32,
+  "synthetic_no_complaint": false
+}

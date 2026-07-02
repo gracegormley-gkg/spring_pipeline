@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036806586_C051",
+  "complainer_id": "p1074_35556036806586_K059",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 51,
+  "entity": "Southeastern Electric Reliability Council (SERC)",
+  "kind": "organization",
+  "role": "Regional reliability council providing capacity reserve forecasts",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "SERC forecast data cited to demonstrate inadequate reserve margins, supporting argument against power purchase as alternative",
+  "summary": "The Southeastern Electric Reliability Council (SERC) is referenced solely as a source of capacity reserve forecast data for the VACAR subregion. Its April 1976 report is cited to show that reserve margins for 1983–1985 fall well below SERC's own recommended range of 18–22 percent, which the document uses to argue that purchasing power as an alternative to the Bad Creek Project is not feasible. SERC itself takes no position on the project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The April 1976 SERC Report on the Coordinated Bulk Power Supply Program is cited to show that forecast VACAR capacity reserves for 1983–1985 fall below SERC's recommended 18–22 percent reserve margin range, making purchase of power an impractical alternative to the Bad Creek Project.",
+  "evidence_pages": [
+    "209"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The April 1976 SERC Report on the Coordinated Bulk Power Supply Program shows a forecast VACAR capacity reserve of 5,019 megawatts during the 1983 summer peak.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "209"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The April 1976 SERC Report on the Coordinated Bulk Power Supply Program shows a forecast VACAR capacity reserve of 5,019 megawatts during the 1983 summer peak.",
+      "quote_verified": true,
+      "entity_as_written": "Southeastern Electric Reliability Council (SERC)",
+      "role_as_written": "Regional reliability council providing capacity reserve forecasts"
+    }
+  ],
+  "window_pages": [
+    199,
+    219
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 59,
+  "synthetic_no_complaint": false
+}

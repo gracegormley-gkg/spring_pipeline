@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556038322269_C108",
+  "complainer_id": "p1074_35556038322269_K080",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 108,
+  "entity": "State Historical Preservation Office",
+  "kind": "agency",
+  "role": "Source for archaeological sites and historic landmarks list",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "cited only as a data source for archaeological sites and historic landmarks list",
+  "summary": "The State Historical Preservation Office is referenced solely as a data source for the list of archaeological sites and historic landmark structures in Figure VII.1. The office also collaborated with the project team to develop a procedure for examining buildings, sites, lands, facilities, and districts in the Regional Core that may be affected, as referenced in the 4(F)/106 section. No independent position or complaint is attributed to the office.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "256"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Source: City Planning Department and State Historical Preservation Office",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "256"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Source: City Planning Department and State Historical Preservation Office",
+      "quote_verified": true,
+      "entity_as_written": "State Historical Preservation Office",
+      "role_as_written": "Source for archaeological sites and historic landmarks list"
+    }
+  ],
+  "window_pages": [
+    246,
+    266
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 80,
+  "synthetic_no_complaint": true
+}

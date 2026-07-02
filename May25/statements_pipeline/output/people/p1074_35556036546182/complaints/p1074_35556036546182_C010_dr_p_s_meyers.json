@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C010",
+  "complainer_id": "p1074_35556036546182_K006",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 10,
+  "entity": "Dr. P. S. Meyers",
+  "kind": "individual",
+  "role": "Professor, Mechanical Engineering, University of Wisconsin, commenter",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed as additional commenter with no position described in the window",
+  "summary": "Dr. P. S. Meyers, Professor of Mechanical Engineering at the University of Wisconsin, is listed among those who submitted additional comments on the Airport Spur project, with the full letters referenced as being in Section X of the document. No substantive position or complaint content is provided within this window, making it impossible to determine his stance from the available text.",
+  "form": "sectional",
+  "complaint_summary": "Dr. P. S. Meyers is listed as one of several individuals who submitted additional comments on the Airport Spur project, with letters of comment referenced as being in Section X.",
+  "evidence_pages": [
+    "18"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual",
+    "quote_not_verbatim",
+    "low_stance_confidence"
+  ],
+  "summary_quote": "8. Additional comments were received from the following: (Letters of comment are in Section X.) Dr. P. S. Meyers, Professor, Mechanical Engineering, University of Wisconsin",
+  "summary_quote_verified": false,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "18"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "8. Additional comments were received from the following: (Letters of comment are in Section X.) Dr. P. S. Meyers, Professor, Mechanical Engineering, University of Wisconsin",
+      "quote_verified": false,
+      "entity_as_written": "Dr. P. S. Meyers",
+      "role_as_written": "Professor, Mechanical Engineering, University of Wisconsin, commenter"
+    }
+  ],
+  "window_pages": [
+    8,
+    28
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 6,
+  "synthetic_no_complaint": false
+}

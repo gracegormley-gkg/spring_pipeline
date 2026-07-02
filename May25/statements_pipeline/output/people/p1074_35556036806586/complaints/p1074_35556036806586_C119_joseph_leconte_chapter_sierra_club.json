@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036806586_C119",
+  "complainer_id": "p1074_35556036806586_K007",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 119,
+  "entity": "Joseph Leconte Chapter, Sierra Club",
+  "kind": "organization",
+  "role": "Commenter on draft EIS",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "entity appears only in a sectional roster listing with no attributed position",
+  "summary": "The Joseph Leconte Chapter, Sierra Club appears only in a sectional listing of commenters on the Bad Creek Draft Environmental Impact Statement (Appendix A). No specific position, complaint, or statement is attributed to this entity within the document window provided. No stance can be determined from the available text.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "1"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim",
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Others ... *Joseph Leconte Chapter, Sierra Club",
+  "summary_quote_verified": false,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "1"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Others ... *Joseph Leconte Chapter, Sierra Club",
+      "quote_verified": false,
+      "entity_as_written": "Joseph Leconte Chapter, Sierra Club",
+      "role_as_written": "Commenter on draft EIS"
+    }
+  ],
+  "window_pages": [
+    1,
+    11
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 7,
+  "synthetic_no_complaint": true
+}

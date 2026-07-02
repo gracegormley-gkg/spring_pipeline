@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036105336_C006",
+  "complainer_id": "p1074_35556036105336_K014",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 6,
+  "entity": "Maymont Civic League",
+  "kind": "organization",
+  "role": "Civic organization representing the Maymont Community",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "described as having cooperative working relationship with Randolph Planning Study Board, no opposition or explicit support stated",
+  "summary": "The Maymont Civic League is described as the representative body of the Maymont Community, a well-maintained black community of approximately 2,000 residents bordering the Randolph Urban Renewal Area to the south. The document notes that the Maymont Civic League has frequently met with the Randolph Planning Study Board to negotiate and plan areas of mutual interest, and that a good working relationship exists between the two groups. No specific complaints, objections, or expressions of support for the project are attributed to the Maymont Civic League.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The document describes the Maymont Civic League as the representative organization of the Maymont Community that has regularly met with the Randolph Planning Study Board to negotiate and plan areas of mutual interest, enjoying a good working relationship.",
+  "evidence_pages": [
+    "14"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "This community is represented by the Maymont Civic League and they have often met with the Randolph Planing Study Board to negotiate and plan areas of mutual interest.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "14"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "This community is represented by the Maymont Civic League and they have often met with the Randolph Planing Study Board to negotiate and plan areas of mutual interest.",
+      "quote_verified": true,
+      "entity_as_written": "Maymont Civic League",
+      "role_as_written": "Civic organization representing the Maymont Community"
+    }
+  ],
+  "window_pages": [
+    4,
+    24
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 14,
+  "synthetic_no_complaint": false
+}

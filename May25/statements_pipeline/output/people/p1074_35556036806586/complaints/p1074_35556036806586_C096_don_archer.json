@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036806586_C096",
+  "complainer_id": "p1074_35556036806586_K087",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 96,
+  "entity": "Don Archer",
+  "kind": "individual",
+  "role": "Fishery Biologist, South Carolina Wildlife and Marine Resource Department",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "cited as a data source contradicting the DEIS's pH characterization of Howard Creek, but no personal position on the project stated",
+  "summary": "Don Archer, a Fishery Biologist with the South Carolina Wildlife and Marine Resource Department, is referenced in Duke Power's comments on the Draft EIS as the author of a 'Fishery Resource Evaluation' that reported pH values of 6.7–7.0 in Howard Creek. His work is cited to challenge the DEIS's characterization that the waters are 'naturally acidic and near the lower end of the optimal range of pH values for aquatic life.' Archer himself does not appear as a direct commenter; his findings are paraphrased by Duke Power to dispute a factual claim in the DEIS.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Don Archer's 'Fishery Resource Evaluation' is cited by Duke Power to contradict the DEIS statement that Howard Creek waters are naturally acidic, as Archer's report found pH values of 6.7–7.0 in Howard Creek.",
+  "evidence_pages": [
+    "296"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036806586_R034"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "This is not in agreement with the \"Fishery Resource Evaluation\" by Don Archer, Fishery Biologist from the South Carolina Wildlife and Marine Resource Department, which reports pH values of 6.7-7.0 in Howard Creek.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "296"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "This is not in agreement with the \"Fishery Resource Evaluation\" by Don Archer, Fishery Biologist from the South Carolina Wildlife and Marine Resource Department, which reports pH values of 6.7-7.0 in Howard Creek.",
+      "quote_verified": true,
+      "entity_as_written": "Don Archer",
+      "role_as_written": "Fishery Biologist, South Carolina Wildlife and Marine Resource Department"
+    }
+  ],
+  "window_pages": [
+    286,
+    306
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 87,
+  "synthetic_no_complaint": false
+}

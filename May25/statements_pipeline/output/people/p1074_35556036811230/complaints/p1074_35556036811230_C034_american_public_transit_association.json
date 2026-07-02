@@ -1,0 +1,79 @@
+{
+  "complaint_id": "p1074_35556036811230_C034",
+  "complainer_id": "p1074_35556036811230_K033",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 34,
+  "entity": "American Public Transit Association",
+  "kind": "organization",
+  "role": "industry association issuing noise/vibration design guidelines for rapid transit facilities",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "cited as authoritative design guidelines source for noise/vibration criteria without expressing a position on the project",
+  "summary": "The American Public Transit Association (APTA) is referenced in the document solely as the source of noise and vibration design guidelines used to evaluate and govern the Buffalo Metrorail system. Its guidelines are cited to establish acceptable noise levels for wayside operations, station areas, ancillary facilities, and service yards. APTA takes no position on the project itself; it functions as a technical standards authority whose criteria the project is designed to meet.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The document references APTA guidelines (Table G in the Appendix) as the standard to which noise from transit system ancillary facilities such as fan and vent shafts will be held.",
+  "evidence_pages": [
+    "168"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "American Public Transit Association Guidelines (August 1976). GUIDELINES AND PRINCIPLES FOR DESIGN OF RAPID TRANSIT FACILITIES NOISE AND VIBRATION",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "paraphrased",
+    "sectional"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "168"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The American Public Transit Association guidelines used for design purposes recommend that the single event maximum noise level should be used for design purposes rather than any of the 'noise exposure level' evaluation schemes (Appendix, paragraph 7.1).",
+      "quote_verified": false,
+      "entity_as_written": "American Public Transit Association",
+      "role_as_written": "Industry standards body providing design guidelines"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "193"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The APTA ground-borne noise guideline of 30 dBA is appropriate for the War Memorial Auditorium and St. Paul's Cathedral.",
+      "quote_verified": true,
+      "entity_as_written": "American Public Transit Association",
+      "role_as_written": "standards body providing noise/vibration guidelines"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "241"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "American Public Transit Association Guidelines (August 1976). GUIDELINES AND PRINCIPLES FOR DESIGN OF RAPID TRANSIT FACILITIES NOISE AND VIBRATION",
+      "quote_verified": true,
+      "entity_as_written": "American Public Transit Association",
+      "role_as_written": "industry association issuing noise/vibration design guidelines for rapid transit facilities"
+    }
+  ],
+  "window_pages": [
+    158,
+    188
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 33,
+  "synthetic_no_complaint": false
+}

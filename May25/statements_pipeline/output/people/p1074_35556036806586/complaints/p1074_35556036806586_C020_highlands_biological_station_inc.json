@@ -1,0 +1,69 @@
+{
+  "complaint_id": "p1074_35556036806586_C020",
+  "complainer_id": "p1074_35556036806586_K026",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 20,
+  "entity": "Highlands Biological Station, Inc.",
+  "kind": "organization",
+  "role": "Research organization identifying important bryophyte area in Thompson River Gorge",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "recommends preservation of two specific areas or relocation of rare plants, implying conditional acceptance of project",
+  "summary": "The Highlands Biological Station, Inc. conducted a survey of gorges near the Bad Creek Project and identified two locations of biotic uniqueness warranting protection: the west fork of Howard Creek (cove vegetation) and a ridge between Bad Creek and West Bad Creek supporting a rare shrub, Fothergilla major. The Station recommended preservation of these two areas or, at minimum, relocation of some Fothergilla plants. The document notes that the Applicant responded by transplanting 26 Fothergilla specimens out of the project area.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Highlands Biological Station recommended preservation of two biologically unique areas near the Bad Creek Project (west fork of Howard Creek and a ridge supporting rare Fothergilla major shrubs), or at least relocation of some Fothergilla plants, due to their biotic uniqueness.",
+  "evidence_pages": [
+    "103"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036806586_R003"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Highlands Biological Station, Inc., conducted a survey of the gorges in the general vicinity of the Bad Creek Project for the purpose of recommending certain locations for protective natural areas due to their biotic uniqueness (Bruce, 1974).",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "103"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Highlands Biological Station, Inc., conducted a survey of the gorges in the general vicinity of the Bad Creek Project for the purpose of recommending certain locations for protective natural areas due to their biotic uniqueness (Bruce, 1974).",
+      "quote_verified": true,
+      "entity_as_written": "Highlands Biological Station, Inc.",
+      "role_as_written": "biological survey organization"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "226"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Highlands Biological Station, Inc. (Bruce and Pittillo, 1974) identified the lower Thompson River Gorge (about 2 miles upstream from Lake Jocassee) as a very important bryophyte They identified such important tropical types as Isopterygium tenerum (rare)... They recommend leaving the strip of steep-walled gorge with the old-growth trees intact to maintain the proper moist habitat.",
+      "quote_verified": false,
+      "entity_as_written": "Highlands Biological Station, Inc.",
+      "role_as_written": "Research organization identifying important bryophyte area in Thompson River Gorge"
+    }
+  ],
+  "window_pages": [
+    93,
+    133
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 26,
+  "synthetic_no_complaint": false
+}

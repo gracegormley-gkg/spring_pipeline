@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036806586_C018",
+  "complainer_id": "p1074_35556036806586_K021",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 18,
+  "entity": "Southeast Reservoir Investigations",
+  "kind": "agency",
+  "role": "U.S. Fish and Wildlife Service unit — trout habitat assessment",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "cited as data source for trout habitat assessments and dissolved oxygen criteria without expressing support or opposition to the project",
+  "summary": "Southeast Reservoir Investigations (SERI), a U.S. Fish and Wildlife Service unit, is cited multiple times in the document as a source of scientific data and analysis regarding trout habitat in Lake Jocassee. SERI provided gill netting data, growth rate estimates for brown trout, and preliminary estimates of trout habitat volumes, all of which are used by the document to characterize existing conditions and potential impacts on the two-story fishery.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "SERI is identified as the source of Table 2-10, which provides estimated volumes of trout habitat in Lake Jocassee for 1974 and 1975 under two sets of habitat boundary criteria.",
+  "evidence_pages": [
+    "100"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "A dissolved oxygen concentration of 5.0 mg/l has been used by the Southeast Reservoir Investigations (Clugston, 1976) and the South Carolina Wildlife and Marine Resources Department (Timmerman, 1976) in assessments of optimum trout habitat.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "98"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "A dissolved oxygen concentration of 5.0 mg/l has been used by the Southeast Reservoir Investigations (Clugston, 1976) and the South Carolina Wildlife and Marine Resources Department (Timmerman, 1976) in assessments of optimum trout habitat.",
+      "quote_verified": true,
+      "entity_as_written": "Southeast Reservoir Investigations",
+      "role_as_written": "U.S. Fish and Wildlife Service unit — trout habitat assessment"
+    }
+  ],
+  "window_pages": [
+    88,
+    108
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 21,
+  "synthetic_no_complaint": false
+}

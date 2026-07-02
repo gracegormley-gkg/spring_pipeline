@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C074",
+  "complainer_id": "p1074_35556039563135_K077",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 74,
+  "entity": "United States Environmental Protection Agency",
+  "kind": "agency",
+  "role": "Federal agency / draft EIS commenter",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "EPA raises multiple specific deficiencies in the draft EIS (noise survey, air quality data, solid waste disposal) that must be addressed in the final statement",
+  "summary": "The United States Environmental Protection Agency commented on the Draft Environmental Impact Statement for the Lincoln Highway widening project, raising concerns about noise exposure, air quality, and solid waste disposal. EPA required a noise exposure survey, adequate air quality data including route speeds and emission calculations, and proper solid waste disposal procedures. The project preparers concurred with EPA's comments and updated the Final Statement accordingly.",
+  "form": "written_comment",
+  "complaint_summary": "EPA requests that disposal of condemned buildings, existing pavement, and highway debris comply with State of Illinois requirements and that the disposal site be identified in the EIS if known.",
+  "evidence_pages": [
+    "172"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "c.)Solid Waste\nDisposal of the condemned buildings,\nexisting pavement and associate high-\nway debris should be in accordance\nwith State of Illinois requirements.",
+    "closing_anchor": "the disposal site should be\nindicated in the EIS.",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556039563135_R032"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Since this project involves the widening of an existing highway in an area of extensive development, a noise exposure survey should be undertaken to determine if the closer proximity of traffic lanes and increase number of vehicles will have a detrimental effect on any existing land use.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "172"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "Since this project involves the widening of an existing highway in an area of extensive development, a noise exposure survey should be undertaken to determine if the closer proximity of traffic lanes and increase number of vehicles will have a detrimental effect on any existing land use.",
+      "quote_verified": true,
+      "entity_as_written": "United States Environmental Protection Agency",
+      "role_as_written": "Federal agency / draft EIS commenter"
+    }
+  ],
+  "window_pages": [
+    162,
+    182
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 77,
+  "synthetic_no_complaint": false
+}

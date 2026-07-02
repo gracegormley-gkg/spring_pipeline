@@ -1,0 +1,70 @@
+{
+  "complaint_id": "p1074_35556036861797_C013",
+  "complainer_id": "p1074_35556036861797_K003",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 13,
+  "entity": "Chrysler Corporation",
+  "kind": "organization",
+  "role": "automotive manufacturer / commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as arguing the proposed standard level is too high and that weight reduction will not improve their fuel economy",
+  "summary": "Chrysler Corporation commented on both the proposed fuel economy standard and the draft environmental impact statement, arguing that the standard level was too high and that reductions in NPA inertia weight would not improve Chrysler's fuel economy because their nonpassenger automobiles are already weight efficient. Chrysler is identified as one of only two manufacturers (along with GM) projected to fall below the proposed AFES level, making them directly affected by the standard.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Virtually all manufacturers of nonpassenger automobiles, including Chrysler, indicated their belief that the level of the proposed MY 1979 standard was too high in light of the effects of emissions and other factors.",
+  "evidence_pages": [
+    "19"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036861797_R004"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Chrysler concluded that reductions in NPA inertia weight will not improve Chrysler's fuel economy. Chrysler claims that their nonpassenger automobiles are already weight efficient.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased",
+    "sectional"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "19"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "List of Commenters",
+      "quote_verified": true,
+      "entity_as_written": "Chrysler Corporation",
+      "role_as_written": "Commenter / NPA manufacturer"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "78"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Chrysler concluded that reductions in NPA inertia weight will not improve Chrysler's fuel economy. Chrysler claims that their nonpassenger automobiles are already weight efficient.",
+      "quote_verified": true,
+      "entity_as_written": "Chrysler Corporation",
+      "role_as_written": "automotive manufacturer / commenter"
+    }
+  ],
+  "window_pages": [
+    9,
+    57
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 3,
+  "synthetic_no_complaint": false
+}

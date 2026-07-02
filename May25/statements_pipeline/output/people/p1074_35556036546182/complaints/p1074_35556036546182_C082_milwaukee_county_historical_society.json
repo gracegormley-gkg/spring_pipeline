@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036546182_C082",
+  "complainer_id": "p1074_35556036546182_K061",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 82,
+  "entity": "Milwaukee County Historical Society",
+  "kind": "organization",
+  "role": "Historical society, commenter",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "confirmed no historical or archeological sites affected, neither supporting nor opposing the project",
+  "summary": "The Milwaukee County Historical Society, through its executive director Harry H. Anderson, confirmed the State Historical Society's records that no historical or archeological sites would be affected by the Airport Spur project. The society's role was limited to verifying the absence of impacted sites and did not express support for or opposition to the project itself.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Milwaukee County Historical Society, via its executive director Harry H. Anderson, confirmed that no historical or archeological sites would be affected by the Airport Spur project, corroborating the State Historical Society's records.",
+  "evidence_pages": [
+    "161"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R010"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Mr. Harry H. Anderson, executive director of the Milwaukee County Historical Society, has confirmed the State Historical Society's records indicating that no historical or archeological sites will be affected by the above project.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "161"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Mr. Harry H. Anderson, executive director of the Milwaukee County Historical Society, has confirmed the State Historical Society's records indicating that no historical or archeological sites will be affected by the above project.",
+      "quote_verified": true,
+      "entity_as_written": "Milwaukee County Historical Society",
+      "role_as_written": "Historical society, commenter"
+    }
+  ],
+  "window_pages": [
+    151,
+    171
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 61,
+  "synthetic_no_complaint": false
+}

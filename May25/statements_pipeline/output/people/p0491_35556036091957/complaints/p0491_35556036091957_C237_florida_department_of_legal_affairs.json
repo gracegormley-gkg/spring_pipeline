@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p0491_35556036091957_C237",
+  "complainer_id": "p0491_35556036091957_K200",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 237,
+  "entity": "Florida Department of Legal Affairs",
+  "kind": "agency",
+  "role": "state agency, commenter",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter recommends limited test program rather than nationwide ORV use, with ORV restricted to established roadways during testing",
+  "summary": "The Florida Department of Legal Affairs (represented by Attorney General Robert L. Shevin) submitted a detailed letter critiquing the draft Environmental Impact Statement for inadequately evaluating the alternative of prohibiting ORV use on public lands. The Department argued that the draft failed to quantify economic impacts, did not fully address competing land uses, and that given acknowledged data gaps and irreversible harms, a limited test program with ORVs restricted to established roadways would be more prudent than a nationwide program. The Department also raised several other specific concerns about the statement's reasoning and conclusions.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Florida Division of State Planning's clearinghouse letter paraphrases the Department of Legal Affairs as suggesting a limited test program to control off-road vehicles and offering other comments on the statement.",
+  "evidence_pages": [
+    "312"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p0491_35556036091957_R021"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Department of Legal Affairs suggests that a test program to control off-road vehicles be instituted on a limited bas s; the Department offers comments on several other portions of the statement which should be considered.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "312"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Department of Legal Affairs suggests that a test program to control off-road vehicles be instituted on a limited bas s; the Department offers comments on several other portions of the statement which should be considered.",
+      "quote_verified": true,
+      "entity_as_written": "Florida Department of Legal Affairs",
+      "role_as_written": "state agency, commenter"
+    }
+  ],
+  "window_pages": [
+    302,
+    322
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 200,
+  "synthetic_no_complaint": false
+}

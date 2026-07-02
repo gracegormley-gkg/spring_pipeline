@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036058550_C040",
+  "complainer_id": "p1074_35556036058550_K017",
+  "doc_id": "p1074_35556036058550",
+  "work_id": "csv:35556036058550",
+  "order": 40,
+  "entity": "Thomas E. Carroll",
+  "kind": "official",
+  "role": "Assistant Administrator for Planning and Management, Environmental Protection Agency",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "opens letter calling Operation Breakthrough 'a step forward in solving the problems of metropolitan housing'",
+  "summary": "Thomas E. Carroll, as Assistant Administrator for Planning and Management at the EPA, wrote a letter to HUD expressing general support for Operation Breakthrough, characterizing it as combining urban and environmental planning and representing progress on metropolitan housing problems. While supportive overall, Carroll's letter enclosed specific technical comments raising concerns about air quality evaluation, water quality, and noise standards that EPA believed needed to be addressed or expanded in the final statement.",
+  "form": "written_comment",
+  "complaint_summary": "EPA's enclosure raises specific concerns about insufficient air quality evaluation at individual sites, water quality issues including erosion controls and groundwater recharge methods, and the absence of actual noise data and interim noise standards in the draft statement.",
+  "evidence_pages": [
+    "33"
+  ],
+  "statement": {
+    "text": "AIR\nThe specific air pollution impact at the sites selected for Operation Breakthrough cannot be fully evaluated from the information presented in this Statement. In order to adequately evaluate the true impact, it would be necessary for an impact statement to be prepared for each of the eight sites. These statements should be of such detail that the total environmental aspects can be properly evaluated not only as a result of the specific site but as a result of other development brought about in the near vicinity of the sites.\nWATER\nWe do not recommend any significant changes in the Operation Breakthrough program on the basis of water quality considerations. It appears that housing constructed in connection with Operation Breakthrough will have less adverse impact on water quality than most conventional housing because of the attention that has been given to site planning. He note that site planning at the prototype sites has been guided by concern for water resources management, with particular attention to reducing soil erosion.\nWe recommend that the discussion in the draft statement of probable environmental impact of the program be expanded to provide additional information on the following matters:\nA description of procedures that will be implemented (in addition to proper siting) to guard against erosion during construction, and consequent siluation of surface waters.\nThe statement should address, in general terms, the beneficial and adverse environmental implications of increased use of non-wood products in housing construction throughout the nation. One of the purposes of the program is to encourage the use of new naterials in housing construction; e.g., concrete, metal, and synthetic products, as alternatives to wood. Widespread acceptance of new building materials as a result of this program could have impacts on the environment, both in the production and in the eventual disposal of the materials.\n\nThe section on planning for water resources management on page 19 should be expanded to outline the proposed methods of obtaining drinking water and disposing of wastewater at the prototype sites. It would be appropriate to explain why only hydrocarbons are to be filtered from storm runoff, before recharging groundwater supplies at the Kalamazoo and Macon sites, and not other contaminants. The method of filtration should be specified. If the method is soil percolation, only part of the hydrocarbon fraction will be dispersed through the soil and a large portion may eventually reach the groundwater table.\nNOISE\nReference is made in the statement to DHUD's \"Interim Noise Standards\" with no indication of actual data. We recommend that these standards be included in the final statement. Further, it is hereby requested that a copy of the Interim Noise Standards be provided to the Environmental Protection Agency, so that more definitive judgments can be made when required in the future.",
+    "opening_anchor": "AIR\nThe specific air pollution impact at the sites selected for Operation Breakthrough cannot be fully evaluated from the information presented in this Statement.",
+    "closing_anchor": "We recommend that these standards be included in the final statement. Further, it is hereby requested that a copy of the Interim Noise Standards be provided to the Environmental Protection Agency, so that more definitive judgments can be made when required in the future.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Operation Broakthrough combines urban and environmental planning and is a step forward in solving the problems of metropolitan housing.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "33"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "Operation Broakthrough combines urban and environmental planning and is a step forward in solving the problems of metropolitan housing.",
+      "quote_verified": true,
+      "entity_as_written": "Thomas E. Carroll",
+      "role_as_written": "Assistant Administrator for Planning and Management, Environmental Protection Agency"
+    }
+  ],
+  "window_pages": [
+    23,
+    43
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 17,
+  "synthetic_no_complaint": false
+}

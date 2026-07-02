@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C142",
+  "complainer_id": "p1074_35556036546182_K116",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 142,
+  "entity": "Ester Piszczek",
+  "kind": "individual",
+  "role": "Private Citizen, commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes hardship in selling house due to adjacent Airport Spur",
+  "summary": "Ester Piszczek, a private citizen residing at 5782 South 20th Street, stated that the proposed Airport Spur's proximity to her house was causing her hardship in selling the property. The agency responded by noting that Mrs. Piszczek had already sold her house in September 1974, implicitly dismissing the ongoing nature of her concern.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Ester Piszczek stated she was experiencing a hardship in selling her house because the proposed Airport Spur would be adjacent to her property.",
+  "evidence_pages": [
+    "245"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R061"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Stated that he was experiencing a hardship in selling her house because the proposed Airport Spur will be adjacent to her house.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "245"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Stated that he was experiencing a hardship in selling her house because the proposed Airport Spur will be adjacent to her house.",
+      "quote_verified": true,
+      "entity_as_written": "Ester Piszczek",
+      "role_as_written": "Private Citizen, commenter"
+    }
+  ],
+  "window_pages": [
+    235,
+    255
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 116,
+  "synthetic_no_complaint": false
+}

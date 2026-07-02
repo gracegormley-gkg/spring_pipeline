@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036105336_C059",
+  "complainer_id": "p1074_35556036105336_K041",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 59,
+  "entity": "commission of architectural review",
+  "kind": "agency",
+  "role": "City architectural review body",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "requested environmental impact study before expressway proceeds",
+  "summary": "The Commission of Architectural Review requested that an environmental impact study be conducted on the proposed Downtown Expressway before it proceeds. This suggests the Commission is not outright opposed to the expressway but is conditioning any acceptance on a proper environmental review. No further positions or statements from the Commission appear in this window.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Commission of Architectural Review requested that an environmental impact study be made of the proposed Downtown Expressway, indicating concern about its environmental effects before the project moves forward.",
+  "evidence_pages": [
+    "105"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "the commission of architectural review has requested that an environmental impact study be made of the proposed expressway.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "105"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "the commission of architectural review has requested that an environmental impact study be made of the proposed expressway.",
+      "quote_verified": true,
+      "entity_as_written": "commission of architectural review",
+      "role_as_written": "City architectural review body"
+    }
+  ],
+  "window_pages": [
+    95,
+    115
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 41,
+  "synthetic_no_complaint": false
+}

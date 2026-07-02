@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036811230_C073",
+  "complainer_id": "p1074_35556036811230_K057",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 73,
+  "entity": "U.S. Department of Transportation",
+  "kind": "agency",
+  "role": "federal agency whose publication on transportation noise is cited as a reference",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "cited only as a reference document with no position expressed",
+  "summary": "The U.S. Department of Transportation is cited solely as a bibliographic reference for its 1972 publication 'Transportation Noise and Its Control' in the construction noise specifications section of the EIS. The entity does not express any position on the project; it appears only as a source document. No complaints, objections, or endorsements are attributed to it.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "283"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim",
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "U.S. Department of Transportation, Transportation Noise and Its Control, June 1972.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "283"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "U.S. Department of Transportation, Transportation Noise and Its Control, June 1972.",
+      "quote_verified": false,
+      "entity_as_written": "U.S. Department of Transportation",
+      "role_as_written": "federal agency whose publication on transportation noise is cited as a reference"
+    }
+  ],
+  "window_pages": [
+    273,
+    284
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 57,
+  "synthetic_no_complaint": true
+}

@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C082",
+  "complainer_id": "p1074_35556039563135_K072",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 82,
+  "entity": "State of Illinois - Governor's Office of Human Resources",
+  "kind": "agency",
+  "role": "State agency / relocation reviewer",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "listed as one of three agencies that reviewed the draft and found no adverse environmental impact related to relocation/housing",
+  "summary": "The State of Illinois - Governor's Office of Human Resources is listed as one of three agencies that reviewed the draft environmental statement for relocation expertise, finding that the proposed projects would not precipitate major displacement of urban housing nor have significant impact on lower-income neighborhoods. The agency expressed no adverse environmental comment relative to its particular area of concern. No objections or conditions were raised.",
+  "form": "sectional",
+  "complaint_summary": "The Governor's Office of Human Resources is listed as one of three agencies (alongside HUD and OEO) that reviewed the draft environmental statement for relocation expertise, with no adverse comments received regarding replacement housing impacts.",
+  "evidence_pages": [
+    "177"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556039563135_R040"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "a.)Concur-The following agencies reviewed the draft environmental statement",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "177"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "a.)Concur-The following agencies reviewed the draft environmental statement",
+      "quote_verified": true,
+      "entity_as_written": "State of Illinois - Governor's Office of Human Resources",
+      "role_as_written": "State agency / relocation reviewer"
+    }
+  ],
+  "window_pages": [
+    167,
+    187
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 72,
+  "synthetic_no_complaint": false
+}

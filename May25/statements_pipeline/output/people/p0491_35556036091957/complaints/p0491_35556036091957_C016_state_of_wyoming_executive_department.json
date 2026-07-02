@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p0491_35556036091957_C016",
+  "complainer_id": "p0491_35556036091957_K028",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 16,
+  "entity": "State of Wyoming, Executive Department",
+  "kind": "government",
+  "role": "State government commenter",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "mentioned only as the first chronological respondent with no position described",
+  "summary": "The State of Wyoming, Executive Department submitted the first response to the draft ORV environmental statement, dated 6-12-72, and was assigned response number '1.' The document mentions Wyoming only to explain the chronological filing system used for the 144 responses received; no specific position, complaint, or recommendation from Wyoming is described in the window.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The State of Wyoming, Executive Department is identified as the first respondent (response #1, dated 6-12-72) to the draft ORV environmental statement, but no specific position or complaint content is described.",
+  "evidence_pages": [
+    "26"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence"
+  ],
+  "summary_quote": "Thus, the first response was received from the State of Wyoming, Executive Department, and was dated 6-12-72; it was given the number \"1\" and filed as the first page in these responses.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "26"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Thus, the first response was received from the State of Wyoming, Executive Department, and was dated 6-12-72; it was given the number \"1\" and filed as the first page in these responses.",
+      "quote_verified": true,
+      "entity_as_written": "State of Wyoming, Executive Department",
+      "role_as_written": "State government commenter"
+    }
+  ],
+  "window_pages": [
+    16,
+    36
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 28,
+  "synthetic_no_complaint": false
+}

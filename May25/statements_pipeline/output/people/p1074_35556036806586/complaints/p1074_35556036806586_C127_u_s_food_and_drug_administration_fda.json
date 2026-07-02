@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556036806586_C127",
+  "complainer_id": "p1074_35556036806586_K022",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 127,
+  "entity": "U.S. Food and Drug Administration (FDA)",
+  "kind": "agency",
+  "role": "Federal regulatory agency — setting maximum methylmercury limit for fish",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "referenced solely as the regulatory standard-setter for the 0.5 ug/g methylmercury limit in fish",
+  "summary": "The FDA is mentioned only as the source of the 0.5 ug/g maximum methylmercury limit for edible portions of fish, against which mercury levels in Lake Jocassee largemouth bass and other species are compared. The agency does not express a position on the project itself; it is cited purely as a regulatory benchmark. No complaint or opposition to the project is attributed to the FDA.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "89"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Sherer (1975) and Abernathy (1975) have reported mercury levels in largemouth bass (Micropterus salmoides) that are above the maximum methylmercury limit for edible portions of fish of 0.5 ug/g set by the U.S. Food and Drug Administration (FDA).",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "89"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Sherer (1975) and Abernathy (1975) have reported mercury levels in largemouth bass (Micropterus salmoides) that are above the maximum methylmercury limit for edible portions of fish of 0.5 ug/g set by the U.S. Food and Drug Administration (FDA).",
+      "quote_verified": true,
+      "entity_as_written": "U.S. Food and Drug Administration (FDA)",
+      "role_as_written": "Federal regulatory agency — setting maximum methylmercury limit for fish"
+    }
+  ],
+  "window_pages": [
+    79,
+    99
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 22,
+  "synthetic_no_complaint": true
+}

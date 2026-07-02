@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036546182_C109",
+  "complainer_id": "p1074_35556036546182_K072",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 109,
+  "entity": "Bob Huber",
+  "kind": "official",
+  "role": "Chairman, State Highway Commission",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "conducted hearing and solicited views without expressing personal position",
+  "summary": "Bob Huber, Chairman of the State Highway Commission, presided over the July 11, 1974 Environmental Public Hearing for the proposed Airport Spur freeway project. His role was procedural — he conducted the hearing and explained the reasons for soliciting public views on the social, economic, and environmental aspects of the project. No personal position for or against the project was attributed to him.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Bob Huber conducted the public hearing and gave reasons for soliciting views about the social, economic, and environmental aspects of the proposed freeway project, performing a procedural role without expressing a personal stance.",
+  "evidence_pages": [
+    "222"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R033"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Conducted the public hearing and gave reasons for soliciting views about the social, economic and environmental aspects of the proposed freeway project.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "222"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Conducted the public hearing and gave reasons for soliciting views about the social, economic and environmental aspects of the proposed freeway project.",
+      "quote_verified": true,
+      "entity_as_written": "Bob Huber",
+      "role_as_written": "Chairman, State Highway Commission"
+    }
+  ],
+  "window_pages": [
+    212,
+    232
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 72,
+  "synthetic_no_complaint": false
+}

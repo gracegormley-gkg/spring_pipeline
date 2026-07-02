@@ -1,0 +1,1560 @@
+{
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "title": "Bad Creek pumped storage project : environmental impact statement.",
+  "n_chunks": 9,
+  "per_chunk": [
+    {
+      "chunk_index": 0,
+      "start_page": 1,
+      "end_page": 50,
+      "ceq_chapter": null,
+      "entities": [
+        {
+          "entity": "Duke Power Company",
+          "kind": "organization",
+          "role": "Applicant for Bad Creek Pumped Storage Project license",
+          "attribution_mode": "paraphrased",
+          "quote": "Duke Power Company (Applicant) has filed for Commission approval an application for a major license for construction, operation, and maintenance of the proposed Bad Creek Pumped Storage Project No. 2740",
+          "evidence_pages": [
+            "1"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "Department of the Interior",
+          "kind": "agency",
+          "role": "Federal agency requested to review draft EIS; responded",
+          "attribution_mode": "sectional",
+          "quote": "Federal Departments and Offices ... *Department of the Interior",
+          "evidence_pages": [
+            "1"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "Department of Health, Education, and Welfare",
+          "kind": "agency",
+          "role": "Federal agency requested to review draft EIS; responded",
+          "attribution_mode": "sectional",
+          "quote": "Federal Departments and Offices ... *Department of Health, Education, and Welfare",
+          "evidence_pages": [
+            "1"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "Department of the Army--Corps of Engineers",
+          "kind": "agency",
+          "role": "Federal agency requested to review draft EIS; responded",
+          "attribution_mode": "sectional",
+          "quote": "Federal Departments and Offices ... *Department of the Army--Corps of Engineers",
+          "evidence_pages": [
+            "1"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "Forest Service (Department of Agriculture)",
+          "kind": "agency",
+          "role": "Federal agency requested to review draft EIS; responded",
+          "attribution_mode": "sectional",
+          "quote": "Federal Departments and Offices ... *Forest Service (Department of Agriculture)",
+          "evidence_pages": [
+            "1"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "Environmental Protection Agency",
+          "kind": "agency",
+          "role": "Federal agency requested to review draft EIS; responded",
+          "attribution_mode": "sectional",
+          "quote": "Federal Departments and Offices ... *Environmental Protection Agency",
+          "evidence_pages": [
+            "1"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "Nuclear Regulatory Commission",
+          "kind": "agency",
+          "role": "Federal agency requested to review draft EIS; responded",
+          "attribution_mode": "sectional",
+          "quote": "Federal Departments and Offices ... *Nuclear Regulatory Commission",
+          "evidence_pages": [
+            "1"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "Tennessee Valley Authority",
+          "kind": "agency",
+          "role": "Federal agency requested to review draft EIS; responded",
+          "attribution_mode": "sectional",
+          "quote": "Federal Departments and Offices ... *Tennessee Valley Authority",
+          "evidence_pages": [
+            "1"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "South Carolina Wildlife and Marine Resources Commission",
+          "kind": "agency",
+          "role": "State agency requested to review draft EIS; responded",
+          "attribution_mode": "sectional",
+          "quote": "State Agencies ... *South Carolina Wildlife and Marine Resources Commission",
+          "evidence_pages": [
+            "1"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "South Carolina Public Service Commission",
+          "kind": "agency",
+          "role": "State agency requested to review draft EIS; responded",
+          "attribution_mode": "sectional",
+          "quote": "State Agencies ... *South Carolina Public Service Commission",
+          "evidence_pages": [
+            "1"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "South Carolina Department of Health and Environmental Control",
+          "kind": "agency",
+          "role": "State agency requested to review draft EIS; responded",
+          "attribution_mode": "sectional",
+          "quote": "State Agencies ... *South Carolina Department of Health and Environmental Control",
+          "evidence_pages": [
+            "1"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "South Carolina Department of Highways",
+          "kind": "agency",
+          "role": "State agency requested to review draft EIS; responded",
+          "attribution_mode": "sectional",
+          "quote": "State Agencies ... *South Carolina Department of Highways",
+          "evidence_pages": [
+            "1"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "Town of Walhalla, South Carolina",
+          "kind": "government",
+          "role": "Local agency requested to review draft EIS; responded",
+          "attribution_mode": "sectional",
+          "quote": "Local Agencies ... *Town of Walhalla, South Carolina",
+          "evidence_pages": [
+            "1"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "Joseph Leconte Chapter, Sierra Club",
+          "kind": "organization",
+          "role": "Commenter on draft EIS",
+          "attribution_mode": "sectional",
+          "quote": "Others ... *Joseph Leconte Chapter, Sierra Club",
+          "evidence_pages": [
+            "1"
+          ],
+          "chunk_index": 0
+        },
+        {
+          "entity": "South Carolina Chapter, Trout Unlimited",
+          "kind": "organization",
+          "role": "Commenter on draft EIS",
+          "attribution_mode": "sectional",
+          "quote": "Others ... *South Carolina Chapter, Trout Unlimited",
+          "evidence_pages": [
+            "1"
+          ],
+          "chunk_index": 0
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 16170,
+        "output_tokens": 1317,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 1,
+      "start_page": 49,
+      "end_page": 98,
+      "ceq_chapter": null,
+      "entities": [
+        {
+          "entity": "SCDHEC",
+          "kind": "agency",
+          "role": "South Carolina Department of Health and Environmental Control — permitting authority",
+          "attribution_mode": "paraphrased",
+          "quote": "The South Carolina Department of Health and Environmental Control reported adverse effects on West Bad Creek, Bad Creek, and Howard Creek as a result of the construction of Highway 171.",
+          "evidence_pages": [
+            "83"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "South Carolina Department of Health and Environmental Control",
+          "kind": "agency",
+          "role": "State environmental/health agency — fish consumption advisory",
+          "attribution_mode": "paraphrased",
+          "quote": "The South Carolina Department of Health and Environmental Control recommended that no more than 1.5 pounds of fish flesh from Lake Jocassee be eaten per week.",
+          "evidence_pages": [
+            "91"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "Abernathy (1975)",
+          "kind": "individual",
+          "role": "researcher/scientist — mercury study author",
+          "attribution_mode": "direct_quote",
+          "quote": "Abernathy (1975) concludes that \"consumption of bass from Lake Jocassee is inadvisable.\"",
+          "evidence_pages": [
+            "90"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "North Carolina Wildlife Resources Commission",
+          "kind": "agency",
+          "role": "State wildlife agency — commenter on wildlife populations",
+          "attribution_mode": "direct_quote",
+          "quote": "\"The area in question supports low to moderate populations of big game including, in descending order of abundance, deer, wild turkey, boar, and bear; moderate to good populations of small game, particularly gray squirrel and grouse; average populations of wildcat, foxes, hawks, and owls and an unsubstantiated report of panther.\"",
+          "evidence_pages": [
+            "72"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "South Carolina Wildlife and Marine Resources Department",
+          "kind": "agency",
+          "role": "State wildlife agency — reporting on game populations and fisheries",
+          "attribution_mode": "paraphrased",
+          "quote": "A huntable population of white-tailed deer, frequent sightings of wild turkey, and a record of black bear killed in the area have been reported by the South Carolina Wildlift and Marine Resources Department (Appendix A, Bad Creek Environmental Report, 1974).",
+          "evidence_pages": [
+            "72"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "U.S. Food and Drug Administration (FDA)",
+          "kind": "agency",
+          "role": "Federal regulatory agency — setting maximum methylmercury limit for fish",
+          "attribution_mode": "paraphrased",
+          "quote": "Sherer (1975) and Abernathy (1975) have reported mercury levels in largemouth bass (Micropterus salmoides) that are above the maximum methylmercury limit for edible portions of fish of 0.5 ug/g set by the U.S. Food and Drug Administration (FDA).",
+          "evidence_pages": [
+            "89"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "Southeast Reservoir Investigations",
+          "kind": "agency",
+          "role": "U.S. Fish and Wildlife Service unit — trout habitat assessment",
+          "attribution_mode": "paraphrased",
+          "quote": "A dissolved oxygen concentration of 5.0 mg/l has been used by the Southeast Reservoir Investigations (Clugston, 1976) and the South Carolina Wildlife and Marine Resources Department (Timmerman, 1976) in assessments of optimum trout habitat.",
+          "evidence_pages": [
+            "97"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "U.S. Forest Service",
+          "kind": "agency",
+          "role": "Federal land management agency — managing Whitewater Falls Scenic Area",
+          "attribution_mode": "paraphrased",
+          "quote": "This area is managed for recreation use in its basic natural state and may be nominated to the National Register of Natural Landmarks (U.S. Forest Service, 1974b; U.S. Forest Service, NDa).",
+          "evidence_pages": [
+            "55"
+          ],
+          "chunk_index": 1
+        },
+        {
+          "entity": "Applicant",
+          "kind": "organization",
+          "role": "Duke Power Company — project applicant",
+          "attribution_mode": "paraphrased",
+          "quote": "Thus, the Applicant's statement that the classic concept of the water table cannot be applied to groundwater distribution and movement in the Blue Ridge and Piedmont appears to be verified by the borings.",
+          "evidence_pages": [
+            "63"
+          ],
+          "chunk_index": 1
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 20735,
+        "output_tokens": 1145,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 2,
+      "start_page": 97,
+      "end_page": 146,
+      "ceq_chapter": null,
+      "entities": [
+        {
+          "entity": "South Carolina Wildlife and Marine Resources Department",
+          "kind": "agency",
+          "role": "state wildlife agency, data source and assessor",
+          "attribution_mode": "paraphrased",
+          "quote": "A dissolved oxygen concentration of 5.0 mg/l has been used by the Southeast Reservoir Investigations (Clugston, 1976) and the South Carolina Wildlife and Marine Resources Department (Timmerman, 1976) in assessments of optimum trout habitat.",
+          "evidence_pages": [
+            "97"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "Applicant",
+          "kind": "organization",
+          "role": "project applicant (Duke Power Company)",
+          "attribution_mode": "paraphrased",
+          "quote": "Applicant (Appendix J, Exhibit W) also used this level in some of its analyses of trout habitat thickness.",
+          "evidence_pages": [
+            "97"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "SERI",
+          "kind": "organization",
+          "role": "Southeast Reservoir Investigations, research body",
+          "attribution_mode": "paraphrased",
+          "quote": "SERI has made preliminary estimates of the volumes of the trout water band by an assumed prorating of percent of Lake Jocassee represented by each of their sampling stations.",
+          "evidence_pages": [
+            "98"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "Highlands Biological Station, Inc.",
+          "kind": "organization",
+          "role": "biological survey organization",
+          "attribution_mode": "paraphrased",
+          "quote": "The Highlands Biological Station, Inc., conducted a survey of the gorges in the general vicinity of the Bad Creek Project for the purpose of recommending certain locations for protective natural areas due to their biotic uniqueness (Bruce, 1974).",
+          "evidence_pages": [
+            "100"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "The Highlands Biological Station",
+          "kind": "organization",
+          "role": "biological survey organization",
+          "attribution_mode": "paraphrased",
+          "quote": "The Highlands Biological Station recommends preservation of these two areas or, at least, relocation of some Fothergilla plants.",
+          "evidence_pages": [
+            "100"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "U.S. Fish and Wildlife Service",
+          "kind": "agency",
+          "role": "federal wildlife agency, endangered species listing authority",
+          "attribution_mode": "paraphrased",
+          "quote": "This plant was encountered along the proposed transmission line right-of-way during the botanical survey. It is thought that this plant was first found by Andre Michaux during the 18th century at the junction of the Horsepasture and Toxaway Rivers.",
+          "evidence_pages": [
+            "101"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "U.S. Forest Service",
+          "kind": "agency",
+          "role": "federal land management agency",
+          "attribution_mode": "paraphrased",
+          "quote": "Many plant species of rare or uncommon status found in the southeast have been identified by the U.S. Forest Service (1970) and some of threatened status have been identified by the Smithsonian Institution (1975).",
+          "evidence_pages": [
+            "101"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "Smithsonian Institution",
+          "kind": "organization",
+          "role": "scientific institution, threatened species identifier",
+          "attribution_mode": "paraphrased",
+          "quote": "Many plant species of rare or uncommon status found in the southeast have been identified by the U.S. Forest Service (1970) and some of threatened status have been identified by the Smithsonian Institution (1975).",
+          "evidence_pages": [
+            "101"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "North Carolina Department of Natural and Economic Resources",
+          "kind": "agency",
+          "role": "state natural resources agency, endangered species classification",
+          "attribution_mode": "paraphrased",
+          "quote": "An identical classification has been assigned these species by North and South Carolina; North Carolina Department of Natural and Economic Resources (1973); Joyner, (1974).",
+          "evidence_pages": [
+            "103"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "FPC Staff",
+          "kind": "agency",
+          "role": "Federal Power Commission Staff, project reviewer",
+          "attribution_mode": "paraphrased",
+          "quote": "The FPC Staff has reviewed available literature and believes that the following bird species in the undetermined category may exist in the proposed project sharp-shinned hawk (Accipiter striatus), Cooper's hawk (A. Cooperii), red-shouldered hawk (Buteo lineatus), osprey (Pandion haliaetus), Swainson's warbler (limnothlypis swainsonii), saw-whet owl (Aegolius acadicus), common raven (Corvus corvax), and the black-capped chickadee (Parus atricapillus).",
+          "evidence_pages": [
+            "104"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "Dr. Byron Ingram",
+          "kind": "individual",
+          "role": "Clemson University herpetologist and Duke consultant",
+          "attribution_mode": "paraphrased",
+          "quote": "The Jordan's Salmander (Plethodon jordani) is listed by Dr. Byron Ingram, Clemson University herpetologist and one of Duke's consultants, as common in the project area, although no population estimate has been made (Applicant's Exhibit W).",
+          "evidence_pages": [
+            "104"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "State Historic Preservation Officer",
+          "kind": "official",
+          "role": "state historic preservation authority",
+          "attribution_mode": "paraphrased",
+          "quote": "The State Historic Preservation Officer has stated that no historic sites or sites eligible for inclusion in the Register are in the area of the proposed project.",
+          "evidence_pages": [
+            "130"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "John D. Combes",
+          "kind": "individual",
+          "role": "archaeologist, Institute of Archeology and Anthropology, University of South Carolina",
+          "attribution_mode": "paraphrased",
+          "quote": "In October 1973, John D. Combes of the Institute of Archeology and Anthropology, University of South Carolina, surveyed the proposed project site for archeological remains. None were found, a fact that Dr. Combes attributed to the rugged and difficult nature of the terrain that makes the area unsuitable for human habitation.",
+          "evidence_pages": [
+            "130"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "Forest Service",
+          "kind": "agency",
+          "role": "federal land management agency, trail planning",
+          "attribution_mode": "paraphrased",
+          "quote": "Although no recreation facilities now exist in the Unit, the Forest Service intends to construct the North Carolina portion of the Foothills Trail within its jurisdiction and to develop two overlooks, parking, sanitary, and picnic facilities in the upper Whitewater Falls area (Forest Service, NDa and 1974b).",
+          "evidence_pages": [
+            "133"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "Timmerman",
+          "kind": "individual",
+          "role": "South Carolina Wildlife and Marine Resources Department representative",
+          "attribution_mode": "direct_quote",
+          "quote": "Timmerman, (1976) states that \"As of this date [March 25, 1976], Howard Creek is the only tributary in South Carolina which receives a spawning run of trout, a unique and highly desirable feature.\"",
+          "evidence_pages": [
+            "140"
+          ],
+          "chunk_index": 2
+        },
+        {
+          "entity": "South Carolina Department of Health and Environmental Control, Bureau of Air Quality Control",
+          "kind": "agency",
+          "role": "state air quality monitoring agency",
+          "attribution_mode": "paraphrased",
+          "quote": "Air quality measurements are made by the South Carolina Department of Health and Environmental Control, Bureau of Air Quality Control, which has the responsibility for defining the air quality of the State of South Carolina.",
+          "evidence_pages": [
+            "126"
+          ],
+          "chunk_index": 2
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 21545,
+        "output_tokens": 1996,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 3,
+      "start_page": 145,
+      "end_page": 194,
+      "ceq_chapter": "Environmental Consequences",
+      "entities": [
+        {
+          "entity": "Applicant",
+          "kind": "organization",
+          "role": "Project applicant (Duke Power Company)",
+          "attribution_mode": "paraphrased",
+          "quote": "Applicant proposes to adhere to air pollution control regulations applicable to Oconee County and the State of South Carolina.",
+          "evidence_pages": [
+            "145"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "South Carolina Department of Parks, Recreation, and Tourism",
+          "kind": "agency",
+          "role": "State agency providing trail rating classification",
+          "attribution_mode": "paraphrased",
+          "quote": "On the basis of the trail rating system used by the South Carolina Department of Parks, Recreation, and Tourism, most of the proposed trail would be classified as \"D\" or \"Difficult,\" with an \"extreme variety of terrain and rugged walking surfaces.",
+          "evidence_pages": [
+            "151"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "Staff",
+          "kind": "agency",
+          "role": "FPC Staff",
+          "attribution_mode": "paraphrased",
+          "quote": "Staff believes that comparing the depth and thickness of habitat loss in Jocassee Reservoir for 1974 and 1975 does not fully explain the effect the operation of the Jocassee pumped storage plant, in conjunction with Lake Keowee, has on the reservoir habitat.",
+          "evidence_pages": [
+            "168"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "Boyne and Ingram",
+          "kind": "individual",
+          "role": "Researchers/commenters on benthic organism protection",
+          "attribution_mode": "paraphrased",
+          "quote": "Boyne and Ingram (1975) recommend that, for the protection of benthic organisms, activities that would create excessive siltation should be kept to a minimum and be stringently controlled.",
+          "evidence_pages": [
+            "178"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "Simon and Dysart",
+          "kind": "individual",
+          "role": "Researchers recommending storm flow augmentation",
+          "attribution_mode": "paraphrased",
+          "quote": "Simon and Dysart (1975) and Langdon, et al. (1976) suggest the use of storm flow augmentation after construction to help flush Howard Creek of sediment accumulations from construction and reduce the time required for recovery of Howard Creek.",
+          "evidence_pages": [
+            "178"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "Langdon, et al.",
+          "kind": "individual",
+          "role": "Researchers on Howard Creek sediment transport",
+          "attribution_mode": "paraphrased",
+          "quote": "Simon and Dysart (1975) and Langdon, et al. (1976) suggest the use of storm flow augmentation after construction to help flush Howard Creek of sediment accumulations from construction and reduce the time required for recovery of Howard Creek.",
+          "evidence_pages": [
+            "178"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "Foothills Trail Conference, Inc.",
+          "kind": "organization",
+          "role": "Advisory body for hiking trail management",
+          "attribution_mode": "paraphrased",
+          "quote": "the Applicant proposes to reserve the right to alter, discontinue, or relocate all or a portion of the proposed trail as needs may require, with the advice of the Foothills Trail Conference, Inc., whose membership includes several State and Federal agencies and interested local organizations and individuals.",
+          "evidence_pages": [
+            "185"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "Dr. C. Leland Rodgers",
+          "kind": "individual",
+          "role": "Botanist, Furman University",
+          "attribution_mode": "paraphrased",
+          "quote": "The Applicant arranged for a botanical survey of the project area by Dr. C. Leland Rodgers and J.E. Green, Jr., of Furman University.",
+          "evidence_pages": [
+            "183"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "J.E. Green, Jr.",
+          "kind": "individual",
+          "role": "Botanist, Furman University",
+          "attribution_mode": "paraphrased",
+          "quote": "The Applicant arranged for a botanical survey of the project area by Dr. C. Leland Rodgers and J.E. Green, Jr., of Furman University.",
+          "evidence_pages": [
+            "183"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "R. A. Cloninger",
+          "kind": "individual",
+          "role": "Forester for the Applicant",
+          "attribution_mode": "paraphrased",
+          "quote": "Mr. R. A. Cloninger, Forester for the Applicant, also conducted a forest tree survey of the project area in May 1973.",
+          "evidence_pages": [
+            "183"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "South Carolina Wildlife and Marine Resources Department",
+          "kind": "agency",
+          "role": "State agency with approval authority over stream improvement measures",
+          "attribution_mode": "paraphrased",
+          "quote": "Applicant proposes to assist in constructing instream devices and applying streamside procedures for correcting the possible environmental damage in accordance with reasonable requests from the South Carolina Wildlife and Marine Resources Department (SCWMRD).",
+          "evidence_pages": [
+            "188"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "John D. Combes",
+          "kind": "individual",
+          "role": "Archaeologist, Institute of Archeology and Anthropology, University of South Carolina",
+          "attribution_mode": "paraphrased",
+          "quote": "The survey, conducted by John D. Combes, Institute of Archeology and Anthropology, University of South Carolina, concluded that no historical of prehistorical sites would be jeopardized by the Bad Creek Project.",
+          "evidence_pages": [
+            "190"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "Institute of Archeology and Anthropology, University of South Carolina",
+          "kind": "organization",
+          "role": "Conducting archaeological survey of proposed reservoir area",
+          "attribution_mode": "paraphrased",
+          "quote": "The survey, conducted by John D. Combes, Institute of Archeology and Anthropology, University of South Carolina, concluded that no historical of prehistorical sites would be jeopardized by the Bad Creek Project.",
+          "evidence_pages": [
+            "190"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "Crescent Land and Timber Corporation",
+          "kind": "organization",
+          "role": "Subsidiary of Applicant providing land for mitigation",
+          "attribution_mode": "paraphrased",
+          "quote": "Applicant, through its subsidiary, Crescent Land and Timber Corporation, is providing a 375-acre parcel of land including a portion of Eastatoe Creek to SCWMRD to mitigate for trout habitat lost to the construction of the project.",
+          "evidence_pages": [
+            "189"
+          ],
+          "chunk_index": 3
+        },
+        {
+          "entity": "Medical Entomologist of the South Carolina State Board of Health and Environmental Control",
+          "kind": "official",
+          "role": "State health official consulted on insect problems",
+          "attribution_mode": "paraphrased",
+          "quote": "The Applicant has the capability to control mosquito breeding in the project area, should such a problem occur, and would consult with and follow the recommendations of the Medical Entomologist of the South Carolina State Board of Health and Environmental Control on any insect problem.",
+          "evidence_pages": [
+            "182"
+          ],
+          "chunk_index": 3
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 19028,
+        "output_tokens": 1847,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 4,
+      "start_page": 193,
+      "end_page": 242,
+      "ceq_chapter": "Alternatives",
+      "entities": [
+        {
+          "entity": "Duke Power Company",
+          "kind": "organization",
+          "role": "Applicant/utility company proposing Bad Creek Project",
+          "attribution_mode": "paraphrased",
+          "quote": "The Duke Power Company is instituting a broad, indepth study of load management which will involve the utility's residential, commercial and industrial customers.",
+          "evidence_pages": [
+            "207"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "Donald H. Benton",
+          "kind": "individual",
+          "role": "Duke's Vice President-Marketing",
+          "attribution_mode": "direct_quote",
+          "quote": "Donald H. Benton, Duke's Vice President-Marketing, said the \"Energy Efficient Structure (EES) program will also help reduce the utility's need to build new generating facilities, a major factor affecting the cost of electricity.\"",
+          "evidence_pages": [
+            "208"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "National Economic Research Associates, Inc. (NERA)",
+          "kind": "organization",
+          "role": "Contractor engaged by Duke Power Company to study marginal cost economics and peak-load metering",
+          "attribution_mode": "paraphrased",
+          "quote": "The Duke Power Company has signed a contract with National Economic Research Associates, Inc. (NERA) to study long and short-term marginal cost economics as well as peakload and time-of-day metering as a means of reducing Applicant's peak loads and passing the marginal costs of peak demands to those customers who cause such peaks.",
+          "evidence_pages": [
+            "211"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "National Association of Regulatory Commissioners (NARUC)",
+          "kind": "organization",
+          "role": "Regulatory body that requested major study of time-of-day metering and load management",
+          "attribution_mode": "paraphrased",
+          "quote": "A major study of time-of-day metering and load management systems by the Edison Electric Institute and the Electric Power Research Institute has been undertaken at the request of the National Association of Regulatory Commissioners (NARUC).",
+          "evidence_pages": [
+            "213"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "Edison Electric Institute",
+          "kind": "organization",
+          "role": "Organization conducting study of time-of-day metering and load management",
+          "attribution_mode": "paraphrased",
+          "quote": "A major study of time-of-day metering and load management systems by the Edison Electric Institute and the Electric Power Research Institute has been undertaken at the request of the National Association of Regulatory Commissioners (NARUC).",
+          "evidence_pages": [
+            "213"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "Electric Power Research Institute",
+          "kind": "organization",
+          "role": "Organization conducting study of time-of-day metering and load management",
+          "attribution_mode": "paraphrased",
+          "quote": "A major study of time-of-day metering and load management systems by the Edison Electric Institute and the Electric Power Research Institute has been undertaken at the request of the National Association of Regulatory Commissioners (NARUC).",
+          "evidence_pages": [
+            "213"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "Federal Energy Administration",
+          "kind": "agency",
+          "role": "Federal agency sponsoring studies of rate revision and load management",
+          "attribution_mode": "paraphrased",
+          "quote": "In addition, several studies of rate revision and load management methods are being sponsored by the Federal Energy Administration.",
+          "evidence_pages": [
+            "213"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "Tennessee Valley Authority (TVA)",
+          "kind": "agency",
+          "role": "Federal electric generating system considered as alternative developer/power source",
+          "attribution_mode": "paraphrased",
+          "quote": "At the present time, TVA has no plans to develop additional pumped storage capacity.",
+          "evidence_pages": [
+            "220"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "FPC Staff",
+          "kind": "agency",
+          "role": "Federal Power Commission Staff conducting independent study of alternative sites",
+          "attribution_mode": "paraphrased",
+          "quote": "The FPC Staff made an independent study of 20 potential sites, not limited to the vicinity of the Jocassee Reservoir area.",
+          "evidence_pages": [
+            "221"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "Highlands Biological Station, Inc.",
+          "kind": "organization",
+          "role": "Research organization identifying important bryophyte area in Thompson River Gorge",
+          "attribution_mode": "paraphrased",
+          "quote": "The Highlands Biological Station, Inc. (Bruce and Pittillo, 1974) identified the lower Thompson River Gorge (about 2 miles upstream from Lake Jocassee) as a very important bryophyte They identified such important tropical types as Isopterygium tenerum (rare)... They recommend leaving the strip of steep-walled gorge with the old-growth trees intact to maintain the proper moist habitat.",
+          "evidence_pages": [
+            "226"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "North Carolina Wildlife Resources Commission",
+          "kind": "agency",
+          "role": "State agency managing wildlife land at Long Spur Ridge and Coley Creek sites",
+          "attribution_mode": "paraphrased",
+          "quote": "Development of the Long Spur Ridge site would create a reservoir with a surface area of 280 acres which would inundate land presently managed to some unknown extent for wildlife by the North Carolina Wildlife Resources Commission.",
+          "evidence_pages": [
+            "227"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "Dr. Leland Rodgers",
+          "kind": "individual",
+          "role": "Researcher/scientist recommending protective status for Upper Falls of Bearcamp Creek",
+          "attribution_mode": "paraphrased",
+          "quote": "Dr. Leland Rodgers has suggested that the Upper Falls of Bearcamp Creek should receive protective status (Bruce and Pittillo, 1974).",
+          "evidence_pages": [
+            "233"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "Crescent Land and Timber Company",
+          "kind": "organization",
+          "role": "Land owner with wildlife management agreement at Bearcamp Creek site",
+          "attribution_mode": "paraphrased",
+          "quote": "It is reported that the land is managed for wildlife by the North Carolina Wildlife Resources Commission pursuant to an agreement with the Crescent Land and Timber Company (Application and Supplemental Enclosure No. 4).",
+          "evidence_pages": [
+            "234"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "H. Jesse Grove",
+          "kind": "individual",
+          "role": "Recreation resource rater (Dysart et al., 1973)",
+          "attribution_mode": "paraphrased",
+          "quote": "The recreation ratings of the sites were formulated by H. Jesse Grove (Dysart, et al., 1973) on the basis of field observations.",
+          "evidence_pages": [
+            "229"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "Federal Power Commission",
+          "kind": "agency",
+          "role": "Licensing authority receiving comments from Federal agencies regarding Federal development",
+          "attribution_mode": "paraphrased",
+          "quote": "Comments received from Federal agencies in response to inquiries from the FPC did not indicate that Federal development of the site was being considered.",
+          "evidence_pages": [
+            "220"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "Corps of Engineers",
+          "kind": "agency",
+          "role": "Federal agency considered as potential developer of Bad Creek site",
+          "attribution_mode": "paraphrased",
+          "quote": "The Bad Creek site has no potential value for flood control or irrigation, and hence there is no visible reason for the Corps of Engineers to consider its development.",
+          "evidence_pages": [
+            "220"
+          ],
+          "chunk_index": 4
+        },
+        {
+          "entity": "Southeastern Electric Reliability Council (SERC)",
+          "kind": "organization",
+          "role": "Regional reliability council providing capacity reserve forecasts",
+          "attribution_mode": "paraphrased",
+          "quote": "The April 1976 SERC Report on the Coordinated Bulk Power Supply Program shows a forecast VACAR capacity reserve of 5,019 megawatts during the 1983 summer peak.",
+          "evidence_pages": [
+            "215"
+          ],
+          "chunk_index": 4
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 20370,
+        "output_tokens": 2028,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 5,
+      "start_page": 241,
+      "end_page": 290,
+      "ceq_chapter": "Alternatives",
+      "entities": [
+        {
+          "entity": "Trout Unlimited",
+          "kind": "organization",
+          "role": "commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "Trout Unlimited, in its letter of comment, indicated that the State's trout streams are now limited to about 250 miles, much of which is considered marginal.",
+          "evidence_pages": [
+            "241"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "SCWMRD",
+          "kind": "agency",
+          "role": "South Carolina Wildlife and Marine Resources Department",
+          "attribution_mode": "direct_quote",
+          "quote": "Reductions of coldwater habitat in Lake Jocassee (Section 3.2.2.3) would have an adverse impact on the two-story fishery, stated by SCWMRD to be, \"... The only acceptable compensation for the loss of nearly one-forth of the trout streams in this State to the construction of Lake Jocassee\"",
+          "evidence_pages": [
+            "241"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "Interior",
+          "kind": "agency",
+          "role": "U.S. Department of the Interior",
+          "attribution_mode": "paraphrased",
+          "quote": "Interior has commended the Applicant for its cooperation in leasing Keowee-Toxaway Project lands to the SCWMRD for wildlife management purposes, but Interior questions whether or not such measures would fully compensate for the expected loss of wildlife associated with the proposed Bad Creek Project.",
+          "evidence_pages": [
+            "242"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "United States Department of the Interior",
+          "kind": "agency",
+          "role": "federal agency commenter",
+          "attribution_mode": "direct_quote",
+          "quote": "The Department cannot fully endorse this project until it has some assurance that these adverse impacts will be mitigated.",
+          "evidence_pages": [
+            "263"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "Deputy Assistant Secretary of the Interior",
+          "kind": "official",
+          "role": "Deputy Assistant Secretary, U.S. Department of the Interior",
+          "attribution_mode": "direct_quote",
+          "quote": "The Department cannot fully endorse this project until it has some assurance that these adverse impacts will be mitigated.",
+          "evidence_pages": [
+            "263"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "Charles Custard",
+          "kind": "official",
+          "role": "Director, Office of Environmental Affairs, Department of Health, Education, and Welfare",
+          "attribution_mode": "paraphrased",
+          "quote": "On January 30, 1976, Staff contacted Ms. Phyllis Hayes, HEW, who indicated that this agency had no comments to make on the Bad Creek DEIS.",
+          "evidence_pages": [
+            "264"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "DEPARTMENT OF HEALTH, EDUCATION, AND WELFARE",
+          "kind": "agency",
+          "role": "federal agency commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "On January 30, 1976, Staff contacted Ms. Phyllis Hayes, HEW, who indicated that this agency had no comments to make on the Bad Creek DEIS.",
+          "evidence_pages": [
+            "264"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "JOHN R. HILL, JR.",
+          "kind": "official",
+          "role": "LTC, Corps of Engineers, Assistant Director of Civil Works, Environmental Programs",
+          "attribution_mode": "direct_quote",
+          "quote": "The Draft Environmental Impact Statement is generally adequate insofar as Corps of Engineers responsibilities are concerned.",
+          "evidence_pages": [
+            "265"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "DEPARTMENT OF THE ARMY",
+          "kind": "agency",
+          "role": "federal agency commenter",
+          "attribution_mode": "direct_quote",
+          "quote": "The Draft Environmental Impact Statement is generally adequate insofar as Corps of Engineers responsibilities are concerned.",
+          "evidence_pages": [
+            "265"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "PAUL A. VANDER MYDE",
+          "kind": "official",
+          "role": "Deputy Assistant Secretary, Department of Agriculture",
+          "attribution_mode": "direct_quote",
+          "quote": "We found the statement to be well-written. It appears to reflect adequately the impacts of the project on the environment. We have no further comments to offer.",
+          "evidence_pages": [
+            "266"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "DEPARTMENT OF AGRICULTURE",
+          "kind": "agency",
+          "role": "federal agency commenter",
+          "attribution_mode": "direct_quote",
+          "quote": "We found the statement to be well-written. It appears to reflect adequately the impacts of the project on the environment. We have no further comments to offer.",
+          "evidence_pages": [
+            "266"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "UNITED STATES ENVIRONMENTAL PROTECTION AGENCY REGION IV",
+          "kind": "agency",
+          "role": "federal agency commenter",
+          "attribution_mode": "direct_quote",
+          "quote": "We have reviewed the Draft Environmental Impact Statement for Bad Creek Pumped Storage Project (Number 2740) in South Carolina and believe the project will cause both temporary and permanent degradation of water quality in Bad and Howard Creeks.",
+          "evidence_pages": [
+            "267"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "Jack E. Ravan",
+          "kind": "official",
+          "role": "Regional Administrator, EPA Region IV",
+          "attribution_mode": "direct_quote",
+          "quote": "In view of the foregoing, we have given a rating of ER-(environmental reservations) concerning the environmental effects of certain aspects of the proposed action and 2 (insufficient information) to the Impact Statement.",
+          "evidence_pages": [
+            "268"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "Daniel R. Muller",
+          "kind": "official",
+          "role": "Assistant Director for Environmental Projects, Division of Reactor Licensing, Nuclear Regulatory Commission",
+          "attribution_mode": "direct_quote",
+          "quote": "We are of the opinion that Section 8, Alternatives to the Proposed Action, is extremely well written. The section on pumped storage facilities is instructional to anyone interested in their use and, in particular, their importance to the reliability and efficiency of the Duke Power Company System. In addition, the overall treatment of alternatives is excellent.",
+          "evidence_pages": [
+            "269"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "UNITED STATES NUCLEAR REGULATORY COMMISSION",
+          "kind": "agency",
+          "role": "federal agency commenter",
+          "attribution_mode": "direct_quote",
+          "quote": "We are of the opinion that Section 8, Alternatives to the Proposed Action, is extremely well written. The section on pumped storage facilities is instructional to anyone interested in their use and, in particular, their importance to the reliability and efficiency of the Duke Power Company System. In addition, the overall treatment of alternatives is excellent.",
+          "evidence_pages": [
+            "269"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "Peter A. Krenkel",
+          "kind": "official",
+          "role": "Director of Environmental Planning, Tennessee Valley Authority",
+          "attribution_mode": "direct_quote",
+          "quote": "We have no comments on the draft environmental statement for the Bad Creek Pumped Storage Project No. 2740.",
+          "evidence_pages": [
+            "270"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "TENNESSEE VALLEY AUTHORITY",
+          "kind": "agency",
+          "role": "federal agency commenter",
+          "attribution_mode": "direct_quote",
+          "quote": "We have no comments on the draft environmental statement for the Bad Creek Pumped Storage Project No. 2740.",
+          "evidence_pages": [
+            "270"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "James A. Timmerman, Jr.",
+          "kind": "official",
+          "role": "Executive Director, South Carolina Wildlife and Marine Resources Department",
+          "attribution_mode": "direct_quote",
+          "quote": "With the uncertainty surrounding this proposed project and the importance of the resource endangered by the project, the S. C. Wildlife and Marine Resources Department opposes the construction of this project at this time.",
+          "evidence_pages": [
+            "272"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "South Carolina Wildlife and Marine Resources Department",
+          "kind": "agency",
+          "role": "state agency commenter",
+          "attribution_mode": "direct_quote",
+          "quote": "With the considerable uncertainty surrounding this proposed project and the importance of the resources endangered by the project, the South Carolina Wildlife and Marine Resources Department opposes the construction of this project.",
+          "evidence_pages": [
+            "278"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "Randy Geddings",
+          "kind": "official",
+          "role": "Fisheries Biologist, South Carolina Wildlife and Marine Resources Department",
+          "attribution_mode": "paraphrased",
+          "quote": "As indicated during our telephone conversation of June 11, 1976, I am enclosing a corrected copy of the graph depicting temperature (°C) profiles at the Jocassee Dam - September for 1973, 1974 and 1975.",
+          "evidence_pages": [
+            "280"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "STATE OF SOUTH CAROLINA THE PUBLIC SERVICE COMMISSION",
+          "kind": "agency",
+          "role": "state regulatory agency commenter",
+          "attribution_mode": "direct_quote",
+          "quote": "At the present time Duke Power Company has not applied for a certificate under South Carolina's \"Utility Facility Siting and Environmental Protection Act\", and this Commission has no comments to offer in connection with the Environmental Impact Statement prepared by the Federal Power Commission on the Bad Creek Pumped Storage Facility.",
+          "evidence_pages": [
+            "281"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "Rudolph Mitchell",
+          "kind": "official",
+          "role": "Chairman, South Carolina Public Service Commission",
+          "attribution_mode": "direct_quote",
+          "quote": "At the present time Duke Power Company has not applied for a certificate under South Carolina's \"Utility Facility Siting and Environmental Protection Act\", and this Commission has no comments to offer in connection with the Environmental Impact Statement prepared by the Federal Power Commission on the Bad Creek Pumped Storage Facility.",
+          "evidence_pages": [
+            "281"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "SOUTH CAROLINA DEPARTMENT OF HEALTH AND ENVIRONMENTAL CONTROL",
+          "kind": "agency",
+          "role": "state agency commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "This office has reviewed the Draft Environmental Impact Statement regarding the Bad Creek Pumped Storage Hydroelectric Project and offers the following comments for your consideration",
+          "evidence_pages": [
+            "282"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "C. Barry Shedrow",
+          "kind": "official",
+          "role": "Environmental Analysis Section, Programs Development Division, Bureau of Wastewater & Stream Quality Control, SC DHEC",
+          "attribution_mode": "paraphrased",
+          "quote": "This office has reviewed the Draft Environmental Impact Statement regarding the Bad Creek Pumped Storage Hydroelectric Project and offers the following comments for your consideration",
+          "evidence_pages": [
+            "282"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "SOUTH CAROLINA STATE HIGHWAY DEPARTMENT",
+          "kind": "agency",
+          "role": "state agency commenter",
+          "attribution_mode": "direct_quote",
+          "quote": "We have reviewed your draft environmental impact statement for the Bad Creek project, number 2740 in South Carolina. We have no environmental comments, as such, to offer but would like to call your attention to several items mentioned in your EIS.",
+          "evidence_pages": [
+            "283"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "Paul W. Cobb",
+          "kind": "official",
+          "role": "State Highway Engineer, South Carolina State Highway Department",
+          "attribution_mode": "direct_quote",
+          "quote": "We have reviewed your draft environmental impact statement for the Bad Creek project, number 2740 in South Carolina. We have no environmental comments, as such, to offer but would like to call your attention to several items mentioned in your EIS.",
+          "evidence_pages": [
+            "283"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "Robert E. Gaillard",
+          "kind": "official",
+          "role": "Mayor, Walhalla, South Carolina",
+          "attribution_mode": "direct_quote",
+          "quote": "I wish to take this opportunity to notify the Federal Power Commission that I heartily endorse Duke Power Company's Bad Creek Pumped-Storage Project in South Carolina.",
+          "evidence_pages": [
+            "284"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "Duke Power Company",
+          "kind": "organization",
+          "role": "project applicant",
+          "attribution_mode": "paraphrased",
+          "quote": "We have recently prepared a new system load forecast, which has the effect of reducing the former forecast of future peak loads significantly.",
+          "evidence_pages": [
+            "285"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "L. C. Dail",
+          "kind": "official",
+          "role": "Chief Engineer, Civil-Environmental Division, Duke Power Company",
+          "attribution_mode": "paraphrased",
+          "quote": "We, therefore, propose to submit to the Commission additional information to update the license application and comments on the Environmental Impact Statement, in accordance with the following schedule",
+          "evidence_pages": [
+            "285"
+          ],
+          "chunk_index": 5
+        },
+        {
+          "entity": "W. H. Owen",
+          "kind": "official",
+          "role": "Vice President, Design Engineering, Duke Power Company",
+          "attribution_mode": "paraphrased",
+          "quote": "In accordance with our proposed schedule, we are enclosing 10 copies of the following",
+          "evidence_pages": [
+            "286"
+          ],
+          "chunk_index": 5
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 19693,
+        "output_tokens": 3380,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 6,
+      "start_page": 289,
+      "end_page": 338,
+      "ceq_chapter": null,
+      "entities": [
+        {
+          "entity": "Crescent Land and Timber Corporation",
+          "kind": "organization",
+          "role": "landowner/timber company providing data on project area",
+          "attribution_mode": "paraphrased",
+          "quote": "Data from Crescent Land and Timber Corporation show that no longleaf pine (P. australis), slash pine (P. elliotti), and loblolly (P. taeda) has been hervested.",
+          "evidence_pages": [
+            "289"
+          ],
+          "chunk_index": 6
+        },
+        {
+          "entity": "Crescent Land and Timber Corporation",
+          "kind": "organization",
+          "role": "landowner/timber company commenting on wildlife",
+          "attribution_mode": "paraphrased",
+          "quote": "Personnel of Crescent Land and Timber Corporation report that the Pileated Woodpecker is common in the Jocassee area.",
+          "evidence_pages": [
+            "290"
+          ],
+          "chunk_index": 6
+        },
+        {
+          "entity": "Crescent Land and Timber Corporation",
+          "kind": "organization",
+          "role": "landowner asserting timber management rights in trail corridor",
+          "attribution_mode": "paraphrased",
+          "quote": "Crescent has consistently maintained it reserves timber management and harvesting rights throughout the general area, including the trail corridor.",
+          "evidence_pages": [
+            "296"
+          ],
+          "chunk_index": 6
+        },
+        {
+          "entity": "Don Archer",
+          "kind": "individual",
+          "role": "Fishery Biologist, South Carolina Wildlife and Marine Resource Department",
+          "attribution_mode": "paraphrased",
+          "quote": "This is not in agreement with the \"Fishery Resource Evaluation\" by Don Archer, Fishery Biologist from the South Carolina Wildlife and Marine Resource Department, which reports pH values of 6.7-7.0 in Howard Creek.",
+          "evidence_pages": [
+            "293"
+          ],
+          "chunk_index": 6
+        },
+        {
+          "entity": "Cherokee Foothill Trail Conference",
+          "kind": "organization",
+          "role": "trail organization commenter",
+          "attribution_mode": "paraphrased",
+          "quote": "The Cherokee Foothill Trail Conference will meet and undertake a public information program to inform the public of rules and information by placing strategically located signs.",
+          "evidence_pages": [
+            "293"
+          ],
+          "chunk_index": 6
+        },
+        {
+          "entity": "Billy L. Edge",
+          "kind": "individual",
+          "role": "researcher/author of study on Bad Creek pumped storage effects",
+          "attribution_mode": "paraphrased",
+          "quote": "Duke proposes to use approximately 400,000 cubic yards of rock excavated from underground tunnels to construct an underwater weir in the Whitewater arm of Lake Jocassee downstream of the Bad Creek discharge. Physical modeling studies have shown that such a weir, extending to within 60 ft. of full pool surface, will reduce the potential for disruption of stratification by discharge water (see \"Effects of Bad Creek Pumped Storage om Stratification in Lake Jocassed' by Billy L. Edge, which was mailed to FPC on 26 Aug. 1975).",
+          "evidence_pages": [
+            "294"
+          ],
+          "chunk_index": 6
+        },
+        {
+          "entity": "Dr. C. Leland Rodgers",
+          "kind": "individual",
+          "role": "botanist/authority on flora of project area",
+          "attribution_mode": "paraphrased",
+          "quote": "Dr. C. Leland Rodgers (Exhibit W, Appendix 6) has stated that Duke's plans for constructing transmission lines should result in these Oconee bells not being disturbed.",
+          "evidence_pages": [
+            "291"
+          ],
+          "chunk_index": 6
+        },
+        {
+          "entity": "Dr. C. Leland Rodgers",
+          "kind": "individual",
+          "role": "botanist conducting preconstruction botanical survey",
+          "attribution_mode": "paraphrased",
+          "quote": "Concerning the transmission lines, Dr. Rodgers stated that \"the only plant along the route that deserves special consideration is Shortia galacifola.\" However, as noted by Dr. Rodgers, Duke's present plans for transmission line construction should leave the Shortia undisturbed.",
+          "evidence_pages": [
+            "298"
+          ],
+          "chunk_index": 6
+        },
+        {
+          "entity": "Dr. Richard Bruce",
+          "kind": "individual",
+          "role": "herpetologist, Western Carolina University",
+          "attribution_mode": "paraphrased",
+          "quote": "Dr. Richard Bruce, herpetologist from Western Carolina University, (1967 - see enclosure #3) found that \"dorsal brassy flecking and lateral white spotting occur in many escarpment populatious, and the trend of variation is such that drawing geographic boundaries to the subspecies clemsonae and melaventris is impossible (p. 78 of his paper).",
+          "evidence_pages": [
+            "297"
+          ],
+          "chunk_index": 6
+        },
+        {
+          "entity": "Duke",
+          "kind": "organization",
+          "role": "project applicant (Duke Power Company)",
+          "attribution_mode": "paraphrased",
+          "quote": "Duke does not see a viable method to realistically mitigate the loss of the 2.3 miles of trout stream that will be inundated.",
+          "evidence_pages": [
+            "299"
+          ],
+          "chunk_index": 6
+        },
+        {
+          "entity": "Duke",
+          "kind": "organization",
+          "role": "project applicant (Duke Power Company)",
+          "attribution_mode": "paraphrased",
+          "quote": "Duke maintains that the results of the above studies are sufficient, and that further studies, such as along access roads, are not warranted.",
+          "evidence_pages": [
+            "298"
+          ],
+          "chunk_index": 6
+        },
+        {
+          "entity": "Duke",
+          "kind": "organization",
+          "role": "project applicant (Duke Power Company)",
+          "attribution_mode": "paraphrased",
+          "quote": "Duke does not think further studies of the distribution of rare or endangered species in the general project area are warranted at this time.",
+          "evidence_pages": [
+            "301"
+          ],
+          "chunk_index": 6
+        },
+        {
+          "entity": "South Carolina Wildlife and Marine Resources Department",
+          "kind": "agency",
+          "role": "state wildlife agency referenced regarding wildlife management agreements",
+          "attribution_mode": "paraphrased",
+          "quote": "The U. Interior while commending the . \"can't for its coop Keowee-Jocassee Project lands (unquote: all lands lands) to the South Carolina Wildlife and Marine Res wildlife management purposes, but questions whether compensate for the loss of wildlife productivity as: proposed Bad Creek Project.\"",
+          "evidence_pages": [
+            "300"
+          ],
+          "chunk_index": 6
+        },
+        {
+          "entity": "U. S. Department of the Interior",
+          "kind": "agency",
+          "role": "federal agency commenting on wildlife management",
+          "attribution_mode": "paraphrased",
+          "quote": "the statement says, \"The U. Interior while commending the . \"can't for its coop Keowee-Jocassee Project lands (unquote: all lands lands) to the South Carolina Wildlife and Marine Res wildlife management purposes, but questions whether compensate for the loss of wildlife productivity as: proposed Bad Creek Project.\"",
+          "evidence_pages": [
+            "300"
+          ],
+          "chunk_index": 6
+        },
+        {
+          "entity": "Joseph E. Green, Jr.",
+          "kind": "individual",
+          "role": "botanist/researcher contributing plant survey data",
+          "attribution_mode": "paraphrased",
+          "quote": "The work of Dr. C. Leland Rodgers and Joseph E. Green, Jr., contained in Exhibit W, Appendix D, presents a thorough list of plant communities and species occurring in the project area.",
+          "evidence_pages": [
+            "290"
+          ],
+          "chunk_index": 6
+        },
+        {
+          "entity": "Dr. C. Leland Rodgers",
+          "kind": "individual",
+          "role": "Chairman, Department of Biology, Furman University; author of flora pamphlet",
+          "attribution_mode": "paraphrased",
+          "quote": "By DR. C. LELAND RODGERS Chairman, Department of Biology Furman University",
+          "evidence_pages": [
+            "302"
+          ],
+          "chunk_index": 6
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 25700,
+        "output_tokens": 1988,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 7,
+      "start_page": 337,
+      "end_page": 386,
+      "ceq_chapter": null,
+      "entities": [
+        {
+          "entity": "South Carolina Chapter of Trout Unlimited",
+          "kind": "organization",
+          "role": "commenter on Draft Environmental Statement",
+          "attribution_mode": "paraphrased",
+          "quote": "Enclosed are additional comments to the subject project Draft Environmental Project which we would like inclued in the formal comments of the South Carolina Chapter of Trout Unlimited.",
+          "evidence_pages": [
+            "341"
+          ],
+          "chunk_index": 7
+        },
+        {
+          "entity": "Robert F. Martin, P.E.",
+          "kind": "individual",
+          "role": "commenter, South Carolina Chapter of Trout Unlimited",
+          "attribution_mode": "direct_quote",
+          "quote": "It is requested that time necessary for sufficient study of the spawning run and its success be granted prior to a decision on licensing.",
+          "evidence_pages": [
+            "337"
+          ],
+          "chunk_index": 7
+        },
+        {
+          "entity": "U.S. Fish and Wildlife Service",
+          "kind": "agency",
+          "role": "data collector raising questions about project impacts",
+          "attribution_mode": "paraphrased",
+          "quote": "temperature and dissolved oxygen data collected over the past three years by the U.S. Fish and Wildlife Service raises questions concerning the effects of Jocassee operation and, in turn, the proposed project.",
+          "evidence_pages": [
+            "341",
+            "342"
+          ],
+          "chunk_index": 7
+        },
+        {
+          "entity": "South Carolina Wildlife and Marine Resources",
+          "kind": "agency",
+          "role": "conducting ongoing studies of reproductive and nursery success in lower Howard Creek",
+          "attribution_mode": "paraphrased",
+          "quote": "Ongoing studies of reproductive and nursery success in lower Howard Creek are presently being performed by South Carolina Wildlife and Marine Resources.",
+          "evidence_pages": [
+            "347"
+          ],
+          "chunk_index": 7
+        },
+        {
+          "entity": "LeConte Chapter of the Sierra Club",
+          "kind": "organization",
+          "role": "commenter on Draft Environmental Impact Statement",
+          "attribution_mode": "direct_quote",
+          "quote": "The Sierra Club views this aspect of this at the ent with deep concern. The Final Environmental Etztement must address the full development anticipated or even contemplated if it is to be a valid compliance with the law.",
+          "evidence_pages": [
+            "356"
+          ],
+          "chunk_index": 7
+        },
+        {
+          "entity": "John J. Weins",
+          "kind": "individual",
+          "role": "member, LeConte Chapter, Sierra Club",
+          "attribution_mode": "paraphrased",
+          "quote": "Section 2.2.9 leaves no consideration who tooever for outsight opposition to this project. It is not then a legitimate part of an Earlion and report to ement now is it remembed by the facts.",
+          "evidence_pages": [
+            "355"
+          ],
+          "chunk_index": 7
+        },
+        {
+          "entity": "John J. Hagins",
+          "kind": "individual",
+          "role": "biologist, Joseph LeConte Chapter, Sierra Club",
+          "attribution_mode": "direct_quote",
+          "quote": "I hereby stand with emphatic opposition to the Bad Creek Pumped Storage Project as in the long run it will be detrimental to the best interests of the land, the people, the economy, and therefore, Duke Power Company.",
+          "evidence_pages": [
+            "363"
+          ],
+          "chunk_index": 7
+        },
+        {
+          "entity": "Warren H. Oven",
+          "kind": "individual",
+          "role": "recipient of memo discussing Bad Creek project alternatives",
+          "attribution_mode": "paraphrased",
+          "quote": "Duke Power had no consideration of conservation and rate revision as an alternative in Section 8.2 of its application for license before the FPC.",
+          "evidence_pages": [
+            "361"
+          ],
+          "chunk_index": 7
+        },
+        {
+          "entity": "Federal Power Commission",
+          "kind": "agency",
+          "role": "licensing authority responding to comments",
+          "attribution_mode": "paraphrased",
+          "quote": "Staff concludes that it is not in the best interest of the public to defer the processing of this application until studies are completed which may affect or modify load forecasts which have been made on the bacis of the most reliable information already available at this time.",
+          "evidence_pages": [
+            "351"
+          ],
+          "chunk_index": 7
+        },
+        {
+          "entity": "Duke Power Company",
+          "kind": "organization",
+          "role": "applicant/project proponent",
+          "attribution_mode": "paraphrased",
+          "quote": "The Applicant has developed data on the flows and water quality of the Whitewater River.",
+          "evidence_pages": [
+            "344"
+          ],
+          "chunk_index": 7
+        }
+      ],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 17271,
+        "output_tokens": 1110,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "chunk_index": 8,
+      "start_page": 385,
+      "end_page": 387,
+      "ceq_chapter": null,
+      "entities": [],
+      "n_dropped": 0,
+      "usage": {
+        "model": "us.anthropic.claude-sonnet-4-6",
+        "input_tokens": 1080,
+        "output_tokens": 17,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C025",
+  "complainer_id": "p1074_35556039563135_K013",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 25,
+  "entity": "Director, Northeastern Illinois Planning Commission (Metropolitan Clearinghouse)",
+  "kind": "official",
+  "role": "Local agency commenter on draft EIS",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed only as a recipient and commenter with no position statement in the window",
+  "summary": "The Director of the Northeastern Illinois Planning Commission (Metropolitan Clearinghouse) appears in the document window solely as a listed recipient of the draft EIS and as one of the local agencies that commented on it. No substantive position, complaint, or opinion is attributed to this entity within the available text; the entity's actual review is referenced as Appendix C and Section IX-D but those pages are not included in the window.",
+  "form": "sectional",
+  "complaint_summary": "The Director of the Northeastern Illinois Planning Commission (Metropolitan Clearinghouse) is listed among the local agencies that commented on the draft Environmental Statement, with no substantive position or complaint text provided in this section.",
+  "evidence_pages": [
+    "24"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence"
+  ],
+  "summary_quote": "Director, Northeastern Illinois Planning Commission (Metropolitan Clearinghouse) Acting Superintendent, Cook County Highway Department President, Village of Park Forest",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "24"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Director, Northeastern Illinois Planning Commission (Metropolitan Clearinghouse) Acting Superintendent, Cook County Highway Department President, Village of Park Forest",
+      "quote_verified": true,
+      "entity_as_written": "Director, Northeastern Illinois Planning Commission (Metropolitan Clearinghouse)",
+      "role_as_written": "Local agency commenter on draft EIS"
+    }
+  ],
+  "window_pages": [
+    14,
+    34
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 13,
+  "synthetic_no_complaint": false
+}

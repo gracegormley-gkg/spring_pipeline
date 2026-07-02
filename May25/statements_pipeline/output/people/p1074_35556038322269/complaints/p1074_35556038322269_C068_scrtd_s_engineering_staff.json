@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556038322269_C068",
+  "complainer_id": "p1074_35556038322269_K077",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 68,
+  "entity": "SCRTD's engineering staff",
+  "kind": "agency",
+  "role": "Engineering staff of Southern California Rapid Transit District",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase indicating technological difficulties with aerial system through Barnsdall Park due to topography",
+  "summary": "SCRTD's engineering staff raised concerns about the feasibility of constructing an aerial transit system through Barnsdall Park, citing technological difficulties related to the park's topography. Their input is cited as additional evidence that an aerial system through the park would be highly problematic, reinforcing the recommendation to reroute to Sunset Boulevard or transition to a subway in that area.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "SCRTD's engineering staff indicated that constructing an aerial system through Barnsdall Park would present technological difficulties due to the park's topography, effectively opposing that design option.",
+  "evidence_pages": [
+    "263"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556038322269_R006"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "In addition, the SCRTD's engineering staff has indicated that there would be technological difficulties in constructing an aerial system through Barnsdall Park because of the topography.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "263"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In addition, the SCRTD's engineering staff has indicated that there would be technological difficulties in constructing an aerial system through Barnsdall Park because of the topography.",
+      "quote_verified": true,
+      "entity_as_written": "SCRTD's engineering staff",
+      "role_as_written": "Engineering staff of Southern California Rapid Transit District"
+    }
+  ],
+  "window_pages": [
+    253,
+    273
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 77,
+  "synthetic_no_complaint": false
+}

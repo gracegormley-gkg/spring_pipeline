@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C093",
+  "complainer_id": "p0491_35556036091957_K073",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 93,
+  "entity": "Game and Fish Division",
+  "kind": "agency",
+  "role": "Alabama state agency reviewer",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "directly recommends ORV prohibition within National Wildlife Refuges and Wildlife Management Areas while agreeing with general ORV control",
+  "summary": "The Game and Fish Division of Alabama's Conservation Department reviewed the Draft EIS and agreed that off-road vehicles should be controlled on public lands. They specifically and strongly recommended that the Bureau of Sport Fisheries and Wildlife prohibit ORV areas and trails within National Wildlife Refuges and Wildlife Management Areas, citing the wildlife protection purposes for which those facilities were established.",
+  "form": "written_comment",
+  "complaint_summary": "The Game and Fish Division agrees with general ORV control but strongly recommends that ORVs be prohibited within National Wildlife Refuges and Wildlife Management Areas, which were established for wildlife protection.",
+  "evidence_pages": [
+    "124"
+  ],
+  "statement": {
+    "text": "Executive Order 11644 has been reviewed by personnel of the Game and Fish Division. We agree that off-road vehicles should be controlled on public lands. Inasmuch as National Wildlife Refuges and Wildlife Management Areas were established for the protection, perpetuation and management of wildlife resources, it is strongly recommended that the Bureau of Sport Fisheries and Wildlife prohibit areas and trails for off-road vehicles within the boundaries of such facilities.",
+    "opening_anchor": "Executive Order 11644 has been reviewed by personnel of the Game and Fish Division. We agree that off-road vehicles should be controlled on public lands.",
+    "closing_anchor": "it is strongly recommended that the Bureau of Sport Fisheries and Wildlife prohibit areas and trails for off-road vehicles within the boundaries of such facilities.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We agree that off-road vehicles should be controlled on public lands. Inasmuch as National Wildlife Refuges and Wildlife Management Areas were established for the protection, perpetuation and management of wildlife resources, it is strongly recommended that the Bureau of Sport Fisheries and Wildlife prohibit areas and trails for off-road vehicles within the boundaries of such facilities.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "124"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We agree that off-road vehicles should be controlled on public lands. Inasmuch as National Wildlife Refuges and Wildlife Management Areas were established for the protection, perpetuation and management of wildlife resources, it is strongly recommended that the Bureau of Sport Fisheries and Wildlife prohibit areas and trails for off-road vehicles within the boundaries of such facilities.",
+      "quote_verified": true,
+      "entity_as_written": "Game and Fish Division",
+      "role_as_written": "Alabama state agency reviewer"
+    }
+  ],
+  "window_pages": [
+    114,
+    134
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 73,
+  "synthetic_no_complaint": false
+}

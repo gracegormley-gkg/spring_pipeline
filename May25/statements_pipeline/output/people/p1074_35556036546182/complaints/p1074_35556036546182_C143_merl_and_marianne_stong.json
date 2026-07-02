@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C143",
+  "complainer_id": "p1074_35556036546182_K120",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 143,
+  "entity": "Merl and Marianne Stong",
+  "kind": "individual",
+  "role": "Private Citizens, commenters",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes them urging consideration of testimonies objecting to the Airport Spur",
+  "summary": "Merl and Marianne Stong, private citizens residing at 1901 West Goldcrest Avenue, submitted a comment urging that the testimonies of people objecting to the proposed Airport Spur be considered. Their comment implicitly aligns them with opponents of the project, though they did not articulate specific technical objections of their own. The agency responded that all testimony received at the public hearing or by letter was being considered in the preparation of the Final EIS.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Merl and Marianne Stong stated that the testimonies of people objecting to the proposed Airport Spur should be considered.",
+  "evidence_pages": [
+    "245"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R062"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Stated we should consider the testimonies of the people objecting to the proposed Airport Spur.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "245"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Stated we should consider the testimonies of the people objecting to the proposed Airport Spur.",
+      "quote_verified": true,
+      "entity_as_written": "Merl and Marianne Stong",
+      "role_as_written": "Private Citizens, commenters"
+    }
+  ],
+  "window_pages": [
+    235,
+    255
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 120,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556036811230_C071",
+  "complainer_id": "p1074_35556036811230_K055",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 71,
+  "entity": "Society of Automotive Engineers, Inc.",
+  "kind": "organization",
+  "role": "standards body whose practices (SAE J366a and SAE J952b) govern construction equipment noise level measurements",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "cited as measurement standards authority in construction noise specifications without expressing any position on the project",
+  "summary": "The Society of Automotive Engineers, Inc. is referenced solely as the source of measurement standards (SAE J366a and SAE J952b) that govern how construction equipment sound levels are to be measured under the NFTA Metro Corridor construction noise control specifications. The organization does not express any opinion on the project itself; it is invoked purely as a technical standards body whose practices are incorporated by reference into the contract documents.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "281"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Sound levels shall be measured in substantial conformity with Standards and Recommended Practices established by the Society of Automotive Engineers, Inc., including the latest revisions to SAE J366a and SAE J952b.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "281"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Sound levels shall be measured in substantial conformity with Standards and Recommended Practices established by the Society of Automotive Engineers, Inc., including the latest revisions to SAE J366a and SAE J952b.",
+      "quote_verified": true,
+      "entity_as_written": "Society of Automotive Engineers, Inc.",
+      "role_as_written": "standards body whose practices (SAE J366a and SAE J952b) govern construction equipment noise level measurements"
+    }
+  ],
+  "window_pages": [
+    271,
+    284
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 55,
+  "synthetic_no_complaint": true
+}

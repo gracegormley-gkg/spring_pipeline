@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C173",
+  "complainer_id": "p0491_35556036091957_K163",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 173,
+  "entity": "James W. Bibb",
+  "kind": "official",
+  "role": "Director of the Budget, State of Kansas Division of the Budget",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "transmittal letter states no objection found after state agency review",
+  "summary": "James W. Bibb, as Director of the Kansas Division of the Budget, transmitted the state's clearinghouse review of the draft environmental impact statement, reporting that interested state agencies found no objection to it. His letter served an administrative coordination function under Circular A-95, forwarding enclosed agency comments without expressing personal opposition or support. His role was procedural rather than substantive.",
+  "form": "letter",
+  "complaint_summary": "Bibb transmits the Kansas state clearinghouse review, reporting that interested state agencies found no objection to the environmental statement and enclosing their comments for referral.",
+  "evidence_pages": [
+    "249"
+  ],
+  "statement": {
+    "text": "The referenced environmental statement has been processed by the Division of the Budget under its clearinghouse responsibilities described in Circular A-95.\nAfter review by interested state agencies, it has been found that there is no objection to this environmental statement. Enclosed are comments received concerning this environmental statement for your information and referral.",
+    "opening_anchor": "The referenced environmental statement has been processed by the Division of the Budget under its clearinghouse responsibilities described in Circular A-95.",
+    "closing_anchor": "Enclosed are comments received concerning this environmental statement for your information and referral.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "After review by interested state agencies, it has been found that there is no objection to this environmental statement.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "249"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "After review by interested state agencies, it has been found that there is no objection to this environmental statement.",
+      "quote_verified": true,
+      "entity_as_written": "James W. Bibb",
+      "role_as_written": "Director of the Budget, State of Kansas Division of the Budget"
+    }
+  ],
+  "window_pages": [
+    239,
+    259
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 163,
+  "synthetic_no_complaint": false
+}

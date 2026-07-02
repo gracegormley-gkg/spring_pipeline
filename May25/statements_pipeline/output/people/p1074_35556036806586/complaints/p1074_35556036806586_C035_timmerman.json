@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036806586_C035",
+  "complainer_id": "p1074_35556036806586_K034",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 35,
+  "entity": "Timmerman",
+  "kind": "individual",
+  "role": "South Carolina Wildlife and Marine Resources Department representative",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "quoted statement emphasizing Howard Creek's unique and highly desirable trout spawning run, implying concern about project impacts on it",
+  "summary": "Timmerman, representing the South Carolina Wildlife and Marine Resources Department, is quoted highlighting that Howard Creek is the only tributary in South Carolina receiving a spawning run of trout, characterizing it as 'a unique and highly desirable feature.' This statement is cited in the context of documenting the adverse impacts that construction siltation and turbidity would have on this rare trout spawning habitat. The quote underscores the significance of the resource at risk from the Bad Creek Project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Timmerman (1976) is quoted stating that Howard Creek is the only tributary in South Carolina receiving a spawning run of trout, characterizing it as a unique and highly desirable feature that would be adversely impacted by increased turbidity and siltation from project construction.",
+  "evidence_pages": [
+    "140"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036806586_R005"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Timmerman, (1976) states that \"As of this date [March 25, 1976], Howard Creek is the only tributary in South Carolina which receives a spawning run of trout, a unique and highly desirable feature.\"",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "140"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "Timmerman, (1976) states that \"As of this date [March 25, 1976], Howard Creek is the only tributary in South Carolina which receives a spawning run of trout, a unique and highly desirable feature.\"",
+      "quote_verified": true,
+      "entity_as_written": "Timmerman",
+      "role_as_written": "South Carolina Wildlife and Marine Resources Department representative"
+    }
+  ],
+  "window_pages": [
+    130,
+    150
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 34,
+  "synthetic_no_complaint": false
+}

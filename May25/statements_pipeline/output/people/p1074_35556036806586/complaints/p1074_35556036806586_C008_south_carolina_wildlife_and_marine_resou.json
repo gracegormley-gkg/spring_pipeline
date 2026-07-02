@@ -1,0 +1,101 @@
+{
+  "complaint_id": "p1074_35556036806586_C008",
+  "complainer_id": "p1074_35556036806586_K020",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 8,
+  "entity": "South Carolina Wildlife and Marine Resources Department",
+  "kind": "agency",
+  "role": "state wildlife agency referenced regarding wildlife management agreements",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "agency commends cooperative agreement for Keowee-Jocassee lands but questions whether it compensates for wildlife productivity loss from Bad Creek Project",
+  "summary": "The South Carolina Wildlife and Marine Resources Department is referenced throughout the document primarily as a data source for wildlife, fishery, and water quality information related to the project area. In its formal comment role, the agency commended the applicant's cooperative wildlife management agreement for Keowee-Jocassee Project lands while questioning whether such measures adequately compensate for the loss of wildlife productivity associated with the proposed Bad Creek Project. The agency also contributed fishery survey data, creel census data, and trout habitat assessments used extensively in the EIS.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The South Carolina Wildlife and Marine Resources Department commended the applicant's cooperative wildlife management agreement for Keowee-Jocassee Project lands but questioned whether it would compensate for the loss of wildlife productivity resulting from the proposed Bad Creek Project.",
+  "evidence_pages": [
+    "66"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The U. Interior while commending the . \"can't for its coop Keowee-Jocassee Project lands (unquote: all lands lands) to the South Carolina Wildlife and Marine Res wildlife management purposes, but questions whether compensate for the loss of wildlife productivity as: proposed Bad Creek Project.\"",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased"
+  ],
+  "n_mentions": 5,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "66"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "A huntable population of white-tailed deer, frequent sightings of wild turkey, and a record of black bear killed in the area have been reported by the South Carolina Wildlift and Marine Resources Department (Appendix A, Bad Creek Environmental Report, 1974).",
+      "quote_verified": true,
+      "entity_as_written": "South Carolina Wildlife and Marine Resources Department",
+      "role_as_written": "State wildlife agency — reporting on game populations and fisheries"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "98"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "A dissolved oxygen concentration of 5.0 mg/l has been used by the Southeast Reservoir Investigations (Clugston, 1976) and the South Carolina Wildlife and Marine Resources Department (Timmerman, 1976) in assessments of optimum trout habitat.",
+      "quote_verified": true,
+      "entity_as_written": "South Carolina Wildlife and Marine Resources Department",
+      "role_as_written": "state wildlife agency, data source and assessor"
+    },
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "179"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Applicant proposes to assist in constructing instream devices and applying streamside procedures for correcting the possible environmental damage in accordance with reasonable requests from the South Carolina Wildlife and Marine Resources Department (SCWMRD).",
+      "quote_verified": true,
+      "entity_as_written": "South Carolina Wildlife and Marine Resources Department",
+      "role_as_written": "State agency with approval authority over stream improvement measures"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "271"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "With the considerable uncertainty surrounding this proposed project and the importance of the resources endangered by the project, the South Carolina Wildlife and Marine Resources Department opposes the construction of this project.",
+      "quote_verified": true,
+      "entity_as_written": "South Carolina Wildlife and Marine Resources Department",
+      "role_as_written": "state agency commenter"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "303"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The U. Interior while commending the . \"can't for its coop Keowee-Jocassee Project lands (unquote: all lands lands) to the South Carolina Wildlife and Marine Res wildlife management purposes, but questions whether compensate for the loss of wildlife productivity as: proposed Bad Creek Project.\"",
+      "quote_verified": true,
+      "entity_as_written": "South Carolina Wildlife and Marine Resources Department",
+      "role_as_written": "state wildlife agency referenced regarding wildlife management agreements"
+    }
+  ],
+  "window_pages": [
+    56,
+    99
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 20,
+  "synthetic_no_complaint": false
+}

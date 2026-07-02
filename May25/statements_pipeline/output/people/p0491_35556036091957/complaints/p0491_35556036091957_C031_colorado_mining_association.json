@@ -1,0 +1,70 @@
+{
+  "complaint_id": "p0491_35556036091957_C031",
+  "complainer_id": "p0491_35556036091957_K010",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 31,
+  "entity": "Colorado Mining Association",
+  "kind": "organization",
+  "role": "mining industry association, commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as objecting to permits being required for miners",
+  "summary": "The Colorado Mining Association objected to the requirement that miners obtain permits under the proposed ORV regulations, joining a broader coalition of mining and geophysical exploration interests. The Department of the Interior responded by revising its final environmental statement to except mining, oil, and gas geophysical exploration equipment from the definition of off-road vehicles, citing the U.S. Mining Law of 1872.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Colorado Mining Association objected to permits being required for miners under the proposed ORV regulations.",
+  "evidence_pages": [
+    "39"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p0491_35556036091957_R008"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Colorado Mining Association objects to regulations currently under consideration. These regulations would have an adverse effect on prospecting for and mining of minerals on public lands.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "39"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Colorado Mining Association - objected to permits being required for miners.",
+      "quote_verified": false,
+      "entity_as_written": "Colorado Mining Association",
+      "role_as_written": "Mining industry commenter"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "138"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The Colorado Mining Association objects to regulations currently under consideration. These regulations would have an adverse effect on prospecting for and mining of minerals on public lands.",
+      "quote_verified": true,
+      "entity_as_written": "Colorado Mining Association",
+      "role_as_written": "mining industry association, commenter"
+    }
+  ],
+  "window_pages": [
+    29,
+    54
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 10,
+  "synthetic_no_complaint": false
+}

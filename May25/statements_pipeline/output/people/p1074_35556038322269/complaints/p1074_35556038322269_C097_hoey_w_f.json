@@ -1,0 +1,61 @@
+{
+  "complaint_id": "p1074_35556038322269_C097",
+  "complainer_id": "p1074_35556038322269_K041",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 97,
+  "entity": "Hoey, W.F.",
+  "kind": "individual",
+  "role": "Author of 'Bus Capacity Analysis' cited in Transportation Research Record 548",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "cited as a technical reference source only, no position expressed",
+  "summary": "W.F. Hoey is cited solely as a co-author of a technical reference ('Bus Capacity Analysis,' Transportation Research Record 548, 1975) used to support the document's analysis of aerial busway capacity limits. No position on the project is expressed or attributed to Hoey; the citation is purely informational.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "130"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual",
+    "quote_not_verbatim",
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Hoey, W.F. and Levinson, H.S., \"Bus Capacity Analysis,\" in Transportation Research Record 548, National Academy of Sciences, Washington, D.C., 1975.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "130"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Hoey, W.F. and Levinson, H.S., \"Bus Capacity Analysis,\" in Transportation Research Record 548, National Academy of Sciences, Washington, D.C., 1975.",
+      "quote_verified": false,
+      "entity_as_written": "Hoey, W.F.",
+      "role_as_written": "Author of 'Bus Capacity Analysis' cited in Transportation Research Record 548"
+    }
+  ],
+  "window_pages": [
+    120,
+    140
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 41,
+  "synthetic_no_complaint": true
+}

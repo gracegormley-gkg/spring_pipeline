@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556036811230_C016",
+  "complainer_id": "p1074_35556036811230_K005",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 16,
+  "entity": "Buffalo Sewer Authority",
+  "kind": "agency",
+  "role": "utility authority / negotiating party",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "described as party in ongoing negotiations to resolve alignment conflict, no explicit support or opposition stated",
+  "summary": "The Buffalo Sewer Authority is mentioned in the document as the owner and operator of underground sewers within Buffalo city limits, including a planned major new sewer line (the Scajaquada interceptor) near Delavan Avenue that conflicts with the proposed transit tunnel alignment. The Authority is engaged in negotiations with the NFTA and their respective design consultants to resolve this conflict through a change in the planned transit tunnel alignment. No explicit position of support or opposition to the Metrorail project is attributed to the Authority.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Buffalo Sewer Authority owns and operates all underground sewers within Buffalo city limits and plans to route a major new sewer line (the Scajaquada interceptor) across Main Street near Delavan Avenue, which conflicts with the proposed transit tunnel alignment.",
+  "evidence_pages": [
+    "71"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "This potential conflict has been recognized and negotiations are currently under way between the NFTA and the Sewer Authority and their design consultants to resolve the problem through a change in the planned alignment of the proposed transit tunnel.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "71"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Sewer Authority plans to route a major new sewer line (the Scajaquada interceptor) across Main Street in the vicinity of Delavan Avenue.",
+      "quote_verified": true,
+      "entity_as_written": "Buffalo Sewer Authority",
+      "role_as_written": "utility operator"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "210"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "This potential conflict has been recognized and negotiations are currently under way between the NFTA and the Sewer Authority and their design consultants to resolve the problem through a change in the planned alignment of the proposed transit tunnel.",
+      "quote_verified": true,
+      "entity_as_written": "Buffalo Sewer Authority",
+      "role_as_written": "utility authority / negotiating party"
+    }
+  ],
+  "window_pages": [
+    61,
+    102
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 5,
+  "synthetic_no_complaint": false
+}

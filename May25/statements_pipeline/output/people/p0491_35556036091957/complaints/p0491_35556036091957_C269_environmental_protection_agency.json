@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p0491_35556036091957_C269",
+  "complainer_id": "p0491_35556036091957_K228",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 269,
+  "entity": "Environmental Protection Agency",
+  "kind": "agency",
+  "role": "Federal agency reviewing draft EIS (second letter)",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "concurs with general approach but urges stringent provisions and raises specific concerns about noise, public circulation of environmental assessments, and regulatory gaps",
+  "summary": "The Environmental Protection Agency reviewed the draft EIS twice, first concurring with the general approach to regulating ORV use while urging stringent provisions for environmental impact analysis, use controls, monitoring, and corrective measures, and deferring detailed comments pending review of proposed regulations. In a second, more detailed letter, EPA raised specific concerns about the lack of public circulation for environmental assessments, the inadequacy of the EIS in relating impact severity to regulatory schemes, and the need for noise standards and criteria for ORV use on public lands.",
+  "form": "letter",
+  "complaint_summary": "EPA's detailed review raises concerns that the BLM's environmental assessment process lacks public and agency circulation, that the EIS fails to relate impact severity to actual regulatory schemes, and that noise impacts from ORV use need to be addressed through land manager measures and forthcoming EPA noise standards under the Noise Control Act of 1972.",
+  "evidence_pages": [
+    "355"
+  ],
+  "statement": {
+    "text": "The Environmental Protection Agency has completed its review of the draft environmental impact statement (EIS) on the Department of the Interior's \"Proposed Departmental Implementation of Executive Order 11644 Pertaining to Use of Off-Road Vehicles (ORV) on the Public Lands,\" (Int DES 72-62). We have also separately reviewed the various regulations issued by agencies within Interior, and have enclosed copies of those reviews with this letter. Our review of the draft EIS attempts to focus on issues common to the question of ORV use on all public lands.\nIn general, EPA looks to the use of the \"environmental assessment\" discussed in the draft EIS as a means of alerting the public and other agencies to the designation of lands as suitable for ORV use. The specific requirement for an \"environmental assessment\" appears on page 10 of the EIS in the discussion of the Bureau of Land Management's (BEM) proposed regulations. The actual BEM's regulations, however, do not provide for an \"environmental assessment\" to be circulated to the public and other agencies. In lieu of publication in the Federal Register (as proposed by the National Park Services' regulations and concurred in by EPA), we believe an \"environmental assessment\" on the designation of lands for ORV use should be circulated to the public and Regional Offices of appropriate Federal, State, and local agencies, including the appropriate EPA Regional Office.\n\nThe impact statement itself contains a number of broad conclusions concerning the effects of ORV use (see, for example, the first three paragraphs of page 12 and the descriptions of impacts, pages 13-21). The statement does not, however, relate the severity of these effects to actual regulatory schemes. Of particluar interest to EPA are the adverse noise impacts which the statement ascribes to ORV use (page 19) and the regulations by which the Department of the Interior proposes to mitigate these effects. For example, what measures will land managers take to protect the public from excessive noise levels on public lands, especially at organized ORV events?\nWith regard to noise standards and criteria, EPA will be promulgating standards and regulations for recreational vehicles under Sec. 6 of the Moise Control Act of 1972. These standards will apply to the manufacture of such vehicles, but will be based, among other things, on the \"conditions of use\" of the vehicle. We believe that these standards for various recreational vehicles will be of assistance to land managers in applying noise-level criteria for ORV use on Interior lands.\nWe appreciate the opportunity to comment on the draft EIS and proposed regulations. Specific comments or questions may be addressed to Armand Lepage of my staff at (202) 755-0770.",
+    "opening_anchor": "The Environmental Protection Agency has completed its review of the draft environmental impact statement (EIS) on the Department of the Interior's \"Proposed Departmental Implementation of Executive Order 11644 Pertaining to Use of Off-Road Vehicles (ORV) on the Public Lands,\"",
+    "closing_anchor": "Specific comments or questions may be addressed to Armand Lepage of my staff at (202) 755-0770.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We concur with the general approach outlined by the Department for regulating ORV use, and urge that the specific regulations developed by Interior's land managing agencies to designate lands for ORV use contain stringent provisions for: (1) analyzing the environmental impact of the specific types of ORV use contemplated on an area-by-area basis prior to opening any lands; (2) controlling the type and intensity of ORV use in lands opened; (3) monitoring the effects of such use; and, (4) if significant damage to environmental values is occurring, taking prompt corrective measures, including restrictions or prohibition of further ORV use.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 7,
+      "evidence_pages": [
+        "337"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We concur with the general approach outlined by the Department for regulating ORV use, and urge that the specific regulations developed by Interior's land managing agencies to designate lands for ORV use contain stringent provisions for: (1) analyzing the environmental impact of the specific types of ORV use contemplated on an area-by-area basis prior to opening any lands; (2) controlling the type and intensity of ORV use in lands opened; (3) monitoring the effects of such use; and, (4) if significant damage to environmental values is occurring, taking prompt corrective measures, including restrictions or prohibition of further ORV use.",
+      "quote_verified": true,
+      "entity_as_written": "Environmental Protection Agency",
+      "role_as_written": "Federal agency reviewing draft EIS"
+    },
+    {
+      "chunk_index": 7,
+      "evidence_pages": [
+        "355"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "In general, EPA looks to the use of the \"environmental assessment\" discussed in the draft EIS as a means of alerting the public and other agencies to the designation of lands as suitable for ORV use.",
+      "quote_verified": true,
+      "entity_as_written": "Environmental Protection Agency",
+      "role_as_written": "Federal agency reviewing draft EIS (second letter)"
+    }
+  ],
+  "window_pages": [
+    327,
+    356
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 228,
+  "synthetic_no_complaint": false
+}

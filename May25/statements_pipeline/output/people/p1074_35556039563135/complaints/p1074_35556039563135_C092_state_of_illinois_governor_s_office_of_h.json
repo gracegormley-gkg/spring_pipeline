@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556039563135_C092",
+  "complainer_id": "p1074_35556039563135_K072",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 92,
+  "entity": "State of Illinois - Governor's Office of Human Resources",
+  "kind": "agency",
+  "role": "State agency / relocation reviewer",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "listed as one of three agencies that reviewed the draft and found no adverse environmental impact related to relocation/housing",
+  "summary": "The State of Illinois - Governor's Office of Human Resources is listed as one of three agencies that reviewed the draft environmental statement for relocation expertise, finding that the proposed projects would not precipitate major displacement of urban housing nor have significant impact on lower-income neighborhoods. The agency expressed no adverse environmental comment relative to its particular area of concern. No objections or conditions were raised.",
+  "form": "written_comment",
+  "complaint_summary": "The Governor's Office of Human Resources states that, pursuant to NEPA 1969, it reviewed the attached listing of projects and found they would not precipitate major displacement of urban housing nor have significant impact on lower-income neighborhoods, and therefore has no adverse environmental comment relative to its area of concern.",
+  "evidence_pages": [
+    "183"
+  ],
+  "statement": {
+    "text": "by the National Environ-\ncy Act of 1969, the Gover-\\ne of Human Resources has\\ne attached listing of pro-\nas found that those pro-\\nprecipitate no major dis-\nf urban housing nor have\ncant impact upon lower in-\norhoods; consequently, this\ns no adverse environmental\native to its particular are\\ne and interest.",
+    "opening_anchor": "by the National Environ-\ncy Act of 1969, the Gover-\\ne of Human Resources has",
+    "closing_anchor": "s no adverse environmental\native to its particular are\\ne and interest.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "a.)Concur-The following agencies reviewed the draft environmental statement",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "177"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "a.)Concur-The following agencies reviewed the draft environmental statement",
+      "quote_verified": true,
+      "entity_as_written": "State of Illinois - Governor's Office of Human Resources",
+      "role_as_written": "State agency / relocation reviewer"
+    }
+  ],
+  "window_pages": [
+    167,
+    187
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 72,
+  "synthetic_no_complaint": false
+}

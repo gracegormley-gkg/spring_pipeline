@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036105336_C064",
+  "complainer_id": "p1074_35556036105336_K046",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 64,
+  "entity": "Planning Director A. Howe Todd",
+  "kind": "official",
+  "role": "Planning Director, City of Richmond",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "acknowledges relocation will occur without expressing support or opposition to the project",
+  "summary": "Planning Director A. Howe Todd appeared at a public hearing on the proposed Randolph area master plan and confirmed that residents would face relocation as a result of the project. His single quoted statement is factual and informational in nature, neither endorsing nor opposing the plan. No further positions or complaints are attributed to him in the document window.",
+  "form": "testimony",
+  "complaint_summary": "Planning Director A. Howe Todd confirmed at the public hearing that residents would need to relocate as part of the Randolph redevelopment plan, in response to audience questions about displacement.",
+  "evidence_pages": [
+    "105"
+  ],
+  "statement": {
+    "text": "\"Will people have to move?\" several speakers asked.\n\"There would be some relocation, yes,\" said Planning Director A. Howe Todd.",
+    "opening_anchor": "\"Will people have to move?\" several speakers asked.",
+    "closing_anchor": "\"There would be some relocation, yes,\" said Planning Director A. Howe Todd.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "\"There would be some relocation, yes,\" said Planning Director A. Howe Todd.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "105"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "\"There would be some relocation, yes,\" said Planning Director A. Howe Todd.",
+      "quote_verified": true,
+      "entity_as_written": "Planning Director A. Howe Todd",
+      "role_as_written": "Planning Director, City of Richmond"
+    }
+  ],
+  "window_pages": [
+    95,
+    115
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 46,
+  "synthetic_no_complaint": false
+}

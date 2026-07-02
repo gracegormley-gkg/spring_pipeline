@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556038322269_C109",
+  "complainer_id": "p1074_35556038322269_K087",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 109,
+  "entity": "Los Angeles City Planning staff",
+  "kind": "agency",
+  "role": "City planning staff conducting community meetings",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "described as conducting community meetings on behalf of the project without expressing a position of their own",
+  "summary": "Los Angeles City Planning staff conducted four rounds of community meetings throughout the Regional Core in coordination with SCRTD staff as part of the Community Participation Program. Their role was facilitative — organizing and running public outreach — rather than advocating for or against any particular alternative. No independent position or complaint is attributed to them.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "291"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "four rounds of community meetings were conducted throughout the Regional Core by Los Angeles City Planning staff with the assistance of SCRTD staff.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "291"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "four rounds of community meetings were conducted throughout the Regional Core by Los Angeles City Planning staff with the assistance of SCRTD staff.",
+      "quote_verified": true,
+      "entity_as_written": "Los Angeles City Planning staff",
+      "role_as_written": "City planning staff conducting community meetings"
+    }
+  ],
+  "window_pages": [
+    281,
+    293
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 87,
+  "synthetic_no_complaint": true
+}

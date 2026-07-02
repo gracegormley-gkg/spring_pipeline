@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036546182_C110",
+  "complainer_id": "p1074_35556036546182_K085",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 110,
+  "entity": "Harvey Shebesta",
+  "kind": "official",
+  "role": "District Engineer, Milwaukee Metropolitan District, Division of Highways",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "testified only to inform attendees of procedures and enter documents into record, no position expressed",
+  "summary": "Harvey Shebesta, District Engineer for the Milwaukee Metropolitan District Division of Highways, appeared as Witness No. 2 at the July 11, 1974 Environmental Public Hearing. His testimony was purely procedural: he informed attendees of testifying procedures, entered the formal legal notice and exhibits into the record, discussed hearing materials, and confirmed the Draft EIS had been circulated per State and National Environmental Policy Acts. No substantive position for or against the project was expressed.",
+  "form": "testimony",
+  "complaint_summary": "Shebesta's testimony was entirely procedural, informing attendees of testifying procedures, entering the legal notice and exhibits into the record, discussing hearing materials, and confirming the Draft EIS was properly circulated.",
+  "evidence_pages": [
+    "222"
+  ],
+  "statement": {
+    "text": "Informed those present of the procedures for testifying. Entered into record the formal legal notice, those newspapers, groups, and individu who were sent a notice, and all the exhibits. Discussed materials passed out for the hearing. Stated the Draft Environmental Impact Statement was fill circulated according to both State and National Environmental Policy Acts.",
+    "opening_anchor": "Informed those present of the procedures for testifying. Entered into record the formal legal notice, those newspapers, groups, and individu who were sent a notice, and all the exhibits.",
+    "closing_anchor": "Stated the Draft Environmental Impact Statement was fill circulated according to both State and National Environmental Policy Acts.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036546182_R034"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Informed those present of the procedures for testifying. Entered into record the formal legal notice, those newspapers, groups, and individu who were sent a notice, and all the exhibits.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "222"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Informed those present of the procedures for testifying. Entered into record the formal legal notice, those newspapers, groups, and individu who were sent a notice, and all the exhibits.",
+      "quote_verified": true,
+      "entity_as_written": "Harvey Shebesta",
+      "role_as_written": "District Engineer, Milwaukee Metropolitan District, Division of Highways"
+    }
+  ],
+  "window_pages": [
+    212,
+    232
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 85,
+  "synthetic_no_complaint": false
+}

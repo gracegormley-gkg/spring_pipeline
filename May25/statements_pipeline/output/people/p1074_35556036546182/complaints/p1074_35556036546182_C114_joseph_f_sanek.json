@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036546182_C114",
+  "complainer_id": "p1074_35556036546182_K089",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 114,
+  "entity": "Joseph F. Sanek",
+  "kind": "official",
+  "role": "Mitchell Field Airport Director",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "testified that Airport Spur is in the public interest and the entire metropolitan area would benefit",
+  "summary": "Joseph F. Sanek, Mitchell Field Airport Director, testified at the July 11, 1974 Environmental Public Hearing in support of the Airport Spur project. He stated that construction would be in the public interest, consistent with transportation planning, and that the entire metropolitan area would benefit, expressing confidence that any problems could be satisfactorily resolved.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Sanek testified that the Airport Spur would be in the public interest and consistent with transportation planning, that the entire metropolitan area would benefit, and that any problems could be satisfactorily resolved.",
+  "evidence_pages": [
+    "226"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Stated that the construction of the Airport Spur would be in the public interest and be consistent with transportation planning. He felt the entire metropolitan area would benefit and any problems could be satisfactorily resolved.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "226"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Stated that the construction of the Airport Spur would be in the public interest and be consistent with transportation planning. He felt the entire metropolitan area would benefit and any problems could be satisfactorily resolved.",
+      "quote_verified": true,
+      "entity_as_written": "Joseph F. Sanek",
+      "role_as_written": "Mitchell Field Airport Director"
+    }
+  ],
+  "window_pages": [
+    216,
+    236
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 89,
+  "synthetic_no_complaint": false
+}

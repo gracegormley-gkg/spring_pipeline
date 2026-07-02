@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556036806586_C054",
+  "complainer_id": "p1074_35556036806586_K055",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 54,
+  "entity": "Federal Power Commission",
+  "kind": "agency",
+  "role": "Licensing authority receiving comments from Federal agencies regarding Federal development",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "FPC Staff conducts independent site studies and summarizes engineering/environmental data without expressing a clear position for or against the project",
+  "summary": "The Federal Power Commission (FPC) Staff plays a dual role in this document: as the licensing authority receiving comments from Federal agencies regarding Federal development of the Bad Creek site, and as an independent technical reviewer conducting its own studies of alternative pumped storage sites. The FPC Staff independently studied 20 potential pumped storage sites, selected three most desirable alternatives, and prepared comparative engineering and environmental assessments. Comments received from Federal agencies in response to FPC inquiries did not indicate that Federal development of the site was being considered.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The FPC Staff made an independent study of 20 potential pumped storage sites not limited to the vicinity of the Jocassee Reservoir area, eliminating many due to remoteness, high capital cost, or severe environmental impact, and selected three most desirable sites for comparison with the proposed Bad Creek site.",
+  "evidence_pages": [
+    "212"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Staff concludes that it is not in the best interest of the public to defer the processing of this application until studies are completed which may affect or modify load forecasts which have been made on the bacis of the most reliable information already available at this time.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "212"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Comments received from Federal agencies in response to inquiries from the FPC did not indicate that Federal development of the site was being considered.",
+      "quote_verified": true,
+      "entity_as_written": "Federal Power Commission",
+      "role_as_written": "Licensing authority receiving comments from Federal agencies regarding Federal development"
+    },
+    {
+      "chunk_index": 7,
+      "evidence_pages": [
+        "355"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Staff concludes that it is not in the best interest of the public to defer the processing of this application until studies are completed which may affect or modify load forecasts which have been made on the bacis of the most reliable information already available at this time.",
+      "quote_verified": true,
+      "entity_as_written": "Federal Power Commission",
+      "role_as_written": "licensing authority responding to comments"
+    }
+  ],
+  "window_pages": [
+    202,
+    232
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 55,
+  "synthetic_no_complaint": false
+}

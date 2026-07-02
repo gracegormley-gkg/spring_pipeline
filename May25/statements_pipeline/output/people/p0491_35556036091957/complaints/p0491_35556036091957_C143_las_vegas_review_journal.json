@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C143",
+  "complainer_id": "p0491_35556036091957_K104",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 143,
+  "entity": "Las Vegas Review-Journal",
+  "kind": "organization",
+  "role": "newspaper, commenter",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly states 'I strongly support both the statement and the proposed regulations'",
+  "summary": "William Vincent, writing on Las Vegas Review-Journal letterhead, strongly supports the draft environmental statement and proposed ORV regulations, while raising two specific concerns: objecting to the summation statement on page 25 as giving the wrong emphasis, and calling for BLM enforcement powers.",
+  "form": "letter",
+  "complaint_summary": "William Vincent, writing on Las Vegas Review-Journal letterhead, strongly supports the statement and proposed regulations but objects to the page 25 summation statement as giving the wrong emphasis and calls for BLM enforcement powers.",
+  "evidence_pages": [
+    "187"
+  ],
+  "statement": {
+    "text": "A draft of the environmental statement prepared in response to Executive Order 11644 has been sent to me for comment. Presumably, I was asked to respond as a member of the State Committee on Federal Land Laws and an alternate on the BLM Multiple Use Advisory Board. But I also would like to react as a fisherman, outdoorsman and frequent ORV user.\nI strongly support both the statement and the proposed regulations. However, I do object to the summation statement on page 25--Th short, it represents an attempt to maximize the types of public land uses... --as giving the wrong emphasis and providing an opening to those who oppose even the most modest controls and management practices.\nAlso, I believe it is absolutely necessary to give BLM enforcement powers. This authority is long overdue.",
+    "opening_anchor": "A draft of the environmental statement prepared in response to Executive Order 11644 has been sent to me for comment.",
+    "closing_anchor": "Also, I believe it is absolutely necessary to give BLM enforcement powers. This authority is long overdue.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "I strongly support both the statement and the proposed regulations.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "187"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "I strongly support both the statement and the proposed regulations.",
+      "quote_verified": true,
+      "entity_as_written": "Las Vegas Review-Journal",
+      "role_as_written": "newspaper, commenter"
+    }
+  ],
+  "window_pages": [
+    177,
+    197
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 104,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C240",
+  "complainer_id": "p0491_35556036091957_K199",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 240,
+  "entity": "Florida Department of Community Affairs",
+  "kind": "agency",
+  "role": "state agency, commenter",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter suggests Alternative B and recommends strong inter-agency cooperation with specific questions about age requirements and historical site protection",
+  "summary": "The Florida Department of Community Affairs reviewed the draft EIS on ORV use on public lands and suggested that the Department of Interior adopt Alternative B, while acknowledging the popularity of ORVs. The agency recommended strong emphasis on inter-agency cooperation and raised specific questions about the proposed supervisor age requirement and the potential destruction of historical and archaeological structures by ORV use.",
+  "form": "letter",
+  "complaint_summary": "The Florida Department of Community Affairs suggests adopting Alternative B, recommends strong inter-agency cooperation for ORV area planning, and raises questions about the proposed supervisor age of 21, the number of minors one supervisor can oversee, and why historical or archaeological structures should be subject to destruction by ORV use.",
+  "evidence_pages": [
+    "314"
+  ],
+  "statement": {
+    "text": "Thank you for your letter and the opportunity to review and comment on the U.S. Bureau of Outdoor Recreation Statement Pertaining to Use of Off-Road Vehicles on Public Lands (SPDC Project No. 72-1336).\nWhile we might suggest that the Department of Interior choose \"Alternative B),\" we can appreciate the popularity of the vehicles and the problems that have arisen with their increasing use. We would recommend strong emphasis in the proposed cooperation between all agencies and levels of government in coordinating, planning and development of areas and facilities for the use of ORV.\nPoints of curiosity, with the voting age and, in some states, the age of majority being 18, why is it suggested that the supervisor be 21? Also, what number of persons under age can be supervise as conditions warrant? Finally, why do any historical or archeological structures have to be changed or destroyed by ORV use?\nWe feel the Department is to be commanded for their efforts in secking solutions to these very vexing problems.\nSincerely,\nR. Charles Shepherd\nDirector\nDivision of Technical Assistance",
+    "opening_anchor": "Thank you for your letter and the opportunity to review and comment on the U.S. Bureau of Outdoor Recreation Statement Pertaining to Use of Off-Road Vehicles on Public Lands",
+    "closing_anchor": "We feel the Department is to be commanded for their efforts in secking solutions to these very vexing problems.\n\nSincerely,\nR. Charles Shepherd\nDirector\nDivision of Technical Assistance",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "While we might suggest that the Department of Interior choose \"Alternative B),\" we can appreciate the popularity of the vehicles and the problems that have arisen with their increasing use.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "314"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "While we might suggest that the Department of Interior choose \"Alternative B),\" we can appreciate the popularity of the vehicles and the problems that have arisen with their increasing use.",
+      "quote_verified": true,
+      "entity_as_written": "Florida Department of Community Affairs",
+      "role_as_written": "state agency, commenter"
+    }
+  ],
+  "window_pages": [
+    304,
+    324
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 199,
+  "synthetic_no_complaint": false
+}

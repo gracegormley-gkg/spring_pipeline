@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036811230_C047",
+  "complainer_id": "p1074_35556036811230_K043",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 47,
+  "entity": "Buffalo Historical Society",
+  "kind": "organization",
+  "role": "historic preservation reviewer",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "compiled historic structures list and reviewed archaeological studies without expressing opposition or support for the project",
+  "summary": "The Buffalo Historical Society, under Dr. Walter S. Dunn, Jr., contributed to the Section 106 and 4(f) analysis by compiling a list of historic structures along the proposed rail alignment and reviewing past archaeological studies. Their work informed the EIS's findings that neither construction nor operation of the transit system should adversely impact any of the listed historic structures. The Society's contributions appear technical and informational rather than advocacy-oriented.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Historical Society reviewed past archaeological studies from the 1974 EIA and supplemented them with information from SUNYAB's Anthropology Department, summarizing known archaeological sites in the transit corridor.",
+  "evidence_pages": [
+    "219"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036811230_R006"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Buffalo Historical Society (under the direction of Dr. Walter S. Dunn, Jr.) and the Landmark Society of the Niagara Frontier (represented by Mr. Olaf Shelgren, Jr., Chairman) compiled a list of historic structures located along the proposed rail alignment.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "219"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Buffalo Historical Society (under the direction of Dr. Walter S. Dunn, Jr.) and the Landmark Society of the Niagara Frontier (represented by Mr. Olaf Shelgren, Jr., Chairman) compiled a list of historic structures located along the proposed rail alignment.",
+      "quote_verified": true,
+      "entity_as_written": "Buffalo Historical Society",
+      "role_as_written": "historic preservation reviewer"
+    }
+  ],
+  "window_pages": [
+    209,
+    229
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 43,
+  "synthetic_no_complaint": false
+}

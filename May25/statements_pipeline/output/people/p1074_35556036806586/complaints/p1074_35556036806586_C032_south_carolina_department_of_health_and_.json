@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036806586_C032",
+  "complainer_id": "p1074_35556036806586_K031",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 32,
+  "entity": "South Carolina Department of Health and Environmental Control, Bureau of Air Quality Control",
+  "kind": "agency",
+  "role": "state air quality monitoring agency",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "described as data provider for air quality monitoring with no expressed position on the project",
+  "summary": "The South Carolina Department of Health and Environmental Control, Bureau of Air Quality Control is cited as the agency responsible for defining air quality in South Carolina, with its monitoring station at the Pickens County Health Department providing the air quality data used in the EIS. The agency is referenced solely as a data source, providing measurements and ambient air quality standards, and does not express any position for or against the proposed Bad Creek Project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The SC DHEC Bureau of Air Quality Control is described as the agency responsible for defining air quality in South Carolina, with its Pickens County monitoring station data (1972–1974) and ambient air quality standards cited to characterize existing air quality near the Bad Creek project site.",
+  "evidence_pages": [
+    "126"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "Air quality measurements are made by the South Carolina Department of Health and Environmental Control, Bureau of Air Quality Control, which has the responsibility for defining the air quality of the State of South Carolina.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "126"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Air quality measurements are made by the South Carolina Department of Health and Environmental Control, Bureau of Air Quality Control, which has the responsibility for defining the air quality of the State of South Carolina.",
+      "quote_verified": false,
+      "entity_as_written": "South Carolina Department of Health and Environmental Control, Bureau of Air Quality Control",
+      "role_as_written": "state air quality monitoring agency"
+    }
+  ],
+  "window_pages": [
+    116,
+    136
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 31,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C186",
+  "complainer_id": "p0491_35556036091957_K171",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 186,
+  "entity": "Maine Environmental Improvement Commission",
+  "kind": "agency",
+  "role": "Maine state agency reviewer",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "memorandum explicitly states support and approval for the selected proposal",
+  "summary": "The Maine Environmental Improvement Commission reviewed the draft environmental impact statement and impact statement for Executive Order 11644 and expressed clear support and approval for the selected proposal establishing general guidelines for off-road vehicle use on public lands. Their supportive comments were forwarded twice through the Maine State Clearinghouse to the Bureau of Outdoor Recreation. No concerns or objections were raised.",
+  "form": "written_comment",
+  "complaint_summary": "The Maine Environmental Improvement Commission reviewed the proposal and indicated support and approval for the selected proposal establishing general guidelines for off-road vehicle use on public lands.",
+  "evidence_pages": [
+    "261"
+  ],
+  "statement": {
+    "text": "The subject proposal, alternatives, and impact statement for the selected proposal has been reviewed by this office. As a result, we are indicating support and approval for the selected proposal which provides for establishing general guidelines for the use of off-road vehicles on public lands.\nWe understand that these guidelines are to be developed by the Outdoor Recreation Bureau and the Department of Interior and would apply to public lands owned and regulated by other Federal bureaus.",
+    "opening_anchor": "The subject proposal, alternatives, and impact statement for the selected proposal has been reviewed by this office.",
+    "closing_anchor": "We understand that these guidelines are to be developed by the Outdoor Recreation Bureau and the Department of Interior and would apply to public lands owned and regulated by other Federal bureaus.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "we are indicating support and approval for the selected proposal which provides for establishing general guidelines for the use of off-road vehicles on public lands.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "261"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "we are indicating support and approval for the selected proposal which provides for establishing general guidelines for the use of off-road vehicles on public lands.",
+      "quote_verified": true,
+      "entity_as_written": "Maine Environmental Improvement Commission",
+      "role_as_written": "Maine state agency reviewer"
+    }
+  ],
+  "window_pages": [
+    251,
+    271
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 171,
+  "synthetic_no_complaint": false
+}

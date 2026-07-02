@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C070",
+  "complainer_id": "p1074_35556039563135_K119",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 70,
+  "entity": "Board of Education, District No. 170, Cook County",
+  "kind": "organization",
+  "role": "school district / commenter on Roosevelt School property",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "directly states playfield is not significant to recreational needs, effectively clearing the Section 4(f) concern and supporting the acquisition",
+  "summary": "The Board of Education, District No. 170, Cook County reviewed the status of the playfield west of Sunnyside and east of Franklin Avenues and determined it was not used for formal recreation, had no plans for conversion, and was not significant to the community's recreational needs. This determination was used by IDOT to argue that the Roosevelt School property no longer constituted a Section 4(f) involvement, effectively removing a legal obstacle to the project. The agency concurred with all three of the Board's findings.",
+  "form": "written_comment",
+  "complaint_summary": "The Board of Education, District No. 170 reported that the playfield adjacent to Roosevelt School is a grassed area not used for formal recreation, with no plans for conversion, and is not significant to the community's recreational needs.",
+  "evidence_pages": [
+    "161"
+  ],
+  "statement": {
+    "text": "5.) Pursuant to your request, I have reviewed the status of the playfield located west of Sunnyside and east of Franklin Avenues. The following has been determined:\n\n5(a) The playfield is a grassed area and not used for formal recreation.\n\n5(b) No plans for cqnverting the playfield to a formal recreation area are being presently made or in the foreseeable future.\n\n5(c) The use of the playfield is not significant to the recreational needs of the community.",
+    "opening_anchor": "5.) Pursuant to your request, I have reviewed the status of the playfield located west of Sunnyside and east of Franklin Avenues.",
+    "closing_anchor": "5(c) The use of the playfield is not significant to the recreational needs of the community.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556039563135_R028"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The use of the playfield is not significant to the recreational needs of the community.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "161"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The use of the playfield is not significant to the recreational needs of the community.",
+      "quote_verified": true,
+      "entity_as_written": "Board of Education, District No. 170, Cook County",
+      "role_as_written": "school district / commenter on Roosevelt School property"
+    }
+  ],
+  "window_pages": [
+    151,
+    171
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 119,
+  "synthetic_no_complaint": false
+}

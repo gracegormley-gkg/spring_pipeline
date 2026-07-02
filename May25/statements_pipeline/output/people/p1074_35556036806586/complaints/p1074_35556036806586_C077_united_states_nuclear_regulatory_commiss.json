@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036806586_C077",
+  "complainer_id": "p1074_35556036806586_K083",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 77,
+  "entity": "UNITED STATES NUCLEAR REGULATORY COMMISSION",
+  "kind": "agency",
+  "role": "federal agency commenter",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly praises the Draft EIS as excellent and notes no radiological or regulatory concerns",
+  "summary": "The United States Nuclear Regulatory Commission reviewed the Draft Environmental Impact Statement for the Bad Creek Pumped Storage Project and found no radiological health and safety impacts and no adverse effects on NRC-regulated activities. The Commission praised Section 8 (Alternatives to the Proposed Action) as 'extremely well written' and commended the overall treatment of alternatives as 'excellent,' offering no objections or conditions.",
+  "form": "letter",
+  "complaint_summary": "The NRC states the proposed action has no radiological health and safety impacts and will not adversely affect NRC-regulated activities, and commends Section 8 on alternatives as extremely well written and excellent overall.",
+  "evidence_pages": [
+    "264"
+  ],
+  "statement": {
+    "text": "This is in response to your letter of September 30, 1975 inviting our comments on the Draft Environmental Impact Statement prepared by your staff in connection with the application for a license filed by the Duke Power Company for the proposed Bad Creek Pumped Storage Project No. 2740.\nWe have reviewed the statement and determined that the proposed action has meither radiological health and safety impacts nor will it adversely affect any activities subject to regulation by the Nuclear Regulatory Commission. We would, however, like to comment on the statement as follows. We are of the opinion that Section 8, Alternatives to the Proposed Action, is extremely well written. The section on pumped storage facilities is instructional to anyone interested in their use and, in particular, their importance to the reliability and efficiency of the Duke Power Company System. In addition, the overall treatment of alternatives is excellent.\nThank you for providing us with the opportunity to review this Draft Environmental Impact Statement.",
+    "opening_anchor": "This is in response to your letter of September 30, 1975 inviting our comments on the Draft Environmental Impact Statement prepared by your staff",
+    "closing_anchor": "Thank you for providing us with the opportunity to review this Draft Environmental Impact Statement.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We are of the opinion that Section 8, Alternatives to the Proposed Action, is extremely well written. The section on pumped storage facilities is instructional to anyone interested in their use and, in particular, their importance to the reliability and efficiency of the Duke Power Company System. In addition, the overall treatment of alternatives is excellent.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "264"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We are of the opinion that Section 8, Alternatives to the Proposed Action, is extremely well written. The section on pumped storage facilities is instructional to anyone interested in their use and, in particular, their importance to the reliability and efficiency of the Duke Power Company System. In addition, the overall treatment of alternatives is excellent.",
+      "quote_verified": true,
+      "entity_as_written": "UNITED STATES NUCLEAR REGULATORY COMMISSION",
+      "role_as_written": "federal agency commenter"
+    }
+  ],
+  "window_pages": [
+    254,
+    274
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 83,
+  "synthetic_no_complaint": false
+}

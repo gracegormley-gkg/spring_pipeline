@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C013",
+  "complainer_id": "p0491_35556036091957_K013",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 13,
+  "entity": "Department of Health, Education, and Welfare, Assistant Secretary for Health and Scientific Affairs",
+  "kind": "official",
+  "role": "Federal agency reviewer",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes inadequate attention to public health hazards in the environmental statement",
+  "summary": "The Department of Health, Education, and Welfare's Assistant Secretary for Health and Scientific Affairs criticized the draft ORV environmental statement for giving inadequate attention to potential public health hazards associated with ORV use. This concern appears twice in the document window—once in the main body summary of agency comments and once in the appendix's Federal Agency Comments section—both as narrator paraphrases. No specific agency response to this complaint is provided in the window.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Assistant Secretary for Health and Scientific Affairs felt that the human impacts portion of the environmental statement gave inadequate attention to potential public health hazards associated with ORV use.",
+  "evidence_pages": [
+    "23"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Department of Health, Education, and Welfare, Assistant Secretary for Health and Scientific Affairs felt that human impacts portion of environmental statement gave inadequate attention to potential public health hazards associated with use of ORV;",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "23"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Department of Health, Education, and Welfare, Assistant Secretary for Health and Scientific Affairs felt that human impacts portion of environmental statement gave inadequate attention to potential public health hazards associated with use of ORV;",
+      "quote_verified": true,
+      "entity_as_written": "Department of Health, Education, and Welfare, Assistant Secretary for Health and Scientific Affairs",
+      "role_as_written": "Federal agency reviewer"
+    }
+  ],
+  "window_pages": [
+    13,
+    33
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 13,
+  "synthetic_no_complaint": false
+}

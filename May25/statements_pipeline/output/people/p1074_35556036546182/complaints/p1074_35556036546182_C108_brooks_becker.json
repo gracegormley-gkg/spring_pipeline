@@ -1,0 +1,69 @@
+{
+  "complaint_id": "p1074_35556036546182_C108",
+  "complainer_id": "p1074_35556036546182_K073",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 108,
+  "entity": "Brooks Becker",
+  "kind": "official",
+  "role": "Director, Bureau of Air Pollution Control and Solid Waste Management, Wisconsin DNR",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "initial memo finds draft EIS deficient in several respects; later letter approves construction after revisions and air quality analysis",
+  "summary": "Brooks Becker, Director of the Bureau of Air Pollution Control and Solid Waste Management at Wisconsin DNR, initially found the draft EIS deficient in several respects regarding air quality, raising detailed concerns about vehicle emissions, local meteorology near Lake Michigan, mass transit alternatives, and the need for worst-case air quality calculations. After subsequent revisions, coordination meetings, and application of EPA screening techniques under Wisconsin Administrative Code NR 154.05, Becker issued a formal approval of construction of the Airport Spur along corridors 1, 2, 3, or 5, finding it would not expose receptor sites to more than 75 percent of carbon monoxide standards or cause significant air quality degradation.",
+  "form": "letter",
+  "complaint_summary": "Becker's November 20, 1975 letter formally approves construction of the Airport Spur along corridors 1, 2, 3, or 5 pursuant to Wisconsin Administrative Code NR 154.05, finding that the project will neither expose receptor sites to more than 75 percent of carbon monoxide standards nor cause significant degradation of ambient air quality.",
+  "evidence_pages": [
+    "220"
+  ],
+  "statement": {
+    "text": "We are in receipt of the speed memo dated November 12, 1975 from Kenneth Voigt of the Wisconsin Division of Highways District 9 Planning Section giving corrected traffic data for the section of I-94 in the Airport Spur study area. We have also received the speed memo from your section dated November 17, 1975 and signed by R. W. Baker stating that the estimated time of completion of the Airport Spur is now 1978 at the earliest. We have used the information contained in these communications and in the Air Quality Report for the Airport Spur to apply the EPA screening technique provided in Guidelines for Air Quality Maintenance Planning and Analysis Volume 9: Evaluating Indirect Sources. As a result of this analysis we find that building the Airport Spur will neither expose any of the receptor sites to more than 75 percent of either of the carbon monoxide standards, nor cause significant degradation of ambient air quality at these sites.\nPursuant to Wisconsin Administrative Code NR 154.05, we therefore approve construction of the Airport Spur along any of corridors 1, 2, 3, or 5.\nMinor corrections have been made in the copy of the Air Quality Report returned herewith. We will shortly forward comments on this document which we hope will clarify certain matters so that it can better serve as a model for future Air Quality Reports prepared for highway projects in the Milwaukee area.\nSincerely,\nBureau of Air Pollution Control\nand Solid Waste Management\nBrooks Becker\nDirector",
+    "opening_anchor": "We are in receipt of the speed memo dated November 12, 1975 from Kenneth Voigt of the Wisconsin Division of Highways District 9 Planning Section",
+    "closing_anchor": "Brooks Becker\nDirector",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036546182_R032"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The above draft statement has been reviewed by the Air Pollution Control Section and found deficient in several respects.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "205"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The above draft statement has been reviewed by the Air Pollution Control Section and found deficient in several respects.",
+      "quote_verified": true,
+      "entity_as_written": "Brooks Becker",
+      "role_as_written": "Director, Bureau of Air Pollution Control and Solid Waste Management, Wisconsin DNR"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "285"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "We have found that the proposed Airport Spur is consistent with the requirements of the Indirect Source Rules.",
+      "quote_verified": true,
+      "entity_as_written": "Brooks Becker",
+      "role_as_written": "Director, Bureau of Air Pollution Control and Solid Waste Management, Wisconsin DNR"
+    }
+  ],
+  "window_pages": [
+    195,
+    225
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 73,
+  "synthetic_no_complaint": false
+}

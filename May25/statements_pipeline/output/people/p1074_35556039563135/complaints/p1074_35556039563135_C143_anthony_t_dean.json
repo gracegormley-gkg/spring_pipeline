@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556039563135_C143",
+  "complainer_id": "p1074_35556039563135_K117",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 143,
+  "entity": "Anthony T. Dean",
+  "kind": "official",
+  "role": "Director, Illinois Department of Conservation; Historic Preservation Officer",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letter states project will have no effect on historic or architectural projects, issuing clearance",
+  "summary": "Anthony T. Dean, as Director of the Illinois Department of Conservation and Historic Preservation Officer, issued a clearance letter in May 1976 stating that the FAP Route 23 Lincoln Highway project would have no effect on historic or architectural resources in the area. He noted that a separate letter concerning archaeological resources would follow, and clarified that the clearance was limited to cultural considerations only.",
+  "form": "letter",
+  "complaint_summary": "Anthony T. Dean, as Historic Preservation Officer, issued a clearance letter stating the project will have no effect on historic or architectural resources in the area, with the caveat that the clearance covers only cultural considerations and not natural areas or other Department of Conservation concerns.",
+  "evidence_pages": [
+    "321"
+  ],
+  "statement": {
+    "text": "This letter is to inform you that we have reviewed the specifications of your project on FAP Route 23 (U.S. Route 30). Lincoln Highway, Cicero Avenue to Chicago Road in Cook County.\nOur review of the records indicates that your project will have no effect on historic or architectural projects in the area. A separate letter concerning archaeological resources will be sent at a later date.\nThis letter of clearance relates only to cultural considerations and should not be viewed as a blanket write-off which would include natural areas or other concerns of the Department of Conservation.\nIf you have further questions regarding this, please contact me.\nSincerely yours,\nHistoric Preservation Officer\nATD/1g",
+    "opening_anchor": "This letter is to inform you that we have reviewed the specifications of your project on FAP Route 23 (U.S. Route 30). Lincoln Highway, Cicero Avenue to Chicago Road in Cook County.",
+    "closing_anchor": "If you have further questions regarding this, please contact me.\n\nSincerely yours,\nHistoric Preservation Officer\nATD/1g",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Our review of the records indicates that your project will have no effect on historic or architectural projects in the area.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "321"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "Our review of the records indicates that your project will have no effect on historic or architectural projects in the area.",
+      "quote_verified": true,
+      "entity_as_written": "Anthony T. Dean",
+      "role_as_written": "Director, Illinois Department of Conservation; Historic Preservation Officer"
+    }
+  ],
+  "window_pages": [
+    311,
+    331
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 117,
+  "synthetic_no_complaint": false
+}

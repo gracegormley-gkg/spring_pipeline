@@ -1,0 +1,69 @@
+{
+  "complaint_id": "p1074_35556036058550_C036",
+  "complainer_id": "p1074_35556036058550_K009",
+  "doc_id": "p1074_35556036058550",
+  "work_id": "csv:35556036058550",
+  "order": 36,
+  "entity": "Department of Transportation",
+  "kind": "agency",
+  "role": "Agency converting from CNR to NEF noise ratings",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "DOT comment described as recognizing mutual objectives and accepting the statement",
+  "summary": "The Department of Transportation submitted a comment on the draft Environmental Impact Statement for Operation BREAKTHROUGH, indicating recognition of mutual objectives and acceptance of the statement. HUD responded by acknowledging the acceptance and noting that several cooperative activities with DOT were continuing.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Department of Transportation recognized mutual objectives with HUD and accepted the environmental statement for Operation BREAKTHROUGH.",
+  "evidence_pages": [
+    "23"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036058550_R030"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Department of Transportation (DOT) is converting from CNR to Noise Exposure Forecasts (NEF's).",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "23"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Comment: Recognition of mutual objectives; accepts statement.",
+      "quote_verified": true,
+      "entity_as_written": "Department of Transportation",
+      "role_as_written": "Federal agency commenter on draft EIS"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "66"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Department of Transportation (DOT) is converting from CNR to Noise Exposure Forecasts (NEF's).",
+      "quote_verified": true,
+      "entity_as_written": "Department of Transportation",
+      "role_as_written": "Agency converting from CNR to NEF noise ratings"
+    }
+  ],
+  "window_pages": [
+    13,
+    42
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 9,
+  "synthetic_no_complaint": false
+}

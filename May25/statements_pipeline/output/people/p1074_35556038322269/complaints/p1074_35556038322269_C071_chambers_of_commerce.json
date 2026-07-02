@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C071",
+  "complainer_id": "p1074_35556038322269_K082",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 71,
+  "entity": "Chambers of Commerce",
+  "kind": "organization",
+  "role": "Business organizations in the Regional Core",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase lists concerns about exclusive bus lanes and construction disruption while showing interest in rail cost-effectiveness",
+  "summary": "The Chambers of Commerce in the Regional Core participated in organization meetings and expressed several concerns about the transit alternatives. They strongly opposed exclusive bus lanes due to their negative impact on businesses, while supporting rail construction provided it caused minimal disruption and was cost-effective. Their overall stance is conditional — supportive of transit improvement but with specific conditions regarding lane use and construction impacts.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Chambers of Commerce expressed concerns that exclusive bus lanes would negatively impact businesses along affected streets, that rail construction should minimize disruption, and that cost-effectiveness should be a primary criterion for selecting the transit system.",
+  "evidence_pages": [
+    "291"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Exclusive bus lanes would have a tremendous negative impact on the businesses along these streets.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "291"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Exclusive bus lanes would have a tremendous negative impact on the businesses along these streets.",
+      "quote_verified": true,
+      "entity_as_written": "Chambers of Commerce",
+      "role_as_written": "Business organizations in the Regional Core"
+    }
+  ],
+  "window_pages": [
+    281,
+    293
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 82,
+  "synthetic_no_complaint": false
+}

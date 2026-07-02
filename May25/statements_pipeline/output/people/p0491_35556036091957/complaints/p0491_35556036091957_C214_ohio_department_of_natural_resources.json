@@ -1,0 +1,68 @@
+{
+  "complaint_id": "p0491_35556036091957_C214",
+  "complainer_id": "p0491_35556036091957_K177",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 214,
+  "entity": "Ohio Department of Natural Resources",
+  "kind": "agency",
+  "role": "Ohio state agency reviewer",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter praises draft EIS but urges specific conditions for site selection, periodic inspection, and land use planning",
+  "summary": "The Ohio Department of Natural Resources, through Director William B. Nye, submitted a letter praising the draft EIS as 'an excellent, well-thought product' with no substantive objections to its five points. However, the agency urged the Bureau of Outdoor Recreation to promote mechanisms for ORV site selection that minimize adverse impact and irretrievable loss, require periodic inspection of areas in use, and consider implementing a public land use plan to facilitate site selections that protect unique natural areas, soils, vegetation, and wildlife habitat.",
+  "form": "letter",
+  "complaint_summary": "The Ohio Department of Natural Resources praised the draft EIS as thorough and well-done with no objections to its five points, but urged the Bureau to promote site-selection mechanisms minimizing adverse impact, require periodic inspections of ORV areas, and consider a public land use plan to protect unique natural areas and wildlife habitat.",
+  "evidence_pages": [
+    "290"
+  ],
+  "statement": {
+    "text": "In response to your letter of June 1, 1972 forwarding the draft environmental impact statement for the above referenced project, a review was coordinated by the Ohio Department of Natural Resources. Comments were solicited from other State agencies under the auspices of the Office of the Governor, State Clearinghouse.\nThis draft environmental impact statement is an excellent, well-thought product. It is thorough and easily understood. We have no comments on the five points.\nThe Department of Interior should proceed with finalization of the statement. We would, however, urge you to promote mechanisms for site selection for Off-Road Vehicles use which would allow for the least adverse impact and irretrievable loss in the area being considered. In addition, qualified personnel should periodically inspect areas in use to assess the deterioration of existing land forms.\nIn light of the fact that ORV site selections must take into account the preservation of unique natural areas, special soil and vegetative conditions, wildlife habitat areas, etc., perhaps the implementation of a public land use plan would aid and/or facilitate these selections.\n\nDirector G. Douglas Hofe, Jr. August 9, 1972 Page Two\nThank you for the opportunity to review and comment on the impact statement. We look forward to receiving the final form and to cooperation in any way with the Bureau of Outdoor Recreation personnel associated with the State of Ohio in implementing this Executive Order.",
+    "opening_anchor": "In response to your letter of June 1, 1972 forwarding the draft environmental impact statement for the above referenced project, a review was coordinated by the Ohio Department of Natural Resources.",
+    "closing_anchor": "We look forward to receiving the final form and to cooperation in any way with the Bureau of Outdoor Recreation personnel associated with the State of Ohio in implementing this Executive Order.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "In response to your letter of June 1, 1972 forwarding the draft environmental impact statement for the above referenced project, a review was coordinated by the Ohio Department of Natural Resources.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "290"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "This draft environmental impact statement is an excellent, well-thought product. It is thorough and easily understood. We have no comments on the five points.",
+      "quote_verified": true,
+      "entity_as_written": "Ohio Department of Natural Resources",
+      "role_as_written": "Ohio state agency reviewer"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "290"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In response to your letter of June 1, 1972 forwarding the draft environmental impact statement for the above referenced project, a review was coordinated by the Ohio Department of Natural Resources.",
+      "quote_verified": true,
+      "entity_as_written": "Ohio Department of Natural Resources",
+      "role_as_written": "state agency, commenter"
+    }
+  ],
+  "window_pages": [
+    280,
+    300
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 177,
+  "synthetic_no_complaint": false
+}

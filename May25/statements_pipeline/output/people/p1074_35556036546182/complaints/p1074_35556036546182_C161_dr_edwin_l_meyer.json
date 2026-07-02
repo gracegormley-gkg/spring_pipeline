@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036546182_C161",
+  "complainer_id": "p1074_35556036546182_K113",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 161,
+  "entity": "Dr. Edwin L. Meyer",
+  "kind": "individual",
+  "role": "Developer of EPA screening technique",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as providing technical guidance on appropriate traffic peak months for EPA screening technique",
+  "summary": "Dr. Edwin L. Meyer is referenced as one of the developers of the EPA screening technique who, via telephone conversation with the Wisconsin DNR, provided technical guidance on which traffic peak months are appropriate for calculating highway project impacts on ambient carbon monoxide concentrations. His input informed the DNR's decision to use November through April traffic peaks rather than warm summer month peaks. He is cited as a technical authority rather than as a stakeholder with a position on the project itself.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Dr. Meyer, via telephone conversation with the DNR, advised that traffic peaks occurring during November through April are the appropriate months to use when applying the EPA screening technique to calculate highway project impacts on ambient carbon monoxide concentrations.",
+  "evidence_pages": [
+    "286"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "As a result of a telephone conversation with Dr. Edwin L. Meyer, one of the developers of the EPA screening technique, it was decided that traffic peaks occurring during the months of November through April would be appropriate to use in calculating the impact of highway projects on ambient carbon monoxide concentrations.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "286"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "As a result of a telephone conversation with Dr. Edwin L. Meyer, one of the developers of the EPA screening technique, it was decided that traffic peaks occurring during the months of November through April would be appropriate to use in calculating the impact of highway projects on ambient carbon monoxide concentrations.",
+      "quote_verified": true,
+      "entity_as_written": "Dr. Edwin L. Meyer",
+      "role_as_written": "Developer of EPA screening technique"
+    }
+  ],
+  "window_pages": [
+    276,
+    290
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 113,
+  "synthetic_no_complaint": false
+}

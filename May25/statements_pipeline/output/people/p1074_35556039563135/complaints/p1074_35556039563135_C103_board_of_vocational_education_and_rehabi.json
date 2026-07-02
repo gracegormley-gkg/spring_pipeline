@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C103",
+  "complainer_id": "p1074_35556039563135_K081",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 103,
+  "entity": "Board of Vocational Education and Rehabilitation Division of Vocational Rehabilitation",
+  "kind": "agency",
+  "role": "Illinois state agency reviewer",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letter states no adverse effect foreseen and returns documents without objection",
+  "summary": "The Board of Vocational Education and Rehabilitation, Division of Vocational Rehabilitation, appeared in the state agencies roster and submitted a brief letter indicating it had little knowledge of the construction project and foresaw no adverse environmental impact or material effect on its functions. The agency returned the submitted documents due to storage constraints and expressed no objection to the project.",
+  "form": "letter",
+  "complaint_summary": "The Division of Vocational Rehabilitation states it has little knowledge of the construction, foresees no adverse environmental impact, and no material effect on its functions, returning the documents due to lack of storage space.",
+  "evidence_pages": [
+    "197"
+  ],
+  "statement": {
+    "text": "The Division of Vocational Rehabilitation has little, if any, knowledge relative to the construction referred to above. There is no way known to this office in which the proposed construction could adversely affect the environment. It is not foreseen that such a project could have any material effect on the functions of the Division of Vocational Rehabilitation.\nI am returning the documents which you forwarded on the subject. We are a little short of storage space and it appears unlikely that we will have any further necessity to refer to them.",
+    "opening_anchor": "The Division of Vocational Rehabilitation has little, if any, knowledge relative to the construction referred to above.",
+    "closing_anchor": "We are a little short of storage space and it appears unlikely that we will have any further necessity to refer to them.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "STATE AGENCIES ... Board of Vocational Education and Rehabilitation  Division of Vocational Rehabilitation",
+  "summary_quote_verified": false,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "197"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "STATE AGENCIES ... Board of Vocational Education and Rehabilitation  Division of Vocational Rehabilitation",
+      "quote_verified": false,
+      "entity_as_written": "Board of Vocational Education and Rehabilitation Division of Vocational Rehabilitation",
+      "role_as_written": "Illinois state agency reviewer"
+    }
+  ],
+  "window_pages": [
+    187,
+    207
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 81,
+  "synthetic_no_complaint": false
+}

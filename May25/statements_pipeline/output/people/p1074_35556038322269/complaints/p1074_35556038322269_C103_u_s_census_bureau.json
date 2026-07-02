@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556038322269_C103",
+  "complainer_id": "p1074_35556038322269_K060",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 103,
+  "entity": "U.S. Census Bureau",
+  "kind": "agency",
+  "role": "source of urbanized area population density data",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "cited solely as a data source for urbanized area population density statistics, expressing no position on the project",
+  "summary": "The U.S. Census Bureau is referenced once in the document window as the source of 1970 census data ranking the Los Angeles Urbanized Area as the third most densely populated urbanized area in the United States. The agency is cited purely as a statistical authority and expresses no opinion on the transit project or its alternatives.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "174"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "The Los Angeles Urbanized Area is the third most densely populated urbanized area in the United States, according to the U.S. Census Bureau (1970 census).",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "174"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Los Angeles Urbanized Area is the third most densely populated urbanized area in the United States, according to the U.S. Census Bureau (1970 census).",
+      "quote_verified": true,
+      "entity_as_written": "U.S. Census Bureau",
+      "role_as_written": "source of urbanized area population density data"
+    }
+  ],
+  "window_pages": [
+    164,
+    184
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 60,
+  "synthetic_no_complaint": true
+}

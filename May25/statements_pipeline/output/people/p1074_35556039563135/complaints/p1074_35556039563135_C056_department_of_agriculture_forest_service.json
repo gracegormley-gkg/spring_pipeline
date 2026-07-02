@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C056",
+  "complainer_id": "p1074_35556039563135_K051",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 56,
+  "entity": "Department of Agriculture - Forest Service",
+  "kind": "agency",
+  "role": "Federal agency / early coordination commenter",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "raises drainage concern requiring provisions be made before approval",
+  "summary": "The Department of Agriculture - Forest Service participated in early coordination and raised a specific drainage concern about water potentially being trapped behind slight slopes on both sides of the road at the western section unless provisions are made for drainage of low spots. The Illinois Department of Transportation responded by clarifying that the cross sections shown were not intended to depict actual ground surface undulations and that all drainage would comply with Illinois Revised Statutes.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Forest Service raised a concern that water may be trapped behind slight slopes on both sides of the road at the western section unless provisions are made for drainage of the low spots.",
+  "evidence_pages": [
+    "159"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556039563135_R015"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "2(c) Some water may be trapped behind the slight slopes on both sides of the road at the western section (Exhibit \"B\") unless provisions are made for drainage of the low spots.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "159"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "2(c) Some water may be trapped behind the slight slopes on both sides of the road at the western section (Exhibit \"B\") unless provisions are made for drainage of the low spots.",
+      "quote_verified": true,
+      "entity_as_written": "Department of Agriculture - Forest Service",
+      "role_as_written": "Federal agency / early coordination commenter"
+    }
+  ],
+  "window_pages": [
+    149,
+    169
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 51,
+  "synthetic_no_complaint": false
+}

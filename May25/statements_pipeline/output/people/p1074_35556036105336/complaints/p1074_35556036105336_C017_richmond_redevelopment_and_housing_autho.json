@@ -1,0 +1,78 @@
+{
+  "complaint_id": "p1074_35556036105336_C017",
+  "complainer_id": "p1074_35556036105336_K018",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 17,
+  "entity": "Richmond Redevelopment and Housing Authority",
+  "kind": "agency",
+  "role": "Local urban renewal authority / project applicant",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "officially adopted the Randolph Plan and filed the original HUD application for the project",
+  "summary": "The Richmond Redevelopment and Housing Authority (RRHA) is the project applicant and a central institutional actor in the Randolph Urban Renewal project. It filed the original 1967 application with HUD for loans and grants, engaged in a joint 24-month planning effort with the Randolph Planning Study Board, and in January 1973 its Commissioners officially adopted the Randolph Plan. The RRHA also retains right-of-review over landscape plans within the redevelopment area, underscoring its ongoing administrative role in implementing the project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The RRHA retains the right-of-review over landscape plans submitted by developers within the redevelopment area, as established under the Redevelopment and Conservation Plan's General Provisions and Regulations.",
+  "evidence_pages": [
+    "17"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "During January, 1973, the Commissioners of the Richmond Redevelopment and Housing Authority officially adopted the Randolph Plan.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "17"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "During January, 1973, the Commissioners of the Richmond Redevelopment and Housing Authority officially adopted the Randolph Plan.",
+      "quote_verified": true,
+      "entity_as_written": "Richmond Redevelopment and Housing Authority",
+      "role_as_written": "Local urban renewal authority / project applicant"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "49"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "A 100 percent survey conducted by the Richmond Redevelopment and Housing Authority is the basis for the number, bedroom requirements, income, tenure and eligibility for public housing.",
+      "quote_verified": false,
+      "entity_as_written": "Richmond Redevelopment and Housing Authority",
+      "role_as_written": "Local redevelopment authority, project applicant"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "123"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Acceptance of the estimates submitted is hereby requested.",
+      "quote_verified": true,
+      "entity_as_written": "Richmond Redevelopment and Housing Authority",
+      "role_as_written": "Local Public Agency / project applicant"
+    }
+  ],
+  "window_pages": [
+    7,
+    44
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 18,
+  "synthetic_no_complaint": false
+}

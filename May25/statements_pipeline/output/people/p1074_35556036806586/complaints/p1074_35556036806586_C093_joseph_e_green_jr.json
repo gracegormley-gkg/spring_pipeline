@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036806586_C093",
+  "complainer_id": "p1074_35556036806586_K090",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 93,
+  "entity": "Joseph E. Green, Jr.",
+  "kind": "individual",
+  "role": "botanist/researcher contributing plant survey data",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "cited as contributor of plant survey data used in project documentation, no personal position stated",
+  "summary": "Joseph E. Green, Jr. is referenced solely as a co-author of botanical survey work (with Dr. C. Leland Rodgers) contained in Exhibit W, Appendix D of the license application. His work is cited twice in Duke Power's comments: once as providing a thorough list of plant communities and species in the project area, and once in connection with the successful transplanting of rare plant species out of the project area. No personal stance on the project is attributed to him.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Duke Power's comments cite the botanical survey work of Dr. C. Leland Rodgers and Joseph E. Green, Jr. (Exhibit W, Appendix D) as presenting a thorough list of plant communities and species occurring in the project area, offered to supplement the DEIS flora section.",
+  "evidence_pages": [
+    "293"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036806586_R031"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "The work of Dr. C. Leland Rodgers and Joseph E. Green, Jr., contained in Exhibit W, Appendix D, presents a thorough list of plant communities and species occurring in the project area.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "293"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The work of Dr. C. Leland Rodgers and Joseph E. Green, Jr., contained in Exhibit W, Appendix D, presents a thorough list of plant communities and species occurring in the project area.",
+      "quote_verified": true,
+      "entity_as_written": "Joseph E. Green, Jr.",
+      "role_as_written": "botanist/researcher contributing plant survey data"
+    }
+  ],
+  "window_pages": [
+    283,
+    303
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 90,
+  "synthetic_no_complaint": false
+}

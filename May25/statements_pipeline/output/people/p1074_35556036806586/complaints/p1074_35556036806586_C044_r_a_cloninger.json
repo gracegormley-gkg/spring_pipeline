@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036806586_C044",
+  "complainer_id": "p1074_35556036806586_K044",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 44,
+  "entity": "R. A. Cloninger",
+  "kind": "individual",
+  "role": "Forester for the Applicant",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes Cloninger's forest survey findings without expressing support or opposition to the project",
+  "summary": "R. A. Cloninger, Forester for the Applicant, conducted a forest tree survey of the Bad Creek project area in May 1973, determining it was covered with an oak-hickory forest type with shortleaf pine at lower elevations and white pine and eastern hemlock in upper mountain regions. His role is purely technical and informational, providing baseline vegetation data contained in Appendix E of the Applicant's Exhibit W. No position for or against the project is attributed to him.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Cloninger conducted a forest tree survey in May 1973 finding the project area covered with an oak-hickory forest type, with shortleaf pine at lower elevations and white pine and eastern hemlock in upper mountain regions, documented in Appendix E of the Applicant's Exhibit W.",
+  "evidence_pages": [
+    "175"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Mr. R. A. Cloninger, Forester for the Applicant, also conducted a forest tree survey of the project area in May 1973.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "175"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Mr. R. A. Cloninger, Forester for the Applicant, also conducted a forest tree survey of the project area in May 1973.",
+      "quote_verified": true,
+      "entity_as_written": "R. A. Cloninger",
+      "role_as_written": "Forester for the Applicant"
+    }
+  ],
+  "window_pages": [
+    165,
+    185
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 44,
+  "synthetic_no_complaint": false
+}

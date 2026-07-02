@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C018",
+  "complainer_id": "p1074_35556038322269_K033",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 18,
+  "entity": "SCRTD Board of Directors",
+  "kind": "agency",
+  "role": "Governing board of SCRTD",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes Board adopting 145-mile system proposal that was subsequently defeated at referendum, no explicit support or opposition to current project",
+  "summary": "The SCRTD Board of Directors is mentioned in the document's planning history section as having adopted an initial 145-mile fixed guideway system in 1974 as part of a proposed 240-mile ultimate system. This proposal was put to voters and defeated 47% to 53%, though it carried majorities in Los Angeles, Beverly Hills, Santa Monica, and Compton. The Board's action is described as historical background context for the current alternatives analysis, with no direct stance on the present project attributed to them.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The SCRTD Board of Directors adopted an initial 145-mile fixed guideway system in 1974 as part of a proposed 240-mile ultimate system, which was subsequently defeated in a public referendum by a 47% to 53% margin.",
+  "evidence_pages": [
+    "68"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "In 1974, the SCRTD proposed an ultimate 240-mile fixed guideway system, and the SCRTD Board of Directors adopted an initial 145-mile system.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "68"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In 1974, the SCRTD proposed an ultimate 240-mile fixed guideway system, and the SCRTD Board of Directors adopted an initial 145-mile system.",
+      "quote_verified": true,
+      "entity_as_written": "SCRTD Board of Directors",
+      "role_as_written": "Governing board of SCRTD"
+    }
+  ],
+  "window_pages": [
+    58,
+    78
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 33,
+  "synthetic_no_complaint": false
+}

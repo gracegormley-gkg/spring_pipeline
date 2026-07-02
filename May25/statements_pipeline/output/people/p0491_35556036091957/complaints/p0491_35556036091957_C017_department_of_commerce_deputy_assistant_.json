@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C017",
+  "complainer_id": "p0491_35556036091957_K011",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 17,
+  "entity": "Department of Commerce, Deputy Assistant Secretary for Environmental Affairs",
+  "kind": "official",
+  "role": "Federal agency reviewer",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes two specific improvement suggestions to the draft environmental statement",
+  "summary": "The Department of Commerce, Deputy Assistant Secretary for Environmental Affairs reviewed the draft ORV environmental statement and offered two specific suggestions: that the statement better delineate the resources affected and the degree of impact from the proposed action, and that attention be drawn to 16 USC 478 providing for access to public lands for prospecting purposes. The entity appears twice in the document window in nearly identical paraphrase form, once in the main body and once in the appendix, both times summarizing the same two comments.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Deputy Assistant Secretary suggested the environmental statement delineate affected resources and their degree of impact, and called attention to 16 USC 478 providing access to public lands for prospecting.",
+  "evidence_pages": [
+    "28"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Department of Commerce, Deputy Assistant Secretary for Environmental Affairs - suggested that environmental statement, on page 12, lines 3 and 4, delineate those resources affected and to what degree by the proposed action; called our attention to 16 USC 478 which provides for access to public lands for purpose of prospecting;",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "28"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Department of Commerce, Deputy Assistant Secretary for Environmental Affairs - suggested that environmental statement, on page 12, lines 3 and 4, delineate those resources affected and to what degree by the proposed action; called our attention to 16 USC 478 which provides for access to public lands for purpose of prospecting;",
+      "quote_verified": true,
+      "entity_as_written": "Department of Commerce, Deputy Assistant Secretary for Environmental Affairs",
+      "role_as_written": "Federal agency reviewer"
+    }
+  ],
+  "window_pages": [
+    18,
+    38
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 11,
+  "synthetic_no_complaint": false
+}

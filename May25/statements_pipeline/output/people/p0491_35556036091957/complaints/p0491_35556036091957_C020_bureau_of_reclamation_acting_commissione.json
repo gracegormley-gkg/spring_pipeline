@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p0491_35556036091957_C020",
+  "complainer_id": "p0491_35556036091957_K008",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 20,
+  "entity": "Bureau of Reclamation, Acting Commissioner",
+  "kind": "official",
+  "role": "Interior bureau reviewer",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase indicates general concurrence with adequacy of the environmental statement",
+  "summary": "The Bureau of Reclamation's Acting Commissioner indicated general concurrence with the adequacy of the draft ORV environmental statement. This position is noted twice in the document—once in the main body's coordination section and once in the appendix's Federal Agency Comments section—both times as a brief paraphrase with no substantive objections or conditions raised.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "In the appendix's Federal Agency Comments section, the Bureau of Reclamation's Acting Commissioner (response #86) is again paraphrased as indicating general concurrence with the adequacy of the environmental statement.",
+  "evidence_pages": [
+    "31"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "Bureau of Reclamation, Acting Commissioner - indicated general concurrence relative to the adequacy of the subject environmental statement;",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "21"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Bureau of Reclamation, Acting Commissioner - indicated general concurrence relative to the adequacy of the subject environmental statement;",
+      "quote_verified": false,
+      "entity_as_written": "Bureau of Reclamation, Acting Commissioner",
+      "role_as_written": "Interior bureau reviewer"
+    }
+  ],
+  "window_pages": [
+    11,
+    31
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 8,
+  "synthetic_no_complaint": false
+}

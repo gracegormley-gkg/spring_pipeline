@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p0491_35556036091957_C153",
+  "complainer_id": "p0491_35556036091957_K129",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 153,
+  "entity": "George W. Nilsson",
+  "kind": "individual",
+  "role": "mining lawyer, President Mining Association of Southern California",
+  "stance": "opposed",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly agreeing with American Mining Congress objections to proposed ORV regulations and criticizing excessive regulation",
+  "summary": "George W. Nilsson, a mining lawyer and President of the Mining Association of Southern California, wrote a letter opposing the proposed ORV regulations, aligning himself with the American Mining Congress's objections. He argued that the regulations represent excessive government overreach inconsistent with constitutional principles of individual liberty and free enterprise, drawing on his 57 years of experience as a mining lawyer to assert that mining operations had functioned well without such regulation.",
+  "form": "letter",
+  "complaint_summary": "Nilsson writes on behalf of the Mining Association of Southern California to endorse the American Mining Congress's objections to the proposed ORV regulations, arguing that the regulations represent unconstitutional and excessive government overreach inconsistent with individual liberty and free enterprise.",
+  "evidence_pages": [
+    "214"
+  ],
+  "statement": {
+    "text": "The American Mining Congress has sent us a copy of its letter of July 6, 1972, objecting to proposed regulations pertaining to the use of off-road vehicles on the public lands. We agree with these objections.\nI have been a mining lawyer since September of 1915. The mining operations have carried on very well during all those years and it is incredible that so much excessive regulation is now being proposed, as well as excess legislation.\nThe United States is supposed to be a republic. The Constitution is very clear and there is no excuse for all the regulations, laws, and court decisions ignoring and/or violating the Constitution.\nThe United States was built into the greatest nation in the world, lesed on individual liberty and free enterprise.\nInte are call a tall a to co take: which estimated and intended.\n\nThere are call a tall a to co take: which estimates without gettime into a led of there unnecessary laws, regulations, and unceastitutional decisions.\nCL:\nVery truly yours,\nPresident, Mining Association of Southern California\nG.M/mm",
+    "opening_anchor": "The American Mining Congress has sent us a copy of its letter of July 6, 1972, objecting to proposed regulations pertaining to the use of off-road vehicles on the public lands. We agree with these objections.",
+    "closing_anchor": "President, Mining Association of Southern California\nG.M/mm",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "The American Mining Congress has sent us a copy of its letter of July 6, 1972, objecting to proposed regulations pertaining to the use of off-road vehicles on the public lands. We agree with these objections.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "214"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The American Mining Congress has sent us a copy of its letter of July 6, 1972, objecting to proposed regulations pertaining to the use of off-road vehicles on the public lands. We agree with these objections.",
+      "quote_verified": true,
+      "entity_as_written": "George W. Nilsson",
+      "role_as_written": "mining lawyer, President Mining Association of Southern California"
+    }
+  ],
+  "window_pages": [
+    204,
+    224
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 129,
+  "synthetic_no_complaint": false
+}

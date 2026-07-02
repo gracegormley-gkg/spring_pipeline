@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C040",
+  "complainer_id": "p1074_35556038322269_K040",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 40,
+  "entity": "CalTrans/CHP",
+  "kind": "agency",
+  "role": "Agency whose safety requirements limit load factor for freeway buses mixed with carpools",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describing CalTrans/CHP safety requirements that constrain load factor for freeway buses mixed with carpools",
+  "summary": "CalTrans/CHP is referenced solely as the source of safety requirements that limit the load factor to 1.0 for freeway buses operating in mixed traffic with carpools (e.g., on the Hollywood Freeway), a policy reflected in current SCRTD operating practice. The entity does not express a position for or against the project; it is cited only as a regulatory constraint shaping the capacity assumptions used in the analysis.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "CalTrans/CHP safety requirements mandate a load factor of 1.0 for freeway buses mixed with carpools such as those on the Hollywood Freeway, and this requirement is reflected in current SCRTD operating policy and the capacity assumptions used in the alternatives analysis.",
+  "evidence_pages": [
+    "121"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "A load factor of 1.0 was used on freeway buses mixed with carpools such as the Hollywood Freeway, to conform with CalTrans/CHP safety requirements which are reflected in current SCRTD operating policy.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "121"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "A load factor of 1.0 was used on freeway buses mixed with carpools such as the Hollywood Freeway, to conform with CalTrans/CHP safety requirements which are reflected in current SCRTD operating policy.",
+      "quote_verified": true,
+      "entity_as_written": "CalTrans/CHP",
+      "role_as_written": "Agency whose safety requirements limit load factor for freeway buses mixed with carpools"
+    }
+  ],
+  "window_pages": [
+    111,
+    131
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 40,
+  "synthetic_no_complaint": false
+}

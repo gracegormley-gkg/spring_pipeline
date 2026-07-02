@@ -1,0 +1,80 @@
+{
+  "complaint_id": "p1074_35556036861797_C050",
+  "complainer_id": "p1074_35556036861797_K027",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 50,
+  "entity": "General Motors",
+  "kind": "organization",
+  "role": "automobile manufacturer / commenter",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "GM supports inclusion of captive imports and single-class system but contests emissions penalty assumptions and argues for a lower standard",
+  "summary": "General Motors engaged extensively with NHTSA's proposed nonpassenger automobile fuel economy standard, supporting certain aspects (captive import inclusion, single-class system) while challenging the agency's assumptions about emissions standards and testing procedures. GM argued that the 1979 EPA emissions standard and revised testing procedures would impose measurable fuel economy penalties, and contended the standard should be adjusted downward accordingly. NHTSA largely rejected GM's emissions-penalty data as methodologically flawed but accepted an 8% testing-procedure adjustment.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "General Motors supported the inclusion of captive imports (the LUV) in its fleet calculation, arguing its 34% ownership of Isuzu stock and contractual control over design, manufacture, and importing made it the statutory manufacturer under Title V.",
+  "evidence_pages": [
+    "134"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036861797_R029"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The estimated fuel economy penalty due to the emission standard, including the effect of increased NOx emissions resulting from higher engine loading due to the revised test procedures, was 5 percent for General Motors",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "134"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "General Motors favored a single class for all nonpassenger automobiles, because such a system would allow a manufacturer maximum flexibility in meeting a standard.",
+      "quote_verified": true,
+      "entity_as_written": "General Motors",
+      "role_as_written": "automobile manufacturer / commenter"
+    },
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "146"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The estimated fuel economy penalty due to the emission standard, including the effect of increased NOx emissions resulting from higher engine loading due to the revised test procedures, was 5 percent for General Motors",
+      "quote_verified": true,
+      "entity_as_written": "General Motors",
+      "role_as_written": "automobile manufacturer / commenter"
+    },
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "160"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "General Motors stated, that there was an average difference in inertia weight of 500 pounds between passenger automobiles and nonpassenger automobiles and if the fuel economy costs of the extra 500 pounds were considered, the fuel economy standard for nonpassenger automobiles should be no more than 16.9 mpg to be consistent with the standard for passenger automobiles.",
+      "quote_verified": false,
+      "entity_as_written": "General Motors",
+      "role_as_written": "automobile manufacturer / commenter"
+    }
+  ],
+  "window_pages": [
+    124,
+    164
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 27,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036546182_C028",
+  "complainer_id": "p1074_35556036546182_K015",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 28,
+  "entity": "State Highway Commission",
+  "kind": "agency",
+  "role": "Wisconsin state highway governing body",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "added Airport Spur to State Trunk Highway System and adopted State Highway Plan including the route",
+  "summary": "The State Highway Commission took two supportive actions regarding the Airport Spur project: it adopted the State Highway Plan in 1966 that included the Airport Spur as a major arterial connecting I-94 with General Mitchell Field, and on November 28, 1967, it added the proposed Airport Spur to the State Trunk Highway System in response to federal directives on airport access. The Commission also ordered a halt to right-of-way acquisition on March 12, 1973, pending completion of the Final EIS, reflecting procedural compliance rather than opposition.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "On November 28, 1967, the State Highway Commission added the proposed Airport Spur to the State Trunk Highway System in response to the Federal Highway Administration's circular memorandum on highway access to airports.",
+  "evidence_pages": [
+    "32"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The State Highway Commission, on November 28, 1967, added the proposed Airport Spur to the State Trunk Highway System.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "32"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The State Highway Commission, on November 28, 1967, added the proposed Airport Spur to the State Trunk Highway System.",
+      "quote_verified": true,
+      "entity_as_written": "State Highway Commission",
+      "role_as_written": "Wisconsin state highway governing body"
+    }
+  ],
+  "window_pages": [
+    22,
+    42
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 15,
+  "synthetic_no_complaint": false
+}

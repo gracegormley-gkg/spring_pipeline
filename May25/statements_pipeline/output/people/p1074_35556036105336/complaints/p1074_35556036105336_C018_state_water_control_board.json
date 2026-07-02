@@ -1,0 +1,78 @@
+{
+  "complaint_id": "p1074_35556036105336_C018",
+  "complainer_id": "p1074_35556036105336_K020",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 18,
+  "entity": "State Water Control Board",
+  "kind": "agency",
+  "role": "Commonwealth of Virginia water quality regulatory agency",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "approves project on condition that separate sanitary and storm sewers are provided",
+  "summary": "The State Water Control Board, through its Richmond Area representative Mr. L.S. McBride, expressed conditional approval of the Randolph Urban Renewal Project, stating it would not create additional water pollution problems provided that separate sanitary and storm sewers are installed. The document notes the Board has formally approved the Randolph Plan and is cooperating to make the project successful. Their approval is referenced twice in the document window, once as a general statement and once with specific attribution to the representative's letter.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The document notes that the Randolph Plan has received the approval of the State Water Control Board, with a reference to Appendix Exhibit No. 4, in the context of discussing combined storm and sanitary sewers as a city-wide problem being addressed through separation in redevelopment areas.",
+  "evidence_pages": [
+    "31"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The staff is of the opinion that the redevelopment project .proposed will not create any additional water pollution problems if separate sanitary and storm sewers are provided to the fullest extent feasible.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "31"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Randolph Plan has received the approval of the State Water Control Board.",
+      "quote_verified": true,
+      "entity_as_written": "State Water Control Board",
+      "role_as_written": "State environmental regulatory body"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "54"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "other official agencies such as the State Water Control Board and Richmond Metropolitan Authority are cooperating to make the project successful.",
+      "quote_verified": true,
+      "entity_as_written": "State Water Control Board",
+      "role_as_written": "Virginia state agency"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "106"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The staff is of the opinion that the redevelopment project .proposed will not create any additional water pollution problems if separate sanitary and storm sewers are provided to the fullest extent feasible.",
+      "quote_verified": true,
+      "entity_as_written": "State Water Control Board",
+      "role_as_written": "Commonwealth of Virginia water quality regulatory agency"
+    }
+  ],
+  "window_pages": [
+    21,
+    55
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 20,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,69 @@
+{
+  "complaint_id": "p1074_35556039563135_C066",
+  "complainer_id": "p1074_35556039563135_K043",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 66,
+  "entity": "Board of Education District No. 170",
+  "kind": "agency",
+  "role": "School district / early coordination commenter",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "accepted Scheme A while providing conditions on playfield status and compensation for school property",
+  "summary": "Board of Education District No. 170 participated in early coordination regarding the Roosevelt School property and Section 4(f) land involvement, ultimately determining that the school playfield was not significant for recreational purposes. The Board also conducted a review during preparation of the Final Statement that helped resolve the Section 4(f) question for the Roosevelt School property. Their involvement was central to resolving compensation and landscaping arrangements for the right-of-way taken from the school yard.",
+  "form": "written_comment",
+  "complaint_summary": "Board of Education District No. 170 reported that the school playfield is a grassed area not used for formal recreation, that no plans exist to convert it to formal recreation, and that its use is not significant to the community's recreational needs.",
+  "evidence_pages": [
+    "161"
+  ],
+  "statement": {
+    "text": "5.) Pursuant to your request, I have reviewed the status of the playfield located west of Sunnyside and east of Franklin Avenues. The following has been determined:\n\n5(a) The playfield is a grassed area and not used for formal recreation.\n\n5(b) No plans for cqnverting the playfield to a formal recreation area are being presently made or in the foreseeable future.\n\n5(c) The use of the playfield is not significant to the recreational needs of the community.",
+    "opening_anchor": "5.) Pursuant to your request, I have reviewed the status of the playfield located west of Sunnyside and east of Franklin Avenues.",
+    "closing_anchor": "5(c) The use of the playfield is not significant to the recreational needs of the community.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556039563135_R024"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "At the regular board meeting of Wednesday, January 12, 1972, the Board of Education unamimously accepted the Building Committee's recommendation to accept Scheme A as submitted by the Department of Public Works and Buildings.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "161"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "5(a) The playfield is a grassed area and not used for formal recreation.",
+      "quote_verified": true,
+      "entity_as_written": "Board of Education District No. 170",
+      "role_as_written": "School district / early coordination commenter"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "231"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "At the regular board meeting of Wednesday, January 12, 1972, the Board of Education unamimously accepted the Building Committee's recommendation to accept Scheme A as submitted by the Department of Public Works and Buildings.",
+      "quote_verified": true,
+      "entity_as_written": "Board of Education District No. 170",
+      "role_as_written": "School district, Cook County"
+    }
+  ],
+  "window_pages": [
+    151,
+    192
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 43,
+  "synthetic_no_complaint": false
+}

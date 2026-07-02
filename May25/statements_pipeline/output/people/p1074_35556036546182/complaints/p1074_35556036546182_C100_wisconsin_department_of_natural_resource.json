@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036546182_C100",
+  "complainer_id": "p1074_35556036546182_K105",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 100,
+  "entity": "Wisconsin Department of Natural Resources",
+  "kind": "agency",
+  "role": "state environmental agency, commenter on Draft EIS",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter raises multiple deficiencies in Draft EIS and recommends comprehensive overview before Final EIS, while not outright opposing the project",
+  "summary": "The Wisconsin Department of Natural Resources, through its Bureau of Environmental Impact and Bureau of Air Pollution Control, submitted detailed comments on the Draft EIS identifying significant deficiencies in the air quality analysis, including inadequate treatment of vehicle emissions, lake meteorology effects, mass transit alternatives, and the long-term commitment of Mitchell Field as the primary airport. The agency recommended that the Final EIS include a comprehensive overview of total transportation needs and address worst-case air quality calculations, meteorological conditions near Lake Michigan, and alternatives to automobile-dependent access. The DNR did not oppose the project outright but conditioned adequacy of the EIS on resolution of these substantive concerns.",
+  "form": "letter",
+  "complaint_summary": "The Wisconsin DNR's Bureau of Environmental Impact, signed by C. D. Besadny, states that the Airport Spur will commit Mitchell Field as Milwaukee's primary air transport facility with long-term air quality impacts, and recommends the Final EIS include a comprehensive overview of total transportation needs.",
+  "evidence_pages": [
+    "203"
+  ],
+  "statement": {
+    "text": "We have completed our review of the draft environmental impact statement for the I-94 General Mitchell Field Airport Spur in the City of Milwaukee, Milwaukee County.\nIt does not appear that any of the five corridors indicated would have a significant effect on fish or wildlife habitat if constructed. As a result, we have no preference for any of the corridors indicated in this regard.\nAdditional comments concerning air quality considerations from our Bureau of Air Pollution Control and Solid Waste Disposal are attached. Because the Airport Spur will connect the interstate highway system to General Mitchell Field, it will have the effect of committing that airport as Milwaukee's primary air transport facility with its resultant long-term impact on air quality. This commitment is more than a secondary or subtle impact of the proposed freeway and, as such, is discussed in detail in the staff comments attached. While some of the alternatives proposed deal wholly or partly with General Mitchell Field, it should be recognized that the freeway-airport system in part is a larger transportation complex. Although the Division of Highways has taken the lead in preparing the environmental impact statement for the airport spur, the air-land transportation question would be within the purview of the Department of Transportation. It is recommended that the Final Environmental Impact Statement include a comprehensive overview of the total transportation needs being served.",
+    "opening_anchor": "We have completed our review of the draft environmental impact statement for the I-94 General Mitchell Field Airport Spur in the City of Milwaukee, Milwaukee County.",
+    "closing_anchor": "It is recommended that the Final Environmental Impact Statement include a comprehensive overview of the total transportation needs being served.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036546182_R028"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Because the Airport Spur will connect the interstate highway system to General Mitchell Field, it will have the effect of committing that airport as Milwaukee's primary air transport facility with its resultant long-term impact on air quality.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "203"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Because the Airport Spur will connect the interstate highway system to General Mitchell Field, it will have the effect of committing that airport as Milwaukee's primary air transport facility with its resultant long-term impact on air quality.",
+      "quote_verified": true,
+      "entity_as_written": "Wisconsin Department of Natural Resources",
+      "role_as_written": "state environmental agency, commenter on Draft EIS"
+    }
+  ],
+  "window_pages": [
+    193,
+    213
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 105,
+  "synthetic_no_complaint": false
+}

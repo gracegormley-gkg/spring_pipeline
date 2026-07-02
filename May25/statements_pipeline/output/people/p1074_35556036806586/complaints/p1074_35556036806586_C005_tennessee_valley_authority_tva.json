@@ -1,0 +1,80 @@
+{
+  "complaint_id": "p1074_35556036806586_C005",
+  "complainer_id": "p1074_35556036806586_K014",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 5,
+  "entity": "Tennessee Valley Authority (TVA)",
+  "kind": "agency",
+  "role": "Federal electric generating system considered as alternative developer/power source",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "listed as agency that responded to draft EIS but no substantive position stated in this window",
+  "summary": "The Tennessee Valley Authority (TVA) is listed among the federal agencies that were requested to review the draft environmental impact statement and is noted with an asterisk indicating they responded. No substantive comment content from TVA appears in this window of the document; their response is referenced only in the summary sheet's list of commenting agencies.",
+  "form": "sectional",
+  "complaint_summary": "TVA is listed among federal agencies that responded to the draft EIS, indicated by an asterisk, but no substantive position or complaint is described in this portion of the document.",
+  "evidence_pages": [
+    "1"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We have no comments on the draft environmental statement for the Bad Creek Pumped Storage Project No. 2740.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased",
+    "sectional"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "1"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Federal Departments and Offices ... *Tennessee Valley Authority",
+      "quote_verified": false,
+      "entity_as_written": "Tennessee Valley Authority",
+      "role_as_written": "Federal agency requested to review draft EIS; responded"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "212"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "At the present time, TVA has no plans to develop additional pumped storage capacity.",
+      "quote_verified": true,
+      "entity_as_written": "Tennessee Valley Authority (TVA)",
+      "role_as_written": "Federal electric generating system considered as alternative developer/power source"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "265"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We have no comments on the draft environmental statement for the Bad Creek Pumped Storage Project No. 2740.",
+      "quote_verified": true,
+      "entity_as_written": "TENNESSEE VALLEY AUTHORITY",
+      "role_as_written": "federal agency commenter"
+    }
+  ],
+  "window_pages": [
+    1,
+    51
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 14,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036058550_C009",
+  "complainer_id": "p1074_35556036058550_K007",
+  "doc_id": "p1074_35556036058550",
+  "work_id": "csv:35556036058550",
+  "order": 9,
+  "entity": "Department of the Army",
+  "kind": "agency",
+  "role": "Federal agency commenter on draft EIS",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased comments raising concerns about community integration, transportation impacts, and Phase III activities",
+  "summary": "The Department of the Army submitted comments on the draft Environmental Impact Statement for Operation BREAKTHROUGH, raising concerns about the relationship of industrialized housing to conventional communities, the impact of increased shipments and production, and the environmental implications of Phase III BREAKTHROUGH activities. HUD responded to each concern, pointing to the final statement's discussion of site planning harmony and noting that Phase III projects would file separate Environmental Statements through regular channels.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Department of the Army raised a concern about the environmental impact of Phase III BREAKTHROUGH activities.",
+  "evidence_pages": [
+    "19"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036058550_R003"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "Comment: Relationship of industrialized housing to conventional communities.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "19"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Comment: Relationship of industrialized housing to conventional communities.",
+      "quote_verified": false,
+      "entity_as_written": "Department of the Army",
+      "role_as_written": "Federal agency commenter on draft EIS"
+    }
+  ],
+  "window_pages": [
+    9,
+    29
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 7,
+  "synthetic_no_complaint": false
+}

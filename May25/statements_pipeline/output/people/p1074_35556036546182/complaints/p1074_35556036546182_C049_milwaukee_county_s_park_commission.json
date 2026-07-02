@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036546182_C049",
+  "complainer_id": "p1074_35556036546182_K036",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 49,
+  "entity": "Milwaukee County's Park Commission",
+  "kind": "agency",
+  "role": "county parks authority",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase states Park Commission indicated proposed facility did not interfere with any existing or proposed park development",
+  "summary": "Milwaukee County's Park Commission testified at the March 25, 1969 Location Public Hearing, indicating that the proposed Airport Spur facility did not interfere with any existing or proposed park development. Their position was neutral-to-supportive, raising no objections to the project on park-related grounds.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Milwaukee County's Park Commission indicated at the March 25, 1969 Location Public Hearing that the proposed facility did not interfere with any existing or proposed park development.",
+  "evidence_pages": [
+    "101"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Milwaukee County's Park Commission indicated that the proposed facility did not interfere with any existing or proposed park development.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "101"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Milwaukee County's Park Commission indicated that the proposed facility did not interfere with any existing or proposed park development.",
+      "quote_verified": true,
+      "entity_as_written": "Milwaukee County's Park Commission",
+      "role_as_written": "county parks authority"
+    }
+  ],
+  "window_pages": [
+    91,
+    111
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 36,
+  "synthetic_no_complaint": false
+}

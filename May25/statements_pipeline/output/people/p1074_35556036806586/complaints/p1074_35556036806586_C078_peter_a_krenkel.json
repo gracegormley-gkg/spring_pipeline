@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036806586_C078",
+  "complainer_id": "p1074_35556036806586_K073",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 78,
+  "entity": "Peter A. Krenkel",
+  "kind": "official",
+  "role": "Director of Environmental Planning, Tennessee Valley Authority",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly states no comments on the draft environmental statement",
+  "summary": "Peter A. Krenkel, Director of Environmental Planning at the Tennessee Valley Authority, submitted a brief letter stating that TVA had no comments on the draft environmental statement for the Bad Creek Pumped Storage Project No. 2740. He expressed appreciation for the opportunity to review the draft statement, offering neither support nor opposition to the project.",
+  "form": "letter",
+  "complaint_summary": "TVA states it has no comments on the draft environmental statement for the Bad Creek Pumped Storage Project No. 2740, expressing only appreciation for the opportunity to review it.",
+  "evidence_pages": [
+    "265"
+  ],
+  "statement": {
+    "text": "We have no comments on the draft environmental statement for the Bad Creek Pumped Storage Project No. 2740. We appreciate the opportunity to review this draft statement.\nSincerely yours,\nPeter A. Krenkel, Ph.D., P.E. Director of Environmental Planning",
+    "opening_anchor": "We have no comments on the draft environmental statement for the Bad Creek Pumped Storage Project No. 2740.",
+    "closing_anchor": "Peter A. Krenkel, Ph.D., P.E. Director of Environmental Planning",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We have no comments on the draft environmental statement for the Bad Creek Pumped Storage Project No. 2740.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "265"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We have no comments on the draft environmental statement for the Bad Creek Pumped Storage Project No. 2740.",
+      "quote_verified": true,
+      "entity_as_written": "Peter A. Krenkel",
+      "role_as_written": "Director of Environmental Planning, Tennessee Valley Authority"
+    }
+  ],
+  "window_pages": [
+    255,
+    275
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 73,
+  "synthetic_no_complaint": false
+}

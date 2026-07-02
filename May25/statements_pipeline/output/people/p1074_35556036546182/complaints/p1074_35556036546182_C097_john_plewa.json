@@ -1,0 +1,69 @@
+{
+  "complaint_id": "p1074_35556036546182_C097",
+  "complainer_id": "p1074_35556036546182_K088",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 97,
+  "entity": "John Plewa",
+  "kind": "official",
+  "role": "State Representative, 20th Assembly District",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describing Plewa's alternative proposal to upgrade College Ave. instead of building the Airport Spur",
+  "summary": "John Plewa, State Representative for the 20th Assembly District, is referenced in the document as having proposed an alternative to the Airport Spur — upgrading College Avenue for use to and from Mitchell Field — which a commenter cites as a preferable option. He is not directly quoted but is paraphrased as opposing the Airport Spur project by advocating for this less costly alternative that would avoid new construction.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "A commenter (lobbyist for balanced transportation) references State Representative John Plewa's proposal to upgrade College Avenue as an alternative to constructing the Airport Spur, presenting it as a viable option that would meet the Division of Highways' stated goals without the expense of a new 1.5-mile interstate-type facility.",
+  "evidence_pages": [
+    "193"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R025"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Stated that the 1972 EIS is no longer valid because of the increase in noise levels from traffic and the opening of the East-West Runway at Mitchell Field.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "193"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "An attractive alternative has been proposed by State Representative John Plewa. He has suggested the upgrading of College Ave. for use to and from Mitchell Field.",
+      "quote_verified": false,
+      "entity_as_written": "John Plewa",
+      "role_as_written": "State Representative"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "224"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Stated that the 1972 EIS is no longer valid because of the increase in noise levels from traffic and the opening of the East-West Runway at Mitchell Field.",
+      "quote_verified": true,
+      "entity_as_written": "John Plewa",
+      "role_as_written": "State Representative, 20th Assembly District"
+    }
+  ],
+  "window_pages": [
+    183,
+    210
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 88,
+  "synthetic_no_complaint": false
+}

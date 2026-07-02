@@ -1,0 +1,61 @@
+{
+  "complaint_id": "p1074_35556039563135_C048",
+  "complainer_id": "p1074_35556039563135_K070",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 48,
+  "entity": "Robert Luedner",
+  "kind": "individual",
+  "role": "Director of the Park District for Chicago Heights",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "identified as the proper person to determine recreation significance of a playfield, with no personal position stated",
+  "summary": "Robert Luedner, Director of the Park District for Chicago Heights, is referenced in the early coordination section as the appropriate authority to make a determination of recreational significance regarding the Roosevelt School playfield area. He is not quoted directly, but the Board of Education District 170 (not Luedner himself) provided the actual findings that the playfield was not used for formal recreation and was not significant to the community's recreational needs. Luedner's role is cited by the U.S. Department of the Interior as the proper local official to consult, but no personal position or complaint from him is recorded in this window.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The U.S. Department of the Interior identifies Robert Luedner, Director of the Park District for Chicago Heights, as the proper person to make a determination of recreational significance regarding the Section 4(f) land question, but no position or complaint from Luedner himself is recorded.",
+  "evidence_pages": [
+    "145-168"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556039563135_R011"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual",
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "the proper person to make a determination of recreation significance would be Mr. Robert Luedner, Director of the Park District for Chicago Heights.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "145-194"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "the proper person to make a determination of recreation significance would be Mr. Robert Luedner, Director of the Park District for Chicago Heights.",
+      "quote_verified": false,
+      "entity_as_written": "Robert Luedner",
+      "role_as_written": "Director of the Park District for Chicago Heights"
+    }
+  ],
+  "window_pages": [
+    135,
+    168
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 70,
+  "synthetic_no_complaint": false
+}

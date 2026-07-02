@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036058550_C045",
+  "complainer_id": "p1074_35556036058550_K021",
+  "doc_id": "p1074_35556036058550",
+  "work_id": "csv:35556036058550",
+  "order": 45,
+  "entity": "Pratt and Whitney",
+  "kind": "organization",
+  "role": "Fuel cell program developer",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase indicates Pratt and Whitney declined to recommend fuel cell use at current development stage, neither supporting nor opposing the broader project",
+  "summary": "Pratt and Whitney, as the fuel cell program developer under the TARGET initiative, was consulted by HUD staff regarding potential use of fuel cell technology in Operation Breakthrough demonstration programs. Pratt and Whitney did not suggest that their fuel cell technology was ready for inclusion in HUD's demonstration programs at its current stage of development, and HUD staff concurred with that assessment. HUD expressed interest in demonstrating the technology at an appropriate future time.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Pratt and Whitney did not recommend that HUD consider using the fuel cell technology in its demonstration programs at the current stage of its development, and HUD staff agreed with that decision.",
+  "evidence_pages": [
+    "51"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036058550_R034"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "Pratt and Whitney has not suggested that we consider the use of the fuel cell at this stage of its development in our demonstration programs, and my staff concurs in that decision.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "51"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Pratt and Whitney has not suggested that we consider the use of the fuel cell at this stage of its development in our demonstration programs, and my staff concurs in that decision.",
+      "quote_verified": false,
+      "entity_as_written": "Pratt and Whitney",
+      "role_as_written": "Fuel cell program developer"
+    }
+  ],
+  "window_pages": [
+    41,
+    61
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 21,
+  "synthetic_no_complaint": false
+}

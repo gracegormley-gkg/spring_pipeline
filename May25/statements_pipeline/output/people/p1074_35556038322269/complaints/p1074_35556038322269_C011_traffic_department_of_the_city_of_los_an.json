@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C011",
+  "complainer_id": "p1074_35556038322269_K036",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 11,
+  "entity": "Traffic Department of the City of Los Angeles",
+  "kind": "agency",
+  "role": "City traffic management agency",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "described as having ongoing programs for traffic signal modernization and control improvements, no position on the transit project expressed",
+  "summary": "The Traffic Department of the City of Los Angeles is described in the document as having an ongoing program to modernize and interconnect traffic signals citywide, investigating peak-hour parking restrictions and turn controls, and planning a computer-based traffic surveillance and control system for the Los Angeles CBD. The agency is referenced as a source of traffic data and as a participant in existing traffic management efforts, but expresses no explicit position on the proposed transit alternatives.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Traffic Department of the City of Los Angeles is described as running an ongoing program to modernize and interconnect nearly all traffic signals in the city, investigating peak-hour parking restrictions and turn controls, and planning a computer-based traffic surveillance and control system for the Los Angeles CBD.",
+  "evidence_pages": [
+    "60"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Traffic Department of the City of Los Angeles, has an ongoing program to modernize and interconnect almost all traffic signals in the City.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "60"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Traffic Department of the City of Los Angeles, has an ongoing program to modernize and interconnect almost all traffic signals in the City.",
+      "quote_verified": true,
+      "entity_as_written": "Traffic Department of the City of Los Angeles",
+      "role_as_written": "City traffic management agency"
+    }
+  ],
+  "window_pages": [
+    50,
+    70
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 36,
+  "synthetic_no_complaint": false
+}

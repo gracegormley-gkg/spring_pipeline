@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036806586_C133",
+  "complainer_id": "p1074_35556036806586_K098",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 133,
+  "entity": "Warren H. Oven",
+  "kind": "individual",
+  "role": "recipient of memo discussing Bad Creek project alternatives",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "appears only as memo recipient with no attributed position",
+  "summary": "Warren H. Oven appears in the document window solely as the addressee of a January 28, 1976 memo written by John J. Hagins (a biologist) discussing the Bad Creek Pumped Storage Project. No statement, position, or opinion is attributed to Oven himself anywhere in the window.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "370"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual",
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Duke Power had no consideration of conservation and rate revision as an alternative in Section 8.2 of its application for license before the FPC.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 7,
+      "evidence_pages": [
+        "370"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Duke Power had no consideration of conservation and rate revision as an alternative in Section 8.2 of its application for license before the FPC.",
+      "quote_verified": true,
+      "entity_as_written": "Warren H. Oven",
+      "role_as_written": "recipient of memo discussing Bad Creek project alternatives"
+    }
+  ],
+  "window_pages": [
+    360,
+    380
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 98,
+  "synthetic_no_complaint": true
+}

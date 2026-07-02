@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C074",
+  "complainer_id": "p1074_35556038322269_K084",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 74,
+  "entity": "L. A. City Council members",
+  "kind": "official",
+  "role": "Elected officials representing Regional Core districts",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "described as actively engaged and briefed but no explicit position stated",
+  "summary": "L. A. City Council members representing Regional Core districts were actively engaged in the Regional Core Transit Alternatives Analysis process, receiving briefings and having their staff attend community meetings. The document describes their involvement as part of the outreach to elected officials but does not attribute any specific position or complaint to them regarding the project or its alternatives.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The document notes that L. A. City Council members whose districts comprise the Regional Core were actively briefed, with their representatives frequently attending community meetings, but no specific position or concern is attributed to them.",
+  "evidence_pages": [
+    "292"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "There was active interface with the offices of L. A. City Council members whose districts comprise the Regional Core. Briefings have been held for the council members and their staffs. Council representatives frequently attended the community meetings.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "292"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "There was active interface with the offices of L. A. City Council members whose districts comprise the Regional Core. Briefings have been held for the council members and their staffs. Council representatives frequently attended the community meetings.",
+      "quote_verified": true,
+      "entity_as_written": "L. A. City Council members",
+      "role_as_written": "Elected officials representing Regional Core districts"
+    }
+  ],
+  "window_pages": [
+    282,
+    293
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 84,
+  "synthetic_no_complaint": false
+}

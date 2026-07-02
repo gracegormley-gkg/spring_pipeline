@@ -1,0 +1,68 @@
+{
+  "complaint_id": "p1074_35556036546182_C157",
+  "complainer_id": "p1074_35556036546182_K081",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 157,
+  "entity": "F. E. Wolf",
+  "kind": "official",
+  "role": "Administrator, Department of Transportation/Division of Aeronautics",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "explicitly stated support for the proposed facility citing time savings and transportation integration",
+  "summary": "F. E. Wolf, Administrator of the Department of Transportation/Division of Aeronautics, submitted a written statement in support of the Airport Spur project. Wolf argued that the facility would save ground travel time for air passengers and would integrate the state's major air transportation facility with a major ground transportation facility. No response was deemed necessary by the document preparers.",
+  "form": "written_comment",
+  "complaint_summary": "Wolf expressed support for the Airport Spur because it would save ground travel time for air passengers and integrate the state's major air and ground transportation facilities.",
+  "evidence_pages": [
+    "249"
+  ],
+  "statement": {
+    "text": "Stated support for the proposed facility because of the savings in time that it would provide air passengers by saving ground travel time. The proposed freeway facility would integrate the State's major air transportation facility with one of its major ground transportation facilities.",
+    "opening_anchor": "Stated support for the proposed facility because of the savings in time that it would provide air passengers by saving ground travel time.",
+    "closing_anchor": "The proposed freeway facility would integrate the State's major air transportation facility with one of its major ground transportation facilities.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Stated support for the proposed facility because of the savings in time that it would provide air passengers by saving ground travel time. The proposed freeway facility would integrate the State's major air transportation facility with one of its major ground transportation facilities.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased",
+    "sectional"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "221"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "The following people submitted written statements in response to the Environmental Public Hearing. These letters were added to the official transcript. Abstracts of their testimony and responses follow:",
+      "quote_verified": true,
+      "entity_as_written": "F. E. Wolf",
+      "role_as_written": "Administrator, Department of Transportation/Division of Aeronautics"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "249"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Stated support for the proposed facility because of the savings in time that it would provide air passengers by saving ground travel time. The proposed freeway facility would integrate the State's major air transportation facility with one of its major ground transportation facilities.",
+      "quote_verified": true,
+      "entity_as_written": "F. E. Wolf",
+      "role_as_written": "Department of Transportation Division of Aeronautics, commenter"
+    }
+  ],
+  "window_pages": [
+    211,
+    249
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 81,
+  "synthetic_no_complaint": false
+}

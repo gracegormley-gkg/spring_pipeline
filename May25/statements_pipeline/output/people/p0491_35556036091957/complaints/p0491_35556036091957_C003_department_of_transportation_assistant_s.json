@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p0491_35556036091957_C003",
+  "complainer_id": "p0491_35556036091957_K014",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 3,
+  "entity": "Department of Transportation, Assistant Secretary for Environment and Urban Systems",
+  "kind": "official",
+  "role": "Federal agency reviewer",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase indicates concern over ORV noise and suggests environmental statement include noise standards statement",
+  "summary": "The Department of Transportation, Assistant Secretary for Environment and Urban Systems, expressed concern over noise emitted by ORVs and suggested that the environmental statement include a statement on the need to develop appropriate noise standards. This position appears twice in the document window—once in the main body summary of agency comments and once in the appendix listing of Federal Agency Comments—both as narrator paraphrases of the same comment. No direct agency response to this specific comment is provided in the window.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "In the appendix Federal Agency Comments section, the Department of Transportation's Assistant Secretary for Environment and Urban Systems is again paraphrased as expressing concern over ORV noise and recommending the environmental statement address the need for appropriate noise standards.",
+  "evidence_pages": [
+    "20"
+  ],
+  "statement": {
+    "text": "# 76 4. Department of Transportation, Assistant Secretary for Environment and Urban Systems  indicated concern over noise emitted by ORV. Suggested that environmental statement include a statement on the need to develop appropriate noise standards;",
+    "opening_anchor": "# 76 4. Department of Transportation, Assistant Secretary for Environment and Urban Systems",
+    "closing_anchor": "Suggested that environmental statement include a statement on the need to develop appropriate noise standards;",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "Department of Transportation, Assistant Secretary for Environment and Urban Systems - indicated concern over noise emitted by ORV. Suggested that environmental statement include a statement on the need to develop appropriate noise standards;",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "20"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Department of Transportation, Assistant Secretary for Environment and Urban Systems - indicated concern over noise emitted by ORV. Suggested that environmental statement include a statement on the need to develop appropriate noise standards;",
+      "quote_verified": false,
+      "entity_as_written": "Department of Transportation, Assistant Secretary for Environment and Urban Systems",
+      "role_as_written": "Federal agency reviewer"
+    }
+  ],
+  "window_pages": [
+    10,
+    30
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 14,
+  "synthetic_no_complaint": false
+}

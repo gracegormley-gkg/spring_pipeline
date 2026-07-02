@@ -1,0 +1,72 @@
+{
+  "complaint_id": "p1074_35556036546182_C151",
+  "complainer_id": "p1074_35556036546182_K075",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 151,
+  "entity": "C. K. Sabrowsky",
+  "kind": "individual",
+  "role": "Attorney for Community Developers, Inc., commenter",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "written comment states client favors construction only if entire undeveloped parcels are purchased",
+  "summary": "C. K. Sabrowsky, attorney for Community Developers, Inc., submitted a written statement indicating his client's support for the Airport Spur is conditional on the project resulting in the purchase of their entire undeveloped parcels, not just partial acquisition. The agency responded that right-of-way negotiations had been suspended pending completion of the Final EIS, and noted the City of Milwaukee School Board's interest in the undeveloped parcels along Parnell Avenue would be investigated.",
+  "form": "written_comment",
+  "complaint_summary": "Sabrowsky states his client (Community Developers, Inc.) supports construction of the Airport Spur only if it results in the purchase of their entire undeveloped parcels, with the position driven by economic considerations.",
+  "evidence_pages": [
+    "248"
+  ],
+  "statement": {
+    "text": "Stated his client's position with respect to construction of the Airport Spur is determined by economics and is in favor of construction only if it will result in the purchase of the entire undeveloped parcels.",
+    "opening_anchor": "Stated his client's position with respect to construction of the Airport Spur is determined by economics and is in favor of construction only if it will result in the purchase of the entire undeveloped parcels.",
+    "closing_anchor": "Stated his client's position with respect to construction of the Airport Spur is determined by economics and is in favor of construction only if it will result in the purchase of the entire undeveloped parcels.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036546182_R070"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Stated his client's position with respect to construction of the Airport Spur is determined by economics and is in favor of construction only if it will result in the purchase of the entire undeveloped parcels.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased",
+    "sectional"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "221"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "The following people submitted written statements in response to the Environmental Public Hearing. These letters were added to the official transcript. Abstracts of their testimony and responses follow:",
+      "quote_verified": true,
+      "entity_as_written": "C. K. Sabrowsky",
+      "role_as_written": "Attorney for Community Developers, Inc."
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "248"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Stated his client's position with respect to construction of the Airport Spur is determined by economics and is in favor of construction only if it will result in the purchase of the entire undeveloped parcels.",
+      "quote_verified": true,
+      "entity_as_written": "C. K. Sabrowsky",
+      "role_as_written": "Attorney for Community Developers, Inc., commenter"
+    }
+  ],
+  "window_pages": [
+    211,
+    249
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 75,
+  "synthetic_no_complaint": false
+}

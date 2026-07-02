@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C266",
+  "complainer_id": "p0491_35556036091957_K230",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 266,
+  "entity": "Milwaukee Audubon Society",
+  "kind": "organization",
+  "role": "conservation organization, commenter",
+  "stance": "opposed",
+  "stance_confidence": "high",
+  "stance_basis": "position paper explicitly challenges the environmental wisdom of allowing ORVs on federal lands and calls for phasing out motors from public lands",
+  "summary": "The Milwaukee Audubon Society, through its president David Tillotson, submitted a formal position paper strongly opposing the Draft Environmental Impact Statement on ORV use on public lands. The Society argues that the draft statement improperly institutionalizes ORV use on federal lands without first questioning whether such use should be permitted at all, and documents numerous instances of ecological harm caused by ORVs. They call for a phasing out of motorized vehicles from public lands, limiting ORV use to private lands and manufacturer-provided areas, with exceptions only for emergency, law enforcement, and patrol purposes.",
+  "form": "letter",
+  "complaint_summary": "President David Tillotson transmits the Milwaukee Audubon Society's position paper on ORV use on public lands to the Department of Interior, requesting it be forwarded to the proper agency in time for the hearing.",
+  "evidence_pages": [
+    "345"
+  ],
+  "statement": {
+    "text": "14 Mar 1973\nMr. Nathaniel Reed US Department of Interior Washington, D.C. 20340\nDear Mr. Reed,\nAttached is a position paper of the Milwaukee Audubon Society dealing with the subject of Off The Road Recreational Vehicles on Public Land.\nIt is our understanding that public reaction was invited to a draft statement on ORV use issued by one of Interior's subagencies - the Eureau of Outdoor Recreation.\nWe trust that you will see that our position on the ORV matter gets to the proper agency in time for the hearing on this matter.\nSincerely\nDavid Tillotson\nPresident - Milwaukee\nAudubon Society\n12259 Underwood Fkwy\nWauwatosa, Wis 53226\nCC: Cynthia Wilson (Natl Audubon)\nCC: Ed Brigham (Natl Midwest Audubon Rep)",
+    "opening_anchor": "14 Mar 1973\n\nMr. Nathaniel Reed US Department of Interior Washington, D.C. 20340\n\nDear Mr. Reed,\n\nAttached is a position paper of the Milwaukee Audubon Society",
+    "closing_anchor": "CC: Cynthia Wilson (Natl Audubon)\nCC: Ed Brigham (Natl Midwest Audubon Rep)",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We seriously challenge and question the environmental wisdom in conceding to the thought that ORV's really belong, in almost any setting, on Federal Lands.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 7,
+      "evidence_pages": [
+        "345"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We seriously challenge and question the environmental wisdom in conceding to the thought that ORV's really belong, in almost any setting, on Federal Lands.",
+      "quote_verified": true,
+      "entity_as_written": "Milwaukee Audubon Society",
+      "role_as_written": "conservation organization, commenter"
+    }
+  ],
+  "window_pages": [
+    335,
+    355
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 230,
+  "synthetic_no_complaint": false
+}

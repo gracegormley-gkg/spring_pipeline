@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556036546182_C042",
+  "complainer_id": "p1074_35556036546182_K024",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 42,
+  "entity": "Airport Officials",
+  "kind": "official",
+  "role": "General Mitchell Field airport officials involved in Corridor #5 coordination",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "Airport Officials coordinated with other agencies to develop Corridor #5 as compatible with General Mitchell Field's Master Plan, and their approval is explicitly cited for the recommended corridor",
+  "summary": "Airport Officials at General Mitchell Field participated in coordinated efforts with Milwaukee County, the FAA, and the Division of Highways to develop Corridor #5 as the recommended alignment, ensuring compatibility with the airport's long-range Master Plan. They raised concerns about Corridors #2, #3, and #4 due to conflicts with FAA glide slope requirements, runway alignment hazards, and air terminal expansion plans, effectively steering the selection toward Corridor #5. Their approval of Corridor #5's alignment and clearance is cited as a key advantage of the recommended build alternative.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Airport Officials, along with Milwaukee County, the FAA, and the Division of Highways, coordinated to develop Corridor #5 as compatible with General Mitchell Field's adopted long-range Master Plan, and local airport officials gave their approval to the new corridor alignment.",
+  "evidence_pages": [
+    "93"
+  ],
+  "statement": {
+    "text": "Corridor #5 - (Recommended Corridor for project construction) is a revision of Corridor #3, adjusted to accommodate the construction of a new air cargo area at General Mitchell Field. It was the result of coordinated efforts by Airport Officials, Milwaukee County, Federal Aviation Administration, and the Division of Highways to be compatible with the adopted long range Master Plan for the expansion of facilities at General Mitchell Field.\nThis corridor is coincident with Corridor #3 from its interchange location at I-94 easterly to a point just west of the C.M. St. P. & P. Railroad. For discussion of Corridor #5 that section will be repeated here.\nCorridor #5 begins at its westerly end from an interchange located approximately midway between Ramsey Avenue and Grange Avenue.\nThis freeway access interchange to the Interstate\n\nSystem at I-94 would be located 3/4 miles north of the College\n\nAvenue interchange and 1-1/4 miles south of the directional interchange at Layton Avenue. At the present time an interchange constructed in this vicinity would be virtually free of development. The area west of I-94, to accommodate a portion of the interchange, is undeveloped lands with an open 100 foot wide Oak Creek storm water drainage channel running diagonally across it.\nEast of I-94 a freeway facility could fit into an existing 550 foot slot of undeveloped land between Parnell Avenue and adjacent subdivision. It would, however, abut the City of Milwaukee's Hamlin Garland Elementary School property located to the south. The most feasible alignment in this\n\ncorridor would be approximately 250 feet from the school building. North-east of the school near 14th Street a greenhouse and attendant buildings have already been displaced. The remaining lands between I-94 and 13th Street are still undeveloped.\nThe subdivision north of Parnell Avenue is primarily single family residential with some two, four, and eight family units located along 13th Street. Between 13th Street and the railroad the land use is presently in use as a dump site, truck storage yard and railroad siding area. The area is zoned for light industrial use.\nAdjacent, but west of the railroad tracks, is the 'lisconsin Electric Power Company's high voltage transmission tower lines. These lines would have to be adjusted since the freeway facility would be elevated at 13th Street, the railroad tracks, and 6th Street.\nEast of the railroad tracks the location of the corridor was revised and shifted to the north to be compatible with the new airport limits of the proposed air cargo area. In recent months Milwaukee County has implemented their Master Plan for airport terminal expansion and has acquired the lands necessary for the development of this 60 acre air cargo area. Grange Avenue from 6th Street to Howell Avenue will also be vacated for the new air cargo area and would be relocated north of the proposed freeway facility. These lands, already acquired by Milwaukee County, included the entire subdivision to the south.\nAlthough the corridor has a diagonal alignment it would be located just north of the new airport limits and would\n\nnot trap lands or homes between the freeway and the airport's air cargo area. It would also provide an earthen barrier between the aircrafts taxiway and holding apron adjacent to Runway 7R and the neighborhood located north of Grange Avenue.\nThe lands between the railroad and 6th Street are zoned for light industry and would traverse an auto salvage yard and city owned lands. East of 6th Street the proposed facility will not be bridged over Grange Avenue since it will be vacated to the east for the proposed air cargo facilities.\nEast of the C.M. St. P. & P. Railroad the corridor swings to the northeast to the airport entrance road. The diagonal alignment of this corridor will leave triangular pieces of land but since Grange Avenue will be relocated north of the freeway between 6th Street and Howell Avenue, the area will be opened for new development. The land parcels that abut 3rd Street and extend to Howell Avenue have had recent commercial developments and would be displaced by this freeway facility.\nSince the concept of this corridor was to re-align Corridor #3 to be north of the new airport limits of the air cargo area, its new alignment meets Federal, State and local airport officials approval.",
+    "opening_anchor": "Corridor #5 - (Recommended Corridor for project construction) is a revision of Corridor #3, adjusted to accommodate the construction of a new air cargo area at General Mitchell Field.",
+    "closing_anchor": "its new alignment meets Federal, State and local airport officials approval.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "It was the result of coordinated efforts by Airport Officials, Milwaukee County, Federal Aviation Administration, and the Division of Highways to be compatible with the adopted long range Master Plan for the expansion of facilities at General Mitchell Field.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "93"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "It was the result of coordinated efforts by Airport Officials, Milwaukee County, Federal Aviation Administration, and the Division of Highways to be compatible with the adopted long range Master Plan for the expansion of facilities at General Mitchell Field.",
+      "quote_verified": true,
+      "entity_as_written": "Airport Officials",
+      "role_as_written": "General Mitchell Field airport officials involved in Corridor #5 coordination"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "87"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "According to airport officials the east end of this corridor, before it crosses Howell Avenue, would be directly under the landing path of the southwest runway located north of the Air Terminal.",
+      "quote_verified": true,
+      "entity_as_written": "airport officials",
+      "role_as_written": "General Mitchell Field airport officials"
+    }
+  ],
+  "window_pages": [
+    77,
+    103
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 24,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036058550_C015",
+  "complainer_id": "p1074_35556036058550_K003",
+  "doc_id": "p1074_35556036058550",
+  "work_id": "csv:35556036058550",
+  "order": 15,
+  "entity": "Department of Agriculture",
+  "kind": "agency",
+  "role": "Federal agency commenter on draft EIS",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "multiple paraphrased complaints about inadequacies in the draft EIS, with HUD responses addressing each",
+  "summary": "The Department of Agriculture submitted multiple comments on the draft Environmental Impact Statement, raising concerns about the statement's failure to address specific problems, poor soil quality implications, lack of recognition of adverse effects such as flooding, partial relevance to rural housing, implications of new materials, special housing requirements of Mexican-Americans, wild cherry trees at Kalamazoo, and storm water handling. HUD responded to each comment, generally directing reviewers to relevant sections of the final statement or providing brief substantive replies.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Department of Agriculture raised the special housing requirements of Mexican-Americans.",
+  "evidence_pages": [
+    "20"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036058550_R009"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Comment: Statement does not deal with specific problems.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "20"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Comment: Statement does not deal with specific problems.",
+      "quote_verified": true,
+      "entity_as_written": "Department of Agriculture",
+      "role_as_written": "Federal agency commenter on draft EIS"
+    }
+  ],
+  "window_pages": [
+    10,
+    30
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 3,
+  "synthetic_no_complaint": false
+}

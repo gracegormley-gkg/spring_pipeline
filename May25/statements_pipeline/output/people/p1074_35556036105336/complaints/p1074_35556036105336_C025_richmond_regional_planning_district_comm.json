@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556036105336_C025",
+  "complainer_id": "p1074_35556036105336_K019",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 25,
+  "entity": "Richmond Regional Planning District Commission (RRPDC)",
+  "kind": "agency",
+  "role": "Regional planning agency / transit grant recipient",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "mentioned as grant recipient supporting transit improvements related to the project area, no explicit position stated",
+  "summary": "The Richmond Regional Planning District Commission (RRPDC) is mentioned in the document solely in the context of having received an Urban Mass Transportation grant to design a transit development program intended to upgrade existing bus service in the Randolph area. No explicit position for or against the Randolph Urban Renewal Project is attributed to the RRPDC; it is referenced as a supporting agency whose transit study recommendations are expected to be implemented in the mid-1970s.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The RRPDC is noted as having received an Urban Mass Transportation grant to design a transit development program that will upgrade existing bus service in the Randolph area, with recommendations expected to be implemented in the mid-1970s.",
+  "evidence_pages": [
+    "40"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The RRPDC approved the Randolph Plan at that meeting and congratulated members of the RPSB and the Randolph community for their participation in the planning effort.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "29"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "the Richmond Regional Planning District Commission has recently received an Urban Mass Transportation grant to design a transit development program that will upgrade existing service.",
+      "quote_verified": false,
+      "entity_as_written": "Richmond Regional Planning District Commission",
+      "role_as_written": "Regional planning agency / transit grant recipient"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "103"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The RRPDC approved the Randolph Plan at that meeting and congratulated members of the RPSB and the Randolph community for their participation in the planning effort.",
+      "quote_verified": true,
+      "entity_as_written": "Richmond Regional Planning District Commission (RRPDC)",
+      "role_as_written": "Regional planning body"
+    }
+  ],
+  "window_pages": [
+    19,
+    53
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 19,
+  "synthetic_no_complaint": false
+}

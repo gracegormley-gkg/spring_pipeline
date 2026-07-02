@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556039563135_C115",
+  "complainer_id": "p1074_35556039563135_K106",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 115,
+  "entity": "Ray C. Dickerson",
+  "kind": "official",
+  "role": "Director, Natural Resource Development Board / Department of Business and Economic Development, Illinois",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly states no adverse comment on the project",
+  "summary": "Ray C. Dickerson, as Chairman of the Natural Resource Development Board / Department of Business and Economic Development, Illinois, submitted a letter on May 2, 1972 stating that the Board reviewed the Environmental Impact Statements for several highway projects, including FA Route 23 (US 30) Section 22-23-12-R in Cook County, and had no adverse comment to make. His response is purely neutral, neither supporting nor opposing the project.",
+  "form": "letter",
+  "complaint_summary": "Dickerson states on behalf of the Natural Resource Development Board that it has reviewed the Environmental Impact Statements for several highway projects including FA Route 23 (US 30) Section 22-23-12-R, Cook County, and has no adverse comment.",
+  "evidence_pages": [
+    "206"
+  ],
+  "statement": {
+    "text": "The Natural Resource Development Board has reviewed the Environmental Impact Statements for the following highway projects and has no adverse comment to make thereon:\n(a) 1-55 Rest Area  Will County\n(b) FA Route 23 Section 110-1, Ogle County\n(c) FA Route 23 (US 30) Section 22-23-12-R, Cook County\nSincerely,\nRay C. Dickerson",
+    "opening_anchor": "The Natural Resource Development Board has reviewed the Environmental Impact Statements for the following highway projects and has no adverse comment to make thereon:",
+    "closing_anchor": "(c) FA Route 23 (US 30) Section 22-23-12-R, Cook County\nSincerely,\nRay C. Dickerson",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Natural Resource Development Board has reviewed the Environmental Impact Statements for the following highway projects and has no adverse comment to make thereon:",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "206"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The Natural Resource Development Board has reviewed the Environmental Impact Statements for the following highway projects and has no adverse comment to make thereon:",
+      "quote_verified": true,
+      "entity_as_written": "Ray C. Dickerson",
+      "role_as_written": "Director, Natural Resource Development Board / Department of Business and Economic Development, Illinois"
+    }
+  ],
+  "window_pages": [
+    196,
+    216
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 106,
+  "synthetic_no_complaint": false
+}

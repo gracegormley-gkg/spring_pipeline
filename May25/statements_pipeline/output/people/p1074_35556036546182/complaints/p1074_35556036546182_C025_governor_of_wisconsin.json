@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036546182_C025",
+  "complainer_id": "p1074_35556036546182_K008",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 25,
+  "entity": "Governor of Wisconsin",
+  "kind": "official",
+  "role": "State governor",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes Governor signing WEPA into law, a procedural/legislative act with no explicit project stance",
+  "summary": "The Governor of Wisconsin is mentioned solely in the context of signing Assembly Bill 875 on April 28, 1972, which enacted the Wisconsin State Environmental Policy Act (WEPA), a state environmental law similar to NEPA. This legislative action triggered the requirement for the Airport Spur project to comply with state environmental review, but the Governor expressed no direct position on the project itself.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Governor of Wisconsin signed Assembly Bill 875 on April 28, 1972, enacting WEPA and thereby requiring the Airport Spur project to comply with state environmental impact statement requirements even though it had previously been federally and state exempt by date of design approval.",
+  "evidence_pages": [
+    "28"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R001"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "On April 28, 1972, the Governor of Wisconsin signed into law Assembly Bill 875 which created within the State Statutes an environmental law similar to the National Environmental Act of 1969.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "28"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "On April 28, 1972, the Governor of Wisconsin signed into law Assembly Bill 875 which created within the State Statutes an environmental law similar to the National Environmental Act of 1969.",
+      "quote_verified": true,
+      "entity_as_written": "Governor of Wisconsin",
+      "role_as_written": "State governor"
+    }
+  ],
+  "window_pages": [
+    18,
+    38
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 8,
+  "synthetic_no_complaint": false
+}

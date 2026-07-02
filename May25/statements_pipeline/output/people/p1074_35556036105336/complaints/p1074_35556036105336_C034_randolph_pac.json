@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036105336_C034",
+  "complainer_id": "p1074_35556036105336_K031",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 34,
+  "entity": "Randolph PAC",
+  "kind": "organization",
+  "role": "Citizen participation/advisory committee for Randolph Urban Renewal project",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes PAC actively supporting and promoting the project across multiple communities",
+  "summary": "The Randolph PAC is described as an active citizen participation group that has been closely involved in planning the Randolph Urban Renewal Project and strongly supports it. The document notes that the PAC has collaborated with other PAC groups in neighboring projects and cities, and that termination of the project would damage credibility between PAC groups and the Redevelopment Authority and HUD. The PAC also established elderly housing as an early community priority, reflecting their engaged support for the plan's goals.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The document describes the Randolph PAC as actively working with other PAC groups in the Fulton Project, Washington Park Project, and in Portsmouth and Hampton, Virginia, and warns that relocating or canceling the project would cause a credibility gap between these PAC groups and the Redevelopment Authority and HUD.",
+  "evidence_pages": [
+    "57"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Randolph PAC has (and is) working with other PAC groups in the Fulton Project, Washington Park Project, and has contacted PAC groups in Portsmouth and Hampton, Virginia.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "57"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Randolph PAC has (and is) working with other PAC groups in the Fulton Project, Washington Park Project, and has contacted PAC groups in Portsmouth and Hampton, Virginia.",
+      "quote_verified": true,
+      "entity_as_written": "Randolph PAC",
+      "role_as_written": "Citizen participation/advisory committee for Randolph Urban Renewal project"
+    }
+  ],
+  "window_pages": [
+    47,
+    67
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 31,
+  "synthetic_no_complaint": false
+}

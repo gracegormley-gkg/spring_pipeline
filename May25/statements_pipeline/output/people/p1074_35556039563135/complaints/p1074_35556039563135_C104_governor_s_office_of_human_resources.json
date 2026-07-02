@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556039563135_C104",
+  "complainer_id": "p1074_35556039563135_K093",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 104,
+  "entity": "Governor's Office of Human Resources",
+  "kind": "agency",
+  "role": "Illinois state agency reviewer",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed in sectional roster of state agencies with no accompanying statement or position",
+  "summary": "The Governor's Office of Human Resources appears only in a sectional list of state agencies that received the draft environmental impact statement for review. No letter, comment, or position statement from this office is included in the document window, so no substantive stance can be attributed to them.",
+  "form": "sectional",
+  "complaint_summary": "The Governor's Office of Human Resources is listed among state agencies that reviewed the draft EIS, but no comment or position from this office appears in the document.",
+  "evidence_pages": [
+    "197"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim",
+    "low_stance_confidence"
+  ],
+  "summary_quote": "STATE AGENCIES ... Governor's Office of Human Resources",
+  "summary_quote_verified": false,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "197"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "STATE AGENCIES ... Governor's Office of Human Resources",
+      "quote_verified": false,
+      "entity_as_written": "Governor's Office of Human Resources",
+      "role_as_written": "Illinois state agency reviewer"
+    }
+  ],
+  "window_pages": [
+    187,
+    207
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 93,
+  "synthetic_no_complaint": false
+}

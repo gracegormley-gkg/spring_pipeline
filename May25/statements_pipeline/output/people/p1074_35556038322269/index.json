@@ -1,0 +1,3298 @@
+{
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "title": "Los Angeles regional core transit system improvements alternatives analysis : environmental impact statement.",
+  "n_pages": 293,
+  "n_chunks": 7,
+  "n_raw_rows": 122,
+  "n_complainers": 95,
+  "n_complaints": 115,
+  "n_responses": 7,
+  "stance_counts": {
+    "neutral": 83,
+    "in_favor": 2,
+    "conditional": 9,
+    "opposed": 1
+  },
+  "stance_confidence_counts": {
+    "high": 0,
+    "medium": 52,
+    "low": 43,
+    "unknown": 0
+  },
+  "review_counts": {
+    "needs_review": 50,
+    "auto_ok": 45,
+    "reasons": {
+      "low_stance_confidence": 43,
+      "no_complaints": 38,
+      "quote_not_verbatim": 9,
+      "private_individual": 7
+    }
+  },
+  "statement_form_counts": {
+    "letter": 0,
+    "testimony": 0,
+    "written_comment": 0,
+    "narrator_paraphrase": 68,
+    "sectional": 2,
+    "none": 45,
+    "present": 70,
+    "absent": 45
+  },
+  "response_form_counts": {
+    "agency_response": 0,
+    "preparer_reply": 0,
+    "discussion": 7,
+    "none": 0,
+    "present": 7,
+    "absent": 0
+  },
+  "elapsed_sec": 177.3,
+  "usage": {
+    "extract": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 7,
+          "input_tokens": 131840,
+          "output_tokens": 13173,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.5931
+        }
+      ],
+      "total": {
+        "calls": 7,
+        "input_tokens": 131840,
+        "output_tokens": 13173,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.5931
+      }
+    },
+    "find_statement": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 95,
+          "input_tokens": 1156950,
+          "output_tokens": 28378,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 3.8965
+        }
+      ],
+      "total": {
+        "calls": 95,
+        "input_tokens": 1156950,
+        "output_tokens": 28378,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 3.8965
+      }
+    },
+    "total": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 102,
+          "input_tokens": 1288790,
+          "output_tokens": 41551,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 4.4896
+        }
+      ],
+      "total": {
+        "calls": 102,
+        "input_tokens": 1288790,
+        "output_tokens": 41551,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 4.4896
+      }
+    }
+  },
+  "schema": {
+    "ids": {
+      "complainer_id": "<doc_id>_K<NNN> — one per merged entity",
+      "complaint_id": "<doc_id>_C<NNN> — one per complaint instance (entities can have multiple)",
+      "child_id": "<doc_id>_R<NNN> — one per agency response"
+    },
+    "stance_vocabulary": [
+      "in_favor",
+      "opposed",
+      "conditional",
+      "neutral"
+    ],
+    "stance_confidence_vocabulary": [
+      "high",
+      "medium",
+      "low"
+    ],
+    "kind_vocabulary": [
+      "individual",
+      "official",
+      "organization",
+      "agency",
+      "tribe",
+      "government",
+      "other"
+    ],
+    "statement_forms": [
+      "letter",
+      "testimony",
+      "written_comment",
+      "narrator_paraphrase",
+      "sectional",
+      "none"
+    ],
+    "response_forms": [
+      "agency_response",
+      "preparer_reply",
+      "discussion",
+      "none"
+    ],
+    "stance_source": "Decided by find_statement at the entity level — same stance applies to all complaints from the same entity. Capped to 'medium' when no contiguous statement is verified for any complaint; forced 'low' when there are no complaints.",
+    "page_numbers": "EXACT — from per-page JSON source.",
+    "statement_text": "Sliced from the doc text between verbatim opening/closing anchors. Null when either anchor doesn't verify.",
+    "response_text": "Sliced from the doc text between verbatim response anchors. Null when either anchor doesn't verify or no response is in the window.",
+    "needs_human_review": "True when kind=='individual' OR summary_quote_verified is False OR stance_confidence=='low' OR no complaints were produced.",
+    "merge_rule": "One row per entity. find_statement may then return multiple complaints per entity — each becomes its own complaint file.",
+    "cost_note": "USD costs are ESTIMATES; verify against AWS Bedrock invoice."
+  },
+  "sequence": [
+    {
+      "order": 1,
+      "complaint_id": "p1074_35556038322269_C001",
+      "complainer_id": "p1074_35556038322269_K018",
+      "complaint_file": "complaints/p1074_35556038322269_C001_secretary_of_the_united_states_departmen.json",
+      "response_ids": []
+    },
+    {
+      "order": 2,
+      "complaint_id": "p1074_35556038322269_C002",
+      "complainer_id": "p1074_35556038322269_K006",
+      "complaint_file": "complaints/p1074_35556038322269_C002_county_of_los_angeles.json",
+      "response_ids": []
+    },
+    {
+      "order": 3,
+      "complaint_id": "p1074_35556038322269_C003",
+      "complainer_id": "p1074_35556038322269_K002",
+      "complaint_file": "complaints/p1074_35556038322269_C003_california_department_of_transportation_.json",
+      "response_ids": []
+    },
+    {
+      "order": 4,
+      "complaint_id": "p1074_35556038322269_C004",
+      "complainer_id": "p1074_35556038322269_K002",
+      "complaint_file": "complaints/p1074_35556038322269_C004_california_department_of_transportation_.json",
+      "response_ids": []
+    },
+    {
+      "order": 5,
+      "complaint_id": "p1074_35556038322269_C005",
+      "complainer_id": "p1074_35556038322269_K006",
+      "complaint_file": "complaints/p1074_35556038322269_C005_county_of_los_angeles.json",
+      "response_ids": []
+    },
+    {
+      "order": 6,
+      "complaint_id": "p1074_35556038322269_C006",
+      "complainer_id": "p1074_35556038322269_K019",
+      "complaint_file": "complaints/p1074_35556038322269_C006_southern_california_association_of_gover.json",
+      "response_ids": []
+    },
+    {
+      "order": 7,
+      "complaint_id": "p1074_35556038322269_C007",
+      "complainer_id": "p1074_35556038322269_K019",
+      "complaint_file": "complaints/p1074_35556038322269_C007_southern_california_association_of_gover.json",
+      "response_ids": []
+    },
+    {
+      "order": 8,
+      "complaint_id": "p1074_35556038322269_C008",
+      "complainer_id": "p1074_35556038322269_K019",
+      "complaint_file": "complaints/p1074_35556038322269_C008_southern_california_association_of_gover.json",
+      "response_ids": []
+    },
+    {
+      "order": 9,
+      "complaint_id": "p1074_35556038322269_C009",
+      "complainer_id": "p1074_35556038322269_K019",
+      "complaint_file": "complaints/p1074_35556038322269_C009_southern_california_association_of_gover.json",
+      "response_ids": []
+    },
+    {
+      "order": 10,
+      "complaint_id": "p1074_35556038322269_C010",
+      "complainer_id": "p1074_35556038322269_K012",
+      "complaint_file": "complaints/p1074_35556038322269_C010_los_angeles_department_of_water_and_powe.json",
+      "response_ids": []
+    },
+    {
+      "order": 11,
+      "complaint_id": "p1074_35556038322269_C011",
+      "complainer_id": "p1074_35556038322269_K036",
+      "complaint_file": "complaints/p1074_35556038322269_C011_traffic_department_of_the_city_of_los_an.json",
+      "response_ids": []
+    },
+    {
+      "order": 12,
+      "complaint_id": "p1074_35556038322269_C012",
+      "complainer_id": "p1074_35556038322269_K024",
+      "complaint_file": "complaints/p1074_35556038322269_C012_california_state_legislature.json",
+      "response_ids": []
+    },
+    {
+      "order": 13,
+      "complaint_id": "p1074_35556038322269_C013",
+      "complainer_id": "p1074_35556038322269_K032",
+      "complaint_file": "complaints/p1074_35556038322269_C013_scrtd.json",
+      "response_ids": []
+    },
+    {
+      "order": 14,
+      "complaint_id": "p1074_35556038322269_C014",
+      "complainer_id": "p1074_35556038322269_K032",
+      "complaint_file": "complaints/p1074_35556038322269_C014_scrtd.json",
+      "response_ids": []
+    },
+    {
+      "order": 15,
+      "complaint_id": "p1074_35556038322269_C015",
+      "complainer_id": "p1074_35556038322269_K032",
+      "complaint_file": "complaints/p1074_35556038322269_C015_scrtd.json",
+      "response_ids": []
+    },
+    {
+      "order": 16,
+      "complaint_id": "p1074_35556038322269_C016",
+      "complainer_id": "p1074_35556038322269_K028",
+      "complaint_file": "complaints/p1074_35556038322269_C016_los_angeles_regional_transportation_stud.json",
+      "response_ids": []
+    },
+    {
+      "order": 17,
+      "complaint_id": "p1074_35556038322269_C017",
+      "complainer_id": "p1074_35556038322269_K030",
+      "complaint_file": "complaints/p1074_35556038322269_C017_rapid_transit_advisory_committee_rtac.json",
+      "response_ids": []
+    },
+    {
+      "order": 18,
+      "complaint_id": "p1074_35556038322269_C018",
+      "complainer_id": "p1074_35556038322269_K033",
+      "complaint_file": "complaints/p1074_35556038322269_C018_scrtd_board_of_directors.json",
+      "response_ids": []
+    },
+    {
+      "order": 19,
+      "complaint_id": "p1074_35556038322269_C019",
+      "complainer_id": "p1074_35556038322269_K035",
+      "complaint_file": "complaints/p1074_35556038322269_C019_technical_advisory_committee_tac.json",
+      "response_ids": []
+    },
+    {
+      "order": 20,
+      "complaint_id": "p1074_35556038322269_C020",
+      "complainer_id": "p1074_35556038322269_K025",
+      "complaint_file": "complaints/p1074_35556038322269_C020_caltrans.json",
+      "response_ids": []
+    },
+    {
+      "order": 21,
+      "complaint_id": "p1074_35556038322269_C021",
+      "complainer_id": "p1074_35556038322269_K026",
+      "complaint_file": "complaints/p1074_35556038322269_C021_community_redevelopment_agency_cra.json",
+      "response_ids": []
+    },
+    {
+      "order": 22,
+      "complaint_id": "p1074_35556038322269_C022",
+      "complainer_id": "p1074_35556038322269_K026",
+      "complaint_file": "complaints/p1074_35556038322269_C022_community_redevelopment_agency_cra.json",
+      "response_ids": []
+    },
+    {
+      "order": 23,
+      "complaint_id": "p1074_35556038322269_C023",
+      "complainer_id": "p1074_35556038322269_K038",
+      "complaint_file": "complaints/p1074_35556038322269_C023_u_s_secretary_of_transportation.json",
+      "response_ids": []
+    },
+    {
+      "order": 24,
+      "complaint_id": "p1074_35556038322269_C024",
+      "complainer_id": "p1074_35556038322269_K034",
+      "complaint_file": "complaints/p1074_35556038322269_C024_state_of_california.json",
+      "response_ids": []
+    },
+    {
+      "order": 25,
+      "complaint_id": "p1074_35556038322269_C025",
+      "complainer_id": "p1074_35556038322269_K039",
+      "complaint_file": "complaints/p1074_35556038322269_C025_united_states_government.json",
+      "response_ids": []
+    },
+    {
+      "order": 26,
+      "complaint_id": "p1074_35556038322269_C026",
+      "complainer_id": "p1074_35556038322269_K039",
+      "complaint_file": "complaints/p1074_35556038322269_C026_united_states_government.json",
+      "response_ids": []
+    },
+    {
+      "order": 27,
+      "complaint_id": "p1074_35556038322269_C027",
+      "complainer_id": "p1074_35556038322269_K037",
+      "complaint_file": "complaints/p1074_35556038322269_C027_u_s_department_of_transportation.json",
+      "response_ids": []
+    },
+    {
+      "order": 28,
+      "complaint_id": "p1074_35556038322269_C028",
+      "complainer_id": "p1074_35556038322269_K037",
+      "complaint_file": "complaints/p1074_35556038322269_C028_u_s_department_of_transportation.json",
+      "response_ids": []
+    },
+    {
+      "order": 29,
+      "complaint_id": "p1074_35556038322269_C029",
+      "complainer_id": "p1074_35556038322269_K031",
+      "complaint_file": "complaints/p1074_35556038322269_C029_scag.json",
+      "response_ids": []
+    },
+    {
+      "order": 30,
+      "complaint_id": "p1074_35556038322269_C030",
+      "complainer_id": "p1074_35556038322269_K031",
+      "complaint_file": "complaints/p1074_35556038322269_C030_scag.json",
+      "response_ids": []
+    },
+    {
+      "order": 31,
+      "complaint_id": "p1074_35556038322269_C031",
+      "complainer_id": "p1074_35556038322269_K029",
+      "complaint_file": "complaints/p1074_35556038322269_C031_president_carter.json",
+      "response_ids": []
+    },
+    {
+      "order": 32,
+      "complaint_id": "p1074_35556038322269_C032",
+      "complainer_id": "p1074_35556038322269_K025",
+      "complaint_file": "complaints/p1074_35556038322269_C032_caltrans.json",
+      "response_ids": []
+    },
+    {
+      "order": 33,
+      "complaint_id": "p1074_35556038322269_C033",
+      "complainer_id": "p1074_35556038322269_K031",
+      "complaint_file": "complaints/p1074_35556038322269_C033_scag.json",
+      "response_ids": []
+    },
+    {
+      "order": 34,
+      "complaint_id": "p1074_35556038322269_C034",
+      "complainer_id": "p1074_35556038322269_K043",
+      "complaint_file": "complaints/p1074_35556038322269_C034_larts.json",
+      "response_ids": []
+    },
+    {
+      "order": 35,
+      "complaint_id": "p1074_35556038322269_C035",
+      "complainer_id": "p1074_35556038322269_K047",
+      "complaint_file": "complaints/p1074_35556038322269_C035_scrtd_s_bus_planning_section.json",
+      "response_ids": []
+    },
+    {
+      "order": 36,
+      "complaint_id": "p1074_35556038322269_C036",
+      "complainer_id": "p1074_35556038322269_K043",
+      "complaint_file": "complaints/p1074_35556038322269_C036_larts.json",
+      "response_ids": []
+    },
+    {
+      "order": 37,
+      "complaint_id": "p1074_35556038322269_C037",
+      "complainer_id": "p1074_35556038322269_K043",
+      "complaint_file": "complaints/p1074_35556038322269_C037_larts.json",
+      "response_ids": []
+    },
+    {
+      "order": 38,
+      "complaint_id": "p1074_35556038322269_C038",
+      "complainer_id": "p1074_35556038322269_K046",
+      "complaint_file": "complaints/p1074_35556038322269_C038_scrtd_bus_planning_department.json",
+      "response_ids": []
+    },
+    {
+      "order": 39,
+      "complaint_id": "p1074_35556038322269_C039",
+      "complainer_id": "p1074_35556038322269_K042",
+      "complaint_file": "complaints/p1074_35556038322269_C039_l_a_city_traffic_department.json",
+      "response_ids": []
+    },
+    {
+      "order": 40,
+      "complaint_id": "p1074_35556038322269_C040",
+      "complainer_id": "p1074_35556038322269_K040",
+      "complaint_file": "complaints/p1074_35556038322269_C040_caltrans_chp.json",
+      "response_ids": []
+    },
+    {
+      "order": 41,
+      "complaint_id": "p1074_35556038322269_C041",
+      "complainer_id": "p1074_35556038322269_K045",
+      "complaint_file": "complaints/p1074_35556038322269_C041_los_angeles_city_traffic_department.json",
+      "response_ids": []
+    },
+    {
+      "order": 42,
+      "complaint_id": "p1074_35556038322269_C042",
+      "complainer_id": "p1074_35556038322269_K053",
+      "complaint_file": "complaints/p1074_35556038322269_C042_dr_sieh.json",
+      "response_ids": []
+    },
+    {
+      "order": 43,
+      "complaint_id": "p1074_35556038322269_C043",
+      "complainer_id": "p1074_35556038322269_K058",
+      "complaint_file": "complaints/p1074_35556038322269_C043_noaa.json",
+      "response_ids": []
+    },
+    {
+      "order": 44,
+      "complaint_id": "p1074_35556038322269_C044",
+      "complainer_id": "p1074_35556038322269_K049",
+      "complaint_file": "complaints/p1074_35556038322269_C044_california_division_of_oil_and_gas.json",
+      "response_ids": []
+    },
+    {
+      "order": 45,
+      "complaint_id": "p1074_35556038322269_C045",
+      "complainer_id": "p1074_35556038322269_K062",
+      "complaint_file": "complaints/p1074_35556038322269_C045_u_s_fish_and_wildlife_services.json",
+      "response_ids": []
+    },
+    {
+      "order": 46,
+      "complaint_id": "p1074_35556038322269_C046",
+      "complainer_id": "p1074_35556038322269_K048",
+      "complaint_file": "complaints/p1074_35556038322269_C046_california_air_resources_board.json",
+      "response_ids": []
+    },
+    {
+      "order": 47,
+      "complaint_id": "p1074_35556038322269_C047",
+      "complainer_id": "p1074_35556038322269_K048",
+      "complaint_file": "complaints/p1074_35556038322269_C047_california_air_resources_board.json",
+      "response_ids": []
+    },
+    {
+      "order": 48,
+      "complaint_id": "p1074_35556038322269_C048",
+      "complainer_id": "p1074_35556038322269_K061",
+      "complaint_file": "complaints/p1074_35556038322269_C048_u_s_environmental_protection_agency.json",
+      "response_ids": []
+    },
+    {
+      "order": 49,
+      "complaint_id": "p1074_35556038322269_C049",
+      "complainer_id": "p1074_35556038322269_K052",
+      "complaint_file": "complaints/p1074_35556038322269_C049_city_traffic_department.json",
+      "response_ids": []
+    },
+    {
+      "order": 50,
+      "complaint_id": "p1074_35556038322269_C050",
+      "complainer_id": "p1074_35556038322269_K051",
+      "complaint_file": "complaints/p1074_35556038322269_C050_city_department_of_water_and_power.json",
+      "response_ids": []
+    },
+    {
+      "order": 51,
+      "complaint_id": "p1074_35556038322269_C051",
+      "complainer_id": "p1074_35556038322269_K059",
+      "complaint_file": "complaints/p1074_35556038322269_C051_timothy_j_healy.json",
+      "response_ids": [
+        "p1074_35556038322269_R001"
+      ]
+    },
+    {
+      "order": 52,
+      "complaint_id": "p1074_35556038322269_C052",
+      "complainer_id": "p1074_35556038322269_K052",
+      "complaint_file": "complaints/p1074_35556038322269_C052_city_traffic_department.json",
+      "response_ids": []
+    },
+    {
+      "order": 53,
+      "complaint_id": "p1074_35556038322269_C053",
+      "complainer_id": "p1074_35556038322269_K056",
+      "complaint_file": "complaints/p1074_35556038322269_C053_los_angeles_city_community_analysis_bure.json",
+      "response_ids": []
+    },
+    {
+      "order": 54,
+      "complaint_id": "p1074_35556038322269_C054",
+      "complainer_id": "p1074_35556038322269_K068",
+      "complaint_file": "complaints/p1074_35556038322269_C054_los_angeles_police_department.json",
+      "response_ids": [
+        "p1074_35556038322269_R002"
+      ]
+    },
+    {
+      "order": 55,
+      "complaint_id": "p1074_35556038322269_C055",
+      "complainer_id": "p1074_35556038322269_K067",
+      "complaint_file": "complaints/p1074_35556038322269_C055_los_angeles_city_police_department.json",
+      "response_ids": []
+    },
+    {
+      "order": 56,
+      "complaint_id": "p1074_35556038322269_C056",
+      "complainer_id": "p1074_35556038322269_K067",
+      "complaint_file": "complaints/p1074_35556038322269_C056_los_angeles_city_police_department.json",
+      "response_ids": [
+        "p1074_35556038322269_R003"
+      ]
+    },
+    {
+      "order": 57,
+      "complaint_id": "p1074_35556038322269_C057",
+      "complainer_id": "p1074_35556038322269_K066",
+      "complaint_file": "complaints/p1074_35556038322269_C057_los_angeles_city_fire_department.json",
+      "response_ids": [
+        "p1074_35556038322269_R004"
+      ]
+    },
+    {
+      "order": 58,
+      "complaint_id": "p1074_35556038322269_C058",
+      "complainer_id": "p1074_35556038322269_K066",
+      "complaint_file": "complaints/p1074_35556038322269_C058_los_angeles_city_fire_department.json",
+      "response_ids": [
+        "p1074_35556038322269_R005"
+      ]
+    },
+    {
+      "order": 59,
+      "complaint_id": "p1074_35556038322269_C059",
+      "complainer_id": "p1074_35556038322269_K064",
+      "complaint_file": "complaints/p1074_35556038322269_C059_dwp.json",
+      "response_ids": []
+    },
+    {
+      "order": 60,
+      "complaint_id": "p1074_35556038322269_C060",
+      "complainer_id": "p1074_35556038322269_K063",
+      "complaint_file": "complaints/p1074_35556038322269_C060_american_public_transit_association.json",
+      "response_ids": []
+    },
+    {
+      "order": 61,
+      "complaint_id": "p1074_35556038322269_C061",
+      "complainer_id": "p1074_35556038322269_K069",
+      "complaint_file": "complaints/p1074_35556038322269_C061_umta.json",
+      "response_ids": []
+    },
+    {
+      "order": 62,
+      "complaint_id": "p1074_35556038322269_C062",
+      "complainer_id": "p1074_35556038322269_K076",
+      "complaint_file": "complaints/p1074_35556038322269_C062_federal_highway_administration.json",
+      "response_ids": []
+    },
+    {
+      "order": 63,
+      "complaint_id": "p1074_35556038322269_C063",
+      "complainer_id": "p1074_35556038322269_K079",
+      "complaint_file": "complaints/p1074_35556038322269_C063_state_department_of_transportation.json",
+      "response_ids": []
+    },
+    {
+      "order": 64,
+      "complaint_id": "p1074_35556038322269_C064",
+      "complainer_id": "p1074_35556038322269_K079",
+      "complaint_file": "complaints/p1074_35556038322269_C064_state_department_of_transportation.json",
+      "response_ids": []
+    },
+    {
+      "order": 65,
+      "complaint_id": "p1074_35556038322269_C065",
+      "complainer_id": "p1074_35556038322269_K078",
+      "complaint_file": "complaints/p1074_35556038322269_C065_southern_california_association_of_gover.json",
+      "response_ids": []
+    },
+    {
+      "order": 66,
+      "complaint_id": "p1074_35556038322269_C066",
+      "complainer_id": "p1074_35556038322269_K071",
+      "complaint_file": "complaints/p1074_35556038322269_C066_california_state_historic_preservation_o.json",
+      "response_ids": []
+    },
+    {
+      "order": 67,
+      "complaint_id": "p1074_35556038322269_C067",
+      "complainer_id": "p1074_35556038322269_K074",
+      "complaint_file": "complaints/p1074_35556038322269_C067_dr_charles_rozaire.json",
+      "response_ids": []
+    },
+    {
+      "order": 68,
+      "complaint_id": "p1074_35556038322269_C068",
+      "complainer_id": "p1074_35556038322269_K077",
+      "complaint_file": "complaints/p1074_35556038322269_C068_scrtd_s_engineering_staff.json",
+      "response_ids": [
+        "p1074_35556038322269_R006"
+      ]
+    },
+    {
+      "order": 69,
+      "complaint_id": "p1074_35556038322269_C069",
+      "complainer_id": "p1074_35556038322269_K070",
+      "complaint_file": "complaints/p1074_35556038322269_C069_archeological_resources_management_corpo.json",
+      "response_ids": []
+    },
+    {
+      "order": 70,
+      "complaint_id": "p1074_35556038322269_C070",
+      "complainer_id": "p1074_35556038322269_K081",
+      "complaint_file": "complaints/p1074_35556038322269_C070_building_industry_associates.json",
+      "response_ids": []
+    },
+    {
+      "order": 71,
+      "complaint_id": "p1074_35556038322269_C071",
+      "complainer_id": "p1074_35556038322269_K082",
+      "complaint_file": "complaints/p1074_35556038322269_C071_chambers_of_commerce.json",
+      "response_ids": []
+    },
+    {
+      "order": 72,
+      "complaint_id": "p1074_35556038322269_C072",
+      "complainer_id": "p1074_35556038322269_K085",
+      "complaint_file": "complaints/p1074_35556038322269_C072_league_of_women_voters.json",
+      "response_ids": []
+    },
+    {
+      "order": 73,
+      "complaint_id": "p1074_35556038322269_C073",
+      "complainer_id": "p1074_35556038322269_K092",
+      "complaint_file": "complaints/p1074_35556038322269_C073_scrtd_staff.json",
+      "response_ids": []
+    },
+    {
+      "order": 74,
+      "complaint_id": "p1074_35556038322269_C074",
+      "complainer_id": "p1074_35556038322269_K084",
+      "complaint_file": "complaints/p1074_35556038322269_C074_l_a_city_council_members.json",
+      "response_ids": []
+    },
+    {
+      "order": 75,
+      "complaint_id": "p1074_35556038322269_C075",
+      "complainer_id": "p1074_35556038322269_K086",
+      "complaint_file": "complaints/p1074_35556038322269_C075_los_angeles_city_boards_and_commissions.json",
+      "response_ids": []
+    },
+    {
+      "order": 76,
+      "complaint_id": "p1074_35556038322269_C076",
+      "complainer_id": "p1074_35556038322269_K083",
+      "complaint_file": "complaints/p1074_35556038322269_C076_hollywood_community_groups.json",
+      "response_ids": [
+        "p1074_35556038322269_R007"
+      ]
+    },
+    {
+      "order": 77,
+      "complaint_id": "p1074_35556038322269_C077",
+      "complainer_id": "p1074_35556038322269_K094",
+      "complaint_file": "complaints/p1074_35556038322269_C077_state_cultural_heritage_preservation_off.json",
+      "response_ids": []
+    },
+    {
+      "order": 78,
+      "complaint_id": "p1074_35556038322269_C078",
+      "complainer_id": "p1074_35556038322269_K001",
+      "complaint_file": "complaints/p1074_35556038322269_C078_byron_cook.json",
+      "response_ids": []
+    },
+    {
+      "order": 79,
+      "complaint_id": "p1074_35556038322269_C079",
+      "complainer_id": "p1074_35556038322269_K003",
+      "complaint_file": "complaints/p1074_35556038322269_C079_city_of_los_angeles.json",
+      "response_ids": []
+    },
+    {
+      "order": 80,
+      "complaint_id": "p1074_35556038322269_C080",
+      "complainer_id": "p1074_35556038322269_K004",
+      "complaint_file": "complaints/p1074_35556038322269_C080_councilman_john_ferraro.json",
+      "response_ids": []
+    },
+    {
+      "order": 81,
+      "complaint_id": "p1074_35556038322269_C081",
+      "complainer_id": "p1074_35556038322269_K005",
+      "complaint_file": "complaints/p1074_35556038322269_C081_councilwoman_pat_russell.json",
+      "response_ids": []
+    },
+    {
+      "order": 82,
+      "complaint_id": "p1074_35556038322269_C082",
+      "complainer_id": "p1074_35556038322269_K007",
+      "complaint_file": "complaints/p1074_35556038322269_C082_dee_jacobs.json",
+      "response_ids": []
+    },
+    {
+      "order": 83,
+      "complaint_id": "p1074_35556038322269_C083",
+      "complainer_id": "p1074_35556038322269_K008",
+      "complaint_file": "complaints/p1074_35556038322269_C083_deputy_mayor_ray_remy.json",
+      "response_ids": []
+    },
+    {
+      "order": 84,
+      "complaint_id": "p1074_35556038322269_C084",
+      "complainer_id": "p1074_35556038322269_K009",
+      "complaint_file": "complaints/p1074_35556038322269_C084_gerald_leonard.json",
+      "response_ids": []
+    },
+    {
+      "order": 85,
+      "complaint_id": "p1074_35556038322269_C085",
+      "complainer_id": "p1074_35556038322269_K010",
+      "complaint_file": "complaints/p1074_35556038322269_C085_jerome_premo.json",
+      "response_ids": []
+    },
+    {
+      "order": 86,
+      "complaint_id": "p1074_35556038322269_C086",
+      "complainer_id": "p1074_35556038322269_K011",
+      "complaint_file": "complaints/p1074_35556038322269_C086_los_angeles_county_transportation_commis.json",
+      "response_ids": []
+    },
+    {
+      "order": 87,
+      "complaint_id": "p1074_35556038322269_C087",
+      "complainer_id": "p1074_35556038322269_K013",
+      "complaint_file": "complaints/p1074_35556038322269_C087_mark_pisano.json",
+      "response_ids": []
+    },
+    {
+      "order": 88,
+      "complaint_id": "p1074_35556038322269_C088",
+      "complainer_id": "p1074_35556038322269_K014",
+      "complaint_file": "complaints/p1074_35556038322269_C088_marvin_holen.json",
+      "response_ids": []
+    },
+    {
+      "order": 89,
+      "complaint_id": "p1074_35556038322269_C089",
+      "complainer_id": "p1074_35556038322269_K015",
+      "complaint_file": "complaints/p1074_35556038322269_C089_mayor_tom_bradley.json",
+      "response_ids": []
+    },
+    {
+      "order": 90,
+      "complaint_id": "p1074_35556038322269_C090",
+      "complainer_id": "p1074_35556038322269_K016",
+      "complaint_file": "complaints/p1074_35556038322269_C090_o_l_homme.json",
+      "response_ids": []
+    },
+    {
+      "order": 91,
+      "complaint_id": "p1074_35556038322269_C091",
+      "complainer_id": "p1074_35556038322269_K017",
+      "complaint_file": "complaints/p1074_35556038322269_C091_robert_datel.json",
+      "response_ids": []
+    },
+    {
+      "order": 92,
+      "complaint_id": "p1074_35556038322269_C092",
+      "complainer_id": "p1074_35556038322269_K020",
+      "complaint_file": "complaints/p1074_35556038322269_C092_southern_california_rapid_transit_distri.json",
+      "response_ids": []
+    },
+    {
+      "order": 93,
+      "complaint_id": "p1074_35556038322269_C093",
+      "complainer_id": "p1074_35556038322269_K021",
+      "complaint_file": "complaints/p1074_35556038322269_C093_thomas_neusom.json",
+      "response_ids": []
+    },
+    {
+      "order": 94,
+      "complaint_id": "p1074_35556038322269_C094",
+      "complainer_id": "p1074_35556038322269_K022",
+      "complaint_file": "complaints/p1074_35556038322269_C094_urban_mass_transportation_administration.json",
+      "response_ids": []
+    },
+    {
+      "order": 95,
+      "complaint_id": "p1074_35556038322269_C095",
+      "complainer_id": "p1074_35556038322269_K023",
+      "complaint_file": "complaints/p1074_35556038322269_C095_w_e_schaefer.json",
+      "response_ids": []
+    },
+    {
+      "order": 96,
+      "complaint_id": "p1074_35556038322269_C096",
+      "complainer_id": "p1074_35556038322269_K027",
+      "complaint_file": "complaints/p1074_35556038322269_C096_los_angeles_metropolitan_transit_authori.json",
+      "response_ids": []
+    },
+    {
+      "order": 97,
+      "complaint_id": "p1074_35556038322269_C097",
+      "complainer_id": "p1074_35556038322269_K041",
+      "complaint_file": "complaints/p1074_35556038322269_C097_hoey_w_f.json",
+      "response_ids": []
+    },
+    {
+      "order": 98,
+      "complaint_id": "p1074_35556038322269_C098",
+      "complainer_id": "p1074_35556038322269_K044",
+      "complaint_file": "complaints/p1074_35556038322269_C098_levinson_h_s.json",
+      "response_ids": []
+    },
+    {
+      "order": 99,
+      "complaint_id": "p1074_35556038322269_C099",
+      "complainer_id": "p1074_35556038322269_K050",
+      "complaint_file": "complaints/p1074_35556038322269_C099_california_native_plant_society.json",
+      "response_ids": []
+    },
+    {
+      "order": 100,
+      "complaint_id": "p1074_35556038322269_C100",
+      "complainer_id": "p1074_35556038322269_K054",
+      "complaint_file": "complaints/p1074_35556038322269_C100_jeffrey_druyun.json",
+      "response_ids": []
+    },
+    {
+      "order": 101,
+      "complaint_id": "p1074_35556038322269_C101",
+      "complainer_id": "p1074_35556038322269_K055",
+      "complaint_file": "complaints/p1074_35556038322269_C101_jet_propulsion_laboratory.json",
+      "response_ids": []
+    },
+    {
+      "order": 102,
+      "complaint_id": "p1074_35556038322269_C102",
+      "complainer_id": "p1074_35556038322269_K057",
+      "complaint_file": "complaints/p1074_35556038322269_C102_los_angeles_city_planning_department.json",
+      "response_ids": []
+    },
+    {
+      "order": 103,
+      "complaint_id": "p1074_35556038322269_C103",
+      "complainer_id": "p1074_35556038322269_K060",
+      "complaint_file": "complaints/p1074_35556038322269_C103_u_s_census_bureau.json",
+      "response_ids": []
+    },
+    {
+      "order": 104,
+      "complaint_id": "p1074_35556038322269_C104",
+      "complainer_id": "p1074_35556038322269_K065",
+      "complaint_file": "complaints/p1074_35556038322269_C104_l_a_city_planning_department.json",
+      "response_ids": []
+    },
+    {
+      "order": 105,
+      "complaint_id": "p1074_35556038322269_C105",
+      "complainer_id": "p1074_35556038322269_K072",
+      "complaint_file": "complaints/p1074_35556038322269_C105_city_planning_department.json",
+      "response_ids": []
+    },
+    {
+      "order": 106,
+      "complaint_id": "p1074_35556038322269_C106",
+      "complainer_id": "p1074_35556038322269_K073",
+      "complaint_file": "complaints/p1074_35556038322269_C106_dr_c_w_meighan.json",
+      "response_ids": []
+    },
+    {
+      "order": 107,
+      "complaint_id": "p1074_35556038322269_C107",
+      "complainer_id": "p1074_35556038322269_K075",
+      "complaint_file": "complaints/p1074_35556038322269_C107_dr_robert_f_heizer.json",
+      "response_ids": []
+    },
+    {
+      "order": 108,
+      "complaint_id": "p1074_35556038322269_C108",
+      "complainer_id": "p1074_35556038322269_K080",
+      "complaint_file": "complaints/p1074_35556038322269_C108_state_historical_preservation_office.json",
+      "response_ids": []
+    },
+    {
+      "order": 109,
+      "complaint_id": "p1074_35556038322269_C109",
+      "complainer_id": "p1074_35556038322269_K087",
+      "complaint_file": "complaints/p1074_35556038322269_C109_los_angeles_city_planning_staff.json",
+      "response_ids": []
+    },
+    {
+      "order": 110,
+      "complaint_id": "p1074_35556038322269_C110",
+      "complainer_id": "p1074_35556038322269_K088",
+      "complaint_file": "complaints/p1074_35556038322269_C110_los_angeles_community_redevelopment_agen.json",
+      "response_ids": []
+    },
+    {
+      "order": 111,
+      "complaint_id": "p1074_35556038322269_C111",
+      "complainer_id": "p1074_35556038322269_K089",
+      "complaint_file": "complaints/p1074_35556038322269_C111_los_angeles_county_employees_association.json",
+      "response_ids": []
+    },
+    {
+      "order": 112,
+      "complaint_id": "p1074_35556038322269_C112",
+      "complainer_id": "p1074_35556038322269_K090",
+      "complaint_file": "complaints/p1074_35556038322269_C112_los_angeles_county_organization_for_econ.json",
+      "response_ids": []
+    },
+    {
+      "order": 113,
+      "complaint_id": "p1074_35556038322269_C113",
+      "complainer_id": "p1074_35556038322269_K091",
+      "complaint_file": "complaints/p1074_35556038322269_C113_los_angeles_naacp.json",
+      "response_ids": []
+    },
+    {
+      "order": 114,
+      "complaint_id": "p1074_35556038322269_C114",
+      "complainer_id": "p1074_35556038322269_K093",
+      "complaint_file": "complaints/p1074_35556038322269_C114_sierra_club.json",
+      "response_ids": []
+    },
+    {
+      "order": 115,
+      "complaint_id": "p1074_35556038322269_C115",
+      "complainer_id": "p1074_35556038322269_K095",
+      "complaint_file": "complaints/p1074_35556038322269_C115_urban_league.json",
+      "response_ids": []
+    }
+  ],
+  "complaints": [
+    {
+      "complaint_id": "p1074_35556038322269_C001",
+      "complainer_id": "p1074_35556038322269_K018",
+      "file": "complaints/p1074_35556038322269_C001_secretary_of_the_united_states_departmen.json",
+      "order": 1,
+      "entity": "Secretary of the United States Department of Transportation",
+      "kind": "official",
+      "role": "Federal cabinet official",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C002",
+      "complainer_id": "p1074_35556038322269_K006",
+      "file": "complaints/p1074_35556038322269_C002_county_of_los_angeles.json",
+      "order": 2,
+      "entity": "County of Los Angeles",
+      "kind": "government",
+      "role": "Local government; IACC participant",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "11"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C003",
+      "complainer_id": "p1074_35556038322269_K002",
+      "file": "complaints/p1074_35556038322269_C003_california_department_of_transportation_.json",
+      "order": 3,
+      "entity": "California Department of Transportation (CalTrans)",
+      "kind": "agency",
+      "role": "State transportation agency; study funder and IACC participant",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "17"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C004",
+      "complainer_id": "p1074_35556038322269_K002",
+      "file": "complaints/p1074_35556038322269_C004_california_department_of_transportation_.json",
+      "order": 4,
+      "entity": "California Department of Transportation (CalTrans)",
+      "kind": "agency",
+      "role": "State transportation agency; study funder and IACC participant",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "17"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C005",
+      "complainer_id": "p1074_35556038322269_K006",
+      "file": "complaints/p1074_35556038322269_C005_county_of_los_angeles.json",
+      "order": 5,
+      "entity": "County of Los Angeles",
+      "kind": "government",
+      "role": "Local government; IACC participant",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "21"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C006",
+      "complainer_id": "p1074_35556038322269_K019",
+      "file": "complaints/p1074_35556038322269_C006_southern_california_association_of_gover.json",
+      "order": 6,
+      "entity": "Southern California Association of Governments (SCAG)",
+      "kind": "organization",
+      "role": "Regional planning organization providing socio-economic and land use projections",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "21"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C007",
+      "complainer_id": "p1074_35556038322269_K019",
+      "file": "complaints/p1074_35556038322269_C007_southern_california_association_of_gover.json",
+      "order": 7,
+      "entity": "Southern California Association of Governments (SCAG)",
+      "kind": "organization",
+      "role": "Regional planning organization providing socio-economic and land use projections",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "21"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C008",
+      "complainer_id": "p1074_35556038322269_K019",
+      "file": "complaints/p1074_35556038322269_C008_southern_california_association_of_gover.json",
+      "order": 8,
+      "entity": "Southern California Association of Governments (SCAG)",
+      "kind": "organization",
+      "role": "Regional planning organization providing socio-economic and land use projections",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "21"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C009",
+      "complainer_id": "p1074_35556038322269_K019",
+      "file": "complaints/p1074_35556038322269_C009_southern_california_association_of_gover.json",
+      "order": 9,
+      "entity": "Southern California Association of Governments (SCAG)",
+      "kind": "organization",
+      "role": "Regional planning organization providing socio-economic and land use projections",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "21"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C010",
+      "complainer_id": "p1074_35556038322269_K012",
+      "file": "complaints/p1074_35556038322269_C010_los_angeles_department_of_water_and_powe.json",
+      "order": 10,
+      "entity": "Los Angeles Department of Water and Power",
+      "kind": "agency",
+      "role": "municipal utility, commenter on electric power impacts",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "30"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C011",
+      "complainer_id": "p1074_35556038322269_K036",
+      "file": "complaints/p1074_35556038322269_C011_traffic_department_of_the_city_of_los_an.json",
+      "order": 11,
+      "entity": "Traffic Department of the City of Los Angeles",
+      "kind": "agency",
+      "role": "City traffic management agency",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "60"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C012",
+      "complainer_id": "p1074_35556038322269_K024",
+      "file": "complaints/p1074_35556038322269_C012_california_state_legislature.json",
+      "order": 12,
+      "entity": "California State Legislature",
+      "kind": "government",
+      "role": "State legislative body",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "67"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C013",
+      "complainer_id": "p1074_35556038322269_K032",
+      "file": "complaints/p1074_35556038322269_C013_scrtd.json",
+      "order": 13,
+      "entity": "SCRTD",
+      "kind": "agency",
+      "role": "Transit agency providing transit system data input for alternatives",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "67"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C014",
+      "complainer_id": "p1074_35556038322269_K032",
+      "file": "complaints/p1074_35556038322269_C014_scrtd.json",
+      "order": 14,
+      "entity": "SCRTD",
+      "kind": "agency",
+      "role": "Transit agency providing transit system data input for alternatives",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "67"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C015",
+      "complainer_id": "p1074_35556038322269_K032",
+      "file": "complaints/p1074_35556038322269_C015_scrtd.json",
+      "order": 15,
+      "entity": "SCRTD",
+      "kind": "agency",
+      "role": "Transit agency providing transit system data input for alternatives",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "67"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C016",
+      "complainer_id": "p1074_35556038322269_K028",
+      "file": "complaints/p1074_35556038322269_C016_los_angeles_regional_transportation_stud.json",
+      "order": 16,
+      "entity": "Los Angeles Regional Transportation Study (LARTS)",
+      "kind": "organization",
+      "role": "Branch of CalTrans conducting travel pattern analyses",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "68"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C017",
+      "complainer_id": "p1074_35556038322269_K030",
+      "file": "complaints/p1074_35556038322269_C017_rapid_transit_advisory_committee_rtac.json",
+      "order": 17,
+      "entity": "Rapid Transit Advisory Committee (RTAC)",
+      "kind": "organization",
+      "role": "Advisory committee guiding transit planning",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "68"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C018",
+      "complainer_id": "p1074_35556038322269_K033",
+      "file": "complaints/p1074_35556038322269_C018_scrtd_board_of_directors.json",
+      "order": 18,
+      "entity": "SCRTD Board of Directors",
+      "kind": "agency",
+      "role": "Governing board of SCRTD",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "68"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C019",
+      "complainer_id": "p1074_35556038322269_K035",
+      "file": "complaints/p1074_35556038322269_C019_technical_advisory_committee_tac.json",
+      "order": 19,
+      "entity": "Technical Advisory Committee (TAC)",
+      "kind": "organization",
+      "role": "Advisory committee for transit planning",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "68"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C020",
+      "complainer_id": "p1074_35556038322269_K025",
+      "file": "complaints/p1074_35556038322269_C020_caltrans.json",
+      "order": 20,
+      "entity": "CalTrans",
+      "kind": "agency",
+      "role": "State transportation agency providing highway system information and modifying line speed data",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "69"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C021",
+      "complainer_id": "p1074_35556038322269_K026",
+      "file": "complaints/p1074_35556038322269_C021_community_redevelopment_agency_cra.json",
+      "order": 21,
+      "entity": "Community Redevelopment Agency (CRA)",
+      "kind": "agency",
+      "role": "Agency that made patronage estimates for the Downtown People Mover",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "70"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C022",
+      "complainer_id": "p1074_35556038322269_K026",
+      "file": "complaints/p1074_35556038322269_C022_community_redevelopment_agency_cra.json",
+      "order": 22,
+      "entity": "Community Redevelopment Agency (CRA)",
+      "kind": "agency",
+      "role": "Agency that made patronage estimates for the Downtown People Mover",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "70"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C023",
+      "complainer_id": "p1074_35556038322269_K038",
+      "file": "complaints/p1074_35556038322269_C023_u_s_secretary_of_transportation.json",
+      "order": 23,
+      "entity": "U.S. Secretary of Transportation",
+      "kind": "official",
+      "role": "U.S. Secretary of Transportation",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "70"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C024",
+      "complainer_id": "p1074_35556038322269_K034",
+      "file": "complaints/p1074_35556038322269_C024_state_of_california.json",
+      "order": 24,
+      "entity": "State of California",
+      "kind": "government",
+      "role": "State government",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "71"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C025",
+      "complainer_id": "p1074_35556038322269_K039",
+      "file": "complaints/p1074_35556038322269_C025_united_states_government.json",
+      "order": 25,
+      "entity": "United States Government",
+      "kind": "government",
+      "role": "Federal government",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "71"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C026",
+      "complainer_id": "p1074_35556038322269_K039",
+      "file": "complaints/p1074_35556038322269_C026_united_states_government.json",
+      "order": 26,
+      "entity": "United States Government",
+      "kind": "government",
+      "role": "Federal government",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "71"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C027",
+      "complainer_id": "p1074_35556038322269_K037",
+      "file": "complaints/p1074_35556038322269_C027_u_s_department_of_transportation.json",
+      "order": 27,
+      "entity": "U.S. Department of Transportation",
+      "kind": "agency",
+      "role": "Federal transportation department",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "72"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C028",
+      "complainer_id": "p1074_35556038322269_K037",
+      "file": "complaints/p1074_35556038322269_C028_u_s_department_of_transportation.json",
+      "order": 28,
+      "entity": "U.S. Department of Transportation",
+      "kind": "agency",
+      "role": "Federal transportation department",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "72"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C029",
+      "complainer_id": "p1074_35556038322269_K031",
+      "file": "complaints/p1074_35556038322269_C029_scag.json",
+      "order": 29,
+      "entity": "SCAG",
+      "kind": "organization",
+      "role": "Regional planning organization that adopted a 6% mode split target for transit in 1990",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "73"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C030",
+      "complainer_id": "p1074_35556038322269_K031",
+      "file": "complaints/p1074_35556038322269_C030_scag.json",
+      "order": 30,
+      "entity": "SCAG",
+      "kind": "organization",
+      "role": "Regional planning organization that adopted a 6% mode split target for transit in 1990",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "73"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C031",
+      "complainer_id": "p1074_35556038322269_K029",
+      "file": "complaints/p1074_35556038322269_C031_president_carter.json",
+      "order": 31,
+      "entity": "President Carter",
+      "kind": "official",
+      "role": "U.S. President",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "74"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C032",
+      "complainer_id": "p1074_35556038322269_K025",
+      "file": "complaints/p1074_35556038322269_C032_caltrans.json",
+      "order": 32,
+      "entity": "CalTrans",
+      "kind": "agency",
+      "role": "State transportation agency providing highway system information and modifying line speed data",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "103"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C033",
+      "complainer_id": "p1074_35556038322269_K031",
+      "file": "complaints/p1074_35556038322269_C033_scag.json",
+      "order": 33,
+      "entity": "SCAG",
+      "kind": "organization",
+      "role": "Regional planning organization that adopted a 6% mode split target for transit in 1990",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "103"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C034",
+      "complainer_id": "p1074_35556038322269_K043",
+      "file": "complaints/p1074_35556038322269_C034_larts.json",
+      "order": 34,
+      "entity": "LARTS",
+      "kind": "agency",
+      "role": "Branch of CalTrans responsible for patronage projections using UMTA/UTPS models",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "103"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C035",
+      "complainer_id": "p1074_35556038322269_K047",
+      "file": "complaints/p1074_35556038322269_C035_scrtd_s_bus_planning_section.json",
+      "order": 35,
+      "entity": "SCRTD's Bus Planning Section",
+      "kind": "agency",
+      "role": "Section with West Los Angeles bus route/headway recommendations under consideration",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "107"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C036",
+      "complainer_id": "p1074_35556038322269_K043",
+      "file": "complaints/p1074_35556038322269_C036_larts.json",
+      "order": 36,
+      "entity": "LARTS",
+      "kind": "agency",
+      "role": "Branch of CalTrans responsible for patronage projections using UMTA/UTPS models",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "108"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C037",
+      "complainer_id": "p1074_35556038322269_K043",
+      "file": "complaints/p1074_35556038322269_C037_larts.json",
+      "order": 37,
+      "entity": "LARTS",
+      "kind": "agency",
+      "role": "Branch of CalTrans responsible for patronage projections using UMTA/UTPS models",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "109"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C038",
+      "complainer_id": "p1074_35556038322269_K046",
+      "file": "complaints/p1074_35556038322269_C038_scrtd_bus_planning_department.json",
+      "order": 38,
+      "entity": "SCRTD Bus Planning Department",
+      "kind": "agency",
+      "role": "Department coordinating interface between DPM and downtown L.A. bus system",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "110"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C039",
+      "complainer_id": "p1074_35556038322269_K042",
+      "file": "complaints/p1074_35556038322269_C039_l_a_city_traffic_department.json",
+      "order": 39,
+      "entity": "L.A. City Traffic Department",
+      "kind": "agency",
+      "role": "Agency estimating operational speeds for express buses in Alternative VII",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "113"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C040",
+      "complainer_id": "p1074_35556038322269_K040",
+      "file": "complaints/p1074_35556038322269_C040_caltrans_chp.json",
+      "order": 40,
+      "entity": "CalTrans/CHP",
+      "kind": "agency",
+      "role": "Agency whose safety requirements limit load factor for freeway buses mixed with carpools",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "121"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C041",
+      "complainer_id": "p1074_35556038322269_K045",
+      "file": "complaints/p1074_35556038322269_C041_los_angeles_city_traffic_department.json",
+      "order": 41,
+      "entity": "Los Angeles City Traffic Department",
+      "kind": "agency",
+      "role": "Agency conducting traffic forecasting and congestion analysis for the alternatives",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "128",
+        "129"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C042",
+      "complainer_id": "p1074_35556038322269_K053",
+      "file": "complaints/p1074_35556038322269_C042_dr_sieh.json",
+      "order": 42,
+      "entity": "Dr. Sieh",
+      "kind": "individual",
+      "role": "researcher/scientist (paleoseismologist)",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "145"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C043",
+      "complainer_id": "p1074_35556038322269_K058",
+      "file": "complaints/p1074_35556038322269_C043_noaa.json",
+      "order": 43,
+      "entity": "NOAA",
+      "kind": "agency",
+      "role": "source of seismic intensity estimates",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "146"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C044",
+      "complainer_id": "p1074_35556038322269_K049",
+      "file": "complaints/p1074_35556038322269_C044_california_division_of_oil_and_gas.json",
+      "order": 44,
+      "entity": "California Division of Oil and Gas",
+      "kind": "agency",
+      "role": "source of oil field data",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "148"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C045",
+      "complainer_id": "p1074_35556038322269_K062",
+      "file": "complaints/p1074_35556038322269_C045_u_s_fish_and_wildlife_services.json",
+      "order": 45,
+      "entity": "U.S. Fish and Wildlife Services",
+      "kind": "agency",
+      "role": "source of rare and endangered animal species list",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "148"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C046",
+      "complainer_id": "p1074_35556038322269_K048",
+      "file": "complaints/p1074_35556038322269_C046_california_air_resources_board.json",
+      "order": 46,
+      "entity": "California Air Resources Board",
+      "kind": "agency",
+      "role": "source of emission factors; determiner of SO2 standard violations",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "157"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C047",
+      "complainer_id": "p1074_35556038322269_K048",
+      "file": "complaints/p1074_35556038322269_C047_california_air_resources_board.json",
+      "order": 47,
+      "entity": "California Air Resources Board",
+      "kind": "agency",
+      "role": "source of emission factors; determiner of SO2 standard violations",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "157"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C048",
+      "complainer_id": "p1074_35556038322269_K061",
+      "file": "complaints/p1074_35556038322269_C048_u_s_environmental_protection_agency.json",
+      "order": 48,
+      "entity": "U.S. Environmental Protection Agency",
+      "kind": "agency",
+      "role": "source of emission factors",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "157"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C049",
+      "complainer_id": "p1074_35556038322269_K052",
+      "file": "complaints/p1074_35556038322269_C049_city_traffic_department.json",
+      "order": 49,
+      "entity": "City Traffic Department",
+      "kind": "agency",
+      "role": "provider of traffic volume data for CO analysis",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "159"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C050",
+      "complainer_id": "p1074_35556038322269_K051",
+      "file": "complaints/p1074_35556038322269_C050_city_department_of_water_and_power.json",
+      "order": 50,
+      "entity": "City Department of Water and Power",
+      "kind": "agency",
+      "role": "advisor on electric power supply for rail transit",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "165"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C051",
+      "complainer_id": "p1074_35556038322269_K059",
+      "file": "complaints/p1074_35556038322269_C051_timothy_j_healy.json",
+      "order": 51,
+      "entity": "Timothy J. Healy",
+      "kind": "individual",
+      "role": "researcher/author of BART energy study for Caltrans",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "165"
+      ],
+      "response_ids": [
+        "p1074_35556038322269_R001"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C052",
+      "complainer_id": "p1074_35556038322269_K052",
+      "file": "complaints/p1074_35556038322269_C052_city_traffic_department.json",
+      "order": 52,
+      "entity": "City Traffic Department",
+      "kind": "agency",
+      "role": "provider of traffic volume data for CO analysis",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "166"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C053",
+      "complainer_id": "p1074_35556038322269_K056",
+      "file": "complaints/p1074_35556038322269_C053_los_angeles_city_community_analysis_bure.json",
+      "order": 53,
+      "entity": "Los Angeles City Community Analysis Bureau",
+      "kind": "agency",
+      "role": "source of median family income data",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "179"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C054",
+      "complainer_id": "p1074_35556038322269_K068",
+      "file": "complaints/p1074_35556038322269_C054_los_angeles_police_department.json",
+      "order": 54,
+      "entity": "Los Angeles Police Department",
+      "kind": "agency",
+      "role": "municipal police department, commenter on crime impacts",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "194"
+      ],
+      "response_ids": [
+        "p1074_35556038322269_R002"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C055",
+      "complainer_id": "p1074_35556038322269_K067",
+      "file": "complaints/p1074_35556038322269_C055_los_angeles_city_police_department.json",
+      "order": 55,
+      "entity": "Los Angeles City Police Department",
+      "kind": "agency",
+      "role": "municipal police department, commenter on security staffing needs",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "195"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C056",
+      "complainer_id": "p1074_35556038322269_K067",
+      "file": "complaints/p1074_35556038322269_C056_los_angeles_city_police_department.json",
+      "order": 56,
+      "entity": "Los Angeles City Police Department",
+      "kind": "agency",
+      "role": "municipal police department, commenter on security staffing needs",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "195"
+      ],
+      "response_ids": [
+        "p1074_35556038322269_R003"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C057",
+      "complainer_id": "p1074_35556038322269_K066",
+      "file": "complaints/p1074_35556038322269_C057_los_angeles_city_fire_department.json",
+      "order": 57,
+      "entity": "Los Angeles City Fire Department",
+      "kind": "agency",
+      "role": "municipal fire department, commenter on fire protection impacts",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "196"
+      ],
+      "response_ids": [
+        "p1074_35556038322269_R004"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C058",
+      "complainer_id": "p1074_35556038322269_K066",
+      "file": "complaints/p1074_35556038322269_C058_los_angeles_city_fire_department.json",
+      "order": 58,
+      "entity": "Los Angeles City Fire Department",
+      "kind": "agency",
+      "role": "municipal fire department, commenter on fire protection impacts",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "196"
+      ],
+      "response_ids": [
+        "p1074_35556038322269_R005"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C059",
+      "complainer_id": "p1074_35556038322269_K064",
+      "file": "complaints/p1074_35556038322269_C059_dwp.json",
+      "order": 59,
+      "entity": "DWP",
+      "kind": "agency",
+      "role": "Los Angeles Department of Water and Power, commenter on power requirements",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "203"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C060",
+      "complainer_id": "p1074_35556038322269_K063",
+      "file": "complaints/p1074_35556038322269_C060_american_public_transit_association.json",
+      "order": 60,
+      "entity": "American Public Transit Association",
+      "kind": "organization",
+      "role": "industry association, participant in safety criteria development",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "206"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C061",
+      "complainer_id": "p1074_35556038322269_K069",
+      "file": "complaints/p1074_35556038322269_C061_umta.json",
+      "order": 61,
+      "entity": "UMTA",
+      "kind": "agency",
+      "role": "Urban Mass Transportation Administration, participant in safety criteria development",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "206"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C062",
+      "complainer_id": "p1074_35556038322269_K076",
+      "file": "complaints/p1074_35556038322269_C062_federal_highway_administration.json",
+      "order": 62,
+      "entity": "Federal Highway Administration",
+      "kind": "agency",
+      "role": "Federal highway and transportation funding source",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "242"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C063",
+      "complainer_id": "p1074_35556038322269_K079",
+      "file": "complaints/p1074_35556038322269_C063_state_department_of_transportation.json",
+      "order": 63,
+      "entity": "State Department of Transportation",
+      "kind": "agency",
+      "role": "California state transportation agency",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "243"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C064",
+      "complainer_id": "p1074_35556038322269_K079",
+      "file": "complaints/p1074_35556038322269_C064_state_department_of_transportation.json",
+      "order": 64,
+      "entity": "State Department of Transportation",
+      "kind": "agency",
+      "role": "California state transportation agency",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "243"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C065",
+      "complainer_id": "p1074_35556038322269_K078",
+      "file": "complaints/p1074_35556038322269_C065_southern_california_association_of_gover.json",
+      "order": 65,
+      "entity": "Southern California Association of Government",
+      "kind": "organization",
+      "role": "Regional planning organization, author of RTDP report",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "248"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C066",
+      "complainer_id": "p1074_35556038322269_K071",
+      "file": "complaints/p1074_35556038322269_C066_california_state_historic_preservation_o.json",
+      "order": 66,
+      "entity": "California State Historic Preservation Office",
+      "kind": "agency",
+      "role": "State historic preservation authority",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "255"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C067",
+      "complainer_id": "p1074_35556038322269_K074",
+      "file": "complaints/p1074_35556038322269_C067_dr_charles_rozaire.json",
+      "order": 67,
+      "entity": "Dr. Charles Rozaire",
+      "kind": "individual",
+      "role": "Los Angeles County Museum of Natural History archaeologist",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "256"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C068",
+      "complainer_id": "p1074_35556038322269_K077",
+      "file": "complaints/p1074_35556038322269_C068_scrtd_s_engineering_staff.json",
+      "order": 68,
+      "entity": "SCRTD's engineering staff",
+      "kind": "agency",
+      "role": "Engineering staff of Southern California Rapid Transit District",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "263"
+      ],
+      "response_ids": [
+        "p1074_35556038322269_R006"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C069",
+      "complainer_id": "p1074_35556038322269_K070",
+      "file": "complaints/p1074_35556038322269_C069_archeological_resources_management_corpo.json",
+      "order": 69,
+      "entity": "Archeological Resources Management Corporation",
+      "kind": "organization",
+      "role": "Consultant that prepared paleontological resources report",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "264"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C070",
+      "complainer_id": "p1074_35556038322269_K081",
+      "file": "complaints/p1074_35556038322269_C070_building_industry_associates.json",
+      "order": 70,
+      "entity": "Building Industry Associates",
+      "kind": "organization",
+      "role": "Regional organization participating in Community Participation Program",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "291"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C071",
+      "complainer_id": "p1074_35556038322269_K082",
+      "file": "complaints/p1074_35556038322269_C071_chambers_of_commerce.json",
+      "order": 71,
+      "entity": "Chambers of Commerce",
+      "kind": "organization",
+      "role": "Business organizations in the Regional Core",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "291"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C072",
+      "complainer_id": "p1074_35556038322269_K085",
+      "file": "complaints/p1074_35556038322269_C072_league_of_women_voters.json",
+      "order": 72,
+      "entity": "League of Women Voters",
+      "kind": "organization",
+      "role": "Regional organization participating in Community Participation Program",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "291"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C073",
+      "complainer_id": "p1074_35556038322269_K092",
+      "file": "complaints/p1074_35556038322269_C073_scrtd_staff.json",
+      "order": 73,
+      "entity": "SCRTD staff",
+      "kind": "agency",
+      "role": "Transit district staff assisting with community meetings",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "291"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C074",
+      "complainer_id": "p1074_35556038322269_K084",
+      "file": "complaints/p1074_35556038322269_C074_l_a_city_council_members.json",
+      "order": 74,
+      "entity": "L. A. City Council members",
+      "kind": "official",
+      "role": "Elected officials representing Regional Core districts",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "292"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C075",
+      "complainer_id": "p1074_35556038322269_K086",
+      "file": "complaints/p1074_35556038322269_C075_los_angeles_city_boards_and_commissions.json",
+      "order": 75,
+      "entity": "Los Angeles City Boards and Commissions",
+      "kind": "agency",
+      "role": "City boards and commissions briefed on the project",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "292"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C076",
+      "complainer_id": "p1074_35556038322269_K083",
+      "file": "complaints/p1074_35556038322269_C076_hollywood_community_groups.json",
+      "order": 76,
+      "entity": "Hollywood community groups",
+      "kind": "organization",
+      "role": "Community groups in the Hollywood area",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "293"
+      ],
+      "response_ids": [
+        "p1074_35556038322269_R007"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C077",
+      "complainer_id": "p1074_35556038322269_K094",
+      "file": "complaints/p1074_35556038322269_C077_state_cultural_heritage_preservation_off.json",
+      "order": 77,
+      "entity": "State Cultural Heritage Preservation Office",
+      "kind": "agency",
+      "role": "State agency consulted on cultural-historic resource impacts",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "293"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C078",
+      "complainer_id": "p1074_35556038322269_K001",
+      "file": "complaints/p1074_35556038322269_C078_byron_cook.json",
+      "order": 78,
+      "entity": "Byron Cook",
+      "kind": "official",
+      "role": "President, Board of Directors, SCRTD; IACC member",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "18"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C079",
+      "complainer_id": "p1074_35556038322269_K003",
+      "file": "complaints/p1074_35556038322269_C079_city_of_los_angeles.json",
+      "order": 79,
+      "entity": "City of Los Angeles",
+      "kind": "government",
+      "role": "Local government / plan area authority",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "30",
+        "72"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C080",
+      "complainer_id": "p1074_35556038322269_K004",
+      "file": "complaints/p1074_35556038322269_C080_councilman_john_ferraro.json",
+      "order": 80,
+      "entity": "Councilman John Ferraro",
+      "kind": "official",
+      "role": "City Council member, City of Los Angeles; IACC member",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "18"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C081",
+      "complainer_id": "p1074_35556038322269_K005",
+      "file": "complaints/p1074_35556038322269_C081_councilwoman_pat_russell.json",
+      "order": 81,
+      "entity": "Councilwoman Pat Russell",
+      "kind": "official",
+      "role": "Chairperson, City Council Transportation Committee; IACC member",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "18"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C082",
+      "complainer_id": "p1074_35556038322269_K007",
+      "file": "complaints/p1074_35556038322269_C082_dee_jacobs.json",
+      "order": 82,
+      "entity": "Dee Jacobs",
+      "kind": "official",
+      "role": "Regional Director, UMTA; IACC member",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "18"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C083",
+      "complainer_id": "p1074_35556038322269_K008",
+      "file": "complaints/p1074_35556038322269_C083_deputy_mayor_ray_remy.json",
+      "order": 83,
+      "entity": "Deputy Mayor Ray Remy",
+      "kind": "official",
+      "role": "Deputy Mayor, City of Los Angeles; IACC member",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "18"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C084",
+      "complainer_id": "p1074_35556038322269_K009",
+      "file": "complaints/p1074_35556038322269_C084_gerald_leonard.json",
+      "order": 84,
+      "entity": "Gerald Leonard",
+      "kind": "official",
+      "role": "Chairman, Rapid Transit Committee, SCRTD; IACC member",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "18"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C085",
+      "complainer_id": "p1074_35556038322269_K010",
+      "file": "complaints/p1074_35556038322269_C085_jerome_premo.json",
+      "order": 85,
+      "entity": "Jerome Premo",
+      "kind": "official",
+      "role": "Executive Director, Los Angeles County Transportation Commission; IACC member",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "18"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C086",
+      "complainer_id": "p1074_35556038322269_K011",
+      "file": "complaints/p1074_35556038322269_C086_los_angeles_county_transportation_commis.json",
+      "order": 86,
+      "entity": "Los Angeles County Transportation Commission (LACTC)",
+      "kind": "agency",
+      "role": "Member of Interagency Technical Committee Marketing Sub-Committee",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "17",
+        "71",
+        "246",
+        "292"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C087",
+      "complainer_id": "p1074_35556038322269_K013",
+      "file": "complaints/p1074_35556038322269_C087_mark_pisano.json",
+      "order": 87,
+      "entity": "Mark Pisano",
+      "kind": "official",
+      "role": "Executive Director, Southern California Association of Governments; IACC member",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "18"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C088",
+      "complainer_id": "p1074_35556038322269_K014",
+      "file": "complaints/p1074_35556038322269_C088_marvin_holen.json",
+      "order": 88,
+      "entity": "Marvin Holen",
+      "kind": "official",
+      "role": "President, Board of Directors, SCRTD; IACC member",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "18"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C089",
+      "complainer_id": "p1074_35556038322269_K015",
+      "file": "complaints/p1074_35556038322269_C089_mayor_tom_bradley.json",
+      "order": 89,
+      "entity": "Mayor Tom Bradley",
+      "kind": "official",
+      "role": "Mayor, City of Los Angeles; IACC member",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "18"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C090",
+      "complainer_id": "p1074_35556038322269_K016",
+      "file": "complaints/p1074_35556038322269_C090_o_l_homme.json",
+      "order": 90,
+      "entity": "O.L. Homme",
+      "kind": "official",
+      "role": "Division Administrator, Federal Highway Administration; IACC member",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "18"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C091",
+      "complainer_id": "p1074_35556038322269_K017",
+      "file": "complaints/p1074_35556038322269_C091_robert_datel.json",
+      "order": 91,
+      "entity": "Robert Datel",
+      "kind": "official",
+      "role": "District Director, California Department of Transportation (CalTrans); IACC member",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "18"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C092",
+      "complainer_id": "p1074_35556038322269_K020",
+      "file": "complaints/p1074_35556038322269_C092_southern_california_rapid_transit_distri.json",
+      "order": 92,
+      "entity": "Southern California Rapid Transit District (SCRTD)",
+      "kind": "organization",
+      "role": "Transit planning and operating agency",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "1",
+        "64"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C093",
+      "complainer_id": "p1074_35556038322269_K021",
+      "file": "complaints/p1074_35556038322269_C093_thomas_neusom.json",
+      "order": 93,
+      "entity": "Thomas Neusom",
+      "kind": "official",
+      "role": "Chairman, Rapid Transit Committee, SCRTD; IACC member",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "18"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C094",
+      "complainer_id": "p1074_35556038322269_K022",
+      "file": "complaints/p1074_35556038322269_C094_urban_mass_transportation_administration.json",
+      "order": 94,
+      "entity": "Urban Mass Transportation Administration",
+      "kind": "agency",
+      "role": "Federal co-lead agency for the AA/EIS/EIR",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "14",
+        "74",
+        "242"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C095",
+      "complainer_id": "p1074_35556038322269_K023",
+      "file": "complaints/p1074_35556038322269_C095_w_e_schaefer.json",
+      "order": 95,
+      "entity": "W.E. Schaefer",
+      "kind": "official",
+      "role": "Chief, Div. of Transportation Planning, CalTrans; IACC member",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "18"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C096",
+      "complainer_id": "p1074_35556038322269_K027",
+      "file": "complaints/p1074_35556038322269_C096_los_angeles_metropolitan_transit_authori.json",
+      "order": 96,
+      "entity": "Los Angeles Metropolitan Transit Authority (LAMTA)",
+      "kind": "agency",
+      "role": "Predecessor transit authority",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "67"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C097",
+      "complainer_id": "p1074_35556038322269_K041",
+      "file": "complaints/p1074_35556038322269_C097_hoey_w_f.json",
+      "order": 97,
+      "entity": "Hoey, W.F.",
+      "kind": "individual",
+      "role": "Author of 'Bus Capacity Analysis' cited in Transportation Research Record 548",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "130"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "quote_not_verbatim",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C098",
+      "complainer_id": "p1074_35556038322269_K044",
+      "file": "complaints/p1074_35556038322269_C098_levinson_h_s.json",
+      "order": 98,
+      "entity": "Levinson, H.S.",
+      "kind": "individual",
+      "role": "Author of 'Bus Capacity Analysis' cited in Transportation Research Record 548",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "130"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "quote_not_verbatim",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C099",
+      "complainer_id": "p1074_35556038322269_K050",
+      "file": "complaints/p1074_35556038322269_C099_california_native_plant_society.json",
+      "order": 99,
+      "entity": "California Native Plant Society",
+      "kind": "organization",
+      "role": "source of rare and endangered plant list",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "148"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C100",
+      "complainer_id": "p1074_35556038322269_K054",
+      "file": "complaints/p1074_35556038322269_C100_jeffrey_druyun.json",
+      "order": 100,
+      "entity": "Jeffrey Druyun",
+      "kind": "official",
+      "role": "Acting Oil Administrator, City of Los Angeles",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "150"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C101",
+      "complainer_id": "p1074_35556038322269_K055",
+      "file": "complaints/p1074_35556038322269_C101_jet_propulsion_laboratory.json",
+      "order": 101,
+      "entity": "Jet Propulsion Laboratory",
+      "kind": "organization",
+      "role": "source of study on energy savings from dipped subway profile",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "165"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C102",
+      "complainer_id": "p1074_35556038322269_K057",
+      "file": "complaints/p1074_35556038322269_C102_los_angeles_city_planning_department.json",
+      "order": 102,
+      "entity": "Los Angeles City Planning Department",
+      "kind": "agency",
+      "role": "source of population, housing, and employment data",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "191"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C103",
+      "complainer_id": "p1074_35556038322269_K060",
+      "file": "complaints/p1074_35556038322269_C103_u_s_census_bureau.json",
+      "order": 103,
+      "entity": "U.S. Census Bureau",
+      "kind": "agency",
+      "role": "source of urbanized area population density data",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "174"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C104",
+      "complainer_id": "p1074_35556038322269_K065",
+      "file": "complaints/p1074_35556038322269_C104_l_a_city_planning_department.json",
+      "order": 104,
+      "entity": "L.A. City Planning Department",
+      "kind": "agency",
+      "role": "source of school facilities data",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "198"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C105",
+      "complainer_id": "p1074_35556038322269_K072",
+      "file": "complaints/p1074_35556038322269_C105_city_planning_department.json",
+      "order": 105,
+      "entity": "City Planning Department",
+      "kind": "agency",
+      "role": "Source for archaeological sites and historic landmarks list",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "256"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C106",
+      "complainer_id": "p1074_35556038322269_K073",
+      "file": "complaints/p1074_35556038322269_C106_dr_c_w_meighan.json",
+      "order": 106,
+      "entity": "Dr. C. W. Meighan",
+      "kind": "individual",
+      "role": "Archaeologist who recorded site LAn-7 in 1951",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "255"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C107",
+      "complainer_id": "p1074_35556038322269_K075",
+      "file": "complaints/p1074_35556038322269_C107_dr_robert_f_heizer.json",
+      "order": 107,
+      "entity": "Dr. Robert F. Heizer",
+      "kind": "individual",
+      "role": "Archaeologist who recorded Rancho La Brea deposits",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "259"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C108",
+      "complainer_id": "p1074_35556038322269_K080",
+      "file": "complaints/p1074_35556038322269_C108_state_historical_preservation_office.json",
+      "order": 108,
+      "entity": "State Historical Preservation Office",
+      "kind": "agency",
+      "role": "Source for archaeological sites and historic landmarks list",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "256"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C109",
+      "complainer_id": "p1074_35556038322269_K087",
+      "file": "complaints/p1074_35556038322269_C109_los_angeles_city_planning_staff.json",
+      "order": 109,
+      "entity": "Los Angeles City Planning staff",
+      "kind": "agency",
+      "role": "City planning staff conducting community meetings",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "291"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C110",
+      "complainer_id": "p1074_35556038322269_K088",
+      "file": "complaints/p1074_35556038322269_C110_los_angeles_community_redevelopment_agen.json",
+      "order": 110,
+      "entity": "Los Angeles Community Redevelopment Agency",
+      "kind": "agency",
+      "role": "Member of Interagency Technical Committee Marketing Sub-Committee",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "292"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C111",
+      "complainer_id": "p1074_35556038322269_K089",
+      "file": "complaints/p1074_35556038322269_C111_los_angeles_county_employees_association.json",
+      "order": 111,
+      "entity": "Los Angeles County Employees Association (LACEA)",
+      "kind": "organization",
+      "role": "Regional organization participating in Community Participation Program",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "291"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C112",
+      "complainer_id": "p1074_35556038322269_K090",
+      "file": "complaints/p1074_35556038322269_C112_los_angeles_county_organization_for_econ.json",
+      "order": 112,
+      "entity": "Los Angeles County Organization for Economic Development Program (OEDP)",
+      "kind": "organization",
+      "role": "Regional organization participating in Community Participation Program",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "291"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C113",
+      "complainer_id": "p1074_35556038322269_K091",
+      "file": "complaints/p1074_35556038322269_C113_los_angeles_naacp.json",
+      "order": 113,
+      "entity": "Los Angeles NAACP",
+      "kind": "organization",
+      "role": "Regional organization participating in Community Participation Program",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "291"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C114",
+      "complainer_id": "p1074_35556038322269_K093",
+      "file": "complaints/p1074_35556038322269_C114_sierra_club.json",
+      "order": 114,
+      "entity": "Sierra Club",
+      "kind": "organization",
+      "role": "Regional organization participating in Community Participation Program",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "291"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556038322269_C115",
+      "complainer_id": "p1074_35556038322269_K095",
+      "file": "complaints/p1074_35556038322269_C115_urban_league.json",
+      "order": 115,
+      "entity": "Urban League",
+      "kind": "organization",
+      "role": "Regional organization participating in Community Participation Program",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "291"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "child_id": "p1074_35556038322269_R001",
+      "parent_id": "p1074_35556038322269_C051",
+      "file": "responses/p1074_35556038322269_R001_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556038322269_R002",
+      "parent_id": "p1074_35556038322269_C054",
+      "file": "responses/p1074_35556038322269_R002_southern_california_rapid_transit_distri.json",
+      "agency": "Southern California Rapid Transit District",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556038322269_R003",
+      "parent_id": "p1074_35556038322269_C056",
+      "file": "responses/p1074_35556038322269_R003_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556038322269_R004",
+      "parent_id": "p1074_35556038322269_C057",
+      "file": "responses/p1074_35556038322269_R004_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556038322269_R005",
+      "parent_id": "p1074_35556038322269_C058",
+      "file": "responses/p1074_35556038322269_R005_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556038322269_R006",
+      "parent_id": "p1074_35556038322269_C068",
+      "file": "responses/p1074_35556038322269_R006_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556038322269_R007",
+      "parent_id": "p1074_35556038322269_C076",
+      "file": "responses/p1074_35556038322269_R007_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    }
+  ]
+}

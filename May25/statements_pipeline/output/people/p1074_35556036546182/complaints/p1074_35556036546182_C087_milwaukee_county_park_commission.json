@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C087",
+  "complainer_id": "p1074_35556036546182_K062",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 87,
+  "entity": "Milwaukee County Park Commission",
+  "kind": "organization",
+  "role": "County park commission, commenter",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly states recommended Alternate #5 does not conflict with existing or proposed Milwaukee County parks",
+  "summary": "The Milwaukee County Park Commission unanimously approved a staff report finding that the recommended Alternate Corridor #5 for the Airport Spur does not conflict with existing or proposed Milwaukee County parks. The Commission noted that Alternates #2 and #4 could come close to Holler Park and potentially have a detrimental effect through noise or air pollution, implying preference for Alternate #5. No concerns were raised about the project proceeding under the recommended alignment.",
+  "form": "letter",
+  "complaint_summary": "The Milwaukee County Park Commission unanimously approved a staff report finding that the recommended Alternate #5 does not conflict with existing or proposed Milwaukee County parks, while noting that Alternates #2 and #4 could potentially have a detrimental effect on Holler Park through noise or air pollution.",
+  "evidence_pages": [
+    "168"
+  ],
+  "statement": {
+    "text": "Dear Sir:\nSubject: Proj. I 94-5(45)317; I.D. 1030-1-00 Proj. E 078-1(47); I.D. 2015-1-00 Airport Spur\nI-94 to General Mitchell Field Milwaukee County\nThis is in response to a communication from Mr. H. L. Fiedler, State Highway Engineer, dated June 19, 1973, addressed to the Milwaukee County Park Commission.\nThe request was for review and comments on the submitted Draft Environmental Impact Statement for the proposed subject highway project. The document was submitted to the Park Commission staff for its report which was presented to the Milwaukee County Park Commission at its July 19, 1973 meeting.\nThe Park Commission unanimously approved the staff's report which states as follows:\n\"The Draft Environmental Statement for the Airport Spur has been reviewed by the Park Commission staff, and it has determined that the recommended alternate Corridor location (#5) for the Airport Spur does not conflict with existing or proposed Milwaukee County parks.\n\"Either of the alternate Corridors #2 and #4, if implemented, would come close to existing park lands known as Holler Park.\nCOURTHOUSE, ROOM 308\n901 NORTH 9TH STREET\nMILWAUKEE, WISCONSIN 53233 \nCommissioners. FERDINAND A GLOJEK, President + HYMAN D. POPUCH, Vice-President + JOY G TESCHNER, Secretary\nPAUL PIKE PULLEN + E. J. FRANSWAY + LARRY H LAST + CLINTON E ROSE\nJAMES N PESCHEL, Ass'L General Manager\nCounty Landscape Architect\nROBERT H EHLERT, Superintendent of Parks\n569 R9\n\n\"Although no indication is made that park lands would be taken, either of these alternates could possibly have a detrimental effect on Holler Park by noise or air pollution.\"\nSincerely,\nRobert J. Mikula, General Manager Milwaukee County Park Commission\nRJM:IFH:hj\ncc: Mr. Irving F. Heipel",
+    "opening_anchor": "Dear Sir:\n\nSubject: Proj. I 94-5(45)317; I.D. 1030-1-00 Proj. E 078-1(47); I.D. 2015-1-00 Airport Spur",
+    "closing_anchor": "Robert J. Mikula, General Manager Milwaukee County Park Commission\nRJM:IFH:hj\ncc: Mr. Irving F. Heipel",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036546182_R015"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "The Park Commission unanimously approved the staff's report which states as follows: \"The Draft Environmental Statement for the Airport Spur has been reviewed by the Park Commission staff, and it has determined that the recommended alternate Corridor location (#5) for the Airport Spur does not conflict with existing or proposed Milwaukee County parks.\"",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "168"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Park Commission unanimously approved the staff's report which states as follows: \"The Draft Environmental Statement for the Airport Spur has been reviewed by the Park Commission staff, and it has determined that the recommended alternate Corridor location (#5) for the Airport Spur does not conflict with existing or proposed Milwaukee County parks.\"",
+      "quote_verified": false,
+      "entity_as_written": "Milwaukee County Park Commission",
+      "role_as_written": "County park commission, commenter"
+    }
+  ],
+  "window_pages": [
+    158,
+    178
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 62,
+  "synthetic_no_complaint": false
+}

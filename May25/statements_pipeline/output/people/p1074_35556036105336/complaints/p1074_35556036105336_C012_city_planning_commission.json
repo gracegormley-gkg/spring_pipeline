@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036105336_C012",
+  "complainer_id": "p1074_35556036105336_K006",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 12,
+  "entity": "City Planning Commission",
+  "kind": "agency",
+  "role": "City planning body",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "recommended approval of new master plan incorporating the Randolph Plan",
+  "summary": "The City Planning Commission is described as having recommended approval of a new master plan incorporating the Randolph Plan for the Randolph area of the city on December 5, 1972. This recommendation was a key step in the project's approval process, with the City Council expected to follow by formally adopting the plan. The Commission's action reflects support for the proposed urban renewal project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The City Planning Commission recommended approval of a new master plan incorporating the Randolph Plan for the Randolph area of the city on December 5, 1972, representing a formal endorsement of the project.",
+  "evidence_pages": [
+    "17"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "On December 5, 1972, the City Planning Commission recommended approval of a new master plan incorporating the Randolph Plan for the Randolph area of the city.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "17"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "On December 5, 1972, the City Planning Commission recommended approval of a new master plan incorporating the Randolph Plan for the Randolph area of the city.",
+      "quote_verified": true,
+      "entity_as_written": "City Planning Commission",
+      "role_as_written": "City planning body"
+    }
+  ],
+  "window_pages": [
+    7,
+    27
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 6,
+  "synthetic_no_complaint": false
+}

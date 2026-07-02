@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036105336_C032",
+  "complainer_id": "p1074_35556036105336_K036",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 32,
+  "entity": "Virginia Historical Society",
+  "kind": "organization",
+  "role": "State historical organization",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase states the project will not affect any historical site or property",
+  "summary": "The Virginia Historical Society is paraphrased in the EIS as having determined that the Randolph Urban Renewal Project will not affect any historical site or property, and that no properties in the area are listed on or nominated for the National Register of Historic Places. The organization appears to have provided a formal review (referenced as Appendix Exhibit No. 7) but takes no explicit position for or against the project itself.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Virginia Historical Society determined that the project will not affect any historical site or property, and that no properties are on or nominated for the National Register of Historic Places.",
+  "evidence_pages": [
+    "54"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "According to the Virginia Historical Society the impact of the project will not effect any historical site or property.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "54"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "According to the Virginia Historical Society the impact of the project will not effect any historical site or property.",
+      "quote_verified": true,
+      "entity_as_written": "Virginia Historical Society",
+      "role_as_written": "State historical organization"
+    }
+  ],
+  "window_pages": [
+    44,
+    64
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 36,
+  "synthetic_no_complaint": false
+}

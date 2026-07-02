@@ -1,0 +1,80 @@
+{
+  "complaint_id": "p1074_35556039563135_C059",
+  "complainer_id": "p1074_35556039563135_K099",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 59,
+  "entity": "John L. Waner",
+  "kind": "official",
+  "role": "Director, Department of Housing and Urban Development Area Office, Chicago",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "states awareness of no significantly harmful effect from temporary 4(f) land use, neither opposing nor strongly endorsing the project",
+  "summary": "John L. Waner, Director of the HUD Area Office in Chicago, provided a brief comment during early coordination indicating no awareness of significantly harmful effects from the temporary use of Section 4(f) land west of Thorn Creek Bridge. His comment was noted in both the early coordination evaluation table and referenced in the draft environmental statement comments section. The agency preparer concurred with his assessment.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "HUD (Waner) stated it had no reason to believe the proposed action would have an adverse environmental impact on low-income neighborhoods involved, based on review of the draft environmental statement.",
+  "evidence_pages": [
+    "159"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556039563135_R018"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We are aware of no significantly harmful effect that the temporary use of this 4(f) land west of Thorn Creek Bridge would have on this area.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "195"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The subject proposal requires no comment from this Department",
+      "quote_verified": false,
+      "entity_as_written": "John L. Waner",
+      "role_as_written": "Director, Department of Housing and Urban Development Area Office, Chicago"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "159"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We are aware of no significantly harmful effect that the temporary use of this 4(f) land west of Thorn Creek Bridge would have on this area.",
+      "quote_verified": true,
+      "entity_as_written": "John L. Waner",
+      "role_as_written": "Director, HUD Chicago Area Office"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "159"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We are aware of no significantly harmful effect that the temporary use of this 4(f) land west of Thorn Creek Bridge would have on this area.",
+      "quote_verified": true,
+      "entity_as_written": "John L. Waner",
+      "role_as_written": "signatory, HUD Chicago Area Office"
+    }
+  ],
+  "window_pages": [
+    149,
+    191
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 99,
+  "synthetic_no_complaint": false
+}

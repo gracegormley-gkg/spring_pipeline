@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556038322269_C022",
+  "complainer_id": "p1074_35556038322269_K026",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 22,
+  "entity": "Community Redevelopment Agency (CRA)",
+  "kind": "agency",
+  "role": "Agency that made patronage estimates for the Downtown People Mover",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "CRA described as proposer and administrator of the Downtown People Mover, with no expressed opinion on the Regional Core Rapid Transit project itself",
+  "summary": "The Community Redevelopment Agency (CRA) is identified as the proponent and administrator of the Downtown People Mover (DPM), an automated guideway transit system for the Los Angeles CBD that forms Element III of the Regional Transit Development Program. The CRA's DPM is described as an integral interface component for the rail alternatives under study, with the document referencing the CRA's own EIR for DPM design specifications. The CRA takes no stated position on the Regional Core Rapid Transit alternatives being evaluated in this document.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The CRA is identified as the administering agency for the DPM preliminary engineering work, and the document references the CRA's published EIR as the source for DPM design specifications including capacity of 3500 passengers per hour in the peak direction and headways ranging from 1.5 to 5.0 minutes.",
+  "evidence_pages": [
+    "70"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Community Redevelopment Agency's (CRA) proposed Downtown People Mover is envisioned as an automated guideway transit system for the Los Angeles CBD.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "70"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Community Redevelopment Agency's (CRA) proposed Downtown People Mover is envisioned as an automated guideway transit system for the Los Angeles CBD.",
+      "quote_verified": true,
+      "entity_as_written": "Community Redevelopment Agency (CRA)",
+      "role_as_written": "Agency administering Downtown People Mover"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "110"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Patronage estimates for the DPM were made by the Community Redevelopment Agency (CRA).",
+      "quote_verified": true,
+      "entity_as_written": "Community Redevelopment Agency (CRA)",
+      "role_as_written": "Agency that made patronage estimates for the Downtown People Mover"
+    }
+  ],
+  "window_pages": [
+    60,
+    95
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 26,
+  "synthetic_no_complaint": false
+}

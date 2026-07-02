@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036806586_C089",
+  "complainer_id": "p1074_35556036806586_K070",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 89,
+  "entity": "L. C. Dail",
+  "kind": "official",
+  "role": "Chief Engineer, Civil-Environmental Division, Duke Power Company",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter proposing phased schedule for submitting updated license application and EIS comments, contingent on Commission confirmation",
+  "summary": "L. C. Dail, Chief Engineer of Duke Power Company's Civil-Environmental Division, signed a December 22, 1975 letter to the FPC proposing a two-phase schedule for submitting updated license application materials and comments on the Draft EIS, citing a revised load forecast that required review of the Bad Creek construction schedule. Duke Power (through Dail's letter) also submitted detailed technical comments on the Draft EIS on January 5, 1976, requesting numerous factual corrections and clarifications across multiple sections of the document.",
+  "form": "letter",
+  "complaint_summary": "L. C. Dail requests FPC confirmation of a two-phase schedule for submitting updated license application materials and EIS comments, citing a revised load forecast that significantly reduced projected peak loads and necessitated review of the Bad Creek construction schedule.",
+  "evidence_pages": [
+    "284"
+  ],
+  "statement": {
+    "text": "Please refer to your December 16, 1975 letter granting our request for an extension of time to January 5, 1976 to submit comments on the Environmental Impact Statement prepared by the Commission's staff for the proposed Bad Creek Pumped Storage Project #2740.\nWe have recently prepared a new system load forecast, which has the effect of reducing the former forecast of future peak loads significantly. Load forecast prepared independently by a consultant has confirmed Duke's revised forecast. We are, therefore, reviewing the construction schedule for Bad Creek and expect to have a more definite schedule by the end of March, 1976.\nWe, therefore, propose to submit to the Commission additional information to update the license application and comments on the Environmental Impact Statement, in accordance with the following schedule:\n1) Layout and design changes, revisions to exhibits, and comments on EIS, except for items affecting need for power and construction schedule on Jinuary 5, 1976.\n2) Revisions to exhibits and comments on items in the EIS pertaining to need for power and construction schedule on March 29, 1976.\nWe respectfully request the Commission to confirm that the above proposed procedure is satisfactory.\nYours very kruly,\nL. C. Doil, Chief Engineer Civil-Environmental Division",
+    "opening_anchor": "Please refer to your December 16, 1975 letter granting our request for an extension of time to January 5, 1976 to submit comments on the Environmental Impact Statement",
+    "closing_anchor": "We respectfully request the Commission to confirm that the above proposed procedure is satisfactory.\n\nYours very kruly,\n\nL. C. Doil, Chief Engineer\nCivil-Environmental Division",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We, therefore, propose to submit to the Commission additional information to update the license application and comments on the Environmental Impact Statement, in accordance with the following schedule",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "284"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "We, therefore, propose to submit to the Commission additional information to update the license application and comments on the Environmental Impact Statement, in accordance with the following schedule",
+      "quote_verified": true,
+      "entity_as_written": "L. C. Dail",
+      "role_as_written": "Chief Engineer, Civil-Environmental Division, Duke Power Company"
+    }
+  ],
+  "window_pages": [
+    274,
+    294
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 70,
+  "synthetic_no_complaint": false
+}

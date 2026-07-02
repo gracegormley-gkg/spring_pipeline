@@ -1,0 +1,80 @@
+{
+  "complaint_id": "p1074_35556036861797_C053",
+  "complainer_id": "p1074_35556036861797_K035",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 53,
+  "entity": "Ford",
+  "kind": "organization",
+  "role": "automobile manufacturer / commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "Ford repeatedly challenged the proposed standard, claiming NHTSA overstated benefits, understated costs, and failed to account for emissions penalties",
+  "summary": "Ford opposed the proposed 18.7 mpg average fuel economy standard for nonpassenger automobiles, arguing that NHTSA overstated fuel economy improvement potential, failed to adequately account for the fuel economy penalties from 1979 emissions standards and testing procedures, and understated the costs of compliance. Ford also raised concerns about the effect of California emissions standards on its fleet average and submitted detailed cost-benefit critiques, though NHTSA largely rejected or discounted Ford's arguments.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Ford estimated a 3 percent fuel economy penalty due to the 1979 emissions standard and a 9 percent fuel economy effect due to revised testing procedures, and submitted data to support these claims.",
+  "evidence_pages": [
+    "143"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036861797_R032"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Ford stated that the 1979 emissions standards for California, which are more stringent than the 1979 Federal standards, will result in its California fleet of nonpassenger automobiles having an average fuel economy approximately 6 percent lower than its Federal fleet.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "146"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The estimated fuel economy penalty due to the emission standard, including the effect of increased NOx emissions resulting from higher engine loading due to the revised test procedures, was 5 percent for General Motors, 3 percent for Ford",
+      "quote_verified": true,
+      "entity_as_written": "Ford",
+      "role_as_written": "automobile manufacturer / commenter"
+    },
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "158"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Ford stated that the NHTSA overstated the benefits and understated the costs of the proposed standard.",
+      "quote_verified": true,
+      "entity_as_written": "Ford",
+      "role_as_written": "automobile manufacturer / commenter"
+    },
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "155"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Ford stated that the 1979 emissions standards for California, which are more stringent than the 1979 Federal standards, will result in its California fleet of nonpassenger automobiles having an average fuel economy approximately 6 percent lower than its Federal fleet.",
+      "quote_verified": true,
+      "entity_as_written": "Ford",
+      "role_as_written": "automobile manufacturer / commenter"
+    }
+  ],
+  "window_pages": [
+    136,
+    165
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 35,
+  "synthetic_no_complaint": false
+}

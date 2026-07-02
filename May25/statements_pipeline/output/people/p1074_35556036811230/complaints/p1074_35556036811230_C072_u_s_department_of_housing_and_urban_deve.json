@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556036811230_C072",
+  "complainer_id": "p1074_35556036811230_K056",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 72,
+  "entity": "U.S. Department of Housing and Urban Development",
+  "kind": "agency",
+  "role": "federal agency whose noise abatement and control policy circular is cited as a reference",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "cited only as a reference document with no position expressed",
+  "summary": "The U.S. Department of Housing and Urban Development is cited solely as the source of Department Circular 1390.2, 'Noise Abatement and Control: Department Policy, Implementation Responsibilities, and Standards' (August 1971), which is listed among the references for the construction noise specifications section. HUD does not appear as a commenter or stakeholder expressing any position on the project itself.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "284"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "U.S. Department of Housing and Urban Development; Department Circular 1390.2, Noise Abatement and Control: Department Policy, Implementation Responsibilities, and Standards, August 1971.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "284"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "U.S. Department of Housing and Urban Development; Department Circular 1390.2, Noise Abatement and Control: Department Policy, Implementation Responsibilities, and Standards, August 1971.",
+      "quote_verified": true,
+      "entity_as_written": "U.S. Department of Housing and Urban Development",
+      "role_as_written": "federal agency whose noise abatement and control policy circular is cited as a reference"
+    }
+  ],
+  "window_pages": [
+    274,
+    284
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 56,
+  "synthetic_no_complaint": true
+}

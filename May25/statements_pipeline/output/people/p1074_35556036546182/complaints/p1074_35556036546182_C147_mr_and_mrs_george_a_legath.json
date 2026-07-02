@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C147",
+  "complainer_id": "p1074_35556036546182_K123",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 147,
+  "entity": "Mr. and Mrs. George A. Legath",
+  "kind": "individual",
+  "role": "Private Citizens, commenters",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes them arguing that Airport Spur supporters have financial interests while opponents are protecting their homes and environment",
+  "summary": "Mr. and Mrs. George A. Legath opposed the Airport Spur, arguing that supporters had financial interests while opponents were fighting to protect their homes and environment. They also questioned whether the Environmental Impact Statement was outdated and challenged the justification of time savings relative to the costs imposed on area residents.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Legaths argued that Airport Spur supporters had financial interests while opponents were fighting for their homes and environment, that the EIS was obsolete at two years old, and questioned whether time savings justified the expense to area citizens.",
+  "evidence_pages": [
+    "246"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R066"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Stated that the people in favor of the Airport Spur had a financial interest and the people opposed are fighting for their homes and environment.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "246"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Stated that the people in favor of the Airport Spur had a financial interest and the people opposed are fighting for their homes and environment.",
+      "quote_verified": true,
+      "entity_as_written": "Mr. and Mrs. George A. Legath",
+      "role_as_written": "Private Citizens, commenters"
+    }
+  ],
+  "window_pages": [
+    236,
+    256
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 123,
+  "synthetic_no_complaint": false
+}

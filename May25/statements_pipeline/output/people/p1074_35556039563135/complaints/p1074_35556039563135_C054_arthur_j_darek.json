@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C054",
+  "complainer_id": "p1074_35556039563135_K118",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 54,
+  "entity": "Arthur J. Darek",
+  "kind": "official",
+  "role": "Real Estate & License Engineer, Forest Preserve District of Cook County",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter expressing no significant recreational impact but requiring restoration and insurance conditions",
+  "summary": "Arthur J. Darek, Real Estate & License Engineer for the Forest Preserve District of Cook County, submitted a letter dated September 4, 1974, stating that the temporary use of Section 4(f) land would not significantly affect recreational opportunities, while requiring that disturbed areas be regraded, topsoiled, fertilized, and sodded, and that the contractor post insurance naming the District as insured. His position is supportive of the temporary use contingent on these restoration and insurance conditions being met.",
+  "form": "letter",
+  "complaint_summary": "The Forest Preserve District of Cook County stated that the temporary use would not significantly affect recreational opportunities, but required that disturbed areas be restored and that the contractor post insurance naming the District as insured.",
+  "evidence_pages": [
+    "158"
+  ],
+  "statement": {
+    "text": "Forest Preserve District of Cook County (September 4, 1974)\n1(a) It is our opinion that the temporary use will not have any significant effect on the recreational opportunities of the community.\n\n1(b) It is required that any areas disturbed by construction work or\n1(a) Concur.\nchanges in grade be regraded, topsoiled, tertilized and sodded, and that your contractor post with the District the necessary insurance naming the District at trict as insured or additional insured.",
+    "opening_anchor": "Forest Preserve District of Cook County (September 4, 1974)\n1(a) It is our opinion that the temporary use will not have any significant effect on the recreational opportunities of the community.",
+    "closing_anchor": "changes in grade be regraded, topsoiled, tertilized and sodded, and that your contractor post with the District the necessary insurance naming the District at trict as insured or additional insured.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556039563135_R014"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "It is our opinion that the temporary use will not have any significant effect on the recreational opportunities of the community.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "158"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "It is our opinion that the temporary use will not have any significant effect on the recreational opportunities of the community.",
+      "quote_verified": true,
+      "entity_as_written": "Arthur J. Darek",
+      "role_as_written": "Real Estate & License Engineer, Forest Preserve District of Cook County"
+    }
+  ],
+  "window_pages": [
+    148,
+    168
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 118,
+  "synthetic_no_complaint": false
+}

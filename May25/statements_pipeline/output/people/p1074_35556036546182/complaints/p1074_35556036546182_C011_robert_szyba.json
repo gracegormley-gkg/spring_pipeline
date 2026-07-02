@@ -1,0 +1,82 @@
+{
+  "complaint_id": "p1074_35556036546182_C011",
+  "complainer_id": "p1074_35556036546182_K011",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 11,
+  "entity": "Robert Szyba",
+  "kind": "individual",
+  "role": "Representative of Citizen's Against Airport Spur, commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "listed as commenter from Citizens Against Airport Spur with concerns about cost-benefit and noise analysis validity",
+  "summary": "Robert Szyba, representing Citizens Against Airport Spur, submitted comments on the Draft EIS raising concerns about whether the freeway's cost relative to time savings had been weighed against social costs, and questioning the validity of the noise analysis due to the airline strike and runway closure during measurement periods. He is listed among additional commenters whose letters appear in Section X of the document.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Robert Szyba of Citizens Against Airport Spur is listed as one of the additional commenters who submitted a letter of comment, with his letter contained in Section X of the document.",
+  "evidence_pages": [
+    "18"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Questioned whether the cost of the freeway and its relation to the time saved has been weighed against the social cost of building the freeway. Questioned the validity of the noise analysis in the Draft EIS because the airlines were on strike and the east-west runway was shut down for resurfacing when the noise measurement were taken.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased",
+    "sectional"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "18"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "8. Additional comments were received from the following: (Letters of comment are in Section X.) Citizen's Against Airport Spur, Robert Szyba, 1427 West Goldcrest Avenue, Milwaukee, Wis. 53221",
+      "quote_verified": false,
+      "entity_as_written": "Robert Szyba",
+      "role_as_written": "Representative of Citizen's Against Airport Spur, commenter"
+    },
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "180"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "I oppose the project. I don't think it is worth the sacrifice to the neighborhood and it's not worth the price.",
+      "quote_verified": true,
+      "entity_as_written": "Robert Szyba",
+      "role_as_written": "Private Citizen, commenter"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "234"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Questioned whether the cost of the freeway and its relation to the time saved has been weighed against the social cost of building the freeway. Questioned the validity of the noise analysis in the Draft EIS because the airlines were on strike and the east-west runway was shut down for resurfacing when the noise measurement were taken.",
+      "quote_verified": true,
+      "entity_as_written": "Robert Szyba",
+      "role_as_written": "Private Citizen"
+    }
+  ],
+  "window_pages": [
+    8,
+    56
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 11,
+  "synthetic_no_complaint": false
+}

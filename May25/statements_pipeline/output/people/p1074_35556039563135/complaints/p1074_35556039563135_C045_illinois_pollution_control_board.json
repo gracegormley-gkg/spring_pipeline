@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556039563135_C045",
+  "complainer_id": "p1074_35556039563135_K039",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 45,
+  "entity": "Illinois Pollution Control Board",
+  "kind": "agency",
+  "role": "state pollution control regulatory body",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as adopting water quality standards cited as regulatory context, no position on project expressed",
+  "summary": "The Illinois Pollution Control Board is referenced in the EIS document solely as the regulatory body that adopted Water Quality Standards on March 7, 1972, which are used as the baseline framework for evaluating water quality impacts of the proposed Lincoln Highway improvement. The Board's standards are cited to describe designated uses for state waters and to note that Thorn Creek and Butterfield Creek are designated for general use. The Board does not express any position for or against the project; it is cited only as a source of applicable regulatory standards.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The document paraphrases the Illinois Pollution Control Board's March 7, 1972 adoption of Water Quality Standards, describing their principles for protecting state waters, aquatic life, public water supplies, and Lake Michigan, and designating Thorn Creek and Butterfield Creek as general use waters.",
+  "evidence_pages": [
+    "106"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "On March 7, 1972, the Illinois Pollution Control Board adopted Water Quality Standards.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "106"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "On March 7, 1972, the Illinois Pollution Control Board adopted Water Quality Standards.",
+      "quote_verified": true,
+      "entity_as_written": "Illinois Pollution Control Board",
+      "role_as_written": "state pollution control regulatory body"
+    }
+  ],
+  "window_pages": [
+    96,
+    116
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 39,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036105336_C060",
+  "complainer_id": "p1074_35556036105336_K042",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 60,
+  "entity": "Dr. Allix B. James",
+  "kind": "individual",
+  "role": "Chairman, City Planning Commission",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes administrative role and procedural comment without expressing support or opposition",
+  "summary": "Dr. Allix B. James, as chairman of the city planning commission, is described in a newspaper article paraphrase as directing residents to the housing authority office for specific information and indicating the commission would move quickly in considering the Randolph plan. He made no statement of support or opposition to the plan itself, focusing instead on procedural and timeline matters. His only attributed remark concerns the uncertainty of how long HUD might take to approve the plan after City Council action.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Dr. James is paraphrased as stating that the city planning commission will move quickly in considering the Randolph plan, but that no estimate can be made about how long HUD might take to approve the plan if City Council approves it.",
+  "evidence_pages": [
+    "105"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Dr. James said that the city planning commission will move quickly in considering the Randolph plan, but he said no estimate can be made concerning how long MUD make take to approve the plan if it is approved by City Council.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "105"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Dr. James said that the city planning commission will move quickly in considering the Randolph plan, but he said no estimate can be made concerning how long MUD make take to approve the plan if it is approved by City Council.",
+      "quote_verified": true,
+      "entity_as_written": "Dr. Allix B. James",
+      "role_as_written": "Chairman, City Planning Commission"
+    }
+  ],
+  "window_pages": [
+    95,
+    115
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 42,
+  "synthetic_no_complaint": false
+}

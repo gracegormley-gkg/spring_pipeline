@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036546182_C162",
+  "complainer_id": "p1074_35556036546182_K125",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 162,
+  "entity": "Mr. Besadny",
+  "kind": "official",
+  "role": "Wisconsin DNR official, letter author",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase notes Besadny's prior letter called for comprehensive overview not yet provided, but major points deemed satisfactorily addressed",
+  "summary": "Mr. Besadny, a Wisconsin DNR official, is referenced in a December 1975 DNR letter as having previously written (October 3, 1973) calling for a 'comprehensive overview of the total transportation needs being served' in the air quality report, and as having transmitted the Department's Air Pollution Control Section's major points. The letter notes that while the revised air quality report has not fully met Besadny's comprehensive overview requirement, the major points he transmitted have received satisfactory responses, with the exception of airport development questions.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Mr. Besadny's October 3, 1973 letter called for a 'comprehensive overview of the total transportation needs being served,' a standard the revised air quality report has not yet fully met, though the DNR expresses hope it will receive further attention in revisions to the Mitchell Field Master Plan.",
+  "evidence_pages": [
+    "289"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R077"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Although the revised air quality report has not given a truly \"comprehensive overview of the total transportation needs being served\" as called for by Mr. Besadny in his letter to you of October 3, 1973, we are hopeful that this matter will receive further attention in these revisions to the Mitchell Field Master Plan.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "289"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Although the revised air quality report has not given a truly \"comprehensive overview of the total transportation needs being served\" as called for by Mr. Besadny in his letter to you of October 3, 1973, we are hopeful that this matter will receive further attention in these revisions to the Mitchell Field Master Plan.",
+      "quote_verified": true,
+      "entity_as_written": "Mr. Besadny",
+      "role_as_written": "Wisconsin DNR official, letter author"
+    }
+  ],
+  "window_pages": [
+    279,
+    290
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 125,
+  "synthetic_no_complaint": false
+}

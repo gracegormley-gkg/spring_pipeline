@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C176",
+  "complainer_id": "p0491_35556036091957_K167",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 176,
+  "entity": "Karen Unsworth",
+  "kind": "official",
+  "role": "Kansas Department of Economic Development, Planning Division",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "direct written comment stating agreement with the environmental statement and proposed regulations",
+  "summary": "Karen Unsworth, representing the Kansas Department of Economic Development's Planning Division, submitted a brief written comment via the Kansas State Clearinghouse expressing unqualified agreement with the draft environmental impact statement and the proposed regulations for off-road vehicle use on public lands. Her comment contains no objections or conditions. No agency response to her comment appears in the document.",
+  "form": "written_comment",
+  "complaint_summary": "Karen Unsworth, on behalf of the Kansas Department of Economic Development's Planning Division, states unqualified agreement with the draft environmental statement and the proposed regulations for off-road vehicle use on public lands.",
+  "evidence_pages": [
+    "251"
+  ],
+  "statement": {
+    "text": "The Planning Division agrees with this environmental statement and\nwith the proposed regulations.\nKaren I. Un worth for Signature",
+    "opening_anchor": "The Planning Division agrees with this environmental statement and",
+    "closing_anchor": "with the proposed regulations.\nKaren I. Un worth for Signature",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Planning Division agrees with this environmental statement and with the proposed regulations.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "251"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The Planning Division agrees with this environmental statement and with the proposed regulations.",
+      "quote_verified": true,
+      "entity_as_written": "Karen Unsworth",
+      "role_as_written": "Kansas Department of Economic Development, Planning Division"
+    }
+  ],
+  "window_pages": [
+    241,
+    261
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 167,
+  "synthetic_no_complaint": false
+}

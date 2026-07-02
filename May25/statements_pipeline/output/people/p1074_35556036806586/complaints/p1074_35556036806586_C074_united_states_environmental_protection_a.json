@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036806586_C074",
+  "complainer_id": "p1074_35556036806586_K082",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 74,
+  "entity": "UNITED STATES ENVIRONMENTAL PROTECTION AGENCY REGION IV",
+  "kind": "agency",
+  "role": "federal agency commenter",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter raises water quality and fishery concerns, endorses monitoring, recommends mitigation, and gives ER-2 rating indicating environmental reservations and insufficient information",
+  "summary": "EPA Region IV submitted a formal comment letter on the Draft EIS for the Bad Creek Pumped Storage Project, expressing concern that the project will cause both temporary and permanent degradation of water quality in Bad and Howard Creeks. The agency raised specific issues including turbidity from reservoir fluctuation, flow reduction impacts on the Howard Creek trout fishery, noise impact assessment deficiencies, and inadequate information on fish passage through turbines. EPA assigned a rating of ER-2 (environmental reservations / insufficient information), indicating conditional rather than outright opposition.",
+  "form": "letter",
+  "complaint_summary": "EPA Region IV's letter raises multiple water quality and fishery concerns including turbidity from reservoir fluctuation, 53% flow reduction impacts on Howard Creek trout habitat, inadequate noise impact analysis, insufficient information on fish passage through turbines, and potential impacts on Lake Jocassee's trout spawning stock, ultimately assigning an ER-2 rating to the Draft EIS.",
+  "evidence_pages": [
+    "262"
+  ],
+  "statement": {
+    "text": "We have reviewed the Draft Environmental Impact Statement for Bad Creek Pumped Storage Project (Number 2740) in South Carolina and believe the project will cause both temporary and permanent degradation of water quality in Bad and Howard Creeks.\nTwo and three-tenths (2.3) miles of trout stream in Bad and West Bad Creeks will be inundated by the proposed storage reservoir and 3.4 miles of Howard Creek will probably be rendered unsuitable for trout habitat. Siltation and turbidity are expected to be severe during construction but can expect to taper off as the raw soil begins to stabilize after grading and seeding measures have taken effect.\nSection 3.1.2.3 discusses these impacts.\nHowever, inasmuch as the Bad Creek impoundment will fluctuate as much as 150 feet per week, only a degree of stabilization of the sides of the impoundment will occur resulting in an increase in turbidity in the Jocassee River below the impoundment. Depending on the degree of stabilization, this could be an unsatisfactory condition. This should be investigated further.\nSection 3.2.2.2 discusses effects of turbidity in Lake Jocassee.\nAlso, a 53% reduction of flow in Howard Creek immediately below its junction with Bad Creek will result in long term adverse effects in water quality such as higher temperatures during the low-flow periods, and lower DO values unless mitigation measures are provided.\nSection 3.2.2.2, 4, and 9 address this issue.\nLow-flow augmentation, selective draw-off, and re-oxygenation so that the flow and quality of water will safeguard and maintain the trout fishery in lower Howard Creek is recommended. The quality and quantity of seepage water should be taken into consideration.\nFurthermore, the post-operational monitoring program proposed for Howard Creek (on page 4-3) is strongly endorsed. In addition, according to the EIS, the turbines used for pumping are designed\nSections 4 and 9 discuss flow augmentation.\n\n2\nso they will not do extensive damage to fish that pass through them. More information should be provided in the Statement regarding this. Also, the State of South Carolina is establishing a trout fishery in Lake Jocassee. If the current created by the pumping attracts the spawning trout, and they in turn are transferred into Bad Creek impoundment, the spawning stock of trout may be heavily impacted.\nSee revised Section 3.2.2.2.\nIn regard to noise impact, projecting levels as high as 80 dbA at the site boundary is insufficient to assess impact on neighboring noise-sensitive sites. The final EIS should contain the following information: An inventory of noise-sensitive sites (such as residences, schools, etc.) with their existing acoustic environment documented by measurement. Operational noise levels should be predicted (extrapolated to their locations as necessary) and compared with existing noise leve's. Impact should be identified by the difference in these levels and mitigation of this impact discussed as necessary.\nthe type suggested are not available to Staff.\nThe data for an analysis of\nIn view of the foregoing, we have given a rating of ER-(environmental reservations) concerning the environmental effects of certain aspects of the proposed action and 2 (insufficient information) to the Impact Statement.\nWe would appreciate five copies of the final environmental impact statement when it is available, and if we can be of further assistance in any way, please let us know.",
+    "opening_anchor": "We have reviewed the Draft Environmental Impact Statement for Bad Creek Pumped Storage Project (Number 2740) in South Carolina and believe the project will cause both temporary and permanent degradation of water quality in Bad and Howard Creeks.",
+    "closing_anchor": "We would appreciate five copies of the final environmental impact statement when it is available, and if we can be of further assistance in any way, please let us know.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We have reviewed the Draft Environmental Impact Statement for Bad Creek Pumped Storage Project (Number 2740) in South Carolina and believe the project will cause both temporary and permanent degradation of water quality in Bad and Howard Creeks.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "262"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We have reviewed the Draft Environmental Impact Statement for Bad Creek Pumped Storage Project (Number 2740) in South Carolina and believe the project will cause both temporary and permanent degradation of water quality in Bad and Howard Creeks.",
+      "quote_verified": true,
+      "entity_as_written": "UNITED STATES ENVIRONMENTAL PROTECTION AGENCY REGION IV",
+      "role_as_written": "federal agency commenter"
+    }
+  ],
+  "window_pages": [
+    252,
+    272
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 82,
+  "synthetic_no_complaint": false
+}

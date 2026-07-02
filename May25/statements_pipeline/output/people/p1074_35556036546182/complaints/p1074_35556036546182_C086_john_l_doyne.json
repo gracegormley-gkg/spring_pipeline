@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036546182_C086",
+  "complainer_id": "p1074_35556036546182_K058",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 86,
+  "entity": "John L. Doyne",
+  "kind": "official",
+  "role": "County Executive, Milwaukee County",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly endorsing Alternate #5 as least disruptive with minimal adverse environmental impacts",
+  "summary": "John L. Doyne, County Executive of Milwaukee County, submitted a formal letter supporting the Airport Spur project and specifically endorsing Alternate #5 as the recommended alignment. He characterized the project as imperative for efficient and safe access to General Mitchell Field and praised the Draft EIS as well prepared and documented. No response was deemed necessary by the agency.",
+  "form": "letter",
+  "complaint_summary": "County Executive John L. Doyne writes in support of the Airport Spur project, endorsing Alternate #5 as the least disruptive alignment with minimal adverse environmental impacts and praising the Draft EIS as well prepared.",
+  "evidence_pages": [
+    "166"
+  ],
+  "statement": {
+    "text": "Milwaukee County has been an active participant in developing improved access to General Mitchell Field. Mitchell Field is an important air transportation hub, not only to the County, but to the entire State. As such, it is imperative that a more efficient and safer access route be developed to serve the needs of increasing air transportation demands.\nThe recommended alignment Alternate #5 offers the least disruptive connection to the Airport with minimal adverse environmental impacts. This alternate is also most compatible with long-range planning for the Airport.\nThe statement is well prepared and documented with respect to the assessment of impact to the environment.\nThanking you for the opportunity to offer comments on the Draft Environmental Impact Statement, and with kindest personal regards, I remain",
+    "opening_anchor": "Milwaukee County has been an active participant in developing improved access to General Mitchell Field. Mitchell Field is an important air transportation hub",
+    "closing_anchor": "Thanking you for the opportunity to offer comments on the Draft Environmental Impact Statement, and with kindest personal regards, I remain",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036546182_R014"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The recommended alignment Alternate #5 offers the least disruptive connection to the Airport with minimal adverse environmental impacts.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "166"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The recommended alignment Alternate #5 offers the least disruptive connection to the Airport with minimal adverse environmental impacts.",
+      "quote_verified": true,
+      "entity_as_written": "John L. Doyne",
+      "role_as_written": "County Executive, Milwaukee County"
+    }
+  ],
+  "window_pages": [
+    156,
+    176
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 58,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036806586_C103",
+  "complainer_id": "p1074_35556036806586_K091",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 103,
+  "entity": "U. S. Department of the Interior",
+  "kind": "agency",
+  "role": "federal agency commenting on wildlife management",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "commends cooperation on Keowee-Jocassee lands but questions whether wildlife mitigation measures compensate for losses from Bad Creek Project",
+  "summary": "The U.S. Department of the Interior is paraphrased in Section 9.3 as commending Duke Power's cooperative arrangement for leasing Keowee-Jocassee Project lands for wildlife management purposes, while simultaneously questioning whether the proposed mitigation measures would adequately compensate for the loss of wildlife productivity associated with the Bad Creek Project. The applicant (Duke Power) responded by describing the history and success of its voluntary cooperative wildlife management agreements with state wildlife agencies, citing population growth of deer and bear as evidence of effective mitigation.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The U.S. Department of the Interior commends Duke Power's cooperative arrangement for leasing Keowee-Jocassee Project lands to the South Carolina Wildlife and Marine Resources Department for wildlife management, but questions whether the proposed measures would compensate for the loss of wildlife productivity caused by the Bad Creek Project.",
+  "evidence_pages": [
+    "303"
+  ],
+  "statement": {
+    "text": "In the second paragraph, the statement says, \"The U. Interior while commending the . \"can't for its coop Keowee-Jocassee Project lands (unquote: all lands lands) to the South Carolina Wildlife and Marine Res wildlife management purposes, but questions whether compensate for the loss of wildlife productivity as: proposed Bad Creek Project.\"",
+    "opening_anchor": "In the second paragraph, the statement says, \"The U. Interior while commending the . \"can't for its coop Keowee-Jocassee Project lands",
+    "closing_anchor": "questions whether compensate for the loss of wildlife productivity as: proposed Bad Creek Project.\"",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036806586_R041"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "the statement says, \"The U. Interior while commending the . \"can't for its coop Keowee-Jocassee Project lands (unquote: all lands lands) to the South Carolina Wildlife and Marine Res wildlife management purposes, but questions whether compensate for the loss of wildlife productivity as: proposed Bad Creek Project.\"",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "303"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "the statement says, \"The U. Interior while commending the . \"can't for its coop Keowee-Jocassee Project lands (unquote: all lands lands) to the South Carolina Wildlife and Marine Res wildlife management purposes, but questions whether compensate for the loss of wildlife productivity as: proposed Bad Creek Project.\"",
+      "quote_verified": true,
+      "entity_as_written": "U. S. Department of the Interior",
+      "role_as_written": "federal agency commenting on wildlife management"
+    }
+  ],
+  "window_pages": [
+    293,
+    308
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 91,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C195",
+  "complainer_id": "p0491_35556036091957_K172",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 195,
+  "entity": "Maryland Department of Natural Resources",
+  "kind": "agency",
+  "role": "Maryland state agency reviewer",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "generally favorable response but requests to be kept informed of regulatory developments",
+  "summary": "The Maryland Department of Natural Resources reviewed the draft Environmental Impact Statement on ORV use on public lands and reported a generally favorable response from all member agencies. However, the Department conditioned its support by requesting to be kept informed of regulations as they are developed, noting that Maryland itself would be promulgating its own ORV regulations for lands under its control.",
+  "form": "written_comment",
+  "complaint_summary": "The Maryland Department of Natural Resources reported a generally favorable response from all member agencies to the ORV EIS, but requested to be kept informed of Interior Department regulations as they are developed, since Maryland would be promulgating its own ORV regulations for lands under its control.",
+  "evidence_pages": [
+    "272"
+  ],
+  "statement": {
+    "text": "The review of this project in the Department of Natural Resources resulted in generally favorable response from all member agencies. The Department wishes to be kept informed of regulations as they are developed by the Bureaus of the Department of the Interior, since Maryland will be promulgating regulations for the use of Off-Road Vehicles to be applied within lands owned or under the control of the Department of Natural Resources.\nTitle Chief. Planning & Evaluation\nAgency Dept. of Natural Resources",
+    "opening_anchor": "The review of this project in the Department of Natural Resources resulted in generally favorable response from all member agencies.",
+    "closing_anchor": "Agency Dept. of Natural Resources",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The review of this project in the Department of Natural Resources resulted in generally favorable response from all member agencies.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "272"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The review of this project in the Department of Natural Resources resulted in generally favorable response from all member agencies.",
+      "quote_verified": true,
+      "entity_as_written": "Maryland Department of Natural Resources",
+      "role_as_written": "Maryland state agency reviewer"
+    }
+  ],
+  "window_pages": [
+    262,
+    282
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 172,
+  "synthetic_no_complaint": false
+}

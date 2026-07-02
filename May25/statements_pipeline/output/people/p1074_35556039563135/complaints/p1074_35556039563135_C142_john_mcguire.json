@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556039563135_C142",
+  "complainer_id": "p1074_35556039563135_K124",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 142,
+  "entity": "John McGuire",
+  "kind": "official",
+  "role": "State Historic Preservation Officer, Illinois Department of Conservation",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letter states project will not affect archaeological resources, neither supporting nor opposing the project",
+  "summary": "John McGuire, as State Historic Preservation Officer for the Illinois Department of Conservation, issued a letter dated September 10, 1976, informing the Illinois Department of Transportation that the project would not affect any archaeological resources subject to protection under Section 106 of the Historic Preservation Act of 1966 or Section 4(f) of the Department of Transportation Act. His role was to provide a technical clearance determination rather than to express support or opposition to the project.",
+  "form": "letter",
+  "complaint_summary": "McGuire, as State Historic Preservation Officer, determined that the project will not affect any archaeological resources subject to protection under Section 106 of the Historic Preservation Act of 1966 or Section 4(f) of the Department of Transportation Act of 1966.",
+  "evidence_pages": [
+    "320"
+  ],
+  "statement": {
+    "text": "My staff archaeologist has reviewed the plans for the above proposed project.\nIt has been determined that the project will not affect any archaeological resources subject to protection under Section 106 of the Historic Preservation Act of 1966 or Section 4 (f) of the Department of Transportation Act of 1966.\nSincerely,\nOfficer\nJohn McGuire State Historic Preservation\nJM/LSA\ncc: T. E. Hornbacker",
+    "opening_anchor": "My staff archaeologist has reviewed the plans for the above proposed project.",
+    "closing_anchor": "John McGuire State Historic Preservation\nJM/LSA\ncc: T. E. Hornbacker",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "It has been determined that the project will not affect any archaeological resources subject to protection under Section 106 of the Historic Preservation Act of 1966 or Section 4 (f) of the Department of Transportation Act of 1966.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "320"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "It has been determined that the project will not affect any archaeological resources subject to protection under Section 106 of the Historic Preservation Act of 1966 or Section 4 (f) of the Department of Transportation Act of 1966.",
+      "quote_verified": true,
+      "entity_as_written": "John McGuire",
+      "role_as_written": "State Historic Preservation Officer, Illinois Department of Conservation"
+    }
+  ],
+  "window_pages": [
+    310,
+    330
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 124,
+  "synthetic_no_complaint": false
+}

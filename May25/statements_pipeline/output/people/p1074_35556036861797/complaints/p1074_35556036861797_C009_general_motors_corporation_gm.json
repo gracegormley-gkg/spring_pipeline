@@ -1,0 +1,81 @@
+{
+  "complaint_id": "p1074_35556036861797_C009",
+  "complainer_id": "p1074_35556036861797_K011",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 9,
+  "entity": "General Motors Corporation (GM)",
+  "kind": "organization",
+  "role": "automotive manufacturer / commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased disagreement with NHTSA fuel economy improvement estimate and implicit resistance to weight-reduction requirements",
+  "summary": "General Motors Corporation appears as a commenter on the draft EIS and the NPRM, raising technical objections to NHTSA's fuel economy analysis, particularly disputing the agency's estimate that a 50-pound weight reduction would yield a 1.7 percent improvement in average fuel economy. GM is identified as one of only two manufacturers (along with Chrysler) whose projected MY 1979 fuel economy falls below the proposed AFES, making it directly subject to additional compliance burdens. The document notes that GM did not claim weight reduction was impossible, and the agency incorporated some manufacturer comments (e.g., emission standard penalties, separate recreational-vehicle class) while retaining the weight-reduction scenario applicable to GM.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "GM is identified as one of only two manufacturers projected to fall below the proposed AFES level, meaning the standard would require GM (and Chrysler) to take fuel economy improvement actions beyond their voluntary product plans, including an estimated 50-pound vehicle weight reduction.",
+  "evidence_pages": [
+    "9-57"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036861797_R001"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "GM agrees with the NHTSA analysis that a 50-pound weight reduction in all vehicles would shift nearly 10 percent of the vehicles to the next lower inertia weight class. However, GM disagrees with the NHTSA estimate that an average 50-pound weight reduction will result in a 1.7 percent improvement of average fuel economy.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased",
+    "sectional"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "19"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "List of Commenters",
+      "quote_verified": true,
+      "entity_as_written": "General Motors Corporation",
+      "role_as_written": "Commenter / NPA manufacturer"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "79"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "GM agrees with the NHTSA analysis that a 50-pound weight reduction in all vehicles would shift nearly 10 percent of the vehicles to the next lower inertia weight class. However, GM disagrees with the NHTSA estimate that an average 50-pound weight reduction will result in a 1.7 percent improvement of average fuel economy.",
+      "quote_verified": true,
+      "entity_as_written": "General Motors Corporation (GM)",
+      "role_as_written": "automotive manufacturer / commenter"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "98"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "GM claims that the NHTSA HAS \"double counted\" by projecting the average GM fuel economy for nonpassenger automobiles in MY 1979 would be 18.3 mpg and then by reasoning that GM could raise this 18.3 mpg figure towards the proposed 18.7 mpg standard by further reductions in (CID) × (N/V).",
+      "quote_verified": false,
+      "entity_as_written": "General Motors Corporation (GM)",
+      "role_as_written": "automobile manufacturer / commenter"
+    }
+  ],
+  "window_pages": [
+    9,
+    57
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 11,
+  "synthetic_no_complaint": false
+}

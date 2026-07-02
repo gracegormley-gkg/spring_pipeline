@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556036811230_C045",
+  "complainer_id": "p1074_35556036811230_K042",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 45,
+  "entity": "U.S. Department of Transportation, Federal Highway Administration",
+  "kind": "agency",
+  "role": "Federal agency providing noise standards",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "cited as a technical noise standard reference without expressing support or opposition to the project",
+  "summary": "The U.S. Department of Transportation, Federal Highway Administration is referenced solely as the source of noise standard PPM 90-2, which recommends that L10 values not exceed 70 dBA for certain land uses (e.g., parkland near St. Paul's Cathedral) and 75 dBA for commercial sections. The agency does not express a position on the project itself but provides the technical benchmarks used to evaluate the LRRT system's noise impacts.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The FHWA's Department of Transportation Standard PPM 90-2 is cited as allowing 75 dBA for the commercially classified mall section, providing a noise benchmark against which anticipated LRRT noise levels of 70–75 dBA are evaluated.",
+  "evidence_pages": [
+    "204"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The APTA does not give a guideline for this land use, but the U.S. Department of Transportation, Federal Highway Administration's Standard PPM 90-2 recommends that L<sub>10</sub> values not exceed 70 dBA.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "194"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The APTA does not give a guideline for this land use, but the U.S. Department of Transportation, Federal Highway Administration's Standard PPM 90-2 recommends that L10 values not excee",
+      "quote_verified": false,
+      "entity_as_written": "U.S. Department of Transportation, Federal Highway Administration",
+      "role_as_written": "Federal agency providing noise standards"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "193"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The APTA does not give a guideline for this land use, but the U.S. Department of Transportation, Federal Highway Administration's Standard PPM 90-2 recommends that L<sub>10</sub> values not exceed 70 dBA.",
+      "quote_verified": true,
+      "entity_as_written": "U.S. Department of Transportation, Federal Highway Administration",
+      "role_as_written": "federal agency providing noise standards"
+    }
+  ],
+  "window_pages": [
+    183,
+    204
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 42,
+  "synthetic_no_complaint": false
+}

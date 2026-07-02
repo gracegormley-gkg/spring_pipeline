@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C085",
+  "complainer_id": "p1074_35556039563135_K056",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 85,
+  "entity": "Department of Local Government Affairs",
+  "kind": "agency",
+  "role": "State clearinghouse agency / draft EIS commenter",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "direct quote stating no comment after reviewing the environmental statement",
+  "summary": "The Department of Local Government Affairs reviewed the Draft Environmental Statement and offered no substantive comment, simply stating it had no comment to make. Their response was noted as 'Concur' by the evaluators. They raised no objections or concerns regarding the proposed Lincoln Highway improvement project.",
+  "form": "sectional",
+  "complaint_summary": "The Department of Local Government Affairs reviewed the environmental statement and stated it had no comment, listed among State (Clearinghouse) Agencies with a 'Concur' disposition.",
+  "evidence_pages": [
+    "179"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556039563135_R043"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "I have reviewed the above environmental statement and have no comment.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "179"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "I have reviewed the above environmental statement and have no comment.",
+      "quote_verified": true,
+      "entity_as_written": "Department of Local Government Affairs",
+      "role_as_written": "State clearinghouse agency / draft EIS commenter"
+    }
+  ],
+  "window_pages": [
+    169,
+    189
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 56,
+  "synthetic_no_complaint": false
+}

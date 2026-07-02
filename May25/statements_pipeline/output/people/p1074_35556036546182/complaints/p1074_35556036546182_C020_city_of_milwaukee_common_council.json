@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556036546182_C020",
+  "complainer_id": "p1074_35556036546182_K002",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 20,
+  "entity": "City of Milwaukee Common Council",
+  "kind": "government",
+  "role": "Municipal legislative body",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "modified resolution opposing construction until truck traffic capacity and environmental impacts are demonstrated",
+  "summary": "The City of Milwaukee Common Council initially passed a resolution in May 1973 declaring support for eliminating the Airport Spur from the Milwaukee County Expressway System. By October 1973, the Council modified its position to conditional opposition, stating it would oppose construction unless it could be demonstrated that the Spur can handle future truck traffic and will not be environmentally detrimental to the area.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "On October 23, 1973, the City of Milwaukee Common Council modified its earlier resolution to oppose construction of the Airport Spur unless it can be demonstrated that it can handle future truck traffic and will not be environmentally detrimental to the area.",
+  "evidence_pages": [
+    "21"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "October 23, 1973 City of Milwaukee Common Council modified earlier resolution for opposing the construction of the Airport Spur until demonstrated that it can handle future truck traffic and will not be environmentally detrimental to the area.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "21"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "May 2, 1973 City of Milwaukee Common Council resolution, declaring support for the elimination of the Airport Spur from Milwaukee County Expressway System.",
+      "quote_verified": true,
+      "entity_as_written": "City of Milwaukee Common Council",
+      "role_as_written": "Municipal legislative body"
+    },
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "21"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "October 23, 1973 City of Milwaukee Common Council modified earlier resolution for opposing the construction of the Airport Spur until demonstrated that it can handle future truck traffic and will not be environmentally detrimental to the area.",
+      "quote_verified": true,
+      "entity_as_written": "City of Milwaukee Common Council",
+      "role_as_written": "Municipal legislative body"
+    }
+  ],
+  "window_pages": [
+    11,
+    31
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 2,
+  "synthetic_no_complaint": false
+}

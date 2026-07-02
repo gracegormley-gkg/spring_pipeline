@@ -1,0 +1,72 @@
+{
+  "complaint_id": "p1074_35556039563135_C049",
+  "complainer_id": "p1074_35556039563135_K076",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 49,
+  "entity": "United States Department of the Interior (BOR)",
+  "kind": "agency",
+  "role": "Federal agency commenter on Section 4(f) and environmental statement",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "BOR provides opinion contingent on technical assistance basis, noting no objection subject to conditions, while deferring final determination on recreation significance",
+  "summary": "The United States Department of the Interior (Bureau of Outdoor Recreation) responded to early coordination requests regarding Section 4(f) applicability to the Roosevelt School property and the Cook County Forest Preserve District temporary construction easement. BOR's response, dated November 7, 1974, addressed the Section 4(f) question and provided a technical assistance opinion that corresponded with the Department of Transportation's position, while noting that the opinion did not necessarily represent the official position of the Department of the Interior. BOR deferred the determination of recreation significance for the Chicago Heights Park District to the appropriate director.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The United States Department of the Interior (BOR) responded on November 7, 1974 to a request regarding the applicability of Section 4(f) to the Roosevelt School property and Cook County Forest Preserve District, providing a technical assistance opinion that corresponded with the DOT's position but noting it did not necessarily represent the official Department of the Interior position, and deferring the determination of recreation significance for the Chicago Heights Park District to the appropriate director.",
+  "evidence_pages": [
+    "145-168"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556039563135_R012"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "Contingent upon implementation of the measures to minimize harm as reflected in the Section 4(f) material the Department of the Interior would have no objection to approval of the Section 4(f) aspects of the project by the Secretary of Transportation.",
+  "summary_quote_verified": false,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "sectional"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "145-194"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "Contingent upon implementation of the measures to minimize harm as reflected in the Section 4(f) material the Department of the Interior would have no objection to approval of the Section 4(f) aspects of the project by the Secretary of Transportation.",
+      "quote_verified": false,
+      "entity_as_written": "United States Department of the Interior (BOR)",
+      "role_as_written": "Federal agency commenter on Section 4(f) and environmental statement"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "322"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "NAME OF AGENCY: United State's Department of the Interior (BOR) (November 7, 1974)",
+      "quote_verified": false,
+      "entity_as_written": "United States Department of the Interior (BOR)",
+      "role_as_written": "commenter in early coordination table"
+    }
+  ],
+  "window_pages": [
+    135,
+    168
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 76,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C026",
+  "complainer_id": "p1074_35556039563135_K026",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 26,
+  "entity": "President, Village of Park Forest",
+  "kind": "official",
+  "role": "Local government commenter on draft EIS",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed only in agency distribution and comment-receipt rosters with no statement of position",
+  "summary": "The President of the Village of Park Forest appears twice in the document window: once in the list of local agencies to which the Draft Environmental Statement was sent for review and comment, and once in the list of local agencies that commented on the Draft Environmental Statement. No substantive position, complaint, or statement of support or opposition is recorded in this window.",
+  "form": "sectional",
+  "complaint_summary": "The President of the Village of Park Forest is listed among local agencies to which the Draft Environmental Statement was sent for review and comment, indicating they were a designated recipient but no position is stated.",
+  "evidence_pages": [
+    "24"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence"
+  ],
+  "summary_quote": "Director, Northeastern Illinois Planning Commission (Metropolitan Clearinghouse) Acting Superintendent, Cook County Highway Department President, Village of Park Forest",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "24"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Director, Northeastern Illinois Planning Commission (Metropolitan Clearinghouse) Acting Superintendent, Cook County Highway Department President, Village of Park Forest",
+      "quote_verified": true,
+      "entity_as_written": "President, Village of Park Forest",
+      "role_as_written": "Local government commenter on draft EIS"
+    }
+  ],
+  "window_pages": [
+    14,
+    34
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 26,
+  "synthetic_no_complaint": false
+}

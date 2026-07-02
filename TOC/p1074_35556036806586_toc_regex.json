@@ -1,0 +1,2055 @@
+{
+  "doc_id": "p1074_35556036806586",
+  "method": "regex",
+  "toc_source_pages": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "toc": [
+    {
+      "number": "",
+      "title": "Foreword",
+      "page": "iii",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "List",
+      "page": "x",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "of I",
+      "page": "xv",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "llustrations",
+      "page": "1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "List",
+      "page": "1-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "of Ta",
+      "page": "1-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "ables",
+      "page": "1-5",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Summary Sheet",
+      "page": "1-5",
+      "children": []
+    },
+    {
+      "number": "1",
+      "title": "DESC",
+      "page": "1-9",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "RIPTION OF PROPOSED ACTION",
+      "page": "1-10",
+      "children": [
+        {
+          "number": "1.6",
+          "title": "Purpose",
+          "page": "1-15",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "",
+      "title": "Location",
+      "page": "1-17",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Land Requirements",
+      "page": "1-20",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Proposed Facilities",
+      "page": "1-22",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "1.4.1 Project Works and Reservoirs",
+      "page": "1-27",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "1.4.2 Tailwater Features",
+      "page": "2-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "1.4.3 Access Roads and Tunnels",
+      "page": "2-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "1.4.4 Transmission Facilities",
+      "page": "2-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Construction Procedures",
+      "page": "2-3",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Operational and Maintenance Procedures",
+      "page": "2-5",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Future Plans",
+      "page": "2-7",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Compliance with Applicable Laws and",
+      "page": "2-8",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Regulations",
+      "page": "2-8",
+      "children": []
+    },
+    {
+      "number": "2",
+      "title": "DESC",
+      "page": "2-8",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "RIPTION OF THE EXISTING ENVIRONMENT",
+      "page": "2-11",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Land Features and Uses",
+      "page": "2-11",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "2.1.1 Land Uses",
+      "page": "2-11",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "2.1.2 Recreation",
+      "page": "2-12",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "2.1.3 Topography, Physiography, and",
+      "page": "2-14",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Geology",
+      "page": "2-15",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "2.1.4 Soils",
+      "page": "2-15",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "2.1.5 Geologic Hazards",
+      "page": "2-13",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Species and Ecosystems",
+      "page": "2-59",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "2.2.1 Flora",
+      "page": "2-70",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "2.2.1.1 Riverbank Shrub Thicket",
+      "page": "2-70",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "2.2.1.2 Disturbed Floodplain Forest",
+      "page": "2-73",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "2.2.1.3 Mixed Mesophytic Forest",
+      "page": "2-73",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "2.2.1.4 Upland Oak Forest",
+      "page": "2-76",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "2.2.1.5 Pine-Dominated Types",
+      "page": "2-76",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "2.2.2 Fauna",
+      "page": "2-76",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "2.2.2.1 Wildlife",
+      "page": "2-80",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "2.2.2.2 Hydrology, Water Quality,",
+      "page": "3-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "and Aquatic Biota",
+      "page": "3-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "2.2.3 Unique and Other Biotic Resources",
+      "page": "3-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "2.2.3.1 Flora",
+      "page": "3-2",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "2.2.3.2 Fauna",
+      "page": "3-3",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Climate 2.4.1",
+      "page": "3-5",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "conomic Considerations",
+      "page": "3-5",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "and Air Quality",
+      "page": "3-5",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Climate",
+      "page": "3-8",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Air and Noise Monitoring",
+      "page": "3-12",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "2.4.2.1 Air Quality",
+      "page": "3-14",
+      "children": [
+        {
+          "number": "2.5.1",
+          "title": "2.4.2.2 Noise",
+          "page": "3-14",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "",
+      "title": "Features",
+      "page": "3-15",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Scenic and Esthetic Resources",
+      "page": "3-16",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Historical and Archeological Aspects",
+      "page": "3-16",
+      "children": []
+    },
+    {
+      "number": "3",
+      "title": "ENVI",
+      "page": "3-16",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "RONMENTA",
+      "page": "3-20",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "L IMPACTS OF THE PROPOSED ACTION",
+      "page": "3-22",
+      "children": [
+        {
+          "number": "3.1",
+          "title": "Constru",
+          "page": "3-22",
+          "children": [
+            {
+              "number": "3.1.1",
+              "title": "Land Features and Uses",
+              "page": "3-23",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "",
+      "title": "3.1.1.1 Recreation",
+      "page": "3-33",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "3.1.1.2 Scenic and Esthetic",
+      "page": "3-33",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Resources",
+      "page": "3-33",
+      "children": [
+        {
+          "number": "3.1.2",
+          "title": "Species and Ecosystems",
+          "page": "3-34",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "",
+      "title": "3.1.2.1 Flora",
+      "page": "3-34",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "3.1.2.2 Terrestrial Fauna",
+      "page": "3-34",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "3.1.2.3 Water Quality and Aquatic",
+      "page": "3-35",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Fauna",
+      "page": "4-1",
+      "children": [
+        {
+          "number": "3.1.4",
+          "title": "Socio-Economic Considerations",
+          "page": "4-1",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "",
+      "title": "3.1.3.1 Recreation",
+      "page": "4-10",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Air Quality and Noise",
+      "page": "4-11",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Waste Disposal",
+      "page": "4-11",
+      "children": [
+        {
+          "number": "3.2",
+          "title": "Operat:",
+          "page": "4-12",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "",
+      "title": "ion and Maintenance",
+      "page": "4-13",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "•:",
+      "page": "4-16",
+      "children": [
+        {
+          "number": "3.2.2",
+          "title": "3.2.1.2 Recreation",
+          "page": "4-10",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "",
+      "title": "Species and Ecosystems",
+      "page": "5-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "3.2.2.1 Flora",
+      "page": "5-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "3.2.2.2 Wildlife",
+      "page": "5",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "3.2.2.3 Water Quality and Aquatic",
+      "page": "2",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Fauna",
+      "page": "5-1",
+      "children": [
+        {
+          "number": "3.2.4",
+          "title": "Socio-Economic Considerations",
+          "page": "5-1",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "",
+      "title": "Air Quality and Noise",
+      "page": "5-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Solid and Domestic Wastes",
+      "page": "5-2",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "3.2.5.1 Solid Wastes",
+      "page": "5-3",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "3.2.5.2 Domestic Wastes",
+      "page": "5-4",
+      "children": [
+        {
+          "number": "3.2.7",
+          "title": "Use of Resources",
+          "page": "5-4",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "",
+      "title": "Maintenance",
+      "page": "5-5",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "ation and Abandonment",
+      "page": "5-5",
+      "children": []
+    },
+    {
+      "number": "4",
+      "title": "THE",
+      "page": "6-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "ENVIRON",
+      "page": "6-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "OPOSED BY THE APPLICANT TO ENHANCE",
+      "page": "6-2",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "MENT OR TO AVOID OR MITIGATE ADVERSE",
+      "page": "7-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "AL EFFECTS",
+      "page": "7-1",
+      "children": [
+        {
+          "number": "4.1",
+          "title": "Preventive Measures and Monitoring",
+          "page": "7-1",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "",
+      "title": "4.1.1 Flora",
+      "page": "7-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "4.1.2 Recreation",
+      "page": "7-1",
+      "children": [
+        {
+          "number": "4.2",
+          "title": "Environmental Restoration and Enhancement",
+          "page": "7-2",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "",
+      "title": "4.2.1 Scenic and Esthetic Resources",
+      "page": "7-2",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "4.2.2 Water Quality and Aquatic Biota 4.2.3 History and Archeology",
+      "page": "7-3",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "4.2.5 Ristory and Archeology",
+      "page": "8-1",
+      "children": []
+    },
+    {
+      "number": "5",
+      "title": "UNAVOIDABLE ADVERSE ENVIRONMENTAL EFFECTS",
+      "page": "8-1",
+      "children": [
+        {
+          "number": "5.1",
+          "title": "Human Resources Impacted",
+          "page": "8-8",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "",
+      "title": "5.1.1 Scenic and Esthetic Resources",
+      "page": "8-8",
+      "children": [
+        {
+          "number": "3.2",
+          "title": "Uses Preempted and Unavoidable Changes",
+          "page": "8-8",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "",
+      "title": "5.2.1 Flora",
+      "page": "8-11",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "5.2.2 Fauna and Water Quality 5.2.3 Recreation",
+      "page": "8-11",
+      "children": [
+        {
+          "number": "5.3",
+          "title": "Loss of Environmental Quality",
+          "page": "8-12",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "",
+      "title": "J.J",
+      "page": "8-12",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "5.3.1 Aquatic Fauna",
+      "page": "8-18",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "5.3.2 Air and Noise Quality",
+      "page": "8-19",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "5.3.3 Recreation",
+      "page": "8-20",
+      "children": []
+    },
+    {
+      "number": "6",
+      "title": "RELATIONSHIP BETWEEN LOCAL SHORT-TERM USES OF MAN'S ENVIRONMENT AND THE MAINTENANCE AND ENHANCEMENT OF LONG-TERM PRODUCTIVITY",
+      "page": "8-21",
+      "children": [
+        {
+          "number": "6.1",
+          "title": "Short-Term Uses",
+          "page": "8-24",
+          "children": []
+        },
+        {
+          "number": "6.2",
+          "title": "Long-Term Productivity",
+          "page": "8-24",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "title": "IRREVERSIBLE AND IRRETRIEVABLE COMMITMENTS OF RESOURCES",
+      "page": "8-26",
+      "children": [
+        {
+          "number": "7.1",
+          "title": "Land Features and Uses",
+          "page": "8-27",
+          "children": []
+        },
+        {
+          "number": "7.2",
+          "title": "Endangered Species",
+          "page": "8-28",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "",
+      "title": "7.2.1 Flora",
+      "page": "8-29",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "7 0",
+      "page": "8-30",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "7.2.2 Fauna",
+      "page": "8-30",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "70 N = 0 = 0 10 10 10 10 10 10 10 10 10 10 10 10 1",
+      "page": "8-32",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Socio-Economic Considerations",
+      "page": "8-32",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Resources Lost",
+      "page": "8-33",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Finite Resources",
+      "page": "8-34",
+      "children": [
+        {
+          "number": "7.5",
+          "title": "rinice resources",
+          "page": "8-34",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "title": "ALTERNATIVES TO THE PROPOSED ACTION",
+      "page": "8-35",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Need for Project Power",
+      "page": "8-36",
+      "children": [
+        {
+          "number": "8.2",
+          "title": "Energy Alternatives",
+          "page": "8-36",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "",
+      "title": "8.2.1 Conventional Hydroelectric Power",
+      "page": "8-38",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.2.2 Pumped Storage Hydroelectric Peaking",
+      "page": "3-39",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Power",
+      "page": "8-39",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.2.3 Simple Cycle Combustion Turbines",
+      "page": "8-39",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8_10",
+      "page": "8-40",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.2.4 Heat-Recovery Combined-Cycle",
+      "page": "8-41",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Combustion Turbine",
+      "page": "8-41",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "0 11",
+      "page": "8-41",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "•",
+      "page": "8-41",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.2.5 Coal-Fired Steam Peaking and",
+      "page": "9520",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Intermediate Load Plant",
+      "page": "5",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.2.6 Base-Load Nuclear Power",
+      "page": "9-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.2.7 Conservation and Rate Revision as",
+      "page": "9-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "an Alternative to The Proposed",
+      "page": "9-2",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Action",
+      "page": "9-8",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.2.8 Purchase of Power",
+      "page": "9-9",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.2.9 Denial of Application for License",
+      "page": "9-10",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.2.10 Federal Development",
+      "page": "9-10",
+      "children": [
+        {
+          "number": "8.3",
+          "title": "Alternative Pumped Storage Sites",
+          "page": "9-11",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "",
+      "title": "8.3.1 Long Spur Ridge Site",
+      "page": "10-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.3.1.1 Flora",
+      "page": "B-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.3.1.2 Fauna",
+      "page": "C-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.3.1.3 Water Quality",
+      "page": "1-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.3.1.4 Scenic and Esthetic Resources",
+      "page": "1-2",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.3.1.5 Recreation",
+      "page": "1-2",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.3.1.6 Socio-Economic Considerations",
+      "page": "1-3",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.3.2 Bearcamp Creek Site",
+      "page": "1-3",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.3.2.1 Flora",
+      "page": "1-7",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.3.2.2 Fauna",
+      "page": "1-4",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.3.2.3 Water Quality",
+      "page": "1-8",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.3.2.4 Scenic and Esthetic Resources",
+      "page": "1-5",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.3.2.5 Recreation",
+      "page": "1-11",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.3.2.6 Socio-Economic Considerations",
+      "page": "1-6",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.3.3 Coley Creek Site",
+      "page": "1-12",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.3.3.1 Flora",
+      "page": "1-7",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.3.3.2 Fauna",
+      "page": "1-13",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.3.3.3 Water Quality",
+      "page": "1-8",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.3.3.4 Scenic and Esthetic Resources",
+      "page": "1-16",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.3.3.5 Recreation",
+      "page": "1-9",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.3.3.6 Socio-Economic Considerations",
+      "page": "1-19",
+      "children": [
+        {
+          "number": "8.4",
+          "title": "Design Alternatives of the Selected Pumped",
+          "page": "1-10",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "",
+      "title": "Storage",
+      "page": "1-21",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.4.1 Powerhouse",
+      "page": "1-11",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "8.4.2 Intake Structure in the Upper",
+      "page": "1-23",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Reservoir",
+      "page": "1-12",
+      "children": [
+        {
+          "number": "8.5",
+          "title": "Environmental and Engineering Assessment",
+          "page": "1-25",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "",
+      "title": "- 1",
+      "page": "2-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "of Alternatives",
+      "page": "2-9",
+      "children": []
+    },
+    {
+      "number": "9",
+      "title": "STAF",
+      "page": "2-2",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "F DISCUSSION OF SIGNIFICANT ENVIRONMENTAL",
+      "page": "2-19",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "•",
+      "page": "2-3",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "MATT",
+      "page": "2-4",
+      "children": [
+        {
+          "number": "9.1",
+          "title": "Flora",
+          "page": "2-24",
+          "children": []
+        },
+        {
+          "number": "9.2",
+          "title": "Wildlife",
+          "page": "2-5",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "",
+      "title": "Recreation",
+      "page": "2-25",
+      "children": [
+        {
+          "number": "7.4",
+          "title": "NECLEALIUM .",
+          "page": "2-6",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": "",
+      "title": "9.5 Archeology",
+      "page": "2-26",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "9.6 Scenic and Esthetic Resources",
+      "page": "2-7",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "9.7 Air Quality",
+      "page": "2-26",
+      "children": []
+    },
+    {
+      "number": "10",
+      "title": "LITERATURE CITED",
+      "page": "2-8",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "APPE",
+      "page": "2-27",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "APPENDIX A",
+      "page": "2-9",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Letters of Comment on Bad Creek Draft Environmental Impact Statement",
+      "page": "2-27",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "APPE",
+      "page": "2-10",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "NDIX B",
+      "page": "2-28",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Duke Power Company's Erosion and Sediment control Plan",
+      "page": "2-30",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "APPE",
+      "page": "2-30",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "NDIX C",
+      "page": "2-12",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Fishes Known to Inhabit Lake Josesse",
+      "page": "2-33",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "ILLUSTRATIONS",
+      "page": "2-13",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Figure",
+      "page": "2-33",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": ",·",
+      "page": "2-14",
+      "children": []
+    },
+    {
+      "number": "I",
+      "title": "age",
+      "page": "2-34",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Frontis-",
+      "page": "2-15",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "piece",
+      "page": "2-36",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "West Bad Creek at Confluence with Howard Creek.",
+      "page": "2-16",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Location of the Proposed Bad Creek Pumped Storage Project.",
+      "page": "2-37",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Existing Transmission Facilities, Duke Power Company.",
+      "page": "2-17",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Location of Project Facilities.",
+      "page": "2-38",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Location of Quarries, Borrow, and Spoil Areas.",
+      "page": "2-18",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Engineering Drawings of Project Facilities.",
+      "page": "2-41",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Engineering Drawings of Project Facilities.",
+      "page": "2-19",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Engineering Drawings of Project Facilities.",
+      "page": "2-42",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Proposed Hiking Trail Route.",
+      "page": "2-20",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Proposed 525-kV Transmission Line Route.",
+      "page": "2-50",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Applicant's Construction Schedule.",
+      "page": "2-21",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Area-Capacity Curves for Bad Creek and Jocassee Reservoirs.",
+      "page": "2-50",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Electrical Energy Charts, Bad Creek Pumped Storage Project.",
+      "page": "2-22",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "View of General Vicinity of Project Area",
+      "page": "2-52",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "from Overlook on State Highway No. 171.",
+      "page": "2-23",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Lake Jocassee in Right Background.",
+      "page": "2-56",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Iocation of Tributary Sampling Stations.",
+      "page": "2-24",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Percent of Flow from Bad Creek and West Bad Creek to Howard Creek, April 1973-June 1975",
+      "page": "2-56",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Comparison of Selected Water Quality Parameters in Howard Creek and Tributaries.",
+      "page": "2-25",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Comparison of Selected Water Quality Parameters in Howard Creek and other Lake Jocassee Tributaries, January 1974-December 1975.",
+      "page": "2-61",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "ILLUSTRATIONS (continued)",
+      "page": "2-26",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Figure",
+      "page": "2-77",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "West Bad Creek Just Upstream from its Junction with Howard Creek and Adjacent Highway 171 Berm on the Right. An Estimated 2 to 4 cfs is Flowing Over a Sandy Bottom.",
+      "page": "2-27",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Howard Creek Just Upstream from the Junction of Bad Creek. The Stream Substrate was Composed of Some Cobble with a Good Deal of Sand; Water was Slightly Turbid.",
+      "page": "2-78",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Bad Creek Immediately Adjacent to Howard Creek. Streambed Contains a Considerable Amount of Sand.",
+      "page": "2-28",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Junction of Limberpole Creek (left) with Howard Creek. A Slight Turbid Water Condition Distinguished Howard Creek from the Clear Limberpole Creek Inflow.",
+      "page": "2-78",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "The Stream Bottom Contains Extensive Areas of Sand Except in Areas of Swiftest Current at this Site in Lower Howard Creek.",
+      "page": "2-29",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "2-11a.",
+      "page": "2-79",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Mean Density and Mean Biomass of Benthic Macroinvertebrates in Howard Creek in 1974.",
+      "page": "2-30",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "2-11b.",
+      "page": "2-79",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Mean Density and Mean Biomass of Benthic Macroinvertebrates in Tributaries to Howard Creek and for Combined Howard Creek Stations, 1974.",
+      "page": "2-31",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Lower Howard Creek in Vicinity of Corbin Creek Used by Lake Jocassee Trout during Winter and Fall Spawning Runs.",
+      "page": "2-81",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Lower Howard Creek in Vicinity of Corbin Creek Looking Upstream. Falls in Back-ground Represent Approximate Upstream Boundary of Fish Migration During Observed Spawning Runs.",
+      "page": "3-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "-",
+      "page": "3-4",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Lake Jocassee Monitoring Stations.",
+      "page": "3-2",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "ILLUSTRATIONS (continued)",
+      "page": "3-4",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Figure",
+      "page": "3-3",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Temperature/DO Profiles at Station 560,",
+      "page": "4-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Lake Jocassee, 1974.",
+      "page": "4-3",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Temperature/DO Profiles at Station 558, Lake Jocassee, 1974.",
+      "page": "4-2",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Examples of Metalimnial Oxygen Maxima and Minima in Lake Jocassee.",
+      "page": "4-3",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Profiles of Selected Water Quality Parameters at Station 560, Lake Jocassee, 1974.",
+      "page": "4-3",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Profiles of Selected Water Quality Parameters at Station 560, Lake Jocassee, 1974.",
+      "page": "4-4",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Trout Habitat for the Period March 1975-",
+      "page": "4-4",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "February 1976 at Lake Jocassee Station 558",
+      "page": "4-4",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Near Dam.",
+      "page": "4-5",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Trout Habitat from Jocassee Dam to Vicinity of Proposed Bad Creek Outlet, September 20, 1975.",
+      "page": "4-15",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Trout Habitat in Lake Jocassee for July Through October.",
+      "page": "8-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Ginseng (Panax quinquefolium).",
+      "page": "8-25",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Oconee Bells (Shortia galacifolia).",
+      "page": "8-2",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Population Growth of Oconee and Pickens Counties, S.C.",
+      "page": "8-30",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Portion of S.C. Route 171 That Passes Near the Location of the West Bad Creek Dam. This Portion of Road Would Be Relocated.",
+      "page": "8-3",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Between Station H-7 and H-8 (Figure 2-2), Showing Steepness of Slopes in the Project Area. Approximate Slope in Background is 110 Percent.",
+      "page": "8-31",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Masses of Laurel and Rhododendron on Side of Slopes in Project Area. Approximate Slope from Top Right to Bottom Left is 125 Percent.",
+      "page": "8-4",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "ILLUSTRATIONS (continued)",
+      "page": "8-35",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Figure",
+      "page": "8-5",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Unimproved Logging Road in Project Area. Approximate Slope is 100 Percent.",
+      "page": "8-37",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Confluence of Bad and Howard Creeks",
+      "page": "8-6",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Showing Flow and Channel Characteristics.",
+      "page": "8-40",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Tropical-like Surroundings in the Project Area.",
+      "page": "9-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Portion of S.C. Route 171 to be Relocated.",
+      "page": "9-5",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Right Middle Ground of Photo Shows Proposed",
+      "page": "9-2",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Location of West Bad Creek Dam.",
+      "page": "9-5",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "View From Lookout on S.C. Route 413 of",
+      "page": "1-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Lake Jocassee. Proposed Bad Creek Project",
+      "page": "1-28",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Location at Right Middle of Photo.",
+      "page": "2-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Transmission Rights-Of-Way (R.O.W.) Lengths Widths, and Distances.",
+      "page": "2-2",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": ",3-19",
+      "page": "2-2",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Silt Fence and Ground Cover Plantings Used to Control Erosion and Siltation Where Access Road Crossed Small Tributary to Bad Creek.",
+      "page": "2-10",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Close-up View of Area Between Silt Fences in Figure 4-1.",
+      "page": "2-3",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Gate Placed Across Access Road to Reduce Vehicular Traffic.",
+      "page": "2-13",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "\"Hold-Gro\" Erosion Control Fabric on a",
+      "page": "2-4",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Steep Access Road. Heavy Rains Make",
+      "page": "2-17",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Continual Maintenance a Necessity.",
+      "page": "2-5",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Log Jam Blocking the Mouth of Corbin Creek at Howard Creek.",
+      "page": "2-31",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Long Spur Ridge Alternative Site.",
+      "page": "2-6",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "View of Thompson River in the Vicinity of",
+      "page": "2-39",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Long Spur Ridge Alternative Site.",
+      "page": "2-7",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Bearcamp Creek Alternative Site.",
+      "page": "2-43",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "ILLUSTRATIONS (continued)",
+      "page": "2-8",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Figure",
+      "page": "2-46",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "View of Bearcamp Creek in the Vicinity of Bearcamp Creek Alternative Site.",
+      "page": "2-9",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Coley Creek Alternative Site.",
+      "page": "2-48",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "View of Coley Creek in the Vicinity of Coley Creek Alternative Site.",
+      "page": "2-10",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "A Portion of a Crescent Land and Timber Company Logging Road That Received Cover Planting and Has Not Been Disturbed by Vehicular Traffic.",
+      "page": "2-53",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Old Crescent Land and Timber Company",
+      "page": "2-11",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Logging Road and Staging Area Along",
+      "page": "2-60",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Howard Creek. Ground Cover is Well",
+      "page": "2-12",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Established in the Staging Area (Right",
+      "page": "2-62",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Center), While Traveled Road is Almost",
+      "page": "2-13",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Bare.",
+      "page": "2-64",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "TABLES",
+      "page": "2-14",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Table",
+      "page": "2-65",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Schedule of license and permit application.",
+      "page": "2-15",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Land use statistics for Oconee and Pickens Counties, South Carolina, and Jackson and Transylvania Counties, North Carolina.",
+      "page": "2-66",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Summary of Vegetation Types in Escarpment Gorges.",
+      "page": "2-16",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "General Summary of Species Composition of Major Vegetation Types in the Escarpment Gorges.",
+      "page": "2-67",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "South Carolina Mountain Unit Deer Harvest Data for 1972-1974.",
+      "page": "2-17",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Fish Population Inventories for Three Stations Within the Howard Creek Drainage Sampled Via Electroshocker. May and June 1973.",
+      "page": "2-69",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Water Quality Data for Selected Parameters Measured in Lake Jocassee at a Depth of 0.3 Meters.",
+      "page": "2-18",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Mercury Content of Fishes From Lake Jocassee and Lake Keowee, South Carolina, 1975-1976.",
+      "page": "2-69",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Number of Fish Captured with Gill Nets in Jocassee Reservoir.",
+      "page": "2-19",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Lake Jocassee Creel Census Estimates, 1974.",
+      "page": "2-71",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Estimated Volume of Trout Habitat in Lake Jocassee.",
+      "page": "2-20",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Total Urban-Rural Population of Four Country Area, 1960-1970.",
+      "page": "2-74",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Industry of Employed Persons and of Experienced Unemployed Persons.",
+      "page": "2-21",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Earnings By Broad Industrial Sector, Oconee County.",
+      "page": "2-75",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "TABLES (continued)",
+      "page": "3-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Table",
+      "page": "3-18",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Earnings By Broad Industrial Sector, Pickens County.",
+      "page": "3-2",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Oconee County Earnings By Broad Industrial Sector Location Quotient For Total Earnings.",
+      "page": "3-24",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Pickens County Earnings By Broad Industrial Sector Location Quotient For Total Earnings.",
+      "page": "4-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Total and Per Capita Personal Income, Oconee County and Greenville-Spartanburg, 1950, 1962, 1972.",
+      "page": "4-9",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Unemployment and Income for South Carolina, Oconee and Pickens Counties, 1970.",
+      "page": "4-2",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Bad Creek Reservoir and Vicinity-Climatology.",
+      "page": "4-10",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Air Quality, Pickens, South Carolina.",
+      "page": "8-1",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Ambient Air Quality Standards.",
+      "page": "8-2",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Proposed Transmission Rights-Of-Way (R.O.W.) Widths, Distances, and Areas.",
+      "page": "8-3",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Estimated Spring, Average, and Low Flows of Varying Frequencies for Bad Creek Project Area and Howard Creek Basin from Data for the Whitewater River at Jocassee and the Keowee River near Jocassee.",
+      "page": "8-3",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Maintenance Outages.",
+      "page": "8-4",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Plants Relocated from the Bad Creek Project Area.",
+      "page": "8-4",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Applicant's Scheduled Capability (Summer and Winter), Forecast Peak Loads with Load Manage ment and Estimated Reserve Margins.",
+      "page": "8-5",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Economic Comparison of Bad Creek Pumped Storage Project with Alternative Power Sources.",
+      "page": "8-5",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Estimated Total Coal and Oil Consumption by Applicant's System.",
+      "page": "8-22",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "TABLES (continued)",
+      "page": "8-6",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Table",
+      "page": "8-28",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Estimated Quantities of Atmospheric Contaminants Produced by Applicant's System.",
+      "page": "8-7",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Comparison of Bad Creek with Alternative Pumped Storage Sites.",
+      "page": "8-42",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Water Quality, Thompson River at Lake Jocassee, Sample Period of 9/27/73-10/15/74.",
+      "page": "",
+      "children": []
+    },
+    {
+      "number": "",
+      "title": "Comparison of Engineering and Environmental Impacts of Bad Creek and Alternatives.",
+      "page": "",
+      "children": []
+    }
+  ]
+}

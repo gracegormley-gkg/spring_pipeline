@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036546182_C065",
+  "complainer_id": "p1074_35556036546182_K043",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 65,
+  "entity": "Wisconsin State Historical Society",
+  "kind": "organization",
+  "role": "state historical preservation body",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes standing agreement with Division of Highways for archaeological site investigation, no opposition or support expressed",
+  "summary": "The Wisconsin State Historical Society is mentioned in the context of a standing agreement with the Wisconsin Division of Highways to investigate and salvage any historical or archaeological discoveries found during construction. No known historical or archaeological sites are affected by the project, but the agreement ensures the Society can act if any are found. The entity takes no explicit stance on the project itself.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The document notes that although no known historical or archaeological sites are affected, the Wisconsin Division of Highways has a standing agreement with the Wisconsin State Historical Society to investigate and salvage any discoveries found during construction before further work resumes.",
+  "evidence_pages": [
+    "143"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "the Wisconsin Division of Highways has a standing agreement with the Wisconsin State Historical Society in the event a site is found during construction.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "143"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "the Wisconsin Division of Highways has a standing agreement with the Wisconsin State Historical Society in the event a site is found during construction.",
+      "quote_verified": true,
+      "entity_as_written": "Wisconsin State Historical Society",
+      "role_as_written": "state historical preservation body"
+    }
+  ],
+  "window_pages": [
+    133,
+    153
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 43,
+  "synthetic_no_complaint": false
+}

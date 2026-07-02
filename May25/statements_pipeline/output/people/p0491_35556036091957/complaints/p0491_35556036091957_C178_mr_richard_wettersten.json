@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C178",
+  "complainer_id": "p0491_35556036091957_K175",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 178,
+  "entity": "Mr. Richard Wettersten",
+  "kind": "official",
+  "role": "Kansas Forestry, Fish and Game Commission",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "written comment explicitly states Executive Order 11644 is compatible with Kansas Forestry, Fish and Game Commission objectives and that federal action will support state-level controls",
+  "summary": "Mr. Richard Wettersten, representing the Kansas Forestry, Fish and Game Commission, submitted a written comment through the Kansas State Clearinghouse expressing support for Executive Order 11644 and its implementation. He noted that the Order addresses problems common to both federal and state jurisdictions, and that the Commission itself proposes to adopt similar controls over its own lands. He viewed federal action as supportive of state-level ORV regulation efforts.",
+  "form": "written_comment",
+  "complaint_summary": "Mr. Wettersten states that Executive Order 11644 is compatible with the Kansas Forestry, Fish and Game Commission's objectives and comprehensive planning, that the Commission recognizes similar ORV problems at the state level and plans to adopt analogous regulations, and that federal action will support state-level ORV controls.",
+  "evidence_pages": [
+    "253"
+  ],
+  "statement": {
+    "text": "Executive Order 11644, though confined to regulation of off-road vehicles\non certain Department of the Interior and Department of Agriculture lands,\nis compatible with objectives, activities and comprehensive planning\nrelated to land management by the Kansas Forestry, Fish and Game Commission.\nThis Order addresses itself to problems common to Federal and State juris-\ndictions. The Kansas Forestry, Fish and Game Commission has recognized\nthese problems at the state level and proposes to alter its regulations\nto effect similar controls over its lands. Federal action will serve to\nsupport the imposition, acceptance and control of off-road vehicles on\nstate jurisdictions",
+    "opening_anchor": "Executive Order 11644, though confined to regulation of off-road vehicles\non certain Department of the Interior and Department of Agriculture lands,",
+    "closing_anchor": "Federal action will serve to\nsupport the imposition, acceptance and control of off-road vehicles on\nstate jurisdictions",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Executive Order 11644, though confined to regulation of off-road vehicles on certain Department of the Interior and Department of Agriculture lands, is compatible with objectives, activities and comprehensive planning related to land management by the Kansas Forestry, Fish and Game Commission.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "253"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Executive Order 11644, though confined to regulation of off-road vehicles on certain Department of the Interior and Department of Agriculture lands, is compatible with objectives, activities and comprehensive planning related to land management by the Kansas Forestry, Fish and Game Commission.",
+      "quote_verified": true,
+      "entity_as_written": "Mr. Richard Wettersten",
+      "role_as_written": "Kansas Forestry, Fish and Game Commission"
+    }
+  ],
+  "window_pages": [
+    243,
+    263
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 175,
+  "synthetic_no_complaint": false
+}

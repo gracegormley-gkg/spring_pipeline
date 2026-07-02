@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036806586_C121",
+  "complainer_id": "p1074_35556036806586_K009",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 121,
+  "entity": "South Carolina Chapter, Trout Unlimited",
+  "kind": "organization",
+  "role": "Commenter on draft EIS",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "entity listed only in a sectional roster with no attributed position",
+  "summary": "The South Carolina Chapter, Trout Unlimited appears only as a name in a list of commenters on the Bad Creek Draft Environmental Impact Statement (Appendix A reference). No specific position, complaint, or statement is attributed to the organization within the available document window.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "1"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim",
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Others ... *South Carolina Chapter, Trout Unlimited",
+  "summary_quote_verified": false,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "1"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Others ... *South Carolina Chapter, Trout Unlimited",
+      "quote_verified": false,
+      "entity_as_written": "South Carolina Chapter, Trout Unlimited",
+      "role_as_written": "Commenter on draft EIS"
+    }
+  ],
+  "window_pages": [
+    1,
+    11
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 9,
+  "synthetic_no_complaint": true
+}

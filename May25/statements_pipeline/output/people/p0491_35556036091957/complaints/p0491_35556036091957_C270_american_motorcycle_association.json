@@ -1,0 +1,72 @@
+{
+  "complaint_id": "p0491_35556036091957_C270",
+  "complainer_id": "p0491_35556036091957_K003",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 270,
+  "entity": "American Motorcycle Association",
+  "kind": "organization",
+  "role": "ORV user group commenter",
+  "stance": "conditional",
+  "stance_confidence": "low",
+  "stance_basis": "listed as ORV user group commenter filing response #2, but no substantive position text present in window",
+  "summary": "The American Motorcycle Association submitted a 4-page comment (response #2, dated 6/21/72, by Mr. Ed Youngblood) on the draft ORV environmental statement, and is categorized as one of eight ORV user groups among the 38 private organizations that responded. The actual content of their comment is not reproduced in this window, so their specific positions cannot be assessed from the available text.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "26",
+    "49"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "This statement by the Task Force reflects very accurately the feeling of the American Motorcycle Association, and of the AMA-Motorcycle Industry Council Combined Committee on Land Use.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "26"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The second response was from the American Motorcycle Association, and was dated 6-21-72; it was given the number \"2\" and filed after response number \"1.\"",
+      "quote_verified": true,
+      "entity_as_written": "American Motorcycle Association",
+      "role_as_written": "ORV user group commenter"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "49"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "This statement by the Task Force reflects very accurately the feeling of the American Motorcycle Association, and of the AMA-Motorcycle Industry Council Combined Committee on Land Use.",
+      "quote_verified": true,
+      "entity_as_written": "American Motorcycle Association",
+      "role_as_written": "commenter on draft EIS"
+    }
+  ],
+  "window_pages": [
+    16,
+    40
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 3,
+  "synthetic_no_complaint": true
+}

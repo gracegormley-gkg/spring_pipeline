@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C141",
+  "complainer_id": "p1074_35556036546182_K124",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 141,
+  "entity": "Mr. and Mrs. Ronald R. Perez",
+  "kind": "individual",
+  "role": "Private Citizens, commenters",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes alternatives to the Airport Spur and concern for energy conservation over highway construction",
+  "summary": "Mr. and Mrs. Ronald R. Perez opposed the Airport Spur, arguing that other alternatives such as improving existing roads were available and that energy conservation through reduced automobile use and increased mass transit should be prioritized instead. Their concerns were addressed by the document preparers, who noted that the road improvements they suggested were already underway and that Milwaukee County was actively implementing a Transit Plan.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Mr. and Mrs. Ronald R. Perez stated that other alternatives to the Airport Spur existed, specifically improving Grange Avenue and 6th Street, and argued that energy conservation through decreased automobile use and increased mass transit should take priority over building the spur.",
+  "evidence_pages": [
+    "244"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R060"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Stated that there were other alternates to building the Airport Spur. Felt we should be more concerned with energy conservation.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "244"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Stated that there were other alternates to building the Airport Spur. Felt we should be more concerned with energy conservation.",
+      "quote_verified": true,
+      "entity_as_written": "Mr. and Mrs. Ronald R. Perez",
+      "role_as_written": "Private Citizens, commenters"
+    }
+  ],
+  "window_pages": [
+    234,
+    254
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 124,
+  "synthetic_no_complaint": false
+}

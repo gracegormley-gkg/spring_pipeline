@@ -1,0 +1,73 @@
+{
+  "complaint_id": "p1074_35556039563135_C158",
+  "complainer_id": "p1074_35556039563135_K048",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 158,
+  "entity": "Comprehensive State Health Planning Agency",
+  "kind": "agency",
+  "role": "State clearinghouse agency / draft EIS commenter",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "entity appears only in a sectional list of state agencies with no attributed position in the window",
+  "summary": "The Comprehensive State Health Planning Agency is referenced only as a named state agency in what appears to be a list of agencies associated with the draft EIS circulation process. No specific comments, complaints, or positions are attributed to this agency within the available document window. Insufficient text is present to determine any substantive stance.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "145-194",
+    "197"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim",
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "STATE AGENCIES ... Comprehensive State Health Planning Agency",
+  "summary_quote_verified": false,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "sectional"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "145-194"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We have reviewed the material submitted and have no comment.",
+      "quote_verified": false,
+      "entity_as_written": "Comprehensive State Health Planning Agency",
+      "role_as_written": "State clearinghouse agency / draft EIS commenter"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "197"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "STATE AGENCIES ... Comprehensive State Health Planning Agency",
+      "quote_verified": false,
+      "entity_as_written": "Comprehensive State Health Planning Agency",
+      "role_as_written": "Illinois state agency reviewer"
+    }
+  ],
+  "window_pages": [
+    135,
+    168
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 48,
+  "synthetic_no_complaint": true
+}

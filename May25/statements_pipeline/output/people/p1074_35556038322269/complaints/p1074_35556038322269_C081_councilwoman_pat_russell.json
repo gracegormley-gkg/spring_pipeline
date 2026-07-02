@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556038322269_C081",
+  "complainer_id": "p1074_35556038322269_K005",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 81,
+  "entity": "Councilwoman Pat Russell",
+  "kind": "official",
+  "role": "Chairperson, City Council Transportation Committee; IACC member",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed as IACC member with no expressed position",
+  "summary": "Councilwoman Pat Russell appears solely as a listed member of the Interagency Coordinating Committee (IACC) in the acknowledgements section of the document. No statement, testimony, or attributed position is recorded for her. Her role is noted as Chairperson of the City Council Transportation Committee.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "18"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Interagency Coordinating Committee (IACC)",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "18"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Interagency Coordinating Committee (IACC)",
+      "quote_verified": true,
+      "entity_as_written": "Councilwoman Pat Russell",
+      "role_as_written": "Chairperson, City Council Transportation Committee; IACC member"
+    }
+  ],
+  "window_pages": [
+    8,
+    28
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 5,
+  "synthetic_no_complaint": true
+}

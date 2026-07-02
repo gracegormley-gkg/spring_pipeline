@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556036105336_C002",
+  "complainer_id": "p1074_35556036105336_K004",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 2,
+  "entity": "City of Richmond",
+  "kind": "government",
+  "role": "Local government commenter",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed only as a commenter who responded, with no position stated in this window",
+  "summary": "The City of Richmond appears in this window solely as an entity from which comments were requested and from which comments were received, listed in the summary sheet of the Final Environmental Impact Statement. No substantive position, complaint, or statement of support or opposition is included in this portion of the document.",
+  "form": "sectional",
+  "complaint_summary": "The City of Richmond is listed among the agencies from which comments were received on the Randolph Urban Renewal Project Final Environmental Impact Statement, but no specific position or complaint content is provided in this window.",
+  "evidence_pages": [
+    "2"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim",
+    "low_stance_confidence"
+  ],
+  "summary_quote": "Comments have been received from: f. City of Richmond",
+  "summary_quote_verified": false,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "2"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Comments have been received from: f. City of Richmond",
+      "quote_verified": false,
+      "entity_as_written": "City of Richmond",
+      "role_as_written": "Local government commenter"
+    }
+  ],
+  "window_pages": [
+    1,
+    12
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 4,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C019",
+  "complainer_id": "p1074_35556038322269_K035",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 19,
+  "entity": "Technical Advisory Committee (TAC)",
+  "kind": "organization",
+  "role": "Advisory committee for transit planning",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "described as advisory body that issued planning recommendations without expressing support or opposition to the project",
+  "summary": "The Technical Advisory Committee (TAC) was an advisory body composed of members from SCRTD, the City and County of Los Angeles, OCTD, SCAG, and the League of California Cities, formed to assist with early transit planning. In 1973, the TAC issued a Phase I report recommending eight primary regional transportation corridors for initial consideration, which fed into the broader planning process that eventually led to the current alternatives analysis. The TAC's role was superseded by the broader Rapid Transit Advisory Committee (RTAC) established in 1975, which had a wider constituency.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The TAC, composed of members from SCRTD, City and County of Los Angeles, OCTD, SCAG, and the League of California Cities, issued a 1973 Phase I report recommending eight primary regional transportation corridors for initial consideration, based on travel pattern analyses by LARTS/CalTrans.",
+  "evidence_pages": [
+    "68"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "This was directed by SCRTD, with the assistance initially of a Technical Advisory Committee (TAC), composed of members from the SCRTD, the City and County of Los Angeles, the Orange County Transit District (OCTD), SCAG and the League of California Cities.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "68"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "This was directed by SCRTD, with the assistance initially of a Technical Advisory Committee (TAC), composed of members from the SCRTD, the City and County of Los Angeles, the Orange County Transit District (OCTD), SCAG and the League of California Cities.",
+      "quote_verified": true,
+      "entity_as_written": "Technical Advisory Committee (TAC)",
+      "role_as_written": "Advisory committee for transit planning"
+    }
+  ],
+  "window_pages": [
+    58,
+    78
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 35,
+  "synthetic_no_complaint": false
+}

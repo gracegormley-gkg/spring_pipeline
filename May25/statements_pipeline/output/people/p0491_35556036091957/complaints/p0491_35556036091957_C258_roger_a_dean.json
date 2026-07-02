@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p0491_35556036091957_C258",
+  "complainer_id": "p0491_35556036091957_K235",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 258,
+  "entity": "ROGER A. DEAN",
+  "kind": "individual",
+  "role": "commenter, Albuquerque NM resident",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter expressing support for the EIS approach while emphasizing need for enforcement and opposing excessive restrictions on ORV use",
+  "summary": "Roger A. Dean, an Albuquerque NM resident and ORV user, wrote to the Bureau of Outdoor Recreation expressing general support for the Draft Environmental Statement as a sound approach to managing off-road vehicle use on public lands. He conditioned his support on effective enforcement of usage guidelines and expressed concern that the intent of the Executive Order not be undermined by those seeking to ban all ORV traffic. He identified himself as a responsible user who does not want his access curtailed by irresponsible users.",
+  "form": "letter",
+  "complaint_summary": "Dean expresses conditional support for the Draft Environmental Statement, stating it is a sound approach but that its success depends on effective enforcement of usage guidelines, and urges that the Executive Order's intent not be compromised by those who would ban all ORV use.",
+  "evidence_pages": [
+    "338"
+  ],
+  "statement": {
+    "text": "I have recently received the copy of the department's Draft Environmental Statement along with a copy of the letter you sent to my congressman, the Honorable Manuel Lujan, Jr. Thank you for such a comprehensive reply to my inquiries concerning off-raod vehicle use of public lands.\nIt is apparrent from the documents sent me that the President and the Department of Interior are concerned with providing public lands that are available for all sorts of recreation, both for use by off-road vehicles and others. I feel that the Draft Environmental Statement represents a sound approach to the problem of off-road vehicle use of public lands, however the dev to the problem will be the efficacy with which the usage guidelines for these areas are enforced. I wholeheartedly support the responsible use of public lands, and do not wish to have my usage of these areas curtailed by irresponsible use by others.\nI hope that the intent of the Executive Order, to provide suitable areas for off-road vehicles as well as protecting the environment, is not compromised by excessive pressure from those individuals who would ban all off-road vehicle traffic.\nI am looking forward to seeing the results of this study in ensuing months.\nRespectfully yours,\nROGER A. DEAN",
+    "opening_anchor": "I have recently received the copy of the department's Draft Environmental Statement along with a copy of the letter you sent to my congressman",
+    "closing_anchor": "I am looking forward to seeing the results of this study in ensuing months.\n\nRespectfully yours,\nROGER A. DEAN",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "I feel that the Draft Environmental Statement represents a sound approach to the problem of off-road vehicle use of public lands, however the dev to the problem will be the efficacy with which the usage guidelines for these areas are enforced.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 7,
+      "evidence_pages": [
+        "338"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "I feel that the Draft Environmental Statement represents a sound approach to the problem of off-road vehicle use of public lands, however the dev to the problem will be the efficacy with which the usage guidelines for these areas are enforced.",
+      "quote_verified": true,
+      "entity_as_written": "ROGER A. DEAN",
+      "role_as_written": "commenter, Albuquerque NM resident"
+    }
+  ],
+  "window_pages": [
+    328,
+    348
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 235,
+  "synthetic_no_complaint": false
+}

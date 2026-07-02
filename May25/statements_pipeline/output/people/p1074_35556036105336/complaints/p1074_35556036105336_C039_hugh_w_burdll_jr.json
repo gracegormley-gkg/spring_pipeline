@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036105336_C039",
+  "complainer_id": "p1074_35556036105336_K027",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 39,
+  "entity": "Hugh W. Burdll, Jr.",
+  "kind": "official",
+  "role": "Regional Federal Highway Administrator, FHWA Region III",
+  "stance": "opposed",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly states EIS assumes negative impact from Expressway and should be more impartial, objecting to how the EIS was prepared",
+  "summary": "Hugh W. Burdll, Jr., Regional Federal Highway Administrator for FHWA Region III, submitted a comment letter objecting to the Draft EIS for the Randolph Urban Renewal Area on the grounds that it improperly focused on the impacts of the Downtown Expressway (a non-federally funded toll road) rather than limiting its scope to the Randolph Plan itself. He argued that several statements in the EIS regarding the Expressway's negative impacts were undocumented and that the EIS proceeded from a biased premise. HUD responded to each of his specific objections, defending the inclusion of Expressway impacts as required under NEPA and providing supporting data.",
+  "form": "letter",
+  "complaint_summary": "Burdll argues that the EIS improperly treats the Downtown Expressway's impacts as adverse environmental effects of the Randolph Plan, that several undocumented negative statements about the Expressway should be deleted, and that the EIS should be developed more impartially rather than assuming a negative impact from the Expressway as its premise.",
+  "evidence_pages": [
+    "71"
+  ],
+  "statement": {
+    "text": "This is in reply to your letter of March 2, 1973, to Mr. James Constantino, the DOT Secretarial Representative for Region 3, whereby you requested comments on the Draft Environmental Impact Statement for the Randolph Urban Renewal Area Project.\nThe Federal Highway Administration is not involved in the Downtown Expressway Project (referred to at length in the EIS) since the project is being developed as a toll road, without any Federal funding, by the Richmond Metropolitan Authority. As you probably recognize, this is the section of road now involved in litigation brought by the James River and Kanawha Canal Parks, Inc. The Federal Government's request to be dismissed from the case has not yet been acted upon by the Court.\nItem 4a(6) of the Summary Sheet lists three significant adverse environmental impacts, one of which relates specifically to the impact of the proposed Downtown Expressway on the environment of the northern portion of the HUD project. This summary should be limited to the probable adverse environmental effects as a result of the proposed action (i.e. Randolph Plan) not alleged effects that will be caused by some other action (i.e. Downtown Expressway).\nThe Physical Environment, namely the Downtown Expressway, is discussed in detail in Section A-8 on pages 16 through 25. The statement in e(3) on page 24 regarding traffic volumes should be documented with actual and predicted traffic data rather than just stating generalized trends. Traffic data may be available from the Richmond Hetropolitan Authority or the City.\n\nOn the middle of page 24, the impact upon air quality caused by traffic is stated as \". . . likely to be negative . . . \". This opinion should be deleted unless it can be documented by \"before\" as well as \"after\" air quality analyses.\nIn Chapter III, paragraph A-1, on page 38, the inference is made that if the Randolph project is not implemented, then the Downtown Expressway would (upon construction) contribute to continuing problems and deterioration. This is another statement which should be deleted unless it can be documented.\nIn Chapter IV, paragraph A.3 on page 40, it is stated that the key adverse environmental impact resulting from the recommended action (i.e. Randolph Plan) will result from the Downtown Expressway. While we recognize that the Expressway and the Randolph Housing Project should be closely coordinated and as stated previously, the subject EIS should be considering the environmental impacts of the Randolph project rather than the Expressway impacts per se.\nSimilarly, under paragraph c on page 40, it is stated that the Expressway will have a negative impact regardless of whether the Randolph project is constructed or not. Again we fail to see that this allegation is pertinent or supported by documentation.\nIn summary, we feel that the EIS assumes a negative impact from the long planned Expressway and then proceeds from that premise. The EIS should be developed in a more impartial manner.",
+    "opening_anchor": "This is in reply to your letter of March 2, 1973, to Mr. James Constantino, the DOT Secretarial Representative for Region 3",
+    "closing_anchor": "In summary, we feel that the EIS assumes a negative impact from the long planned Expressway and then proceeds from that premise. The EIS should be developed in a more impartial manner.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036105336_R005"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "In summary, we feel that the EIS assumes a negative impact from the long planned Expressway and then proceeds from that premise. The EIS should be developed in a more impartial manner.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "71"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "In summary, we feel that the EIS assumes a negative impact from the long planned Expressway and then proceeds from that premise. The EIS should be developed in a more impartial manner.",
+      "quote_verified": true,
+      "entity_as_written": "Hugh W. Burdll, Jr.",
+      "role_as_written": "Regional Federal Highway Administrator, FHWA Region III"
+    }
+  ],
+  "window_pages": [
+    61,
+    81
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 27,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556036546182_C051",
+  "complainer_id": "p1074_35556036546182_K038",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 51,
+  "entity": "Milwaukee School Board",
+  "kind": "agency",
+  "role": "public school governing body",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "spokesman explicitly neither endorsed nor condemned the Airport Spur at both public hearings",
+  "summary": "The Milwaukee School Board's spokesman appeared at both the 1969 Location Public Hearing and the 1974 Environmental Impact Hearing, neither endorsing nor condemning the Airport Spur on either occasion. At the 1969 hearing, the spokesman expressed concern about the effect of housing acquisition for Mitchell Field's Air Cargo Area on Hamlin Garland School; at the 1974 hearing, the concern shifted to the effects of air and noise pollution on Hamlin Garland School.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "At the July 11, 1974 Environmental Impact Hearing, a Milwaukee School Board spokesman again neither endorsed nor condemned the Airport Spur but expressed concern about the effects of air and noise pollution on Hamlin Garland School.",
+  "evidence_pages": [
+    "101"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "A spokesman for the Milwaukee School Board neither endorsed nor condemned the Airport Spur but was concerned with the effect of housing acquisition for Mitchell Field's Air Cargo Area on Hamlin Garland School.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "101"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "A spokesman for the Milwaukee School Board neither endorsed nor condemned the Airport Spur but was concerned with the effect of housing acquisition for Mitchell Field's Air Cargo Area on Hamlin Garland School.",
+      "quote_verified": true,
+      "entity_as_written": "Milwaukee School Board",
+      "role_as_written": "public school governing body"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "237"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Stated the Milwaukee School Board has not taken a position for or against construction of freeways. The school board has adopted a 1973 report entitled \"A Study of Air Pollution and Noise Hazards\".",
+      "quote_verified": false,
+      "entity_as_written": "Milwaukee School Board",
+      "role_as_written": "institutional commenter"
+    }
+  ],
+  "window_pages": [
+    91,
+    130
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 38,
+  "synthetic_no_complaint": false
+}

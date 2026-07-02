@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C136",
+  "complainer_id": "p0491_35556036091957_K094",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 136,
+  "entity": "California Department of Fish and Game",
+  "kind": "agency",
+  "role": "state agency referenced in Sierra Club comments",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "cited by Sierra Club as evidence that ORV use threatens quail guzzlers and wildlife dependent on them",
+  "summary": "The California Department of Fish and Game is referenced in the Sierra Club's comment letter as having established quail guzzlers in the California desert, with some game birds entirely dependent on these water sources. The Sierra Club uses this fact to highlight the threat posed by ORV use, noting that cross-country motorcycle races have been routed past these guzzlers and that vandalism of quail guzzlers in ORV-accessible areas has been a critical problem. The department itself does not directly submit comments in this window; it appears only as a paraphrased reference within the Sierra Club's letter.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Sierra Club references the California Department of Fish and Game's quail guzzler program to illustrate that ORV use and cross-country motorcycle races threaten wildlife water sources in the California desert that some game birds are entirely dependent upon.",
+  "evidence_pages": [
+    "176"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The California Department of Fish and Game has set up quali guzzlers in many areas of the California desert and some game birds are entirely dependent on this source of water.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "176"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The California Department of Fish and Game has set up quali guzzlers in many areas of the California desert and some game birds are entirely dependent on this source of water.",
+      "quote_verified": true,
+      "entity_as_written": "California Department of Fish and Game",
+      "role_as_written": "state agency referenced in Sierra Club comments"
+    }
+  ],
+  "window_pages": [
+    166,
+    186
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 94,
+  "synthetic_no_complaint": false
+}

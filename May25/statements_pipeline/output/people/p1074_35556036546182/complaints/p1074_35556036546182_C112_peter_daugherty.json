@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C112",
+  "complainer_id": "p1074_35556036546182_K094",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 112,
+  "entity": "Peter Daugherty",
+  "kind": "individual",
+  "role": "Private Citizen",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes objection to bridge, truck fumes, and noise near his home",
+  "summary": "Peter Daugherty, a private citizen residing at 1807 West Goldcrest Avenue, testified at the July 11, 1974 Environmental Public Hearing opposing the Airport Spur project. He objected on the grounds that he did not move into his home to be subjected to a bridge, truck fumes, or noise from the proposed freeway. The document directs readers to pages 141 and 150 for a response to his concerns.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Peter Daugherty testified that he did not move into his home to see a bridge, smell truck fumes, or listen to the noise associated with the proposed Airport Spur.",
+  "evidence_pages": [
+    "223"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R036"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Stated that he didn't move into his home to see a bridge, smell truck fumes, or listen to the noise.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "223"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Stated that he didn't move into his home to see a bridge, smell truck fumes, or listen to the noise.",
+      "quote_verified": true,
+      "entity_as_written": "Peter Daugherty",
+      "role_as_written": "Private Citizen"
+    }
+  ],
+  "window_pages": [
+    213,
+    233
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 94,
+  "synthetic_no_complaint": false
+}

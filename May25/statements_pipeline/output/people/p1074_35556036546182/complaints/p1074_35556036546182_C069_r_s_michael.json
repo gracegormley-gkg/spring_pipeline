@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036546182_C069",
+  "complainer_id": "p1074_35556036546182_K064",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 69,
+  "entity": "R. S. Michael",
+  "kind": "official",
+  "role": "Airport Director for Milwaukee County",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase states he gave support to direct limited freeway access and listed specific reasons why he supported the Airport Spur connection",
+  "summary": "R. S. Michael, Airport Director for Milwaukee County, testified at the March 25, 1969 Corridor Location Public Hearing in support of the Airport Spur project. He expressed support for the concept of direct limited freeway access from I-94 to the General Mitchell Field terminal area and provided specific reasons for his endorsement. No response from the agency was deemed necessary.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "R. S. Michael gave his support to the concept of direct limited freeway access from I-94 to General Mitchell Field terminal area and listed specific reasons why he supported the Airport Spur connection.",
+  "evidence_pages": [
+    "155"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Gave his support to the concent of direct limited freeway access from I-94 to General Mitchell Field terminal area. Listed specific reasons why he supported the Airport Spur connection.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "155"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Gave his support to the concent of direct limited freeway access from I-94 to General Mitchell Field terminal area. Listed specific reasons why he supported the Airport Spur connection.",
+      "quote_verified": true,
+      "entity_as_written": "R. S. Michael",
+      "role_as_written": "Airport Director for Milwaukee County"
+    }
+  ],
+  "window_pages": [
+    145,
+    165
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 64,
+  "synthetic_no_complaint": false
+}

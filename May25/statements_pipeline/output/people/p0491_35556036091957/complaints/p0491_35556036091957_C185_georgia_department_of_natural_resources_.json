@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p0491_35556036091957_C185",
+  "complainer_id": "p0491_35556036091957_K161",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 185,
+  "entity": "Georgia Department of Natural Resources, Game and Fish Division",
+  "kind": "agency",
+  "role": "Georgia state agency reviewer",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter finds statement adequate but requests concurrence rights and specific protective measures for fish/wildlife",
+  "summary": "The Georgia Department of Natural Resources, Game and Fish Division reviewed the Draft Environmental Statement and found it adequate in describing problems with ORV use on public lands. However, the agency conditioned its support on several requirements: that ORV regulations have the concurrence of the Division's Director, that extreme caution be used to preserve public lands for wildlife habitat, and that specific protective measures be added for streams, trout habitat, and wildlife areas adversely affected by ORV use.",
+  "form": "written_comment",
+  "complaint_summary": "The Georgia DNR Game and Fish Division finds the EIS adequate overall but requests that ORV regulations require concurrence from the Division Director, that stream and tributary protections be added to use criteria, that vehicles cross streams on bridges rather than through stream beds, and that ORV use be prohibited where it would significantly adversely affect wildlife resources.",
+  "evidence_pages": [
+    "261"
+  ],
+  "statement": {
+    "text": "The Department of Natural Resources, Division of Game and Fish for the State of Georgia would like to make the following comments relative to this environmental statement.\nThis agency believes that the statement is adequate in describing the nultiplicity of problems inherent with off-road vehicular use on our public lands. We recognize the conflicts of interest which can occur due to these vehicles. Since the fish and wildlife resources on all public lands belong to the State and the State is charged with the responsibility of the protection, management and perpetuation of the fisheries and wildlife resources, it is our judgement that off-road vehicle regulations promulgated by the Secretary of the Interior or the Secretary of Agriculture should have the concurrence of the Director of the Division of Game and Fish, Department of Natural Resources.\n\n218\nDepartment of the Interior Implementation of Executive Order 11644 72-06-22-18\nIt is recommended that extreme caution be used to preserve public lands for beauty, solitude, remote values and wildlife habitat. These are what are presently making these lands valuable.\nOn Page 4 of the Environmental Impact Statement under \"a) Use Criteria (except for official use): \" \"(i) Areas and trails shall be located to minimize damage to soil, water, vegetation or other resources of the public lands.\" should be changed to include streams and their tributaries. This is especially important on trout streams to control silt pollution and all soil disturbances that would result in disruptions to the stream bottom habitats.\nWe are certainly in agreement with (ii) which states, \"Areas and trails shall be located to minimize harrassment of wildlife or significant disruption of wildlife habitats.\"\nOn Page 14, the sentence, \"Use of machines in stream beds can affect the spawning, migrating, and feeding habits of fish and other aquatic life\" is true and we would not wish to see the use of off-road vehicles permitted in stream beds. Where certain off-road vehicle trails cross streams, the vehicles should cross the streams on bridges rather than disrupting the stream beds, which causes silt pollution with its adverse effects on fisheries habitat.\nOn Page 16, the statement, \"Certain animals will not be able to accommodate the opening of their habitat to off-road vehicle traffic and accompanying human activities\" is quite true. In those instances where it is recognized that the use of off-road vehicles will have a significantly adverse effect upon certain wildlife resources, such use should be prohibited.",
+    "opening_anchor": "The Department of Natural Resources, Division of Game and Fish for the State of Georgia would like to make the following comments relative to this environmental statement.",
+    "closing_anchor": "such use should be prohibited.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "This agency believes that the statement is adequate in describing the multiplicity of problems inherent with off-road vehicular use on our public lands.",
+  "summary_quote_verified": false,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "261"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "This agency believes that the statement is adequate in describing the multiplicity of problems inherent with off-road vehicular use on our public lands.",
+      "quote_verified": false,
+      "entity_as_written": "Georgia Department of Natural Resources, Game and Fish Division",
+      "role_as_written": "Georgia state agency reviewer"
+    }
+  ],
+  "window_pages": [
+    251,
+    271
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 161,
+  "synthetic_no_complaint": false
+}

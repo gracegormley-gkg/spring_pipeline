@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556039563135_C032",
+  "complainer_id": "p1074_35556039563135_K030",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 32,
+  "entity": "Chicago Area Transportation Study",
+  "kind": "agency",
+  "role": "Regional transportation planning agency",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "CATS adopted the 1995 Transportation System Plan which includes U.S. 30 as an arterial, supporting the project's classification and improvement",
+  "summary": "The Chicago Area Transportation Study (CATS) is referenced as the regional transportation planning agency that produced and adopted transportation plans relevant to the Lincoln Highway improvement project. CATS adopted the 1995 Transportation System Plan on June 21, 1974, which designates U.S. 30 (Lincoln Highway) as an arterial, providing planning support for the proposed reconstruction. The document notes that the improvement is consistent with CATS's arterial designation and that the facility is already performing as an arterial.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "CATS adopted the 1995 Transportation System Plan on June 21, 1974, which includes all modes of transportation and designates U.S. 30 as an arterial from the DeKalb-Kane County line to the Porter-LaPorte County line, providing the regional planning framework that supports the Lincoln Highway improvement.",
+  "evidence_pages": [
+    "63"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "On June 21, 1974, the Policy Committee of the Chicago Area Transportation Study adopted the 1995 Transportation System Plan.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "63"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "On June 21, 1974, the Policy Committee of the Chicago Area Transportation Study adopted the 1995 Transportation System Plan.",
+      "quote_verified": true,
+      "entity_as_written": "Chicago Area Transportation Study",
+      "role_as_written": "Regional transportation planning agency"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "63"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "On June 21, 1974, the Policy Committee of the Chicago Area Transportation Study adopted the 1995 Transportation System Plan.",
+      "quote_verified": true,
+      "entity_as_written": "Chicago Area Transportation Study",
+      "role_as_written": "regional transportation planning body"
+    }
+  ],
+  "window_pages": [
+    53,
+    73
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 30,
+  "synthetic_no_complaint": false
+}

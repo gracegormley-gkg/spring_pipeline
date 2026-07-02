@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036546182_C080",
+  "complainer_id": "p1074_35556036546182_K057",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 80,
+  "entity": "James Morton Smith",
+  "kind": "official",
+  "role": "Director, State Historical Society of Wisconsin",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letters confirm no known archeological or historic sites will be affected, neither supporting nor opposing the project",
+  "summary": "James Morton Smith, Director of the State Historical Society of Wisconsin, submitted two letters regarding the Airport Spur project. In both letters, he confirmed that no known archeological or historic sites would be affected by the proposed highway project, based on the Society's records and confirmation from the Milwaukee County Historical Society. His correspondence is informational and neither supports nor opposes the project.",
+  "form": "letter",
+  "complaint_summary": "Smith writes to the Milwaukee County Historical Society Director confirming that State Historical Society records show no known archeological or historic sites will be affected by the project, and requests confirmation that no sites have been overlooked.",
+  "evidence_pages": [
+    "160"
+  ],
+  "statement": {
+    "text": "We have received the attached information regarding a proposed highway project in Milwaukee County. Our records indicate that no known archeological or historic sites will be affected.\nIt would be very helpful if you would let us know if we have overlooked sites that might be affected by this project. We would be glad to discuss any affected sites with you to arrive at a mutual evaluation of the consequences of the proposed project.\nWe would greatly appreciate it if you would respond to this letter whether or not your society knows of any sites that would be affected. The information that no sites will be affected is equally important to information on sites that may be affected. A return envelope is enclosed for your convenience.\nIn all correspondence on this project, please identify it as follows:\nProj. I 94-5(45)317; I.D. 1930-1-00 Proj. E 078-1(47); I.D. 2015-1-00 Airport Spur I-94 to General Mitchell Field Milwaukee County 1tr 19 June 1973\nSincerely,\nJames Morton Smith\nJMS:dp Enclosure cc: Mr. I. C. Herried",
+    "opening_anchor": "We have received the attached information regarding a proposed highway project in Milwaukee County. Our records indicate that no known archeological or historic sites will be affected.",
+    "closing_anchor": "Sincerely,\n\nJames Morton Smith\n\nJMS:dp Enclosure cc: Mr. I. C. Herried",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036546182_R008"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Our records indicate that no known archeological or historic sites will be affected.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "160"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Our records indicate that no known archeological or historic sites will be affected.",
+      "quote_verified": true,
+      "entity_as_written": "James Morton Smith",
+      "role_as_written": "Director, State Historical Society of Wisconsin"
+    }
+  ],
+  "window_pages": [
+    150,
+    170
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 57,
+  "synthetic_no_complaint": false
+}

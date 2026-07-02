@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556036546182_C009",
+  "complainer_id": "p1074_35556036546182_K001",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 9,
+  "entity": "Citizen's Against Airport Spur",
+  "kind": "organization",
+  "role": "Citizen opposition group, commenter",
+  "stance": "opposed",
+  "stance_confidence": "low",
+  "stance_basis": "listed among additional commenters on the project with no further detail in this window",
+  "summary": "Citizen's Against Airport Spur, represented by Robert Szyba, is listed as having submitted a comment letter on the proposed Airport Spur freeway project. The group's name strongly implies opposition to the project, but no substantive content from their letter appears in this window. Their letter is referenced as being contained in Section X of the document.",
+  "form": "sectional",
+  "complaint_summary": "Citizen's Against Airport Spur (Robert Szyba) is listed among additional commenters who submitted letters of comment on the proposed Airport Spur freeway project, with their letter referenced as being in Section X.",
+  "evidence_pages": [
+    "18"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim",
+    "low_stance_confidence"
+  ],
+  "summary_quote": "8. Additional comments were received from the following: (Letters of comment are in Section X.) Citizen's Against Airport Spur, Robert Szyba, 1427 West Goldcrest Avenue, Milwaukee, Wis. 53221",
+  "summary_quote_verified": false,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "18"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "8. Additional comments were received from the following: (Letters of comment are in Section X.) Citizen's Against Airport Spur, Robert Szyba, 1427 West Goldcrest Avenue, Milwaukee, Wis. 53221",
+      "quote_verified": false,
+      "entity_as_written": "Citizen's Against Airport Spur",
+      "role_as_written": "Citizen opposition group, commenter"
+    }
+  ],
+  "window_pages": [
+    8,
+    28
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 1,
+  "synthetic_no_complaint": false
+}

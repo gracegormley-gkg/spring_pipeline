@@ -1,0 +1,5433 @@
+{
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "title": "Airport Spur connection, I-94 to General Mitchell Field, Milwaukee : environmental impact statement.",
+  "n_pages": 290,
+  "n_chunks": 6,
+  "n_raw_rows": 163,
+  "n_complainers": 131,
+  "n_complaints": 165,
+  "n_responses": 77,
+  "stance_counts": {
+    "opposed": 35,
+    "conditional": 18,
+    "in_favor": 45,
+    "neutral": 33
+  },
+  "stance_confidence_counts": {
+    "high": 30,
+    "medium": 90,
+    "low": 11,
+    "unknown": 0
+  },
+  "review_counts": {
+    "needs_review": 56,
+    "auto_ok": 75,
+    "reasons": {
+      "quote_not_verbatim": 16,
+      "low_stance_confidence": 11,
+      "private_individual": 44,
+      "no_complaints": 3
+    }
+  },
+  "statement_form_counts": {
+    "letter": 20,
+    "testimony": 12,
+    "written_comment": 7,
+    "narrator_paraphrase": 112,
+    "sectional": 9,
+    "none": 5,
+    "present": 160,
+    "absent": 5
+  },
+  "response_form_counts": {
+    "agency_response": 45,
+    "preparer_reply": 0,
+    "discussion": 32,
+    "none": 0,
+    "present": 77,
+    "absent": 0
+  },
+  "elapsed_sec": 730.2,
+  "usage": {
+    "extract": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 6,
+          "input_tokens": 104562,
+          "output_tokens": 17377,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.5743
+        }
+      ],
+      "total": {
+        "calls": 6,
+        "input_tokens": 104562,
+        "output_tokens": 17377,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.5743
+      }
+    },
+    "find_statement": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 131,
+          "input_tokens": 1255193,
+          "output_tokens": 57210,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 4.6237
+        }
+      ],
+      "total": {
+        "calls": 131,
+        "input_tokens": 1255193,
+        "output_tokens": 57210,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 4.6237
+      }
+    },
+    "total": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 137,
+          "input_tokens": 1359755,
+          "output_tokens": 74587,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 5.1981
+        }
+      ],
+      "total": {
+        "calls": 137,
+        "input_tokens": 1359755,
+        "output_tokens": 74587,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 5.1981
+      }
+    }
+  },
+  "schema": {
+    "ids": {
+      "complainer_id": "<doc_id>_K<NNN> — one per merged entity",
+      "complaint_id": "<doc_id>_C<NNN> — one per complaint instance (entities can have multiple)",
+      "child_id": "<doc_id>_R<NNN> — one per agency response"
+    },
+    "stance_vocabulary": [
+      "in_favor",
+      "opposed",
+      "conditional",
+      "neutral"
+    ],
+    "stance_confidence_vocabulary": [
+      "high",
+      "medium",
+      "low"
+    ],
+    "kind_vocabulary": [
+      "individual",
+      "official",
+      "organization",
+      "agency",
+      "tribe",
+      "government",
+      "other"
+    ],
+    "statement_forms": [
+      "letter",
+      "testimony",
+      "written_comment",
+      "narrator_paraphrase",
+      "sectional",
+      "none"
+    ],
+    "response_forms": [
+      "agency_response",
+      "preparer_reply",
+      "discussion",
+      "none"
+    ],
+    "stance_source": "Decided by find_statement at the entity level — same stance applies to all complaints from the same entity. Capped to 'medium' when no contiguous statement is verified for any complaint; forced 'low' when there are no complaints.",
+    "page_numbers": "EXACT — from per-page JSON source.",
+    "statement_text": "Sliced from the doc text between verbatim opening/closing anchors. Null when either anchor doesn't verify.",
+    "response_text": "Sliced from the doc text between verbatim response anchors. Null when either anchor doesn't verify or no response is in the window.",
+    "needs_human_review": "True when kind=='individual' OR summary_quote_verified is False OR stance_confidence=='low' OR no complaints were produced.",
+    "merge_rule": "One row per entity. find_statement may then return multiple complaints per entity — each becomes its own complaint file.",
+    "cost_note": "USD costs are ESTIMATES; verify against AWS Bedrock invoice."
+  },
+  "sequence": [
+    {
+      "order": 1,
+      "complaint_id": "p1074_35556036546182_C001",
+      "complainer_id": "p1074_35556036546182_K007",
+      "complaint_file": "complaints/p1074_35556036546182_C001_federal_highway_administration.json",
+      "response_ids": []
+    },
+    {
+      "order": 2,
+      "complaint_id": "p1074_35556036546182_C002",
+      "complainer_id": "p1074_35556036546182_K007",
+      "complaint_file": "complaints/p1074_35556036546182_C002_federal_highway_administration.json",
+      "response_ids": []
+    },
+    {
+      "order": 3,
+      "complaint_id": "p1074_35556036546182_C003",
+      "complainer_id": "p1074_35556036546182_K007",
+      "complaint_file": "complaints/p1074_35556036546182_C003_federal_highway_administration.json",
+      "response_ids": []
+    },
+    {
+      "order": 4,
+      "complaint_id": "p1074_35556036546182_C004",
+      "complainer_id": "p1074_35556036546182_K020",
+      "complaint_file": "complaints/p1074_35556036546182_C004_w_g_emrich.json",
+      "response_ids": []
+    },
+    {
+      "order": 5,
+      "complaint_id": "p1074_35556036546182_C005",
+      "complainer_id": "p1074_35556036546182_K010",
+      "complaint_file": "complaints/p1074_35556036546182_C005_milwaukee_county_expressway_and_transpor.json",
+      "response_ids": []
+    },
+    {
+      "order": 6,
+      "complaint_id": "p1074_35556036546182_C006",
+      "complainer_id": "p1074_35556036546182_K005",
+      "complaint_file": "complaints/p1074_35556036546182_C006_department_of_natural_resources.json",
+      "response_ids": []
+    },
+    {
+      "order": 7,
+      "complaint_id": "p1074_35556036546182_C007",
+      "complainer_id": "p1074_35556036546182_K014",
+      "complaint_file": "complaints/p1074_35556036546182_C007_southeastern_wisconsin_regional_planning.json",
+      "response_ids": []
+    },
+    {
+      "order": 8,
+      "complaint_id": "p1074_35556036546182_C008",
+      "complainer_id": "p1074_35556036546182_K018",
+      "complaint_file": "complaints/p1074_35556036546182_C008_state_senator_kurt_a_frank_7th_district.json",
+      "response_ids": []
+    },
+    {
+      "order": 9,
+      "complaint_id": "p1074_35556036546182_C009",
+      "complainer_id": "p1074_35556036546182_K001",
+      "complaint_file": "complaints/p1074_35556036546182_C009_citizen_s_against_airport_spur.json",
+      "response_ids": []
+    },
+    {
+      "order": 10,
+      "complaint_id": "p1074_35556036546182_C010",
+      "complainer_id": "p1074_35556036546182_K006",
+      "complaint_file": "complaints/p1074_35556036546182_C010_dr_p_s_meyers.json",
+      "response_ids": []
+    },
+    {
+      "order": 11,
+      "complaint_id": "p1074_35556036546182_C011",
+      "complainer_id": "p1074_35556036546182_K011",
+      "complaint_file": "complaints/p1074_35556036546182_C011_robert_szyba.json",
+      "response_ids": []
+    },
+    {
+      "order": 12,
+      "complaint_id": "p1074_35556036546182_C012",
+      "complainer_id": "p1074_35556036546182_K017",
+      "complaint_file": "complaints/p1074_35556036546182_C012_state_representative_john_r_plewa_20th_a.json",
+      "response_ids": []
+    },
+    {
+      "order": 13,
+      "complaint_id": "p1074_35556036546182_C013",
+      "complainer_id": "p1074_35556036546182_K019",
+      "complaint_file": "complaints/p1074_35556036546182_C013_thomas_r_burney.json",
+      "response_ids": []
+    },
+    {
+      "order": 14,
+      "complaint_id": "p1074_35556036546182_C014",
+      "complainer_id": "p1074_35556036546182_K023",
+      "complaint_file": "complaints/p1074_35556036546182_C014_wisconsin_s_environmental_decade.json",
+      "response_ids": []
+    },
+    {
+      "order": 15,
+      "complaint_id": "p1074_35556036546182_C015",
+      "complainer_id": "p1074_35556036546182_K010",
+      "complaint_file": "complaints/p1074_35556036546182_C015_milwaukee_county_expressway_and_transpor.json",
+      "response_ids": []
+    },
+    {
+      "order": 16,
+      "complaint_id": "p1074_35556036546182_C016",
+      "complainer_id": "p1074_35556036546182_K009",
+      "complaint_file": "complaints/p1074_35556036546182_C016_milwaukee_county_board.json",
+      "response_ids": []
+    },
+    {
+      "order": 17,
+      "complaint_id": "p1074_35556036546182_C017",
+      "complainer_id": "p1074_35556036546182_K009",
+      "complaint_file": "complaints/p1074_35556036546182_C017_milwaukee_county_board.json",
+      "response_ids": []
+    },
+    {
+      "order": 18,
+      "complaint_id": "p1074_35556036546182_C018",
+      "complainer_id": "p1074_35556036546182_K009",
+      "complaint_file": "complaints/p1074_35556036546182_C018_milwaukee_county_board.json",
+      "response_ids": []
+    },
+    {
+      "order": 19,
+      "complaint_id": "p1074_35556036546182_C019",
+      "complainer_id": "p1074_35556036546182_K002",
+      "complaint_file": "complaints/p1074_35556036546182_C019_city_of_milwaukee_common_council.json",
+      "response_ids": []
+    },
+    {
+      "order": 20,
+      "complaint_id": "p1074_35556036546182_C020",
+      "complainer_id": "p1074_35556036546182_K002",
+      "complaint_file": "complaints/p1074_35556036546182_C020_city_of_milwaukee_common_council.json",
+      "response_ids": []
+    },
+    {
+      "order": 21,
+      "complaint_id": "p1074_35556036546182_C021",
+      "complainer_id": "p1074_35556036546182_K004",
+      "complaint_file": "complaints/p1074_35556036546182_C021_department_of_local_affairs_and_developm.json",
+      "response_ids": []
+    },
+    {
+      "order": 22,
+      "complaint_id": "p1074_35556036546182_C022",
+      "complainer_id": "p1074_35556036546182_K021",
+      "complaint_file": "complaints/p1074_35556036546182_C022_wisconsin_highway_commission.json",
+      "response_ids": []
+    },
+    {
+      "order": 23,
+      "complaint_id": "p1074_35556036546182_C023",
+      "complainer_id": "p1074_35556036546182_K021",
+      "complaint_file": "complaints/p1074_35556036546182_C023_wisconsin_highway_commission.json",
+      "response_ids": []
+    },
+    {
+      "order": 24,
+      "complaint_id": "p1074_35556036546182_C024",
+      "complainer_id": "p1074_35556036546182_K010",
+      "complaint_file": "complaints/p1074_35556036546182_C024_milwaukee_county_expressway_and_transpor.json",
+      "response_ids": []
+    },
+    {
+      "order": 25,
+      "complaint_id": "p1074_35556036546182_C025",
+      "complainer_id": "p1074_35556036546182_K008",
+      "complaint_file": "complaints/p1074_35556036546182_C025_governor_of_wisconsin.json",
+      "response_ids": [
+        "p1074_35556036546182_R001"
+      ]
+    },
+    {
+      "order": 26,
+      "complaint_id": "p1074_35556036546182_C026",
+      "complainer_id": "p1074_35556036546182_K012",
+      "complaint_file": "complaints/p1074_35556036546182_C026_secretary_of_the_u_s_department_of_trans.json",
+      "response_ids": []
+    },
+    {
+      "order": 27,
+      "complaint_id": "p1074_35556036546182_C027",
+      "complainer_id": "p1074_35556036546182_K015",
+      "complaint_file": "complaints/p1074_35556036546182_C027_state_highway_commission.json",
+      "response_ids": []
+    },
+    {
+      "order": 28,
+      "complaint_id": "p1074_35556036546182_C028",
+      "complainer_id": "p1074_35556036546182_K015",
+      "complaint_file": "complaints/p1074_35556036546182_C028_state_highway_commission.json",
+      "response_ids": []
+    },
+    {
+      "order": 29,
+      "complaint_id": "p1074_35556036546182_C029",
+      "complainer_id": "p1074_35556036546182_K003",
+      "complaint_file": "complaints/p1074_35556036546182_C029_common_council_for_the_city_of_milwaukee.json",
+      "response_ids": []
+    },
+    {
+      "order": 30,
+      "complaint_id": "p1074_35556036546182_C030",
+      "complainer_id": "p1074_35556036546182_K014",
+      "complaint_file": "complaints/p1074_35556036546182_C030_southeastern_wisconsin_regional_planning.json",
+      "response_ids": []
+    },
+    {
+      "order": 31,
+      "complaint_id": "p1074_35556036546182_C031",
+      "complainer_id": "p1074_35556036546182_K014",
+      "complaint_file": "complaints/p1074_35556036546182_C031_southeastern_wisconsin_regional_planning.json",
+      "response_ids": []
+    },
+    {
+      "order": 32,
+      "complaint_id": "p1074_35556036546182_C032",
+      "complainer_id": "p1074_35556036546182_K013",
+      "complaint_file": "complaints/p1074_35556036546182_C032_sewrpc_s_technical_advisory_committee.json",
+      "response_ids": []
+    },
+    {
+      "order": 33,
+      "complaint_id": "p1074_35556036546182_C033",
+      "complainer_id": "p1074_35556036546182_K010",
+      "complaint_file": "complaints/p1074_35556036546182_C033_milwaukee_county_expressway_and_transpor.json",
+      "response_ids": []
+    },
+    {
+      "order": 34,
+      "complaint_id": "p1074_35556036546182_C034",
+      "complainer_id": "p1074_35556036546182_K005",
+      "complaint_file": "complaints/p1074_35556036546182_C034_department_of_natural_resources.json",
+      "response_ids": []
+    },
+    {
+      "order": 35,
+      "complaint_id": "p1074_35556036546182_C035",
+      "complainer_id": "p1074_35556036546182_K005",
+      "complaint_file": "complaints/p1074_35556036546182_C035_department_of_natural_resources.json",
+      "response_ids": []
+    },
+    {
+      "order": 36,
+      "complaint_id": "p1074_35556036546182_C036",
+      "complainer_id": "p1074_35556036546182_K029",
+      "complaint_file": "complaints/p1074_35556036546182_C036_milwaukee_suburban_transport_corporation.json",
+      "response_ids": []
+    },
+    {
+      "order": 37,
+      "complaint_id": "p1074_35556036546182_C037",
+      "complainer_id": "p1074_35556036546182_K028",
+      "complaint_file": "complaints/p1074_35556036546182_C037_local_governmental_units.json",
+      "response_ids": []
+    },
+    {
+      "order": 38,
+      "complaint_id": "p1074_35556036546182_C038",
+      "complainer_id": "p1074_35556036546182_K024",
+      "complaint_file": "complaints/p1074_35556036546182_C038_airport_officials.json",
+      "response_ids": []
+    },
+    {
+      "order": 39,
+      "complaint_id": "p1074_35556036546182_C039",
+      "complainer_id": "p1074_35556036546182_K024",
+      "complaint_file": "complaints/p1074_35556036546182_C039_airport_officials.json",
+      "response_ids": []
+    },
+    {
+      "order": 40,
+      "complaint_id": "p1074_35556036546182_C040",
+      "complainer_id": "p1074_35556036546182_K027",
+      "complaint_file": "complaints/p1074_35556036546182_C040_federal_aviation_administration.json",
+      "response_ids": [
+        "p1074_35556036546182_R002"
+      ]
+    },
+    {
+      "order": 41,
+      "complaint_id": "p1074_35556036546182_C041",
+      "complainer_id": "p1074_35556036546182_K024",
+      "complaint_file": "complaints/p1074_35556036546182_C041_airport_officials.json",
+      "response_ids": []
+    },
+    {
+      "order": 42,
+      "complaint_id": "p1074_35556036546182_C042",
+      "complainer_id": "p1074_35556036546182_K024",
+      "complaint_file": "complaints/p1074_35556036546182_C042_airport_officials.json",
+      "response_ids": []
+    },
+    {
+      "order": 43,
+      "complaint_id": "p1074_35556036546182_C043",
+      "complainer_id": "p1074_35556036546182_K026",
+      "complaint_file": "complaints/p1074_35556036546182_C043_division_of_highways.json",
+      "response_ids": []
+    },
+    {
+      "order": 44,
+      "complaint_id": "p1074_35556036546182_C044",
+      "complainer_id": "p1074_35556036546182_K030",
+      "complaint_file": "complaints/p1074_35556036546182_C044_milwaukee_county.json",
+      "response_ids": []
+    },
+    {
+      "order": 45,
+      "complaint_id": "p1074_35556036546182_C045",
+      "complainer_id": "p1074_35556036546182_K025",
+      "complaint_file": "complaints/p1074_35556036546182_C045_city_of_milwaukee.json",
+      "response_ids": []
+    },
+    {
+      "order": 46,
+      "complaint_id": "p1074_35556036546182_C046",
+      "complainer_id": "p1074_35556036546182_K027",
+      "complaint_file": "complaints/p1074_35556036546182_C046_federal_aviation_administration.json",
+      "response_ids": [
+        "p1074_35556036546182_R003"
+      ]
+    },
+    {
+      "order": 47,
+      "complaint_id": "p1074_35556036546182_C047",
+      "complainer_id": "p1074_35556036546182_K027",
+      "complaint_file": "complaints/p1074_35556036546182_C047_federal_aviation_administration.json",
+      "response_ids": []
+    },
+    {
+      "order": 48,
+      "complaint_id": "p1074_35556036546182_C048",
+      "complainer_id": "p1074_35556036546182_K035",
+      "complaint_file": "complaints/p1074_35556036546182_C048_milwaukee_common_council.json",
+      "response_ids": []
+    },
+    {
+      "order": 49,
+      "complaint_id": "p1074_35556036546182_C049",
+      "complainer_id": "p1074_35556036546182_K036",
+      "complaint_file": "complaints/p1074_35556036546182_C049_milwaukee_county_s_park_commission.json",
+      "response_ids": []
+    },
+    {
+      "order": 50,
+      "complaint_id": "p1074_35556036546182_C050",
+      "complainer_id": "p1074_35556036546182_K038",
+      "complaint_file": "complaints/p1074_35556036546182_C050_milwaukee_school_board.json",
+      "response_ids": []
+    },
+    {
+      "order": 51,
+      "complaint_id": "p1074_35556036546182_C051",
+      "complainer_id": "p1074_35556036546182_K038",
+      "complaint_file": "complaints/p1074_35556036546182_C051_milwaukee_school_board.json",
+      "response_ids": []
+    },
+    {
+      "order": 52,
+      "complaint_id": "p1074_35556036546182_C052",
+      "complainer_id": "p1074_35556036546182_K040",
+      "complaint_file": "complaints/p1074_35556036546182_C052_sewrpc.json",
+      "response_ids": []
+    },
+    {
+      "order": 53,
+      "complaint_id": "p1074_35556036546182_C053",
+      "complainer_id": "p1074_35556036546182_K040",
+      "complaint_file": "complaints/p1074_35556036546182_C053_sewrpc.json",
+      "response_ids": []
+    },
+    {
+      "order": 54,
+      "complaint_id": "p1074_35556036546182_C054",
+      "complainer_id": "p1074_35556036546182_K037",
+      "complaint_file": "complaints/p1074_35556036546182_C054_milwaukee_public_schools.json",
+      "response_ids": []
+    },
+    {
+      "order": 55,
+      "complaint_id": "p1074_35556036546182_C055",
+      "complainer_id": "p1074_35556036546182_K039",
+      "complaint_file": "complaints/p1074_35556036546182_C055_several_elected_officials.json",
+      "response_ids": [
+        "p1074_35556036546182_R004"
+      ]
+    },
+    {
+      "order": 56,
+      "complaint_id": "p1074_35556036546182_C056",
+      "complainer_id": "p1074_35556036546182_K030",
+      "complaint_file": "complaints/p1074_35556036546182_C056_milwaukee_county.json",
+      "response_ids": []
+    },
+    {
+      "order": 57,
+      "complaint_id": "p1074_35556036546182_C057",
+      "complainer_id": "p1074_35556036546182_K032",
+      "complaint_file": "complaints/p1074_35556036546182_C057_directors_of_the_state_and_milwaukee_cou.json",
+      "response_ids": []
+    },
+    {
+      "order": 58,
+      "complaint_id": "p1074_35556036546182_C058",
+      "complainer_id": "p1074_35556036546182_K031",
+      "complaint_file": "complaints/p1074_35556036546182_C058_american_automobile_association.json",
+      "response_ids": []
+    },
+    {
+      "order": 59,
+      "complaint_id": "p1074_35556036546182_C059",
+      "complainer_id": "p1074_35556036546182_K031",
+      "complaint_file": "complaints/p1074_35556036546182_C059_american_automobile_association.json",
+      "response_ids": []
+    },
+    {
+      "order": 60,
+      "complaint_id": "p1074_35556036546182_C060",
+      "complainer_id": "p1074_35556036546182_K034",
+      "complaint_file": "complaints/p1074_35556036546182_C060_milwaukee_air_cargo_association.json",
+      "response_ids": []
+    },
+    {
+      "order": 61,
+      "complaint_id": "p1074_35556036546182_C061",
+      "complainer_id": "p1074_35556036546182_K026",
+      "complaint_file": "complaints/p1074_35556036546182_C061_division_of_highways.json",
+      "response_ids": []
+    },
+    {
+      "order": 62,
+      "complaint_id": "p1074_35556036546182_C062",
+      "complainer_id": "p1074_35556036546182_K037",
+      "complaint_file": "complaints/p1074_35556036546182_C062_milwaukee_public_schools.json",
+      "response_ids": []
+    },
+    {
+      "order": 63,
+      "complaint_id": "p1074_35556036546182_C063",
+      "complainer_id": "p1074_35556036546182_K042",
+      "complaint_file": "complaints/p1074_35556036546182_C063_wisconsin_department_of_transportation.json",
+      "response_ids": []
+    },
+    {
+      "order": 64,
+      "complaint_id": "p1074_35556036546182_C064",
+      "complainer_id": "p1074_35556036546182_K033",
+      "complaint_file": "complaints/p1074_35556036546182_C064_dnr.json",
+      "response_ids": []
+    },
+    {
+      "order": 65,
+      "complaint_id": "p1074_35556036546182_C065",
+      "complainer_id": "p1074_35556036546182_K043",
+      "complaint_file": "complaints/p1074_35556036546182_C065_wisconsin_state_historical_society.json",
+      "response_ids": []
+    },
+    {
+      "order": 66,
+      "complaint_id": "p1074_35556036546182_C066",
+      "complainer_id": "p1074_35556036546182_K046",
+      "complaint_file": "complaints/p1074_35556036546182_C066_e_w_anderson.json",
+      "response_ids": []
+    },
+    {
+      "order": 67,
+      "complaint_id": "p1074_35556036546182_C067",
+      "complainer_id": "p1074_35556036546182_K056",
+      "complaint_file": "complaints/p1074_35556036546182_C067_j_m_hutsteiner.json",
+      "response_ids": []
+    },
+    {
+      "order": 68,
+      "complaint_id": "p1074_35556036546182_C068",
+      "complainer_id": "p1074_35556036546182_K051",
+      "complaint_file": "complaints/p1074_35556036546182_C068_h_b_wildschut.json",
+      "response_ids": []
+    },
+    {
+      "order": 69,
+      "complaint_id": "p1074_35556036546182_C069",
+      "complainer_id": "p1074_35556036546182_K064",
+      "complaint_file": "complaints/p1074_35556036546182_C069_r_s_michael.json",
+      "response_ids": []
+    },
+    {
+      "order": 70,
+      "complaint_id": "p1074_35556036546182_C070",
+      "complainer_id": "p1074_35556036546182_K053",
+      "complaint_file": "complaints/p1074_35556036546182_C070_h_mccullough.json",
+      "response_ids": []
+    },
+    {
+      "order": 71,
+      "complaint_id": "p1074_35556036546182_C071",
+      "complainer_id": "p1074_35556036546182_K054",
+      "complaint_file": "complaints/p1074_35556036546182_C071_howard_gregg.json",
+      "response_ids": []
+    },
+    {
+      "order": 72,
+      "complaint_id": "p1074_35556036546182_C072",
+      "complainer_id": "p1074_35556036546182_K065",
+      "complaint_file": "complaints/p1074_35556036546182_C072_r_w_brannan.json",
+      "response_ids": []
+    },
+    {
+      "order": 73,
+      "complaint_id": "p1074_35556036546182_C073",
+      "complainer_id": "p1074_35556036546182_K045",
+      "complaint_file": "complaints/p1074_35556036546182_C073_b_o_pinney.json",
+      "response_ids": [
+        "p1074_35556036546182_R005"
+      ]
+    },
+    {
+      "order": 74,
+      "complaint_id": "p1074_35556036546182_C074",
+      "complainer_id": "p1074_35556036546182_K052",
+      "complaint_file": "complaints/p1074_35556036546182_C074_h_e_clinkenbeard.json",
+      "response_ids": []
+    },
+    {
+      "order": 75,
+      "complaint_id": "p1074_35556036546182_C075",
+      "complainer_id": "p1074_35556036546182_K067",
+      "complaint_file": "complaints/p1074_35556036546182_C075_w_f_steuber.json",
+      "response_ids": []
+    },
+    {
+      "order": 76,
+      "complaint_id": "p1074_35556036546182_C076",
+      "complainer_id": "p1074_35556036546182_K070",
+      "complaint_file": "complaints/p1074_35556036546182_C076_w_weber.json",
+      "response_ids": []
+    },
+    {
+      "order": 77,
+      "complaint_id": "p1074_35556036546182_C077",
+      "complainer_id": "p1074_35556036546182_K055",
+      "complaint_file": "complaints/p1074_35556036546182_C077_j_drutuwski.json",
+      "response_ids": [
+        "p1074_35556036546182_R006"
+      ]
+    },
+    {
+      "order": 78,
+      "complaint_id": "p1074_35556036546182_C078",
+      "complainer_id": "p1074_35556036546182_K068",
+      "complaint_file": "complaints/p1074_35556036546182_C078_w_f_szczepanski.json",
+      "response_ids": [
+        "p1074_35556036546182_R007"
+      ]
+    },
+    {
+      "order": 79,
+      "complaint_id": "p1074_35556036546182_C079",
+      "complainer_id": "p1074_35556036546182_K069",
+      "complaint_file": "complaints/p1074_35556036546182_C079_w_l_marvin.json",
+      "response_ids": []
+    },
+    {
+      "order": 80,
+      "complaint_id": "p1074_35556036546182_C080",
+      "complainer_id": "p1074_35556036546182_K057",
+      "complaint_file": "complaints/p1074_35556036546182_C080_james_morton_smith.json",
+      "response_ids": [
+        "p1074_35556036546182_R008"
+      ]
+    },
+    {
+      "order": 81,
+      "complaint_id": "p1074_35556036546182_C081",
+      "complainer_id": "p1074_35556036546182_K057",
+      "complaint_file": "complaints/p1074_35556036546182_C081_james_morton_smith.json",
+      "response_ids": [
+        "p1074_35556036546182_R009"
+      ]
+    },
+    {
+      "order": 82,
+      "complaint_id": "p1074_35556036546182_C082",
+      "complainer_id": "p1074_35556036546182_K061",
+      "complaint_file": "complaints/p1074_35556036546182_C082_milwaukee_county_historical_society.json",
+      "response_ids": [
+        "p1074_35556036546182_R010"
+      ]
+    },
+    {
+      "order": 83,
+      "complaint_id": "p1074_35556036546182_C083",
+      "complainer_id": "p1074_35556036546182_K051",
+      "complaint_file": "complaints/p1074_35556036546182_C083_h_b_wildschut.json",
+      "response_ids": [
+        "p1074_35556036546182_R011"
+      ]
+    },
+    {
+      "order": 84,
+      "complaint_id": "p1074_35556036546182_C084",
+      "complainer_id": "p1074_35556036546182_K065",
+      "complaint_file": "complaints/p1074_35556036546182_C084_r_w_brannan.json",
+      "response_ids": [
+        "p1074_35556036546182_R012"
+      ]
+    },
+    {
+      "order": 85,
+      "complaint_id": "p1074_35556036546182_C085",
+      "complainer_id": "p1074_35556036546182_K063",
+      "complaint_file": "complaints/p1074_35556036546182_C085_p_s_myers.json",
+      "response_ids": [
+        "p1074_35556036546182_R013"
+      ]
+    },
+    {
+      "order": 86,
+      "complaint_id": "p1074_35556036546182_C086",
+      "complainer_id": "p1074_35556036546182_K058",
+      "complaint_file": "complaints/p1074_35556036546182_C086_john_l_doyne.json",
+      "response_ids": [
+        "p1074_35556036546182_R014"
+      ]
+    },
+    {
+      "order": 87,
+      "complaint_id": "p1074_35556036546182_C087",
+      "complainer_id": "p1074_35556036546182_K062",
+      "complaint_file": "complaints/p1074_35556036546182_C087_milwaukee_county_park_commission.json",
+      "response_ids": [
+        "p1074_35556036546182_R015"
+      ]
+    },
+    {
+      "order": 88,
+      "complaint_id": "p1074_35556036546182_C088",
+      "complainer_id": "p1074_35556036546182_K060",
+      "complaint_file": "complaints/p1074_35556036546182_C088_martin_convisser.json",
+      "response_ids": [
+        "p1074_35556036546182_R016"
+      ]
+    },
+    {
+      "order": 89,
+      "complaint_id": "p1074_35556036546182_C089",
+      "complainer_id": "p1074_35556036546182_K048",
+      "complaint_file": "complaints/p1074_35556036546182_C089_federal_aviation_administration_minneapo.json",
+      "response_ids": [
+        "p1074_35556036546182_R017"
+      ]
+    },
+    {
+      "order": 90,
+      "complaint_id": "p1074_35556036546182_C090",
+      "complainer_id": "p1074_35556036546182_K059",
+      "complaint_file": "complaints/p1074_35556036546182_C090_john_r_plewa.json",
+      "response_ids": [
+        "p1074_35556036546182_R018"
+      ]
+    },
+    {
+      "order": 91,
+      "complaint_id": "p1074_35556036546182_C091",
+      "complainer_id": "p1074_35556036546182_K066",
+      "complaint_file": "complaints/p1074_35556036546182_C091_u_s_department_of_interior.json",
+      "response_ids": [
+        "p1074_35556036546182_R019"
+      ]
+    },
+    {
+      "order": 92,
+      "complaint_id": "p1074_35556036546182_C092",
+      "complainer_id": "p1074_35556036546182_K049",
+      "complaint_file": "complaints/p1074_35556036546182_C092_fred_r_rehm.json",
+      "response_ids": [
+        "p1074_35556036546182_R020"
+      ]
+    },
+    {
+      "order": 93,
+      "complaint_id": "p1074_35556036546182_C093",
+      "complainer_id": "p1074_35556036546182_K047",
+      "complaint_file": "complaints/p1074_35556036546182_C093_environmental_protection_agency_region_v.json",
+      "response_ids": [
+        "p1074_35556036546182_R021"
+      ]
+    },
+    {
+      "order": 94,
+      "complaint_id": "p1074_35556036546182_C094",
+      "complainer_id": "p1074_35556036546182_K044",
+      "complaint_file": "complaints/p1074_35556036546182_C094_attorney_general_warren.json",
+      "response_ids": [
+        "p1074_35556036546182_R022"
+      ]
+    },
+    {
+      "order": 95,
+      "complaint_id": "p1074_35556036546182_C095",
+      "complainer_id": "p1074_35556036546182_K050",
+      "complaint_file": "complaints/p1074_35556036546182_C095_governor_lucey.json",
+      "response_ids": [
+        "p1074_35556036546182_R023"
+      ]
+    },
+    {
+      "order": 96,
+      "complaint_id": "p1074_35556036546182_C096",
+      "complainer_id": "p1074_35556036546182_K086",
+      "complaint_file": "complaints/p1074_35556036546182_C096_i_c_herried.json",
+      "response_ids": [
+        "p1074_35556036546182_R024"
+      ]
+    },
+    {
+      "order": 97,
+      "complaint_id": "p1074_35556036546182_C097",
+      "complainer_id": "p1074_35556036546182_K088",
+      "complaint_file": "complaints/p1074_35556036546182_C097_john_plewa.json",
+      "response_ids": [
+        "p1074_35556036546182_R025"
+      ]
+    },
+    {
+      "order": 98,
+      "complaint_id": "p1074_35556036546182_C098",
+      "complainer_id": "p1074_35556036546182_K091",
+      "complaint_file": "complaints/p1074_35556036546182_C098_kurt_a_frank.json",
+      "response_ids": [
+        "p1074_35556036546182_R026"
+      ]
+    },
+    {
+      "order": 99,
+      "complaint_id": "p1074_35556036546182_C099",
+      "complainer_id": "p1074_35556036546182_K074",
+      "complaint_file": "complaints/p1074_35556036546182_C099_c_d_besadny.json",
+      "response_ids": [
+        "p1074_35556036546182_R027"
+      ]
+    },
+    {
+      "order": 100,
+      "complaint_id": "p1074_35556036546182_C100",
+      "complainer_id": "p1074_35556036546182_K105",
+      "complaint_file": "complaints/p1074_35556036546182_C100_wisconsin_department_of_natural_resource.json",
+      "response_ids": [
+        "p1074_35556036546182_R028"
+      ]
+    },
+    {
+      "order": 101,
+      "complaint_id": "p1074_35556036546182_C101",
+      "complainer_id": "p1074_35556036546182_K105",
+      "complaint_file": "complaints/p1074_35556036546182_C101_wisconsin_department_of_natural_resource.json",
+      "response_ids": []
+    },
+    {
+      "order": 102,
+      "complaint_id": "p1074_35556036546182_C102",
+      "complainer_id": "p1074_35556036546182_K073",
+      "complaint_file": "complaints/p1074_35556036546182_C102_brooks_becker.json",
+      "response_ids": [
+        "p1074_35556036546182_R029"
+      ]
+    },
+    {
+      "order": 103,
+      "complaint_id": "p1074_35556036546182_C103",
+      "complainer_id": "p1074_35556036546182_K096",
+      "complaint_file": "complaints/p1074_35556036546182_C103_r_w_park.json",
+      "response_ids": []
+    },
+    {
+      "order": 104,
+      "complaint_id": "p1074_35556036546182_C104",
+      "complainer_id": "p1074_35556036546182_K097",
+      "complaint_file": "complaints/p1074_35556036546182_C104_richard_a_kaiser.json",
+      "response_ids": [
+        "p1074_35556036546182_R030"
+      ]
+    },
+    {
+      "order": 105,
+      "complaint_id": "p1074_35556036546182_C105",
+      "complainer_id": "p1074_35556036546182_K102",
+      "complaint_file": "complaints/p1074_35556036546182_C105_roy_prysila.json",
+      "response_ids": [
+        "p1074_35556036546182_R031"
+      ]
+    },
+    {
+      "order": 106,
+      "complaint_id": "p1074_35556036546182_C106",
+      "complainer_id": "p1074_35556036546182_K079",
+      "complaint_file": "complaints/p1074_35556036546182_C106_edgar_p_vie.json",
+      "response_ids": []
+    },
+    {
+      "order": 107,
+      "complaint_id": "p1074_35556036546182_C107",
+      "complainer_id": "p1074_35556036546182_K098",
+      "complaint_file": "complaints/p1074_35556036546182_C107_robert_a_anderson.json",
+      "response_ids": []
+    },
+    {
+      "order": 108,
+      "complaint_id": "p1074_35556036546182_C108",
+      "complainer_id": "p1074_35556036546182_K073",
+      "complaint_file": "complaints/p1074_35556036546182_C108_brooks_becker.json",
+      "response_ids": [
+        "p1074_35556036546182_R032"
+      ]
+    },
+    {
+      "order": 109,
+      "complaint_id": "p1074_35556036546182_C109",
+      "complainer_id": "p1074_35556036546182_K072",
+      "complaint_file": "complaints/p1074_35556036546182_C109_bob_huber.json",
+      "response_ids": [
+        "p1074_35556036546182_R033"
+      ]
+    },
+    {
+      "order": 110,
+      "complaint_id": "p1074_35556036546182_C110",
+      "complainer_id": "p1074_35556036546182_K085",
+      "complaint_file": "complaints/p1074_35556036546182_C110_harvey_shebesta.json",
+      "response_ids": [
+        "p1074_35556036546182_R034"
+      ]
+    },
+    {
+      "order": 111,
+      "complaint_id": "p1074_35556036546182_C111",
+      "complainer_id": "p1074_35556036546182_K076",
+      "complaint_file": "complaints/p1074_35556036546182_C111_clay_harley.json",
+      "response_ids": [
+        "p1074_35556036546182_R035"
+      ]
+    },
+    {
+      "order": 112,
+      "complaint_id": "p1074_35556036546182_C112",
+      "complainer_id": "p1074_35556036546182_K094",
+      "complaint_file": "complaints/p1074_35556036546182_C112_peter_daugherty.json",
+      "response_ids": [
+        "p1074_35556036546182_R036"
+      ]
+    },
+    {
+      "order": 113,
+      "complaint_id": "p1074_35556036546182_C113",
+      "complainer_id": "p1074_35556036546182_K100",
+      "complaint_file": "complaints/p1074_35556036546182_C113_robert_vanselow.json",
+      "response_ids": [
+        "p1074_35556036546182_R037"
+      ]
+    },
+    {
+      "order": 114,
+      "complaint_id": "p1074_35556036546182_C114",
+      "complainer_id": "p1074_35556036546182_K089",
+      "complaint_file": "complaints/p1074_35556036546182_C114_joseph_f_sanek.json",
+      "response_ids": []
+    },
+    {
+      "order": 115,
+      "complaint_id": "p1074_35556036546182_C115",
+      "complainer_id": "p1074_35556036546182_K090",
+      "complaint_file": "complaints/p1074_35556036546182_C115_keith_graham.json",
+      "response_ids": [
+        "p1074_35556036546182_R038"
+      ]
+    },
+    {
+      "order": 116,
+      "complaint_id": "p1074_35556036546182_C116",
+      "complainer_id": "p1074_35556036546182_K093",
+      "complaint_file": "complaints/p1074_35556036546182_C116_marvin_rusch.json",
+      "response_ids": []
+    },
+    {
+      "order": 117,
+      "complaint_id": "p1074_35556036546182_C117",
+      "complainer_id": "p1074_35556036546182_K080",
+      "complaint_file": "complaints/p1074_35556036546182_C117_edward_zervic.json",
+      "response_ids": [
+        "p1074_35556036546182_R039"
+      ]
+    },
+    {
+      "order": 118,
+      "complaint_id": "p1074_35556036546182_C118",
+      "complainer_id": "p1074_35556036546182_K083",
+      "complaint_file": "complaints/p1074_35556036546182_C118_g_phillip_beitz.json",
+      "response_ids": [
+        "p1074_35556036546182_R040"
+      ]
+    },
+    {
+      "order": 119,
+      "complaint_id": "p1074_35556036546182_C119",
+      "complainer_id": "p1074_35556036546182_K099",
+      "complaint_file": "complaints/p1074_35556036546182_C119_robert_kernler.json",
+      "response_ids": [
+        "p1074_35556036546182_R041"
+      ]
+    },
+    {
+      "order": 120,
+      "complaint_id": "p1074_35556036546182_C120",
+      "complainer_id": "p1074_35556036546182_K078",
+      "complaint_file": "complaints/p1074_35556036546182_C120_e_g_plautz.json",
+      "response_ids": [
+        "p1074_35556036546182_R042"
+      ]
+    },
+    {
+      "order": 121,
+      "complaint_id": "p1074_35556036546182_C121",
+      "complainer_id": "p1074_35556036546182_K095",
+      "complaint_file": "complaints/p1074_35556036546182_C121_phillip_purpero.json",
+      "response_ids": [
+        "p1074_35556036546182_R043"
+      ]
+    },
+    {
+      "order": 122,
+      "complaint_id": "p1074_35556036546182_C122",
+      "complainer_id": "p1074_35556036546182_K084",
+      "complaint_file": "complaints/p1074_35556036546182_C122_gordon_a_king.json",
+      "response_ids": []
+    },
+    {
+      "order": 123,
+      "complaint_id": "p1074_35556036546182_C123",
+      "complainer_id": "p1074_35556036546182_K101",
+      "complaint_file": "complaints/p1074_35556036546182_C123_roy_gardetto.json",
+      "response_ids": []
+    },
+    {
+      "order": 124,
+      "complaint_id": "p1074_35556036546182_C124",
+      "complainer_id": "p1074_35556036546182_K104",
+      "complaint_file": "complaints/p1074_35556036546182_C124_walter_f_szczepanski.json",
+      "response_ids": [
+        "p1074_35556036546182_R044"
+      ]
+    },
+    {
+      "order": 125,
+      "complaint_id": "p1074_35556036546182_C125",
+      "complainer_id": "p1074_35556036546182_K077",
+      "complaint_file": "complaints/p1074_35556036546182_C125_corine_kuras.json",
+      "response_ids": [
+        "p1074_35556036546182_R045"
+      ]
+    },
+    {
+      "order": 126,
+      "complaint_id": "p1074_35556036546182_C126",
+      "complainer_id": "p1074_35556036546182_K092",
+      "complaint_file": "complaints/p1074_35556036546182_C126_marcey_jaskulski.json",
+      "response_ids": [
+        "p1074_35556036546182_R046"
+      ]
+    },
+    {
+      "order": 127,
+      "complaint_id": "p1074_35556036546182_C127",
+      "complainer_id": "p1074_35556036546182_K103",
+      "complaint_file": "complaints/p1074_35556036546182_C127_southeastern_wisconsin_coalition_for_cle.json",
+      "response_ids": [
+        "p1074_35556036546182_R047"
+      ]
+    },
+    {
+      "order": 128,
+      "complaint_id": "p1074_35556036546182_C128",
+      "complainer_id": "p1074_35556036546182_K071",
+      "complaint_file": "complaints/p1074_35556036546182_C128_albert_schultz.json",
+      "response_ids": [
+        "p1074_35556036546182_R048"
+      ]
+    },
+    {
+      "order": 129,
+      "complaint_id": "p1074_35556036546182_C129",
+      "complainer_id": "p1074_35556036546182_K121",
+      "complaint_file": "complaints/p1074_35556036546182_C129_milwaukee_county_expressway_and_transpor.json",
+      "response_ids": [
+        "p1074_35556036546182_R049"
+      ]
+    },
+    {
+      "order": 130,
+      "complaint_id": "p1074_35556036546182_C130",
+      "complainer_id": "p1074_35556036546182_K082",
+      "complaint_file": "complaints/p1074_35556036546182_C130_francis_biernat.json",
+      "response_ids": [
+        "p1074_35556036546182_R050"
+      ]
+    },
+    {
+      "order": 131,
+      "complaint_id": "p1074_35556036546182_C131",
+      "complainer_id": "p1074_35556036546182_K121",
+      "complaint_file": "complaints/p1074_35556036546182_C131_milwaukee_county_expressway_and_transpor.json",
+      "response_ids": []
+    },
+    {
+      "order": 132,
+      "complaint_id": "p1074_35556036546182_C132",
+      "complainer_id": "p1074_35556036546182_K107",
+      "complaint_file": "complaints/p1074_35556036546182_C132_benedict_kosnicki.json",
+      "response_ids": [
+        "p1074_35556036546182_R051"
+      ]
+    },
+    {
+      "order": 133,
+      "complaint_id": "p1074_35556036546182_C133",
+      "complainer_id": "p1074_35556036546182_K122",
+      "complaint_file": "complaints/p1074_35556036546182_C133_mr_and_mrs_adolph_heuer.json",
+      "response_ids": [
+        "p1074_35556036546182_R052"
+      ]
+    },
+    {
+      "order": 134,
+      "complaint_id": "p1074_35556036546182_C134",
+      "complainer_id": "p1074_35556036546182_K130",
+      "complaint_file": "complaints/p1074_35556036546182_C134_shirley_perez.json",
+      "response_ids": [
+        "p1074_35556036546182_R053"
+      ]
+    },
+    {
+      "order": 135,
+      "complaint_id": "p1074_35556036546182_C135",
+      "complainer_id": "p1074_35556036546182_K111",
+      "complaint_file": "complaints/p1074_35556036546182_C135_doreen_marcelini.json",
+      "response_ids": [
+        "p1074_35556036546182_R054"
+      ]
+    },
+    {
+      "order": 136,
+      "complaint_id": "p1074_35556036546182_C136",
+      "complainer_id": "p1074_35556036546182_K118",
+      "complaint_file": "complaints/p1074_35556036546182_C136_garabed_marcarian.json",
+      "response_ids": [
+        "p1074_35556036546182_R055"
+      ]
+    },
+    {
+      "order": 137,
+      "complaint_id": "p1074_35556036546182_C137",
+      "complainer_id": "p1074_35556036546182_K118",
+      "complaint_file": "complaints/p1074_35556036546182_C137_garabed_marcarian.json",
+      "response_ids": [
+        "p1074_35556036546182_R056"
+      ]
+    },
+    {
+      "order": 138,
+      "complaint_id": "p1074_35556036546182_C138",
+      "complainer_id": "p1074_35556036546182_K126",
+      "complaint_file": "complaints/p1074_35556036546182_C138_mrs_bernard_schettle.json",
+      "response_ids": [
+        "p1074_35556036546182_R057"
+      ]
+    },
+    {
+      "order": 139,
+      "complaint_id": "p1074_35556036546182_C139",
+      "complainer_id": "p1074_35556036546182_K127",
+      "complaint_file": "complaints/p1074_35556036546182_C139_professor_w_wayne_siesennop.json",
+      "response_ids": [
+        "p1074_35556036546182_R058"
+      ]
+    },
+    {
+      "order": 140,
+      "complaint_id": "p1074_35556036546182_C140",
+      "complainer_id": "p1074_35556036546182_K112",
+      "complaint_file": "complaints/p1074_35556036546182_C140_douglas_f_marcelini.json",
+      "response_ids": [
+        "p1074_35556036546182_R059"
+      ]
+    },
+    {
+      "order": 141,
+      "complaint_id": "p1074_35556036546182_C141",
+      "complainer_id": "p1074_35556036546182_K124",
+      "complaint_file": "complaints/p1074_35556036546182_C141_mr_and_mrs_ronald_r_perez.json",
+      "response_ids": [
+        "p1074_35556036546182_R060"
+      ]
+    },
+    {
+      "order": 142,
+      "complaint_id": "p1074_35556036546182_C142",
+      "complainer_id": "p1074_35556036546182_K116",
+      "complaint_file": "complaints/p1074_35556036546182_C142_ester_piszczek.json",
+      "response_ids": [
+        "p1074_35556036546182_R061"
+      ]
+    },
+    {
+      "order": 143,
+      "complaint_id": "p1074_35556036546182_C143",
+      "complainer_id": "p1074_35556036546182_K120",
+      "complaint_file": "complaints/p1074_35556036546182_C143_merl_and_marianne_stong.json",
+      "response_ids": [
+        "p1074_35556036546182_R062"
+      ]
+    },
+    {
+      "order": 144,
+      "complaint_id": "p1074_35556036546182_C144",
+      "complainer_id": "p1074_35556036546182_K131",
+      "complaint_file": "complaints/p1074_35556036546182_C144_stephan_vleansky.json",
+      "response_ids": [
+        "p1074_35556036546182_R063"
+      ]
+    },
+    {
+      "order": 145,
+      "complaint_id": "p1074_35556036546182_C145",
+      "complainer_id": "p1074_35556036546182_K114",
+      "complaint_file": "complaints/p1074_35556036546182_C145_edgar_g_plautz.json",
+      "response_ids": [
+        "p1074_35556036546182_R064"
+      ]
+    },
+    {
+      "order": 146,
+      "complaint_id": "p1074_35556036546182_C146",
+      "complainer_id": "p1074_35556036546182_K119",
+      "complaint_file": "complaints/p1074_35556036546182_C146_leona_stockmal.json",
+      "response_ids": [
+        "p1074_35556036546182_R065"
+      ]
+    },
+    {
+      "order": 147,
+      "complaint_id": "p1074_35556036546182_C147",
+      "complainer_id": "p1074_35556036546182_K123",
+      "complaint_file": "complaints/p1074_35556036546182_C147_mr_and_mrs_george_a_legath.json",
+      "response_ids": [
+        "p1074_35556036546182_R066"
+      ]
+    },
+    {
+      "order": 148,
+      "complaint_id": "p1074_35556036546182_C148",
+      "complainer_id": "p1074_35556036546182_K106",
+      "complaint_file": "complaints/p1074_35556036546182_C148_alan_staeger.json",
+      "response_ids": [
+        "p1074_35556036546182_R067"
+      ]
+    },
+    {
+      "order": 149,
+      "complaint_id": "p1074_35556036546182_C149",
+      "complainer_id": "p1074_35556036546182_K117",
+      "complaint_file": "complaints/p1074_35556036546182_C149_frank_b_duszynski.json",
+      "response_ids": [
+        "p1074_35556036546182_R068"
+      ]
+    },
+    {
+      "order": 150,
+      "complaint_id": "p1074_35556036546182_C150",
+      "complainer_id": "p1074_35556036546182_K129",
+      "complaint_file": "complaints/p1074_35556036546182_C150_roland_salin.json",
+      "response_ids": [
+        "p1074_35556036546182_R069"
+      ]
+    },
+    {
+      "order": 151,
+      "complaint_id": "p1074_35556036546182_C151",
+      "complainer_id": "p1074_35556036546182_K075",
+      "complaint_file": "complaints/p1074_35556036546182_C151_c_k_sabrowsky.json",
+      "response_ids": [
+        "p1074_35556036546182_R070"
+      ]
+    },
+    {
+      "order": 152,
+      "complaint_id": "p1074_35556036546182_C152",
+      "complainer_id": "p1074_35556036546182_K087",
+      "complaint_file": "complaints/p1074_35556036546182_C152_james_e_sharpiro.json",
+      "response_ids": [
+        "p1074_35556036546182_R071"
+      ]
+    },
+    {
+      "order": 153,
+      "complaint_id": "p1074_35556036546182_C153",
+      "complainer_id": "p1074_35556036546182_K108",
+      "complaint_file": "complaints/p1074_35556036546182_C153_city_of_milwaukee_school_board.json",
+      "response_ids": [
+        "p1074_35556036546182_R072"
+      ]
+    },
+    {
+      "order": 154,
+      "complaint_id": "p1074_35556036546182_C154",
+      "complainer_id": "p1074_35556036546182_K109",
+      "complaint_file": "complaints/p1074_35556036546182_C154_community_developers_inc.json",
+      "response_ids": [
+        "p1074_35556036546182_R073"
+      ]
+    },
+    {
+      "order": 155,
+      "complaint_id": "p1074_35556036546182_C155",
+      "complainer_id": "p1074_35556036546182_K127",
+      "complaint_file": "complaints/p1074_35556036546182_C155_professor_w_wayne_siesennop.json",
+      "response_ids": [
+        "p1074_35556036546182_R074"
+      ]
+    },
+    {
+      "order": 156,
+      "complaint_id": "p1074_35556036546182_C156",
+      "complainer_id": "p1074_35556036546182_K128",
+      "complaint_file": "complaints/p1074_35556036546182_C156_restaurant_associates_industries_inc.json",
+      "response_ids": [
+        "p1074_35556036546182_R075"
+      ]
+    },
+    {
+      "order": 157,
+      "complaint_id": "p1074_35556036546182_C157",
+      "complainer_id": "p1074_35556036546182_K081",
+      "complaint_file": "complaints/p1074_35556036546182_C157_f_e_wolf.json",
+      "response_ids": []
+    },
+    {
+      "order": 158,
+      "complaint_id": "p1074_35556036546182_C158",
+      "complainer_id": "p1074_35556036546182_K115",
+      "complaint_file": "complaints/p1074_35556036546182_C158_ernest_f_vilter.json",
+      "response_ids": [
+        "p1074_35556036546182_R076"
+      ]
+    },
+    {
+      "order": 159,
+      "complaint_id": "p1074_35556036546182_C159",
+      "complainer_id": "p1074_35556036546182_K110",
+      "complaint_file": "complaints/p1074_35556036546182_C159_donald_d_spenner.json",
+      "response_ids": []
+    },
+    {
+      "order": 160,
+      "complaint_id": "p1074_35556036546182_C160",
+      "complainer_id": "p1074_35556036546182_K110",
+      "complaint_file": "complaints/p1074_35556036546182_C160_donald_d_spenner.json",
+      "response_ids": []
+    },
+    {
+      "order": 161,
+      "complaint_id": "p1074_35556036546182_C161",
+      "complainer_id": "p1074_35556036546182_K113",
+      "complaint_file": "complaints/p1074_35556036546182_C161_dr_edwin_l_meyer.json",
+      "response_ids": []
+    },
+    {
+      "order": 162,
+      "complaint_id": "p1074_35556036546182_C162",
+      "complainer_id": "p1074_35556036546182_K125",
+      "complaint_file": "complaints/p1074_35556036546182_C162_mr_besadny.json",
+      "response_ids": [
+        "p1074_35556036546182_R077"
+      ]
+    },
+    {
+      "order": 163,
+      "complaint_id": "p1074_35556036546182_C163",
+      "complainer_id": "p1074_35556036546182_K016",
+      "complaint_file": "complaints/p1074_35556036546182_C163_state_highway_engineer.json",
+      "response_ids": []
+    },
+    {
+      "order": 164,
+      "complaint_id": "p1074_35556036546182_C164",
+      "complainer_id": "p1074_35556036546182_K022",
+      "complaint_file": "complaints/p1074_35556036546182_C164_wisconsin_state_senator_douglas_lafollet.json",
+      "response_ids": []
+    },
+    {
+      "order": 165,
+      "complaint_id": "p1074_35556036546182_C165",
+      "complainer_id": "p1074_35556036546182_K041",
+      "complaint_file": "complaints/p1074_35556036546182_C165_wisconsin_department_of_local_affairs_an.json",
+      "response_ids": []
+    }
+  ],
+  "complaints": [
+    {
+      "complaint_id": "p1074_35556036546182_C001",
+      "complainer_id": "p1074_35556036546182_K007",
+      "file": "complaints/p1074_35556036546182_C001_federal_highway_administration.json",
+      "order": 1,
+      "entity": "Federal Highway Administration",
+      "kind": "agency",
+      "role": "Federal co-author and approving authority for the EIS",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "none",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C002",
+      "complainer_id": "p1074_35556036546182_K007",
+      "file": "complaints/p1074_35556036546182_C002_federal_highway_administration.json",
+      "order": 2,
+      "entity": "Federal Highway Administration",
+      "kind": "agency",
+      "role": "Federal co-author and approving authority for the EIS",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C003",
+      "complainer_id": "p1074_35556036546182_K007",
+      "file": "complaints/p1074_35556036546182_C003_federal_highway_administration.json",
+      "order": 3,
+      "entity": "Federal Highway Administration",
+      "kind": "agency",
+      "role": "Federal co-author and approving authority for the EIS",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C004",
+      "complainer_id": "p1074_35556036546182_K020",
+      "file": "complaints/p1074_35556036546182_C004_w_g_emrich.json",
+      "order": 4,
+      "entity": "W. G. EMRICH",
+      "kind": "official",
+      "role": "Director, Office of Environment and Design, Regional Federal Highway Administrator",
+      "stance": "in_favor",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C005",
+      "complainer_id": "p1074_35556036546182_K010",
+      "file": "complaints/p1074_35556036546182_C005_milwaukee_county_expressway_and_transpor.json",
+      "order": 5,
+      "entity": "Milwaukee County Expressway and Transportation Commission",
+      "kind": "agency",
+      "role": "County transportation agency, co-proposer of Airport Spur",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "10"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C006",
+      "complainer_id": "p1074_35556036546182_K005",
+      "file": "complaints/p1074_35556036546182_C006_department_of_natural_resources.json",
+      "order": 6,
+      "entity": "Department of Natural Resources",
+      "kind": "agency",
+      "role": "State environmental review agency, indirect source reviewing agency",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "14"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C007",
+      "complainer_id": "p1074_35556036546182_K014",
+      "file": "complaints/p1074_35556036546182_C007_southeastern_wisconsin_regional_planning.json",
+      "order": 7,
+      "entity": "Southeastern Wisconsin Regional Planning Commission (SEWRPC)",
+      "kind": "agency",
+      "role": "Regional planning commission, commenter",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "14"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C008",
+      "complainer_id": "p1074_35556036546182_K018",
+      "file": "complaints/p1074_35556036546182_C008_state_senator_kurt_a_frank_7th_district.json",
+      "order": 8,
+      "entity": "State Senator Kurt A. Frank, 7th District",
+      "kind": "individual",
+      "role": "Wisconsin State Senator, commenter",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "15"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C009",
+      "complainer_id": "p1074_35556036546182_K001",
+      "file": "complaints/p1074_35556036546182_C009_citizen_s_against_airport_spur.json",
+      "order": 9,
+      "entity": "Citizen's Against Airport Spur",
+      "kind": "organization",
+      "role": "Citizen opposition group, commenter",
+      "stance": "opposed",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "18"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C010",
+      "complainer_id": "p1074_35556036546182_K006",
+      "file": "complaints/p1074_35556036546182_C010_dr_p_s_meyers.json",
+      "order": 10,
+      "entity": "Dr. P. S. Meyers",
+      "kind": "individual",
+      "role": "Professor, Mechanical Engineering, University of Wisconsin, commenter",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "18"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "quote_not_verbatim",
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C011",
+      "complainer_id": "p1074_35556036546182_K011",
+      "file": "complaints/p1074_35556036546182_C011_robert_szyba.json",
+      "order": 11,
+      "entity": "Robert Szyba",
+      "kind": "individual",
+      "role": "Representative of Citizen's Against Airport Spur, commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "18"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C012",
+      "complainer_id": "p1074_35556036546182_K017",
+      "file": "complaints/p1074_35556036546182_C012_state_representative_john_r_plewa_20th_a.json",
+      "order": 12,
+      "entity": "State Representative John R. Plewa, 20th Assembly District",
+      "kind": "individual",
+      "role": "Wisconsin State Representative, commenter",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "18"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "quote_not_verbatim",
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C013",
+      "complainer_id": "p1074_35556036546182_K019",
+      "file": "complaints/p1074_35556036546182_C013_thomas_r_burney.json",
+      "order": 13,
+      "entity": "Thomas R. Burney",
+      "kind": "individual",
+      "role": "Representative of Wisconsin's Environmental Decade, commenter",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "18"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "quote_not_verbatim",
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C014",
+      "complainer_id": "p1074_35556036546182_K023",
+      "file": "complaints/p1074_35556036546182_C014_wisconsin_s_environmental_decade.json",
+      "order": 14,
+      "entity": "Wisconsin's Environmental Decade",
+      "kind": "organization",
+      "role": "Environmental advocacy organization, commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "18"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C015",
+      "complainer_id": "p1074_35556036546182_K010",
+      "file": "complaints/p1074_35556036546182_C015_milwaukee_county_expressway_and_transpor.json",
+      "order": 15,
+      "entity": "Milwaukee County Expressway and Transportation Commission",
+      "kind": "agency",
+      "role": "County transportation agency, co-proposer of Airport Spur",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C016",
+      "complainer_id": "p1074_35556036546182_K009",
+      "file": "complaints/p1074_35556036546182_C016_milwaukee_county_board.json",
+      "order": 16,
+      "entity": "Milwaukee County Board",
+      "kind": "government",
+      "role": "County governing body",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "20"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C017",
+      "complainer_id": "p1074_35556036546182_K009",
+      "file": "complaints/p1074_35556036546182_C017_milwaukee_county_board.json",
+      "order": 17,
+      "entity": "Milwaukee County Board",
+      "kind": "government",
+      "role": "County governing body",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "20"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C018",
+      "complainer_id": "p1074_35556036546182_K009",
+      "file": "complaints/p1074_35556036546182_C018_milwaukee_county_board.json",
+      "order": 18,
+      "entity": "Milwaukee County Board",
+      "kind": "government",
+      "role": "County governing body",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "20"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C019",
+      "complainer_id": "p1074_35556036546182_K002",
+      "file": "complaints/p1074_35556036546182_C019_city_of_milwaukee_common_council.json",
+      "order": 19,
+      "entity": "City of Milwaukee Common Council",
+      "kind": "government",
+      "role": "Municipal legislative body",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "21"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C020",
+      "complainer_id": "p1074_35556036546182_K002",
+      "file": "complaints/p1074_35556036546182_C020_city_of_milwaukee_common_council.json",
+      "order": 20,
+      "entity": "City of Milwaukee Common Council",
+      "kind": "government",
+      "role": "Municipal legislative body",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "21"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C021",
+      "complainer_id": "p1074_35556036546182_K004",
+      "file": "complaints/p1074_35556036546182_C021_department_of_local_affairs_and_developm.json",
+      "order": 21,
+      "entity": "Department of Local Affairs and Development",
+      "kind": "agency",
+      "role": "Wisconsin state agency",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "21"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C022",
+      "complainer_id": "p1074_35556036546182_K021",
+      "file": "complaints/p1074_35556036546182_C022_wisconsin_highway_commission.json",
+      "order": 22,
+      "entity": "Wisconsin Highway Commission",
+      "kind": "agency",
+      "role": "State highway governing body",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "21"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C023",
+      "complainer_id": "p1074_35556036546182_K021",
+      "file": "complaints/p1074_35556036546182_C023_wisconsin_highway_commission.json",
+      "order": 23,
+      "entity": "Wisconsin Highway Commission",
+      "kind": "agency",
+      "role": "State highway governing body",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "21"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C024",
+      "complainer_id": "p1074_35556036546182_K010",
+      "file": "complaints/p1074_35556036546182_C024_milwaukee_county_expressway_and_transpor.json",
+      "order": 24,
+      "entity": "Milwaukee County Expressway and Transportation Commission",
+      "kind": "agency",
+      "role": "County transportation agency, co-proposer of Airport Spur",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "22"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C025",
+      "complainer_id": "p1074_35556036546182_K008",
+      "file": "complaints/p1074_35556036546182_C025_governor_of_wisconsin.json",
+      "order": 25,
+      "entity": "Governor of Wisconsin",
+      "kind": "official",
+      "role": "State governor",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "28"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R001"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C026",
+      "complainer_id": "p1074_35556036546182_K012",
+      "file": "complaints/p1074_35556036546182_C026_secretary_of_the_u_s_department_of_trans.json",
+      "order": 26,
+      "entity": "Secretary of the U.S. Department of Transportation",
+      "kind": "official",
+      "role": "Federal cabinet secretary",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "30"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C027",
+      "complainer_id": "p1074_35556036546182_K015",
+      "file": "complaints/p1074_35556036546182_C027_state_highway_commission.json",
+      "order": 27,
+      "entity": "State Highway Commission",
+      "kind": "agency",
+      "role": "Wisconsin state highway governing body",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "32"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C028",
+      "complainer_id": "p1074_35556036546182_K015",
+      "file": "complaints/p1074_35556036546182_C028_state_highway_commission.json",
+      "order": 28,
+      "entity": "State Highway Commission",
+      "kind": "agency",
+      "role": "Wisconsin state highway governing body",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "32"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C029",
+      "complainer_id": "p1074_35556036546182_K003",
+      "file": "complaints/p1074_35556036546182_C029_common_council_for_the_city_of_milwaukee.json",
+      "order": 29,
+      "entity": "Common Council for the City of Milwaukee",
+      "kind": "government",
+      "role": "Municipal legislative body",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "33"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C030",
+      "complainer_id": "p1074_35556036546182_K014",
+      "file": "complaints/p1074_35556036546182_C030_southeastern_wisconsin_regional_planning.json",
+      "order": 30,
+      "entity": "Southeastern Wisconsin Regional Planning Commission (SEWRPC)",
+      "kind": "agency",
+      "role": "Regional planning commission, commenter",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "35"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C031",
+      "complainer_id": "p1074_35556036546182_K014",
+      "file": "complaints/p1074_35556036546182_C031_southeastern_wisconsin_regional_planning.json",
+      "order": 31,
+      "entity": "Southeastern Wisconsin Regional Planning Commission (SEWRPC)",
+      "kind": "agency",
+      "role": "Regional planning commission, commenter",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "38"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C032",
+      "complainer_id": "p1074_35556036546182_K013",
+      "file": "complaints/p1074_35556036546182_C032_sewrpc_s_technical_advisory_committee.json",
+      "order": 32,
+      "entity": "SEWRPC's Technical Advisory Committee",
+      "kind": "agency",
+      "role": "Technical advisory body of SEWRPC",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "47"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C033",
+      "complainer_id": "p1074_35556036546182_K010",
+      "file": "complaints/p1074_35556036546182_C033_milwaukee_county_expressway_and_transpor.json",
+      "order": 33,
+      "entity": "Milwaukee County Expressway and Transportation Commission",
+      "kind": "agency",
+      "role": "County transportation agency, co-proposer of Airport Spur",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "49"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C034",
+      "complainer_id": "p1074_35556036546182_K005",
+      "file": "complaints/p1074_35556036546182_C034_department_of_natural_resources.json",
+      "order": 34,
+      "entity": "Department of Natural Resources",
+      "kind": "agency",
+      "role": "State environmental review agency, indirect source reviewing agency",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "51"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C035",
+      "complainer_id": "p1074_35556036546182_K005",
+      "file": "complaints/p1074_35556036546182_C035_department_of_natural_resources.json",
+      "order": 35,
+      "entity": "Department of Natural Resources",
+      "kind": "agency",
+      "role": "State environmental review agency, indirect source reviewing agency",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "53"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C036",
+      "complainer_id": "p1074_35556036546182_K029",
+      "file": "complaints/p1074_35556036546182_C036_milwaukee_suburban_transport_corporation.json",
+      "order": 36,
+      "entity": "Milwaukee & Suburban Transport Corporation",
+      "kind": "organization",
+      "role": "private mass transit operator serving Milwaukee Metropolitan Area",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "72"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C037",
+      "complainer_id": "p1074_35556036546182_K028",
+      "file": "complaints/p1074_35556036546182_C037_local_governmental_units.json",
+      "order": 37,
+      "entity": "local governmental units",
+      "kind": "government",
+      "role": "local governments supporting Grange Avenue upgrade proposal",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "85"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C038",
+      "complainer_id": "p1074_35556036546182_K024",
+      "file": "complaints/p1074_35556036546182_C038_airport_officials.json",
+      "order": 38,
+      "entity": "Airport Officials",
+      "kind": "official",
+      "role": "General Mitchell Field airport officials involved in Corridor #5 coordination",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "87"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C039",
+      "complainer_id": "p1074_35556036546182_K024",
+      "file": "complaints/p1074_35556036546182_C039_airport_officials.json",
+      "order": 39,
+      "entity": "Airport Officials",
+      "kind": "official",
+      "role": "General Mitchell Field airport officials involved in Corridor #5 coordination",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "89"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C040",
+      "complainer_id": "p1074_35556036546182_K027",
+      "file": "complaints/p1074_35556036546182_C040_federal_aviation_administration.json",
+      "order": 40,
+      "entity": "Federal Aviation Administration",
+      "kind": "agency",
+      "role": "federal aviation regulator reviewing corridor alignments",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "89"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R002"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C041",
+      "complainer_id": "p1074_35556036546182_K024",
+      "file": "complaints/p1074_35556036546182_C041_airport_officials.json",
+      "order": 41,
+      "entity": "Airport Officials",
+      "kind": "official",
+      "role": "General Mitchell Field airport officials involved in Corridor #5 coordination",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "91"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C042",
+      "complainer_id": "p1074_35556036546182_K024",
+      "file": "complaints/p1074_35556036546182_C042_airport_officials.json",
+      "order": 42,
+      "entity": "Airport Officials",
+      "kind": "official",
+      "role": "General Mitchell Field airport officials involved in Corridor #5 coordination",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "93"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C043",
+      "complainer_id": "p1074_35556036546182_K026",
+      "file": "complaints/p1074_35556036546182_C043_division_of_highways.json",
+      "order": 43,
+      "entity": "Division of Highways",
+      "kind": "agency",
+      "role": "state highway agency involved in corridor coordination",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "93"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C044",
+      "complainer_id": "p1074_35556036546182_K030",
+      "file": "complaints/p1074_35556036546182_C044_milwaukee_county.json",
+      "order": 44,
+      "entity": "Milwaukee County",
+      "kind": "government",
+      "role": "county government, project proponent and airport operator",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "93"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C045",
+      "complainer_id": "p1074_35556036546182_K025",
+      "file": "complaints/p1074_35556036546182_C045_city_of_milwaukee.json",
+      "order": 45,
+      "entity": "City of Milwaukee",
+      "kind": "government",
+      "role": "local government, land bank operator and planning participant",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "97"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C046",
+      "complainer_id": "p1074_35556036546182_K027",
+      "file": "complaints/p1074_35556036546182_C046_federal_aviation_administration.json",
+      "order": 46,
+      "entity": "Federal Aviation Administration",
+      "kind": "agency",
+      "role": "federal aviation regulator reviewing corridor alignments",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "101"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R003"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C047",
+      "complainer_id": "p1074_35556036546182_K027",
+      "file": "complaints/p1074_35556036546182_C047_federal_aviation_administration.json",
+      "order": 47,
+      "entity": "Federal Aviation Administration",
+      "kind": "agency",
+      "role": "federal aviation regulator reviewing corridor alignments",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "101"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C048",
+      "complainer_id": "p1074_35556036546182_K035",
+      "file": "complaints/p1074_35556036546182_C048_milwaukee_common_council.json",
+      "order": 48,
+      "entity": "Milwaukee Common Council",
+      "kind": "government",
+      "role": "city legislative body",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "101"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C049",
+      "complainer_id": "p1074_35556036546182_K036",
+      "file": "complaints/p1074_35556036546182_C049_milwaukee_county_s_park_commission.json",
+      "order": 49,
+      "entity": "Milwaukee County's Park Commission",
+      "kind": "agency",
+      "role": "county parks authority",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "101"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C050",
+      "complainer_id": "p1074_35556036546182_K038",
+      "file": "complaints/p1074_35556036546182_C050_milwaukee_school_board.json",
+      "order": 50,
+      "entity": "Milwaukee School Board",
+      "kind": "agency",
+      "role": "public school governing body",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "101"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C051",
+      "complainer_id": "p1074_35556036546182_K038",
+      "file": "complaints/p1074_35556036546182_C051_milwaukee_school_board.json",
+      "order": 51,
+      "entity": "Milwaukee School Board",
+      "kind": "agency",
+      "role": "public school governing body",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "101"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C052",
+      "complainer_id": "p1074_35556036546182_K040",
+      "file": "complaints/p1074_35556036546182_C052_sewrpc.json",
+      "order": 52,
+      "entity": "SEWRPC",
+      "kind": "agency",
+      "role": "regional planning commission",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "101"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C053",
+      "complainer_id": "p1074_35556036546182_K040",
+      "file": "complaints/p1074_35556036546182_C053_sewrpc.json",
+      "order": 53,
+      "entity": "SEWRPC",
+      "kind": "agency",
+      "role": "regional planning commission",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "101"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C054",
+      "complainer_id": "p1074_35556036546182_K037",
+      "file": "complaints/p1074_35556036546182_C054_milwaukee_public_schools.json",
+      "order": 54,
+      "entity": "Milwaukee Public Schools",
+      "kind": "agency",
+      "role": "public school system",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "102"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C055",
+      "complainer_id": "p1074_35556036546182_K039",
+      "file": "complaints/p1074_35556036546182_C055_several_elected_officials.json",
+      "order": 55,
+      "entity": "Several elected officials",
+      "kind": "other",
+      "role": "elected officials (unnamed)",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "102"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R004"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C056",
+      "complainer_id": "p1074_35556036546182_K030",
+      "file": "complaints/p1074_35556036546182_C056_milwaukee_county.json",
+      "order": 56,
+      "entity": "Milwaukee County",
+      "kind": "government",
+      "role": "county government, project proponent and airport operator",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "103"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C057",
+      "complainer_id": "p1074_35556036546182_K032",
+      "file": "complaints/p1074_35556036546182_C057_directors_of_the_state_and_milwaukee_cou.json",
+      "order": 57,
+      "entity": "directors of the State and Milwaukee County Historical Societies",
+      "kind": "official",
+      "role": "historical society directors",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "103"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C058",
+      "complainer_id": "p1074_35556036546182_K031",
+      "file": "complaints/p1074_35556036546182_C058_american_automobile_association.json",
+      "order": 58,
+      "entity": "American Automobile Association",
+      "kind": "organization",
+      "role": "motoring advocacy organization",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "107"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C059",
+      "complainer_id": "p1074_35556036546182_K031",
+      "file": "complaints/p1074_35556036546182_C059_american_automobile_association.json",
+      "order": 59,
+      "entity": "American Automobile Association",
+      "kind": "organization",
+      "role": "motoring advocacy organization",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "107"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C060",
+      "complainer_id": "p1074_35556036546182_K034",
+      "file": "complaints/p1074_35556036546182_C060_milwaukee_air_cargo_association.json",
+      "order": 60,
+      "entity": "Milwaukee Air Cargo Association",
+      "kind": "organization",
+      "role": "air cargo industry association",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "107"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C061",
+      "complainer_id": "p1074_35556036546182_K026",
+      "file": "complaints/p1074_35556036546182_C061_division_of_highways.json",
+      "order": 61,
+      "entity": "Division of Highways",
+      "kind": "agency",
+      "role": "state highway agency involved in corridor coordination",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "109"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C062",
+      "complainer_id": "p1074_35556036546182_K037",
+      "file": "complaints/p1074_35556036546182_C062_milwaukee_public_schools.json",
+      "order": 62,
+      "entity": "Milwaukee Public Schools",
+      "kind": "agency",
+      "role": "public school system",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "112"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C063",
+      "complainer_id": "p1074_35556036546182_K042",
+      "file": "complaints/p1074_35556036546182_C063_wisconsin_department_of_transportation.json",
+      "order": 63,
+      "entity": "Wisconsin Department of Transportation",
+      "kind": "agency",
+      "role": "state transportation agency",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "118"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C064",
+      "complainer_id": "p1074_35556036546182_K033",
+      "file": "complaints/p1074_35556036546182_C064_dnr.json",
+      "order": 64,
+      "entity": "DNR",
+      "kind": "agency",
+      "role": "Wisconsin Department of Natural Resources / Indirect Source Review agency",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "130"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C065",
+      "complainer_id": "p1074_35556036546182_K043",
+      "file": "complaints/p1074_35556036546182_C065_wisconsin_state_historical_society.json",
+      "order": 65,
+      "entity": "Wisconsin State Historical Society",
+      "kind": "organization",
+      "role": "state historical preservation body",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "143"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C066",
+      "complainer_id": "p1074_35556036546182_K046",
+      "file": "complaints/p1074_35556036546182_C066_e_w_anderson.json",
+      "order": 66,
+      "entity": "E. W. Anderson",
+      "kind": "official",
+      "role": "Federal Aviation Administration Minneapolis Area Office",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "154"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C067",
+      "complainer_id": "p1074_35556036546182_K056",
+      "file": "complaints/p1074_35556036546182_C067_j_m_hutsteiner.json",
+      "order": 67,
+      "entity": "J. M. Hutsteiner",
+      "kind": "official",
+      "role": "Milwaukee County Supervisor and Chairman of the Highways Committee for Milwaukee County",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "testimony",
+      "evidence_pages": [
+        "154"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C068",
+      "complainer_id": "p1074_35556036546182_K051",
+      "file": "complaints/p1074_35556036546182_C068_h_b_wildschut.json",
+      "order": 68,
+      "entity": "H. B. Wildschut",
+      "kind": "official",
+      "role": "Milwaukee County Highway Commissioner and Director of Public Works",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "155"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C069",
+      "complainer_id": "p1074_35556036546182_K064",
+      "file": "complaints/p1074_35556036546182_C069_r_s_michael.json",
+      "order": 69,
+      "entity": "R. S. Michael",
+      "kind": "official",
+      "role": "Airport Director for Milwaukee County",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "155"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C070",
+      "complainer_id": "p1074_35556036546182_K053",
+      "file": "complaints/p1074_35556036546182_C070_h_mccullough.json",
+      "order": 70,
+      "entity": "H. McCullough",
+      "kind": "official",
+      "role": "City Engineer of the City of Milwaukee",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "156"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C071",
+      "complainer_id": "p1074_35556036546182_K054",
+      "file": "complaints/p1074_35556036546182_C071_howard_gregg.json",
+      "order": 71,
+      "entity": "Howard Gregg",
+      "kind": "official",
+      "role": "General Manager of Milwaukee County's Park Commission",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "156"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C072",
+      "complainer_id": "p1074_35556036546182_K065",
+      "file": "complaints/p1074_35556036546182_C072_r_w_brannan.json",
+      "order": 72,
+      "entity": "R. W. Brannan",
+      "kind": "official",
+      "role": "Milwaukee County Transportation Director",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "156"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C073",
+      "complainer_id": "p1074_35556036546182_K045",
+      "file": "complaints/p1074_35556036546182_C073_b_o_pinney.json",
+      "order": 73,
+      "entity": "B. O. Pinney",
+      "kind": "official",
+      "role": "Vice Chairman of State Highway Commission",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "157"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R005"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C074",
+      "complainer_id": "p1074_35556036546182_K052",
+      "file": "complaints/p1074_35556036546182_C074_h_e_clinkenbeard.json",
+      "order": 74,
+      "entity": "H. E. Clinkenbeard",
+      "kind": "official",
+      "role": "Assistant Director of the Southeastern Regional Planning Commission",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "testimony",
+      "evidence_pages": [
+        "157"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C075",
+      "complainer_id": "p1074_35556036546182_K067",
+      "file": "complaints/p1074_35556036546182_C075_w_f_steuber.json",
+      "order": 75,
+      "entity": "W. F. Steuber",
+      "kind": "official",
+      "role": "Assistant State Highway Engineer",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "157"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C076",
+      "complainer_id": "p1074_35556036546182_K070",
+      "file": "complaints/p1074_35556036546182_C076_w_weber.json",
+      "order": 76,
+      "entity": "W. Weber",
+      "kind": "official",
+      "role": "Spokesman for Milwaukee School Board",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "157"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C077",
+      "complainer_id": "p1074_35556036546182_K055",
+      "file": "complaints/p1074_35556036546182_C077_j_drutuwski.json",
+      "order": 77,
+      "entity": "J. Drutuwski",
+      "kind": "individual",
+      "role": "Private Citizen",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "158"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R006"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C078",
+      "complainer_id": "p1074_35556036546182_K068",
+      "file": "complaints/p1074_35556036546182_C078_w_f_szczepanski.json",
+      "order": 78,
+      "entity": "W. F. Szczepanski",
+      "kind": "individual",
+      "role": "Private Citizen",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "158"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R007"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C079",
+      "complainer_id": "p1074_35556036546182_K069",
+      "file": "complaints/p1074_35556036546182_C079_w_l_marvin.json",
+      "order": 79,
+      "entity": "W. L. Marvin",
+      "kind": "official",
+      "role": "Traffic Engineering Director, American Automobile Association",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "158"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C080",
+      "complainer_id": "p1074_35556036546182_K057",
+      "file": "complaints/p1074_35556036546182_C080_james_morton_smith.json",
+      "order": 80,
+      "entity": "James Morton Smith",
+      "kind": "official",
+      "role": "Director, State Historical Society of Wisconsin",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "160"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R008"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C081",
+      "complainer_id": "p1074_35556036546182_K057",
+      "file": "complaints/p1074_35556036546182_C081_james_morton_smith.json",
+      "order": 81,
+      "entity": "James Morton Smith",
+      "kind": "official",
+      "role": "Director, State Historical Society of Wisconsin",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "160"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R009"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C082",
+      "complainer_id": "p1074_35556036546182_K061",
+      "file": "complaints/p1074_35556036546182_C082_milwaukee_county_historical_society.json",
+      "order": 82,
+      "entity": "Milwaukee County Historical Society",
+      "kind": "organization",
+      "role": "Historical society, commenter",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "161"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R010"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C083",
+      "complainer_id": "p1074_35556036546182_K051",
+      "file": "complaints/p1074_35556036546182_C083_h_b_wildschut.json",
+      "order": 83,
+      "entity": "H. B. Wildschut",
+      "kind": "official",
+      "role": "Milwaukee County Highway Commissioner and Director of Public Works",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "163-164"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R011"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C084",
+      "complainer_id": "p1074_35556036546182_K065",
+      "file": "complaints/p1074_35556036546182_C084_r_w_brannan.json",
+      "order": 84,
+      "entity": "R. W. Brannan",
+      "kind": "official",
+      "role": "Milwaukee County Transportation Director",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "163-164"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R012"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C085",
+      "complainer_id": "p1074_35556036546182_K063",
+      "file": "complaints/p1074_35556036546182_C085_p_s_myers.json",
+      "order": 85,
+      "entity": "P. S. Myers",
+      "kind": "individual",
+      "role": "Professor Mechanical Engineering, University of Wisconsin",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "164"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R013"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C086",
+      "complainer_id": "p1074_35556036546182_K058",
+      "file": "complaints/p1074_35556036546182_C086_john_l_doyne.json",
+      "order": 86,
+      "entity": "John L. Doyne",
+      "kind": "official",
+      "role": "County Executive, Milwaukee County",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "166"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R014"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C087",
+      "complainer_id": "p1074_35556036546182_K062",
+      "file": "complaints/p1074_35556036546182_C087_milwaukee_county_park_commission.json",
+      "order": 87,
+      "entity": "Milwaukee County Park Commission",
+      "kind": "organization",
+      "role": "County park commission, commenter",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "168"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R015"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C088",
+      "complainer_id": "p1074_35556036546182_K060",
+      "file": "complaints/p1074_35556036546182_C088_martin_convisser.json",
+      "order": 88,
+      "entity": "Martin Convisser",
+      "kind": "official",
+      "role": "Director, Office of Environmental Affairs, Department of Transportation",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "169"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R016"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C089",
+      "complainer_id": "p1074_35556036546182_K048",
+      "file": "complaints/p1074_35556036546182_C089_federal_aviation_administration_minneapo.json",
+      "order": 89,
+      "entity": "Federal Aviation Administration, Minneapolis",
+      "kind": "agency",
+      "role": "Federal agency, commenter",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "170"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R017"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C090",
+      "complainer_id": "p1074_35556036546182_K059",
+      "file": "complaints/p1074_35556036546182_C090_john_r_plewa.json",
+      "order": 90,
+      "entity": "John R. Plewa",
+      "kind": "official",
+      "role": "State Representative, 20th District, Milwaukee County",
+      "stance": "opposed",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "172"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R018"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C091",
+      "complainer_id": "p1074_35556036546182_K066",
+      "file": "complaints/p1074_35556036546182_C091_u_s_department_of_interior.json",
+      "order": 91,
+      "entity": "U.S. Department of Interior",
+      "kind": "agency",
+      "role": "Federal agency, commenter",
+      "stance": "opposed",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "174"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R019"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C092",
+      "complainer_id": "p1074_35556036546182_K049",
+      "file": "complaints/p1074_35556036546182_C092_fred_r_rehm.json",
+      "order": 92,
+      "entity": "Fred R. Rehm",
+      "kind": "official",
+      "role": "Director, Milwaukee County Department of Air Pollution Control",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "178"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R020"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C093",
+      "complainer_id": "p1074_35556036546182_K047",
+      "file": "complaints/p1074_35556036546182_C093_environmental_protection_agency_region_v.json",
+      "order": 93,
+      "entity": "Environmental Protection Agency, Region V",
+      "kind": "agency",
+      "role": "Federal environmental agency, commenter",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "188"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R021"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C094",
+      "complainer_id": "p1074_35556036546182_K044",
+      "file": "complaints/p1074_35556036546182_C094_attorney_general_warren.json",
+      "order": 94,
+      "entity": "Attorney General Warren",
+      "kind": "official",
+      "role": "Wisconsin Attorney General",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "191"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R022"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C095",
+      "complainer_id": "p1074_35556036546182_K050",
+      "file": "complaints/p1074_35556036546182_C095_governor_lucey.json",
+      "order": 95,
+      "entity": "Governor Lucey",
+      "kind": "official",
+      "role": "Governor of Wisconsin",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "192"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R023"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C096",
+      "complainer_id": "p1074_35556036546182_K086",
+      "file": "complaints/p1074_35556036546182_C096_i_c_herried.json",
+      "order": 96,
+      "entity": "I.C. Herried",
+      "kind": "official",
+      "role": "Chief of Facilities Development, Wisconsin Division of Highways",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "193"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R024"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C097",
+      "complainer_id": "p1074_35556036546182_K088",
+      "file": "complaints/p1074_35556036546182_C097_john_plewa.json",
+      "order": 97,
+      "entity": "John Plewa",
+      "kind": "official",
+      "role": "State Representative, 20th Assembly District",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "193"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R025"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C098",
+      "complainer_id": "p1074_35556036546182_K091",
+      "file": "complaints/p1074_35556036546182_C098_kurt_a_frank.json",
+      "order": 98,
+      "entity": "Kurt A. Frank",
+      "kind": "official",
+      "role": "State Senator, 7th Senatorial District",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "198"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R026"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C099",
+      "complainer_id": "p1074_35556036546182_K074",
+      "file": "complaints/p1074_35556036546182_C099_c_d_besadny.json",
+      "order": 99,
+      "entity": "C. D. Besadny",
+      "kind": "official",
+      "role": "Director, Bureau of Environmental Impact, Wisconsin DNR",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "203"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R027"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C100",
+      "complainer_id": "p1074_35556036546182_K105",
+      "file": "complaints/p1074_35556036546182_C100_wisconsin_department_of_natural_resource.json",
+      "order": 100,
+      "entity": "Wisconsin Department of Natural Resources",
+      "kind": "agency",
+      "role": "state environmental agency, commenter on Draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "203"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R028"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C101",
+      "complainer_id": "p1074_35556036546182_K105",
+      "file": "complaints/p1074_35556036546182_C101_wisconsin_department_of_natural_resource.json",
+      "order": 101,
+      "entity": "Wisconsin Department of Natural Resources",
+      "kind": "agency",
+      "role": "state environmental agency, commenter on Draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "203-213"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C102",
+      "complainer_id": "p1074_35556036546182_K073",
+      "file": "complaints/p1074_35556036546182_C102_brooks_becker.json",
+      "order": 102,
+      "entity": "Brooks Becker",
+      "kind": "official",
+      "role": "Director, Bureau of Air Pollution Control and Solid Waste Management, Wisconsin DNR",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "205",
+        "215"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R029"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C103",
+      "complainer_id": "p1074_35556036546182_K096",
+      "file": "complaints/p1074_35556036546182_C103_r_w_park.json",
+      "order": 103,
+      "entity": "R. W. Park",
+      "kind": "official",
+      "role": "Staff, Wisconsin Department of Natural Resources, Air Pollution Control Section",
+      "stance": "opposed",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "205"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C104",
+      "complainer_id": "p1074_35556036546182_K097",
+      "file": "complaints/p1074_35556036546182_C104_richard_a_kaiser.json",
+      "order": 104,
+      "entity": "Richard A. Kaiser",
+      "kind": "official",
+      "role": "Acting Area Director, HUD Milwaukee Area Office",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "letter",
+      "evidence_pages": [
+        "218"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R030"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C105",
+      "complainer_id": "p1074_35556036546182_K102",
+      "file": "complaints/p1074_35556036546182_C105_roy_prysila.json",
+      "order": 105,
+      "entity": "Roy Prysila",
+      "kind": "official",
+      "role": "Environmental Clearance Officer, Wisconsin Area Office, HUD Region V",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "218"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R031"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C106",
+      "complainer_id": "p1074_35556036546182_K079",
+      "file": "complaints/p1074_35556036546182_C106_edgar_p_vie.json",
+      "order": 106,
+      "entity": "Edgar P. Vie",
+      "kind": "official",
+      "role": "Chief of the Airport District Office, Federal Aviation Administration, Minneapolis",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "219"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C107",
+      "complainer_id": "p1074_35556036546182_K098",
+      "file": "complaints/p1074_35556036546182_C107_robert_a_anderson.json",
+      "order": 107,
+      "entity": "Robert A. Anderson",
+      "kind": "official",
+      "role": "Alderman, City of Milwaukee",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "sectional",
+      "evidence_pages": [
+        "219"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C108",
+      "complainer_id": "p1074_35556036546182_K073",
+      "file": "complaints/p1074_35556036546182_C108_brooks_becker.json",
+      "order": 108,
+      "entity": "Brooks Becker",
+      "kind": "official",
+      "role": "Director, Bureau of Air Pollution Control and Solid Waste Management, Wisconsin DNR",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "220"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R032"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C109",
+      "complainer_id": "p1074_35556036546182_K072",
+      "file": "complaints/p1074_35556036546182_C109_bob_huber.json",
+      "order": 109,
+      "entity": "Bob Huber",
+      "kind": "official",
+      "role": "Chairman, State Highway Commission",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "222"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R033"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C110",
+      "complainer_id": "p1074_35556036546182_K085",
+      "file": "complaints/p1074_35556036546182_C110_harvey_shebesta.json",
+      "order": 110,
+      "entity": "Harvey Shebesta",
+      "kind": "official",
+      "role": "District Engineer, Milwaukee Metropolitan District, Division of Highways",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "testimony",
+      "evidence_pages": [
+        "222"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R034"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C111",
+      "complainer_id": "p1074_35556036546182_K076",
+      "file": "complaints/p1074_35556036546182_C111_clay_harley.json",
+      "order": 111,
+      "entity": "Clay Harley",
+      "kind": "official",
+      "role": "District Chief Freeway Engineer, Milwaukee Metropolitan District, Division of Highways",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "223"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R035"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C112",
+      "complainer_id": "p1074_35556036546182_K094",
+      "file": "complaints/p1074_35556036546182_C112_peter_daugherty.json",
+      "order": 112,
+      "entity": "Peter Daugherty",
+      "kind": "individual",
+      "role": "Private Citizen",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "223"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R036"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C113",
+      "complainer_id": "p1074_35556036546182_K100",
+      "file": "complaints/p1074_35556036546182_C113_robert_vanselow.json",
+      "order": 113,
+      "entity": "Robert Vanselow",
+      "kind": "individual",
+      "role": "Private Citizen",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "testimony",
+      "evidence_pages": [
+        "223"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R037"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C114",
+      "complainer_id": "p1074_35556036546182_K089",
+      "file": "complaints/p1074_35556036546182_C114_joseph_f_sanek.json",
+      "order": 114,
+      "entity": "Joseph F. Sanek",
+      "kind": "official",
+      "role": "Mitchell Field Airport Director",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "226"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C115",
+      "complainer_id": "p1074_35556036546182_K090",
+      "file": "complaints/p1074_35556036546182_C115_keith_graham.json",
+      "order": 115,
+      "entity": "Keith Graham",
+      "kind": "official",
+      "role": "Assistant Director, Southeastern Wisconsin Regional Planning Commission",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "226"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R038"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C116",
+      "complainer_id": "p1074_35556036546182_K093",
+      "file": "complaints/p1074_35556036546182_C116_marvin_rusch.json",
+      "order": 116,
+      "entity": "Marvin Rusch",
+      "kind": "individual",
+      "role": "Representative, American Automobile Association",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "226"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C117",
+      "complainer_id": "p1074_35556036546182_K080",
+      "file": "complaints/p1074_35556036546182_C117_edward_zervic.json",
+      "order": 117,
+      "entity": "Edward Zervic",
+      "kind": "individual",
+      "role": "Private Citizen",
+      "stance": "opposed",
+      "stance_confidence": "high",
+      "form": "testimony",
+      "evidence_pages": [
+        "227"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R039"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C118",
+      "complainer_id": "p1074_35556036546182_K083",
+      "file": "complaints/p1074_35556036546182_C118_g_phillip_beitz.json",
+      "order": 118,
+      "entity": "G. Phillip Beitz",
+      "kind": "individual",
+      "role": "Representative, Milwaukee Air Cargo Association",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "229"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R040"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C119",
+      "complainer_id": "p1074_35556036546182_K099",
+      "file": "complaints/p1074_35556036546182_C119_robert_kernler.json",
+      "order": 119,
+      "entity": "Robert Kernler",
+      "kind": "individual",
+      "role": "Private Citizen",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "229"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R041"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C120",
+      "complainer_id": "p1074_35556036546182_K078",
+      "file": "complaints/p1074_35556036546182_C120_e_g_plautz.json",
+      "order": 120,
+      "entity": "E. G. Plautz",
+      "kind": "individual",
+      "role": "Private Citizen",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "230"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R042"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C121",
+      "complainer_id": "p1074_35556036546182_K095",
+      "file": "complaints/p1074_35556036546182_C121_phillip_purpero.json",
+      "order": 121,
+      "entity": "Phillip Purpero",
+      "kind": "individual",
+      "role": "Private Citizen",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "testimony",
+      "evidence_pages": [
+        "231"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R043"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C122",
+      "complainer_id": "p1074_35556036546182_K084",
+      "file": "complaints/p1074_35556036546182_C122_gordon_a_king.json",
+      "order": 122,
+      "entity": "Gordon A. King",
+      "kind": "official",
+      "role": "Chairman, Milwaukee County Expressway and Transportation Commission",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "232"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C123",
+      "complainer_id": "p1074_35556036546182_K101",
+      "file": "complaints/p1074_35556036546182_C123_roy_gardetto.json",
+      "order": 123,
+      "entity": "Roy Gardetto",
+      "kind": "individual",
+      "role": "Representative, Milwaukee County Expressway and Transportation Commission",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "232"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C124",
+      "complainer_id": "p1074_35556036546182_K104",
+      "file": "complaints/p1074_35556036546182_C124_walter_f_szczepanski.json",
+      "order": 124,
+      "entity": "Walter F. Szczepanski",
+      "kind": "individual",
+      "role": "Private Citizen",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "232"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R044"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C125",
+      "complainer_id": "p1074_35556036546182_K077",
+      "file": "complaints/p1074_35556036546182_C125_corine_kuras.json",
+      "order": 125,
+      "entity": "Corine Kuras",
+      "kind": "individual",
+      "role": "Private Citizen",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "testimony",
+      "evidence_pages": [
+        "233"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R045"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C126",
+      "complainer_id": "p1074_35556036546182_K092",
+      "file": "complaints/p1074_35556036546182_C126_marcey_jaskulski.json",
+      "order": 126,
+      "entity": "Marcey Jaskulski",
+      "kind": "individual",
+      "role": "Representative, Southeastern Wisconsin Coalition for Clean Air",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "233"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R046"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C127",
+      "complainer_id": "p1074_35556036546182_K103",
+      "file": "complaints/p1074_35556036546182_C127_southeastern_wisconsin_coalition_for_cle.json",
+      "order": 127,
+      "entity": "Southeastern Wisconsin Coalition for Clean Air",
+      "kind": "organization",
+      "role": "commenter at public hearing",
+      "stance": "opposed",
+      "stance_confidence": "high",
+      "form": "testimony",
+      "evidence_pages": [
+        "233"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R047"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C128",
+      "complainer_id": "p1074_35556036546182_K071",
+      "file": "complaints/p1074_35556036546182_C128_albert_schultz.json",
+      "order": 128,
+      "entity": "Albert Schultz",
+      "kind": "individual",
+      "role": "Representative, Milwaukee School Board",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "237"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R048"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C129",
+      "complainer_id": "p1074_35556036546182_K121",
+      "file": "complaints/p1074_35556036546182_C129_milwaukee_county_expressway_and_transpor.json",
+      "order": 129,
+      "entity": "Milwaukee County Expressway and Transporation Commission",
+      "kind": "agency",
+      "role": "County transportation agency, study author",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "testimony",
+      "evidence_pages": [
+        "238"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R049"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C130",
+      "complainer_id": "p1074_35556036546182_K082",
+      "file": "complaints/p1074_35556036546182_C130_francis_biernat.json",
+      "order": 130,
+      "entity": "Francis Biernat",
+      "kind": "official",
+      "role": "Supervisor, Milwaukee County",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "testimony",
+      "evidence_pages": [
+        "241"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R050"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C131",
+      "complainer_id": "p1074_35556036546182_K121",
+      "file": "complaints/p1074_35556036546182_C131_milwaukee_county_expressway_and_transpor.json",
+      "order": 131,
+      "entity": "Milwaukee County Expressway and Transporation Commission",
+      "kind": "agency",
+      "role": "County transportation agency, study author",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "241"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C132",
+      "complainer_id": "p1074_35556036546182_K107",
+      "file": "complaints/p1074_35556036546182_C132_benedict_kosnicki.json",
+      "order": 132,
+      "entity": "Benedict Kosnicki",
+      "kind": "individual",
+      "role": "Private Citizen, commenter",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "242"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R051"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C133",
+      "complainer_id": "p1074_35556036546182_K122",
+      "file": "complaints/p1074_35556036546182_C133_mr_and_mrs_adolph_heuer.json",
+      "order": 133,
+      "entity": "Mr. and Mrs. Adolph Heuer",
+      "kind": "individual",
+      "role": "Private Citizens, commenters",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "242"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R052"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C134",
+      "complainer_id": "p1074_35556036546182_K130",
+      "file": "complaints/p1074_35556036546182_C134_shirley_perez.json",
+      "order": 134,
+      "entity": "Shirley Perez",
+      "kind": "individual",
+      "role": "Private Citizen, commenter",
+      "stance": "opposed",
+      "stance_confidence": "high",
+      "form": "testimony",
+      "evidence_pages": [
+        "242"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R053"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C135",
+      "complainer_id": "p1074_35556036546182_K111",
+      "file": "complaints/p1074_35556036546182_C135_doreen_marcelini.json",
+      "order": 135,
+      "entity": "Doreen Marcelini",
+      "kind": "individual",
+      "role": "Private Citizen, commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "243"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R054"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C136",
+      "complainer_id": "p1074_35556036546182_K118",
+      "file": "complaints/p1074_35556036546182_C136_garabed_marcarian.json",
+      "order": 136,
+      "entity": "Garabed Marcarian",
+      "kind": "individual",
+      "role": "Private Citizen, commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "243"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R055"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C137",
+      "complainer_id": "p1074_35556036546182_K118",
+      "file": "complaints/p1074_35556036546182_C137_garabed_marcarian.json",
+      "order": 137,
+      "entity": "Garabed Marcarian",
+      "kind": "individual",
+      "role": "Private Citizen, commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "243"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R056"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C138",
+      "complainer_id": "p1074_35556036546182_K126",
+      "file": "complaints/p1074_35556036546182_C138_mrs_bernard_schettle.json",
+      "order": 138,
+      "entity": "Mrs. Bernard Schettle",
+      "kind": "individual",
+      "role": "Private Citizen, commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "243"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R057"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C139",
+      "complainer_id": "p1074_35556036546182_K127",
+      "file": "complaints/p1074_35556036546182_C139_professor_w_wayne_siesennop.json",
+      "order": 139,
+      "entity": "Professor W. Wayne Siesennop",
+      "kind": "individual",
+      "role": "Assistant Professor of Mechanical Engineering, UWM, commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "testimony",
+      "evidence_pages": [
+        "243"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R058"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C140",
+      "complainer_id": "p1074_35556036546182_K112",
+      "file": "complaints/p1074_35556036546182_C140_douglas_f_marcelini.json",
+      "order": 140,
+      "entity": "Douglas F. Marcelini",
+      "kind": "individual",
+      "role": "Private Citizen, commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "244"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R059"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C141",
+      "complainer_id": "p1074_35556036546182_K124",
+      "file": "complaints/p1074_35556036546182_C141_mr_and_mrs_ronald_r_perez.json",
+      "order": 141,
+      "entity": "Mr. and Mrs. Ronald R. Perez",
+      "kind": "individual",
+      "role": "Private Citizens, commenters",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "244"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R060"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C142",
+      "complainer_id": "p1074_35556036546182_K116",
+      "file": "complaints/p1074_35556036546182_C142_ester_piszczek.json",
+      "order": 142,
+      "entity": "Ester Piszczek",
+      "kind": "individual",
+      "role": "Private Citizen, commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "245"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R061"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C143",
+      "complainer_id": "p1074_35556036546182_K120",
+      "file": "complaints/p1074_35556036546182_C143_merl_and_marianne_stong.json",
+      "order": 143,
+      "entity": "Merl and Marianne Stong",
+      "kind": "individual",
+      "role": "Private Citizens, commenters",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "245"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R062"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C144",
+      "complainer_id": "p1074_35556036546182_K131",
+      "file": "complaints/p1074_35556036546182_C144_stephan_vleansky.json",
+      "order": 144,
+      "entity": "Stephan Vleansky",
+      "kind": "individual",
+      "role": "Private Citizen, commenter",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "245"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R063"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C145",
+      "complainer_id": "p1074_35556036546182_K114",
+      "file": "complaints/p1074_35556036546182_C145_edgar_g_plautz.json",
+      "order": 145,
+      "entity": "Edgar G. Plautz",
+      "kind": "individual",
+      "role": "Private Citizen, commenter",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "246"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R064"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C146",
+      "complainer_id": "p1074_35556036546182_K119",
+      "file": "complaints/p1074_35556036546182_C146_leona_stockmal.json",
+      "order": 146,
+      "entity": "Leona Stockmal",
+      "kind": "individual",
+      "role": "Private Citizen, commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "246"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R065"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C147",
+      "complainer_id": "p1074_35556036546182_K123",
+      "file": "complaints/p1074_35556036546182_C147_mr_and_mrs_george_a_legath.json",
+      "order": 147,
+      "entity": "Mr. and Mrs. George A. Legath",
+      "kind": "individual",
+      "role": "Private Citizens, commenters",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "246"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R066"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C148",
+      "complainer_id": "p1074_35556036546182_K106",
+      "file": "complaints/p1074_35556036546182_C148_alan_staeger.json",
+      "order": 148,
+      "entity": "Alan Staeger",
+      "kind": "individual",
+      "role": "Private Citizen, commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "247"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R067"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C149",
+      "complainer_id": "p1074_35556036546182_K117",
+      "file": "complaints/p1074_35556036546182_C149_frank_b_duszynski.json",
+      "order": 149,
+      "entity": "Frank B. Duszynski",
+      "kind": "individual",
+      "role": "Private Citizen, commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "247"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R068"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C150",
+      "complainer_id": "p1074_35556036546182_K129",
+      "file": "complaints/p1074_35556036546182_C150_roland_salin.json",
+      "order": 150,
+      "entity": "Roland Salin",
+      "kind": "individual",
+      "role": "Private Citizen, commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "247"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R069"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C151",
+      "complainer_id": "p1074_35556036546182_K075",
+      "file": "complaints/p1074_35556036546182_C151_c_k_sabrowsky.json",
+      "order": 151,
+      "entity": "C. K. Sabrowsky",
+      "kind": "individual",
+      "role": "Attorney for Community Developers, Inc., commenter",
+      "stance": "conditional",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "248"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R070"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C152",
+      "complainer_id": "p1074_35556036546182_K087",
+      "file": "complaints/p1074_35556036546182_C152_james_e_sharpiro.json",
+      "order": 152,
+      "entity": "James E. Sharpiro",
+      "kind": "individual",
+      "role": "Attorney for Restaurant Associates Industries, Inc., commenter",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "248"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R071"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C153",
+      "complainer_id": "p1074_35556036546182_K108",
+      "file": "complaints/p1074_35556036546182_C153_city_of_milwaukee_school_board.json",
+      "order": 153,
+      "entity": "City of Milwaukee School Board",
+      "kind": "organization",
+      "role": "Local government body, commenter/interested party",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "248"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R072"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C154",
+      "complainer_id": "p1074_35556036546182_K109",
+      "file": "complaints/p1074_35556036546182_C154_community_developers_inc.json",
+      "order": 154,
+      "entity": "Community Developers, Inc.",
+      "kind": "organization",
+      "role": "Client of attorney C. K. Sabrowsky, commenter",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "248"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R073"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C155",
+      "complainer_id": "p1074_35556036546182_K127",
+      "file": "complaints/p1074_35556036546182_C155_professor_w_wayne_siesennop.json",
+      "order": 155,
+      "entity": "Professor W. Wayne Siesennop",
+      "kind": "individual",
+      "role": "Assistant Professor of Mechanical Engineering, UWM, commenter",
+      "stance": "opposed",
+      "stance_confidence": "medium",
+      "form": "letter",
+      "evidence_pages": [
+        "248"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R074"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C156",
+      "complainer_id": "p1074_35556036546182_K128",
+      "file": "complaints/p1074_35556036546182_C156_restaurant_associates_industries_inc.json",
+      "order": 156,
+      "entity": "Restaurant Associates Industries, Inc.",
+      "kind": "organization",
+      "role": "Client of attorney James E. Sharpiro, commenter",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "248"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R075"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C157",
+      "complainer_id": "p1074_35556036546182_K081",
+      "file": "complaints/p1074_35556036546182_C157_f_e_wolf.json",
+      "order": 157,
+      "entity": "F. E. Wolf",
+      "kind": "official",
+      "role": "Administrator, Department of Transportation/Division of Aeronautics",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "249"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C158",
+      "complainer_id": "p1074_35556036546182_K115",
+      "file": "complaints/p1074_35556036546182_C158_ernest_f_vilter.json",
+      "order": 158,
+      "entity": "Ernest F. Vilter",
+      "kind": "individual",
+      "role": "Private Citizen, commenter",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "249"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R076"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C159",
+      "complainer_id": "p1074_35556036546182_K110",
+      "file": "complaints/p1074_35556036546182_C159_donald_d_spenner.json",
+      "order": 159,
+      "entity": "Donald D. Spenner",
+      "kind": "official",
+      "role": "Real Estate Agent / District Relocation Agent, Wisconsin DOT Division of Highways",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "253"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C160",
+      "complainer_id": "p1074_35556036546182_K110",
+      "file": "complaints/p1074_35556036546182_C160_donald_d_spenner.json",
+      "order": 160,
+      "entity": "Donald D. Spenner",
+      "kind": "official",
+      "role": "Real Estate Agent / District Relocation Agent, Wisconsin DOT Division of Highways",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "253"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C161",
+      "complainer_id": "p1074_35556036546182_K113",
+      "file": "complaints/p1074_35556036546182_C161_dr_edwin_l_meyer.json",
+      "order": 161,
+      "entity": "Dr. Edwin L. Meyer",
+      "kind": "individual",
+      "role": "Developer of EPA screening technique",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "286"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C162",
+      "complainer_id": "p1074_35556036546182_K125",
+      "file": "complaints/p1074_35556036546182_C162_mr_besadny.json",
+      "order": 162,
+      "entity": "Mr. Besadny",
+      "kind": "official",
+      "role": "Wisconsin DNR official, letter author",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "289"
+      ],
+      "response_ids": [
+        "p1074_35556036546182_R077"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C163",
+      "complainer_id": "p1074_35556036546182_K016",
+      "file": "complaints/p1074_35556036546182_C163_state_highway_engineer.json",
+      "order": 163,
+      "entity": "State Highway Engineer",
+      "kind": "official",
+      "role": "State of Wisconsin, Division of Highways signatory",
+      "stance": "in_favor",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C164",
+      "complainer_id": "p1074_35556036546182_K022",
+      "file": "complaints/p1074_35556036546182_C164_wisconsin_state_senator_douglas_lafollet.json",
+      "order": 164,
+      "entity": "Wisconsin State Senator Douglas LaFollette",
+      "kind": "individual",
+      "role": "Wisconsin State Senator, consulted agency/individual",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "17"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual",
+        "quote_not_verbatim",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036546182_C165",
+      "complainer_id": "p1074_35556036546182_K041",
+      "file": "complaints/p1074_35556036546182_C165_wisconsin_department_of_local_affairs_an.json",
+      "order": 165,
+      "entity": "Wisconsin Department of Local Affairs and Development",
+      "kind": "agency",
+      "role": "state development agency",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "143"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "child_id": "p1074_35556036546182_R001",
+      "parent_id": "p1074_35556036546182_C025",
+      "file": "responses/p1074_35556036546182_R001_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R002",
+      "parent_id": "p1074_35556036546182_C040",
+      "file": "responses/p1074_35556036546182_R002_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R003",
+      "parent_id": "p1074_35556036546182_C046",
+      "file": "responses/p1074_35556036546182_R003_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R004",
+      "parent_id": "p1074_35556036546182_C055",
+      "file": "responses/p1074_35556036546182_R004_division_of_highways.json",
+      "agency": "Division of Highways",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R005",
+      "parent_id": "p1074_35556036546182_C073",
+      "file": "responses/p1074_35556036546182_R005_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R006",
+      "parent_id": "p1074_35556036546182_C077",
+      "file": "responses/p1074_35556036546182_R006_wisconsin_department_of_transportation_d.json",
+      "agency": "Wisconsin Department of Transportation, Division of Highways",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R007",
+      "parent_id": "p1074_35556036546182_C078",
+      "file": "responses/p1074_35556036546182_R007_wisconsin_department_of_transportation_d.json",
+      "agency": "Wisconsin Department of Transportation, Division of Highways",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R008",
+      "parent_id": "p1074_35556036546182_C080",
+      "file": "responses/p1074_35556036546182_R008_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R009",
+      "parent_id": "p1074_35556036546182_C081",
+      "file": "responses/p1074_35556036546182_R009_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R010",
+      "parent_id": "p1074_35556036546182_C082",
+      "file": "responses/p1074_35556036546182_R010_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R011",
+      "parent_id": "p1074_35556036546182_C083",
+      "file": "responses/p1074_35556036546182_R011_wisconsin_department_of_transportation_d.json",
+      "agency": "Wisconsin Department of Transportation, Division of Highways",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R012",
+      "parent_id": "p1074_35556036546182_C084",
+      "file": "responses/p1074_35556036546182_R012_wisconsin_department_of_transportation_d.json",
+      "agency": "Wisconsin Department of Transportation, Division of Highways",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R013",
+      "parent_id": "p1074_35556036546182_C085",
+      "file": "responses/p1074_35556036546182_R013_wisconsin_division_of_highways.json",
+      "agency": "Wisconsin Division of Highways",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R014",
+      "parent_id": "p1074_35556036546182_C086",
+      "file": "responses/p1074_35556036546182_R014_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R015",
+      "parent_id": "p1074_35556036546182_C087",
+      "file": "responses/p1074_35556036546182_R015_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R016",
+      "parent_id": "p1074_35556036546182_C088",
+      "file": "responses/p1074_35556036546182_R016_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R017",
+      "parent_id": "p1074_35556036546182_C089",
+      "file": "responses/p1074_35556036546182_R017_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R018",
+      "parent_id": "p1074_35556036546182_C090",
+      "file": "responses/p1074_35556036546182_R018_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R019",
+      "parent_id": "p1074_35556036546182_C091",
+      "file": "responses/p1074_35556036546182_R019_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R020",
+      "parent_id": "p1074_35556036546182_C092",
+      "file": "responses/p1074_35556036546182_R020_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R021",
+      "parent_id": "p1074_35556036546182_C093",
+      "file": "responses/p1074_35556036546182_R021_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R022",
+      "parent_id": "p1074_35556036546182_C094",
+      "file": "responses/p1074_35556036546182_R022_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R023",
+      "parent_id": "p1074_35556036546182_C095",
+      "file": "responses/p1074_35556036546182_R023_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R024",
+      "parent_id": "p1074_35556036546182_C096",
+      "file": "responses/p1074_35556036546182_R024_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R025",
+      "parent_id": "p1074_35556036546182_C097",
+      "file": "responses/p1074_35556036546182_R025_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R026",
+      "parent_id": "p1074_35556036546182_C098",
+      "file": "responses/p1074_35556036546182_R026_wisconsin_division_of_highways.json",
+      "agency": "Wisconsin Division of Highways",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R027",
+      "parent_id": "p1074_35556036546182_C099",
+      "file": "responses/p1074_35556036546182_R027_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R028",
+      "parent_id": "p1074_35556036546182_C100",
+      "file": "responses/p1074_35556036546182_R028_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R029",
+      "parent_id": "p1074_35556036546182_C102",
+      "file": "responses/p1074_35556036546182_R029_wisconsin_department_of_transportation_d.json",
+      "agency": "Wisconsin Department of Transportation / Division of Highways",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R030",
+      "parent_id": "p1074_35556036546182_C104",
+      "file": "responses/p1074_35556036546182_R030_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R031",
+      "parent_id": "p1074_35556036546182_C105",
+      "file": "responses/p1074_35556036546182_R031_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R032",
+      "parent_id": "p1074_35556036546182_C108",
+      "file": "responses/p1074_35556036546182_R032_wisconsin_department_of_transportation_d.json",
+      "agency": "Wisconsin Department of Transportation / Division of Highways",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R033",
+      "parent_id": "p1074_35556036546182_C109",
+      "file": "responses/p1074_35556036546182_R033_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R034",
+      "parent_id": "p1074_35556036546182_C110",
+      "file": "responses/p1074_35556036546182_R034_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R035",
+      "parent_id": "p1074_35556036546182_C111",
+      "file": "responses/p1074_35556036546182_R035_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R036",
+      "parent_id": "p1074_35556036546182_C112",
+      "file": "responses/p1074_35556036546182_R036_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R037",
+      "parent_id": "p1074_35556036546182_C113",
+      "file": "responses/p1074_35556036546182_R037_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R038",
+      "parent_id": "p1074_35556036546182_C115",
+      "file": "responses/p1074_35556036546182_R038_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R039",
+      "parent_id": "p1074_35556036546182_C117",
+      "file": "responses/p1074_35556036546182_R039_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R040",
+      "parent_id": "p1074_35556036546182_C118",
+      "file": "responses/p1074_35556036546182_R040_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R041",
+      "parent_id": "p1074_35556036546182_C119",
+      "file": "responses/p1074_35556036546182_R041_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R042",
+      "parent_id": "p1074_35556036546182_C120",
+      "file": "responses/p1074_35556036546182_R042_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R043",
+      "parent_id": "p1074_35556036546182_C121",
+      "file": "responses/p1074_35556036546182_R043_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R044",
+      "parent_id": "p1074_35556036546182_C124",
+      "file": "responses/p1074_35556036546182_R044_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R045",
+      "parent_id": "p1074_35556036546182_C125",
+      "file": "responses/p1074_35556036546182_R045_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R046",
+      "parent_id": "p1074_35556036546182_C126",
+      "file": "responses/p1074_35556036546182_R046_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R047",
+      "parent_id": "p1074_35556036546182_C127",
+      "file": "responses/p1074_35556036546182_R047_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R048",
+      "parent_id": "p1074_35556036546182_C128",
+      "file": "responses/p1074_35556036546182_R048_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R049",
+      "parent_id": "p1074_35556036546182_C129",
+      "file": "responses/p1074_35556036546182_R049_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R050",
+      "parent_id": "p1074_35556036546182_C130",
+      "file": "responses/p1074_35556036546182_R050_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R051",
+      "parent_id": "p1074_35556036546182_C132",
+      "file": "responses/p1074_35556036546182_R051_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R052",
+      "parent_id": "p1074_35556036546182_C133",
+      "file": "responses/p1074_35556036546182_R052_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R053",
+      "parent_id": "p1074_35556036546182_C134",
+      "file": "responses/p1074_35556036546182_R053_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R054",
+      "parent_id": "p1074_35556036546182_C135",
+      "file": "responses/p1074_35556036546182_R054_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R055",
+      "parent_id": "p1074_35556036546182_C136",
+      "file": "responses/p1074_35556036546182_R055_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R056",
+      "parent_id": "p1074_35556036546182_C137",
+      "file": "responses/p1074_35556036546182_R056_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R057",
+      "parent_id": "p1074_35556036546182_C138",
+      "file": "responses/p1074_35556036546182_R057_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R058",
+      "parent_id": "p1074_35556036546182_C139",
+      "file": "responses/p1074_35556036546182_R058_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R059",
+      "parent_id": "p1074_35556036546182_C140",
+      "file": "responses/p1074_35556036546182_R059_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R060",
+      "parent_id": "p1074_35556036546182_C141",
+      "file": "responses/p1074_35556036546182_R060_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R061",
+      "parent_id": "p1074_35556036546182_C142",
+      "file": "responses/p1074_35556036546182_R061_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R062",
+      "parent_id": "p1074_35556036546182_C143",
+      "file": "responses/p1074_35556036546182_R062_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R063",
+      "parent_id": "p1074_35556036546182_C144",
+      "file": "responses/p1074_35556036546182_R063_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R064",
+      "parent_id": "p1074_35556036546182_C145",
+      "file": "responses/p1074_35556036546182_R064_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R065",
+      "parent_id": "p1074_35556036546182_C146",
+      "file": "responses/p1074_35556036546182_R065_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R066",
+      "parent_id": "p1074_35556036546182_C147",
+      "file": "responses/p1074_35556036546182_R066_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R067",
+      "parent_id": "p1074_35556036546182_C148",
+      "file": "responses/p1074_35556036546182_R067_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R068",
+      "parent_id": "p1074_35556036546182_C149",
+      "file": "responses/p1074_35556036546182_R068_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R069",
+      "parent_id": "p1074_35556036546182_C150",
+      "file": "responses/p1074_35556036546182_R069_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R070",
+      "parent_id": "p1074_35556036546182_C151",
+      "file": "responses/p1074_35556036546182_R070_wisconsin_division_of_highways.json",
+      "agency": "Wisconsin Division of Highways",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R071",
+      "parent_id": "p1074_35556036546182_C152",
+      "file": "responses/p1074_35556036546182_R071_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R072",
+      "parent_id": "p1074_35556036546182_C153",
+      "file": "responses/p1074_35556036546182_R072_division_of_highways.json",
+      "agency": "Division of Highways",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R073",
+      "parent_id": "p1074_35556036546182_C154",
+      "file": "responses/p1074_35556036546182_R073_wisconsin_department_of_transportation_d.json",
+      "agency": "Wisconsin Department of Transportation Division of Highways",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R074",
+      "parent_id": "p1074_35556036546182_C155",
+      "file": "responses/p1074_35556036546182_R074_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R075",
+      "parent_id": "p1074_35556036546182_C156",
+      "file": "responses/p1074_35556036546182_R075_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R076",
+      "parent_id": "p1074_35556036546182_C158",
+      "file": "responses/p1074_35556036546182_R076_agency_response.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036546182_R077",
+      "parent_id": "p1074_35556036546182_C162",
+      "file": "responses/p1074_35556036546182_R077_wisconsin_department_of_natural_resource.json",
+      "agency": "Wisconsin Department of Natural Resources",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    }
+  ]
+}

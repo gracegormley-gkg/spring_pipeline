@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036105336_C031",
+  "complainer_id": "p1074_35556036105336_K032",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 31,
+  "entity": "Richmond City Council",
+  "kind": "government",
+  "role": "Local legislative body, City of Richmond",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase states Council accepted need and desirability of the program and official approval expected",
+  "summary": "The Richmond City Council is described as having accepted the need and desirability of the Randolph Conservation and Redevelopment Program, as evidenced by its inclusion in the Community Renewal Program and the five-year Capital Improvement Program. Official local approval by the City Council was expected in February 1973, and city departments were described as prepared to support the project with necessary public works and community facilities improvements.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Richmond City Council has accepted the need and desirability of the Randolph Conservation and Redevelopment Program, as evidenced by the Community Renewal Program and five-year Capital Improvement Program, with official local approval expected in February 1973.",
+  "evidence_pages": [
+    "54"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Richmond City Council has accepted the need and desirability of the Randolph Conservation and Redevelopment Program as is evident in the Community Renewal Program and in the five (5) year Capital Improvement Program.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "54"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Richmond City Council has accepted the need and desirability of the Randolph Conservation and Redevelopment Program as is evident in the Community Renewal Program and in the five (5) year Capital Improvement Program.",
+      "quote_verified": true,
+      "entity_as_written": "Richmond City Council",
+      "role_as_written": "Local legislative body, City of Richmond"
+    }
+  ],
+  "window_pages": [
+    44,
+    64
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 32,
+  "synthetic_no_complaint": false
+}

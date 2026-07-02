@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556039563135_C150",
+  "complainer_id": "p1074_35556039563135_K014",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 150,
+  "entity": "Director, Office of Economic Opportunity",
+  "kind": "official",
+  "role": "Federal agency commenter on draft EIS",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed only as a recipient and commenter with no position stated",
+  "summary": "The Director of the Office of Economic Opportunity appears twice in the document window: once as a federal agency to which the draft EIS was sent for review and comment, and once as a federal agency that commented on the draft EIS. No substantive position, complaint, or opinion is attributed to this entity anywhere in the window.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "19"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Director, Office of Economic Opportunity",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "19"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Director, Office of Economic Opportunity",
+      "quote_verified": true,
+      "entity_as_written": "Director, Office of Economic Opportunity",
+      "role_as_written": "Federal agency commenter on draft EIS"
+    }
+  ],
+  "window_pages": [
+    9,
+    29
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 14,
+  "synthetic_no_complaint": true
+}

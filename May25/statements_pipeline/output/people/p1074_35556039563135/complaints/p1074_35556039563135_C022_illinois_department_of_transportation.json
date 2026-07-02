@@ -1,0 +1,89 @@
+{
+  "complaint_id": "p1074_35556039563135_C022",
+  "complainer_id": "p1074_35556039563135_K016",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 22,
+  "entity": "Illinois Department of Transportation",
+  "kind": "agency",
+  "role": "state transportation agency / project proponent",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "IDOT is the project proponent proposing the Lincoln Highway reconstruction and actively negotiating conditions to advance it",
+  "summary": "The Illinois Department of Transportation is the project proponent, proposing the reconstruction of Lincoln Highway (U.S. 30) from Cicero Avenue to Chicago Road in Cook County, Illinois. IDOT conducted the technical, noise, air pollution, and traffic studies supporting the project and accepted conditions from the Roosevelt School district (sidewalk replacement, shrubbery compensation, pedestrian overpass) to facilitate right-of-way acquisition. The agency is described throughout the document as the driving force behind the improvement, coordinating with local agencies and scheduling construction for 1977.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "IDOT is identified as the proposing agency for the reconstruction of Lincoln Highway from Cicero Avenue to Chicago Road, with the project described as IDOT's proposal throughout the description of the proposed improvement.",
+  "evidence_pages": [
+    "21"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The conditions were accepted by the Illinois Department of Transportation and include the replacement of all sidewalks, provision for the replacement of shrubbery either by actual plantings or by compensation with right-of-way damages, at the school district option, and the replacement of the pedestrian underpass with an overpass.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 4,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "31"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "It is the proposal of the Illinois Department of Transportation that Lincoln Highway (U.S. 30) be reconstructed from Cicero Avenue (Western terminus) to Chicago Road (Eastern terminus)",
+      "quote_verified": true,
+      "entity_as_written": "Illinois Department of Transportation",
+      "role_as_written": "State agency proposing highway improvement"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "67"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The conditions were accepted by the Illinois Department of Transportation and include the replacement of all sidewalks, provision for the replacement of shrubbery either by actual plantings or by compensation with right-of-way damages, at the school district option, and the replacement of the pedestrian underpass with an overpass.",
+      "quote_verified": true,
+      "entity_as_written": "Illinois Department of Transportation",
+      "role_as_written": "State highway agency / project proponent"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "137"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "It is the recommendation of the Illinois Department of Transportation that Lincoln Highway be reconstructed between Cicero Avenue and Chicago Road on the alternate alignment \"A\" discussed and described above.",
+      "quote_verified": true,
+      "entity_as_written": "Illinois Department of Transportation",
+      "role_as_written": "state transportation agency / project proponent"
+    },
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "145-194"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Illinois Department of Transportation, recognizing its responsibility to protect the environment of the residents of the Village of Park Forest, requested the Village to pass a resolution appropriating $2,250.00 from their Motor Fuel Tax Funds to pay for the cost of the replacement screen plantings.",
+      "quote_verified": false,
+      "entity_as_written": "Illinois Department of Transportation",
+      "role_as_written": "Project proponent / state transportation agency"
+    }
+  ],
+  "window_pages": [
+    21,
+    68
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 16,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036806586_C050",
+  "complainer_id": "p1074_35556036806586_K054",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 50,
+  "entity": "Federal Energy Administration",
+  "kind": "agency",
+  "role": "Federal agency sponsoring studies of rate revision and load management",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "mentioned only as sponsor of studies on rate revision and load management, no position on the project expressed",
+  "summary": "The Federal Energy Administration is mentioned solely as a sponsor of studies on rate revision and load management methods, cited in the context of discussing conservation and rate revision as alternatives to the Bad Creek Project. No position on the project itself is attributed to the agency; it is referenced only to illustrate ongoing research activity in the field.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Federal Energy Administration is noted as sponsoring several studies of rate revision and load management methods, cited as part of broader national efforts to explore conservation alternatives to new generating capacity.",
+  "evidence_pages": [
+    "208"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "In addition, several studies of rate revision and load management methods are being sponsored by the Federal Energy Administration.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "208"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In addition, several studies of rate revision and load management methods are being sponsored by the Federal Energy Administration.",
+      "quote_verified": true,
+      "entity_as_written": "Federal Energy Administration",
+      "role_as_written": "Federal agency sponsoring studies of rate revision and load management"
+    }
+  ],
+  "window_pages": [
+    198,
+    218
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 54,
+  "synthetic_no_complaint": false
+}

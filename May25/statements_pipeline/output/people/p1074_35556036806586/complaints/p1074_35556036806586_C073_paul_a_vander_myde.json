@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036806586_C073",
+  "complainer_id": "p1074_35556036806586_K071",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 73,
+  "entity": "PAUL A. VANDER MYDE",
+  "kind": "official",
+  "role": "Deputy Assistant Secretary, Department of Agriculture",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly states the DEIS is well-written and adequately reflects environmental impacts with no further comments",
+  "summary": "Paul A. Vander Myde, Deputy Assistant Secretary of the Department of Agriculture, submitted a brief letter indicating that the Department's review of the Draft Environmental Impact Statement found it well-written and adequate in reflecting project impacts on the environment, with no further comments to offer. His letter notes that no National Forest lands are affected by the project, suggesting no jurisdictional concerns for the Department of Agriculture.",
+  "form": "letter",
+  "complaint_summary": "Vander Myde's letter on behalf of the Department of Agriculture states that no National Forest lands are affected by the project, the DEIS is well-written and adequately reflects environmental impacts, and the Department has no further comments.",
+  "evidence_pages": [
+    "261"
+  ],
+  "statement": {
+    "text": "This letter is in response to your letter PWR-LP, Project No. 2740-South Carolina, Duke Power Company, dated September 30, 1975. Your letter forwarded the Commission staff's Draft Environmental Impact Statement (DEIS) for review.\nReview of this DEIS by agencies of the Department of Agriculture has been completed. No National Forest lands are affected by the project. We found the statement to be well-written. It appears to reflect adequately the impacts of the project on the environment. We have no further comments to offer.\nWe appreciate the opportunity to review this statement.\nPAUL A. VANDER MYDE\nDeputy Assistant Secretary",
+    "opening_anchor": "This letter is in response to your letter PWR-LP, Project No. 2740-South Carolina, Duke Power Company, dated September 30, 1975.",
+    "closing_anchor": "We have no further comments to offer.\n\nWe appreciate the opportunity to review this statement.\n\nPAUL A. VANDER MYDE\nDeputy Assistant Secretary",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We found the statement to be well-written. It appears to reflect adequately the impacts of the project on the environment. We have no further comments to offer.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "261"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We found the statement to be well-written. It appears to reflect adequately the impacts of the project on the environment. We have no further comments to offer.",
+      "quote_verified": true,
+      "entity_as_written": "PAUL A. VANDER MYDE",
+      "role_as_written": "Deputy Assistant Secretary, Department of Agriculture"
+    }
+  ],
+  "window_pages": [
+    251,
+    271
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 71,
+  "synthetic_no_complaint": false
+}

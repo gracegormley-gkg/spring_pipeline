@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C150",
+  "complainer_id": "p1074_35556036546182_K129",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 150,
+  "entity": "Roland Salin",
+  "kind": "individual",
+  "role": "Private Citizen, commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes existing pollution damage and suggests industrial park purchase instead of spur",
+  "summary": "Roland Salin, a private citizen, testified that the area is already overburdened with surface and air traffic and is suffering from air and noise pollution at levels damaging to health. He suggested that the area bounded by I-94, South 13th Street, Ramsey, and the Airport Spur be purchased for an industrial park rather than proceeding with the spur as proposed. The document directs readers to pages 141 and 150 for the agency's response to his concerns.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Roland Salin stated that the area is already concentrated with surface and air traffic experiencing health-damaging air and noise pollution, and suggested the area bounded by I-94, South 13th Street, Ramsey, and the Airport Spur be purchased for an industrial park.",
+  "evidence_pages": [
+    "247"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R069"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Stated that the area is already concentrated with surface and air traffic and is experiencing air and noise pollution levels damaging to health and suggested that the area bounded by I-94, South 13th Street Ramsey and the Airport Spur be purchased for an industrial park.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "247"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Stated that the area is already concentrated with surface and air traffic and is experiencing air and noise pollution levels damaging to health and suggested that the area bounded by I-94, South 13th Street Ramsey and the Airport Spur be purchased for an industrial park.",
+      "quote_verified": true,
+      "entity_as_written": "Roland Salin",
+      "role_as_written": "Private Citizen, commenter"
+    }
+  ],
+  "window_pages": [
+    237,
+    257
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 129,
+  "synthetic_no_complaint": false
+}

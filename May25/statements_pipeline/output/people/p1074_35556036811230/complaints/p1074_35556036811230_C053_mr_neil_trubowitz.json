@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036811230_C053",
+  "complainer_id": "p1074_35556036811230_K048",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 53,
+  "entity": "Mr. Neil Trubowitz",
+  "kind": "individual",
+  "role": "Director, Archeological Survey, SUNYAB Anthropology Department",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased opinion that sites may be destroyed and field effort needed to assess value, neither supporting nor opposing the project",
+  "summary": "Mr. Neil Trubowitz, Director of Archeological Survey at SUNYAB's Anthropology Department, is paraphrased as opining that many archeological sites in the transit corridor have been destroyed by urban development and that a major field effort including test diggings would be required to determine the value of remaining sites. His statement is informational and technical in nature, neither endorsing nor opposing the LRRT project. The document uses his assessment as context for discussing the limited archeological significance of known sites along the alignment.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Mr. Trubowitz opines that many archeological sites have been destroyed by urban development and that a major field effort including test diggings would be needed to determine the value of the remaining sites.",
+  "evidence_pages": [
+    "222"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036811230_R010"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "It is the opinion of Mr. Neil Trubowitz, Director, Archeological Survey, of the SUNYAB's Anthropology Department that many of the sites have been destroyed by urban developments and that a major field effort, including test diggings, would be needed to determine the value of these sites.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "222"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "It is the opinion of Mr. Neil Trubowitz, Director, Archeological Survey, of the SUNYAB's Anthropology Department that many of the sites have been destroyed by urban developments and that a major field effort, including test diggings, would be needed to determine the value of these sites.",
+      "quote_verified": true,
+      "entity_as_written": "Mr. Neil Trubowitz",
+      "role_as_written": "Director, Archeological Survey, SUNYAB Anthropology Department"
+    }
+  ],
+  "window_pages": [
+    212,
+    232
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 48,
+  "synthetic_no_complaint": false
+}

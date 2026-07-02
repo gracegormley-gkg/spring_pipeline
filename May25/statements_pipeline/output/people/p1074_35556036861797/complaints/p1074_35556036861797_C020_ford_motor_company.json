@@ -1,0 +1,81 @@
+{
+  "complaint_id": "p1074_35556036861797_C020",
+  "complainer_id": "p1074_35556036861797_K010",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 20,
+  "entity": "Ford Motor Company",
+  "kind": "organization",
+  "role": "automotive manufacturer / commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "listed as commenter arguing standard level too high and challenging feasibility of weight reduction",
+  "summary": "Ford Motor Company submitted comments on both the NPRM and the draft EIS, arguing that the proposed 18.7 mpg standard was too high given the effects of emissions requirements and other factors. Ford also challenged the agency's assumption that a 50-pound weight reduction was easily achievable for MY 1979 and that it would yield a significant fuel economy gain. Ford's comments contributed to the agency's decision to consider a range of fuel economy levels and a separate classification for recreational-type NPA's with off-road capability.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Virtually all manufacturers of nonpassenger automobiles, including Ford, indicated their belief that the level of the proposed standard was too high in light of the effects of emissions and other factors, and several commenters (including Ford) argued that four-wheel-drive general utility vehicles deserved separate classification.",
+  "evidence_pages": [
+    "19"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036861797_R008"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Ford disagrees with the implication in the NPRM that a 50-pound weight reduction is easily achievable for 1979 and that a significant fuel economy gain (1.7 percent) would result.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased",
+    "sectional"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "19"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "List of Commenters",
+      "quote_verified": true,
+      "entity_as_written": "Ford Motor Company",
+      "role_as_written": "Commenter / NPA manufacturer"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "79"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Ford disagrees with the implication in the NPRM that a 50-pound weight reduction is easily achievable for 1979 and that a significant fuel economy gain (1.7 percent) would result.",
+      "quote_verified": true,
+      "entity_as_written": "Ford Motor Company",
+      "role_as_written": "automotive manufacturer / commenter"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "98"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Ford states that they will not reduce their margin of safety.",
+      "quote_verified": true,
+      "entity_as_written": "Ford Motor Company",
+      "role_as_written": "automobile manufacturer / commenter"
+    }
+  ],
+  "window_pages": [
+    9,
+    57
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 10,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036811230_C003",
+  "complainer_id": "p1074_35556036811230_K002",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 3,
+  "entity": "Peter Benjamin",
+  "kind": "official",
+  "role": "Director, Office of Program Analysis, Urban Mass Transportation Administration",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "signs and submits the EIS as UMTA Director, facilitating the process without expressing personal support or opposition",
+  "summary": "Peter Benjamin, as Director of the Office of Program Analysis at UMTA, signed the Draft Environmental Impact Statement and is identified as the contact person for receiving public comments. His role is administrative and procedural — he co-authorized the joint preparation of the EIS with NFTA and serves as the official point of contact, but does not express a personal stance for or against the project.",
+  "form": "none",
+  "complaint_summary": "Peter Benjamin is identified as the signatory of the Draft EIS and the designated recipient for public comments, with the Preface explaining that UMTA and NFTA jointly decided to prepare the EIS to facilitate meaningful public participation and coordination.",
+  "evidence_pages": [
+    "3"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence"
+  ],
+  "summary_quote": "In order to facilitate meaningful public participation and review, as well as desirable coordination of effort between UMTA and the NFTA, it was decided by these agencies to prepare jointly this EIS.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "3"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In order to facilitate meaningful public participation and review, as well as desirable coordination of effort between UMTA and the NFTA, it was decided by these agencies to prepare jointly this EIS.",
+      "quote_verified": true,
+      "entity_as_written": "Peter Benjamin",
+      "role_as_written": "Director, Office of Program Analysis, Urban Mass Transportation Administration"
+    }
+  ],
+  "window_pages": [
+    1,
+    13
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 2,
+  "synthetic_no_complaint": false
+}

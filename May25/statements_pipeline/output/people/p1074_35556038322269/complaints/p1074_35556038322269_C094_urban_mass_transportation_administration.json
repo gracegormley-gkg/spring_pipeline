@@ -1,0 +1,83 @@
+{
+  "complaint_id": "p1074_35556038322269_C094",
+  "complainer_id": "p1074_35556038322269_K022",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 94,
+  "entity": "Urban Mass Transportation Administration",
+  "kind": "agency",
+  "role": "Federal co-lead agency for the AA/EIS/EIR",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "UMTA described as co-lead agency and co-author of the document, with no expressed opposition or explicit endorsement of any specific alternative",
+  "summary": "The Urban Mass Transportation Administration (UMTA) is identified as the federal co-lead agency for the AA/EIS/EIR, jointly producing the document with SCRTD and providing 80% federal funding. UMTA is described as directly involved in developing construction techniques, operating conditions, and environmental impact mitigation throughout the project process. The agency appears in the document primarily in an administrative and oversight capacity, with no distinct complaint or opposition expressed.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "14",
+    "74",
+    "242"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "UMTA will be directly involved in developing appropriate construction techniques, operating conditions for station and alignment locations; and in defining the most effective means of achieving required results with the least cost and with acceptable environmental impacts.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "14"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "UMTA will be directly involved in developing appropriate construction techniques, operating conditions for station and alignment locations; and in defining the most effective means of achieving required results with the least cost and with acceptable environmental impacts.",
+      "quote_verified": true,
+      "entity_as_written": "Urban Mass Transportation Administration",
+      "role_as_written": "Federal co-lead agency for the AA/EIS/EIR"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "74"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Give preference to initial rail segments serving densely populated central portions of metropolitan areas. (UMTA, p. 9429)",
+      "quote_verified": true,
+      "entity_as_written": "Urban Mass Transportation Administration",
+      "role_as_written": "Federal transit funding agency"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "242"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Urban Mass Transportation Administration: UMTA provides the major Federal Source of transit funding.",
+      "quote_verified": true,
+      "entity_as_written": "Urban Mass Transportation Administration",
+      "role_as_written": "Federal transit funding source"
+    }
+  ],
+  "window_pages": [
+    4,
+    40
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 22,
+  "synthetic_no_complaint": true
+}

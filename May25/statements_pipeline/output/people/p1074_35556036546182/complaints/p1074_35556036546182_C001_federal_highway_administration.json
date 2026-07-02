@@ -1,0 +1,90 @@
+{
+  "complaint_id": "p1074_35556036546182_C001",
+  "complainer_id": "p1074_35556036546182_K007",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 1,
+  "entity": "Federal Highway Administration",
+  "kind": "agency",
+  "role": "Federal co-author and approving authority for the EIS",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "FHWA is listed as co-author and approving authority; repeatedly grants approvals, designations, and concurrences advancing the project",
+  "summary": "The Federal Highway Administration is the federal co-author and approving authority for this Environmental Impact Statement, having granted successive approvals for the Airport Spur project including corridor location, design, relocation plans, ramp connections, and air quality consistency determinations. FHWA's repeated approvals and adoptions throughout the project's history demonstrate clear institutional support for the proposed freeway connection. The agency's adoption of the Final EIS constitutes a determination that the project is consistent with the State Implementation Plan for air quality.",
+  "form": "none",
+  "complaint_summary": "FHWA is identified as the federal co-author and approving authority of the Final Environmental Impact Statement, having approved and adopted the document on 3-14-76.",
+  "evidence_pages": [
+    "1"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The proposal of a four lane divided highway, for improved access to the airport, had the support of local governmental units provided the right of access to the interstate system and ramp facilities to Grange Avenue would be approved by the Federal Highway Administration.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased"
+  ],
+  "n_mentions": 4,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "1"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "APPROVED AND ADOPTED BY THE FHIVA 3-14-76",
+      "quote_verified": true,
+      "entity_as_written": "Federal Highway Administration",
+      "role_as_written": "Federal co-author and approving authority for the EIS"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "85"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The proposal of a four lane divided highway, for improved access to the airport, had the support of local governmental units provided the right of access to the interstate system and ramp facilities to Grange Avenue would be approved by the Federal Highway Administration.",
+      "quote_verified": true,
+      "entity_as_written": "Federal Highway Administration",
+      "role_as_written": "federal highway regulator"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "108"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In December 1970, the Federal Highway Administration concurred with the Division of Highways that the proposed facility would not require the use of any land from a public park, recreation area, wildlife and waterfowl refuge or historic site.",
+      "quote_verified": false,
+      "entity_as_written": "Federal Highway Administration",
+      "role_as_written": "federal highway regulatory agency"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "200"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "\"should be viewed as maximum levels, recognizing that in many cases, the achievement of lower noise levels would results in even greater benefits to the community.\"",
+      "quote_verified": true,
+      "entity_as_written": "Federal Highway Administration",
+      "role_as_written": "federal agency cited in noise standards"
+    }
+  ],
+  "window_pages": [
+    1,
+    52
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 7,
+  "synthetic_no_complaint": false
+}

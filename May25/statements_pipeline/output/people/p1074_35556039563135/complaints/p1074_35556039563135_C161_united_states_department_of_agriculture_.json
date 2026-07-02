@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556039563135_C161",
+  "complainer_id": "p1074_35556039563135_K074",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 161,
+  "entity": "United States Department of Agriculture, Soil Conservation Service",
+  "kind": "agency",
+  "role": "Federal agency / draft EIS commenter",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "entity not found expressing a position within this window",
+  "summary": "The United States Department of Agriculture, Soil Conservation Service is referenced in the evidence pages (145-194) but does not appear within this document window (pages 135-168) with any attributed position or complaint. The window cuts off just as the Draft EIS comments section begins, suggesting the SCS comment likely appears beyond this window.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "145-194"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim",
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "The importance of erosion control, adequate drainage and reestablishment of vegetation have been recognized in the statement.",
+  "summary_quote_verified": false,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "145-194"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The importance of erosion control, adequate drainage and reestablishment of vegetation have been recognized in the statement.",
+      "quote_verified": false,
+      "entity_as_written": "United States Department of Agriculture, Soil Conservation Service",
+      "role_as_written": "Federal agency / draft EIS commenter"
+    }
+  ],
+  "window_pages": [
+    135,
+    168
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 74,
+  "synthetic_no_complaint": true
+}

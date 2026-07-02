@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C251",
+  "complainer_id": "p0491_35556036091957_K223",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 251,
+  "entity": "Robert Williams",
+  "kind": "official",
+  "role": "Director, Division of Archives, History, and Records Management, Florida Department of State",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter recommending approval of regulations with condition that official access to sites not be curtailed",
+  "summary": "Robert Williams, Director of the Division of Archives, History, and Records Management for the Florida Department of State, wrote a brief letter supporting the proposed ORV regulations on the grounds that restricted ORV use would reduce deterioration of archaeological and historical sites. He strongly recommended approval and implementation of the regulations, with the condition that official access to these sites should not be curtailed.",
+  "form": "letter",
+  "complaint_summary": "Williams supports restricted ORV use to protect archaeological and historical sites and strongly recommends approval of the regulations, provided that official access to those sites is not curtailed.",
+  "evidence_pages": [
+    "325"
+  ],
+  "statement": {
+    "text": "In reference to the above, we would like to comment that there should be restricted use of off-road vehicles as it should reduce the potential of archaeological and historical site deterioration in the affected areas. Because of this preservation factor, we strongly recommend approval and implementation of these regulations. Official access to these sites, however, should not be curtailed.\nSincerely\nRobert Williams\nDirector",
+    "opening_anchor": "In reference to the above, we would like to comment that there should be restricted use of off-road vehicles as it should reduce the potential of archaeological and historical site deterioration",
+    "closing_anchor": "Official access to these sites, however, should not be curtailed.\n\nSincerely\nRobert Williams\nDirector",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "we would like to comment that there should be restricted use of off-road vehicles as it should reduce the potential of archaeological and historical site deterioration in the affected areas. Because of this preservation factor, we strongly recommend approval and implementation of these regulations.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "325"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "we would like to comment that there should be restricted use of off-road vehicles as it should reduce the potential of archaeological and historical site deterioration in the affected areas. Because of this preservation factor, we strongly recommend approval and implementation of these regulations.",
+      "quote_verified": true,
+      "entity_as_written": "Robert Williams",
+      "role_as_written": "Director, Division of Archives, History, and Records Management, Florida Department of State"
+    }
+  ],
+  "window_pages": [
+    315,
+    335
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 223,
+  "synthetic_no_complaint": false
+}

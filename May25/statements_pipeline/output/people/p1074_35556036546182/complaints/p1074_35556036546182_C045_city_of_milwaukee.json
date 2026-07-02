@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036546182_C045",
+  "complainer_id": "p1074_35556036546182_K025",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 45,
+  "entity": "City of Milwaukee",
+  "kind": "government",
+  "role": "local government, land bank operator and planning participant",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "do-nothing alternative conflicts with City of Milwaukee goals; recommended corridor listed as compatible with City of Milwaukee Land Bank",
+  "summary": "The City of Milwaukee appears as a land bank operator whose goals of promoting commercial and industrial growth in the area are cited as conflicting with the do-nothing alternative. The document also notes that several corridors (particularly Corridor #4) are described as most disruptive to the City's land bank area, while the recommended Corridor #5 and Corridor #3 are listed as compatible with the City of Milwaukee Land Bank. The City's land holdings and planning interests are referenced throughout the corridor comparisons.",
+  "form": "sectional",
+  "complaint_summary": "The do-nothing alternative is listed as conflicting with City of Milwaukee goals of promoting commercial and industrial growth in the area.",
+  "evidence_pages": [
+    "97"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Conflicts with City of Milwaukee quals of promoting commercial and industrial growth in the area.",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "97"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Conflicts with City of Milwaukee quals of promoting commercial and industrial growth in the area.",
+      "quote_verified": true,
+      "entity_as_written": "City of Milwaukee",
+      "role_as_written": "local government, land bank operator and planning participant"
+    }
+  ],
+  "window_pages": [
+    87,
+    107
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 25,
+  "synthetic_no_complaint": false
+}

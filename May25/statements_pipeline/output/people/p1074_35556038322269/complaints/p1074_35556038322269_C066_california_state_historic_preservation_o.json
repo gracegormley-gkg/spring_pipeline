@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C066",
+  "complainer_id": "p1074_35556038322269_K071",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 66,
+  "entity": "California State Historic Preservation Office",
+  "kind": "agency",
+  "role": "State historic preservation authority",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "procedural collaboration with SHPO to develop 4(F)/106 survey methodology, no stated position on project",
+  "summary": "The California State Historic Preservation Office collaborated with project preparers to develop a procedure for examining buildings, sites, lands, facilities, and districts in the Regional Core that may be affected by the proposed transit alternatives. The office's role was procedural and consultative, consistent with Section 106 requirements, and a letter delineating the agreed procedure was included in the appendix. The SHPO is also cited as a source for the list of archaeological sites and historic landmarks, but no position for or against the project is attributed to the office.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The California State Historic Preservation Office collaborated with project preparers to develop a procedure for examining actual and potential buildings, sites, lands, facilities, and districts in the Regional Core that may be affected by the proposed transit alternatives, consistent with Section 106 requirements.",
+  "evidence_pages": [
+    "255"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "a procedure was developed with the California State Historic Preservation Office, to examine the actual and potential buildings, sites, lands, facilities and districts in the Regional Core which may be affected.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "255"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "a procedure was developed with the California State Historic Preservation Office, to examine the actual and potential buildings, sites, lands, facilities and districts in the Regional Core which may be affected.",
+      "quote_verified": true,
+      "entity_as_written": "California State Historic Preservation Office",
+      "role_as_written": "State historic preservation authority"
+    }
+  ],
+  "window_pages": [
+    245,
+    265
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 71,
+  "synthetic_no_complaint": false
+}

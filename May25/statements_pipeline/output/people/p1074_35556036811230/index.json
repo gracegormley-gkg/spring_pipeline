@@ -1,0 +1,2241 @@
+{
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "title": "Buffalo light rail rapid transit project construction : environmental impact statement.",
+  "n_pages": 284,
+  "n_chunks": 6,
+  "n_raw_rows": 77,
+  "n_complainers": 59,
+  "n_complaints": 74,
+  "n_responses": 10,
+  "stance_counts": {
+    "in_favor": 16,
+    "neutral": 42,
+    "conditional": 1
+  },
+  "stance_confidence_counts": {
+    "high": 0,
+    "medium": 38,
+    "low": 21,
+    "unknown": 0
+  },
+  "review_counts": {
+    "needs_review": 27,
+    "auto_ok": 32,
+    "reasons": {
+      "low_stance_confidence": 21,
+      "no_complaints": 18,
+      "quote_not_verbatim": 6,
+      "private_individual": 3
+    }
+  },
+  "statement_form_counts": {
+    "letter": 0,
+    "testimony": 0,
+    "written_comment": 0,
+    "narrator_paraphrase": 49,
+    "sectional": 2,
+    "none": 23,
+    "present": 51,
+    "absent": 23
+  },
+  "response_form_counts": {
+    "agency_response": 0,
+    "preparer_reply": 0,
+    "discussion": 10,
+    "none": 0,
+    "present": 10,
+    "absent": 0
+  },
+  "elapsed_sec": 118.1,
+  "usage": {
+    "extract": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 6,
+          "input_tokens": 99461,
+          "output_tokens": 8542,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.4265
+        }
+      ],
+      "total": {
+        "calls": 6,
+        "input_tokens": 99461,
+        "output_tokens": 8542,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.4265
+      }
+    },
+    "find_statement": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 59,
+          "input_tokens": 575680,
+          "output_tokens": 20138,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 2.0291
+        }
+      ],
+      "total": {
+        "calls": 59,
+        "input_tokens": 575680,
+        "output_tokens": 20138,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 2.0291
+      }
+    },
+    "total": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 65,
+          "input_tokens": 675141,
+          "output_tokens": 28680,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 2.4556
+        }
+      ],
+      "total": {
+        "calls": 65,
+        "input_tokens": 675141,
+        "output_tokens": 28680,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 2.4556
+      }
+    }
+  },
+  "schema": {
+    "ids": {
+      "complainer_id": "<doc_id>_K<NNN> — one per merged entity",
+      "complaint_id": "<doc_id>_C<NNN> — one per complaint instance (entities can have multiple)",
+      "child_id": "<doc_id>_R<NNN> — one per agency response"
+    },
+    "stance_vocabulary": [
+      "in_favor",
+      "opposed",
+      "conditional",
+      "neutral"
+    ],
+    "stance_confidence_vocabulary": [
+      "high",
+      "medium",
+      "low"
+    ],
+    "kind_vocabulary": [
+      "individual",
+      "official",
+      "organization",
+      "agency",
+      "tribe",
+      "government",
+      "other"
+    ],
+    "statement_forms": [
+      "letter",
+      "testimony",
+      "written_comment",
+      "narrator_paraphrase",
+      "sectional",
+      "none"
+    ],
+    "response_forms": [
+      "agency_response",
+      "preparer_reply",
+      "discussion",
+      "none"
+    ],
+    "stance_source": "Decided by find_statement at the entity level — same stance applies to all complaints from the same entity. Capped to 'medium' when no contiguous statement is verified for any complaint; forced 'low' when there are no complaints.",
+    "page_numbers": "EXACT — from per-page JSON source.",
+    "statement_text": "Sliced from the doc text between verbatim opening/closing anchors. Null when either anchor doesn't verify.",
+    "response_text": "Sliced from the doc text between verbatim response anchors. Null when either anchor doesn't verify or no response is in the window.",
+    "needs_human_review": "True when kind=='individual' OR summary_quote_verified is False OR stance_confidence=='low' OR no complaints were produced.",
+    "merge_rule": "One row per entity. find_statement may then return multiple complaints per entity — each becomes its own complaint file.",
+    "cost_note": "USD costs are ESTIMATES; verify against AWS Bedrock invoice."
+  },
+  "sequence": [
+    {
+      "order": 1,
+      "complaint_id": "p1074_35556036811230_C001",
+      "complainer_id": "p1074_35556036811230_K001",
+      "complaint_file": "complaints/p1074_35556036811230_C001_niagara_frontier_transportation_authorit.json",
+      "response_ids": []
+    },
+    {
+      "order": 2,
+      "complaint_id": "p1074_35556036811230_C002",
+      "complainer_id": "p1074_35556036811230_K001",
+      "complaint_file": "complaints/p1074_35556036811230_C002_niagara_frontier_transportation_authorit.json",
+      "response_ids": []
+    },
+    {
+      "order": 3,
+      "complaint_id": "p1074_35556036811230_C003",
+      "complainer_id": "p1074_35556036811230_K002",
+      "complaint_file": "complaints/p1074_35556036811230_C003_peter_benjamin.json",
+      "response_ids": []
+    },
+    {
+      "order": 4,
+      "complaint_id": "p1074_35556036811230_C004",
+      "complainer_id": "p1074_35556036811230_K010",
+      "complaint_file": "complaints/p1074_35556036811230_C004_encrpb.json",
+      "response_ids": []
+    },
+    {
+      "order": 5,
+      "complaint_id": "p1074_35556036811230_C005",
+      "complainer_id": "p1074_35556036811230_K012",
+      "complaint_file": "complaints/p1074_35556036811230_C005_erie_and_niagara_counties_regional_plann.json",
+      "response_ids": []
+    },
+    {
+      "order": 6,
+      "complaint_id": "p1074_35556036811230_C006",
+      "complainer_id": "p1074_35556036811230_K010",
+      "complaint_file": "complaints/p1074_35556036811230_C006_encrpb.json",
+      "response_ids": []
+    },
+    {
+      "order": 7,
+      "complaint_id": "p1074_35556036811230_C007",
+      "complainer_id": "p1074_35556036811230_K007",
+      "complaint_file": "complaints/p1074_35556036811230_C007_cornell_aeronautical_lab.json",
+      "response_ids": []
+    },
+    {
+      "order": 8,
+      "complaint_id": "p1074_35556036811230_C008",
+      "complainer_id": "p1074_35556036811230_K009",
+      "complaint_file": "complaints/p1074_35556036811230_C008_economic_consultants_organization_inc.json",
+      "response_ids": []
+    },
+    {
+      "order": 9,
+      "complaint_id": "p1074_35556036811230_C009",
+      "complainer_id": "p1074_35556036811230_K012",
+      "complaint_file": "complaints/p1074_35556036811230_C009_erie_and_niagara_counties_regional_plann.json",
+      "response_ids": []
+    },
+    {
+      "order": 10,
+      "complaint_id": "p1074_35556036811230_C010",
+      "complainer_id": "p1074_35556036811230_K012",
+      "complaint_file": "complaints/p1074_35556036811230_C010_erie_and_niagara_counties_regional_plann.json",
+      "response_ids": []
+    },
+    {
+      "order": 11,
+      "complaint_id": "p1074_35556036811230_C011",
+      "complainer_id": "p1074_35556036811230_K012",
+      "complaint_file": "complaints/p1074_35556036811230_C011_erie_and_niagara_counties_regional_plann.json",
+      "response_ids": []
+    },
+    {
+      "order": 12,
+      "complaint_id": "p1074_35556036811230_C012",
+      "complainer_id": "p1074_35556036811230_K010",
+      "complaint_file": "complaints/p1074_35556036811230_C012_encrpb.json",
+      "response_ids": []
+    },
+    {
+      "order": 13,
+      "complaint_id": "p1074_35556036811230_C013",
+      "complainer_id": "p1074_35556036811230_K010",
+      "complaint_file": "complaints/p1074_35556036811230_C013_encrpb.json",
+      "response_ids": []
+    },
+    {
+      "order": 14,
+      "complaint_id": "p1074_35556036811230_C014",
+      "complainer_id": "p1074_35556036811230_K029",
+      "complaint_file": "complaints/p1074_35556036811230_C014_u_s_department_of_commerce.json",
+      "response_ids": []
+    },
+    {
+      "order": 15,
+      "complaint_id": "p1074_35556036811230_C015",
+      "complainer_id": "p1074_35556036811230_K029",
+      "complaint_file": "complaints/p1074_35556036811230_C015_u_s_department_of_commerce.json",
+      "response_ids": []
+    },
+    {
+      "order": 16,
+      "complaint_id": "p1074_35556036811230_C016",
+      "complainer_id": "p1074_35556036811230_K005",
+      "complaint_file": "complaints/p1074_35556036811230_C016_buffalo_sewer_authority.json",
+      "response_ids": []
+    },
+    {
+      "order": 17,
+      "complaint_id": "p1074_35556036811230_C017",
+      "complainer_id": "p1074_35556036811230_K019",
+      "complaint_file": "complaints/p1074_35556036811230_C017_new_york_state_legislature.json",
+      "response_ids": []
+    },
+    {
+      "order": 18,
+      "complaint_id": "p1074_35556036811230_C018",
+      "complainer_id": "p1074_35556036811230_K020",
+      "complaint_file": "complaints/p1074_35556036811230_C018_new_york_state_office_of_planning_coordi.json",
+      "response_ids": [
+        "p1074_35556036811230_R001"
+      ]
+    },
+    {
+      "order": 19,
+      "complaint_id": "p1074_35556036811230_C019",
+      "complainer_id": "p1074_35556036811230_K024",
+      "complaint_file": "complaints/p1074_35556036811230_C019_niagara_frontier_transportation_study_nf.json",
+      "response_ids": []
+    },
+    {
+      "order": 20,
+      "complaint_id": "p1074_35556036811230_C020",
+      "complainer_id": "p1074_35556036811230_K030",
+      "complaint_file": "complaints/p1074_35556036811230_C020_umta.json",
+      "response_ids": []
+    },
+    {
+      "order": 21,
+      "complaint_id": "p1074_35556036811230_C021",
+      "complainer_id": "p1074_35556036811230_K004",
+      "complaint_file": "complaints/p1074_35556036811230_C021_area_committee_for_transit_act.json",
+      "response_ids": []
+    },
+    {
+      "order": 22,
+      "complaint_id": "p1074_35556036811230_C022",
+      "complainer_id": "p1074_35556036811230_K006",
+      "complaint_file": "complaints/p1074_35556036811230_C022_committee_for_federal_action.json",
+      "response_ids": []
+    },
+    {
+      "order": 23,
+      "complaint_id": "p1074_35556036811230_C023",
+      "complainer_id": "p1074_35556036811230_K011",
+      "complaint_file": "complaints/p1074_35556036811230_C023_entire_state_of_new_york_congressional_d.json",
+      "response_ids": []
+    },
+    {
+      "order": 24,
+      "complaint_id": "p1074_35556036811230_C024",
+      "complainer_id": "p1074_35556036811230_K013",
+      "complaint_file": "complaints/p1074_35556036811230_C024_erie_county_executive.json",
+      "response_ids": []
+    },
+    {
+      "order": 25,
+      "complaint_id": "p1074_35556036811230_C025",
+      "complainer_id": "p1074_35556036811230_K014",
+      "complaint_file": "complaints/p1074_35556036811230_C025_joint_executive_committee_for_rapid_tran.json",
+      "response_ids": []
+    },
+    {
+      "order": 26,
+      "complaint_id": "p1074_35556036811230_C026",
+      "complainer_id": "p1074_35556036811230_K016",
+      "complaint_file": "complaints/p1074_35556036811230_C026_mass_transit_advisory_committee.json",
+      "response_ids": []
+    },
+    {
+      "order": 27,
+      "complaint_id": "p1074_35556036811230_C027",
+      "complainer_id": "p1074_35556036811230_K017",
+      "complaint_file": "complaints/p1074_35556036811230_C027_mayor_of_the_city_of_buffalo.json",
+      "response_ids": []
+    },
+    {
+      "order": 28,
+      "complaint_id": "p1074_35556036811230_C028",
+      "complainer_id": "p1074_35556036811230_K021",
+      "complaint_file": "complaints/p1074_35556036811230_C028_new_york_state_transportation_commission.json",
+      "response_ids": []
+    },
+    {
+      "order": 29,
+      "complaint_id": "p1074_35556036811230_C029",
+      "complainer_id": "p1074_35556036811230_K025",
+      "complaint_file": "complaints/p1074_35556036811230_C029_no_overhead_transit_not.json",
+      "response_ids": []
+    },
+    {
+      "order": 30,
+      "complaint_id": "p1074_35556036811230_C030",
+      "complainer_id": "p1074_35556036811230_K024",
+      "complaint_file": "complaints/p1074_35556036811230_C030_niagara_frontier_transportation_study_nf.json",
+      "response_ids": []
+    },
+    {
+      "order": 31,
+      "complaint_id": "p1074_35556036811230_C031",
+      "complainer_id": "p1074_35556036811230_K032",
+      "complaint_file": "complaints/p1074_35556036811230_C031_national_fuel_gas.json",
+      "response_ids": []
+    },
+    {
+      "order": 32,
+      "complaint_id": "p1074_35556036811230_C032",
+      "complainer_id": "p1074_35556036811230_K033",
+      "complaint_file": "complaints/p1074_35556036811230_C032_american_public_transit_association.json",
+      "response_ids": []
+    },
+    {
+      "order": 33,
+      "complaint_id": "p1074_35556036811230_C033",
+      "complainer_id": "p1074_35556036811230_K033",
+      "complaint_file": "complaints/p1074_35556036811230_C033_american_public_transit_association.json",
+      "response_ids": []
+    },
+    {
+      "order": 34,
+      "complaint_id": "p1074_35556036811230_C034",
+      "complainer_id": "p1074_35556036811230_K033",
+      "complaint_file": "complaints/p1074_35556036811230_C034_american_public_transit_association.json",
+      "response_ids": []
+    },
+    {
+      "order": 35,
+      "complaint_id": "p1074_35556036811230_C035",
+      "complainer_id": "p1074_35556036811230_K033",
+      "complaint_file": "complaints/p1074_35556036811230_C035_american_public_transit_association.json",
+      "response_ids": []
+    },
+    {
+      "order": 36,
+      "complaint_id": "p1074_35556036811230_C036",
+      "complainer_id": "p1074_35556036811230_K035",
+      "complaint_file": "complaints/p1074_35556036811230_C036_city_of_chicago.json",
+      "response_ids": []
+    },
+    {
+      "order": 37,
+      "complaint_id": "p1074_35556036811230_C037",
+      "complainer_id": "p1074_35556036811230_K036",
+      "complaint_file": "complaints/p1074_35556036811230_C037_city_s_department_of_transportation.json",
+      "response_ids": []
+    },
+    {
+      "order": 38,
+      "complaint_id": "p1074_35556036811230_C038",
+      "complainer_id": "p1074_35556036811230_K034",
+      "complaint_file": "complaints/p1074_35556036811230_C038_buffalo_urban_renewal_agency.json",
+      "response_ids": [
+        "p1074_35556036811230_R002"
+      ]
+    },
+    {
+      "order": 39,
+      "complaint_id": "p1074_35556036811230_C039",
+      "complainer_id": "p1074_35556036811230_K040",
+      "complaint_file": "complaints/p1074_35556036811230_C039_new_york_state_department_of_transportat.json",
+      "response_ids": []
+    },
+    {
+      "order": 40,
+      "complaint_id": "p1074_35556036811230_C040",
+      "complainer_id": "p1074_35556036811230_K041",
+      "complaint_file": "complaints/p1074_35556036811230_C040_new_york_state_thruway_authority.json",
+      "response_ids": [
+        "p1074_35556036811230_R003"
+      ]
+    },
+    {
+      "order": 41,
+      "complaint_id": "p1074_35556036811230_C041",
+      "complainer_id": "p1074_35556036811230_K038",
+      "complaint_file": "complaints/p1074_35556036811230_C041_federal_highway_administration.json",
+      "response_ids": []
+    },
+    {
+      "order": 42,
+      "complaint_id": "p1074_35556036811230_C042",
+      "complainer_id": "p1074_35556036811230_K038",
+      "complaint_file": "complaints/p1074_35556036811230_C042_federal_highway_administration.json",
+      "response_ids": []
+    },
+    {
+      "order": 43,
+      "complaint_id": "p1074_35556036811230_C043",
+      "complainer_id": "p1074_35556036811230_K042",
+      "complaint_file": "complaints/p1074_35556036811230_C043_u_s_department_of_transportation_federal.json",
+      "response_ids": []
+    },
+    {
+      "order": 44,
+      "complaint_id": "p1074_35556036811230_C044",
+      "complainer_id": "p1074_35556036811230_K046",
+      "complaint_file": "complaints/p1074_35556036811230_C044_greater_buffalo_development_foundation.json",
+      "response_ids": [
+        "p1074_35556036811230_R004"
+      ]
+    },
+    {
+      "order": 45,
+      "complaint_id": "p1074_35556036811230_C045",
+      "complainer_id": "p1074_35556036811230_K042",
+      "complaint_file": "complaints/p1074_35556036811230_C045_u_s_department_of_transportation_federal.json",
+      "response_ids": []
+    },
+    {
+      "order": 46,
+      "complaint_id": "p1074_35556036811230_C046",
+      "complainer_id": "p1074_35556036811230_K043",
+      "complaint_file": "complaints/p1074_35556036811230_C046_buffalo_historical_society.json",
+      "response_ids": [
+        "p1074_35556036811230_R005"
+      ]
+    },
+    {
+      "order": 47,
+      "complaint_id": "p1074_35556036811230_C047",
+      "complainer_id": "p1074_35556036811230_K043",
+      "complaint_file": "complaints/p1074_35556036811230_C047_buffalo_historical_society.json",
+      "response_ids": [
+        "p1074_35556036811230_R006"
+      ]
+    },
+    {
+      "order": 48,
+      "complaint_id": "p1074_35556036811230_C048",
+      "complainer_id": "p1074_35556036811230_K044",
+      "complaint_file": "complaints/p1074_35556036811230_C048_buffalo_landmark_and_preservation_board.json",
+      "response_ids": []
+    },
+    {
+      "order": 49,
+      "complaint_id": "p1074_35556036811230_C049",
+      "complainer_id": "p1074_35556036811230_K045",
+      "complaint_file": "complaints/p1074_35556036811230_C049_dr_walter_s_dunn_jr.json",
+      "response_ids": [
+        "p1074_35556036811230_R007"
+      ]
+    },
+    {
+      "order": 50,
+      "complaint_id": "p1074_35556036811230_C050",
+      "complainer_id": "p1074_35556036811230_K047",
+      "complaint_file": "complaints/p1074_35556036811230_C050_landmark_society_of_the_niagara_frontier.json",
+      "response_ids": [
+        "p1074_35556036811230_R008"
+      ]
+    },
+    {
+      "order": 51,
+      "complaint_id": "p1074_35556036811230_C051",
+      "complainer_id": "p1074_35556036811230_K049",
+      "complaint_file": "complaints/p1074_35556036811230_C051_mr_olaf_shelgren_jr.json",
+      "response_ids": [
+        "p1074_35556036811230_R009"
+      ]
+    },
+    {
+      "order": 52,
+      "complaint_id": "p1074_35556036811230_C052",
+      "complainer_id": "p1074_35556036811230_K050",
+      "complaint_file": "complaints/p1074_35556036811230_C052_new_york_state_historic_preservation_off.json",
+      "response_ids": []
+    },
+    {
+      "order": 53,
+      "complaint_id": "p1074_35556036811230_C053",
+      "complainer_id": "p1074_35556036811230_K048",
+      "complaint_file": "complaints/p1074_35556036811230_C053_mr_neil_trubowitz.json",
+      "response_ids": [
+        "p1074_35556036811230_R010"
+      ]
+    },
+    {
+      "order": 54,
+      "complaint_id": "p1074_35556036811230_C054",
+      "complainer_id": "p1074_35556036811230_K054",
+      "complaint_file": "complaints/p1074_35556036811230_C054_occupational_safety_and_health_administr.json",
+      "response_ids": []
+    },
+    {
+      "order": 55,
+      "complaint_id": "p1074_35556036811230_C055",
+      "complainer_id": "p1074_35556036811230_K052",
+      "complaint_file": "complaints/p1074_35556036811230_C055_new_york_city_transit_authority.json",
+      "response_ids": []
+    },
+    {
+      "order": 56,
+      "complaint_id": "p1074_35556036811230_C056",
+      "complainer_id": "p1074_35556036811230_K059",
+      "complaint_file": "complaints/p1074_35556036811230_C056_washington_metropolitan_area_transit_aut.json",
+      "response_ids": []
+    },
+    {
+      "order": 57,
+      "complaint_id": "p1074_35556036811230_C057",
+      "complainer_id": "p1074_35556036811230_K003",
+      "complaint_file": "complaints/p1074_35556036811230_C057_urban_mass_transportation_administration.json",
+      "response_ids": []
+    },
+    {
+      "order": 58,
+      "complaint_id": "p1074_35556036811230_C058",
+      "complainer_id": "p1074_35556036811230_K008",
+      "complaint_file": "complaints/p1074_35556036811230_C058_daniel_mann_johnson_mendenhall.json",
+      "response_ids": []
+    },
+    {
+      "order": 59,
+      "complaint_id": "p1074_35556036811230_C059",
+      "complainer_id": "p1074_35556036811230_K015",
+      "complaint_file": "complaints/p1074_35556036811230_C059_larry_smith_company.json",
+      "response_ids": []
+    },
+    {
+      "order": 60,
+      "complaint_id": "p1074_35556036811230_C060",
+      "complainer_id": "p1074_35556036811230_K018",
+      "complaint_file": "complaints/p1074_35556036811230_C060_new_york_state_department_of_labor.json",
+      "response_ids": []
+    },
+    {
+      "order": 61,
+      "complaint_id": "p1074_35556036811230_C061",
+      "complainer_id": "p1074_35556036811230_K022",
+      "complaint_file": "complaints/p1074_35556036811230_C061_nfta.json",
+      "response_ids": []
+    },
+    {
+      "order": 62,
+      "complaint_id": "p1074_35556036811230_C062",
+      "complainer_id": "p1074_35556036811230_K023",
+      "complaint_file": "complaints/p1074_35556036811230_C062_nftc.json",
+      "response_ids": []
+    },
+    {
+      "order": 63,
+      "complaint_id": "p1074_35556036811230_C063",
+      "complainer_id": "p1074_35556036811230_K026",
+      "complaint_file": "complaints/p1074_35556036811230_C063_nys_economic_development_board.json",
+      "response_ids": []
+    },
+    {
+      "order": 64,
+      "complaint_id": "p1074_35556036811230_C064",
+      "complainer_id": "p1074_35556036811230_K027",
+      "complaint_file": "complaints/p1074_35556036811230_C064_sunyab.json",
+      "response_ids": []
+    },
+    {
+      "order": 65,
+      "complaint_id": "p1074_35556036811230_C065",
+      "complainer_id": "p1074_35556036811230_K028",
+      "complaint_file": "complaints/p1074_35556036811230_C065_u_s_census.json",
+      "response_ids": []
+    },
+    {
+      "order": 66,
+      "complaint_id": "p1074_35556036811230_C066",
+      "complainer_id": "p1074_35556036811230_K031",
+      "complaint_file": "complaints/p1074_35556036811230_C066_city_of_buffalo.json",
+      "response_ids": []
+    },
+    {
+      "order": 67,
+      "complaint_id": "p1074_35556036811230_C067",
+      "complainer_id": "p1074_35556036811230_K037",
+      "complaint_file": "complaints/p1074_35556036811230_C067_erie_lackawanna_railroad.json",
+      "response_ids": []
+    },
+    {
+      "order": 68,
+      "complaint_id": "p1074_35556036811230_C068",
+      "complainer_id": "p1074_35556036811230_K039",
+      "complaint_file": "complaints/p1074_35556036811230_C068_national_fuel_gas_company.json",
+      "response_ids": []
+    },
+    {
+      "order": 69,
+      "complaint_id": "p1074_35556036811230_C069",
+      "complainer_id": "p1074_35556036811230_K051",
+      "complaint_file": "complaints/p1074_35556036811230_C069_institute_for_rapid_transit_technical_an.json",
+      "response_ids": []
+    },
+    {
+      "order": 70,
+      "complaint_id": "p1074_35556036811230_C070",
+      "complainer_id": "p1074_35556036811230_K053",
+      "complaint_file": "complaints/p1074_35556036811230_C070_new_york_state_department_of_environment.json",
+      "response_ids": []
+    },
+    {
+      "order": 71,
+      "complaint_id": "p1074_35556036811230_C071",
+      "complainer_id": "p1074_35556036811230_K055",
+      "complaint_file": "complaints/p1074_35556036811230_C071_society_of_automotive_engineers_inc.json",
+      "response_ids": []
+    },
+    {
+      "order": 72,
+      "complaint_id": "p1074_35556036811230_C072",
+      "complainer_id": "p1074_35556036811230_K056",
+      "complaint_file": "complaints/p1074_35556036811230_C072_u_s_department_of_housing_and_urban_deve.json",
+      "response_ids": []
+    },
+    {
+      "order": 73,
+      "complaint_id": "p1074_35556036811230_C073",
+      "complainer_id": "p1074_35556036811230_K057",
+      "complaint_file": "complaints/p1074_35556036811230_C073_u_s_department_of_transportation.json",
+      "response_ids": []
+    },
+    {
+      "order": 74,
+      "complaint_id": "p1074_35556036811230_C074",
+      "complainer_id": "p1074_35556036811230_K058",
+      "complaint_file": "complaints/p1074_35556036811230_C074_u_s_environmental_protection_agency.json",
+      "response_ids": []
+    }
+  ],
+  "complaints": [
+    {
+      "complaint_id": "p1074_35556036811230_C001",
+      "complainer_id": "p1074_35556036811230_K001",
+      "file": "complaints/p1074_35556036811230_C001_niagara_frontier_transportation_authorit.json",
+      "order": 1,
+      "entity": "Niagara Frontier Transportation Authority (NFTA)",
+      "kind": "organization",
+      "role": "Project applicant, co-preparer of EIS",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C002",
+      "complainer_id": "p1074_35556036811230_K001",
+      "file": "complaints/p1074_35556036811230_C002_niagara_frontier_transportation_authorit.json",
+      "order": 2,
+      "entity": "Niagara Frontier Transportation Authority (NFTA)",
+      "kind": "organization",
+      "role": "Project applicant, co-preparer of EIS",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "1"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C003",
+      "complainer_id": "p1074_35556036811230_K002",
+      "file": "complaints/p1074_35556036811230_C003_peter_benjamin.json",
+      "order": 3,
+      "entity": "Peter Benjamin",
+      "kind": "official",
+      "role": "Director, Office of Program Analysis, Urban Mass Transportation Administration",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "3"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C004",
+      "complainer_id": "p1074_35556036811230_K010",
+      "file": "complaints/p1074_35556036811230_C004_encrpb.json",
+      "order": 4,
+      "entity": "ENCRPB",
+      "kind": "agency",
+      "role": "population/employment projection author (Erie and Niagara Counties Regional Planning Board)",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "46-47"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C005",
+      "complainer_id": "p1074_35556036811230_K012",
+      "file": "complaints/p1074_35556036811230_C005_erie_and_niagara_counties_regional_plann.json",
+      "order": 5,
+      "entity": "Erie and Niagara Counties Regional Planning Board",
+      "kind": "agency",
+      "role": "demographic data source / planning body",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "none",
+      "evidence_pages": [
+        "47"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C006",
+      "complainer_id": "p1074_35556036811230_K010",
+      "file": "complaints/p1074_35556036811230_C006_encrpb.json",
+      "order": 6,
+      "entity": "ENCRPB",
+      "kind": "agency",
+      "role": "population/employment projection author (Erie and Niagara Counties Regional Planning Board)",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "48"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C007",
+      "complainer_id": "p1074_35556036811230_K007",
+      "file": "complaints/p1074_35556036811230_C007_cornell_aeronautical_lab.json",
+      "order": 7,
+      "entity": "Cornell Aeronautical Lab",
+      "kind": "organization",
+      "role": "population projection author",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "49"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C008",
+      "complainer_id": "p1074_35556036811230_K009",
+      "file": "complaints/p1074_35556036811230_C008_economic_consultants_organization_inc.json",
+      "order": 8,
+      "entity": "Economic Consultants Organization, Inc.",
+      "kind": "organization",
+      "role": "population projection author",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "sectional",
+      "evidence_pages": [
+        "49"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C009",
+      "complainer_id": "p1074_35556036811230_K012",
+      "file": "complaints/p1074_35556036811230_C009_erie_and_niagara_counties_regional_plann.json",
+      "order": 9,
+      "entity": "Erie and Niagara Counties Regional Planning Board",
+      "kind": "agency",
+      "role": "demographic data source / planning body",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "51"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C010",
+      "complainer_id": "p1074_35556036811230_K012",
+      "file": "complaints/p1074_35556036811230_C010_erie_and_niagara_counties_regional_plann.json",
+      "order": 10,
+      "entity": "Erie and Niagara Counties Regional Planning Board",
+      "kind": "agency",
+      "role": "demographic data source / planning body",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "55"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C011",
+      "complainer_id": "p1074_35556036811230_K012",
+      "file": "complaints/p1074_35556036811230_C011_erie_and_niagara_counties_regional_plann.json",
+      "order": 11,
+      "entity": "Erie and Niagara Counties Regional Planning Board",
+      "kind": "agency",
+      "role": "demographic data source / planning body",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "55"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C012",
+      "complainer_id": "p1074_35556036811230_K010",
+      "file": "complaints/p1074_35556036811230_C012_encrpb.json",
+      "order": 12,
+      "entity": "ENCRPB",
+      "kind": "agency",
+      "role": "population/employment projection author (Erie and Niagara Counties Regional Planning Board)",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "56"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C013",
+      "complainer_id": "p1074_35556036811230_K010",
+      "file": "complaints/p1074_35556036811230_C013_encrpb.json",
+      "order": 13,
+      "entity": "ENCRPB",
+      "kind": "agency",
+      "role": "population/employment projection author (Erie and Niagara Counties Regional Planning Board)",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "56"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C014",
+      "complainer_id": "p1074_35556036811230_K029",
+      "file": "complaints/p1074_35556036811230_C014_u_s_department_of_commerce.json",
+      "order": 14,
+      "entity": "U.S. Department of Commerce",
+      "kind": "agency",
+      "role": "employment data/projection source",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "56"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C015",
+      "complainer_id": "p1074_35556036811230_K029",
+      "file": "complaints/p1074_35556036811230_C015_u_s_department_of_commerce.json",
+      "order": 15,
+      "entity": "U.S. Department of Commerce",
+      "kind": "agency",
+      "role": "employment data/projection source",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "56"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C016",
+      "complainer_id": "p1074_35556036811230_K005",
+      "file": "complaints/p1074_35556036811230_C016_buffalo_sewer_authority.json",
+      "order": 16,
+      "entity": "Buffalo Sewer Authority",
+      "kind": "agency",
+      "role": "utility authority / negotiating party",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "71"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C017",
+      "complainer_id": "p1074_35556036811230_K019",
+      "file": "complaints/p1074_35556036811230_C017_new_york_state_legislature.json",
+      "order": 17,
+      "entity": "New York State Legislature",
+      "kind": "government",
+      "role": "state legislature",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "78"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C018",
+      "complainer_id": "p1074_35556036811230_K020",
+      "file": "complaints/p1074_35556036811230_C018_new_york_state_office_of_planning_coordi.json",
+      "order": 18,
+      "entity": "New York State Office of Planning Coordination (OPC)",
+      "kind": "agency",
+      "role": "planning study author",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "79"
+      ],
+      "response_ids": [
+        "p1074_35556036811230_R001"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C019",
+      "complainer_id": "p1074_35556036811230_K024",
+      "file": "complaints/p1074_35556036811230_C019_niagara_frontier_transportation_study_nf.json",
+      "order": 19,
+      "entity": "Niagara Frontier Transportation Study (NFTS)",
+      "kind": "organization",
+      "role": "early transit planning study body",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "79"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C020",
+      "complainer_id": "p1074_35556036811230_K030",
+      "file": "complaints/p1074_35556036811230_C020_umta.json",
+      "order": 20,
+      "entity": "UMTA",
+      "kind": "agency",
+      "role": "federal transit funding agency",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "79"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C021",
+      "complainer_id": "p1074_35556036811230_K004",
+      "file": "complaints/p1074_35556036811230_C021_area_committee_for_transit_act.json",
+      "order": 21,
+      "entity": "Area Committee for Transit (ACT)",
+      "kind": "organization",
+      "role": "special interest community group supporting rapid transit",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "83"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C022",
+      "complainer_id": "p1074_35556036811230_K006",
+      "file": "complaints/p1074_35556036811230_C022_committee_for_federal_action.json",
+      "order": 22,
+      "entity": "Committee for Federal Action",
+      "kind": "organization",
+      "role": "citizen committee supporting Buffalo-Amherst rail rapid transit project",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "83"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C023",
+      "complainer_id": "p1074_35556036811230_K011",
+      "file": "complaints/p1074_35556036811230_C023_entire_state_of_new_york_congressional_d.json",
+      "order": 23,
+      "entity": "entire State of New York Congressional delegation",
+      "kind": "government",
+      "role": "Congressional delegation",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "83"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C024",
+      "complainer_id": "p1074_35556036811230_K013",
+      "file": "complaints/p1074_35556036811230_C024_erie_county_executive.json",
+      "order": 24,
+      "entity": "Erie County Executive",
+      "kind": "official",
+      "role": "Erie County Executive",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "83"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C025",
+      "complainer_id": "p1074_35556036811230_K014",
+      "file": "complaints/p1074_35556036811230_C025_joint_executive_committee_for_rapid_tran.json",
+      "order": 25,
+      "entity": "Joint Executive Committee for Rapid Transit",
+      "kind": "organization",
+      "role": "community support body for rapid transit",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "83"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C026",
+      "complainer_id": "p1074_35556036811230_K016",
+      "file": "complaints/p1074_35556036811230_C026_mass_transit_advisory_committee.json",
+      "order": 26,
+      "entity": "Mass Transit Advisory Committee",
+      "kind": "organization",
+      "role": "advisory group of Federal, State, and local governmental representatives and citizens",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "83"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C027",
+      "complainer_id": "p1074_35556036811230_K017",
+      "file": "complaints/p1074_35556036811230_C027_mayor_of_the_city_of_buffalo.json",
+      "order": 27,
+      "entity": "Mayor of the City of Buffalo",
+      "kind": "official",
+      "role": "Mayor, City of Buffalo",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "83"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C028",
+      "complainer_id": "p1074_35556036811230_K021",
+      "file": "complaints/p1074_35556036811230_C028_new_york_state_transportation_commission.json",
+      "order": 28,
+      "entity": "New York State Transportation Commissioner",
+      "kind": "official",
+      "role": "New York State Transportation Commissioner",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "83"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C029",
+      "complainer_id": "p1074_35556036811230_K025",
+      "file": "complaints/p1074_35556036811230_C029_no_overhead_transit_not.json",
+      "order": 29,
+      "entity": "No Overhead Transit (NOT)",
+      "kind": "organization",
+      "role": "special interest community group",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "83"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C030",
+      "complainer_id": "p1074_35556036811230_K024",
+      "file": "complaints/p1074_35556036811230_C030_niagara_frontier_transportation_study_nf.json",
+      "order": 30,
+      "entity": "Niagara Frontier Transportation Study (NFTS)",
+      "kind": "organization",
+      "role": "early transit planning study body",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "87"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C031",
+      "complainer_id": "p1074_35556036811230_K032",
+      "file": "complaints/p1074_35556036811230_C031_national_fuel_gas.json",
+      "order": 31,
+      "entity": "National Fuel Gas",
+      "kind": "organization",
+      "role": "property owner/commenter",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "135"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C032",
+      "complainer_id": "p1074_35556036811230_K033",
+      "file": "complaints/p1074_35556036811230_C032_american_public_transit_association.json",
+      "order": 32,
+      "entity": "American Public Transit Association",
+      "kind": "organization",
+      "role": "industry association issuing noise/vibration design guidelines for rapid transit facilities",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "168"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C033",
+      "complainer_id": "p1074_35556036811230_K033",
+      "file": "complaints/p1074_35556036811230_C033_american_public_transit_association.json",
+      "order": 33,
+      "entity": "American Public Transit Association",
+      "kind": "organization",
+      "role": "industry association issuing noise/vibration design guidelines for rapid transit facilities",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "168"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C034",
+      "complainer_id": "p1074_35556036811230_K033",
+      "file": "complaints/p1074_35556036811230_C034_american_public_transit_association.json",
+      "order": 34,
+      "entity": "American Public Transit Association",
+      "kind": "organization",
+      "role": "industry association issuing noise/vibration design guidelines for rapid transit facilities",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "168"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C035",
+      "complainer_id": "p1074_35556036811230_K033",
+      "file": "complaints/p1074_35556036811230_C035_american_public_transit_association.json",
+      "order": 35,
+      "entity": "American Public Transit Association",
+      "kind": "organization",
+      "role": "industry association issuing noise/vibration design guidelines for rapid transit facilities",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "168"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C036",
+      "complainer_id": "p1074_35556036811230_K035",
+      "file": "complaints/p1074_35556036811230_C036_city_of_chicago.json",
+      "order": 36,
+      "entity": "City of Chicago",
+      "kind": "government",
+      "role": "Local government with noise ordinance cited as example",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "171"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C037",
+      "complainer_id": "p1074_35556036811230_K036",
+      "file": "complaints/p1074_35556036811230_C037_city_s_department_of_transportation.json",
+      "order": 37,
+      "entity": "City's Department of Transportation",
+      "kind": "agency",
+      "role": "Local traffic regulatory agency",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "176"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C038",
+      "complainer_id": "p1074_35556036811230_K034",
+      "file": "complaints/p1074_35556036811230_C038_buffalo_urban_renewal_agency.json",
+      "order": 38,
+      "entity": "Buffalo Urban Renewal Agency",
+      "kind": "agency",
+      "role": "Public agency owning property in South Yard area",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "183"
+      ],
+      "response_ids": [
+        "p1074_35556036811230_R002"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C039",
+      "complainer_id": "p1074_35556036811230_K040",
+      "file": "complaints/p1074_35556036811230_C039_new_york_state_department_of_transportat.json",
+      "order": 39,
+      "entity": "New York State Department of Transportation",
+      "kind": "agency",
+      "role": "Relocation specialists / state agency",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "183"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C040",
+      "complainer_id": "p1074_35556036811230_K041",
+      "file": "complaints/p1074_35556036811230_C040_new_york_state_thruway_authority.json",
+      "order": 40,
+      "entity": "New York State Thruway Authority",
+      "kind": "agency",
+      "role": "Public property owner in Ellicott Yard area",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "185"
+      ],
+      "response_ids": [
+        "p1074_35556036811230_R003"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C041",
+      "complainer_id": "p1074_35556036811230_K038",
+      "file": "complaints/p1074_35556036811230_C041_federal_highway_administration.json",
+      "order": 41,
+      "entity": "Federal Highway Administration",
+      "kind": "agency",
+      "role": "Federal agency providing traffic capacity standards",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "191"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C042",
+      "complainer_id": "p1074_35556036811230_K038",
+      "file": "complaints/p1074_35556036811230_C042_federal_highway_administration.json",
+      "order": 42,
+      "entity": "Federal Highway Administration",
+      "kind": "agency",
+      "role": "Federal agency providing traffic capacity standards",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "193"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C043",
+      "complainer_id": "p1074_35556036811230_K042",
+      "file": "complaints/p1074_35556036811230_C043_u_s_department_of_transportation_federal.json",
+      "order": 43,
+      "entity": "U.S. Department of Transportation, Federal Highway Administration",
+      "kind": "agency",
+      "role": "Federal agency providing noise standards",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "193",
+        "194"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C044",
+      "complainer_id": "p1074_35556036811230_K046",
+      "file": "complaints/p1074_35556036811230_C044_greater_buffalo_development_foundation.json",
+      "order": 44,
+      "entity": "Greater Buffalo Development Foundation",
+      "kind": "organization",
+      "role": "civic/development organization, commenter",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "195"
+      ],
+      "response_ids": [
+        "p1074_35556036811230_R004"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C045",
+      "complainer_id": "p1074_35556036811230_K042",
+      "file": "complaints/p1074_35556036811230_C045_u_s_department_of_transportation_federal.json",
+      "order": 45,
+      "entity": "U.S. Department of Transportation, Federal Highway Administration",
+      "kind": "agency",
+      "role": "Federal agency providing noise standards",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "204"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C046",
+      "complainer_id": "p1074_35556036811230_K043",
+      "file": "complaints/p1074_35556036811230_C046_buffalo_historical_society.json",
+      "order": 46,
+      "entity": "Buffalo Historical Society",
+      "kind": "organization",
+      "role": "historic preservation reviewer",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "219"
+      ],
+      "response_ids": [
+        "p1074_35556036811230_R005"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C047",
+      "complainer_id": "p1074_35556036811230_K043",
+      "file": "complaints/p1074_35556036811230_C047_buffalo_historical_society.json",
+      "order": 47,
+      "entity": "Buffalo Historical Society",
+      "kind": "organization",
+      "role": "historic preservation reviewer",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "219"
+      ],
+      "response_ids": [
+        "p1074_35556036811230_R006"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C048",
+      "complainer_id": "p1074_35556036811230_K044",
+      "file": "complaints/p1074_35556036811230_C048_buffalo_landmark_and_preservation_board.json",
+      "order": 48,
+      "entity": "Buffalo Landmark and Preservation Board",
+      "kind": "agency",
+      "role": "historic preservation review board",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "219"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C049",
+      "complainer_id": "p1074_35556036811230_K045",
+      "file": "complaints/p1074_35556036811230_C049_dr_walter_s_dunn_jr.json",
+      "order": 49,
+      "entity": "Dr. Walter S. Dunn, Jr.",
+      "kind": "individual",
+      "role": "Director, Buffalo Historical Society",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "219"
+      ],
+      "response_ids": [
+        "p1074_35556036811230_R007"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C050",
+      "complainer_id": "p1074_35556036811230_K047",
+      "file": "complaints/p1074_35556036811230_C050_landmark_society_of_the_niagara_frontier.json",
+      "order": 50,
+      "entity": "Landmark Society of the Niagara Frontier",
+      "kind": "organization",
+      "role": "historic preservation reviewer",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "219"
+      ],
+      "response_ids": [
+        "p1074_35556036811230_R008"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C051",
+      "complainer_id": "p1074_35556036811230_K049",
+      "file": "complaints/p1074_35556036811230_C051_mr_olaf_shelgren_jr.json",
+      "order": 51,
+      "entity": "Mr. Olaf Shelgren, Jr.",
+      "kind": "individual",
+      "role": "Chairman, Landmark Society of the Niagara Frontier",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "219"
+      ],
+      "response_ids": [
+        "p1074_35556036811230_R009"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C052",
+      "complainer_id": "p1074_35556036811230_K050",
+      "file": "complaints/p1074_35556036811230_C052_new_york_state_historic_preservation_off.json",
+      "order": 52,
+      "entity": "New York State Historic Preservation Officer",
+      "kind": "official",
+      "role": "State Historic Preservation Officer",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "219"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C053",
+      "complainer_id": "p1074_35556036811230_K048",
+      "file": "complaints/p1074_35556036811230_C053_mr_neil_trubowitz.json",
+      "order": 53,
+      "entity": "Mr. Neil Trubowitz",
+      "kind": "individual",
+      "role": "Director, Archeological Survey, SUNYAB Anthropology Department",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "222"
+      ],
+      "response_ids": [
+        "p1074_35556036811230_R010"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C054",
+      "complainer_id": "p1074_35556036811230_K054",
+      "file": "complaints/p1074_35556036811230_C054_occupational_safety_and_health_administr.json",
+      "order": 54,
+      "entity": "Occupational Safety and Health Administration",
+      "kind": "agency",
+      "role": "regulatory body whose procedures govern permissible noise exposure calculations for construction workers and public",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "274"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C055",
+      "complainer_id": "p1074_35556036811230_K052",
+      "file": "complaints/p1074_35556036811230_C055_new_york_city_transit_authority.json",
+      "order": 55,
+      "entity": "New York City Transit Authority",
+      "kind": "agency",
+      "role": "transit authority with prior experience including noise restrictions in construction contract specifications",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "276"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C056",
+      "complainer_id": "p1074_35556036811230_K059",
+      "file": "complaints/p1074_35556036811230_C056_washington_metropolitan_area_transit_aut.json",
+      "order": 56,
+      "entity": "Washington Metropolitan Area Transit Authority",
+      "kind": "agency",
+      "role": "transit authority with prior experience including noise restrictions in construction contract specifications",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "276"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C057",
+      "complainer_id": "p1074_35556036811230_K003",
+      "file": "complaints/p1074_35556036811230_C057_urban_mass_transportation_administration.json",
+      "order": 57,
+      "entity": "Urban Mass Transportation Administration (UMTA)",
+      "kind": "agency",
+      "role": "Federal transit funding agency, co-preparer of EIS",
+      "stance": "in_favor",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "3"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C058",
+      "complainer_id": "p1074_35556036811230_K008",
+      "file": "complaints/p1074_35556036811230_C058_daniel_mann_johnson_mendenhall.json",
+      "order": 58,
+      "entity": "Daniel, Mann, Johnson, & Mendenhall",
+      "kind": "organization",
+      "role": "consultant / data source",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "53"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C059",
+      "complainer_id": "p1074_35556036811230_K015",
+      "file": "complaints/p1074_35556036811230_C059_larry_smith_company.json",
+      "order": 59,
+      "entity": "Larry Smith & Company",
+      "kind": "organization",
+      "role": "population projection author",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "49"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C060",
+      "complainer_id": "p1074_35556036811230_K018",
+      "file": "complaints/p1074_35556036811230_C060_new_york_state_department_of_labor.json",
+      "order": 60,
+      "entity": "New York State Department of Labor",
+      "kind": "agency",
+      "role": "employment data source",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "52"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C061",
+      "complainer_id": "p1074_35556036811230_K022",
+      "file": "complaints/p1074_35556036811230_C061_nfta.json",
+      "order": 61,
+      "entity": "NFTA",
+      "kind": "agency",
+      "role": "project sponsor committing to include noise limit specifications in Metro Corridor construction contracts",
+      "stance": "in_favor",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "52",
+        "135",
+        "163",
+        "165",
+        "183",
+        "178",
+        "192",
+        "197",
+        "276"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C062",
+      "complainer_id": "p1074_35556036811230_K023",
+      "file": "complaints/p1074_35556036811230_C062_nftc.json",
+      "order": 62,
+      "entity": "NFTC",
+      "kind": "agency",
+      "role": "population projection author / transit survey sponsor",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "49"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C063",
+      "complainer_id": "p1074_35556036811230_K026",
+      "file": "complaints/p1074_35556036811230_C063_nys_economic_development_board.json",
+      "order": 63,
+      "entity": "NYS Economic Development Board",
+      "kind": "agency",
+      "role": "population projection author",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "49"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C064",
+      "complainer_id": "p1074_35556036811230_K027",
+      "file": "complaints/p1074_35556036811230_C064_sunyab.json",
+      "order": 64,
+      "entity": "SUNYAB",
+      "kind": "organization",
+      "role": "university / landowner at South Campus terminal site",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "70",
+        "213"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C065",
+      "complainer_id": "p1074_35556036811230_K028",
+      "file": "complaints/p1074_35556036811230_C065_u_s_census.json",
+      "order": 65,
+      "entity": "U.S. Census",
+      "kind": "agency",
+      "role": "population projection author",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "49"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C066",
+      "complainer_id": "p1074_35556036811230_K031",
+      "file": "complaints/p1074_35556036811230_C066_city_of_buffalo.json",
+      "order": 66,
+      "entity": "City of Buffalo",
+      "kind": "government",
+      "role": "local government with noise control regulations (Article XVII of Buffalo City Ordinances) applicable to construction activities",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "137",
+        "175",
+        "194",
+        "282"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C067",
+      "complainer_id": "p1074_35556036811230_K037",
+      "file": "complaints/p1074_35556036811230_C067_erie_lackawanna_railroad.json",
+      "order": 67,
+      "entity": "Erie-Lackawanna Railroad",
+      "kind": "organization",
+      "role": "Property owner in Terminal Yard area",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "186"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C068",
+      "complainer_id": "p1074_35556036811230_K039",
+      "file": "complaints/p1074_35556036811230_C068_national_fuel_gas_company.json",
+      "order": 68,
+      "entity": "National Fuel Gas Company",
+      "kind": "organization",
+      "role": "Business with proposed relocation site in Ellicott Yard area",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "185"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C069",
+      "complainer_id": "p1074_35556036811230_K051",
+      "file": "complaints/p1074_35556036811230_C069_institute_for_rapid_transit_technical_an.json",
+      "order": 69,
+      "entity": "Institute for Rapid Transit Technical and Operations Committee, Subcommittee on Design Standards",
+      "kind": "organization",
+      "role": "standards body whose guidelines for rapid transit facility design are cited as a reference",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "284"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C070",
+      "complainer_id": "p1074_35556036811230_K053",
+      "file": "complaints/p1074_35556036811230_C070_new_york_state_department_of_environment.json",
+      "order": 70,
+      "entity": "New York State Department of Environmental Conservation",
+      "kind": "agency",
+      "role": "state agency whose proposed noise pollution regulations are cited as a reference",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "284"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C071",
+      "complainer_id": "p1074_35556036811230_K055",
+      "file": "complaints/p1074_35556036811230_C071_society_of_automotive_engineers_inc.json",
+      "order": 71,
+      "entity": "Society of Automotive Engineers, Inc.",
+      "kind": "organization",
+      "role": "standards body whose practices (SAE J366a and SAE J952b) govern construction equipment noise level measurements",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "281"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C072",
+      "complainer_id": "p1074_35556036811230_K056",
+      "file": "complaints/p1074_35556036811230_C072_u_s_department_of_housing_and_urban_deve.json",
+      "order": 72,
+      "entity": "U.S. Department of Housing and Urban Development",
+      "kind": "agency",
+      "role": "federal agency whose noise abatement and control policy circular is cited as a reference",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "284"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C073",
+      "complainer_id": "p1074_35556036811230_K057",
+      "file": "complaints/p1074_35556036811230_C073_u_s_department_of_transportation.json",
+      "order": 73,
+      "entity": "U.S. Department of Transportation",
+      "kind": "agency",
+      "role": "federal agency whose publication on transportation noise is cited as a reference",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "283"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim",
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036811230_C074",
+      "complainer_id": "p1074_35556036811230_K058",
+      "file": "complaints/p1074_35556036811230_C074_u_s_environmental_protection_agency.json",
+      "order": 74,
+      "entity": "U.S. Environmental Protection Agency",
+      "kind": "agency",
+      "role": "federal agency whose reports on community noise and noise criteria are cited as references for noise design guidelines",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "275"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "child_id": "p1074_35556036811230_R001",
+      "parent_id": "p1074_35556036811230_C018",
+      "file": "responses/p1074_35556036811230_R001_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036811230_R002",
+      "parent_id": "p1074_35556036811230_C038",
+      "file": "responses/p1074_35556036811230_R002_nfta.json",
+      "agency": "NFTA",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036811230_R003",
+      "parent_id": "p1074_35556036811230_C040",
+      "file": "responses/p1074_35556036811230_R003_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036811230_R004",
+      "parent_id": "p1074_35556036811230_C044",
+      "file": "responses/p1074_35556036811230_R004_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036811230_R005",
+      "parent_id": "p1074_35556036811230_C046",
+      "file": "responses/p1074_35556036811230_R005_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036811230_R006",
+      "parent_id": "p1074_35556036811230_C047",
+      "file": "responses/p1074_35556036811230_R006_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036811230_R007",
+      "parent_id": "p1074_35556036811230_C049",
+      "file": "responses/p1074_35556036811230_R007_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036811230_R008",
+      "parent_id": "p1074_35556036811230_C050",
+      "file": "responses/p1074_35556036811230_R008_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036811230_R009",
+      "parent_id": "p1074_35556036811230_C051",
+      "file": "responses/p1074_35556036811230_R009_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036811230_R010",
+      "parent_id": "p1074_35556036811230_C053",
+      "file": "responses/p1074_35556036811230_R010_discussion.json",
+      "agency": "",
+      "agency_kind": "other",
+      "form": "discussion",
+      "text_present": true
+    }
+  ]
+}

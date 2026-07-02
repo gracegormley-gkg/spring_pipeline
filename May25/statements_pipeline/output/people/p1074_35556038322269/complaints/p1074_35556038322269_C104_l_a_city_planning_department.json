@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556038322269_C104",
+  "complainer_id": "p1074_35556038322269_K065",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 104,
+  "entity": "L.A. City Planning Department",
+  "kind": "agency",
+  "role": "source of school facilities data",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "cited only as a data source for school facilities table with no expressed position",
+  "summary": "The L.A. City Planning Department appears in this window solely as the cited source for the school facilities data presented in Figure V.25. No position, complaint, or opinion regarding the project is attributed to the department; it is referenced purely in a data-attribution capacity.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "198"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Source: L.A. City Planning Department.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "198"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Source: L.A. City Planning Department.",
+      "quote_verified": true,
+      "entity_as_written": "L.A. City Planning Department",
+      "role_as_written": "source of school facilities data"
+    }
+  ],
+  "window_pages": [
+    188,
+    208
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 65,
+  "synthetic_no_complaint": true
+}

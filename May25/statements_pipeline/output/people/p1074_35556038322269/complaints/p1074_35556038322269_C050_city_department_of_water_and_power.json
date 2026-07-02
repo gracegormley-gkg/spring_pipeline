@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C050",
+  "complainer_id": "p1074_35556038322269_K051",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 50,
+  "entity": "City Department of Water and Power",
+  "kind": "agency",
+  "role": "advisor on electric power supply for rail transit",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase states supplying rail rapid transit load 'should not present a problem'",
+  "summary": "The City Department of Water and Power is mentioned once in the document in the context of electric power demand for the proposed rail transit system. The agency advised that supplying the estimated 41.5 megawatt rail rapid transit load would not present a problem, representing only 1.1% of the 1977 regional peak load. The agency's statement is informational and supportive of feasibility without expressing a formal position on the project itself.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The City Department of Water and Power advised that supplying the 41.5 megawatt rail rapid transit electrical load (1.1% of 1977 regional peak load) should not present a problem.",
+  "evidence_pages": [
+    "165"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The City Department of Water and Power has advised that supplying the rail rapid transit load should not present a problem.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "165"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The City Department of Water and Power has advised that supplying the rail rapid transit load should not present a problem.",
+      "quote_verified": true,
+      "entity_as_written": "City Department of Water and Power",
+      "role_as_written": "advisor on electric power supply for rail transit"
+    }
+  ],
+  "window_pages": [
+    155,
+    175
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 51,
+  "synthetic_no_complaint": false
+}

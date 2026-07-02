@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036811230_C038",
+  "complainer_id": "p1074_35556036811230_K034",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 38,
+  "entity": "Buffalo Urban Renewal Agency",
+  "kind": "agency",
+  "role": "Public agency owning property in South Yard area",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes ownership stake and potential loss of redevelopment opportunity, with NFTA pledging coordination",
+  "summary": "The Buffalo Urban Renewal Agency co-owns a block in the South Yard area (bounded by Main, Perry, and Washington Streets and South Park Avenue) that has been identified as part of the Waterfront Redevelopment Project. The EIS notes that if this block is used for the South Yard, the City and the Agency would lose the opportunity to develop it for other purposes. No direct position for or against the project is attributed to the Agency; the document simply notes the ownership and development implications.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The block co-owned by the Buffalo Urban Renewal Agency has been identified as part of the Waterfront Redevelopment Project, and use of this block for the South Yard would cause the City and Agency to lose the opportunity to develop it for other purposes.",
+  "evidence_pages": [
+    "183"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036811230_R002"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "the block bounded by Main, Perry, and Washington Streets and South Park Avenue is owned by the City of Buffalo and the Buffalo Urban Renewal Agency.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "183"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "the block bounded by Main, Perry, and Washington Streets and South Park Avenue is owned by the City of Buffalo and the Buffalo Urban Renewal Agency.",
+      "quote_verified": true,
+      "entity_as_written": "Buffalo Urban Renewal Agency",
+      "role_as_written": "Public agency owning property in South Yard area"
+    }
+  ],
+  "window_pages": [
+    173,
+    193
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 34,
+  "synthetic_no_complaint": false
+}

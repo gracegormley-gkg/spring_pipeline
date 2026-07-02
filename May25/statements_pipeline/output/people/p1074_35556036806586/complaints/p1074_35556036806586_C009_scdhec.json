@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036806586_C009",
+  "complainer_id": "p1074_35556036806586_K019",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 9,
+  "entity": "SCDHEC",
+  "kind": "agency",
+  "role": "South Carolina Department of Health and Environmental Control — permitting authority",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as reporting adverse effects from highway construction, no position on the project itself",
+  "summary": "SCDHEC is mentioned once in a narrator paraphrase, reporting adverse effects on West Bad Creek, Bad Creek, and Howard Creek resulting from the construction of Highway 171. The agency's statement is cited as evidence of existing environmental degradation in the project area due to prior land-use activities, not as a comment on the Bad Creek Project itself. No stance for or against the proposed project is attributed to SCDHEC.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "SCDHEC reported adverse effects on West Bad Creek, Bad Creek, and Howard Creek as a result of the construction of Highway 171, indicating existing water quality and habitat degradation in the project area.",
+  "evidence_pages": [
+    "77"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The South Carolina Department of Health and Environmental Control reported adverse effects on West Bad Creek, Bad Creek, and Howard Creek as a result of the construction of Highway 171.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "77"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The South Carolina Department of Health and Environmental Control reported adverse effects on West Bad Creek, Bad Creek, and Howard Creek as a result of the construction of Highway 171.",
+      "quote_verified": true,
+      "entity_as_written": "SCDHEC",
+      "role_as_written": "South Carolina Department of Health and Environmental Control — permitting authority"
+    }
+  ],
+  "window_pages": [
+    67,
+    87
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 19,
+  "synthetic_no_complaint": false
+}

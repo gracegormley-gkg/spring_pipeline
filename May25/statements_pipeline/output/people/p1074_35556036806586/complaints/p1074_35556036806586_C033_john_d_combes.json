@@ -1,0 +1,69 @@
+{
+  "complaint_id": "p1074_35556036806586_C033",
+  "complainer_id": "p1074_35556036806586_K027",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 33,
+  "entity": "John D. Combes",
+  "kind": "individual",
+  "role": "archaeologist, Institute of Archeology and Anthropology, University of South Carolina",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes factual survey findings with no position on the project itself",
+  "summary": "John D. Combes of the Institute of Archeology and Anthropology, University of South Carolina, conducted an archaeological survey of the proposed Bad Creek Project site in October 1973 and found no archaeological remains. He attributed this absence to the rugged terrain making the area unsuitable for human habitation. His role is purely technical/informational, and no position for or against the project is expressed.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Dr. Combes surveyed the proposed project site in October 1973 and found no archaeological remains, attributing this to the rugged terrain's unsuitability for human habitation, though the survey did not include the proposed transmission line route.",
+  "evidence_pages": [
+    "129"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "In October 1973, John D. Combes of the Institute of Archeology and Anthropology, University of South Carolina, surveyed the proposed project site for archeological remains. None were found, a fact that Dr. Combes attributed to the rugged and difficult nature of the terrain that makes the area unsuitable for human habitation.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "129"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In October 1973, John D. Combes of the Institute of Archeology and Anthropology, University of South Carolina, surveyed the proposed project site for archeological remains. None were found, a fact that Dr. Combes attributed to the rugged and difficult nature of the terrain that makes the area unsuitable for human habitation.",
+      "quote_verified": true,
+      "entity_as_written": "John D. Combes",
+      "role_as_written": "archaeologist, Institute of Archeology and Anthropology, University of South Carolina"
+    },
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "181"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The survey, conducted by John D. Combes, Institute of Archeology and Anthropology, University of South Carolina, concluded that no historical of prehistorical sites would be jeopardized by the Bad Creek Project.",
+      "quote_verified": true,
+      "entity_as_written": "John D. Combes",
+      "role_as_written": "Archaeologist, Institute of Archeology and Anthropology, University of South Carolina"
+    }
+  ],
+  "window_pages": [
+    119,
+    152
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 27,
+  "synthetic_no_complaint": false
+}

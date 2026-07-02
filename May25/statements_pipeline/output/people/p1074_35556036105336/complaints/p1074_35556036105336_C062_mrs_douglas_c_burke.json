@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036105336_C062",
+  "complainer_id": "p1074_35556036105336_K044",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 62,
+  "entity": "Mrs. Douglas C. Burke",
+  "kind": "individual",
+  "role": "City Planning Commission member",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "abstained from voting due to concern over Downtown Expressway impact on the area",
+  "summary": "Mrs. Douglas C. Burke, a City Planning Commission member, abstained from voting on the Randolph area master plan, expressing concern about the potential impact of the proposed Downtown Expressway on the area. Her abstention signals conditional or cautious support rather than outright opposition, as she did not vote against the plan but withheld approval pending resolution of expressway-related concerns.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Mrs. Burke abstained from the Planning Commission vote on the Randolph master plan, citing concern over the possible impact of the proposed Downtown Expressway on the area.",
+  "evidence_pages": [
+    "105"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036105336_R011"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Mrs. Douglas C. Burke, a commission member, abstained in the voting yesterday, saying that she is concerned over the possible impact on the area of the proposed Downtown Expressway.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "105"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Mrs. Douglas C. Burke, a commission member, abstained in the voting yesterday, saying that she is concerned over the possible impact on the area of the proposed Downtown Expressway.",
+      "quote_verified": true,
+      "entity_as_written": "Mrs. Douglas C. Burke",
+      "role_as_written": "City Planning Commission member"
+    }
+  ],
+  "window_pages": [
+    95,
+    115
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 44,
+  "synthetic_no_complaint": false
+}

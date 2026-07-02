@@ -1,0 +1,68 @@
+{
+  "complaint_id": "p1074_35556036806586_C002",
+  "complainer_id": "p1074_35556036806586_K006",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 2,
+  "entity": "Forest Service (Department of Agriculture)",
+  "kind": "agency",
+  "role": "Federal agency requested to review draft EIS; responded",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "listed as a federal agency that responded to the draft EIS, with their plans referenced descriptively but no explicit position stated",
+  "summary": "The Forest Service (Department of Agriculture) is listed among the federal agencies that responded to the draft Environmental Impact Statement for the Bad Creek Pumped Storage Project. The document references the Forest Service's plans to construct the North Carolina portion of the Foothills Trail within its jurisdiction and to develop recreational facilities in the upper Whitewater Falls area, but no substantive complaint or position statement from the Forest Service is reproduced in this window of the document.",
+  "form": "sectional",
+  "complaint_summary": "The Forest Service is listed as one of the federal agencies that responded to the draft EIS (marked with an asterisk indicating it commented), but no content of its response is provided in this section.",
+  "evidence_pages": [
+    "1"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Although no recreation facilities now exist in the Unit, the Forest Service intends to construct the North Carolina portion of the Foothills Trail within its jurisdiction and to develop two overlooks, parking, sanitary, and picnic facilities in the upper Whitewater Falls area (Forest Service, NDa and 1974b).",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased",
+    "sectional"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "1"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Federal Departments and Offices ... *Forest Service (Department of Agriculture)",
+      "quote_verified": false,
+      "entity_as_written": "Forest Service (Department of Agriculture)",
+      "role_as_written": "Federal agency requested to review draft EIS; responded"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "132"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Although no recreation facilities now exist in the Unit, the Forest Service intends to construct the North Carolina portion of the Foothills Trail within its jurisdiction and to develop two overlooks, parking, sanitary, and picnic facilities in the upper Whitewater Falls area (Forest Service, NDa and 1974b).",
+      "quote_verified": true,
+      "entity_as_written": "Forest Service",
+      "role_as_written": "federal land management agency, trail planning"
+    }
+  ],
+  "window_pages": [
+    1,
+    51
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 6,
+  "synthetic_no_complaint": false
+}

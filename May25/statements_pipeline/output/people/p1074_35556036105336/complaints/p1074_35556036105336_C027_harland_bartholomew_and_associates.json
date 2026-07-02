@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036105336_C027",
+  "complainer_id": "p1074_35556036105336_K012",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 27,
+  "entity": "Harland Bartholomew and Associates",
+  "kind": "organization",
+  "role": "Consultant planners working with the Randolph Community",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes HBA conveying fire department's own assessment of service adequacy, no independent position stated",
+  "summary": "Harland Bartholomew and Associates appears in the document solely as the consultant planners working with the Randolph Community who met with Acting Chief Barlow of the Richmond Fire Department. The document records that in this meeting the Fire Chief stated that fire service to the Randolph area was adequate and that statistics would not justify a new fire station, with HBA serving as the conduit for this information rather than expressing an independent position of their own.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Harland Bartholomew and Associates, as consultant planners for the Randolph Community, met with Acting Chief Barlow of the Richmond Fire Department, who stated that fire service to the Randolph area was adequate and that statistics would not justify a new fire station in the project area.",
+  "evidence_pages": [
+    "45"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036105336_R002"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Acting Chief Barlow of the Richmond Fire Department in a meeting with a representative of Harland Bartholomew and Associates (consultant planners working with the Randolph Community) stated that \"no one could disprove our service is adequate\"",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "45"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Acting Chief Barlow of the Richmond Fire Department in a meeting with a representative of Harland Bartholomew and Associates (consultant planners working with the Randolph Community) stated that \"no one could disprove our service is adequate\"",
+      "quote_verified": true,
+      "entity_as_written": "Harland Bartholomew and Associates",
+      "role_as_written": "Consultant planners working with the Randolph Community"
+    }
+  ],
+  "window_pages": [
+    35,
+    55
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 12,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C016",
+  "complainer_id": "p1074_35556038322269_K028",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 16,
+  "entity": "Los Angeles Regional Transportation Study (LARTS)",
+  "kind": "organization",
+  "role": "Branch of CalTrans conducting travel pattern analyses",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "cited as data provider for travel pattern analyses used to select transit corridors, no position expressed",
+  "summary": "LARTS (Los Angeles Regional Transportation Study), a branch of CalTrans, is referenced solely as the organization that performed travel pattern analyses used by the Technical Advisory Committee to select eight primary regional transportation corridors for initial consideration in Phase I planning. The entity is described in a purely technical, informational capacity with no stance on the project itself expressed or attributed.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "LARTS is described as having performed travel pattern analyses that informed the TAC's selection of eight primary regional transportation corridors for initial consideration, with no position on the project attributed to the organization.",
+  "evidence_pages": [
+    "68"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "These corridors were selected, based upon analyses of travel patterns performed by the Los Angeles Regional Transportation Study (LARTS) branch of CalTrans.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "68"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "These corridors were selected, based upon analyses of travel patterns performed by the Los Angeles Regional Transportation Study (LARTS) branch of CalTrans.",
+      "quote_verified": true,
+      "entity_as_written": "Los Angeles Regional Transportation Study (LARTS)",
+      "role_as_written": "Branch of CalTrans conducting travel pattern analyses"
+    }
+  ],
+  "window_pages": [
+    58,
+    78
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 28,
+  "synthetic_no_complaint": false
+}

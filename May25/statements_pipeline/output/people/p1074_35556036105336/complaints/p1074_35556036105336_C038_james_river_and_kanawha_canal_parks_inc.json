@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036105336_C038",
+  "complainer_id": "p1074_35556036105336_K028",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 38,
+  "entity": "James River and Kanawha Canal Parks, Inc.",
+  "kind": "organization",
+  "role": "Litigant against Downtown Expressway project",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "identified as litigant bringing suit against the Downtown Expressway project",
+  "summary": "James River and Kanawha Canal Parks, Inc. is mentioned solely as the organization that brought litigation against the Downtown Expressway project. The Federal Highway Administration's comment letter notes that the Downtown Expressway section passing through the Randolph area is the subject of this litigation, and that the Federal Government's request to be dismissed from the case had not yet been acted upon by the Court. The organization's own position is not directly stated in the document, but their role as litigant implies opposition to the Downtown Expressway.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Federal Highway Administration's comment letter identifies James River and Kanawha Canal Parks, Inc. as the party that brought litigation against the Downtown Expressway, noting the Federal Government had sought dismissal from the case but the Court had not yet acted.",
+  "evidence_pages": [
+    "70"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "this is the section of road now involved in litigation brought by the James River and Kanawha Canal Parks, Inc.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "70"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "this is the section of road now involved in litigation brought by the James River and Kanawha Canal Parks, Inc.",
+      "quote_verified": true,
+      "entity_as_written": "James River and Kanawha Canal Parks, Inc.",
+      "role_as_written": "Litigant against Downtown Expressway project"
+    }
+  ],
+  "window_pages": [
+    60,
+    80
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 28,
+  "synthetic_no_complaint": false
+}

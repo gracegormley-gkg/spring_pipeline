@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C108",
+  "complainer_id": "p0491_35556036091957_K101",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 108,
+  "entity": "Federal Communications Commission",
+  "kind": "agency",
+  "role": "federal agency commenter",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter expresses general agreement with ORV restrictions but raises specific concerns about ensuring access for communications facilities and governmental inspection operations",
+  "summary": "The Federal Communications Commission submitted a formal letter expressing general agreement with the draft environmental statement's objectives to restrict ORV use on public lands. However, the FCC raised specific concerns about ensuring that common carriers and Commission licensees with communications facilities on public lands retain reasonable access for construction, operation, and maintenance, and that governmental inspection and investigatory operations using off-road vehicles be explicitly exempted from the proposed restrictions.",
+  "form": "letter",
+  "complaint_summary": "The FCC expressed general agreement with the ORV restriction objectives but raised concerns that the proposed regulations must explicitly ensure reasonable access for common carriers and Commission licensees to maintain communications facilities on public lands, and that governmental inspection and investigatory operations using off-road vehicles be clearly exempted from the restrictions.",
+  "evidence_pages": [
+    "146"
+  ],
+  "statement": {
+    "text": "This concerns the draft environmental statement prepared by the Department of the Interior's Bureau of Outdoor Recreation and dated May 26, 1972. The statement proposes regulations for use of motorized off-road vehicles on the public lands.\nThe Commission wishes to avail itself of the opportunity extended on June 2, 1972 (37 F.R. 11078) to comment on the draft environmental statement. We are in general agreement with the objectives of the statement which would restrict the use of off-road vehicles on lands administered by the Department to ensure that such use, where permitted, would be compatible with other uses, and would not result in significant adverse environmental impact or cause irreversible damage to existing ecological balances.\nThe proposed regulations would implement Executive Order 11644 which appears to have been prompted primarily because of the rapidly increasing use of off-road vehicles such as minibikes and snowmobiles for recreational purposes. However, the restrictions appear broad enough to be applicable as well to motorized vehicles used for business or other non-recreational purposes. Accordingly, we are concerned that provision be made so that common carriers and others who have wire, cable or radio communications facilities on public lands pursuant to land-use permits may have reasonable access to such facilities, to whatever extent may be necessary or desirable, in connection with the construction, operation and maintenance of such communications facilities. In this connection, we note that any vehicle whose use was expressly authorized by an agency head of the Department under a permit, lease, license, or contract would be exempt from the proposed use restrictions on off-road vehicles. However, it is not apparent whether existing or future authorizations for use of Department lands for\n\ncommunication requirements by common carriers and Commission licensees would include authority for use of off-road vehicles necessarily incidental to construction, operation, and maintenance of the necessary communication facilities.\nAs you are aware, communication facilities on or traversing public lands often provide vital public and national defense communication circuits. Continuity of such service is dependent upon immediate access to the lines and other facilities at all times. Further, spurious emissions from radio transmitters could cause destructive electrical interference to communication requirements of others, including harm to common carrier circuits which the Commission is charged with protecting from such interference. It is also possible that such interference could pose risks to safety of life and property.\nThe foregoing public interest considerations are merely illustrative of those with which the Commission may be concerned and are not intended to encompass all such considerations which we may properly consider in discharging our statutory responsibilities.\nSuch responsibilities are discharged, in part, via inspections and investigations by Commission employees and other governmental agents in the field, often involving the off-road use of motorized vehicles. It would appear that such operations would be exempt from the proposed restrictions in light of the provision excepting law enforcement vehicles. We believe it imperative that it be made clear that such governmental inspection and investigatory operations will be exempted.\nIn short, the Commission wishes to stress the necessity for ensuring that whatever regulations are finally promulgated restricting off-road uses of vehicles, adequate provision be made to ensure that vital communication requirements are capable of being duly satisfied at all times.\nThis letter was adopted by the Commission on July 6, 1972. Commissioner Nicholas Johnson concurring in results; Commissioner Benjamin Hooks absent.",
+    "opening_anchor": "This concerns the draft environmental statement prepared by the Department of the Interior's Bureau of Outdoor Recreation and dated May 26, 1972.",
+    "closing_anchor": "This letter was adopted by the Commission on July 6, 1972. Commissioner Nicholas Johnson concurring in results; Commissioner Benjamin Hooks absent.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We are in general agreement with the objectives of the statement which would restrict the use of off-road vehicles on lands administered by the Department to ensure that such use, where permitted, would be compatible with other uses, and would not result in significant adverse environmental impact or cause irreversible damage to existing ecological balances.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "146"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We are in general agreement with the objectives of the statement which would restrict the use of off-road vehicles on lands administered by the Department to ensure that such use, where permitted, would be compatible with other uses, and would not result in significant adverse environmental impact or cause irreversible damage to existing ecological balances.",
+      "quote_verified": true,
+      "entity_as_written": "Federal Communications Commission",
+      "role_as_written": "federal agency commenter"
+    }
+  ],
+  "window_pages": [
+    136,
+    156
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 101,
+  "synthetic_no_complaint": false
+}

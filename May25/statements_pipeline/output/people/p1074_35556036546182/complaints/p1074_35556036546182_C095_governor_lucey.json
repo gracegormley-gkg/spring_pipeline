@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036546182_C095",
+  "complainer_id": "p1074_35556036546182_K050",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 95,
+  "entity": "Governor Lucey",
+  "kind": "official",
+  "role": "Governor of Wisconsin",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as issuing warnings and pronouncements demanding change in transportation energy consumption policies that encourage automobile use",
+  "summary": "Governor Lucey is cited in Statement C as having made warnings, speeches, and pronouncements calling for energy conservation and a change in Wisconsin's transportation construction policies that encourage increased automobile use. The letter writer uses the Governor's stated positions as evidence that the Airport Spur project conflicts with state-level goals. No direct statement from the Governor appears; his position is paraphrased by a third party to support opposition to the project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Governor Lucey's warnings, speeches, and pronouncements on energy conservation are cited as evidence that Wisconsin's transportation construction policies encouraging increased automobile use — and by extension the Airport Spur project — conflict with state-level goals.",
+  "evidence_pages": [
+    "192"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R023"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "On the state level the series of warnings, speeches and pronouncements by the Governor and the Attorney General concerning the need for energy conservation all point to a demand for a change in our transportation energy consuming tendencies and the state of Wisconsin's transportation construction policies that encourage increased automobile use.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "192"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "On the state level the series of warnings, speeches and pronouncements by the Governor and the Attorney General concerning the need for energy conservation all point to a demand for a change in our transportation energy consuming tendencies and the state of Wisconsin's transportation construction policies that encourage increased automobile use.",
+      "quote_verified": true,
+      "entity_as_written": "Governor Lucey",
+      "role_as_written": "Governor of Wisconsin"
+    }
+  ],
+  "window_pages": [
+    182,
+    202
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 50,
+  "synthetic_no_complaint": false
+}

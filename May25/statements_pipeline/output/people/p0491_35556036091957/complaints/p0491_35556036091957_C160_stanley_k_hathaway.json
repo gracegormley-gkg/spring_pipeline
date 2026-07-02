@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C160",
+  "complainer_id": "p0491_35556036091957_K138",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 160,
+  "entity": "Stanley K. Hathaway",
+  "kind": "official",
+  "role": "Governor of Wyoming",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly supports proposal only if based on 'open until closed' philosophy with flexibility built in",
+  "summary": "Governor Stanley K. Hathaway of Wyoming wrote to Secretary Morton expressing strong interest in the ORV proposal given that nearly 50% of Wyoming's land is federally owned. He conditionally supported the proposal on the condition that it adopt an 'open until closed' philosophy, allowing all areas to remain open to ORV use unless specific circumstances warrant closure, arguing this approach had worked successfully in Wyoming and would provide the flexibility needed for successful administration across diverse regions.",
+  "form": "letter",
+  "complaint_summary": "Governor Hathaway conditionally supports the ORV proposal, insisting it must be based on an 'open until closed' philosophy to ensure flexibility for Wyoming's vast federal lands and the state's economy dependent on outdoor activities.",
+  "evidence_pages": [
+    "222"
+  ],
+  "statement": {
+    "text": "The State of Wyoming is quite concerned regarding the proposed rules and regulations to be established by the Department of the Interior concerning the use of off-road vehicles.\nFederal consideration and thinking on this proposal was first officially brought to our attention at a recent Wyoming and federal Recreation Action Team meeting and subsequently when the State was given the opportunity to review the Draft Environmental Statement on the subject.\nThe one aspect of the proposal which both the State and Wyoming based federal administrators point to as the key to success is that the proposal must be based on the philosophy that all areas will be considered open to use until circumstances and conditions develop which would merit specific action to the contrary. This open until closed philosophy has successfully been used in Wyoming for pears and by its continuance we feel that enough flexibility will be built into the proposal to allow for successful administration in Wyoming as well as the highly populated areas east of the Mississippi and on the west coast.\nAs you know, almost 50 per cent of the surface land of this state is owned by the federal government, and this land will obviously be directly affected by this proposal. Major activities such as mineral exploration, agriculture, hunting and fishing and all general outdoor recreational activities directly and substantially\n\nThe Honorable Rogers C.B. Morton Page 2\nJuly 20, 1972\naffect Wyoming's economy and our way of life. Thus, we feel we have a substantial interest in the initiation and success of this proposal.\nThank you for your consideration of this matter.\nWith best wishes, I am\nSincerely yours,",
+    "opening_anchor": "The State of Wyoming is quite concerned regarding the proposed rules and regulations to be established by the Department of the Interior concerning the use of off-road vehicles.",
+    "closing_anchor": "Thank you for your consideration of this matter.\n\nWith best wishes, I am\n\nSincerely yours,",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The one aspect of the proposal which both the State and Wyoming based federal administrators point to as the key to success is that the proposal must be based on the philosophy that all areas will be considered open to use until circumstances and conditions develop which would merit specific action to the contrary.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "222"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The one aspect of the proposal which both the State and Wyoming based federal administrators point to as the key to success is that the proposal must be based on the philosophy that all areas will be considered open to use until circumstances and conditions develop which would merit specific action to the contrary.",
+      "quote_verified": true,
+      "entity_as_written": "Stanley K. Hathaway",
+      "role_as_written": "Governor of Wyoming"
+    }
+  ],
+  "window_pages": [
+    212,
+    232
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 138,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C028",
+  "complainer_id": "p1074_35556038322269_K037",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 28,
+  "entity": "U.S. Department of Transportation",
+  "kind": "agency",
+  "role": "Federal transportation department",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as having taken administrative/funding actions enabling project elements without expressing support or opposition",
+  "summary": "The U.S. Department of Transportation is mentioned in a factual, administrative capacity: it redesignated the Harbor Freeway as an interstate highway (enabling Federal funding for an HOV/bus facility) and approved construction of I-105 with a transitway. The Department also approved proceeding with preliminary engineering on Elements I, II, and III of the Regional Transit Development Program in December 1976, while stipulating that SCRTD complete environmental review. No opinion for or against the overall project is expressed.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "In December 1976, the U.S. Secretary of Transportation approved proceeding with preliminary engineering on Elements I, II, and III of the RTDP, subject to completion of the environmental impact process, while stipulating that SCRTD conduct only 'initial' engineering on both rail and all-bus alternatives for Element IV.",
+  "evidence_pages": [
+    "72"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The U. S. Department of Transportation has redesignated the Harbor Freeway as an interstate highway, thereby making eligible for Federal funding assistance an 8-mile HOV/bus facility between Adams Boulevard and I-105 and PE/EIS work has been authorized.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "72"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The U. S. Department of Transportation has redesignated the Harbor Freeway as an interstate highway, thereby making eligible for Federal funding assistance an 8-mile HOV/bus facility between Adams Boulevard and I-105 and PE/EIS work has been authorized.",
+      "quote_verified": true,
+      "entity_as_written": "U.S. Department of Transportation",
+      "role_as_written": "Federal transportation department"
+    }
+  ],
+  "window_pages": [
+    62,
+    82
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 37,
+  "synthetic_no_complaint": false
+}

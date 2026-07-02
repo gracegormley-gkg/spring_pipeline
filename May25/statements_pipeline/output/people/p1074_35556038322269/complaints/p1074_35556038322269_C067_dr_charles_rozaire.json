@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556038322269_C067",
+  "complainer_id": "p1074_35556038322269_K074",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 67,
+  "entity": "Dr. Charles Rozaire",
+  "kind": "individual",
+  "role": "Los Angeles County Museum of Natural History archaeologist",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as providing factual archaeological information about prehistoric artifacts in the downtown area",
+  "summary": "Dr. Charles Rozaire of the Los Angeles County Museum of Natural History is cited as an expert source providing factual information about prehistoric archaeological finds in the downtown Los Angeles area. He noted that isolated prehistoric artifacts have been found throughout downtown and that a human skeleton was unearthed near Temple and Hill Streets during construction. His input is presented as informational context for the archaeological section of the EIS, with no explicit stance for or against the project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Dr. Rozaire indicated that isolated prehistoric artifacts have been found throughout the downtown area and that a human skeleton was unearthed near Temple and Hill Streets during construction of an air-conditioning plant, testifying to prehistoric human settlement of downtown Los Angeles.",
+  "evidence_pages": [
+    "256"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual",
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "Dr. Charles Rozaire of the Los Angeles County Museum of Natural History indicated that isolated prehistoric artifacts have been found throughout the downtown area, and that a human skeleton was unearthed near the corner of Temple and Hill Streets during construction of an air-conditioning plant.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "256"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Dr. Charles Rozaire of the Los Angeles County Museum of Natural History indicated that isolated prehistoric artifacts have been found throughout the downtown area, and that a human skeleton was unearthed near the corner of Temple and Hill Streets during construction of an air-conditioning plant.",
+      "quote_verified": false,
+      "entity_as_written": "Dr. Charles Rozaire",
+      "role_as_written": "Los Angeles County Museum of Natural History archaeologist"
+    }
+  ],
+  "window_pages": [
+    246,
+    266
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 74,
+  "synthetic_no_complaint": false
+}

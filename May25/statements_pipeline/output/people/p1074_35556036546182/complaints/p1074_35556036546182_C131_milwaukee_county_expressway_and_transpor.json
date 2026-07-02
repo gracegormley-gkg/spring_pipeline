@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036546182_C131",
+  "complainer_id": "p1074_35556036546182_K121",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 131,
+  "entity": "Milwaukee County Expressway and Transporation Commission",
+  "kind": "agency",
+  "role": "County transportation agency, study author",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "Commission chairman's statement read at hearing supporting Alternate #5 as least disruptive with minimal adverse environmental impacts",
+  "summary": "The Milwaukee County Expressway and Transportation Commission participated in the development of the Airport Spur and formally expressed support for Alternate #5 as offering the least disruptive connection to the airport with minimal adverse environmental impacts. The Commission's staff also conducted a noise study analyzing the impact of adding access ramps at Howell Avenue, finding an increase of less than 1 dBA along the Airport Spur, with results incorporated into the Final EIS.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Commission's staff conducted a noise study on the impact of adding ramps at Howell Avenue, finding an increase of less than 1 dBA along the Airport Spur, with results incorporated into the Final EIS.",
+  "evidence_pages": [
+    "241"
+  ],
+  "statement": {
+    "text": "A study of the increased noise because of the addition of access to Howell Avenue was conducted by the staff of the Milwaukee County Expressway and Transporation Commission. The results show an increase of less than 1 dBA along the Airport Spur. The results of this study are incorporated in this Final EIS. See pages 114 and 115.",
+    "opening_anchor": "A study of the increased noise because of the addition of access to Howell Avenue was conducted by the staff of the Milwaukee County Expressway and Transporation Commission.",
+    "closing_anchor": "The results of this study are incorporated in this Final EIS. See pages 114 and 115.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "A study of the increased noise because of the addition of access to Howell Avenue was conducted by the staff of the Milwaukee County Expressway and Transporation Commission.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "241"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "A study of the increased noise because of the addition of access to Howell Avenue was conducted by the staff of the Milwaukee County Expressway and Transporation Commission.",
+      "quote_verified": true,
+      "entity_as_written": "Milwaukee County Expressway and Transporation Commission",
+      "role_as_written": "County transportation agency, study author"
+    }
+  ],
+  "window_pages": [
+    231,
+    251
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 121,
+  "synthetic_no_complaint": false
+}

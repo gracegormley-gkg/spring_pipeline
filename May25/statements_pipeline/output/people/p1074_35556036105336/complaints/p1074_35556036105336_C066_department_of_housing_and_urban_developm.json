@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556036105336_C066",
+  "complainer_id": "p1074_35556036105336_K008",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 66,
+  "entity": "Department of Housing and Urban Development",
+  "kind": "agency",
+  "role": "Preparing agency / project funder",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "described as funding agency administering the project under Title I, with no expressed opinion for or against",
+  "summary": "The Department of Housing and Urban Development (HUD) is described as the federal funding agency for the Randolph Urban Renewal Project, providing grants, planning advances, and temporary loans under Title I of the Housing Act of 1949. HUD's role is administrative and financial — reviewing the program at a Mid-Planning Conference and receiving the Final Project Report — rather than expressing any evaluative stance on the project. No complaints, objections, or endorsements are attributed to HUD in this window.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "13"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "HUD funding is allocated in the form of grants, planning advances, and temporary loans to finance area renewal through survey and planning, land acquisition and clearance, new building construction, and upgrading of publicly owned infrastructure facilities.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "13"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "HUD funding is allocated in the form of grants, planning advances, and temporary loans to finance area renewal through survey and planning, land acquisition and clearance, new building construction, and upgrading of publicly owned infrastructure facilities.",
+      "quote_verified": true,
+      "entity_as_written": "Department of Housing and Urban Development",
+      "role_as_written": "Preparing agency / project funder"
+    }
+  ],
+  "window_pages": [
+    3,
+    23
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 8,
+  "synthetic_no_complaint": true
+}

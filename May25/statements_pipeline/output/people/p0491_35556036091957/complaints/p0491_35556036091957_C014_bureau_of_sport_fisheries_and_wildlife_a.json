@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C014",
+  "complainer_id": "p0491_35556036091957_K009",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 14,
+  "entity": "Bureau of Sport Fisheries and Wildlife, Acting Deputy Director",
+  "kind": "official",
+  "role": "Interior bureau reviewer",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes overall approval with multiple specific suggestions and criticisms",
+  "summary": "The Bureau of Sport Fisheries and Wildlife, Acting Deputy Director, viewed the draft environmental statement as a comprehensive document setting forth criteria for natural resource protection, but raised several specific concerns: the need for definitions of key terms, clarification of ORV status on lands open to mineral entry, removal of what they considered inappropriate economic impact descriptions, consistency in open/closed bureau policies, and the establishment of specific noise level standards in decibels. The entity appears twice in the document window in nearly identical paraphrase form, once in the main body summary section and once in the appendix's Federal Agency Comments section.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Acting Deputy Director felt the statement was comprehensive but suggested adding definitions, clarifying ORV status on mineral-entry lands, removing unnecessary economic impact descriptions, ensuring consistent open/closed bureau policies, and specifying noise levels in decibels.",
+  "evidence_pages": [
+    "24"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Bureau of Sport Fisheries and Wildlife, Acting Deputy Director - felt that environmental statement represented a comprehensive statement setting forth criteria for protection of natural resources on Federal lands. Suggested that statement include definitions of ORV, public lands, etc., and define status of ORV use on public lands which are open to mineral entry and established mining claims. Felt that much of the description of economic impacts in the statement is inappropriate and unnecessary.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "24"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Bureau of Sport Fisheries and Wildlife, Acting Deputy Director - felt that environmental statement represented a comprehensive statement setting forth criteria for protection of natural resources on Federal lands. Suggested that statement include definitions of ORV, public lands, etc., and define status of ORV use on public lands which are open to mineral entry and established mining claims. Felt that much of the description of economic impacts in the statement is inappropriate and unnecessary.",
+      "quote_verified": true,
+      "entity_as_written": "Bureau of Sport Fisheries and Wildlife, Acting Deputy Director",
+      "role_as_written": "Interior bureau reviewer"
+    }
+  ],
+  "window_pages": [
+    14,
+    34
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 9,
+  "synthetic_no_complaint": false
+}

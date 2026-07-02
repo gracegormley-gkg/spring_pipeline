@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556039563135_C112",
+  "complainer_id": "p1074_35556039563135_K096",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 112,
+  "entity": "James F. Walker",
+  "kind": "official",
+  "role": "Official, Comprehensive State Health Planning Agency",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly states no comment on the listed environmental statements including the project",
+  "summary": "James F. Walker, of the Comprehensive State Health Planning Agency, submitted a letter indicating that his agency reviewed the environmental statement for F.A. Route 23 (U.S. Route 30), Section 22-23-12-R, Cook County, along with several other statements, and had no comment on any of them. The letter neither supports nor opposes the project, simply declining to offer substantive input.",
+  "form": "letter",
+  "complaint_summary": "Walker's agency reviewed the environmental statement for F.A. Route 23 (U.S. Route 30), Section 22-23-12-R, Cook County, along with several other statements, and offered no comment.",
+  "evidence_pages": [
+    "204"
+  ],
+  "statement": {
+    "text": "We have reviewed the material structured, and have no comment on the following:\n(1) Euvironmental Statement (2) Environmental Statement FAP Routs 409 'US 50 F.A. Pouto 23 West of Clay City in U.S. Posta 30: Lawrenceville, l'laries Section 22-20-12-R Clay, Richard, Lawrence Counties Cook County \n(3) Enviscimental Successor FA Route 401 Stephenson Co...\n(4) Environmental Statement I-5- Post Area Will Toward\n5: Env.ronmental for score to be boristanental St. or man DAP Route 409 (DE 10) Centralia L. Xenna, ..... Section Section 19-1 Marion County \nFA Rolte 24 13.4 00 000\nSimoerely.\nJaras F. Walker B. statistic .\nJFW: CAK\nC.C. Mr. Lerry Malo ; Albert W. Sroke, M.D. Grange A. Dindsley",
+    "opening_anchor": "We have reviewed the material structured, and have no comment on the following:",
+    "closing_anchor": "Jaras F. Walker B. statistic .\nJFW: CAK\nC.C. Mr. Lerry Malo ; Albert W. Sroke, M.D. Grange A. Dindsley",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We have reviewed the material structured, and have no comment on the following:",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "204"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We have reviewed the material structured, and have no comment on the following:",
+      "quote_verified": true,
+      "entity_as_written": "James F. Walker",
+      "role_as_written": "Official, Comprehensive State Health Planning Agency"
+    }
+  ],
+  "window_pages": [
+    194,
+    214
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 96,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036811230_C036",
+  "complainer_id": "p1074_35556036811230_K035",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 36,
+  "entity": "City of Chicago",
+  "kind": "government",
+  "role": "Local government with noise ordinance cited as example",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "cited only as a factual example of noise ordinance standards, no position on the project expressed",
+  "summary": "The City of Chicago is referenced solely as an illustrative example of the trend toward quieter buses, specifically its noise ordinance that sets maximum decibel limits for new heavy vehicles including buses. No position on the Buffalo Metrorail project is attributed to the City of Chicago; it serves purely as a data point supporting the document's claim that newer buses will be quieter.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The City of Chicago is cited as an example of the trend toward quieter buses, noting its noise ordinance limits heavy vehicles (including buses) to 84 dBA as of January 1975, reducing to 75 dBA by January 1980.",
+  "evidence_pages": [
+    "171"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "As an example of the trend to quieter buses, the City of Chicago has a noise ordinance that controls the sale of new vehicles.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "171"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "As an example of the trend to quieter buses, the City of Chicago has a noise ordinance that controls the sale of new vehicles.",
+      "quote_verified": true,
+      "entity_as_written": "City of Chicago",
+      "role_as_written": "Local government with noise ordinance cited as example"
+    }
+  ],
+  "window_pages": [
+    161,
+    181
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 35,
+  "synthetic_no_complaint": false
+}

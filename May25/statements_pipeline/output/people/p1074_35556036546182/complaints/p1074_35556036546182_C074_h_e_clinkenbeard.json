@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036546182_C074",
+  "complainer_id": "p1074_35556036546182_K052",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 74,
+  "entity": "H. E. Clinkenbeard",
+  "kind": "official",
+  "role": "Assistant Director of the Southeastern Regional Planning Commission",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "testified as SEWRPC spokesman explicitly supporting the proposed highway improvement as in accord with long-range transportation plans",
+  "summary": "H. E. Clinkenbeard, as spokesman for the Southeastern Wisconsin Regional Planning Commission (SEWRPC), testified at the March 25, 1969 Corridor Location Public Hearing in support of the Airport Spur freeway. He stated that the proposed connection was consistent with SEWRPC's long-range transportation system development plans and Jurisdictional Highway Plan, and characterized it as an essential connection to one of the region's largest traffic generators. No response from the agency was deemed necessary.",
+  "form": "testimony",
+  "complaint_summary": "Clinkenbeard testified as SEWRPC's spokesman that the organization supported the proposed highway improvement as consistent with their long-range transportation system development plans and Jurisdictional Highway Plan, calling it an essential connection to a major traffic generator.",
+  "evidence_pages": [
+    "157"
+  ],
+  "statement": {
+    "text": "Spokesman for SEWRPC stating they supported the proposed highway improvement and that it is in accord with their long range transportation system development plans. The proposed connection is as shown on their proposed Jurisdictional Highway Plan. They consider it an essential connection to one of the large generators of vehicular traffic within the region.",
+    "opening_anchor": "Spokesman for SEWRPC stating they supported the proposed highway improvement and that it is in accord with their long range transportation system development plans.",
+    "closing_anchor": "They consider it an essential connection to one of the large generators of vehicular traffic within the region.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Spokesman for SEWRPC stating they supported the proposed highway improvement and that it is in accord with their long range transportation system development plans.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "157"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Spokesman for SEWRPC stating they supported the proposed highway improvement and that it is in accord with their long range transportation system development plans.",
+      "quote_verified": true,
+      "entity_as_written": "H. E. Clinkenbeard",
+      "role_as_written": "Assistant Director of the Southeastern Regional Planning Commission"
+    }
+  ],
+  "window_pages": [
+    147,
+    167
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 52,
+  "synthetic_no_complaint": false
+}

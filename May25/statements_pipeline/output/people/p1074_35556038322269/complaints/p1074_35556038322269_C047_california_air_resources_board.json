@@ -1,0 +1,69 @@
+{
+  "complaint_id": "p1074_35556038322269_C047",
+  "complainer_id": "p1074_35556038322269_K048",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 47,
+  "entity": "California Air Resources Board",
+  "kind": "agency",
+  "role": "source of emission factors; determiner of SO2 standard violations",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "cited as technical source for emission factors and SO2 standard violation determination, no position expressed",
+  "summary": "The California Air Resources Board (CARB) is referenced in this document solely as a technical authority: once as a source of emission factors used in calculating air quality impacts of transit alternatives, and once as the body that determined which portion of the South Coast Air Basin is projected to violate the SO2 standard. CARB does not express support for or opposition to any transit alternative; it is cited purely for its regulatory and technical data.",
+  "form": "none",
+  "complaint_summary": "CARB is cited in a footnote as having determined that only the Los Angeles County portion of the South Coast Air Basin is projected to violate the federal SO2 standard more than once per year.",
+  "evidence_pages": [
+    "157"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence"
+  ],
+  "summary_quote": "The most recent emission factors were used as prepared by the U.S. Environmental Protection Agency and the California Air Resources Board.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "157"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The most recent emission factors were used as prepared by the U.S. Environmental Protection Agency and the California Air Resources Board.",
+      "quote_verified": true,
+      "entity_as_written": "California Air Resources Board",
+      "role_as_written": "source of emission factors; determiner of SO2 standard violations"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "292"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "the California Air Resources Board was contacted to determine a suitable methodology for evaluating air quality impacts of the various alternatives.",
+      "quote_verified": false,
+      "entity_as_written": "California Air Resources Board",
+      "role_as_written": "State agency consulted on air quality methodology"
+    }
+  ],
+  "window_pages": [
+    147,
+    177
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 48,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,89 @@
+{
+  "complaint_id": "p1074_35556036546182_C024",
+  "complainer_id": "p1074_35556036546182_K010",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 24,
+  "entity": "Milwaukee County Expressway and Transportation Commission",
+  "kind": "agency",
+  "role": "County transportation agency, co-proposer of Airport Spur",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "named as co-proposer of Airport Spur and described as jointly proposing the freeway connection with the Wisconsin Division of Highways",
+  "summary": "The Milwaukee County Expressway and Transportation Commission is a co-proposer of the Airport Spur project, acting jointly with the Wisconsin Division of Highways to provide a direct freeway connection between I-94 and General Mitchell Field. The Commission initiated the proposal in response to federal directives addressing airport access congestion, and the proposed facility was designed in accordance with Commission criteria. The Commission also formally responded to a City of Milwaukee Common Council resolution regarding the project in March 1974.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Milwaukee County Expressway and Transportation Commission responded on March 27, 1974 to a resolution of the Common Council of the City of Milwaukee regarding the Airport Spur.",
+  "evidence_pages": [
+    "22"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "In response to increased congestion on airport access routes, Milwaukee County Expressway and Transportation Commission, by federal directive, initiated a proposal linking General Mitchell Field to the nearest Interstate route.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 4,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "10"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In response to increased congestion on airport access routes, Milwaukee County Expressway and Transportation Commission, by federal directive, initiated a proposal linking General Mitchell Field to the nearest Interstate route.",
+      "quote_verified": true,
+      "entity_as_written": "Milwaukee County Expressway and Transportation Commission",
+      "role_as_written": "County transportation agency, co-proposer of Airport Spur"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "107"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Milwaukee County Expressway and Transportation Commission engaged a consultant to analyze the noise impact for the approved Airport Spur design alignment within Corridor #5.",
+      "quote_verified": true,
+      "entity_as_written": "Milwaukee County Expressway and Transportation Commission",
+      "role_as_written": "county transportation planning body"
+    },
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "163"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Commission has actively participated in the development of the Airport Spur and feels that Alternate #5 offers the least disruptive connection to the airport with minimal adverse environmental impacts.",
+      "quote_verified": true,
+      "entity_as_written": "Milwaukee County Expressway and Transportation Commission",
+      "role_as_written": "County transportation commission, commenter"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "232"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Stated the Commission participated in the development of the Airport Spur and that Alternate #5 appears to offer the least disruptive connection to the airport with minimal adverse environmental impacts.",
+      "quote_verified": true,
+      "entity_as_written": "Milwaukee County Expressway and Transportation Commission",
+      "role_as_written": "county transportation commission"
+    }
+  ],
+  "window_pages": [
+    1,
+    52
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 10,
+  "synthetic_no_complaint": false
+}

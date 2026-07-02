@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556036811230_C074",
+  "complainer_id": "p1074_35556036811230_K058",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 74,
+  "entity": "U.S. Environmental Protection Agency",
+  "kind": "agency",
+  "role": "federal agency whose reports on community noise and noise criteria are cited as references for noise design guidelines",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "cited only as reference source for noise criteria and regulatory schemes, no position expressed",
+  "summary": "The U.S. Environmental Protection Agency appears in this document window solely as the source of multiple technical reports cited as references for noise design guidelines and regulatory frameworks. The EPA does not express any position on the project itself; its reports on community noise, noise criteria, and noise abatement laws are used as technical underpinnings for the transit system's noise specifications. No complaints, objections, or endorsements are attributed to the EPA.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "275"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "\"Community Noise\", U. S. Environmental Protection Agency Report #NTID300.3, December 31, 1971.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "275"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "\"Community Noise\", U. S. Environmental Protection Agency Report #NTID300.3, December 31, 1971.",
+      "quote_verified": true,
+      "entity_as_written": "U.S. Environmental Protection Agency",
+      "role_as_written": "federal agency whose reports on community noise and noise criteria are cited as references for noise design guidelines"
+    }
+  ],
+  "window_pages": [
+    265,
+    284
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 58,
+  "synthetic_no_complaint": true
+}

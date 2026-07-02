@@ -1,0 +1,80 @@
+{
+  "complaint_id": "p1074_35556039563135_C058",
+  "complainer_id": "p1074_35556039563135_K086",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 58,
+  "entity": "Department of Housing and Urban Development",
+  "kind": "agency",
+  "role": "Federal agency, commenter on Section 4(f) land review",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "states awareness of no significantly harmful effect from temporary 4(f) land use, and separately concurs with no adverse environmental impact on low-income neighborhoods",
+  "summary": "The Department of Housing and Urban Development provided two separate comments: one during early coordination noting no significantly harmful effect from the temporary use of Section 4(f) land west of Thorn Creek Bridge, and one in response to the Draft Environmental Statement finding no adverse environmental impact on low-income neighborhoods. Both comments are non-objecting and supportive of the project proceeding, but neither explicitly advocates for the project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "HUD stated during early coordination that it was aware of no significantly harmful effect that the temporary use of the Section 4(f) land west of Thorn Creek Bridge would have on the area.",
+  "evidence_pages": [
+    "159"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556039563135_R017"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We are aware of no significantly harmful effect that the temporary use of this 4(f) land west of Thorn Creek Bridge would have on this area.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "195"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The subject proposal requires no comment from this Department",
+      "quote_verified": false,
+      "entity_as_written": "Department of Housing and Urban Development",
+      "role_as_written": "Federal agency reviewer"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "159"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We are aware of no significantly harmful effect that the temporary use of this 4(f) land west of Thorn Creek Bridge would have on this area.",
+      "quote_verified": true,
+      "entity_as_written": "Department of Housing and Urban Development",
+      "role_as_written": "Federal agency, commenter on Section 4(f) land review"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "159"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We are aware of no significantly harmful effect that the temporary use of this 4(f) land west of Thorn Creek Bridge would have on this area.",
+      "quote_verified": true,
+      "entity_as_written": "Department of Housing and Urban Development",
+      "role_as_written": "federal commenter on Section 4(f) lands"
+    }
+  ],
+  "window_pages": [
+    149,
+    191
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 86,
+  "synthetic_no_complaint": false
+}

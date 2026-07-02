@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p0491_35556036091957_C175",
+  "complainer_id": "p0491_35556036091957_K188",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 175,
+  "entity": "Verne Hart",
+  "kind": "official",
+  "role": "Kansas State Park and Resources Authority",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "written comment stating the statement is well presented and not conflicting with any policies of the Kansas State Park and Resources Authority",
+  "summary": "Verne Hart, representing the Kansas State Park and Resources Authority, submitted a written comment through the Kansas State Clearinghouse indicating that the draft environmental statement was well presented and did not conflict with any policies administered by the Authority. Hart expressed no objections or concerns, effectively endorsing the statement as submitted.",
+  "form": "written_comment",
+  "complaint_summary": "Verne Hart, on behalf of the Kansas State Park and Resources Authority, reviewed the draft environmental statement on ORV use and found it well presented and not in conflict with any of the Authority's policies.",
+  "evidence_pages": [
+    "250"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "This is to advise that we have reviewed the above referred to clearinghouse project, no. 1277ES, submitted by the Bureau of Outdoor",
+    "closing_anchor": "well presented and not conflicting with any policies presently administered by the Kansas State Park and Resources Authority.",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "We find the statement to be well presented and not conflicting with any policies presently administered by the Kansas State Park and Resources Authority.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "250"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "We find the statement to be well presented and not conflicting with any policies presently administered by the Kansas State Park and Resources Authority.",
+      "quote_verified": false,
+      "entity_as_written": "Verne Hart",
+      "role_as_written": "Kansas State Park and Resources Authority"
+    }
+  ],
+  "window_pages": [
+    240,
+    260
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 188,
+  "synthetic_no_complaint": false
+}

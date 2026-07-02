@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556038322269_C003",
+  "complainer_id": "p1074_35556038322269_K002",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 3,
+  "entity": "California Department of Transportation (CalTrans)",
+  "kind": "agency",
+  "role": "State transportation agency; study funder and IACC participant",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "listed as study funder and IACC/ITC participant with no expressed position for or against any alternative",
+  "summary": "CalTrans is identified as a co-funder of the study (providing 18% of costs via Proposition 5 fixed guideway funds) and as a participant in both the Inter-Agency Coordinating Committee (IACC) and the Interagency Technical Committee (ITC). The LARTS branch of CalTrans also provided major technical assistance in patronage forecasting. CalTrans is also noted as separately responsible for a Freeway Transit Project (Bus/HOV-ways) that is one of the other elements of the Regional Transportation Development Program, but no position for or against any of the eleven alternatives is attributed to CalTrans in this window.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "CalTrans is identified as providing 18% of study funding via Proposition 5 fixed guideway funds and as a member of the IACC and ITC, and its LARTS branch provided major technical assistance in patronage forecasting, but no position on the alternatives is expressed.",
+  "evidence_pages": [
+    "17"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Funding for the study effort has been 80 percent Federal, from UMTA Section 9 grants; 18 percent State, from California Department of Transportation (CalTrans) Proposition 5 fixed guideway funds; and the balance supplied by the Southern California Rapid Transit District.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "17"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Funding for the study effort has been 80 percent Federal, from UMTA Section 9 grants; 18 percent State, from California Department of Transportation (CalTrans) Proposition 5 fixed guideway funds; and the balance supplied by the Southern California Rapid Transit District.",
+      "quote_verified": true,
+      "entity_as_written": "California Department of Transportation (CalTrans)",
+      "role_as_written": "State transportation agency; study funder and IACC participant"
+    },
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "157"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "It was with the assistance of the California Department of Transportation using the Direct Travel Impact Model (DTIM) that these results were developed.",
+      "quote_verified": true,
+      "entity_as_written": "California Department of Transportation",
+      "role_as_written": "agency providing emission calculations using DTIM model"
+    }
+  ],
+  "window_pages": [
+    7,
+    41
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 2,
+  "synthetic_no_complaint": false
+}

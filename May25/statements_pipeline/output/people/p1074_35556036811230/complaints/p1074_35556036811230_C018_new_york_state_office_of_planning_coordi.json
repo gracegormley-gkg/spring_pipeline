@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036811230_C018",
+  "complainer_id": "p1074_35556036811230_K020",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 18,
+  "entity": "New York State Office of Planning Coordination (OPC)",
+  "kind": "agency",
+  "role": "planning study author",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "OPC study concluded significant transportation improvements were needed in the Corridor, supporting the transit project",
+  "summary": "The New York State Office of Planning Coordination (OPC) completed the Buffalo-Amherst Corridor Urban Impact Study in March 1969, assessing the impact of the new SUNYAB North Campus and the Audubon planned community. The OPC concluded that significant transportation improvements would be needed in the heavily traveled Corridor between downtown Buffalo and the new campus, and its recommendations directly prompted the NFTA to contract for further mass transit studies.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The OPC's 1969 study concluded that significant transportation improvements would be needed in the Buffalo-Amherst Corridor due to the new SUNYAB North Campus and Audubon planned community development, a conclusion described as still valid despite delays in campus and community completion.",
+  "evidence_pages": [
+    "79"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036811230_R001"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "In March 1969, the New York State Office of Planning Coordination (OPC) completed the Buffalo-Amherst Corridor Urban Impact Study.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "79"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In March 1969, the New York State Office of Planning Coordination (OPC) completed the Buffalo-Amherst Corridor Urban Impact Study.",
+      "quote_verified": true,
+      "entity_as_written": "New York State Office of Planning Coordination (OPC)",
+      "role_as_written": "planning study author"
+    }
+  ],
+  "window_pages": [
+    69,
+    89
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 20,
+  "synthetic_no_complaint": false
+}

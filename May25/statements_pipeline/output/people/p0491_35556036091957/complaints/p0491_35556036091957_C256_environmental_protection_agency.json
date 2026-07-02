@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p0491_35556036091957_C256",
+  "complainer_id": "p0491_35556036091957_K228",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 256,
+  "entity": "Environmental Protection Agency",
+  "kind": "agency",
+  "role": "Federal agency reviewing draft EIS (second letter)",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "concurs with general approach but urges stringent provisions and raises specific concerns about noise, public circulation of environmental assessments, and regulatory gaps",
+  "summary": "The Environmental Protection Agency reviewed the draft EIS twice, first concurring with the general approach to regulating ORV use while urging stringent provisions for environmental impact analysis, use controls, monitoring, and corrective measures, and deferring detailed comments pending review of proposed regulations. In a second, more detailed letter, EPA raised specific concerns about the lack of public circulation for environmental assessments, the inadequacy of the EIS in relating impact severity to regulatory schemes, and the need for noise standards and criteria for ORV use on public lands.",
+  "form": "letter",
+  "complaint_summary": "EPA concurs with the general regulatory approach but urges that specific regulations include stringent provisions for area-by-area environmental impact analysis, use controls, monitoring, and prompt corrective measures, while deferring detailed comments until proposed regulations are available for review.",
+  "evidence_pages": [
+    "337"
+  ],
+  "statement": {
+    "text": "The Environmental Protection Agency has reviewed the draft environmental impact statement for the Proposed Departmental Implementation of Executive Order 11644 Pertaining to Use of Off-Road Vehicles on the Public Lands prepared by the Department of Interior and dated May 26, 1972. We concur with the general approach outlined by the Department for regulating ORV use, and urge that the specific regulations developed by Interior's land managing agencies to designate lands for ORV use contain stringent provisions for: (1) analyzing the environmental impact of the specific types of ORV use contemplated on an area-by-area basis prior to opening any lands; (2) controlling the type and intensity of ORV use in lands opened; (3) monitoring the effects of such use; and, (4) if significant damage to environmental values is occurring, taking prompt corrective measures, including restrictions or prohibition of further ORV use.\nWe are advised that the official comment period for this environmental impact statement has been extended to cover the period allowed for review of the regulations proposed by the Bureaus of Land Management, Reclamation and Sport Fisheries and Wildlife and the National Park Service. Therefore, we are deferring transmittal of our detailed comments on this draft impact statement until after we have had an opportunity to review the proposed regulations.\nThank you for the opportunity to review this statement. We look forward to reviewing the pending regulations on ORV use on public lands and the subsequent operating regulations.",
+    "opening_anchor": "The Environmental Protection Agency has reviewed the draft environmental impact statement for the Proposed Departmental Implementation of Executive Order 11644 Pertaining to Use of Off-Road Vehicles on the Public Lands",
+    "closing_anchor": "We look forward to reviewing the pending regulations on ORV use on public lands and the subsequent operating regulations.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We concur with the general approach outlined by the Department for regulating ORV use, and urge that the specific regulations developed by Interior's land managing agencies to designate lands for ORV use contain stringent provisions for: (1) analyzing the environmental impact of the specific types of ORV use contemplated on an area-by-area basis prior to opening any lands; (2) controlling the type and intensity of ORV use in lands opened; (3) monitoring the effects of such use; and, (4) if significant damage to environmental values is occurring, taking prompt corrective measures, including restrictions or prohibition of further ORV use.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 7,
+      "evidence_pages": [
+        "337"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We concur with the general approach outlined by the Department for regulating ORV use, and urge that the specific regulations developed by Interior's land managing agencies to designate lands for ORV use contain stringent provisions for: (1) analyzing the environmental impact of the specific types of ORV use contemplated on an area-by-area basis prior to opening any lands; (2) controlling the type and intensity of ORV use in lands opened; (3) monitoring the effects of such use; and, (4) if significant damage to environmental values is occurring, taking prompt corrective measures, including restrictions or prohibition of further ORV use.",
+      "quote_verified": true,
+      "entity_as_written": "Environmental Protection Agency",
+      "role_as_written": "Federal agency reviewing draft EIS"
+    },
+    {
+      "chunk_index": 7,
+      "evidence_pages": [
+        "355"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "In general, EPA looks to the use of the \"environmental assessment\" discussed in the draft EIS as a means of alerting the public and other agencies to the designation of lands as suitable for ORV use.",
+      "quote_verified": true,
+      "entity_as_written": "Environmental Protection Agency",
+      "role_as_written": "Federal agency reviewing draft EIS (second letter)"
+    }
+  ],
+  "window_pages": [
+    327,
+    356
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 228,
+  "synthetic_no_complaint": false
+}

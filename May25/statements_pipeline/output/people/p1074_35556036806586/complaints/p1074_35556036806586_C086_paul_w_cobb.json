@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036806586_C086",
+  "complainer_id": "p1074_35556036806586_K072",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 86,
+  "entity": "Paul W. Cobb",
+  "kind": "official",
+  "role": "State Highway Engineer, South Carolina State Highway Department",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "letter raises no environmental objections but requests coordination and clarification on road relocation and access road responsibilities",
+  "summary": "Paul W. Cobb, State Highway Engineer for South Carolina, submitted a letter indicating no environmental objections to the Bad Creek project but raised concerns about the relocation of Road S-171, the need for cooperation with the Highway Department, and the unclear responsibility for construction and maintenance of the new access road. He also requested close coordination during transmission line construction across state routes to minimize traffic disruption.",
+  "form": "letter",
+  "complaint_summary": "Cobb raises no environmental objections but requests assurance of Highway Department cooperation on the relocation of Road S-171, seeks clarification on responsibility for construction and maintenance of the new access road, and asks for close coordination during transmission line construction across S.C. Routes 11 and 183 to minimize traffic disruption.",
+  "evidence_pages": [
+    "283"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "We have reviewed your draft environmental impact statement for the Bad Creek project, number 2740 in South Carolina. We have no environmental comments, as such, to offer",
+    "closing_anchor": "We appreciate this opportunity to comment on your EIS.\n\nSincerely your\n\nPaul W. Cobb\n\nState Highway Engineer",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036806586_R027"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "We have reviewed your draft environmental impact statement for the Bad Creek project, number 2740 in South Carolina. We have no environmental comments, as such, to offer but would like to call your attention to several items mentioned in your EIS.",
+  "summary_quote_verified": false,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "283"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We have reviewed your draft environmental impact statement for the Bad Creek project, number 2740 in South Carolina. We have no environmental comments, as such, to offer but would like to call your attention to several items mentioned in your EIS.",
+      "quote_verified": false,
+      "entity_as_written": "Paul W. Cobb",
+      "role_as_written": "State Highway Engineer, South Carolina State Highway Department"
+    }
+  ],
+  "window_pages": [
+    273,
+    293
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 72,
+  "synthetic_no_complaint": false
+}

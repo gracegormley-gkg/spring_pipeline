@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C198",
+  "complainer_id": "p0491_35556036091957_K185",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 198,
+  "entity": "Utah Division of Oil and Gas Conservation",
+  "kind": "agency",
+  "role": "Utah state agency",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as supporting ORV use for official government operations to reach isolated oil rigs",
+  "summary": "The Utah Division of Oil and Gas Conservation is mentioned in a memorandum from Utah's Department of Natural Resources as an example of a government entity that relies on ORVs to reach isolated oil rigs, underscoring the state's broader argument that official government and private concerns depend on off-road vehicles for resource management. The entity is cited to support the position that ORV use should not be overly restricted, as it is essential for legitimate operational needs.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Utah Division of Oil and Gas Conservation is cited as relying on ORVs to reach isolated oil rigs, supporting the state's argument that official government operations depend on off-road vehicle access and should not be unduly restricted.",
+  "evidence_pages": [
+    "275"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The State's need to construct, service and maintain these projects is echoed by the Utah Division of Oil and Gas Conservation which uses ORV's to reach isolated oil rigs.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "275"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The State's need to construct, service and maintain these projects is echoed by the Utah Division of Oil and Gas Conservation which uses ORV's to reach isolated oil rigs.",
+      "quote_verified": true,
+      "entity_as_written": "Utah Division of Oil and Gas Conservation",
+      "role_as_written": "Utah state agency"
+    }
+  ],
+  "window_pages": [
+    265,
+    285
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 185,
+  "synthetic_no_complaint": false
+}

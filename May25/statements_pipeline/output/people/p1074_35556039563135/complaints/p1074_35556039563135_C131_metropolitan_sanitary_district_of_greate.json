@@ -1,0 +1,68 @@
+{
+  "complaint_id": "p1074_35556039563135_C131",
+  "complainer_id": "p1074_35556039563135_K113",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 131,
+  "entity": "Metropolitan Sanitary District of Greater Chicago",
+  "kind": "agency",
+  "role": "Regional sanitary district, commenter",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letter states projects do not conflict with MSD plans and goals, neither endorsing nor opposing",
+  "summary": "The Metropolitan Sanitary District of Greater Chicago reviewed NIPC Project #74-228 (Lincoln Highway improvements) along with several other projects and stated that none of them conflict with the District's plans and goals. The District's letter explicitly notes this is not a commitment to service the projects, as service depends on available capacity at the time a permit application is submitted. The District takes a neutral, non-objecting stance without expressing support or opposition.",
+  "form": "letter",
+  "complaint_summary": "The Metropolitan Sanitary District of Greater Chicago reviewed NIPC Project #74-228 and multiple other projects, stating they do not conflict with the District's plans and goals, while clarifying that the letter does not constitute a service commitment.",
+  "evidence_pages": [
+    "245"
+  ],
+  "statement": {
+    "text": "Dear Mr. Luhman:\nNIPC PROJECTS SUBJECT:\n74-180 Requisition of 2 Parcels of Open Space Totaling 2.2 acres in the Village of Northfield\n.74-184 Preliminary Site Analysis of 19 sites in Evanston\n74-188 Acquisition of 2 Parcels of Open Space Totaling 7 acres in Palatine Township\n74-220 Funding for New Public Library Building in Burbank\n74-228 Funding for Improvements to FAP Route No. 23 Lincoln Highway from Cicero Avenue to Chicago Road\n74-233 Acquisition of 8 acres of Open Space in Unincorporated Main Township, Cook County\n74-240 Acquisition of 2 Parcels of Open Space Totaling 12.06 acres in Hickory Hills\n\nWilliam S. Luhman Page 2 May 16, 1974\n(continued)\n74-241 Acquisition of Approximately 6 acres of\nOpen Space in Calumet City\n74-246 Acquisition of 2 parcels of Open Space\nTotaling 2.5 acres in Worth\nIn response to your \"Project Notification\" we have reviewed the subject projects. These projects do not conflict with the plans and goals of the Metropolitan Sanitary District.\nThis letter is not to be construed as a commitment by the District to service the projects in question. Service is conditioned upon available capacity which is determined at the time an application for a permit is submitted.",
+    "opening_anchor": "Dear Mr. Luhman:\n\nNIPC PROJECTS SUBJECT:\n74-180 Requisition of 2 Parcels of Open Space",
+    "closing_anchor": "This letter is not to be construed as a commitment by the District to service the projects in question. Service is conditioned upon available capacity which is determined at the time an application for a permit is submitted.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "These projects do not conflict with the plans and goals of the Metropolitan Sanitary District.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "245"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "These projects do not conflict with the plans and goals of the Metropolitan Sanitary District.",
+      "quote_verified": true,
+      "entity_as_written": "Metropolitan Sanitary District of Greater Chicago",
+      "role_as_written": "Regional sanitary district, commenter"
+    },
+    {
+      "chunk_index": 7,
+      "evidence_pages": [
+        "245"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "These projects do not conflict with the plans and goals of the Metropolitan Sanitary District.",
+      "quote_verified": true,
+      "entity_as_written": "Metropolitan Sanitary District of Greater Chicago",
+      "role_as_written": "Regional sanitary district"
+    }
+  ],
+  "window_pages": [
+    235,
+    255
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 113,
+  "synthetic_no_complaint": false
+}

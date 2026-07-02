@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036811230_C060",
+  "complainer_id": "p1074_35556036811230_K018",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 60,
+  "entity": "New York State Department of Labor",
+  "kind": "agency",
+  "role": "employment data source",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "cited as data source for employment statistics with no expressed position on the project",
+  "summary": "The New York State Department of Labor is cited solely as a data source providing employment statistics for the Buffalo SMSA, noting a drop from 507,000 in 1970 to 501,000 in 1975. The agency does not express any position on the proposed transit project; it is referenced only to support the document's description of the regional economic environment. No complaints or advocacy positions are attributed to this agency.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "52"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim",
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "According to the New York State Department of Labor, employment within the Buffalo SMSA dropped from 507,000 in 1970 to 501,000 in 1975.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "52"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "According to the New York State Department of Labor, employment within the Buffalo SMSA dropped from 507,000 in 1970 to 501,000 in 1975.",
+      "quote_verified": false,
+      "entity_as_written": "New York State Department of Labor",
+      "role_as_written": "employment data source"
+    }
+  ],
+  "window_pages": [
+    42,
+    62
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 18,
+  "synthetic_no_complaint": true
+}

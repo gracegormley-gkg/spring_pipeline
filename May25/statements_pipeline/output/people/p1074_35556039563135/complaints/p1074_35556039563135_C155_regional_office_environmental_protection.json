@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556039563135_C155",
+  "complainer_id": "p1074_35556039563135_K027",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 155,
+  "entity": "Regional Office, Environmental Protection Agency",
+  "kind": "agency",
+  "role": "Federal agency commenter on draft EIS",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed only in agency review and comment rosters with no attributed position",
+  "summary": "The Regional Office of the Environmental Protection Agency appears twice in the document window, both times as entries in roster lists — once among agencies to which the draft EIS was sent for review and comment, and once among agencies which commented on the draft EIS. No substantive position, complaint, or comment content is reproduced in this window.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "19"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Regional Office, Environmental Protection Agency",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "19"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Regional Office, Environmental Protection Agency",
+      "quote_verified": true,
+      "entity_as_written": "Regional Office, Environmental Protection Agency",
+      "role_as_written": "Federal agency commenter on draft EIS"
+    }
+  ],
+  "window_pages": [
+    9,
+    29
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 27,
+  "synthetic_no_complaint": true
+}

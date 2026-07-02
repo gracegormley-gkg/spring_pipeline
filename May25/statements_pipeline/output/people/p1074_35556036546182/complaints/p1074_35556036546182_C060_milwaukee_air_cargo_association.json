@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556036546182_C060",
+  "complainer_id": "p1074_35556036546182_K034",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 60,
+  "entity": "Milwaukee Air Cargo Association",
+  "kind": "organization",
+  "role": "air cargo industry association",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as testifying in favor of the Airport Spur at the Environmental Impact Hearing",
+  "summary": "The Milwaukee Air Cargo Association testified in favor of the Airport Spur at the July 11, 1974 Environmental Impact Hearing, alongside SEWRPC, the FAA, and the American Automobile Association. The association's support is described in a narrator paraphrase within the EIS, with no individual statement reproduced. No agency response specifically directed at the Milwaukee Air Cargo Association's comments is present in this window.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Milwaukee Air Cargo Association testified in favor of the Airport Spur at the July 11, 1974 Environmental Impact Hearing.",
+  "evidence_pages": [
+    "107"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Milwaukee Air Cargo Association representative and owner of a trucking company engaged in airport oriented transportation. Supported the comments included in the project statement.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "107"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "SEWRPC, Federal Aviation Administration, Milwaukee Air Cargo Association, and the American Automobile Association testified in favor of the Airport Spur.",
+      "quote_verified": false,
+      "entity_as_written": "Milwaukee Air Cargo Association",
+      "role_as_written": "air cargo industry association"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "229"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Milwaukee Air Cargo Association representative and owner of a trucking company engaged in airport oriented transportation. Supported the comments included in the project statement.",
+      "quote_verified": true,
+      "entity_as_written": "Milwaukee Air Cargo Association",
+      "role_as_written": "commenter at public hearing"
+    }
+  ],
+  "window_pages": [
+    97,
+    137
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 34,
+  "synthetic_no_complaint": false
+}

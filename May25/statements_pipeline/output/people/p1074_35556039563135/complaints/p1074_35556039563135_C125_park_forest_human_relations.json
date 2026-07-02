@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C125",
+  "complainer_id": "p1074_35556039563135_K127",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 125,
+  "entity": "Park Forest Human Relations",
+  "kind": "organization",
+  "role": "commenter listed in NIPC project summary",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed in NIPC project summary table with no comment date or position recorded",
+  "summary": "Park Forest Human Relations appears only in the NIPC project summary table as one of the agencies notified of the project, with a notification date of 4/23/74 but no comment date or substantive position recorded. No letter, testimony, or paraphrase of their views appears in the document window. Their stance cannot be determined from the available text.",
+  "form": "sectional",
+  "complaint_summary": "Park Forest Human Relations is listed in the NIPC project summary table as an agency notified on 4/23/74, with no comment date or position recorded.",
+  "evidence_pages": [
+    "237"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence"
+  ],
+  "summary_quote": "Park Forest Human Relations",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "237"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Park Forest Human Relations",
+      "quote_verified": true,
+      "entity_as_written": "Park Forest Human Relations",
+      "role_as_written": "commenter listed in NIPC project summary"
+    }
+  ],
+  "window_pages": [
+    227,
+    247
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 127,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C112",
+  "complainer_id": "p0491_35556036091957_K100",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 112,
+  "entity": "Department of Defense",
+  "kind": "agency",
+  "role": "federal agency commenter",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly states the draft environmental statement is satisfactory to the Department of Defense",
+  "summary": "The Department of Defense, responding through the Deputy Assistant Secretary of Defense (Environmental Quality), expressed unqualified satisfaction with the draft environmental statement for the proposed implementation of Executive Order 11644. The Department raised no objections, conditions, or concerns, offering a brief and fully supportive response to the Bureau of Outdoor Recreation's request for comments.",
+  "form": "letter",
+  "complaint_summary": "The Department of Defense states that the draft environmental statement for implementation of Executive Order 11644 is satisfactory, with no objections or conditions.",
+  "evidence_pages": [
+    "151"
+  ],
+  "statement": {
+    "text": "This is in response to your letter dated June 1, 1972 requesting the Department of Defense comments on your draft environmental statement for the proposed implementation of Executive Order 11644.\nThe draft environmental statement is satisfactory to the Department of Defense.\nSincerely,\nDeputy Assistant Secretary of Defense (Environmental Quality)",
+    "opening_anchor": "This is in response to your letter dated June 1, 1972 requesting the Department of Defense comments on your draft environmental statement",
+    "closing_anchor": "Sincerely,\nDeputy Assistant Secretary of Defense (Environmental Quality)",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The draft environmental statement is satisfactory to the Department of Defense.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "151"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The draft environmental statement is satisfactory to the Department of Defense.",
+      "quote_verified": true,
+      "entity_as_written": "Department of Defense",
+      "role_as_written": "federal agency commenter"
+    }
+  ],
+  "window_pages": [
+    141,
+    161
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 100,
+  "synthetic_no_complaint": false
+}

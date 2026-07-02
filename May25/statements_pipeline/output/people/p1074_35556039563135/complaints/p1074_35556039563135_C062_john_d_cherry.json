@@ -1,0 +1,69 @@
+{
+  "complaint_id": "p1074_35556039563135_C062",
+  "complainer_id": "p1074_35556039563135_K112",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 62,
+  "entity": "John D. Cherry",
+  "kind": "official",
+  "role": "Regional Director, Bureau of Outdoor Recreation, Lake Central Region",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "explicitly states opinion aligns with Mr. Davis but clarifies it is technical assistance only and does not represent the Department of the Interior's position",
+  "summary": "John D. Cherry, Regional Director of the Bureau of Outdoor Recreation, Lake Central Region, responded to a request regarding the Section 4(f) involvement of the Roosevelt School property. His opinion aligned with that of Mr. Davis (Benjamin O. Davis, Jr., Department of Transportation) but he explicitly noted it was provided only as technical assistance and did not represent the official position of the Department of the Interior. He also indicated that the proper person to make a determination of recreation significance would be the Director of the Park District for Chicago Heights.",
+  "form": "letter",
+  "complaint_summary": "Cherry states that his opinion aligns with Mr. Davis's but is provided only as technical assistance and does not represent the Department of the Interior's official position, and that the proper person to determine recreation significance is the Director of the Park District for Chicago Heights.",
+  "evidence_pages": [
+    "160"
+  ],
+  "statement": {
+    "text": "4(c) At this time our opinion corresponds with that of Mr. Davis. However,\nour opinion is provided on the basis of\ntechnical assistance and does not\nnecessarily represent the position of\nthe Department of the Interior.\nPark District for Chicago Heights,\nIllinois.\npondence from Benjamin O. Davis, Jr.,\nDepartment of Transportation to Bruce\nBlanchard, Department of the Interior,\nwould appear to provide an answer to\nyour request. In this regard, the\nproper person to make a determination\nof recreation significance would be\nMr. Robert Luedner, Director of the",
+    "opening_anchor": "4(c) At this time our opinion corresponds with that of Mr. Davis. However,\nour opinion is provided on the basis of\ntechnical assistance and does not\nnecessarily represent the position of\nthe Department of the Interior.",
+    "closing_anchor": "oper person to make a determination\nof recreation significance would be\nMr. Robert Luedner, Director of the",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556039563135_R021"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "At this time our opinion corresponds with that of Mr. Davis. However, our opinion is provided on the basis of technical assistance and does not necessarily represent the position of the Department of the Interior.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "160"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "At this time our opinion corresponds with that of Mr. Davis.",
+      "quote_verified": true,
+      "entity_as_written": "John D. Cherry",
+      "role_as_written": "Regional Director, Bureau of Outdoor Recreation, Lake Central Region"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "160"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "At this time our opinion corresponds with that of Mr. Davis. However, our opinion is provided on the basis of technical assistance and does not necessarily represent the position of the Department of the Interior.",
+      "quote_verified": true,
+      "entity_as_written": "John D. Cherry",
+      "role_as_written": "Regional Director, Bureau of Outdoor Recreation, Lake Central Region"
+    }
+  ],
+  "window_pages": [
+    150,
+    170
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 112,
+  "synthetic_no_complaint": false
+}

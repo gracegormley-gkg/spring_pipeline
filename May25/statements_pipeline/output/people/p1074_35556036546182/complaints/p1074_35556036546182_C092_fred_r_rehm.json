@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036546182_C092",
+  "complainer_id": "p1074_35556036546182_K049",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 92,
+  "entity": "Fred R. Rehm",
+  "kind": "official",
+  "role": "Director, Milwaukee County Department of Air Pollution Control",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly endorses the EIS as a correct portrayal of air pollution considerations",
+  "summary": "Fred R. Rehm, Director of the Milwaukee County Department of Air Pollution Control, reviewed the draft environmental impact statement and found it to be an accurate portrayal of air pollution considerations related to the Airport Spur project. His staff verified the calculations and results reported in the document regarding automotive air pollutant emissions. He expressed no objections and offered no criticisms of the project.",
+  "form": "letter",
+  "complaint_summary": "Fred R. Rehm states that his staff verified the air pollution calculations in the draft EIS and finds it a correct portrayal of the air pollution considerations for the Airport Spur project, expressing no objections.",
+  "evidence_pages": [
+    "178"
+  ],
+  "statement": {
+    "text": "We have reviewed the subject environmental impact statement submitted to us with your letter of June 19, 1973. In addition, we have reviewed a number of the bibliographical reference materials outlined therein. My staff has verified most of the calculations and results reported in the subject document relating to automotive air pollutant emissions within the limitations of the available data.\nAccordingly, we find the impact statement a correct portrayal of the air pollution considerations attendant to the subject project.",
+    "opening_anchor": "We have reviewed the subject environmental impact statement submitted to us with your letter of June 19, 1973.",
+    "closing_anchor": "we find the impact statement a correct portrayal of the air pollution considerations attendant to the subject project.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036546182_R020"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Accordingly, we find the impact statement a correct portrayal of the air pollution considerations attendant to the subject project.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "178"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Accordingly, we find the impact statement a correct portrayal of the air pollution considerations attendant to the subject project.",
+      "quote_verified": true,
+      "entity_as_written": "Fred R. Rehm",
+      "role_as_written": "Director, Milwaukee County Department of Air Pollution Control"
+    }
+  ],
+  "window_pages": [
+    168,
+    188
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 49,
+  "synthetic_no_complaint": false
+}

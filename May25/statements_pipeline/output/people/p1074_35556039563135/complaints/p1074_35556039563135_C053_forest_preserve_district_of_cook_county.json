@@ -1,0 +1,70 @@
+{
+  "complaint_id": "p1074_35556039563135_C053",
+  "complainer_id": "p1074_35556039563135_K059",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 53,
+  "entity": "Forest Preserve District of Cook County",
+  "kind": "agency",
+  "role": "Forest preserve district, commenter on temporary construction easement",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "no significant effect on recreation but requires regrading, topsoiling, fertilizing, sodding, and insurance from contractor",
+  "summary": "The Forest Preserve District of Cook County responded to early coordination regarding the temporary construction easement on their land, stating the temporary use would not significantly affect recreational opportunities, but conditioning acceptance on requirements that disturbed areas be regraded, topsoiled, fertilized, and sodded, and that the contractor post insurance naming the District as insured. The Illinois Department of Transportation concurred with both points.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Forest Preserve District of Cook County stated the temporary use would not significantly affect recreational opportunities, but required that disturbed areas be regraded, topsoiled, fertilized, and sodded, and that the contractor post insurance naming the District as insured or additional insured.",
+  "evidence_pages": [
+    "158"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556039563135_R013"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "1(a) It is our opinion that the temporary use will not have any significant effect on the recreational opportunities of the community.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "158"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "1(a) It is our opinion that the temporary use will not have any significant effect on the recreational opportunities of the community.",
+      "quote_verified": true,
+      "entity_as_written": "Forest Preserve District of Cook County",
+      "role_as_written": "Section 4(f) land owner / early coordination commenter"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "158"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "It is our opinion that the temporary use will not have any significant effect on the recreational opportunities of the community.",
+      "quote_verified": true,
+      "entity_as_written": "Forest Preserve District of Cook County",
+      "role_as_written": "Forest preserve district, commenter on temporary construction easement"
+    }
+  ],
+  "window_pages": [
+    148,
+    168
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 59,
+  "synthetic_no_complaint": false
+}

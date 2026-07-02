@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C116",
+  "complainer_id": "p0491_35556036091957_K096",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 116,
+  "entity": "Continental Oil Company",
+  "kind": "organization",
+  "role": "mineral/oil company, commenter",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letters protest EO 11644 restrictions but support permit system for legitimate mineral/exploration use",
+  "summary": "Continental Oil Company submitted two letters from employees in its Minerals Department protesting Executive Order 11644 for limiting off-road vehicle use on public lands without adequate provision for productive uses such as mineral and fossil fuel exploration. Both letters acknowledge that some restrictions on indiscriminate ORV use are appropriate, but argue that a permit system should be established to allow legitimate commercial and exploration users access. No agency response to either letter appears in the document window.",
+  "form": "letter",
+  "complaint_summary": "A district geologist from Continental Oil Company protests EO 11644 for ignoring mining and mineral exploration needs, and recommends a permit system that would hold permit holders responsible for surface damage.",
+  "evidence_pages": [
+    "158"
+  ],
+  "statement": {
+    "text": "I protest Executive Order 11644 where it would limit the use of offroad vehicles over a large percentage of all public lands. Little consideration has been given to the productive use of such vehicles, and in particular, mining and mineral exploration have been ignored.\nI agree that some restrictions should be placed on off-road vehicles where people indiscriminantly tear up the countryside. It is suggested that permits be established for a person or persons having legitimate reasons for entering on public lands with off-road vehicles. The person or persons obtaining the permit would then be responsible for any obvious surface damage.",
+    "opening_anchor": "I protest Executive Order 11644 where it would limit the use of offroad vehicles over a large percentage of all public lands.",
+    "closing_anchor": "The person or persons obtaining the permit would then be responsible for any obvious surface damage.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "This letter is in protest of Executive Order 11644 which would severly limit the use of off-the-road vehicles on public lands.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "158"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "This letter is in protest of Executive Order 11644 which would severly limit the use of off-the-road vehicles on public lands.",
+      "quote_verified": true,
+      "entity_as_written": "Continental Oil Company",
+      "role_as_written": "mineral/oil company, commenter"
+    }
+  ],
+  "window_pages": [
+    148,
+    168
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 96,
+  "synthetic_no_complaint": false
+}

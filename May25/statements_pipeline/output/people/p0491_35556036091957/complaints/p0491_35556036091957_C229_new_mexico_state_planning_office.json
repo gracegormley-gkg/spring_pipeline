@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C229",
+  "complainer_id": "p0491_35556036091957_K217",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 229,
+  "entity": "New Mexico State Planning Office",
+  "kind": "agency",
+  "role": "state agency, commenter",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter endorsing the draft statement while calling for restrictions to extend to State lands as well as federal lands",
+  "summary": "The New Mexico State Planning Office, coordinating with several state agencies, submitted a letter expressing general approval of the draft environmental statement on ORV use while strongly urging that ORV restrictions be applied to State lands as well as federal lands. The office found the statement well prepared and adequate in presenting ORV impacts, but conditioned its support on strict enforcement of regulations across all public lands.",
+  "form": "letter",
+  "complaint_summary": "The New Mexico State Planning Office endorses the draft statement as well prepared but strongly urges that ORV restrictions be extended to State lands as well as federal lands, and that regulations be strictly enforced.",
+  "evidence_pages": [
+    "308"
+  ],
+  "statement": {
+    "text": "In reference to your draft environmental statement of off-road vehicles, I have coordinated a careful study of this document with the Department of Game and Fish, the State Park and Recreation Commission, the State Land Office, and the Division of Recreation and Historic Preservation of the State Planning Office, and have the following comment to offer.\nIt is felt that your statement is well prepared and adequately presents the impact of off-road vehicles on recreation, wildlife, and preservation. It is further felt that certain restrictions must be implemented on all off-road vehicles, as well as the various terrains involved, to minimize the indiscriminate abuse of public lands; and moreover, that these regulations be strictly enforced.\nThe State Planning Office strongly feels that off-road vehicle restrictions should not only apply to federal lands, but certainly to State lands as well. For your additional information, actions that the State of New Mexico has taken concerning off-road vehicle travel is enclosed.\nThank you for allowing us to review your draft statement. If I may be of additional service on this or any other matter please feel free to contact me anytime.\nSincerely,\nDavid W. King\nState Planning Office",
+    "opening_anchor": "In reference to your draft environmental statement of off-road vehicles, I have coordinated a careful study of this document with the Department of Game and Fish",
+    "closing_anchor": "If I may be of additional service on this or any other matter please feel free to contact me anytime.\n\nSincerely,\nDavid W. King\nState Planning Office",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The State Planning Office strongly feels that off-road vehicle restrictions should not only apply to federal lands, but certainly to State lands as well.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "308"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The State Planning Office strongly feels that off-road vehicle restrictions should not only apply to federal lands, but certainly to State lands as well.",
+      "quote_verified": true,
+      "entity_as_written": "New Mexico State Planning Office",
+      "role_as_written": "state agency, commenter"
+    }
+  ],
+  "window_pages": [
+    298,
+    318
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 217,
+  "synthetic_no_complaint": false
+}

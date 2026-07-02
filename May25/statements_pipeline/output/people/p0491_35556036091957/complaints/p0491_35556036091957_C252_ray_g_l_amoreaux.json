@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C252",
+  "complainer_id": "p0491_35556036091957_K221",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 252,
+  "entity": "Ray G. L'Amoreaux",
+  "kind": "official",
+  "role": "Director, Division of Transportation Planning and Programming, Florida Department of Transportation",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly endorses the actions proposed to preserve the environment",
+  "summary": "Ray G. L'Amoreaux, Director of the Division of Transportation Planning and Programming at the Florida Department of Transportation, reviewed the draft EIS and endorsed the proposed actions to preserve the environment. He also noted that ORV operators had been reported cutting fences and accessing lands improperly, creating environmental, drainage, erosion, and other control problems for his department's facilities. A second clearinghouse form submitted under his name indicates no specific additional comments or concerns beyond the enclosed letter.",
+  "form": "letter",
+  "complaint_summary": "L'Amoreaux endorses the proposed ORV regulations to preserve the environment and notes that ORV operators have been reported cutting fences and accessing lands improperly, causing environmental, drainage, and erosion problems for FDOT facilities.",
+  "evidence_pages": [
+    "326"
+  ],
+  "statement": {
+    "text": "This agency has reviewed the subject proposal and endorses the actions proposed to preserve the environment. Instances have been reported to our Department that operators of these off-road vehicles have cut fences or gained access to lands at locations where driveways are not provided. These instances can create environmental, drainage, erosion and other control problems for our facilities.\nWe appreciate the opportunity to review this proposal.\nVery truly yours,\nRAY G. K'AMORETHY, P.E., DIRECTOR DIVESTON OF PARITY ING AND PROGRAMMING",
+    "opening_anchor": "This agency has reviewed the subject proposal and endorses the actions proposed to preserve the environment.",
+    "closing_anchor": "We appreciate the opportunity to review this proposal.\n\nVery truly yours,\nRAY G. K'AMORETHY, P.E., DIRECTOR\nDIVESTON OF PARITY ING AND PROGRAMMING",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "This agency has reviewed the subject proposal and endorses the actions proposed to preserve the environment.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "326"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "This agency has reviewed the subject proposal and endorses the actions proposed to preserve the environment.",
+      "quote_verified": true,
+      "entity_as_written": "Ray G. L'Amoreaux",
+      "role_as_written": "Director, Division of Transportation Planning and Programming, Florida Department of Transportation"
+    }
+  ],
+  "window_pages": [
+    316,
+    336
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 221,
+  "synthetic_no_complaint": false
+}

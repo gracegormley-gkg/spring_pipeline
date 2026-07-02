@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556036861797_C054",
+  "complainer_id": "p1074_35556036861797_K034",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 54,
+  "entity": "EPA",
+  "kind": "agency",
+  "role": "Federal emissions standards regulator",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as supporting no mandatory fuel economy penalty from emissions standards given sufficient leadtime, without opposing or endorsing the overall project",
+  "summary": "EPA is referenced in the document in two contexts: first, as having established more stringent MY 1979 emissions standards and revised testing procedures for nonpassenger automobiles, and second, as having stated in its own rulemaking that no fuel economy penalty need result from its emissions standard if manufacturers have sufficient leadtime to optimize calibrations and control system designs. EPA's position is cited by NHTSA to support its conclusion that manufacturers have not demonstrated a fuel economy penalty from the tighter NOx standard.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "EPA established more stringent MY 1979 emissions standards and modified testing procedures for nonpassenger automobiles, including a higher road load horsepower requirement, which NHTSA notes will have a measured effect on fuel economy but no real in-use impact aside from a small NOx increase.",
+  "evidence_pages": [
+    "145"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "EPA has stated in their rulemaking action for the MY 1979 emission standard that there does not have to be a fuel economy penalty associated with its standard if the manufacturers have enough leadtime to optimize calibrations and control system designs.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "145"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "EPA has established more stringent emission standards for model year 1979.",
+      "quote_verified": true,
+      "entity_as_written": "EPA",
+      "role_as_written": "Federal emissions standards regulator"
+    },
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "152"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "EPA has stated in their rulemaking action for the MY 1979 emission standard that there does not have to be a fuel economy penalty associated with its standard if the manufacturers have enough leadtime to optimize calibrations and control system designs.",
+      "quote_verified": true,
+      "entity_as_written": "EPA",
+      "role_as_written": "Federal emissions standards regulator"
+    }
+  ],
+  "window_pages": [
+    135,
+    162
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 34,
+  "synthetic_no_complaint": false
+}

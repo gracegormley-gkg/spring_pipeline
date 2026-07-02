@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C050",
+  "complainer_id": "p0491_35556036091957_K056",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 50,
+  "entity": "State Parks and Recreation Commission, Baton Rouge, Louisiana",
+  "kind": "agency",
+  "role": "state agency commenter",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly supports controlled ORV use in designated areas while opposing total exclusion",
+  "summary": "The State Parks and Recreation Commission of Baton Rouge, Louisiana submitted a letter concurring with the draft statement's recommendations, supporting controlled ORV use in designated areas where minimal environmental damage would occur, and opposing total exclusion of ORVs. The Commission expressed no adverse comments and praised the thoroughness of the statement's preparation.",
+  "form": "letter",
+  "complaint_summary": "The Commission concurs with the draft statement's recommendations, supports controlled ORV use in designated areas where minimal environmental damage would occur, opposes total exclusion of ORVs, and has no adverse comments on the statement.",
+  "evidence_pages": [
+    "56"
+  ],
+  "statement": {
+    "text": "The subject statement has been received and reviewed by this office. The concur with the recommendations and feel that on the state level, controlled use of ORV in certain designated areas value a minimal amount of damage to the environment would occur is necessary. Total exclusion of ORV are both unsatisfactory.\nWe feel that a thorough job was done in the preparation of the statement and have no adverse comments.",
+    "opening_anchor": "The subject statement has been received and reviewed by this office. The concur with the recommendations and feel that on the state level, controlled use of ORV",
+    "closing_anchor": "We feel that a thorough job was done in the preparation of the statement and have no adverse comments.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The concur with the recommendations and feel that on the state level, controlled use of ORV in certain designated areas value a minimal amount of damage to the environment would occur is necessary.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "56"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The concur with the recommendations and feel that on the state level, controlled use of ORV in certain designated areas value a minimal amount of damage to the environment would occur is necessary.",
+      "quote_verified": true,
+      "entity_as_written": "State Parks and Recreation Commission, Baton Rouge, Louisiana",
+      "role_as_written": "state agency commenter"
+    }
+  ],
+  "window_pages": [
+    46,
+    66
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 56,
+  "synthetic_no_complaint": false
+}

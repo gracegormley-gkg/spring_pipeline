@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C031",
+  "complainer_id": "p1074_35556038322269_K029",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 31,
+  "entity": "President Carter",
+  "kind": "official",
+  "role": "U.S. President",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased policy directive supporting intermodal transit programs to complement urban economic development and revitalize communities",
+  "summary": "President Carter's 1978 Urban Policy Initiatives are cited as one of six governmental policy sources underpinning the study's goals and objectives. The document paraphrases a specific Carter administration directive to implement intermodal transit programs that complement urban economic development and revitalize communities, which is used to justify the Regional Core Rapid Transit project's transportation goals.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "President Carter's 1978 Urban Policy Initiatives are paraphrased as directing that intermodal transit programs be implemented to complement urban economic development purposes and revitalize communities, cited in support of the project's transportation goals.",
+  "evidence_pages": [
+    "74"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Implement intermodal transit programs to complement urban economic development purposes and revitalize communities. (President, p. 224)",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "74"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Implement intermodal transit programs to complement urban economic development purposes and revitalize communities. (President, p. 224)",
+      "quote_verified": true,
+      "entity_as_written": "President Carter",
+      "role_as_written": "U.S. President"
+    }
+  ],
+  "window_pages": [
+    64,
+    84
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 29,
+  "synthetic_no_complaint": false
+}

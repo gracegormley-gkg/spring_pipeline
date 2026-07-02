@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556038322269_C106",
+  "complainer_id": "p1074_35556038322269_K073",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 106,
+  "entity": "Dr. C. W. Meighan",
+  "kind": "individual",
+  "role": "Archaeologist who recorded site LAn-7 in 1951",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "mentioned only as a historical reference for a site record, no position expressed",
+  "summary": "Dr. C. W. Meighan is referenced solely as the archaeologist who recorded site LAn-7 in 1951. The document notes that this site record does not correspond to the Gabrieleno village of Yangna and appears to have been an historic rather than prehistoric site. No position on the project is attributed to Dr. Meighan.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "255"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual",
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Neither the locality nor the description of Yangna corresponds to the site record by Dr. C. W. Meighan in 1951, LAn-7, which seems to have been an historic site.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "255"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Neither the locality nor the description of Yangna corresponds to the site record by Dr. C. W. Meighan in 1951, LAn-7, which seems to have been an historic site.",
+      "quote_verified": true,
+      "entity_as_written": "Dr. C. W. Meighan",
+      "role_as_written": "Archaeologist who recorded site LAn-7 in 1951"
+    }
+  ],
+  "window_pages": [
+    245,
+    265
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 73,
+  "synthetic_no_complaint": true
+}

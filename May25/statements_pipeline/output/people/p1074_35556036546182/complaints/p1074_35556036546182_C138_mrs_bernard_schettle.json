@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C138",
+  "complainer_id": "p1074_35556036546182_K126",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 138,
+  "entity": "Mrs. Bernard Schettle",
+  "kind": "individual",
+  "role": "Private Citizen, commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase states Airport Spur will industrialize residential area and only benefit trucking companies and airport users",
+  "summary": "Mrs. Bernard Schettle, a private citizen residing at 5722 South 20th Street, opposed the Airport Spur on the grounds that it would transform the surrounding residential area into an industrial area and would primarily benefit trucking companies and frequent airport users rather than local residents. Her concerns were addressed by the project preparers, who argued the Spur would also benefit the broader public through safer local streets and more efficient air cargo movement.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Mrs. Schettle argued that the Airport Spur would transform the area from residential to industrial and would only benefit trucking companies and frequent airport users, not local residents.",
+  "evidence_pages": [
+    "243"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R057"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Stated that with the Airport Spur the area will be change to an industrial area and not a residentail area. Spur will benefit the trucking companies and those who frequently use the airport.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "243"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Stated that with the Airport Spur the area will be change to an industrial area and not a residentail area. Spur will benefit the trucking companies and those who frequently use the airport.",
+      "quote_verified": true,
+      "entity_as_written": "Mrs. Bernard Schettle",
+      "role_as_written": "Private Citizen, commenter"
+    }
+  ],
+  "window_pages": [
+    233,
+    253
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 126,
+  "synthetic_no_complaint": false
+}

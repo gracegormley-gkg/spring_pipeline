@@ -1,0 +1,71 @@
+{
+  "complaint_id": "p1074_35556036806586_C128",
+  "complainer_id": "p1074_35556036806586_K023",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 128,
+  "entity": "U.S. Forest Service",
+  "kind": "agency",
+  "role": "Federal land management agency — managing Whitewater Falls Scenic Area",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "cited as source of factual information about land management and scenic area designation, no position stated",
+  "summary": "The U.S. Forest Service is referenced in this window solely as a source of factual information about recreation facilities in the Keowee Unit of the Sumter National Forest and the Whitewater Falls Scenic Area, which it manages for recreation use in its natural state. The agency is cited for data on public outdoor recreation facilities and the scenic area's potential nomination to the National Register of Natural Landmarks. No position for or against the Bad Creek Project is expressed by the Forest Service in this window.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "53",
+    "104"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Many plant species of rare or uncommon status found in the southeast have been identified by the U.S. Forest Service (1970) and some of threatened status have been identified by the Smithsonian Institution (1975).",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "53"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "This area is managed for recreation use in its basic natural state and may be nominated to the National Register of Natural Landmarks (U.S. Forest Service, 1974b; U.S. Forest Service, NDa).",
+      "quote_verified": true,
+      "entity_as_written": "U.S. Forest Service",
+      "role_as_written": "Federal land management agency — managing Whitewater Falls Scenic Area"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "104"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Many plant species of rare or uncommon status found in the southeast have been identified by the U.S. Forest Service (1970) and some of threatened status have been identified by the Smithsonian Institution (1975).",
+      "quote_verified": true,
+      "entity_as_written": "U.S. Forest Service",
+      "role_as_written": "federal land management agency"
+    }
+  ],
+  "window_pages": [
+    43,
+    79
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 23,
+  "synthetic_no_complaint": true
+}

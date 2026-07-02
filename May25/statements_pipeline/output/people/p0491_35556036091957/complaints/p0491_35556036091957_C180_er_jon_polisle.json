@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p0491_35556036091957_C180",
+  "complainer_id": "p0491_35556036091957_K157",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 180,
+  "entity": "Er. Jon Polisle",
+  "kind": "individual",
+  "role": "Private commenter, St. Paul, Minnesota",
+  "stance": "opposed",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly requesting ban of ATVs, snowmobiles, and ORVs from all public lands",
+  "summary": "Er. Jon Polisle of St. Paul, Minnesota wrote a letter strongly opposing any ORV use on public lands, arguing that ATVs, snowmobiles, and off-road vehicles in general should be banned entirely from public lands due to erosion, noise, and the principle that private enterprise should provide riding areas rather than public lands.",
+  "form": "letter",
+  "complaint_summary": "Polisle requests a complete ban of ATVs, snowmobiles, and all ORVs from public lands, citing erosion, noise, and the argument that private enterprise should supply riding areas rather than public lands bearing the burden.",
+  "evidence_pages": [
+    "255"
+  ],
+  "statement": {
+    "text": "Concerning your Draft Environmental Statement, I ask that ATV, snowmobiles, and off the road vehicles in general be banned from use on all public lands. Their trail use, causing erosion and unnecessary noise should not be permitted.\nIf I bought a caterpillar tractor for recreation and asked to use it in a national forest I would be laughed at, so why should someone (and others will quickly follow) trail ride through the serene setting nature can provide.\nPrivate enterprise supplies the equipment and private enterprise can supply the riding area for off the road vehicle; They should not be permitted on public lands.\nSincerely,\nEr. Jon Polisle",
+    "opening_anchor": "Concerning your Draft Environmental Statement, I ask that ATV, snowmobiles, and off the road vehicles in general be banned from use on all public lands.",
+    "closing_anchor": "Private enterprise supplies the equipment and private enterprise can supply the riding area for off the road vehicle; They should not be permitted on public lands.\n\nSincerely,\nEr. Jon Polisle",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "I ask that ATV, snowmobiles, and off the road vehicles in general be banned from use on all public lands.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "255"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "I ask that ATV, snowmobiles, and off the road vehicles in general be banned from use on all public lands.",
+      "quote_verified": true,
+      "entity_as_written": "Er. Jon Polisle",
+      "role_as_written": "Private commenter, St. Paul, Minnesota"
+    }
+  ],
+  "window_pages": [
+    245,
+    265
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 157,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p0491_35556036091957_C023",
+  "complainer_id": "p0491_35556036091957_K005",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 23,
+  "entity": "Bureau of Indian Affairs, Director, Office of Planning",
+  "kind": "official",
+  "role": "Interior bureau reviewer",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase states they reviewed the statement and believed it adequately covers environmental considerations",
+  "summary": "The Bureau of Indian Affairs, Director, Office of Planning reviewed the draft ORV environmental statement and indicated their belief that it adequately covers environmental considerations, expressing no objections or concerns. This position appears twice in the document window — once in the main body summary of agency comments and once in the appendix listing of Federal agency comments — both as narrator paraphrases conveying the same supportive finding.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "In the appendix listing of Federal agency comments, the Bureau of Indian Affairs, Director, Office of Planning (response #68) is again paraphrased as having reviewed the statement and indicated their belief that it adequately covers environmental considerations.",
+  "evidence_pages": [
+    "32"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "Bureau of Indian Affairs, Director, Office of Planning - advised that subject statement had been reviewed and indicated their belief that it adequately covers environmental considerations.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "22"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Bureau of Indian Affairs, Director, Office of Planning - advised that subject statement had been reviewed and indicated their belief that it adequately covers environmental considerations.",
+      "quote_verified": false,
+      "entity_as_written": "Bureau of Indian Affairs, Director, Office of Planning",
+      "role_as_written": "Interior bureau reviewer"
+    }
+  ],
+  "window_pages": [
+    12,
+    32
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 5,
+  "synthetic_no_complaint": false
+}

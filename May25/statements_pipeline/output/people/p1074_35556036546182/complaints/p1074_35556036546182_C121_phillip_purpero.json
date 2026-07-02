@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C121",
+  "complainer_id": "p1074_35556036546182_K095",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 121,
+  "entity": "Phillip Purpero",
+  "kind": "individual",
+  "role": "Private Citizen",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "testimony stating Airport Spur would reduce noise by taking traffic off local streets",
+  "summary": "Phillip Purpero, a private citizen, testified in favor of the Airport Spur, arguing that its construction would reduce noise levels by diverting traffic away from the local street system near the Airport. The agency confirmed his statement was correct.",
+  "form": "testimony",
+  "complaint_summary": "Purpero testified that building the Airport Spur would reduce noise by diverting traffic off the local street system near the Airport.",
+  "evidence_pages": [
+    "231"
+  ],
+  "statement": {
+    "text": "Stated that building the Airport Spur would reduce noise by taking traffic off the local street system in the vicinity of the Airport.",
+    "opening_anchor": "Stated that building the Airport Spur would reduce noise by taking traffic off the local street system in the vicinity of the Airport.",
+    "closing_anchor": "Stated that building the Airport Spur would reduce noise by taking traffic off the local street system in the vicinity of the Airport.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036546182_R043"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Stated that building the Airport Spur would reduce noise by taking traffic off the local street system in the vicinity of the Airport.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "231"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Stated that building the Airport Spur would reduce noise by taking traffic off the local street system in the vicinity of the Airport.",
+      "quote_verified": true,
+      "entity_as_written": "Phillip Purpero",
+      "role_as_written": "Private Citizen"
+    }
+  ],
+  "window_pages": [
+    221,
+    241
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 95,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C102",
+  "complainer_id": "p1074_35556039563135_K081",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 102,
+  "entity": "Board of Vocational Education and Rehabilitation Division of Vocational Rehabilitation",
+  "kind": "agency",
+  "role": "Illinois state agency reviewer",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letter states no adverse effect foreseen and returns documents without objection",
+  "summary": "The Board of Vocational Education and Rehabilitation, Division of Vocational Rehabilitation, appeared in the state agencies roster and submitted a brief letter indicating it had little knowledge of the construction project and foresaw no adverse environmental impact or material effect on its functions. The agency returned the submitted documents due to storage constraints and expressed no objection to the project.",
+  "form": "sectional",
+  "complaint_summary": "The Board of Vocational Education and Rehabilitation, Division of Vocational Rehabilitation is listed among state agencies that received the draft environmental statement for review.",
+  "evidence_pages": [
+    "197"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "STATE AGENCIES ... Board of Vocational Education and Rehabilitation  Division of Vocational Rehabilitation",
+  "summary_quote_verified": false,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "197"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "STATE AGENCIES ... Board of Vocational Education and Rehabilitation  Division of Vocational Rehabilitation",
+      "quote_verified": false,
+      "entity_as_written": "Board of Vocational Education and Rehabilitation Division of Vocational Rehabilitation",
+      "role_as_written": "Illinois state agency reviewer"
+    }
+  ],
+  "window_pages": [
+    187,
+    207
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 81,
+  "synthetic_no_complaint": false
+}

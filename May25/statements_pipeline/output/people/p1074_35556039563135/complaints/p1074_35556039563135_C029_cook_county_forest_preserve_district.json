@@ -1,0 +1,102 @@
+{
+  "complaint_id": "p1074_35556039563135_C029",
+  "complainer_id": "p1074_35556039563135_K005",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 29,
+  "entity": "Cook County Forest Preserve District",
+  "kind": "organization",
+  "role": "Owner of Section 4(f) lands affected by project",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "listed as agency sent draft EIS for review and comment, with no objection or complaint recorded; project requires temporary easement on their land with restoration commitments",
+  "summary": "The Cook County Forest Preserve District owns Woodrow Wilson Woods along Lincoln Highway, and the project requires a temporary construction easement of 0.17 acres from their land for bridge reconstruction over Thorn Creek and driveway access restoration. The District is listed among local agencies that received the draft environmental statement for review and comment, but no objection or complaint from the District appears in this window. The document notes that all disturbed areas within the easement will be restored to their original state.",
+  "form": "sectional",
+  "complaint_summary": "The Cook County Forest Preserve District is listed among local agencies to which the draft environmental statement was sent for review and comment, but no comment or complaint from the District is recorded in this section.",
+  "evidence_pages": [
+    "43"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Cook County Forest Preserve District owns lands along Lincoln Highway. The proposed improvement does not require right-of-way acquisition, but will require a temporary construction easement for the purposes of removing old existing bridge wingwalls in the process of constructing a new bridge over Thorn Creek.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased",
+    "sectional"
+  ],
+  "n_mentions": 5,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "1"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Cook County Forest Preserve District",
+      "quote_verified": true,
+      "entity_as_written": "Cook County Forest Preserve District",
+      "role_as_written": "Owner of Section 4(f) lands affected by project"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "52"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Cook County Forest Preserve District owns lands along Lincoln Highway. The proposed improvement does not require right-of-way acquisition, but will require a temporary construction easement for the purposes of removing old existing bridge wingwalls in the process of constructing a new bridge over Thorn Creek.",
+      "quote_verified": true,
+      "entity_as_written": "Cook County Forest Preserve District",
+      "role_as_written": "Land owner / local government entity"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "295"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "\"It is our opinion that the temporary use will not have any significant effect on the recreational opportunities of the community\".",
+      "quote_verified": true,
+      "entity_as_written": "Cook County Forest Preserve District",
+      "role_as_written": "owner of Section 4(f) land / commenter"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "321"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "NAME OF AGENCY: Forest Preserve District of Cook County (September 4, 1974)",
+      "quote_verified": false,
+      "entity_as_written": "Cook County Forest Preserve District",
+      "role_as_written": "commenter in early coordination table"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "236"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Cook County Forest Preserve Dis.",
+      "quote_verified": true,
+      "entity_as_written": "Cook County Forest Preserve District",
+      "role_as_written": "commenter listed in NIPC project summary"
+    }
+  ],
+  "window_pages": [
+    1,
+    43
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 5,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036806586_C124",
+  "complainer_id": "p1074_35556036806586_K013",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 124,
+  "entity": "South Carolina Wildlife and Marine Resources Commission",
+  "kind": "agency",
+  "role": "State agency requested to review draft EIS; responded",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "entity listed only in sectional roster with no attributed position",
+  "summary": "The South Carolina Wildlife and Marine Resources Commission appears only in a sectional listing of state agencies that were requested to review the draft EIS, with no attributed position, complaint, or comment text visible in this document window. No stance, concern, or response can be identified from the available text.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "1"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim",
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "State Agencies ... *South Carolina Wildlife and Marine Resources Commission",
+  "summary_quote_verified": false,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "1"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "State Agencies ... *South Carolina Wildlife and Marine Resources Commission",
+      "quote_verified": false,
+      "entity_as_written": "South Carolina Wildlife and Marine Resources Commission",
+      "role_as_written": "State agency requested to review draft EIS; responded"
+    }
+  ],
+  "window_pages": [
+    1,
+    11
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 13,
+  "synthetic_no_complaint": true
+}

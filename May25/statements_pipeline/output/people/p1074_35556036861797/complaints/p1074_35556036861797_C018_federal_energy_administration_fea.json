@@ -1,0 +1,81 @@
+{
+  "complaint_id": "p1074_35556036861797_C018",
+  "complainer_id": "p1074_35556036861797_K008",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 18,
+  "entity": "Federal Energy Administration (FEA)",
+  "kind": "agency",
+  "role": "Commenter / federal agency",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase in commenter list and impact section noting FEA raised concerns about unregulated pollutant emissions from the proposed standard",
+  "summary": "The Federal Energy Administration (FEA) is listed as one of the federal agency commenters on the draft EIS. Based on the exemplar quote (which falls outside this window), FEA raised concerns about increased sulphate and unregulated pollutant emissions (e.g., particulates) resulting from larger catalysts and engine recalibration or diesel substitution under the proposed AFES. Within this window, FEA is mentioned only as a named commenter whose comments were summarized and analyzed, with the document noting that the discussion of sulfate emissions was ultimately dropped from the final EIS.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "FEA is listed among the federal agencies (alongside EPA) that commented on the draft EIS, with their comments summarized and analyzed in the document.",
+  "evidence_pages": [
+    "19"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036861797_R007"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "FEA stated that the draft EIS mentioned the possibility of increased sulphate emissions from the use of more and larger catalysts. They stated that an even more important consideration may be the increased emissions of unregulated pollutants (e.g., particulates) due to recalibration of engines or substitution of diesel engines.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased",
+    "sectional"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "19"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "List of Commenters",
+      "quote_verified": true,
+      "entity_as_written": "Federal Energy Administration",
+      "role_as_written": "Commenter / federal agency"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "91"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "FEA stated that the draft EIS mentioned the possibility of increased sulphate emissions from the use of more and larger catalysts. They stated that an even more important consideration may be the increased emissions of unregulated pollutants (e.g., particulates) due to recalibration of engines or substitution of diesel engines.",
+      "quote_verified": true,
+      "entity_as_written": "Federal Energy Administration (FEA)",
+      "role_as_written": "federal agency / commenter"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "101"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "FEA states that the increased fuel economy of NPA's may make them more attractive to consumers and thereby encourage a shift from passenger automobiles to NPA's.",
+      "quote_verified": true,
+      "entity_as_written": "Federal Energy Administration (FEA)",
+      "role_as_written": "federal agency / commenter"
+    }
+  ],
+  "window_pages": [
+    9,
+    57
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 8,
+  "synthetic_no_complaint": false
+}

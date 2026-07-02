@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C086",
+  "complainer_id": "p1074_35556039563135_K080",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 86,
+  "entity": "Allan F. Landolt",
+  "kind": "official",
+  "role": "Director, Illinois Department of Aeronautics",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "states the proposed development will not have any effect upon the environment relative to aeronautical users",
+  "summary": "Allan F. Landolt, Director of the Illinois Department of Aeronautics, reviewed the draft environmental statement and concluded that the proposed highway development would have no effect on the environment relative to aeronautical users. His comment is brief and non-objecting, expressing neither support nor opposition to the project itself.",
+  "form": "sectional",
+  "complaint_summary": "The Illinois Department of Aeronautics, under Landolt's direction, reviewed the draft environmental statement and found that the proposed development will not have any effect upon the environment relative to aeronautical users.",
+  "evidence_pages": [
+    "179"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556039563135_R044"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "It is the opinion of this office that the proposed development will not have any effect upon the environment relative to aeronautical users.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "179"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "It is the opinion of this office that the proposed development will not have any effect upon the environment relative to aeronautical users.",
+      "quote_verified": true,
+      "entity_as_written": "Allan F. Landolt",
+      "role_as_written": "Director, Illinois Department of Aeronautics"
+    }
+  ],
+  "window_pages": [
+    169,
+    189
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 80,
+  "synthetic_no_complaint": false
+}

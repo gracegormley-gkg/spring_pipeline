@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036811230_C028",
+  "complainer_id": "p1074_35556036811230_K021",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 28,
+  "entity": "New York State Transportation Commissioner",
+  "kind": "official",
+  "role": "New York State Transportation Commissioner",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "appointed 50-member citizen committee to support favorable federal decision on the Buffalo-Amherst rail rapid transit project",
+  "summary": "The New York State Transportation Commissioner took an active supportive role in the Buffalo-Amherst rail rapid transit project by appointing a 50-member citizen's committee in July 1975 to mobilize community support and press for a favorable federal decision. This action is described as part of the broader community participation and political support effort surrounding the Metrorail project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The New York State Transportation Commissioner appointed a 50-member citizen's committee called the Committee for Federal Action in July 1975 to support local efforts toward a favorable federal decision on the Buffalo-Amherst rail rapid transit project.",
+  "evidence_pages": [
+    "83"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "In July 1975, the New York State Transportation Commissioner appointed a 50-member citizen's committee to support local efforts directed toward a favorable decision on the Buffalo-Amherst rail rapid transit project.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "83"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In July 1975, the New York State Transportation Commissioner appointed a 50-member citizen's committee to support local efforts directed toward a favorable decision on the Buffalo-Amherst rail rapid transit project.",
+      "quote_verified": true,
+      "entity_as_written": "New York State Transportation Commissioner",
+      "role_as_written": "New York State Transportation Commissioner"
+    }
+  ],
+  "window_pages": [
+    73,
+    93
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 21,
+  "synthetic_no_complaint": false
+}

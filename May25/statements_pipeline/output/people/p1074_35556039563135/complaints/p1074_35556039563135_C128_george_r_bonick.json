@@ -1,0 +1,89 @@
+{
+  "complaint_id": "p1074_35556039563135_C128",
+  "complainer_id": "p1074_35556039563135_K091",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 128,
+  "entity": "George R. Bonick",
+  "kind": "official",
+  "role": "Mayor of Chicago Heights, Illinois",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly stating 'We are already on record as favoring the proposed improvement' and urging prompt approval",
+  "summary": "Mayor George R. Bonick of Chicago Heights expressed strong support for the Lincoln Highway improvement project in two separate letters. In January 1972, he (through the City's Corporation Counsel) confirmed agreement with Scheme A for the improvement. In May 1974, he directly wrote to NIPC affirming the city's favor of the project, citing traffic safety, flow, and appearance benefits, while urging prompt approval due to delays.",
+  "form": "letter",
+  "complaint_summary": "Mayor Bonick wrote to NIPC expressing strong support for the Lincoln Highway improvement, citing traffic hazard reduction, improved traffic flow, and highway appearance, while urging prompt approval due to project delays and deteriorating road surface.",
+  "evidence_pages": [
+    "241"
+  ],
+  "statement": {
+    "text": "We are already on record as favoring the proposed improvement as it affects Chicago Heights between Western Avenue and Chicago Road. The improvement should reduce traffic hazards, increase traffic flow, and improve the appearance of the highway. This project is already behind schedule. We were promised that land acquisition for the improvement would begin in 1973. The present surface of Highway 30 is deteriorating rapidly and cannot take any more delays. We urge prompt approval and funding of this improvement. Very truly yours, Mayor GRB: v1 C-9",
+    "opening_anchor": "We are already on record as favoring the proposed improvement as it affects Chicago Heights between Western Avenue and Chicago Road.",
+    "closing_anchor": "We urge prompt approval and funding of this improvement. Very truly yours, Mayor GRB: v1 C-9",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We are already on record as favoring the proposed improvement as it affects Chicago Heights between Western Avenue and Chicago Road. The improvement should reduce traffic hazards, increase traffic flow, and improve the appearance of the highway.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 4,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "241"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We are already on record as favoring the proposed improvement as it affects Chicago Heights between Western Avenue and Chicago Road.",
+      "quote_verified": true,
+      "entity_as_written": "George R. Bonick",
+      "role_as_written": "Mayor, City of Chicago Heights"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "241"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We are already on record as favoring the proposed improvement as it affects Chicago Heights between Western Avenue and Chicago Road.",
+      "quote_verified": true,
+      "entity_as_written": "George R. Bonick",
+      "role_as_written": "Mayor of Chicago Heights, Illinois"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "241"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We are already on record as favoring the proposed improvement as it affects Chicago Heights between Western Avenue and Chicago Road. The improvement should reduce traffic hazards, increase traffic flow, and improve the appearance of the highway.",
+      "quote_verified": true,
+      "entity_as_written": "George R. Bonick",
+      "role_as_written": "Mayor, City of Chicago Heights"
+    },
+    {
+      "chunk_index": 7,
+      "evidence_pages": [
+        "241"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We are already on record as favoring the proposed improvement as it affects Chicago Heights between Western Avenue and Chicago Road.",
+      "quote_verified": true,
+      "entity_as_written": "GEORGE R. BONICK",
+      "role_as_written": "Mayor, Chicago Heights"
+    }
+  ],
+  "window_pages": [
+    231,
+    251
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 91,
+  "synthetic_no_complaint": false
+}

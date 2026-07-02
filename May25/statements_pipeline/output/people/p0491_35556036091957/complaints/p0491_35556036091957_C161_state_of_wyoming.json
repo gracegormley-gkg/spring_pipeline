@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C161",
+  "complainer_id": "p0491_35556036091957_K141",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 161,
+  "entity": "State of Wyoming",
+  "kind": "government",
+  "role": "state government, commenter",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly supports 'open until closed' philosophy as key condition for proposal's success",
+  "summary": "The State of Wyoming, through Governor Stanley K. Hathaway, expressed concern about the proposed ORV regulations while conditionally supporting the proposal, insisting that the 'open until closed' philosophy must be the foundational approach. Wyoming emphasized its substantial stake in the outcome given that nearly 50% of the state's surface land is federally owned, and argued that flexibility built into the proposal is essential for successful administration.",
+  "form": "letter",
+  "complaint_summary": "Governor Hathaway conditionally supports the ORV proposal but insists it must be based on an 'open until closed' philosophy, arguing this approach has worked successfully in Wyoming and will provide the flexibility needed for administration across diverse regions.",
+  "evidence_pages": [
+    "222"
+  ],
+  "statement": {
+    "text": "The State of Wyoming is quite concerned regarding the proposed rules and regulations to be established by the Department of the Interior concerning the use of off-road vehicles.\nFederal consideration and thinking on this proposal was first officially brought to our attention at a recent Wyoming and federal Recreation Action Team meeting and subsequently when the State was given the opportunity to review the Draft Environmental Statement on the subject.\nThe one aspect of the proposal which both the State and Wyoming based federal administrators point to as the key to success is that the proposal must be based on the philosophy that all areas will be considered open to use until circumstances and conditions develop which would merit specific action to the contrary. This open until closed philosophy has successfully been used in Wyoming for pears and by its continuance we feel that enough flexibility will be built into the proposal to allow for successful administration in Wyoming as well as the highly populated areas east of the Mississippi and on the west coast.\nAs you know, almost 50 per cent of the surface land of this state is owned by the federal government, and this land will obviously be directly affected by this proposal. Major activities such as mineral exploration, agriculture, hunting and fishing and all general outdoor recreational activities directly and substantially\n\nThe Honorable Rogers C.B. Morton Page 2\nJuly 20, 1972\naffect Wyoming's economy and our way of life. Thus, we feel we have a substantial interest in the initiation and success of this proposal.\nThank you for your consideration of this matter.\nWith best wishes, I am\nSincerely yours,",
+    "opening_anchor": "The State of Wyoming is quite concerned regarding the proposed rules and regulations to be established by the Department of the Interior concerning the use of off-road vehicles.",
+    "closing_anchor": "Thank you for your consideration of this matter.\n\nWith best wishes, I am\n\nSincerely yours,",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The State of Wyoming is quite concerned regarding the proposed rules and regulations to be established by the Department of the Interior concerning the use of off-road vehicles.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "222"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The State of Wyoming is quite concerned regarding the proposed rules and regulations to be established by the Department of the Interior concerning the use of off-road vehicles.",
+      "quote_verified": true,
+      "entity_as_written": "State of Wyoming",
+      "role_as_written": "state government, commenter"
+    }
+  ],
+  "window_pages": [
+    212,
+    232
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 141,
+  "synthetic_no_complaint": false
+}

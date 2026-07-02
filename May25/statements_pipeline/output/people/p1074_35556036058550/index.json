@@ -1,0 +1,1924 @@
+{
+  "doc_id": "p1074_35556036058550",
+  "work_id": "csv:35556036058550",
+  "title": "Operation Breakthrough : environmental impact statement.",
+  "n_pages": 72,
+  "n_chunks": 2,
+  "n_raw_rows": 28,
+  "n_complainers": 25,
+  "n_complaints": 51,
+  "n_responses": 34,
+  "stance_counts": {
+    "neutral": 17,
+    "conditional": 6,
+    "in_favor": 2
+  },
+  "stance_confidence_counts": {
+    "high": 4,
+    "medium": 18,
+    "low": 3,
+    "unknown": 0
+  },
+  "review_counts": {
+    "needs_review": 11,
+    "auto_ok": 14,
+    "reasons": {
+      "quote_not_verbatim": 7,
+      "private_individual": 1,
+      "low_stance_confidence": 3,
+      "no_complaints": 3
+    }
+  },
+  "statement_form_counts": {
+    "letter": 3,
+    "testimony": 0,
+    "written_comment": 2,
+    "narrator_paraphrase": 43,
+    "sectional": 0,
+    "none": 3,
+    "present": 48,
+    "absent": 3
+  },
+  "response_form_counts": {
+    "agency_response": 33,
+    "preparer_reply": 0,
+    "discussion": 1,
+    "none": 0,
+    "present": 34,
+    "absent": 0
+  },
+  "elapsed_sec": 73.6,
+  "usage": {
+    "extract": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 2,
+          "input_tokens": 27161,
+          "output_tokens": 2859,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 0.1244
+        }
+      ],
+      "total": {
+        "calls": 2,
+        "input_tokens": 27161,
+        "output_tokens": 2859,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 0.1244
+      }
+    },
+    "find_statement": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 25,
+          "input_tokens": 269618,
+          "output_tokens": 14536,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 1.0269
+        }
+      ],
+      "total": {
+        "calls": 25,
+        "input_tokens": 269618,
+        "output_tokens": 14536,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 1.0269
+      }
+    },
+    "total": {
+      "by_model": [
+        {
+          "model": "us.anthropic.claude-sonnet-4-6",
+          "calls": 27,
+          "input_tokens": 296779,
+          "output_tokens": 17395,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 1.1513
+        }
+      ],
+      "total": {
+        "calls": 27,
+        "input_tokens": 296779,
+        "output_tokens": 17395,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_usd": 1.1513
+      }
+    }
+  },
+  "schema": {
+    "ids": {
+      "complainer_id": "<doc_id>_K<NNN> — one per merged entity",
+      "complaint_id": "<doc_id>_C<NNN> — one per complaint instance (entities can have multiple)",
+      "child_id": "<doc_id>_R<NNN> — one per agency response"
+    },
+    "stance_vocabulary": [
+      "in_favor",
+      "opposed",
+      "conditional",
+      "neutral"
+    ],
+    "stance_confidence_vocabulary": [
+      "high",
+      "medium",
+      "low"
+    ],
+    "kind_vocabulary": [
+      "individual",
+      "official",
+      "organization",
+      "agency",
+      "tribe",
+      "government",
+      "other"
+    ],
+    "statement_forms": [
+      "letter",
+      "testimony",
+      "written_comment",
+      "narrator_paraphrase",
+      "sectional",
+      "none"
+    ],
+    "response_forms": [
+      "agency_response",
+      "preparer_reply",
+      "discussion",
+      "none"
+    ],
+    "stance_source": "Decided by find_statement at the entity level — same stance applies to all complaints from the same entity. Capped to 'medium' when no contiguous statement is verified for any complaint; forced 'low' when there are no complaints.",
+    "page_numbers": "EXACT — from per-page JSON source.",
+    "statement_text": "Sliced from the doc text between verbatim opening/closing anchors. Null when either anchor doesn't verify.",
+    "response_text": "Sliced from the doc text between verbatim response anchors. Null when either anchor doesn't verify or no response is in the window.",
+    "needs_human_review": "True when kind=='individual' OR summary_quote_verified is False OR stance_confidence=='low' OR no complaints were produced.",
+    "merge_rule": "One row per entity. find_statement may then return multiple complaints per entity — each becomes its own complaint file.",
+    "cost_note": "USD costs are ESTIMATES; verify against AWS Bedrock invoice."
+  },
+  "sequence": [
+    {
+      "order": 1,
+      "complaint_id": "p1074_35556036058550_C001",
+      "complainer_id": "p1074_35556036058550_K015",
+      "complaint_file": "complaints/p1074_35556036058550_C001_national_bureau_of_standards.json",
+      "response_ids": []
+    },
+    {
+      "order": 2,
+      "complaint_id": "p1074_35556036058550_C002",
+      "complainer_id": "p1074_35556036058550_K015",
+      "complaint_file": "complaints/p1074_35556036058550_C002_national_bureau_of_standards.json",
+      "response_ids": []
+    },
+    {
+      "order": 3,
+      "complaint_id": "p1074_35556036058550_C003",
+      "complainer_id": "p1074_35556036058550_K015",
+      "complaint_file": "complaints/p1074_35556036058550_C003_national_bureau_of_standards.json",
+      "response_ids": []
+    },
+    {
+      "order": 4,
+      "complaint_id": "p1074_35556036058550_C004",
+      "complainer_id": "p1074_35556036058550_K012",
+      "complaint_file": "complaints/p1074_35556036058550_C004_indiana_state_division_of_water_resource.json",
+      "response_ids": []
+    },
+    {
+      "order": 5,
+      "complaint_id": "p1074_35556036058550_C005",
+      "complainer_id": "p1074_35556036058550_K002",
+      "complaint_file": "complaints/p1074_35556036058550_C005_bibb_county_planning_commission.json",
+      "response_ids": []
+    },
+    {
+      "order": 6,
+      "complaint_id": "p1074_35556036058550_C006",
+      "complainer_id": "p1074_35556036058550_K014",
+      "complaint_file": "complaints/p1074_35556036058550_C006_national_academy_of_sciences_national_re.json",
+      "response_ids": []
+    },
+    {
+      "order": 7,
+      "complaint_id": "p1074_35556036058550_C007",
+      "complainer_id": "p1074_35556036058550_K007",
+      "complaint_file": "complaints/p1074_35556036058550_C007_department_of_the_army.json",
+      "response_ids": [
+        "p1074_35556036058550_R001"
+      ]
+    },
+    {
+      "order": 8,
+      "complaint_id": "p1074_35556036058550_C008",
+      "complainer_id": "p1074_35556036058550_K007",
+      "complaint_file": "complaints/p1074_35556036058550_C008_department_of_the_army.json",
+      "response_ids": [
+        "p1074_35556036058550_R002"
+      ]
+    },
+    {
+      "order": 9,
+      "complaint_id": "p1074_35556036058550_C009",
+      "complainer_id": "p1074_35556036058550_K007",
+      "complaint_file": "complaints/p1074_35556036058550_C009_department_of_the_army.json",
+      "response_ids": [
+        "p1074_35556036058550_R003"
+      ]
+    },
+    {
+      "order": 10,
+      "complaint_id": "p1074_35556036058550_C010",
+      "complainer_id": "p1074_35556036058550_K003",
+      "complaint_file": "complaints/p1074_35556036058550_C010_department_of_agriculture.json",
+      "response_ids": [
+        "p1074_35556036058550_R004"
+      ]
+    },
+    {
+      "order": 11,
+      "complaint_id": "p1074_35556036058550_C011",
+      "complainer_id": "p1074_35556036058550_K003",
+      "complaint_file": "complaints/p1074_35556036058550_C011_department_of_agriculture.json",
+      "response_ids": [
+        "p1074_35556036058550_R005"
+      ]
+    },
+    {
+      "order": 12,
+      "complaint_id": "p1074_35556036058550_C012",
+      "complainer_id": "p1074_35556036058550_K003",
+      "complaint_file": "complaints/p1074_35556036058550_C012_department_of_agriculture.json",
+      "response_ids": [
+        "p1074_35556036058550_R006"
+      ]
+    },
+    {
+      "order": 13,
+      "complaint_id": "p1074_35556036058550_C013",
+      "complainer_id": "p1074_35556036058550_K003",
+      "complaint_file": "complaints/p1074_35556036058550_C013_department_of_agriculture.json",
+      "response_ids": [
+        "p1074_35556036058550_R007"
+      ]
+    },
+    {
+      "order": 14,
+      "complaint_id": "p1074_35556036058550_C014",
+      "complainer_id": "p1074_35556036058550_K003",
+      "complaint_file": "complaints/p1074_35556036058550_C014_department_of_agriculture.json",
+      "response_ids": [
+        "p1074_35556036058550_R008"
+      ]
+    },
+    {
+      "order": 15,
+      "complaint_id": "p1074_35556036058550_C015",
+      "complainer_id": "p1074_35556036058550_K003",
+      "complaint_file": "complaints/p1074_35556036058550_C015_department_of_agriculture.json",
+      "response_ids": [
+        "p1074_35556036058550_R009"
+      ]
+    },
+    {
+      "order": 16,
+      "complaint_id": "p1074_35556036058550_C016",
+      "complainer_id": "p1074_35556036058550_K003",
+      "complaint_file": "complaints/p1074_35556036058550_C016_department_of_agriculture.json",
+      "response_ids": [
+        "p1074_35556036058550_R010"
+      ]
+    },
+    {
+      "order": 17,
+      "complaint_id": "p1074_35556036058550_C017",
+      "complainer_id": "p1074_35556036058550_K003",
+      "complaint_file": "complaints/p1074_35556036058550_C017_department_of_agriculture.json",
+      "response_ids": [
+        "p1074_35556036058550_R011"
+      ]
+    },
+    {
+      "order": 18,
+      "complaint_id": "p1074_35556036058550_C018",
+      "complainer_id": "p1074_35556036058550_K010",
+      "complaint_file": "complaints/p1074_35556036058550_C018_environmental_protection_agency.json",
+      "response_ids": [
+        "p1074_35556036058550_R012"
+      ]
+    },
+    {
+      "order": 19,
+      "complaint_id": "p1074_35556036058550_C019",
+      "complainer_id": "p1074_35556036058550_K010",
+      "complaint_file": "complaints/p1074_35556036058550_C019_environmental_protection_agency.json",
+      "response_ids": [
+        "p1074_35556036058550_R013"
+      ]
+    },
+    {
+      "order": 20,
+      "complaint_id": "p1074_35556036058550_C020",
+      "complainer_id": "p1074_35556036058550_K010",
+      "complaint_file": "complaints/p1074_35556036058550_C020_environmental_protection_agency.json",
+      "response_ids": [
+        "p1074_35556036058550_R014"
+      ]
+    },
+    {
+      "order": 21,
+      "complaint_id": "p1074_35556036058550_C021",
+      "complainer_id": "p1074_35556036058550_K010",
+      "complaint_file": "complaints/p1074_35556036058550_C021_environmental_protection_agency.json",
+      "response_ids": [
+        "p1074_35556036058550_R015"
+      ]
+    },
+    {
+      "order": 22,
+      "complaint_id": "p1074_35556036058550_C022",
+      "complainer_id": "p1074_35556036058550_K010",
+      "complaint_file": "complaints/p1074_35556036058550_C022_environmental_protection_agency.json",
+      "response_ids": [
+        "p1074_35556036058550_R016"
+      ]
+    },
+    {
+      "order": 23,
+      "complaint_id": "p1074_35556036058550_C023",
+      "complainer_id": "p1074_35556036058550_K011",
+      "complaint_file": "complaints/p1074_35556036058550_C023_federal_power_commission.json",
+      "response_ids": [
+        "p1074_35556036058550_R017"
+      ]
+    },
+    {
+      "order": 24,
+      "complaint_id": "p1074_35556036058550_C024",
+      "complainer_id": "p1074_35556036058550_K011",
+      "complaint_file": "complaints/p1074_35556036058550_C024_federal_power_commission.json",
+      "response_ids": [
+        "p1074_35556036058550_R018"
+      ]
+    },
+    {
+      "order": 25,
+      "complaint_id": "p1074_35556036058550_C025",
+      "complainer_id": "p1074_35556036058550_K008",
+      "complaint_file": "complaints/p1074_35556036058550_C025_department_of_the_interior.json",
+      "response_ids": [
+        "p1074_35556036058550_R019"
+      ]
+    },
+    {
+      "order": 26,
+      "complaint_id": "p1074_35556036058550_C026",
+      "complainer_id": "p1074_35556036058550_K008",
+      "complaint_file": "complaints/p1074_35556036058550_C026_department_of_the_interior.json",
+      "response_ids": [
+        "p1074_35556036058550_R020"
+      ]
+    },
+    {
+      "order": 27,
+      "complaint_id": "p1074_35556036058550_C027",
+      "complainer_id": "p1074_35556036058550_K008",
+      "complaint_file": "complaints/p1074_35556036058550_C027_department_of_the_interior.json",
+      "response_ids": [
+        "p1074_35556036058550_R021"
+      ]
+    },
+    {
+      "order": 28,
+      "complaint_id": "p1074_35556036058550_C028",
+      "complainer_id": "p1074_35556036058550_K008",
+      "complaint_file": "complaints/p1074_35556036058550_C028_department_of_the_interior.json",
+      "response_ids": [
+        "p1074_35556036058550_R022"
+      ]
+    },
+    {
+      "order": 29,
+      "complaint_id": "p1074_35556036058550_C029",
+      "complainer_id": "p1074_35556036058550_K008",
+      "complaint_file": "complaints/p1074_35556036058550_C029_department_of_the_interior.json",
+      "response_ids": [
+        "p1074_35556036058550_R023"
+      ]
+    },
+    {
+      "order": 30,
+      "complaint_id": "p1074_35556036058550_C030",
+      "complainer_id": "p1074_35556036058550_K008",
+      "complaint_file": "complaints/p1074_35556036058550_C030_department_of_the_interior.json",
+      "response_ids": [
+        "p1074_35556036058550_R024"
+      ]
+    },
+    {
+      "order": 31,
+      "complaint_id": "p1074_35556036058550_C031",
+      "complainer_id": "p1074_35556036058550_K008",
+      "complaint_file": "complaints/p1074_35556036058550_C031_department_of_the_interior.json",
+      "response_ids": [
+        "p1074_35556036058550_R025"
+      ]
+    },
+    {
+      "order": 32,
+      "complaint_id": "p1074_35556036058550_C032",
+      "complainer_id": "p1074_35556036058550_K008",
+      "complaint_file": "complaints/p1074_35556036058550_C032_department_of_the_interior.json",
+      "response_ids": [
+        "p1074_35556036058550_R026"
+      ]
+    },
+    {
+      "order": 33,
+      "complaint_id": "p1074_35556036058550_C033",
+      "complainer_id": "p1074_35556036058550_K004",
+      "complaint_file": "complaints/p1074_35556036058550_C033_department_of_commerce.json",
+      "response_ids": [
+        "p1074_35556036058550_R027"
+      ]
+    },
+    {
+      "order": 34,
+      "complaint_id": "p1074_35556036058550_C034",
+      "complainer_id": "p1074_35556036058550_K005",
+      "complaint_file": "complaints/p1074_35556036058550_C034_department_of_health_education_and_welfa.json",
+      "response_ids": [
+        "p1074_35556036058550_R028"
+      ]
+    },
+    {
+      "order": 35,
+      "complaint_id": "p1074_35556036058550_C035",
+      "complainer_id": "p1074_35556036058550_K005",
+      "complaint_file": "complaints/p1074_35556036058550_C035_department_of_health_education_and_welfa.json",
+      "response_ids": [
+        "p1074_35556036058550_R029"
+      ]
+    },
+    {
+      "order": 36,
+      "complaint_id": "p1074_35556036058550_C036",
+      "complainer_id": "p1074_35556036058550_K009",
+      "complaint_file": "complaints/p1074_35556036058550_C036_department_of_transportation.json",
+      "response_ids": [
+        "p1074_35556036058550_R030"
+      ]
+    },
+    {
+      "order": 37,
+      "complaint_id": "p1074_35556036058550_C037",
+      "complainer_id": "p1074_35556036058550_K001",
+      "complaint_file": "complaints/p1074_35556036058550_C037_assistant_secretary_finger.json",
+      "response_ids": []
+    },
+    {
+      "order": 38,
+      "complaint_id": "p1074_35556036058550_C038",
+      "complainer_id": "p1074_35556036058550_K006",
+      "complaint_file": "complaints/p1074_35556036058550_C038_department_of_housing_and_urban_developm.json",
+      "response_ids": [
+        "p1074_35556036058550_R031"
+      ]
+    },
+    {
+      "order": 39,
+      "complaint_id": "p1074_35556036058550_C039",
+      "complainer_id": "p1074_35556036058550_K017",
+      "complaint_file": "complaints/p1074_35556036058550_C039_thomas_e_carroll.json",
+      "response_ids": []
+    },
+    {
+      "order": 40,
+      "complaint_id": "p1074_35556036058550_C040",
+      "complainer_id": "p1074_35556036058550_K017",
+      "complaint_file": "complaints/p1074_35556036058550_C040_thomas_e_carroll.json",
+      "response_ids": []
+    },
+    {
+      "order": 41,
+      "complaint_id": "p1074_35556036058550_C041",
+      "complainer_id": "p1074_35556036058550_K024",
+      "complaint_file": "complaints/p1074_35556036058550_C041_team_to_advance_research_for_gas_energy_.json",
+      "response_ids": [
+        "p1074_35556036058550_R032"
+      ]
+    },
+    {
+      "order": 42,
+      "complaint_id": "p1074_35556036058550_C042",
+      "complainer_id": "p1074_35556036058550_K013",
+      "complaint_file": "complaints/p1074_35556036058550_C042_john_n_nassikas.json",
+      "response_ids": [
+        "p1074_35556036058550_R033"
+      ]
+    },
+    {
+      "order": 43,
+      "complaint_id": "p1074_35556036058550_C043",
+      "complainer_id": "p1074_35556036058550_K019",
+      "complaint_file": "complaints/p1074_35556036058550_C043_harold_b_finger.json",
+      "response_ids": []
+    },
+    {
+      "order": 44,
+      "complaint_id": "p1074_35556036058550_C044",
+      "complainer_id": "p1074_35556036058550_K020",
+      "complaint_file": "complaints/p1074_35556036058550_C044_oak_ridge_national_laboratory.json",
+      "response_ids": []
+    },
+    {
+      "order": 45,
+      "complaint_id": "p1074_35556036058550_C045",
+      "complainer_id": "p1074_35556036058550_K021",
+      "complaint_file": "complaints/p1074_35556036058550_C045_pratt_and_whitney.json",
+      "response_ids": [
+        "p1074_35556036058550_R034"
+      ]
+    },
+    {
+      "order": 46,
+      "complaint_id": "p1074_35556036058550_C046",
+      "complainer_id": "p1074_35556036058550_K025",
+      "complaint_file": "complaints/p1074_35556036058550_C046_u_s_department_of_housing_and_urban_deve.json",
+      "response_ids": []
+    },
+    {
+      "order": 47,
+      "complaint_id": "p1074_35556036058550_C047",
+      "complainer_id": "p1074_35556036058550_K018",
+      "complaint_file": "complaints/p1074_35556036058550_C047_federal_aviation_administration.json",
+      "response_ids": []
+    },
+    {
+      "order": 48,
+      "complaint_id": "p1074_35556036058550_C048",
+      "complainer_id": "p1074_35556036058550_K018",
+      "complaint_file": "complaints/p1074_35556036058550_C048_federal_aviation_administration.json",
+      "response_ids": []
+    },
+    {
+      "order": 49,
+      "complaint_id": "p1074_35556036058550_C049",
+      "complainer_id": "p1074_35556036058550_K016",
+      "complaint_file": "complaints/p1074_35556036058550_C049_new_jersey_bell_telephone_company.json",
+      "response_ids": []
+    },
+    {
+      "order": 50,
+      "complaint_id": "p1074_35556036058550_C050",
+      "complainer_id": "p1074_35556036058550_K022",
+      "complaint_file": "complaints/p1074_35556036058550_C050_richard_c_van_dusen.json",
+      "response_ids": []
+    },
+    {
+      "order": 51,
+      "complaint_id": "p1074_35556036058550_C051",
+      "complainer_id": "p1074_35556036058550_K023",
+      "complaint_file": "complaints/p1074_35556036058550_C051_secretary_george_romney.json",
+      "response_ids": []
+    }
+  ],
+  "complaints": [
+    {
+      "complaint_id": "p1074_35556036058550_C001",
+      "complainer_id": "p1074_35556036058550_K015",
+      "file": "complaints/p1074_35556036058550_C001_national_bureau_of_standards.json",
+      "order": 1,
+      "entity": "National Bureau of Standards",
+      "kind": "agency",
+      "role": "Technical reviewer of housing system designs under HUD sponsorship",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "5"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C002",
+      "complainer_id": "p1074_35556036058550_K015",
+      "file": "complaints/p1074_35556036058550_C002_national_bureau_of_standards.json",
+      "order": 2,
+      "entity": "National Bureau of Standards",
+      "kind": "agency",
+      "role": "Technical reviewer of housing system designs under HUD sponsorship",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "5"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C003",
+      "complainer_id": "p1074_35556036058550_K015",
+      "file": "complaints/p1074_35556036058550_C003_national_bureau_of_standards.json",
+      "order": 3,
+      "entity": "National Bureau of Standards",
+      "kind": "agency",
+      "role": "Technical reviewer of housing system designs under HUD sponsorship",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "5"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C004",
+      "complainer_id": "p1074_35556036058550_K012",
+      "file": "complaints/p1074_35556036058550_C004_indiana_state_division_of_water_resource.json",
+      "order": 4,
+      "entity": "Indiana State Division of Water Resources",
+      "kind": "agency",
+      "role": "State agency studying storm drainage design effectiveness at Indianapolis site",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "14"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C005",
+      "complainer_id": "p1074_35556036058550_K002",
+      "file": "complaints/p1074_35556036058550_C005_bibb_county_planning_commission.json",
+      "order": 5,
+      "entity": "Bibb County Planning Commission",
+      "kind": "government",
+      "role": "Local government undertaking ecological and water quality studies at Macon site for HUD",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "15"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C006",
+      "complainer_id": "p1074_35556036058550_K014",
+      "file": "complaints/p1074_35556036058550_C006_national_academy_of_sciences_national_re.json",
+      "order": 6,
+      "entity": "National Academy of Sciences - National Research Council",
+      "kind": "organization",
+      "role": "Commissioned by HUD to examine social mixing in housing",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "17"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C007",
+      "complainer_id": "p1074_35556036058550_K007",
+      "file": "complaints/p1074_35556036058550_C007_department_of_the_army.json",
+      "order": 7,
+      "entity": "Department of the Army",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R001"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C008",
+      "complainer_id": "p1074_35556036058550_K007",
+      "file": "complaints/p1074_35556036058550_C008_department_of_the_army.json",
+      "order": 8,
+      "entity": "Department of the Army",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R002"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C009",
+      "complainer_id": "p1074_35556036058550_K007",
+      "file": "complaints/p1074_35556036058550_C009_department_of_the_army.json",
+      "order": 9,
+      "entity": "Department of the Army",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "19"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R003"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C010",
+      "complainer_id": "p1074_35556036058550_K003",
+      "file": "complaints/p1074_35556036058550_C010_department_of_agriculture.json",
+      "order": 10,
+      "entity": "Department of Agriculture",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "20"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R004"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C011",
+      "complainer_id": "p1074_35556036058550_K003",
+      "file": "complaints/p1074_35556036058550_C011_department_of_agriculture.json",
+      "order": 11,
+      "entity": "Department of Agriculture",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "20"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R005"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C012",
+      "complainer_id": "p1074_35556036058550_K003",
+      "file": "complaints/p1074_35556036058550_C012_department_of_agriculture.json",
+      "order": 12,
+      "entity": "Department of Agriculture",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "20"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R006"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C013",
+      "complainer_id": "p1074_35556036058550_K003",
+      "file": "complaints/p1074_35556036058550_C013_department_of_agriculture.json",
+      "order": 13,
+      "entity": "Department of Agriculture",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "20"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R007"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C014",
+      "complainer_id": "p1074_35556036058550_K003",
+      "file": "complaints/p1074_35556036058550_C014_department_of_agriculture.json",
+      "order": 14,
+      "entity": "Department of Agriculture",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "20"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R008"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C015",
+      "complainer_id": "p1074_35556036058550_K003",
+      "file": "complaints/p1074_35556036058550_C015_department_of_agriculture.json",
+      "order": 15,
+      "entity": "Department of Agriculture",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "20"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R009"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C016",
+      "complainer_id": "p1074_35556036058550_K003",
+      "file": "complaints/p1074_35556036058550_C016_department_of_agriculture.json",
+      "order": 16,
+      "entity": "Department of Agriculture",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "20"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R010"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C017",
+      "complainer_id": "p1074_35556036058550_K003",
+      "file": "complaints/p1074_35556036058550_C017_department_of_agriculture.json",
+      "order": 17,
+      "entity": "Department of Agriculture",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "20"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R011"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C018",
+      "complainer_id": "p1074_35556036058550_K010",
+      "file": "complaints/p1074_35556036058550_C018_environmental_protection_agency.json",
+      "order": 18,
+      "entity": "Environmental Protection Agency",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "20"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R012"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C019",
+      "complainer_id": "p1074_35556036058550_K010",
+      "file": "complaints/p1074_35556036058550_C019_environmental_protection_agency.json",
+      "order": 19,
+      "entity": "Environmental Protection Agency",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "20"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R013"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C020",
+      "complainer_id": "p1074_35556036058550_K010",
+      "file": "complaints/p1074_35556036058550_C020_environmental_protection_agency.json",
+      "order": 20,
+      "entity": "Environmental Protection Agency",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "20"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R014"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C021",
+      "complainer_id": "p1074_35556036058550_K010",
+      "file": "complaints/p1074_35556036058550_C021_environmental_protection_agency.json",
+      "order": 21,
+      "entity": "Environmental Protection Agency",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "20"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R015"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C022",
+      "complainer_id": "p1074_35556036058550_K010",
+      "file": "complaints/p1074_35556036058550_C022_environmental_protection_agency.json",
+      "order": 22,
+      "entity": "Environmental Protection Agency",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "20"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R016"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C023",
+      "complainer_id": "p1074_35556036058550_K011",
+      "file": "complaints/p1074_35556036058550_C023_federal_power_commission.json",
+      "order": 23,
+      "entity": "Federal Power Commission",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "20"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R017"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C024",
+      "complainer_id": "p1074_35556036058550_K011",
+      "file": "complaints/p1074_35556036058550_C024_federal_power_commission.json",
+      "order": 24,
+      "entity": "Federal Power Commission",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "20"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R018"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C025",
+      "complainer_id": "p1074_35556036058550_K008",
+      "file": "complaints/p1074_35556036058550_C025_department_of_the_interior.json",
+      "order": 25,
+      "entity": "Department of the Interior",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "21"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R019"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C026",
+      "complainer_id": "p1074_35556036058550_K008",
+      "file": "complaints/p1074_35556036058550_C026_department_of_the_interior.json",
+      "order": 26,
+      "entity": "Department of the Interior",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "21"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R020"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C027",
+      "complainer_id": "p1074_35556036058550_K008",
+      "file": "complaints/p1074_35556036058550_C027_department_of_the_interior.json",
+      "order": 27,
+      "entity": "Department of the Interior",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "21"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R021"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C028",
+      "complainer_id": "p1074_35556036058550_K008",
+      "file": "complaints/p1074_35556036058550_C028_department_of_the_interior.json",
+      "order": 28,
+      "entity": "Department of the Interior",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "21"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R022"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C029",
+      "complainer_id": "p1074_35556036058550_K008",
+      "file": "complaints/p1074_35556036058550_C029_department_of_the_interior.json",
+      "order": 29,
+      "entity": "Department of the Interior",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "21"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R023"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C030",
+      "complainer_id": "p1074_35556036058550_K008",
+      "file": "complaints/p1074_35556036058550_C030_department_of_the_interior.json",
+      "order": 30,
+      "entity": "Department of the Interior",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "21"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R024"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C031",
+      "complainer_id": "p1074_35556036058550_K008",
+      "file": "complaints/p1074_35556036058550_C031_department_of_the_interior.json",
+      "order": 31,
+      "entity": "Department of the Interior",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "21"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R025"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C032",
+      "complainer_id": "p1074_35556036058550_K008",
+      "file": "complaints/p1074_35556036058550_C032_department_of_the_interior.json",
+      "order": 32,
+      "entity": "Department of the Interior",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "21"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R026"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C033",
+      "complainer_id": "p1074_35556036058550_K004",
+      "file": "complaints/p1074_35556036058550_C033_department_of_commerce.json",
+      "order": 33,
+      "entity": "Department of Commerce",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "23"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R027"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C034",
+      "complainer_id": "p1074_35556036058550_K005",
+      "file": "complaints/p1074_35556036058550_C034_department_of_health_education_and_welfa.json",
+      "order": 34,
+      "entity": "Department of Health, Education, and Welfare",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "23"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R028"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C035",
+      "complainer_id": "p1074_35556036058550_K005",
+      "file": "complaints/p1074_35556036058550_C035_department_of_health_education_and_welfa.json",
+      "order": 35,
+      "entity": "Department of Health, Education, and Welfare",
+      "kind": "agency",
+      "role": "Federal agency commenter on draft EIS",
+      "stance": "conditional",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "23"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R029"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C036",
+      "complainer_id": "p1074_35556036058550_K009",
+      "file": "complaints/p1074_35556036058550_C036_department_of_transportation.json",
+      "order": 36,
+      "entity": "Department of Transportation",
+      "kind": "agency",
+      "role": "Agency converting from CNR to NEF noise ratings",
+      "stance": "in_favor",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "23"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R030"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C037",
+      "complainer_id": "p1074_35556036058550_K001",
+      "file": "complaints/p1074_35556036058550_C037_assistant_secretary_finger.json",
+      "order": 37,
+      "entity": "Assistant Secretary Finger",
+      "kind": "official",
+      "role": "Assistant Secretary, Department of Housing and Urban Development",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "24"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C038",
+      "complainer_id": "p1074_35556036058550_K006",
+      "file": "complaints/p1074_35556036058550_C038_department_of_housing_and_urban_developm.json",
+      "order": 38,
+      "entity": "Department of Housing and Urban Development",
+      "kind": "agency",
+      "role": "Lead agency / internal commenter on draft EIS",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "24"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R031"
+      ],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C039",
+      "complainer_id": "p1074_35556036058550_K017",
+      "file": "complaints/p1074_35556036058550_C039_thomas_e_carroll.json",
+      "order": 39,
+      "entity": "Thomas E. Carroll",
+      "kind": "official",
+      "role": "Assistant Administrator for Planning and Management, Environmental Protection Agency",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "33"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C040",
+      "complainer_id": "p1074_35556036058550_K017",
+      "file": "complaints/p1074_35556036058550_C040_thomas_e_carroll.json",
+      "order": 40,
+      "entity": "Thomas E. Carroll",
+      "kind": "official",
+      "role": "Assistant Administrator for Planning and Management, Environmental Protection Agency",
+      "stance": "in_favor",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "33"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C041",
+      "complainer_id": "p1074_35556036058550_K024",
+      "file": "complaints/p1074_35556036058550_C041_team_to_advance_research_for_gas_energy_.json",
+      "order": 41,
+      "entity": "Team to Advance Research for Gas Energy Transformation",
+      "kind": "organization",
+      "role": "Research program sponsor for fuel cell development",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "49"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R032"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C042",
+      "complainer_id": "p1074_35556036058550_K013",
+      "file": "complaints/p1074_35556036058550_C042_john_n_nassikas.json",
+      "order": 42,
+      "entity": "John N. Nassikas",
+      "kind": "individual",
+      "role": "Chairman, Federal Power Commission",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "50",
+        "51",
+        "52"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R033"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "private_individual"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C043",
+      "complainer_id": "p1074_35556036058550_K019",
+      "file": "complaints/p1074_35556036058550_C043_harold_b_finger.json",
+      "order": 43,
+      "entity": "Harold B. Finger",
+      "kind": "official",
+      "role": "Assistant Secretary, Department of Housing and Urban Development",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "letter",
+      "evidence_pages": [
+        "50"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C044",
+      "complainer_id": "p1074_35556036058550_K020",
+      "file": "complaints/p1074_35556036058550_C044_oak_ridge_national_laboratory.json",
+      "order": 44,
+      "entity": "Oak Ridge National Laboratory",
+      "kind": "organization",
+      "role": "Supporting contractor for HUD energy systems research",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "51"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C045",
+      "complainer_id": "p1074_35556036058550_K021",
+      "file": "complaints/p1074_35556036058550_C045_pratt_and_whitney.json",
+      "order": 45,
+      "entity": "Pratt and Whitney",
+      "kind": "organization",
+      "role": "Fuel cell program developer",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "51"
+      ],
+      "response_ids": [
+        "p1074_35556036058550_R034"
+      ],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "quote_not_verbatim"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C046",
+      "complainer_id": "p1074_35556036058550_K025",
+      "file": "complaints/p1074_35556036058550_C046_u_s_department_of_housing_and_urban_deve.json",
+      "order": 46,
+      "entity": "U. S. DEPARTMENT OF HOUSING AND URBAN DEVELOPMENT",
+      "kind": "agency",
+      "role": "Federal agency issuing noise abatement policy",
+      "stance": "neutral",
+      "stance_confidence": "high",
+      "form": "written_comment",
+      "evidence_pages": [
+        "54"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C047",
+      "complainer_id": "p1074_35556036058550_K018",
+      "file": "complaints/p1074_35556036058550_C047_federal_aviation_administration.json",
+      "order": 47,
+      "entity": "Federal Aviation Administration",
+      "kind": "agency",
+      "role": "Agency providing CNR/NEF noise rating data for airports",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "65"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C048",
+      "complainer_id": "p1074_35556036058550_K018",
+      "file": "complaints/p1074_35556036058550_C048_federal_aviation_administration.json",
+      "order": 48,
+      "entity": "Federal Aviation Administration",
+      "kind": "agency",
+      "role": "Agency providing CNR/NEF noise rating data for airports",
+      "stance": "neutral",
+      "stance_confidence": "medium",
+      "form": "narrator_paraphrase",
+      "evidence_pages": [
+        "65"
+      ],
+      "response_ids": [],
+      "needs_human_review": false,
+      "human_review_reasons": []
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C049",
+      "complainer_id": "p1074_35556036058550_K016",
+      "file": "complaints/p1074_35556036058550_C049_new_jersey_bell_telephone_company.json",
+      "order": 49,
+      "entity": "New Jersey Bell Telephone Company",
+      "kind": "organization",
+      "role": "Telephone service provider at Jersey City site",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "14"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C050",
+      "complainer_id": "p1074_35556036058550_K022",
+      "file": "complaints/p1074_35556036058550_C050_richard_c_van_dusen.json",
+      "order": 50,
+      "entity": "Richard C. Van Dusen",
+      "kind": "official",
+      "role": "Acting Secretary, HUD",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "13"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    },
+    {
+      "complaint_id": "p1074_35556036058550_C051",
+      "complainer_id": "p1074_35556036058550_K023",
+      "file": "complaints/p1074_35556036058550_C051_secretary_george_romney.json",
+      "order": 51,
+      "entity": "Secretary George Romney",
+      "kind": "official",
+      "role": "Secretary, HUD",
+      "stance": "neutral",
+      "stance_confidence": "low",
+      "form": "none",
+      "evidence_pages": [
+        "71"
+      ],
+      "response_ids": [],
+      "needs_human_review": true,
+      "human_review_reasons": [
+        "low_stance_confidence",
+        "no_complaints"
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "child_id": "p1074_35556036058550_R001",
+      "parent_id": "p1074_35556036058550_C007",
+      "file": "responses/p1074_35556036058550_R001_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R002",
+      "parent_id": "p1074_35556036058550_C008",
+      "file": "responses/p1074_35556036058550_R002_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R003",
+      "parent_id": "p1074_35556036058550_C009",
+      "file": "responses/p1074_35556036058550_R003_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R004",
+      "parent_id": "p1074_35556036058550_C010",
+      "file": "responses/p1074_35556036058550_R004_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R005",
+      "parent_id": "p1074_35556036058550_C011",
+      "file": "responses/p1074_35556036058550_R005_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R006",
+      "parent_id": "p1074_35556036058550_C012",
+      "file": "responses/p1074_35556036058550_R006_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R007",
+      "parent_id": "p1074_35556036058550_C013",
+      "file": "responses/p1074_35556036058550_R007_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R008",
+      "parent_id": "p1074_35556036058550_C014",
+      "file": "responses/p1074_35556036058550_R008_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R009",
+      "parent_id": "p1074_35556036058550_C015",
+      "file": "responses/p1074_35556036058550_R009_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R010",
+      "parent_id": "p1074_35556036058550_C016",
+      "file": "responses/p1074_35556036058550_R010_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R011",
+      "parent_id": "p1074_35556036058550_C017",
+      "file": "responses/p1074_35556036058550_R011_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R012",
+      "parent_id": "p1074_35556036058550_C018",
+      "file": "responses/p1074_35556036058550_R012_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R013",
+      "parent_id": "p1074_35556036058550_C019",
+      "file": "responses/p1074_35556036058550_R013_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R014",
+      "parent_id": "p1074_35556036058550_C020",
+      "file": "responses/p1074_35556036058550_R014_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R015",
+      "parent_id": "p1074_35556036058550_C021",
+      "file": "responses/p1074_35556036058550_R015_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R016",
+      "parent_id": "p1074_35556036058550_C022",
+      "file": "responses/p1074_35556036058550_R016_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R017",
+      "parent_id": "p1074_35556036058550_C023",
+      "file": "responses/p1074_35556036058550_R017_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R018",
+      "parent_id": "p1074_35556036058550_C024",
+      "file": "responses/p1074_35556036058550_R018_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R019",
+      "parent_id": "p1074_35556036058550_C025",
+      "file": "responses/p1074_35556036058550_R019_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R020",
+      "parent_id": "p1074_35556036058550_C026",
+      "file": "responses/p1074_35556036058550_R020_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R021",
+      "parent_id": "p1074_35556036058550_C027",
+      "file": "responses/p1074_35556036058550_R021_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R022",
+      "parent_id": "p1074_35556036058550_C028",
+      "file": "responses/p1074_35556036058550_R022_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R023",
+      "parent_id": "p1074_35556036058550_C029",
+      "file": "responses/p1074_35556036058550_R023_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R024",
+      "parent_id": "p1074_35556036058550_C030",
+      "file": "responses/p1074_35556036058550_R024_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R025",
+      "parent_id": "p1074_35556036058550_C031",
+      "file": "responses/p1074_35556036058550_R025_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R026",
+      "parent_id": "p1074_35556036058550_C032",
+      "file": "responses/p1074_35556036058550_R026_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R027",
+      "parent_id": "p1074_35556036058550_C033",
+      "file": "responses/p1074_35556036058550_R027_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R028",
+      "parent_id": "p1074_35556036058550_C034",
+      "file": "responses/p1074_35556036058550_R028_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R029",
+      "parent_id": "p1074_35556036058550_C035",
+      "file": "responses/p1074_35556036058550_R029_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R030",
+      "parent_id": "p1074_35556036058550_C036",
+      "file": "responses/p1074_35556036058550_R030_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R031",
+      "parent_id": "p1074_35556036058550_C038",
+      "file": "responses/p1074_35556036058550_R031_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "discussion",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R032",
+      "parent_id": "p1074_35556036058550_C041",
+      "file": "responses/p1074_35556036058550_R032_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R033",
+      "parent_id": "p1074_35556036058550_C042",
+      "file": "responses/p1074_35556036058550_R033_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    },
+    {
+      "child_id": "p1074_35556036058550_R034",
+      "parent_id": "p1074_35556036058550_C045",
+      "file": "responses/p1074_35556036058550_R034_department_of_housing_and_urban_developm.json",
+      "agency": "Department of Housing and Urban Development",
+      "agency_kind": "agency",
+      "form": "agency_response",
+      "text_present": true
+    }
+  ]
+}

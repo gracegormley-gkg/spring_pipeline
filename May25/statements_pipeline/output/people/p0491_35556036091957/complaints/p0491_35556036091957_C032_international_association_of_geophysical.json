@@ -1,0 +1,81 @@
+{
+  "complaint_id": "p0491_35556036091957_C032",
+  "complainer_id": "p0491_35556036091957_K018",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 32,
+  "entity": "International Association of Geophysical Contractors",
+  "kind": "organization",
+  "role": "Mining/geophysical industry commenter",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "urged exemption of geological and geophysical equipment from ORV regulations",
+  "summary": "The International Association of Geophysical Contractors urged that geological and geophysical exploration equipment be exempted from ORV regulations when used for their designed purposes. The Department of the Interior responded favorably by excepting mining, oil, and gas geophysical exploration equipment in the final environmental statement's definition of off-road vehicles. The organization appears in the log of comments as a private group under the Mining & Geophysical Exploration category.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The International Association of Geophysical Contractors urged the exemption of geological and geophysical exploration equipment when used for their designed purposes from ORV regulations.",
+  "evidence_pages": [
+    "39"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p0491_35556036091957_R009"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We now urge that you also exempt geological and geophysical equipment when used for their designed purposes so that there will not be misunderstandings in the future.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "39"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "International Association of Geophysical Contractors - urged the exemption of geological and geophysical exploration equipment when used for their designed purposes.",
+      "quote_verified": false,
+      "entity_as_written": "International Association of Geophysical Contractors",
+      "role_as_written": "Mining/geophysical industry commenter"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "289"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "We now urge that you also exempt geological and geophysical equipment when used for their designed purposes so that there will not be misunderstandings in the future.",
+      "quote_verified": true,
+      "entity_as_written": "International Association of Geophysical Contractors",
+      "role_as_written": "Industry association commenter"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "289"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We now urge that you also exempt geological and geophysical equipment when used for their designed purposes so that there will not be misunderstandings in the future.",
+      "quote_verified": true,
+      "entity_as_written": "International Association of Geophysical Contractors",
+      "role_as_written": "industry association, commenter"
+    }
+  ],
+  "window_pages": [
+    29,
+    54
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 18,
+  "synthetic_no_complaint": false
+}

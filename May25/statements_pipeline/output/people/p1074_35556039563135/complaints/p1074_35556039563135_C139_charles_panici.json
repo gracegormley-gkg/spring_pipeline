@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C139",
+  "complainer_id": "p1074_35556039563135_K120",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 139,
+  "entity": "Charles Panici",
+  "kind": "official",
+  "role": "President, Chicago Heights Park District",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter concluding grassed area not significant to community recreation and proposed area will be safer, supporting the project based on School District information",
+  "summary": "Charles Panici, as President of the Chicago Heights Park District, wrote a letter on January 17, 1975 to the Illinois Department of Transportation indicating that, based on information provided by School District #170, the Park District did not find the grassed area near Roosevelt School significant to the recreational needs of the community. He concluded that the proposed changes would result in an area that is safer and more conducive to use than the present area, effectively supporting the project's treatment of the Roosevelt School property.",
+  "form": "letter",
+  "complaint_summary": "Panici's letter states that the Chicago Heights Park District, after reviewing the proposal and information from School District #170, does not find the grassed area near Roosevelt School significant to community recreational needs and supports the proposed changes as safer and more conducive to use.",
+  "evidence_pages": [
+    "316"
+  ],
+  "statement": {
+    "text": "Subsequent to your meeting with our Board of Commissioners on December 16th, 1974, our Board has reviewed the proposal for the chance adjacent to Roosevelt School in Chicago Heights.\nAs we review the proposal, we interpret the following:\n   District #170 has reviewed the proposal, and find it not objectionable;\n2. In exchange for the area fronting on Route #30, the section of Sunnyside avenue between the present crassed area and the school, will be vacated. This would then locate the grassed area adjacent and adjoining the school, with a cul-de-sac South of the unvacated area of Sunnyside Avenue.\nOn the basis of the information provided by the School District, we do not find that the grassod area is significant to the recreational needs of the community. We conclude the proposed area will be safer and more conducive to use then the present area.\nThank you for soliciting our recommendation.",
+    "opening_anchor": "Subsequent to your meeting with our Board of Commissioners on December 16th, 1974, our Board has reviewed the proposal for the chance adjacent to Roosevelt School in Chicago Heights.",
+    "closing_anchor": "We conclude the proposed area will be safer and more conducive to use then the present area.\n\nThank you for soliciting our recommendation.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "On the basis of the information provided by the School District, we do not find that the grassed area is significant to the recreational needs of the community. We conclude the proposed area will be safer and more conducive to use then the present area.",
+  "summary_quote_verified": false,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "316"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "On the basis of the information provided by the School District, we do not find that the grassed area is significant to the recreational needs of the community. We conclude the proposed area will be safer and more conducive to use then the present area.",
+      "quote_verified": false,
+      "entity_as_written": "Charles Panici",
+      "role_as_written": "President, Chicago Heights Park District"
+    }
+  ],
+  "window_pages": [
+    306,
+    326
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 120,
+  "synthetic_no_complaint": false
+}

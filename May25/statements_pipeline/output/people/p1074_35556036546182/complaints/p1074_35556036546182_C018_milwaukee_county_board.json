@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556036546182_C018",
+  "complainer_id": "p1074_35556036546182_K009",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 18,
+  "entity": "Milwaukee County Board",
+  "kind": "government",
+  "role": "County governing body",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase indicating Milwaukee County Board favored construction of the Airport Spur, plus multiple formal adoptions of supporting plans",
+  "summary": "The Milwaukee County Board consistently supported the Airport Spur project, formally adopting the Master Plan for General Mitchell Field expansion, adding the Airport Spur to the County Expressway System, and adopting regional transportation plans that recommended the freeway connection. Testimony at public hearings revealed the Board favored construction of the Airport Spur.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Milwaukee County Board added the proposed Airport Spur facility to the County Freeway System on March 11, 1969, in response to federal directives on highway access to airports.",
+  "evidence_pages": [
+    "20"
+  ],
+  "statement": {
+    "text": "On March 11, 1969, the Milwaukee County Board added the proposed facility to the County Freeway System.",
+    "opening_anchor": "On March 11, 1969, the Milwaukee County Board added the proposed facility to the County Freeway System.",
+    "closing_anchor": "On March 11, 1969, the Milwaukee County Board added the proposed facility to the County Freeway System.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Testimony revealed that the Milwaukee County Board, Milwaukee Common Council, SEWRPC, Federal Aviation Administration and the American Automobile Association favored construction of the Airport Spur.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "20"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "January 21, 1969 Milwaukee County Board adopted Master Plan for expansion of General Mitchell Field's passenger and air cargo facilities.",
+      "quote_verified": true,
+      "entity_as_written": "Milwaukee County Board",
+      "role_as_written": "County governing body"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "101"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Testimony revealed that the Milwaukee County Board, Milwaukee Common Council, SEWRPC, Federal Aviation Administration and the American Automobile Association favored construction of the Airport Spur.",
+      "quote_verified": true,
+      "entity_as_written": "Milwaukee County Board",
+      "role_as_written": "county governing body"
+    }
+  ],
+  "window_pages": [
+    10,
+    59
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 9,
+  "synthetic_no_complaint": false
+}

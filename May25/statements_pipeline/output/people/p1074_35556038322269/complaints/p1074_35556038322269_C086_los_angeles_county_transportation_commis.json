@@ -1,0 +1,95 @@
+{
+  "complaint_id": "p1074_35556038322269_C086",
+  "complainer_id": "p1074_35556038322269_K011",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 86,
+  "entity": "Los Angeles County Transportation Commission (LACTC)",
+  "kind": "agency",
+  "role": "Member of Interagency Technical Committee Marketing Sub-Committee",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "mentioned only as a governance/administrative body with funding approval role, no position stated",
+  "summary": "The Los Angeles County Transportation Commission (LACTC) appears in this window solely in administrative and organizational contexts: as a member of the Interagency Coordinating Committee and Interagency Technical Committee, as a recipient of the draft report, and as an entity to which community groups are asked to send their preference letters. No position for or against any alternative is expressed by LACTC in this window.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "17",
+    "71",
+    "246",
+    "292"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Subject to concurrence of the State Department of Transportation, the Los Angeles County Transportation Commission and the Southern California Association of Governments, the State's portion of the Proposition 5 funds developed in Los Angeles County can provide the major portion of the local matching funds required for a rail rapid transit project.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 4,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "17"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "the recently created Los Angeles County Transportation Commission (LACTC), which has the responsibility for approving the use of Federal and State funding for transportation projects in Los Angeles County.",
+      "quote_verified": true,
+      "entity_as_written": "Los Angeles County Transportation Commission (LACTC)",
+      "role_as_written": "County transportation funding approval body; IACC participant"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "71"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In the area served by the proposed Los Angeles Regional Core Rapid Transit System, goals and objectives are developed by the following six governmental entities: ... (2) the Los Angeles County Transportation Commission",
+      "quote_verified": false,
+      "entity_as_written": "Los Angeles County Transportation Commission",
+      "role_as_written": "Regional transportation commission"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "246"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Subject to concurrence of the State Department of Transportation, the Los Angeles County Transportation Commission and the Southern California Association of Governments, the State's portion of the Proposition 5 funds developed in Los Angeles County can provide the major portion of the local matching funds required for a rail rapid transit project.",
+      "quote_verified": true,
+      "entity_as_written": "Los Angeles County Transportation Commission",
+      "role_as_written": "County transportation commission"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "292"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Committee consists of representatives from SCAG, CALTRANS, The Los Angeles County Transportation Commission, the Los Angeles Community Redevelopment Agency, L. A. County and City and the SCRTD.",
+      "quote_verified": true,
+      "entity_as_written": "The Los Angeles County Transportation Commission",
+      "role_as_written": "Member of Interagency Technical Committee Marketing Sub-Committee"
+    }
+  ],
+  "window_pages": [
+    7,
+    41
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 11,
+  "synthetic_no_complaint": true
+}

@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556038322269_C110",
+  "complainer_id": "p1074_35556038322269_K088",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 110,
+  "entity": "Los Angeles Community Redevelopment Agency",
+  "kind": "agency",
+  "role": "Member of Interagency Technical Committee Marketing Sub-Committee",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "mentioned only as a member of an interagency coordination committee with no attributed position",
+  "summary": "The Los Angeles Community Redevelopment Agency is mentioned solely as one of several representatives on the Marketing Sub-Committee of the Interagency Technical Committee, whose purpose is to coordinate public communication about the Regional Transit Development Program. No position, complaint, or opinion is attributed to the agency in the document window.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "292"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "The Committee consists of representatives from SCAG, CALTRANS, The Los Angeles County Transportation Commission, the Los Angeles Community Redevelopment Agency, L. A. County and City and the SCRTD.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "292"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Committee consists of representatives from SCAG, CALTRANS, The Los Angeles County Transportation Commission, the Los Angeles Community Redevelopment Agency, L. A. County and City and the SCRTD.",
+      "quote_verified": true,
+      "entity_as_written": "Los Angeles Community Redevelopment Agency",
+      "role_as_written": "Member of Interagency Technical Committee Marketing Sub-Committee"
+    }
+  ],
+  "window_pages": [
+    282,
+    293
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 88,
+  "synthetic_no_complaint": true
+}

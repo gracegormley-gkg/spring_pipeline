@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556036546182_C043",
+  "complainer_id": "p1074_35556036546182_K026",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 43,
+  "entity": "Division of Highways",
+  "kind": "agency",
+  "role": "state highway agency involved in corridor coordination",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "coordinated with airport officials, Milwaukee County, and FAA to develop the recommended Corridor #5 compatible with airport expansion",
+  "summary": "The Division of Highways is described as a key coordinating partner in developing the recommended Corridor #5, working alongside Airport Officials, Milwaukee County, and the FAA to ensure compatibility with General Mitchell Field's long-range Master Plan. The Division also bears principal responsibility for the relocation assistance program for displaced persons and businesses. Its role throughout the document is that of a project proponent and implementer rather than a critic.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Division of Highways is credited as one of the coordinating agencies whose joint efforts produced the recommended Corridor #5, designed to be compatible with General Mitchell Field's adopted long-range Master Plan for airport expansion.",
+  "evidence_pages": [
+    "93"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "It was the result of coordinated efforts by Airport Officials, Milwaukee County, Federal Aviation Administration, and the Division of Highways to be compatible with the adopted long range Master Plan for the expansion of facilities at General Mitchell Field.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "93"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "It was the result of coordinated efforts by Airport Officials, Milwaukee County, Federal Aviation Administration, and the Division of Highways to be compatible with the adopted long range Master Plan for the expansion of facilities at General Mitchell Field.",
+      "quote_verified": true,
+      "entity_as_written": "Division of Highways",
+      "role_as_written": "state highway agency involved in corridor coordination"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "199"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Division of Highways seems to be taking the attitude that in comparison with other noise sources, the Airport Spur contributes little, therefore it is undeserving of concern.",
+      "quote_verified": true,
+      "entity_as_written": "Division of Highways",
+      "role_as_written": "Wisconsin state highway agency"
+    }
+  ],
+  "window_pages": [
+    83,
+    124
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 26,
+  "synthetic_no_complaint": false
+}

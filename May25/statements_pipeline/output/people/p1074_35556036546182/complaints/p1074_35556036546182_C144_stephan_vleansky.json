@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C144",
+  "complainer_id": "p1074_35556036546182_K131",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 144,
+  "entity": "Stephan Vleansky",
+  "kind": "individual",
+  "role": "Private Citizen, commenter",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "suggested tunnel connecting Airport Spur and Lake Freeway as alternative design",
+  "summary": "Stephan Vleansky suggested putting a tunnel under Mitchell Field connecting the Airport Spur and the Lake Freeway as an alternative design approach. The agency responded that a tunnel section of any length and freeway link is not economically feasible and would not conform to the regional land use-transportation plan. His comment reflects a conditional or alternative-seeking posture rather than outright opposition.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Vleansky suggested constructing a tunnel under Mitchell Field to connect the Airport Spur with the Lake Freeway as an alternative design.",
+  "evidence_pages": [
+    "245"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R063"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Suggested putting a tunnel under Mitchell Field connecting the Airport Spur and the Lake Freeway.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "245"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Suggested putting a tunnel under Mitchell Field connecting the Airport Spur and the Lake Freeway.",
+      "quote_verified": true,
+      "entity_as_written": "Stephan Vleansky",
+      "role_as_written": "Private Citizen, commenter"
+    }
+  ],
+  "window_pages": [
+    235,
+    255
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 131,
+  "synthetic_no_complaint": false
+}

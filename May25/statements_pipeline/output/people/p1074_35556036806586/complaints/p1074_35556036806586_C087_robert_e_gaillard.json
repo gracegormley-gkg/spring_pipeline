@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036806586_C087",
+  "complainer_id": "p1074_35556036806586_K075",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 87,
+  "entity": "Robert E. Gaillard",
+  "kind": "official",
+  "role": "Mayor, Walhalla, South Carolina",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "opens letter stating he 'heartily endorse[s]' the Bad Creek Pumped-Storage Project",
+  "summary": "Mayor Robert E. Gaillard of Walhalla, South Carolina, wrote to the Federal Power Commission in November 1975 to express his strong support for Duke Power Company's Bad Creek Pumped-Storage Project. He characterized the project as a 'definite asset' to his county and emphasized its importance for meeting regional energy needs. He requested that his endorsement be entered into the official record.",
+  "form": "letter",
+  "complaint_summary": "Mayor Gaillard writes to heartily endorse the Bad Creek Pumped-Storage Project, calling it a definite asset to his county and important for regional energy needs, and requests the endorsement be entered into the official record.",
+  "evidence_pages": [
+    "283"
+  ],
+  "statement": {
+    "text": "I wish to take this opportunity to notify the Federal Power Commission that I heartily endorse Duke Power Company's Bad Creek Pumped-Storage Project in South Carolina. I feel that this will be a definite asset to our county and that it will substantially aide in the energy needs for this region in the coming years. I respectfully request that you make this a matter of your records.\nSincerely yours,\nRobert d. Halland\nRobett E. Gaillard Mayor",
+    "opening_anchor": "I wish to take this opportunity to notify the Federal Power Commission that I heartily endorse Duke Power Company's Bad Creek Pumped-Storage Project in South Carolina.",
+    "closing_anchor": "I respectfully request that you make this a matter of your records.\n\nSincerely yours,\n\nRobert d. Halland\nRobett E. Gaillard\nMayor",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "I wish to take this opportunity to notify the Federal Power Commission that I heartily endorse Duke Power Company's Bad Creek Pumped-Storage Project in South Carolina.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "283"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "I wish to take this opportunity to notify the Federal Power Commission that I heartily endorse Duke Power Company's Bad Creek Pumped-Storage Project in South Carolina.",
+      "quote_verified": true,
+      "entity_as_written": "Robert E. Gaillard",
+      "role_as_written": "Mayor, Walhalla, South Carolina"
+    }
+  ],
+  "window_pages": [
+    273,
+    293
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 75,
+  "synthetic_no_complaint": false
+}

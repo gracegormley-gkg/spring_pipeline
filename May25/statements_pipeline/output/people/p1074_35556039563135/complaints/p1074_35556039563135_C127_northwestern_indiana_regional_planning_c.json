@@ -1,0 +1,69 @@
+{
+  "complaint_id": "p1074_35556039563135_C127",
+  "complainer_id": "p1074_35556039563135_K102",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 127,
+  "entity": "Northwestern Indiana Regional Planning Commission",
+  "kind": "agency",
+  "role": "interstate planning reviewer / commenter",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letter concurs project requires Interstate Planning Committee review without expressing support or opposition to the project itself",
+  "summary": "The Northwestern Indiana Regional Planning Commission (NIRPC) reviewed NIPC Project #74-228 under its interstate agreement with the Northeastern Illinois Planning Commission and concurred that the project required submission to the Interstate Planning Committee. NIRPC's role was procedural — confirming the project's interstate significance and triggering the required review process — rather than expressing support for or opposition to the Lincoln Highway improvement. The Interstate Planning Committee subsequently voted unanimously to endorse the application, finding no unresolved conflict between the two jurisdictions.",
+  "form": "letter",
+  "complaint_summary": "NIRPC concurs that NIPC Project #74-228 (Lincoln Highway improvements) requires submission to the Interstate Planning Committee for review as prescribed in the current interstate agreement, Section III, Paragraph D, Items 1 and 2.",
+  "evidence_pages": [
+    "240"
+  ],
+  "statement": {
+    "text": "In accordance with current agreements between NIPC and NIRPC, we have reviewed the following summary of Federal Grant Application:\nNIPC #74-228 - Illinois Dept. of Transportation - Funding for improvements to FAP Route #23 Lincoln Highway from Cicero Avenue to Chicago Road.\nWe concur that this project does require submission to the Interstate Planning Committee for their review as prescribed in Section III, Paragraph D, Items 1 and 2, of current agreement.\nVery truly yours,\nMirinan & Tufford\nNORMAN E. TUFFORD Executive Director\nNET/cyb JJJanik, Project Review Officer",
+    "opening_anchor": "In accordance with current agreements between NIPC and NIRPC, we have reviewed the following summary of Federal Grant Application:",
+    "closing_anchor": "NORMAN E. TUFFORD Executive Director\n\nNET/cyb JJJanik, Project Review Officer",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556039563135_R054"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We concur that this project does require submission to the Interstate Planning Committee for their review as prescribed in Section III, Paragraph D, Items 1 and 2, of current agreement.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "240"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We concur that this project does require submission to the Interstate Planning Committee for their review as prescribed in Section III, Paragraph D, Items 1 and 2, of current agreement.",
+      "quote_verified": true,
+      "entity_as_written": "Northwestern Indiana Regional Planning Commission",
+      "role_as_written": "Regional planning agency reviewer"
+    },
+    {
+      "chunk_index": 6,
+      "evidence_pages": [
+        "240"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We concur that this project does require submission to the Interstate Planning Committee for their review as prescribed in Section III, Paragraph D, Items 1 and 2, of current agreement.",
+      "quote_verified": true,
+      "entity_as_written": "Northwestern Indiana Regional Planning Commission",
+      "role_as_written": "interstate planning reviewer / commenter"
+    }
+  ],
+  "window_pages": [
+    230,
+    250
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 102,
+  "synthetic_no_complaint": false
+}

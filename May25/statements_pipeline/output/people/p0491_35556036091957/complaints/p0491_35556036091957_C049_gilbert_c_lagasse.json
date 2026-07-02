@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C049",
+  "complainer_id": "p0491_35556036091957_K040",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 49,
+  "entity": "Gilbert C. Lagasse",
+  "kind": "official",
+  "role": "Director, State Parks and Recreation Commission, Louisiana",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly concurring with recommendations and supporting controlled ORV use in designated areas",
+  "summary": "Gilbert C. Lagasse, Director of the Louisiana State Parks and Recreation Commission, wrote a brief letter concurring with the draft environmental statement's recommendations. He supports controlled ORV use in designated areas where minimal environmental damage would occur, and explicitly states that total exclusion of ORVs is unsatisfactory. He expresses no adverse comments and praises the thoroughness of the statement's preparation.",
+  "form": "letter",
+  "complaint_summary": "Lagasse concurs with the draft statement's recommendations, supports controlled ORV use in designated areas where minimal environmental damage would occur, and states that total exclusion of ORVs is unsatisfactory, while offering no adverse comments on the statement.",
+  "evidence_pages": [
+    "56"
+  ],
+  "statement": {
+    "text": "The subject statement has been received and reviewed by this office. The concur with the recommendations and feel that on the state level, controlled use of ORV in certain designated areas value a minimal amount of damage to the environment would occur is necessary. Total exclusion of ORV are both unsatisfactory.\nWe feel that a thorough job was done in the preparation of the statement and have no adverse comments.",
+    "opening_anchor": "The subject statement has been received and reviewed by this office. The concur with the recommendations and feel that on the state level",
+    "closing_anchor": "We feel that a thorough job was done in the preparation of the statement and have no adverse comments.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The concur with the recommendations and feel that on the state level, controlled use of ORV in certain designated areas value a minimal amount of damage to the environment would occur is necessary. Total exclusion of ORV are both unsatisfactory.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "56"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The concur with the recommendations and feel that on the state level, controlled use of ORV in certain designated areas value a minimal amount of damage to the environment would occur is necessary. Total exclusion of ORV are both unsatisfactory.",
+      "quote_verified": true,
+      "entity_as_written": "Gilbert C. Lagasse",
+      "role_as_written": "Director, State Parks and Recreation Commission, Louisiana"
+    }
+  ],
+  "window_pages": [
+    46,
+    66
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 40,
+  "synthetic_no_complaint": false
+}

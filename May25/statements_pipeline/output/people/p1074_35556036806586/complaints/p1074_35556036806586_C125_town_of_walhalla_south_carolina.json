@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036806586_C125",
+  "complainer_id": "p1074_35556036806586_K015",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 125,
+  "entity": "Town of Walhalla, South Carolina",
+  "kind": "government",
+  "role": "Local agency requested to review draft EIS; responded",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "entity appears only in a sectional roster of local agencies requested to review draft EIS, with no position stated",
+  "summary": "The Town of Walhalla, South Carolina is listed among local agencies that were requested to review the draft Environmental Impact Statement for the Bad Creek Pumped Storage Project. No statement, comment, or position from the Town of Walhalla appears in the available document window. No stance can be inferred from the text provided.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "1"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim",
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Local Agencies ... *Town of Walhalla, South Carolina",
+  "summary_quote_verified": false,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "1"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Local Agencies ... *Town of Walhalla, South Carolina",
+      "quote_verified": false,
+      "entity_as_written": "Town of Walhalla, South Carolina",
+      "role_as_written": "Local agency requested to review draft EIS; responded"
+    }
+  ],
+  "window_pages": [
+    1,
+    11
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 15,
+  "synthetic_no_complaint": true
+}

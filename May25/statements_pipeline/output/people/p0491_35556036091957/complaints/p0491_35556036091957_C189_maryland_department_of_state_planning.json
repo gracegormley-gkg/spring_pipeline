@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p0491_35556036091957_C189",
+  "complainer_id": "p0491_35556036091957_K173",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 189,
+  "entity": "Maryland Department of State Planning",
+  "kind": "agency",
+  "role": "Maryland state clearinghouse reviewer",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter concurs with statement but suggests 'no access' alternative should be presented",
+  "summary": "The Maryland Department of State Planning, acting as the Maryland State Clearinghouse, generally concurred with the draft environmental impact statement for ORV use on public lands, but suggested that a 'no access' alternative for ORVs on public lands should be included. They also forwarded a comment from the Maryland Department of Natural Resources, which was favorable to the statement and requested to be kept informed of further regulatory developments.",
+  "form": "letter",
+  "complaint_summary": "The Maryland Department of State Planning generally concurred with the draft EIS but suggested that a 'no access' to public lands by ORVs should be presented as an alternative to such usage.",
+  "evidence_pages": [
+    "267"
+  ],
+  "statement": {
+    "text": "The State Clearinghouse has reviewed the above noted Environmental Impact Statement. In accordance with the procedures established by the Office of Management and Budget Circular A-95, the State Clearinghouse received comment (copy attached) from the Department of Natural Resources favorable to the statement. The Department requested that it be informed of further regulatory developments in this area.\nOur staff generally concurred with the statement, but suggested that a \"no access\" to public lands by ORV's should be presented as an alternative to such usage.\nWe hope that these cornents will assist you in the preparation of your final statement and look forward to continued cooperation with your agency in the Clearinghouse review of the complete project presentation.",
+    "opening_anchor": "The State Clearinghouse has reviewed the above noted Environmental Impact Statement. In accordance with the procedures established by the Office of Management and Budget Circular A-95",
+    "closing_anchor": "We hope that these cornents will assist you in the preparation of your final statement and look forward to continued cooperation with your agency in the Clearinghouse review of the complete project presentation.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "Our staff generally concurred with the statement, but suggested that a 'no access' to public lands by ORV's should be presented as an alternative to such usage.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "267"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Our staff generally concurred with the statement, but suggested that a 'no access' to public lands by ORV's should be presented as an alternative to such usage.",
+      "quote_verified": false,
+      "entity_as_written": "Maryland Department of State Planning",
+      "role_as_written": "Maryland state clearinghouse reviewer"
+    }
+  ],
+  "window_pages": [
+    257,
+    277
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 173,
+  "synthetic_no_complaint": false
+}

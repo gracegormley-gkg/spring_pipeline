@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C118",
+  "complainer_id": "p1074_35556036546182_K083",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 118,
+  "entity": "G. Phillip Beitz",
+  "kind": "individual",
+  "role": "Representative, Milwaukee Air Cargo Association",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase states he supported the comments included in the project statement",
+  "summary": "G. Phillip Beitz, representing the Milwaukee Air Cargo Association and owner of an airport-oriented trucking company, testified in support of the Airport Spur project at the July 11, 1974 public hearing. He provided operational data on his trucking company's schedule to argue that truck noise impacts on Hamlin-Garland School would be limited, and claimed that 80% of residents near the airport were economically tied to it.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Beitz, as a Milwaukee Air Cargo Association representative and trucking company owner, supported the project statement and provided truck arrival/departure timing data suggesting minimal noise impact on Hamlin-Garland School during school hours, noted the Layton/Howell intersection as the city's top accident location, and claimed 80% of nearby residents were economically tied to the airport.",
+  "evidence_pages": [
+    "229"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R040"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Milwaukee Air Cargo Association representative and owner of a trucking company engaged in airport oriented transportation. Supported the comments included in the project statement.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "229"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Milwaukee Air Cargo Association representative and owner of a trucking company engaged in airport oriented transportation. Supported the comments included in the project statement.",
+      "quote_verified": true,
+      "entity_as_written": "G. Phillip Beitz",
+      "role_as_written": "Representative, Milwaukee Air Cargo Association"
+    }
+  ],
+  "window_pages": [
+    219,
+    239
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 83,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C012",
+  "complainer_id": "p1074_35556036546182_K017",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 12,
+  "entity": "State Representative John R. Plewa, 20th Assembly District",
+  "kind": "individual",
+  "role": "Wisconsin State Representative, commenter",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed only as an additional commenter with no position described in the window",
+  "summary": "State Representative John R. Plewa of the 20th Assembly District is listed among those who submitted additional comments on the Airport Spur project, with his letter referenced as being in Section X of the document. No position, argument, or substance of his comment is described in this window of the document.",
+  "form": "sectional",
+  "complaint_summary": "State Representative John R. Plewa is listed as one of several additional commenters whose letters of comment are contained in Section X of the document, but no content or position is described.",
+  "evidence_pages": [
+    "18"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual",
+    "quote_not_verbatim",
+    "low_stance_confidence"
+  ],
+  "summary_quote": "8. Additional comments were received from the following: (Letters of comment are in Section X.) State Representative, John R. Plewa, 20th Assembly District",
+  "summary_quote_verified": false,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "18"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "8. Additional comments were received from the following: (Letters of comment are in Section X.) State Representative, John R. Plewa, 20th Assembly District",
+      "quote_verified": false,
+      "entity_as_written": "State Representative John R. Plewa, 20th Assembly District",
+      "role_as_written": "Wisconsin State Representative, commenter"
+    }
+  ],
+  "window_pages": [
+    8,
+    28
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 17,
+  "synthetic_no_complaint": false
+}

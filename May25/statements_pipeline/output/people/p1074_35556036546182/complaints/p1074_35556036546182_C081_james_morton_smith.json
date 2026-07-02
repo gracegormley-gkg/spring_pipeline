@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036546182_C081",
+  "complainer_id": "p1074_35556036546182_K057",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 81,
+  "entity": "James Morton Smith",
+  "kind": "official",
+  "role": "Director, State Historical Society of Wisconsin",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letters confirm no known archeological or historic sites will be affected, neither supporting nor opposing the project",
+  "summary": "James Morton Smith, Director of the State Historical Society of Wisconsin, submitted two letters regarding the Airport Spur project. In both letters, he confirmed that no known archeological or historic sites would be affected by the proposed highway project, based on the Society's records and confirmation from the Milwaukee County Historical Society. His correspondence is informational and neither supports nor opposes the project.",
+  "form": "letter",
+  "complaint_summary": "Smith writes to the Wisconsin Division of Highways confirming that the Milwaukee County Historical Society has verified that no historical or archeological sites will be affected by the Airport Spur project.",
+  "evidence_pages": [
+    "160"
+  ],
+  "statement": {
+    "text": "Mr. Harry H. Anderson, executive director of the Milwaukee County Historical Society, has confirmed the State Historical Society's records indicating that no historical or archeological sites will be affected by the above project.\nSincerely,\nJames Morton Smith\nJMS:bwc",
+    "opening_anchor": "Mr. Harry H. Anderson, executive director of the Milwaukee County Historical Society, has confirmed the State Historical Society's records indicating that no historical or archeological sites will be affected by the above project.",
+    "closing_anchor": "Sincerely,\n\nJames Morton Smith\n\nJMS:bwc",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036546182_R009"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Our records indicate that no known archeological or historic sites will be affected.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "160"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Our records indicate that no known archeological or historic sites will be affected.",
+      "quote_verified": true,
+      "entity_as_written": "James Morton Smith",
+      "role_as_written": "Director, State Historical Society of Wisconsin"
+    }
+  ],
+  "window_pages": [
+    150,
+    170
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 57,
+  "synthetic_no_complaint": false
+}

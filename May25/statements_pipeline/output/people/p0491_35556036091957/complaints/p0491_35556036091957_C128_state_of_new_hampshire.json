@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C128",
+  "complainer_id": "p0491_35556036091957_K117",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 128,
+  "entity": "State of New Hampshire",
+  "kind": "government",
+  "role": "state government commenter",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter concurs with statement but enclosed agency comments raise specific conditions and reservations about noise criteria, permit races, and need to evaluate specific plans for NH federal lands",
+  "summary": "The State of New Hampshire, through its Office of the Governor/Director of Comprehensive Planning, formally concurred with the Draft Environmental Statement and had no additional comments of its own, but forwarded responses from other state agencies. Those enclosed agency comments raised substantive conditions: the State Planning office questioned permits for ORV races, flagged vagueness in noise criteria, noted uncertainty about endorsing the policy pending Agriculture's statement, and emphasized New Hampshire's need to evaluate any specific designation plans for federal lands within the state.",
+  "form": "written_comment",
+  "complaint_summary": "The New Hampshire State Planning office concurs with the general management policy but raises specific concerns: questions the wisdom of issuing permits for ORV races/rallies, flags the vagueness of the 'excessive noise' criterion, notes uncertainty about fully endorsing the policy pending Agriculture's statement on the White Mountain National Forest, and emphasizes the state's need to evaluate any specific designation plans for federal lands within New Hampshire.",
+  "evidence_pages": [
+    "165"
+  ],
+  "statement": {
+    "text": "Members of my staff have reviewed the draft environmental statement, prepared by the Department of Interior, entitled \"Departmental Implementation of Executive Order 11544 Pertaining to Use of Off-Road Vehicles on the Public Lands.\"\nWe concur that the proposed management policy which would close some public lands to the use of off-road vehicles (ORV) and open others with controls, is consistent with the Department's responsibilities to meet the outdoor recreation interests of the public while maintaining the long-term stewardship for the soil, water, mineral, wildlife, vegetative, and natural and historic resources of the Nation.\nThe designation of areas closed to ORV use based on physical and biological impacts makes a great deal of sense. Predictions of impacts are not in themselves sufficient. Monitoring of designated use areas must be provided for, and management must be sufficiently flexible to allow changes based on the results of monitoring.\nWe question the wisdom of issuing permits for the use of public lands as sites for ORV races, rallies, meets, etc. Such intensive use can be better provided by the private sector.\nThe issue of excessive noise poses some difficult problems. First, there is the definitional problem. No attempt is made to specify what decibel level is considered to be acceptable. Second, the Operating Criteria include a clause that \"...an ORV that produces unusual or excessive noise shall not be permitted on Interior lands.\" The environmental impact of that management policy states in part that \"...most motorized ORV are noisy in excess of acceptable levels.\" Logic demands, therefore, that most motorized ORV shall not be permitted on Interior lands. Obviously, the criterion of \"excessive noise\" is too vague to be of any use.\nSince the State of New Hampshire will be affected greatly by policies yet to be promulgated by the Department of Agriculture through its large White Mountain Muticaul Forest, we cannot at this time be certain that we fully endorse the policy and projected impact set forth by Interior. This can better be ascertained after we have had an opportunity to review Agriculture's 102 Statement.\nWe wish to emphasize that New Hampshire feels a need to evaluate any specific plans for designating use and non-use areas on Federal lands within the State. The evaluation of a national policy involving lands of great diversity is necessary but not sufficient for an adequate environmental assessment.",
+    "opening_anchor": "Members of my staff have reviewed the draft environmental statement, prepared by the Department of Interior, entitled \"Departmental Implementation of Executive Order 11544 Pertaining to Use of Off-Road Vehicles on the Public Lands.\"",
+    "closing_anchor": "We wish to emphasize that New Hampshire feels a need to evaluate any specific plans for designating use and non-use areas on Federal lands within the State. The evaluation of a national policy involving lands of great diversity is necessary but not sufficient for an adequate environmental assessment.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We wish to emphasize that New Hampshire feels a need to evaluate any specific plans for designating use and non-use areas on Federal lands within the State.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "165"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "We wish to emphasize that New Hampshire feels a need to evaluate any specific plans for designating use and non-use areas on Federal lands within the State.",
+      "quote_verified": true,
+      "entity_as_written": "State of New Hampshire",
+      "role_as_written": "state government commenter"
+    }
+  ],
+  "window_pages": [
+    155,
+    175
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 117,
+  "synthetic_no_complaint": false
+}

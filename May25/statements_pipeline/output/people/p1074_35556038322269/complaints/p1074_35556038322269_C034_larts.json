@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C034",
+  "complainer_id": "p1074_35556038322269_K043",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 34,
+  "entity": "LARTS",
+  "kind": "agency",
+  "role": "Branch of CalTrans responsible for patronage projections using UMTA/UTPS models",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "provides patronage projections and model outputs used as technical inputs without expressing a position on the project",
+  "summary": "LARTS, the CalTrans branch responsible for patronage forecasting, developed ridership projections for all eleven alternatives using the UMTA/UTPS computer modeling package, with inputs from SCAG, CalTrans, local transit operators, and SCRTD. Their outputs (ULOAD Report 5) were reviewed and modified for consistency with planned service capacity, and their transit trip matrix was also used to analyze Hollywood Freeway Busway impacts and North Hollywood trip distributions. LARTS functions purely as a technical data provider throughout the document, supplying model runs and forecasts without advocating for or against any alternative.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "LARTS developed patronage estimates for all eleven alternatives using the UMTA/UTPS computer forecasting models, with outputs reviewed and modified to ensure consistency with planned service capacity levels.",
+  "evidence_pages": [
+    "103"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Patronage estimates for the eleven proposed alternatives were developed from projections by the LARTS branch of CalTrans, which used the UMTA planning package of computer forecasting models (UTPS).",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "103"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Patronage estimates for the eleven proposed alternatives were developed from projections by the LARTS branch of CalTrans, which used the UMTA planning package of computer forecasting models (UTPS).",
+      "quote_verified": true,
+      "entity_as_written": "LARTS",
+      "role_as_written": "Branch of CalTrans responsible for patronage projections using UMTA/UTPS models"
+    }
+  ],
+  "window_pages": [
+    93,
+    113
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 43,
+  "synthetic_no_complaint": false
+}

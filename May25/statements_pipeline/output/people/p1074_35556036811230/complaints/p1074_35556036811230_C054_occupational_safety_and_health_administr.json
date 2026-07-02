@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036811230_C054",
+  "complainer_id": "p1074_35556036811230_K054",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 54,
+  "entity": "Occupational Safety and Health Administration",
+  "kind": "agency",
+  "role": "regulatory body whose procedures govern permissible noise exposure calculations for construction workers and public",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "OSHA procedures cited as the governing standard for permissible noise exposure calculations without expressing support or opposition to the project",
+  "summary": "The Occupational Safety and Health Administration is referenced in the construction noise control specifications as the regulatory authority whose procedures govern permissible noise exposure calculations for both employees and the public during construction. OSHA is not a commenting party but rather a cited regulatory framework that the construction contracts must comply with. No position on the project itself is expressed.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "OSHA's procedures are cited as the required standard for calculating permissible noise exposure for employees and the public during construction, with a table of maximum sound levels by hours of exposure per day.",
+  "evidence_pages": [
+    "274"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "Permissible noise exposure shall be calculated in accordance with the procedures established by the Occupational Safety and Health Administration Act.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "274"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Permissible noise exposure shall be calculated in accordance with the procedures established by the Occupational Safety and Health Administration Act.",
+      "quote_verified": false,
+      "entity_as_written": "Occupational Safety and Health Administration",
+      "role_as_written": "regulatory body whose procedures govern permissible noise exposure calculations for construction workers and public"
+    }
+  ],
+  "window_pages": [
+    264,
+    284
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 54,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556039563135_C114",
+  "complainer_id": "p1074_35556039563135_K092",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 114,
+  "entity": "George Sprugel, Jr.",
+  "kind": "official",
+  "role": "Chief, Illinois Natural History Survey",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly states no unacceptable natural resource damage will occur from the project",
+  "summary": "George Sprugel, Jr., Chief of the Illinois Natural History Survey, reviewed the draft environmental statement and concluded that the project would not cause unacceptable natural resource damage. His letter expresses no objections or conditions, effectively endorsing the project from a natural resources perspective.",
+  "form": "letter",
+  "complaint_summary": "Sprugel states that the Illinois Natural History Survey reviewed the environmental statement and found no unacceptable natural resource damage would result from the project.",
+  "evidence_pages": [
+    "205"
+  ],
+  "statement": {
+    "text": "The Survey has reviewed the subject environmental statement and, on the basis of the information contained therein, does not believe unacceptable natural resource damage will occur as the result of the project.\nSincerely yours,\nGeorge Sprugel, Jr.\nGS:ac",
+    "opening_anchor": "The Survey has reviewed the subject environmental statement and, on the basis of the information contained therein, does not believe unacceptable natural resource damage will occur",
+    "closing_anchor": "George Sprugel, Jr.\nGS:ac",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Survey has reviewed the subject environmental statement and, on the basis of the information contained therein, does not believe unacceptable natural resource damage will occur as the result of the project.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "205"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The Survey has reviewed the subject environmental statement and, on the basis of the information contained therein, does not believe unacceptable natural resource damage will occur as the result of the project.",
+      "quote_verified": true,
+      "entity_as_written": "George Sprugel, Jr.",
+      "role_as_written": "Chief, Illinois Natural History Survey"
+    }
+  ],
+  "window_pages": [
+    195,
+    215
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 92,
+  "synthetic_no_complaint": false
+}

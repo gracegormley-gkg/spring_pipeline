@@ -1,0 +1,62 @@
+# doc_id: p1074_35556036105336
+# work_id: csv:35556036105336
+# title: Randolph urban renewal area : environmental impact statement.
+# n_commenters: 50
+# n_complaints: 68
+# n_responses: 11
+# grade options: correct|minor_issue|wrong|cant_tell
+# stance vocab: in_favor|opposed|conditional|neutral
+# kind vocab: individual|official|organization|agency|tribe|government|other
+# response_pages: resolved by searching source per-page JSON for the response opening_anchor; '?' means anchor did not match any page.
+
+complainer_id,entity,kind,role,stance,stance_confidence,comment_pages_from,comment_pages_to,comment_pages_all,n_complaints,responded,response_ids,response_pages,response_agency,needs_human_review,human_review_reasons,your_grade,your_notes
+p1074_35556036105336_K011,Environmental Protection Agency,agency,Federal environmental regulatory agency,conditional,medium,1,1,1,1,N,,,,yes,quote_not_verbatim,,
+p1074_35556036105336_K004,City of Richmond,government,Local government commenter,neutral,low,2,2,2,1,N,,,,yes,quote_not_verbatim;low_stance_confidence,,
+p1074_35556036105336_K009,Department of Transportation  FAA,agency,Federal agency commenter,neutral,low,2,2,2,1,N,,,,yes,quote_not_verbatim;low_stance_confidence,,
+p1074_35556036105336_K010,Department of Transportation  FHWA,agency,Federal agency commenter,neutral,low,2,2,2,1,N,,,,yes,quote_not_verbatim;low_stance_confidence,,
+p1074_35556036105336_K007,"Department of Health, Education, and Welfare",agency,Federal agency commenter,neutral,low,5,5,5,1,N,,,,yes,low_stance_confidence,,
+p1074_35556036105336_K014,Maymont Civic League,organization,Civic organization representing the Maymont Community,neutral,medium,14,14,14,1,N,,,,no,,,
+p1074_35556036105336_K013,L. S. McBride,official,"Richmond Area Representative, Pollution Abatement Division, State Water Control Board",conditional,medium,16,16,16,1,N,,,,no,,,
+p1074_35556036105336_K015,Randolph Planning Study Board (RPSB),organization,Project Area Committee / community planning body for Randolph Urban Renewal Area,in_favor,medium,16,16,16,2,N,,,,no,,,
+p1074_35556036105336_K003,citizens of Randolph,other,Community residents / voters,in_favor,medium,17,17,17,1,N,,,,no,,,
+p1074_35556036105336_K005,City of Richmond's Department of Planning and Community Development,agency,City department hosting public meeting,neutral,medium,17,17,17,1,N,,,,no,,,
+p1074_35556036105336_K006,City Planning Commission,agency,City planning body,in_favor,medium,17,17,17,1,N,,,,no,,,
+p1074_35556036105336_K016,Regional Planning Commission,agency,Regional planning body,in_favor,medium,17,17,17,1,N,,,,no,,,
+p1074_35556036105336_K018,Richmond Redevelopment and Housing Authority,agency,Local urban renewal authority / project applicant,in_favor,medium,17,17,17,4,N,,,,no,,,
+p1074_35556036105336_K020,State Water Control Board,agency,Commonwealth of Virginia water quality regulatory agency,conditional,medium,31,31,31,2,N,,,,no,,,
+p1074_35556036105336_K002,"Bolt, Beranek and Newman, Inc.",organization,"Noise evaluation consultant (Cambridge, Massachusetts)",neutral,medium,34,34,34,2,N,,,,no,,,
+p1074_35556036105336_K017,Richmond Metropolitan Authority,agency,Regional authority responsible for expressway construction,neutral,medium,34,54,"34,54",4,N,,,,no,,,
+p1074_35556036105336_K019,Richmond Regional Planning District Commission (RRPDC),agency,Regional planning agency / transit grant recipient,neutral,medium,40,40,40,1,N,,,,no,,,
+p1074_35556036105336_K001,Acting Chief Barlow,official,"Acting Chief, Richmond Fire Department",neutral,medium,45,45,45,1,Y,p1074_35556036105336_R001,45,other,no,,,
+p1074_35556036105336_K012,Harland Bartholomew and Associates,organization,Consultant planners working with the Randolph Community,neutral,medium,45,45,45,1,Y,p1074_35556036105336_R002,45,other,no,,,
+p1074_35556036105336_K023,Virginia Transit Company,organization,Public transit operator serving Randolph,neutral,medium,47,47,47,1,N,,,,no,,,
+p1074_35556036105336_K029,PAC group,organization,Citizen participation/advisory committee for Randolph Community,in_favor,medium,50,57,"50,57",2,N,,,,no,,,
+p1074_35556036105336_K032,Richmond City Council,government,"Local legislative body, City of Richmond",in_favor,medium,54,54,54,1,N,,,,no,,,
+p1074_35556036105336_K036,Virginia Historical Society,organization,State historical organization,neutral,medium,54,54,54,1,N,,,,no,,,
+p1074_35556036105336_K031,Randolph PAC,organization,Citizen participation/advisory committee for Randolph Urban Renewal project,in_favor,medium,57,57,57,1,N,,,,no,,,
+p1074_35556036105336_K033,"Robert J. Blanco, P.E.",official,"Chief, Environmental Impact Branch, EPA Region III",conditional,high,63,63,63,1,Y,p1074_35556036105336_R003,66,HUD Richmond Area Office,no,,,
+p1074_35556036105336_K035,United States Environmental Protection Agency Region III,agency,"Federal environmental regulatory agency, commenter on Draft EIS",conditional,high,63,63,63,1,Y,p1074_35556036105336_R004,66,U.S. Department of Housing and Urban Development,no,,,
+p1074_35556036105336_K030,Parker W. Hirtle,individual,"Engineer, Bolt Beranek and Newman Inc., noise study consultant",neutral,high,69,69,69,1,N,,,,yes,private_individual,,
+p1074_35556036105336_K028,"James River and Kanawha Canal Parks, Inc.",organization,Litigant against Downtown Expressway project,opposed,medium,70,70,70,1,N,,,,no,,,
+p1074_35556036105336_K027,"Hugh W. Burdll, Jr.",official,"Regional Federal Highway Administrator, FHWA Region III",opposed,high,71,71,71,1,Y,p1074_35556036105336_R005,72,HUD,no,,,
+p1074_35556036105336_K034,U. S. Department of Transportation Federal Highway Administration,agency,"Federal highway regulatory agency, commenter on Draft EIS",conditional,high,71,71,71,1,Y,p1074_35556036105336_R006,72,U.S. Department of Housing and Urban Development,no,,,
+p1074_35556036105336_K025,Council on Environmental Quality,agency,Federal environmental policy body,neutral,medium,72,72,72,1,N,,,,no,,,
+p1074_35556036105336_K026,HUD,agency,"U.S. Department of Housing and Urban Development, project sponsor and EIS preparer",in_favor,high,72,72,72,6,N,,,,no,,,
+p1074_35556036105336_K024,City Administration,government,City of Richmond administration,conditional,high,83,83,83,1,Y,p1074_35556036105336_R007,85,other,no,,,
+p1074_35556036105336_K037,William J. Leidinge,official,"City Manager, City of Richmond",in_favor,high,84,84,84,1,Y,p1074_35556036105336_R008,85,other,no,,,
+p1074_35556036105336_K047,Redevelopment and Housing Authority,agency,Local Public Agency administering Randolph Urban Renewal,conditional,medium,93,101,"93,94,101",3,Y,p1074_35556036105336_R009,93,other,no,,,
+p1074_35556036105336_K040,City Council,government,Richmond City Council,neutral,medium,101,101,101,1,N,,,,no,,,
+p1074_35556036105336_K049,VOICES (Vehement Outcry of Interested Citizens for an Equitable Society),organization,"Community organizing group, Randolph area",neutral,medium,101,101,101,1,N,,,,no,,,
+p1074_35556036105336_K038,Alan Kiepper,individual,"City Manager, Richmond",in_favor,medium,103,103,103,1,N,,,,yes,private_individual,,
+p1074_35556036105336_K050,"West End Advisory Council, Inc.",organization,"Community advisory organization, West End Richmond",conditional,medium,103,103,103,1,Y,p1074_35556036105336_R010,103,Randolph Planning Study Board,no,,,
+p1074_35556036105336_K039,Alan Siff,individual,"Consultant Planner, Harland Bartholomew and Associates",in_favor,medium,105,105,105,2,N,,,,yes,private_individual,,
+p1074_35556036105336_K041,commission of architectural review,agency,City architectural review body,conditional,medium,105,105,105,1,N,,,,no,,,
+p1074_35556036105336_K042,Dr. Allix B. James,individual,"Chairman, City Planning Commission",neutral,medium,105,105,105,1,N,,,,yes,private_individual,,
+p1074_35556036105336_K043,Frank Mattone,individual,"Member, City planning staff",neutral,medium,105,105,105,1,N,,,,yes,private_individual,,
+p1074_35556036105336_K044,Mrs. Douglas C. Burke,individual,City Planning Commission member,conditional,medium,105,105,105,1,Y,p1074_35556036105336_R011,105,other,yes,private_individual,,
+p1074_35556036105336_K045,Petronius S. Jones,individual,"Chairman, Randolph Planning Study Board",conditional,medium,105,105,105,1,N,,,,yes,private_individual,,
+p1074_35556036105336_K046,Planning Director A. Howe Todd,official,"Planning Director, City of Richmond",neutral,medium,105,105,105,1,N,,,,no,,,
+p1074_35556036105336_K048,Virginia Historic Landmarks Commission,agency,Commonwealth of Virginia historic preservation agency,conditional,high,119,119,119,1,N,,,,no,,,
+p1074_35556036105336_K008,Department of Housing and Urban Development,agency,Preparing agency / project funder,neutral,low,13,13,13,1,N,,,,yes,low_stance_confidence;no_complaints,,
+p1074_35556036105336_K021,Virginia Department of Health,agency,State agency commenter,neutral,low,2,2,2,1,N,,,,yes,quote_not_verbatim;low_stance_confidence;no_complaints,,
+p1074_35556036105336_K022,Virginia Department of Highways,agency,State agency commenter,neutral,low,2,66,"2,66",1,N,,,,yes,low_stance_confidence;no_complaints,,

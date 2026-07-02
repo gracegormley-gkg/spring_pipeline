@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556036861797_C027",
+  "complainer_id": "p1074_35556036861797_K020",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 27,
+  "entity": "U. S. Department of Labor",
+  "kind": "agency",
+  "role": "commenter (no substantive comments)",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "listed among commenters who responded without substantive comments",
+  "summary": "The U.S. Department of Labor is listed as one of the commenters on the draft environmental impact statement for the MY 1979 Average Fuel Economy Standards for Nonpassenger Automobiles. The department responded to the draft EIS but did not provide substantive comments. No specific position or concern regarding the proposed standard is attributed to the agency.",
+  "form": "sectional",
+  "complaint_summary": "The U.S. Department of Labor is listed as number 12 in the List of Commenters on the draft EIS, indicating it submitted a response but without substantive comments.",
+  "evidence_pages": [
+    "19"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The following organizations responded without substantive comments: Consumers Union U.S. Department of Labor",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "19"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "List of Commenters",
+      "quote_verified": true,
+      "entity_as_written": "U. S. Department of Labor",
+      "role_as_written": "Commenter / federal agency"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "112"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "The following organizations responded without substantive comments: Consumers Union U.S. Department of Labor",
+      "quote_verified": true,
+      "entity_as_written": "U.S. Department of Labor",
+      "role_as_written": "commenter (no substantive comments)"
+    }
+  ],
+  "window_pages": [
+    9,
+    57
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 20,
+  "synthetic_no_complaint": false
+}

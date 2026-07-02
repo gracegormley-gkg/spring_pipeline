@@ -1,0 +1,68 @@
+{
+  "complaint_id": "p0491_35556036091957_C131",
+  "complainer_id": "p0491_35556036091957_K115",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 131,
+  "entity": "Sierra Club",
+  "kind": "organization",
+  "role": "environmental organization, commenter",
+  "stance": "opposed",
+  "stance_confidence": "high",
+  "stance_basis": "letter calling for ORVs to be presumed detrimental and prohibited on all public lands unless proven otherwise",
+  "summary": "The Sierra Club submitted a formal comment letter opposing the draft EIS for ORV implementation, arguing that ORVs should be presumed harmful and prohibited on all public lands unless proven otherwise by impartial investigators. The Club made numerous specific recommendations including closing all BLM lands to ORVs by default, requiring carrying capacity determinations before opening any area, licensing operators, and prioritizing resource protection over user accommodation. The Sierra Club's position was also cited approvingly by the Desert Protective Council in its own comment letter.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Desert Protective Council quotes and endorses the Sierra Club's position that ORV operation should be presumed detrimental to all areas and prohibited on all public lands unless proven otherwise by competent, impartial investigators.",
+  "evidence_pages": [
+    "171"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The operation of CRV's should be presumed to be detrimental to all areas and should accordingly be prohibited on all public lands unless proven otherwise by competent, is partial investigators.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "171"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The operation of CRV's should be presumed to be detrimental to all areas and should accordingly be prohibited on all public lands unless proven otherwise by competent, is partial investigators.",
+      "quote_verified": true,
+      "entity_as_written": "Sierra Club",
+      "role_as_written": "environmental organization, commenter"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "281"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "I verge your support for life the sieves Club and Desert Pratective",
+      "quote_verified": true,
+      "entity_as_written": "Sierra Club",
+      "role_as_written": "Environmental advocacy organization"
+    }
+  ],
+  "window_pages": [
+    161,
+    191
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 115,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556038322269_C010",
+  "complainer_id": "p1074_35556038322269_K012",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 10,
+  "entity": "Los Angeles Department of Water and Power",
+  "kind": "agency",
+  "role": "municipal utility, commenter on electric power impacts",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased determination that rail electrical demand is insignificant to their total load",
+  "summary": "The Los Angeles Department of Water and Power is paraphrased in the document as having determined that the electrical energy required to operate any of the rail alternatives would be an insignificant part of their total load, indicating no major utility impact. The DWP's position is presented as a factual finding supporting the conclusion that there is no expected major impact on public utility service from the rail alternatives. The entity does not express support for or opposition to any specific alternative.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Los Angeles Department of Water and Power determined that the electrical energy required to operate any of the rail alternatives would be an insignificant part of their total load, and no major impact on public utility service is expected.",
+  "evidence_pages": [
+    "30"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The DWP states that the present average daily demand for the entire city ranges from approximately 2 million to 2.2 million kilowatts (kw) from present average winter demand to present average summer demand respectively.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "30"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "the Los Angeles Department of Water and Power has determined that the electrical energy required to operate any of the rail alternatives would be an insignificant part of their total load.",
+      "quote_verified": true,
+      "entity_as_written": "Los Angeles Department of Water and Power",
+      "role_as_written": "Local utility agency"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "203"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The DWP states that the present average daily demand for the entire city ranges from approximately 2 million to 2.2 million kilowatts (kw) from present average winter demand to present average summer demand respectively.",
+      "quote_verified": true,
+      "entity_as_written": "Los Angeles Department of Water and Power",
+      "role_as_written": "municipal utility, commenter on electric power impacts"
+    }
+  ],
+  "window_pages": [
+    20,
+    59
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 12,
+  "synthetic_no_complaint": false
+}

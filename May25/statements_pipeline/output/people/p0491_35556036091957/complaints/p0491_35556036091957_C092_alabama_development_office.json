@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C092",
+  "complainer_id": "p0491_35556036091957_K059",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 92,
+  "entity": "Alabama Development Office",
+  "kind": "agency",
+  "role": "state clearinghouse, commenter",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "transmits state agency reviews without expressing its own position, forwarding both supportive and critical comments from reviewing agencies",
+  "summary": "The Alabama Development Office served as the state clearinghouse under OMB Circular A-95, coordinating review of the Draft EIS by appropriate Alabama state agencies and transmitting their comments to the Bureau of Outdoor Recreation. The office itself did not express a position on the project, but the attached agency reviews included a recommendation from the Game and Fish Division to prohibit ORV use within National Wildlife Refuges and Wildlife Management Areas, and a comment from an ADO staff member recommending emission control systems on ORVs. The office's role was administrative coordination rather than advocacy.",
+  "form": "letter",
+  "complaint_summary": "The Alabama Development Office, acting as state clearinghouse, transmitted the results of its interagency review of the Draft EIS under OMB Circular A-95, forwarding attached comments from reviewing state agencies including a recommendation to prohibit ORV use within National Wildlife Refuges and Wildlife Management Areas, and a recommendation requiring emission control systems on ORVs.",
+  "evidence_pages": [
+    "123"
+  ],
+  "statement": {
+    "text": "The Draft Environmental Impact Statement for the above project has been reviewed by the appropriate State agencies in accordance with Office of Management and Budget Circular A-95, Revised.\nThe comments received from the reviewing agencies are attached.\nPlease contact us if we may be of further assistance. Correspondence regarding this proposal should refer to the assigned Clearinghouse Number.\nAttachments",
+    "opening_anchor": "The Draft Environmental Impact Statement for the above project has been reviewed by the appropriate State agencies in accordance with Office of Management and Budget Circular A-95, Revised.",
+    "closing_anchor": "Correspondence regarding this proposal should refer to the assigned Clearinghouse Number.\n\nAttachments",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Draft Environmental Impact Statement for the above project has been reviewed by the appropriate State agencies in accordance with Office of Management and Budget Circular A-95, Revised.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "123"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Draft Environmental Impact Statement for the above project has been reviewed by the appropriate State agencies in accordance with Office of Management and Budget Circular A-95, Revised.",
+      "quote_verified": true,
+      "entity_as_written": "Alabama Development Office",
+      "role_as_written": "state clearinghouse, commenter"
+    }
+  ],
+  "window_pages": [
+    113,
+    133
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 59,
+  "synthetic_no_complaint": false
+}

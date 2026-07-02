@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556036811230_C042",
+  "complainer_id": "p1074_35556036811230_K038",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 42,
+  "entity": "Federal Highway Administration",
+  "kind": "agency",
+  "role": "Federal agency providing traffic capacity standards",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "cited as technical standards source for level of service 'C' definition, no position expressed",
+  "summary": "The Federal Highway Administration is referenced solely as the publisher of the Highway Capacity Manual, which defines the level of service 'C' standard used to evaluate Main Street traffic performance under the proposed LRRT configuration. The FHA is also cited for its noise standard PPM 90-2 recommending that L10 values not exceed 70 dBA near parkland. Neither citation reflects a position for or against the project.",
+  "form": "none",
+  "complaint_summary": "The Federal Highway Administration's Standard PPM 90-2 is cited as recommending that L10 noise values not exceed 70 dBA near parkland or open space such as the area near St. Paul's Cathedral.",
+  "evidence_pages": [
+    "193"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim",
+    "low_stance_confidence"
+  ],
+  "summary_quote": "Main Street should perform at level of service 'C,' as defined by the Highway Capacity Manual prepared by the Federal Highway Administration.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "191"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Main Street should perform at level of service 'C,' as defined by the Highway Capacity Manual prepared by the Federal Highway Administration.",
+      "quote_verified": false,
+      "entity_as_written": "Federal Highway Administration",
+      "role_as_written": "Federal agency providing traffic capacity standards"
+    }
+  ],
+  "window_pages": [
+    181,
+    201
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 38,
+  "synthetic_no_complaint": false
+}

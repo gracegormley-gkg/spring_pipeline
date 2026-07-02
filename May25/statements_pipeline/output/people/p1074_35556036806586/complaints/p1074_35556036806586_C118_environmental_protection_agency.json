@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036806586_C118",
+  "complainer_id": "p1074_35556036806586_K005",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 118,
+  "entity": "Environmental Protection Agency",
+  "kind": "agency",
+  "role": "Federal agency requested to review draft EIS; responded",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed only as a federal department/office that received the draft EIS for review, no position stated in window",
+  "summary": "The Environmental Protection Agency appears only in a sectional listing of federal departments and offices that were sent the draft Environmental Impact Statement for review. No substantive comments, complaints, or positions attributed to the EPA are present in this document window.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "1"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim",
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Federal Departments and Offices ... *Environmental Protection Agency",
+  "summary_quote_verified": false,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "1"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Federal Departments and Offices ... *Environmental Protection Agency",
+      "quote_verified": false,
+      "entity_as_written": "Environmental Protection Agency",
+      "role_as_written": "Federal agency requested to review draft EIS; responded"
+    }
+  ],
+  "window_pages": [
+    1,
+    11
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 5,
+  "synthetic_no_complaint": true
+}

@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036806586_C047",
+  "complainer_id": "p1074_35556036806586_K040",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 47,
+  "entity": "Institute of Archeology and Anthropology, University of South Carolina",
+  "kind": "organization",
+  "role": "Conducting archaeological survey of proposed reservoir area",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "survey concluded no sites jeopardized but recommended ongoing monitoring",
+  "summary": "The Institute of Archeology and Anthropology, University of South Carolina, conducted an archaeological survey of the proposed Bad Creek reservoir area, concluding that no historical or prehistorical sites would be jeopardized by the project. The survey did recommend that the Institute be kept informed of construction activities in case clearing operations uncover any archaeological sites, and the Applicant accepted this recommendation. The survey's scope did not extend to the proposed transmission line corridor.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Institute's survey, conducted by John D. Combes, found no historical or prehistorical sites would be jeopardized by the Bad Creek Project, but recommended the Institute be kept informed of construction activities in case archaeological sites are uncovered during clearing operations.",
+  "evidence_pages": [
+    "181"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036806586_R010"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The survey, conducted by John D. Combes, Institute of Archeology and Anthropology, University of South Carolina, concluded that no historical of prehistorical sites would be jeopardized by the Bad Creek Project.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "181"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The survey, conducted by John D. Combes, Institute of Archeology and Anthropology, University of South Carolina, concluded that no historical of prehistorical sites would be jeopardized by the Bad Creek Project.",
+      "quote_verified": true,
+      "entity_as_written": "Institute of Archeology and Anthropology, University of South Carolina",
+      "role_as_written": "Conducting archaeological survey of proposed reservoir area"
+    }
+  ],
+  "window_pages": [
+    171,
+    191
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 40,
+  "synthetic_no_complaint": false
+}

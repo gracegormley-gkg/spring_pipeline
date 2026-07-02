@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C140",
+  "complainer_id": "p1074_35556036546182_K112",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 140,
+  "entity": "Douglas F. Marcelini",
+  "kind": "individual",
+  "role": "Private Citizen, commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes Airport Spur as poor design and criticizes planners for disregarding residents",
+  "summary": "Douglas F. Marcelini, a private citizen from 1830 West Ramsey Avenue, opposed the Airport Spur by arguing that if it resembles other Interstate Highways in terms of air and noise pollution, it is poorly designed. He also accused highway planners of not caring about the residents of the area. The document's preparers responded by noting that federal and state regulations have become more stringent and that the EIS process itself demonstrates planners' concern for residents.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Marcelini argued that the Airport Spur would be of poor design regarding air and noise pollution if it resembles other Interstate Highways, and that planners do not care about area residents.",
+  "evidence_pages": [
+    "244"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R059"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Stated that if the Airport Spur is anything like the other \"Interstate Highways\" with regard to air and noise pollution, it is of poor design. Also stated that planners do not care about the residents of the area.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "244"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Stated that if the Airport Spur is anything like the other \"Interstate Highways\" with regard to air and noise pollution, it is of poor design. Also stated that planners do not care about the residents of the area.",
+      "quote_verified": true,
+      "entity_as_written": "Douglas F. Marcelini",
+      "role_as_written": "Private Citizen, commenter"
+    }
+  ],
+  "window_pages": [
+    234,
+    254
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 112,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036058550_C005",
+  "complainer_id": "p1074_35556036058550_K002",
+  "doc_id": "p1074_35556036058550",
+  "work_id": "csv:35556036058550",
+  "order": 5,
+  "entity": "Bibb County Planning Commission",
+  "kind": "government",
+  "role": "Local government undertaking ecological and water quality studies at Macon site for HUD",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "described as undertaking HUD-commissioned studies at Macon site with no expressed position on the project",
+  "summary": "The Bibb County Planning Commission is described as conducting two HUD-sponsored studies at the Macon prototype site: an ecological study on maintaining a natural habitat within an urban center, and an assessment of planned urban development's effects on surface water quality before, during, and after construction. The entity is presented purely in an informational/technical capacity as a research partner, with no stated position for or against the project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Bibb County Planning Commission is undertaking two HUD-sponsored studies at the Macon site: an ecological study on maintaining a natural habitat in an urban center and an assessment of planned urban development's effects on existing surface water quality.",
+  "evidence_pages": [
+    "15"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "the Bibb County Planning Commission is undertaking for HUD two studies at the site: (1) An ecological study to determine if a small, wild area (natural habitat) can be maintained within an urban center if an urban population can be educated to take an interest in such an area and help preserve it and (2) an assessment of the effects of planned urban development on the quality of existing surface water on the site before, during, and after construction and occupation of housing units.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "15"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "the Bibb County Planning Commission is undertaking for HUD two studies at the site: (1) An ecological study to determine if a small, wild area (natural habitat) can be maintained within an urban center if an urban population can be educated to take an interest in such an area and help preserve it and (2) an assessment of the effects of planned urban development on the quality of existing surface water on the site before, during, and after construction and occupation of housing units.",
+      "quote_verified": true,
+      "entity_as_written": "Bibb County Planning Commission",
+      "role_as_written": "Local government undertaking ecological and water quality studies at Macon site for HUD"
+    }
+  ],
+  "window_pages": [
+    5,
+    25
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 2,
+  "synthetic_no_complaint": false
+}

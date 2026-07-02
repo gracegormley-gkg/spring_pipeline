@@ -1,0 +1,68 @@
+{
+  "complaint_id": "p1074_35556036861797_C029",
+  "complainer_id": "p1074_35556036861797_K022",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 29,
+  "entity": "UAW",
+  "kind": "organization",
+  "role": "labor union / commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as disagreeing with NHTSA's fleet fuel economy calculation policy",
+  "summary": "The UAW appears in this document primarily as a listed commenter on the draft EIS and proposed rulemaking. Based on the exemplar quote, the UAW disagreed with NHTSA's methodology for calculating fleet fuel economy, though the specific substance of their comment is not elaborated within this window of text.",
+  "form": "sectional",
+  "complaint_summary": "The UAW is listed as one of the commenters on the proposed average fuel economy standard for nonpassenger automobiles, MY 1979.",
+  "evidence_pages": [
+    "19"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The UAW does not agree with the NHTSA's policy calculating their fleet fuel economy.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased",
+    "sectional"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "19"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "List of Commenters",
+      "quote_verified": true,
+      "entity_as_written": "UAW",
+      "role_as_written": "Commenter"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "110"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The UAW does not agree with the NHTSA's policy calculating their fleet fuel economy.",
+      "quote_verified": true,
+      "entity_as_written": "UAW",
+      "role_as_written": "labor union / commenter"
+    }
+  ],
+  "window_pages": [
+    9,
+    57
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 22,
+  "synthetic_no_complaint": false
+}

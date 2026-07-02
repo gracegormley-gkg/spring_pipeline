@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036546182_C153",
+  "complainer_id": "p1074_35556036546182_K108",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 153,
+  "entity": "City of Milwaukee School Board",
+  "kind": "organization",
+  "role": "Local government body, commenter/interested party",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "expressed interest in undeveloped parcels along Parnell Avenue as compensation for land taken from Hamlin-Garland School",
+  "summary": "The City of Milwaukee School Board expressed interest in acquiring undeveloped parcels along Parnell Avenue as compensation for land taken from Hamlin-Garland School due to the Airport Spur project. Their position is conditional, tied to receiving adequate land compensation rather than outright opposition or support for the project itself. The Division of Highways indicated it would investigate this interest.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The City of Milwaukee School Board expressed interest in the undeveloped parcels along Parnell Avenue as compensation for the land taken from Hamlin-Garland School due to the Airport Spur project.",
+  "evidence_pages": [
+    "248"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R072"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The City of Milwaukee School Board has expressed interest in the undeveloped parcels along Parnell Avenue as compensation for the land taken from Hamlin-Garland School.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "248"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The City of Milwaukee School Board has expressed interest in the undeveloped parcels along Parnell Avenue as compensation for the land taken from Hamlin-Garland School.",
+      "quote_verified": true,
+      "entity_as_written": "City of Milwaukee School Board",
+      "role_as_written": "Local government body, commenter/interested party"
+    }
+  ],
+  "window_pages": [
+    238,
+    258
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 108,
+  "synthetic_no_complaint": false
+}

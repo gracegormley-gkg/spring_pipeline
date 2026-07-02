@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036806586_C109",
+  "complainer_id": "p1074_35556036806586_K097",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 109,
+  "entity": "South Carolina Wildlife and Marine Resources",
+  "kind": "agency",
+  "role": "conducting ongoing studies of reproductive and nursery success in lower Howard Creek",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrased as conducting ongoing studies whose incompleteness argues against licensing the project",
+  "summary": "South Carolina Wildlife and Marine Resources is described as conducting ongoing studies of reproductive and nursery success in lower Howard Creek, with results not yet conclusive at the time of the comment. Their work is cited by the South Carolina Chapter of Trout Unlimited to argue that licensing should be deferred until studies are complete, implying the agency's research supports concern about project impacts on the Howard Creek fishery.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "South Carolina Wildlife and Marine Resources is conducting ongoing studies of reproductive and nursery success in lower Howard Creek, and sufficient time has not elapsed since the last spawning season for results to be conclusive, making a licensing decision premature.",
+  "evidence_pages": [
+    "352"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Ongoing studies of reproductive and nursery success in lower Howard Creek are presently being performed by South Carolina Wildlife and Marine Resources.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 7,
+      "evidence_pages": [
+        "352"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Ongoing studies of reproductive and nursery success in lower Howard Creek are presently being performed by South Carolina Wildlife and Marine Resources.",
+      "quote_verified": true,
+      "entity_as_written": "South Carolina Wildlife and Marine Resources",
+      "role_as_written": "conducting ongoing studies of reproductive and nursery success in lower Howard Creek"
+    }
+  ],
+  "window_pages": [
+    342,
+    362
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 97,
+  "synthetic_no_complaint": false
+}

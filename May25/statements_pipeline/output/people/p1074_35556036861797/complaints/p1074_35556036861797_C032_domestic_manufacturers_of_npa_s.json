@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036861797_C032",
+  "complainer_id": "p1074_35556036861797_K006",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 32,
+  "entity": "domestic manufacturers of NPA's",
+  "kind": "organization",
+  "role": "Commenters / NPA manufacturers collectively",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase states virtually all NPA manufacturers believed the proposed standard level was too high",
+  "summary": "Domestic manufacturers of NPAs collectively argued that the proposed MY 1979 average fuel economy standard of 18.7 mpg was set too high, citing the fuel economy penalties imposed by emissions standards and other factors. They also raised issues about test procedure changes, California emission standards, weight reduction feasibility, and the need for a separate classification for four-wheel-drive general utility vehicles. Their comments prompted the agency to revise the EIS to cover a range of fuel economy levels and two NPA classes, though not all of their arguments were accepted.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Domestic NPA manufacturers commented on the draft EIS raising substantive issues including the effect of the MY 1979 emission standard on fuel economy, the potential for weight reduction by MY 1979, California emission standard effects, increased sulfate emissions from larger catalytic converters, and increased noble metal use in catalysts.",
+  "evidence_pages": [
+    "33"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036861797_R014"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Virtually all manufacturers of nonpassenger automobiles who submitted comments indicated their belief that the level of the standard was too high, in light of the effects of emissions and other factors.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "28"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Virtually all manufacturers of nonpassenger automobiles who submitted comments indicated their belief that the level of the standard was too high, in light of the effects of emissions and other factors.",
+      "quote_verified": true,
+      "entity_as_written": "domestic manufacturers of NPA's",
+      "role_as_written": "Commenters / NPA manufacturers collectively"
+    }
+  ],
+  "window_pages": [
+    18,
+    38
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 6,
+  "synthetic_no_complaint": false
+}

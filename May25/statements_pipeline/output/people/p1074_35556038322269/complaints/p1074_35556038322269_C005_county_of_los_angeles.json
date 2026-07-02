@@ -1,0 +1,78 @@
+{
+  "complaint_id": "p1074_35556038322269_C005",
+  "complainer_id": "p1074_35556038322269_K006",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 5,
+  "entity": "County of Los Angeles",
+  "kind": "government",
+  "role": "Local government; IACC participant",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "described as participant in IACC decision to pursue transit study, no position stated for or against any alternative",
+  "summary": "The County of Los Angeles is identified as a participant in the September 1976 IACC decision to submit a UMTA application for the Regional Transportation Development Program, and its Regional Planning and Road Departments are listed as members of the Interagency Technical Committee providing technical review. The County appears in the document solely in an administrative and coordination capacity, with no stated position for or against any of the transit alternatives evaluated.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The County of Los Angeles is described as one of the September 1976 IACC representatives who decided that SCRTD should submit a UMTA application to proceed with the four-point Regional Transportation Development Program.",
+  "evidence_pages": [
+    "21"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "In September, 1976 representatives of the City of Los Angeles, CalTrans, Southern California Association of Governments; the County of Los Angeles and the Southern California Rapid Transit District, decided that the District should submit an application to the Urban Mass Transportation Administration (UMTA) for financing to proceed with a four-point Regional Transportation Development Program",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "21"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In September, 1976 representatives of the City of Los Angeles, CalTrans, Southern California Association of Governments; the County of Los Angeles and the Southern California Rapid Transit District, decided that the District should submit an application to the Urban Mass Transportation Administration (UMTA) for financing to proceed with a four-point Regional Transportation Development Program",
+      "quote_verified": true,
+      "entity_as_written": "County of Los Angeles",
+      "role_as_written": "Local government; IACC participant"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "71"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In the area served by the proposed Los Angeles Regional Core Rapid Transit System, goals and objectives are developed by the following six governmental entities: ... (3) the County of Los Angeles",
+      "quote_verified": false,
+      "entity_as_written": "County of Los Angeles",
+      "role_as_written": "County government"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "266"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Hancock Park comprises the George C. Page National History Museum, the Los Angeles County Museum of Art and the La Brea Tar Pits and is administered by the County of Los Angeles.",
+      "quote_verified": true,
+      "entity_as_written": "County of Los Angeles",
+      "role_as_written": "Administrator of Hancock Park"
+    }
+  ],
+  "window_pages": [
+    11,
+    47
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 6,
+  "synthetic_no_complaint": false
+}

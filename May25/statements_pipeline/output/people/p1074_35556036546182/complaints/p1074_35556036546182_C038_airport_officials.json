@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556036546182_C038",
+  "complainer_id": "p1074_35556036546182_K024",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 38,
+  "entity": "Airport Officials",
+  "kind": "official",
+  "role": "General Mitchell Field airport officials involved in Corridor #5 coordination",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "Airport Officials coordinated with other agencies to develop Corridor #5 as compatible with General Mitchell Field's Master Plan, and their approval is explicitly cited for the recommended corridor",
+  "summary": "Airport Officials at General Mitchell Field participated in coordinated efforts with Milwaukee County, the FAA, and the Division of Highways to develop Corridor #5 as the recommended alignment, ensuring compatibility with the airport's long-range Master Plan. They raised concerns about Corridors #2, #3, and #4 due to conflicts with FAA glide slope requirements, runway alignment hazards, and air terminal expansion plans, effectively steering the selection toward Corridor #5. Their approval of Corridor #5's alignment and clearance is cited as a key advantage of the recommended build alternative.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Airport officials noted that Corridor #2's east end would be directly under the landing path of the southwest runway, requiring the freeway to be constructed under Howell Avenue and conflicting with air terminal expansion plans.",
+  "evidence_pages": [
+    "87"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "It was the result of coordinated efforts by Airport Officials, Milwaukee County, Federal Aviation Administration, and the Division of Highways to be compatible with the adopted long range Master Plan for the expansion of facilities at General Mitchell Field.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "93"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "It was the result of coordinated efforts by Airport Officials, Milwaukee County, Federal Aviation Administration, and the Division of Highways to be compatible with the adopted long range Master Plan for the expansion of facilities at General Mitchell Field.",
+      "quote_verified": true,
+      "entity_as_written": "Airport Officials",
+      "role_as_written": "General Mitchell Field airport officials involved in Corridor #5 coordination"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "87"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "According to airport officials the east end of this corridor, before it crosses Howell Avenue, would be directly under the landing path of the southwest runway located north of the Air Terminal.",
+      "quote_verified": true,
+      "entity_as_written": "airport officials",
+      "role_as_written": "General Mitchell Field airport officials"
+    }
+  ],
+  "window_pages": [
+    77,
+    103
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 24,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556039563135_C129",
+  "complainer_id": "p1074_35556039563135_K089",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 129,
+  "entity": "Dudley Onderdonk",
+  "kind": "official",
+  "role": "Village Planner, Village of Park Forest",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "letter explicitly stating 'The Village of Park Forest strongly supports the project'",
+  "summary": "Dudley Onderdonk, Village Planner for the Village of Park Forest, wrote a letter in May 1974 strongly supporting the reconstruction of Lincoln Highway, citing consistency with the village's comprehensive planning objectives and transportation goals. He argued the project would improve traffic flow, increase accessibility to the Illinois Central Gulf commuter train station, and better connect the village to the surrounding metropolitan area.",
+  "form": "letter",
+  "complaint_summary": "Onderdonk writes on behalf of the Village of Park Forest to express strong support for the Lincoln Highway reconstruction project, citing transportation planning objectives, improved traffic flow to I-57, and enhanced accessibility to the ICG commuter train station.",
+  "evidence_pages": [
+    "242"
+  ],
+  "statement": {
+    "text": "Thank you for notifying the Village of Park Forest about the request for the reconstruction of Lincoln Highway. The Village of Park Forest strongly supports the project.\nThe project is consistent with municipal comprehensive planning objectives. As stated in our planning policy document, Concept: A Plan for the Future, transportation objectives are to: \"effectively link the Village's transportation system to the surrounding communities and the metropolitan area and develop a coordinated transportation network to move residents from one mode of travel to another.\"\nThe reconstruction of Lincoln Highway would greatly improve the existing transportation system by facilitating the smooth flow of traffic from and through the Village to the Interstate 57 interchange in Matteson. In addition, upgrading the roadway would increase the accessibility of the existing Illinois Central Gulf commuter train station and the proposed ICG transportation center and parking lots.\nVery truly yours,\nDurily Ordered\nDudley Onderdonk Village Planuer\nDO:hco",
+    "opening_anchor": "Thank you for notifying the Village of Park Forest about the request for the reconstruction of Lincoln Highway. The Village of Park Forest strongly supports the project.",
+    "closing_anchor": "Very truly yours,\nDurily Ordered\nDudley Onderdonk Village Planuer\nDO:hco",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Village of Park Forest strongly supports the project.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "242"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The Village of Park Forest strongly supports the project.",
+      "quote_verified": true,
+      "entity_as_written": "Dudley Onderdonk",
+      "role_as_written": "Village Planner, Village of Park Forest"
+    },
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "242"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The Village of Park Forest strongly supports the project.",
+      "quote_verified": true,
+      "entity_as_written": "Dudley Onderdonk",
+      "role_as_written": "Village Planner, Park Forest"
+    }
+  ],
+  "window_pages": [
+    232,
+    252
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 89,
+  "synthetic_no_complaint": false
+}

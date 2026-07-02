@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C132",
+  "complainer_id": "p1074_35556036546182_K107",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 132,
+  "entity": "Benedict Kosnicki",
+  "kind": "individual",
+  "role": "Private Citizen, commenter",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "suggests design modifications (depressing freeway) and an alternate route rather than outright opposition",
+  "summary": "Benedict Kosnicki, a private citizen, suggested depressing the entire freeway to reduce noise and proposed an alternate route coming north from Rawson Avenue along the old North Shore right of way into the airport. His comments indicate concern about noise impacts and dissatisfaction with the proposed alignment, though he offered constructive alternatives rather than outright opposition.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Kosnicki suggested depressing the entire freeway to reduce noise and proposed an alternate route coming north from Rawson Avenue along the old North Shore right of way turning into the airport.",
+  "evidence_pages": [
+    "242"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036546182_R051"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Suggested depressing the entire freeway to reduce noise. Proposed an alternate of coming off Rawson Avenue and utlizing the old North Shore right of way.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "242"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Suggested depressing the entire freeway to reduce noise. Proposed an alternate of coming off Rawson Avenue and utlizing the old North Shore right of way.",
+      "quote_verified": true,
+      "entity_as_written": "Benedict Kosnicki",
+      "role_as_written": "Private Citizen, commenter"
+    }
+  ],
+  "window_pages": [
+    232,
+    252
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 107,
+  "synthetic_no_complaint": false
+}

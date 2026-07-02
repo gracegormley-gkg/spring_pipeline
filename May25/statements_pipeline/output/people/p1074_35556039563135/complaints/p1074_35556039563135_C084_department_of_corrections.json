@@ -1,0 +1,70 @@
+{
+  "complaint_id": "p1074_35556039563135_C084",
+  "complainer_id": "p1074_35556039563135_K054",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 84,
+  "entity": "Department of Corrections",
+  "kind": "agency",
+  "role": "State clearinghouse agency / draft EIS commenter",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letter states no adverse long range effect on department facilities, no objection raised",
+  "summary": "The Department of Corrections reviewed the Draft Environmental Statement for the Lincoln Highway improvement and determined that the project would present no adverse long-range effect on facilities under its jurisdiction. The department raised no objections or conditions, effectively concurring with the project. Its comment appears both as a paraphrase in the evaluation table and as a full letter in Appendix A.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Department of Corrections is listed among State Clearinghouse agencies with a 'Concur' disposition, with its comment paraphrased as finding no adverse long-range effect on facilities under its jurisdiction.",
+  "evidence_pages": [
+    "179"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556039563135_R042"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Insofar as this office can determine, the construction of this project will present no adverse long range effect on the operation of facilities under the jurisdiction of this department.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "sectional"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "179"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "Insofar as this office can determine, the construction of this project will present no adverse long range effect on the operation of facilities under the jurisdiction of this department.",
+      "quote_verified": true,
+      "entity_as_written": "Department of Corrections",
+      "role_as_written": "State clearinghouse agency / draft EIS commenter"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "197"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "STATE AGENCIES ... Department of Corrections",
+      "quote_verified": false,
+      "entity_as_written": "Department of Corrections",
+      "role_as_written": "Illinois state agency reviewer"
+    }
+  ],
+  "window_pages": [
+    169,
+    207
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 54,
+  "synthetic_no_complaint": false
+}

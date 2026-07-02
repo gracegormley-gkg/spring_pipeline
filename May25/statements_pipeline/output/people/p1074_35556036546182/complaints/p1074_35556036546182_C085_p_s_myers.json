@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C085",
+  "complainer_id": "p1074_35556036546182_K063",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 85,
+  "entity": "P. S. Myers",
+  "kind": "individual",
+  "role": "Professor Mechanical Engineering, University of Wisconsin",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter raises technical corrections and requests additional analysis while noting building the spur may be more compliant with air quality decisions",
+  "summary": "P. S. Myers, a Professor of Mechanical Engineering at the University of Wisconsin, submitted a written comment letter on the Draft EIS raising three technical concerns about air quality analysis: a word correction, a request for localized pollution impact estimates for individuals near the route, and a note about a Supreme Court anti-degradation decision. While not explicitly opposing or endorsing the project, he suggests that the data would show building the spur is more consistent with the anti-degradation decision, making his stance conditional on adequate technical analysis.",
+  "form": "letter",
+  "complaint_summary": "Myers raises three technical issues: (1) the word 'uncontrolled' should be removed from page 90 since 1971 models had emissions controls; (2) the EIS should include localized estimates of air pollution effects on individuals living near the proposed route and near streets that would bear traffic if the route is not built; and (3) a recent Supreme Court anti-degradation decision may be relevant, though he personally notes the data would show building the spur is more consistent with that decision.",
+  "evidence_pages": [
+    "164"
+  ],
+  "statement": {
+    "text": "This letter will comment on the Draft Environmental Statement Airport Spur, I-94 to General Mitchell Field in Milwaukee.\nFirst on page 90, the fourth and third lines from the bottom, state \"at least 90 percent from the uncontrolled 1971 levels\". The word uncontrolled should be stricken since controls were present in 1971 models.\nSecond, your computations show the contribution to the atmosphere of the various alternatives. However, they do not provide an estimate of the effect on an individual, i.e., the local effects of the different alternatives. Since people living next to the proposed route will be interested in the effect on them if the route is built and people adjacent to the streets that will be used if the route is not built will or should be interested in the effect on them. I think such estimations would be worth while even though I recognize the uncertainties in the estimations.\nThird, a recent Supreme Court decision suggests that any increase in pollutants (decrease in air quality) may be questionable even though air quality standards are not violated. Personally, I do not think this is a realistic position but you may want to consider this question. In this connection\n\nMr. II. L. Fiedler July 5, 1973 Page 2\nthe data would show (assuming the traffic would occur in any event) that building the spur is more in accordance with this decision.\nSincerely yours,\nP. S. Myers\nProfessor Mechanical Engineering",
+    "opening_anchor": "This letter will comment on the Draft Environmental Statement Airport Spur, I-94 to General Mitchell Field in Milwaukee.",
+    "closing_anchor": "Sincerely yours,\n\nP. S. Myers\nProfessor Mechanical Engineering",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036546182_R013"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "I think such estimations would be worth while even though I recognize the uncertainties in the estimations.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "164"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "I think such estimations would be worth while even though I recognize the uncertainties in the estimations.",
+      "quote_verified": true,
+      "entity_as_written": "P. S. Myers",
+      "role_as_written": "Professor Mechanical Engineering, University of Wisconsin"
+    }
+  ],
+  "window_pages": [
+    154,
+    174
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 63,
+  "synthetic_no_complaint": false
+}

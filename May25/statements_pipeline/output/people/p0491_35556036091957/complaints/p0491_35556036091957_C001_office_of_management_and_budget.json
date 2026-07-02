@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C001",
+  "complainer_id": "p0491_35556036091957_K025",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 1,
+  "entity": "Office of Management and Budget",
+  "kind": "agency",
+  "role": "Federal agency reviewer of draft ORV regulations",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes OMB reviewing and approving draft ORV regulations without expressing support or opposition to the project itself",
+  "summary": "The Office of Management and Budget is mentioned solely in its administrative role as a reviewer of the Department's draft ORV regulations during the period between May 1972 and February 1973. OMB approved the draft regulations in February 1973, enabling their publication in the Federal Register on February 14, 1973. No substantive policy position for or against the proposed action is attributed to OMB.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The document notes that OMB reviewed the draft ORV regulations during May 1972–February 1973 and approved them in February 1973, after which they were published in the Federal Register, but attributes no substantive position or concern to OMB regarding the proposed action.",
+  "evidence_pages": [
+    "9"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "In February 1973, the Office of Management and Budget approved the Department's draft ORV regulations, and on February 14, 1973, these draft regulations and the notice of the reopening of the review period for the Department's draft ORV environmental statement were published in the Federal Register",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "9"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In February 1973, the Office of Management and Budget approved the Department's draft ORV regulations, and on February 14, 1973, these draft regulations and the notice of the reopening of the review period for the Department's draft ORV environmental statement were published in the Federal Register",
+      "quote_verified": true,
+      "entity_as_written": "Office of Management and Budget",
+      "role_as_written": "Federal agency reviewer of draft ORV regulations"
+    }
+  ],
+  "window_pages": [
+    1,
+    19
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 25,
+  "synthetic_no_complaint": false
+}

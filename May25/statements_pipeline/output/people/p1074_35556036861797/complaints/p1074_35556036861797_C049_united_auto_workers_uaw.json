@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036861797_C049",
+  "complainer_id": "p1074_35556036861797_K032",
+  "doc_id": "p1074_35556036861797",
+  "work_id": "csv:35556036861797",
+  "order": 49,
+  "entity": "United Auto Workers (UAW)",
+  "kind": "organization",
+  "role": "labor union / commenter",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase describes UAW opposing inclusion of captive imports in domestic manufacturer fleets",
+  "summary": "The UAW opposed NHTSA's proposal to include captive imports in the domestic manufacturers' fleet calculations for fuel economy standards, arguing that the intent of Title V was to treat all imported and domestic vehicles separately. While the UAW conceded that the statutory language only mandated separate treatment for passenger automobiles, it maintained a broader interpretive position. NHTSA ultimately rejected the UAW's position, concluding that separate treatment of domestic and imported nonpassenger automobiles was not required by the Title.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The UAW opposed the inclusion of captive imports in domestic manufacturers' fleet calculations, arguing that Title V's intent was to treat all imported and domestic vehicles separately, though it conceded the statutory language only mandated this for passenger automobiles.",
+  "evidence_pages": [
+    "133"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036861797_R028"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "The UAW's opposition was based on its belief that the intent of the Title is to treat all imported and domestic vehicles separately, although it conceded that the language of the Title mandates this separate treatment only for passenger automobiles.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "133"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The UAW's opposition was based on its belief that the intent of the Title is to treat all imported and domestic vehicles separately, although it conceded that the language of the Title mandates this separate treatment only for passenger automobiles.",
+      "quote_verified": false,
+      "entity_as_written": "United Auto Workers (UAW)",
+      "role_as_written": "labor union / commenter"
+    }
+  ],
+  "window_pages": [
+    123,
+    143
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 32,
+  "synthetic_no_complaint": false
+}

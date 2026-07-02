@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556039563135_C046",
+  "complainer_id": "p1074_35556039563135_K057",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 46,
+  "entity": "Department of Transportation, Office of the Secretary for the Environment and Urban Systems (TEU)",
+  "kind": "agency",
+  "role": "Federal agency / draft EIS commenter",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "exemplar quote suggests support contingent on documentation of 4(f) alternatives in final statement",
+  "summary": "The Department of Transportation, Office of the Secretary for the Environment and Urban Systems (TEU) reviewed the draft EIS and suggested that the final statement provide documentation of alternatives to the use of Section 4(f) lands, such as utilizing the other side of Lincoln Highway for the widening. The entity's comments appear in the early coordination or draft EIS comment section, and the document window does not fully render the TEU's comment block or the associated response, though the section heading 'Comments Received as a Result of the Circulation of the Draft Environmental Statement' is present at the end of the window.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "TEU suggested that the final EIS provide documentation of alternatives to the use of Section 4(f) lands, such as utilizing the other side of Lincoln Highway for the widening.",
+  "evidence_pages": [
+    "145-194"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim"
+  ],
+  "summary_quote": "b.) It is suggested that the final statement provide documentation of alternatives to the use of 4(f) lands, such as utilizing the other side of Lincoln Highway for the widening.",
+  "summary_quote_verified": false,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "145-194"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "b.) It is suggested that the final statement provide documentation of alternatives to the use of 4(f) lands, such as utilizing the other side of Lincoln Highway for the widening.",
+      "quote_verified": false,
+      "entity_as_written": "Department of Transportation, Office of the Secretary for the Environment and Urban Systems (TEU)",
+      "role_as_written": "Federal agency / draft EIS commenter"
+    }
+  ],
+  "window_pages": [
+    135,
+    168
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 57,
+  "synthetic_no_complaint": false
+}

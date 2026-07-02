@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036105336_C056",
+  "complainer_id": "p1074_35556036105336_K050",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 56,
+  "entity": "West End Advisory Council, Inc.",
+  "kind": "organization",
+  "role": "Community advisory organization, West End Richmond",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "retained consultant to independently review the land use plan, prompting a reply from the RPSB clarifying program responsibilities and limitations",
+  "summary": "The West End Advisory Council, Inc. engaged an independent planning consultant through the Richmond Community Action Program to review the Randolph land use plan, suggesting concern or skepticism about the plan as developed by the RPSB. The RPSB responded in January 1972, reminding the Council of the program's responsibilities, limitations, and the community's overall goals and objectives. The Council's action implies a desire for modifications or scrutiny rather than outright opposition or full support.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The West End Advisory Council, Inc. retained a planning consultant to independently review the Randolph land use plan, implying dissatisfaction or concern with the plan as developed by the RPSB.",
+  "evidence_pages": [
+    "103"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036105336_R010"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "In November, 1971, the West End Advisory Council, Inc., through the Richmond Community Action Program retained a planning consultant to review the Randolph land use plan.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "103"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In November, 1971, the West End Advisory Council, Inc., through the Richmond Community Action Program retained a planning consultant to review the Randolph land use plan.",
+      "quote_verified": true,
+      "entity_as_written": "West End Advisory Council, Inc.",
+      "role_as_written": "Community advisory organization, West End Richmond"
+    }
+  ],
+  "window_pages": [
+    93,
+    113
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 50,
+  "synthetic_no_complaint": false
+}

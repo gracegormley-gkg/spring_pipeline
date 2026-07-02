@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556036058550_C049",
+  "complainer_id": "p1074_35556036058550_K016",
+  "doc_id": "p1074_35556036058550",
+  "work_id": "csv:35556036058550",
+  "order": 49,
+  "entity": "New Jersey Bell Telephone Company",
+  "kind": "organization",
+  "role": "Telephone service provider at Jersey City site",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "mentioned only as a service provider offering a telephone supermarket at the Jersey City site, with no expressed position on the project",
+  "summary": "New Jersey Bell Telephone Company is mentioned solely as a participant providing a 'telephone supermarket' at the Jersey City prototype site, allowing residents to select and self-install telephone equipment via pre-installed jacks. The mention is purely descriptive and informational, with no position expressed by the company regarding the broader Operation Breakthrough program. No complaints or objections are attributed to the company.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "14"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Finally, the New Jersey Bell Telephone Company will have a telephone supermarket at the Jersey City site.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "14"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Finally, the New Jersey Bell Telephone Company will have a telephone supermarket at the Jersey City site.",
+      "quote_verified": true,
+      "entity_as_written": "New Jersey Bell Telephone Company",
+      "role_as_written": "Telephone service provider at Jersey City site"
+    }
+  ],
+  "window_pages": [
+    4,
+    24
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 16,
+  "synthetic_no_complaint": true
+}

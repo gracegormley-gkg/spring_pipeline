@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036105336_C054",
+  "complainer_id": "p1074_35556036105336_K049",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 54,
+  "entity": "VOICES (Vehement Outcry of Interested Citizens for an Equitable Society)",
+  "kind": "organization",
+  "role": "Community organizing group, Randolph area",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "described as a temporary organizing body with no stated position on the project itself",
+  "summary": "VOICES (Vehement Outcry of Interested Citizens for an Equitable Society) was a temporary community organizing group formed in April 1969 to mobilize Randolph area residents and facilitate a democratic election of a permanent project area committee. The group's sole described purpose was to organize citizen participation and then dissolve once the Randolph Planning Study Board was elected in October 1969. No position for or against the urban renewal project is attributed to VOICES.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "VOICES is described as a temporary organizing body whose main task was to involve Randolph citizens in electing a permanent organization (the Randolph Planning Study Board) to study the urban renewal program and solicit community involvement, after which VOICES would cease to exist.",
+  "evidence_pages": [
+    "101"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The main task of the group was to organize and involve the Randolph citizens in a democratic election of a permanent organization to study the program and solicit community involvement.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "101"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The main task of the group was to organize and involve the Randolph citizens in a democratic election of a permanent organization to study the program and solicit community involvement.",
+      "quote_verified": true,
+      "entity_as_written": "VOICES (Vehement Outcry of Interested Citizens for an Equitable Society)",
+      "role_as_written": "Community organizing group, Randolph area"
+    }
+  ],
+  "window_pages": [
+    91,
+    111
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 49,
+  "synthetic_no_complaint": false
+}

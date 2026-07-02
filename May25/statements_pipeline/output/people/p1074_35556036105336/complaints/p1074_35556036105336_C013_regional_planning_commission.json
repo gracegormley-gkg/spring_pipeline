@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036105336_C013",
+  "complainer_id": "p1074_35556036105336_K016",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 13,
+  "entity": "Regional Planning Commission",
+  "kind": "agency",
+  "role": "Regional planning body",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "unanimously approved the Randolph Plan and congratulated the RPSB on the excellent plan",
+  "summary": "The Regional Planning Commission reviewed the Randolph Urban Renewal Plan on January 27, 1972, and unanimously approved it. The Commission also took the occasion to praise the Randolph Planning Study Board for the quality of the plan, attributing its excellence in large part to the citizen participation process.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Regional Planning Commission unanimously approved the Randolph Plan on January 27, 1972, and congratulated the RPSB on the excellent plan, crediting the citizen participation process.",
+  "evidence_pages": [
+    "17"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Plan was presented to the Regional Planning Commission on January 27, 1972, at which time it was unanimously approved. The Commission took this opportunity to congratulate the R.P.S.B. on the excellent plan for which the citizen participation process was greatly responsible.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "17"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Plan was presented to the Regional Planning Commission on January 27, 1972, at which time it was unanimously approved. The Commission took this opportunity to congratulate the R.P.S.B. on the excellent plan for which the citizen participation process was greatly responsible.",
+      "quote_verified": true,
+      "entity_as_written": "Regional Planning Commission",
+      "role_as_written": "Regional planning body"
+    }
+  ],
+  "window_pages": [
+    7,
+    27
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 16,
+  "synthetic_no_complaint": false
+}

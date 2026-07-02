@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036546182_C127",
+  "complainer_id": "p1074_35556036546182_K103",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 127,
+  "entity": "Southeastern Wisconsin Coalition for Clean Air",
+  "kind": "organization",
+  "role": "commenter at public hearing",
+  "stance": "opposed",
+  "stance_confidence": "high",
+  "stance_basis": "testified that current air quality data was absent from Draft EIS and supported DNR's critical comments",
+  "summary": "Marcey Jaskulski, representing the Southeastern Wisconsin Coalition for Clean Air, testified at the public hearing that the Draft EIS lacked current air quality monitoring data for the project area and read into the record the DNR's critical comments and suggestions from September 11, 1973. The Coalition supported the DNR's position and argued the EIS was deficient in its air quality analysis.",
+  "form": "testimony",
+  "complaint_summary": "The Coalition's representative read DNR's critical comments on the Draft EIS into the record and argued that the Draft EIS contained no monitoring data reflecting current air quality in the project area.",
+  "evidence_pages": [
+    "233"
+  ],
+  "statement": {
+    "text": "Represented Southeastern Wisconsin Coalition for Clean Air. Read the Department of Natural Resources comments and suggestions of September 11, 1973 on the Draft EIS. Indicated current air quality was not contained in the Draft EIS.\nf) Agreed and supported the Department of Natural Resources letter.\nStated the EIS contained no monitoring data to indicate what the current air quality is in the area of the proposed project.",
+    "opening_anchor": "Represented Southeastern Wisconsin Coalition for Clean Air. Read the Department of Natural Resources comments and suggestions of September 11, 1973 on the Draft EIS.",
+    "closing_anchor": "Stated the EIS contained no monitoring data to indicate what the current air quality is in the area of the proposed project.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036546182_R047"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Represented Southeastern Wisconsin Coalition for Clean Air. Read the Department of Natural Resources comments and suggestions of September 11, 1973 on the Draft EIS. Indicated current air quality was not contained in the Draft EIS.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "233"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Represented Southeastern Wisconsin Coalition for Clean Air. Read the Department of Natural Resources comments and suggestions of September 11, 1973 on the Draft EIS. Indicated current air quality was not contained in the Draft EIS.",
+      "quote_verified": true,
+      "entity_as_written": "Southeastern Wisconsin Coalition for Clean Air",
+      "role_as_written": "commenter at public hearing"
+    }
+  ],
+  "window_pages": [
+    223,
+    243
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 103,
+  "synthetic_no_complaint": false
+}

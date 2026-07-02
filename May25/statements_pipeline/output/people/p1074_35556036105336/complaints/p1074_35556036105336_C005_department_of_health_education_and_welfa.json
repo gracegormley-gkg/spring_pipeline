@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036105336_C005",
+  "complainer_id": "p1074_35556036105336_K007",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 5,
+  "entity": "Department of Health, Education, and Welfare",
+  "kind": "agency",
+  "role": "Federal agency commenter",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed only as a commenter who responded, with no position stated in the window",
+  "summary": "The Department of Health, Education, and Welfare appears in the document solely as an entity from which comments were requested and from which comments were received, listed in the summary sheet. No substantive position, complaint, or opinion from the agency is reproduced within this window of the document.",
+  "form": "sectional",
+  "complaint_summary": "The Department of Health, Education, and Welfare is listed among agencies from which comments were requested and among those from which comments were received, but no substantive content of their comments is provided in this section.",
+  "evidence_pages": [
+    "5"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence"
+  ],
+  "summary_quote": "Comments have been received from: a. Department of Health, Education and Welfare",
+  "summary_quote_verified": true,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "5"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Comments have been received from: a. Department of Health, Education and Welfare",
+      "quote_verified": true,
+      "entity_as_written": "Department of Health, Education, and Welfare",
+      "role_as_written": "Federal agency commenter"
+    }
+  ],
+  "window_pages": [
+    1,
+    15
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 7,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,68 @@
+{
+  "complaint_id": "p1074_35556036806586_C007",
+  "complainer_id": "p1074_35556036806586_K018",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 7,
+  "entity": "North Carolina Wildlife Resources Commission",
+  "kind": "agency",
+  "role": "State agency managing wildlife land at Long Spur Ridge and Coley Creek sites",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "provides factual wildlife population data without expressing support or opposition to the project",
+  "summary": "The North Carolina Wildlife Resources Commission is quoted providing a factual description of wildlife populations in the project area, noting low to moderate big game populations (deer, turkey, boar, bear), moderate to good small game populations (gray squirrel, grouse), and average populations of wildcat, foxes, hawks, owls, along with an unsubstantiated panther report. The Commission's statement is used as an informational source in the environmental baseline section of the document and does not express a position for or against the project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The North Carolina Wildlife Resources Commission is quoted describing wildlife populations in the project area, including low to moderate big game, moderate to good small game, and average predator populations, with an unsubstantiated panther report.",
+  "evidence_pages": [
+    "66"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "\"The area in question supports low to moderate populations of big game including, in descending order of abundance, deer, wild turkey, boar, and bear; moderate to good populations of small game, particularly gray squirrel and grouse; average populations of wildcat, foxes, hawks, and owls and an unsubstantiated report of panther.\"",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "66"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "\"The area in question supports low to moderate populations of big game including, in descending order of abundance, deer, wild turkey, boar, and bear; moderate to good populations of small game, particularly gray squirrel and grouse; average populations of wildcat, foxes, hawks, and owls and an unsubstantiated report of panther.\"",
+      "quote_verified": true,
+      "entity_as_written": "North Carolina Wildlife Resources Commission",
+      "role_as_written": "State wildlife agency — commenter on wildlife populations"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "217"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Development of the Long Spur Ridge site would create a reservoir with a surface area of 280 acres which would inundate land presently managed to some unknown extent for wildlife by the North Carolina Wildlife Resources Commission.",
+      "quote_verified": true,
+      "entity_as_written": "North Carolina Wildlife Resources Commission",
+      "role_as_written": "State agency managing wildlife land at Long Spur Ridge and Coley Creek sites"
+    }
+  ],
+  "window_pages": [
+    56,
+    99
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 18,
+  "synthetic_no_complaint": false
+}

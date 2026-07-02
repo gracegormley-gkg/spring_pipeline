@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556036806586_C131",
+  "complainer_id": "p1074_35556036806586_K049",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 131,
+  "entity": "Crescent Land and Timber Company",
+  "kind": "organization",
+  "role": "Land owner with wildlife management agreement at Bearcamp Creek site",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "entity mentioned only as land manager under wildlife agreement, no position expressed",
+  "summary": "Crescent Land and Timber Company is mentioned solely as the party with whom the North Carolina Wildlife Resources Commission has a wildlife management agreement at the Bearcamp Creek site. The entity is referenced in the context of describing existing land use at an alternative project site, and again in a comparison table noting that under the 'Denial of Application' scenario vegetation and wildlife would remain under Crescent Land and Timber Company management. No position or complaint regarding the project is attributed to the company.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "224"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "It is reported that the land is managed for wildlife by the North Carolina Wildlife Resources Commission pursuant to an agreement with the Crescent Land and Timber Company (Application and Supplemental Enclosure No. 4).",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "224"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "It is reported that the land is managed for wildlife by the North Carolina Wildlife Resources Commission pursuant to an agreement with the Crescent Land and Timber Company (Application and Supplemental Enclosure No. 4).",
+      "quote_verified": true,
+      "entity_as_written": "Crescent Land and Timber Company",
+      "role_as_written": "Land owner with wildlife management agreement at Bearcamp Creek site"
+    }
+  ],
+  "window_pages": [
+    214,
+    234
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 49,
+  "synthetic_no_complaint": true
+}

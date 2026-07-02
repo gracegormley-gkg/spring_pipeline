@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036811230_C029",
+  "complainer_id": "p1074_35556036811230_K025",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 29,
+  "entity": "No Overhead Transit (NOT)",
+  "kind": "organization",
+  "role": "special interest community group",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "described as joining Joint Executive Committee formed to unite groups in demonstration of community support for rapid transit",
+  "summary": "No Overhead Transit (NOT) is described as a special interest community group whose chairman joined the Joint Executive Committee for Rapid Transit in May 1975, formed at the request of the Erie County Executive and the Mayor of Buffalo. The committee was designed to unite these groups in a demonstration of community support for rapid transit, indicating NOT's participation in supporting the project. No specific complaints or objections from NOT are recorded in this window.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "NOT's chairman participated in the Joint Executive Committee for Rapid Transit, which was formed to unite community groups in demonstrating support for rapid transit, suggesting NOT was aligned with the project's goals despite its name implying opposition to overhead transit structures.",
+  "evidence_pages": [
+    "83"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "It was composed of the chairmen of the Mass Transit Advisory Committee, the Area Committee for Transit (ACT), and the No Overhead Transit (NOT) organization (the latter two being special interest community groups).",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "83"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "It was composed of the chairmen of the Mass Transit Advisory Committee, the Area Committee for Transit (ACT), and the No Overhead Transit (NOT) organization (the latter two being special interest community groups).",
+      "quote_verified": true,
+      "entity_as_written": "No Overhead Transit (NOT)",
+      "role_as_written": "special interest community group"
+    }
+  ],
+  "window_pages": [
+    73,
+    93
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 25,
+  "synthetic_no_complaint": false
+}

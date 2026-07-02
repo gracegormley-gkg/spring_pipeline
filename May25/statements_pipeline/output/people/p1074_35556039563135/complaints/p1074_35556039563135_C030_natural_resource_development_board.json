@@ -1,0 +1,67 @@
+{
+  "complaint_id": "p1074_35556039563135_C030",
+  "complainer_id": "p1074_35556039563135_K033",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 30,
+  "entity": "Natural Resource Development Board",
+  "kind": "agency",
+  "role": "State natural resources review board",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "letter explicitly states no adverse comments on the Environmental Impact Statement",
+  "summary": "The Natural Resource Development Board reviewed the Environmental Impact Statement for the Lincoln Highway project and issued no adverse comments, as reported in a May 2, 1972 letter from the State of Illinois Department of Business and Economic Development. The document notes that the Director of the Illinois Department of Conservation, who serves as the State Officer for Historic Preservation, is a member of the Board. The Board's review is cited as part of the project's coordination with state natural resource agencies.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Natural Resource Development Board reviewed the Environmental Impact Statement for the Lincoln Highway project and had no adverse comments, as confirmed in a letter dated May 2, 1972 from the State of Illinois Department of Business and Economic Development.",
+  "evidence_pages": [
+    "52"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Natural Resource Development Board has reviewed the Environmental Impact Statements for the following highway projects and has no adverse comment to make thereon:",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "52"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The Natural Resource Development Board has reviewed the Environmental Impact Statement\" for this highway project and \"has no adverse comments to make thereon.",
+      "quote_verified": true,
+      "entity_as_written": "Natural Resource Development Board",
+      "role_as_written": "State natural resources review board"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "206"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The Natural Resource Development Board has reviewed the Environmental Impact Statements for the following highway projects and has no adverse comment to make thereon:",
+      "quote_verified": true,
+      "entity_as_written": "Natural Resource Development Board",
+      "role_as_written": "Illinois state agency reviewer"
+    }
+  ],
+  "window_pages": [
+    42,
+    80
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 33,
+  "synthetic_no_complaint": false
+}

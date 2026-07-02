@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036806586_C052",
+  "complainer_id": "p1074_35556036806586_K048",
+  "doc_id": "p1074_35556036806586",
+  "work_id": "csv:35556036806586",
+  "order": 52,
+  "entity": "Corps of Engineers",
+  "kind": "agency",
+  "role": "Federal agency considered as potential developer of Bad Creek site",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase states no visible reason for Corps to consider development, and no Federal development was being considered",
+  "summary": "The Corps of Engineers is discussed as a potential federal developer of the Bad Creek site, but the document concludes there is no visible reason for the Corps to consider its development since the site has no flood control or irrigation value. Comments received from federal agencies in response to FPC inquiries did not indicate that federal development was being considered. The Corps is not described as taking any position for or against the project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The document notes that the Bad Creek site has no flood control or irrigation potential, giving the Corps of Engineers no visible reason to consider developing it, and that federal agency comments confirmed no federal development was being considered.",
+  "evidence_pages": [
+    "212"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The Bad Creek site has no potential value for flood control or irrigation, and hence there is no visible reason for the Corps of Engineers to consider its development.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "212"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Bad Creek site has no potential value for flood control or irrigation, and hence there is no visible reason for the Corps of Engineers to consider its development.",
+      "quote_verified": true,
+      "entity_as_written": "Corps of Engineers",
+      "role_as_written": "Federal agency considered as potential developer of Bad Creek site"
+    }
+  ],
+  "window_pages": [
+    202,
+    222
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 48,
+  "synthetic_no_complaint": false
+}

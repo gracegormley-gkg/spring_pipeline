@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036546182_C068",
+  "complainer_id": "p1074_35556036546182_K051",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 68,
+  "entity": "H. B. Wildschut",
+  "kind": "official",
+  "role": "Milwaukee County Highway Commissioner and Director of Public Works",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "paraphrase states County Board took official action incorporating Airport Spur into freeway system and pledged county funds; letter praises the Draft EIS and supports Alternate #5",
+  "summary": "H. B. Wildschut, Milwaukee County Highway Commissioner and Director of Public Works, expressed strong support for the Airport Spur project at the 1969 public hearing, noting the County Board had officially incorporated it into the county freeway system and pledged funds. He also submitted a written comment on the Draft EIS in July 1973, praising the statement's quality while noting two omissions (the Howell Avenue access addition and the transit plan connection), and affirming that Alternate #5 offers the least disruptive connection with minimal adverse environmental impacts.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Wildschut stated that the Milwaukee County Board has taken official action to incorporate the Airport Spur into the county freeway system, pledged county funds to it, and approved the Master Plan for expansion of General Mitchell Field's airport terminal and air cargo area.",
+  "evidence_pages": [
+    "155"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Stated that the Milwaukee County Board has taken official action for the development of the Airport Spur by incorporating it into the Milwaukee County freeway system and has pledged county funds to it. Also stated that the County Board has approved the Master Plan for the expansion of General Mitchell Field's airport terminal and air cargo area.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "155"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Stated that the Milwaukee County Board has taken official action for the development of the Airport Spur by incorporating it into the Milwaukee County freeway system and has pledged county funds to it. Also stated that the County Board has approved the Master Plan for the expansion of General Mitchell Field's airport terminal and air cargo area.",
+      "quote_verified": true,
+      "entity_as_written": "H. B. Wildschut",
+      "role_as_written": "Milwaukee County Highway Commissioner and Director of Public Works"
+    }
+  ],
+  "window_pages": [
+    145,
+    165
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 51,
+  "synthetic_no_complaint": false
+}

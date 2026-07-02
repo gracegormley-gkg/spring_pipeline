@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036546182_C064",
+  "complainer_id": "p1074_35556036546182_K033",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 64,
+  "entity": "DNR",
+  "kind": "agency",
+  "role": "Wisconsin Department of Natural Resources / Indirect Source Review agency",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "DNR signed Notice of Intent approving the air quality review and confirming project will not violate air quality standards",
+  "summary": "The Wisconsin DNR, acting as the Indirect Source Review Agency, reviewed the Airport Spur Air Quality Report under Wisconsin Administrative Code NR 154 and issued a signed Notice of Intent approving the project. DNR confirmed that the project will not result in violations of an approved control strategy nor interfere with attainment or maintenance of the National Ambient Air Quality Standards, and formally approved the Notice of Intent on November 20, 1975.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "DNR, as the Indirect Source Review Agency, reviewed and approved the Airport Spur Air Quality Report, issuing a signed Notice of Intent stating the project will not violate an approved control strategy nor interfere with attainment or maintenance of the National Ambient Air Quality Standards.",
+  "evidence_pages": [
+    "130"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "The signed Notice of Intent and letter of review and comment on the Air Quality Report by DNR also states that the project will not result in violations of an approved control strategy nor will the project interfere with the attainment or maintenance of the National Ambient Air Quality Standards (MAAOS).",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "130"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The signed Notice of Intent and letter of review and comment on the Air Quality Report by DNR also states that the project will not result in violations of an approved control strategy nor will the project interfere with the attainment or maintenance of the National Ambient Air Quality Standards (MAAOS).",
+      "quote_verified": true,
+      "entity_as_written": "DNR",
+      "role_as_written": "Wisconsin Department of Natural Resources / Indirect Source Review agency"
+    }
+  ],
+  "window_pages": [
+    120,
+    140
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 33,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036105336_C037",
+  "complainer_id": "p1074_35556036105336_K030",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 37,
+  "entity": "Parker W. Hirtle",
+  "kind": "individual",
+  "role": "Engineer, Bolt Beranek and Newman Inc., noise study consultant",
+  "stance": "neutral",
+  "stance_confidence": "high",
+  "stance_basis": "letter provides technical noise study data without expressing support or opposition to the project",
+  "summary": "Parker W. Hirtle of Bolt Beranek and Newman Inc. appears in the document solely as the author of a technical letter providing 24-hour traffic distribution data used in the Randolph Project noise study. His letter explains the assumptions underlying the traffic analysis, including that the data is estimate-based and that the truck-to-car ratio was held constant throughout the day. He takes no position on the project itself, functioning purely as a technical consultant supplying information requested by HUD's area office.",
+  "form": "letter",
+  "complaint_summary": "Hirtle provides a technical letter to Harland Bartholomew & Associates supplying the 24-hour traffic distribution table assumed for the noise analysis and explaining the estimation assumptions, including that the truck-to-car ratio was held constant throughout the day.",
+  "evidence_pages": [
+    "69"
+  ],
+  "statement": {
+    "text": "Enclosed is a print of our map showing the locations on the site for which computer calculations were made. The lines which run approximately normal to the roadway are labeled numerically (e.g. 1, 2, 3, etc.). The \"x\"s indicate the calculation points and are designated by letters (e.g. A, B, C, etc.), with \"A\" for each line being the \"x\" closest to the roadway. The illustrative locations which we used in our report (Figures 1, 2 and 3) were 1B, 7E, and 13F. We have circled these three locations in red on the map.\nThe following table indicates the 24-hour traffic distribution assumed for our analysis:\nTime Period\nAverage %/hr\n(of 24-hr Total)\n12M\n6AM\n1.5\n6AM\n7AM\n6\n7AM\n8AM\n7\n8AM\n2PM\n5\n2PM\n4PM\n6\n4PM\n6PM\n8\n6PM\n8PM\n5\n8PM\n12M\n2.5\n\nMr. Alan R. Siff 27 April 1973 page 2\nBecause the above information is based on estimates (and will vary from one highway to another) we did not break it down any further. Also, we assumed that the ratio of trucks to cars remained constant throughout the day.\nWe trust this information is what you need. If not, let us know.\nSincerely,\nBOLT BERANEK AND NEWMAN INC.\nParker W. Hirtle",
+    "opening_anchor": "Enclosed is a print of our map showing the locations on the site for which computer calculations were made.",
+    "closing_anchor": "We trust this information is what you need. If not, let us know.\n\nSincerely,\nBOLT BERANEK AND NEWMAN INC.\nParker W. Hirtle",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Because the above information is based on estimates (and will vary from one highway to another) we did not break it down any further. Also, we assumed that the ratio of trucks to cars remained constant throughout the day.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "69"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "Because the above information is based on estimates (and will vary from one highway to another) we did not break it down any further. Also, we assumed that the ratio of trucks to cars remained constant throughout the day.",
+      "quote_verified": true,
+      "entity_as_written": "Parker W. Hirtle",
+      "role_as_written": "Engineer, Bolt Beranek and Newman Inc., noise study consultant"
+    }
+  ],
+  "window_pages": [
+    59,
+    79
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 30,
+  "synthetic_no_complaint": false
+}

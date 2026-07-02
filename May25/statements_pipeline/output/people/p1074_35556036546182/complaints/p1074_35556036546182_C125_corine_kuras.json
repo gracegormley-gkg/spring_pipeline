@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556036546182_C125",
+  "complainer_id": "p1074_35556036546182_K077",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 125,
+  "entity": "Corine Kuras",
+  "kind": "individual",
+  "role": "Private Citizen",
+  "stance": "opposed",
+  "stance_confidence": "medium",
+  "stance_basis": "expressed concern about errant trucks crashing into Hamlin-Garland School",
+  "summary": "Corine Kuras, a private citizen residing at 1550 West Iona Terrace, testified at the hearing expressing concern about errant trucks crashing into Hamlin-Garland School as a result of the Airport Spur project. She also submitted a tape recording of Supervisor Biernat's comments on the Airport Spur, which was transcribed into the Official Transcript at her request.",
+  "form": "testimony",
+  "complaint_summary": "Corine Kuras expressed concern about errant trucks crashing into Hamlin-Garland School and submitted a tape recording of Supervisor Biernat's comments on the Airport Spur.",
+  "evidence_pages": [
+    "233"
+  ],
+  "statement": {
+    "text": "Concerned about trucks crashing into Hamlin-Garland School.\nSubmitted tape recording of Supervisor Biernat.\nf) Concerned about errant trucks crashing into Hamlin-Garland School.\nSubmitted an alleged tape recording of Supervisor Biernat's comments on the Airport Spur when he addressed the Milwaukee County Board of Supervisors at their June 1974 County Board meeting.",
+    "opening_anchor": "Concerned about trucks crashing into Hamlin-Garland School.\nSubmitted tape recording of Supervisor Biernat.",
+    "closing_anchor": "Submitted an alleged tape recording of Supervisor Biernat's comments on the Airport Spur when he addressed the Milwaukee County Board of Supervisors at their June 1974 County Board meeting.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [
+    "p1074_35556036546182_R045"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "Concerned about trucks crashing into Hamlin-Garland School.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "233"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Concerned about trucks crashing into Hamlin-Garland School.",
+      "quote_verified": true,
+      "entity_as_written": "Corine Kuras",
+      "role_as_written": "Private Citizen"
+    }
+  ],
+  "window_pages": [
+    223,
+    243
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 77,
+  "synthetic_no_complaint": false
+}

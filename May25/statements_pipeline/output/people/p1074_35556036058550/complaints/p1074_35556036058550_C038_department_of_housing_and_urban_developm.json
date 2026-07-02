@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036058550_C038",
+  "complainer_id": "p1074_35556036058550_K006",
+  "doc_id": "p1074_35556036058550",
+  "work_id": "csv:35556036058550",
+  "order": 38,
+  "entity": "Department of Housing and Urban Development",
+  "kind": "agency",
+  "role": "Lead agency / internal commenter on draft EIS",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "internal comments incorporated into Final Statement without opposition or explicit endorsement",
+  "summary": "The Department of Housing and Urban Development (HUD) is listed as an internal commenter on the draft Environmental Impact Statement for Operation BREAKTHROUGH, with comments received from multiple offices including the General Counsel, Federal Insurance Administrator, Assistant Secretaries, and Regional Administrators. These internal comments were incorporated as appropriate into the Final Statement rather than receiving specific individual responses. As the lead agency for the program, HUD's internal comments reflect an administrative review process rather than an external stance for or against the project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Comments were received from multiple HUD offices (General Counsel, Federal Insurance Administrator, Assistant Secretaries for Equal Opportunity, Community Planning and Management and Administration, and Regional Administrators for Regions IV and IX) and were incorporated as appropriate into the Final Statement.",
+  "evidence_pages": [
+    "24"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036058550_R031"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Comments were received from the General Counsel, Federal Insurance Administrator, Assistant Secretaries for Equal Opportunity, Community Planning and Management and Administration, and the Regional Administrators, Regions IV and IX.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "24"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Comments were received from the General Counsel, Federal Insurance Administrator, Assistant Secretaries for Equal Opportunity, Community Planning and Management and Administration, and the Regional Administrators, Regions IV and IX.",
+      "quote_verified": true,
+      "entity_as_written": "Department of Housing and Urban Development",
+      "role_as_written": "Lead agency / internal commenter on draft EIS"
+    }
+  ],
+  "window_pages": [
+    14,
+    34
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 6,
+  "synthetic_no_complaint": false
+}

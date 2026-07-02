@@ -1,0 +1,71 @@
+{
+  "complaint_id": "p1074_35556038322269_C079",
+  "complainer_id": "p1074_35556038322269_K003",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 79,
+  "entity": "City of Los Angeles",
+  "kind": "government",
+  "role": "Local government / plan area authority",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "mentioned only as a participating governmental entity and data source, no position expressed",
+  "summary": "The City of Los Angeles is referenced throughout the document window as a key governmental participant in the Regional Transportation Development Program and as a source of planning data (traffic, land use, population/employment statistics). The City is listed among the agencies to receive copies of the draft report and is noted as the proponent of the separate Downtown People Mover Project. No distinct position for or against any of the transit alternatives is expressed by the City in this window.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "30",
+    "72"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "In the area served by the proposed Los Angeles Regional Core Rapid Transit System, goals and objectives are developed by the following six governmental entities: (1) the City of Los Angeles",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "30"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The land-use goals of the State, County and City call for the development of regional, multi-purpose, high intensity centers linked together by rail rapid transit.",
+      "quote_verified": true,
+      "entity_as_written": "City of Los Angeles",
+      "role_as_written": "Local government; IACC participant"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "72"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "In the area served by the proposed Los Angeles Regional Core Rapid Transit System, goals and objectives are developed by the following six governmental entities: (1) the City of Los Angeles",
+      "quote_verified": true,
+      "entity_as_written": "City of Los Angeles",
+      "role_as_written": "Local government / plan area authority"
+    }
+  ],
+  "window_pages": [
+    20,
+    59
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 3,
+  "synthetic_no_complaint": true
+}

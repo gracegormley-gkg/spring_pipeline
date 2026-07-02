@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036811230_C040",
+  "complainer_id": "p1074_35556036811230_K041",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 40,
+  "entity": "New York State Thruway Authority",
+  "kind": "agency",
+  "role": "Public property owner in Ellicott Yard area",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "land described as publicly owned and assumed acquirable at no cost, with no stated opposition or support from the Authority",
+  "summary": "The New York State Thruway Authority is mentioned as the owner of most of the public right-of-way south of Exchange Street required for the Ellicott Yard site. The document notes that acquisition of this land is assumed possible at no cost, and separately flags a potentially severe engineering impact involving routing LRRT vehicles between the Thruway's support columns, which may require costly relocation. The Authority itself does not express a position in this window.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The document notes that most of the public right-of-way south of Exchange Street needed for the Ellicott Yard is owned by the New York State Thruway Authority, and that acquisition is assumed possible at no cost, while also flagging a potentially severe impact of routing LRRT vehicles between Thruway support columns that may require costly column relocation.",
+  "evidence_pages": [
+    "185"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036811230_R003"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "most of it is owned by the New York State Thruway Authority and some (between Washington Street and the Oak Street on-ramp) is owned by the City of Buffalo and used as a parking lot.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "185"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "most of it is owned by the New York State Thruway Authority and some (between Washington Street and the Oak Street on-ramp) is owned by the City of Buffalo and used as a parking lot.",
+      "quote_verified": true,
+      "entity_as_written": "New York State Thruway Authority",
+      "role_as_written": "Public property owner in Ellicott Yard area"
+    }
+  ],
+  "window_pages": [
+    175,
+    195
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 41,
+  "synthetic_no_complaint": false
+}

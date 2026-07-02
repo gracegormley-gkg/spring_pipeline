@@ -1,0 +1,60 @@
+{
+  "complaint_id": "p1074_35556038322269_C100",
+  "complainer_id": "p1074_35556038322269_K054",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 100,
+  "entity": "Jeffrey Druyun",
+  "kind": "official",
+  "role": "Acting Oil Administrator, City of Los Angeles",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "cited as an informational source on oil field locations, no position expressed",
+  "summary": "Jeffrey Druyun, Acting Oil Administrator for the City of Los Angeles, is cited solely as an informational source regarding the location of oil fields (specifically the Salt Lake and South Salt Lake Oil Fields) near the proposed transit corridor. No opinion or position on the project is attributed to him; he is referenced only as a knowledgeable contact consulted in November 1977.",
+  "form": "none",
+  "complaint_summary": "",
+  "evidence_pages": [
+    "150"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim",
+    "low_stance_confidence",
+    "no_complaints"
+  ],
+  "summary_quote": "Conversation with Jeffrey Druyun, Acting Oil Administrator, City of Los Angeles, November, 1977.",
+  "summary_quote_verified": false,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "150"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Conversation with Jeffrey Druyun, Acting Oil Administrator, City of Los Angeles, November, 1977.",
+      "quote_verified": false,
+      "entity_as_written": "Jeffrey Druyun",
+      "role_as_written": "Acting Oil Administrator, City of Los Angeles"
+    }
+  ],
+  "window_pages": [
+    140,
+    160
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 54,
+  "synthetic_no_complaint": true
+}

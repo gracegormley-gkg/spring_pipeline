@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p1074_35556036058550_C033",
+  "complainer_id": "p1074_35556036058550_K004",
+  "doc_id": "p1074_35556036058550",
+  "work_id": "csv:35556036058550",
+  "order": 33,
+  "entity": "Department of Commerce",
+  "kind": "agency",
+  "role": "Federal agency commenter on draft EIS",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "requested extension of time but submitted no substantive comments",
+  "summary": "The Department of Commerce requested an extension of time to review the draft Environmental Impact Statement but subsequently submitted no comments. HUD noted this in the Final Statement with a response of 'None,' indicating the Department of Commerce took no substantive position on the project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Department of Commerce requested an extension of time to review the draft EIS but no comments were subsequently received.",
+  "evidence_pages": [
+    "23"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556036058550_R027"
+  ],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Comment: Requested extension of time. No comments have subsequently been received.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "23"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Comment: Requested extension of time. No comments have subsequently been received.",
+      "quote_verified": true,
+      "entity_as_written": "Department of Commerce",
+      "role_as_written": "Federal agency commenter on draft EIS"
+    }
+  ],
+  "window_pages": [
+    13,
+    33
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 4,
+  "synthetic_no_complaint": false
+}

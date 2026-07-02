@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C154",
+  "complainer_id": "p0491_35556036091957_K159",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 154,
+  "entity": "George C. Gormley",
+  "kind": "official",
+  "role": "Maine Environmental Improvement Commission",
+  "stance": "in_favor",
+  "stance_confidence": "high",
+  "stance_basis": "memo explicitly states support and approval for the selected proposal",
+  "summary": "George C. Gormley of the Maine Environmental Improvement Commission reviewed the draft environmental impact statement and expressed clear support for the selected proposal establishing general guidelines for off-road vehicle use on public lands. His memo appears twice in the document window (pages 212-213 and 214-215), both times conveying the same supportive position. He noted that the guidelines would be developed by the Bureau of Outdoor Recreation and the Department of Interior and would apply to other Federal bureaus' public lands.",
+  "form": "written_comment",
+  "complaint_summary": "A duplicate of Gormley's memo reiterating support and approval for the selected proposal establishing general guidelines for off-road vehicle use on public lands, forwarded again through the Maine State Clearinghouse.",
+  "evidence_pages": [
+    "214-215"
+  ],
+  "statement": {
+    "text": "MEMORANDUM\nJune 21, 1972\nTO: Kenyon Karl\nState Planning Office\nFROM: George C. Gormley\nE.I.C.\nSUBJECT: US: OUTDOOR RECREATION BUREAU (INTERIOR DEPT) USE OF OFF-ROAD\nVEHICLES ON THE PUBLIC LANDS CLEARINGHOUSE NO. 72061305\nThe subject proposal, alternatives, and impact statement for the selected proposal has been reviewed by this office. As a result, we are indicating support and approval for the selected proposal which provides for establishing general guidelines for the use of off-road vehicles on public lands.\nWe understand that these guidelines are to be developed by the Outdoor Recreation Bureau and the Department of Interior and would apply to public lands owned and regulated by other Federal bureaus.\nGCG:sib",
+    "opening_anchor": "MEMORANDUM \n\nJune 21, 1972\n\nTO: Kenyon Karl\nState Planning Office\n\nFROM: George C. Gormley\nE.I.C.",
+    "closing_anchor": "would apply to public lands owned and regulated by other Federal bureaus.\n\nGCG:sib",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "we are indicating support and approval for the selected proposal which provides for establishing general guidelines for the use of off-road vehicles on public lands.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "261"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "we are indicating support and approval for the selected proposal which provides for establishing general guidelines for the use of off-road vehicles on public lands.",
+      "quote_verified": true,
+      "entity_as_written": "George C. Gormley",
+      "role_as_written": "Maine Environmental Improvement Commission"
+    }
+  ],
+  "window_pages": [
+    251,
+    271
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 159,
+  "synthetic_no_complaint": false
+}

@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556036546182_C044",
+  "complainer_id": "p1074_35556036546182_K030",
+  "doc_id": "p1074_35556036546182",
+  "work_id": "csv:35556036546182",
+  "order": 44,
+  "entity": "Milwaukee County",
+  "kind": "government",
+  "role": "county government, project proponent and airport operator",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "Milwaukee County coordinated with FAA and Division of Highways to develop the recommended Corridor #5, and the Milwaukee County Board favored construction of the Airport Spur at the public hearing",
+  "summary": "Milwaukee County is a key project proponent and airport operator who actively participated in developing the recommended Corridor #5 to be compatible with General Mitchell Field's Air Terminal Master Plan. The County acquired land for the 60-acre air cargo area, which shaped the corridor selection, and the Milwaukee County Board testified in favor of the Airport Spur at the March 25, 1969 Location Public Hearing. Milwaukee County's Park Commission also confirmed the proposed facility did not interfere with any existing or proposed park development.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "Milwaukee County coordinated with Airport Officials, the FAA, and the Division of Highways to develop Corridor #5 as the recommended corridor, adjusted to be compatible with the adopted long-range Master Plan for General Mitchell Field's expansion, including acquiring all lands necessary for the 60-acre air cargo area.",
+  "evidence_pages": [
+    "93"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "It was the result of coordinated efforts by Airport Officials, Milwaukee County, Federal Aviation Administration, and the Division of Highways to be compatible with the adopted long range Master Plan for the expansion of facilities at General Mitchell Field.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "93"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "It was the result of coordinated efforts by Airport Officials, Milwaukee County, Federal Aviation Administration, and the Division of Highways to be compatible with the adopted long range Master Plan for the expansion of facilities at General Mitchell Field.",
+      "quote_verified": true,
+      "entity_as_written": "Milwaukee County",
+      "role_as_written": "county government, project proponent and airport operator"
+    }
+  ],
+  "window_pages": [
+    83,
+    103
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 30,
+  "synthetic_no_complaint": false
+}

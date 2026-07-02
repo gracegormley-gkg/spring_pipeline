@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p1074_35556038322269_C044",
+  "complainer_id": "p1074_35556038322269_K049",
+  "doc_id": "p1074_35556038322269",
+  "work_id": "csv:35556038322269",
+  "order": 44,
+  "entity": "California Division of Oil and Gas",
+  "kind": "agency",
+  "role": "source of oil field data",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "cited as a factual data source for oil field depth information, no position expressed",
+  "summary": "The California Division of Oil and Gas is referenced solely as a data source in Volume II of California Oil and Gas Fields, providing technical information about the depth and extent of the Salt Lake Oil Field. The entity expresses no opinion on the project and is not described as taking any stance. Its data is used to assess potential impacts of subway alternatives on existing oil extraction activities.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The California Division of Oil and Gas is cited as the source of data indicating that the Salt Lake Oil Field extends downward from 600 feet to -1100 to -1200 feet at La Brea and -2600 to -2700 feet at Fairfax, used to assess proximity of subway alternatives to oil extraction activities.",
+  "evidence_pages": [
+    "148"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "According to Volume II of California Oil and Gas Fields, compiled by the California Division of Oil and Gas, The Salt Lake field extends downward from 600 feet to -1100 to -1200 feet at La Brea and -2600 to -2700 feet at Fairfax.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "148"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "According to Volume II of California Oil and Gas Fields, compiled by the California Division of Oil and Gas, The Salt Lake field extends downward from 600 feet to -1100 to -1200 feet at La Brea and -2600 to -2700 feet at Fairfax.",
+      "quote_verified": true,
+      "entity_as_written": "California Division of Oil and Gas",
+      "role_as_written": "source of oil field data"
+    }
+  ],
+  "window_pages": [
+    138,
+    158
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 49,
+  "synthetic_no_complaint": false
+}

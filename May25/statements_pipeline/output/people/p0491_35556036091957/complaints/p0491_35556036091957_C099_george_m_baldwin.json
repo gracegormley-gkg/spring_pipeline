@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C099",
+  "complainer_id": "p0491_35556036091957_K074",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 99,
+  "entity": "George M. Baldwin",
+  "kind": "official",
+  "role": "Administrator of Highways, Oregon State Highway Division",
+  "stance": "conditional",
+  "stance_confidence": "medium",
+  "stance_basis": "letter expresses general support while noting inability to fully evaluate due to unavailability of referenced report",
+  "summary": "George M. Baldwin, Administrator of Highways for the Oregon State Highway Division, submitted a brief letter generally supporting the draft environmental statement on ORV use on public lands, noting it adequately covers expected impacts. He specifically highlighted the importance of the operating criteria recommended for adoption, but noted a limitation in his review due to the unavailability of the Off-Road Recreation Vehicle report referenced in the statement.",
+  "form": "letter",
+  "complaint_summary": "Baldwin's letter generally endorses the draft environmental statement as adequately covering expected impacts, emphasizes the importance of the recommended operating criteria, but flags that the unavailability of the Off-Road Recreation Vehicle report prevented a full evaluation of the statement against that report.",
+  "evidence_pages": [
+    "135"
+  ],
+  "statement": {
+    "text": "Thank you for the opportunity to review and comment on the environmental statement pertaining to use of off-road vehicles on the public lands. In its necessarily general way, it seems to adequately cover the expected impacts upon our environment as well as the developing difficulties that must be faced on public lands.\nWe feel the operating criteria recommended for adoption are especially important. Because of the unavailability of the Off-Road Recreation Vehicle report, we were unable to evaluate the environmental statement from the standpoint of the report.",
+    "opening_anchor": "Thank you for the opportunity to review and comment on the environmental statement pertaining to use of off-road vehicles on the public lands.",
+    "closing_anchor": "Because of the unavailability of the Off-Road Recreation Vehicle report, we were unable to evaluate the environmental statement from the standpoint of the report.",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "We feel the operating criteria recommended for adoption are especially important.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "135"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "We feel the operating criteria recommended for adoption are especially important.",
+      "quote_verified": true,
+      "entity_as_written": "George M. Baldwin",
+      "role_as_written": "Administrator of Highways, Oregon State Highway Division"
+    }
+  ],
+  "window_pages": [
+    125,
+    145
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 74,
+  "synthetic_no_complaint": false
+}

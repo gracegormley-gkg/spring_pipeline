@@ -1,0 +1,59 @@
+{
+  "complaint_id": "p1074_35556036105336_C003",
+  "complainer_id": "p1074_35556036105336_K009",
+  "doc_id": "p1074_35556036105336",
+  "work_id": "csv:35556036105336",
+  "order": 3,
+  "entity": "Department of Transportation  FAA",
+  "kind": "agency",
+  "role": "Federal agency commenter",
+  "stance": "neutral",
+  "stance_confidence": "low",
+  "stance_basis": "listed only as a comment recipient in a sectional roster with no position stated",
+  "summary": "The Department of Transportation FAA is listed in the Final Environmental Impact Statement solely as one of the agencies from which comments were received. No substantive position, objection, or statement of support is attributed to the FAA anywhere in the available document window. Their specific comments, if any, are not reproduced or paraphrased in this portion of the document.",
+  "form": "sectional",
+  "complaint_summary": "The FAA is listed as one of several agencies that submitted comments on the Randolph Urban Renewal Project, but no content of their comments is provided in this section.",
+  "evidence_pages": [
+    "2"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "quote_not_verbatim",
+    "low_stance_confidence"
+  ],
+  "summary_quote": "Comments have been received from: c. Department of Transportation  FAA",
+  "summary_quote_verified": false,
+  "attribution_mode": "sectional",
+  "attribution_modes_seen": [
+    "sectional"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "2"
+      ],
+      "attribution_mode": "sectional",
+      "quote": "Comments have been received from: c. Department of Transportation  FAA",
+      "quote_verified": false,
+      "entity_as_written": "Department of Transportation  FAA",
+      "role_as_written": "Federal agency commenter"
+    }
+  ],
+  "window_pages": [
+    1,
+    12
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 9,
+  "synthetic_no_complaint": false
+}

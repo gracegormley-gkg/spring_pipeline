@@ -1,0 +1,72 @@
+{
+  "complaint_id": "p1074_35556039563135_C079",
+  "complainer_id": "p1074_35556039563135_K071",
+  "doc_id": "p1074_35556039563135",
+  "work_id": "csv:35556039563135",
+  "order": 79,
+  "entity": "Sidney R. Galler",
+  "kind": "individual",
+  "role": "Deputy Assistant Secretary for Environmental Affairs, Department of Commerce",
+  "stance": "neutral",
+  "stance_confidence": "medium",
+  "stance_basis": "statement explicitly says Department of Commerce reviewed the draft and has no comment",
+  "summary": "Sidney R. Galler, as Deputy Assistant Secretary for Environmental Affairs at the Department of Commerce, reviewed the draft environmental statement and offered no substantive comments or objections. The agency's position was simply that it had no comment to make on the proposed project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Department of Commerce, represented by Sidney R. Galler, reviewed the draft environmental statement and had no comment to offer.",
+  "evidence_pages": [
+    "176"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [
+    "p1074_35556039563135_R037"
+  ],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "The Department of Commerce has reviewed the draft environmental statement and has no comment.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "direct_quote",
+    "paraphrased"
+  ],
+  "n_mentions": 2,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "176"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Department of Commerce has reviewed the draft environmental statement and has no comment.",
+      "quote_verified": true,
+      "entity_as_written": "Sidney R. Galler",
+      "role_as_written": "Deputy Assistant Secretary for Environmental Affairs, Department of Commerce"
+    },
+    {
+      "chunk_index": 4,
+      "evidence_pages": [
+        "176"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "The Department of Commerce has reviewed the draft environmental statement and has no comment.",
+      "quote_verified": true,
+      "entity_as_written": "Sidney R. Galler",
+      "role_as_written": "Deputy Assistant Secretary for Environmental Affairs, Department of Commerce"
+    }
+  ],
+  "window_pages": [
+    166,
+    186
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 71,
+  "synthetic_no_complaint": false
+}

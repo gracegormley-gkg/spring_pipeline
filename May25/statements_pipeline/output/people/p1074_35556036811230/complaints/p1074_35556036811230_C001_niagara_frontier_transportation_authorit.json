@@ -1,0 +1,78 @@
+{
+  "complaint_id": "p1074_35556036811230_C001",
+  "complainer_id": "p1074_35556036811230_K001",
+  "doc_id": "p1074_35556036811230",
+  "work_id": "csv:35556036811230",
+  "order": 1,
+  "entity": "Niagara Frontier Transportation Authority (NFTA)",
+  "kind": "organization",
+  "role": "Project applicant, co-preparer of EIS",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "NFTA is the project applicant and co-preparer of the EIS, having filed the application for Federal capital grant assistance to construct the LRRT system",
+  "summary": "The Niagara Frontier Transportation Authority (NFTA) is the project applicant and co-preparer of this Draft EIS, having filed an application with UMTA for Federal capital grant assistance to construct a 6.4-mile Light Rail Rapid Transit system along Main Street in Buffalo. NFTA jointly prepared the EIS with UMTA and has been substantially involved in the project's development since at least 1969. As the sponsoring agency, NFTA is unambiguously in favor of the proposed project.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The NFTA is identified as the co-preparer of the Draft EIS alongside UMTA, having been substantially involved in the preparation and development of the document, with the stated intent that UMTA and NFTA jointly address all substantive comments in the final EIS.",
+  "evidence_pages": [
+    "1"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Hence, the Niagara Frontier Transportation Authority proposes an integrated rail/bus transit system comprising a 6.4-mile LRRT line along Main Street between the Buffalo CBD and the SUNYAB's South Campus and a realigned and rescheduled Metrobus system serving as feeder network for the rail transit line",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 3,
+  "mentions": [
+    {
+      "chunk_index": 0,
+      "evidence_pages": [
+        "5"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "The Niagara Frontier Transportation Authority of New York (NFTA) has filed an application with UMTA for Federal capital grant assistance to construct and equip a 6.4-mile Light Rail Rapid Transit (LRRT) System along Main Street in the Buffalo-Amherst Corridor, New York.",
+      "quote_verified": true,
+      "entity_as_written": "Niagara Frontier Transportation Authority (NFTA)",
+      "role_as_written": "Project applicant, co-preparer of EIS"
+    },
+    {
+      "chunk_index": 1,
+      "evidence_pages": [
+        "82"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "the NFTA, in July 1976, submitted an application to UMTA (Ref. 28) for a mass transportation capital improvement grant under the Urban Mass Transportation Act of 1964, as amended.",
+      "quote_verified": true,
+      "entity_as_written": "Niagara Frontier Transportation Authority (NFTA)",
+      "role_as_written": "transit authority / project applicant"
+    },
+    {
+      "chunk_index": 2,
+      "evidence_pages": [
+        "122"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Hence, the Niagara Frontier Transportation Authority proposes an integrated rail/bus transit system comprising a 6.4-mile LRRT line along Main Street between the Buffalo CBD and the SUNYAB's South Campus and a realigned and rescheduled Metrobus system serving as feeder network for the rail transit line",
+      "quote_verified": true,
+      "entity_as_written": "Niagara Frontier Transportation Authority",
+      "role_as_written": "project proponent"
+    }
+  ],
+  "window_pages": [
+    1,
+    55
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 1,
+  "synthetic_no_complaint": false
+}

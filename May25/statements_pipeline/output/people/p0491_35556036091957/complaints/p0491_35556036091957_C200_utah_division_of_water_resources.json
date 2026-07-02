@@ -1,0 +1,56 @@
+{
+  "complaint_id": "p0491_35556036091957_C200",
+  "complainer_id": "p0491_35556036091957_K187",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 200,
+  "entity": "Utah Division of Water Resources",
+  "kind": "agency",
+  "role": "Utah state agency",
+  "stance": "in_favor",
+  "stance_confidence": "medium",
+  "stance_basis": "paraphrase notes reliance on ORVs for constructing and servicing water transfer facilities inaccessible except by ORV",
+  "summary": "The Utah Division of Water Resources is cited in the Utah Department of Natural Resources memorandum as relying on ORVs to construct and service water transfer facilities that are otherwise inaccessible, supporting continued ORV access on public lands. Their position is presented as part of a broader Utah state argument that official government and private concerns depend on ORVs for resource management and operations. No independent complaint letter from the Division itself appears; their view is conveyed through a paraphrase within the Utah DNR submission.",
+  "form": "narrator_paraphrase",
+  "complaint_summary": "The Utah Division of Water Resources is paraphrased as relying on ORVs to construct and service water transfer facilities that are generally inaccessible except by some type of ORV, implying opposition to restrictions that would curtail such official use.",
+  "evidence_pages": [
+    "275"
+  ],
+  "statement": {
+    "text": null,
+    "opening_anchor": "",
+    "closing_anchor": "",
+    "opening_anchor_verified": false,
+    "closing_anchor_verified": false
+  },
+  "response_ids": [],
+  "needs_human_review": false,
+  "human_review_reasons": [],
+  "summary_quote": "Our Division of Water Resources has pointed out its reliance on ORV's in constructing and servicing many water transfer facilities, etc., which are generally inaccessible except by some type of ORV.",
+  "summary_quote_verified": true,
+  "attribution_mode": "paraphrased",
+  "attribution_modes_seen": [
+    "paraphrased"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 5,
+      "evidence_pages": [
+        "275"
+      ],
+      "attribution_mode": "paraphrased",
+      "quote": "Our Division of Water Resources has pointed out its reliance on ORV's in constructing and servicing many water transfer facilities, etc., which are generally inaccessible except by some type of ORV.",
+      "quote_verified": true,
+      "entity_as_written": "Utah Division of Water Resources",
+      "role_as_written": "Utah state agency"
+    }
+  ],
+  "window_pages": [
+    265,
+    285
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 187,
+  "synthetic_no_complaint": false
+}

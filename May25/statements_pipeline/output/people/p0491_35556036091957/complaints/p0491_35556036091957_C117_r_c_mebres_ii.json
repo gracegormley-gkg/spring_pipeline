@@ -1,0 +1,58 @@
+{
+  "complaint_id": "p0491_35556036091957_C117",
+  "complainer_id": "p0491_35556036091957_K111",
+  "doc_id": "p0491_35556036091957",
+  "work_id": "csv:35556036091957",
+  "order": 117,
+  "entity": "R. C. Mebres II",
+  "kind": "individual",
+  "role": "Geologist, Continental Oil Company, Tucson",
+  "stance": "conditional",
+  "stance_confidence": "high",
+  "stance_basis": "letter protests EO 11644 restrictions but supports permit system for legitimate ORV use",
+  "summary": "R. C. Mebres II, a geologist at Continental Oil Company in Tucson, wrote a letter protesting Executive Order 11644 for severely limiting off-road vehicle use on public lands, particularly noting the lack of provision for productive uses like mineral and fossil fuel exploration. He conditionally supports the order if a permit system is established for those with legitimate professional reasons for ORV use, arguing this would encourage constructive use while ensuring accountability.",
+  "form": "letter",
+  "complaint_summary": "Mebres protests EO 11644 for failing to make provision for productive ORV uses such as mineral and fossil fuel exploration, while endorsing a permit system for those with legitimate reasons to use ORVs on public lands.",
+  "evidence_pages": [
+    "158"
+  ],
+  "statement": {
+    "text": "This letter is in protest of Executive Order 11644 which would severly limit the use of off-the-road vehicles on public lands. Although I believe that some restrictions should be placed on off-the-road vehicles to prevent people from indiscriminately tearing up the countryside, little provision has been made for the productive use of such vehicles, such as in the exploration for and development of our mineral and fossil fuel resources.\nThe proposal that permits be readily available for those people having legitimate reasons for using off-the-road vehicles on public lands is a good one. Thus, constructive use of such vehicles would be encouraged, while at the same time those people obtaining said permits would be more responsible for their actions while using off-the-road vehicles.\nSincerely yours,\nR. C. Mebres II Geolopies\npv",
+    "opening_anchor": "This letter is in protest of Executive Order 11644 which would severly limit the use of off-the-road vehicles on public lands.",
+    "closing_anchor": "R. C. Mebres II Geolopies\npv",
+    "opening_anchor_verified": true,
+    "closing_anchor_verified": true
+  },
+  "response_ids": [],
+  "needs_human_review": true,
+  "human_review_reasons": [
+    "private_individual"
+  ],
+  "summary_quote": "This letter is in protest of Executive Order 11644 which would severly limit the use of off-the-road vehicles on public lands.",
+  "summary_quote_verified": true,
+  "attribution_mode": "direct_quote",
+  "attribution_modes_seen": [
+    "direct_quote"
+  ],
+  "n_mentions": 1,
+  "mentions": [
+    {
+      "chunk_index": 3,
+      "evidence_pages": [
+        "158"
+      ],
+      "attribution_mode": "direct_quote",
+      "quote": "This letter is in protest of Executive Order 11644 which would severly limit the use of off-the-road vehicles on public lands.",
+      "quote_verified": true,
+      "entity_as_written": "R. C. Mebres II",
+      "role_as_written": "Geologist, Continental Oil Company, Tucson"
+    }
+  ],
+  "window_pages": [
+    148,
+    168
+  ],
+  "find_statement_error": null,
+  "merge_sequence": 111,
+  "synthetic_no_complaint": false
+}
