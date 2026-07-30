@@ -4,8 +4,7 @@ Calibration step consuming Segment A human grades and emitting stage-versioned a
 
 Artifacts are **stage-versioned** (`.v1`, `.v2`, ...) per the multi-round calibration protocol in §7.5. Paths in this document are written `.v(N)` where the stage varies.
 
-Open items deferred (not in v1 scope):
-- Salience/"most interesting" rubric for summaries (Option A vs B — tabled).
+Salience is implemented in v1 as `summary_of_interest` (§3.15) — a second, separate summary emitted alongside the standard one. Remaining deferrals are in §8.
 
 ---
 
@@ -85,7 +84,7 @@ All under `May25/mcal/artifacts/`, suffixed with the current stage (`.v1`, `.v2`
 | Path | Schema | Consumed by |
 |---|---|---|
 | `taxonomy.v(N).json` | `{tags: [{id, name, description, exemplars: [{doc_id, field, note}]}], version, frozen_at}` | `critic_prompt.py`; reviewer UI |
-| `thresholds.v(N).json` | per-bucket: `{alpha, alpha_effective, N_wrong_docs, tau_raw, curation_slack, tau_deployed, saturated, guarantee_conditioning, degenerate, degenerate_severe, gate_all_to_human}` — 6 buckets | `segment_b/gate.py` |
+| `thresholds.v(N).json` | per-bucket: `{alpha, alpha_effective, N_wrong_docs, tau_raw, curation_slack, tau_deployed, saturated, guarantee_conditioning, degenerate, degenerate_severe, gate_all_to_human}` — 7 buckets | `segment_b/gate.py` |
 | `confidence_config.v(N).json` | `{signals: [name, weight], per_field_overrides: {}, dependent_fields: {year: [key_people]}, geocoder_stack: "full"\|"reduced", judge_model_by_field: {}}` | `segment_b/gate.py`, `critic.py` |
 | `critic_prompts/{field}.v(N).md` | Header + anti-hallucination clause + rubric (ordered yes/no) + few-shot exemplars + JSON output schema | `segment_b/critic.py` at load time |
 | `acronym_commons.v(N).json` | `{acronyms: [{token, expansion, sources: []}]}` — ~40-entry NEPA seed | `segment_b/postproc/acronyms.py` |
@@ -98,10 +97,12 @@ All under `May25/mcal/artifacts/`, suffixed with the current stage (`.v1`, `.v2`
 | `calibration_report.v(N).md` | Human-readable roll-up. **Must include a `Cost Summary` section**: total input/output tokens per model tier (Sonnet, Opus) on the current-stage calibration rerun, per-doc average, and projected Segment B cost at 2000 docs (with clear labels for the Opus atomic-verify slice, Sonnet Critic slice, and M2 rerun slice). Used for the go/no-go call before full-scale Segment B. | User |
 | `tests/regressions/*.json` | Lincoln Hwy wildlife-clause + env_impact magnitude fixtures | CI |
 
-**Taxonomy versioning rule:** v(N+1) may only *add* codes (`T17+`, since the seed taxonomy occupies T01–T16) or mark old codes `deprecated` with `superseded_by`. Never renames or renumbers T01–T16.
+**Taxonomy versioning rule:** v(N+1) may only *add* codes (`T19+`, since the seed taxonomy occupies T01–T18) or mark old codes `deprecated` with `superseded_by`. Never renames or renumbers T01–T18.
 
 **Seed failure taxonomy (to be confirmed by TnT-LLM induction on ratified grades):**
-`T01_missing_citation`, `T02_numeric_hallucination`, `T03_outside_text_fabrication`, `T04_undefined_acronym`, `T05_commenter_mislabeled_as_cooperator`, `T06_geocode_missing`, `T07_geocode_wrong_specificity`, `T08_scope_misclassified_national`, `T09_multi_site_partial_geocode`, `T10_alternatives_chapter_missed`, `T11_year_ocr_error`, `T12_eis_type_confused_with_rod`, `T13_pre_1978_nepa_format`, `T14_regional_scope_underspecified`, `T15_jargon_without_gloss`, `T16_abstract_when_concrete_available`.
+`T01_missing_citation`, `T02_numeric_hallucination`, `T03_outside_text_fabrication`, `T04_undefined_acronym`, `T05_commenter_mislabeled_as_cooperator`, `T06_geocode_missing`, `T07_geocode_wrong_specificity`, `T08_scope_misclassified_national`, `T09_multi_site_partial_geocode`, `T10_alternatives_chapter_missed`, `T11_year_ocr_error`, `T12_eis_type_confused_with_rod`, `T13_pre_1978_nepa_format`, `T14_regional_scope_underspecified`, `T15_jargon_without_gloss`, `T16_abstract_when_concrete_available`, `T17_manufactured_salience`, `T18_salience_duplicates_summary`.
+
+Note: T17 and T18 apply only to `summary_of_interest` (§3.15) and have no exemplars in the current graded set, since the field is new. Their induction entries will be empty at seed v1; the Critic still checks for them via rubric Q7.
 
 ---
 
@@ -156,9 +157,10 @@ Upgrade of the existing verifier.
 - **Weight-validation (diagnostic only):** Kendall-τ / AUROC of candidate weightings vs correctness on graded set, doc-stratified, paired bootstrap 1000 resamples. **Not a decision gate at current calibration scale** — at n well under 60 the confidence intervals are too wide for any candidate to be meaningfully dominated. Written to `weight_validation.v(N).json` for reporting. Tiebreaker in `confidence.py` docstring: fewest signals with non-zero weight; ties broken lexicographically.
 
 - **Split-conformal recipe (single formula):**
-  - Buckets: **M1, summary_narrative, summary_numeric, alternatives+themes, location, key_people** (6 buckets).
+  - Buckets: **M1, summary_narrative, summary_numeric, summary_of_interest, alternatives+themes, location, key_people** (7 buckets).
     - `summary_narrative` = `project_description, affected_community, alternatives_overview, public_response`
     - `summary_numeric` = `environmental_impact`
+    - `summary_of_interest` = the new salience-weighted summary (§3.15). **Its own bucket, not pooled with `summary_narrative`** — it has a different error profile (manufactured salience, duplication) and, critically, **zero graded examples at seed v1**. It will therefore be `degenerate_severe` → `gate_all_to_human=true` until it accumulates graded data, which is the correct behavior for a brand-new field.
   - Per-bucket calibration set = **only docs with ≥1 wrong item in B**. Size = `N_wrong_docs(B)`.
   - Per-doc nonconformity in bucket B: `R_doc = max{s_i : i ∈ doc, i ∈ B, y_i = 0}` (well-defined by construction).
   - `τ_raw = ⌈(N_wrong_docs+1)(1−α)⌉ / N_wrong_docs` empirical quantile of `{R_doc}`.
@@ -173,7 +175,8 @@ Upgrade of the existing verifier.
     > `Distribution shift to full-corpus Segment B untested at this stage.`
 
 ### 3.4 `mcal/atomic_verify.py` (Opus post-hoc decomposition)
-- **Scope:** the 5 `summary.*` subfields (`project_description`, `affected_community`, `alternatives_overview`, `environmental_impact`, `public_response`). Note: `alternatives_overview` here refers to the summary subfield; the standalone `alternatives` list has its own structured verifier and is not decomposed.
+- **Scope:** the 5 `summary.*` subfields (`project_description`, `affected_community`, `alternatives_overview`, `environmental_impact`, `public_response`) **plus `summary_of_interest`** (§3.15). Note: `alternatives_overview` here refers to the summary subfield; the standalone `alternatives` list has its own structured verifier and is not decomposed.
+- **`summary_of_interest` handling:** each list entry is already claim-shaped (`{claim, salience_criterion, page, evidence_quote, why_notable}`), so decomposition is a no-op for the `claim` field — it goes straight to per-atom verification. The `why_notable` sentence is decomposed and verified separately, because that's where unsupported editorializing would appear. An entry whose `claim` verifies but whose `why_notable` does not is tagged `T17_manufactured_salience`.
 - **Input:** subfield prose value + its citations + OCR text of cited pages ±2.
 - **Output:** list of atomic claims `{id, text, subject, predicate, object, page, evidence_quote, claim_type, polarity, coreference_resolved}`.
 - **`claim_type` enum:** `{prose, numeric, comparative, categorical, temporal, geospatial}`.
@@ -209,6 +212,13 @@ Builds per-field prompt files.
      - Q6: Is the value readable and concrete for a non-specialist? Specifically: (a) are NEPA-specific terms and regulatory citations glossed in-line on first mention, using support from the cited pages? (b) does the value describe the project, affected community, alternatives, impacts, or public response in concrete terms (named entities, specified quantities, plain nouns) rather than abstract nominalizations, where the document supports concreteness?
 
      Decision: any Q1/Q2/Q4 = no → RE_EXTRACT. Q3 = no → PASS_WITH_NOTE + tag T04. Q5 = no → HUMAN_REVIEW. Q6(a) = no → PASS_WITH_NOTE + tag T15. **Q6(b) at v1: logged only** — Sonnet-judged concreteness is subjective and not calibrated at current scale; Q6(b) verdicts are recorded in `run_manifest.json` under `rubric_answers.Q6b` for offline audit and revisited at a later stage (spot-check against the graded corpus before promoting to PASS_WITH_NOTE + tag T16).
+
+     **Additional rubric for `summary_of_interest` only (Q7):**
+     - Q7(a): For each entry, does the cited page actually support the assigned `salience_criterion`? (E.g. an entry tagged `contested` must have a cited page showing actual disagreement, not merely a topic that *could* be contested.) Also: is `why_notable` grounded in the cited page rather than in general knowledge about NEPA practice?
+     - Q7(b): Does any entry merely restate content already present in the standard `summary.*` fields without independently meeting a salience criterion?
+     - Q7(c): If the list is **empty** — is that plausibly correct for this document? (An empty list on a genuinely routine EIS is a PASS, not a failure. The Critic must not penalize emptiness.) Conversely, if the list is non-empty, is each entry genuinely atypical rather than standard EIS content?
+
+     Decision for `summary_of_interest`: Q7(a) = no → RE_EXTRACT + tag `T17_manufactured_salience`. Q7(b) = no → PASS_WITH_NOTE + tag `T18_salience_duplicates_summary`. Q7(c) empty-and-plausible → PASS. Q7(c) non-empty-but-routine → RE_EXTRACT + tag `T17_manufactured_salience`.
   5. **Few-shot examples** — greedy set-cover across the top-K tags observed for that field, `K = min(3, #distinct tags with ≥1 exemplar)`. If fewer than 3 slots filled after cover, fill remainder with **positive controls** (correctly-graded examples). Never below 3 total slots.
   6. **Output schema (strict JSON, `evidence_quote` before `verdict`):**
      ```json
@@ -237,7 +247,7 @@ Orchestrator. Invocations:
 - **Seed build:** `python -m mcal.build --stage v1 --grades May25/segment_a/output/grading_sheets/ --out May25/mcal/artifacts/`
 - **Recalibration:** `python -m mcal.build --stage v2 --grades May25/segment_a/output/grading_sheets/ --prior v1 --out May25/mcal/artifacts/` (repeat with `--stage v3 --prior v2`, etc.)
 
-**Staged behavior.** On a seed build, all artifacts are produced from scratch. On a recalibration build, the prior stage's `taxonomy.v(N-1).json` is loaded and carried forward add-only (new `T17+` codes may be added from new failure notes; T01–T16 are never renamed or dropped, per §2 versioning rule). Thresholds, prompts, and confidence config are **rebuilt** from the augmented grade set — not incrementally patched — so they always reflect the full accumulated calibration data.
+**Staged behavior.** On a seed build, all artifacts are produced from scratch. On a recalibration build, the prior stage's `taxonomy.v(N-1).json` is loaded and carried forward add-only (new `T19+` codes may be added from new failure notes; T01–T18 are never renamed or dropped, per §2 versioning rule). Thresholds, prompts, and confidence config are **rebuilt** from the augmented grade set — not incrementally patched — so they always reflect the full accumulated calibration data.
 
 **Step-0 M2 rerun requirement.** Because item #4 in the build order amends the M2 summary prompts, `build.py` must verify that all currently-graded Segment A calibration docs have M2 output produced *under the amended prompts* before any calibration work runs. On startup:
 - Read a marker `segment_a/output/m2/_prompt_version.txt`. If missing or `!= "v1_plain_language"`, halt with a message directing the user to run `segment_a/run.py process --force` on the graded docs.
@@ -306,7 +316,7 @@ Replaces the current 3-bucket extractor with stricter role-tagging.
 - Loads `artifacts/critic_prompts/{field}.v(N).md`, `atomic_schema.v(N).json`, `confidence_config.v(N).json`.
 - **Evidence-first schema:** requires `evidence_quote` before `verdict` in the JSON output (schema field order enforced).
 - **Deterministic quote-verify override:** after receiving Critic output, run `quote_check.py` on `evidence_quote` against cited pages. If not verified → override `verdict = HUMAN_REVIEW`, add note `critic_evidence_unverifiable`.
-- **Judge model routing:** Sonnet by default. All five `summary.*` subfields (which includes `alternatives_overview`) route to Opus per JudgeBench. Configurable via `confidence_config.v(N).json` field `judge_model_by_field`.
+- **Judge model routing:** Sonnet by default. All five `summary.*` subfields (which includes `alternatives_overview`) **plus `summary_of_interest`** route to Opus per JudgeBench — `summary_of_interest` especially, since Q7(a)/(c) require judging whether a salience claim is *genuinely* atypical, which is exactly the kind of reasoning task where Sonnet-tier judges are unreliable. Configurable via `confidence_config.v(N).json` field `judge_model_by_field`.
 - **Private-individual stance** → HUMAN_REVIEW unconditionally (policy; definition in §3.5).
 
 ### 3.12 `segment_b/gate.py` (new)
@@ -332,9 +342,10 @@ Replaces the current 3-bucket extractor with stricter role-tagging.
     }
   }
   ```
-- `rubric_answers` includes `Q6b` even though Q6(b) is logged-only at v1 (§3.5) — that's where the offline audit reads it from.
+- `rubric_answers` includes `Q6b` even though Q6(b) is logged-only at v1 (§3.5) — that's where the offline audit reads it from. For `summary_of_interest` it also includes `Q7a` / `Q7b` / `Q7c`.
 - `gate_reason` distinguishes *why* a field was routed to human, which matters for diagnosing whether the gate is too conservative vs. the Critic being the binding constraint.
 - `artifact_stage` records which M-Cal stage produced the thresholds, so grades collected under v1 can be distinguished from grades collected under v2 during later recalibration.
+- **`summary_of_interest` is always emitted, including when empty.** An empty list is a substantive result (the document is routine), not a missing value, and must be distinguishable from "the field failed to generate." Use `"extracted_value": []` for a legitimate empty result and `"extracted_value": null` plus a `gate_reason` for a generation failure.
 
 ### 3.13 `segment_b/year_adjudicator.py` (new, M1)
 - Adjudicator **always runs**. Inputs: all year mentions in first 5pp + last 3pp of front matter + signature/approval page (keyword-detected: `Approved | Signed | Date: | Transmittal`).
@@ -369,6 +380,58 @@ Segment B inherits M2 (Opus map-reduce) from Segment A. This amendment is an **i
 **Coverage:** applies to all five `summary.*` subfields (`project_description`, `affected_community`, `alternatives_overview`, `environmental_impact`, `public_response`). Not applied to `themes` (closed taxonomy — no prose), `key_people` (structured), `location` (structured).
 
 **Rollback path.** Before re-running M2 under the amended prompts (build item #4), archive the existing output: `cp -r segment_a/output/m2/ segment_a/output/m2_pre_amendment/`. Write the version marker `segment_a/output/m2/_prompt_version.txt` containing `v1_plain_language` after the rerun completes. This gives you (a) a side-by-side comparison to confirm the plain-language clause improved rather than degraded the summaries, and (b) a clean revert if it degraded them. Include a short before/after comparison on 2–3 subfields in `calibration_report.v(N).md`. If the amendment turns out to hurt — e.g., the gloss constraint causes Opus to drop substantive content to stay within cited-page support — revert the prompt, restore from `m2_pre_amendment/`, and reconsider the clause wording before re-attempting.
+
+### 3.15 `summary_of_interest` — second, salience-weighted summary (new field)
+
+**Design decision.** Salience is implemented as **Option A (rubric embedded in the M2 prompt)** but emitted as a **separate, additional field** rather than as a modification to the existing summary. The five existing `summary.*` subfields are unchanged in purpose and content: they remain the faithful, proportional condensation of the document. `summary_of_interest` sits **alongside** them.
+
+**Why alongside rather than instead:**
+- Zero regression risk to the existing `summary.*` fields, which are already graded in the Evaluation CSV and whose calibration buckets are already defined.
+- The two summaries answer different questions. The standard summary answers *"what does this document say?"* — the appropriate output for a corpus index. `summary_of_interest` answers *"what is notable about this document relative to a typical EIS?"* — the appropriate output for research triage. Collapsing them would degrade both.
+- Direct comparability: with both emitted, you can evaluate whether salience-weighting is actually surfacing useful signal, and revert to standard-summary-only at no cost if it isn't.
+
+**Audience default (tunable).** The rubric is written for *a researcher studying environmental review and its policy/community consequences*. This is a default, not a permanent commitment — the audience framing is the single knob most worth revisiting once you've read a batch of outputs. A policy researcher, a community-impact scholar, and an environmental engineer would each weight the criteria differently, and the rubric's opening line is the place to change that.
+
+**Schema.** `summary_of_interest` is a JSON list (possibly empty) of:
+```json
+{
+  "claim": "string",
+  "salience_criterion": "contested|unusual_impact|large_magnitude|novel_alternative|community_pushback|precedent|cross_jurisdictional",
+  "page": 147,
+  "evidence_quote": "string (verbatim from cited page)",
+  "why_notable": "one sentence, grounded in the cited page"
+}
+```
+
+**Prompt clause (new M2 call, run after the standard summary reduce step):**
+
+> "Produce a SECOND, separate summary called `summary_of_interest`. This is NOT a replacement for the standard summary — both are emitted and both are kept.
+>
+> **Purpose.** Surface what a researcher studying environmental review and its policy and community consequences would find *notable* about this specific document, relative to a typical Environmental Impact Statement. Routine content belongs in the standard summary, not here.
+>
+> **Salience criteria.** Include a claim only if it matches one of the following, and tag it with the criterion it matches:
+> - `contested` — the document records substantive disagreement: between agencies, between the agency and commenters, or among its own technical findings.
+> - `unusual_impact` — an impact category, affected population, or resource that is atypical for this project type.
+> - `large_magnitude` — the largest quantified impacts in the document (acreage, cost, displacement, emissions, duration, population affected).
+> - `novel_alternative` — an alternative beyond the standard no-action / preferred / minor-variant pattern.
+> - `community_pushback` — public comment that visibly changed the analysis, the scope, or the preferred alternative.
+> - `precedent` — the document explicitly frames itself as precedent-setting, first-of-kind, or programmatic for future actions.
+> - `cross_jurisdictional` — friction or coordination burden across agencies, states, or tribal nations.
+>
+> **Rules.**
+> 1. Every claim requires a page cite and a verbatim `evidence_quote` from that page — identical evidentiary standard to the standard summary. The `why_notable` sentence must also be grounded in the cited page, not in world knowledge about NEPA practice generally.
+> 2. **If the document is routine and nothing meets the criteria above, return an empty list.** An empty `summary_of_interest` is a CORRECT and expected output for an unremarkable document. **Do NOT manufacture interest.** Most EISs are routine; a pipeline that finds something 'notable' in every document is producing noise.
+> 3. Do not restate the standard summary. If a claim already appears in `summary.*` and does not independently meet a salience criterion above, leave it out.
+> 4. Cap at 6 claims. If more than 6 qualify, keep the most contested and the largest-magnitude.
+> 5. Apply the same plain-language and concreteness constraints as §3.14 — write for a reader with no NEPA background, gloss domain terms on first mention, name concrete entities and quantities."
+
+**Failure modes and tags (new):**
+- `T17_manufactured_salience` — a claim is tagged with a salience criterion the cited page does not support (e.g. labeled `contested` when the page records no disagreement). Caught by Critic Q7(a) and by `atomic_verify.py`.
+- `T18_salience_duplicates_summary` — `summary_of_interest` restates standard-summary content without independent salience justification. Caught by Critic Q7(b).
+
+**The empty-list safeguard is the load-bearing anti-hallucination provision for this field.** A model asked "what's interesting here?" will find something, whether or not anything is. Rule 2 is therefore stated twice in the prompt (once affirmatively, once as a prohibition), the Critic checks for it explicitly (Q7c), and the diagnostic in §6 tracks the non-empty rate across the corpus. **If more than ~60% of documents produce a non-empty `summary_of_interest`, treat that as evidence the field is manufacturing salience rather than detecting it**, and tighten the rubric.
+
+**Cost.** One additional Opus reduce call per document, operating on the already-computed chunk summaries rather than raw text — so its input is small relative to the standard summary map-reduce. Estimated marginal cost is well under the standard summary's, and is broken out separately in the Cost Summary (§2, `calibration_report`).
 
 ---
 
@@ -408,22 +471,23 @@ Prompt words alone are known-insufficient (the wildlife-habitat hallucination ha
 
 ## §5. Prioritized build order
 
-Ranked by ROI × inverse effort. **Item #4 (M2 prompt amendment + re-extraction of the currently-graded calibration docs) is a hard prerequisite for #5 and #9** — τ must be calibrated against the same M2 prose Segment B will ship, or the frozen thresholds encode an untested distribution shift.
+Ranked by ROI × inverse effort. **Item #4 (M2 prompt amendment + re-extraction of the currently-graded calibration docs) is a hard prerequisite for #5, #6 and #10** — τ must be calibrated against the same M2 prose Segment B will ship, or the frozen thresholds encode an untested distribution shift.
 
 1. `mcal/quote_check.py` — OCR-normalized fuzzy match, ±2 page tolerance. (½ day. Unlocks meaningful `s_quote` signal for everything downstream. Highest ROI.)
 2. `segment_b/critic.py` — evidence-first schema + deterministic quote-verify override + EVIDENCE input. (1 day. Requires #1.)
 3. `segment_b/postproc/acronyms.py` — pre-pass glossary + post-pass rewrite. (1 day.)
-4. **M2 summary prompt amendment** — plain-language + concreteness clause appended to `segment_a/m2.py` summary prompts. **Then re-run M2 on all currently-graded Segment A calibration docs** (9 at seed v1) so downstream calibration operates on the same prose Segment B will produce. Archive the pre-amendment output to `segment_a/output/m2_pre_amendment/` first (see §3.14 rollback note). (½ day prompt edit + ~½ day compute for a 9-doc rerun, scaling with corpus size at later stages. HARD PREREQUISITE for #5 and #9.)
-5. `mcal/atomic_verify.py` — Opus post-hoc decomposition + per-atom verification. (2 days. Requires #1 and #4.)
-6. `segment_b/postproc/key_people_pipeline.py` — role-restricted extraction + era gate + dependent-field cascade. (2 days.)
-7. `segment_b/postproc/location_pipeline.py` — scope classifier + scope-conditional cascade over Census / GNIS / PAD-US / Mapbox / Nominatim. (2 days pipeline logic + 1 day for user to download PAD-US and GNIS locally.)
-8. `mcal/taxonomy.py` — induction + human ratification. (1 day incl. review turnaround.)
-9. `mcal/confidence.py` — composite + LOO curation slack + degeneracy gates + gate simulation. (1 day. Requires #1, #4, #8.)
-10. `mcal/critic_prompt.py` — per-field prompt files w/ failure-coverage few-shots. (1 day. Requires #8.)
-11. `segment_b/gate.py` — HUMAN_REVIEW gate wired into Segment B. Preserves and emits raw extraction alongside gate decision (per §7 Q8). (½ day. Requires #9.)
-12. `mcal/active_select.py` — next-batch selector for the multi-round protocol. **Elevated in this build order because it directly feeds the recalibration cadence**: after seed v1 freezes, `active_select` picks the next ~10 docs by predicted composite-variance × underrepresented-tag priority. Run between M-Cal rounds. (½ day. Requires #9.)
-13. Opus routing for non-summary Critic calls (½ day config change).
-14. `segment_b/year_adjudicator.py` — always-run adjudicator (½ day, M1 improvement, could run parallel with #1–#3).
+4. **M2 summary prompt amendment** — plain-language + concreteness clause appended to `segment_a/m2.py` summary prompts. **Then re-run M2 on all currently-graded Segment A calibration docs** (9 at seed v1) so downstream calibration operates on the same prose Segment B will produce. Archive the pre-amendment output to `segment_a/output/m2_pre_amendment/` first (see §3.14 rollback note). (½ day prompt edit + ~½ day compute for a 9-doc rerun, scaling with corpus size at later stages. HARD PREREQUISITE for #5, #6 and #10.)
+5. **`summary_of_interest` — new salience-weighted second summary** (§3.15). New M2 reduce call operating on existing chunk summaries; emitted alongside the standard summary, never replacing it. Ships in the same M2 rerun as #4. (1 day: prompt authoring + schema + wiring. Depends on #4.)
+6. `mcal/atomic_verify.py` — Opus post-hoc decomposition + per-atom verification, covering the 5 `summary.*` subfields plus `summary_of_interest`. (2 days. Requires #1, #4, #5.)
+7. `segment_b/postproc/key_people_pipeline.py` — role-restricted extraction + era gate + dependent-field cascade. (2 days.)
+8. `segment_b/postproc/location_pipeline.py` — scope classifier + scope-conditional cascade over Census / GNIS / PAD-US / Mapbox / Nominatim. (2 days pipeline logic + 1 day for user to download PAD-US and GNIS locally.)
+9. `mcal/taxonomy.py` — induction + human ratification. (1 day incl. review turnaround.)
+10. `mcal/confidence.py` — composite + LOO curation slack + degeneracy gates + gate simulation, across all 7 buckets. (1 day. Requires #1, #4, #9.)
+11. `mcal/critic_prompt.py` — per-field prompt files w/ failure-coverage few-shots, including the Q7 salience rubric for `summary_of_interest`. (1 day. Requires #9.)
+12. `segment_b/gate.py` — HUMAN_REVIEW gate wired into Segment B. Preserves and emits raw extraction alongside gate decision (per §7 Q8). (½ day. Requires #10.)
+13. `mcal/active_select.py` — next-batch selector for the multi-round protocol. **Elevated in this build order because it directly feeds the recalibration cadence**: after seed v1 freezes, `active_select` picks the next ~10 docs by predicted composite-variance × underrepresented-tag priority. Run between M-Cal rounds. (½ day. Requires #10.)
+14. Opus routing for non-summary Critic calls (½ day config change).
+15. `segment_b/year_adjudicator.py` — always-run adjudicator (½ day, M1 improvement, could run parallel with #1–#3).
 
 **Explicitly deferred / skipped at current calibration scale (n < ~60):**
 - DSPy/MIPRO prompt optimization (needs n≫20).
@@ -432,7 +496,7 @@ Ranked by ROI × inverse effort. **Item #4 (M2 prompt amendment + re-extraction 
 - Growing the failure taxonomy mid-round (taxonomy is frozen within a stage; new codes only at the next `mcal.build --stage`).
 - Fitting confidence signal weights from data (hand-set 0.5/0.5; revisit per §7.5 add-only guarantees).
 - Removing private-individual → HUMAN_REVIEW (policy call, permanent).
-- Salience/"most interesting" rubric for summaries (Option A vs B — tabled).
+- Salience Option B (two-pass claim tagging) — Option A ships in v1 as `summary_of_interest`; see §8.
 
 ---
 
@@ -462,12 +526,19 @@ Required N per target (for 80% power to detect the specified effect size) is com
 - Gate rate at published τ (from `gate_simulation.v(N).json`)
 - CP empirical coverage on calibration (should be ≥ 1−α by construction; report anyway)
 - **`atomic_verify.py` false-negative rate** on correctly-graded subfields (from `atomic_verify_failure_log.v(N).json`, per §3.4). Target ≤ 10%. **Advisory at seed v1** (atom sample too small); **gating from v2 onward** — exceeding it triggers a decomposition-prompt review before freezing.
-- **Null-tag rate on HUMAN_REVIEW routes.** In Segment B, whenever a field routes to HUMAN_REVIEW with `failure_tag = null`, it means the taxonomy did not have a matching category. Aggregate this per bucket in `run_manifest.json`; if the null-tag rate exceeds **15%** in any bucket during a Segment B batch, this is a signal that the taxonomy needs a `v(N+1)` refresh with new `T17+` codes. Reported in a rolling `null_tag_monitor.json` at the batch level; not a Segment B halt condition, but a mandatory input to the next M-Cal recalibration.
+- **Null-tag rate on HUMAN_REVIEW routes.** In Segment B, whenever a field routes to HUMAN_REVIEW with `failure_tag = null`, it means the taxonomy did not have a matching category. Aggregate this per bucket in `run_manifest.json`; if the null-tag rate exceeds **15%** in any bucket during a Segment B batch, this is a signal that the taxonomy needs a `v(N+1)` refresh with new `T19+` codes. Reported in a rolling `null_tag_monitor.json` at the batch level; not a Segment B halt condition, but a mandatory input to the next M-Cal recalibration.
+
+**`summary_of_interest` diagnostics (all non-gating — the field is new and has no baseline in the Evaluation CSV):**
+- **Non-empty rate across the corpus.** Fraction of documents producing a non-empty `summary_of_interest`. **Expected to be well under 60%** — most EISs are routine. A rate above ~60% is evidence the field is manufacturing salience rather than detecting it, and calls for tightening the rubric (§3.15). A rate near 0% suggests the rubric is too strict.
+- **Salience-criterion distribution.** Counts per criterion (`contested`, `unusual_impact`, `large_magnitude`, `novel_alternative`, `community_pushback`, `precedent`, `cross_jurisdictional`). A distribution collapsed onto one or two criteria suggests either a genuine corpus property or a rubric that isn't discriminating; worth a look either way.
+- **`T17_manufactured_salience` and `T18_salience_duplicates_summary` rates** per batch.
+- **Overlap with standard summary.** Rough textual overlap (e.g. token-level Jaccard) between `summary_of_interest` claims and the standard `summary.*` fields. High overlap means the field is duplicating rather than complementing.
+- **Human usefulness spot-check.** On the first graded batch, the reviewer records a simple yes/no per document: *"did `summary_of_interest` tell me something the standard summary didn't?"* This is the field's real acceptance test and no automated metric substitutes for it. Recorded in the grading sheet as a new column `soi_useful`.
 
 ### Overall acceptance
 
 **Seed v1 (n≈9):** the goal is not "meet gating targets" — it's "produce a usable seed calibration that lets the user grade the next batch efficiently." Seed v1 acceptance:
-1. All 14 build items ship and pass their own unit tests.
+1. All 15 build items ship and pass their own unit tests.
 2. `atomic_verify_failure_log.v1.json` is reviewed by user; obvious prompt gaps (coreference, negation) are patched before moving to v2.
 3. `taxonomy.v1.json` is human-ratified.
 4. Segment B runs end-to-end on ≥3 pilot docs and emits `run_manifest.json` with the full per-field schema in §3.12 — including `extracted_value`, `evidence_quote`, and `source_pages` for HUMAN_REVIEW / gated fields, so they can actually be graded.
@@ -479,7 +550,7 @@ Seed v1 will have most buckets `degenerate_severe=true`; that's the point. **Do 
 **v2 and beyond (n≥19):** all of the following must hold:
 1. All gating targets in the table above pass under CP-interval discipline at that stage's n.
 2. No regression on any field graded `ok` in ≥7/8 of the original seed corpus.
-3. At least 4 of 6 buckets have `degenerate = false` in `thresholds.v(N).json`.
+3. At least 4 of the 6 original buckets have `degenerate = false` in `thresholds.v(N).json`. `summary_of_interest` is excluded from this count until it has at least one fully graded batch — it starts with zero graded examples by construction, so counting it would make the criterion unreachable at v2.
 
 If (3) fails, recalibrate at higher α or defer freezing until the next grading batch. **Full-scale Segment B** (production runs beyond calibration-targeted batches) begins only when a stage satisfies all three conditions AND the smallest non-empty bucket has `N_wrong_docs ≥ 15`.
 
@@ -493,7 +564,7 @@ If (3) fails, recalibrate at higher α or defer freezing until the next grading 
 | Q2 | Opus judge budget | Opus for the five `summary.*` subfields' atomic verification (`project_description`, `affected_community`, `alternatives_overview`, `environmental_impact`, `public_response`). Sonnet for everything else. Estimated ~1.4× total Segment B judge cost, ~$3–4/doc marginal on those fields, ~$6–8k marginal at 2000 docs. Fallback if too expensive: 2-Sonnet ensemble on the same five. |
 | Q3 | Critic cited-pages input | Critic receives the full OCR text of `[min(cited_pages)−2 .. max(cited_pages)+2]` interleaved with `[[PAGE n]]` markers, in a dedicated `EVIDENCE` prompt section. Baked into all prompts in §3.5. |
 | Q4 | α value | α = 0.15 across all buckets. Degenerate buckets get `α_effective = 0.25`. Not renegotiated per-field. |
-| Q5 | Blinded reviewer UI | Two-column CSV workflow. Reviewer fills `your_grade` and `your_failure_tag` in one pass **without seeing `critic_verdict`**; a second pass reveals the Critic column for meta-analysis only. No new tool. |
+| Q5 | Blinded reviewer UI | Two-column CSV workflow. Reviewer fills `your_grade` and `your_failure_tag` in one pass **without seeing `critic_verdict`**; a second pass reveals the Critic column for meta-analysis only. No new tool. **Grading sheets gain one doc-level column, `soi_useful` (yes/no)**: did `summary_of_interest` tell the reviewer something the standard summary didn't? This is the real acceptance test for the new field (§3.15, §6) and no automated metric substitutes for it. |
 | Q6 | Acronym commons seeding | Seed with ~40-entry NEPA commons list AND induce doc-level glossary per document. Doc glossary takes priority; commons is fallback. |
 | Q7 | Artifact location | `May25/mcal/artifacts/`. M-Cal is its own step; not nested under `segment_a/output/`. |
 | Q8 | Segment B failure handling | `RE_EXTRACT` → one automated re-extraction attempt with temperature +0.2, re-run through Critic. `HUMAN_REVIEW` → the raw extraction and Critic output are still **fully emitted** to `run_manifest.json`; the field is just flagged for human review, not skipped. Gated fields (composite ≤ τ_deployed) also emit their raw extraction alongside the HUMAN_REVIEW flag. **This is critical for the multi-round protocol**: at seed v1 and v2, most fields will be gated, and the human reviewer needs the raw extractions in order to grade them and produce the next round's calibration data. |
@@ -519,23 +590,21 @@ This section formalizes the user's iterative calibration workflow. It supersedes
 **Between rounds:** the user runs `active_select.py` to pick the next ~10 docs from the pool; runs Segment B under the current artifact stage over those docs; grades the outputs (including reviewing raw extractions on HUMAN_REVIEW / gated fields, which is where most fresh calibration signal comes from); then triggers `mcal.build --stage v(N+1) --prior v(N)`.
 
 **Add-only guarantees carried across rounds:**
-- `taxonomy` may add new codes (`T17+` for now, since v1 seeds with T01–T16), never rename or drop.
+- `taxonomy` may add new codes (`T19+` for now, since v1 seeds with T01–T18), never rename or drop.
 - Confidence-signal weights are frozen at 0.5·s_quote + 0.5·s_critic through at least v3; weight validation graduates from diagnostic to advisory-only until n ≥ 60 (rough rule-of-thumb where per-field AUROC CIs become interpretable).
-- Bucket definitions (M1, summary_narrative, summary_numeric, alternatives+themes, location, key_people) are frozen.
+- Bucket definitions (M1, summary_narrative, summary_numeric, summary_of_interest, alternatives+themes, location, key_people) are frozen.
 - Anti-hallucination architecture (schema, evidence-first Critic, quote-verify override, atomic_verify) is frozen.
 
 **What *does* change round-to-round:** τ_deployed per bucket, degeneracy flags, LOO curation slack, few-shot exemplars in Critic prompts (as more graded exemplars become available), false-negative audit gating status, and the roster of docs in `next_batch.csv`.
 
-**When Segment B goes full-scale.** Not before all six buckets satisfy the v2+ acceptance criteria in §6 simultaneously. Until then, Segment B runs are calibration-targeted batches, not production.
+**When Segment B goes full-scale.** Not before the six original buckets satisfy the v2+ acceptance criteria in §6 simultaneously (`summary_of_interest` is evaluated on its own diagnostics, not as a full-scale blocker). Until then, Segment B runs are calibration-targeted batches, not production.
 
 ---
 
-## §8. Deferred (not in v1; noted for follow-up)
+## §8. Deferred (noted for follow-up)
 
-- **Salience/"most interesting" rubric for summary content.** Currently the map-reduce produces proportional condensation. Two options tabled:
-  - **Option A (light):** salience rubric embedded in the M2 map-reduce prompt.
-  - **Option B (heavier):** two-pass with `salience_reason` tags on candidate claims (`contested | unusual_impact | large_magnitude | novel_alternative | community_pushback | precedent | none`).
-  - Decision needs: (i) A vs B, (ii) whose "interestingness" the pipeline optimizes for (policy researcher, community-impact scholar, environmental engineer differ).
+- **Salience Option B (two-pass claim tagging).** Salience is implemented in v1 as **Option A** — rubric embedded in the M2 prompt, emitted as the separate `summary_of_interest` field (§3.15). The heavier Option B design (map step emits `salience_reason` tags on every candidate claim; reduce step prioritizes over the tagged pool) remains deferred. It would give better recall on salient content buried deep in long documents, at the cost of touching the M2 map step and increasing per-chunk output size. **Revisit if the `summary_of_interest` diagnostics in §6 show low recall** — specifically, if the human usefulness spot-check (`soi_useful`) comes back negative on documents you know to be interesting.
+- **Audience re-tuning for the salience rubric.** §3.15 defaults to "a researcher studying environmental review and its policy and community consequences." After reading a batch of outputs, this is the knob most worth adjusting. Alternative framings to consider: community-impact scholar (weight `community_pushback`, `unusual_impact` higher), policy/legal researcher (weight `precedent`, `contested`, `cross_jurisdictional`), environmental engineer (weight `large_magnitude`, `novel_alternative`).
 
 ---
 
@@ -546,6 +615,7 @@ This section formalizes the user's iterative calibration workflow. It supersedes
 - Independent fresh-eyes review round after v3 lockdown surfaced 8 substantive fixes (S1–S8) plus 4 minor cleanup items; all folded into this document (build ordering, atomic_verify coreference/negation rules, geocoder graceful degradation, "private individual" operational definition, CP guarantee per-doc notation, LOO curation-slack scope, acronyms gate tightening to LCB ≥ 0.70, null-tag monitoring, s_quote M1 default, Q6(b) demotion, cost summary in calibration report).
 - Multi-round calibration protocol added post-review (§0, §3.7, §6, §7 Q1, §7 Q8, §7.5) to support the user's chosen workflow of building seed v1 on 9 grades, iterating via `active_select.py` at ~10-doc cadence, and reaching full-scale Segment B only after buckets clear CP-interval acceptance.
 - Consistency pass (final) resolved 15 items: duplicated §8 block; `run_manifest.json` schema expanded to carry `extracted_value` / `evidence_quote` / `source_pages` / `rubric_answers` / `gate_reason` / `artifact_stage` (required for grading gated fields); stale "vendor stack TBD" in §4 Q4; build-order cross-references; taxonomy rule corrected to T17+/T01–T16; `next_batch.csv` sized to ~10 docs to match cadence; weight-freeze horizon aligned between §3.3 and §7.5; private-individual definition moved out of the middle of the rubric list; `alternatives_overview` double-counting removed in §3.11/§4/§7 Q2; `.v1` → `.v(N)` stage-versioning throughout; `n=20` references generalized to `n_stage`; dangling "(3)" reference in §6 numbered; M2 amendment rollback path added (§3.14); no-observed-failure note added for `title`/`themes`/`lead_agency`/`summary.overview` (§1); §3.9a coverage percentages relabeled as a-priori expectations rather than measured values.
+- Salience decision (final): Option A rubric, implemented as a separate additive field `summary_of_interest` (§3.15) rather than as a modification to the existing summary. Adds a 7th CP bucket, taxonomy tags T17/T18, Critic rubric Q7, and a set of §6 diagnostics centered on the non-empty rate. The existing five `summary.*` subfields are unchanged.
 - Human evaluation input: `May25/Evaluation - Sheet1.csv` (8 docs of 9 graded at time of writing).
 - Source pipeline spec: `May25/Pipeline.pdf`.
 - Existing implementation: `May25/segment_a/`.
