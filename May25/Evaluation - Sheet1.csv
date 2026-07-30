@@ -1,0 +1,20 @@
+ID,p1074_35556036058550,p1074_35556036105336,p1074_35556036546182,p1074_35556036806586,p1074_35556036811230,p1074_35556036861797,p1074_35556038322269,p1074_35556039563135
+slug,Operation Breakthrough,Randolph Urban Renewal,Airport Spur,Bad Creek Pumped Project,Buffalo Light Rail,Fuel Economy,Los Angeles Transit,Lincoln Hwy Updates
+title,ok,ok,ok,ok,ok,ok,ok,ok
+year,"wrong: ""1972"" correct: ... latest date I could find was 1976",ok ,ok,ok ,ok ,ok ,"wrong: ""1980"" correct: ""1979""","wrong: ""1972"" correct: ... I believe 1971 based on page 70"
+EIS_type,ok,ok,ok ,ok,ok,ok,ok,"wrong: ""ROD"", correct: ""Final"""
+lead_agency,ok,ok,ok,ok,ok,ok,ok,ok
+summary.overview,ok,ok,ok,ok,ok,ok,ok,ok
+summary.project_description,ok,ok ,"ok, missing citation - pg 35",ok ,ok,ok,"wrong: ""from $659 million (Alt. V)"" correct: ""from $369 million (Alt. XI)""","ok, missing citation - pg 34, 36, 146"
+summary.affected_community,ok,ok,ok,ok,ok,"ok, missing citation - pg 75","ok, missing citation - pg 177",ok
+summary.alternatives_overview,ok,ok,"ok, missing citation - pg 83",ok,ok ,ok ,ok,ok
+summary.environmental_impact,ok,"ok, missing citation - pg 50",ok,ok,ok ,ok ,"wrong: ""Magnitude 7.5"" correct: ""Magnitude 7.0""","hallucination: ""or important wildlife habitats are affected."" "
+summary.public_response,ok,ok,"ok, missing citation - pg 190","ok, missing citation - pg 331, 365",ok,"ok, missing citation - pg 31, 110, 112",ok,"ok, missing citation - pg 172, 159"
+alternatives[0],ok,ok ,ok ,ok ,empty,ok ,ok,ok
+themes,ok,ok,ok,ok ,ok,ok,ok,ok
+location,ok,no geocode,geocodes milwaukee (wish better specificity),ok,has 3 locations (all listed in the doc) one geocoded,no location,no geocode,has 3 locations (all listed in the doc) one geocoded
+key people,all commenters = cooperators,all commenters = cooperators,all commenters = cooperators,all commenters = cooperators,ok,nearly empty,all commenters = cooperators,
+ , , , , , , , , 
+notes,includes undefined acronyms,includes undefined acronyms,includes undefined acronyms,includes undefined acronyms,includes undefined acronyms,"heavy on undefined acronyms, perhaps for national docs, location should be ""national"" or something similar",includes undefined acronyms,includes undefined acronyms
+,,,,,,,,
+"Overall Notes: All acronyms used need to be defined on first mention, add an extra safeguard in the prompts to ensure that nothing comes from outside the text, and converse with me about why the key people section is so vulnerable, as well as the location section",,,,,,,,
