@@ -1,6 +1,8 @@
 # M-Cal Plan (agreed)
 
-Calibration step consuming Segment A human grades and emitting versioned artifacts that Segment B loads at runtime. Produced via a two-agent adversarial design loop (Planner ↔ Critic, 3 rounds). Verdict: AGREED — stakeable.
+Calibration step consuming Segment A human grades and emitting stage-versioned artifacts that Segment B loads at runtime. Produced via a two-agent adversarial design loop (Planner ↔ Critic, 3 rounds), then an independent review pass, then a consistency pass. Verdict: AGREED — stakeable.
+
+Artifacts are **stage-versioned** (`.v1`, `.v2`, ...) per the multi-round calibration protocol in §7.5. Paths in this document are written `.v(N)` where the stage varies.
 
 Open items deferred (not in v1 scope):
 - Salience/"most interesting" rubric for summaries (Option A vs B — tabled).
@@ -71,29 +73,32 @@ Multiple distinct failure modes:
 - **Cause:** No document-level acronym glossary; no post-processor.
 - **Fix:** Deterministic pre-pass + post-pass in `postproc/acronyms.py`. Prompt-only enforcement is known-insufficient (failed 8/8).
 
+### Fields with no observed failures: `title`, `themes`, `lead_agency`, `summary.overview`
+All four were graded `ok` in 8/8 docs. **No dedicated fix is specified for them.** They still pass through the generic machinery — evidence-first Critic, quote-verify override, composite confidence, and the CP gate for their respective buckets (`M1` for title/lead_agency, `alternatives+themes` for themes, `summary_narrative` for overview). They are called out here so an implementer doesn't assume they were overlooked. Note that "no observed failures in 8 docs" is weak evidence — the Wilson interval on 8/8 still admits a true error rate around 30%, so these fields are candidates for closer attention as the graded corpus grows.
+
 ---
 
 ## §2. Artifacts
 
-All under `May25/mcal/artifacts/` with `.v1` suffix. Frozen between recalibration rounds; Segment B pins `.v1`.
+All under `May25/mcal/artifacts/`, suffixed with the current stage (`.v1`, `.v2`, ...). Frozen within a stage; Segment B pins whichever stage is current. Paths below are written `.v(N)` to indicate stage-versioning.
 
 | Path | Schema | Consumed by |
 |---|---|---|
-| `taxonomy.v1.json` | `{tags: [{id, name, description, exemplars: [{doc_id, field, note}]}], version, frozen_at}` | `critic_prompt.py`; reviewer UI |
-| `thresholds.v1.json` | per-bucket: `{alpha, alpha_effective, N_wrong_docs, tau_raw, curation_slack, tau_deployed, saturated, guarantee_conditioning, degenerate, degenerate_severe, gate_all_to_human}` — 6 buckets | `segment_b/gate.py` |
-| `confidence_config.v1.json` | `{signals: [name, weight], per_field_overrides: {}, dependent_fields: {year: [key_people]}}` | `segment_b/gate.py`, `critic.py` |
-| `critic_prompts/{field}.v1.md` | Header + anti-hallucination clause + rubric (ordered yes/no) + few-shot exemplars + JSON output schema | `segment_b/critic.py` at load time |
-| `acronym_commons.v1.json` | `{acronyms: [{token, expansion, sources: []}]}` — ~40-entry NEPA seed | `segment_b/postproc/acronyms.py` |
-| `atomic_schema.v1.json` | JSON schema for atomic claim tuples | `atomic_verify.py`, Critic |
-| `weight_validation.v1.json` | Diagnostic AUROC comparison of candidate weightings on graded set | Reporting only |
-| `gate_simulation.v1.json` | Per-bucket {gate rate, caught-error rate, false-defer rate} simulated on 8-doc ground truth | Reporting |
-| `atomic_verify_failure_log.v1.json` | Per-atom rejection log (S2): `{atom_id, atom_text, evidence_quote, page, failure_reason, subfield_human_grade}` | Pre-freeze audit; false-negative diagnostic |
+| `taxonomy.v(N).json` | `{tags: [{id, name, description, exemplars: [{doc_id, field, note}]}], version, frozen_at}` | `critic_prompt.py`; reviewer UI |
+| `thresholds.v(N).json` | per-bucket: `{alpha, alpha_effective, N_wrong_docs, tau_raw, curation_slack, tau_deployed, saturated, guarantee_conditioning, degenerate, degenerate_severe, gate_all_to_human}` — 6 buckets | `segment_b/gate.py` |
+| `confidence_config.v(N).json` | `{signals: [name, weight], per_field_overrides: {}, dependent_fields: {year: [key_people]}, geocoder_stack: "full"\|"reduced", judge_model_by_field: {}}` | `segment_b/gate.py`, `critic.py` |
+| `critic_prompts/{field}.v(N).md` | Header + anti-hallucination clause + rubric (ordered yes/no) + few-shot exemplars + JSON output schema | `segment_b/critic.py` at load time |
+| `acronym_commons.v(N).json` | `{acronyms: [{token, expansion, sources: []}]}` — ~40-entry NEPA seed | `segment_b/postproc/acronyms.py` |
+| `atomic_schema.v(N).json` | JSON schema for atomic claim tuples | `atomic_verify.py`, Critic |
+| `weight_validation.v(N).json` | Diagnostic AUROC comparison of candidate weightings on graded set | Reporting only |
+| `gate_simulation.v(N).json` | Per-bucket {gate rate, caught-error rate, false-defer rate} simulated against the current graded set | Reporting |
+| `atomic_verify_failure_log.v(N).json` | Per-atom rejection log: `{atom_id, atom_text, evidence_quote, page, failure_reason, subfield_human_grade}` | Pre-freeze audit; false-negative diagnostic |
 | `null_tag_monitor.json` (Segment B, rolling) | Per-bucket rolling rate of HUMAN_REVIEW routes with `failure_tag = null`; batch-level | Signal for next M-Cal recalibration (§6) |
-| `next_batch.csv` | `doc_id, uncertainty_score, dominant_predicted_failure_tags` — 30 rows | Reviewer for next grading round |
-| `calibration_report.v1.md` | Human-readable roll-up. **Must include a `Cost Summary` section**: total input/output tokens per model tier (Sonnet, Opus) on the 20-doc calibration rerun, per-doc average, and projected Segment B cost at 2000 docs (with clear labels for the Opus atomic-verify slice, Sonnet Critic slice, and M2 rerun slice). Used for the go/no-go call before Segment B kickoff. | User |
+| `next_batch.csv` | `doc_id, uncertainty_score, dominant_predicted_failure_tags` — **~10 rows** (one grading batch per §7.5 cadence) | Reviewer for next grading round |
+| `calibration_report.v(N).md` | Human-readable roll-up. **Must include a `Cost Summary` section**: total input/output tokens per model tier (Sonnet, Opus) on the current-stage calibration rerun, per-doc average, and projected Segment B cost at 2000 docs (with clear labels for the Opus atomic-verify slice, Sonnet Critic slice, and M2 rerun slice). Used for the go/no-go call before full-scale Segment B. | User |
 | `tests/regressions/*.json` | Lincoln Hwy wildlife-clause + env_impact magnitude fixtures | CI |
 
-**Taxonomy versioning rule:** v(N+1) may only *add* codes (`T13+`) or mark old codes `deprecated` with `superseded_by`. Never renames or renumbers T01–T12.
+**Taxonomy versioning rule:** v(N+1) may only *add* codes (`T17+`, since the seed taxonomy occupies T01–T16) or mark old codes `deprecated` with `superseded_by`. Never renames or renumbers T01–T16.
 
 **Seed failure taxonomy (to be confirmed by TnT-LLM induction on ratified grades):**
 `T01_missing_citation`, `T02_numeric_hallucination`, `T03_outside_text_fabrication`, `T04_undefined_acronym`, `T05_commenter_mislabeled_as_cooperator`, `T06_geocode_missing`, `T07_geocode_wrong_specificity`, `T08_scope_misclassified_national`, `T09_multi_site_partial_geocode`, `T10_alternatives_chapter_missed`, `T11_year_ocr_error`, `T12_eis_type_confused_with_rod`, `T13_pre_1978_nepa_format`, `T14_regional_scope_underspecified`, `T15_jargon_without_gloss`, `T16_abstract_when_concrete_available`.
@@ -128,9 +133,9 @@ May25/segment_b/
 ```
 
 ### 3.1 `mcal/taxonomy.py`
-- **Input:** all graded rows in `May25/segment_a/output/grading_sheets/*.csv`.
-- **Output:** `artifacts/taxonomy.v1.json`.
-- **Logic:** load rows where `your_grade != "ok"` OR `your_notes` non-empty; TnT-LLM-style induction prompt to Sonnet: "cluster these notes into 6–12 named failure modes"; emit draft `.v1-draft.json`; human ratification → rename to `.v1.json` + `frozen_at`.
+- **Input:** all graded rows in `May25/segment_a/output/grading_sheets/*.csv` (plus any grading sheets produced from prior Segment B calibration batches).
+- **Output:** `artifacts/taxonomy.v(N).json`.
+- **Logic:** load rows where `your_grade != "ok"` OR `your_notes` non-empty; TnT-LLM-style induction prompt to Sonnet: "cluster these notes into 6–12 named failure modes"; emit draft `.v(N)-draft.json`; human ratification → promote to `.v(N).json` + `frozen_at`. On recalibration stages, the prior taxonomy is loaded first and extended add-only (§2 versioning rule).
 
 ### 3.2 `mcal/quote_check.py`
 Upgrade of the existing verifier.
@@ -139,7 +144,7 @@ Upgrade of the existing verifier.
 - **Logic:** OCR-normalize both sides (`rn↔m`, `l↔1↔I`, `O↔0`, `S↔5`, whitespace collapse, lowercase, punctuation strip); rapidfuzz `partial_ratio` over each page in `source_pages ± 2`; ≥90 → yes; 60–90 → mixed; <60 → no.
 
 ### 3.3 `mcal/confidence.py`
-- **Composite (v1):** `composite = 0.5·s_quote + 0.5·s_critic` for all buckets. Other signals (`s_source`, `s_citation`, `s_shard`, `s_acronym`) are **computed and logged** with weight 0; may enter the composite at v2 when there's data to fit them.
+- **Composite:** `composite = 0.5·s_quote + 0.5·s_critic` for all buckets. Other signals (`s_source`, `s_citation`, `s_shard`, `s_acronym`) are **computed and logged** with weight 0. Per the §7.5 add-only guarantees, weights stay frozen at 0.5/0.5 through at least stage v3, and weight-validation remains advisory until the graded set reaches roughly n ≥ 60 (where per-field AUROC confidence intervals become interpretable).
 - **Signal definitions** (all in [0,1]):
   - `s_quote` = quote_check verdict → {yes: 1.0, mixed: 0.5, no: 0.0}. **M1 fields (`year`, `eis_type`, `lead_agency`, `title`) have no verbatim quote in their extracted values by design; for these fields `s_quote` defaults to 1.0, so the M1 composite collapses to `0.5·s_critic + 0.5` — effectively a 0.5 floor plus half the Critic verdict.** This is intentional: M1 correctness is checked via `s_source` in future weight iterations, not via quotes.
   - `s_critic` = critic_verdict → {PASS: 1.0, PASS_WITH_NOTE: 0.7, RE_EXTRACT: 0.3, HUMAN_REVIEW: 0.0}
@@ -148,7 +153,7 @@ Upgrade of the existing verifier.
   - `s_citation` = frac of atomic claims with page cite
   - `s_acronym` = defined-first-use rate
 
-- **Weight-validation (diagnostic only):** Kendall-τ / AUROC of candidate weightings vs correctness on graded set, doc-stratified, paired bootstrap 1000 resamples. **Not a decision gate at n≤20.** Written to `weight_validation.v1.json` for reporting. Tiebreaker in `confidence.py` docstring: fewest signals with non-zero weight; ties broken lexicographically.
+- **Weight-validation (diagnostic only):** Kendall-τ / AUROC of candidate weightings vs correctness on graded set, doc-stratified, paired bootstrap 1000 resamples. **Not a decision gate at current calibration scale** — at n well under 60 the confidence intervals are too wide for any candidate to be meaningfully dominated. Written to `weight_validation.v(N).json` for reporting. Tiebreaker in `confidence.py` docstring: fewest signals with non-zero weight; ties broken lexicographically.
 
 - **Split-conformal recipe (single formula):**
   - Buckets: **M1, summary_narrative, summary_numeric, alternatives+themes, location, key_people** (6 buckets).
@@ -160,12 +165,12 @@ Upgrade of the existing verifier.
   - **Degeneracy gates:**
     - `N_wrong_docs < 6` at α=0.15 → `degenerate=true`, `α_effective=0.25`.
     - `N_wrong_docs < 3` at α_effective=0.25 → `degenerate_severe=true`, `gate_all_to_human=true`, τ effectively `+∞`.
-  - **Curation slack (leave-one-doc-out, restricted).** LOO is computed **only over the wrong-item-containing docs** in each bucket (the same subset used for τ_raw). For each of those `N_wrong_docs` folds, refit τ on the remaining `N_wrong_docs − 1` and measure `Δτ_i = |τ_full − τ_leave_i|`. Because `N_wrong_docs` is typically small (3–15 per bucket at n=20), use **`curation_slack = max(Δτ_i)`** rather than the 95th percentile — the percentile is unreliable at these sample sizes and dominated by the discreteness of the empirical quantile. Report the full `{Δτ_i}` distribution in `calibration_report.v1.md` for auditability.
-  - **τ_deployed = min(1.0, τ_full + curation_slack)**; if clamped, record `saturated=true` in `thresholds.v1.json`.
+  - **Curation slack (leave-one-doc-out, restricted).** LOO is computed **only over the wrong-item-containing docs** in each bucket (the same subset used for τ_raw). For each of those `N_wrong_docs` folds, refit τ on the remaining `N_wrong_docs − 1` and measure `Δτ_i = |τ_full − τ_leave_i|`. Because `N_wrong_docs` is typically small at early stages (often 2–8 per bucket at seed v1, growing with each round), use **`curation_slack = max(Δτ_i)`** rather than the 95th percentile — the percentile is unreliable at these sample sizes and dominated by the discreteness of the empirical quantile. Report the full `{Δτ_i}` distribution in `calibration_report.v(N).md` for auditability.
+  - **τ_deployed = min(1.0, τ_full + curation_slack)**; if clamped, record `saturated=true` in `thresholds.v(N).json`.
   - Accept in Segment B iff `composite(x_new) > τ_deployed`.
-  - **Guarantee (stored in `thresholds.v1.json.guarantee_conditioning`, per-doc form matching what doc-clustered CP actually delivers):**
+  - **Guarantee (stored in `thresholds.v(N).json.guarantee_conditioning`, per-doc form matching what doc-clustered CP actually delivers):**
     > `P(∃ i in doc : s_i > τ_B | y_i = 0, doc has ≥1 wrong item in bucket B, doc exchangeable with Segment A) ≤ α.`
-    > `Distribution shift to Segment B untested at v1.`
+    > `Distribution shift to full-corpus Segment B untested at this stage.`
 
 ### 3.4 `mcal/atomic_verify.py` (Opus post-hoc decomposition)
 - **Scope:** the 5 `summary.*` subfields (`project_description`, `affected_community`, `alternatives_overview`, `environmental_impact`, `public_response`). Note: `alternatives_overview` here refers to the summary subfield; the standalone `alternatives` list has its own structured verifier and is not decomposed.
@@ -185,7 +190,7 @@ Upgrade of the existing verifier.
   3. **Aggregation:** `subfield_score = mean(atomic_scores)` with **2× penalty** on `numeric` and `geospatial` claim failures.
 - **False-negative audit.** On the currently-graded calibration set (post-M2-rerun), for every atom that fails verification, `atomic_verify.py` writes `{atom_id, atom_text, evidence_quote, page, failure_reason, human_grade_of_subfield}` to `artifacts/atomic_verify_failure_log.v(N).json`. **At seed v1 (n≈9): advisory only** — the sample of atoms drawn from correctly-graded subfields is too small (≈15–25 atoms) for a meaningful false-negative rate; log is reviewed for qualitative patterns (missing coreference cases, missing negation cases) that inform prompt refinement. **From v2 onward (n≥19): gating** — if the false-negative rate on correctly-graded subfields exceeds 10%, tune the decomposition prompt before freezing.
 - **Why Opus-on-Opus:** JudgeBench's Sonnet-ceiling warning applies specifically to weak-judge-strong-writer pairings. Opus decomposing Opus has no ceiling gap. Preserves Segment A extractions once they've been re-run under the amended M2 prompts (build item #4).
-- **Prompt is hand-written; not tuned at n=20.**
+- **Prompt is hand-written; not tuned on the calibration set** (tuning on the same docs used to fit τ would leak).
 
 ### 3.5 `mcal/critic_prompt.py`
 Builds per-field prompt files.
@@ -200,12 +205,10 @@ Builds per-field prompt files.
      - Q2: Do all claims correspond to a substring in the cited pages (OCR-normalized)?
      - Q3: Are all acronyms defined on first use within this value?
      - Q4: Are stances attributed to named commenters (or "private commenter")?
-     - Q5: For any stance about a **private individual** — is it flagged for human review?
-
-**Operational definition of "private individual"** (in `templates/critic_header.md`, referenced from Q5 and from `segment_b/critic.py`): *A named person is a private individual iff the cited passage does not identify them with a government agency, elected office, tribal/nation role, incorporated organization, or a professional/expert role relevant to their stance. Titles like "Dr.", "Prof.", "Chair", "Director of X", "Mayor", "Council Member", "Secretary" indicate a non-private role.* **Dual-capacity handling:** the stance's capacity is bound to what the cited passage states at the point of stance attribution — if the same person appears in both official and personal capacity elsewhere in the document, treat only the current stance according to the cited passage. If the passage is ambiguous about which capacity is being expressed, route to HUMAN_REVIEW regardless of Critic verdict.
+     - Q5: For any stance about a **private individual** (see definition below) — is it flagged for human review?
      - Q6: Is the value readable and concrete for a non-specialist? Specifically: (a) are NEPA-specific terms and regulatory citations glossed in-line on first mention, using support from the cited pages? (b) does the value describe the project, affected community, alternatives, impacts, or public response in concrete terms (named entities, specified quantities, plain nouns) rather than abstract nominalizations, where the document supports concreteness?
 
-     Decision: any Q1/Q2/Q4 = no → RE_EXTRACT. Q3 = no → PASS_WITH_NOTE + tag T04. Q5 = no → HUMAN_REVIEW. Q6(a) = no → PASS_WITH_NOTE + tag T15. **Q6(b) at v1: logged only** — Sonnet-judged concreteness is subjective and not calibrated at n=20; Q6(b) verdicts are recorded in `run_manifest.json` for offline audit and revisited at v2 (spot-check against the 20 graded docs before promoting to PASS_WITH_NOTE + tag T16).
+     Decision: any Q1/Q2/Q4 = no → RE_EXTRACT. Q3 = no → PASS_WITH_NOTE + tag T04. Q5 = no → HUMAN_REVIEW. Q6(a) = no → PASS_WITH_NOTE + tag T15. **Q6(b) at v1: logged only** — Sonnet-judged concreteness is subjective and not calibrated at current scale; Q6(b) verdicts are recorded in `run_manifest.json` under `rubric_answers.Q6b` for offline audit and revisited at a later stage (spot-check against the graded corpus before promoting to PASS_WITH_NOTE + tag T16).
   5. **Few-shot examples** — greedy set-cover across the top-K tags observed for that field, `K = min(3, #distinct tags with ≥1 exemplar)`. If fewer than 3 slots filled after cover, fill remainder with **positive controls** (correctly-graded examples). Never below 3 total slots.
   6. **Output schema (strict JSON, `evidence_quote` before `verdict`):**
      ```json
@@ -218,8 +221,16 @@ Builds per-field prompt files.
      }
      ```
 
+**Operational definition of "private individual"** (lives in `templates/critic_header.md`; referenced from rubric Q5 and from `segment_b/critic.py`):
+
+> A named person is a **private individual** iff the cited passage does not identify them with a government agency, elected office, tribal/nation role, incorporated organization, or a professional/expert role relevant to their stance. Titles such as "Dr.", "Prof.", "Chair", "Director of X", "Mayor", "Council Member", or "Secretary" indicate a **non-private** role.
+>
+> **Dual-capacity handling:** a stance's capacity is bound to what the cited passage states at the point of stance attribution. If the same person appears elsewhere in the document in a different capacity (e.g., a mayor commenting officially in one chapter and as a resident in another), treat only the current stance according to its own cited passage. If the passage is ambiguous about which capacity is being expressed, route to HUMAN_REVIEW regardless of Critic verdict.
+
 ### 3.6 `mcal/active_select.py`
-Uncertainty sampling for the next 30 docs to grade. Rank remaining Segment A un-graded docs (+ Segment B pilot if available) by predicted composite variance across fields; prefer docs whose predicted dominant failure tags are underrepresented in Segment A. Emit `artifacts/next_batch.csv`.
+Uncertainty sampling for the next grading batch (**~10 docs**, matching the §7.5 recalibration cadence). Rank candidate docs (remaining Segment A pool + any Segment B pilot docs already extracted) by predicted composite variance across fields; prefer docs whose predicted dominant failure tags are underrepresented in the current graded set. Emit `artifacts/next_batch.csv`.
+
+Batch size is a `--n` flag defaulting to 10, so the cadence can be adjusted without editing code.
 
 ### 3.7 `mcal/build.py`
 Orchestrator. Invocations:
@@ -241,7 +252,7 @@ Orchestrator. Invocations:
   - Scan front matter (pp. i–xxx) and last 30pp for section headings fuzzy-matching `{"abbreviations", "acronyms", "glossary", "list of acronyms"}`; parse table-formatted entries preferentially.
   - **Denylist:** Roman numerals (I–XX), section markers, 2-letter state postal codes when co-located with place names.
 - **Post-pass** (per output field): first occurrence of each acronym rewritten to `"Full Name (FN)"`. Subsequent occurrences left as-is.
-- **Fallback:** `acronym_commons.v1.json` (seed ~40 entries: EIS, NEPA, CEQ, EPA, USACE, NOAA, USFWS, USFS, BLM, DOT, FHWA, FAA, ROD, FONSI, DEIS, FEIS, SEIS, EA, LEDPA, NHPA, ESA, CWA, CAA, NAAQS, PM2.5, VOC, NOx, SO2, MSAT, GHG, CO2, VMT, HOV, LOS, ADT, ROW, DBE, MBE, SHPO, THPO). Doc glossary takes priority.
+- **Fallback:** `acronym_commons.v(N).json` (seed ~40 entries: EIS, NEPA, CEQ, EPA, USACE, NOAA, USFWS, USFS, BLM, DOT, FHWA, FAA, ROD, FONSI, DEIS, FEIS, SEIS, EA, LEDPA, NHPA, ESA, CWA, CAA, NAAQS, PM2.5, VOC, NOx, SO2, MSAT, GHG, CO2, VMT, HOV, LOS, ADT, ROW, DBE, MBE, SHPO, THPO). Doc glossary takes priority.
 - **Unknown acronym (not in doc glossary and not in commons):** tag `T04_undefined_acronym`, field → PASS_WITH_NOTE. **Do not rewrite** — never fabricate an expansion.
 
 ### 3.9 `segment_b/postproc/location_pipeline.py`
@@ -259,12 +270,12 @@ Replaces the current single-shot location extractor.
 
 Every EIS is a US federal document. General-purpose global geocoders (Nominatim) are the wrong default. The stack below is optimized for the four hardest failure modes observed in the Evaluation CSV: federal-lands references, highway corridors, named natural features, and admin-level disambiguation.
 
-**Cascade order** (each hop only fires if the previous produced no confident result):
+**Cascade order** (each hop only fires if the previous produced no confident result). **Coverage figures below are rough a-priori expectations, not measured values** — actual hit rates should be recorded per hop via the `source` field (see Implementation notes) and reported in `calibration_report.v(N).md` once real data exists:
 
-1. **US Census Geocoder** — free, unlimited, US-only. Primary hop for anything the scope classifier tagged `site` with a city/county/state/tract/address name. REST API (`geocoding.geo.census.gov`). Handles ~40% of expected locations. No auth required.
-2. **USGS GNIS** — free, bulk-downloadable (~2GB). Second hop for named natural and cultural features (rivers, forests, mountains, historic sites, populated places). Loaded into a local SQLite/GeoPandas index at build time. Handles ~25% more.
-3. **PAD-US spatial join** — free, bulk-downloadable (~1GB). Third hop for federal-lands references ("Cottonwood Field Office", "Ashley National Forest", "Modoc National Forest"). Every federal-agency parcel as a polygon; fuzzy-name spatial join over BLM/NPS/USFWS/USFS/DoD units. **Biggest single quality upgrade** for this corpus. Requires GeoPandas + local geodatabase. Handles ~15% more, including cases nothing else can resolve.
-4. **Mapbox Geocoding API** — 100k/mo free tier (easily covers ~15–20k expected calls for 2000 docs). Fourth hop for POIs, named highways, and disambiguation with document context. Requires API key in `.env` as `MAPBOX_TOKEN`. Research-friendly ToS (attribution required in published outputs).
+1. **US Census Geocoder** — free, unlimited, US-only. Primary hop for anything the scope classifier tagged `site` with a city/county/state/tract/address name. REST API (`geocoding.geo.census.gov`). *Expected to resolve a plurality of locations.* No auth required.
+2. **USGS GNIS** — free, bulk-downloadable (~2GB). Second hop for named natural and cultural features (rivers, forests, mountains, historic sites, populated places). Loaded into a local SQLite/GeoPandas index at build time.
+3. **PAD-US spatial join** — free, bulk-downloadable (~1GB). Third hop for federal-lands references ("Cottonwood Field Office", "Ashley National Forest", "Modoc National Forest"). Every federal-agency parcel as a polygon; fuzzy-name spatial join over BLM/NPS/USFWS/USFS/DoD units. **Expected to be the biggest single quality upgrade for this corpus** — federal-agency EISs routinely reference their own managed units by name, and no general-purpose geocoder resolves those. Requires GeoPandas + local geodatabase.
+4. **Mapbox Geocoding API** — 100k/mo free tier (comfortably covers expected call volume at ~10 calls/doc × 2000 docs). Fourth hop for POIs, named highways, and disambiguation with document context. Requires API key in `.env` as `MAPBOX_TOKEN`. Research-friendly ToS (attribution required in published outputs).
 5. **Nominatim (public server)** — free, rate-limited (1 req/sec). Last-resort fallback for international mentions (rare in US federal EISs but not zero — e.g., border projects). Existing dependency via `geopy`; kept in the cascade rather than removed.
 
 **Setup responsibility (user):**
@@ -272,7 +283,7 @@ Every EIS is a US federal document. General-purpose global geocoders (Nominatim)
 - Download GNIS domestic-names file from USGS (National Map) and place at `GNIS_TSV_PATH`.
 - Register a free Mapbox account and put the token in `.env` as `MAPBOX_TOKEN`.
 
-**Reduced-pipeline fallback.** `build.py` performs a startup precheck (see §3.7). If any of PAD-US, GNIS, or `MAPBOX_TOKEN` is missing, M-Cal proceeds in **reduced mode**: the cascade collapses to Census + Nominatim only, `confidence_config.v1.json.geocoder_stack` is set to `"reduced"`, and the location bucket in `thresholds.v1.json` is forced `gate_all_to_human=true`. Segment B runs in this mode route every location field to HUMAN_REVIEW. This is by design — it lets you exercise the full M-Cal pipeline end-to-end before completing geocoder setup, and prevents Segment B from silently producing degraded locations. To move to full mode, complete the downloads and re-run `python -m mcal.build`.
+**Reduced-pipeline fallback.** `build.py` performs a startup precheck (see §3.7). If any of PAD-US, GNIS, or `MAPBOX_TOKEN` is missing, M-Cal proceeds in **reduced mode**: the cascade collapses to Census + Nominatim only, `confidence_config.v(N).json.geocoder_stack` is set to `"reduced"`, and the location bucket in `thresholds.v(N).json` is forced `gate_all_to_human=true`. Segment B runs in this mode route every location field to HUMAN_REVIEW. This is by design — it lets you exercise the full M-Cal pipeline end-to-end before completing geocoder setup, and prevents Segment B from silently producing degraded locations. To move to full mode, complete the downloads and re-run `python -m mcal.build`.
 
 **Implementation notes:**
 - Cascade lives in `segment_b/postproc/location_pipeline.py`; each hop is a separate function returning `Optional[{lat, lon, bbox, source, confidence, admin_hierarchy}]`.
@@ -292,16 +303,38 @@ Replaces the current 3-bucket extractor with stricter role-tagging.
 6. **Critic role-check:** per-entity — "Is this entity described in the cited passage as (a) formally-designated cooperating agency, (b) public commenter, or (c) neither?" Mismatch → RE_EXTRACT with tag `T05_commenter_mislabeled_as_cooperator`.
 
 ### 3.11 `segment_b/critic.py` (modified)
-- Loads `artifacts/critic_prompts/{field}.v1.md`, `atomic_schema.v1.json`, `confidence_config.v1.json`.
+- Loads `artifacts/critic_prompts/{field}.v(N).md`, `atomic_schema.v(N).json`, `confidence_config.v(N).json`.
 - **Evidence-first schema:** requires `evidence_quote` before `verdict` in the JSON output (schema field order enforced).
 - **Deterministic quote-verify override:** after receiving Critic output, run `quote_check.py` on `evidence_quote` against cited pages. If not verified → override `verdict = HUMAN_REVIEW`, add note `critic_evidence_unverifiable`.
-- **Judge model routing:** Sonnet by default. `summary.*` and `alternatives_overview` route to Opus (JudgeBench). Configurable via `confidence_config.v1.json` field `judge_model_by_field`.
-- **Private-individual stance** → HUMAN_REVIEW unconditionally (policy).
+- **Judge model routing:** Sonnet by default. All five `summary.*` subfields (which includes `alternatives_overview`) route to Opus per JudgeBench. Configurable via `confidence_config.v(N).json` field `judge_model_by_field`.
+- **Private-individual stance** → HUMAN_REVIEW unconditionally (policy; definition in §3.5).
 
 ### 3.12 `segment_b/gate.py` (new)
-- Loads `thresholds.v1.json`, `confidence_config.v1.json`.
+- Loads `thresholds.v(N).json`, `confidence_config.v(N).json`.
 - For each field: compute composite → look up bucket τ_deployed → if `composite ≤ τ_deployed`, emit `HUMAN_REVIEW` regardless of Critic verdict. If bucket has `gate_all_to_human=true`, HUMAN_REVIEW unconditionally.
-- Emit `run_manifest.json` per doc: `{field: {verdict, composite, gated_to_human: bool, applied_tau, failure_tag}}`.
+- **Emits `run_manifest.json` per doc.** The manifest must carry enough information for a human to grade the field *without* opening any other file — this is load-bearing for the multi-round protocol (§7.5), where most fields at seed v1 and v2 are gated and the reviewer's grades are the next round's calibration data. Per-field schema:
+  ```json
+  {
+    "<field_name>": {
+      "extracted_value": "<the actual extraction — string or structured object>",
+      "evidence_quote": "string|null",
+      "source_pages": [12, 47],
+      "verdict": "PASS|PASS_WITH_NOTE|RE_EXTRACT|HUMAN_REVIEW",
+      "rubric_answers": {"Q1": "yes", "Q2": "yes", "Q6b": "no"},
+      "composite": 0.62,
+      "applied_tau": 0.71,
+      "gated_to_human": true,
+      "gate_reason": "composite_below_tau|bucket_degenerate_severe|policy_private_individual|critic_verdict|null",
+      "failure_tag": "T01|...|null",
+      "bucket": "summary_narrative",
+      "artifact_stage": "v1",
+      "judge_model": "opus|sonnet"
+    }
+  }
+  ```
+- `rubric_answers` includes `Q6b` even though Q6(b) is logged-only at v1 (§3.5) — that's where the offline audit reads it from.
+- `gate_reason` distinguishes *why* a field was routed to human, which matters for diagnosing whether the gate is too conservative vs. the Critic being the binding constraint.
+- `artifact_stage` records which M-Cal stage produced the thresholds, so grades collected under v1 can be distinguished from grades collected under v2 during later recalibration.
 
 ### 3.13 `segment_b/year_adjudicator.py` (new, M1)
 - Adjudicator **always runs**. Inputs: all year mentions in first 5pp + last 3pp of front matter + signature/approval page (keyword-detected: `Approved | Signed | Date: | Transmittal`).
@@ -335,19 +368,21 @@ Segment B inherits M2 (Opus map-reduce) from Segment A. This amendment is an **i
 
 **Coverage:** applies to all five `summary.*` subfields (`project_description`, `affected_community`, `alternatives_overview`, `environmental_impact`, `public_response`). Not applied to `themes` (closed taxonomy — no prose), `key_people` (structured), `location` (structured).
 
+**Rollback path.** Before re-running M2 under the amended prompts (build item #4), archive the existing output: `cp -r segment_a/output/m2/ segment_a/output/m2_pre_amendment/`. Write the version marker `segment_a/output/m2/_prompt_version.txt` containing `v1_plain_language` after the rerun completes. This gives you (a) a side-by-side comparison to confirm the plain-language clause improved rather than degraded the summaries, and (b) a clean revert if it degraded them. Include a short before/after comparison on 2–3 subfields in `calibration_report.v(N).md`. If the amendment turns out to hurt — e.g., the gloss constraint causes Opus to drop substantive content to stay within cited-page support — revert the prompt, restore from `m2_pre_amendment/`, and reconsider the clause wording before re-attempting.
+
 ---
 
 ## §4. Direct answers to the four asks
 
 ### Q1. All acronyms defined on first mention
-Two-stage. Pre-pass builds a per-doc glossary from parenthetical expansions in the OCR (both `"Full Name (FN)"` and `"FN (Full Name)"`) plus any front/back-matter Acronyms/Glossary section. Post-pass rewrites first occurrence per output field. Fallback: `acronym_commons.v1.json` seed. Unknown acronyms are **tagged (T04), not rewritten** — the pipeline will not fabricate an expansion. Location: `segment_b/postproc/acronyms.py`, run after M2 extractors, before Critic. **This is a post-processor, not a prompt instruction** — prompt-only enforcement failed 8/8 in the Evaluation CSV. Determinism beats persuasion.
+Two-stage. Pre-pass builds a per-doc glossary from parenthetical expansions in the OCR (both `"Full Name (FN)"` and `"FN (Full Name)"`) plus any front/back-matter Acronyms/Glossary section. Post-pass rewrites first occurrence per output field. Fallback: `acronym_commons.v(N).json` seed. Unknown acronyms are **tagged (T04), not rewritten** — the pipeline will not fabricate an expansion. Location: `segment_b/postproc/acronyms.py`, run after M2 extractors, before Critic. **This is a post-processor, not a prompt instruction** — prompt-only enforcement failed 8/8 in the Evaluation CSV. Determinism beats persuasion.
 
 ### Q2. Anti-hallucination safeguard (nothing from outside the text)
 Four layers:
 1. **Schema-level:** all `summary.*` subfields require `{claim, page, evidence_quote}` triples; free-text without triples rejected at parse.
 2. **Prompt-level:** shared anti-hallucination clause in every Critic prompt (verbatim in §3.5) forcing `evidence_quote` emission before `verdict`.
 3. **Deterministic override:** Critic's own `evidence_quote` substring-checked against cited pages via `quote_check.py`. Failure → HUMAN_REVIEW.
-4. **Atomic decomposition + coordination-splitting** in `atomic_verify.py` for `summary.*` and `alternatives_overview`: each atomic claim independently quote-verified. The Lincoln Hwy "or important wildlife habitats are affected" clause becomes its own atom and fails verification.
+4. **Atomic decomposition + coordination-splitting** in `atomic_verify.py` across all five `summary.*` subfields: each atomic claim independently quote-verified. The Lincoln Hwy "or important wildlife habitats are affected" clause becomes its own atom and fails verification.
 
 Prompt words alone are known-insufficient (the wildlife-habitat hallucination happened despite prompt hygiene). Layers 3 and 4 are the load-bearing ones.
 
@@ -367,18 +402,18 @@ Prompt words alone are known-insufficient (the wildlife-habitat hallucination ha
 2. National/international → early return with `scope=national`, empty geocode list, textual "national".
 3. Site extraction with admin hierarchy per site; per-site geocoding with scope-specific rules.
 4. Site scope: bbox-containment cascade. Corridor: endpoints + midpoint, bbox-intersection. Regional: coarsest admin match with polygon-centroid fallback.
-5. Retain textual location on geocode failure. Vendor stack TBD (deferred to follow-up discussion).
+5. Retain textual location on geocode failure — a named place without coordinates is still valid output. Vendor stack is the US-optimized cascade specified in §3.9a (Census → GNIS → PAD-US → Mapbox → Nominatim), with a reduced-mode fallback if local assets aren't yet downloaded.
 
 ---
 
 ## §5. Prioritized build order
 
-Ranked by ROI × inverse effort. **Item #1.5 (M2 prompt amendment + re-extraction of the 20 calibration docs) is a hard prerequisite for #4 and #8** — τ must be calibrated against the same M2 prose Segment B will ship, or the frozen thresholds encode an untested distribution shift.
+Ranked by ROI × inverse effort. **Item #4 (M2 prompt amendment + re-extraction of the currently-graded calibration docs) is a hard prerequisite for #5 and #9** — τ must be calibrated against the same M2 prose Segment B will ship, or the frozen thresholds encode an untested distribution shift.
 
 1. `mcal/quote_check.py` — OCR-normalized fuzzy match, ±2 page tolerance. (½ day. Unlocks meaningful `s_quote` signal for everything downstream. Highest ROI.)
 2. `segment_b/critic.py` — evidence-first schema + deterministic quote-verify override + EVIDENCE input. (1 day. Requires #1.)
 3. `segment_b/postproc/acronyms.py` — pre-pass glossary + post-pass rewrite. (1 day.)
-4. **M2 summary prompt amendment** — plain-language + concreteness clause appended to `segment_a/m2.py` summary prompts. **Then re-run M2 on the 20 Segment A calibration docs** so downstream calibration operates on the same prose Segment B will produce. (½ day prompt edit + ~1 day compute for 20-doc rerun. HARD PREREQUISITE for #5 and #9.)
+4. **M2 summary prompt amendment** — plain-language + concreteness clause appended to `segment_a/m2.py` summary prompts. **Then re-run M2 on all currently-graded Segment A calibration docs** (9 at seed v1) so downstream calibration operates on the same prose Segment B will produce. Archive the pre-amendment output to `segment_a/output/m2_pre_amendment/` first (see §3.14 rollback note). (½ day prompt edit + ~½ day compute for a 9-doc rerun, scaling with corpus size at later stages. HARD PREREQUISITE for #5 and #9.)
 5. `mcal/atomic_verify.py` — Opus post-hoc decomposition + per-atom verification. (2 days. Requires #1 and #4.)
 6. `segment_b/postproc/key_people_pipeline.py` — role-restricted extraction + era gate + dependent-field cascade. (2 days.)
 7. `segment_b/postproc/location_pipeline.py` — scope classifier + scope-conditional cascade over Census / GNIS / PAD-US / Mapbox / Nominatim. (2 days pipeline logic + 1 day for user to download PAD-US and GNIS locally.)
@@ -390,12 +425,12 @@ Ranked by ROI × inverse effort. **Item #1.5 (M2 prompt amendment + re-extractio
 13. Opus routing for non-summary Critic calls (½ day config change).
 14. `segment_b/year_adjudicator.py` — always-run adjudicator (½ day, M1 improvement, could run parallel with #1–#3).
 
-**Explicitly deferred / skipped at n=20:**
+**Explicitly deferred / skipped at current calibration scale (n < ~60):**
 - DSPy/MIPRO prompt optimization (needs n≫20).
 - Per-field Platt/isotonic calibration (insufficient per-field data; bucketed CP instead).
 - ECE as headline metric (misleading at this scale).
-- Growing the failure taxonomy mid-round.
-- Fitting confidence signal weights from data (hand-set 0.5/0.5 in v1; revisit at v2).
+- Growing the failure taxonomy mid-round (taxonomy is frozen within a stage; new codes only at the next `mcal.build --stage`).
+- Fitting confidence signal weights from data (hand-set 0.5/0.5; revisit per §7.5 add-only guarantees).
 - Removing private-individual → HUMAN_REVIEW (policy call, permanent).
 - Salience/"most interesting" rubric for summaries (Option A vs B — tabled).
 
@@ -403,19 +438,19 @@ Ranked by ROI × inverse effort. **Item #1.5 (M2 prompt amendment + re-extractio
 
 ## §6. Metrics + acceptance criteria
 
-All gating targets stated as: **post-v1 rate `p̂` on n=20 has Clopper-Pearson 95% lower confidence bound ≥ baseline point estimate `p_0` from the 8-doc CSV.**
+All gating targets stated as: **post-amendment rate `p̂` measured on the current stage's graded corpus (n_stage) has Clopper-Pearson 95% lower confidence bound ≥ baseline point estimate `p_0` from the original 8-doc CSV.**
 
-Required N per target (for 80% power to detect the specified effect size) is computed and published in `calibration_report.v1.md`. **Targets requiring N > 20 are demoted to diagnostic.**
+Required N per target (for 80% power to detect the specified effect size) is computed and published in `calibration_report.v(N).md`. **Targets requiring N > n_stage are demoted to diagnostic for that stage** and re-evaluated as the corpus grows.
 
-### Gating targets (all must pass)
+### Gating targets (all must pass — from stage v2 onward; see Overall acceptance)
 
 | Metric | Baseline (8-doc) | Gating rule |
 |---|---|---|
-| Acronyms defined on first use per field | 0/8 | CP_LCB_95(p̂, n=20) ≥ 0.70 (equivalent to observing ≥18/20) |
-| `key_people` — post-1978 docs' commenters not labeled cooperators | 3/8 | CP_LCB_95(p̂, n=20) ≥ 0.375 |
+| Acronyms defined on first use per field | 0/8 | CP_LCB_95(p̂, n_stage) ≥ 0.70 |
+| `key_people` — post-1978 docs' commenters not labeled cooperators | 3/8 | CP_LCB_95(p̂, n_stage) ≥ 0.375 |
 | Missing-citation rate, `summary.public_response` | 4/8 (50%) | CP_UCB_95 of missing-rate < 0.5 |
 | Numeric-hallucination rate, `summary_numeric` | 2/8 (25%) | CP_UCB_95 of hallucination-rate < 0.25 |
-| Outside-text fabrication rate, `summary.*` | 1/8 | ≤ 1/20 AND any observed fabrication must be caught by `atomic_verify.py` (subfield → RE_EXTRACT or HUMAN_REVIEW). A fabrication that slips through the atomic verifier fails the gate regardless of count. |
+| Outside-text fabrication rate, `summary.*` | 1/8 | Any observed fabrication must be caught by `atomic_verify.py` (subfield → RE_EXTRACT or HUMAN_REVIEW). A fabrication that slips through the atomic verifier fails the gate regardless of count. |
 
 ### Diagnostic targets (reported, non-gating)
 
@@ -424,9 +459,9 @@ Required N per target (for 80% power to detect the specified effect size) is com
 - `location` scope-classification correct (no baseline)
 - Per-primary-site geocode success excluding national (no clean baseline)
 - Critic `evidence_quote` verifiable rate (new signal)
-- Gate rate at published τ (from `gate_simulation.v1.json`)
+- Gate rate at published τ (from `gate_simulation.v(N).json`)
 - CP empirical coverage on calibration (should be ≥ 1−α by construction; report anyway)
-- **`atomic_verify.py` false-negative rate** on correctly-graded subfields (from `atomic_verify_failure_log.v1.json`, per §3.4). Target: ≤ 10%. Exceeding this triggers a decomposition-prompt review before freezing.
+- **`atomic_verify.py` false-negative rate** on correctly-graded subfields (from `atomic_verify_failure_log.v(N).json`, per §3.4). Target ≤ 10%. **Advisory at seed v1** (atom sample too small); **gating from v2 onward** — exceeding it triggers a decomposition-prompt review before freezing.
 - **Null-tag rate on HUMAN_REVIEW routes.** In Segment B, whenever a field routes to HUMAN_REVIEW with `failure_tag = null`, it means the taxonomy did not have a matching category. Aggregate this per bucket in `run_manifest.json`; if the null-tag rate exceeds **15%** in any bucket during a Segment B batch, this is a signal that the taxonomy needs a `v(N+1)` refresh with new `T17+` codes. Reported in a rolling `null_tag_monitor.json` at the batch level; not a Segment B halt condition, but a mandatory input to the next M-Cal recalibration.
 
 ### Overall acceptance
@@ -435,14 +470,18 @@ Required N per target (for 80% power to detect the specified effect size) is com
 1. All 14 build items ship and pass their own unit tests.
 2. `atomic_verify_failure_log.v1.json` is reviewed by user; obvious prompt gaps (coreference, negation) are patched before moving to v2.
 3. `taxonomy.v1.json` is human-ratified.
-4. Segment B runs end-to-end on ≥3 pilot docs and emits `run_manifest.json` with raw extractions preserved for HUMAN_REVIEW / gated fields.
-5. Cost Summary in `calibration_report.v1.md` is within expected order-of-magnitude of the §7 Q2 estimate.
+4. Segment B runs end-to-end on ≥3 pilot docs and emits `run_manifest.json` with the full per-field schema in §3.12 — including `extracted_value`, `evidence_quote`, and `source_pages` for HUMAN_REVIEW / gated fields, so they can actually be graded.
+5. M2 before/after comparison (per §3.14 rollback note) shows the plain-language amendment did not degrade summary substance.
+6. Cost Summary in `calibration_report.v1.md` is within expected order-of-magnitude of the §7 Q2 estimate.
 
-Seed v1 will have most buckets `degenerate_severe=true`; that's the point. **Do not gate seed v1 on the CP-interval criteria below.**
+Seed v1 will have most buckets `degenerate_severe=true`; that's the point. **Do not gate seed v1 on the CP-interval criteria above.**
 
-**v2 and beyond (n≥19):** all gating targets pass (CP-interval discipline as stated above), AND no regression on any field currently ok in ≥7/8 of the seed corpus, AND at least 4/6 buckets have `degenerate = false` in `thresholds.v(N).json`.
+**v2 and beyond (n≥19):** all of the following must hold:
+1. All gating targets in the table above pass under CP-interval discipline at that stage's n.
+2. No regression on any field graded `ok` in ≥7/8 of the original seed corpus.
+3. At least 4 of 6 buckets have `degenerate = false` in `thresholds.v(N).json`.
 
-If (3) fails at v2, recalibrate at higher α or defer freezing until the next grading batch. Full-scale Segment B (production runs beyond calibration-targeted batches) begins only when v(N) meets the v2+ acceptance criteria above.
+If (3) fails, recalibrate at higher α or defer freezing until the next grading batch. **Full-scale Segment B** (production runs beyond calibration-targeted batches) begins only when a stage satisfies all three conditions AND the smallest non-empty bucket has `N_wrong_docs ≥ 15`.
 
 ---
 
@@ -451,7 +490,7 @@ If (3) fails at v2, recalibrate at higher α or defer freezing until the next gr
 | # | Question | Decision |
 |---|---|---|
 | Q1 | Grading completeness / freeze cadence | **Multi-round protocol.** M-Cal freezes at three named stages: **seed v1** at n=9 (current), **v2** after the next ~10 graded docs (n≈19), **v3** after another ~10 (n≈29), and so on. Each stage produces a fully-frozen artifact set; Segment B pins the current stage. At seed v1 and v2, most buckets will have `N_wrong_docs < 15` and will be flagged `degenerate` or `degenerate_severe`; this is expected. Buckets with `degenerate_severe=true` route all fields to HUMAN_REVIEW. Recalibration to v(N+1) happens whenever an additional ~10 docs are graded; `mcal.build --stage v2 --prior v1` (etc.) reads the v1 taxonomy add-only and refits thresholds on the augmented calibration set. Full-scale Segment B (i.e., production runs beyond calibration-targeted batches) begins only when the smallest non-empty bucket has `N_wrong_docs ≥ 15`. |
-| Q2 | Opus judge budget | Opus for `summary.*` (5 subfields) + `alternatives_overview` atomic verification only. Sonnet for everything else. Estimated ~1.4× total Segment B judge cost, ~$3–4/doc marginal on those fields, ~$6–8k marginal at 2000 docs. Fallback if too expensive: 2-Sonnet ensemble. |
+| Q2 | Opus judge budget | Opus for the five `summary.*` subfields' atomic verification (`project_description`, `affected_community`, `alternatives_overview`, `environmental_impact`, `public_response`). Sonnet for everything else. Estimated ~1.4× total Segment B judge cost, ~$3–4/doc marginal on those fields, ~$6–8k marginal at 2000 docs. Fallback if too expensive: 2-Sonnet ensemble on the same five. |
 | Q3 | Critic cited-pages input | Critic receives the full OCR text of `[min(cited_pages)−2 .. max(cited_pages)+2]` interleaved with `[[PAGE n]]` markers, in a dedicated `EVIDENCE` prompt section. Baked into all prompts in §3.5. |
 | Q4 | α value | α = 0.15 across all buckets. Degenerate buckets get `α_effective = 0.25`. Not renegotiated per-field. |
 | Q5 | Blinded reviewer UI | Two-column CSV workflow. Reviewer fills `your_grade` and `your_failure_tag` in one pass **without seeing `critic_verdict`**; a second pass reveals the Critic column for meta-analysis only. No new tool. |
@@ -500,19 +539,13 @@ This section formalizes the user's iterative calibration workflow. It supersedes
 
 ---
 
-- **Salience/"most interesting" rubric for summary content.** Currently the map-reduce produces proportional condensation. Two options tabled:
-  - **Option A (light):** salience rubric embedded in the M2 map-reduce prompt.
-  - **Option B (heavier):** two-pass with `salience_reason` tags on candidate claims (`contested | unusual_impact | large_magnitude | novel_alternative | community_pushback | precedent | none`).
-  - Decision needs: (i) A vs B, (ii) whose "interestingness" the pipeline optimizes for (policy researcher, community-impact scholar, environmental engineer differ).
-
----
-
 ## §9. Provenance
 
 - Research report: Anthropic Claude general-purpose research agent, targeted literature review on hallucination reduction, LLM-as-judge reliability, confidence calibration from small human-labeled sets, learning from small graded sets, HITL queue design, EIS-specific gotchas.
 - Plan authored via adversarial Planner↔Critic loop across 3 rounds (v1 → critique → v2 → critique → v3 → AGREED).
 - Independent fresh-eyes review round after v3 lockdown surfaced 8 substantive fixes (S1–S8) plus 4 minor cleanup items; all folded into this document (build ordering, atomic_verify coreference/negation rules, geocoder graceful degradation, "private individual" operational definition, CP guarantee per-doc notation, LOO curation-slack scope, acronyms gate tightening to LCB ≥ 0.70, null-tag monitoring, s_quote M1 default, Q6(b) demotion, cost summary in calibration report).
 - Multi-round calibration protocol added post-review (§0, §3.7, §6, §7 Q1, §7 Q8, §7.5) to support the user's chosen workflow of building seed v1 on 9 grades, iterating via `active_select.py` at ~10-doc cadence, and reaching full-scale Segment B only after buckets clear CP-interval acceptance.
+- Consistency pass (final) resolved 15 items: duplicated §8 block; `run_manifest.json` schema expanded to carry `extracted_value` / `evidence_quote` / `source_pages` / `rubric_answers` / `gate_reason` / `artifact_stage` (required for grading gated fields); stale "vendor stack TBD" in §4 Q4; build-order cross-references; taxonomy rule corrected to T17+/T01–T16; `next_batch.csv` sized to ~10 docs to match cadence; weight-freeze horizon aligned between §3.3 and §7.5; private-individual definition moved out of the middle of the rubric list; `alternatives_overview` double-counting removed in §3.11/§4/§7 Q2; `.v1` → `.v(N)` stage-versioning throughout; `n=20` references generalized to `n_stage`; dangling "(3)" reference in §6 numbered; M2 amendment rollback path added (§3.14); no-observed-failure note added for `title`/`themes`/`lead_agency`/`summary.overview` (§1); §3.9a coverage percentages relabeled as a-priori expectations rather than measured values.
 - Human evaluation input: `May25/Evaluation - Sheet1.csv` (8 docs of 9 graded at time of writing).
 - Source pipeline spec: `May25/Pipeline.pdf`.
 - Existing implementation: `May25/segment_a/`.
