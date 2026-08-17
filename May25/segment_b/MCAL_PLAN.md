@@ -619,3 +619,148 @@ This section formalizes the user's iterative calibration workflow. It supersedes
 - Human evaluation input: `May25/Evaluation - Sheet1.csv` (8 docs of 9 graded at time of writing).
 - Source pipeline spec: `May25/Pipeline.pdf`.
 - Existing implementation: `May25/segment_a/`.
+
+---
+
+## §10. Implementation addendum — empirical findings
+
+Added during implementation. The plan above is left as ratified; this section
+records where the code deviates from it and why, so the original's provenance
+stays intact. Every claim here is reproducible from the test suite.
+
+### §10.1 Corrections to stated facts
+
+| Plan says | Actually | Consequence |
+|---|---|---|
+| §0, §6: `n=9` graded at seed v1 | **n=8.** `p0491_35556036091957` has a grading sheet and OCR but no Evaluation-sheet column, so it is ungraded. | `mcal/grades.py` warns loudly. All acceptance arithmetic uses 8. |
+| §3.1: grades live in `grading_sheets/*.csv` filtered on `your_grade != "ok"` | **0 of 333 rows are graded**, and `"ok"` is not in that file's vocabulary (`grading.py:21` = `correct\|minor_issue\|wrong\|cant_tell`). Grades are in the transposed, free-text `Evaluation - Sheet1.csv`. | `mcal/grades.py` reads both shapes; the Evaluation sheet is the seed-v1 source, per-doc sheets take over from v2. |
+| §1(9): `location` "5/8 issues" | **6/8.** Randolph + LA Transit (no geocode), Airport Spur (specificity), Buffalo + Lincoln Hwy (partial multi-site), Fuel Economy (national). Only Operation Breakthrough and Bad Creek are clean. | `location` is the worst field in the corpus, not the second-worst. |
+| §1(10): `key_people` 5/8 | 5/8 for the cooperator mode specifically, but **6/8 defective** (Fuel Economy is "nearly empty" — under-inclusion, a different failure) and Lincoln Hwy is ungraded, so the denominator is 7. | New code `T20_role_bucket_underpopulated`. |
+| §0, §3.2: chunking is 125k-char with pages estimated `char_offset / 2500` | **Does not exist.** `config.py` chunks in real pages (`CHUNK_PAGES = 50`) and page numbers are exact from per-page JSON. `pages.py:52` already has a real char→page index. | ±2 page tolerance is retained on different grounds (OCR noise, page-seam straddling), documented in `settings.QUOTE_PAGE_TOLERANCE`. |
+| §3.2: `partial_ratio ≥ 90 → yes, 60–90 → mixed` | The 60 floor is **below the chance ceiling**. Measured over 444 verified quotes scored against foreign documents: median 49.5, p95 58.9, and up to **67.7 for quotes under 40 chars**. | A second orthogonal gate (content-token coverage) was added. See §10.2. |
+| §1(3), §1(4): both numeric errors are hallucinations from map-reduce "decoupling", fixable by atomic decomposition + substring verification | **Both are substring-true and correctly coupled.** See §10.3. | New code `T19_scope_qualifier_dropped`; generation-side mitigation in the §3.14 clause. |
+| §3.5: rubrics reference tags per field | Four rubrics referenced tags absent from their own field's vocabulary (`T02` on `affected_community`, `T03` on `alternatives`/`themes`, `T05` on `lead_agency`); `T04` was unavailable on 6 fields whose shared Q3 mandates it. | `taxonomy.applies_to` widened; `critic_prompt.check_tag_references` now fails the build on any dangling reference. An untaggable defect becomes `failure_tag: null` and pollutes the §6 null-tag monitor — the very signal that decides when the taxonomy needs new codes. |
+
+### §10.2 quote_check needs two gates, not one
+
+`rapidfuzz.partial_ratio` slides a window over a long page and finds a decent
+alignment by luck, and the shorter the needle the worse it gets. Atomic claims
+are short by construction (§3.4 asks for one subject-predicate-object each), so
+a ratio-only gate would have been a systematic false-accept in atomic
+verification.
+
+The Lincoln Hwy fabricated clause "or important wildlife habitats are affected"
+scores **62.8** against its own cited pages — clearing the plan's 60 floor —
+despite being absent from the document.
+
+Content-token coverage (fraction of a quote's content words, ≥4 chars,
+non-stopword, NEPA boilerplate excluded, present on the page) separates cleanly
+because it is insensitive to window position:
+
+```
+                     true positives    foreign quotes
+partial_ratio        median 100.0      median 49.5, p95 58.9, max 100.0
+content coverage     median   1.00     median  0.10, p95  0.33, max   0.67
+```
+
+At `coverage ≥ 0.70`: **0.0% false-negative, 0.0% false-positive** on 444
+quotes. The wildlife clause scores 0.00. Both gates must now pass; coverage is
+the binding one. Reproduced by
+`tests/test_quote_check.py::TestAgainstCorpus`.
+
+### §10.3 Both "numeric hallucinations" are scope-qualifier loss, and one is uncatchable
+
+**`summary.project_description`, LA Transit — "$659 million (Alt. V)".** The
+figure is on pp.31/214/215 and *correctly* paired with Alternative V. p.283
+scopes it: *"For the Rail/Bus Alternatives I–V, the capital costs in 1977
+dollars range from 659 million and 1.120 billion dollars."* The summary dropped
+that restriction and presented $659M as the overall minimum; the true overall
+minimum is $369M (Alt. XI, an all-bus option). Not a fabrication — a dropped
+qualifier. **This one is catchable** by the mandatory-qualifier rule: a range
+endpoint requires a qualifier, and p.283's qualifier does not verify against the
+cited p.214 window.
+
+**`summary.environmental_impact`, LA Transit — "Magnitude 7.5".** p.146 states
+verbatim: *"a Magnitude 7.5 earthquake occurring on the Newport-Inglewood
+Fault"*, and p.144's Figure IV.4 "Maximum Credible Earthquake Richter Magnitude"
+also lists Newport-Inglewood at **7.5**. The human's 7.0 comes from p.145:
+*"a Magnitude 7.0 is reasonable for the maximum credible event"* — same fault,
+same quantity. **The document contradicts itself, table versus narrative.**
+
+Consequences, all pinned in `tests/test_env_impact_magnitude_75_vs_70.py` so
+they stay visible rather than looking like a passing gate:
+
+- `check_quote(..., require_numeric=True)` returns `verified="yes"`, `numeric_ok=True`. Correct, and unavoidable.
+- §1(4)'s prescribed fix — coordination splitting — **does not fire** on this sentence; the coordination sits inside a prepositional object.
+- A summary that keeps its qualifier and still picks the table value over the narrative value passes every automated check in the module. **A human reader comparing pages is the only detector.**
+- §6's gating target "numeric-hallucination rate `CP_UCB_95 < 0.25`" therefore contains one case the specified mechanism cannot catch. The target should be read as covering the *fabrication* class only.
+
+The `atomic_verify` atom schema gained a `scope_qualifier` field and a
+comparative/superlative/range check, and the §3.14 clause gained a
+"preserve scope qualifiers exactly" paragraph — a generation-side mitigation,
+since verification cannot reach this class.
+
+### §10.4 T01 (missing citation) is invisible to the frozen composite
+
+The single most common failure — 10 of 30 wrong items, 4/8 docs on
+`summary.public_response` — cannot be separated by `0.5·s_quote + 0.5·s_critic`.
+Measured over the 40 graded summary subfields:
+
+```
+graded "ok, missing citation - pg ..."   n=10   mean s_quote 0.960   evidence/sentence 2.50
+graded clean "ok"                        n=27   mean s_quote 0.988   evidence/sentence 2.10
+```
+
+A 0.028 gap, AUROC near chance. The mechanism: every citation the extractor
+*did* make verifies fine — the defect is a claim made *without* one, and
+`s_quote` averages only over evidence that exists. The obvious field-level proxy
+points the **wrong way** (defective subfields carry *more* evidence per
+sentence), which rules out a cheap fix.
+
+Only atom-level citation coverage separates them, which makes build item #6
+(`atomic_verify.py`) a prerequisite for calibrating T01 rather than an
+enhancement. Exposed as `DocumentVerification.citation_rates()` in the exact
+shape `confidence.compute_signals(citation_rate=...)` accepts. Pinned in
+`tests/test_atomic_verify.py::TestT01Invisibility`.
+
+### §10.5 The degeneracy gates are the conformal feasibility boundaries
+
+§3.3's `N_wrong_docs < 6` and `< 3` gates are not heuristics. With
+`k = ceil((n+1)(1-α))` as the order statistic:
+
+```
+α = 0.15:  n=6 → k=6  feasible (exactly)   n=5 → k=6  INFEASIBLE
+α = 0.25:  n=3 → k=3  feasible (exactly)   n=2 → k=3  INFEASIBLE
+```
+
+`confidence.py` derives degeneracy from feasibility directly and cross-checks
+against the plan's constants, so a renegotiated α moves the gates automatically
+instead of silently invalidating them. A consequence worth stating: at n=6 and
+n=3, `k = n`, so τ is the **maximum** observed wrong-item score. Early-stage
+thresholds mean "beat every wrong item we have ever seen".
+
+### §10.6 The composite is too coarse to gate on at seed v1
+
+`s_quote ∈ {0, 0.5, 1}` and `s_critic ∈ {0, 0.3, 0.7, 1}` yield only ~12
+distinct composite values. With n=8 docs, τ almost always lands exactly on a tie
+cluster, and since acceptance is strict `>`, everything in that cluster is
+gated. Observed on a dry run: **5 of 7 buckets gate 100% of items, including
+`false_defer_rate = 1.0`** — every *correct* item gated too.
+
+§7.5 predicted "mostly HUMAN_REVIEW" at seed v1 and treats it as intended. It is
+worth being precise that the cause is *score granularity* as much as sample
+size, and that it is fixed by the same thing that fixes §10.4: continuous
+atom-level signals. Until then, seed-v1 and v2 Segment B runs are grading
+instruments, not extraction runs.
+
+### §10.7 Other deviations
+
+- **`summary.overview` bucket.** §3.3 omits it from `summary_narrative`; §1 assigns it there. Followed §1 — otherwise the field has no bucket and can never be gated.
+- **`page` is derived, not model-supplied.** §3.15's schema asks the model for `page`, but the M2 reduce payload only shows per-chunk page *ranges*, so a model-supplied page would fail verification for the wrong reason. `verify_and_locate` resolves it, as every other M2 field does.
+- **M2 prompts extracted to `mcal/templates/`.** §3.14 calls for an in-place edit, but the prompts were two inline literals covering all subfields at once, and the §3.7 version marker is meaningless without a file to version. The clause now has one source of truth shared by the generator and by Critic Q6, which grades it.
+- **§7 Q3's evidence window is unusable literally.** `[min−2 .. max+2]` over LA Transit's real citation set spans 187 pages. Implemented as literal-contiguous while ≤30 pages, else per-citation windows merged.
+- **§3.6's "predicted composite variance" is not computable** for the candidate pool by definition — those docs have no extraction. Replaced with a documented cold-start heuristic over cheap document features, explicitly labelled `calibrated: false`.
+- **`gate_reason` enum extended** with `dependent_field_cascade`, `reduced_geocoder_stack`, `extraction_missing`, `critic_missing`. The §3.12 enum cannot express them, and folding them into existing values would destroy the diagnostic that distinguishes a too-conservative gate from a binding Critic.
+- **Acronym issues do not set `y_i = 0`.** §3.5 routes T04 to `PASS_WITH_NOTE`, so folding the doc-level note into correctness would mark every summary field of all 8 docs wrong and erase the distinction between an unglossed acronym and a fabricated magnitude. Recorded as an `acronym_issue` flag feeding `s_acronym` and the §6 target.
+- **No graded document has an Abbreviations/Acronyms/Glossary section** — they predate the convention — so §3.8's section parser is exercised only by synthetic tests. Doc-derived expansions also faithfully carry OCR damage (`NAAQS → "National Annient Air Quality Standard"`) because §3.8 gives the doc glossary priority over the commons.
+- **`year` has two unreachable targets.** Operation Breakthrough's graded 1976 appears nowhere in its OCR (max year present: 1973); Lincoln Hwy's 1971 appears only in body prose outside every window §3.13 specifies, while the document's own approval block reads "DATE: DEC 3 1976". The deterministic tier reaches 6/8 versus a 3/8 baseline.

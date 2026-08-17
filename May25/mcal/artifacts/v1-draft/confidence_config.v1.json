@@ -1,0 +1,104 @@
+{
+  "signals": [
+    {
+      "name": "s_quote",
+      "weight": 0.5
+    },
+    {
+      "name": "s_critic",
+      "weight": 0.5
+    },
+    {
+      "name": "s_source",
+      "weight": 0.0
+    },
+    {
+      "name": "s_citation",
+      "weight": 0.0
+    },
+    {
+      "name": "s_shard",
+      "weight": 0.0
+    },
+    {
+      "name": "s_acronym",
+      "weight": 0.0
+    }
+  ],
+  "weights_frozen_until_stage": "v3",
+  "per_field_overrides": {},
+  "dependent_fields": {
+    "year": [
+      "key_people"
+    ]
+  },
+  "geocoder_stack": "reduced",
+  "judge_model_by_field": {
+    "title": "sonnet",
+    "year": "sonnet",
+    "eis_type": "sonnet",
+    "lead_agency": "sonnet",
+    "summary.overview": "sonnet",
+    "summary.project_description": "opus",
+    "summary.affected_community": "opus",
+    "summary.alternatives_overview": "opus",
+    "summary.environmental_impact": "opus",
+    "summary.public_response": "opus",
+    "summary_of_interest": "opus",
+    "alternatives": "sonnet",
+    "themes": "sonnet",
+    "location": "sonnet",
+    "key_people": "sonnet"
+  },
+  "s_quote_default_m1": 1.0,
+  "critic_verdict_scores": {
+    "PASS": 1.0,
+    "PASS_WITH_NOTE": 0.7,
+    "RE_EXTRACT": 0.3,
+    "HUMAN_REVIEW": 0.0
+  },
+  "quote_verdict_scores": {
+    "yes": 1.0,
+    "mixed": 0.5,
+    "no": 0.0
+  },
+  "quote_check": {
+    "page_tolerance": 2,
+    "ratio_yes": 90.0,
+    "ratio_mixed": 60.0,
+    "coverage_yes": 0.7,
+    "coverage_mixed": 0.4
+  },
+  "buckets": {
+    "M1": [
+      "title",
+      "year",
+      "eis_type",
+      "lead_agency"
+    ],
+    "summary_narrative": [
+      "summary.overview",
+      "summary.project_description",
+      "summary.affected_community",
+      "summary.alternatives_overview",
+      "summary.public_response"
+    ],
+    "summary_numeric": [
+      "summary.environmental_impact"
+    ],
+    "summary_of_interest": [
+      "summary_of_interest"
+    ],
+    "alternatives+themes": [
+      "alternatives",
+      "themes"
+    ],
+    "location": [
+      "location"
+    ],
+    "key_people": [
+      "key_people"
+    ]
+  },
+  "version": "v1"
+}

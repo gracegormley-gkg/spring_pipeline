@@ -1,0 +1,256 @@
+{
+  "version": "v1",
+  "alpha": 0.15,
+  "alpha_effective_degenerate": 0.25,
+  "accept_rule": "accept iff composite > tau_deployed",
+  "buckets": {
+    "M1": {
+      "bucket": "M1",
+      "alpha": 0.15,
+      "alpha_effective": 0.25,
+      "N_wrong_docs": 3,
+      "n_items": 32,
+      "n_wrong_items": 4,
+      "tau_raw": 0.5,
+      "curation_slack": 0.0,
+      "tau_deployed": 0.5,
+      "saturated": false,
+      "guarantee_conditioning": "P(exists i in doc : s_i > tau_M1 | y_i = 0, doc has >=1 wrong item in bucket M1, doc exchangeable with Segment A) <= 0.25. Distribution shift to full-corpus Segment B untested at this stage.",
+      "degenerate": true,
+      "degenerate_severe": false,
+      "gate_all_to_human": false,
+      "loo_deltas": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "wrong_docs": [
+        "p1074_35556036058550",
+        "p1074_35556038322269",
+        "p1074_35556039563135"
+      ],
+      "r_docs": {
+        "p1074_35556036058550": 0.5,
+        "p1074_35556038322269": 0.5,
+        "p1074_35556039563135": 0.5
+      },
+      "notes": [
+        "n=3 wrong docs is infeasible at alpha=0.15 (needs the 4-th of 3 order statistics); relaxed to alpha_effective=0.25.",
+        "k == n == 3: tau is the MAXIMUM observed wrong-item score, so acceptance requires beating every wrong item in the calibration set. Expected and correct at this sample size."
+      ]
+    },
+    "summary_narrative": {
+      "bucket": "summary_narrative",
+      "alpha": 0.15,
+      "alpha_effective": 0.25,
+      "N_wrong_docs": 5,
+      "n_items": 40,
+      "n_wrong_items": 10,
+      "tau_raw": 1.0,
+      "curation_slack": 0.0,
+      "tau_deployed": 1.0,
+      "saturated": true,
+      "guarantee_conditioning": "P(exists i in doc : s_i > tau_summary_narrative | y_i = 0, doc has >=1 wrong item in bucket summary_narrative, doc exchangeable with Segment A) <= 0.25. Distribution shift to full-corpus Segment B untested at this stage.",
+      "degenerate": true,
+      "degenerate_severe": false,
+      "gate_all_to_human": false,
+      "loo_deltas": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "wrong_docs": [
+        "p1074_35556036546182",
+        "p1074_35556036806586",
+        "p1074_35556036861797",
+        "p1074_35556038322269",
+        "p1074_35556039563135"
+      ],
+      "r_docs": {
+        "p1074_35556036546182": 0.85,
+        "p1074_35556036806586": 1.0,
+        "p1074_35556036861797": 0.5,
+        "p1074_35556038322269": 1.0,
+        "p1074_35556039563135": 0.25
+      },
+      "notes": [
+        "n=5 wrong docs is infeasible at alpha=0.15 (needs the 6-th of 5 order statistics); relaxed to alpha_effective=0.25.",
+        "k == n == 5: tau is the MAXIMUM observed wrong-item score, so acceptance requires beating every wrong item in the calibration set. Expected and correct at this sample size.",
+        "tau_raw + curation_slack = 1.0000 >= 1.0, clamped to 1.0. Since acceptance requires composite > tau, a clamped threshold rejects everything -- functionally equivalent to gate_all_to_human for this bucket."
+      ]
+    },
+    "summary_numeric": {
+      "bucket": "summary_numeric",
+      "alpha": 0.15,
+      "alpha_effective": 0.25,
+      "N_wrong_docs": 3,
+      "n_items": 8,
+      "n_wrong_items": 3,
+      "tau_raw": 1.0,
+      "curation_slack": 0.15,
+      "tau_deployed": 1.0,
+      "saturated": true,
+      "guarantee_conditioning": "P(exists i in doc : s_i > tau_summary_numeric | y_i = 0, doc has >=1 wrong item in bucket summary_numeric, doc exchangeable with Segment A) <= 0.25. Distribution shift to full-corpus Segment B untested at this stage.",
+      "degenerate": true,
+      "degenerate_severe": false,
+      "gate_all_to_human": false,
+      "loo_deltas": [
+        0.0,
+        0.15,
+        0.0
+      ],
+      "wrong_docs": [
+        "p1074_35556036105336",
+        "p1074_35556038322269",
+        "p1074_35556039563135"
+      ],
+      "r_docs": {
+        "p1074_35556036105336": 0.85,
+        "p1074_35556038322269": 1.0,
+        "p1074_35556039563135": 0.5
+      },
+      "notes": [
+        "n=3 wrong docs is infeasible at alpha=0.15 (needs the 4-th of 3 order statistics); relaxed to alpha_effective=0.25.",
+        "k == n == 3: tau is the MAXIMUM observed wrong-item score, so acceptance requires beating every wrong item in the calibration set. Expected and correct at this sample size.",
+        "tau_raw + curation_slack = 1.1500 >= 1.0, clamped to 1.0. Since acceptance requires composite > tau, a clamped threshold rejects everything -- functionally equivalent to gate_all_to_human for this bucket."
+      ]
+    },
+    "summary_of_interest": {
+      "bucket": "summary_of_interest",
+      "alpha": 0.15,
+      "alpha_effective": 0.25,
+      "N_wrong_docs": 0,
+      "n_items": 0,
+      "n_wrong_items": 0,
+      "tau_raw": null,
+      "curation_slack": 0.0,
+      "tau_deployed": Infinity,
+      "saturated": false,
+      "guarantee_conditioning": "No finite threshold achieves the target error rate at this calibration size; bucket is gated entirely to HUMAN_REVIEW. No statistical guarantee is claimed or needed.",
+      "degenerate": true,
+      "degenerate_severe": true,
+      "gate_all_to_human": true,
+      "loo_deltas": [],
+      "wrong_docs": [],
+      "r_docs": {},
+      "notes": [
+        "No graded wrong items in this bucket, so there is nothing to calibrate against. Gating to HUMAN_REVIEW is the only sound action -- an empty calibration set is not evidence of quality."
+      ]
+    },
+    "alternatives+themes": {
+      "bucket": "alternatives+themes",
+      "alpha": 0.15,
+      "alpha_effective": 0.25,
+      "N_wrong_docs": 1,
+      "n_items": 16,
+      "n_wrong_items": 1,
+      "tau_raw": null,
+      "curation_slack": 0.0,
+      "tau_deployed": Infinity,
+      "saturated": false,
+      "guarantee_conditioning": "No finite threshold achieves the target error rate at this calibration size; bucket is gated entirely to HUMAN_REVIEW. No statistical guarantee is claimed or needed.",
+      "degenerate": true,
+      "degenerate_severe": true,
+      "gate_all_to_human": true,
+      "loo_deltas": [],
+      "wrong_docs": [
+        "p1074_35556036811230"
+      ],
+      "r_docs": {
+        "p1074_35556036811230": 0.15
+      },
+      "notes": []
+    },
+    "location": {
+      "bucket": "location",
+      "alpha": 0.15,
+      "alpha_effective": 0.15,
+      "N_wrong_docs": 6,
+      "n_items": 8,
+      "n_wrong_items": 6,
+      "tau_raw": 1.0,
+      "curation_slack": 0.15,
+      "tau_deployed": Infinity,
+      "saturated": true,
+      "guarantee_conditioning": "No finite threshold achieves the target error rate at this calibration size; bucket is gated entirely to HUMAN_REVIEW. No statistical guarantee is claimed or needed.",
+      "degenerate": false,
+      "degenerate_severe": false,
+      "gate_all_to_human": true,
+      "loo_deltas": [
+        0.15,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "wrong_docs": [
+        "p1074_35556036105336",
+        "p1074_35556036546182",
+        "p1074_35556036811230",
+        "p1074_35556036861797",
+        "p1074_35556038322269",
+        "p1074_35556039563135"
+      ],
+      "r_docs": {
+        "p1074_35556036105336": 1.0,
+        "p1074_35556036546182": 0.6,
+        "p1074_35556036811230": 0.85,
+        "p1074_35556036861797": 0.0,
+        "p1074_35556038322269": 0.85,
+        "p1074_35556039563135": 0.85
+      },
+      "notes": [
+        "k == n == 6: tau is the MAXIMUM observed wrong-item score, so acceptance requires beating every wrong item in the calibration set. Expected and correct at this sample size.",
+        "tau_raw + curation_slack = 1.1500 >= 1.0, clamped to 1.0. Since acceptance requires composite > tau, a clamped threshold rejects everything -- functionally equivalent to gate_all_to_human for this bucket.",
+        "Forced to gate_all_to_human by the build (reduced geocoder stack). The threshold statistics above are retained for reference but are not in force."
+      ]
+    },
+    "key_people": {
+      "bucket": "key_people",
+      "alpha": 0.15,
+      "alpha_effective": 0.15,
+      "N_wrong_docs": 6,
+      "n_items": 7,
+      "n_wrong_items": 6,
+      "tau_raw": 1.0,
+      "curation_slack": 0.0,
+      "tau_deployed": 1.0,
+      "saturated": true,
+      "guarantee_conditioning": "P(exists i in doc : s_i > tau_key_people | y_i = 0, doc has >=1 wrong item in bucket key_people, doc exchangeable with Segment A) <= 0.15. Distribution shift to full-corpus Segment B untested at this stage.",
+      "degenerate": false,
+      "degenerate_severe": false,
+      "gate_all_to_human": false,
+      "loo_deltas": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "wrong_docs": [
+        "p1074_35556036058550",
+        "p1074_35556036105336",
+        "p1074_35556036546182",
+        "p1074_35556036806586",
+        "p1074_35556036861797",
+        "p1074_35556038322269"
+      ],
+      "r_docs": {
+        "p1074_35556036058550": 0.85,
+        "p1074_35556036105336": 0.85,
+        "p1074_35556036546182": 0.25,
+        "p1074_35556036806586": 1.0,
+        "p1074_35556036861797": 1.0,
+        "p1074_35556038322269": 0.85
+      },
+      "notes": [
+        "k == n == 6: tau is the MAXIMUM observed wrong-item score, so acceptance requires beating every wrong item in the calibration set. Expected and correct at this sample size.",
+        "tau_raw + curation_slack = 1.0000 >= 1.0, clamped to 1.0. Since acceptance requires composite > tau, a clamped threshold rejects everything -- functionally equivalent to gate_all_to_human for this bucket."
+      ]
+    }
+  }
+}

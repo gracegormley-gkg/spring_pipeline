@@ -1,0 +1,876 @@
+{
+  "artifact": "null_tag_monitor.json",
+  "plan_ref": "MCAL_PLAN 2, 6",
+  "threshold": 0.15,
+  "rolling": true,
+  "halt_condition": false,
+  "note": "Rolling per-bucket rate of HUMAN_REVIEW routes with failure_tag = null. Exceeding the threshold in any bucket signals that the taxonomy needs a v(N+1) refresh with new T19+ codes. NOT a Segment B halt condition, but a mandatory input to the next M-Cal recalibration (MCAL_PLAN 6).",
+  "n_docs": 12,
+  "stages_seen": [
+    "v1"
+  ],
+  "docs": [
+    "p1074_35556036525913",
+    "p0491_35556036854362",
+    "p1074_35556036108041",
+    "p1074_35556036522308",
+    "p1074_35556036525772",
+    "p1074_35556036535615",
+    "p1074_35556036543080",
+    "p1074_35556036796613",
+    "p1074_35556036854040",
+    "p1074_35556036855435",
+    "p1074_35556036861656",
+    "p1074_35556038062691"
+  ],
+  "per_bucket": {
+    "M1": {
+      "n_fields": 48,
+      "n_human_review": 6,
+      "n_null_tag": 3,
+      "n_off_vocabulary": 3,
+      "n_excluded_policy": 0,
+      "n_excluded_pre_judgement": 0,
+      "null_tag_rate": 0.5,
+      "exceeds_threshold": true
+    },
+    "summary_narrative": {
+      "n_fields": 60,
+      "n_human_review": 58,
+      "n_null_tag": 24,
+      "n_off_vocabulary": 0,
+      "n_excluded_policy": 2,
+      "n_excluded_pre_judgement": 0,
+      "null_tag_rate": 0.4138,
+      "exceeds_threshold": true
+    },
+    "summary_numeric": {
+      "n_fields": 12,
+      "n_human_review": 12,
+      "n_null_tag": 5,
+      "n_off_vocabulary": 0,
+      "n_excluded_policy": 0,
+      "n_excluded_pre_judgement": 0,
+      "null_tag_rate": 0.4167,
+      "exceeds_threshold": true
+    },
+    "summary_of_interest": {
+      "n_fields": 12,
+      "n_human_review": 0,
+      "n_null_tag": 0,
+      "n_off_vocabulary": 0,
+      "n_excluded_policy": 0,
+      "n_excluded_pre_judgement": 12,
+      "null_tag_rate": null,
+      "exceeds_threshold": false
+    },
+    "alternatives+themes": {
+      "n_fields": 24,
+      "n_human_review": 0,
+      "n_null_tag": 0,
+      "n_off_vocabulary": 0,
+      "n_excluded_policy": 0,
+      "n_excluded_pre_judgement": 24,
+      "null_tag_rate": null,
+      "exceeds_threshold": false
+    },
+    "location": {
+      "n_fields": 12,
+      "n_human_review": 0,
+      "n_null_tag": 0,
+      "n_off_vocabulary": 0,
+      "n_excluded_policy": 0,
+      "n_excluded_pre_judgement": 12,
+      "null_tag_rate": null,
+      "exceeds_threshold": false
+    },
+    "key_people": {
+      "n_fields": 12,
+      "n_human_review": 11,
+      "n_null_tag": 7,
+      "n_off_vocabulary": 0,
+      "n_excluded_policy": 1,
+      "n_excluded_pre_judgement": 0,
+      "null_tag_rate": 0.6364,
+      "exceeds_threshold": true
+    }
+  },
+  "batches": [
+    {
+      "batch_id": "unbatched",
+      "doc_id": "p1074_35556036525913",
+      "stage": "v1",
+      "at": "2026-08-10T18:11:54+00:00",
+      "per_bucket": {
+        "M1": {
+          "n_fields": 4,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_narrative": {
+          "n_fields": 5,
+          "n_human_review": 5,
+          "n_null_tag": 3,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_numeric": {
+          "n_fields": 1,
+          "n_human_review": 1,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_of_interest": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 1
+        },
+        "alternatives+themes": {
+          "n_fields": 2,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 2
+        },
+        "location": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 1
+        },
+        "key_people": {
+          "n_fields": 1,
+          "n_human_review": 1,
+          "n_null_tag": 1,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        }
+      }
+    },
+    {
+      "batch_id": "unbatched",
+      "doc_id": "p0491_35556036854362",
+      "stage": "v1",
+      "at": "2026-08-10T18:21:48+00:00",
+      "per_bucket": {
+        "M1": {
+          "n_fields": 4,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_narrative": {
+          "n_fields": 5,
+          "n_human_review": 5,
+          "n_null_tag": 4,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_numeric": {
+          "n_fields": 1,
+          "n_human_review": 1,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_of_interest": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 1
+        },
+        "alternatives+themes": {
+          "n_fields": 2,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 2
+        },
+        "location": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 1
+        },
+        "key_people": {
+          "n_fields": 1,
+          "n_human_review": 1,
+          "n_null_tag": 1,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        }
+      }
+    },
+    {
+      "batch_id": "unbatched",
+      "doc_id": "p1074_35556036108041",
+      "stage": "v1",
+      "at": "2026-08-10T18:27:12+00:00",
+      "per_bucket": {
+        "M1": {
+          "n_fields": 4,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_narrative": {
+          "n_fields": 5,
+          "n_human_review": 4,
+          "n_null_tag": 1,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 1,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_numeric": {
+          "n_fields": 1,
+          "n_human_review": 1,
+          "n_null_tag": 1,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_of_interest": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 1
+        },
+        "alternatives+themes": {
+          "n_fields": 2,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 2
+        },
+        "location": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 1
+        },
+        "key_people": {
+          "n_fields": 1,
+          "n_human_review": 1,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        }
+      }
+    },
+    {
+      "batch_id": "unbatched",
+      "doc_id": "p1074_35556036522308",
+      "stage": "v1",
+      "at": "2026-08-10T18:31:47+00:00",
+      "per_bucket": {
+        "M1": {
+          "n_fields": 4,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_narrative": {
+          "n_fields": 5,
+          "n_human_review": 5,
+          "n_null_tag": 2,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_numeric": {
+          "n_fields": 1,
+          "n_human_review": 1,
+          "n_null_tag": 1,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_of_interest": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 1
+        },
+        "alternatives+themes": {
+          "n_fields": 2,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 2
+        },
+        "location": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 1
+        },
+        "key_people": {
+          "n_fields": 1,
+          "n_human_review": 1,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        }
+      }
+    },
+    {
+      "batch_id": "unbatched",
+      "doc_id": "p1074_35556036525772",
+      "stage": "v1",
+      "at": "2026-08-10T18:46:45+00:00",
+      "per_bucket": {
+        "M1": {
+          "n_fields": 4,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_narrative": {
+          "n_fields": 5,
+          "n_human_review": 4,
+          "n_null_tag": 4,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 1,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_numeric": {
+          "n_fields": 1,
+          "n_human_review": 1,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_of_interest": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 1
+        },
+        "alternatives+themes": {
+          "n_fields": 2,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 2
+        },
+        "location": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 1
+        },
+        "key_people": {
+          "n_fields": 1,
+          "n_human_review": 1,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        }
+      }
+    },
+    {
+      "batch_id": "unbatched",
+      "doc_id": "p1074_35556036535615",
+      "stage": "v1",
+      "at": "2026-08-10T18:50:58+00:00",
+      "per_bucket": {
+        "M1": {
+          "n_fields": 4,
+          "n_human_review": 2,
+          "n_null_tag": 1,
+          "n_off_vocabulary": 1,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_narrative": {
+          "n_fields": 5,
+          "n_human_review": 5,
+          "n_null_tag": 2,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_numeric": {
+          "n_fields": 1,
+          "n_human_review": 1,
+          "n_null_tag": 1,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_of_interest": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 1
+        },
+        "alternatives+themes": {
+          "n_fields": 2,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 2
+        },
+        "location": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 1
+        },
+        "key_people": {
+          "n_fields": 1,
+          "n_human_review": 1,
+          "n_null_tag": 1,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        }
+      }
+    },
+    {
+      "batch_id": "unbatched",
+      "doc_id": "p1074_35556036543080",
+      "stage": "v1",
+      "at": "2026-08-10T18:57:19+00:00",
+      "per_bucket": {
+        "M1": {
+          "n_fields": 4,
+          "n_human_review": 2,
+          "n_null_tag": 1,
+          "n_off_vocabulary": 1,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_narrative": {
+          "n_fields": 5,
+          "n_human_review": 5,
+          "n_null_tag": 1,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_numeric": {
+          "n_fields": 1,
+          "n_human_review": 1,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_of_interest": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 1
+        },
+        "alternatives+themes": {
+          "n_fields": 2,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 2
+        },
+        "location": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 1
+        },
+        "key_people": {
+          "n_fields": 1,
+          "n_human_review": 1,
+          "n_null_tag": 1,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        }
+      }
+    },
+    {
+      "batch_id": "unbatched",
+      "doc_id": "p1074_35556036796613",
+      "stage": "v1",
+      "at": "2026-08-10T19:03:06+00:00",
+      "per_bucket": {
+        "M1": {
+          "n_fields": 4,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_narrative": {
+          "n_fields": 5,
+          "n_human_review": 5,
+          "n_null_tag": 1,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_numeric": {
+          "n_fields": 1,
+          "n_human_review": 1,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_of_interest": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 1
+        },
+        "alternatives+themes": {
+          "n_fields": 2,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 2
+        },
+        "location": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 1
+        },
+        "key_people": {
+          "n_fields": 1,
+          "n_human_review": 1,
+          "n_null_tag": 1,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        }
+      }
+    },
+    {
+      "batch_id": "unbatched",
+      "doc_id": "p1074_35556036854040",
+      "stage": "v1",
+      "at": "2026-08-10T19:09:45+00:00",
+      "per_bucket": {
+        "M1": {
+          "n_fields": 4,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_narrative": {
+          "n_fields": 5,
+          "n_human_review": 5,
+          "n_null_tag": 1,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_numeric": {
+          "n_fields": 1,
+          "n_human_review": 1,
+          "n_null_tag": 1,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_of_interest": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 1
+        },
+        "alternatives+themes": {
+          "n_fields": 2,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 2
+        },
+        "location": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 1
+        },
+        "key_people": {
+          "n_fields": 1,
+          "n_human_review": 1,
+          "n_null_tag": 1,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        }
+      }
+    },
+    {
+      "batch_id": "unbatched",
+      "doc_id": "p1074_35556036855435",
+      "stage": "v1",
+      "at": "2026-08-10T19:14:54+00:00",
+      "per_bucket": {
+        "M1": {
+          "n_fields": 4,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_narrative": {
+          "n_fields": 5,
+          "n_human_review": 5,
+          "n_null_tag": 1,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_numeric": {
+          "n_fields": 1,
+          "n_human_review": 1,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_of_interest": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 1
+        },
+        "alternatives+themes": {
+          "n_fields": 2,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 2
+        },
+        "location": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 1
+        },
+        "key_people": {
+          "n_fields": 1,
+          "n_human_review": 1,
+          "n_null_tag": 1,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        }
+      }
+    },
+    {
+      "batch_id": "unbatched",
+      "doc_id": "p1074_35556036861656",
+      "stage": "v1",
+      "at": "2026-08-10T19:20:04+00:00",
+      "per_bucket": {
+        "M1": {
+          "n_fields": 4,
+          "n_human_review": 1,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_narrative": {
+          "n_fields": 5,
+          "n_human_review": 5,
+          "n_null_tag": 2,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_numeric": {
+          "n_fields": 1,
+          "n_human_review": 1,
+          "n_null_tag": 1,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_of_interest": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 1
+        },
+        "alternatives+themes": {
+          "n_fields": 2,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 2
+        },
+        "location": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 1
+        },
+        "key_people": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 1,
+          "n_excluded_pre_judgement": 0
+        }
+      }
+    },
+    {
+      "batch_id": "unbatched",
+      "doc_id": "p1074_35556038062691",
+      "stage": "v1",
+      "at": "2026-08-10T19:26:40+00:00",
+      "per_bucket": {
+        "M1": {
+          "n_fields": 4,
+          "n_human_review": 1,
+          "n_null_tag": 1,
+          "n_off_vocabulary": 1,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_narrative": {
+          "n_fields": 5,
+          "n_human_review": 5,
+          "n_null_tag": 2,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_numeric": {
+          "n_fields": 1,
+          "n_human_review": 1,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        },
+        "summary_of_interest": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 1
+        },
+        "alternatives+themes": {
+          "n_fields": 2,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 2
+        },
+        "location": {
+          "n_fields": 1,
+          "n_human_review": 0,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 1
+        },
+        "key_people": {
+          "n_fields": 1,
+          "n_human_review": 1,
+          "n_null_tag": 0,
+          "n_off_vocabulary": 0,
+          "n_excluded_policy": 0,
+          "n_excluded_pre_judgement": 0
+        }
+      }
+    }
+  ],
+  "buckets_needing_refresh": [
+    "M1",
+    "key_people",
+    "summary_narrative",
+    "summary_numeric"
+  ],
+  "taxonomy_refresh_recommended": true,
+  "updated_at": "2026-08-10T19:26:40+00:00"
+}

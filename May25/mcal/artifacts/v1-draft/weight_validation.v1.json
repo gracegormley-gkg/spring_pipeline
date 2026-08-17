@@ -1,0 +1,77 @@
+{
+  "gating": false,
+  "advisory_only": true,
+  "reason": "n_docs=8 is below WEIGHT_VALIDATION_MIN_N=60; intervals are too wide to dominate any candidate. Weights stay frozen at 0.5/0.5 through at least v3 per MCAL_PLAN 7.5.",
+  "n_docs": 8,
+  "n_items": 111,
+  "n_bootstrap": 1000,
+  "resampling_unit": "document",
+  "production_weighting": "quote50_critic50",
+  "production_kendall_tau": 0.081265,
+  "tiebreaker": "Tiebreaker (from the module docstring): prefer the candidate with the fewest signals at non-zero weight; break remaining ties lexicographically by candidate name.",
+  "candidates": {
+    "quote50_critic50": {
+      "n_signals_weighted": 2,
+      "auroc": 0.571811,
+      "auroc_ci95": [
+        0.468325,
+        0.654525
+      ],
+      "n_bootstrap_valid": 1000
+    },
+    "quote_only": {
+      "n_signals_weighted": 1,
+      "auroc": 0.547531,
+      "auroc_ci95": [
+        0.464479,
+        0.628833
+      ],
+      "n_bootstrap_valid": 1000
+    },
+    "critic_only": {
+      "n_signals_weighted": 1,
+      "auroc": 0.551235,
+      "auroc_ci95": [
+        0.457071,
+        0.626078
+      ],
+      "n_bootstrap_valid": 1000
+    },
+    "quote70_critic30": {
+      "n_signals_weighted": 2,
+      "auroc": 0.572222,
+      "auroc_ci95": [
+        0.46494,
+        0.654107
+      ],
+      "n_bootstrap_valid": 1000
+    },
+    "quote30_critic70": {
+      "n_signals_weighted": 2,
+      "auroc": 0.567284,
+      "auroc_ci95": [
+        0.464923,
+        0.650365
+      ],
+      "n_bootstrap_valid": 1000
+    },
+    "quote40_critic40_citation20": {
+      "n_signals_weighted": 3,
+      "auroc": 0.561111,
+      "auroc_ci95": [
+        0.442299,
+        0.65905
+      ],
+      "n_bootstrap_valid": 1000
+    },
+    "all_equal": {
+      "n_signals_weighted": 6,
+      "auroc": 0.506584,
+      "auroc_ci95": [
+        0.380141,
+        0.632917
+      ],
+      "n_bootstrap_valid": 1000
+    }
+  }
+}

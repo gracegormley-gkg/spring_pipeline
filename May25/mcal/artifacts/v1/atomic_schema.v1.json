@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "M-Cal atomic claim",
+  "description": "One atomic factual claim produced by mcal/atomic_verify.py (MCAL_PLAN 3.4). `scope_qualifier` is an addition to the plan's schema; see the atomic_verify.py module docstring for the empirical justification and mcal/taxonomy.py T19_scope_qualifier_dropped.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "text",
+    "subject",
+    "predicate",
+    "object",
+    "page",
+    "evidence_quote",
+    "claim_type",
+    "polarity",
+    "coreference_resolved",
+    "scope_qualifier"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "stable join key into the failure log"
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "subject": {
+      "type": "string"
+    },
+    "predicate": {
+      "type": "string"
+    },
+    "object": {
+      "type": "string"
+    },
+    "page": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1,
+      "description": "null is a finding (T01_missing_citation), not an omission"
+    },
+    "evidence_quote": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "verbatim substring of the cited page, >=20 chars, or null"
+    },
+    "claim_type": {
+      "type": "string",
+      "enum": [
+        "prose",
+        "numeric",
+        "comparative",
+        "categorical",
+        "temporal",
+        "geospatial"
+      ]
+    },
+    "polarity": {
+      "type": "string",
+      "enum": [
+        "affirmative",
+        "negative"
+      ],
+      "default": "affirmative"
+    },
+    "coreference_resolved": {
+      "type": "boolean",
+      "default": true
+    },
+    "scope_qualifier": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "verbatim restricting phrase from the cited page. REQUIRED for range endpoints, superlatives and comparisons."
+    },
+    "field": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "decomposed",
+        "claim_verbatim",
+        "why_notable"
+      ]
+    },
+    "entry_index": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    }
+  },
+  "x-mcal": {
+    "claim_types": [
+      "prose",
+      "numeric",
+      "comparative",
+      "categorical",
+      "temporal",
+      "geospatial"
+    ],
+    "polarities": [
+      "affirmative",
+      "negative"
+    ],
+    "negation_cues": [
+      "not",
+      "no",
+      "neither",
+      "never",
+      "without",
+      "except",
+      "unless",
+      "fails to",
+      "does not",
+      "would not"
+    ],
+    "coordinators": [
+      "or",
+      "and",
+      "as well as",
+      "along with"
+    ],
+    "pronouns_requiring_resolution": [
+      "it",
+      "they",
+      "this",
+      "that",
+      "these",
+      "those"
+    ],
+    "generic_anaphora": [
+      "the agency",
+      "the agencies",
+      "the project",
+      "the alternative",
+      "the alternatives",
+      "the proposed action",
+      "the applicant",
+      "the department",
+      "the bureau",
+      "the administration"
+    ],
+    "penalized_claim_types": [
+      "geospatial",
+      "numeric"
+    ],
+    "penalty_weight": 2.0,
+    "temporal_year_tolerance": 1,
+    "page_tolerance": 2,
+    "scope_qualifier_is_a_deviation": true,
+    "scope_qualifier_tag": "T19_scope_qualifier_dropped"
+  },
+  "version": "v1"
+}

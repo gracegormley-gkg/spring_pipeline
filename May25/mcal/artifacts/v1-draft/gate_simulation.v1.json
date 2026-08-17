@@ -1,0 +1,75 @@
+{
+  "in_sample": true,
+  "caveat": "In-sample: these items fitted the thresholds, so caught_error_rate is optimistic and false_defer_rate is pessimistic. Not a held-out estimate. Use as a sanity check on gate volume only.",
+  "overall_gate_rate": 0.7928,
+  "n_graded_items": 111,
+  "per_bucket": {
+    "M1": {
+      "n_graded_items": 32,
+      "n_wrong": 4,
+      "n_correct": 28,
+      "gate_rate": 0.2812,
+      "caught_error_rate": 1.0,
+      "false_defer_rate": 0.1786,
+      "tau_deployed": 0.5,
+      "gate_all_to_human": false
+    },
+    "summary_narrative": {
+      "n_graded_items": 40,
+      "n_wrong": 10,
+      "n_correct": 30,
+      "gate_rate": 1.0,
+      "caught_error_rate": 1.0,
+      "false_defer_rate": 1.0,
+      "tau_deployed": 1.0,
+      "gate_all_to_human": false
+    },
+    "summary_numeric": {
+      "n_graded_items": 8,
+      "n_wrong": 3,
+      "n_correct": 5,
+      "gate_rate": 1.0,
+      "caught_error_rate": 1.0,
+      "false_defer_rate": 1.0,
+      "tau_deployed": 1.0,
+      "gate_all_to_human": false
+    },
+    "summary_of_interest": {
+      "n_graded_items": 0,
+      "gate_rate": 1.0,
+      "caught_error_rate": null,
+      "false_defer_rate": null,
+      "note": "no graded items in this bucket"
+    },
+    "alternatives+themes": {
+      "n_graded_items": 16,
+      "n_wrong": 1,
+      "n_correct": 15,
+      "gate_rate": 1.0,
+      "caught_error_rate": 1.0,
+      "false_defer_rate": 1.0,
+      "tau_deployed": Infinity,
+      "gate_all_to_human": true
+    },
+    "location": {
+      "n_graded_items": 8,
+      "n_wrong": 6,
+      "n_correct": 2,
+      "gate_rate": 1.0,
+      "caught_error_rate": 1.0,
+      "false_defer_rate": 1.0,
+      "tau_deployed": Infinity,
+      "gate_all_to_human": true
+    },
+    "key_people": {
+      "n_graded_items": 7,
+      "n_wrong": 6,
+      "n_correct": 1,
+      "gate_rate": 1.0,
+      "caught_error_rate": 1.0,
+      "false_defer_rate": 1.0,
+      "tau_deployed": 1.0,
+      "gate_all_to_human": false
+    }
+  }
+}

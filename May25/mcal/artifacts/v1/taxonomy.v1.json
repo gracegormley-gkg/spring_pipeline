@@ -1,0 +1,424 @@
+{
+  "version": "v1",
+  "frozen_at": "2026-08-10T18:07:35+00:00",
+  "ratified": true,
+  "tags": [
+    {
+      "id": "T01",
+      "name": "T01_missing_citation",
+      "description": "A claim in the extracted value has no page cite, or cites a page that does not support it. Most common observed failure: 4/8 docs on summary.public_response.",
+      "applies_to": [
+        "summary.*",
+        "summary_of_interest",
+        "alternatives",
+        "location",
+        "key_people"
+      ],
+      "exemplars": [
+        {
+          "doc_id": "p1074_35556036546182",
+          "field": "summary.project_description",
+          "note": "ok, missing citation - pg 35",
+          "bucket": "summary_narrative"
+        },
+        {
+          "doc_id": "p1074_35556039563135",
+          "field": "summary.project_description",
+          "note": "ok, missing citation - pg 34, 36, 146",
+          "bucket": "summary_narrative"
+        },
+        {
+          "doc_id": "p1074_35556036861797",
+          "field": "summary.affected_community",
+          "note": "ok, missing citation - pg 75",
+          "bucket": "summary_narrative"
+        },
+        {
+          "doc_id": "p1074_35556038322269",
+          "field": "summary.affected_community",
+          "note": "ok, missing citation - pg 177",
+          "bucket": "summary_narrative"
+        },
+        {
+          "doc_id": "p1074_35556036105336",
+          "field": "summary.environmental_impact",
+          "note": "ok, missing citation - pg 50",
+          "bucket": "summary_numeric"
+        }
+      ],
+      "origin": "seed"
+    },
+    {
+      "id": "T02",
+      "name": "T02_numeric_hallucination",
+      "description": "A figure is wrong, or is attached to the wrong entity/alternative. NOTE: both graded instances turned out to be scope-qualifier loss rather than fabrication -- the figure was present and correctly paired, but a limiting qualifier was dropped. See T19.",
+      "applies_to": [
+        "summary.*",
+        "summary_of_interest"
+      ],
+      "exemplars": [
+        {
+          "doc_id": "p1074_35556038322269",
+          "field": "summary.project_description",
+          "note": "wrong: \"from $659 million (Alt. V)\" correct: \"from $369 million (Alt. XI)\"",
+          "bucket": "summary_narrative"
+        },
+        {
+          "doc_id": "p1074_35556038322269",
+          "field": "summary.environmental_impact",
+          "note": "wrong: \"Magnitude 7.5\" correct: \"Magnitude 7.0\"",
+          "bucket": "summary_numeric"
+        }
+      ],
+      "origin": "seed"
+    },
+    {
+      "id": "T03",
+      "name": "T03_outside_text_fabrication",
+      "description": "The value asserts something absent from the cited pages -- prior-injection, e.g. completing a plausible NEPA sentence. Detectable: fails substring/coverage verification.",
+      "applies_to": [
+        "summary.*",
+        "summary_of_interest",
+        "alternatives",
+        "themes",
+        "location",
+        "key_people"
+      ],
+      "exemplars": [
+        {
+          "doc_id": "p1074_35556039563135",
+          "field": "summary.environmental_impact",
+          "note": "hallucination: \"or important wildlife habitats are affected.\"",
+          "bucket": "summary_numeric"
+        }
+      ],
+      "origin": "seed"
+    },
+    {
+      "id": "T04",
+      "name": "T04_undefined_acronym",
+      "description": "An acronym is used without expansion on first use within the field, and no expansion exists in the document glossary or the NEPA commons. Observed in 8/8 docs.",
+      "applies_to": [
+        "summary.*",
+        "summary_of_interest",
+        "themes",
+        "alternatives",
+        "location",
+        "key_people",
+        "title",
+        "lead_agency"
+      ],
+      "exemplars": [
+        {
+          "doc_id": "p1074_35556036058550",
+          "field": "title",
+          "note": "includes undefined acronyms",
+          "bucket": "M1",
+          "source": "doc_level_acronym_flag"
+        },
+        {
+          "doc_id": "p1074_35556036105336",
+          "field": "title",
+          "note": "includes undefined acronyms",
+          "bucket": "M1",
+          "source": "doc_level_acronym_flag"
+        },
+        {
+          "doc_id": "p1074_35556036546182",
+          "field": "title",
+          "note": "includes undefined acronyms",
+          "bucket": "M1",
+          "source": "doc_level_acronym_flag"
+        },
+        {
+          "doc_id": "p1074_35556036806586",
+          "field": "title",
+          "note": "includes undefined acronyms",
+          "bucket": "M1",
+          "source": "doc_level_acronym_flag"
+        },
+        {
+          "doc_id": "p1074_35556036811230",
+          "field": "title",
+          "note": "includes undefined acronyms",
+          "bucket": "M1",
+          "source": "doc_level_acronym_flag"
+        }
+      ],
+      "origin": "seed"
+    },
+    {
+      "id": "T05",
+      "name": "T05_commenter_mislabeled_as_cooperator",
+      "description": "An entity is labeled a cooperating agency without the document formally designating it as one under 40 CFR 1501.8. Usually a commenter or draft-EIS recipient swept in from the Consultation chapter. Observed in 5/8 docs.",
+      "applies_to": [
+        "key_people",
+        "lead_agency"
+      ],
+      "exemplars": [
+        {
+          "doc_id": "p1074_35556036058550",
+          "field": "key_people",
+          "note": "all commenters = cooperators",
+          "bucket": "key_people"
+        },
+        {
+          "doc_id": "p1074_35556036105336",
+          "field": "key_people",
+          "note": "all commenters = cooperators",
+          "bucket": "key_people"
+        },
+        {
+          "doc_id": "p1074_35556036546182",
+          "field": "key_people",
+          "note": "all commenters = cooperators",
+          "bucket": "key_people"
+        },
+        {
+          "doc_id": "p1074_35556036806586",
+          "field": "key_people",
+          "note": "all commenters = cooperators",
+          "bucket": "key_people"
+        },
+        {
+          "doc_id": "p1074_35556038322269",
+          "field": "key_people",
+          "note": "all commenters = cooperators",
+          "bucket": "key_people"
+        }
+      ],
+      "origin": "seed"
+    },
+    {
+      "id": "T06",
+      "name": "T06_geocode_missing",
+      "description": "A named place was extracted but no coordinates were resolved.",
+      "applies_to": [
+        "location"
+      ],
+      "exemplars": [
+        {
+          "doc_id": "p1074_35556036105336",
+          "field": "location",
+          "note": "no geocode",
+          "bucket": "location"
+        },
+        {
+          "doc_id": "p1074_35556038322269",
+          "field": "location",
+          "note": "no geocode",
+          "bucket": "location"
+        }
+      ],
+      "origin": "seed"
+    },
+    {
+      "id": "T07",
+      "name": "T07_geocode_wrong_specificity",
+      "description": "Coordinates resolved at a coarser admin level than the document's actual scope -- e.g. the containing city for a specific corridor.",
+      "applies_to": [
+        "location"
+      ],
+      "exemplars": [
+        {
+          "doc_id": "p1074_35556036546182",
+          "field": "location",
+          "note": "geocodes milwaukee (wish better specificity)",
+          "bucket": "location"
+        }
+      ],
+      "origin": "seed"
+    },
+    {
+      "id": "T08",
+      "name": "T08_scope_misclassified_national",
+      "description": "A national or international rulemaking with no site was treated as an absent location instead of scope=national.",
+      "applies_to": [
+        "location"
+      ],
+      "exemplars": [
+        {
+          "doc_id": "p1074_35556036861797",
+          "field": "location",
+          "note": "no location",
+          "bucket": "location"
+        }
+      ],
+      "origin": "seed"
+    },
+    {
+      "id": "T09",
+      "name": "T09_multi_site_partial_geocode",
+      "description": "The document names several primary sites but only a subset resolved to coordinates; the rest were dropped.",
+      "applies_to": [
+        "location"
+      ],
+      "exemplars": [
+        {
+          "doc_id": "p1074_35556036811230",
+          "field": "location",
+          "note": "has 3 locations (all listed in the doc) one geocoded",
+          "bucket": "location"
+        },
+        {
+          "doc_id": "p1074_35556039563135",
+          "field": "location",
+          "note": "has 3 locations (all listed in the doc) one geocoded",
+          "bucket": "location"
+        }
+      ],
+      "origin": "seed"
+    },
+    {
+      "id": "T10",
+      "name": "T10_alternatives_chapter_missed",
+      "description": "Structural identification of the Alternatives chapter failed and the field returned empty rather than a not-found status.",
+      "applies_to": [
+        "alternatives"
+      ],
+      "exemplars": [
+        {
+          "doc_id": "p1074_35556036811230",
+          "field": "alternatives",
+          "note": "empty",
+          "bucket": "alternatives+themes"
+        }
+      ],
+      "origin": "seed"
+    },
+    {
+      "id": "T11",
+      "name": "T11_year_ocr_error",
+      "description": "Publication year is wrong. Observed only on pre-1980 scans, where the real date sits on a signature/approval page or transmittal letter rather than the cover.",
+      "applies_to": [
+        "year"
+      ],
+      "exemplars": [
+        {
+          "doc_id": "p1074_35556036058550",
+          "field": "year",
+          "note": "wrong: \"1972\" correct: ... latest date I could find was 1976",
+          "bucket": "M1"
+        },
+        {
+          "doc_id": "p1074_35556038322269",
+          "field": "year",
+          "note": "wrong: \"1980\" correct: \"1979\"",
+          "bucket": "M1"
+        },
+        {
+          "doc_id": "p1074_35556039563135",
+          "field": "year",
+          "note": "wrong: \"1972\" correct: ... I believe 1971 based on page 70",
+          "bucket": "M1"
+        }
+      ],
+      "origin": "seed"
+    },
+    {
+      "id": "T12",
+      "name": "T12_eis_type_confused_with_rod",
+      "description": "Document type misread, typically because 'Record of Decision' appeared in body or citation text rather than as a heading.",
+      "applies_to": [
+        "eis_type"
+      ],
+      "exemplars": [
+        {
+          "doc_id": "p1074_35556039563135",
+          "field": "eis_type",
+          "note": "wrong: \"ROD\", correct: \"Final\"",
+          "bucket": "M1"
+        }
+      ],
+      "origin": "seed"
+    },
+    {
+      "id": "T13",
+      "name": "T13_pre_1978_nepa_format",
+      "description": "Document predates the modern 40 CFR 1501.8 schema, so the cooperating-agency category does not apply as defined.",
+      "applies_to": [
+        "key_people"
+      ],
+      "exemplars": [],
+      "origin": "seed"
+    },
+    {
+      "id": "T14",
+      "name": "T14_regional_scope_underspecified",
+      "description": "Scope is regional but the document names fewer than two primary sites, so no defensible region could be resolved.",
+      "applies_to": [
+        "location"
+      ],
+      "exemplars": [],
+      "origin": "seed"
+    },
+    {
+      "id": "T15",
+      "name": "T15_jargon_without_gloss",
+      "description": "A NEPA-specific term or regulatory citation is used without an in-line gloss on first mention, contrary to the plain-language clause.",
+      "applies_to": [
+        "summary.*",
+        "summary_of_interest"
+      ],
+      "exemplars": [],
+      "origin": "seed"
+    },
+    {
+      "id": "T16",
+      "name": "T16_abstract_when_concrete_available",
+      "description": "The value uses abstract nominalizations where the document supports a concrete description with named entities and quantities. Logged only at v1 (Critic Q6b), not yet gating.",
+      "applies_to": [
+        "summary.*",
+        "summary_of_interest"
+      ],
+      "exemplars": [],
+      "origin": "seed"
+    },
+    {
+      "id": "T17",
+      "name": "T17_manufactured_salience",
+      "description": "A summary_of_interest entry is tagged with a salience criterion the cited page does not support, or why_notable is grounded in general NEPA knowledge rather than the page. Includes finding something 'notable' in a routine document.",
+      "applies_to": [
+        "summary_of_interest"
+      ],
+      "exemplars": [],
+      "origin": "seed"
+    },
+    {
+      "id": "T18",
+      "name": "T18_salience_duplicates_summary",
+      "description": "A summary_of_interest entry restates standard-summary content without independently meeting a salience criterion.",
+      "applies_to": [
+        "summary_of_interest"
+      ],
+      "exemplars": [],
+      "origin": "seed"
+    },
+    {
+      "id": "T19",
+      "name": "T19_scope_qualifier_dropped",
+      "description": "A figure or superlative is reported without the qualifier the document attaches to it -- a range restricted to a subset of alternatives, a 'maximum credible' framing, a geographic limit. The figure itself verifies, so substring checks cannot detect this; it is prevented at generation time by the plain-language clause and must be caught by the reviewer or by a comparative-claim check.",
+      "applies_to": [
+        "summary.*",
+        "summary_of_interest"
+      ],
+      "exemplars": [],
+      "origin": "empirical_v1"
+    },
+    {
+      "id": "T20",
+      "name": "T20_role_bucket_underpopulated",
+      "description": "A key_people role bucket is empty or nearly empty when the document does contain qualifying entities. Distinct from T05, which is over-inclusion; this is under-inclusion. Observed on Fuel Economy ('nearly empty').",
+      "applies_to": [
+        "key_people"
+      ],
+      "exemplars": [],
+      "origin": "empirical_v1"
+    }
+  ],
+  "induction_notes": [
+    "Notes 5, 13, 21, 29, 37, 45, 53, 61, 69, 77, 85, 93, 101 all share a doc_note suggesting that for national-scope documents the location field should return 'national' rather than empty. Note 101 (grade_text: 'no location') is the clearest instance of T08_scope_misclassified_national; the others are graded 'ok' and the observation appears only in the doc_note. No new code is warranted since T08 covers the failure, but a human may want to confirm whether the 'ok' grades on those national-doc rows mean the location field was already handled correctly or was simply not penalised.",
+    "Note 46 (summary.project_description, wrong cost figure and wrong alternative label) could be T02_numeric_hallucination or T19_scope_qualifier_dropped. The figure is attached to the wrong alternative entirely, which looks more like T02; assigned T02 but flagging for human review.",
+    "Note 84 (alternatives field returned 'empty') is assigned T10_alternatives_chapter_missed. If the document genuinely had no alternatives chapter this would be a false positive; human should verify."
+  ]
+}
