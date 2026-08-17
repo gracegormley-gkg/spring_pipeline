@@ -1,0 +1,2797 @@
+{
+  "alternatives": {
+    "extracted_value": [
+      {
+        "name": "Return All Wastes to McMurdo Station",
+        "description": "All liquid and solid wastes generated at the project site would be transported back to McMurdo Station for disposal, rather than disposing of some wastes on-site. This alternative was deemed neither environmentally necessary nor economically feasible.",
+        "evidence": [
+          {
+            "quote": "It is theoretically possible to expand this service for all liquid and solid wastes. Such an alternative is considered neither environmentally necessary nor economically feasible.",
+            "source_pages": [
+              "46"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "name": "Geophysical (Seismic) Survey Before Sediment Drilling",
+        "description": "Prior to drilling into the sediments beneath the water column, a geophysical seismic program would be conducted to obtain data on the structure of the sediments in the vicinity, using an energy source released in the water below the ice shelf. This alternative was considered but judged too costly relative to the limited value of data obtained.",
+        "evidence": [
+          {
+            "quote": "First, is that after the access hole penetrates the ice/water interface, a geophysical (seismic) program be undertaken with the express intention of obtaining data on the structure of the sediments in the vicinity.",
+            "source_pages": [
+              "47"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "name": "No Drilling into Sediment and Bedrock",
+        "description": "The project would not proceed with drilling into the sediment and bedrock beneath the water column, eliminating the risk of releasing hydrocarbons. This alternative was not considered justified given the low likelihood of a significant hydrocarbon release and the available precautionary measures.",
+        "evidence": [
+          {
+            "quote": "The second alternative is not to proceed with the drilling into sediment and bedrock beneath the water column.",
+            "source_pages": [
+              "47"
+            ],
+            "quote_verified": true
+          }
+        ]
+      }
+    ],
+    "evidence_quote": "It is theoretically possible to expand this service for all liquid and solid wastes. Such an alternative is considered neither environmentally necessary nor economically feasible.",
+    "source_pages": [
+      46,
+      47
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "n/a",
+      "Q8": "yes",
+      "Q9": "no",
+      "Q10": "yes"
+    },
+    "composite": 0.85,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "bucket_degenerate_severe",
+    "failure_tag": null,
+    "bucket": "alternatives+themes",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS_WITH_NOTE",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "bucket_degenerate_severe",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.7,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 46,
+      "normalized_match_span": [
+        46,
+        937,
+        1113
+      ],
+      "pages_searched": [
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": true,
+      "degenerate_severe": true,
+      "saturated": false,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 1
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "No no-action/null alternative is listed. The document's alternatives section (pages 46\u201347) discusses three specific alternatives to project activities but does not appear to include a formal 'No Action' alternative as a distinct enumerated option. The three extracted alternatives are all supported by verbatim quotes from the cited pages. The absence of a no-action alternative is noted but may refl",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        46,
+        47
+      ],
+      "pages_included": [
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 9242
+    }
+  },
+  "eis_type": {
+    "extracted_value": "Final",
+    "evidence_quote": "FINAL ENVIRONMENTAL IMPACT STATEMENT\nRoss Ice Shelf Project (RISP)",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "n/a",
+      "Q10": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 2,
+      "normalized_match_span": [
+        2,
+        8,
+        72
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": null,
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 4182
+    }
+  },
+  "key_people": {
+    "extracted_value": {
+      "agency_preparers": [
+        {
+          "name": "Bruce Parker",
+          "role": "Chairman",
+          "organization": "Virginia Polytechnic Institute and State University",
+          "bucket": "agency_preparers",
+          "evidence": [
+            {
+              "quote": "Bruce Parker, Chairman, Virginia Polytechnic Institute and State\n\nUniversity",
+              "source_pages": [
+                "7"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Mary Alice McWhinnie",
+          "role": "Committee Member",
+          "organization": "DePaul University",
+          "bucket": "agency_preparers",
+          "evidence": [
+            {
+              "quote": "Mary Alice McWhinnie, DePaul University",
+              "source_pages": [
+                "7"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "David Elliot",
+          "role": "Committee Member",
+          "organization": "Ohio State University",
+          "bucket": "agency_preparers",
+          "evidence": [
+            {
+              "quote": "David Elliot, Ohio State University",
+              "source_pages": [
+                "7"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Sherwood Reed",
+          "role": "Committee Member",
+          "organization": "Cold Regions Research and Engineering Laboratory",
+          "bucket": "agency_preparers",
+          "evidence": [
+            {
+              "quote": "Sherwood Reed, Cold Regions Research and Engineering Laboratory",
+              "source_pages": [
+                "7"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Robert H. Rutford",
+          "role": "ex officio member of committee",
+          "organization": "RISP Management Office",
+          "bucket": "agency_preparers",
+          "evidence": [
+            {
+              "quote": "Robert H. Rutford, RISP Management Office (ex officio member of committee)",
+              "source_pages": [
+                "7"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "John P. Giacomini",
+          "role": "Chairman, Committee on Environmental Statements",
+          "organization": "National Science Foundation",
+          "bucket": "agency_preparers",
+          "evidence": [
+            {
+              "quote": "John P. Giacomini Chairman, Committee on Environmental Statements National Science Foundation 1800 G Street, N. W. Washington, D. C. 20550",
+              "source_pages": [
+                "4"
+              ],
+              "quote_verified": true
+            }
+          ]
+        }
+      ],
+      "cooperating_agencies": [],
+      "consulted_entities": [],
+      "public_commenters": [],
+      "comment_response_present": true
+    },
+    "evidence_quote": "Bruce Parker, Chairman, Virginia Polytechnic Institute and State\n\nUniversity",
+    "source_pages": [
+      4,
+      7
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "n/a",
+      "Q8": "n/a",
+      "Q9": "n/a",
+      "Q10": "yes",
+      "Q11": "n/a"
+    },
+    "composite": 1.0,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": null,
+    "bucket": "key_people",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 7,
+      "normalized_match_span": [
+        7,
+        142,
+        215
+      ],
+      "pages_searched": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": false,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 6
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "Document is pre-1978 (March 1975 / June 1976), but cooperating_agencies is correctly left empty, so Q10 does not trigger HUMAN_REVIEW. RISP is defined in the document itself ('Ross Ice Shelf Project (RISP)') on page 4, satisfying Q3. All agency_preparers entries are verified against cited pages.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        4,
+        7
+      ],
+      "pages_included": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 6868
+    }
+  },
+  "lead_agency": {
+    "extracted_value": [
+      "National Science Foundation"
+    ],
+    "evidence_quote": "RESPONSIBLE FEDERAL AGENCY\nNational Science Foundation Directorate for Astronomical, Atmospheric, Earth, and Ocean Sciences Division of Polar Programs National Science Foundation",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a"
+    },
+    "composite": 1.0,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 4,
+      "normalized_match_span": [
+        4,
+        7,
+        182
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "Page 4 explicitly designates National Science Foundation as the 'Responsible Federal Agency,' confirming it as the sole lead agency. No cooperating agencies are listed, so Q8 is not applicable.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 4182
+    }
+  },
+  "location": {
+    "extracted_value": {
+      "places": [
+        {
+          "name": "Ross Ice Shelf",
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": null,
+            "county": null,
+            "state": null,
+            "country": "Antarctica"
+          },
+          "role": "primary",
+          "evidence": [
+            {
+              "quote": "The Ross Ice Shelf Project (RISP) is being conducted by the University of Nebraska on the Ross Ice Shelf in the Antarctic as a multiple year field operation.",
+              "source_pages": [
+                "4"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "RISP drill site at 82\u00b022'S, 168\u00b040'W",
+          "admin_hierarchy": {
+            "poi": "RISP drill camp",
+            "neighborhood": null,
+            "city": null,
+            "county": null,
+            "state": null,
+            "country": "Antarctica"
+          },
+          "role": "primary",
+          "evidence": [
+            {
+              "quote": "A drill camp will be established at 82\u00b022'S, 168\u00b040'W and the old base camp will be dismantled and removed.",
+              "source_pages": [
+                "28"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "tentative drill site at 82\u00b030'S, 166\u00b0W",
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": null,
+            "county": null,
+            "state": null,
+            "country": "Antarctica"
+          },
+          "role": "alternative",
+          "evidence": [
+            {
+              "quote": "A tentative drill site was selected at 82\u00b030'S, 166\u00b0W (Fig. 1), based on the present knowledge of ice thickness (500-m), sub-shelf water depth (200-m), position on a West Antarctic ice flowline, and distance from the front of the ice shelf (400-km).",
+              "source_pages": [
+                "28"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "McMurdo Station",
+          "admin_hierarchy": {
+            "poi": "McMurdo Station",
+            "neighborhood": null,
+            "city": null,
+            "county": null,
+            "state": null,
+            "country": "Antarctica"
+          },
+          "role": "reference",
+          "evidence": [
+            {
+              "quote": "LC-130 aircraft were used to deploy and supply the party from McMurdo Station.",
+              "source_pages": [
+                "28"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Ross Sea",
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": null,
+            "county": null,
+            "state": null,
+            "country": "Antarctica"
+          },
+          "role": "reference",
+          "evidence": [
+            {
+              "quote": "A saline variety of Antarctic Bottom Water (AABW) is produced in the Ross Sea and can be traced into the Southeast Pacific Basin and South Indian Basin.",
+              "source_pages": [
+                "23"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "temporary base camp at 80\u00b007'S, 160\u00b041'W",
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": null,
+            "county": null,
+            "state": null,
+            "country": "Antarctica"
+          },
+          "role": "primary",
+          "evidence": [
+            {
+              "quote": "Temporary base camps were established for portions of the season close to 80\u00b007'S, 160\u00b041'W, and at about 80\u00b030'S, 175\u00b030'E.",
+              "source_pages": [
+                "28"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "temporary base camp at 80\u00b030'S, 175\u00b030'E",
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": null,
+            "county": null,
+            "state": null,
+            "country": "Antarctica"
+          },
+          "role": "primary",
+          "evidence": [
+            {
+              "quote": "Temporary base camps were established for portions of the season close to 80\u00b007'S, 160\u00b041'W, and at about 80\u00b030'S, 175\u00b030'E.",
+              "source_pages": [
+                "28"
+              ],
+              "quote_verified": true
+            }
+          ]
+        }
+      ],
+      "is_multi_site": true,
+      "geocoded": [
+        {
+          "lat": -72.843869,
+          "lon": 0.0,
+          "bbox": [
+            -180.0,
+            -85.051129,
+            180.0,
+            -60.0
+          ],
+          "source": "nominatim",
+          "confidence": 0.823,
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": null,
+            "county": null,
+            "state": null,
+            "country": null
+          },
+          "level": "country",
+          "query": "Antarctica",
+          "matched_name": "Antarctica",
+          "bbox_synthetic": false,
+          "importance": 0.746,
+          "confident": true,
+          "stack": "reduced",
+          "accepted_level": "country",
+          "acceptance_reason": "no_coarser_level_available",
+          "failed_containment_checks": [],
+          "site_name": "Ross Ice Shelf",
+          "role": "primary"
+        },
+        {
+          "lat": -72.843869,
+          "lon": 0.0,
+          "bbox": [
+            -180.0,
+            -85.051129,
+            180.0,
+            -60.0
+          ],
+          "source": "nominatim",
+          "confidence": 0.823,
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": null,
+            "county": null,
+            "state": null,
+            "country": null
+          },
+          "level": "country",
+          "query": "Antarctica",
+          "matched_name": "Antarctica",
+          "bbox_synthetic": false,
+          "importance": 0.746,
+          "confident": true,
+          "stack": "reduced",
+          "accepted_level": "country",
+          "acceptance_reason": "no_coarser_level_available",
+          "failed_containment_checks": [],
+          "site_name": "RISP drill site at 82\u00b022'S, 168\u00b040'W",
+          "role": "primary"
+        },
+        {
+          "lat": -72.843869,
+          "lon": 0.0,
+          "bbox": [
+            -180.0,
+            -85.051129,
+            180.0,
+            -60.0
+          ],
+          "source": "nominatim",
+          "confidence": 0.823,
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": null,
+            "county": null,
+            "state": null,
+            "country": null
+          },
+          "level": "country",
+          "query": "Antarctica",
+          "matched_name": "Antarctica",
+          "bbox_synthetic": false,
+          "importance": 0.746,
+          "confident": true,
+          "stack": "reduced",
+          "accepted_level": "country",
+          "acceptance_reason": "no_coarser_level_available",
+          "failed_containment_checks": [],
+          "site_name": "temporary base camp at 80\u00b007'S, 160\u00b041'W",
+          "role": "primary"
+        },
+        {
+          "lat": -72.843869,
+          "lon": 0.0,
+          "bbox": [
+            -180.0,
+            -85.051129,
+            180.0,
+            -60.0
+          ],
+          "source": "nominatim",
+          "confidence": 0.823,
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": null,
+            "county": null,
+            "state": null,
+            "country": null
+          },
+          "level": "country",
+          "query": "Antarctica",
+          "matched_name": "Antarctica",
+          "bbox_synthetic": false,
+          "importance": 0.746,
+          "confident": true,
+          "stack": "reduced",
+          "accepted_level": "country",
+          "acceptance_reason": "no_coarser_level_available",
+          "failed_containment_checks": [],
+          "site_name": "temporary base camp at 80\u00b030'S, 175\u00b030'E",
+          "role": "primary"
+        }
+      ],
+      "scope": "site",
+      "textual_location": "Ross Sea Embayment",
+      "corridor": false
+    },
+    "evidence_quote": "A drill camp will be established at 82\u00b022'S, 168\u00b040'W and the old base camp will be dismantled and removed.",
+    "source_pages": [
+      4,
+      23,
+      28
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "no",
+      "Q10": "yes",
+      "Q11": "yes"
+    },
+    "composite": 0.85,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "reduced_geocoder_stack",
+    "failure_tag": "T07_geocode_wrong_specificity",
+    "bucket": "location",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS_WITH_NOTE",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "reduced_geocoder_stack",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.7,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 28,
+      "normalized_match_span": [
+        28,
+        1285,
+        1390
+      ],
+      "pages_searched": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "82",
+        "22",
+        "168",
+        "40"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": false,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 6
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "All sites are well-evidenced and correctly cited. However, the geocoded coordinates for all primary sites resolve only to the continent-level bounding box for Antarctica (lat -72.84, lon 0.0), whereas the document provides precise coordinates for the drill sites (82\u00b022'S 168\u00b040'W; 82\u00b030'S 166\u00b0W; 80\u00b007'S 160\u00b041'W; 80\u00b030'S 175\u00b030'E). The geocoder failed to use the explicit lat/lon coordinates given ",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        4,
+        23,
+        28
+      ],
+      "pages_included": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 38699
+    }
+  },
+  "summary.affected_community": {
+    "extracted_value": "The drill site is remote and has no local human population; the 'community' at issue is the Ross Ice Shelf environment itself \u2014 the snow and firn surface, the ice, the ~200-m water column beneath the shelf, and the sea-floor sediments and bedrock \u2014 together with any specialized microorganisms and other biota that may live under the shelf. On the human side, the affected group is the up to 35\u201350 scientific and support personnel at the field camp, plus other nations' Antarctic operating organizations across the broader continent, where fewer than 50 isolated stations occupy 5.5 million square miles. If hydrocarbons were released, penguins, other marine birds, and seals of the Ross Sea could also be affected.",
+    "evidence_quote": "penguins, other marine birds, and seals will be affected",
+    "source_pages": [
+      5,
+      25,
+      32,
+      43,
+      58,
+      59
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "yes",
+      "Q4": "no",
+      "Q5": "n/a",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "no",
+      "Q9": "n/a"
+    },
+    "composite": 0.65,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "critic_verdict",
+    "failure_tag": "T02_numeric_hallucination",
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 43,
+      "normalized_match_span": [
+        43,
+        664,
+        718
+      ],
+      "pages_searched": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        23,
+        24,
+        25,
+        26,
+        27,
+        30,
+        31,
+        32,
+        33,
+        34,
+        41,
+        42,
+        43,
+        44,
+        45,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The value says 'up to 35\u201350 scientific and support personnel at the field camp,' but page 31 states the camp will support 'up to 35 people for a period of four (4) months,' and page 5 mentions 'up to 50 people for a period of five months' as a later camp phase. Merging these into '35\u201350' misrepresents both figures and conflates two different camp descriptions. Also, page 58's '5.5 million square m",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        5,
+        25,
+        32,
+        43,
+        58,
+        59
+      ],
+      "pages_included": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        23,
+        24,
+        25,
+        26,
+        27,
+        30,
+        31,
+        32,
+        33,
+        34,
+        41,
+        42,
+        43,
+        44,
+        45,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 40743
+    }
+  },
+  "summary.alternatives_overview": {
+    "extracted_value": "NSF concludes that the scientific goals cannot be achieved without occupying the drill site, so a no-project alternative is not recommended. An alternative of hauling all liquid and solid wastes back to McMurdo Station, instead of on-site burning, burial, and subsurface sewage disposal into the firn, was considered but rejected as neither environmentally necessary nor economically feasible. To address the small chance of hitting an oil deposit, two alternatives were weighed and rejected: running a seismic survey from below the shelf after breakthrough to map sediment structures (specialists said the data would be of limited value unless a much larger program were mounted), and simply not drilling into the sediment and bedrock (rejected because the planned hydrocarbon monitoring and safety measures are considered adequate). Reviewer-suggested alternatives discussed in the comments include conducting a seismic refraction survey before drilling rather than 'drilling blindly,' incinerating sanitary wastes instead of firn discharge, avoiding diesel oil as drilling fluid unless it can be recaptured, and plugging and abandoning the hole (or shifting to another drill site) if substantial hydrocarbons are encountered.",
+    "evidence_quote": "The remote possibility of penetrating an oil deposit suggests two alternatives",
+    "source_pages": [
+      5,
+      68,
+      70,
+      76,
+      78
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": null,
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 5,
+      "normalized_match_span": [
+        5,
+        1468,
+        1545
+      ],
+      "pages_searched": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The value accurately summarizes Part IV (page 5) alternatives (no-project, waste hauling to McMurdo, seismic survey post-breakthrough, no sediment drilling) and reviewer-suggested alternatives from pages 70, 76, 78. Dismissal rationales are given on page 5 and in the responses on pages 68 and 76.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        5,
+        68,
+        70,
+        76,
+        78
+      ],
+      "pages_included": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 25106
+    }
+  },
+  "summary.environmental_impact": {
+    "extracted_value": "NSF concludes that no impacts of great magnitude are expected and that effects will be short-term and highly localized around the camp and drill site. Routine impacts include compaction of snow and firn under the LC-130 ski airstrip and toboggan trails, minor local air emissions from aircraft and generators, incineration of combustible trash, and noise and vibration from generators and drilling. Sanitary wastewater will be discharged below the surface into the permeable firn, forming a subsurface pool roughly 60 m across that will freeze back within about a year and eventually reach the ice front in about 1,000 years as the shelf moves seaward. Non-combustible solid wastes such as batteries, plastics, and rubber will be back-hauled to McMurdo and shipped to the U.S. Navy salvage yard at Port Hueneme, California, while liquid radioisotope wastes will be stored in metal containers for return. The most serious \u2014 but explicitly 'remote' \u2014 risk is drilling into a pressurized oil deposit in the sea-floor sediments: drilling to 100 m is considered safe, 150 m marginal, cores will be continuously inspected using gas chromatography for hydrocarbons from methane through hexane, and cement and bentonite will be on hand to plug the hole; a spill under 300\u2013500 m of ice would be essentially impossible to clean up, and released oil could eventually reach the Ross Sea and affect penguins, seabirds, seals, and any biota beneath the shelf.",
+    "evidence_quote": "Non-combustible solid wastes such as batteries and all plastics and rubber products will be back-loaded to McMurdo Station for removal to a disposal point outside the Treaty area. The disposal point will be the U.S. Navy's salvage yard at Port Hueneme, California.",
+    "source_pages": [
+      5,
+      33,
+      34,
+      36,
+      37,
+      42,
+      43,
+      49,
+      70,
+      76
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "no",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes",
+      "Q10": "yes"
+    },
+    "composite": 0.85,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": "T04_undefined_acronym",
+    "bucket": "summary_numeric",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS_WITH_NOTE",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.7,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 36,
+      "normalized_match_span": [
+        36,
+        162,
+        421
+      ],
+      "pages_searched": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        47,
+        48,
+        49,
+        50,
+        51,
+        68,
+        69,
+        70,
+        71,
+        72,
+        74,
+        75,
+        76,
+        77,
+        78
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The acronyms 'NSF' (National Science Foundation) and 'LC-130' are used without first-use expansion in the extracted value. NSF is expanded in the document itself (Part I) and LC-130 refers to the ski-equipped aircraft as described on p. 33, but neither is glossed in the value on first use. All figures (60 m, 1,000 years, 100 m safe, 150 m marginal, 300\u2013500 m ice depth, methane through hexane) veri",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        5,
+        33,
+        34,
+        36,
+        37,
+        42,
+        43,
+        49,
+        70,
+        76
+      ],
+      "pages_included": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        47,
+        48,
+        49,
+        50,
+        51,
+        68,
+        69,
+        70,
+        71,
+        72,
+        74,
+        75,
+        76,
+        77,
+        78
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 50140
+    }
+  },
+  "summary.overview": {
+    "extracted_value": "The Ross Ice Shelf Project (RISP) is a National Science Foundation research effort, run by the University of Nebraska, to drill through the roughly 500-meter-thick Ross Ice Shelf in Antarctica and sample the ice, the ~200-meter water column beneath it, and the sea-floor sediments below. The site is uninhabited by people; the affected environment is the ice shelf itself, the water and sea-floor beneath it, any specialized biota under the shelf, and \u2014 in the event of an oil release \u2014 penguins, seabirds, and seals of the Ross Sea. NSF considered but rejected a no-project alternative and back-hauling all wastes to McMurdo, and weighed reviewer suggestions such as running a seismic survey before drilling, incinerating sanitary wastes, and plugging or relocating the hole if hydrocarbons appear. Expected impacts are described as short-term and highly localized \u2014 snow compaction from ski-equipped aircraft, minor air emissions, noise, subsurface disposal of sanitary wastewater into the firn, and buried or back-hauled solid waste \u2014 with the main serious risk being a remote chance of drilling into a pressurized oil deposit, which under 300\u2013500 m of ice would be essentially impossible to clean up. Five federal agencies commented on the draft; U.S. Environmental Protection Agency (EPA) rated it 'ER' (Environmental Reservations) and Category 2 (Insufficient Information), the State Department said it 'glosses over' oil-spill impacts, and NSF responded with details on a prior seismic survey, gas-chromatograph core monitoring, and plans to plug the hole if substantial hydrocarbons are found.",
+    "evidence_quote": "we have classified the project as ER (Environmental Reservations) and rated the draft statement as Category 2 (Insufficient Information)",
+    "source_pages": [
+      4,
+      5,
+      25,
+      28,
+      33,
+      36,
+      43,
+      68,
+      70,
+      75,
+      76,
+      78,
+      79,
+      80
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "no",
+      "Q8": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": null,
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 79,
+      "normalized_match_span": [
+        79,
+        517,
+        649
+      ],
+      "pages_searched": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        41,
+        42,
+        43,
+        44,
+        45,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "2"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "All claims verified against cited pages. Key figures (500-m ice thickness, 200-m water depth, 300\u2013500 m cleanup impossibility) match exactly. EPA rating, State Department quote, and agency count all confirmed verbatim. Acronyms NSF, EPA, and RISP are all expanded on first use within the value.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        4,
+        5,
+        25,
+        28,
+        33,
+        36,
+        43,
+        68,
+        70,
+        75,
+        76,
+        78,
+        79,
+        80
+      ],
+      "pages_included": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        41,
+        42,
+        43,
+        44,
+        45,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 61632
+    }
+  },
+  "summary.project_description": {
+    "extracted_value": "The Ross Ice Shelf Project (RISP) is a multi-year National Science Foundation research operation, carried out by the University of Nebraska, to drill several holes through the roughly 500-meter-thick Ross Ice Shelf at about 82\u00b022'S, 168\u00b040'W, in order to sample the ice, the ~200-meter water column below it, and the sea-floor sediments and bedrock. The drilling program includes a ~100-m water well, a 16.5-cm-diameter cored hole through the shelf, a 30-cm gas-extraction hole, and a 30-cm access hole kept open by an electric heating cable so instruments and sampling gear can be lowered through it. The site was chosen to be crevasse-free and located about 300+ km from the seaward edge of the shelf; core samples will be analyzed for physical, chemical, gas, isotopic, and biological properties. The work is supported by a field camp of Jamesway huts for up to 35\u201350 people over roughly four to five months, supplied by ski-equipped LC-130 and Twin Otter aircraft from McMurdo Station.",
+    "evidence_quote": "A drill camp will be established at 82\u00b022'S, 168\u00b040'W",
+    "source_pages": [
+      4,
+      5,
+      28,
+      30,
+      31,
+      52
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": null,
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 28,
+      "normalized_match_span": [
+        28,
+        1285,
+        1337
+      ],
+      "pages_searched": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        50,
+        51,
+        52,
+        53,
+        54
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "82",
+        "22",
+        "168",
+        "40"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "All figures verify against cited pages: 500-m ice thickness and 200-m water column (p.28), 82\u00b022'S 168\u00b040'W drill site (p.28), 100-m water well and 16.5-cm cored hole and 30-cm gas extraction and access holes with electric heating cable (pp.30-31), crevasse-free and 300-km from seaward edge (p.52), 35 people for 4 months (p.31) with 50 people for 5 months mentioned on p.5, Jamesway huts (p.31), LC",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        4,
+        5,
+        28,
+        30,
+        31,
+        52
+      ],
+      "pages_included": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        50,
+        51,
+        52,
+        53,
+        54
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 22024
+    }
+  },
+  "summary.public_response": {
+    "extracted_value": "The final Environmental Impact Statement (EIS) was made available to the Council on Environmental Quality and the public on June 30, 1976. Written comments on the draft came from five federal agencies \u2014 the Departments of Transportation, Interior, and State, the Environmental Protection Agency, and the U.S. Atomic Energy Commission \u2014 with no public or non-governmental commenters described. The Coast Guard (for U.S. Department of Transportation (DOT)) and U.S. Environmental Protection Agency (EPA) pressed for a pre-drilling seismic survey and more detail on hydrocarbon-release precautions; the State Department said the draft 'glosses over' the potential impact of an oil spill; EPA rated the draft 'ER' (Environmental Reservations) and Category 2 (Insufficient Information), asked for a glossary of technical terms, and suggested analyzing cores for radionuclides such as uranium, thorium, and radium; Interior and AEC largely concurred, with AEC agreeing the impact would be 'largely negligible' relative to the scientific benefits. NSF responded that a 1974\u201375 seismic refraction study on the Ross Ice Shelf had already found sediments up to 2 km thick (averaging about 1.5 km), that cores would be gas-chromatograph monitored, and that the hole would be plugged if substantial hydrocarbons appeared.",
+    "evidence_quote": "Our review of the Statement does indicate that the impact of performing the RISP appears to have been largely anticipated by NSF, and we agree with the conclusion that the impact will be largely negligible as opposed to the scientific benefits derived from RISP.",
+    "source_pages": [
+      6,
+      70,
+      75,
+      77,
+      78,
+      79,
+      80,
+      84
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "yes",
+      "Q10": "n/a"
+    },
+    "composite": 1.0,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": null,
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 84,
+      "normalized_match_span": [
+        84,
+        459,
+        719
+      ],
+      "pages_searched": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "All claims verified against cited pages. DOT/Coast Guard seismic survey recommendation (p.70), State Dept 'glosses over' quote (p.75), EPA ER/Category 2 rating and glossary/radionuclide suggestions (pp.77-79), NSF reply on 2km/1.5km avg sediments and chromatograph monitoring (p.80), AEC 'largely negligible' concurrence (p.84), availability date June 30, 1976 (p.6). Acronyms EIS, DOT, EPA, AEC, NSF",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        6,
+        70,
+        75,
+        77,
+        78,
+        79,
+        80,
+        84
+      ],
+      "pages_included": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 29451
+    }
+  },
+  "summary_of_interest": {
+    "extracted_value": [
+      {
+        "claim": "The affected 'environment' is essentially uninhabited by humans \u2014 fewer than 50 isolated stations across 5.5 million square miles of Antarctica \u2014 making this an Environmental Impact Statement (EIS) where the protected community is the ice shelf, the water column beneath it, and possibly unique microbial life, rather than any human population.",
+        "salience_criterion": "unusual_impact",
+        "page": 58,
+        "evidence_quote": "In the 5.5 million square miles of the Antarctic and its offlying islands there are less than 50 isolated stations, very small numbers of ships and aircraft engaged in resupplying them, and extremely small numbers of surface vehicles and aircraft being used in support of scientific research.",
+        "why_notable": "This Environmental Impact Statement (EIS) scopes 'community' at a continental scale with essentially no human residents, an atypical framing for National Environmental Policy Act (NEPA) review.",
+        "evidence": [
+          {
+            "quote": "In the 5.5 million square miles of the Antarctic and its offlying islands there are less than 50 isolated stations, very small numbers of ships and aircraft engaged in resupplying them, and extremely small numbers of surface vehicles and aircraft being used in support of scientific research.",
+            "source_pages": [
+              "58"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "NSF acknowledges that an oil release beneath the shelf would be effectively uncleanable and that trapped oil could take on the order of 1,000 years to reach the Ross Sea as the shelf moves seaward.",
+        "salience_criterion": "large_magnitude",
+        "page": null,
+        "evidence_quote": "Without biodegradation it would take 1,000 years for this oil to reach the Ross Sea. The cleanup of a spill under 300-500 meters of ice would be impossible.",
+        "why_notable": "The document concedes a low-probability but essentially irreversible, millennium-scale contamination pathway, an unusually long impact horizon.",
+        "evidence": [
+          {
+            "quote": "Without biodegradation it would take 1,000 years for this oil to reach the Ross Sea. The cleanup of a spill under 300-500 meters of ice would be impossible.",
+            "source_pages": [],
+            "quote_verified": false,
+            "note": "Quote not found verbatim in doc \u2014 forced HUMAN_REVIEW."
+          }
+        ]
+      },
+      {
+        "claim": "The State Department told NSF the draft 'glosses over' the potential impact of an oil spill, a pointed inter-agency rebuke on the document's central risk.",
+        "salience_criterion": "contested",
+        "page": 75,
+        "evidence_quote": "In our view, the statement glosses over the potential environmental impact of an oil spill should it occur as a result of drilling (pages 30 and 31).",
+        "why_notable": "A sister federal agency directly challenges the adequacy of the Environmental Impact Statement (EIS)'s treatment of its most consequential hazard.",
+        "evidence": [
+          {
+            "quote": "In our view, the statement glosses over the potential environmental impact of an oil spill should it occur as a result of drilling (pages 30 and 31).",
+            "source_pages": [
+              "75"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "U.S. Environmental Protection Agency (EPA) rated the draft 'ER' (Environmental Reservations) and Category 2 (Insufficient Information), and pressed for a pre-drilling seismic survey and radionuclide analysis of cores.",
+        "salience_criterion": "contested",
+        "page": 79,
+        "evidence_quote": "In light of our review and in accordance with EPA procedure, we have classified the project as ER (Environmental Reservations) and rated the draft statement as Category 2 (Insufficient Information).",
+        "why_notable": "A formal U.S. Environmental Protection Agency (EPA) 'insufficient information' rating signals substantive disagreement with NSF's evidentiary basis for approving the drilling.",
+        "evidence": [
+          {
+            "quote": "In light of our review and in accordance with EPA procedure, we have classified the project as ER (Environmental Reservations) and rated the draft statement as Category 2 (Insufficient Information).",
+            "source_pages": [
+              "79"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "Sanitary wastewater will be injected below the surface into the permeable firn, forming a roughly 60-m-wide subsurface pool that freezes back over about a year \u2014 a disposal method tied to the specific physics of ice sheets rather than any standard wastewater practice.",
+        "salience_criterion": "unusual_impact",
+        "page": 37,
+        "evidence_quote": "Measurements of similar systems in the firn of both Greenland and Antarctica indicate the maximum lateral development and contour of such a pool to be one of circular configuration with a diameter of approximately 60-m",
+        "why_notable": "Subsurface firn discharge as a sanitary waste method is highly atypical and drew reviewer pushback favoring incineration.",
+        "evidence": [
+          {
+            "quote": "Measurements of similar systems in the firn of both Greenland and Antarctica indicate the maximum lateral development and contour of such a pool to be one of circular configuration with a diameter of approximately 60-m",
+            "source_pages": [
+              "37"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "NSF rejected running a below-shelf seismic survey to map possible oil traps before drilling deeper, on the grounds that the data 'would be of limited value unless a program of high-magnitude were to be initiated,' despite the Coast Guard and U.S. Environmental Protection Agency (EPA) urging exactly such a survey.",
+        "salience_criterion": "contested",
+        "page": 5,
+        "evidence_quote": "the data to be obtained would be of limited value unless a program of high-magnitude were to be initiated.",
+        "why_notable": "NSF and its reviewers disagree on whether pre-drilling seismic characterization is necessary to manage the blowout risk, a live technical dispute in the record.",
+        "evidence": [
+          {
+            "quote": "the data to be obtained would be of limited value unless a program of high-magnitude were to be initiated.",
+            "source_pages": [
+              "5"
+            ],
+            "quote_verified": true
+          }
+        ]
+      }
+    ],
+    "evidence_quote": "In the 5.5 million square miles of the Antarctic and its offlying islands there are less than 50 isolated stations, very small numbers of ships and aircraft engaged in resupplying them",
+    "source_pages": [
+      5,
+      37,
+      58,
+      75,
+      79
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "yes",
+      "Q4": "no",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7a": "yes",
+      "Q7b": "no",
+      "Q7c": "n/a",
+      "Q7d": "yes"
+    },
+    "composite": 0.4,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "bucket_degenerate_severe",
+    "failure_tag": "T03_outside_text_fabrication",
+    "bucket": "summary_of_interest",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "bucket_degenerate_severe",
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 0.5,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": 0.833333,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "mixed",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 58,
+      "normalized_match_span": [
+        58,
+        1360,
+        1543
+      ],
+      "pages_searched": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        35,
+        36,
+        37,
+        38,
+        39,
+        56,
+        57,
+        58,
+        59,
+        60,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "5.5million",
+        "50"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": true,
+      "degenerate_severe": true,
+      "saturated": false,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 0
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "Entry 2 claims NSF acknowledges oil would take 1,000 years to reach the Ross Sea and cleanup 'under 300-500 meters of ice would be impossible.' The quoted sentence 'Without biodegradation it would take 1,000 years for this oil to reach the Ross Sea. The cleanup of a spill under 300-500 meters of ice would be impossible.' does not appear in the cited evidence \u2014 the entry itself flags quote_verified",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        5,
+        37,
+        58,
+        75,
+        79
+      ],
+      "pages_included": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        35,
+        36,
+        37,
+        38,
+        39,
+        56,
+        57,
+        58,
+        59,
+        60,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 34411
+    }
+  },
+  "themes": {
+    "extracted_value": {
+      "themes": [
+        "Wildlife and Natural Areas",
+        "Governance and Institutional Control"
+      ],
+      "subthemes": [
+        "Habitat Conservation and Biodiversity",
+        "Human-Wildlife Interactions",
+        "Environmental Regulation and Policy",
+        "Institutional Power and Resource Management"
+      ]
+    },
+    "evidence_quote": "National Science Foundation Directorate for Astronomical, Atmospheric, Earth, and Ocean Sciences Division of Polar Programs",
+    "source_pages": [
+      4,
+      28
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "n/a",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "bucket_degenerate_severe",
+    "failure_tag": null,
+    "bucket": "alternatives+themes",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "bucket_degenerate_severe",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 4,
+      "normalized_match_span": [
+        4,
+        34,
+        154
+      ],
+      "pages_searched": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": true,
+      "degenerate_severe": true,
+      "saturated": false,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 1
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "Page 4 supports Governance and Institutional Control (NSF as responsible federal agency, regulatory framework). Page 28 supports Wildlife and Natural Areas through the broader scientific context of investigating unique Antarctic biological environments. Both themes are well-grounded in the document's subject matter.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        4,
+        28
+      ],
+      "pages_included": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 38699
+    }
+  },
+  "title": {
+    "extracted_value": "Ross Ice Shelf project : environmental impact statement.",
+    "evidence_quote": "FINAL ENVIRONMENTAL IMPACT STATEMENT\nRoss Ice Shelf Project (RISP)",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "n/a",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 2,
+      "normalized_match_span": [
+        2,
+        8,
+        72
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The extracted title 'Ross Ice Shelf project : environmental impact statement.' matches the cover page (page 2) which reads 'FINAL ENVIRONMENTAL IMPACT STATEMENT / Ross Ice Shelf Project (RISP)'. The acronym RISP appears in parentheses immediately after the full name on the cover page, so it is defined. The title is a plausible EIS title for a named scientific research project.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 4182
+    }
+  },
+  "year": {
+    "extracted_value": 1976,
+    "evidence_quote": "FINAL ENVIRONMENTAL IMPACT STATEMENT\nRoss Ice Shelf Project (RISP)\nJune 30, 1976",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes",
+      "Q10": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 2,
+      "normalized_match_span": [
+        2,
+        8,
+        85
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "30",
+        "1976"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The date 'June 30, 1976' appears on page 2 as part of the Final EIS cover/summary page, clearly supporting the extracted year of 1976. No higher-priority signature or transmittal date is visible in the cited pages.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 4182
+    }
+  },
+  "_meta": {
+    "doc_id": "p0491_35556036854362",
+    "artifact_stage": "v1",
+    "generated_at": "2026-08-10T18:21:48+00:00",
+    "plan_ref": "MCAL_PLAN 3.12",
+    "schema_keys": [
+      "extracted_value",
+      "evidence_quote",
+      "source_pages",
+      "verdict",
+      "rubric_answers",
+      "composite",
+      "applied_tau",
+      "gated_to_human",
+      "gate_reason",
+      "failure_tag",
+      "bucket",
+      "artifact_stage",
+      "judge_model"
+    ],
+    "n_fields": 15,
+    "reserved_keys": [
+      "_meta",
+      "_rollup",
+      "_null_tag_monitor"
+    ],
+    "reviewer_note": "Every field is present, gated or not, with its raw extraction (MCAL_PLAN 7 Q8). Grade `extracted_value` against `evidence_quote` and `source_pages`; `gate_reason` says why the field was routed to a human. `extracted_value: []` on summary_of_interest is a legitimate 'this document is routine'; `null` plus a gate_reason is a generation failure."
+  },
+  "_rollup": {
+    "doc_id": "p0491_35556036854362",
+    "artifact_stage": "v1",
+    "geocoder_stack": "reduced",
+    "n_fields": 15,
+    "n_gated": 11,
+    "n_passed": 4,
+    "gate_rate": 0.7333,
+    "gate_reasons": {
+      "none": 4,
+      "composite_below_tau": 6,
+      "critic_verdict": 1,
+      "bucket_degenerate_severe": 3,
+      "reduced_geocoder_stack": 1
+    },
+    "verdicts": {
+      "PASS": 4,
+      "HUMAN_REVIEW": 11
+    },
+    "per_bucket": {
+      "M1": {
+        "n_fields": 4,
+        "n_gated": 0,
+        "n_passed": 4,
+        "gate_reasons": {},
+        "tau_deployed": 0.5,
+        "gate_all_to_human": false,
+        "degenerate": true,
+        "degenerate_severe": false,
+        "N_wrong_docs": 3
+      },
+      "summary_narrative": {
+        "n_fields": 5,
+        "n_gated": 5,
+        "n_passed": 0,
+        "gate_reasons": {
+          "composite_below_tau": 4,
+          "critic_verdict": 1
+        },
+        "tau_deployed": 1.0,
+        "gate_all_to_human": false,
+        "degenerate": true,
+        "degenerate_severe": false,
+        "N_wrong_docs": 5
+      },
+      "summary_numeric": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "composite_below_tau": 1
+        },
+        "tau_deployed": 1.0,
+        "gate_all_to_human": false,
+        "degenerate": true,
+        "degenerate_severe": false,
+        "N_wrong_docs": 3
+      },
+      "summary_of_interest": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "bucket_degenerate_severe": 1
+        },
+        "tau_deployed": null,
+        "gate_all_to_human": true,
+        "degenerate": true,
+        "degenerate_severe": true,
+        "N_wrong_docs": 0
+      },
+      "alternatives+themes": {
+        "n_fields": 2,
+        "n_gated": 2,
+        "n_passed": 0,
+        "gate_reasons": {
+          "bucket_degenerate_severe": 2
+        },
+        "tau_deployed": null,
+        "gate_all_to_human": true,
+        "degenerate": true,
+        "degenerate_severe": true,
+        "N_wrong_docs": 1
+      },
+      "location": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "reduced_geocoder_stack": 1
+        },
+        "tau_deployed": null,
+        "gate_all_to_human": true,
+        "degenerate": false,
+        "degenerate_severe": false,
+        "N_wrong_docs": 6
+      },
+      "key_people": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "composite_below_tau": 1
+        },
+        "tau_deployed": 1.0,
+        "gate_all_to_human": false,
+        "degenerate": false,
+        "degenerate_severe": false,
+        "N_wrong_docs": 6
+      }
+    },
+    "null_tag": {
+      "M1": {
+        "n_fields": 4,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      },
+      "summary_narrative": {
+        "n_fields": 5,
+        "n_human_review": 5,
+        "n_null_tag": 4,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      },
+      "summary_numeric": {
+        "n_fields": 1,
+        "n_human_review": 1,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      },
+      "summary_of_interest": {
+        "n_fields": 1,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 1
+      },
+      "alternatives+themes": {
+        "n_fields": 2,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 2
+      },
+      "location": {
+        "n_fields": 1,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 1
+      },
+      "key_people": {
+        "n_fields": 1,
+        "n_human_review": 1,
+        "n_null_tag": 1,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      }
+    },
+    "summary_of_interest": {
+      "present": true,
+      "generation_failure": false,
+      "non_empty": true,
+      "n_entries": 6,
+      "salience_criterion_counts": {
+        "contested": 3,
+        "unusual_impact": 2,
+        "large_magnitude": 1,
+        "novel_alternative": 0,
+        "community_pushback": 0,
+        "precedent": 0,
+        "cross_jurisdictional": 0
+      },
+      "off_vocabulary_criteria": [],
+      "n_t17_manufactured_salience": 0,
+      "n_t18_duplicates_summary": 0,
+      "overlap_with_standard_summary": {
+        "jaccard": 0.1898,
+        "n_soi_tokens": 169,
+        "n_summary_tokens": 370,
+        "per_entry_jaccard": [
+          0.0648,
+          0.0337,
+          0.0287,
+          0.0395,
+          0.0495,
+          0.0594
+        ],
+        "max_entry_jaccard": 0.0648,
+        "tokenizer": "mcal.quote_check.content_tokens (stopword+boilerplate filtered)"
+      },
+      "nonempty_rate_ceiling": 0.6,
+      "soi_useful": null
+    },
+    "critic": {
+      "n_fields": 15,
+      "verdicts": {
+        "PASS": 10,
+        "RE_EXTRACT": 2,
+        "PASS_WITH_NOTE": 3
+      },
+      "overrides": {},
+      "n_quote_checked": 15,
+      "n_quote_verified": 15,
+      "evidence_quote_verifiable_rate": 1.0,
+      "n_off_vocabulary_tags": 0,
+      "n_null_tag_human_review": 0,
+      "n_schema_violations": 0,
+      "n_evidence_truncated": 0
+    },
+    "re_extract": {}
+  },
+  "_null_tag_monitor": {
+    "threshold": 0.15,
+    "taxonomy_refresh_recommended": true,
+    "buckets_needing_refresh": [
+      "key_people",
+      "summary_narrative"
+    ],
+    "n_docs_rolling": 2,
+    "per_bucket": {
+      "M1": {
+        "n_fields": 8,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "summary_narrative": {
+        "n_fields": 10,
+        "n_human_review": 10,
+        "n_null_tag": 7,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": 0.7,
+        "exceeds_threshold": true
+      },
+      "summary_numeric": {
+        "n_fields": 2,
+        "n_human_review": 2,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": 0.0,
+        "exceeds_threshold": false
+      },
+      "summary_of_interest": {
+        "n_fields": 2,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 2,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "alternatives+themes": {
+        "n_fields": 4,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 4,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "location": {
+        "n_fields": 2,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 2,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "key_people": {
+        "n_fields": 2,
+        "n_human_review": 2,
+        "n_null_tag": 2,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": 1.0,
+        "exceeds_threshold": true
+      }
+    },
+    "path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/mcal/artifacts/null_tag_monitor.json",
+    "halt_condition": false
+  }
+}

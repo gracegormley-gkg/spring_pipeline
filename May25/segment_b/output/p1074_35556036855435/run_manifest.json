@@ -1,0 +1,2702 @@
+{
+  "alternatives": {
+    "extracted_value": [
+      {
+        "name": "Proposed Action (Interim Condition \u2013 Two US Units)",
+        "description": "Addition of two hydroelectric generating units on the United States side of Amistad Dam, providing 57,000 kW installed capacity and operated as a two-unit system with the existing Falcon powerhouse.",
+        "evidence": [
+          {
+            "quote": "a hydroelectric power plant facility of 57,000 kW installed capacity (32,000 kW at minimum head) to be added to the existing Amistad Dam",
+            "source_pages": [
+              "48"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "name": "Ultimate Condition (Two Units Each Side)",
+        "description": "Addition of two generating units on both the United States and Mexican sides of Amistad Dam, resulting in a four-unit total addition and reduced energy available to US customers compared to the interim condition.",
+        "evidence": [
+          {
+            "quote": "the other condition for a two unit addition to both the United States and Mexican sides (i.e., 2 + 2)",
+            "source_pages": [
+              "48"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "name": "Natural Gas",
+        "description": "Use of natural gas-fired power plants to supply equivalent peaking energy, rejected due to short supply, high cost, and a moratorium on new gas-fired plant construction.",
+        "evidence": [
+          {
+            "quote": "Natural gas is the most environmentally acceptable fuel since the stack emissins are very low in pollutants, and there is no ash.",
+            "source_pages": [
+              "49"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "name": "Fuel Oil",
+        "description": "Use of fuel oil-fired power plants as an alternative energy source, rejected due to limited domestic supply, increasing cost of imported crude, and conflict with national self-sufficiency goals.",
+        "evidence": [
+          {
+            "quote": "Fuel oil is also a relatively clean burning fuel that leaves virtually no residue.",
+            "source_pages": [
+              "49"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "name": "Coal",
+        "description": "Use of coal-fired steam electric generation as an alternative, considered less suitable than hydropower for peaking service and associated with unresolved stack gas emission problems.",
+        "evidence": [
+          {
+            "quote": "The combustion of coal results in emission to the atmosphere of oxides of sulfur and nitrogen, as well as fly ash.",
+            "source_pages": [
+              "49"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "name": "Lignite",
+        "description": "Use of Texas lignite-fired steam electric plants as an alternative, rejected because lignite plants are base-load and inefficient for peaking, produce large quantities of residue, and have unsatisfactory stack gas emission controls.",
+        "evidence": [
+          {
+            "quote": "Lignite-fired steam electric generation is not a viable alternative to Amistad hydropower at this time because it is not efficient when used for peaking, because stack gas emission controls have not been developed satisfactorily, and because large quantities of residue require special handling.",
+            "source_pages": [
+              "50"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "name": "Nuclear",
+        "description": "Use of nuclear power plants as an alternative energy source, rejected due to uncertainty in the long-term availability of uranium fuel supplies relative to projected cumulative demand.",
+        "evidence": [
+          {
+            "quote": "Since this fuel supply is in question, it cannot be considered a viable alternative to hydropower.",
+            "source_pages": [
+              "50"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "name": "No Action",
+        "description": "Taking no action to add hydroelectric facilities at Amistad Dam, which would likely result in increased fossil fuel use, additional foreign oil imports, and further depletion of non-renewable domestic energy resources.",
+        "evidence": [
+          {
+            "quote": "The no action alternative implies that local power consumers can do without additional electrical energy in the face of increasing population.",
+            "source_pages": [
+              "50"
+            ],
+            "quote_verified": true
+          }
+        ]
+      }
+    ],
+    "evidence_quote": "Lignite-fired steam electric generation is not a viable alternative to Amistad hydropower at this time because it is not efficient when used for peaking, because stack gas emission controls have not been developed satisfactorily, and because large quantities of residue require special handling.",
+    "source_pages": [
+      48,
+      49,
+      50
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "n/a",
+      "Q8": "yes",
+      "Q9": "yes",
+      "Q10": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "bucket_degenerate_severe",
+    "failure_tag": null,
+    "bucket": "alternatives+themes",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "bucket_degenerate_severe",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 50,
+      "normalized_match_span": [
+        50,
+        385,
+        676
+      ],
+      "pages_searched": [
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": true,
+      "degenerate_severe": true,
+      "saturated": false,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 1
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "All eight alternatives are directly supported by verbatim or near-verbatim substrings on the cited pages. The No Action alternative is present. Labels match the document's own terminology. The two hydroelectric conditions (Interim/Ultimate) are correctly distinguished. No acronyms are left undefined. Figures (57,000 kW, 2+2) match the source exactly.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        48,
+        49,
+        50
+      ],
+      "pages_included": [
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 18013
+    }
+  },
+  "eis_type": {
+    "extracted_value": "Draft",
+    "evidence_quote": "DRAFT ENVIRONMENTAL STATEMENT\nAMISTAD HYDROELECTRIC PLANT",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "n/a",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "n/a",
+      "Q10": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 1,
+      "normalized_match_span": [
+        1,
+        82,
+        139
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": null,
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 3668
+    }
+  },
+  "key_people": {
+    "extracted_value": {
+      "agency_preparers": [
+        {
+          "name": "J. F. Friedkin",
+          "role": "United States Commissioner",
+          "organization": "International Boundary and Water Commission, United States Section",
+          "bucket": "agency_preparers",
+          "evidence": [
+            {
+              "quote": "J. F. FRIEDKIN, UNITED STATES COMMISSIONER",
+              "source_pages": [
+                "2"
+              ],
+              "quote_verified": true
+            }
+          ]
+        }
+      ],
+      "cooperating_agencies": [],
+      "consulted_entities": [],
+      "public_commenters": [],
+      "comment_response_present": false
+    },
+    "evidence_quote": "J. F. FRIEDKIN, UNITED STATES COMMISSIONER SEPTEMBER 1976",
+    "source_pages": [
+      2
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "n/a",
+      "Q8": "n/a",
+      "Q9": "n/a",
+      "Q10": "yes",
+      "Q11": "n/a"
+    },
+    "composite": 1.0,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": null,
+    "bucket": "key_people",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 2,
+      "normalized_match_span": [
+        2,
+        248,
+        302
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "1976"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": false,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 6
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "Document is dated September 1976, predating the modern 40 CFR \u00a71501.8 cooperating-agency schema (effective 1978), but cooperating_agencies is correctly left empty, so Q10 does not trigger HUMAN_REVIEW. The single agency_preparer entry is well-supported by the cited page 2 text.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        2
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 2704
+    }
+  },
+  "lead_agency": {
+    "extracted_value": [
+      "International Boundary and Water Commission United States and Mexico United States Section",
+      "United States Army Engineer District Fort Worth, Texas"
+    ],
+    "evidence_quote": "INTERNATIONAL BOUNDARY AND WATER COMMISSION UNITED STATES AND MEXICO UNITED STATES SECTION\nDRAFT ENVIRONMENTAL STATEMENT\n\nAMISTAD HYDROELECTRIC PLANT\nRIO GRANDE\nVAL VERDE COUNTY, TEXAS\nPREPARED BY\nUNITED STATES ARMY ENGINEER DISTRICT\nFORT WORTH, TEXAS",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "no"
+    },
+    "composite": 0.85,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": "T05_commenter_mislabeled_as_cooperator",
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS_WITH_NOTE",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.7,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 2,
+      "normalized_match_span": [
+        2,
+        0,
+        247
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "Page 2 lists the US Army Engineer District Fort Worth as the preparer ('PREPARED BY'), not as a joint lead agency. The International Boundary and Water Commission United States Section is the responsible office (confirmed on page 3). The Army Engineer District appears to be the document preparer/cooperator rather than a formally designated co-lead agency. The extracted value lists both as lead age",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 3668
+    }
+  },
+  "location": {
+    "extracted_value": {
+      "places": [
+        {
+          "name": "Amistad Dam and Reservoir",
+          "admin_hierarchy": {
+            "poi": "Amistad Dam",
+            "neighborhood": null,
+            "city": null,
+            "county": "Val Verde County",
+            "state": "Texas",
+            "country": "United States"
+          },
+          "role": "primary",
+          "evidence": [
+            {
+              "quote": "Construction and operation of a conventional hydroelectric facility at Amistad Dam and Reservoir on the Rio Grande in Val Verde County, Texas.",
+              "source_pages": [
+                "3"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Falcon Dam and Reservoir",
+          "admin_hierarchy": {
+            "poi": "Falcon Dam",
+            "neighborhood": null,
+            "city": null,
+            "county": null,
+            "state": "Texas",
+            "country": "United States"
+          },
+          "role": "primary",
+          "evidence": [
+            {
+              "quote": "The plan of operation includes operating the existing Falcon and the proposed Amistad hydroelectric plants as a two unit system.",
+              "source_pages": [
+                "11"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Rio Grande",
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": null,
+            "county": null,
+            "state": "Texas",
+            "country": "United States"
+          },
+          "role": "primary",
+          "evidence": [
+            {
+              "quote": "The proposed action will be located on the Rio Grande in Val Verde County, Texas",
+              "source_pages": [
+                "10"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Eagle Pass Project",
+          "admin_hierarchy": {
+            "poi": "Central Power and Light's Eagle Pass plant",
+            "neighborhood": null,
+            "city": "Eagle Pass",
+            "county": null,
+            "state": "Texas",
+            "country": "United States"
+          },
+          "role": "reference",
+          "evidence": [
+            {
+              "quote": "The Maverick County Water Control and Improvement District No. 1 project is located downstream from Amistad Dam near Eagle Pass, Texas.",
+              "source_pages": [
+                "26"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Del Rio",
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": "Del Rio",
+            "county": "Val Verde County",
+            "state": "Texas",
+            "country": "United States"
+          },
+          "role": "reference",
+          "evidence": [
+            {
+              "quote": "This site is approximately 12 miles upstream from Del Rio, Texas.",
+              "source_pages": [
+                "10"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Amistad National Recreation Area",
+          "admin_hierarchy": {
+            "poi": "Amistad National Recreation Area",
+            "neighborhood": null,
+            "city": null,
+            "county": "Val Verde County",
+            "state": "Texas",
+            "country": "United States"
+          },
+          "role": "reference",
+          "evidence": [
+            {
+              "quote": "The area administered by the Park Service is known as the Amistad National Recreation Area and comprises approximately 63,000 acres of land and water.",
+              "source_pages": [
+                "24"
+              ],
+              "quote_verified": true
+            }
+          ]
+        }
+      ],
+      "is_multi_site": true,
+      "geocoded": [
+        {
+          "lat": 29.452177,
+          "lon": -101.041965,
+          "bbox": [
+            -101.054615,
+            29.449935,
+            -101.031552,
+            29.459526
+          ],
+          "source": "nominatim",
+          "confidence": 0.477,
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": null,
+            "county": "Val Verde County",
+            "state": "Texas",
+            "country": "United States"
+          },
+          "level": "poi",
+          "query": "Amistad Dam, Val Verde County, Texas, United States",
+          "matched_name": "Amistad Dam Road, Amistad Village, Val Verde County, Texas, United States",
+          "bbox_synthetic": false,
+          "importance": 0.053,
+          "confident": false,
+          "stack": "reduced",
+          "accepted_level": "poi",
+          "acceptance_reason": "bbox_contained_in_county",
+          "failed_containment_checks": [],
+          "site_name": "Amistad Dam and Reservoir",
+          "role": "primary"
+        },
+        {
+          "lat": 26.558944,
+          "lon": -99.164755,
+          "bbox": [
+            -99.164805,
+            26.558893,
+            -99.164705,
+            26.558993
+          ],
+          "source": "nominatim",
+          "confidence": 0.517,
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": null,
+            "county": "Starr County",
+            "state": "Texas",
+            "country": "United States"
+          },
+          "level": "poi",
+          "query": "Falcon Dam, Texas, United States",
+          "matched_name": "Falcon Dam, Starr County, Texas, 79584, United States",
+          "bbox_synthetic": false,
+          "importance": 0.133,
+          "confident": false,
+          "stack": "reduced",
+          "accepted_level": "poi",
+          "acceptance_reason": "bbox_contained_in_state",
+          "failed_containment_checks": [],
+          "site_name": "Falcon Dam and Reservoir",
+          "role": "primary"
+        },
+        {
+          "lat": 27.712141,
+          "lon": -99.754612,
+          "bbox": [
+            -99.758906,
+            27.70562,
+            -99.75114,
+            27.718128
+          ],
+          "source": "nominatim",
+          "confidence": 0.523,
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": null,
+            "county": "Webb County",
+            "state": "Texas",
+            "country": "United States"
+          },
+          "level": "poi",
+          "query": "Rio Grande, Texas, United States",
+          "matched_name": "Rio Grande, Minera, Webb County, Texas, United States",
+          "bbox_synthetic": false,
+          "importance": 0.147,
+          "confident": false,
+          "stack": "reduced",
+          "accepted_level": "poi",
+          "acceptance_reason": "bbox_contained_in_state",
+          "failed_containment_checks": [],
+          "site_name": "Rio Grande",
+          "role": "primary"
+        }
+      ],
+      "scope": "site",
+      "textual_location": "Rio Grande Basin",
+      "corridor": false
+    },
+    "evidence_quote": "Construction and operation of a conventional hydroelectric facility at Amistad Dam and Reservoir on the Rio Grande in Val Verde County, Texas.",
+    "source_pages": [
+      3,
+      10,
+      11,
+      24,
+      26
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes",
+      "Q10": "yes",
+      "Q11": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "reduced_geocoder_stack",
+    "failure_tag": null,
+    "bucket": "location",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "reduced_geocoder_stack",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 3,
+      "normalized_match_span": [
+        3,
+        293,
+        433
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": false,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 6
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "All primary sites (Amistad Dam and Reservoir, Falcon Dam and Reservoir, Rio Grande) are supported by the cited pages. Geocoded coordinates for Amistad Dam fall within Val Verde County, Texas. Falcon Dam geocodes to Starr County, Texas, which is consistent with the document's description of Falcon Dam being located downstream on the Rio Grande (the document does not specify a county for Falcon Dam ",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        3,
+        10,
+        11,
+        24,
+        26
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 72348
+    }
+  },
+  "summary.affected_community": {
+    "extracted_value": "The study area covers eight Texas counties along the Rio Grande downstream from Amistad Dam (Cameron, Hidalgo, Kinney, Maverick, Starr, Val Verde, Webb, and Zapata), with a 1970 population of 464,391 that is roughly 97 percent Caucasian and 3 percent Negro, and 9.1 percent unemployment versus 3.7 percent statewide. 1969 per capita income averaged $1,471 compared to $3,301 for Texas, and land use is dominated by rangeland (84 percent) and cropland (over 11 percent). The nearest town is Del Rio (Val Verde County), about 12 miles downstream of the dam and home to Laughlin Air Force Base; further downstream, Eagle Pass and the Maverick County Water Control and Improvement District No. 1 (which operates its own diversion dam and hydroelectric plant fed by Amistad releases) flagged specific concerns about Eagle Pass's drinking-water intake, Shelby Park, and the municipal golf course along the river.",
+    "evidence_quote": "The eight county study area population was 459,744 in 1960 and increased to 464,391 in 1970",
+    "source_pages": [
+      27,
+      28,
+      29,
+      30,
+      31,
+      60,
+      77
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "n/a"
+    },
+    "composite": 1.0,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": null,
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 28,
+      "normalized_match_span": [
+        28,
+        623,
+        714
+      ],
+      "pages_searched": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        58,
+        59,
+        60,
+        61,
+        62,
+        75,
+        76,
+        77,
+        78,
+        79
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "459744",
+        "1960",
+        "464391",
+        "1970"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "All figures verified: 464,391 (1970 pop, p28), 97% Caucasian / 3% Negro (p28), 9.1% vs 3.7% unemployment (p29), $1,471 vs $3,301 per capita income 1969 (p30), 84% rangeland / 11% cropland (p31-32), eight counties named (p28), Del Rio 12 miles from Amistad Dam and Laughlin AFB (p27), Eagle Pass drinking-water intake, Shelby Park, and golf course concerns (p77), Maverick County WCID No. 1 diversion ",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        60,
+        77
+      ],
+      "pages_included": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        58,
+        59,
+        60,
+        61,
+        62,
+        75,
+        76,
+        77,
+        78,
+        79
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 41048
+    }
+  },
+  "summary.alternatives_overview": {
+    "extracted_value": "The Environmental Impact Statement (EIS) compares Amistad hydropower to five other ways of producing the same electricity \u2014 natural gas, fuel oil, coal, Texas lignite, and nuclear \u2014 plus a 'no action' option of building nothing. Natural gas is rejected because it is scarce and under a moratorium on new gas-fired plants, and fuel oil because it would require imported foreign oil. High-quality coal deposits in Webb County are too small to support a mine-mouth plant, and northern coal has unresolved sulfur-oxide emissions problems: of 24 stack-gas cleaning installations at U.S. coal-fired plants of 150 MW or larger, none was in satisfactory operation in 1974. Lignite and coal plants are base-load (they run at steady output and can't efficiently follow peak demand the way hydropower can), and nuclear is not viable because projected cumulative uranium demand by 2000 (2.4 to 3.1 million tons of U3O8) far exceeds the estimated reserve base of 500,000 tons. Under 'no action,' the consumers would likely get power from imported oil or south Texas lignite instead.",
+    "evidence_quote": "Of 24 stack gas installations at coal-fired power plants of 150 MW or larger in the United States, none was in satisfactory operation in 1974.",
+    "source_pages": [
+      3,
+      49,
+      50
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "yes",
+      "Q4": "no",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "n/a"
+    },
+    "composite": 0.65,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "critic_verdict",
+    "failure_tag": "T03_outside_text_fabrication",
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 49,
+      "normalized_match_span": [
+        49,
+        2782,
+        2922
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "24",
+        "150",
+        "1974"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The value states that under 'no action' consumers would likely get power from 'imported oil or south Texas lignite.' The document's no-action paragraph (6.13) says additional fossil fuels would be used, with 'additional importation of foreign oil, and further depletion of non-renewable domestic oil, gas, and uranium' \u2014 it does not specifically identify south Texas lignite as the substitute. Also, ",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        3,
+        49,
+        50
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 18327
+    }
+  },
+  "summary.environmental_impact": {
+    "extracted_value": "During the 2-3 year construction period, impacts include temporary dust and exhaust emissions, sedimentation from a cofferdam in the streambed, and construction noise. During operation, Amistad's conservation pool would drop by an average of 2 feet while Falcon's pool would rise about 3 feet, and daily hydropower releases would raise the river roughly 4 feet just below the dam, decreasing to under 2 feet below Eagle Pass. The most significant impact is on the tailrace fishery: from roughly May through November, bottom-water released through the penstocks could be 10-12 \u00b0C colder and carry near-zero oxygen into the first 2.2 miles below the dam, possibly causing minor fish kills. Bank sloughing (bank collapse) would increase initially \u2014 observed about six miles downstream during a 9,000 cfs test release \u2014 and the Fish and Wildlife Service warned that altered flows and reservoir fluctuation 'could have a profound effect on existing fishery resources.' The plant would annually offset roughly 482,000 tons of Texas lignite, about 625,000 barrels of oil, or 3.1 billion cubic feet of natural gas, and no properties on the National Register of Historic Places would be affected.",
+    "evidence_quote": "The primary impact will result from the released water being 10 to 12 degrees colder (centigrade scale) and containing low or negligible oxygen.",
+    "source_pages": [
+      11,
+      27,
+      39,
+      41,
+      42,
+      49,
+      56,
+      89
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "yes",
+      "Q4": "no",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "no",
+      "Q9": "no",
+      "Q10": "n/a"
+    },
+    "composite": 0.65,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "critic_verdict",
+    "failure_tag": "T02_numeric_hallucination",
+    "bucket": "summary_numeric",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 39,
+      "normalized_match_span": [
+        39,
+        3375,
+        3516
+      ],
+      "pages_searched": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        25,
+        26,
+        27,
+        28,
+        29,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        47,
+        48,
+        49,
+        50,
+        51,
+        54,
+        55,
+        56,
+        57,
+        58,
+        87,
+        88,
+        89,
+        90,
+        91
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "10",
+        "12"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "Multiple numeric/attribution problems: (1) The value says '625,000 barrels of oil' \u2014 paragraph 6.08 says 'about 625,000 barrels of crude oil per year' and paragraph 4.47's table lists 'Fuel oil 498,900 barrels.' The value conflates two different figures and drops the 'crude' qualifier. (2) The value says the 482,000 tons figure is 'Texas lignite' \u2014 but paragraph 6.09 attributes the 482,000 tons/ye",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        11,
+        27,
+        39,
+        41,
+        42,
+        49,
+        56,
+        89
+      ],
+      "pages_included": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        25,
+        26,
+        27,
+        28,
+        29,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        47,
+        48,
+        49,
+        50,
+        51,
+        54,
+        55,
+        56,
+        57,
+        58,
+        87,
+        88,
+        89,
+        90,
+        91
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 71563
+    }
+  },
+  "summary.overview": {
+    "extracted_value": "The U.S. Section of the International Boundary and Water Commission proposes to add a 57,000 kW hydroelectric power plant (with two turbine-generator units) to the existing Amistad Dam on the Rio Grande, about 12 miles upstream of Del Rio, Texas, at a cost of about $28 million and 2-3 years of construction. The power would serve about 464,391 people across eight south Texas counties along the Rio Grande, distributed through Central Power and Light Company and two rural electric cooperatives. The document rejects five alternatives \u2014 natural gas, fuel oil, coal, Texas lignite, and nuclear \u2014 plus a 'no action' option, because fossil fuels are scarce or polluting, coal and lignite plants run at steady output and cannot efficiently follow peak demand the way hydropower can, and uranium supply is uncertain. The main environmental effects are altered river flows and reservoir levels (Amistad drawn down about 2 feet on average, Falcon raised about 3 feet), and cold, low-oxygen bottom-water releases that could cause minor fish kills in the first 2.2 miles below the dam during July-November. The International Boundary and Water Commission (IBWC) held a public meeting in Del Rio on July 1, 1976 where 17 people spoke; the two purchasing cooperatives support the project, while the Fish and Wildlife Service, the City of Eagle Pass, and the downstream Maverick County water district raised concerns about fisheries, drinking-water intakes, and coordinated releases.",
+    "evidence_quote": "The eight county study area population was 459,744 in 1960 and increased to 464,391 in 1970",
+    "source_pages": [
+      3,
+      10,
+      11,
+      14,
+      28,
+      33,
+      39,
+      42,
+      48,
+      49,
+      50,
+      53,
+      56
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "yes",
+      "Q4": "no",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "no",
+      "Q8": "yes"
+    },
+    "composite": 0.65,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "critic_verdict",
+    "failure_tag": "T19_scope_qualifier_dropped",
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 28,
+      "normalized_match_span": [
+        28,
+        623,
+        714
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "459744",
+        "1960",
+        "464391",
+        "1970"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The figure 464,391 is the 1970 population of the eight-county study area (page 28), not the number of people 'served' by the power plant. The document never states the power would serve 464,391 people; it says the plant provides energy to 'a very large part of southern Texas.' The extracted value misattributes a demographic statistic as a service-population figure, dropping the qualifier that this",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        3,
+        10,
+        11,
+        14,
+        28,
+        33,
+        39,
+        42,
+        48,
+        49,
+        50,
+        53,
+        56
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        27,
+        28,
+        29,
+        32,
+        33,
+        34,
+        35,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "pages_omitted": [
+        16,
+        26,
+        30,
+        31,
+        37,
+        44,
+        46
+      ],
+      "window_mode": "clustered",
+      "truncated": true,
+      "n_chars": 79312
+    }
+  },
+  "summary.project_description": {
+    "extracted_value": "The U.S. Section of the International Boundary and Water Commission proposes to build a 57,000 kW hydroelectric power plant (32,000 kW at minimum head) with two turbine-generator units at the existing Amistad Dam on the Rio Grande, about 12 miles upstream from Del Rio, Texas. The plant would cost about $28 million and take 2-3 years of on-site construction, and would be operated together with the existing Falcon Dam hydroelectric plant downstream as a two-plant system. The generated electricity would feed the Central Power and Light regional grid in southern Texas and be sold to two rural electric cooperatives.",
+    "evidence_quote": "a hydroelectric power plant facility of 57,000 kW installed capacity (32,000 kW at minimum head) to be added to the existing Amistad Dam",
+    "source_pages": [
+      10,
+      11,
+      14,
+      48
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "no",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "n/a"
+    },
+    "composite": 0.85,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": "T04_undefined_acronym",
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS_WITH_NOTE",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.7,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 48,
+      "normalized_match_span": [
+        48,
+        147,
+        281
+      ],
+      "pages_searched": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "57000",
+        "32000"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "kW is used without expansion on first use. IBWC is expanded on page 10 in the document, so that acronym is covered by the document's own glossary; 'CP&L' is expanded in the value ('Central Power and Light'). The claims verify: 57,000 kW / 32,000 kW at minimum head, two turbine-generator units, Amistad Dam on Rio Grande ~12 miles upstream from Del Rio, $28 million, 2-3 years onsite construction, tw",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        10,
+        11,
+        14,
+        48
+      ],
+      "pages_included": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 36911
+    }
+  },
+  "summary.public_response": {
+    "extracted_value": "The International Boundary and Water Commission (IBWC) issued a public notice on February 12, 1976 and held a public meeting at the Civic Center in Del Rio on July 1, 1976, where 17 officials, residents, or interested citizens made statements or asked questions. The draft statement was circulated on September 16, 1976 to federal agencies (including U.S. Environmental Protection Agency (EPA), the Federal Energy Administration, the Federal Power Commission, and the Departments of Agriculture, Commerce, and Interior), state agencies, cities and counties along the Rio Grande, cooperatives, and civic groups. The South Texas Electric Cooperative and Medina Electric Cooperative signaled support by jointly committing to contract for the Amistad and Falcon power. Consulted agencies mostly reported no land-use conflicts, but the Fish and Wildlife Service requested a $3,500 field-level transfer to study fishery impacts, the Federal Power Commission and Maverick County Water District urged coordinated releases with the downstream Eagle Pass hydro plant, and the Amistad Zoning Authority flagged shoreline erosion, vegetation, fish spawning, and lake use as concerns.",
+    "evidence_quote": "on February 12, 1976 issued a public notice in connection with the proposed hydroelectric plant at the Rio Grande's Amistad Dam",
+    "source_pages": [
+      3,
+      4,
+      14,
+      53,
+      56,
+      61,
+      78
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "no",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "yes",
+      "Q10": "n/a"
+    },
+    "composite": 0.85,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": "T04_undefined_acronym",
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS_WITH_NOTE",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.7,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 53,
+      "normalized_match_span": [
+        53,
+        124,
+        250
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        12,
+        13,
+        14,
+        15,
+        16,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "12",
+        "1976"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "IBWC is expanded on first use as International Boundary and Water Commission, and EPA is glossed. However, 'CEQ' is not used in the value. All substantive claims verify: public notice Feb 12, 1976 (p.53); public meeting July 1, 1976 at Civic Center Del Rio with 17 officials/residents/citizens (p.53); draft circulated Sept 16, 1976 to listed agencies (pp.3-4); joint letter of intent from South Texa",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        3,
+        4,
+        14,
+        53,
+        56,
+        61,
+        78
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        12,
+        13,
+        14,
+        15,
+        16,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 43653
+    }
+  },
+  "summary_of_interest": {
+    "extracted_value": [
+      {
+        "claim": "The Fish and Wildlife Service told the International Boundary and Water Commission (IBWC) it could not meaningfully evaluate the project's fishery impacts without a $3,500 funding transfer from the IBWC to its Fort Worth office \u2014 a small but unusual instance of one federal agency conditioning its National Environmental Policy Act (NEPA) input on payment from the lead agency.",
+        "salience_criterion": "cross_jurisdictional",
+        "page": 56,
+        "evidence_quote": "For us to provide meaningful input to the stream flow-reservoir fluctuation question as it relates to fishery resources would require the availability of funding to defer costs. In this regard we estimate the need for a field level transfer of $3,500 from your District to our Fort Worth Office.",
+        "why_notable": "A sister federal agency explicitly declined to provide substantive fishery analysis without an inter-agency funds transfer, which is atypical coordination friction on the record.",
+        "evidence": [
+          {
+            "quote": "For us to provide meaningful input to the stream flow-reservoir fluctuation question as it relates to fishery resources would require the availability of funding to defer costs. In this regard we estimate the need for a field level transfer of $3,500 from your District to our Fort Worth Office.",
+            "source_pages": [
+              "56"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "The document reports that of 24 sulfur-oxide stack-gas cleaning installations at U.S. coal-fired plants of 150 MW or larger, none was in satisfactory operation in 1974 \u2014 a sweeping technology-failure claim used to reject the coal alternative.",
+        "salience_criterion": "contested",
+        "page": 49,
+        "evidence_quote": "Of 24 stack gas installations at coal-fired power plants of 150 MW or larger in the United States, none was in satisfactory operation in 1974.",
+        "why_notable": "The Environmental Impact Statement (EIS) leans on a categorical nationwide finding of pollution-control failure to eliminate coal, making the alternatives analysis unusually dependent on a single contestable technology claim.",
+        "evidence": [
+          {
+            "quote": "Of 24 stack gas installations at coal-fired power plants of 150 MW or larger in the United States, none was in satisfactory operation in 1974.",
+            "source_pages": [
+              "49"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "The Environmental Impact Statement (EIS) rejects nuclear power by asserting that projected cumulative U.S. uranium demand through 2000 (2.4\u20133.1 million tons of U3O8) would exceed the estimated recoverable reserve base of 500,000 tons by roughly a factor of five to six.",
+        "salience_criterion": "contested",
+        "page": 50,
+        "evidence_quote": "The Federal Power Commission (1974) estimated that the cumulative requirement by the year 2000 will probably amount to between 2.4 and 3.1 million tons of \nU_3O_8\n which is considerably over the now estimated reserve base of 500,000 tons of economically recoverable uranium.",
+        "why_notable": "Using a national uranium-shortage forecast to justify a 57 MW hydro project is an unusually macro-scale rationale for eliminating an alternative at a single dam site.",
+        "evidence": [
+          {
+            "quote": "The Federal Power Commission (1974) estimated that the cumulative requirement by the year 2000 will probably amount to between 2.4 and 3.1 million tons of \nU_3O_8\n which is considerably over the now estimated reserve base of 500,000 tons of economically recoverable uranium.",
+            "source_pages": [
+              "50"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "Cold, low-oxygen bottom water released through the penstocks could reach 10\u201312 \u00b0C colder than ambient and carry near-zero dissolved oxygen plus elevated ammonia and hydrogen sulfide into the first 2.2 miles below the dam for roughly half the year, with possible fish kills.",
+        "salience_criterion": "unusual_impact",
+        "page": 39,
+        "evidence_quote": "Water quality with respect to aquatic life may be unacceptable in the first 2.2 miles below the dam during critical releases, i.e., releases after May until late November or early December. The primary impact will result from the released water being 10 to 12 degrees colder (centigrade scale) and containing low or negligible oxygen.",
+        "why_notable": "A seasonal, chemically toxic thermal-discharge zone of over two river miles is a substantial site-specific fishery hazard acknowledged in the document itself.",
+        "evidence": [
+          {
+            "quote": "Water quality with respect to aquatic life may be unacceptable in the first 2.2 miles below the dam during critical releases, i.e., releases after May until late November or early December. The primary impact will result from the released water being 10 to 12 degrees colder (centigrade scale) and containing low or negligible oxygen.",
+            "source_pages": [
+              "39"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "Operation of the upstream Amistad plant would need to be coordinated with a separately-licensed downstream hydro plant run by the Maverick County Water Control and Improvement District No. 1 (FPC Licensed Project No. 1952-Texas), and both the Federal Power Commission and the District pressed for such coordination.",
+        "salience_criterion": "cross_jurisdictional",
+        "page": 61,
+        "evidence_quote": "it is suggested that the IBWC, Maverick County Water District and Central Power and Light Company consider the feasibility of coordinating their operations to obtain optimum generation from both hydro plants.",
+        "why_notable": "A federal international-boundary agency's releases would directly govern the viability of a locally-owned, FPC-licensed hydro plant downstream, creating a three-party operational entanglement unusual for a single-dam Environmental Impact Statement (EIS).",
+        "evidence": [
+          {
+            "quote": "it is suggested that the IBWC, Maverick County Water District and Central Power and Light Company consider the feasibility of coordinating their operations to obtain optimum generation from both hydro plants.",
+            "source_pages": [
+              "61"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "The City of Eagle Pass raised concerns that altered Rio Grande flows could affect its drinking-water intake, Shelby Park, and its municipal golf course \u2014 putting a downstream city's potable water supply on the record as potentially at risk from upstream peaking operations.",
+        "salience_criterion": "community_pushback",
+        "page": 77,
+        "evidence_quote": "We have three major concerns; (1) the intake and holding facility for our portable water supply, (2) Shelby Park located in the Vega near the river, (3) the present 9-hole Golf Course and the anticipated expansion of the same.",
+        "why_notable": "A downstream municipality flagged its raw drinking-water intake as vulnerable to the peaking-release regime, an impact category more serious than typical recreational concerns at a hydropower retrofit.",
+        "evidence": [
+          {
+            "quote": "We have three major concerns; (1) the intake and holding facility for our portable water supply, (2) Shelby Park located in the Vega near the river, (3) the present 9-hole Golf Course and the anticipated expansion of the same.",
+            "source_pages": [
+              "77"
+            ],
+            "quote_verified": true
+          }
+        ]
+      }
+    ],
+    "evidence_quote": "For us to provide meaningful input to the stream flow-reservoir fluctuation question as it relates to fishery resources would require the availability of funding to defer costs. In this regard we estimate the need for a field level transfer of $3,500 from your District to our Fort Worth Office.",
+    "source_pages": [
+      39,
+      49,
+      50,
+      56,
+      61,
+      77
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7a": "yes",
+      "Q7b": "no",
+      "Q7c": "yes",
+      "Q7d": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "bucket_degenerate_severe",
+    "failure_tag": null,
+    "bucket": "summary_of_interest",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "bucket_degenerate_severe",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 56,
+      "normalized_match_span": [
+        56,
+        1512,
+        1804
+      ],
+      "pages_searched": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        75,
+        76,
+        77,
+        78,
+        79
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "3500"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": true,
+      "degenerate_severe": true,
+      "saturated": false,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 0
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "Each entry is anchored in a verbatim quote from the cited page. The FWS funding-transfer request (p.56), the categorical 24-of-24 stack-gas failure claim (p.49), the uranium reserve/demand comparison (p.50), the cold/low-DO tailwater impact (p.39), the three-party downstream coordination (p.61), and the Eagle Pass drinking-water intake concern (p.77) all verify and are genuinely atypical rather th",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        39,
+        49,
+        50,
+        56,
+        61,
+        77
+      ],
+      "pages_included": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        75,
+        76,
+        77,
+        78,
+        79
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 49894
+    }
+  },
+  "themes": {
+    "extracted_value": {
+      "themes": [
+        "Energy Systems",
+        "Water Systems",
+        "Wildlife and Natural Areas"
+      ],
+      "subthemes": [
+        "Energy Extraction and Production",
+        "Energy Distribution and Consumption",
+        "Water Infrastructure and Management",
+        "Habitat Conservation and Biodiversity"
+      ]
+    },
+    "evidence_quote": "construct a hydroelectric generating plant at the existing Amistad Dam and Reservoir which will provide environmentally clean, fast response energy to replace an equivalent amount generated by fossil fuels",
+    "source_pages": [
+      10,
+      11,
+      48
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "n/a",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "bucket_degenerate_severe",
+    "failure_tag": null,
+    "bucket": "alternatives+themes",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "bucket_degenerate_severe",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 10,
+      "normalized_match_span": [
+        10,
+        103,
+        307
+      ],
+      "pages_searched": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": true,
+      "degenerate_severe": true,
+      "saturated": false,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 1
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "All three themes are well-supported: Energy Systems by the hydroelectric plant proposal and fossil fuel alternatives analysis (pp. 10, 48); Water Systems by reservoir operation and water release management (pp. 10-11); Wildlife and Natural Areas by wildlife habitat impacts from bank sloughing (p. 47). All subthemes belong to their respective themes and are supported by the document text.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        10,
+        11,
+        48
+      ],
+      "pages_included": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 25335
+    }
+  },
+  "title": {
+    "extracted_value": "Rio Grande, Amistad hydroelectric plant : environmental impact statement.",
+    "evidence_quote": "AMISTAD HYDROELECTRIC PLANT RIO GRANDE VAL VERDE COUNTY, TEXAS",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "n/a",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 1,
+      "normalized_match_span": [
+        1,
+        112,
+        173
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The extracted title reorders the cover page elements ('Rio Grande' before 'Amistad hydroelectric plant') and adds 'environmental impact statement' where the document says 'Draft Environmental Statement', but these are minor catalogue-style normalizations. The core named entities (Rio Grande, Amistad, hydroelectric plant) are all present on pages 1\u20132. No numeric figures or acronyms requiring glossi",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 3668
+    }
+  },
+  "year": {
+    "extracted_value": 1976,
+    "evidence_quote": "SEPTEMBER, 1976",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "n/a",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes",
+      "Q10": "no"
+    },
+    "composite": 1.0,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": null,
+      "matched_page": 1,
+      "normalized_match_span": [
+        1,
+        174,
+        188
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "1976"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=n/a"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "Year 1976 is clearly supported by the cover page ('SEPTEMBER, 1976') and confirmed by page 2 ('SEPTEMBER 1976') and page 4 ('16 September 1976'). No higher-priority signature date conflicts with this year. No OCR misread is plausible.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 3668
+    }
+  },
+  "_meta": {
+    "doc_id": "p1074_35556036855435",
+    "artifact_stage": "v1",
+    "generated_at": "2026-08-10T19:14:54+00:00",
+    "plan_ref": "MCAL_PLAN 3.12",
+    "schema_keys": [
+      "extracted_value",
+      "evidence_quote",
+      "source_pages",
+      "verdict",
+      "rubric_answers",
+      "composite",
+      "applied_tau",
+      "gated_to_human",
+      "gate_reason",
+      "failure_tag",
+      "bucket",
+      "artifact_stage",
+      "judge_model"
+    ],
+    "n_fields": 15,
+    "reserved_keys": [
+      "_meta",
+      "_rollup",
+      "_null_tag_monitor"
+    ],
+    "reviewer_note": "Every field is present, gated or not, with its raw extraction (MCAL_PLAN 7 Q8). Grade `extracted_value` against `evidence_quote` and `source_pages`; `gate_reason` says why the field was routed to a human. `extracted_value: []` on summary_of_interest is a legitimate 'this document is routine'; `null` plus a gate_reason is a generation failure."
+  },
+  "_rollup": {
+    "doc_id": "p1074_35556036855435",
+    "artifact_stage": "v1",
+    "geocoder_stack": "reduced",
+    "n_fields": 15,
+    "n_gated": 11,
+    "n_passed": 4,
+    "gate_rate": 0.7333,
+    "gate_reasons": {
+      "none": 4,
+      "critic_verdict": 3,
+      "composite_below_tau": 4,
+      "bucket_degenerate_severe": 3,
+      "reduced_geocoder_stack": 1
+    },
+    "verdicts": {
+      "PASS": 3,
+      "PASS_WITH_NOTE": 1,
+      "HUMAN_REVIEW": 11
+    },
+    "per_bucket": {
+      "M1": {
+        "n_fields": 4,
+        "n_gated": 0,
+        "n_passed": 4,
+        "gate_reasons": {},
+        "tau_deployed": 0.5,
+        "gate_all_to_human": false,
+        "degenerate": true,
+        "degenerate_severe": false,
+        "N_wrong_docs": 3
+      },
+      "summary_narrative": {
+        "n_fields": 5,
+        "n_gated": 5,
+        "n_passed": 0,
+        "gate_reasons": {
+          "critic_verdict": 2,
+          "composite_below_tau": 3
+        },
+        "tau_deployed": 1.0,
+        "gate_all_to_human": false,
+        "degenerate": true,
+        "degenerate_severe": false,
+        "N_wrong_docs": 5
+      },
+      "summary_numeric": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "critic_verdict": 1
+        },
+        "tau_deployed": 1.0,
+        "gate_all_to_human": false,
+        "degenerate": true,
+        "degenerate_severe": false,
+        "N_wrong_docs": 3
+      },
+      "summary_of_interest": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "bucket_degenerate_severe": 1
+        },
+        "tau_deployed": null,
+        "gate_all_to_human": true,
+        "degenerate": true,
+        "degenerate_severe": true,
+        "N_wrong_docs": 0
+      },
+      "alternatives+themes": {
+        "n_fields": 2,
+        "n_gated": 2,
+        "n_passed": 0,
+        "gate_reasons": {
+          "bucket_degenerate_severe": 2
+        },
+        "tau_deployed": null,
+        "gate_all_to_human": true,
+        "degenerate": true,
+        "degenerate_severe": true,
+        "N_wrong_docs": 1
+      },
+      "location": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "reduced_geocoder_stack": 1
+        },
+        "tau_deployed": null,
+        "gate_all_to_human": true,
+        "degenerate": false,
+        "degenerate_severe": false,
+        "N_wrong_docs": 6
+      },
+      "key_people": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "composite_below_tau": 1
+        },
+        "tau_deployed": 1.0,
+        "gate_all_to_human": false,
+        "degenerate": false,
+        "degenerate_severe": false,
+        "N_wrong_docs": 6
+      }
+    },
+    "null_tag": {
+      "M1": {
+        "n_fields": 4,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      },
+      "summary_narrative": {
+        "n_fields": 5,
+        "n_human_review": 5,
+        "n_null_tag": 1,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      },
+      "summary_numeric": {
+        "n_fields": 1,
+        "n_human_review": 1,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      },
+      "summary_of_interest": {
+        "n_fields": 1,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 1
+      },
+      "alternatives+themes": {
+        "n_fields": 2,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 2
+      },
+      "location": {
+        "n_fields": 1,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 1
+      },
+      "key_people": {
+        "n_fields": 1,
+        "n_human_review": 1,
+        "n_null_tag": 1,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      }
+    },
+    "summary_of_interest": {
+      "present": true,
+      "generation_failure": false,
+      "non_empty": true,
+      "n_entries": 6,
+      "salience_criterion_counts": {
+        "contested": 2,
+        "unusual_impact": 1,
+        "large_magnitude": 0,
+        "novel_alternative": 0,
+        "community_pushback": 1,
+        "precedent": 0,
+        "cross_jurisdictional": 2
+      },
+      "off_vocabulary_criteria": [],
+      "n_t17_manufactured_salience": 0,
+      "n_t18_duplicates_summary": 0,
+      "overlap_with_standard_summary": {
+        "jaccard": 0.2358,
+        "n_soi_tokens": 215,
+        "n_summary_tokens": 351,
+        "per_entry_jaccard": [
+          0.0501,
+          0.0486,
+          0.0795,
+          0.073,
+          0.0623,
+          0.0627
+        ],
+        "max_entry_jaccard": 0.0795,
+        "tokenizer": "mcal.quote_check.content_tokens (stopword+boilerplate filtered)"
+      },
+      "nonempty_rate_ceiling": 0.6,
+      "soi_useful": null
+    },
+    "critic": {
+      "n_fields": 15,
+      "verdicts": {
+        "PASS": 9,
+        "PASS_WITH_NOTE": 3,
+        "RE_EXTRACT": 3
+      },
+      "overrides": {},
+      "n_quote_checked": 15,
+      "n_quote_verified": 15,
+      "evidence_quote_verifiable_rate": 1.0,
+      "n_off_vocabulary_tags": 0,
+      "n_null_tag_human_review": 0,
+      "n_schema_violations": 0,
+      "n_evidence_truncated": 1
+    },
+    "re_extract": {}
+  },
+  "_null_tag_monitor": {
+    "threshold": 0.15,
+    "taxonomy_refresh_recommended": true,
+    "buckets_needing_refresh": [
+      "M1",
+      "key_people",
+      "summary_narrative",
+      "summary_numeric"
+    ],
+    "n_docs_rolling": 10,
+    "per_bucket": {
+      "M1": {
+        "n_fields": 40,
+        "n_human_review": 4,
+        "n_null_tag": 2,
+        "n_off_vocabulary": 2,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": 0.5,
+        "exceeds_threshold": true
+      },
+      "summary_narrative": {
+        "n_fields": 50,
+        "n_human_review": 48,
+        "n_null_tag": 20,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 2,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": 0.4167,
+        "exceeds_threshold": true
+      },
+      "summary_numeric": {
+        "n_fields": 10,
+        "n_human_review": 10,
+        "n_null_tag": 4,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": 0.4,
+        "exceeds_threshold": true
+      },
+      "summary_of_interest": {
+        "n_fields": 10,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 10,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "alternatives+themes": {
+        "n_fields": 20,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 20,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "location": {
+        "n_fields": 10,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 10,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "key_people": {
+        "n_fields": 10,
+        "n_human_review": 10,
+        "n_null_tag": 7,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": 0.7,
+        "exceeds_threshold": true
+      }
+    },
+    "path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/mcal/artifacts/null_tag_monitor.json",
+    "halt_condition": false
+  }
+}

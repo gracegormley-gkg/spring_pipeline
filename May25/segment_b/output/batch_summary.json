@@ -1,0 +1,3023 @@
+{
+  "stage": "v1",
+  "n_docs": 11,
+  "n_ok": 11,
+  "n_failed": 0,
+  "total_cost_usd": 74.3317,
+  "per_doc_avg_usd": 6.7574,
+  "projected_2000_docs_usd": 13514.85,
+  "n_fields": 165,
+  "n_gated": 127,
+  "overall_gate_rate": 0.7697,
+  "docs": [
+    {
+      "doc_id": "p0491_35556036854362",
+      "title": "Ross Ice Shelf project : environmental impact statement.",
+      "n_pages": 84,
+      "elapsed_sec": 316.6,
+      "stage": "v1",
+      "paths": {
+        "run_manifest": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p0491_35556036854362/run_manifest.json",
+        "sheet_blind": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p0491_35556036854362/blind/p0491_35556036854362.csv",
+        "sheet_reveal": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p0491_35556036854362/reveal/p0491_35556036854362.csv",
+        "m1": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p0491_35556036854362/m1.json",
+        "m2": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p0491_35556036854362/m2.json",
+        "critic": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p0491_35556036854362/critic.json"
+      },
+      "rollup": {
+        "doc_id": "p0491_35556036854362",
+        "artifact_stage": "v1",
+        "geocoder_stack": "reduced",
+        "n_fields": 15,
+        "n_gated": 11,
+        "n_passed": 4,
+        "gate_rate": 0.7333,
+        "gate_reasons": {
+          "none": 4,
+          "composite_below_tau": 6,
+          "critic_verdict": 1,
+          "bucket_degenerate_severe": 3,
+          "reduced_geocoder_stack": 1
+        },
+        "verdicts": {
+          "PASS": 4,
+          "HUMAN_REVIEW": 11
+        },
+        "per_bucket": {
+          "M1": {
+            "n_fields": 4,
+            "n_gated": 0,
+            "n_passed": 4,
+            "gate_reasons": {},
+            "tau_deployed": 0.5,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 3
+          },
+          "summary_narrative": {
+            "n_fields": 5,
+            "n_gated": 5,
+            "n_passed": 0,
+            "gate_reasons": {
+              "composite_below_tau": 4,
+              "critic_verdict": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 5
+          },
+          "summary_numeric": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "composite_below_tau": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 3
+          },
+          "summary_of_interest": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "bucket_degenerate_severe": 1
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": true,
+            "degenerate_severe": true,
+            "N_wrong_docs": 0
+          },
+          "alternatives+themes": {
+            "n_fields": 2,
+            "n_gated": 2,
+            "n_passed": 0,
+            "gate_reasons": {
+              "bucket_degenerate_severe": 2
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": true,
+            "degenerate_severe": true,
+            "N_wrong_docs": 1
+          },
+          "location": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "reduced_geocoder_stack": 1
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": false,
+            "degenerate_severe": false,
+            "N_wrong_docs": 6
+          },
+          "key_people": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "composite_below_tau": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": false,
+            "degenerate_severe": false,
+            "N_wrong_docs": 6
+          }
+        },
+        "null_tag": {
+          "M1": {
+            "n_fields": 4,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_narrative": {
+            "n_fields": 5,
+            "n_human_review": 5,
+            "n_null_tag": 4,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_numeric": {
+            "n_fields": 1,
+            "n_human_review": 1,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_of_interest": {
+            "n_fields": 1,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 1
+          },
+          "alternatives+themes": {
+            "n_fields": 2,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 2
+          },
+          "location": {
+            "n_fields": 1,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 1
+          },
+          "key_people": {
+            "n_fields": 1,
+            "n_human_review": 1,
+            "n_null_tag": 1,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          }
+        },
+        "summary_of_interest": {
+          "present": true,
+          "generation_failure": false,
+          "non_empty": true,
+          "n_entries": 6,
+          "salience_criterion_counts": {
+            "contested": 3,
+            "unusual_impact": 2,
+            "large_magnitude": 1,
+            "novel_alternative": 0,
+            "community_pushback": 0,
+            "precedent": 0,
+            "cross_jurisdictional": 0
+          },
+          "off_vocabulary_criteria": [],
+          "n_t17_manufactured_salience": 0,
+          "n_t18_duplicates_summary": 0,
+          "overlap_with_standard_summary": {
+            "jaccard": 0.1898,
+            "n_soi_tokens": 169,
+            "n_summary_tokens": 370,
+            "per_entry_jaccard": [
+              0.0648,
+              0.0337,
+              0.0287,
+              0.0395,
+              0.0495,
+              0.0594
+            ],
+            "max_entry_jaccard": 0.0648,
+            "tokenizer": "mcal.quote_check.content_tokens (stopword+boilerplate filtered)"
+          },
+          "nonempty_rate_ceiling": 0.6,
+          "soi_useful": null
+        },
+        "critic": {
+          "n_fields": 15,
+          "verdicts": {
+            "PASS": 10,
+            "RE_EXTRACT": 2,
+            "PASS_WITH_NOTE": 3
+          },
+          "overrides": {},
+          "n_quote_checked": 15,
+          "n_quote_verified": 15,
+          "evidence_quote_verifiable_rate": 1.0,
+          "n_off_vocabulary_tags": 0,
+          "n_null_tag_human_review": 0,
+          "n_schema_violations": 0,
+          "n_evidence_truncated": 0
+        },
+        "re_extract": {}
+      },
+      "usage": {
+        "by_model": [
+          {
+            "model": "us.anthropic.claude-sonnet-4-6",
+            "calls": 20,
+            "input_tokens": 140348,
+            "output_tokens": 7613,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.5352
+          },
+          {
+            "model": "us.anthropic.claude-opus-4-7",
+            "calls": 10,
+            "input_tokens": 163943,
+            "output_tokens": 16146,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 3.6701
+          }
+        ],
+        "total": {
+          "calls": 30,
+          "input_tokens": 304291,
+          "output_tokens": 23759,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 4.2053
+        }
+      },
+      "warnings": [
+        "location resolved in reduced geocoder mode; the bucket is force-gated to HUMAN_REVIEW"
+      ]
+    },
+    {
+      "doc_id": "p1074_35556036108041",
+      "title": "Penn Susquehanna urban renewal project : environmental impact statement.",
+      "n_pages": 141,
+      "elapsed_sec": 323.6,
+      "stage": "v1",
+      "paths": {
+        "run_manifest": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036108041/run_manifest.json",
+        "sheet_blind": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036108041/blind/p1074_35556036108041.csv",
+        "sheet_reveal": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036108041/reveal/p1074_35556036108041.csv",
+        "m1": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036108041/m1.json",
+        "m2": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036108041/m2.json",
+        "critic": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036108041/critic.json"
+      },
+      "rollup": {
+        "doc_id": "p1074_35556036108041",
+        "artifact_stage": "v1",
+        "geocoder_stack": "reduced",
+        "n_fields": 15,
+        "n_gated": 11,
+        "n_passed": 4,
+        "gate_rate": 0.7333,
+        "gate_reasons": {
+          "none": 4,
+          "critic_verdict": 3,
+          "composite_below_tau": 3,
+          "policy_private_individual": 1,
+          "bucket_degenerate_severe": 3,
+          "reduced_geocoder_stack": 1
+        },
+        "verdicts": {
+          "PASS": 4,
+          "HUMAN_REVIEW": 11
+        },
+        "per_bucket": {
+          "M1": {
+            "n_fields": 4,
+            "n_gated": 0,
+            "n_passed": 4,
+            "gate_reasons": {},
+            "tau_deployed": 0.5,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 3
+          },
+          "summary_narrative": {
+            "n_fields": 5,
+            "n_gated": 5,
+            "n_passed": 0,
+            "gate_reasons": {
+              "critic_verdict": 3,
+              "composite_below_tau": 1,
+              "policy_private_individual": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 5
+          },
+          "summary_numeric": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "composite_below_tau": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 3
+          },
+          "summary_of_interest": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "bucket_degenerate_severe": 1
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": true,
+            "degenerate_severe": true,
+            "N_wrong_docs": 0
+          },
+          "alternatives+themes": {
+            "n_fields": 2,
+            "n_gated": 2,
+            "n_passed": 0,
+            "gate_reasons": {
+              "bucket_degenerate_severe": 2
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": true,
+            "degenerate_severe": true,
+            "N_wrong_docs": 1
+          },
+          "location": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "reduced_geocoder_stack": 1
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": false,
+            "degenerate_severe": false,
+            "N_wrong_docs": 6
+          },
+          "key_people": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "composite_below_tau": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": false,
+            "degenerate_severe": false,
+            "N_wrong_docs": 6
+          }
+        },
+        "null_tag": {
+          "M1": {
+            "n_fields": 4,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_narrative": {
+            "n_fields": 5,
+            "n_human_review": 4,
+            "n_null_tag": 1,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 1,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_numeric": {
+            "n_fields": 1,
+            "n_human_review": 1,
+            "n_null_tag": 1,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_of_interest": {
+            "n_fields": 1,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 1
+          },
+          "alternatives+themes": {
+            "n_fields": 2,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 2
+          },
+          "location": {
+            "n_fields": 1,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 1
+          },
+          "key_people": {
+            "n_fields": 1,
+            "n_human_review": 1,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          }
+        },
+        "summary_of_interest": {
+          "present": true,
+          "generation_failure": false,
+          "non_empty": true,
+          "n_entries": 6,
+          "salience_criterion_counts": {
+            "contested": 4,
+            "unusual_impact": 2,
+            "large_magnitude": 0,
+            "novel_alternative": 0,
+            "community_pushback": 0,
+            "precedent": 0,
+            "cross_jurisdictional": 0
+          },
+          "off_vocabulary_criteria": [],
+          "n_t17_manufactured_salience": 0,
+          "n_t18_duplicates_summary": 0,
+          "overlap_with_standard_summary": {
+            "jaccard": 0.194,
+            "n_soi_tokens": 205,
+            "n_summary_tokens": 472,
+            "per_entry_jaccard": [
+              0.0577,
+              0.0447,
+              0.0496,
+              0.0389,
+              0.0505,
+              0.0432
+            ],
+            "max_entry_jaccard": 0.0577,
+            "tokenizer": "mcal.quote_check.content_tokens (stopword+boilerplate filtered)"
+          },
+          "nonempty_rate_ceiling": 0.6,
+          "soi_useful": null
+        },
+        "critic": {
+          "n_fields": 15,
+          "verdicts": {
+            "PASS": 8,
+            "RE_EXTRACT": 4,
+            "HUMAN_REVIEW": 1,
+            "PASS_WITH_NOTE": 2
+          },
+          "overrides": {
+            "policy_private_individual": 1
+          },
+          "n_quote_checked": 15,
+          "n_quote_verified": 15,
+          "evidence_quote_verifiable_rate": 1.0,
+          "n_off_vocabulary_tags": 0,
+          "n_null_tag_human_review": 1,
+          "n_schema_violations": 0,
+          "n_evidence_truncated": 0
+        },
+        "re_extract": {}
+      },
+      "usage": {
+        "by_model": [
+          {
+            "model": "us.anthropic.claude-sonnet-4-6",
+            "calls": 18,
+            "input_tokens": 161775,
+            "output_tokens": 6936,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.5894
+          },
+          {
+            "model": "us.anthropic.claude-opus-4-7",
+            "calls": 11,
+            "input_tokens": 252282,
+            "output_tokens": 21718,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 5.4131
+          }
+        ],
+        "total": {
+          "calls": 29,
+          "input_tokens": 414057,
+          "output_tokens": 28654,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 6.0024
+        }
+      },
+      "warnings": [
+        "location resolved in reduced geocoder mode; the bucket is force-gated to HUMAN_REVIEW"
+      ]
+    },
+    {
+      "doc_id": "p1074_35556036522308",
+      "title": "Vinyl chloride emission standard : environmental impact statement.",
+      "n_pages": 135,
+      "elapsed_sec": 275.5,
+      "stage": "v1",
+      "paths": {
+        "run_manifest": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036522308/run_manifest.json",
+        "sheet_blind": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036522308/blind/p1074_35556036522308.csv",
+        "sheet_reveal": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036522308/reveal/p1074_35556036522308.csv",
+        "m1": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036522308/m1.json",
+        "m2": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036522308/m2.json",
+        "critic": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036522308/critic.json"
+      },
+      "rollup": {
+        "doc_id": "p1074_35556036522308",
+        "artifact_stage": "v1",
+        "geocoder_stack": "reduced",
+        "n_fields": 15,
+        "n_gated": 11,
+        "n_passed": 4,
+        "gate_rate": 0.7333,
+        "gate_reasons": {
+          "none": 4,
+          "critic_verdict": 2,
+          "composite_below_tau": 5,
+          "bucket_degenerate_severe": 3,
+          "reduced_geocoder_stack": 1
+        },
+        "verdicts": {
+          "PASS": 4,
+          "HUMAN_REVIEW": 11
+        },
+        "per_bucket": {
+          "M1": {
+            "n_fields": 4,
+            "n_gated": 0,
+            "n_passed": 4,
+            "gate_reasons": {},
+            "tau_deployed": 0.5,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 3
+          },
+          "summary_narrative": {
+            "n_fields": 5,
+            "n_gated": 5,
+            "n_passed": 0,
+            "gate_reasons": {
+              "critic_verdict": 1,
+              "composite_below_tau": 4
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 5
+          },
+          "summary_numeric": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "composite_below_tau": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 3
+          },
+          "summary_of_interest": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "bucket_degenerate_severe": 1
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": true,
+            "degenerate_severe": true,
+            "N_wrong_docs": 0
+          },
+          "alternatives+themes": {
+            "n_fields": 2,
+            "n_gated": 2,
+            "n_passed": 0,
+            "gate_reasons": {
+              "bucket_degenerate_severe": 2
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": true,
+            "degenerate_severe": true,
+            "N_wrong_docs": 1
+          },
+          "location": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "reduced_geocoder_stack": 1
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": false,
+            "degenerate_severe": false,
+            "N_wrong_docs": 6
+          },
+          "key_people": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "critic_verdict": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": false,
+            "degenerate_severe": false,
+            "N_wrong_docs": 6
+          }
+        },
+        "null_tag": {
+          "M1": {
+            "n_fields": 4,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_narrative": {
+            "n_fields": 5,
+            "n_human_review": 5,
+            "n_null_tag": 2,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_numeric": {
+            "n_fields": 1,
+            "n_human_review": 1,
+            "n_null_tag": 1,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_of_interest": {
+            "n_fields": 1,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 1
+          },
+          "alternatives+themes": {
+            "n_fields": 2,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 2
+          },
+          "location": {
+            "n_fields": 1,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 1
+          },
+          "key_people": {
+            "n_fields": 1,
+            "n_human_review": 1,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          }
+        },
+        "summary_of_interest": {
+          "present": true,
+          "generation_failure": false,
+          "non_empty": true,
+          "n_entries": 6,
+          "salience_criterion_counts": {
+            "contested": 2,
+            "unusual_impact": 1,
+            "large_magnitude": 1,
+            "novel_alternative": 1,
+            "community_pushback": 0,
+            "precedent": 1,
+            "cross_jurisdictional": 0
+          },
+          "off_vocabulary_criteria": [],
+          "n_t17_manufactured_salience": 1,
+          "n_t18_duplicates_summary": 0,
+          "overlap_with_standard_summary": {
+            "jaccard": 0.1786,
+            "n_soi_tokens": 186,
+            "n_summary_tokens": 441,
+            "per_entry_jaccard": [
+              0.0592,
+              0.0418,
+              0.046,
+              0.0395,
+              0.0571,
+              0.0239
+            ],
+            "max_entry_jaccard": 0.0592,
+            "tokenizer": "mcal.quote_check.content_tokens (stopword+boilerplate filtered)"
+          },
+          "nonempty_rate_ceiling": 0.6,
+          "soi_useful": null
+        },
+        "critic": {
+          "n_fields": 15,
+          "verdicts": {
+            "PASS": 7,
+            "RE_EXTRACT": 6,
+            "PASS_WITH_NOTE": 2
+          },
+          "overrides": {},
+          "n_quote_checked": 12,
+          "n_quote_verified": 12,
+          "evidence_quote_verifiable_rate": 1.0,
+          "n_off_vocabulary_tags": 0,
+          "n_null_tag_human_review": 0,
+          "n_schema_violations": 0,
+          "n_evidence_truncated": 1
+        },
+        "re_extract": {}
+      },
+      "usage": {
+        "by_model": [
+          {
+            "model": "us.anthropic.claude-sonnet-4-6",
+            "calls": 16,
+            "input_tokens": 108446,
+            "output_tokens": 4945,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.3995
+          },
+          {
+            "model": "us.anthropic.claude-opus-4-7",
+            "calls": 11,
+            "input_tokens": 271221,
+            "output_tokens": 21854,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 5.7074
+          }
+        ],
+        "total": {
+          "calls": 27,
+          "input_tokens": 379667,
+          "output_tokens": 26799,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 6.1069
+        }
+      },
+      "warnings": [
+        "location resolved in reduced geocoder mode; the bucket is force-gated to HUMAN_REVIEW"
+      ]
+    },
+    {
+      "doc_id": "p1074_35556036525772",
+      "title": "Proposed endangered species conservation act of 1973 (incomplete appendices) : environmental impact statement.",
+      "n_pages": 303,
+      "elapsed_sec": 898.1,
+      "stage": "v1",
+      "paths": {
+        "run_manifest": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036525772/run_manifest.json",
+        "sheet_blind": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036525772/blind/p1074_35556036525772.csv",
+        "sheet_reveal": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036525772/reveal/p1074_35556036525772.csv",
+        "m1": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036525772/m1.json",
+        "m2": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036525772/m2.json",
+        "critic": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036525772/critic.json"
+      },
+      "rollup": {
+        "doc_id": "p1074_35556036525772",
+        "artifact_stage": "v1",
+        "geocoder_stack": "reduced",
+        "n_fields": 15,
+        "n_gated": 11,
+        "n_passed": 4,
+        "gate_rate": 0.7333,
+        "gate_reasons": {
+          "none": 4,
+          "composite_below_tau": 4,
+          "critic_verdict": 2,
+          "policy_private_individual": 1,
+          "bucket_degenerate_severe": 3,
+          "reduced_geocoder_stack": 1
+        },
+        "verdicts": {
+          "PASS_WITH_NOTE": 2,
+          "PASS": 2,
+          "HUMAN_REVIEW": 11
+        },
+        "per_bucket": {
+          "M1": {
+            "n_fields": 4,
+            "n_gated": 0,
+            "n_passed": 4,
+            "gate_reasons": {},
+            "tau_deployed": 0.5,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 3
+          },
+          "summary_narrative": {
+            "n_fields": 5,
+            "n_gated": 5,
+            "n_passed": 0,
+            "gate_reasons": {
+              "composite_below_tau": 4,
+              "policy_private_individual": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 5
+          },
+          "summary_numeric": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "critic_verdict": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 3
+          },
+          "summary_of_interest": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "bucket_degenerate_severe": 1
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": true,
+            "degenerate_severe": true,
+            "N_wrong_docs": 0
+          },
+          "alternatives+themes": {
+            "n_fields": 2,
+            "n_gated": 2,
+            "n_passed": 0,
+            "gate_reasons": {
+              "bucket_degenerate_severe": 2
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": true,
+            "degenerate_severe": true,
+            "N_wrong_docs": 1
+          },
+          "location": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "reduced_geocoder_stack": 1
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": false,
+            "degenerate_severe": false,
+            "N_wrong_docs": 6
+          },
+          "key_people": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "critic_verdict": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": false,
+            "degenerate_severe": false,
+            "N_wrong_docs": 6
+          }
+        },
+        "null_tag": {
+          "M1": {
+            "n_fields": 4,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_narrative": {
+            "n_fields": 5,
+            "n_human_review": 4,
+            "n_null_tag": 4,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 1,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_numeric": {
+            "n_fields": 1,
+            "n_human_review": 1,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_of_interest": {
+            "n_fields": 1,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 1
+          },
+          "alternatives+themes": {
+            "n_fields": 2,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 2
+          },
+          "location": {
+            "n_fields": 1,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 1
+          },
+          "key_people": {
+            "n_fields": 1,
+            "n_human_review": 1,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          }
+        },
+        "summary_of_interest": {
+          "present": true,
+          "generation_failure": false,
+          "non_empty": true,
+          "n_entries": 6,
+          "salience_criterion_counts": {
+            "contested": 2,
+            "unusual_impact": 1,
+            "large_magnitude": 2,
+            "novel_alternative": 0,
+            "community_pushback": 1,
+            "precedent": 0,
+            "cross_jurisdictional": 0
+          },
+          "off_vocabulary_criteria": [],
+          "n_t17_manufactured_salience": 0,
+          "n_t18_duplicates_summary": 0,
+          "overlap_with_standard_summary": {
+            "jaccard": 0.1564,
+            "n_soi_tokens": 221,
+            "n_summary_tokens": 437,
+            "per_entry_jaccard": [
+              0.0431,
+              0.033,
+              0.0542,
+              0.0619,
+              0.0344,
+              0.0214
+            ],
+            "max_entry_jaccard": 0.0619,
+            "tokenizer": "mcal.quote_check.content_tokens (stopword+boilerplate filtered)"
+          },
+          "nonempty_rate_ceiling": 0.6,
+          "soi_useful": null
+        },
+        "critic": {
+          "n_fields": 15,
+          "verdicts": {
+            "PASS_WITH_NOTE": 2,
+            "PASS": 8,
+            "RE_EXTRACT": 3,
+            "HUMAN_REVIEW": 2
+          },
+          "overrides": {
+            "policy_private_individual": 1,
+            "critic_evidence_unverifiable": 1
+          },
+          "n_quote_checked": 14,
+          "n_quote_verified": 13,
+          "evidence_quote_verifiable_rate": 0.9286,
+          "n_off_vocabulary_tags": 0,
+          "n_null_tag_human_review": 2,
+          "n_schema_violations": 0,
+          "n_evidence_truncated": 0
+        },
+        "re_extract": {}
+      },
+      "usage": {
+        "by_model": [
+          {
+            "model": "us.anthropic.claude-sonnet-4-6",
+            "calls": 19,
+            "input_tokens": 152125,
+            "output_tokens": 4401,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.5224
+          },
+          {
+            "model": "us.anthropic.claude-opus-4-7",
+            "calls": 15,
+            "input_tokens": 333415,
+            "output_tokens": 31698,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 7.3786
+          }
+        ],
+        "total": {
+          "calls": 34,
+          "input_tokens": 485540,
+          "output_tokens": 36099,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 7.901
+        }
+      },
+      "warnings": [
+        "location resolved in reduced geocoder mode; the bucket is force-gated to HUMAN_REVIEW"
+      ]
+    },
+    {
+      "doc_id": "p1074_35556036535615",
+      "title": "Kendall Square urban renewal : environmental impact statement.",
+      "n_pages": 101,
+      "elapsed_sec": 252.5,
+      "stage": "v1",
+      "paths": {
+        "run_manifest": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036535615/run_manifest.json",
+        "sheet_blind": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036535615/blind/p1074_35556036535615.csv",
+        "sheet_reveal": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036535615/reveal/p1074_35556036535615.csv",
+        "m1": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036535615/m1.json",
+        "m2": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036535615/m2.json",
+        "critic": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036535615/critic.json"
+      },
+      "rollup": {
+        "doc_id": "p1074_35556036535615",
+        "artifact_stage": "v1",
+        "geocoder_stack": "reduced",
+        "n_fields": 15,
+        "n_gated": 13,
+        "n_passed": 2,
+        "gate_rate": 0.8667,
+        "gate_reasons": {
+          "none": 2,
+          "critic_verdict": 5,
+          "composite_below_tau": 3,
+          "bucket_degenerate_severe": 3,
+          "reduced_geocoder_stack": 1,
+          "dependent_field_cascade": 1
+        },
+        "verdicts": {
+          "PASS": 2,
+          "HUMAN_REVIEW": 13
+        },
+        "per_bucket": {
+          "M1": {
+            "n_fields": 4,
+            "n_gated": 2,
+            "n_passed": 2,
+            "gate_reasons": {
+              "critic_verdict": 2
+            },
+            "tau_deployed": 0.5,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 3
+          },
+          "summary_narrative": {
+            "n_fields": 5,
+            "n_gated": 5,
+            "n_passed": 0,
+            "gate_reasons": {
+              "critic_verdict": 3,
+              "composite_below_tau": 2
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 5
+          },
+          "summary_numeric": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "composite_below_tau": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 3
+          },
+          "summary_of_interest": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "bucket_degenerate_severe": 1
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": true,
+            "degenerate_severe": true,
+            "N_wrong_docs": 0
+          },
+          "alternatives+themes": {
+            "n_fields": 2,
+            "n_gated": 2,
+            "n_passed": 0,
+            "gate_reasons": {
+              "bucket_degenerate_severe": 2
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": true,
+            "degenerate_severe": true,
+            "N_wrong_docs": 1
+          },
+          "location": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "reduced_geocoder_stack": 1
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": false,
+            "degenerate_severe": false,
+            "N_wrong_docs": 6
+          },
+          "key_people": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "dependent_field_cascade": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": false,
+            "degenerate_severe": false,
+            "N_wrong_docs": 6
+          }
+        },
+        "null_tag": {
+          "M1": {
+            "n_fields": 4,
+            "n_human_review": 2,
+            "n_null_tag": 1,
+            "n_off_vocabulary": 1,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_narrative": {
+            "n_fields": 5,
+            "n_human_review": 5,
+            "n_null_tag": 2,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_numeric": {
+            "n_fields": 1,
+            "n_human_review": 1,
+            "n_null_tag": 1,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_of_interest": {
+            "n_fields": 1,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 1
+          },
+          "alternatives+themes": {
+            "n_fields": 2,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 2
+          },
+          "location": {
+            "n_fields": 1,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 1
+          },
+          "key_people": {
+            "n_fields": 1,
+            "n_human_review": 1,
+            "n_null_tag": 1,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          }
+        },
+        "summary_of_interest": {
+          "present": true,
+          "generation_failure": false,
+          "non_empty": true,
+          "n_entries": 6,
+          "salience_criterion_counts": {
+            "contested": 2,
+            "unusual_impact": 1,
+            "large_magnitude": 1,
+            "novel_alternative": 0,
+            "community_pushback": 1,
+            "precedent": 0,
+            "cross_jurisdictional": 1
+          },
+          "off_vocabulary_criteria": [],
+          "n_t17_manufactured_salience": 0,
+          "n_t18_duplicates_summary": 0,
+          "overlap_with_standard_summary": {
+            "jaccard": 0.234,
+            "n_soi_tokens": 207,
+            "n_summary_tokens": 389,
+            "per_entry_jaccard": [
+              0.0654,
+              0.09,
+              0.0622,
+              0.0467,
+              0.0517,
+              0.0471
+            ],
+            "max_entry_jaccard": 0.09,
+            "tokenizer": "mcal.quote_check.content_tokens (stopword+boilerplate filtered)"
+          },
+          "nonempty_rate_ceiling": 0.6,
+          "soi_useful": null
+        },
+        "critic": {
+          "n_fields": 15,
+          "verdicts": {
+            "PASS": 8,
+            "RE_EXTRACT": 6,
+            "HUMAN_REVIEW": 1
+          },
+          "overrides": {
+            "dependent_field_cascade": 1
+          },
+          "n_quote_checked": 14,
+          "n_quote_verified": 14,
+          "evidence_quote_verifiable_rate": 1.0,
+          "n_off_vocabulary_tags": 1,
+          "n_null_tag_human_review": 1,
+          "n_schema_violations": 1,
+          "n_evidence_truncated": 0
+        },
+        "re_extract": {}
+      },
+      "usage": {
+        "by_model": [
+          {
+            "model": "us.anthropic.claude-sonnet-4-6",
+            "calls": 18,
+            "input_tokens": 90157,
+            "output_tokens": 5062,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.3464
+          },
+          {
+            "model": "us.anthropic.claude-opus-4-7",
+            "calls": 11,
+            "input_tokens": 169225,
+            "output_tokens": 18087,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 3.8949
+          }
+        ],
+        "total": {
+          "calls": 29,
+          "input_tokens": 259382,
+          "output_tokens": 23149,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 4.2413
+        }
+      },
+      "warnings": [
+        "year: adjudicator returned 1977 (source=signature), M1 had 1978",
+        "location resolved in reduced geocoder mode; the bucket is force-gated to HUMAN_REVIEW"
+      ]
+    },
+    {
+      "doc_id": "p1074_35556036543080",
+      "title": "Boston demolition plan : environmental impact statement.",
+      "n_pages": 233,
+      "elapsed_sec": 381.3,
+      "stage": "v1",
+      "paths": {
+        "run_manifest": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036543080/run_manifest.json",
+        "sheet_blind": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036543080/blind/p1074_35556036543080.csv",
+        "sheet_reveal": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036543080/reveal/p1074_35556036543080.csv",
+        "m1": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036543080/m1.json",
+        "m2": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036543080/m2.json",
+        "critic": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036543080/critic.json"
+      },
+      "rollup": {
+        "doc_id": "p1074_35556036543080",
+        "artifact_stage": "v1",
+        "geocoder_stack": "reduced",
+        "n_fields": 15,
+        "n_gated": 13,
+        "n_passed": 2,
+        "gate_rate": 0.8667,
+        "gate_reasons": {
+          "none": 2,
+          "critic_verdict": 5,
+          "composite_below_tau": 3,
+          "bucket_degenerate_severe": 3,
+          "reduced_geocoder_stack": 1,
+          "dependent_field_cascade": 1
+        },
+        "verdicts": {
+          "PASS_WITH_NOTE": 1,
+          "HUMAN_REVIEW": 13,
+          "PASS": 1
+        },
+        "per_bucket": {
+          "M1": {
+            "n_fields": 4,
+            "n_gated": 2,
+            "n_passed": 2,
+            "gate_reasons": {
+              "critic_verdict": 2
+            },
+            "tau_deployed": 0.5,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 3
+          },
+          "summary_narrative": {
+            "n_fields": 5,
+            "n_gated": 5,
+            "n_passed": 0,
+            "gate_reasons": {
+              "critic_verdict": 2,
+              "composite_below_tau": 3
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 5
+          },
+          "summary_numeric": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "critic_verdict": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 3
+          },
+          "summary_of_interest": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "bucket_degenerate_severe": 1
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": true,
+            "degenerate_severe": true,
+            "N_wrong_docs": 0
+          },
+          "alternatives+themes": {
+            "n_fields": 2,
+            "n_gated": 2,
+            "n_passed": 0,
+            "gate_reasons": {
+              "bucket_degenerate_severe": 2
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": true,
+            "degenerate_severe": true,
+            "N_wrong_docs": 1
+          },
+          "location": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "reduced_geocoder_stack": 1
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": false,
+            "degenerate_severe": false,
+            "N_wrong_docs": 6
+          },
+          "key_people": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "dependent_field_cascade": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": false,
+            "degenerate_severe": false,
+            "N_wrong_docs": 6
+          }
+        },
+        "null_tag": {
+          "M1": {
+            "n_fields": 4,
+            "n_human_review": 2,
+            "n_null_tag": 1,
+            "n_off_vocabulary": 1,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_narrative": {
+            "n_fields": 5,
+            "n_human_review": 5,
+            "n_null_tag": 1,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_numeric": {
+            "n_fields": 1,
+            "n_human_review": 1,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_of_interest": {
+            "n_fields": 1,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 1
+          },
+          "alternatives+themes": {
+            "n_fields": 2,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 2
+          },
+          "location": {
+            "n_fields": 1,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 1
+          },
+          "key_people": {
+            "n_fields": 1,
+            "n_human_review": 1,
+            "n_null_tag": 1,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          }
+        },
+        "summary_of_interest": {
+          "present": true,
+          "generation_failure": false,
+          "non_empty": true,
+          "n_entries": 6,
+          "salience_criterion_counts": {
+            "contested": 1,
+            "unusual_impact": 1,
+            "large_magnitude": 2,
+            "novel_alternative": 0,
+            "community_pushback": 2,
+            "precedent": 0,
+            "cross_jurisdictional": 0
+          },
+          "off_vocabulary_criteria": [],
+          "n_t17_manufactured_salience": 0,
+          "n_t18_duplicates_summary": 0,
+          "overlap_with_standard_summary": {
+            "jaccard": 0.216,
+            "n_soi_tokens": 222,
+            "n_summary_tokens": 431,
+            "per_entry_jaccard": [
+              0.0687,
+              0.0515,
+              0.0261,
+              0.0491,
+              0.0607,
+              0.0557
+            ],
+            "max_entry_jaccard": 0.0687,
+            "tokenizer": "mcal.quote_check.content_tokens (stopword+boilerplate filtered)"
+          },
+          "nonempty_rate_ceiling": 0.6,
+          "soi_useful": null
+        },
+        "critic": {
+          "n_fields": 15,
+          "verdicts": {
+            "PASS_WITH_NOTE": 3,
+            "RE_EXTRACT": 6,
+            "PASS": 5,
+            "HUMAN_REVIEW": 1
+          },
+          "overrides": {
+            "dependent_field_cascade": 1
+          },
+          "n_quote_checked": 14,
+          "n_quote_verified": 14,
+          "evidence_quote_verifiable_rate": 1.0,
+          "n_off_vocabulary_tags": 1,
+          "n_null_tag_human_review": 1,
+          "n_schema_violations": 1,
+          "n_evidence_truncated": 1
+        },
+        "re_extract": {}
+      },
+      "usage": {
+        "by_model": [
+          {
+            "model": "us.anthropic.claude-sonnet-4-6",
+            "calls": 18,
+            "input_tokens": 176003,
+            "output_tokens": 8595,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.6569
+          },
+          {
+            "model": "us.anthropic.claude-opus-4-7",
+            "calls": 13,
+            "input_tokens": 295567,
+            "output_tokens": 25030,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 6.3108
+          }
+        ],
+        "total": {
+          "calls": 31,
+          "input_tokens": 471570,
+          "output_tokens": 33625,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 6.9677
+        }
+      },
+      "warnings": [
+        "year: adjudicator returned 1975 (source=signature), M1 had 1976",
+        "location resolved in reduced geocoder mode; the bucket is force-gated to HUMAN_REVIEW"
+      ]
+    },
+    {
+      "doc_id": "p1074_35556036796613",
+      "title": "New Panama Canal Treaty : environmental impact statement.",
+      "n_pages": 180,
+      "elapsed_sec": 347.1,
+      "stage": "v1",
+      "paths": {
+        "run_manifest": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036796613/run_manifest.json",
+        "sheet_blind": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036796613/blind/p1074_35556036796613.csv",
+        "sheet_reveal": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036796613/reveal/p1074_35556036796613.csv",
+        "m1": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036796613/m1.json",
+        "m2": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036796613/m2.json",
+        "critic": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036796613/critic.json"
+      },
+      "rollup": {
+        "doc_id": "p1074_35556036796613",
+        "artifact_stage": "v1",
+        "geocoder_stack": "reduced",
+        "n_fields": 15,
+        "n_gated": 11,
+        "n_passed": 4,
+        "gate_rate": 0.7333,
+        "gate_reasons": {
+          "none": 4,
+          "composite_below_tau": 3,
+          "critic_verdict": 4,
+          "bucket_degenerate_severe": 3,
+          "reduced_geocoder_stack": 1
+        },
+        "verdicts": {
+          "PASS": 4,
+          "HUMAN_REVIEW": 11
+        },
+        "per_bucket": {
+          "M1": {
+            "n_fields": 4,
+            "n_gated": 0,
+            "n_passed": 4,
+            "gate_reasons": {},
+            "tau_deployed": 0.5,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 3
+          },
+          "summary_narrative": {
+            "n_fields": 5,
+            "n_gated": 5,
+            "n_passed": 0,
+            "gate_reasons": {
+              "composite_below_tau": 2,
+              "critic_verdict": 3
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 5
+          },
+          "summary_numeric": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "critic_verdict": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 3
+          },
+          "summary_of_interest": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "bucket_degenerate_severe": 1
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": true,
+            "degenerate_severe": true,
+            "N_wrong_docs": 0
+          },
+          "alternatives+themes": {
+            "n_fields": 2,
+            "n_gated": 2,
+            "n_passed": 0,
+            "gate_reasons": {
+              "bucket_degenerate_severe": 2
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": true,
+            "degenerate_severe": true,
+            "N_wrong_docs": 1
+          },
+          "location": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "reduced_geocoder_stack": 1
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": false,
+            "degenerate_severe": false,
+            "N_wrong_docs": 6
+          },
+          "key_people": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "composite_below_tau": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": false,
+            "degenerate_severe": false,
+            "N_wrong_docs": 6
+          }
+        },
+        "null_tag": {
+          "M1": {
+            "n_fields": 4,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_narrative": {
+            "n_fields": 5,
+            "n_human_review": 5,
+            "n_null_tag": 1,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_numeric": {
+            "n_fields": 1,
+            "n_human_review": 1,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_of_interest": {
+            "n_fields": 1,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 1
+          },
+          "alternatives+themes": {
+            "n_fields": 2,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 2
+          },
+          "location": {
+            "n_fields": 1,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 1
+          },
+          "key_people": {
+            "n_fields": 1,
+            "n_human_review": 1,
+            "n_null_tag": 1,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          }
+        },
+        "summary_of_interest": {
+          "present": true,
+          "generation_failure": false,
+          "non_empty": true,
+          "n_entries": 6,
+          "salience_criterion_counts": {
+            "contested": 2,
+            "unusual_impact": 2,
+            "large_magnitude": 1,
+            "novel_alternative": 0,
+            "community_pushback": 0,
+            "precedent": 0,
+            "cross_jurisdictional": 1
+          },
+          "off_vocabulary_criteria": [],
+          "n_t17_manufactured_salience": 0,
+          "n_t18_duplicates_summary": 0,
+          "overlap_with_standard_summary": {
+            "jaccard": 0.1828,
+            "n_soi_tokens": 217,
+            "n_summary_tokens": 540,
+            "per_entry_jaccard": [
+              0.0411,
+              0.0542,
+              0.0215,
+              0.0664,
+              0.0374,
+              0.0322
+            ],
+            "max_entry_jaccard": 0.0664,
+            "tokenizer": "mcal.quote_check.content_tokens (stopword+boilerplate filtered)"
+          },
+          "nonempty_rate_ceiling": 0.6,
+          "soi_useful": null
+        },
+        "critic": {
+          "n_fields": 15,
+          "verdicts": {
+            "PASS": 7,
+            "PASS_WITH_NOTE": 1,
+            "RE_EXTRACT": 7
+          },
+          "overrides": {},
+          "n_quote_checked": 14,
+          "n_quote_verified": 14,
+          "evidence_quote_verifiable_rate": 1.0,
+          "n_off_vocabulary_tags": 0,
+          "n_null_tag_human_review": 0,
+          "n_schema_violations": 2,
+          "n_evidence_truncated": 3
+        },
+        "re_extract": {}
+      },
+      "usage": {
+        "by_model": [
+          {
+            "model": "us.anthropic.claude-sonnet-4-6",
+            "calls": 17,
+            "input_tokens": 150983,
+            "output_tokens": 7293,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.5623
+          },
+          {
+            "model": "us.anthropic.claude-opus-4-7",
+            "calls": 12,
+            "input_tokens": 340765,
+            "output_tokens": 24471,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 6.9468
+          }
+        ],
+        "total": {
+          "calls": 29,
+          "input_tokens": 491748,
+          "output_tokens": 31764,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 7.5091
+        }
+      },
+      "warnings": [
+        "location resolved in reduced geocoder mode; the bucket is force-gated to HUMAN_REVIEW"
+      ]
+    },
+    {
+      "doc_id": "p1074_35556036854040",
+      "title": "Crow Indian ceded area, tracts II and III : environmental impact statement.",
+      "n_pages": 775,
+      "elapsed_sec": 399.0,
+      "stage": "v1",
+      "paths": {
+        "run_manifest": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036854040/run_manifest.json",
+        "sheet_blind": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036854040/blind/p1074_35556036854040.csv",
+        "sheet_reveal": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036854040/reveal/p1074_35556036854040.csv",
+        "m1": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036854040/m1.json",
+        "m2": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036854040/m2.json",
+        "critic": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036854040/critic.json"
+      },
+      "rollup": {
+        "doc_id": "p1074_35556036854040",
+        "artifact_stage": "v1",
+        "geocoder_stack": "reduced",
+        "n_fields": 15,
+        "n_gated": 11,
+        "n_passed": 4,
+        "gate_rate": 0.7333,
+        "gate_reasons": {
+          "none": 4,
+          "critic_verdict": 5,
+          "composite_below_tau": 2,
+          "bucket_degenerate_severe": 3,
+          "reduced_geocoder_stack": 1
+        },
+        "verdicts": {
+          "PASS_WITH_NOTE": 1,
+          "PASS": 3,
+          "HUMAN_REVIEW": 11
+        },
+        "per_bucket": {
+          "M1": {
+            "n_fields": 4,
+            "n_gated": 0,
+            "n_passed": 4,
+            "gate_reasons": {},
+            "tau_deployed": 0.5,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 3
+          },
+          "summary_narrative": {
+            "n_fields": 5,
+            "n_gated": 5,
+            "n_passed": 0,
+            "gate_reasons": {
+              "critic_verdict": 4,
+              "composite_below_tau": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 5
+          },
+          "summary_numeric": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "composite_below_tau": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 3
+          },
+          "summary_of_interest": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "bucket_degenerate_severe": 1
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": true,
+            "degenerate_severe": true,
+            "N_wrong_docs": 0
+          },
+          "alternatives+themes": {
+            "n_fields": 2,
+            "n_gated": 2,
+            "n_passed": 0,
+            "gate_reasons": {
+              "bucket_degenerate_severe": 2
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": true,
+            "degenerate_severe": true,
+            "N_wrong_docs": 1
+          },
+          "location": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "reduced_geocoder_stack": 1
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": false,
+            "degenerate_severe": false,
+            "N_wrong_docs": 6
+          },
+          "key_people": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "critic_verdict": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": false,
+            "degenerate_severe": false,
+            "N_wrong_docs": 6
+          }
+        },
+        "null_tag": {
+          "M1": {
+            "n_fields": 4,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_narrative": {
+            "n_fields": 5,
+            "n_human_review": 5,
+            "n_null_tag": 1,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_numeric": {
+            "n_fields": 1,
+            "n_human_review": 1,
+            "n_null_tag": 1,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_of_interest": {
+            "n_fields": 1,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 1
+          },
+          "alternatives+themes": {
+            "n_fields": 2,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 2
+          },
+          "location": {
+            "n_fields": 1,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 1
+          },
+          "key_people": {
+            "n_fields": 1,
+            "n_human_review": 1,
+            "n_null_tag": 1,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          }
+        },
+        "summary_of_interest": {
+          "present": true,
+          "generation_failure": false,
+          "non_empty": true,
+          "n_entries": 6,
+          "salience_criterion_counts": {
+            "contested": 3,
+            "unusual_impact": 0,
+            "large_magnitude": 1,
+            "novel_alternative": 0,
+            "community_pushback": 0,
+            "precedent": 1,
+            "cross_jurisdictional": 1
+          },
+          "off_vocabulary_criteria": [],
+          "n_t17_manufactured_salience": 0,
+          "n_t18_duplicates_summary": 0,
+          "overlap_with_standard_summary": {
+            "jaccard": 0.1732,
+            "n_soi_tokens": 236,
+            "n_summary_tokens": 509,
+            "per_entry_jaccard": [
+              0.0502,
+              0.0547,
+              0.0458,
+              0.0493,
+              0.0414,
+              0.0262
+            ],
+            "max_entry_jaccard": 0.0547,
+            "tokenizer": "mcal.quote_check.content_tokens (stopword+boilerplate filtered)"
+          },
+          "nonempty_rate_ceiling": 0.6,
+          "soi_useful": null
+        },
+        "critic": {
+          "n_fields": 15,
+          "verdicts": {
+            "PASS_WITH_NOTE": 1,
+            "PASS": 8,
+            "RE_EXTRACT": 5,
+            "HUMAN_REVIEW": 1
+          },
+          "overrides": {
+            "critic_evidence_unverifiable": 1
+          },
+          "n_quote_checked": 15,
+          "n_quote_verified": 14,
+          "evidence_quote_verifiable_rate": 0.9333,
+          "n_off_vocabulary_tags": 0,
+          "n_null_tag_human_review": 1,
+          "n_schema_violations": 0,
+          "n_evidence_truncated": 1
+        },
+        "re_extract": {}
+      },
+      "usage": {
+        "by_model": [
+          {
+            "model": "us.anthropic.claude-sonnet-4-6",
+            "calls": 19,
+            "input_tokens": 147484,
+            "output_tokens": 6865,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.5454
+          },
+          {
+            "model": "us.anthropic.claude-opus-4-7",
+            "calls": 20,
+            "input_tokens": 544050,
+            "output_tokens": 46633,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 11.6582
+          }
+        ],
+        "total": {
+          "calls": 39,
+          "input_tokens": 691534,
+          "output_tokens": 53498,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 12.2037
+        }
+      },
+      "warnings": [
+        "location resolved in reduced geocoder mode; the bucket is force-gated to HUMAN_REVIEW"
+      ]
+    },
+    {
+      "doc_id": "p1074_35556036855435",
+      "title": "Rio Grande, Amistad hydroelectric plant : environmental impact statement.",
+      "n_pages": 92,
+      "elapsed_sec": 308.9,
+      "stage": "v1",
+      "paths": {
+        "run_manifest": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036855435/run_manifest.json",
+        "sheet_blind": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036855435/blind/p1074_35556036855435.csv",
+        "sheet_reveal": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036855435/reveal/p1074_35556036855435.csv",
+        "m1": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036855435/m1.json",
+        "m2": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036855435/m2.json",
+        "critic": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036855435/critic.json"
+      },
+      "rollup": {
+        "doc_id": "p1074_35556036855435",
+        "artifact_stage": "v1",
+        "geocoder_stack": "reduced",
+        "n_fields": 15,
+        "n_gated": 11,
+        "n_passed": 4,
+        "gate_rate": 0.7333,
+        "gate_reasons": {
+          "none": 4,
+          "critic_verdict": 3,
+          "composite_below_tau": 4,
+          "bucket_degenerate_severe": 3,
+          "reduced_geocoder_stack": 1
+        },
+        "verdicts": {
+          "PASS": 3,
+          "PASS_WITH_NOTE": 1,
+          "HUMAN_REVIEW": 11
+        },
+        "per_bucket": {
+          "M1": {
+            "n_fields": 4,
+            "n_gated": 0,
+            "n_passed": 4,
+            "gate_reasons": {},
+            "tau_deployed": 0.5,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 3
+          },
+          "summary_narrative": {
+            "n_fields": 5,
+            "n_gated": 5,
+            "n_passed": 0,
+            "gate_reasons": {
+              "critic_verdict": 2,
+              "composite_below_tau": 3
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 5
+          },
+          "summary_numeric": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "critic_verdict": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 3
+          },
+          "summary_of_interest": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "bucket_degenerate_severe": 1
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": true,
+            "degenerate_severe": true,
+            "N_wrong_docs": 0
+          },
+          "alternatives+themes": {
+            "n_fields": 2,
+            "n_gated": 2,
+            "n_passed": 0,
+            "gate_reasons": {
+              "bucket_degenerate_severe": 2
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": true,
+            "degenerate_severe": true,
+            "N_wrong_docs": 1
+          },
+          "location": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "reduced_geocoder_stack": 1
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": false,
+            "degenerate_severe": false,
+            "N_wrong_docs": 6
+          },
+          "key_people": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "composite_below_tau": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": false,
+            "degenerate_severe": false,
+            "N_wrong_docs": 6
+          }
+        },
+        "null_tag": {
+          "M1": {
+            "n_fields": 4,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_narrative": {
+            "n_fields": 5,
+            "n_human_review": 5,
+            "n_null_tag": 1,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_numeric": {
+            "n_fields": 1,
+            "n_human_review": 1,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_of_interest": {
+            "n_fields": 1,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 1
+          },
+          "alternatives+themes": {
+            "n_fields": 2,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 2
+          },
+          "location": {
+            "n_fields": 1,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 1
+          },
+          "key_people": {
+            "n_fields": 1,
+            "n_human_review": 1,
+            "n_null_tag": 1,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          }
+        },
+        "summary_of_interest": {
+          "present": true,
+          "generation_failure": false,
+          "non_empty": true,
+          "n_entries": 6,
+          "salience_criterion_counts": {
+            "contested": 2,
+            "unusual_impact": 1,
+            "large_magnitude": 0,
+            "novel_alternative": 0,
+            "community_pushback": 1,
+            "precedent": 0,
+            "cross_jurisdictional": 2
+          },
+          "off_vocabulary_criteria": [],
+          "n_t17_manufactured_salience": 0,
+          "n_t18_duplicates_summary": 0,
+          "overlap_with_standard_summary": {
+            "jaccard": 0.2358,
+            "n_soi_tokens": 215,
+            "n_summary_tokens": 351,
+            "per_entry_jaccard": [
+              0.0501,
+              0.0486,
+              0.0795,
+              0.073,
+              0.0623,
+              0.0627
+            ],
+            "max_entry_jaccard": 0.0795,
+            "tokenizer": "mcal.quote_check.content_tokens (stopword+boilerplate filtered)"
+          },
+          "nonempty_rate_ceiling": 0.6,
+          "soi_useful": null
+        },
+        "critic": {
+          "n_fields": 15,
+          "verdicts": {
+            "PASS": 9,
+            "PASS_WITH_NOTE": 3,
+            "RE_EXTRACT": 3
+          },
+          "overrides": {},
+          "n_quote_checked": 15,
+          "n_quote_verified": 15,
+          "evidence_quote_verifiable_rate": 1.0,
+          "n_off_vocabulary_tags": 0,
+          "n_null_tag_human_review": 0,
+          "n_schema_violations": 0,
+          "n_evidence_truncated": 1
+        },
+        "re_extract": {}
+      },
+      "usage": {
+        "by_model": [
+          {
+            "model": "us.anthropic.claude-sonnet-4-6",
+            "calls": 19,
+            "input_tokens": 213663,
+            "output_tokens": 6892,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.7444
+          },
+          {
+            "model": "us.anthropic.claude-opus-4-7",
+            "calls": 10,
+            "input_tokens": 214995,
+            "output_tokens": 17549,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 4.5411
+          }
+        ],
+        "total": {
+          "calls": 29,
+          "input_tokens": 428658,
+          "output_tokens": 24441,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 5.2855
+        }
+      },
+      "warnings": [
+        "location resolved in reduced geocoder mode; the bucket is force-gated to HUMAN_REVIEW"
+      ]
+    },
+    {
+      "doc_id": "p1074_35556036861656",
+      "title": "Motor carrier commercial zones and terminal areas : environmental impact statement.",
+      "n_pages": 216,
+      "elapsed_sec": 310.0,
+      "stage": "v1",
+      "paths": {
+        "run_manifest": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036861656/run_manifest.json",
+        "sheet_blind": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036861656/blind/p1074_35556036861656.csv",
+        "sheet_reveal": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036861656/reveal/p1074_35556036861656.csv",
+        "m1": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036861656/m1.json",
+        "m2": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036861656/m2.json",
+        "critic": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556036861656/critic.json"
+      },
+      "rollup": {
+        "doc_id": "p1074_35556036861656",
+        "artifact_stage": "v1",
+        "geocoder_stack": "reduced",
+        "n_fields": 15,
+        "n_gated": 12,
+        "n_passed": 3,
+        "gate_rate": 0.8,
+        "gate_reasons": {
+          "none": 3,
+          "critic_verdict": 3,
+          "composite_below_tau": 4,
+          "bucket_degenerate_severe": 3,
+          "reduced_geocoder_stack": 1,
+          "policy_private_individual": 1
+        },
+        "verdicts": {
+          "PASS": 3,
+          "HUMAN_REVIEW": 12
+        },
+        "per_bucket": {
+          "M1": {
+            "n_fields": 4,
+            "n_gated": 1,
+            "n_passed": 3,
+            "gate_reasons": {
+              "critic_verdict": 1
+            },
+            "tau_deployed": 0.5,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 3
+          },
+          "summary_narrative": {
+            "n_fields": 5,
+            "n_gated": 5,
+            "n_passed": 0,
+            "gate_reasons": {
+              "composite_below_tau": 3,
+              "critic_verdict": 2
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 5
+          },
+          "summary_numeric": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "composite_below_tau": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 3
+          },
+          "summary_of_interest": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "bucket_degenerate_severe": 1
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": true,
+            "degenerate_severe": true,
+            "N_wrong_docs": 0
+          },
+          "alternatives+themes": {
+            "n_fields": 2,
+            "n_gated": 2,
+            "n_passed": 0,
+            "gate_reasons": {
+              "bucket_degenerate_severe": 2
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": true,
+            "degenerate_severe": true,
+            "N_wrong_docs": 1
+          },
+          "location": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "reduced_geocoder_stack": 1
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": false,
+            "degenerate_severe": false,
+            "N_wrong_docs": 6
+          },
+          "key_people": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "policy_private_individual": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": false,
+            "degenerate_severe": false,
+            "N_wrong_docs": 6
+          }
+        },
+        "null_tag": {
+          "M1": {
+            "n_fields": 4,
+            "n_human_review": 1,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_narrative": {
+            "n_fields": 5,
+            "n_human_review": 5,
+            "n_null_tag": 2,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_numeric": {
+            "n_fields": 1,
+            "n_human_review": 1,
+            "n_null_tag": 1,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_of_interest": {
+            "n_fields": 1,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 1
+          },
+          "alternatives+themes": {
+            "n_fields": 2,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 2
+          },
+          "location": {
+            "n_fields": 1,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 1
+          },
+          "key_people": {
+            "n_fields": 1,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 1,
+            "n_excluded_pre_judgement": 0
+          }
+        },
+        "summary_of_interest": {
+          "present": true,
+          "generation_failure": false,
+          "non_empty": true,
+          "n_entries": 6,
+          "salience_criterion_counts": {
+            "contested": 2,
+            "unusual_impact": 1,
+            "large_magnitude": 1,
+            "novel_alternative": 1,
+            "community_pushback": 0,
+            "precedent": 1,
+            "cross_jurisdictional": 0
+          },
+          "off_vocabulary_criteria": [],
+          "n_t17_manufactured_salience": 0,
+          "n_t18_duplicates_summary": 0,
+          "overlap_with_standard_summary": {
+            "jaccard": 0.1525,
+            "n_soi_tokens": 192,
+            "n_summary_tokens": 443,
+            "per_entry_jaccard": [
+              0.0374,
+              0.053,
+              0.0389,
+              0.056,
+              0.0191,
+              0.0149
+            ],
+            "max_entry_jaccard": 0.056,
+            "tokenizer": "mcal.quote_check.content_tokens (stopword+boilerplate filtered)"
+          },
+          "nonempty_rate_ceiling": 0.6,
+          "soi_useful": null
+        },
+        "critic": {
+          "n_fields": 15,
+          "verdicts": {
+            "PASS": 7,
+            "RE_EXTRACT": 5,
+            "PASS_WITH_NOTE": 2,
+            "HUMAN_REVIEW": 1
+          },
+          "overrides": {
+            "policy_private_individual": 1
+          },
+          "n_quote_checked": 14,
+          "n_quote_verified": 14,
+          "evidence_quote_verifiable_rate": 1.0,
+          "n_off_vocabulary_tags": 0,
+          "n_null_tag_human_review": 1,
+          "n_schema_violations": 0,
+          "n_evidence_truncated": 0
+        },
+        "re_extract": {}
+      },
+      "usage": {
+        "by_model": [
+          {
+            "model": "us.anthropic.claude-sonnet-4-6",
+            "calls": 18,
+            "input_tokens": 142514,
+            "output_tokens": 5618,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.5118
+          },
+          {
+            "model": "us.anthropic.claude-opus-4-7",
+            "calls": 13,
+            "input_tokens": 301197,
+            "output_tokens": 27498,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 6.5803
+          }
+        ],
+        "total": {
+          "calls": 31,
+          "input_tokens": 443711,
+          "output_tokens": 33116,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 7.0921
+        }
+      },
+      "warnings": [
+        "year: adjudicator returned 1976 (source=cover), M1 had 1977",
+        "location resolved in reduced geocoder mode; the bucket is force-gated to HUMAN_REVIEW"
+      ]
+    },
+    {
+      "doc_id": "p1074_35556038062691",
+      "title": "San Jose community development block grant 3-year plan, July 1978-June 1981 : environmental impact statement.",
+      "n_pages": 197,
+      "elapsed_sec": 395.5,
+      "stage": "v1",
+      "paths": {
+        "run_manifest": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556038062691/run_manifest.json",
+        "sheet_blind": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556038062691/blind/p1074_35556038062691.csv",
+        "sheet_reveal": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556038062691/reveal/p1074_35556038062691.csv",
+        "m1": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556038062691/m1.json",
+        "m2": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556038062691/m2.json",
+        "critic": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_b/output/p1074_35556038062691/critic.json"
+      },
+      "rollup": {
+        "doc_id": "p1074_35556038062691",
+        "artifact_stage": "v1",
+        "geocoder_stack": "reduced",
+        "n_fields": 15,
+        "n_gated": 12,
+        "n_passed": 3,
+        "gate_rate": 0.8,
+        "gate_reasons": {
+          "none": 3,
+          "critic_verdict": 6,
+          "composite_below_tau": 2,
+          "bucket_degenerate_severe": 3,
+          "reduced_geocoder_stack": 1
+        },
+        "verdicts": {
+          "PASS": 3,
+          "HUMAN_REVIEW": 12
+        },
+        "per_bucket": {
+          "M1": {
+            "n_fields": 4,
+            "n_gated": 1,
+            "n_passed": 3,
+            "gate_reasons": {
+              "critic_verdict": 1
+            },
+            "tau_deployed": 0.5,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 3
+          },
+          "summary_narrative": {
+            "n_fields": 5,
+            "n_gated": 5,
+            "n_passed": 0,
+            "gate_reasons": {
+              "critic_verdict": 3,
+              "composite_below_tau": 2
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 5
+          },
+          "summary_numeric": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "critic_verdict": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": true,
+            "degenerate_severe": false,
+            "N_wrong_docs": 3
+          },
+          "summary_of_interest": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "bucket_degenerate_severe": 1
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": true,
+            "degenerate_severe": true,
+            "N_wrong_docs": 0
+          },
+          "alternatives+themes": {
+            "n_fields": 2,
+            "n_gated": 2,
+            "n_passed": 0,
+            "gate_reasons": {
+              "bucket_degenerate_severe": 2
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": true,
+            "degenerate_severe": true,
+            "N_wrong_docs": 1
+          },
+          "location": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "reduced_geocoder_stack": 1
+            },
+            "tau_deployed": null,
+            "gate_all_to_human": true,
+            "degenerate": false,
+            "degenerate_severe": false,
+            "N_wrong_docs": 6
+          },
+          "key_people": {
+            "n_fields": 1,
+            "n_gated": 1,
+            "n_passed": 0,
+            "gate_reasons": {
+              "critic_verdict": 1
+            },
+            "tau_deployed": 1.0,
+            "gate_all_to_human": false,
+            "degenerate": false,
+            "degenerate_severe": false,
+            "N_wrong_docs": 6
+          }
+        },
+        "null_tag": {
+          "M1": {
+            "n_fields": 4,
+            "n_human_review": 1,
+            "n_null_tag": 1,
+            "n_off_vocabulary": 1,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_narrative": {
+            "n_fields": 5,
+            "n_human_review": 5,
+            "n_null_tag": 2,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_numeric": {
+            "n_fields": 1,
+            "n_human_review": 1,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          },
+          "summary_of_interest": {
+            "n_fields": 1,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 1
+          },
+          "alternatives+themes": {
+            "n_fields": 2,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 2
+          },
+          "location": {
+            "n_fields": 1,
+            "n_human_review": 0,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 1
+          },
+          "key_people": {
+            "n_fields": 1,
+            "n_human_review": 1,
+            "n_null_tag": 0,
+            "n_off_vocabulary": 0,
+            "n_excluded_policy": 0,
+            "n_excluded_pre_judgement": 0
+          }
+        },
+        "summary_of_interest": {
+          "present": true,
+          "generation_failure": false,
+          "non_empty": true,
+          "n_entries": 6,
+          "salience_criterion_counts": {
+            "contested": 4,
+            "unusual_impact": 1,
+            "large_magnitude": 0,
+            "novel_alternative": 1,
+            "community_pushback": 0,
+            "precedent": 0,
+            "cross_jurisdictional": 0
+          },
+          "off_vocabulary_criteria": [],
+          "n_t17_manufactured_salience": 0,
+          "n_t18_duplicates_summary": 0,
+          "overlap_with_standard_summary": {
+            "jaccard": 0.1817,
+            "n_soi_tokens": 235,
+            "n_summary_tokens": 409,
+            "per_entry_jaccard": [
+              0.0568,
+              0.0628,
+              0.0631,
+              0.0561,
+              0.016,
+              0.0254
+            ],
+            "max_entry_jaccard": 0.0631,
+            "tokenizer": "mcal.quote_check.content_tokens (stopword+boilerplate filtered)"
+          },
+          "nonempty_rate_ceiling": 0.6,
+          "soi_useful": null
+        },
+        "critic": {
+          "n_fields": 15,
+          "verdicts": {
+            "PASS": 6,
+            "RE_EXTRACT": 8,
+            "PASS_WITH_NOTE": 1
+          },
+          "overrides": {},
+          "n_quote_checked": 13,
+          "n_quote_verified": 13,
+          "evidence_quote_verifiable_rate": 1.0,
+          "n_off_vocabulary_tags": 1,
+          "n_null_tag_human_review": 0,
+          "n_schema_violations": 2,
+          "n_evidence_truncated": 1
+        },
+        "re_extract": {}
+      },
+      "usage": {
+        "by_model": [
+          {
+            "model": "us.anthropic.claude-sonnet-4-6",
+            "calls": 20,
+            "input_tokens": 170903,
+            "output_tokens": 9806,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.6598
+          },
+          {
+            "model": "us.anthropic.claude-opus-4-7",
+            "calls": 13,
+            "input_tokens": 287526,
+            "output_tokens": 24587,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 6.1569
+          }
+        ],
+        "total": {
+          "calls": 33,
+          "input_tokens": 458429,
+          "output_tokens": 34393,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 6.8167
+        }
+      },
+      "warnings": [
+        "location resolved in reduced geocoder mode; the bucket is force-gated to HUMAN_REVIEW"
+      ]
+    }
+  ]
+}

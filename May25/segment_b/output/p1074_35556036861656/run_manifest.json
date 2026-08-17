@@ -1,0 +1,2902 @@
+{
+  "alternatives": {
+    "extracted_value": [
+      {
+        "name": "No Action",
+        "description": "Retain the existing population-mileage formula and continue defining individual commercial zones only when specifically requested, maintaining the status quo.",
+        "evidence": [
+          {
+            "quote": "One alternative is to retain the present population-mileage formula, and continue to define individual zones when requested to do so.",
+            "source_pages": [
+              "186"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "name": "Eliminate Population-Mileage Formula",
+        "description": "Replace the population-mileage formula with a city-by-city approach to defining commercial zones, allowing each city's unique demographic, economic, and industrial characteristics to determine its zone boundaries.",
+        "evidence": [
+          {
+            "quote": "A city-by-city commercial zone definition would result in the most accurate reflection of demographic, economic, and industrial characteristics for each city.",
+            "source_pages": [
+              "186"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "name": "Expansion of Proposed Formula",
+        "description": "Apply a more expansive population-mileage formula, as recommended by A.D. Little, that would create larger commercial zones than the proposed action across all population categories.",
+        "evidence": [
+          {
+            "quote": "There are a variety of other formulas which could be applied in order to determine commercial zones. For example, A.D. Little recommends that the formula be adjusted as follows:",
+            "source_pages": [
+              "187"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "name": "Ring Approach",
+        "description": "Measure commercial zone boundaries as a ring with a fixed radius from the center of the city rather than as a contour measured outward from city limits, which would simplify delineation while capturing approximately the same population.",
+        "evidence": [
+          {
+            "quote": "Adoption of the ring approach rather than the contour approach",
+            "source_pages": [
+              "174"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "name": "Different Formula for Cities with Physical Limitations",
+        "description": "Apply an increased mileage formula\u201450 percent greater than the standard formula\u2014for cities whose growth is constrained by natural physical barriers such as oceans, lakes, or deserts.",
+        "evidence": [
+          {
+            "quote": "A.D. Little recommends that, in order to compensate for this lack of available land to develop, the formula for cities having physical limitations should be increased by 50 percent.",
+            "source_pages": [
+              "188"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "name": "Use of SMSAs or SCSAs",
+        "description": "Define commercial zones using Standard Metropolitan Statistical Areas or Standard Consolidated Statistical Areas instead of a population-mileage formula, relying on existing federally defined economic and social integration boundaries.",
+        "evidence": [
+          {
+            "quote": "As an alternative to the population-mileage formula, it has been suggested that the Commission utilize SMSA's and SCSA's to define commercial zones.",
+            "source_pages": [
+              "189"
+            ],
+            "quote_verified": true
+          }
+        ]
+      }
+    ],
+    "evidence_quote": "IV. Alternatives to the Proposed Action\n1. No action  One alternative is to retain the present population-mileage formula, and continue to define individual zones when requested to do so.",
+    "source_pages": [
+      174,
+      186,
+      187,
+      188,
+      189
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "no",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "n/a",
+      "Q8": "yes",
+      "Q9": "yes",
+      "Q10": "yes"
+    },
+    "composite": 0.85,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "bucket_degenerate_severe",
+    "failure_tag": "T04_undefined_acronym",
+    "bucket": "alternatives+themes",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS_WITH_NOTE",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "bucket_degenerate_severe",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.7,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 186,
+      "normalized_match_span": [
+        186,
+        1149,
+        1329
+      ],
+      "pages_searched": [
+        172,
+        173,
+        174,
+        175,
+        176,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "1"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": true,
+      "degenerate_severe": true,
+      "saturated": false,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 1
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The acronyms SMSA (Standard Metropolitan Statistical Area) and SCSA (Standard Consolidated Statistical Area) are used in the extracted value without expansion on first use within the field itself. The document does expand them on page 189, but the extracted value's description for 'Use of SMSAs or SCSAs' uses the acronyms without defining them inline. All other claims are well-supported by the cit",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        174,
+        186,
+        187,
+        188,
+        189
+      ],
+      "pages_included": [
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 37085
+    }
+  },
+  "eis_type": {
+    "extracted_value": "Unknown",
+    "evidence_quote": "Appended to the Interim Report was a draft environmental impact statement prepared in compliance with our responsibilities pursuant to the National Environmental Policy Act of 1969 (NEPA)",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "n/a",
+      "Q7": "no",
+      "Q8": "n/a",
+      "Q9": "n/a",
+      "Q10": "no"
+    },
+    "composite": 0.65,
+    "applied_tau": 0.5,
+    "gated_to_human": true,
+    "gate_reason": "critic_verdict",
+    "failure_tag": "T12_eis_type_confused_with_rod",
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "critic_verdict"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.3,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 5,
+      "normalized_match_span": [
+        5,
+        954,
+        1139
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "1969"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The cited pages contain a reference to 'a draft environmental impact statement' appended to the Interim Report, which indicates the EIS type is 'Draft' rather than 'Unknown'. However, this reference appears in body text rather than as a section heading or cover-page designation (Q7 = no). The document itself appears to be an ICC rulemaking report (Ex Parte No. MC-37), not the EIS itself \u2014 the draf",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 10546
+    }
+  },
+  "key_people": {
+    "extracted_value": {
+      "agency_preparers": [],
+      "cooperating_agencies": [],
+      "consulted_entities": [],
+      "public_commenters": [
+        {
+          "name": "Environmental Protection Agency",
+          "bucket": "public_commenters",
+          "kind": "official",
+          "affiliation": null,
+          "stance": "conditional",
+          "capacity": {
+            "capacity": "non_private",
+            "basis": "entity_name_is_an_organization",
+            "non_private_cues": [
+              "org:agency"
+            ],
+            "private_cues": [],
+            "name_located_in_passage": true,
+            "requires_human_review": false
+          },
+          "human_review": false,
+          "heading": "VII. Comments Received in Response to the Draft Environmental Impact Statement",
+          "heading_pages": "192-199",
+          "evidence": [
+            {
+              "quote": "has indicated a lack of objection to the action, but suggests more information be supplied concerning the air quality impacts of the proposed expansion of commercial zones.",
+              "source_pages": [
+                "192"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Department of the Interior",
+          "bucket": "public_commenters",
+          "kind": "official",
+          "affiliation": null,
+          "stance": "neutral",
+          "capacity": {
+            "capacity": "non_private",
+            "basis": "entity_name_is_an_organization",
+            "non_private_cues": [
+              "org:department of"
+            ],
+            "private_cues": [],
+            "name_located_in_passage": true,
+            "requires_human_review": false
+          },
+          "human_review": false,
+          "heading": "VII. Comments Received in Response to the Draft Environmental Impact Statement",
+          "heading_pages": "192-199",
+          "evidence": [
+            {
+              "quote": "has reviewed the statement in its areas of jurisdiction and expertise and has no comments to offer.",
+              "source_pages": [
+                "192"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Port Everglades Authority",
+          "bucket": "public_commenters",
+          "kind": "organization",
+          "affiliation": null,
+          "stance": "support",
+          "capacity": {
+            "capacity": "non_private",
+            "basis": "entity_name_is_an_organization",
+            "non_private_cues": [
+              "org:authority"
+            ],
+            "private_cues": [],
+            "name_located_in_passage": true,
+            "requires_human_review": false
+          },
+          "human_review": false,
+          "heading": "VII. Comments Received in Response to the Draft Environmental Impact Statement",
+          "heading_pages": "192-199",
+          "evidence": [
+            {
+              "quote": "urges the Commission to adopt the alternative which would expand the population-mileage formula for cities with physical limitations.",
+              "source_pages": [
+                "192"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Jones Transfer Company",
+          "bucket": "public_commenters",
+          "kind": "organization",
+          "affiliation": null,
+          "stance": "oppose",
+          "capacity": {
+            "capacity": "non_private",
+            "basis": "entity_name_is_an_organization",
+            "non_private_cues": [
+              "org:company"
+            ],
+            "private_cues": [],
+            "name_located_in_passage": true,
+            "requires_human_review": false
+          },
+          "human_review": false,
+          "heading": "VII. Comments Received in Response to the Draft Environmental Impact Statement",
+          "heading_pages": "192-199",
+          "evidence": [
+            {
+              "quote": "The draft statement is incorrect in stating that there will be a beneficial environmental effect from a decrease in interlining.",
+              "source_pages": [
+                "192"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "La Porte Transit",
+          "bucket": "public_commenters",
+          "kind": "organization",
+          "affiliation": null,
+          "stance": "oppose",
+          "capacity": {
+            "capacity": "non_private",
+            "basis": "institutional_identification_in_cited_passage",
+            "non_private_cues": [
+              "org:company"
+            ],
+            "private_cues": [],
+            "name_located_in_passage": true,
+            "requires_human_review": false
+          },
+          "human_review": false,
+          "heading": "VII. Comments Received in Response to the Draft Environmental Impact Statement",
+          "heading_pages": "192-199",
+          "evidence": [
+            {
+              "quote": "The draft statement is incorrect in stating that there will be a beneficial environmental effect from a decrease in interlining.",
+              "source_pages": [
+                "192"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Garment Truckmen Assoc. of New Jersey",
+          "bucket": "public_commenters",
+          "kind": "organization",
+          "affiliation": null,
+          "stance": "oppose",
+          "capacity": {
+            "capacity": "non_private",
+            "basis": "entity_name_is_an_organization",
+            "non_private_cues": [
+              "org:name_shape"
+            ],
+            "private_cues": [],
+            "name_located_in_passage": true,
+            "requires_human_review": false
+          },
+          "human_review": false,
+          "heading": "VII. Comments Received in Response to the Draft Environmental Impact Statement",
+          "heading_pages": "192-199",
+          "evidence": [
+            {
+              "quote": "The draft statement is incorrect in stating that there will be a beneficial environmental effect from a decrease in interlining.",
+              "source_pages": [
+                "192"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Blue and Gray Transportation",
+          "bucket": "public_commenters",
+          "kind": "organization",
+          "affiliation": null,
+          "stance": "oppose",
+          "capacity": {
+            "capacity": "non_private",
+            "basis": "entity_name_is_an_organization",
+            "non_private_cues": [
+              "org:name_shape"
+            ],
+            "private_cues": [],
+            "name_located_in_passage": true,
+            "requires_human_review": false
+          },
+          "human_review": false,
+          "heading": "VII. Comments Received in Response to the Draft Environmental Impact Statement",
+          "heading_pages": "192-199",
+          "evidence": [
+            {
+              "quote": "The draft statement is incorrect in stating that there will be a beneficial environmental effect from a decrease in interlining.",
+              "source_pages": [
+                "192"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Lakeville Motor Express",
+          "bucket": "public_commenters",
+          "kind": "organization",
+          "affiliation": null,
+          "stance": "oppose",
+          "capacity": {
+            "capacity": "private",
+            "basis": "no_institutional_identification_in_cited_passage",
+            "non_private_cues": [],
+            "private_cues": [],
+            "name_located_in_passage": true,
+            "requires_human_review": true
+          },
+          "human_review": true,
+          "heading": "VII. Comments Received in Response to the Draft Environmental Impact Statement",
+          "heading_pages": "192-199",
+          "evidence": [
+            {
+              "quote": "Expansion of the population-mileage formula will encourage urban sprawl.",
+              "source_pages": [
+                "192"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "A-C Berwick",
+          "bucket": "public_commenters",
+          "kind": "organization",
+          "affiliation": null,
+          "stance": "oppose",
+          "capacity": {
+            "capacity": "private",
+            "basis": "no_institutional_identification_in_cited_passage",
+            "non_private_cues": [],
+            "private_cues": [],
+            "name_located_in_passage": true,
+            "requires_human_review": true
+          },
+          "human_review": true,
+          "heading": "VII. Comments Received in Response to the Draft Environmental Impact Statement",
+          "heading_pages": "192-199",
+          "evidence": [
+            {
+              "quote": "Reliance upon population statistics is not a useful tool for determining a commercial zone formula.",
+              "source_pages": [
+                "195"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Short Haul Survival Committee",
+          "bucket": "public_commenters",
+          "kind": "organization",
+          "affiliation": null,
+          "stance": "oppose",
+          "capacity": {
+            "capacity": "non_private",
+            "basis": "entity_name_is_an_organization",
+            "non_private_cues": [
+              "org:name_shape"
+            ],
+            "private_cues": [],
+            "name_located_in_passage": true,
+            "requires_human_review": false
+          },
+          "human_review": false,
+          "heading": "VII. Comments Received in Response to the Draft Environmental Impact Statement",
+          "heading_pages": "192-199",
+          "evidence": [
+            {
+              "quote": "Expansion of the population-mileage formula will encourage urban sprawl.",
+              "source_pages": [
+                "192"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Local and Short Haul Carriers National Conference",
+          "bucket": "public_commenters",
+          "kind": "organization",
+          "affiliation": null,
+          "stance": "oppose",
+          "capacity": {
+            "capacity": "non_private",
+            "basis": "entity_name_is_an_organization",
+            "non_private_cues": [
+              "org:name_shape"
+            ],
+            "private_cues": [],
+            "name_located_in_passage": true,
+            "requires_human_review": false
+          },
+          "human_review": false,
+          "heading": "VII. Comments Received in Response to the Draft Environmental Impact Statement",
+          "heading_pages": "192-199",
+          "evidence": [
+            {
+              "quote": "On the issue of urban sprawl the Commission makes flatly contradictory statements concerning the effects of the population/ mileage formula",
+              "source_pages": [
+                "193"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Puget Sound",
+          "bucket": "public_commenters",
+          "kind": "organization",
+          "affiliation": null,
+          "stance": "oppose",
+          "capacity": {
+            "capacity": "private",
+            "basis": "no_institutional_identification_in_cited_passage",
+            "non_private_cues": [],
+            "private_cues": [],
+            "name_located_in_passage": true,
+            "requires_human_review": true
+          },
+          "human_review": true,
+          "heading": "VII. Comments Received in Response to the Draft Environmental Impact Statement",
+          "heading_pages": "192-199",
+          "evidence": [
+            {
+              "quote": "The draft statement does not adequately consider the adverse environmental impact of increased unregulated carrier traffic as a result of expansion of commercial zones.",
+              "source_pages": [
+                "196"
+              ],
+              "quote_verified": true
+            }
+          ]
+        }
+      ],
+      "comment_response_present": true
+    },
+    "evidence_quote": "has indicated a lack of objection to the action, but suggests more information be supplied concerning the air quality impacts of the proposed expansion of commercial zones.",
+    "source_pages": [
+      192,
+      193,
+      195,
+      196
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "yes",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "n/a",
+      "Q8": "n/a",
+      "Q9": "yes",
+      "Q10": "no",
+      "Q11": "yes"
+    },
+    "composite": 0.5,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "policy_private_individual",
+    "failure_tag": null,
+    "bucket": "key_people",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "HUMAN_REVIEW",
+    "verdict_before_override": "HUMAN_REVIEW",
+    "gate_reasons": [
+      "policy_private_individual",
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 192,
+      "normalized_match_span": [
+        192,
+        110,
+        279
+      ],
+      "pages_searched": [
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": false,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 6
+    },
+    "critic_overrides": [
+      "policy_private_individual"
+    ],
+    "off_vocabulary_failure_tag": null,
+    "note": "Three commenters \u2014 Lakeville Motor Express, A-C Berwick, and Puget Sound \u2014 are flagged as capacity=private by the deterministic pipeline. While their names suggest organizational entities (Motor Express, a company that prepared a substitute EIS, and a likely trucking entity), the cited passages do not explicitly identify them with an institutional role. Per policy, private or ambiguous capacity wi; policy_private_individual; private_individual_stance:Lakeville Motor Express, A-C Berwick, Puget Sound",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        192,
+        193,
+        195,
+        196
+      ],
+      "pages_included": [
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 11701
+    }
+  },
+  "lead_agency": {
+    "extracted_value": [
+      "Interstate Commerce Commission"
+    ],
+    "evidence_quote": "REPORT OF THE COMMISSION\nBY THE COMMISSION:",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a"
+    },
+    "composite": 1.0,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 3,
+      "normalized_match_span": [
+        3,
+        1436,
+        1478
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The document is an Interstate Commerce Commission report (Ex Parte No. MC-37), and the report is explicitly issued 'BY THE COMMISSION,' confirming the ICC as the lead agency. The document also references the ICC's responsibilities under NEPA on page 5.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 10546
+    }
+  },
+  "location": {
+    "extracted_value": {
+      "places": [],
+      "is_multi_site": false,
+      "geocoded": [],
+      "scope": "national",
+      "textual_location": "national",
+      "corridor": false
+    },
+    "evidence_quote": null,
+    "source_pages": [],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "no",
+      "Q2": "n/a",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "n/a",
+      "Q7": "n/a",
+      "Q8": "n/a",
+      "Q9": "n/a",
+      "Q10": "n/a",
+      "Q11": "n/a"
+    },
+    "composite": 0.15,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "reduced_geocoder_stack",
+    "failure_tag": "T01_missing_citation",
+    "bucket": "location",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "reduced_geocoder_stack",
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 0.0,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "no",
+    "quote_check": null,
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": false,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 6
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "No pages were cited and no evidence was provided. The scope=national with empty geocoded list would normally be a PASS under the Fuel Economy rule, but that rule requires the national scope to be supported by the document. Without any cited pages, the national classification cannot be verified. RE_EXTRACT to obtain a citation supporting the national scope determination.; evidence_quote_null_consistent_with_RE_EXTRACT",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [],
+      "pages_included": [],
+      "pages_omitted": [],
+      "window_mode": "none",
+      "truncated": false,
+      "n_chars": 0
+    }
+  },
+  "summary.affected_community": {
+    "extracted_value": "The rule reaches shippers, motor carriers, and freight forwarders nationwide, with the record focused on specific metropolitan areas: New York City and its New Jersey, Westchester, and Nassau suburbs; Chicago; Los Angeles and the Los Angeles Harbor area (San Pedro, Terminal Island, Wilmington); Seattle-Tacoma-Bremerton-Everett; Portland-Vancouver; Philadelphia and its seven surrounding Pennsylvania and New Jersey counties; Miami/Dade and Broward counties; and the St. Louis\u2013East St. Louis\u2013Belleville area. Participants included 313 motor carriers, 13 motor carrier associations, the Freight Forwarder Institute and its 28 members, 63 shippers, 23 shipper associations, 58 local-government/chamber/realtor commenters, 4 state agencies, 2 labor unions, 144 individuals, port authorities, and four members of the U.S. House of Representatives. A 'Short Haul Survival Committee' of 252 small trucking firms was the principal opposing voice, and some short-haul carriers predicted losing 20 to 70 percent of their volume.",
+    "evidence_quote": "313 motor carriers have filed individual and joint representations and 13 motor carrier associations also presented their views",
+    "source_pages": [
+      18,
+      26,
+      38,
+      63,
+      105,
+      168
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "yes",
+      "Q4": "no",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "n/a"
+    },
+    "composite": 0.65,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "critic_verdict",
+    "failure_tag": "T03_outside_text_fabrication",
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 18,
+      "normalized_match_span": [
+        18,
+        225,
+        352
+      ],
+      "pages_searched": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        24,
+        25,
+        26,
+        27,
+        28,
+        36,
+        37,
+        38,
+        39,
+        40,
+        61,
+        62,
+        63,
+        64,
+        65,
+        103,
+        104,
+        105,
+        106,
+        107,
+        166,
+        167,
+        168,
+        169,
+        170
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "313",
+        "13"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "Several claims are not supported by the cited pages. (1) The extraction says 'Two freight forwarders filed comments, and the Freight Forwarder Institute submitted evidence on its own behalf and that of its 28 member forwarders' \u2014 the value collapses this into 'the Freight Forwarder Institute and its 28 members' which is acceptable, but then lists 'Miami/Dade and Broward counties' and 'St. Louis\u2013Ea",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        18,
+        26,
+        38,
+        63,
+        105,
+        168
+      ],
+      "pages_included": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        24,
+        25,
+        26,
+        27,
+        28,
+        36,
+        37,
+        38,
+        39,
+        40,
+        61,
+        62,
+        63,
+        64,
+        65,
+        103,
+        104,
+        105,
+        106,
+        107,
+        166,
+        167,
+        168,
+        169,
+        170
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 48561
+    }
+  },
+  "summary.alternatives_overview": {
+    "extracted_value": "The environmental impact statement analyzed six alternatives: (1) no action (keep the existing formula); (2) eliminate the population-mileage formula and define each city case-by-case; (3) an even more expansive formula (Arthur D. Little proposed 5 to 30 miles by city size); (4) a 'ring approach' measuring the radius from the city center instead of the current 'contour approach' measuring from corporate limits; (5) a formula 50 percent larger for cities with physical barriers like oceans, mountains, or deserts; and (6) using Census Bureau Standard Metropolitan Statistical Areas (SMSAs \u2014 county-based groupings requiring a central city of at least 50,000). The Commission rejected SMSAs as too broad because they include entire counties regardless of population density, rejected center-point measurement because most cities lack a commonly accepted center, rejected case-by-case adjudication as too slow, and rejected a physical-limitations correction as not administratively feasible. Commenters also proposed treating pairs like San Francisco/Oakland as 'twin cities' with combined populations and exempting specialized carriers (bulk tank trucks, household goods movers, initial-movement auto transporters) \u2014 the Commission adopted twin-city treatment for twelve pairs but rejected the specialty-carrier carve-outs as contrary to uniform regulation.",
+    "evidence_quote": "1. No action.\n2. Eliminate the population-mileage formula completely.\n3. Expansion of proposed formula.",
+    "source_pages": [
+      34,
+      79,
+      83,
+      121,
+      173,
+      174,
+      188,
+      189
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "no",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "yes"
+    },
+    "composite": 0.6,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": "T04_undefined_acronym",
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS_WITH_NOTE",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 0.5,
+      "s_critic": 0.7,
+      "s_source": null,
+      "s_citation": 0.928571,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "mixed",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 173,
+      "normalized_match_span": [
+        173,
+        1308,
+        1405
+      ],
+      "pages_searched": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        119,
+        120,
+        121,
+        122,
+        123,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "1",
+        "2",
+        "3"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The value introduces 'SMSAs' with an inline gloss on first use, which is good. However, the document also discusses SCSAs (Standard Consolidated Statistical Areas) as part of alternative 6 ('Use of SMSA's or SCSA's'), and the value collapses this to just SMSAs. This is a minor scope simplification rather than a fabrication -- the SMSA description is accurate. All six alternatives are correctly enu",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        34,
+        79,
+        83,
+        121,
+        173,
+        174,
+        188,
+        189
+      ],
+      "pages_included": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        119,
+        120,
+        121,
+        122,
+        123,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 52035
+    }
+  },
+  "summary.environmental_impact": {
+    "extracted_value": "The Commission prepared a draft environmental impact statement under the National Environmental Policy Act of 1969 and a final statement in Appendix C, and concluded that zone expansion will not harm the environment. The main projected benefit is a reduction in 'interlining' (where a long-haul carrier hands off freight to a local carrier at a terminal), which the Commission expects to cut truck mileage, fuel use, and emissions of the four main motor-vehicle pollutants \u2014 carbon monoxide, nitrogen oxides, photochemical oxidants, and hydrocarbons \u2014 consistent with the Clean Air Act of 1970. The main adverse effect analyzed is that a larger exempt market may draw more local unregulated carriers, producing empty mileage, lower load factors, more fuel use, and more urban traffic congestion until competition stabilizes. Commenters warned that industrial development in the ring between the old and new Minneapolis-St. Paul boundaries could damage water bodies, groundwater recharge areas, wetlands, agricultural lands, and habitat for rare species; the Commission responded that there is not enough evidence linking zone expansion to sprawl and that such development is properly controlled by local land-use rules and existing state and federal wetlands regulations. Safety concerns about hazardous liquids and dry bulk commodities moving in unregulated urban operations were referred to the Federal Highway Administration.",
+    "evidence_quote": "Industrial development in the ring between boundaries of the present Commercial Zone of Minneapolis-St. Paul and the proposed 15 mile zone would have extremely serious adverse environmental consequences in such areas as water bodies and water courses, ground water recharge areas, wet lands, soils, agricultural lands, and unique or endangered plants and animals.",
+    "source_pages": [
+      5,
+      121,
+      122,
+      173,
+      180,
+      181,
+      186,
+      193,
+      194,
+      195
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes",
+      "Q10": "n/a"
+    },
+    "composite": 1.0,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": null,
+    "bucket": "summary_numeric",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 194,
+      "normalized_match_span": [
+        194,
+        512,
+        868
+      ],
+      "pages_searched": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        171,
+        172,
+        173,
+        174,
+        175,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "15"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": null,
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        5,
+        121,
+        122,
+        173,
+        180,
+        181,
+        186,
+        193,
+        194,
+        195
+      ],
+      "pages_included": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        171,
+        172,
+        173,
+        174,
+        175,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 56973
+    }
+  },
+  "summary.overview": {
+    "extracted_value": "The Interstate Commerce Commission is issuing a final rule that enlarges the 'commercial zones' and 'terminal areas' around U.S. cities \u2014 the geographic rings within which trucking companies and freight forwarders can pick up and deliver freight without needing full federal operating authority. The rule replaces a 1940s-era 2-to-5-mile formula with a graduated population-mileage formula that reaches 20 miles for cities of 1 million or more, with custom zones for places like New York, Los Angeles, and St. Louis and combined zones for 'twin cities' such as Minneapolis-St. Paul. Alternatives considered and rejected include keeping the old formula, defining each city's zone case-by-case, using Census Bureau Standard Metropolitan Statistical Areas (county-based groupings the Commission found too broad), and measuring the radius from a city's center rather than its corporate limits. The Commission prepared a draft and final environmental impact statement under the National Environmental Policy Act and concluded that zone expansion will not harm the environment, though commenters warned of more trucks on urban roads and possible sprawl into wetlands and farmland in rings like the one between the old and new Minneapolis-St. Paul boundaries. Public response split sharply: shippers, port authorities, chambers of commerce, and freight forwarders overwhelmingly supported expansion, while small short-haul carriers, specialized carriers, and 143 of 144 individual commenters opposed it, and two commissioners dissented, calling the result 'tantamount to a deregulatory effort.'",
+    "evidence_quote": "inasmuch as the effect of the majority's findings is tantamount to a deregulatory effort on the Commission's part",
+    "source_pages": [
+      5,
+      28,
+      53,
+      83,
+      118,
+      122,
+      134,
+      194
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "no",
+      "Q8": "yes"
+    },
+    "composite": 0.75,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": null,
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 0.5,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 0.9,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "mixed",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 134,
+      "normalized_match_span": [
+        134,
+        584,
+        697
+      ],
+      "pages_searched": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        26,
+        27,
+        28,
+        29,
+        30,
+        51,
+        52,
+        53,
+        54,
+        55,
+        81,
+        82,
+        83,
+        84,
+        85,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        132,
+        133,
+        134,
+        135,
+        136,
+        192,
+        193,
+        194,
+        195,
+        196
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "All major claims verify against cited pages: the graduated population-mileage formula reaching 20 miles for cities of 1 million or more (p.5/84), custom zones for New York, Los Angeles, St. Louis (pp.26-30), twin cities including Minneapolis-St. Paul (p.118), rejection of SMSA/county-based approach (p.81-82), rejection of radius-from-center measurement (p.83), the environmental conclusion (p.122),",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        5,
+        28,
+        53,
+        83,
+        118,
+        122,
+        134,
+        194
+      ],
+      "pages_included": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        26,
+        27,
+        28,
+        29,
+        30,
+        51,
+        52,
+        53,
+        54,
+        55,
+        81,
+        82,
+        83,
+        84,
+        85,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        132,
+        133,
+        134,
+        135,
+        136,
+        192,
+        193,
+        194,
+        195,
+        196
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 63785
+    }
+  },
+  "summary.project_description": {
+    "extracted_value": "The Interstate Commerce Commission is finalizing a rule (Ex Parte No. MC-37 (Sub-No. 26), amending 49 CFR Parts 1041, 1048, and 1049) that enlarges the 'commercial zones' and 'terminal areas' around U.S. cities \u2014 the geographic rings within which motor carriers and freight forwarders can pick up and deliver freight under a partial exemption from federal economic regulation in sections 203(b)(8) and 202(c) of the Interstate Commerce Act. The rule replaces the mid-1940s population-mileage formula with a larger graduated formula: for example, cities under 2,500 people get a 3-mile radius from city limits, cities of 100,000\u2013199,999 get 8 miles, and cities of 1 million or more get 20 miles. Special custom-drawn boundaries apply to New York, Los Angeles (which abolishes the separate Harbor zone), St. Louis, Washington D.C., Pittsburgh, and twelve 'twin city' pairs (such as Minneapolis-St. Paul and Kansas City, Mo.-Kansas City, Kans.) that are treated as a single municipality. The rules take effect 90 days after Federal Register publication.",
+    "evidence_quote": "the rules adopted herein shall become effective 90 days from the date of publication of the attached notice in the Federal Register",
+    "source_pages": [
+      1,
+      5,
+      53,
+      106,
+      118,
+      132,
+      202,
+      212
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": null,
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 132,
+      "normalized_match_span": [
+        132,
+        870,
+        1001
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        51,
+        52,
+        53,
+        54,
+        55,
+        104,
+        105,
+        106,
+        107,
+        108,
+        116,
+        117,
+        118,
+        119,
+        120,
+        130,
+        131,
+        132,
+        133,
+        134,
+        200,
+        201,
+        202,
+        203,
+        204,
+        210,
+        211,
+        212,
+        213,
+        214
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "90"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "Key claims verified: Ex Parte No. MC-37 (Sub-No. 26) amending 49 CFR Parts 1041, 1048, 1049 (page 200); population-mileage formula figures (pages 5, 203, 214); sections 203(b)(8) and 202(c) exemption framing (pages 6, 53, 117); Los Angeles Harbor zone abolished (page 106); twin cities list including Minneapolis-St. Paul and Kansas City pairs (pages 118, 211-212); 90-day effective date (page 132). ",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        5,
+        53,
+        106,
+        118,
+        132,
+        202,
+        212
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        51,
+        52,
+        53,
+        54,
+        55,
+        104,
+        105,
+        106,
+        107,
+        108,
+        116,
+        117,
+        118,
+        119,
+        120,
+        130,
+        131,
+        132,
+        133,
+        134,
+        200,
+        201,
+        202,
+        203,
+        204,
+        210,
+        211,
+        212,
+        213,
+        214
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 57451
+    }
+  },
+  "summary.public_response": {
+    "extracted_value": "Response split sharply by group. Of 121 shipper and local commenters, 120 favored expansion; all three state agencies supported it; but 143 of 144 individual commenters (mostly employees of regulated motor carriers) opposed it. Motor carriers divided along size lines \u2014 long-haul and irregular-route carriers generally supported expansion, while small short-haul carriers argued it amounted to deregulation, would divert their traffic to new unregulated entrants, and constituted an unconstitutional Fifth Amendment 'taking' of the value of their operating certificates. The Freight Forwarders Institute, the U.S. Department of Transportation, the Port Authority of New York and New Jersey, the Pennjerdel Corporation, and the chambers of commerce of Dallas, Houston, and Pittsburgh supported expansion; the Environmental Protection Agency did not object but asked for more air quality detail, and the Department of the Interior offered no comments. Several carriers demanded formal oral hearings and cross-examination and objected to Federal Register notice; the Commission rejected these procedural demands, holding that neither the Administrative Procedure Act nor the Constitution requires an oral hearing in a rulemaking on legislative facts. Commissioner Brown dissented, and Commissioner Hardin (joined by Chairman Stafford and Commissioner Murphy) dissented that the record did not justify the new formula, calling the result 'tantamount to a deregulatory effort.'",
+    "evidence_quote": "Of the 121 shipper and local interest representatives, 120 favor and one opposes expansion. All three State agencies support expansion. The individuals who filed representations, most of whom are employees of regulated motor carriers, oppose the propose 143 to 1.",
+    "source_pages": [
+      22,
+      28,
+      46,
+      47,
+      50,
+      85,
+      120,
+      129,
+      133,
+      134,
+      192
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "no",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "no",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "yes",
+      "Q10": "n/a"
+    },
+    "composite": 0.65,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "critic_verdict",
+    "failure_tag": "T03_outside_text_fabrication",
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 28,
+      "normalized_match_span": [
+        28,
+        843,
+        1100
+      ],
+      "pages_searched": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        26,
+        27,
+        28,
+        29,
+        30,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        83,
+        84,
+        85,
+        86,
+        87,
+        118,
+        119,
+        120,
+        121,
+        122,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        190,
+        191,
+        192,
+        193,
+        194
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "121",
+        "120",
+        "143",
+        "1"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "Multiple fabrications/misattributions. (1) The claim that 'Motor carriers divided along size lines \u2014 long-haul and irregular-route carriers generally supported expansion' is not supported: p.22 says irregular route carriers argue expansion is INEQUITABLE because it enlarges regular-route carriers' authority without equivalent benefit to them \u2014 the opposite of support. (2) 'The Freight Forwarders I",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        22,
+        28,
+        46,
+        47,
+        50,
+        85,
+        120,
+        129,
+        133,
+        134,
+        192
+      ],
+      "pages_included": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        26,
+        27,
+        28,
+        29,
+        30,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        83,
+        84,
+        85,
+        86,
+        87,
+        118,
+        119,
+        120,
+        121,
+        122,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        190,
+        191,
+        192,
+        193,
+        194
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 69414
+    }
+  },
+  "summary_of_interest": {
+    "extracted_value": [
+      {
+        "claim": "Two ICC commissioners plus the Chairman dissented from the majority, calling the rule 'tantamount to a deregulatory effort' that lacked hard economic and legal justification in the record.",
+        "salience_criterion": "contested",
+        "page": 134,
+        "evidence_quote": "inasmuch as the effect of the majority's findings is tantamount to a deregulatory effort on the Commission's part, the public interest demands that legal and economic justification for such findings, therefore, should be far more solid than is indicated in this report.",
+        "why_notable": "A dissent from the Chairman and two commissioners characterizing their own agency's final rule as de facto deregulation is an unusually sharp internal split for a rulemaking record.",
+        "evidence": [
+          {
+            "quote": "inasmuch as the effect of the majority's findings is tantamount to a deregulatory effort on the Commission's part, the public interest demands that legal and economic justification for such findings, therefore, should be far more solid than is indicated in this report.",
+            "source_pages": [
+              "134"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "Small short-haul carriers argued the rule was an unconstitutional Fifth Amendment 'taking' of the value of their operating certificates, and predicted losing 20 to 70 percent of their volume and revenues.",
+        "salience_criterion": "large_magnitude",
+        "page": 168,
+        "evidence_quote": "Many carriers have stated that they would lose from 20 to 70 percent of their volume and revenues as a result of expanded C/Z's-T/A's.",
+        "why_notable": "A predicted 20\u201370 percent revenue loss for an entire class of regulated firms, framed as a constitutional taking, is an unusually large economic impact for a boundary-drawing rule.",
+        "evidence": [
+          {
+            "quote": "Many carriers have stated that they would lose from 20 to 70 percent of their volume and revenues as a result of expanded C/Z's-T/A's.",
+            "source_pages": [
+              "168"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "The Commission refused to hold oral hearings or permit cross-examination and rejected demands for joint boards with state regulators, holding that rulemakings on 'legislative facts' require none of these.",
+        "salience_criterion": "contested",
+        "page": 50,
+        "evidence_quote": "in a rulemaking proceeding, where an administrative body undertakes legislative action of a prospective nature applicable to a general class of persons, and where no adjudicative facts are in dispute, there is no constitutional right to an oral hearing",
+        "why_notable": "The document stakes out an explicit procedural doctrine denying oral hearings and cross-examination in a proceeding where carriers claimed their property was being taken, testing the limits of Administrative Procedure Act (APA) rulemaking process.",
+        "evidence": [
+          {
+            "quote": "in a rulemaking proceeding, where an administrative body undertakes legislative action of a prospective nature applicable to a general class of persons, and where no adjudicative facts are in dispute, there is no constitutional right to an oral hearing",
+            "source_pages": [
+              "50"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "Commenters warned that industrial buildout in the new ring around Minneapolis-St. Paul would damage water bodies, wetlands, groundwater recharge areas, agricultural land, and habitat for rare species \u2014 impacts the ICC declined to analyze, saying local zoning should handle it.",
+        "salience_criterion": "unusual_impact",
+        "page": 194,
+        "evidence_quote": "Industrial development in the ring between boundaries of the present Commercial Zone of Minneapolis-St. Paul and the proposed 15 mile zone would have extremely serious adverse environmental consequences in such areas as water bodies and water courses, ground water recharge areas, wet lands, soils, agricultural lands, and unique or endangered plants and animals.",
+        "why_notable": "Analyzing wetlands and endangered species impacts as consequences of a freight-regulation boundary line \u2014 and then deferring them to local land-use control \u2014 is an atypical National Environmental Policy Act of 1969 (NEPA) framing that essentially disclaims the induced-development question.",
+        "evidence": [
+          {
+            "quote": "Industrial development in the ring between boundaries of the present Commercial Zone of Minneapolis-St. Paul and the proposed 15 mile zone would have extremely serious adverse environmental consequences in such areas as water bodies and water courses, ground water recharge areas, wet lands, soils, agricultural lands, and unique or endangered plants and animals.",
+            "source_pages": [
+              "194"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "A commenter (A-C Berwick) submitted its own substitute environmental impact statement, which the Commission refused to adopt on the ground that letting a party draft the Environmental Impact Statement (EIS) would risk 'biased and self-serving statements.'",
+        "salience_criterion": "novel_alternative",
+        "page": 196,
+        "evidence_quote": "A-C Berwick has prepared a substitute environmental impact statement which it alleges reflects more accurately the evidence of record.",
+        "why_notable": "A private party drafting and formally submitting a rival Environmental Impact Statement (EIS) for agency adoption is an unusual procedural move that the record squarely rejects on National Environmental Policy Act of 1969 (NEPA) authorship grounds.",
+        "evidence": [
+          {
+            "quote": "A-C Berwick has prepared a substitute environmental impact statement which it alleges reflects more accurately the evidence of record.",
+            "source_pages": [
+              "196"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "The rule was framed by dissenters and opponents as de facto deregulation accomplished by geographic redefinition rather than by statute, preceding by roughly a year the Motor Carrier Act deregulation debates.",
+        "salience_criterion": "precedent",
+        "page": 22,
+        "evidence_quote": "They assert that zone expansion is tantamount to deregulation of their operations, allowing exempt carriers to compete with them.",
+        "why_notable": "The record repeatedly characterizes an ostensibly technical boundary rule as accomplishing deregulation through the back door, a framing that carries precedential weight for later ICC actions.",
+        "evidence": [
+          {
+            "quote": "They assert that zone expansion is tantamount to deregulation of their operations, allowing exempt carriers to compete with them.",
+            "source_pages": [
+              "22"
+            ],
+            "quote_verified": true
+          }
+        ]
+      }
+    ],
+    "evidence_quote": "inasmuch as the effect of the majority's findings is tantamount to a deregulatory effort on the Commission's part, the public interest demands that legal and economic justification for such findings, therefore, should be far more solid than is indicated in this report.",
+    "source_pages": [
+      22,
+      50,
+      134,
+      168,
+      194,
+      196
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "yes",
+      "Q4": "no",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7a": "yes",
+      "Q7b": "no",
+      "Q7c": "n/a",
+      "Q7d": "yes"
+    },
+    "composite": 0.65,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "bucket_degenerate_severe",
+    "failure_tag": "T03_outside_text_fabrication",
+    "bucket": "summary_of_interest",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "bucket_degenerate_severe",
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 134,
+      "normalized_match_span": [
+        134,
+        584,
+        849
+      ],
+      "pages_searched": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        48,
+        49,
+        50,
+        51,
+        52,
+        132,
+        133,
+        134,
+        135,
+        136,
+        166,
+        167,
+        168,
+        169,
+        170,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": true,
+      "degenerate_severe": true,
+      "saturated": false,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 0
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "Entry 1 claims 'Two ICC commissioners plus the Chairman dissented from the majority.' Page 134 shows Commissioner Hardin dissenting, joined by Chairman Stafford and Commissioner Murphy \u2014 that is one commissioner writing the dissent joined by the Chairman and one other commissioner (total three, but the framing 'two commissioners plus the Chairman' is a factual mischaracterization of who wrote/join",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        22,
+        50,
+        134,
+        168,
+        194,
+        196
+      ],
+      "pages_included": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        48,
+        49,
+        50,
+        51,
+        52,
+        132,
+        133,
+        134,
+        135,
+        136,
+        166,
+        167,
+        168,
+        169,
+        170,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 41254
+    }
+  },
+  "themes": {
+    "extracted_value": {
+      "themes": [
+        "Transportation Infrastructure",
+        "Governance and Institutional Control"
+      ],
+      "subthemes": [
+        "Mobility Networks and Connectivity",
+        "Infrastructure Impacts on Landscapes",
+        "Environmental Regulation and Policy",
+        "Institutional Power and Resource Management"
+      ]
+    },
+    "evidence_quote": "This rulemaking has been initiated to reexamine the exemptions from Federal economic regulation embodied in sections 203(b)(8) and 202(c) of the Interstate Commerce Act.",
+    "source_pages": [
+      1,
+      53,
+      202
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "n/a",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "bucket_degenerate_severe",
+    "failure_tag": null,
+    "bucket": "alternatives+themes",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "bucket_degenerate_severe",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 53,
+      "normalized_match_span": [
+        53,
+        439,
+        604
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        51,
+        52,
+        53,
+        54,
+        55,
+        200,
+        201,
+        202,
+        203,
+        204
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "203",
+        "8",
+        "202"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": true,
+      "degenerate_severe": true,
+      "saturated": false,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 1
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The document is an ICC rulemaking proceeding about commercial zones and terminal areas for motor carriers and freight forwarders. 'Transportation Infrastructure' with subthemes 'Mobility Networks and Connectivity' and 'Infrastructure Impacts on Landscapes' is supported by the document's focus on commercial zone boundaries, transportation networks, and urban development patterns. 'Governance and In",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        53,
+        202
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        51,
+        52,
+        53,
+        54,
+        55,
+        200,
+        201,
+        202,
+        203,
+        204
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 23361
+    }
+  },
+  "title": {
+    "extracted_value": "Motor carrier commercial zones and terminal areas : environmental impact statement.",
+    "evidence_quote": "COMMERCIAL ZONES AND TERMINAL AREAS",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "n/a",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a"
+    },
+    "composite": 1.0,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 1,
+      "normalized_match_span": [
+        1,
+        37,
+        72
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The extracted title 'Motor carrier commercial zones and terminal areas : environmental impact statement.' is a plausible EIS title consistent with the document content. The cover page (page 1) shows 'COMMERCIAL ZONES AND TERMINAL AREAS' and page 5 references 'a draft environmental impact statement prepared in compliance with our responsibilities pursuant to the National Environmental Policy Act of",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 10546
+    }
+  },
+  "year": {
+    "extracted_value": 1976,
+    "evidence_quote": "Decided December 17, 1976",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes",
+      "Q10": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": 0.5,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 1,
+      "normalized_match_span": [
+        1,
+        73,
+        97
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "17",
+        "1976"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": null,
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 10546
+    }
+  },
+  "_meta": {
+    "doc_id": "p1074_35556036861656",
+    "artifact_stage": "v1",
+    "generated_at": "2026-08-10T19:20:04+00:00",
+    "plan_ref": "MCAL_PLAN 3.12",
+    "schema_keys": [
+      "extracted_value",
+      "evidence_quote",
+      "source_pages",
+      "verdict",
+      "rubric_answers",
+      "composite",
+      "applied_tau",
+      "gated_to_human",
+      "gate_reason",
+      "failure_tag",
+      "bucket",
+      "artifact_stage",
+      "judge_model"
+    ],
+    "n_fields": 15,
+    "reserved_keys": [
+      "_meta",
+      "_rollup",
+      "_null_tag_monitor"
+    ],
+    "reviewer_note": "Every field is present, gated or not, with its raw extraction (MCAL_PLAN 7 Q8). Grade `extracted_value` against `evidence_quote` and `source_pages`; `gate_reason` says why the field was routed to a human. `extracted_value: []` on summary_of_interest is a legitimate 'this document is routine'; `null` plus a gate_reason is a generation failure."
+  },
+  "_rollup": {
+    "doc_id": "p1074_35556036861656",
+    "artifact_stage": "v1",
+    "geocoder_stack": "reduced",
+    "n_fields": 15,
+    "n_gated": 12,
+    "n_passed": 3,
+    "gate_rate": 0.8,
+    "gate_reasons": {
+      "none": 3,
+      "critic_verdict": 3,
+      "composite_below_tau": 4,
+      "bucket_degenerate_severe": 3,
+      "reduced_geocoder_stack": 1,
+      "policy_private_individual": 1
+    },
+    "verdicts": {
+      "PASS": 3,
+      "HUMAN_REVIEW": 12
+    },
+    "per_bucket": {
+      "M1": {
+        "n_fields": 4,
+        "n_gated": 1,
+        "n_passed": 3,
+        "gate_reasons": {
+          "critic_verdict": 1
+        },
+        "tau_deployed": 0.5,
+        "gate_all_to_human": false,
+        "degenerate": true,
+        "degenerate_severe": false,
+        "N_wrong_docs": 3
+      },
+      "summary_narrative": {
+        "n_fields": 5,
+        "n_gated": 5,
+        "n_passed": 0,
+        "gate_reasons": {
+          "composite_below_tau": 3,
+          "critic_verdict": 2
+        },
+        "tau_deployed": 1.0,
+        "gate_all_to_human": false,
+        "degenerate": true,
+        "degenerate_severe": false,
+        "N_wrong_docs": 5
+      },
+      "summary_numeric": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "composite_below_tau": 1
+        },
+        "tau_deployed": 1.0,
+        "gate_all_to_human": false,
+        "degenerate": true,
+        "degenerate_severe": false,
+        "N_wrong_docs": 3
+      },
+      "summary_of_interest": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "bucket_degenerate_severe": 1
+        },
+        "tau_deployed": null,
+        "gate_all_to_human": true,
+        "degenerate": true,
+        "degenerate_severe": true,
+        "N_wrong_docs": 0
+      },
+      "alternatives+themes": {
+        "n_fields": 2,
+        "n_gated": 2,
+        "n_passed": 0,
+        "gate_reasons": {
+          "bucket_degenerate_severe": 2
+        },
+        "tau_deployed": null,
+        "gate_all_to_human": true,
+        "degenerate": true,
+        "degenerate_severe": true,
+        "N_wrong_docs": 1
+      },
+      "location": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "reduced_geocoder_stack": 1
+        },
+        "tau_deployed": null,
+        "gate_all_to_human": true,
+        "degenerate": false,
+        "degenerate_severe": false,
+        "N_wrong_docs": 6
+      },
+      "key_people": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "policy_private_individual": 1
+        },
+        "tau_deployed": 1.0,
+        "gate_all_to_human": false,
+        "degenerate": false,
+        "degenerate_severe": false,
+        "N_wrong_docs": 6
+      }
+    },
+    "null_tag": {
+      "M1": {
+        "n_fields": 4,
+        "n_human_review": 1,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      },
+      "summary_narrative": {
+        "n_fields": 5,
+        "n_human_review": 5,
+        "n_null_tag": 2,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      },
+      "summary_numeric": {
+        "n_fields": 1,
+        "n_human_review": 1,
+        "n_null_tag": 1,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      },
+      "summary_of_interest": {
+        "n_fields": 1,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 1
+      },
+      "alternatives+themes": {
+        "n_fields": 2,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 2
+      },
+      "location": {
+        "n_fields": 1,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 1
+      },
+      "key_people": {
+        "n_fields": 1,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 1,
+        "n_excluded_pre_judgement": 0
+      }
+    },
+    "summary_of_interest": {
+      "present": true,
+      "generation_failure": false,
+      "non_empty": true,
+      "n_entries": 6,
+      "salience_criterion_counts": {
+        "contested": 2,
+        "unusual_impact": 1,
+        "large_magnitude": 1,
+        "novel_alternative": 1,
+        "community_pushback": 0,
+        "precedent": 1,
+        "cross_jurisdictional": 0
+      },
+      "off_vocabulary_criteria": [],
+      "n_t17_manufactured_salience": 0,
+      "n_t18_duplicates_summary": 0,
+      "overlap_with_standard_summary": {
+        "jaccard": 0.1525,
+        "n_soi_tokens": 192,
+        "n_summary_tokens": 443,
+        "per_entry_jaccard": [
+          0.0374,
+          0.053,
+          0.0389,
+          0.056,
+          0.0191,
+          0.0149
+        ],
+        "max_entry_jaccard": 0.056,
+        "tokenizer": "mcal.quote_check.content_tokens (stopword+boilerplate filtered)"
+      },
+      "nonempty_rate_ceiling": 0.6,
+      "soi_useful": null
+    },
+    "critic": {
+      "n_fields": 15,
+      "verdicts": {
+        "PASS": 7,
+        "RE_EXTRACT": 5,
+        "PASS_WITH_NOTE": 2,
+        "HUMAN_REVIEW": 1
+      },
+      "overrides": {
+        "policy_private_individual": 1
+      },
+      "n_quote_checked": 14,
+      "n_quote_verified": 14,
+      "evidence_quote_verifiable_rate": 1.0,
+      "n_off_vocabulary_tags": 0,
+      "n_null_tag_human_review": 1,
+      "n_schema_violations": 0,
+      "n_evidence_truncated": 0
+    },
+    "re_extract": {}
+  },
+  "_null_tag_monitor": {
+    "threshold": 0.15,
+    "taxonomy_refresh_recommended": true,
+    "buckets_needing_refresh": [
+      "M1",
+      "key_people",
+      "summary_narrative",
+      "summary_numeric"
+    ],
+    "n_docs_rolling": 11,
+    "per_bucket": {
+      "M1": {
+        "n_fields": 44,
+        "n_human_review": 5,
+        "n_null_tag": 2,
+        "n_off_vocabulary": 2,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": 0.4,
+        "exceeds_threshold": true
+      },
+      "summary_narrative": {
+        "n_fields": 55,
+        "n_human_review": 53,
+        "n_null_tag": 22,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 2,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": 0.4151,
+        "exceeds_threshold": true
+      },
+      "summary_numeric": {
+        "n_fields": 11,
+        "n_human_review": 11,
+        "n_null_tag": 5,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": 0.4545,
+        "exceeds_threshold": true
+      },
+      "summary_of_interest": {
+        "n_fields": 11,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 11,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "alternatives+themes": {
+        "n_fields": 22,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 22,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "location": {
+        "n_fields": 11,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 11,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "key_people": {
+        "n_fields": 11,
+        "n_human_review": 10,
+        "n_null_tag": 7,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 1,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": 0.7,
+        "exceeds_threshold": true
+      }
+    },
+    "path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/mcal/artifacts/null_tag_monitor.json",
+    "halt_condition": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "title": {
+    "value": "Boston demolition plan : environmental impact statement.",
+    "confidence": "high",
+    "sources": [
+      "inventory index (MARC 245$ab)"
+    ]
+  },
+  "year": {
+    "value": 1975,
+    "confidence": "high",
+    "sources": [
+      "NUL",
+      "regex (first 3 pages)"
+    ],
+    "adjudication": {
+      "year": 1975,
+      "source_type": "signature",
+      "confidence": "high",
+      "candidates": [
+        {
+          "year": 1976,
+          "count": 6,
+          "pages": [
+            2,
+            3,
+            28,
+            30,
+            95,
+            211
+          ],
+          "source_types": [
+            "signature",
+            "cover",
+            "body"
+          ],
+          "best_source": "signature"
+        },
+        {
+          "year": 1975,
+          "count": 4,
+          "pages": [
+            28,
+            30,
+            95,
+            211
+          ],
+          "source_types": [
+            "signature",
+            "body"
+          ],
+          "best_source": "signature"
+        },
+        {
+          "year": 2016,
+          "count": 1,
+          "pages": [
+            2
+          ],
+          "source_types": [
+            "cover"
+          ],
+          "best_source": "cover"
+        },
+        {
+          "year": 1969,
+          "count": 1,
+          "pages": [
+            29
+          ],
+          "source_types": [
+            "body"
+          ],
+          "best_source": "body"
+        },
+        {
+          "year": 1970,
+          "count": 1,
+          "pages": [
+            29
+          ],
+          "source_types": [
+            "body"
+          ],
+          "best_source": "body"
+        },
+        {
+          "year": 1971,
+          "count": 1,
+          "pages": [
+            29
+          ],
+          "source_types": [
+            "body"
+          ],
+          "best_source": "body"
+        },
+        {
+          "year": 1972,
+          "count": 1,
+          "pages": [
+            29
+          ],
+          "source_types": [
+            "body"
+          ],
+          "best_source": "body"
+        },
+        {
+          "year": 1973,
+          "count": 1,
+          "pages": [
+            29
+          ],
+          "source_types": [
+            "body"
+          ],
+          "best_source": "body"
+        },
+        {
+          "year": 1974,
+          "count": 1,
+          "pages": [
+            29
+          ],
+          "source_types": [
+            "body"
+          ],
+          "best_source": "body"
+        },
+        {
+          "year": 1977,
+          "count": 1,
+          "pages": [
+            28
+          ],
+          "source_types": [
+            "body"
+          ],
+          "best_source": "body"
+        }
+      ],
+      "evidence_quote": "City of Boston, Office of Community Development. Environmental Review Officer November 5, 1975 Signature Title Date",
+      "note": "modal_candidate_was_1976; disagrees_with_m1:1976; The highest-priority signature date is November 5, 1975, from the Environmental Review Officer's approval block on page 211; the cover page also shows January 5, 1976, but signature outranks cover."
+    },
+    "m1_value": 1976,
+    "source_type": "signature"
+  },
+  "eis_type": {
+    "value": "Final",
+    "confidence": "medium",
+    "sources": [
+      "Sonnet (first 2 pages)"
+    ]
+  },
+  "lead_agency": {
+    "value": [
+      "Department of Housing and Urban Development"
+    ],
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  }
+}

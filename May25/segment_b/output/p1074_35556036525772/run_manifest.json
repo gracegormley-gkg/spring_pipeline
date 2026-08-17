@@ -1,0 +1,2367 @@
+{
+  "alternatives": {
+    "extracted_value": [
+      {
+        "name": "Sole Interior Administration",
+        "description": "Continue sole administration of the endangered species program by the Department of the Interior, without granting partial jurisdiction to the Department of Commerce for any marine species.",
+        "evidence": [
+          {
+            "quote": "An alternative to the proposed action would be to continue sole administration of the endangered species program by the Interior, the department charged with primary responsibility for protection of the Nation's wildlife resources.",
+            "source_pages": [
+              "96"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "name": "No Action / Continue Under Existing Authority",
+        "description": "Continue administering the endangered species program under existing statutory authority rather than enacting new legislation, representing the no-action alternative added in response to Missouri's comment.",
+        "evidence": [
+          {
+            "quote": "The Environmental Statement has been revised to include the alternative of continuing administration of the program under the present authority (alternative 5).",
+            "source_pages": [
+              "143"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "name": "Amendments to Existing Laws",
+        "description": "Rather than passing entirely new legislation, amend existing laws (P.L. 89-669 and P.L. 91-135) to delete current funding ceilings and expand the Secretary's authority to regulate importation of animals taken on the high seas.",
+        "evidence": [
+          {
+            "quote": "Passage of amendments to delete current ceilings in P. L. 89-669 and to give the Secretary authority to regulate importation of animals taken on the high seas in P. L. 91-135 could more readily be obtained than could passage of new legislation.",
+            "source_pages": [
+              "174"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "name": "State-Led Regulation with Model Nongame Law",
+        "description": "Achieve the objectives of the proposed legislation by having all states adopt the Model Nongame Wildlife law, thereby providing states\u2014which possess the only adequate enforcement machinery\u2014with authority to act on endangered species.",
+        "evidence": [
+          {
+            "quote": "Adoption of the Model Nongame Wildlife law by all States would accomplish this objective and provide the States, who possess the only adequate enforcement machinery, authority to act.",
+            "source_pages": [
+              "175"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "name": "Selective Imposition of Sanctions",
+        "description": "Use selective imposition of the sanctions authorized by the bill, such as withholding federal support, to encourage state compliance rather than a blanket transfer of jurisdiction.",
+        "evidence": [
+          {
+            "quote": "In the third paragraph of the section headed \"Alternatives\" it refers to \"...selective imposition of the sanctions authorized by this bill...\"",
+            "source_pages": [
+              "198"
+            ],
+            "quote_verified": true
+          }
+        ]
+      }
+    ],
+    "evidence_quote": "An alternative to the proposed action would be to continue sole administration of the endangered species program by the Interior, the department charged with primary responsibility for protection of the Nation's wildlife resources.",
+    "source_pages": [
+      96,
+      143,
+      174,
+      175,
+      198
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "n/a",
+      "Q8": "yes",
+      "Q9": "yes",
+      "Q10": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "bucket_degenerate_severe",
+    "failure_tag": null,
+    "bucket": "alternatives+themes",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "bucket_degenerate_severe",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 96,
+      "normalized_match_span": [
+        96,
+        429,
+        657
+      ],
+      "pages_searched": [
+        94,
+        95,
+        96,
+        97,
+        98,
+        141,
+        142,
+        143,
+        144,
+        145,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        196,
+        197,
+        198,
+        199,
+        200
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": true,
+      "degenerate_severe": true,
+      "saturated": false,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 1
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "All five alternatives are supported by verbatim quotes from the cited pages. The no-action alternative (continuing under existing authority) is present as alternative 5. Labels match the document's own language throughout.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        96,
+        143,
+        174,
+        175,
+        198
+      ],
+      "pages_included": [
+        94,
+        95,
+        96,
+        97,
+        98,
+        141,
+        142,
+        143,
+        144,
+        145,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        196,
+        197,
+        198,
+        199,
+        200
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 29741
+    }
+  },
+  "eis_type": {
+    "extracted_value": "Final",
+    "evidence_quote": "FINAL ENVIRONMENTAL STATEMENT",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "n/a",
+      "Q10": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": null,
+      "matched_page": 1,
+      "normalized_match_span": [
+        1,
+        38,
+        67
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=n/a"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": null,
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 6323
+    }
+  },
+  "key_people": {
+    "extracted_value": {
+      "agency_preparers": [],
+      "cooperating_agencies": [],
+      "consulted_entities": [],
+      "public_commenters": [],
+      "comment_response_present": false
+    },
+    "evidence_quote": null,
+    "source_pages": [],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "no",
+      "Q2": "n/a",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "n/a",
+      "Q7": "n/a",
+      "Q8": "n/a",
+      "Q9": "n/a",
+      "Q10": "n/a",
+      "Q11": "n/a"
+    },
+    "composite": 0.15,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "critic_verdict",
+    "failure_tag": "T01_missing_citation",
+    "bucket": "key_people",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 0.0,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "no",
+    "quote_check": null,
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": false,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 6
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "No pages were cited and no evidence was provided. All buckets are empty and no citation supports even the emptiness claim. A fresh extraction with proper page citations is warranted.; evidence_quote_null_consistent_with_RE_EXTRACT",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [],
+      "pages_included": [],
+      "pages_omitted": [],
+      "window_mode": "none",
+      "truncated": false,
+      "n_chars": 0
+    }
+  },
+  "lead_agency": {
+    "extracted_value": [
+      "Department of the Interior",
+      "Bureau of Sport Fisheries and Wildlife"
+    ],
+    "evidence_quote": "Department of the Interior, Bureau of Sport Fisheries and Wildlife",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "no"
+    },
+    "composite": 0.85,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": "T05_commenter_mislabeled_as_cooperator",
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS_WITH_NOTE",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.7,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 2,
+      "normalized_match_span": [
+        2,
+        46,
+        111
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "Page 2 presents 'Department of the Interior, Bureau of Sport Fisheries and Wildlife' as a single combined preparer/lead entity. The Bureau of Sport Fisheries and Wildlife is a sub-agency of the Department of the Interior, not a separate co-lead agency. The document does not designate them as joint leads; rather, the Bureau prepared the statement on behalf of the Department. Listing them as two sep",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 6323
+    }
+  },
+  "location": {
+    "extracted_value": {
+      "places": [],
+      "is_multi_site": false,
+      "geocoded": [],
+      "scope": "national",
+      "textual_location": "national",
+      "corridor": false
+    },
+    "evidence_quote": null,
+    "source_pages": [],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "no",
+      "Q2": "n/a",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "n/a",
+      "Q7": "n/a",
+      "Q8": "n/a",
+      "Q9": "n/a",
+      "Q10": "n/a",
+      "Q11": "n/a"
+    },
+    "composite": 0.0,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "reduced_geocoder_stack",
+    "failure_tag": null,
+    "bucket": "location",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "HUMAN_REVIEW",
+    "verdict_before_override": "PASS",
+    "gate_reasons": [
+      "reduced_geocoder_stack",
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 0.0,
+      "s_critic": 0.0,
+      "s_source": null,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "no",
+    "quote_check": {
+      "verified": "no",
+      "reason": "no_evidence_quote_returned"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": false,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 6
+    },
+    "critic_overrides": [
+      "critic_evidence_unverifiable"
+    ],
+    "off_vocabulary_failure_tag": null,
+    "note": "scope=national with empty geocoded list is a PASS per the Fuel Economy case rule, even though no pages were cited. The extraction asserts no specific site claims that would require citation support.; critic_evidence_unverifiable",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [],
+      "pages_included": [],
+      "pages_omitted": [],
+      "window_mode": "none",
+      "truncated": false,
+      "n_chars": 0
+    }
+  },
+  "summary.affected_community": {
+    "extracted_value": "The most directly affected groups are the listed animals themselves and the habitats they occupy, many of which are geographically tiny: for example, the Devil's Hole pupfish lives in a single bedroom-sized spring in Ash Meadows, Nevada; the Okaloosa darter lives in five streams originating on Eglin Air Force Base, Florida; fewer than 2,000 Attwater's greater prairie chickens remain in 12 coastal Texas counties; fewer than 300 pairs of Kirtland's warblers survive in half a dozen Michigan counties; roughly 6,000 Utah prairie dogs remain in three counties; and only 14-15 Puerto Rican parrots remain in the wild. Human groups affected include state fish and wildlife agencies losing regulatory authority over resident species, land developers, farmers and ranchers who suffer crop or livestock damage (such as red wolf depredations in southeastern Texas), foresters (who would have to leave old diseased pines standing for the red-cockaded woodpecker), miners and petroleum producers, pesticide users, holders of federal hunting and fishing permits or federal grazing leases, wildlife traders and importers, and federal agencies whose projects would have to accommodate endangered species. American Indians, Aleuts, and Eskimos are exempted when taking listed species for their own consumption or ritual purposes.",
+    "evidence_quote": "Attwater's is confined to a small area in 12 counties of coastal Texas.\n\nLess than 2,000 birds remain.",
+    "source_pages": [
+      2,
+      35,
+      36,
+      37,
+      49,
+      54,
+      55,
+      278
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "n/a"
+    },
+    "composite": 1.0,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": null,
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 36,
+      "normalized_match_span": [
+        36,
+        1614,
+        1713
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        276,
+        277,
+        278,
+        279,
+        280
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "12",
+        "2000"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "All named populations and figures verify on cited pages: Devil's Hole pupfish in bedroom-sized spring in Ash Meadows NV (p.35); Okaloosa darter in five streams on Eglin AFB FL (p.35); <2,000 Attwater's in 12 coastal Texas counties (p.36); <300 pairs Kirtland's warblers in half a dozen Michigan counties (p.37); ~6,000 Utah prairie dogs in three counties (p.37); 14-15 Puerto Rican parrots (p.49). Hu",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        2,
+        35,
+        36,
+        37,
+        49,
+        54,
+        55,
+        278
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        276,
+        277,
+        278,
+        279,
+        280
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 50919
+    }
+  },
+  "summary.alternatives_overview": {
+    "extracted_value": "The statement lays out six alternatives to the proposed bill. First, instead of legislating a ban on Group 1 imports and giving the Secretary discretion over Group 2, ban importation of all endangered species outright, or leave all import decisions to the Secretary's discretion. Second, reauthorize habitat acquisition with a spending ceiling in place, or remove that acquisition authority entirely, rather than lifting the ceiling. Third, leave state authority to regulate taking untouched. Fourth, leave authority with the states unless the Secretary judges a state's endangered-species program inadequate, at which point federal authority would step in. Fifth, take 'no action' and continue under the existing 1969 Act, which would forgo new powers such as pre-threat listing and unlimited land acquisition. Sixth, repeal the 1969 Act without replacement, which the drafters estimate would allow roughly 10 species to go extinct within 10 years and 25-30 within 20 years. The bill itself also embeds flexibility through permits for zoological, educational, or scientific use, one-year economic-hardship exemptions, and suspension of the federal take-prohibition in states running programs the Secretary judges at least as strict as the federal one.",
+    "evidence_quote": "Alternative 6: If the present authority under the Endangered Species Act of 1969 were repealed, efforts for restoration of most species would collapse.",
+    "source_pages": [
+      3,
+      71
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "n/a"
+    },
+    "composite": 0.75,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": null,
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 0.5,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 0.7,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "mixed",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 71,
+      "normalized_match_span": [
+        71,
+        17,
+        164
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        69,
+        70,
+        71,
+        72,
+        73
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "6",
+        "1969"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "All six alternatives are present on page 3 and elaborated on pages 69-71. The extinction estimate (10 species/10 years, 25-30/20 years) matches page 71. The bill flexibility mention (permits, hardship exemptions, state programs) is not on cited pages 3 or 71 but is descriptive of the proposal context rather than an alternative; the core alternatives overview is fully supported.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        3,
+        71
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        69,
+        70,
+        71,
+        72,
+        73
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 13888
+    }
+  },
+  "summary.environmental_impact": {
+    "extracted_value": "The bill's effects are described as mostly positive for listed animals, ranging from small changes for species that are only threatened to many-fold increases for species pulled back from the brink of extinction. Forage and prey populations would shift as endangered species rebound, and non-listed species sharing protected habitat generally benefit, though some (like alewives in the Great Lakes) may need to be reduced to make room for recovering endangered fish. About 80 percent of species in the 1973 U.S. 'Red Book' are 'geographic isolates' \u2014 populations confined to very small ranges such as a single desert spring or a handful of streams \u2014 so recovery for most species would touch only a small area, while the roughly 20 percent that range across whole biomes (California condor, peregrine falcon, whooping crane, gray wolves) could affect broader grassland or coniferous-forest areas. Adverse or restrictive effects include curtailment of dams, canals, and groundwater pumping for irrigation (the Devil's Hole pupfish is threatened by such pumping), constraints on timber harvesting, grazing, farming, mining, and petroleum extraction on habitat lands, and restrictions on chlorinated-hydrocarbon pesticides affecting bald eagles, brown pelicans, and peregrine falcons. Preliminary estimates suggested the broadened definition of 'endangered' could add as many as 1,000 species, subspecies, or populations to the list. Every federal agency would have to ensure its own actions do not 'jeopardize the continued existence of endangered species.'",
+    "evidence_quote": "About 20 percent of the species and subspecies appearing in the 1973 U.S. \"Red Book\" are wide ranging in distribution being characteristic of one biome or ranging over two or more biomes",
+    "source_pages": [
+      2,
+      10,
+      29,
+      47,
+      53,
+      56
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "yes",
+      "Q4": "no",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes",
+      "Q10": "n/a"
+    },
+    "composite": 0.4,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "critic_verdict",
+    "failure_tag": "T02_numeric_hallucination",
+    "bucket": "summary_numeric",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 0.5,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": 0.75,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "mixed",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 29,
+      "normalized_match_span": [
+        29,
+        978,
+        1161
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        10,
+        11,
+        12,
+        27,
+        28,
+        29,
+        30,
+        31,
+        45,
+        46,
+        47,
+        48,
+        49,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "20",
+        "1973"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The value states 'About 80 percent of species in the 1973 U.S. \"Red Book\" are \"geographic isolates\"' \u2014 this figure is not supported. Page 29 says about 20 percent are wide-ranging across biomes; the complementary 80 percent figure for 'geographic isolates' is not stated on the cited pages, and the term 'geographic isolates' does not appear. Also, the value states the preliminary estimate could add",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        2,
+        10,
+        29,
+        47,
+        53,
+        56
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        10,
+        11,
+        12,
+        27,
+        28,
+        29,
+        30,
+        31,
+        45,
+        46,
+        47,
+        48,
+        49,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 46236
+    }
+  },
+  "summary.overview": {
+    "extracted_value": "This Final Environmental Impact Statement evaluates H.R. 4758, the proposed Endangered Species Conservation Act of 1973, which would replace the 1969 Act with stronger federal authority to protect fish and wildlife 'threatened with extinction' or 'likely within the foreseeable future to become threatened with extinction.' Concretely, the bill would let the Secretary of the Interior maintain a single worldwide endangered-species list, buy habitat land with no dollar ceiling, take over from the states the authority to regulate the taking of listed resident wildlife, ban U.S. persons from taking endangered species on the high seas, and raise civil and criminal penalties to $10,000 and $20,000. The statement compares this proposal against six alternatives, including keeping state authority, imposing a spending ceiling on land purchases, taking 'no action' under the 1969 Act, and repealing the 1969 Act (which the drafters estimate would allow roughly 10 species to go extinct within 10 years and 25-30 within 20 years). The main environmental effects are described as largely positive for listed species \u2014 including geographically tiny populations such as the 14-15 remaining Puerto Rican parrots and the Devil's Hole pupfish in a single bedroom-sized Nevada spring \u2014 while curtailing pesticide use, water projects, timber, grazing, and mining on habitat lands. State fish and game agencies from Montana, Nebraska, Nevada, Maine, Indiana, Kansas, Arizona, Oregon, Texas, and Washington objected strongly to shifting management of resident wildlife from states to the federal government, while Maryland, Massachusetts, North Carolina, Rhode Island, and the Environmental Defense Fund supported the bill; the Florida Audubon Society and other conservation groups objected specifically to giving the Secretary of Commerce jurisdiction over some marine species.",
+    "evidence_quote": "An estimated 10 species would become extinct within 10 years and possibly 25 or 30 species in 20 years.",
+    "source_pages": [
+      2,
+      3,
+      8,
+      35,
+      49,
+      56,
+      71,
+      96,
+      131,
+      145
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "no",
+      "Q8": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": null,
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 71,
+      "normalized_match_span": [
+        71,
+        334,
+        436
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        33,
+        34,
+        35,
+        36,
+        37,
+        47,
+        48,
+        49,
+        50,
+        51,
+        54,
+        55,
+        56,
+        57,
+        58,
+        69,
+        70,
+        71,
+        72,
+        73,
+        94,
+        95,
+        96,
+        97,
+        98,
+        129,
+        130,
+        131,
+        132,
+        133,
+        143,
+        144,
+        145,
+        146,
+        147
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "10",
+        "10",
+        "25",
+        "30",
+        "20"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "All major claims verify against cited pages. The bill description (p.2), the six alternatives (p.3), the Devil's Hole pupfish and Puerto Rican parrot examples (pp.35,49), the extinction estimates for Alternative 6 (p.71), the penalty figures of $10,000/$20,000 (p.2), the state objectors and supporters (pp.129,131,133,145), and the Florida Audubon Society's objection to Commerce jurisdiction (p.96)",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        2,
+        3,
+        8,
+        35,
+        49,
+        56,
+        71,
+        96,
+        131,
+        145
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        33,
+        34,
+        35,
+        36,
+        37,
+        47,
+        48,
+        49,
+        50,
+        51,
+        54,
+        55,
+        56,
+        57,
+        58,
+        69,
+        70,
+        71,
+        72,
+        73,
+        94,
+        95,
+        96,
+        97,
+        98,
+        129,
+        130,
+        131,
+        132,
+        133,
+        143,
+        144,
+        145,
+        146,
+        147
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 72198
+    }
+  },
+  "summary.project_description": {
+    "extracted_value": "The action is proposed federal legislation, H.R. 4758, the Endangered Species Conservation Act of 1973, prepared by the Bureau of Sport Fisheries and Wildlife in the Department of the Interior. The bill would repeal the 1969 Endangered Species Conservation Act and give the Secretary of the Interior (with some marine species assigned to the Secretary of Commerce) authority to list, protect, and propagate species in two groups: 'Group 1' species already threatened with extinction, and 'Group 2' species likely to become so in the foreseeable future. It would remove the previous $15 million ceiling on habitat acquisition using Land and Water Conservation Fund money, shift authority to regulate the taking of listed resident wildlife from the states to the federal government, ban U.S. persons from taking endangered species on the high seas, and raise civil penalties from $5,000 to $10,000 and criminal penalties from $10,000 to $20,000. Federal grazing leases and federal hunting or fishing permits held by convicted violators could be suspended or revoked.",
+    "evidence_quote": "increases penalties for civil violations from $5,000 to $10,000 and criminal violations from $10,000 to $20,000",
+    "source_pages": [
+      2,
+      7,
+      8,
+      96,
+      278
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "n/a"
+    },
+    "composite": 0.75,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": null,
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 0.5,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 0.875,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "mixed",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 2,
+      "normalized_match_span": [
+        2,
+        798,
+        905
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        94,
+        95,
+        96,
+        97,
+        98,
+        276,
+        277,
+        278,
+        279,
+        280
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "5000",
+        "10000",
+        "10000",
+        "20000"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "All claims verified: H.R. 4758 title (p.1), BSFW/Interior preparation (p.1), repeal of 1969 Act (p.7), Group 1/Group 2 terminology (p.8), $15M ceiling removal (p.9, p.278), transfer of taking authority from states (p.277), high seas ban (p.277), civil $5K\u2192$10K and criminal $10K\u2192$20K penalties (p.278), grazing/hunting/fishing permits suspended or revoked (p.278), Commerce Secretary for marine speci",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        2,
+        7,
+        8,
+        96,
+        278
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        94,
+        95,
+        96,
+        97,
+        98,
+        276,
+        277,
+        278,
+        279,
+        280
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 36711
+    }
+  },
+  "summary.public_response": {
+    "extracted_value": "The draft was circulated to all 50 states, Puerto Rico, the Virgin Islands, several federal departments, and private groups; 24 states replied, along with the Environmental Defense Fund. Maryland, Massachusetts, Mississippi, Florida, Rhode Island, and Washington broadly supported the bill; the North Carolina Department of Natural and Economic Resources called removal of state authority 'logical and acceptable'; and the Environmental Defense Fund pressed for stronger ecological language. State fish-and-game agencies in Montana, Nebraska, Nevada, Maine, Indiana, Kansas, Arizona, Oregon, Texas, and Washington objected \u2014 chiefly to shifting authority over resident wildlife from states to the federal government, arguing they have more field enforcement staff (for example, Nebraska has about 45 conservation officers versus three federal enforcement agents) and better track records. Arizona and Washington also complained that the new category 'likely within the foreseeable future to become threatened with extinction' is too vague. Nebraska and Nevada objected to federal suspension of state-issued hunting and fishing licenses; the response clarified this reaches only federal permits such as waterfowl stamps. The Florida Audubon Society, Archbold Biological Station, and A.R. Marshall of the University of Miami objected to giving the Secretary of Commerce jurisdiction over marine endangered species, arguing Commerce's fishery-production mandate conflicts with preservation.",
+    "evidence_quote": "Replies were received, in most cases with comments, from 24 States",
+    "source_pages": [
+      73,
+      75,
+      78,
+      96,
+      145,
+      152,
+      158,
+      163,
+      233
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "n/a",
+      "Q4": "no",
+      "Q5": "yes",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "yes",
+      "Q10": "n/a"
+    },
+    "composite": 0.5,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "policy_private_individual",
+    "failure_tag": null,
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "HUMAN_REVIEW",
+    "verdict_before_override": "HUMAN_REVIEW",
+    "gate_reasons": [
+      "policy_private_individual",
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 73,
+      "normalized_match_span": [
+        73,
+        810,
+        874
+      ],
+      "pages_searched": [
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        94,
+        95,
+        96,
+        97,
+        98,
+        143,
+        144,
+        145,
+        146,
+        147,
+        150,
+        151,
+        152,
+        153,
+        154,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        231,
+        232,
+        233,
+        234,
+        235
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "24"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [
+      "policy_private_individual"
+    ],
+    "off_vocabulary_failure_tag": null,
+    "note": "Q5 fires: the value attributes a stance to 'A.R. Marshall of the University of Miami' \u2014 the cited pages (94-98) contain the Florida Audubon Society letter, but I cannot locate any mention of 'A.R. Marshall' or 'University of Miami' in the cited evidence. This appears to be either an unsupported attribution to an individual or a private individual stance, either way triggering HUMAN_REVIEW. Additio; policy_private_individual; rubric_Q5_private_individual_stance",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        73,
+        75,
+        78,
+        96,
+        145,
+        152,
+        158,
+        163,
+        233
+      ],
+      "pages_included": [
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        94,
+        95,
+        96,
+        97,
+        98,
+        143,
+        144,
+        145,
+        146,
+        147,
+        150,
+        151,
+        152,
+        153,
+        154,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        231,
+        232,
+        233,
+        234,
+        235
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 59537
+    }
+  },
+  "summary_of_interest": {
+    "extracted_value": [
+      {
+        "claim": "State fish and game agencies from at least ten states mounted coordinated opposition to shifting authority over resident (non-migratory) wildlife from states to the federal government, with Kansas explicitly labeling the transfer 'precedent setting' \u2014 a jurisdictional fight that goes to the heart of what became the modern Endangered Species Act.",
+        "salience_criterion": "contested",
+        "page": null,
+        "evidence_quote": "The Kansas Forestry, Fish, and Game Commission, objects to tranfer of jurisdiction, from States to Federal agencies, over any resident wildlife species that the Secretary classifies as endangered and calls it \"precedent setting.\"",
+        "why_notable": "The chunk records states framing this specific federal preemption as precedent-setting, signaling that commenters themselves understood the bill as a structural shift in wildlife governance rather than a routine amendment.",
+        "evidence": [
+          {
+            "quote": "The Kansas Forestry, Fish, and Game Commission, objects to tranfer of jurisdiction, from States to Federal agencies, over any resident wildlife species that the Secretary classifies as endangered and calls it \"precedent setting.\"",
+            "source_pages": [],
+            "quote_verified": false,
+            "note": "Quote not found verbatim in doc \u2014 forced HUMAN_REVIEW."
+          }
+        ]
+      },
+      {
+        "claim": "The drafters quantified the consequences of the 'repeal without replacement' alternative as roughly 10 species going extinct within 10 years and 25 to 30 within 20 years \u2014 an unusually explicit extinction body-count attached to a no-action-style alternative.",
+        "salience_criterion": "large_magnitude",
+        "page": 71,
+        "evidence_quote": "An estimated 10 species would become extinct within 10 years and possibly 25 or 30 species in 20 years.",
+        "why_notable": "EISs rarely attach hard extinction numbers to an alternative; this quantification was used to justify rejecting outright repeal of the 1969 Act.",
+        "evidence": [
+          {
+            "quote": "An estimated 10 species would become extinct within 10 years and possibly 25 or 30 species in 20 years.",
+            "source_pages": [
+              "71"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "The Florida Audubon Society, Archbold Biological Station, and a University of Miami reviewer objected in unusually pointed terms to splitting jurisdiction with the Department of Commerce, arguing Commerce's mandate to maximize fishery production is fundamentally incompatible with protecting species like the blue whale and sea otter.",
+        "salience_criterion": "contested",
+        "page": 96,
+        "evidence_quote": "THE FLORIDA AUDUBON SOCIETY CONSIDERS THIS ALTERNATIVE THE MOST IMPORTANT COMMENT IN THE DRAFT IMPACT STATEMENT. THE DEPARTMENT OF COMMERCE HAS NO BUSINESS REGULATING THE TAKING OF ENDANGERED SPECIES SUCH AS THE BLUE WHALE, SEA OTTER, ETC.",
+        "why_notable": "This is a substantive inter-agency conflict flagged by conservation scientists as the single most important issue in the draft, and it foreshadows the enduring NMFS/FWS split under the eventual Endangered Species Act (ESA).",
+        "evidence": [
+          {
+            "quote": "THE FLORIDA AUDUBON SOCIETY CONSIDERS THIS ALTERNATIVE THE MOST IMPORTANT COMMENT IN THE DRAFT IMPACT STATEMENT. THE DEPARTMENT OF COMMERCE HAS NO BUSINESS REGULATING THE TAKING OF ENDANGERED SPECIES SUCH AS THE BLUE WHALE, SEA OTTER, ETC.",
+            "source_pages": [
+              "96"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "The bill would authorize adding as many as 1,000 species, subspecies, or populations to the endangered list \u2014 an order-of-magnitude expansion of federal wildlife protection driven by the new 'likely within the foreseeable future to become threatened' category.",
+        "salience_criterion": "large_magnitude",
+        "page": null,
+        "evidence_quote": "Preliminary estimates indicate that this new authority may add as many as 1,000 species, subspecies or population\n\nsegments to the present endangered species list",
+        "why_notable": "The document itself acknowledges the proposed 'threatened' tier could roughly multiply the protected list by an order of magnitude, which is what several states cite when calling the vague standard a threat to land and water projects.",
+        "evidence": [
+          {
+            "quote": "Preliminary estimates indicate that this new authority may add as many as 1,000 species, subspecies or population\n\nsegments to the present endangered species list",
+            "source_pages": [],
+            "quote_verified": false,
+            "note": "Quote not found verbatim in doc \u2014 forced HUMAN_REVIEW."
+          }
+        ]
+      },
+      {
+        "claim": "The bill would eliminate the previous $15 million total cap on habitat acquisition, replacing a hard fiscal ceiling with acquisition 'limited only by availability of funds' \u2014 an unusually open-ended federal land-buying authority for a wildlife statute.",
+        "salience_criterion": "unusual_impact",
+        "page": 278,
+        "evidence_quote": "Acquisition authorized and limited only by availability of funds.",
+        "why_notable": "The chunk's side-by-side comparison shows the 1969 Act's concrete per-area, per-year, and cumulative dollar caps being replaced with no cap at all, which is the specific mechanism enabling large-scale federal habitat land purchases going forward.",
+        "evidence": [
+          {
+            "quote": "Acquisition authorized and limited only by availability of funds.",
+            "source_pages": [
+              "278"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "In response to public comment, the drafters added the 'no action' alternative (continue under the 1969 Act) that had been omitted from the draft, and rewrote the 'irretrievable commitments' section to acknowledge that time, displaced non-listed species, and foregone land uses are real commitments \u2014 a visible case of commenters reshaping the National Environmental Policy Act (NEPA) analysis itself.",
+        "salience_criterion": "community_pushback",
+        "page": 143,
+        "evidence_quote": "The Environmental Statement has been revised to include the alternative of continuing administration of the program under the present authority (alternative 5).",
+        "why_notable": "The document explicitly credits a Missouri comment with forcing inclusion of the no-action alternative, an early example of National Environmental Policy Act (NEPA) public comment demonstrably altering the alternatives analysis.",
+        "evidence": [
+          {
+            "quote": "The Environmental Statement has been revised to include the alternative of continuing administration of the program under the present authority (alternative 5).",
+            "source_pages": [
+              "143"
+            ],
+            "quote_verified": true
+          }
+        ]
+      }
+    ],
+    "evidence_quote": "The Environmental Statement has been revised to include the alternative of continuing administration of the program under the present authority (alternative 5).",
+    "source_pages": [
+      71,
+      96,
+      143,
+      278
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7a": "yes",
+      "Q7b": "no",
+      "Q7c": "n/a",
+      "Q7d": "yes"
+    },
+    "composite": 0.4,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "bucket_degenerate_severe",
+    "failure_tag": "T01_missing_citation",
+    "bucket": "summary_of_interest",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "bucket_degenerate_severe",
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 0.5,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": 0.666667,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "mixed",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 143,
+      "normalized_match_span": [
+        143,
+        841,
+        996
+      ],
+      "pages_searched": [
+        69,
+        70,
+        71,
+        72,
+        73,
+        94,
+        95,
+        96,
+        97,
+        98,
+        141,
+        142,
+        143,
+        144,
+        145,
+        276,
+        277,
+        278,
+        279,
+        280
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "5"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": true,
+      "degenerate_severe": true,
+      "saturated": false,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 0
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "Two of the six entries have page=null and their evidence quotes are flagged quote_verified=false. Entry 1 (Kansas 'precedent setting') and entry 4 ('1,000 species') both lack page cites and their claimed quotes were not located in the cited page ranges provided. The remaining four entries verify cleanly on their cited pages (71, 96, 143, 278). Because two entries fail the citation requirement, the",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        71,
+        96,
+        143,
+        278
+      ],
+      "pages_included": [
+        69,
+        70,
+        71,
+        72,
+        73,
+        94,
+        95,
+        96,
+        97,
+        98,
+        141,
+        142,
+        143,
+        144,
+        145,
+        276,
+        277,
+        278,
+        279,
+        280
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 36997
+    }
+  },
+  "themes": {
+    "extracted_value": {
+      "themes": [
+        "Wildlife and Natural Areas",
+        "Governance and Institutional Control"
+      ],
+      "subthemes": [
+        "Habitat Conservation and Biodiversity",
+        "Human-Wildlife Interactions",
+        "Environmental Regulation and Policy",
+        "Institutional Power and Resource Management"
+      ]
+    },
+    "evidence_quote": "FINAL ENVIRONMENTAL STATEMENT ON THE PROPOSED ENDANGERED SPECIES CONSERVATION ACT OF 1973",
+    "source_pages": [
+      7,
+      8
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "n/a",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "bucket_degenerate_severe",
+    "failure_tag": null,
+    "bucket": "alternatives+themes",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "bucket_degenerate_severe",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 7,
+      "normalized_match_span": [
+        7,
+        0,
+        89
+      ],
+      "pages_searched": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "1973"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": true,
+      "degenerate_severe": true,
+      "saturated": false,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 1
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "Pages 7\u20138 describe the proposed Endangered Species Conservation Act of 1973, covering protection of species threatened with extinction (Habitat Conservation and Biodiversity), human/commercial interactions with wildlife including import controls (Human-Wildlife Interactions), the legislative/regulatory framework and Secretary's authority (Environmental Regulation and Policy), and inter-agency coor",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        7,
+        8
+      ],
+      "pages_included": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 9230
+    }
+  },
+  "title": {
+    "extracted_value": "Proposed endangered species conservation act of 1973 (incomplete appendices) : environmental impact statement.",
+    "evidence_quote": "ENDANGERED SPECIES CONSERVATION ACT OF 1973",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "n/a",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes"
+    },
+    "composite": 0.85,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS_WITH_NOTE",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.7,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 1,
+      "normalized_match_span": [
+        1,
+        77,
+        120
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "1973"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The cover page (page 1) reads 'FINAL ENVIRONMENTAL STATEMENT / Proposed / ENDANGERED SPECIES CONSERVATION ACT OF 1973', with no mention of 'incomplete appendices'. The parenthetical '(incomplete appendices)' in the extracted title appears to be catalogue metadata describing the physical state of this copy rather than text from the cover page itself. This is a minor discrepancy but does not affect ",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 6323
+    }
+  },
+  "year": {
+    "extracted_value": 1973,
+    "evidence_quote": "Final: AUG 7 1973",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes",
+      "Q10": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": 0.5,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 4,
+      "normalized_match_span": [
+        4,
+        149,
+        165
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "7",
+        "1973"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The final statement date 'AUG 7 1973' appears on page 4 (transmittal/summary section) and also on page 1 (cover). The year 1973 is clearly supported and unambiguous.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 6323
+    }
+  },
+  "_meta": {
+    "doc_id": "p1074_35556036525772",
+    "artifact_stage": "v1",
+    "generated_at": "2026-08-10T18:46:45+00:00",
+    "plan_ref": "MCAL_PLAN 3.12",
+    "schema_keys": [
+      "extracted_value",
+      "evidence_quote",
+      "source_pages",
+      "verdict",
+      "rubric_answers",
+      "composite",
+      "applied_tau",
+      "gated_to_human",
+      "gate_reason",
+      "failure_tag",
+      "bucket",
+      "artifact_stage",
+      "judge_model"
+    ],
+    "n_fields": 15,
+    "reserved_keys": [
+      "_meta",
+      "_rollup",
+      "_null_tag_monitor"
+    ],
+    "reviewer_note": "Every field is present, gated or not, with its raw extraction (MCAL_PLAN 7 Q8). Grade `extracted_value` against `evidence_quote` and `source_pages`; `gate_reason` says why the field was routed to a human. `extracted_value: []` on summary_of_interest is a legitimate 'this document is routine'; `null` plus a gate_reason is a generation failure."
+  },
+  "_rollup": {
+    "doc_id": "p1074_35556036525772",
+    "artifact_stage": "v1",
+    "geocoder_stack": "reduced",
+    "n_fields": 15,
+    "n_gated": 11,
+    "n_passed": 4,
+    "gate_rate": 0.7333,
+    "gate_reasons": {
+      "none": 4,
+      "composite_below_tau": 4,
+      "critic_verdict": 2,
+      "policy_private_individual": 1,
+      "bucket_degenerate_severe": 3,
+      "reduced_geocoder_stack": 1
+    },
+    "verdicts": {
+      "PASS_WITH_NOTE": 2,
+      "PASS": 2,
+      "HUMAN_REVIEW": 11
+    },
+    "per_bucket": {
+      "M1": {
+        "n_fields": 4,
+        "n_gated": 0,
+        "n_passed": 4,
+        "gate_reasons": {},
+        "tau_deployed": 0.5,
+        "gate_all_to_human": false,
+        "degenerate": true,
+        "degenerate_severe": false,
+        "N_wrong_docs": 3
+      },
+      "summary_narrative": {
+        "n_fields": 5,
+        "n_gated": 5,
+        "n_passed": 0,
+        "gate_reasons": {
+          "composite_below_tau": 4,
+          "policy_private_individual": 1
+        },
+        "tau_deployed": 1.0,
+        "gate_all_to_human": false,
+        "degenerate": true,
+        "degenerate_severe": false,
+        "N_wrong_docs": 5
+      },
+      "summary_numeric": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "critic_verdict": 1
+        },
+        "tau_deployed": 1.0,
+        "gate_all_to_human": false,
+        "degenerate": true,
+        "degenerate_severe": false,
+        "N_wrong_docs": 3
+      },
+      "summary_of_interest": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "bucket_degenerate_severe": 1
+        },
+        "tau_deployed": null,
+        "gate_all_to_human": true,
+        "degenerate": true,
+        "degenerate_severe": true,
+        "N_wrong_docs": 0
+      },
+      "alternatives+themes": {
+        "n_fields": 2,
+        "n_gated": 2,
+        "n_passed": 0,
+        "gate_reasons": {
+          "bucket_degenerate_severe": 2
+        },
+        "tau_deployed": null,
+        "gate_all_to_human": true,
+        "degenerate": true,
+        "degenerate_severe": true,
+        "N_wrong_docs": 1
+      },
+      "location": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "reduced_geocoder_stack": 1
+        },
+        "tau_deployed": null,
+        "gate_all_to_human": true,
+        "degenerate": false,
+        "degenerate_severe": false,
+        "N_wrong_docs": 6
+      },
+      "key_people": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "critic_verdict": 1
+        },
+        "tau_deployed": 1.0,
+        "gate_all_to_human": false,
+        "degenerate": false,
+        "degenerate_severe": false,
+        "N_wrong_docs": 6
+      }
+    },
+    "null_tag": {
+      "M1": {
+        "n_fields": 4,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      },
+      "summary_narrative": {
+        "n_fields": 5,
+        "n_human_review": 4,
+        "n_null_tag": 4,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 1,
+        "n_excluded_pre_judgement": 0
+      },
+      "summary_numeric": {
+        "n_fields": 1,
+        "n_human_review": 1,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      },
+      "summary_of_interest": {
+        "n_fields": 1,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 1
+      },
+      "alternatives+themes": {
+        "n_fields": 2,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 2
+      },
+      "location": {
+        "n_fields": 1,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 1
+      },
+      "key_people": {
+        "n_fields": 1,
+        "n_human_review": 1,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      }
+    },
+    "summary_of_interest": {
+      "present": true,
+      "generation_failure": false,
+      "non_empty": true,
+      "n_entries": 6,
+      "salience_criterion_counts": {
+        "contested": 2,
+        "unusual_impact": 1,
+        "large_magnitude": 2,
+        "novel_alternative": 0,
+        "community_pushback": 1,
+        "precedent": 0,
+        "cross_jurisdictional": 0
+      },
+      "off_vocabulary_criteria": [],
+      "n_t17_manufactured_salience": 0,
+      "n_t18_duplicates_summary": 0,
+      "overlap_with_standard_summary": {
+        "jaccard": 0.1564,
+        "n_soi_tokens": 221,
+        "n_summary_tokens": 437,
+        "per_entry_jaccard": [
+          0.0431,
+          0.033,
+          0.0542,
+          0.0619,
+          0.0344,
+          0.0214
+        ],
+        "max_entry_jaccard": 0.0619,
+        "tokenizer": "mcal.quote_check.content_tokens (stopword+boilerplate filtered)"
+      },
+      "nonempty_rate_ceiling": 0.6,
+      "soi_useful": null
+    },
+    "critic": {
+      "n_fields": 15,
+      "verdicts": {
+        "PASS_WITH_NOTE": 2,
+        "PASS": 8,
+        "RE_EXTRACT": 3,
+        "HUMAN_REVIEW": 2
+      },
+      "overrides": {
+        "policy_private_individual": 1,
+        "critic_evidence_unverifiable": 1
+      },
+      "n_quote_checked": 14,
+      "n_quote_verified": 13,
+      "evidence_quote_verifiable_rate": 0.9286,
+      "n_off_vocabulary_tags": 0,
+      "n_null_tag_human_review": 2,
+      "n_schema_violations": 0,
+      "n_evidence_truncated": 0
+    },
+    "re_extract": {}
+  },
+  "_null_tag_monitor": {
+    "threshold": 0.15,
+    "taxonomy_refresh_recommended": true,
+    "buckets_needing_refresh": [
+      "key_people",
+      "summary_narrative",
+      "summary_numeric"
+    ],
+    "n_docs_rolling": 5,
+    "per_bucket": {
+      "M1": {
+        "n_fields": 20,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "summary_narrative": {
+        "n_fields": 25,
+        "n_human_review": 23,
+        "n_null_tag": 14,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 2,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": 0.6087,
+        "exceeds_threshold": true
+      },
+      "summary_numeric": {
+        "n_fields": 5,
+        "n_human_review": 5,
+        "n_null_tag": 2,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": 0.4,
+        "exceeds_threshold": true
+      },
+      "summary_of_interest": {
+        "n_fields": 5,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 5,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "alternatives+themes": {
+        "n_fields": 10,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 10,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "location": {
+        "n_fields": 5,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 5,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "key_people": {
+        "n_fields": 5,
+        "n_human_review": 5,
+        "n_null_tag": 2,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": 0.4,
+        "exceeds_threshold": true
+      }
+    },
+    "path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/mcal/artifacts/null_tag_monitor.json",
+    "halt_condition": false
+  }
+}

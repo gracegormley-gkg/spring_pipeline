@@ -1,0 +1,1590 @@
+{
+  "title": {
+    "evidence_quote": "Kendall Square Urban Renewal Project Mass R-107 Cambridge, Massachusetts Final Environmental Impact Statement",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "n/a",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "n/a",
+      "Q7": "yes",
+      "Q8": "yes"
+    },
+    "verdict": "PASS",
+    "verdict_before_override": null,
+    "failure_tag": null,
+    "note": "The extracted title closely matches the cover page text on pages 1\u20132: 'Kendall Square Urban Renewal Project' and 'Final Environmental Impact Statement'. The slight reformatting (colon, lowercase) is a minor stylistic variation consistent with catalogue metadata conventions and does not constitute a factual discrepancy.",
+    "judge_model": "sonnet",
+    "judge_model_id": "us.anthropic.claude-sonnet-4-6",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 2,
+      "normalized_match_span": [
+        2,
+        20,
+        128
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "107"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "title",
+    "bucket": "M1",
+    "overrides": [],
+    "notes": [
+      "The extracted title closely matches the cover page text on pages 1\u20132: 'Kendall Square Urban Renewal Project' and 'Final Environmental Impact Statement'. The slight reformatting (colon, lowercase) is a minor stylistic variation consistent with catalogue metadata conventions and does not constitute a factual discrepancy."
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 3109
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-sonnet-4-6",
+      "input_tokens": 3351,
+      "output_tokens": 237,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "year": {
+    "evidence_quote": "JAN 1 1 1978",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "n/a",
+      "Q4": "no",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "n/a",
+      "Q7": "yes",
+      "Q8": "no",
+      "Q9": "no",
+      "Q10": "n/a"
+    },
+    "verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "failure_tag": "T11_year_ocr_error",
+    "note": "The transmittal letter on page 1 is dated JAN 11 1978, and the cover page (page 2) also bears a date stamp of JAN 12 1978. The higher-priority transmittal/signature date is 1978, not 1977. The '77' in the document identifier 'HUD-R01-EIS-77-01-F' appears to be a project/fiscal year code, not the publication year.",
+    "judge_model": "sonnet",
+    "judge_model_id": "us.anthropic.claude-sonnet-4-6",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 1,
+      "normalized_match_span": [
+        1,
+        130,
+        142
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "1",
+        "1",
+        "1978"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "year",
+    "bucket": "M1",
+    "overrides": [],
+    "notes": [
+      "The transmittal letter on page 1 is dated JAN 11 1978, and the cover page (page 2) also bears a date stamp of JAN 12 1978. The higher-priority transmittal/signature date is 1978, not 1977. The '77' in the document identifier 'HUD-R01-EIS-77-01-F' appears to be a project/fiscal year code, not the publication year."
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 3109
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-sonnet-4-6",
+      "input_tokens": 3628,
+      "output_tokens": 522,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "eis_type": {
+    "evidence_quote": "Final Environmental Impact Statement\nKendall Square Urban Renewal Project Mass R-107 Cambridge, Massachusetts",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "n/a",
+      "Q10": "yes"
+    },
+    "verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "failure_tag": null,
+    "note": "critic_failure_tag_off_vocabulary:T03_outside_text_fabrication; The document is clearly a Final EIS, not a Draft. Page 2 shows 'Final Environmental Impact Statement' as a cover-page designation, and page 1 explicitly states 'Final Environmental Impact Statement' in the subject line. The extracted value of 'Draft' is contradicted by the evidence.",
+    "judge_model": "sonnet",
+    "judge_model_id": "us.anthropic.claude-sonnet-4-6",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 91.67,
+      "coverage": 1.0,
+      "matched_page": 1,
+      "normalized_match_span": [
+        1,
+        391,
+        499
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "107"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=91.7 coverage=1.00"
+    },
+    "field": "eis_type",
+    "bucket": "M1",
+    "overrides": [],
+    "notes": [
+      "critic_failure_tag_off_vocabulary:T03_outside_text_fabrication",
+      "The document is clearly a Final EIS, not a Draft. Page 2 shows 'Final Environmental Impact Statement' as a cover-page designation, and page 1 explicitly states 'Final Environmental Impact Statement' in the subject line. The extracted value of 'Draft' is contradicted by the evidence."
+    ],
+    "schema_violations": [
+      "critic_failure_tag_off_vocabulary:T03_outside_text_fabrication"
+    ],
+    "off_vocabulary_failure_tag": "T03_outside_text_fabrication",
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 3109
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-sonnet-4-6",
+      "input_tokens": 3489,
+      "output_tokens": 266,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "lead_agency": {
+    "evidence_quote": "Prepared by:\nBoston Area Office\nU.S. Department of Housing And Urban Development",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a"
+    },
+    "verdict": "PASS",
+    "verdict_before_override": null,
+    "failure_tag": null,
+    "note": null,
+    "judge_model": "sonnet",
+    "judge_model_id": "us.anthropic.claude-sonnet-4-6",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 2,
+      "normalized_match_span": [
+        2,
+        220,
+        298
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "lead_agency",
+    "bucket": "M1",
+    "overrides": [],
+    "notes": [],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 3109
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-sonnet-4-6",
+      "input_tokens": 3425,
+      "output_tokens": 168,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "summary.overview": {
+    "evidence_quote": "The aggregate gross floor area (hereinafter referred to as \"GFA\" and defined in Appendix I of the Urban Renewal Plan attached hereto and made a part hereof as if fully set forth herein) of development in the MXD District shall not exceed 2,773,000 square feet.",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "no",
+      "Q8": "yes"
+    },
+    "verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "failure_tag": "T03_outside_text_fabrication",
+    "note": "The extracted value names the zoning district 'Cambridge Center Mixed Use Development (MXD)' but the cited pages refer only to 'MXD District' without the 'Cambridge Center' prefix. No cited page contains the phrase 'Cambridge Center Mixed Use Development.' This qualifier appears to be an unsupported addition. Additionally, page 100 ('RECOMMENDED HUD ACTION') has blank OCR text, so the claim that H",
+    "judge_model": "sonnet",
+    "judge_model_id": "us.anthropic.claude-sonnet-4-6",
+    "source_pages": [
+      7,
+      8,
+      20,
+      26,
+      27,
+      29,
+      52,
+      66,
+      71,
+      97,
+      98
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 66,
+      "normalized_match_span": [
+        66,
+        259,
+        514
+      ],
+      "pages_searched": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        18,
+        19,
+        20,
+        21,
+        22,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        50,
+        51,
+        52,
+        53,
+        54,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "2773000"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "summary.overview",
+    "bucket": "summary_narrative",
+    "overrides": [],
+    "notes": [
+      "The extracted value names the zoning district 'Cambridge Center Mixed Use Development (MXD)' but the cited pages refer only to 'MXD District' without the 'Cambridge Center' prefix. No cited page contains the phrase 'Cambridge Center Mixed Use Development.' This qualifier appears to be an unsupported addition. Additionally, page 100 ('RECOMMENDED HUD ACTION') has blank OCR text, so the claim that H"
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        7,
+        8,
+        20,
+        26,
+        27,
+        29,
+        52,
+        66,
+        71,
+        97,
+        98
+      ],
+      "pages_included": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        18,
+        19,
+        20,
+        21,
+        22,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        50,
+        51,
+        52,
+        53,
+        54,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 50117
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-sonnet-4-6",
+      "input_tokens": 14435,
+      "output_tokens": 1418,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "summary.project_description": {
+    "evidence_quote": "The aggregate gross floor area (hereinafter referred to as \"GFA\" and defined in Appendix I of the Urban Renewal Plan attached hereto and made a part hereof as if fully set forth herein) of development in the MXD District shall not exceed 2,773,000 square feet.",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes"
+    },
+    "verdict": "PASS",
+    "verdict_before_override": null,
+    "failure_tag": null,
+    "note": "All key figures (44 acres, 2,773,000 sq ft, 250-ft and 80-ft height limits, 100,000 sq ft open space) verify against cited pages 7, 66, 70, 71. Boundaries and NASA context on p.7. MXD name is supported by 'MXD District' throughout though the 'Cambridge Center Mixed Use Development' expansion is inferred; however the acronym MXD is document-defined. Market-rate housing is a light gloss on 'Resident",
+    "judge_model": "opus",
+    "judge_model_id": "us.anthropic.claude-opus-4-7",
+    "source_pages": [
+      7,
+      66,
+      70,
+      71
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 66,
+      "normalized_match_span": [
+        66,
+        259,
+        514
+      ],
+      "pages_searched": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "2773000"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "summary.project_description",
+    "bucket": "summary_narrative",
+    "overrides": [],
+    "notes": [
+      "All key figures (44 acres, 2,773,000 sq ft, 250-ft and 80-ft height limits, 100,000 sq ft open space) verify against cited pages 7, 66, 70, 71. Boundaries and NASA context on p.7. MXD name is supported by 'MXD District' throughout though the 'Cambridge Center Mixed Use Development' expansion is inferred; however the acronym MXD is document-defined. Market-rate housing is a light gloss on 'Resident"
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        7,
+        66,
+        70,
+        71
+      ],
+      "pages_included": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 14366
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-opus-4-7",
+      "input_tokens": 9795,
+      "output_tokens": 468,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "summary.affected_community": {
+    "evidence_quote": "steps should be taken to minimize general off-site construction impacts particularly to the Kennedy School and residential areas",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "no",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "n/a"
+    },
+    "verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "failure_tag": "T03_outside_text_fabrication",
+    "note": "The nondiscrimination clause listing 'race, color, religious creed, national origin, sex, age, ancestry, or marital status' does not appear in the cited pages (8, 28, 29, 56, 57). Page 8 lists negative effects and page 56-57 lists urban renewal objectives, but no nondiscrimination provisions with that enumerated list of protected classes are found on the cited pages.",
+    "judge_model": "opus",
+    "judge_model_id": "us.anthropic.claude-opus-4-7",
+    "source_pages": [
+      8,
+      28,
+      29,
+      56,
+      57
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 29,
+      "normalized_match_span": [
+        29,
+        2564,
+        2692
+      ],
+      "pages_searched": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "summary.affected_community",
+    "bucket": "summary_narrative",
+    "overrides": [],
+    "notes": [
+      "The nondiscrimination clause listing 'race, color, religious creed, national origin, sex, age, ancestry, or marital status' does not appear in the cited pages (8, 28, 29, 56, 57). Page 8 lists negative effects and page 56-57 lists urban renewal objectives, but no nondiscrimination provisions with that enumerated list of protected classes are found on the cited pages."
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        8,
+        28,
+        29,
+        56,
+        57
+      ],
+      "pages_included": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 24628
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-opus-4-7",
+      "input_tokens": 12996,
+      "output_tokens": 324,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "summary.alternatives_overview": {
+    "evidence_quote": "The Maximum Plan has identical uses to the Preferred Plan, but the amount of space for each use is greater and represents the maximum permitted under city zoning regulations.",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "n/a"
+    },
+    "verdict": "PASS",
+    "verdict_before_override": null,
+    "failure_tag": null,
+    "note": "All five alternatives (Preferred, Task Force, City Manager's, Maximum, No Build) are present on pp. 97-98. The 95 percent cleared / no alternative sites framing is supported on p. 8. The Massachusetts Historical Commission's judgment on the three 'Build' alternatives vs. park use is supported on p. 24. Acronyms NASA and HUD are expanded on first use.",
+    "judge_model": "opus",
+    "judge_model_id": "us.anthropic.claude-opus-4-7",
+    "source_pages": [
+      8,
+      24,
+      97,
+      98
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 97,
+      "normalized_match_span": [
+        97,
+        1531,
+        1703
+      ],
+      "pages_searched": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        22,
+        23,
+        24,
+        25,
+        26,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "summary.alternatives_overview",
+    "bucket": "summary_narrative",
+    "overrides": [],
+    "notes": [
+      "All five alternatives (Preferred, Task Force, City Manager's, Maximum, No Build) are present on pp. 97-98. The 95 percent cleared / no alternative sites framing is supported on p. 8. The Massachusetts Historical Commission's judgment on the three 'Build' alternatives vs. park use is supported on p. 24. Acronyms NASA and HUD are expanded on first use."
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        8,
+        24,
+        97,
+        98
+      ],
+      "pages_included": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        22,
+        23,
+        24,
+        25,
+        26,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 13817
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-opus-4-7",
+      "input_tokens": 9888,
+      "output_tokens": 362,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "summary.environmental_impact": {
+    "evidence_quote": "0.7 mgd for the Preferred Plan which represents 75 percent of the flow",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes",
+      "Q10": "n/a"
+    },
+    "verdict": "PASS",
+    "verdict_before_override": null,
+    "failure_tag": null,
+    "note": null,
+    "judge_model": "opus",
+    "judge_model_id": "us.anthropic.claude-opus-4-7",
+    "source_pages": [
+      7,
+      8,
+      26,
+      27,
+      29,
+      32,
+      48,
+      50,
+      51,
+      52,
+      101
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 50,
+      "normalized_match_span": [
+        50,
+        378,
+        448
+      ],
+      "pages_searched": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        99,
+        100,
+        101
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "0.7",
+        "75"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "summary.environmental_impact",
+    "bucket": "summary_numeric",
+    "overrides": [],
+    "notes": [],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        7,
+        8,
+        26,
+        27,
+        29,
+        32,
+        48,
+        50,
+        51,
+        52,
+        101
+      ],
+      "pages_included": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        99,
+        100,
+        101
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 45759
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-opus-4-7",
+      "input_tokens": 20585,
+      "output_tokens": 179,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "summary.public_response": {
+    "evidence_quote": "we have rated this project IO-1",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "yes",
+      "Q4": "no",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "yes",
+      "Q10": "n/a"
+    },
+    "verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "failure_tag": "T02_numeric_hallucination",
+    "note": "The extracted value states EPA rated the DEIS 'LO-1' \u2014 lack of objections, adequate. However, the cited page 20 clearly shows the rating as 'IO-1' (not LO-1). While page 21's explanation shows 'LO -- Lack of Objections' as a rating category, the actual rating stamped on the letter is 'IO-1'. The extraction has substituted 'LO' for 'IO', which is a different rating code. Additionally, the value att",
+    "judge_model": "opus",
+    "judge_model_id": "us.anthropic.claude-opus-4-7",
+    "source_pages": [
+      13,
+      14,
+      20,
+      24,
+      29,
+      34,
+      36,
+      51,
+      52,
+      101
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 20,
+      "normalized_match_span": [
+        20,
+        865,
+        896
+      ],
+      "pages_searched": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        99,
+        100,
+        101
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "1"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "summary.public_response",
+    "bucket": "summary_narrative",
+    "overrides": [],
+    "notes": [
+      "The extracted value states EPA rated the DEIS 'LO-1' \u2014 lack of objections, adequate. However, the cited page 20 clearly shows the rating as 'IO-1' (not LO-1). While page 21's explanation shows 'LO -- Lack of Objections' as a rating category, the actual rating stamped on the letter is 'IO-1'. The extraction has substituted 'LO' for 'IO', which is a different rating code. Additionally, the value att"
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        13,
+        14,
+        20,
+        24,
+        29,
+        34,
+        36,
+        51,
+        52,
+        101
+      ],
+      "pages_included": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        99,
+        100,
+        101
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 53359
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-opus-4-7",
+      "input_tokens": 23404,
+      "output_tokens": 469,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "summary_of_interest": {
+    "evidence_quote": "estimates based on available data now indicate that CO emissions, for example, are not only much higher than previously estimated, but also deteriorate more rapidly in subsequent years.",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7a": "yes",
+      "Q7b": "no",
+      "Q7c": "n/a",
+      "Q7d": "yes"
+    },
+    "verdict": "PASS",
+    "verdict_before_override": null,
+    "failure_tag": null,
+    "note": "All six entries are supported by cited pages with verified quotes. The salience criteria (contested, cross_jurisdictional, unusual_impact, community_pushback, large_magnitude) are drawn from the closed vocabulary and grounded in cited page content. The technical air-quality dispute, HUD noise-standard tension, cross-city BRA comment, absence of site alternatives due to NASA withdrawal, Constructio",
+    "judge_model": "opus",
+    "judge_model_id": "us.anthropic.claude-opus-4-7",
+    "source_pages": [
+      8,
+      26,
+      29,
+      32,
+      36,
+      50
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 32,
+      "normalized_match_span": [
+        32,
+        2179,
+        2360
+      ],
+      "pages_searched": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "summary_of_interest",
+    "bucket": "summary_of_interest",
+    "overrides": [],
+    "notes": [
+      "All six entries are supported by cited pages with verified quotes. The salience criteria (contested, cross_jurisdictional, unusual_impact, community_pushback, large_magnitude) are drawn from the closed vocabulary and grounded in cited page content. The technical air-quality dispute, HUD noise-standard tension, cross-city BRA comment, absence of site alternatives due to NASA withdrawal, Constructio"
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        8,
+        26,
+        29,
+        32,
+        36,
+        50
+      ],
+      "pages_included": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 42431
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-opus-4-7",
+      "input_tokens": 21569,
+      "output_tokens": 398,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "alternatives": {
+    "evidence_quote": null,
+    "rubric_answers": {
+      "Q1": "no",
+      "Q2": "n/a",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "n/a",
+      "Q6a": "n/a",
+      "Q6b": "n/a",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "n/a",
+      "Q10": "n/a"
+    },
+    "verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "failure_tag": "T10_alternatives_chapter_missed",
+    "note": "The extracted value is an empty list with no cited pages and no explicit 'alternatives_chapter_not_found' status. This is a silent empty list, which is never acceptable per the field-specific rules.; evidence_quote_null_consistent_with_RE_EXTRACT",
+    "judge_model": "sonnet",
+    "judge_model_id": "us.anthropic.claude-sonnet-4-6",
+    "source_pages": [],
+    "quote_check": null,
+    "field": "alternatives",
+    "bucket": "alternatives+themes",
+    "overrides": [],
+    "notes": [
+      "The extracted value is an empty list with no cited pages and no explicit 'alternatives_chapter_not_found' status. This is a silent empty list, which is never acceptable per the field-specific rules.",
+      "evidence_quote_null_consistent_with_RE_EXTRACT"
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [],
+      "pages_included": [],
+      "pages_omitted": [],
+      "window_mode": "none",
+      "truncated": false,
+      "n_chars": 0
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-sonnet-4-6",
+      "input_tokens": 2843,
+      "output_tokens": 229,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "themes": {
+    "evidence_quote": "The Kendall Square Urban Renewal Project is located in the eastern part of the City of Cambridge",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "n/a",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes"
+    },
+    "verdict": "PASS",
+    "verdict_before_override": null,
+    "failure_tag": null,
+    "note": "Page 7 describes an urban renewal project with planned uses including light industry, office space, retail, residential, and a parking garage (Urban Development / Urban Expansion and Land Use Change / Housing, Planning, and Built Environment), and mentions improvements to vehicular movement and the Penn Central Railroad Tracks boundary (Transportation Infrastructure / Mobility Networks and Connect",
+    "judge_model": "sonnet",
+    "judge_model_id": "us.anthropic.claude-sonnet-4-6",
+    "source_pages": [
+      7
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 7,
+      "normalized_match_span": [
+        7,
+        309,
+        404
+      ],
+      "pages_searched": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "themes",
+    "bucket": "alternatives+themes",
+    "overrides": [],
+    "notes": [
+      "Page 7 describes an urban renewal project with planned uses including light industry, office space, retail, residential, and a parking garage (Urban Development / Urban Expansion and Land Use Change / Housing, Planning, and Built Environment), and mentions improvements to vehicular movement and the Penn Central Railroad Tracks boundary (Transportation Infrastructure / Mobility Networks and Connect"
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        7
+      ],
+      "pages_included": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 3075
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-sonnet-4-6",
+      "input_tokens": 3470,
+      "output_tokens": 281,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "location": {
+    "evidence_quote": "The Kendall Square Urban Renewal Project is located in the eastern part of the City of Cambridge and is close to the downtown area of Boston.",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes",
+      "Q10": "yes",
+      "Q11": "yes"
+    },
+    "verdict": "PASS",
+    "verdict_before_override": null,
+    "failure_tag": null,
+    "note": "The geocoded point (42.362611, -71.08761) falls within Cambridge, Massachusetts, consistent with the document's description. The matched name 'Kendall Square, MIT, Cambridge, Middlesex County, Massachusetts' is appropriate for the neighborhood-level scope of this urban renewal project site.",
+    "judge_model": "sonnet",
+    "judge_model_id": "us.anthropic.claude-sonnet-4-6",
+    "source_pages": [
+      7
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 7,
+      "normalized_match_span": [
+        7,
+        309,
+        448
+      ],
+      "pages_searched": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "location",
+    "bucket": "location",
+    "overrides": [],
+    "notes": [
+      "The geocoded point (42.362611, -71.08761) falls within Cambridge, Massachusetts, consistent with the document's description. The matched name 'Kendall Square, MIT, Cambridge, Middlesex County, Massachusetts' is appropriate for the neighborhood-level scope of this urban renewal project site."
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        7
+      ],
+      "pages_included": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 3075
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-sonnet-4-6",
+      "input_tokens": 4407,
+      "output_tokens": 262,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "key_people": {
+    "evidence_quote": "Prepared by:\nBoston Area Office\nU.S. Department of Housing And Urban Development\n15 New Chardon Street\nBoston, Massachusetts 02114",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "n/a",
+      "Q8": "n/a",
+      "Q9": "n/a",
+      "Q10": "no",
+      "Q11": "n/a"
+    },
+    "verdict": "HUMAN_REVIEW",
+    "verdict_before_override": "PASS",
+    "failure_tag": null,
+    "note": "The extracted value correctly identifies the Boston Area Office of HUD as the preparer, supported verbatim by page 2. Cooperating agencies, consulted entities, and public commenters are all empty, which is appropriate given the cited pages do not formally designate any cooperating agencies. The comment_response_present flag is supported by page 3 ('This FEIS contains the comments and replies').; dependent_field_cascade; dependent_field_cascade:year=RE_EXTRACT",
+    "judge_model": "sonnet",
+    "judge_model_id": "us.anthropic.claude-sonnet-4-6",
+    "source_pages": [
+      2
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 2,
+      "normalized_match_span": [
+        2,
+        220,
+        347
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "15",
+        "02114"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "key_people",
+    "bucket": "key_people",
+    "overrides": [
+      "dependent_field_cascade"
+    ],
+    "notes": [
+      "The extracted value correctly identifies the Boston Area Office of HUD as the preparer, supported verbatim by page 2. Cooperating agencies, consulted entities, and public commenters are all empty, which is appropriate given the cited pages do not formally designate any cooperating agencies. The comment_response_present flag is supported by page 3 ('This FEIS contains the comments and replies').",
+      "dependent_field_cascade",
+      "dependent_field_cascade:year=RE_EXTRACT"
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        2
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 2884
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-sonnet-4-6",
+      "input_tokens": 4166,
+      "output_tokens": 305,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  }
+}

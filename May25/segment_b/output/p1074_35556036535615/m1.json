@@ -1,0 +1,84 @@
+{
+  "title": {
+    "value": "Kendall Square urban renewal : environmental impact statement.",
+    "confidence": "high",
+    "sources": [
+      "inventory index (MARC 245$ab)"
+    ]
+  },
+  "year": {
+    "value": 1977,
+    "confidence": "high",
+    "sources": [
+      "NUL",
+      "regex (first 3 pages)"
+    ],
+    "adjudication": {
+      "year": 1977,
+      "source_type": "signature",
+      "confidence": "high",
+      "candidates": [
+        {
+          "year": 1977,
+          "count": 4,
+          "pages": [
+            22,
+            26,
+            31,
+            35
+          ],
+          "source_types": [
+            "signature",
+            "transmittal"
+          ],
+          "best_source": "signature"
+        },
+        {
+          "year": 1974,
+          "count": 1,
+          "pages": [
+            1
+          ],
+          "source_types": [
+            "cover"
+          ],
+          "best_source": "cover"
+        },
+        {
+          "year": 1978,
+          "count": 1,
+          "pages": [
+            1
+          ],
+          "source_types": [
+            "cover"
+          ],
+          "best_source": "cover"
+        }
+      ],
+      "evidence_quote": "DATE: August 9, 1977 RE: EOEA #01891, Draft Environmental Impact Report Kendall Square Urban Renewal Project,",
+      "note": "disagrees_with_m1:1978; Multiple signature dates from August 1977 outrank the cover-page date of January 1978; the 1974 date refers to the draft EIS distribution, not the final publication."
+    },
+    "m1_value": 1978,
+    "source_type": "signature"
+  },
+  "eis_type": {
+    "value": "Draft",
+    "confidence": "low",
+    "sources": [
+      "regex (first page)",
+      "Sonnet (first 2 pages)"
+    ],
+    "note": "regex=Draft disagrees with Sonnet=Final",
+    "evidence": "Final Environmental Impact Statement for the Kendall Square Urban Renewal Project"
+  },
+  "lead_agency": {
+    "value": [
+      "Department of Housing and Urban Development"
+    ],
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  }
+}

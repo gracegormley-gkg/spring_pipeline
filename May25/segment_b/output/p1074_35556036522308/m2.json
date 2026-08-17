@@ -1,0 +1,975 @@
+{
+  "summary": {
+    "overview": {
+      "text": "The Environmental Protection Agency (EPA) is finalizing a national air-emission rule under section 112 of the Clean Air Act (the provision covering hazardous air pollutants) that limits vinyl chloride releases from about 50 chemical plants \u2014 those that make vinyl chloride monomer from ethylene dichloride and those that turn the monomer into polyvinyl chloride (PVC) resin. The rule requires 'best available control technology' \u2014 controls already in use elsewhere in the chemical industry \u2014 and would cut emissions by roughly 94% at a typical ethylene dichloride-vinyl chloride plant and 95% at a typical PVC plant, at about $198 million in capital costs and $70 million per year in annualized costs industry-wide. About 4.6 million people live within five miles of these plants (concentrated in Southwest Texas and Southern Louisiana) and face health risks including liver angiosarcoma, a rare cancer linked to vinyl chloride. EPA considered but rejected stricter alternatives (a total ban, zero-emission limits, and incinerating oxychlorination reactor emissions) and less stringent ones, choosing intermediate control levels where added stringency would have required, for example, ten times more energy at PVC dispersion plants. Beyond the intended air-quality benefit, EPA also examined side effects including increased hydrogen chloride emissions from incinerators, extra water and energy use, and solid waste from spent carbon adsorbers; industry commenters argued the standards were too costly and technically infeasible, while environmental commenters (including the Environmental Defense Fund) argued they were too weak and that vinyl chloride should be phased out.",
+      "evidence": [
+        {
+          "quote": "A national emission standard for vinyl chloride emitted from ethylene dichloride-vinyl chloride and polyvinyl chloride plants is being promulgated under the authority of section 112 of the Clea Air Act.",
+          "source_pages": [
+            "135"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "The standard for vinyl chloride is based on best available control technology.",
+          "source_pages": [
+            "99"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "reducing emissions from a typical ethylene dichloride-vinyl chloride plant by approximately 94 percent and from a typical polyvinyl chloride plant by approximately 95 percent",
+          "source_pages": [
+            "135"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "The projected capital cost of meeting all the emission standards is $198 million.",
+          "source_pages": [
+            "104"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "The annualized costs (including operating and maintenance) are expected to be about $70 million",
+          "source_pages": [
+            "104"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "EPA states that approximately 4.6 million people live within a 5-mile radius of ethylene dichloride/vinyl chloride and polyvinyl chloride manufacturing facilities.",
+          "source_pages": [
+            "19"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "The fourteen of seventeen plants referred to are ethylene dichloride-vinyl chloride plants, and these plants are located mainly in Southwest Texas and Southern Louisiana.",
+          "source_pages": [
+            "31"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "Vinyl chloride has been implicated as the causal agent of angiosarcoma and other serious disorders, both carcinogenic and noncarcinogenic, in people with occupational exposure and in animals with experimental exposure to viny! chloride.",
+          "source_pages": [
+            "135"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "A zero emission limit should be established for vinyl chloride. Vinyl chloride should be phased out.",
+          "source_pages": [
+            "30"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "The 97 percent reduction level was not selected because of the large energy expenditure required. The 94 percent reduction level would achieve some degree of emission reduction without incurring the large energy expenditure.",
+          "source_pages": [],
+          "quote_verified": false,
+          "note": "Quote not found verbatim in doc \u2014 forced HUMAN_REVIEW."
+        },
+        {
+          "quote": "energy consumption at polyvinyl chloride dispersion plants to attain the Alternate II control level would be increased by a factor of ten over the energy consumption of plants attaining the Alternate I control level",
+          "source_pages": [
+            "113"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "An incinerator used to attain the standard at an ethylene dichloride-vinyl chloride plant could increase hydrogen chloride emissions by several fold.",
+          "source_pages": [
+            "10"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "These include increased atmospheric emissions of hydrogen chloride, lowered pH of inprocess wastewater due to hydrogen chloride, small increases in the quantity of vinyl chloride released into inprocess wastewater, increased solid waste disposal due to carbon used for adsorption, and increased energy consumption.",
+          "source_pages": [
+            "9"
+          ],
+          "quote_verified": true
+        }
+      ],
+      "acronym_tags": [
+        "T04_undefined_acronym"
+      ],
+      "acronym_stats": {
+        "n_occurrences": 6,
+        "n_distinct": 2,
+        "rewritten": [],
+        "already_defined": [
+          "EPA"
+        ],
+        "undefined": [
+          "PVC"
+        ],
+        "skipped_ordinary": [],
+        "sources": {
+          "EPA": "parenthetical"
+        },
+        "defined_first_use_rate": 0.5,
+        "suggested_verdict": "PASS_WITH_NOTE"
+      }
+    },
+    "project_description": {
+      "text": "Environmental Protection Agency (EPA) is promulgating (finalizing) a national emission standard under section 112 of the Clean Air Act \u2014 the provision covering hazardous air pollutants \u2014 that limits vinyl chloride emissions from two kinds of chemical plants: ethylene dichloride-vinyl chloride plants (which make the vinyl chloride monomer) and polyvinyl chloride (PVC) plants (which convert that monomer into PVC resin). The rule requires 'best available control technology,' meaning controls already in use at chemical plants and adaptable to these facilities, applied to both process vents and fugitive (leak) sources such as valves, pumps, and flanges. Specific numeric limits include stripping most PVC resins down to 400 parts per million (ppm) residual vinyl chloride (2,000 ppm for harder-to-strip 'dispersion' resins used in specialty products) and a 10 ppm concentration limit on many stack emission points. For a typical average-sized ethylene dichloride-vinyl chloride plant, hourly emissions would fall from 176 kg to 10 kg (about 94%), and for a typical PVC plant from 330 kg to 16 kg (about 95%).",
+      "evidence": [
+        {
+          "quote": "On December 24, 1975, the Environmental Protection Agency (EPA) proposed a national emission standard for vinyl chloride under the authority of section 112 of the Clean Air Act.",
+          "source_pages": [
+            "7"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "The purpose of the standard is to minimize vinyl chloride emissions from all known process and fugitive emission sources in ethylene dichloride-vinyl chloride and polyvinyl chloride plants to the level attainable with best available control technology.",
+          "source_pages": [
+            "7"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "the control technology must be in use in one or more plants in the chemical industry and be generally adaptable for use at the plants subject to the standard within the time allowed for compliance under section 112",
+          "source_pages": [
+            "99"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "Stripping the residual vinyl chloride content of dispersion resins to 2000 ppm and other resins to 400 ppm",
+          "source_pages": [
+            "57"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "In regard to the 10 ppm concentration standard for several of the stack emission sources",
+          "source_pages": [
+            "80"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "For a typical average-sized ethylene dichloride-vinyl chloride plant, the standard will reduce hourly vinyl chloride emissions from 176 kg to 10 kg. This is approximately a 94 percent reduction.",
+          "source_pages": [
+            "9"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "For a typical average-sized polyvinyl chloride plant, the hourly vinyl chloride emissions will be reduced from 330 kg to 16 kg, or by approximately 95 percent.",
+          "source_pages": [
+            "9"
+          ],
+          "quote_verified": true
+        }
+      ],
+      "acronym_tags": [
+        "T04_undefined_acronym"
+      ],
+      "acronym_stats": {
+        "n_occurrences": 5,
+        "n_distinct": 2,
+        "rewritten": [
+          "EPA"
+        ],
+        "already_defined": [],
+        "undefined": [
+          "PVC"
+        ],
+        "skipped_ordinary": [],
+        "sources": {
+          "EPA": "parenthetical"
+        },
+        "defined_first_use_rate": 0.5,
+        "suggested_verdict": "PASS_WITH_NOTE"
+      }
+    },
+    "affected_community": {
+      "text": "Environmental Protection Agency (EPA) estimates about 4.6 million people live within a 5-mile radius of ethylene dichloride-vinyl chloride and PVC plants (about 1.7 million within 3 miles), and 14 of the 17 ethylene dichloride-vinyl chloride plants are concentrated in Southwest Texas and Southern Louisiana, in petrochemical complexes near cities such as New Orleans, Houston, Baton Rouge, and Long Beach. Workers at these plants and nearby residents face health risks including liver angiosarcoma (a rare liver cancer) and other cancers, based on studies of occupationally exposed people and lab animals. EPA looked for higher-than-average clustering of angiosarcoma cases among people living near these plants but its survey was not sensitive enough to find such clustering. A separate concern was accidental PVC particulate releases (dust containing residual vinyl chloride) drifting into ambient air near plants, and vinyl chloride levels up to 1.9 ppm measured at plant landfills with 0.4 ppm in a nearby residential area.",
+      "evidence": [
+        {
+          "quote": "EPA states that approximately 4.6 million people live within a 5-mile radius of ethylene dichloride/vinyl chloride and polyvinyl chloride manufacturing facilities.",
+          "source_pages": [
+            "19"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "According to the \"Quantitative Risk Assessment for Community Exposure to Vinyl Chloride,\" approximately 1.7 million people live within a 3-mile radius of such plants.",
+          "source_pages": [
+            "19"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "The fourteen of seventeen plants referred to are ethylene dichloride-vinyl chloride plants, and these plants are located mainly in Southwest Texas and Southern Louisiana.",
+          "source_pages": [
+            "31"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "It is very doubtful that a ban on vinyl chloride would cause the cities of New Orleans, La.; Houston, Tx.; Baton Rouge, La.; and Long Beach, Calif. to be in a total state of unemployment.",
+          "source_pages": [
+            "32"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "Vinyl chloride has been implicated as the causal agent of angiosarcoma and other serious disorders, both carcinogenic and noncarcinogenic, in people with occupational exposure and in animals with experimental exposure to viny! chloride.",
+          "source_pages": [
+            "135"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "a survey of liver angiosarcoma cases in which evidence of higher than average clustering of cases among people living near ethylene dichloride-vinyl chloride and polyvinyl chloride plants was sought but not found",
+          "source_pages": [
+            "122"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "accidental intermittent release of polyvinyl chloride particulate emissions, because of process malfunction, were impacting the surrounding ambient air to which the public has access",
+          "source_pages": [
+            "132"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "Vinyl chloride levels at landfills were as high as 1.9 ppm, and in a residential area near one landfill the air contained 0.4 ppm.",
+          "source_pages": [
+            "110"
+          ],
+          "quote_verified": true
+        }
+      ],
+      "acronym_tags": [
+        "T04_undefined_acronym"
+      ],
+      "acronym_stats": {
+        "n_occurrences": 4,
+        "n_distinct": 2,
+        "rewritten": [
+          "EPA"
+        ],
+        "already_defined": [],
+        "undefined": [
+          "PVC"
+        ],
+        "skipped_ordinary": [],
+        "sources": {
+          "EPA": "parenthetical"
+        },
+        "defined_first_use_rate": 0.5,
+        "suggested_verdict": "PASS_WITH_NOTE"
+      }
+    },
+    "alternatives_overview": {
+      "text": "Environmental Protection Agency (EPA) compared control options of different stringency for each emission point. For the oxychlorination reactor (a step in making vinyl chloride monomer), EPA considered three control levels \u2014 roughly 90%, 94%, and 97% plant-wide reductions \u2014 and chose the 94% level, rejecting the 97% option because incineration would require a large fuel penalty. For PVC dispersion plants (which make specialty resins), Alternative I cuts emissions 52% and the stricter Alternative II cuts 95% but uses ten times more energy. For PVC resin cleanup, EPA compared improved 'stripping' (removing residual vinyl chloride from the resin) with add-on controls like incinerators and found stripping cheaper \u2014 about $3.3 million installed capital and $1.36 million annualized versus $5.29 million and $4.89 million for incineration. EPA rejected as 'grossly disproportionate' in cost such options as placing a 'bubble' around a whole plant to capture all emissions, stacking multiple incinerators, and incinerating the oxychlorination process emissions. Broader alternatives raised by commenters and rejected included a total ban on vinyl chloride, a zero-emission limit, and setting an ambient air quality standard under section 109 or regulating only new sources under section 111.",
+      "evidence": [
+        {
+          "quote": "Three alternatives are proposed in the report. One alternative would accomplish a 90 percent emission reduction in the entire plant; another 94 percent; and another 97 percent.",
+          "source_pages": [
+            "34"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "The 97 percent reduction level was not selected because of the large energy expenditure required. The 94 percent reduction level would achieve some degree of emission reduction without incurring the large energy expenditure.",
+          "source_pages": [],
+          "quote_verified": false,
+          "note": "Quote not found verbatim in doc \u2014 forced HUMAN_REVIEW."
+        },
+        {
+          "quote": "For polyvinyl chloride dispersion plants Alternative I reduces emissions by 52 percent and Alternative II reduces emissions by 95 percent.",
+          "source_pages": [
+            "113"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "energy consumption at polyvinyl chloride dispersion plants to attain the Alternate II control level would be increased by a factor of ten over the energy consumption of plants attaining the Alternate I control level",
+          "source_pages": [
+            "113"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "For improved stripping, the installed capital cost is $3,319,000 and the total annualized cost is $1,363,000. For incineration, the installed capital cost is $5,287,000 and the total annualized cost is $4,892,000.",
+          "source_pages": [
+            "54"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "Technologies which EPA considered to not fit into its definition of best available control technology included placing a bubble around a plant to capture all the emissions from it for control, using multiple incinerators on a gas stream, and incineration of the emissions from the oxychlorination process.",
+          "source_pages": [
+            "99"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "A zero emission limit should be established for vinyl chloride. Vinyl chloride should be phased out.",
+          "source_pages": [
+            "30"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "Standards for vinyl chloride should be set under the authority of section 109 or 111 of the Clean Air Act.",
+          "source_pages": [
+            "27"
+          ],
+          "quote_verified": true
+        }
+      ],
+      "acronym_tags": [
+        "T04_undefined_acronym"
+      ],
+      "acronym_stats": {
+        "n_occurrences": 6,
+        "n_distinct": 2,
+        "rewritten": [
+          "EPA"
+        ],
+        "already_defined": [],
+        "undefined": [
+          "PVC"
+        ],
+        "skipped_ordinary": [],
+        "sources": {
+          "EPA": "parenthetical"
+        },
+        "defined_first_use_rate": 0.5,
+        "suggested_verdict": "PASS_WITH_NOTE"
+      }
+    },
+    "environmental_impact": {
+      "text": "The primary impact is beneficial: emissions cuts of about 94\u201395% at typical plants and corresponding drops in ambient (outdoor) vinyl chloride concentrations, lowering health risks including angiosarcoma. Fugitive emissions \u2014 small leaks from valves, pumps, sample-taking, and equipment openings \u2014 are the largest source at these plants, with sources following the PVC resin stripper alone accounting for 46% of a PVC plant's emissions. Side effects include extra hydrogen chloride (HCl) from incinerators \u2014 even with a moderately efficient scrubber (98% control), HCl emissions at a typical ethylene dichloride-vinyl chloride plant could still rise about 35%, and under worst-case weather conditions ambient HCl concentrations could reach or exceed foreign standards and National Academy of Sciences guidelines. Other side effects are lower pH in in-process wastewater, small increases in vinyl chloride in wastewater, extra solid waste from spent activated carbon adsorbers (with a 1\u20133 year bed life Environmental Protection Agency (EPA) calls 'conjectural'), and increased energy and water use \u2014 though industry says water use will be much lower than EPA's worst-case estimate because plants will recycle. EPA's cancer risk assessment used a linear no-threshold model (which assumes any dose carries some cancer risk, with no safe cutoff), while industry argued a log-probit model would place risks about ten times lower.",
+      "evidence": [
+        {
+          "quote": "The primary environmental impacts of the standard are beneficial and will consist of reductions in vinyl chloride emissions from ethylene dichloride-vinyl chloride and polyvinyl chloride plants, and consequently, corresponding reductions in ambient air concentrations of vinyl chloride and risks to health in the vicinity of these sources.",
+          "source_pages": [
+            "9"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "Fugitive emission sources are the largest sources of emissions to the atmosphere.",
+          "source_pages": [
+            "71"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "Emission sources following the polyvinyl chloride resin stripper account for 46 percent of a polyvinyl chloride plant's vinyl chloride emissions.",
+          "source_pages": [
+            "57"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "An incinerator used to attain the standard at an ethylene dichloride-vinyl chloride plant could increase hydrogen chloride emissions by several fold.",
+          "source_pages": [
+            "10"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "If even a moderately efficient scrubber (98 percent control) were used to control the hydrogen chloride emissions resulting from incineration of vinyl chloride emissions, the increase in hydrogen chloride emissions from a typical ethylene dichloride-vinyl chloride plant due to the standard would be reduced to 35 percent.",
+          "source_pages": [
+            "10"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "diffusion model results indicate that under \"worst-case\" meteorological conditions, the hydrogen chloride emissions from the process equipment and the incinerator combined would cause maximum ambient concentrations of hydrogen chloride in the vicinity of ethylene dichloride-vinyl chloride plants to be in the same range or somewhat higher than existing foreign standards and National Academy of Sciences (NAS) guidelines for public exposure.",
+          "source_pages": [
+            "10"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "These include increased atmospheric emissions of hydrogen chloride, lowered pH of inprocess wastewater due to hydrogen chloride, small increases in the quantity of vinyl chloride released into inprocess wastewater, increased solid waste disposal due to carbon used for adsorption, and increased energy consumption.",
+          "source_pages": [
+            "9"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "since there has been very limited experience with carbon adsorption in the ethylene dichloride-vinyl chloride or polyvinyl chloride industries, it is not known for certain at this time what the carbon bed-life would be or whether the damaged carbon could be regenerated",
+          "source_pages": [
+            "109"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "It is gratifying to EPA to know that recycling will be used and that the water consumption impact will be negligible.",
+          "source_pages": [
+            "108"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "The risk assessment should have been based on the log-probit model, rather than the linear no-threshold model.",
+          "source_pages": [
+            "120"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "It is possible that if this were done, the risks would be approximately one-tenth of the current estimates.",
+          "source_pages": [
+            "122"
+          ],
+          "quote_verified": true
+        }
+      ],
+      "acronym_tags": [
+        "T04_undefined_acronym"
+      ],
+      "acronym_stats": {
+        "n_occurrences": 5,
+        "n_distinct": 2,
+        "rewritten": [
+          "EPA"
+        ],
+        "already_defined": [],
+        "undefined": [
+          "PVC"
+        ],
+        "skipped_ordinary": [],
+        "sources": {
+          "EPA": "parenthetical"
+        },
+        "defined_first_use_rate": 0.5,
+        "suggested_verdict": "PASS_WITH_NOTE"
+      }
+    },
+    "public_response": {
+      "text": "Environmental Protection Agency (EPA) received 50 comment letters and held a public hearing on February 3, 1976, drawing input from industry (e.g., Dow, Goodyear, B.F. Goodrich, Society of the Plastics Industry), state and local air agencies, environmental groups (Environmental Defense Fund, Health Research Group, West Virginia Citizen Action Group), federal agencies (NIOSH, Occupational Safety and Health (OSHA), Commerce, Interior), and individual residents. Industry commenters generally argued the standards were too strict, technically infeasible, or too costly \u2014 for example, requesting the 2,000 ppm dispersion-resin limit be relaxed to 6,000 ppm, longer averaging periods (30 days instead of 24 hours), removal of the double mechanical seal pump requirement, and provision for emergency manual venting; they also argued EPA overstated shutdown risk (three of four plants EPA had predicted would close later told EPA they would not) and picked an overly conservative cancer risk model. Environmental commenters, including the Environmental Defense Fund, urged much stricter action \u2014 a cost/risk analysis, zero-emission limits, phaseout of substitutable uses within one year, and a total ban within three years \u2014 and argued EPA's risk assessment understated risk by ignoring prenatal exposure, childhood exposure, longer human latency, and synergies with other pollutants. Hearing witness Barry Castleman argued substitutes exist for more PVC uses than EPA listed and criticized EPA for not putting a dollar value on worker and community health impacts. EPA declined most requests to weaken numeric limits and refused to add malfunction, startup, or variance exemptions given the seriousness of vinyl chloride health effects under section 112, but made clarifying changes including allowing emergency manual venting, correcting a reactor-opening emission factor to 0.002 kg vinyl chloride per 100 kg PVC, and relaxing the portable hydrocarbon detector sensitivity requirement from 5 ppm to 10 ppm.",
+      "evidence": [
+        {
+          "quote": "Fifty comment letters were received from environmental groups, industry, State and local air pollution control agencies, and individual citizens. On February 3, 1976, EPA held a public hearing on the proposed standard in Washington, D. C.",
+          "source_pages": [
+            "7"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "the industry requests the allowable residual vinyl chloride content of certain dispersion resins to be set at 6,000 ppm",
+          "source_pages": [
+            "52"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "Increase the averaging time for stripping from 24 hours to 30 days.",
+          "source_pages": [
+            "59"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "EPA should withdraw the requirement of using double mechanical seal pumps in place of single seal pumps now used.",
+          "source_pages": [
+            "65"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "A provision for emergency manual venting should be added to $61.65(b)(5).",
+          "source_pages": [
+            "69"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "The number of plant shutdowns was inaccurately estimated, in that three out of four plants EPA forecasted would close have since told EPA they will not close.",
+          "source_pages": [
+            "100"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "The standard should be based on a cost/risk analysis rather than best available control technology.",
+          "source_pages": [
+            "30"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "A zero emission limit should be established for vinyl chloride. Vinyl chloride should be phased out. Vinyl chloride usage should be banned now for products for which substitutes are available.",
+          "source_pages": [
+            "30"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "The vinyl chloride standard is not stringent enough. More stringent restrictions could include (1) no variances on time schedules to install the best available controls, (2) zero emission limits for substitutable uses of polyvinyl chloride plastics after one year, and (3) zero emissions for all sources of vinyl chloride after three years.",
+          "source_pages": [
+            "32"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "The risk assessment may understate the risk because it does not reflect the effects of pre-natal and childhood exposure, possible synergistic effects, or the effects of adult exposure for entire lifetimes.",
+          "source_pages": [
+            "124"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "Some polyvinyl chloride substitutes must be available for those uses listed by EPA as having no substitutes.",
+          "source_pages": [
+            "106"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "The cost of vinyl chloride emissions in terms of worker health and community health and safety impacts has not been evaluated.",
+          "source_pages": [
+            "106"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "Because of the serious nature of the health effects of pollutants regulated under section 112, EPA has determined that it would not be appropriate to consider adding malfunction provisions to the regulation",
+          "source_pages": [
+            "131"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "Recalculation gives a correction emission factor of 0.002 kg vinyl chloride/100 kg polyvinyl chloride. The standard has been changed to reflect this correction.",
+          "source_pages": [
+            "51"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "The definition of portable hydrocarbon detector has been revised to relax the sensitivity requirement to 10 ppm.",
+          "source_pages": [
+            "88"
+          ],
+          "quote_verified": true
+        }
+      ],
+      "based_on_main_doc_only": true,
+      "acronym_tags": [
+        "T04_undefined_acronym"
+      ],
+      "acronym_stats": {
+        "n_occurrences": 12,
+        "n_distinct": 4,
+        "rewritten": [
+          "EPA",
+          "OSHA"
+        ],
+        "already_defined": [],
+        "undefined": [
+          "NIOSH",
+          "PVC"
+        ],
+        "skipped_ordinary": [],
+        "sources": {
+          "EPA": "parenthetical",
+          "OSHA": "parenthetical"
+        },
+        "defined_first_use_rate": 0.5,
+        "suggested_verdict": "PASS_WITH_NOTE"
+      }
+    }
+  },
+  "_prompt_version": "v1_plain_language",
+  "summary_of_interest": [
+    {
+      "claim": "Environmental Protection Agency (EPA) acknowledges that controlling vinyl chloride by incineration could push nearby hydrogen chloride (HCl) concentrations to or above foreign standards and National Academy of Sciences public-exposure guidelines under worst-case weather \u2014 meaning the rule may partly trade one hazardous air pollutant for another.",
+      "salience_criterion": "unusual_impact",
+      "page": 10,
+      "evidence_quote": "diffusion model results indicate that under \"worst-case\" meteorological conditions, the hydrogen chloride emissions from the process equipment and the incinerator combined would cause maximum ambient concentrations of hydrogen chloride in the vicinity of ethylene dichloride-vinyl chloride plants to be in the same range or somewhat higher than existing foreign standards and National Academy of Sciences (NAS) guidelines for public exposure.",
+      "why_notable": "A rule designed to protect public health from one hazardous air pollutant is expected to raise ambient levels of a second hazardous pollutant to guideline-exceeding levels near the same communities.",
+      "evidence": [
+        {
+          "quote": "diffusion model results indicate that under \"worst-case\" meteorological conditions, the hydrogen chloride emissions from the process equipment and the incinerator combined would cause maximum ambient concentrations of hydrogen chloride in the vicinity of ethylene dichloride-vinyl chloride plants to be in the same range or somewhat higher than existing foreign standards and National Academy of Sciences (NAS) guidelines for public exposure.",
+          "source_pages": [
+            "10"
+          ],
+          "quote_verified": true
+        }
+      ]
+    },
+    {
+      "claim": "The Environmental Defense Fund and other commenters pushed for a one-year phaseout of substitutable PVC uses and a total ban on vinyl chloride within three years \u2014 a far more sweeping approach than the section 112 emission-standard framework Environmental Protection Agency (EPA) was using.",
+      "salience_criterion": "novel_alternative",
+      "page": 32,
+      "evidence_quote": "The vinyl chloride standard is not stringent enough. More stringent restrictions could include (1) no variances on time schedules to install the best available controls, (2) zero emission limits for substitutable uses of polyvinyl chloride plastics after one year, and (3) zero emissions for all sources of vinyl chloride after three years.",
+      "why_notable": "Commenters proposed effectively banning a major industrial commodity chemical, an alternative well outside the standard emission-control menu Environmental Protection Agency (EPA) analyzed.",
+      "evidence": [
+        {
+          "quote": "The vinyl chloride standard is not stringent enough. More stringent restrictions could include (1) no variances on time schedules to install the best available controls, (2) zero emission limits for substitutable uses of polyvinyl chloride plastics after one year, and (3) zero emissions for all sources of vinyl chloride after three years.",
+          "source_pages": [
+            "32"
+          ],
+          "quote_verified": true
+        }
+      ]
+    },
+    {
+      "claim": "Environmental Protection Agency (EPA) chose a linear no-threshold cancer risk model over industry's preferred log-probit model, a methodological choice that industry argued would place calculated risks about ten times higher \u2014 a foundational disagreement about how to quantify carcinogen risk.",
+      "salience_criterion": "contested",
+      "page": null,
+      "evidence_quote": "The risk assessment should have been based on the log-probit model, rather than the linear no-threshold model.... It is possible that if this were done, the risks would be approximately one-tenth of the current estimates.",
+      "why_notable": "The dispute is not about specific control technologies but about the underlying dose-response model, and the choice moves the estimated risk by an order of magnitude.",
+      "evidence": [
+        {
+          "quote": "The risk assessment should have been based on the log-probit model, rather than the linear no-threshold model.... It is possible that if this were done, the risks would be approximately one-tenth of the current estimates.",
+          "source_pages": [],
+          "quote_verified": false,
+          "note": "Quote not found verbatim in doc \u2014 forced HUMAN_REVIEW."
+        }
+      ]
+    },
+    {
+      "claim": "Environmental Protection Agency (EPA) refused to add malfunction, startup, or variance exemptions to the rule, an unusually strict posture it explicitly ties to section 112's treatment of hazardous air pollutants \u2014 signaling how EPA intends to handle future hazardous-pollutant standards.",
+      "salience_criterion": "precedent",
+      "page": 131,
+      "evidence_quote": "Because of the serious nature of the health effects of pollutants regulated under section 112, EPA has determined that it would not be appropriate to consider adding malfunction provisions to the regulation",
+      "why_notable": "Environmental Protection Agency (EPA) is drawing a categorical line for section 112 pollutants that departs from more flexible treatment typical of other Clean Air Act rules.",
+      "evidence": [
+        {
+          "quote": "Because of the serious nature of the health effects of pollutants regulated under section 112, EPA has determined that it would not be appropriate to consider adding malfunction provisions to the regulation",
+          "source_pages": [
+            "131"
+          ],
+          "quote_verified": true
+        }
+      ]
+    },
+    {
+      "claim": "Roughly 4.6 million people live within five miles of these plants, and 14 of 17 ethylene dichloride-vinyl chloride plants are clustered along the Texas\u2013Louisiana Gulf Coast \u2014 a heavy concentration of a hazardous-pollutant risk in a single region.",
+      "salience_criterion": "large_magnitude",
+      "page": 31,
+      "evidence_quote": "The fourteen of seventeen plants referred to are ethylene dichloride-vinyl chloride plants, and these plants are located mainly in Southwest Texas and Southern Louisiana.",
+      "why_notable": "The geographic concentration means the rule's benefits (and any HCl side effects) fall disproportionately on Gulf Coast petrochemical-corridor communities.",
+      "evidence": [
+        {
+          "quote": "The fourteen of seventeen plants referred to are ethylene dichloride-vinyl chloride plants, and these plants are located mainly in Southwest Texas and Southern Louisiana.",
+          "source_pages": [
+            "31"
+          ],
+          "quote_verified": true
+        }
+      ]
+    },
+    {
+      "claim": "Environmental Protection Agency (EPA)'s earlier prediction that four plants would shut down proved wrong for three of them, which told EPA they will remain open \u2014 an unusual explicit acknowledgment that the agency's economic impact forecast was substantially off.",
+      "salience_criterion": "contested",
+      "page": 100,
+      "evidence_quote": "The number of plant shutdowns was inaccurately estimated, in that three out of four plants EPA forecasted would close have since told EPA they will not close.",
+      "why_notable": "The record documents a direct factual reversal of Environmental Protection Agency (EPA)'s own economic feasibility analysis, a rare on-the-record correction of a shutdown prediction.",
+      "evidence": [
+        {
+          "quote": "The number of plant shutdowns was inaccurately estimated, in that three out of four plants EPA forecasted would close have since told EPA they will not close.",
+          "source_pages": [
+            "100"
+          ],
+          "quote_verified": true
+        }
+      ]
+    }
+  ],
+  "alternatives": {
+    "value": [],
+    "confidence": "low",
+    "evidence": [],
+    "note": "Alternatives chapter not detected structurally \u2014 skipped per v2 plan (no word-regex fallback)."
+  },
+  "themes": {
+    "value": {
+      "themes": [
+        "Industrial Production and Materials",
+        "Governance and Institutional Control"
+      ],
+      "subthemes": [
+        "Industrial Manufacturing and Pollution",
+        "Environmental Regulation and Policy",
+        "Resource Extraction and Material Flows",
+        "Community Resistance and Activism"
+      ]
+    },
+    "confidence": "high",
+    "justification": "The document centers on EPA's national emission standard for vinyl chloride from chemical manufacturing plants (industrial_manufacturing_and_pollution, resource_extraction_and_material_flows), implemented through Clean Air Act section 112 rulemaking (environmental_regulation_and_policy). The public_response field documents significant pushback from both industry and environmental groups including the Environmental Defense Fund and community organizations (community_resistance_and_activism).",
+    "evidence": [
+      {
+        "quote": "On December 24, 1975, the Environmental Protection Agency (EPA) proposed a national emission standard for vinyl chloride under the authority of section 112 of the Clean Air Act.",
+        "source_pages": [
+          "7"
+        ],
+        "quote_verified": true
+      },
+      {
+        "quote": "The purpose of the standard is to minimize vinyl chloride emissions from all known process and fugitive emission sources in ethylene dichloride-vinyl chloride and polyvinyl chloride plants to the level attainable with best available control technology.",
+        "source_pages": [
+          "7"
+        ],
+        "quote_verified": true
+      },
+      {
+        "quote": "the control technology must be in use in one or more plants in the chemical industry and be generally adaptable for use at the plants subject to the standard within the time allowed for compliance under section 112",
+        "source_pages": [
+          "99"
+        ],
+        "quote_verified": true
+      }
+    ]
+  },
+  "location": {
+    "value": {
+      "places": [],
+      "is_multi_site": false,
+      "geocoded": [],
+      "scope": "national",
+      "textual_location": "national",
+      "corridor": false
+    },
+    "confidence": "high",
+    "note": "Scope=national: no geocoding attempted (MCAL_PLAN 3.9 step 2).",
+    "tags": [],
+    "human_review": false,
+    "geocoder_stack": "reduced",
+    "hop_stats": {
+      "attempts": {},
+      "hits": {},
+      "errors": {},
+      "skipped": {},
+      "hit_rates": {}
+    }
+  },
+  "key_people": {
+    "value": {
+      "agency_preparers": [],
+      "cooperating_agencies": [],
+      "consulted_entities": [],
+      "public_commenters": [],
+      "comment_response_present": false
+    },
+    "confidence": "low",
+    "tags": [],
+    "human_review": true,
+    "human_review_fields": {
+      "agency_preparers": false,
+      "cooperating_agencies": true,
+      "consulted_entities": false,
+      "public_commenters": false
+    },
+    "era_gate": {
+      "year": 1976,
+      "year_critic_verdict": null,
+      "field_human_review": true,
+      "cooperating_human_review": true,
+      "skip_cooperating_extraction": false,
+      "allow_cooperating_fallback": false,
+      "tags": [],
+      "reason": "year Critic verdict MISSING is not in ('PASS', 'PASS_WITH_NOTE'); key_people -> HUMAN_REVIEW unconditionally via the dependent-field cascade (settings.DEPENDENT_FIELDS). The era is unknown, so the designation-check fallback is suppressed; a whitelisted heading is still honoured.",
+      "dependent_fields_config": {
+        "year": [
+          "key_people"
+        ]
+      }
+    },
+    "note": "year Critic verdict MISSING is not in ('PASS', 'PASS_WITH_NOTE'); key_people -> HUMAN_REVIEW unconditionally via the dependent-field cascade (settings.DEPENDENT_FIELDS). The era is unknown, so the designation-check fallback is suppressed; a whitelisted heading is still honoured. No heading matched the cooperating-agency whitelist and the era gate suppressed the designation-check fallback; empty list + HUMAN_REVIEW. No comments-received / response-to-comments / hearing-transcript heading found; empty list per MCAL_PLAN 3.10 step 5."
+  },
+  "chunking_meta": {
+    "n_chunks": 3,
+    "n_chapters_detected": 1,
+    "chapters": [
+      {
+        "label": "2.8 Environmental Impacts",
+        "ceq_chapter": "Environmental Consequences",
+        "start_page": 107,
+        "end_page": 135
+      }
+    ],
+    "chunk_size_pages": 50,
+    "n_chunks_summarized": 3,
+    "n_chunks_available": 3,
+    "chunks_truncated": false
+  },
+  "location_pipeline": {
+    "scope": "national",
+    "justification": "The document is a Standard Support and Environmental Impact Statement for a promulgated national emission standard for vinyl chloride issued under Section 112 of the Clean Air Act, applying to all ethylene dichloride-vinyl chloride and polyvinyl chloride plants across the United States with no single project location.",
+    "classifier_source": "sonnet",
+    "sites": [],
+    "geocoded": [],
+    "textual_location": "national",
+    "corridor": false,
+    "corridor_endpoints": null,
+    "tags": [],
+    "human_review": false,
+    "notes": [
+      "Scope=national: no geocoding attempted (MCAL_PLAN 3.9 step 2)."
+    ],
+    "geocoder_stack": "reduced",
+    "reduced_mode": true,
+    "hop_stats": {
+      "attempts": {},
+      "hits": {},
+      "errors": {},
+      "skipped": {},
+      "hit_rates": {}
+    },
+    "geocoder_assets": {}
+  },
+  "key_people_pipeline": {
+    "agency_preparers": [],
+    "cooperating_agencies": [],
+    "consulted_entities": [],
+    "public_commenters": [],
+    "era_gate": {
+      "year": 1976,
+      "year_critic_verdict": null,
+      "field_human_review": true,
+      "cooperating_human_review": true,
+      "skip_cooperating_extraction": false,
+      "allow_cooperating_fallback": false,
+      "tags": [],
+      "reason": "year Critic verdict MISSING is not in ('PASS', 'PASS_WITH_NOTE'); key_people -> HUMAN_REVIEW unconditionally via the dependent-field cascade (settings.DEPENDENT_FIELDS). The era is unknown, so the designation-check fallback is suppressed; a whitelisted heading is still honoured.",
+      "dependent_fields_config": {
+        "year": [
+          "key_people"
+        ]
+      }
+    },
+    "human_review": true,
+    "human_review_fields": {
+      "agency_preparers": false,
+      "cooperating_agencies": true,
+      "consulted_entities": false,
+      "public_commenters": false
+    },
+    "tags": [],
+    "notes": [
+      "year Critic verdict MISSING is not in ('PASS', 'PASS_WITH_NOTE'); key_people -> HUMAN_REVIEW unconditionally via the dependent-field cascade (settings.DEPENDENT_FIELDS). The era is unknown, so the designation-check fallback is suppressed; a whitelisted heading is still honoured.",
+      "No heading matched the cooperating-agency whitelist and the era gate suppressed the designation-check fallback; empty list + HUMAN_REVIEW.",
+      "No comments-received / response-to-comments / hearing-transcript heading found; empty list per MCAL_PLAN 3.10 step 5."
+    ],
+    "sources": {
+      "agency_preparers": {
+        "source": "first_30_pages_fallback",
+        "sections": [],
+        "extractor_ok": true,
+        "n": 0
+      },
+      "cooperating_agencies": {
+        "source": "fallback_suppressed_by_era_gate",
+        "sections": [],
+        "human_review": true,
+        "fallback_answer": null,
+        "fallback_reasoning": null,
+        "note": "year Critic verdict MISSING is not in ('PASS', 'PASS_WITH_NOTE'); key_people -> HUMAN_REVIEW unconditionally via the dependent-field cascade (settings.DEPENDENT_FIELDS). The era is unknown, so the designation-check fallback is suppressed; a whitelisted heading is still honoured.",
+        "n": 0
+      },
+      "consulted_entities": {
+        "source": "not_found",
+        "n": 0,
+        "extractor_ok": null,
+        "note": "No consultation chapter or heading found."
+      },
+      "public_commenters": {
+        "source": "no_comment_chapter",
+        "sections": [],
+        "human_review": false,
+        "n": 0,
+        "extractor_ok": null,
+        "note": "No comments-received / response-to-comments / hearing-transcript heading found; empty list per MCAL_PLAN 3.10 step 5."
+      }
+    },
+    "counts": {
+      "agency_preparers": 0,
+      "cooperating_agencies": 0,
+      "consulted_entities": 0,
+      "public_commenters": 0
+    },
+    "role_check_items": []
+  },
+  "acronym_meta": {
+    "n_glossary": 7,
+    "n_rewritten": 0,
+    "undefined": {
+      "summary.overview": [
+        "PVC"
+      ],
+      "summary.project_description": [
+        "PVC"
+      ],
+      "summary.affected_community": [
+        "PVC"
+      ],
+      "summary.alternatives_overview": [
+        "PVC"
+      ],
+      "summary.environmental_impact": [
+        "PVC"
+      ],
+      "summary.public_response": [
+        "NIOSH",
+        "PVC"
+      ],
+      "summary_of_interest[1].claim": [
+        "PVC"
+      ]
+    },
+    "per_field": {
+      "summary.overview": {
+        "s_acronym": 0.5,
+        "n_rewritten": 0,
+        "undefined": [
+          "PVC"
+        ]
+      },
+      "summary.project_description": {
+        "s_acronym": 0.5,
+        "n_rewritten": 0,
+        "undefined": [
+          "PVC"
+        ]
+      },
+      "summary.affected_community": {
+        "s_acronym": 0.5,
+        "n_rewritten": 0,
+        "undefined": [
+          "PVC"
+        ]
+      },
+      "summary.alternatives_overview": {
+        "s_acronym": 0.5,
+        "n_rewritten": 0,
+        "undefined": [
+          "PVC"
+        ]
+      },
+      "summary.environmental_impact": {
+        "s_acronym": 0.5,
+        "n_rewritten": 0,
+        "undefined": [
+          "PVC"
+        ]
+      },
+      "summary.public_response": {
+        "s_acronym": 0.5,
+        "n_rewritten": 0,
+        "undefined": [
+          "NIOSH",
+          "PVC"
+        ]
+      }
+    }
+  }
+}

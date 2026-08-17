@@ -1,0 +1,2432 @@
+{
+  "alternatives": {
+    "extracted_value": [
+      {
+        "name": "Burning",
+        "description": "Destroying the hemp crop by burning it, which was deemed infeasible due to the muck land substrate that would burn continuously and worsen air quality.",
+        "evidence": [
+          {
+            "quote": "Burning of the Hemp. This is not a feasible alternative since the acreage involved is mostly muck land which would burn continuously and would lead to increased air pollution.",
+            "source_pages": [
+              "14"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "name": "Mowing or Tillage",
+        "description": "Mechanically removing the crop through mowing or tilling the land, ruled out because the area cannot be reached by road equipment.",
+        "evidence": [
+          {
+            "quote": "Mowing or Tillage of the Acreage. The area is inaccessible to road equipment.",
+            "source_pages": [
+              "14"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "name": "Improved Law Enforcement",
+        "description": "Increasing patrols and arrests of trespassers to prevent harvesting of the crop, considered insufficient given that existing personnel could stop only an estimated 10 percent of pickers.",
+        "evidence": [
+          {
+            "quote": "Improved Law Enforcement Measures to Arrest Trespassers and Provide High Visibility Patrol of Property. The law enforcement personnel necessary to patrol 65 acres of land is presently unavailable. It is estimated that only 10 percent of the pickers can be stopped with existing force.",
+            "source_pages": [
+              "14"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "name": "Legalization of Marijuana",
+        "description": "Removing legal prohibitions on marijuana so the crop would no longer be illicit, rejected because such a policy change is outside the agency's authority and could not be enacted within the necessary timeframe.",
+        "evidence": [
+          {
+            "quote": "Legalization of Marijuana. This is not a viable alternative since removal of legal sanctions is not within the control of this agency.",
+            "source_pages": [
+              "14"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "name": "No Action (Allow Hemp to Mature)",
+        "description": "Taking no action and allowing the hemp to grow to maturity, which would result in an estimated 200 arrests of pickers, widespread marijuana use, and frustration of national drug policy.",
+        "evidence": [
+          {
+            "quote": "Allowing Hemp to Grow to Maturity (abandoning the project). There would be no immediate change in the environment. However, those individuals who pick the marijuana plants will be subject to arrest and it is estimated that 200 persons will be arrested.",
+            "source_pages": [
+              "15"
+            ],
+            "quote_verified": true
+          }
+        ]
+      }
+    ],
+    "evidence_quote": "Burning of the Hemp. This is not a feasible alternative since the acreage involved is mostly muck land which would burn continuously and would lead to increased air pollution.",
+    "source_pages": [
+      14,
+      15
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "n/a",
+      "Q8": "yes",
+      "Q9": "yes",
+      "Q10": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "bucket_degenerate_severe",
+    "failure_tag": null,
+    "bucket": "alternatives+themes",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "bucket_degenerate_severe",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 14,
+      "normalized_match_span": [
+        14,
+        763,
+        933
+      ],
+      "pages_searched": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": true,
+      "degenerate_severe": true,
+      "saturated": false,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 1
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": null,
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        14,
+        15
+      ],
+      "pages_included": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 6934
+    }
+  },
+  "eis_type": {
+    "extracted_value": "Final",
+    "evidence_quote": "FINAL ENVIRONMENTAL STATEMENT",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "n/a",
+      "Q10": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": null,
+      "matched_page": 1,
+      "normalized_match_span": [
+        1,
+        75,
+        104
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=n/a"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": null,
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 5141
+    }
+  },
+  "key_people": {
+    "extracted_value": {
+      "agency_preparers": [],
+      "cooperating_agencies": [],
+      "consulted_entities": [
+        {
+          "name": "United States Environmental Protection Agency",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "The United States Environmental Protection Agency has advised that the 2,4D herbicide proposed use is registered for the control of wild hemp and can be used on ditch banks as well as other infested acreage.",
+              "source_pages": [
+                "16"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Cooperative Extension Service, State of Indiana, Purdue University",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "The Cooperative Extension Service, State of Indiana, Purdue University advised that the program, under the control of one agency far outweighs large indiscriminate individual herbicide application.",
+              "source_pages": [
+                "16"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Professor Knake of the Agronomy Department, University of Illinois",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "Professor Knake of the Agronomy Department, University of Illinois, suggests that precautions should be taken to avoid or at least minimize the possibility of 2,4D getting into the drainage ditches.",
+              "source_pages": [
+                "16"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "United States Department of Agriculture",
+          "bucket": "consulted_entities",
+          "role": "recipient_of_draft",
+          "evidence": [
+            {
+              "quote": "The United States Department of Agriculture had no comments to make on the Draft Environmental Statement.",
+              "source_pages": [
+                "17"
+              ],
+              "quote_verified": true
+            }
+          ]
+        }
+      ],
+      "public_commenters": [],
+      "comment_response_present": false
+    },
+    "evidence_quote": "The United States Environmental Protection Agency has advised that the 2,4D herbicide proposed use is registered for the control of wild hemp and can be used on ditch banks as well as other infested acreage.",
+    "source_pages": [
+      16,
+      17
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "n/a",
+      "Q8": "n/a",
+      "Q9": "n/a",
+      "Q10": "no",
+      "Q11": "n/a"
+    },
+    "composite": 1.0,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": null,
+    "bucket": "key_people",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 16,
+      "normalized_match_span": [
+        16,
+        635,
+        841
+      ],
+      "pages_searched": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "2",
+        "4"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": false,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 6
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "All four consulted entities are supported by verbatim quotes on the cited pages. The cooperating_agencies bucket is correctly empty \u2014 no formal designation under 40 CFR \u00a71501.8 appears in the document. Professor Knake is identified with an institutional/professional role (Agronomy Department, University of Illinois), so he is not a private individual. The USDA and EPA entries are confirmed by the ",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        16,
+        17
+      ],
+      "pages_included": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 6656
+    }
+  },
+  "lead_agency": {
+    "extracted_value": [
+      "Law Enforcement Assistance Administration"
+    ],
+    "evidence_quote": "LAW ENFORCEMENT ASSISTANCE ADMINISTRATION\nFINAL ENVIRONMENTAL STATEMENT\nPrepared By:\nOffice of General Counsel\nLaw Enforcement Assistance Administration",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a"
+    },
+    "composite": 1.0,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 1,
+      "normalized_match_span": [
+        1,
+        33,
+        184
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": null,
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 5141
+    }
+  },
+  "location": {
+    "extracted_value": {
+      "places": [
+        {
+          "name": "Pulaski County, Indiana",
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": null,
+            "county": "Pulaski County",
+            "state": "Indiana",
+            "country": null
+          },
+          "role": "primary",
+          "evidence": [
+            {
+              "quote": "In Pulaski County, Indiana, there are 65 square acres of wild growing marijuana.",
+              "source_pages": [
+                "5"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Richgrove Township",
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": null,
+            "county": "Pulaski County",
+            "state": "Indiana",
+            "country": null
+          },
+          "role": "primary",
+          "evidence": [
+            {
+              "quote": "The ditches run through Richgrove Township. Richgrove Township is a farmland community.",
+              "source_pages": [
+                "3"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Indiana Route 39",
+          "admin_hierarchy": {
+            "poi": "Indiana Route 39",
+            "neighborhood": null,
+            "city": null,
+            "county": null,
+            "state": "Indiana",
+            "country": null
+          },
+          "role": "primary",
+          "evidence": [
+            {
+              "quote": "The ditches to be sprayed traverse Indiana Route 39.",
+              "source_pages": [
+                "3"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Jasper Pulaski Game Preserve",
+          "admin_hierarchy": {
+            "poi": "Jasper Pulaski Came Preserve",
+            "neighborhood": null,
+            "city": null,
+            "county": "Pulaski County",
+            "state": "Indiana",
+            "country": null
+          },
+          "role": "reference",
+          "evidence": [
+            {
+              "quote": "Jasper Pulaski Came Preserve which is seven miles northwest of the spray area",
+              "source_pages": [
+                "13"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Winamac Fish and Game Preserve",
+          "admin_hierarchy": {
+            "poi": "Winamac Fish and Game Preserve",
+            "neighborhood": null,
+            "city": "Winamac",
+            "county": "Pulaski County",
+            "state": "Indiana",
+            "country": null
+          },
+          "role": "reference",
+          "evidence": [
+            {
+              "quote": "Winamac Fish and Game Preserve, eight miles east of the spray area",
+              "source_pages": [
+                "13"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Metropolitan Sanitary District grounds southwest of Chicago",
+          "admin_hierarchy": {
+            "poi": "Metropolitan Sanitary District",
+            "neighborhood": null,
+            "city": "Chicago",
+            "county": null,
+            "state": "Illinois",
+            "country": null
+          },
+          "role": "reference",
+          "evidence": [
+            {
+              "quote": "For the last two summers our company has used a new technique to treat 600 acres of scattered marijuana growth on Metropolitan Sanitary District grounds southwest of Chicago.",
+              "source_pages": [
+                "21"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Newton County",
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": null,
+            "county": "Newton County",
+            "state": "Indiana",
+            "country": null
+          },
+          "role": "reference",
+          "evidence": [
+            {
+              "quote": "since some areas of application are in or near State wildlife refuges, particularly in Newton County",
+              "source_pages": [
+                "25"
+              ],
+              "quote_verified": true
+            }
+          ]
+        }
+      ],
+      "is_multi_site": true,
+      "geocoded": [
+        {
+          "lat": 41.050852,
+          "lon": -86.603277,
+          "bbox": [
+            -86.603499,
+            41.050685,
+            -86.603057,
+            41.051021
+          ],
+          "source": "nominatim",
+          "confidence": 0.514,
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": "Winamac",
+            "county": "Pulaski County",
+            "state": "Indiana",
+            "country": "United States"
+          },
+          "level": "poi",
+          "query": "Pulaski County, Indiana, Pulaski County, Indiana",
+          "matched_name": "Pulaski County Courthouse, 112, East Main Street, Winamac, Pulaski County, Indiana, 46996, United States",
+          "bbox_synthetic": false,
+          "importance": 0.127,
+          "confident": false,
+          "stack": "reduced",
+          "accepted_level": "poi",
+          "acceptance_reason": "bbox_contained_in_county",
+          "failed_containment_checks": [],
+          "site_name": "Pulaski County, Indiana",
+          "role": "primary"
+        },
+        {
+          "lat": 41.031393,
+          "lon": -86.699069,
+          "bbox": [
+            -86.930954,
+            40.909332,
+            -86.46653,
+            41.172783
+          ],
+          "source": "nominatim",
+          "confidence": 0.717,
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": null,
+            "county": "Pulaski County",
+            "state": "Indiana",
+            "country": "United States"
+          },
+          "level": "county",
+          "query": "Pulaski County, Indiana",
+          "matched_name": "Pulaski County, Indiana, United States",
+          "bbox_synthetic": false,
+          "importance": 0.534,
+          "confident": true,
+          "stack": "reduced",
+          "accepted_level": "county",
+          "acceptance_reason": "bbox_contained_in_state",
+          "failed_containment_checks": [],
+          "site_name": "Richgrove Township",
+          "role": "primary"
+        },
+        {
+          "lat": 40.327013,
+          "lon": -86.174693,
+          "bbox": [
+            -88.097204,
+            37.771679,
+            -84.784609,
+            41.761368
+          ],
+          "source": "nominatim",
+          "confidence": 0.834,
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": null,
+            "county": null,
+            "state": "Indiana",
+            "country": "United States"
+          },
+          "level": "state",
+          "query": "Indiana",
+          "matched_name": "Indiana, United States",
+          "bbox_synthetic": false,
+          "importance": 0.768,
+          "confident": true,
+          "stack": "reduced",
+          "accepted_level": "state",
+          "acceptance_reason": "no_coarser_level_available",
+          "failed_containment_checks": [],
+          "site_name": "Indiana Route 39",
+          "role": "primary"
+        }
+      ],
+      "scope": "site",
+      "textual_location": "Pulaski County, Indiana; Richgrove Township; Indiana Route 39",
+      "corridor": false
+    },
+    "evidence_quote": "In Pulaski County, Indiana, there are 65 square acres of wild growing marijuana.",
+    "source_pages": [
+      3,
+      5,
+      13,
+      21,
+      25
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes",
+      "Q10": "yes",
+      "Q11": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "reduced_geocoder_stack",
+    "failure_tag": null,
+    "bucket": "location",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "reduced_geocoder_stack",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 5,
+      "normalized_match_span": [
+        5,
+        297,
+        374
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        14,
+        15,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "65"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": false,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 6
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "All primary sites (Pulaski County, Richgrove Township, Indiana Route 39) are supported by verbatim quotes from the cited pages. Reference sites (Jasper Pulaski Game Preserve, Winamac Fish and Game Preserve, Metropolitan Sanitary District, Newton County) are also supported. The geocoded entries resolve at appropriate levels: Pulaski County resolves to county level (with a POI-level result for the c",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        3,
+        5,
+        13,
+        21,
+        25
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 24439
+    }
+  },
+  "summary.affected_community": {
+    "extracted_value": "The spray area is in Richgrove Township, Pulaski County, Indiana \u2014 a farming community that grows mainly spearmint and potatoes, with no towns or population centers. Two state parks lie nearby (Jasper Pulaski Game Preserve, 7 miles northwest; Winamac Fish and Game Preserve, 8 miles east) but are not expected to be affected. The document also anticipates the project would prevent an influx of roughly 2,000 people coming to pick marijuana.",
+    "evidence_quote": "Richgrove Township, Pulaski County is a farmland community, which is predominantly a spearmint and potato growing area.",
+    "source_pages": [
+      13,
+      15
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "n/a"
+    },
+    "composite": 1.0,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": null,
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 13,
+      "normalized_match_span": [
+        13,
+        499,
+        615
+      ],
+      "pages_searched": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The 2,000 figure appears on p.15 (cited); parks and community description on p.13 (cited). Note: document spells the park 'Jasper Pulaski Came Preserve' (OCR of 'Game'); extraction correctly reads 'Game'. All claims verified.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        13,
+        15
+      ],
+      "pages_included": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 7204
+    }
+  },
+  "summary.alternatives_overview": {
+    "extracted_value": "The statement considers five alternatives and rejects each: (a) burning is infeasible because the muck land would burn continuously and cause air pollution; (b) mowing or tillage cannot reach the inaccessible areas; (c) increased law enforcement patrols would require unavailable personnel and could still stop only about 10% of pickers; (d) legalizing marijuana is outside the agency's authority; and (e) doing nothing (letting the hemp mature) would result in an estimated 200 arrests as pickers are prosecuted.",
+    "evidence_quote": "Burning of the Hemp. This is not a feasible alternative since the acreage involved is mostly muck land which would burn continuously and would lead to increased air pollution.",
+    "source_pages": [
+      14,
+      15
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": null,
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 14,
+      "normalized_match_span": [
+        14,
+        763,
+        933
+      ],
+      "pages_searched": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "All five alternatives (burning, mowing/tillage, law enforcement, legalization, no action) are present on pages 14-15 with the rationales as described. The 10% figure and 200 arrests figure both match. No preferred alternative is claimed.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        14,
+        15
+      ],
+      "pages_included": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 6934
+    }
+  },
+  "summary.environmental_impact": {
+    "extracted_value": "The statement characterizes overall impact as insignificant given the small area. Expected adverse effects include loss of cover and food for wild birds and other fauna, and changes to local insects (including wild bees) and soil microorganisms. The 2,4-D chemical is described as only slightly toxic to people and animals, persisting 7\u2013126 days before being metabolized by soil organisms. Mitigation includes reseeding the area with appropriate cover the same year, using granular (not liquid) form to reduce drift into ditches, spraying by helicopter on a windless day (0\u201310 mph), and stopping if wind reaches 10 mph. No known irreversible commitment of resources is anticipated.",
+    "evidence_quote": "The principal impact on the immediate ecological system will be the loss of cover and food for the wild birds and other fauna which depend on the plants. The loss of these plants will likely also cause changes in the local insect population including any wild bees, and in soil microorganisms.",
+    "source_pages": [
+      13,
+      14,
+      15,
+      16,
+      20
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "yes",
+      "Q4": "no",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "no",
+      "Q9": "yes",
+      "Q10": "n/a"
+    },
+    "composite": 0.65,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "critic_verdict",
+    "failure_tag": "T02_numeric_hallucination",
+    "bucket": "summary_numeric",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 14,
+      "normalized_match_span": [
+        14,
+        102,
+        392
+      ],
+      "pages_searched": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The value states spraying stops 'if wind reaches 10 mph' with windless day defined as '0\u201310 mph'. Page 16 says a wind check is made at 7 mph and spraying stops at 10 mph, with the windless-day range being 0-10 mph \u2014 so the stop threshold is correct but the value omits the 7 mph check step. More critically, the value says the helicopter sprays on a 'windless day (0\u201310 mph)' which matches, but confl",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        13,
+        14,
+        15,
+        16,
+        20
+      ],
+      "pages_included": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 12968
+    }
+  },
+  "summary.overview": {
+    "extracted_value": "The Law Enforcement Assistance Administration proposes a $3,000 grant to spray 65 acres of wild hemp/marijuana fields plus 65 linear miles of ditch and road shoulder in Richgrove Township, Pulaski County, Indiana \u2014 a farming community with no towns, growing mainly spearmint and potatoes. A helicopter would apply granulated 2,4-D herbicide (equivalent to 1 lb per acre) in one day in early May. Five alternatives were considered and rejected: burning, mowing, increased police patrols, legalizing marijuana, and doing nothing. The statement calls the overall environmental impact insignificant given the small area, though it acknowledges loss of cover and food for wild birds and changes to insects (including wild bees) and soil microorganisms; the herbicide is described as only slightly toxic to people and animals. Reviewing agencies were generally supportive, with U.S. Environmental Protection Agency (EPA) finding 'no serious impact on the environment' and the Indiana Stream Pollution Control Board believing the herbicide could be applied without direct toxic effect on aquatic life, though residual effects had not been evaluated.",
+    "evidence_quote": "The Prosecutor's Office, Winamac, Indiana has requested a $3,000 grant to destroy the marijuana fields in Pulaski County",
+    "source_pages": [
+      3,
+      5,
+      13,
+      14,
+      15,
+      18,
+      25
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "yes",
+      "Q4": "no",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "no",
+      "Q8": "yes"
+    },
+    "composite": 0.65,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "critic_verdict",
+    "failure_tag": "T03_outside_text_fabrication",
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 5,
+      "normalized_match_span": [
+        5,
+        626,
+        743
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "3000"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "Two specific claims fail substring verification: (1) The extracted value says spraying would occur 'in early May' as a one-day operation \u2014 page 13 says 'Immediate spraying in early May is essential' and page 5 says 'over a one day period by helicopter,' so this is supported. (2) The extracted value describes Richgrove Township as having 'no towns' \u2014 page 13 says 'There are no towns in this area,' ",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        3,
+        5,
+        13,
+        14,
+        15,
+        18,
+        25
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 24439
+    }
+  },
+  "summary.project_description": {
+    "extracted_value": "The Law Enforcement Assistance Administration proposes a $3,000 grant to spray 65 acres of wild hemp/marijuana fields plus 65 linear miles of ditch and road shoulder (20-foot strips on each side) in Richgrove Township, Pulaski County, Indiana. Spraying would be done in one day by helicopter using granulated 2,4-D herbicide (33% acid ester, 67% clay \u2014 equivalent to 1 lb 2,4-D per acre) applied in early May when plants are young. The contractor is Clarke Outdoor Spraying Company of La Grange, Illinois.",
+    "evidence_quote": "spray 65 square acres and 65 linear miles of ditch and road shoulder with granulated form 2, 4D herbicide",
+    "source_pages": [
+      3,
+      5
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "n/a",
+      "Q4": "no",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "n/a"
+    },
+    "composite": 0.65,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "critic_verdict",
+    "failure_tag": "T02_numeric_hallucination",
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 3,
+      "normalized_match_span": [
+        3,
+        295,
+        399
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "65",
+        "65",
+        "2",
+        "4"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The value says '20-foot strips on each side' for 65 linear miles, but page 3 states 'Twenty foot strips on both sides of the ditch area for a distance of 33 miles will be sprayed' \u2014 the 20-foot strips are attached to 33 miles, not 65. Also, the document says the grant was requested by 'The Prosecutor's Office, Winamac, Indiana', not proposed by LEAA (LEAA is the grantor/lead agency for the EIS). C",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        3,
+        5
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 5351
+    }
+  },
+  "summary.public_response": {
+    "extracted_value": "Reviewing agencies were generally supportive. The U.S. Environmental Protection Agency wrote that 2,4-D is registered for wild hemp control and that the program 'will have no serious impact on the environment.' The U.S. Department of Agriculture had no comments. Indiana's Cooperative Extension Service (Purdue) endorsed the single-agency control approach over indiscriminate individual applications. The Indiana Stream Pollution Control Board, after meeting with the contractor, believed the herbicide could be applied without direct toxic effect on aquatic life but noted residual effects had not yet been evaluated. Professor Knake of the University of Illinois urged precautions to keep 2,4-D out of drainage ditches but vouched for the contractor's prior work.",
+    "evidence_quote": "The United States Environmental Protection Agency has advised that the 2,4D herbicide proposed use is registered for the control of wild hemp",
+    "source_pages": [
+      16,
+      17,
+      18,
+      20,
+      25
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "yes",
+      "Q10": "n/a"
+    },
+    "composite": 1.0,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": null,
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 16,
+      "normalized_match_span": [
+        16,
+        635,
+        776
+      ],
+      "pages_searched": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "2",
+        "4"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "All claims verified against cited pages. EPA quote on p.16/18, USDA no-comment on p.17/19, Purdue Extension endorsement on p.16/20, Stream Pollution Control Board findings on p.25, Professor Knake on p.16. Professor Knake is identified with University of Illinois Agronomy Department, so non-private role.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        16,
+        17,
+        18,
+        20,
+        25
+      ],
+      "pages_included": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 16401
+    }
+  },
+  "summary_of_interest": {
+    "extracted_value": [
+      {
+        "claim": "The Law Enforcement Assistance Administration \u2014 a criminal-justice grant agency, not a land-management or agricultural body \u2014 is the National Environmental Policy Act (NEPA) lead for an aerial herbicide spraying program, an unusual pairing of drug enforcement with pesticide application on private farmland.",
+        "salience_criterion": "unusual_impact",
+        "page": 5,
+        "evidence_quote": "The Prosecutor's Office, Winamac, Indiana has requested a $3,000 grant to destroy the marijuana fields in Pulaski County",
+        "why_notable": "An Environmental Impact Statement (EIS) filed by a law enforcement funding agency to justify aerial 2,4-D spraying is atypical of the environmental review docket, which normally sees such spray programs reviewed by USDA or state agriculture departments.",
+        "evidence": [
+          {
+            "quote": "The Prosecutor's Office, Winamac, Indiana has requested a $3,000 grant to destroy the marijuana fields in Pulaski County",
+            "source_pages": [
+              "5"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "A stated purpose of the spraying is to prevent an estimated 2,000 marijuana pickers from traveling into the township \u2014 meaning the 'impact' being avoided is a human/social influx, not an ecological harm.",
+        "salience_criterion": "unusual_impact",
+        "page": 15,
+        "evidence_quote": "The adverse impact of a transient influx of approximately 2,000 people into this farm community would be eliminated.",
+        "why_notable": "Framing an anticipated crowd of drug harvesters as an environmental impact to be mitigated by herbicide is a distinctive use of National Environmental Policy Act (NEPA) analysis that ties environmental review directly to drug enforcement objectives.",
+        "evidence": [
+          {
+            "quote": "The adverse impact of a transient influx of approximately 2,000 people into this farm community would be eliminated.",
+            "source_pages": [
+              "15"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "The Indiana Stream Pollution Control Board endorsed the spraying while explicitly conceding that residual effects of 2,4-D on aquatic life had not been evaluated, leaving a known analytical gap in the record.",
+        "salience_criterion": "contested",
+        "page": 25,
+        "evidence_quote": "we believe that the herbicide could be applied as described without having a direct toxic effect on aquatic life. However, residual effects have not yet been evaluated.",
+        "why_notable": "A state water-quality agency signing off on a project while acknowledging unevaluated residual impacts is a substantive qualification of the document's 'insignificant impact' conclusion.",
+        "evidence": [
+          {
+            "quote": "we believe that the herbicide could be applied as described without having a direct toxic effect on aquatic life. However, residual effects have not yet been evaluated.",
+            "source_pages": [
+              "25"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "The 'no action' alternative is rejected in part on law-enforcement grounds \u2014 that letting the hemp mature would produce roughly 200 arrests \u2014 rather than on environmental grounds.",
+        "salience_criterion": "novel_alternative",
+        "page": 15,
+        "evidence_quote": "Allowing Hemp to Grow to Maturity (abandoning the project). There would be no immediate change in the environment. However, those individuals who pick the marijuana plants will be subject to arrest and it is estimated that 200 persons will be arrested.",
+        "why_notable": "The document concedes the no-action alternative would cause 'no immediate change in the environment,' then rejects it based on arrest counts \u2014 an unusual criterion for dismissing the environmentally preferable option.",
+        "evidence": [
+          {
+            "quote": "Allowing Hemp to Grow to Maturity (abandoning the project). There would be no immediate change in the environment. However, those individuals who pick the marijuana plants will be subject to arrest and it is estimated that 200 persons will be arrested.",
+            "source_pages": [
+              "15"
+            ],
+            "quote_verified": true
+          }
+        ]
+      }
+    ],
+    "evidence_quote": "The adverse impact of a transient influx of approximately 2,000 people into this farm community would be eliminated.",
+    "source_pages": [
+      5,
+      15,
+      25
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7a": "yes",
+      "Q7b": "no",
+      "Q7c": "n/a",
+      "Q7d": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "bucket_degenerate_severe",
+    "failure_tag": null,
+    "bucket": "summary_of_interest",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "bucket_degenerate_severe",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 15,
+      "normalized_match_span": [
+        15,
+        1003,
+        1118
+      ],
+      "pages_searched": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        13,
+        14,
+        15,
+        16,
+        17,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "2000"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": true,
+      "degenerate_severe": true,
+      "saturated": false,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 0
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "This is a genuinely atypical EIS: a 1972 Law Enforcement Assistance Administration statement for aerial 2,4-D spraying of wild marijuana, justified partly by preventing an influx of pickers and by projected arrests. All four entries are grounded in verbatim quotes from the cited pages and reflect substantive atypicalities rather than manufactured salience. The Indiana Stream Pollution Control Boar",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        5,
+        15,
+        25
+      ],
+      "pages_included": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 23874
+    }
+  },
+  "themes": {
+    "extracted_value": {
+      "themes": [
+        "Wildlife and Natural Areas",
+        "Governance and Institutional Control"
+      ],
+      "subthemes": [
+        "Habitat Conservation and Biodiversity",
+        "Environmental Regulation and Policy",
+        "Human-Wildlife Interactions",
+        "Institutional Power and Resource Management"
+      ]
+    },
+    "evidence_quote": null,
+    "source_pages": [
+      3,
+      5
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "n/a",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "no"
+    },
+    "composite": 0.65,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "bucket_degenerate_severe",
+    "failure_tag": "T03_outside_text_fabrication",
+    "bucket": "alternatives+themes",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "bucket_degenerate_severe",
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": null,
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": true,
+      "degenerate_severe": true,
+      "saturated": false,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 1
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The document is an EIS for a marijuana eradication project using herbicide spraying in Indiana farmland ditches, administered by a law enforcement agency. 'Wildlife and Natural Areas' with subthemes 'Habitat Conservation and Biodiversity' and 'Human-Wildlife Interactions' are not supported by the cited pages \u2014 the document treats marijuana as a weed/drug crop, not as wildlife or natural area subje; evidence_quote_null_consistent_with_RE_EXTRACT",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        3,
+        5
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 5351
+    }
+  },
+  "title": {
+    "extracted_value": "Marijuana eradication project, Pulaski County : environmental impact statement.",
+    "evidence_quote": "This Environmental Statement for a Marijuana Eradication Project is being submitted",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "n/a",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a"
+    },
+    "composite": 0.85,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS_WITH_NOTE",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.7,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 3,
+      "normalized_match_span": [
+        3,
+        40,
+        123
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The extracted title references 'Pulaski County' which is supported by page 5 ('In Pulaski County, Indiana, there are 65 square acres of wild growing marijuana'). However, the cover page (page 1) does not display a formal title \u2014 it reads 'FINAL ENVIRONMENTAL STATEMENT' without naming Pulaski County or the marijuana eradication project explicitly. The extracted title appears to be a catalogue-deriv",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 5141
+    }
+  },
+  "year": {
+    "extracted_value": 1972,
+    "evidence_quote": "The Final Statement was made available to CEQ on May 9, 1972.",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes",
+      "Q10": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 2,
+      "normalized_match_span": [
+        2,
+        176,
+        235
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "9",
+        "1972"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The year 1972 is confirmed by multiple references on the cited pages, including the Draft Statement availability date of April 26, 1972 and the Final Statement availability date of May 9, 1972. The source_type 'body' is appropriate as these dates appear in the body text of the document. No OCR misread is plausible given the consistent '1972' across multiple instances.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 5141
+    }
+  },
+  "_meta": {
+    "doc_id": "p1074_35556036525913",
+    "artifact_stage": "v1",
+    "generated_at": "2026-08-10T18:11:54+00:00",
+    "plan_ref": "MCAL_PLAN 3.12",
+    "schema_keys": [
+      "extracted_value",
+      "evidence_quote",
+      "source_pages",
+      "verdict",
+      "rubric_answers",
+      "composite",
+      "applied_tau",
+      "gated_to_human",
+      "gate_reason",
+      "failure_tag",
+      "bucket",
+      "artifact_stage",
+      "judge_model"
+    ],
+    "n_fields": 15,
+    "reserved_keys": [
+      "_meta",
+      "_rollup",
+      "_null_tag_monitor"
+    ],
+    "reviewer_note": "Every field is present, gated or not, with its raw extraction (MCAL_PLAN 7 Q8). Grade `extracted_value` against `evidence_quote` and `source_pages`; `gate_reason` says why the field was routed to a human. `extracted_value: []` on summary_of_interest is a legitimate 'this document is routine'; `null` plus a gate_reason is a generation failure."
+  },
+  "_rollup": {
+    "doc_id": "p1074_35556036525913",
+    "artifact_stage": "v1",
+    "geocoder_stack": "reduced",
+    "n_fields": 15,
+    "n_gated": 11,
+    "n_passed": 4,
+    "gate_rate": 0.7333,
+    "gate_reasons": {
+      "none": 4,
+      "critic_verdict": 3,
+      "composite_below_tau": 4,
+      "bucket_degenerate_severe": 3,
+      "reduced_geocoder_stack": 1
+    },
+    "verdicts": {
+      "PASS_WITH_NOTE": 1,
+      "PASS": 3,
+      "HUMAN_REVIEW": 11
+    },
+    "per_bucket": {
+      "M1": {
+        "n_fields": 4,
+        "n_gated": 0,
+        "n_passed": 4,
+        "gate_reasons": {},
+        "tau_deployed": 0.5,
+        "gate_all_to_human": false,
+        "degenerate": true,
+        "degenerate_severe": false,
+        "N_wrong_docs": 3
+      },
+      "summary_narrative": {
+        "n_fields": 5,
+        "n_gated": 5,
+        "n_passed": 0,
+        "gate_reasons": {
+          "critic_verdict": 2,
+          "composite_below_tau": 3
+        },
+        "tau_deployed": 1.0,
+        "gate_all_to_human": false,
+        "degenerate": true,
+        "degenerate_severe": false,
+        "N_wrong_docs": 5
+      },
+      "summary_numeric": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "critic_verdict": 1
+        },
+        "tau_deployed": 1.0,
+        "gate_all_to_human": false,
+        "degenerate": true,
+        "degenerate_severe": false,
+        "N_wrong_docs": 3
+      },
+      "summary_of_interest": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "bucket_degenerate_severe": 1
+        },
+        "tau_deployed": null,
+        "gate_all_to_human": true,
+        "degenerate": true,
+        "degenerate_severe": true,
+        "N_wrong_docs": 0
+      },
+      "alternatives+themes": {
+        "n_fields": 2,
+        "n_gated": 2,
+        "n_passed": 0,
+        "gate_reasons": {
+          "bucket_degenerate_severe": 2
+        },
+        "tau_deployed": null,
+        "gate_all_to_human": true,
+        "degenerate": true,
+        "degenerate_severe": true,
+        "N_wrong_docs": 1
+      },
+      "location": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "reduced_geocoder_stack": 1
+        },
+        "tau_deployed": null,
+        "gate_all_to_human": true,
+        "degenerate": false,
+        "degenerate_severe": false,
+        "N_wrong_docs": 6
+      },
+      "key_people": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "composite_below_tau": 1
+        },
+        "tau_deployed": 1.0,
+        "gate_all_to_human": false,
+        "degenerate": false,
+        "degenerate_severe": false,
+        "N_wrong_docs": 6
+      }
+    },
+    "null_tag": {
+      "M1": {
+        "n_fields": 4,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      },
+      "summary_narrative": {
+        "n_fields": 5,
+        "n_human_review": 5,
+        "n_null_tag": 3,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      },
+      "summary_numeric": {
+        "n_fields": 1,
+        "n_human_review": 1,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      },
+      "summary_of_interest": {
+        "n_fields": 1,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 1
+      },
+      "alternatives+themes": {
+        "n_fields": 2,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 2
+      },
+      "location": {
+        "n_fields": 1,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 1
+      },
+      "key_people": {
+        "n_fields": 1,
+        "n_human_review": 1,
+        "n_null_tag": 1,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      }
+    },
+    "summary_of_interest": {
+      "present": true,
+      "generation_failure": false,
+      "non_empty": true,
+      "n_entries": 4,
+      "salience_criterion_counts": {
+        "contested": 1,
+        "unusual_impact": 2,
+        "large_magnitude": 0,
+        "novel_alternative": 1,
+        "community_pushback": 0,
+        "precedent": 0,
+        "cross_jurisdictional": 0
+      },
+      "off_vocabulary_criteria": [],
+      "n_t17_manufactured_salience": 0,
+      "n_t18_duplicates_summary": 0,
+      "overlap_with_standard_summary": {
+        "jaccard": 0.1548,
+        "n_soi_tokens": 124,
+        "n_summary_tokens": 234,
+        "per_entry_jaccard": [
+          0.057,
+          0.0506,
+          0.0847,
+          0.052
+        ],
+        "max_entry_jaccard": 0.0847,
+        "tokenizer": "mcal.quote_check.content_tokens (stopword+boilerplate filtered)"
+      },
+      "nonempty_rate_ceiling": 0.6,
+      "soi_useful": null
+    },
+    "critic": {
+      "n_fields": 15,
+      "verdicts": {
+        "PASS_WITH_NOTE": 1,
+        "PASS": 10,
+        "RE_EXTRACT": 4
+      },
+      "overrides": {},
+      "n_quote_checked": 14,
+      "n_quote_verified": 14,
+      "evidence_quote_verifiable_rate": 1.0,
+      "n_off_vocabulary_tags": 0,
+      "n_null_tag_human_review": 0,
+      "n_schema_violations": 0,
+      "n_evidence_truncated": 0
+    },
+    "re_extract": {}
+  },
+  "_null_tag_monitor": {
+    "threshold": 0.15,
+    "taxonomy_refresh_recommended": true,
+    "buckets_needing_refresh": [
+      "key_people",
+      "summary_narrative"
+    ],
+    "n_docs_rolling": 1,
+    "per_bucket": {
+      "M1": {
+        "n_fields": 4,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "summary_narrative": {
+        "n_fields": 5,
+        "n_human_review": 5,
+        "n_null_tag": 3,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": 0.6,
+        "exceeds_threshold": true
+      },
+      "summary_numeric": {
+        "n_fields": 1,
+        "n_human_review": 1,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": 0.0,
+        "exceeds_threshold": false
+      },
+      "summary_of_interest": {
+        "n_fields": 1,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 1,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "alternatives+themes": {
+        "n_fields": 2,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 2,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "location": {
+        "n_fields": 1,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 1,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "key_people": {
+        "n_fields": 1,
+        "n_human_review": 1,
+        "n_null_tag": 1,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": 1.0,
+        "exceeds_threshold": true
+      }
+    },
+    "path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/mcal/artifacts/null_tag_monitor.json",
+    "halt_condition": false
+  }
+}

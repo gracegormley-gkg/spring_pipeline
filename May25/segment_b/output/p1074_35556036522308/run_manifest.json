@@ -1,0 +1,2301 @@
+{
+  "alternatives": {
+    "extracted_value": [],
+    "evidence_quote": null,
+    "source_pages": [],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "no",
+      "Q2": "n/a",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "n/a",
+      "Q6a": "n/a",
+      "Q6b": "n/a",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "n/a",
+      "Q10": "n/a"
+    },
+    "composite": 0.15,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "bucket_degenerate_severe",
+    "failure_tag": "T10_alternatives_chapter_missed",
+    "bucket": "alternatives+themes",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "bucket_degenerate_severe",
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 0.0,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "no",
+    "quote_check": null,
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": true,
+      "degenerate_severe": true,
+      "saturated": false,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 1
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The extracted value is an empty list with no cited pages and no explicit 'alternatives_chapter_not_found' status. This is a silent empty list, which is never acceptable per the field-specific rules. A fresh extraction of the alternatives chapter is warranted.; evidence_quote_null_consistent_with_RE_EXTRACT",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [],
+      "pages_included": [],
+      "pages_omitted": [],
+      "window_mode": "none",
+      "truncated": false,
+      "n_chars": 0
+    }
+  },
+  "eis_type": {
+    "extracted_value": "Final",
+    "evidence_quote": "Final Standard Support and Environmental Impact Statement",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "n/a",
+      "Q10": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 4,
+      "normalized_match_span": [
+        4,
+        0,
+        57
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "Page 4 contains the heading 'Final Standard Support and Environmental Impact Statement', confirming this is a Final EIS. The cover pages (1-2) use 'STANDARD SUPPORT AND ENVIRONMENTAL IMPACT STATEMENT' without the 'Final' qualifier, but page 4 provides the definitive designation.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 2888
+    }
+  },
+  "key_people": {
+    "extracted_value": {
+      "agency_preparers": [],
+      "cooperating_agencies": [],
+      "consulted_entities": [],
+      "public_commenters": [],
+      "comment_response_present": false
+    },
+    "evidence_quote": null,
+    "source_pages": [],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "no",
+      "Q2": "n/a",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "n/a",
+      "Q7": "n/a",
+      "Q8": "n/a",
+      "Q9": "n/a",
+      "Q10": "n/a",
+      "Q11": "n/a"
+    },
+    "composite": 0.15,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "critic_verdict",
+    "failure_tag": "T01_missing_citation",
+    "bucket": "key_people",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 0.0,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "no",
+    "quote_check": null,
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": false,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 6
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "All buckets are empty and no pages are cited. While empty buckets can be correct, the absence of any citation means there is no evidence to confirm that the document genuinely contains no agency preparers, cooperating agencies, consulted entities, or public commenters. A fresh extraction with proper page citations is required.; evidence_quote_null_consistent_with_RE_EXTRACT",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [],
+      "pages_included": [],
+      "pages_omitted": [],
+      "window_mode": "none",
+      "truncated": false,
+      "n_chars": 0
+    }
+  },
+  "lead_agency": {
+    "extracted_value": [
+      "Environmental Protection Agency"
+    ],
+    "evidence_quote": "U.S. ENVIRONMENTAL PROTECTION AGENCY\nOffice of Air and Waste Management\nOffice of Air Quality Planning and Standards",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a"
+    },
+    "composite": 1.0,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 1,
+      "normalized_match_span": [
+        1,
+        171,
+        286
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": null,
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 2888
+    }
+  },
+  "location": {
+    "extracted_value": {
+      "places": [],
+      "is_multi_site": false,
+      "geocoded": [],
+      "scope": "national",
+      "textual_location": "national",
+      "corridor": false
+    },
+    "evidence_quote": null,
+    "source_pages": [],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "no",
+      "Q2": "n/a",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "n/a",
+      "Q7": "n/a",
+      "Q8": "n/a",
+      "Q9": "n/a",
+      "Q10": "n/a",
+      "Q11": "n/a"
+    },
+    "composite": 0.15,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "reduced_geocoder_stack",
+    "failure_tag": "T01_missing_citation",
+    "bucket": "location",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "reduced_geocoder_stack",
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 0.0,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "no",
+    "quote_check": null,
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": false,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 6
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "No pages were cited and no evidence was provided. The scope=national with empty geocoded list would normally be a PASS under the Fuel Economy rule, but that rule requires the national scope to be supported by the document. Without any cited pages, the national classification cannot be verified. RE_EXTRACT to obtain a citation supporting the national scope determination.; evidence_quote_null_consistent_with_RE_EXTRACT",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [],
+      "pages_included": [],
+      "pages_omitted": [],
+      "window_mode": "none",
+      "truncated": false,
+      "n_chars": 0
+    }
+  },
+  "summary.affected_community": {
+    "extracted_value": "Environmental Protection Agency (EPA) estimates about 4.6 million people live within a 5-mile radius of ethylene dichloride-vinyl chloride and PVC plants (about 1.7 million within 3 miles), and 14 of the 17 ethylene dichloride-vinyl chloride plants are concentrated in Southwest Texas and Southern Louisiana, in petrochemical complexes near cities such as New Orleans, Houston, Baton Rouge, and Long Beach. Workers at these plants and nearby residents face health risks including liver angiosarcoma (a rare liver cancer) and other cancers, based on studies of occupationally exposed people and lab animals. EPA looked for higher-than-average clustering of angiosarcoma cases among people living near these plants but its survey was not sensitive enough to find such clustering. A separate concern was accidental PVC particulate releases (dust containing residual vinyl chloride) drifting into ambient air near plants, and vinyl chloride levels up to 1.9 ppm measured at plant landfills with 0.4 ppm in a nearby residential area.",
+    "evidence_quote": "EPA states that approximately 4.6 million people live within a 5-mile radius of ethylene dichloride/vinyl chloride and polyvinyl chloride manufacturing facilities.",
+    "source_pages": [
+      19,
+      31,
+      32,
+      110,
+      122,
+      132,
+      135
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "n/a"
+    },
+    "composite": 1.0,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": null,
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 19,
+      "normalized_match_span": [
+        19,
+        1335,
+        1497
+      ],
+      "pages_searched": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        108,
+        109,
+        110,
+        111,
+        112,
+        120,
+        121,
+        122,
+        123,
+        124,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "4.6million",
+        "5"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "All key figures verify: 4.6 million within 5 miles and 1.7 million within 3 miles (p.19), 14 of 17 EDC-VC plants in Southwest Texas/Southern Louisiana with cities named (pp.31-32), angiosarcoma survey conclusion (p.122), PVC particulate release complaint (p.132), and 1.9 ppm/0.4 ppm landfill/residential measurements (p.110). EPA acronym is expanded on first use.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        19,
+        31,
+        32,
+        110,
+        122,
+        132,
+        135
+      ],
+      "pages_included": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        108,
+        109,
+        110,
+        111,
+        112,
+        120,
+        121,
+        122,
+        123,
+        124,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 64353
+    }
+  },
+  "summary.alternatives_overview": {
+    "extracted_value": "Environmental Protection Agency (EPA) compared control options of different stringency for each emission point. For the oxychlorination reactor (a step in making vinyl chloride monomer), EPA considered three control levels \u2014 roughly 90%, 94%, and 97% plant-wide reductions \u2014 and chose the 94% level, rejecting the 97% option because incineration would require a large fuel penalty. For PVC dispersion plants (which make specialty resins), Alternative I cuts emissions 52% and the stricter Alternative II cuts 95% but uses ten times more energy. For PVC resin cleanup, EPA compared improved 'stripping' (removing residual vinyl chloride from the resin) with add-on controls like incinerators and found stripping cheaper \u2014 about $3.3 million installed capital and $1.36 million annualized versus $5.29 million and $4.89 million for incineration. EPA rejected as 'grossly disproportionate' in cost such options as placing a 'bubble' around a whole plant to capture all emissions, stacking multiple incinerators, and incinerating the oxychlorination process emissions. Broader alternatives raised by commenters and rejected included a total ban on vinyl chloride, a zero-emission limit, and setting an ambient air quality standard under section 109 or regulating only new sources under section 111.",
+    "evidence_quote": "For improved stripping, the installed capital cost is $3,319,000 and the total annualized cost is $1,363,000. For incineration, the installed capital cost is $5,287,000 and the total annualized cost is $4,892,000.",
+    "source_pages": [
+      27,
+      30,
+      34,
+      54,
+      99,
+      113
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "no",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "yes"
+    },
+    "composite": 0.6,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": "T04_undefined_acronym",
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS_WITH_NOTE",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 0.5,
+      "s_critic": 0.7,
+      "s_source": null,
+      "s_citation": 0.875,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "mixed",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 54,
+      "normalized_match_span": [
+        54,
+        944,
+        1149
+      ],
+      "pages_searched": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        52,
+        53,
+        54,
+        55,
+        56,
+        97,
+        98,
+        99,
+        100,
+        101,
+        111,
+        112,
+        113,
+        114,
+        115
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "3319000",
+        "1363000",
+        "5287000",
+        "4892000"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "PVC (polyvinyl chloride) and EPA are used without first-use expansion in the value itself, though EPA is expanded parenthetically on first use. PVC is not expanded. All substantive claims verify against cited pages: the three oxychlorination control levels (~90%, 94%, 97%) and selection of 94% (p. 34, 99); PVC dispersion Alt I 52% / Alt II 95% with ten-fold energy increase (p. 113); stripping vs i",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        27,
+        30,
+        34,
+        54,
+        99,
+        113
+      ],
+      "pages_included": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        52,
+        53,
+        54,
+        55,
+        56,
+        97,
+        98,
+        99,
+        100,
+        101,
+        111,
+        112,
+        113,
+        114,
+        115
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 61869
+    }
+  },
+  "summary.environmental_impact": {
+    "extracted_value": "The primary impact is beneficial: emissions cuts of about 94\u201395% at typical plants and corresponding drops in ambient (outdoor) vinyl chloride concentrations, lowering health risks including angiosarcoma. Fugitive emissions \u2014 small leaks from valves, pumps, sample-taking, and equipment openings \u2014 are the largest source at these plants, with sources following the PVC resin stripper alone accounting for 46% of a PVC plant's emissions. Side effects include extra hydrogen chloride (HCl) from incinerators \u2014 even with a moderately efficient scrubber (98% control), HCl emissions at a typical ethylene dichloride-vinyl chloride plant could still rise about 35%, and under worst-case weather conditions ambient HCl concentrations could reach or exceed foreign standards and National Academy of Sciences guidelines. Other side effects are lower pH in in-process wastewater, small increases in vinyl chloride in wastewater, extra solid waste from spent activated carbon adsorbers (with a 1\u20133 year bed life Environmental Protection Agency (EPA) calls 'conjectural'), and increased energy and water use \u2014 though industry says water use will be much lower than EPA's worst-case estimate because plants will recycle. EPA's cancer risk assessment used a linear no-threshold model (which assumes any dose carries some cancer risk, with no safe cutoff), while industry argued a log-probit model would place risks about ten times lower.",
+    "evidence_quote": "Emission sources following the polyvinyl chloride resin stripper account for 46 percent of a polyvinyl chloride plant's vinyl chloride emissions.",
+    "source_pages": [
+      9,
+      10,
+      57,
+      71,
+      108,
+      109,
+      120,
+      122
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes",
+      "Q10": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": null,
+    "bucket": "summary_numeric",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 57,
+      "normalized_match_span": [
+        57,
+        1888,
+        2032
+      ],
+      "pages_searched": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        55,
+        56,
+        57,
+        58,
+        59,
+        69,
+        70,
+        71,
+        72,
+        73,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "46"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "All key figures (94%, 95%, 46%, 35%, 1-3 year, 98% scrubber) verified on cited pages. HCl 'reach or exceed foreign standards and NAS guidelines' matches page 10's 'in the same range or somewhat higher than existing foreign standards and National Academy of Sciences (NAS) guidelines.' The log-probit 'about ten times lower' claim is supported by page 122's 'risks would be approximately one-tenth of ",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        9,
+        10,
+        57,
+        71,
+        108,
+        109,
+        120,
+        122
+      ],
+      "pages_included": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        55,
+        56,
+        57,
+        58,
+        59,
+        69,
+        70,
+        71,
+        72,
+        73,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 60449
+    }
+  },
+  "summary.overview": {
+    "extracted_value": "The Environmental Protection Agency (EPA) is finalizing a national air-emission rule under section 112 of the Clean Air Act (the provision covering hazardous air pollutants) that limits vinyl chloride releases from about 50 chemical plants \u2014 those that make vinyl chloride monomer from ethylene dichloride and those that turn the monomer into polyvinyl chloride (PVC) resin. The rule requires 'best available control technology' \u2014 controls already in use elsewhere in the chemical industry \u2014 and would cut emissions by roughly 94% at a typical ethylene dichloride-vinyl chloride plant and 95% at a typical PVC plant, at about $198 million in capital costs and $70 million per year in annualized costs industry-wide. About 4.6 million people live within five miles of these plants (concentrated in Southwest Texas and Southern Louisiana) and face health risks including liver angiosarcoma, a rare cancer linked to vinyl chloride. EPA considered but rejected stricter alternatives (a total ban, zero-emission limits, and incinerating oxychlorination reactor emissions) and less stringent ones, choosing intermediate control levels where added stringency would have required, for example, ten times more energy at PVC dispersion plants. Beyond the intended air-quality benefit, EPA also examined side effects including increased hydrogen chloride emissions from incinerators, extra water and energy use, and solid waste from spent carbon adsorbers; industry commenters argued the standards were too costly and technically infeasible, while environmental commenters (including the Environmental Defense Fund) argued they were too weak and that vinyl chloride should be phased out.",
+    "evidence_quote": "Fifty comment letters were received from environmental groups, industry, State and local air pollution control agencies, and individual citizens.",
+    "source_pages": [
+      9,
+      10,
+      19,
+      30,
+      31,
+      99,
+      104,
+      113,
+      135
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "yes",
+      "Q4": "no",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes"
+    },
+    "composite": 0.4,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "critic_verdict",
+    "failure_tag": "T03_outside_text_fabrication",
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 0.5,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": 0.923077,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "mixed",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 7,
+      "normalized_match_span": [
+        7,
+        333,
+        474
+      ],
+      "pages_searched": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        17,
+        18,
+        19,
+        20,
+        21,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        111,
+        112,
+        113,
+        114,
+        115,
+        133,
+        134,
+        135
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The extracted value states 'about 50 chemical plants' but the number 50 in the cited pages (p.7) refers to comment letters received, not the number of plants subject to the standard. The actual plant count is referenced as 17 ethylene dichloride-vinyl chloride plants (p.31) plus an unspecified number of PVC plants. This is a misattribution of a figure that constitutes outside-text fabrication.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        9,
+        10,
+        19,
+        30,
+        31,
+        99,
+        104,
+        113,
+        135
+      ],
+      "pages_included": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        17,
+        18,
+        19,
+        20,
+        21,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        111,
+        112,
+        113,
+        114,
+        115,
+        133,
+        134,
+        135
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 72680
+    }
+  },
+  "summary.project_description": {
+    "extracted_value": "Environmental Protection Agency (EPA) is promulgating (finalizing) a national emission standard under section 112 of the Clean Air Act \u2014 the provision covering hazardous air pollutants \u2014 that limits vinyl chloride emissions from two kinds of chemical plants: ethylene dichloride-vinyl chloride plants (which make the vinyl chloride monomer) and polyvinyl chloride (PVC) plants (which convert that monomer into PVC resin). The rule requires 'best available control technology,' meaning controls already in use at chemical plants and adaptable to these facilities, applied to both process vents and fugitive (leak) sources such as valves, pumps, and flanges. Specific numeric limits include stripping most PVC resins down to 400 parts per million (ppm) residual vinyl chloride (2,000 ppm for harder-to-strip 'dispersion' resins used in specialty products) and a 10 ppm concentration limit on many stack emission points. For a typical average-sized ethylene dichloride-vinyl chloride plant, hourly emissions would fall from 176 kg to 10 kg (about 94%), and for a typical PVC plant from 330 kg to 16 kg (about 95%).",
+    "evidence_quote": "For a typical average-sized ethylene dichloride-vinyl chloride plant, the standard will reduce hourly vinyl chloride emissions from 176 kg to 10 kg. This is approximately a 94 percent reduction. For a typical average-sized polyvinyl chloride plant, the hourly vinyl chloride emissions will be reduced from 330 kg to 16 kg, or by approximately 95 percent.",
+    "source_pages": [
+      7,
+      9,
+      57,
+      80,
+      99
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": null,
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 9,
+      "normalized_match_span": [
+        9,
+        681,
+        1029
+      ],
+      "pages_searched": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        55,
+        56,
+        57,
+        58,
+        59,
+        78,
+        79,
+        80,
+        81,
+        82,
+        97,
+        98,
+        99,
+        100,
+        101
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "176",
+        "10",
+        "94",
+        "330",
+        "16",
+        "95"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "All figures (176\u219210 kg, 330\u219216 kg, 94%, 95%, 400 ppm, 2000 ppm, 10 ppm) verify against cited pages 9, 55, 78, 80. 'Best available control technology' language verified on p. 99. Section 112 and CAA context verified on p. 7.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        7,
+        9,
+        57,
+        80,
+        99
+      ],
+      "pages_included": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        55,
+        56,
+        57,
+        58,
+        59,
+        78,
+        79,
+        80,
+        81,
+        82,
+        97,
+        98,
+        99,
+        100,
+        101
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 44094
+    }
+  },
+  "summary.public_response": {
+    "extracted_value": "Environmental Protection Agency (EPA) received 50 comment letters and held a public hearing on February 3, 1976, drawing input from industry (e.g., Dow, Goodyear, B.F. Goodrich, Society of the Plastics Industry), state and local air agencies, environmental groups (Environmental Defense Fund, Health Research Group, West Virginia Citizen Action Group), federal agencies (NIOSH, Occupational Safety and Health (OSHA), Commerce, Interior), and individual residents. Industry commenters generally argued the standards were too strict, technically infeasible, or too costly \u2014 for example, requesting the 2,000 ppm dispersion-resin limit be relaxed to 6,000 ppm, longer averaging periods (30 days instead of 24 hours), removal of the double mechanical seal pump requirement, and provision for emergency manual venting; they also argued EPA overstated shutdown risk (three of four plants EPA had predicted would close later told EPA they would not) and picked an overly conservative cancer risk model. Environmental commenters, including the Environmental Defense Fund, urged much stricter action \u2014 a cost/risk analysis, zero-emission limits, phaseout of substitutable uses within one year, and a total ban within three years \u2014 and argued EPA's risk assessment understated risk by ignoring prenatal exposure, childhood exposure, longer human latency, and synergies with other pollutants. Hearing witness Barry Castleman argued substitutes exist for more PVC uses than EPA listed and criticized EPA for not putting a dollar value on worker and community health impacts. EPA declined most requests to weaken numeric limits and refused to add malfunction, startup, or variance exemptions given the seriousness of vinyl chloride health effects under section 112, but made clarifying changes including allowing emergency manual venting, correcting a reactor-opening emission factor to 0.002 kg vinyl chloride per 100 kg PVC, and relaxing the portable hydrocarbon detector sensitivity requirement from 5 ppm to 10 ppm.",
+    "evidence_quote": "Fifty comment letters were received from environmental groups, industry, State and local air pollution control agencies, and individual citizens. On February 3, 1976, EPA held a public hearing on the proposed standard in Washington, D. C.",
+    "source_pages": [
+      7,
+      30,
+      32,
+      51,
+      52,
+      59,
+      65,
+      69,
+      88,
+      100,
+      106,
+      124,
+      131
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "no",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "yes",
+      "Q10": "yes"
+    },
+    "composite": 0.85,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": "T04_undefined_acronym",
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS_WITH_NOTE",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.7,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 7,
+      "normalized_match_span": [
+        7,
+        333,
+        562
+      ],
+      "pages_searched": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        57,
+        58,
+        59,
+        60,
+        61,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        86,
+        87,
+        88,
+        89,
+        90,
+        98,
+        99,
+        100,
+        101,
+        102,
+        104,
+        105,
+        106,
+        107,
+        108,
+        122,
+        123,
+        124,
+        125,
+        126,
+        129,
+        130,
+        131,
+        132,
+        133
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "3",
+        "1976"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "NIOSH and OSHA appear in the value; OSHA is expanded but NIOSH (National Institute for Occupational Safety and Health) is not. PVC is also unexpanded on first use, though it is standard NEPA/chemical commons. All substantive claims verify against cited pages: 50 comment letters and Feb 3, 1976 hearing (p.7); industry commenters requesting 6,000 ppm dispersion resin limit (p.52); 30-day averaging (",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        7,
+        30,
+        32,
+        51,
+        52,
+        59,
+        65,
+        69,
+        88,
+        100,
+        106,
+        124,
+        131
+      ],
+      "pages_included": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        29,
+        30,
+        31,
+        32,
+        33,
+        50,
+        51,
+        52,
+        53,
+        58,
+        59,
+        60,
+        64,
+        65,
+        66,
+        68,
+        69,
+        70,
+        87,
+        88,
+        89,
+        99,
+        100,
+        101,
+        105,
+        106,
+        107,
+        123,
+        124,
+        125,
+        130,
+        131,
+        132
+      ],
+      "pages_omitted": [
+        28,
+        34,
+        49,
+        54,
+        57,
+        61,
+        63,
+        67,
+        71,
+        86,
+        90,
+        98,
+        102,
+        104,
+        108,
+        122,
+        126,
+        129,
+        133
+      ],
+      "window_mode": "clustered",
+      "truncated": true,
+      "n_chars": 79924
+    }
+  },
+  "summary_of_interest": {
+    "extracted_value": [
+      {
+        "claim": "Environmental Protection Agency (EPA) acknowledges that controlling vinyl chloride by incineration could push nearby hydrogen chloride (HCl) concentrations to or above foreign standards and National Academy of Sciences public-exposure guidelines under worst-case weather \u2014 meaning the rule may partly trade one hazardous air pollutant for another.",
+        "salience_criterion": "unusual_impact",
+        "page": 10,
+        "evidence_quote": "diffusion model results indicate that under \"worst-case\" meteorological conditions, the hydrogen chloride emissions from the process equipment and the incinerator combined would cause maximum ambient concentrations of hydrogen chloride in the vicinity of ethylene dichloride-vinyl chloride plants to be in the same range or somewhat higher than existing foreign standards and National Academy of Sciences (NAS) guidelines for public exposure.",
+        "why_notable": "A rule designed to protect public health from one hazardous air pollutant is expected to raise ambient levels of a second hazardous pollutant to guideline-exceeding levels near the same communities.",
+        "evidence": [
+          {
+            "quote": "diffusion model results indicate that under \"worst-case\" meteorological conditions, the hydrogen chloride emissions from the process equipment and the incinerator combined would cause maximum ambient concentrations of hydrogen chloride in the vicinity of ethylene dichloride-vinyl chloride plants to be in the same range or somewhat higher than existing foreign standards and National Academy of Sciences (NAS) guidelines for public exposure.",
+            "source_pages": [
+              "10"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "The Environmental Defense Fund and other commenters pushed for a one-year phaseout of substitutable PVC uses and a total ban on vinyl chloride within three years \u2014 a far more sweeping approach than the section 112 emission-standard framework Environmental Protection Agency (EPA) was using.",
+        "salience_criterion": "novel_alternative",
+        "page": 32,
+        "evidence_quote": "The vinyl chloride standard is not stringent enough. More stringent restrictions could include (1) no variances on time schedules to install the best available controls, (2) zero emission limits for substitutable uses of polyvinyl chloride plastics after one year, and (3) zero emissions for all sources of vinyl chloride after three years.",
+        "why_notable": "Commenters proposed effectively banning a major industrial commodity chemical, an alternative well outside the standard emission-control menu Environmental Protection Agency (EPA) analyzed.",
+        "evidence": [
+          {
+            "quote": "The vinyl chloride standard is not stringent enough. More stringent restrictions could include (1) no variances on time schedules to install the best available controls, (2) zero emission limits for substitutable uses of polyvinyl chloride plastics after one year, and (3) zero emissions for all sources of vinyl chloride after three years.",
+            "source_pages": [
+              "32"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "Environmental Protection Agency (EPA) chose a linear no-threshold cancer risk model over industry's preferred log-probit model, a methodological choice that industry argued would place calculated risks about ten times higher \u2014 a foundational disagreement about how to quantify carcinogen risk.",
+        "salience_criterion": "contested",
+        "page": null,
+        "evidence_quote": "The risk assessment should have been based on the log-probit model, rather than the linear no-threshold model.... It is possible that if this were done, the risks would be approximately one-tenth of the current estimates.",
+        "why_notable": "The dispute is not about specific control technologies but about the underlying dose-response model, and the choice moves the estimated risk by an order of magnitude.",
+        "evidence": [
+          {
+            "quote": "The risk assessment should have been based on the log-probit model, rather than the linear no-threshold model.... It is possible that if this were done, the risks would be approximately one-tenth of the current estimates.",
+            "source_pages": [],
+            "quote_verified": false,
+            "note": "Quote not found verbatim in doc \u2014 forced HUMAN_REVIEW."
+          }
+        ]
+      },
+      {
+        "claim": "Environmental Protection Agency (EPA) refused to add malfunction, startup, or variance exemptions to the rule, an unusually strict posture it explicitly ties to section 112's treatment of hazardous air pollutants \u2014 signaling how EPA intends to handle future hazardous-pollutant standards.",
+        "salience_criterion": "precedent",
+        "page": 131,
+        "evidence_quote": "Because of the serious nature of the health effects of pollutants regulated under section 112, EPA has determined that it would not be appropriate to consider adding malfunction provisions to the regulation",
+        "why_notable": "Environmental Protection Agency (EPA) is drawing a categorical line for section 112 pollutants that departs from more flexible treatment typical of other Clean Air Act rules.",
+        "evidence": [
+          {
+            "quote": "Because of the serious nature of the health effects of pollutants regulated under section 112, EPA has determined that it would not be appropriate to consider adding malfunction provisions to the regulation",
+            "source_pages": [
+              "131"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "Roughly 4.6 million people live within five miles of these plants, and 14 of 17 ethylene dichloride-vinyl chloride plants are clustered along the Texas\u2013Louisiana Gulf Coast \u2014 a heavy concentration of a hazardous-pollutant risk in a single region.",
+        "salience_criterion": "large_magnitude",
+        "page": 31,
+        "evidence_quote": "The fourteen of seventeen plants referred to are ethylene dichloride-vinyl chloride plants, and these plants are located mainly in Southwest Texas and Southern Louisiana.",
+        "why_notable": "The geographic concentration means the rule's benefits (and any HCl side effects) fall disproportionately on Gulf Coast petrochemical-corridor communities.",
+        "evidence": [
+          {
+            "quote": "The fourteen of seventeen plants referred to are ethylene dichloride-vinyl chloride plants, and these plants are located mainly in Southwest Texas and Southern Louisiana.",
+            "source_pages": [
+              "31"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "Environmental Protection Agency (EPA)'s earlier prediction that four plants would shut down proved wrong for three of them, which told EPA they will remain open \u2014 an unusual explicit acknowledgment that the agency's economic impact forecast was substantially off.",
+        "salience_criterion": "contested",
+        "page": 100,
+        "evidence_quote": "The number of plant shutdowns was inaccurately estimated, in that three out of four plants EPA forecasted would close have since told EPA they will not close.",
+        "why_notable": "The record documents a direct factual reversal of Environmental Protection Agency (EPA)'s own economic feasibility analysis, a rare on-the-record correction of a shutdown prediction.",
+        "evidence": [
+          {
+            "quote": "The number of plant shutdowns was inaccurately estimated, in that three out of four plants EPA forecasted would close have since told EPA they will not close.",
+            "source_pages": [
+              "100"
+            ],
+            "quote_verified": true
+          }
+        ]
+      }
+    ],
+    "evidence_quote": "diffusion model results indicate that under \"worst-case\" meteorological conditions, the hydrogen chloride emissions from the process equipment and the incinerator combined would cause maximum ambient concentrations of hydrogen chloride in the vicinity of ethylene dichloride-vinyl chloride plants to be in the same range or somewhat higher than existing foreign standards and National Academy of Sciences (NAS) guidelines for public exposure.",
+    "source_pages": [
+      10,
+      31,
+      32,
+      100,
+      131
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "yes",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7a": "no",
+      "Q7b": "no",
+      "Q7c": "n/a",
+      "Q7d": "yes"
+    },
+    "composite": 0.4,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "bucket_degenerate_severe",
+    "failure_tag": "T17_manufactured_salience",
+    "bucket": "summary_of_interest",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "bucket_degenerate_severe",
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 0.5,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": 0.833333,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "mixed",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 10,
+      "normalized_match_span": [
+        10,
+        1372,
+        1808
+      ],
+      "pages_searched": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        98,
+        99,
+        100,
+        101,
+        102,
+        129,
+        130,
+        131,
+        132,
+        133
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": true,
+      "degenerate_severe": true,
+      "saturated": false,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 0
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "Entry 3 (log-probit vs linear no-threshold model) has page=null and its own evidence.quote_verified=false with a self-admitted note that the quote is not found verbatim in the doc \u2014 this is unsupported (T03/T17). Additionally, entry 2's salience_criterion 'novel_alternative' is attributed to 'Environmental Defense Fund and other commenters' but the cited page 32 attributes the specific three-part ",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        10,
+        31,
+        32,
+        100,
+        131
+      ],
+      "pages_included": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        98,
+        99,
+        100,
+        101,
+        102,
+        129,
+        130,
+        131,
+        132,
+        133
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 42707
+    }
+  },
+  "themes": {
+    "extracted_value": {
+      "themes": [
+        "Industrial Production and Materials",
+        "Governance and Institutional Control"
+      ],
+      "subthemes": [
+        "Industrial Manufacturing and Pollution",
+        "Environmental Regulation and Policy",
+        "Resource Extraction and Material Flows",
+        "Community Resistance and Activism"
+      ]
+    },
+    "evidence_quote": "EPA proposed a national emission standard for vinyl chloride under the authority of section 112 of the Clean Air Act",
+    "source_pages": [
+      7,
+      99
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "n/a",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "no"
+    },
+    "composite": 0.65,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "bucket_degenerate_severe",
+    "failure_tag": "T03_outside_text_fabrication",
+    "bucket": "alternatives+themes",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "bucket_degenerate_severe",
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 7,
+      "normalized_match_span": [
+        7,
+        157,
+        273
+      ],
+      "pages_searched": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        97,
+        98,
+        99,
+        100,
+        101
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "112"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": true,
+      "degenerate_severe": true,
+      "saturated": false,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 1
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The subtheme 'Resource Extraction and Material Flows' is not supported by the document's subject matter \u2014 the EIS concerns vinyl chloride emission standards for chemical manufacturing plants, not resource extraction. The subtheme 'Community Resistance and Activism' is also unsupported; the document describes standard regulatory public comment participation (letters and a hearing from environmental",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        7,
+        99
+      ],
+      "pages_included": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        97,
+        98,
+        99,
+        100,
+        101
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 16568
+    }
+  },
+  "title": {
+    "extracted_value": "Vinyl chloride emission standard : environmental impact statement.",
+    "evidence_quote": "ENVIRONMENTAL IMPACT STATEMENT\nVOLUME 2: PROMULGATED\nEMISSION STANDARD\nFOR\nVINYL CHLORIDE",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "n/a",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 1,
+      "normalized_match_span": [
+        1,
+        82,
+        170
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "2"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The extracted title 'Vinyl chloride emission standard : environmental impact statement.' is a reasonable catalogue-style rendering of the cover page title 'Standard Support and Environmental Impact Statement Volume 2: Promulgated Emission Standard for Vinyl Chloride.' The core subject matter (vinyl chloride, emission standard, environmental impact statement) is clearly present on pages 1 and 2. Mi",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 2888
+    }
+  },
+  "year": {
+    "extracted_value": 1976,
+    "evidence_quote": "EPA-450/2-75-009b September 1976",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes",
+      "Q10": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 1,
+      "normalized_match_span": [
+        1,
+        0,
+        32
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "450",
+        "2",
+        "75",
+        "009",
+        "1976"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "Year 1976 is confirmed by multiple sources on the cited pages: cover page shows 'September 1976', page 2 repeats 'September 1976', and page 4 shows approval date '9/22/76' and 'October 1976'. The source_type 'cover' is appropriate as the date appears on the cover page.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 2888
+    }
+  },
+  "_meta": {
+    "doc_id": "p1074_35556036522308",
+    "artifact_stage": "v1",
+    "generated_at": "2026-08-10T18:31:47+00:00",
+    "plan_ref": "MCAL_PLAN 3.12",
+    "schema_keys": [
+      "extracted_value",
+      "evidence_quote",
+      "source_pages",
+      "verdict",
+      "rubric_answers",
+      "composite",
+      "applied_tau",
+      "gated_to_human",
+      "gate_reason",
+      "failure_tag",
+      "bucket",
+      "artifact_stage",
+      "judge_model"
+    ],
+    "n_fields": 15,
+    "reserved_keys": [
+      "_meta",
+      "_rollup",
+      "_null_tag_monitor"
+    ],
+    "reviewer_note": "Every field is present, gated or not, with its raw extraction (MCAL_PLAN 7 Q8). Grade `extracted_value` against `evidence_quote` and `source_pages`; `gate_reason` says why the field was routed to a human. `extracted_value: []` on summary_of_interest is a legitimate 'this document is routine'; `null` plus a gate_reason is a generation failure."
+  },
+  "_rollup": {
+    "doc_id": "p1074_35556036522308",
+    "artifact_stage": "v1",
+    "geocoder_stack": "reduced",
+    "n_fields": 15,
+    "n_gated": 11,
+    "n_passed": 4,
+    "gate_rate": 0.7333,
+    "gate_reasons": {
+      "none": 4,
+      "critic_verdict": 2,
+      "composite_below_tau": 5,
+      "bucket_degenerate_severe": 3,
+      "reduced_geocoder_stack": 1
+    },
+    "verdicts": {
+      "PASS": 4,
+      "HUMAN_REVIEW": 11
+    },
+    "per_bucket": {
+      "M1": {
+        "n_fields": 4,
+        "n_gated": 0,
+        "n_passed": 4,
+        "gate_reasons": {},
+        "tau_deployed": 0.5,
+        "gate_all_to_human": false,
+        "degenerate": true,
+        "degenerate_severe": false,
+        "N_wrong_docs": 3
+      },
+      "summary_narrative": {
+        "n_fields": 5,
+        "n_gated": 5,
+        "n_passed": 0,
+        "gate_reasons": {
+          "critic_verdict": 1,
+          "composite_below_tau": 4
+        },
+        "tau_deployed": 1.0,
+        "gate_all_to_human": false,
+        "degenerate": true,
+        "degenerate_severe": false,
+        "N_wrong_docs": 5
+      },
+      "summary_numeric": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "composite_below_tau": 1
+        },
+        "tau_deployed": 1.0,
+        "gate_all_to_human": false,
+        "degenerate": true,
+        "degenerate_severe": false,
+        "N_wrong_docs": 3
+      },
+      "summary_of_interest": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "bucket_degenerate_severe": 1
+        },
+        "tau_deployed": null,
+        "gate_all_to_human": true,
+        "degenerate": true,
+        "degenerate_severe": true,
+        "N_wrong_docs": 0
+      },
+      "alternatives+themes": {
+        "n_fields": 2,
+        "n_gated": 2,
+        "n_passed": 0,
+        "gate_reasons": {
+          "bucket_degenerate_severe": 2
+        },
+        "tau_deployed": null,
+        "gate_all_to_human": true,
+        "degenerate": true,
+        "degenerate_severe": true,
+        "N_wrong_docs": 1
+      },
+      "location": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "reduced_geocoder_stack": 1
+        },
+        "tau_deployed": null,
+        "gate_all_to_human": true,
+        "degenerate": false,
+        "degenerate_severe": false,
+        "N_wrong_docs": 6
+      },
+      "key_people": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "critic_verdict": 1
+        },
+        "tau_deployed": 1.0,
+        "gate_all_to_human": false,
+        "degenerate": false,
+        "degenerate_severe": false,
+        "N_wrong_docs": 6
+      }
+    },
+    "null_tag": {
+      "M1": {
+        "n_fields": 4,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      },
+      "summary_narrative": {
+        "n_fields": 5,
+        "n_human_review": 5,
+        "n_null_tag": 2,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      },
+      "summary_numeric": {
+        "n_fields": 1,
+        "n_human_review": 1,
+        "n_null_tag": 1,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      },
+      "summary_of_interest": {
+        "n_fields": 1,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 1
+      },
+      "alternatives+themes": {
+        "n_fields": 2,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 2
+      },
+      "location": {
+        "n_fields": 1,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 1
+      },
+      "key_people": {
+        "n_fields": 1,
+        "n_human_review": 1,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      }
+    },
+    "summary_of_interest": {
+      "present": true,
+      "generation_failure": false,
+      "non_empty": true,
+      "n_entries": 6,
+      "salience_criterion_counts": {
+        "contested": 2,
+        "unusual_impact": 1,
+        "large_magnitude": 1,
+        "novel_alternative": 1,
+        "community_pushback": 0,
+        "precedent": 1,
+        "cross_jurisdictional": 0
+      },
+      "off_vocabulary_criteria": [],
+      "n_t17_manufactured_salience": 1,
+      "n_t18_duplicates_summary": 0,
+      "overlap_with_standard_summary": {
+        "jaccard": 0.1786,
+        "n_soi_tokens": 186,
+        "n_summary_tokens": 441,
+        "per_entry_jaccard": [
+          0.0592,
+          0.0418,
+          0.046,
+          0.0395,
+          0.0571,
+          0.0239
+        ],
+        "max_entry_jaccard": 0.0592,
+        "tokenizer": "mcal.quote_check.content_tokens (stopword+boilerplate filtered)"
+      },
+      "nonempty_rate_ceiling": 0.6,
+      "soi_useful": null
+    },
+    "critic": {
+      "n_fields": 15,
+      "verdicts": {
+        "PASS": 7,
+        "RE_EXTRACT": 6,
+        "PASS_WITH_NOTE": 2
+      },
+      "overrides": {},
+      "n_quote_checked": 12,
+      "n_quote_verified": 12,
+      "evidence_quote_verifiable_rate": 1.0,
+      "n_off_vocabulary_tags": 0,
+      "n_null_tag_human_review": 0,
+      "n_schema_violations": 0,
+      "n_evidence_truncated": 1
+    },
+    "re_extract": {}
+  },
+  "_null_tag_monitor": {
+    "threshold": 0.15,
+    "taxonomy_refresh_recommended": true,
+    "buckets_needing_refresh": [
+      "key_people",
+      "summary_narrative",
+      "summary_numeric"
+    ],
+    "n_docs_rolling": 4,
+    "per_bucket": {
+      "M1": {
+        "n_fields": 16,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "summary_narrative": {
+        "n_fields": 20,
+        "n_human_review": 19,
+        "n_null_tag": 10,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 1,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": 0.5263,
+        "exceeds_threshold": true
+      },
+      "summary_numeric": {
+        "n_fields": 4,
+        "n_human_review": 4,
+        "n_null_tag": 2,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": 0.5,
+        "exceeds_threshold": true
+      },
+      "summary_of_interest": {
+        "n_fields": 4,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 4,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "alternatives+themes": {
+        "n_fields": 8,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 8,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "location": {
+        "n_fields": 4,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 4,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "key_people": {
+        "n_fields": 4,
+        "n_human_review": 4,
+        "n_null_tag": 2,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": 0.5,
+        "exceeds_threshold": true
+      }
+    },
+    "path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/mcal/artifacts/null_tag_monitor.json",
+    "halt_condition": false
+  }
+}

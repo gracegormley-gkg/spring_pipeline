@@ -1,0 +1,1629 @@
+{
+  "title": {
+    "evidence_quote": "ENDANGERED SPECIES CONSERVATION ACT OF 1973",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "n/a",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes"
+    },
+    "verdict": "PASS_WITH_NOTE",
+    "verdict_before_override": null,
+    "failure_tag": null,
+    "note": "The cover page (page 1) reads 'FINAL ENVIRONMENTAL STATEMENT / Proposed / ENDANGERED SPECIES CONSERVATION ACT OF 1973', with no mention of 'incomplete appendices'. The parenthetical '(incomplete appendices)' in the extracted title appears to be catalogue metadata describing the physical state of this copy rather than text from the cover page itself. This is a minor discrepancy but does not affect ",
+    "judge_model": "sonnet",
+    "judge_model_id": "us.anthropic.claude-sonnet-4-6",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 1,
+      "normalized_match_span": [
+        1,
+        77,
+        120
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "1973"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "title",
+    "bucket": "M1",
+    "overrides": [],
+    "notes": [
+      "The cover page (page 1) reads 'FINAL ENVIRONMENTAL STATEMENT / Proposed / ENDANGERED SPECIES CONSERVATION ACT OF 1973', with no mention of 'incomplete appendices'. The parenthetical '(incomplete appendices)' in the extracted title appears to be catalogue metadata describing the physical state of this copy rather than text from the cover page itself. This is a minor discrepancy but does not affect "
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 6323
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-sonnet-4-6",
+      "input_tokens": 3950,
+      "output_tokens": 270,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "year": {
+    "evidence_quote": "Final: AUG 7 1973",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes",
+      "Q10": "yes"
+    },
+    "verdict": "PASS",
+    "verdict_before_override": null,
+    "failure_tag": null,
+    "note": "The final statement date 'AUG 7 1973' appears on page 4 (transmittal/summary section) and also on page 1 (cover). The year 1973 is clearly supported and unambiguous.",
+    "judge_model": "sonnet",
+    "judge_model_id": "us.anthropic.claude-sonnet-4-6",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 4,
+      "normalized_match_span": [
+        4,
+        149,
+        165
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "7",
+        "1973"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "year",
+    "bucket": "M1",
+    "overrides": [],
+    "notes": [
+      "The final statement date 'AUG 7 1973' appears on page 4 (transmittal/summary section) and also on page 1 (cover). The year 1973 is clearly supported and unambiguous."
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 6323
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-sonnet-4-6",
+      "input_tokens": 4217,
+      "output_tokens": 224,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "eis_type": {
+    "evidence_quote": "FINAL ENVIRONMENTAL STATEMENT",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "n/a",
+      "Q10": "yes"
+    },
+    "verdict": "PASS",
+    "verdict_before_override": null,
+    "failure_tag": null,
+    "note": null,
+    "judge_model": "sonnet",
+    "judge_model_id": "us.anthropic.claude-sonnet-4-6",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": null,
+      "matched_page": 1,
+      "normalized_match_span": [
+        1,
+        38,
+        67
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=n/a"
+    },
+    "field": "eis_type",
+    "bucket": "M1",
+    "overrides": [],
+    "notes": [],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 6323
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-sonnet-4-6",
+      "input_tokens": 4078,
+      "output_tokens": 173,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "lead_agency": {
+    "evidence_quote": "Department of the Interior, Bureau of Sport Fisheries and Wildlife",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "no"
+    },
+    "verdict": "PASS_WITH_NOTE",
+    "verdict_before_override": null,
+    "failure_tag": "T05_commenter_mislabeled_as_cooperator",
+    "note": "Page 2 presents 'Department of the Interior, Bureau of Sport Fisheries and Wildlife' as a single combined preparer/lead entity. The Bureau of Sport Fisheries and Wildlife is a sub-agency of the Department of the Interior, not a separate co-lead agency. The document does not designate them as joint leads; rather, the Bureau prepared the statement on behalf of the Department. Listing them as two sep",
+    "judge_model": "sonnet",
+    "judge_model_id": "us.anthropic.claude-sonnet-4-6",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 2,
+      "normalized_match_span": [
+        2,
+        46,
+        111
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "lead_agency",
+    "bucket": "M1",
+    "overrides": [],
+    "notes": [
+      "Page 2 presents 'Department of the Interior, Bureau of Sport Fisheries and Wildlife' as a single combined preparer/lead entity. The Bureau of Sport Fisheries and Wildlife is a sub-agency of the Department of the Interior, not a separate co-lead agency. The document does not designate them as joint leads; rather, the Bureau prepared the statement on behalf of the Department. Listing them as two sep"
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 6323
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-sonnet-4-6",
+      "input_tokens": 4024,
+      "output_tokens": 294,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "summary.overview": {
+    "evidence_quote": "An estimated 10 species would become extinct within 10 years and possibly 25 or 30 species in 20 years.",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "no",
+      "Q8": "yes"
+    },
+    "verdict": "PASS",
+    "verdict_before_override": null,
+    "failure_tag": null,
+    "note": "All major claims verify against cited pages. The bill description (p.2), the six alternatives (p.3), the Devil's Hole pupfish and Puerto Rican parrot examples (pp.35,49), the extinction estimates for Alternative 6 (p.71), the penalty figures of $10,000/$20,000 (p.2), the state objectors and supporters (pp.129,131,133,145), and the Florida Audubon Society's objection to Commerce jurisdiction (p.96)",
+    "judge_model": "sonnet",
+    "judge_model_id": "us.anthropic.claude-sonnet-4-6",
+    "source_pages": [
+      2,
+      3,
+      8,
+      35,
+      49,
+      56,
+      71,
+      96,
+      131,
+      145
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 71,
+      "normalized_match_span": [
+        71,
+        334,
+        436
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        33,
+        34,
+        35,
+        36,
+        37,
+        47,
+        48,
+        49,
+        50,
+        51,
+        54,
+        55,
+        56,
+        57,
+        58,
+        69,
+        70,
+        71,
+        72,
+        73,
+        94,
+        95,
+        96,
+        97,
+        98,
+        129,
+        130,
+        131,
+        132,
+        133,
+        143,
+        144,
+        145,
+        146,
+        147
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "10",
+        "10",
+        "25",
+        "30",
+        "20"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "summary.overview",
+    "bucket": "summary_narrative",
+    "overrides": [],
+    "notes": [
+      "All major claims verify against cited pages. The bill description (p.2), the six alternatives (p.3), the Devil's Hole pupfish and Puerto Rican parrot examples (pp.35,49), the extinction estimates for Alternative 6 (p.71), the penalty figures of $10,000/$20,000 (p.2), the state objectors and supporters (pp.129,131,133,145), and the Florida Audubon Society's objection to Commerce jurisdiction (p.96)"
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        2,
+        3,
+        8,
+        35,
+        49,
+        56,
+        71,
+        96,
+        131,
+        145
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        33,
+        34,
+        35,
+        36,
+        37,
+        47,
+        48,
+        49,
+        50,
+        51,
+        54,
+        55,
+        56,
+        57,
+        58,
+        69,
+        70,
+        71,
+        72,
+        73,
+        94,
+        95,
+        96,
+        97,
+        98,
+        129,
+        130,
+        131,
+        132,
+        133,
+        143,
+        144,
+        145,
+        146,
+        147
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 72198
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-sonnet-4-6",
+      "input_tokens": 18210,
+      "output_tokens": 377,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "summary.project_description": {
+    "evidence_quote": "increases penalties for civil violations from $5,000 to $10,000 and criminal violations from $10,000 to $20,000",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "n/a"
+    },
+    "verdict": "PASS",
+    "verdict_before_override": null,
+    "failure_tag": null,
+    "note": "All claims verified: H.R. 4758 title (p.1), BSFW/Interior preparation (p.1), repeal of 1969 Act (p.7), Group 1/Group 2 terminology (p.8), $15M ceiling removal (p.9, p.278), transfer of taking authority from states (p.277), high seas ban (p.277), civil $5K\u2192$10K and criminal $10K\u2192$20K penalties (p.278), grazing/hunting/fishing permits suspended or revoked (p.278), Commerce Secretary for marine speci",
+    "judge_model": "opus",
+    "judge_model_id": "us.anthropic.claude-opus-4-7",
+    "source_pages": [
+      2,
+      7,
+      8,
+      96,
+      278
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 2,
+      "normalized_match_span": [
+        2,
+        798,
+        905
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        94,
+        95,
+        96,
+        97,
+        98,
+        276,
+        277,
+        278,
+        279,
+        280
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "5000",
+        "10000",
+        "10000",
+        "20000"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "summary.project_description",
+    "bucket": "summary_narrative",
+    "overrides": [],
+    "notes": [
+      "All claims verified: H.R. 4758 title (p.1), BSFW/Interior preparation (p.1), repeal of 1969 Act (p.7), Group 1/Group 2 terminology (p.8), $15M ceiling removal (p.9, p.278), transfer of taking authority from states (p.277), high seas ban (p.277), civil $5K\u2192$10K and criminal $10K\u2192$20K penalties (p.278), grazing/hunting/fishing permits suspended or revoked (p.278), Commerce Secretary for marine speci"
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        2,
+        7,
+        8,
+        96,
+        278
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        94,
+        95,
+        96,
+        97,
+        98,
+        276,
+        277,
+        278,
+        279,
+        280
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 36711
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-opus-4-7",
+      "input_tokens": 17783,
+      "output_tokens": 401,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "summary.affected_community": {
+    "evidence_quote": "Attwater's is confined to a small area in 12 counties of coastal Texas.\n\nLess than 2,000 birds remain.",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "n/a"
+    },
+    "verdict": "PASS",
+    "verdict_before_override": null,
+    "failure_tag": null,
+    "note": "All named populations and figures verify on cited pages: Devil's Hole pupfish in bedroom-sized spring in Ash Meadows NV (p.35); Okaloosa darter in five streams on Eglin AFB FL (p.35); <2,000 Attwater's in 12 coastal Texas counties (p.36); <300 pairs Kirtland's warblers in half a dozen Michigan counties (p.37); ~6,000 Utah prairie dogs in three counties (p.37); 14-15 Puerto Rican parrots (p.49). Hu",
+    "judge_model": "opus",
+    "judge_model_id": "us.anthropic.claude-opus-4-7",
+    "source_pages": [
+      2,
+      35,
+      36,
+      37,
+      49,
+      54,
+      55,
+      278
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 36,
+      "normalized_match_span": [
+        36,
+        1614,
+        1713
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        276,
+        277,
+        278,
+        279,
+        280
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "12",
+        "2000"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "summary.affected_community",
+    "bucket": "summary_narrative",
+    "overrides": [],
+    "notes": [
+      "All named populations and figures verify on cited pages: Devil's Hole pupfish in bedroom-sized spring in Ash Meadows NV (p.35); Okaloosa darter in five streams on Eglin AFB FL (p.35); <2,000 Attwater's in 12 coastal Texas counties (p.36); <300 pairs Kirtland's warblers in half a dozen Michigan counties (p.37); ~6,000 Utah prairie dogs in three counties (p.37); 14-15 Puerto Rican parrots (p.49). Hu"
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        2,
+        35,
+        36,
+        37,
+        49,
+        54,
+        55,
+        278
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        276,
+        277,
+        278,
+        279,
+        280
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 50919
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-opus-4-7",
+      "input_tokens": 20973,
+      "output_tokens": 460,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "summary.alternatives_overview": {
+    "evidence_quote": "Alternative 6: If the present authority under the Endangered Species Act of 1969 were repealed, efforts for restoration of most species would collapse.",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "n/a"
+    },
+    "verdict": "PASS",
+    "verdict_before_override": null,
+    "failure_tag": null,
+    "note": "All six alternatives are present on page 3 and elaborated on pages 69-71. The extinction estimate (10 species/10 years, 25-30/20 years) matches page 71. The bill flexibility mention (permits, hardship exemptions, state programs) is not on cited pages 3 or 71 but is descriptive of the proposal context rather than an alternative; the core alternatives overview is fully supported.",
+    "judge_model": "opus",
+    "judge_model_id": "us.anthropic.claude-opus-4-7",
+    "source_pages": [
+      3,
+      71
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 71,
+      "normalized_match_span": [
+        71,
+        17,
+        164
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        69,
+        70,
+        71,
+        72,
+        73
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "6",
+        "1969"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "summary.alternatives_overview",
+    "bucket": "summary_narrative",
+    "overrides": [],
+    "notes": [
+      "All six alternatives are present on page 3 and elaborated on pages 69-71. The extinction estimate (10 species/10 years, 25-30/20 years) matches page 71. The bill flexibility mention (permits, hardship exemptions, state programs) is not on cited pages 3 or 71 but is descriptive of the proposal context rather than an alternative; the core alternatives overview is fully supported."
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        3,
+        71
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        69,
+        70,
+        71,
+        72,
+        73
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 13888
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-opus-4-7",
+      "input_tokens": 9289,
+      "output_tokens": 352,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "summary.environmental_impact": {
+    "evidence_quote": "About 20 percent of the species and subspecies appearing in the 1973 U.S. \"Red Book\" are wide ranging in distribution being characteristic of one biome or ranging over two or more biomes",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "yes",
+      "Q4": "no",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes",
+      "Q10": "n/a"
+    },
+    "verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "failure_tag": "T02_numeric_hallucination",
+    "note": "The value states 'About 80 percent of species in the 1973 U.S. \"Red Book\" are \"geographic isolates\"' \u2014 this figure is not supported. Page 29 says about 20 percent are wide-ranging across biomes; the complementary 80 percent figure for 'geographic isolates' is not stated on the cited pages, and the term 'geographic isolates' does not appear. Also, the value states the preliminary estimate could add",
+    "judge_model": "opus",
+    "judge_model_id": "us.anthropic.claude-opus-4-7",
+    "source_pages": [
+      2,
+      10,
+      29,
+      47,
+      53,
+      56
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 29,
+      "normalized_match_span": [
+        29,
+        978,
+        1161
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        10,
+        11,
+        12,
+        27,
+        28,
+        29,
+        30,
+        31,
+        45,
+        46,
+        47,
+        48,
+        49,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "20",
+        "1973"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "summary.environmental_impact",
+    "bucket": "summary_numeric",
+    "overrides": [],
+    "notes": [
+      "The value states 'About 80 percent of species in the 1973 U.S. \"Red Book\" are \"geographic isolates\"' \u2014 this figure is not supported. Page 29 says about 20 percent are wide-ranging across biomes; the complementary 80 percent figure for 'geographic isolates' is not stated on the cited pages, and the term 'geographic isolates' does not appear. Also, the value states the preliminary estimate could add"
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        2,
+        10,
+        29,
+        47,
+        53,
+        56
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        10,
+        11,
+        12,
+        27,
+        28,
+        29,
+        30,
+        31,
+        45,
+        46,
+        47,
+        48,
+        49,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 46236
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-opus-4-7",
+      "input_tokens": 18886,
+      "output_tokens": 415,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "summary.public_response": {
+    "evidence_quote": "Replies were received, in most cases with comments, from 24 States",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "n/a",
+      "Q4": "no",
+      "Q5": "yes",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "yes",
+      "Q10": "n/a"
+    },
+    "verdict": "HUMAN_REVIEW",
+    "verdict_before_override": "HUMAN_REVIEW",
+    "failure_tag": null,
+    "note": "Q5 fires: the value attributes a stance to 'A.R. Marshall of the University of Miami' \u2014 the cited pages (94-98) contain the Florida Audubon Society letter, but I cannot locate any mention of 'A.R. Marshall' or 'University of Miami' in the cited evidence. This appears to be either an unsupported attribution to an individual or a private individual stance, either way triggering HUMAN_REVIEW. Additio; policy_private_individual; rubric_Q5_private_individual_stance",
+    "judge_model": "opus",
+    "judge_model_id": "us.anthropic.claude-opus-4-7",
+    "source_pages": [
+      73,
+      75,
+      78,
+      96,
+      145,
+      152,
+      158,
+      163,
+      233
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 73,
+      "normalized_match_span": [
+        73,
+        810,
+        874
+      ],
+      "pages_searched": [
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        94,
+        95,
+        96,
+        97,
+        98,
+        143,
+        144,
+        145,
+        146,
+        147,
+        150,
+        151,
+        152,
+        153,
+        154,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        231,
+        232,
+        233,
+        234,
+        235
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "24"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "summary.public_response",
+    "bucket": "summary_narrative",
+    "overrides": [
+      "policy_private_individual"
+    ],
+    "notes": [
+      "Q5 fires: the value attributes a stance to 'A.R. Marshall of the University of Miami' \u2014 the cited pages (94-98) contain the Florida Audubon Society letter, but I cannot locate any mention of 'A.R. Marshall' or 'University of Miami' in the cited evidence. This appears to be either an unsupported attribution to an individual or a private individual stance, either way triggering HUMAN_REVIEW. Additio",
+      "policy_private_individual",
+      "rubric_Q5_private_individual_stance"
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        73,
+        75,
+        78,
+        96,
+        145,
+        152,
+        158,
+        163,
+        233
+      ],
+      "pages_included": [
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        94,
+        95,
+        96,
+        97,
+        98,
+        143,
+        144,
+        145,
+        146,
+        147,
+        150,
+        151,
+        152,
+        153,
+        154,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        231,
+        232,
+        233,
+        234,
+        235
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 59537
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-opus-4-7",
+      "input_tokens": 25194,
+      "output_tokens": 552,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "summary_of_interest": {
+    "evidence_quote": "The Environmental Statement has been revised to include the alternative of continuing administration of the program under the present authority (alternative 5).",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7a": "yes",
+      "Q7b": "no",
+      "Q7c": "n/a",
+      "Q7d": "yes"
+    },
+    "verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "failure_tag": "T01_missing_citation",
+    "note": "Two of the six entries have page=null and their evidence quotes are flagged quote_verified=false. Entry 1 (Kansas 'precedent setting') and entry 4 ('1,000 species') both lack page cites and their claimed quotes were not located in the cited page ranges provided. The remaining four entries verify cleanly on their cited pages (71, 96, 143, 278). Because two entries fail the citation requirement, the",
+    "judge_model": "opus",
+    "judge_model_id": "us.anthropic.claude-opus-4-7",
+    "source_pages": [
+      71,
+      96,
+      143,
+      278
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 143,
+      "normalized_match_span": [
+        143,
+        841,
+        996
+      ],
+      "pages_searched": [
+        69,
+        70,
+        71,
+        72,
+        73,
+        94,
+        95,
+        96,
+        97,
+        98,
+        141,
+        142,
+        143,
+        144,
+        145,
+        276,
+        277,
+        278,
+        279,
+        280
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "5"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "summary_of_interest",
+    "bucket": "summary_of_interest",
+    "overrides": [],
+    "notes": [
+      "Two of the six entries have page=null and their evidence quotes are flagged quote_verified=false. Entry 1 (Kansas 'precedent setting') and entry 4 ('1,000 species') both lack page cites and their claimed quotes were not located in the cited page ranges provided. The remaining four entries verify cleanly on their cited pages (71, 96, 143, 278). Because two entries fail the citation requirement, the"
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        71,
+        96,
+        143,
+        278
+      ],
+      "pages_included": [
+        69,
+        70,
+        71,
+        72,
+        73,
+        94,
+        95,
+        96,
+        97,
+        98,
+        141,
+        142,
+        143,
+        144,
+        145,
+        276,
+        277,
+        278,
+        279,
+        280
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 36997
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-opus-4-7",
+      "input_tokens": 20232,
+      "output_tokens": 401,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "alternatives": {
+    "evidence_quote": "An alternative to the proposed action would be to continue sole administration of the endangered species program by the Interior, the department charged with primary responsibility for protection of the Nation's wildlife resources.",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "n/a",
+      "Q8": "yes",
+      "Q9": "yes",
+      "Q10": "yes"
+    },
+    "verdict": "PASS",
+    "verdict_before_override": null,
+    "failure_tag": null,
+    "note": "All five alternatives are supported by verbatim quotes from the cited pages. The no-action alternative (continuing under existing authority) is present as alternative 5. Labels match the document's own language throughout.",
+    "judge_model": "sonnet",
+    "judge_model_id": "us.anthropic.claude-sonnet-4-6",
+    "source_pages": [
+      96,
+      143,
+      174,
+      175,
+      198
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 96,
+      "normalized_match_span": [
+        96,
+        429,
+        657
+      ],
+      "pages_searched": [
+        94,
+        95,
+        96,
+        97,
+        98,
+        141,
+        142,
+        143,
+        144,
+        145,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        196,
+        197,
+        198,
+        199,
+        200
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "alternatives",
+    "bucket": "alternatives+themes",
+    "overrides": [],
+    "notes": [
+      "All five alternatives are supported by verbatim quotes from the cited pages. The no-action alternative (continuing under existing authority) is present as alternative 5. Labels match the document's own language throughout."
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        96,
+        143,
+        174,
+        175,
+        198
+      ],
+      "pages_included": [
+        94,
+        95,
+        96,
+        97,
+        98,
+        141,
+        142,
+        143,
+        144,
+        145,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        196,
+        197,
+        198,
+        199,
+        200
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 29741
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-sonnet-4-6",
+      "input_tokens": 10140,
+      "output_tokens": 238,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "themes": {
+    "evidence_quote": "FINAL ENVIRONMENTAL STATEMENT ON THE PROPOSED ENDANGERED SPECIES CONSERVATION ACT OF 1973",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "n/a",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes"
+    },
+    "verdict": "PASS",
+    "verdict_before_override": null,
+    "failure_tag": null,
+    "note": "Pages 7\u20138 describe the proposed Endangered Species Conservation Act of 1973, covering protection of species threatened with extinction (Habitat Conservation and Biodiversity), human/commercial interactions with wildlife including import controls (Human-Wildlife Interactions), the legislative/regulatory framework and Secretary's authority (Environmental Regulation and Policy), and inter-agency coor",
+    "judge_model": "sonnet",
+    "judge_model_id": "us.anthropic.claude-sonnet-4-6",
+    "source_pages": [
+      7,
+      8
+    ],
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 7,
+      "normalized_match_span": [
+        7,
+        0,
+        89
+      ],
+      "pages_searched": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "1973"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "field": "themes",
+    "bucket": "alternatives+themes",
+    "overrides": [],
+    "notes": [
+      "Pages 7\u20138 describe the proposed Endangered Species Conservation Act of 1973, covering protection of species threatened with extinction (Habitat Conservation and Biodiversity), human/commercial interactions with wildlife including import controls (Human-Wildlife Interactions), the legislative/regulatory framework and Secretary's authority (Environmental Regulation and Policy), and inter-agency coor"
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [
+        7,
+        8
+      ],
+      "pages_included": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 9230
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-sonnet-4-6",
+      "input_tokens": 4654,
+      "output_tokens": 287,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "location": {
+    "evidence_quote": null,
+    "rubric_answers": {
+      "Q1": "no",
+      "Q2": "n/a",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "n/a",
+      "Q7": "n/a",
+      "Q8": "n/a",
+      "Q9": "n/a",
+      "Q10": "n/a",
+      "Q11": "n/a"
+    },
+    "verdict": "HUMAN_REVIEW",
+    "verdict_before_override": "PASS",
+    "failure_tag": null,
+    "note": "scope=national with empty geocoded list is a PASS per the Fuel Economy case rule, even though no pages were cited. The extraction asserts no specific site claims that would require citation support.; critic_evidence_unverifiable",
+    "judge_model": "sonnet",
+    "judge_model_id": "us.anthropic.claude-sonnet-4-6",
+    "source_pages": [],
+    "quote_check": {
+      "verified": "no",
+      "reason": "no_evidence_quote_returned"
+    },
+    "field": "location",
+    "bucket": "location",
+    "overrides": [
+      "critic_evidence_unverifiable"
+    ],
+    "notes": [
+      "scope=national with empty geocoded list is a PASS per the Fuel Economy case rule, even though no pages were cited. The extraction asserts no specific site claims that would require citation support.",
+      "critic_evidence_unverifiable"
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [],
+      "pages_included": [],
+      "pages_omitted": [],
+      "window_mode": "none",
+      "truncated": false,
+      "n_chars": 0
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-sonnet-4-6",
+      "input_tokens": 3174,
+      "output_tokens": 227,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  },
+  "key_people": {
+    "evidence_quote": null,
+    "rubric_answers": {
+      "Q1": "no",
+      "Q2": "n/a",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "n/a",
+      "Q7": "n/a",
+      "Q8": "n/a",
+      "Q9": "n/a",
+      "Q10": "n/a",
+      "Q11": "n/a"
+    },
+    "verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "failure_tag": "T01_missing_citation",
+    "note": "No pages were cited and no evidence was provided. All buckets are empty and no citation supports even the emptiness claim. A fresh extraction with proper page citations is warranted.; evidence_quote_null_consistent_with_RE_EXTRACT",
+    "judge_model": "sonnet",
+    "judge_model_id": "us.anthropic.claude-sonnet-4-6",
+    "source_pages": [],
+    "quote_check": null,
+    "field": "key_people",
+    "bucket": "key_people",
+    "overrides": [],
+    "notes": [
+      "No pages were cited and no evidence was provided. All buckets are empty and no citation supports even the emptiness claim. A fresh extraction with proper page citations is warranted.",
+      "evidence_quote_null_consistent_with_RE_EXTRACT"
+    ],
+    "schema_violations": [],
+    "off_vocabulary_failure_tag": null,
+    "evidence_meta": {
+      "cited_pages": [],
+      "pages_included": [],
+      "pages_omitted": [],
+      "window_mode": "none",
+      "truncated": false,
+      "n_chars": 0
+    },
+    "capacity_findings": [],
+    "usage": {
+      "model": "us.anthropic.claude-sonnet-4-6",
+      "input_tokens": 3307,
+      "output_tokens": 230,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "empty_but_valid": false,
+    "extraction_missing": false
+  }
+}

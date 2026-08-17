@@ -1,0 +1,95 @@
+{
+  "title": {
+    "value": "Marijuana eradication project, Pulaski County : environmental impact statement.",
+    "confidence": "high",
+    "sources": [
+      "inventory index (MARC 245$ab)"
+    ]
+  },
+  "year": {
+    "value": 1972,
+    "confidence": "high",
+    "sources": [
+      "NUL",
+      "regex (first 3 pages)"
+    ],
+    "adjudication": {
+      "year": 1972,
+      "source_type": "cover",
+      "confidence": "high",
+      "candidates": [
+        {
+          "year": 1969,
+          "count": 2,
+          "pages": [
+            3,
+            30
+          ],
+          "source_types": [
+            "cover",
+            "body"
+          ],
+          "best_source": "cover"
+        },
+        {
+          "year": 1972,
+          "count": 2,
+          "pages": [
+            1,
+            2
+          ],
+          "source_types": [
+            "cover"
+          ],
+          "best_source": "cover"
+        },
+        {
+          "year": 1970,
+          "count": 3,
+          "pages": [
+            28,
+            29,
+            30
+          ],
+          "source_types": [
+            "body"
+          ],
+          "best_source": "body"
+        },
+        {
+          "year": 1971,
+          "count": 1,
+          "pages": [
+            28
+          ],
+          "source_types": [
+            "body"
+          ],
+          "best_source": "body"
+        }
+      ],
+      "evidence_quote": "ent, University of Illinois 6. The Draft Statement was made available to CEQ on April 26, 1972. The Final Statement was made available to CEQ on May 9, 1972.",
+      "note": "modal_candidate_was_1970; agrees_with_m1:1972; Cover page explicitly states the Final Statement was made available to CEQ on May 9, 1972, confirming 1972 as the publication year."
+    },
+    "m1_value": 1972,
+    "source_type": "cover"
+  },
+  "eis_type": {
+    "value": "Final",
+    "confidence": "high",
+    "sources": [
+      "regex (first page)",
+      "Sonnet (first 2 pages)"
+    ],
+    "evidence": "FINAL ENVIRONMENTAL STATEMENT"
+  },
+  "lead_agency": {
+    "value": [
+      "Law Enforcement Assistance Administration"
+    ],
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  }
+}

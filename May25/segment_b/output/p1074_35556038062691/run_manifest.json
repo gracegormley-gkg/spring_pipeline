@@ -1,0 +1,3650 @@
+{
+  "alternatives": {
+    "extracted_value": [],
+    "evidence_quote": null,
+    "source_pages": [],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "no",
+      "Q2": "n/a",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "n/a",
+      "Q6a": "n/a",
+      "Q6b": "n/a",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "n/a",
+      "Q10": "n/a"
+    },
+    "composite": 0.15,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "bucket_degenerate_severe",
+    "failure_tag": "T10_alternatives_chapter_missed",
+    "bucket": "alternatives+themes",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "bucket_degenerate_severe",
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 0.0,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "no",
+    "quote_check": null,
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": true,
+      "degenerate_severe": true,
+      "saturated": false,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 1
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The extracted value is an empty list with no cited pages and no explicit 'alternatives_chapter_not_found' status. This is a silent empty list, which is never acceptable per the field-specific rules. A fresh extraction of the alternatives chapter is warranted.; evidence_quote_null_consistent_with_RE_EXTRACT",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [],
+      "pages_included": [],
+      "pages_omitted": [],
+      "window_mode": "none",
+      "truncated": false,
+      "n_chars": 0
+    }
+  },
+  "eis_type": {
+    "extracted_value": "Final",
+    "evidence_quote": "Foreword to the Final Environmental Impact Statement for the City of San Jose's Community Development Block Grant Three Year Plan",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "n/a",
+      "Q10": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 3,
+      "normalized_match_span": [
+        3,
+        0,
+        129
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": null,
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 3852
+    }
+  },
+  "key_people": {
+    "extracted_value": {
+      "agency_preparers": [
+        {
+          "name": "James L. Goggin",
+          "role": "Preparer/Contact for EIR",
+          "organization": "David J. Powers and Associates",
+          "bucket": "agency_preparers",
+          "evidence": [
+            {
+              "quote": "Mr. James L. Goggin\nDavid J. Powers and Associates\n1530 The Alameda, Suite 200\nSan Jose, CA 95126",
+              "source_pages": [
+                "6"
+              ],
+              "quote_verified": true
+            }
+          ]
+        }
+      ],
+      "cooperating_agencies": [],
+      "consulted_entities": [
+        {
+          "name": "Arthur Ogilvie, Ph,D.",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "Arthur Ogilvie, Ph,D.",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Beth Perlmutter",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "Beth Perlmutter",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Attendance Division",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "Attendance Division",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Bob Shields",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "Bob Shields",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Gary Thompson",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "Gary Thompson",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Hugh Baker",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "Hugh Baker",
+              "source_pages": [
+                "4"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Shirley Harris",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "Shirley Harris",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Margaret Cohen",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "Margaret Cohen",
+              "source_pages": [
+                "10"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Bonnie Bamberg",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "Bonnie Bamberg",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Kathy Kaiser",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "Kathy Kaiser",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Dennis Korbiak",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "Dennis Korbiak",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Norman LaPointe",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "Norman LaPointe",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Howard Overhouse",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "Howard Overhouse",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Ed Lukus",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "Ed Lukus",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Orville Welsh",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "Orville Welsh",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Martin Sawa",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "Martin Sawa",
+              "source_pages": [
+                "5"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "John Brezzo",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "John Brezzo",
+              "source_pages": [
+                "41"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Charles Kahr",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "Charles Kahr",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Gene Itogawa",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "Gene Itogawa",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Tad Masaoka",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "Tad Masaoka",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Santa Clara County Planning Dept.",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "Santa Clara County Planning Dept.",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Santa Clara County Office of Education",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "Santa Clara County Office of Education",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "San Jose Public Works Dept., Hydraulics Div.",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "San Jose Public Works Dept., Hydraulics Div.",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "San Jose Public Works Dept., Transportation D",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "San Jose Public Works Dept., Transportation D",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "San Jose City Planning Department",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "San Jose City Planning Department",
+              "source_pages": [
+                "98"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "San Jose City Dept. of Property and Code Enforcement",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "San Jose City Dept. of Property and Code Enforcement",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "San Jose City Dept. of Property & Code Enforcement",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "San Jose City Dept. of Property & Code Enforcement",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "San Jose Historic Landmarks Commission",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "San Jose Historic Landmarks Commission",
+              "source_pages": [
+                "35"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "San Jose Planning Department",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "San Jose Planning Department",
+              "source_pages": [
+                "152"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "San Jose Parks and Recreation Dept.",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "San Jose Parks and Recreation Dept.",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "San Jose City Fire Dept., Support Bureau",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "San Jose City Fire Dept., Support Bureau",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "San Jose City Police Dept., Research Div.",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "San Jose City Police Dept., Research Div.",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "San Jose Public Works Dept., Hydraulic Div.",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "San Jose Public Works Dept., Hydraulic Div.",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "San Jose Parks & Recreation Dept.",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "San Jose Parks & Recreation Dept.",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "San Jose Dept. of Property & Code Enforcement, Housing Division",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "San Jose Dept. of Property & Code Enforcement, Housing Division",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "George S. Nolte and Associates",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "George S. Nolte and Associates",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "State Office of Historic Preservation",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "State Office of Historic Preservation",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "U.S. Dept. of Housing & Urban Development",
+          "bucket": "consulted_entities",
+          "role": "consulted_agency",
+          "evidence": [
+            {
+              "quote": "U.S. Dept. of Housing & Urban Development",
+              "source_pages": [
+                "173"
+              ],
+              "quote_verified": true
+            }
+          ]
+        }
+      ],
+      "public_commenters": [
+        {
+          "name": "Mellon",
+          "bucket": "public_commenters",
+          "kind": "official",
+          "affiliation": "State of California Department of Parks and Recreation",
+          "stance": "conditional",
+          "capacity": {
+            "capacity": "non_private",
+            "basis": "institutional_identification_in_cited_passage",
+            "non_private_cues": [
+              "title:dr.",
+              "org:department of"
+            ],
+            "private_cues": [],
+            "name_located_in_passage": true,
+            "requires_human_review": false
+          },
+          "human_review": false,
+          "heading": "RESPONSE TO COMMENTS",
+          "heading_pages": "15-41",
+          "evidence": [
+            {
+              "quote": "Santa Clara Archaeological Site #230 is located in the vicinity of the Olinder neighborhood.",
+              "source_pages": [
+                "15"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "United States Environmental Protection Agency, Region IX",
+          "bucket": "public_commenters",
+          "kind": "organization",
+          "affiliation": "United States Environmental Protection Agency, Region IX, San Francisco, CA",
+          "stance": "conditional",
+          "capacity": {
+            "capacity": "non_private",
+            "basis": "entity_name_is_an_organization",
+            "non_private_cues": [
+              "org:agency"
+            ],
+            "private_cues": [],
+            "name_located_in_passage": true,
+            "requires_human_review": false
+          },
+          "human_review": false,
+          "heading": "RESPONSE TO COMMENTS",
+          "heading_pages": "15-41",
+          "evidence": [
+            {
+              "quote": "Page 40. Air quality standards have Leen established to provide protection to the Public Health and Welfare. The table on page 40 should include all National Ambient Air Quality Standards (NAAQS) for each pollutant as well as the appropriate averaging times.",
+              "source_pages": [],
+              "quote_verified": false,
+              "note": "Quote not found verbatim in doc \u2014 forced HUMAN_REVIEW."
+            }
+          ]
+        }
+      ],
+      "comment_response_present": true
+    },
+    "evidence_quote": "Mr. James L. Goggin\nDavid J. Powers and Associates\n1530 The Alameda, Suite 200\nSan Jose, CA 95126",
+    "source_pages": [
+      4,
+      5,
+      6,
+      10,
+      15,
+      35,
+      41,
+      98,
+      152,
+      173
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "no",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "n/a",
+      "Q8": "n/a",
+      "Q9": "yes",
+      "Q10": "no",
+      "Q11": "n/a"
+    },
+    "composite": 0.4,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "critic_verdict",
+    "failure_tag": "T01_missing_citation",
+    "bucket": "key_people",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 0.5,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": 0.97561,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "mixed",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 6,
+      "normalized_match_span": [
+        6,
+        82,
+        174
+      ],
+      "pages_searched": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        33,
+        34,
+        35,
+        36,
+        37,
+        39,
+        40,
+        41,
+        42,
+        43,
+        96,
+        97,
+        98,
+        99,
+        100,
+        150,
+        151,
+        152,
+        153,
+        154,
+        171,
+        172,
+        173,
+        174,
+        175
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "1530",
+        "200",
+        "95126"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": false,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 6
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The EPA (United States Environmental Protection Agency, Region IX) public_commenters entry has source_pages: [] \u2014 an empty citation array. The supporting quote appears on page 16 of the document (within the Response to Comments section), but that page is not cited in the evidence array. The extraction pipeline itself flagged this as unverified. All other entries appear well-supported.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        4,
+        5,
+        6,
+        10,
+        15,
+        35,
+        41,
+        98,
+        152,
+        173
+      ],
+      "pages_included": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        33,
+        34,
+        35,
+        36,
+        37,
+        39,
+        40,
+        41,
+        42,
+        43,
+        96,
+        97,
+        98,
+        99,
+        100,
+        150,
+        151,
+        152,
+        153,
+        154,
+        171,
+        172,
+        173,
+        174,
+        175
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 64089
+    }
+  },
+  "lead_agency": {
+    "extracted_value": [
+      "Department of Housing and Urban Development"
+    ],
+    "evidence_quote": null,
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a"
+    },
+    "composite": 0.65,
+    "applied_tau": 0.5,
+    "gated_to_human": true,
+    "gate_reason": "critic_verdict",
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "critic_verdict"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.3,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": null,
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": "T03_outside_text_fabrication",
+    "note": "critic_failure_tag_off_vocabulary:T03_outside_text_fabrication; The extracted value claims 'Department of Housing and Urban Development' as the lead agency, but no such designation appears in the cited pages (1\u20133). The pages show this is a City of San Jose Community Development Block Grant EIS, and while HUD is implicated by the CDBG program context, the cited pages do not name HUD as the lead agency. The document appears to be prepared by the City of San Jose; evidence_quote_null_consistent_with_RE_EXTRACT",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 3852
+    }
+  },
+  "location": {
+    "extracted_value": {
+      "places": [
+        {
+          "name": "City of San Jose",
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": "San Jose",
+            "county": null,
+            "state": "California",
+            "country": null
+          },
+          "role": "primary",
+          "evidence": [
+            {
+              "quote": "COMMUNITY DEVELOPMENT BLOCK GRANT THREE YEAR PLAN JULY 1978 - JUNE 1981",
+              "source_pages": [
+                "1"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Alviso",
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": "San Jose",
+            "county": null,
+            "state": "California",
+            "country": null
+          },
+          "role": "primary",
+          "evidence": [
+            {
+              "quote": "The Alviso National Register Historic District is adjacent to the Alviso Project Area.",
+              "source_pages": [
+                "6"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Olinder neighborhood",
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": "Olinder",
+            "city": "San Jose",
+            "county": null,
+            "state": "California",
+            "country": null
+          },
+          "role": "primary",
+          "evidence": [
+            {
+              "quote": "Santa Clara County Archeological Site #230 is located in the vicinity of the Olinder neighborhood.",
+              "source_pages": [
+                "6"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Backesto Park",
+          "admin_hierarchy": {
+            "poi": "Backesto Park",
+            "neighborhood": null,
+            "city": "San Jose",
+            "county": null,
+            "state": "California",
+            "country": null
+          },
+          "role": "primary",
+          "evidence": [
+            {
+              "quote": "The recommended improvements to Backesto Park include the construction of a shelter-type recreation building",
+              "source_pages": [],
+              "quote_verified": false,
+              "note": "Quote not found verbatim in doc \u2014 forced HUMAN_REVIEW."
+            }
+          ]
+        },
+        {
+          "name": "Alma Neighborhood Center",
+          "admin_hierarchy": {
+            "poi": "Alma Neighborhood Center",
+            "neighborhood": null,
+            "city": "San Jose",
+            "county": null,
+            "state": "California",
+            "country": null
+          },
+          "role": "primary",
+          "evidence": [
+            {
+              "quote": "Page 83. Discussion of Alma Neighborhood Center under Public Facilities.",
+              "source_pages": [
+                "5"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Plata Arroyo Park",
+          "admin_hierarchy": {
+            "poi": "Plata Arroyo Park",
+            "neighborhood": null,
+            "city": "San Jose",
+            "county": null,
+            "state": "California",
+            "country": null
+          },
+          "role": "primary",
+          "evidence": [
+            {
+              "quote": "No EIR has been prepared on the development of Plata Arroyo Park.",
+              "source_pages": [
+                "5"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Gardner CNRA",
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": "Gardner",
+            "city": "San Jose",
+            "county": null,
+            "state": "California",
+            "country": null
+          },
+          "role": "primary",
+          "evidence": [
+            {
+              "quote": "These minor impacts would occur during construction of street and sewer improvements taking place in the Gardner and Alviso CNRA's.",
+              "source_pages": [
+                "24"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Alviso CNRA",
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": "Alviso",
+            "city": "San Jose",
+            "county": null,
+            "state": "California",
+            "country": null
+          },
+          "role": "primary",
+          "evidence": [
+            {
+              "quote": "Consultation with a qualified archaeologist should precede all excavations for sewer lines and building foundations in the Alviso/CNRA",
+              "source_pages": [
+                "15"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Alma CNRA",
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": "Alma",
+            "city": "San Jose",
+            "county": null,
+            "state": "California",
+            "country": null
+          },
+          "role": "primary",
+          "evidence": [
+            {
+              "quote": "Page 98, D. Flora and Fauna, Alma CNRA",
+              "source_pages": [
+                "27"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Alum Rock",
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": "Alum Rock",
+            "city": "San Jose",
+            "county": null,
+            "state": "California",
+            "country": null
+          },
+          "role": "primary",
+          "evidence": [
+            {
+              "quote": "The principal freeways serving the Alum Rock and Central Planning areas are U.S. 101 and Interstate 280 and 680.",
+              "source_pages": [
+                "21"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "County of San Diego",
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": null,
+            "county": "San Diego",
+            "state": "California",
+            "country": null
+          },
+          "role": "reference",
+          "evidence": [
+            {
+              "quote": "MEMORANDUM OF UNDERSTANDING RE: COUNTY OF SAN DIEGO Application for Federal Assistance under the Community Development Block Grant Program",
+              "source_pages": [
+                "7"
+              ],
+              "quote_verified": true
+            }
+          ]
+        },
+        {
+          "name": "Bay Area",
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": null,
+            "county": null,
+            "state": "California",
+            "country": null
+          },
+          "role": "reference",
+          "evidence": [
+            {
+              "quote": "the Bay Area has been designated as a nonattainment area for CO, and O.",
+              "source_pages": [
+                "12"
+              ],
+              "quote_verified": true
+            }
+          ]
+        }
+      ],
+      "is_multi_site": true,
+      "geocoded": [
+        {
+          "lat": 37.357471,
+          "lon": -121.906084,
+          "bbox": [
+            -121.906134,
+            37.357421,
+            -121.906034,
+            37.357521
+          ],
+          "source": "nominatim",
+          "confidence": 0.664,
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": "San Jose",
+            "county": "Santa Clara County",
+            "state": "California",
+            "country": "United States"
+          },
+          "level": "poi",
+          "query": "City of San Jose, San Jose, California",
+          "matched_name": "Diocese of San Jos\u00e9 Chancery Office, 1150, North 1st Street, Japantown, San Jose, Santa Clara County, California, 95112, United States",
+          "bbox_synthetic": false,
+          "importance": 0.429,
+          "confident": true,
+          "stack": "reduced",
+          "accepted_level": "poi",
+          "acceptance_reason": "poi_city_matches_document_city",
+          "site_name": "City of San Jose",
+          "role": "primary"
+        },
+        {
+          "lat": 37.426051,
+          "lon": -121.975237,
+          "bbox": [
+            -122.046227,
+            37.411756,
+            -121.923585,
+            37.469148
+          ],
+          "source": "nominatim",
+          "confidence": 0.601,
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": "San Jose",
+            "county": "Santa Clara County",
+            "state": "California",
+            "country": "United States"
+          },
+          "level": "poi",
+          "query": "Alviso, San Jose, California",
+          "matched_name": "Alviso, San Jose, Santa Clara County, California, 95002, United States",
+          "bbox_synthetic": false,
+          "importance": 0.303,
+          "confident": true,
+          "stack": "reduced",
+          "accepted_level": "poi",
+          "acceptance_reason": "poi_city_matches_document_city",
+          "site_name": "Alviso",
+          "role": "primary"
+        },
+        {
+          "lat": 37.334337,
+          "lon": -121.866329,
+          "bbox": [
+            -121.868234,
+            37.331165,
+            -121.865169,
+            37.338101
+          ],
+          "source": "nominatim",
+          "confidence": 0.49,
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": "San Jose",
+            "county": "Santa Clara County",
+            "state": "California",
+            "country": "United States"
+          },
+          "level": "neighborhood",
+          "query": "Olinder, San Jose, California",
+          "matched_name": "Selma Olinder Park, Little Portugal, San Jose, Santa Clara County, California, United States",
+          "bbox_synthetic": false,
+          "importance": 0.08,
+          "confident": false,
+          "stack": "reduced",
+          "accepted_level": "neighborhood",
+          "acceptance_reason": "bbox_contained_in_city",
+          "failed_containment_checks": [],
+          "site_name": "Olinder neighborhood",
+          "role": "primary"
+        },
+        {
+          "lat": 37.352483,
+          "lon": -121.884607,
+          "bbox": [
+            -121.886017,
+            37.350828,
+            -121.882818,
+            37.353648
+          ],
+          "source": "nominatim",
+          "confidence": 0.572,
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": "San Jose",
+            "county": "Santa Clara County",
+            "state": "California",
+            "country": "United States"
+          },
+          "level": "poi",
+          "query": "Backesto Park, San Jose, California",
+          "matched_name": "Backesto Park, Luna Park, San Jose, Santa Clara County, California, United States",
+          "bbox_synthetic": false,
+          "importance": 0.243,
+          "confident": false,
+          "stack": "reduced",
+          "accepted_level": "poi",
+          "acceptance_reason": "poi_city_matches_document_city",
+          "site_name": "Backesto Park",
+          "role": "primary"
+        },
+        {
+          "lat": 37.336166,
+          "lon": -121.890591,
+          "bbox": [
+            -122.046227,
+            37.12316,
+            -121.585844,
+            37.469148
+          ],
+          "source": "nominatim",
+          "confidence": 0.791,
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": "San Jose",
+            "county": "Santa Clara County",
+            "state": "California",
+            "country": "United States"
+          },
+          "level": "city",
+          "query": "San Jose, California",
+          "matched_name": "San Jose, Santa Clara County, California, United States",
+          "bbox_synthetic": false,
+          "importance": 0.681,
+          "confident": true,
+          "stack": "reduced",
+          "accepted_level": "city",
+          "acceptance_reason": "bbox_contained_in_state",
+          "failed_containment_checks": [],
+          "site_name": "Alma Neighborhood Center",
+          "role": "primary"
+        },
+        {
+          "lat": 37.357125,
+          "lon": -121.858632,
+          "bbox": [
+            -121.860466,
+            37.35624,
+            -121.855697,
+            37.358012
+          ],
+          "source": "nominatim",
+          "confidence": 0.49,
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": "San Jose",
+            "county": "Santa Clara County",
+            "state": "California",
+            "country": "United States"
+          },
+          "level": "poi",
+          "query": "Plata Arroyo Park, San Jose, California",
+          "matched_name": "Plata Arroyo Park, Little Portugal, San Jose, Santa Clara County, California, 95116, United States",
+          "bbox_synthetic": false,
+          "importance": 0.08,
+          "confident": false,
+          "stack": "reduced",
+          "accepted_level": "poi",
+          "acceptance_reason": "poi_city_matches_document_city",
+          "site_name": "Plata Arroyo Park",
+          "role": "primary"
+        },
+        {
+          "lat": 37.303341,
+          "lon": -121.922272,
+          "bbox": [
+            -121.932272,
+            37.293341,
+            -121.912272,
+            37.313341
+          ],
+          "source": "nominatim",
+          "confidence": 0.49,
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": "San Jose",
+            "county": "Santa Clara County",
+            "state": "California",
+            "country": "United States"
+          },
+          "level": "neighborhood",
+          "query": "Gardner, San Jose, California",
+          "matched_name": "Gardner, Dry Creek, San Jose, Santa Clara County, California, 95128, United States",
+          "bbox_synthetic": false,
+          "importance": 0.08,
+          "confident": false,
+          "stack": "reduced",
+          "accepted_level": "neighborhood",
+          "acceptance_reason": "bbox_contained_in_city",
+          "failed_containment_checks": [],
+          "site_name": "Gardner CNRA",
+          "role": "primary"
+        },
+        {
+          "lat": 37.426051,
+          "lon": -121.975237,
+          "bbox": [
+            -122.046227,
+            37.411756,
+            -121.923585,
+            37.469148
+          ],
+          "source": "nominatim",
+          "confidence": 0.601,
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": "San Jose",
+            "county": "Santa Clara County",
+            "state": "California",
+            "country": "United States"
+          },
+          "level": "neighborhood",
+          "query": "Alviso, San Jose, California",
+          "matched_name": "Alviso, San Jose, Santa Clara County, California, 95002, United States",
+          "bbox_synthetic": false,
+          "importance": 0.303,
+          "confident": true,
+          "stack": "reduced",
+          "accepted_level": "neighborhood",
+          "acceptance_reason": "bbox_contained_in_city",
+          "failed_containment_checks": [],
+          "site_name": "Alviso CNRA",
+          "role": "primary"
+        },
+        {
+          "lat": 37.314638,
+          "lon": -121.876511,
+          "bbox": [
+            -121.876627,
+            37.314559,
+            -121.876396,
+            37.314717
+          ],
+          "source": "nominatim",
+          "confidence": 0.477,
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": "San Jose",
+            "county": "Santa Clara County",
+            "state": "California",
+            "country": "United States"
+          },
+          "level": "neighborhood",
+          "query": "Alma, San Jose, California",
+          "matched_name": "West Alma Avenue, San Jose, Santa Clara County, California, 95172, United States",
+          "bbox_synthetic": false,
+          "importance": 0.053,
+          "confident": false,
+          "stack": "reduced",
+          "accepted_level": "neighborhood",
+          "acceptance_reason": "bbox_contained_in_city",
+          "failed_containment_checks": [],
+          "site_name": "Alma CNRA",
+          "role": "primary"
+        },
+        {
+          "lat": 37.369642,
+          "lon": -121.824366,
+          "bbox": [
+            -121.842074,
+            37.354256,
+            -121.812157,
+            37.381351
+          ],
+          "source": "nominatim",
+          "confidence": 0.658,
+          "admin_hierarchy": {
+            "poi": null,
+            "neighborhood": null,
+            "city": "San Jose",
+            "county": "Santa Clara County",
+            "state": "California",
+            "country": "United States"
+          },
+          "level": "neighborhood",
+          "query": "Alum Rock, San Jose, California",
+          "matched_name": "Alum Rock, San Jose, Santa Clara County, California, United States",
+          "bbox_synthetic": false,
+          "importance": 0.417,
+          "confident": true,
+          "stack": "reduced",
+          "accepted_level": "neighborhood",
+          "acceptance_reason": "bbox_contained_in_city",
+          "failed_containment_checks": [],
+          "site_name": "Alum Rock",
+          "role": "primary"
+        }
+      ],
+      "scope": "site",
+      "textual_location": "Santa Clara County",
+      "corridor": false
+    },
+    "evidence_quote": "COMMUNITY DEVELOPMENT BLOCK GRANT THREE YEAR PLAN JULY 1978 - JUNE 1981\n\nJune 1, 1978\nCITY OF SAN JOSE 801 NO. 1ST STREET SAN JOSE, CA 95110",
+    "source_pages": [
+      1,
+      5,
+      6,
+      7,
+      12,
+      15,
+      21,
+      24,
+      27
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes",
+      "Q10": "yes",
+      "Q11": "yes"
+    },
+    "composite": 0.6,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "reduced_geocoder_stack",
+    "failure_tag": "T07_geocode_wrong_specificity",
+    "bucket": "location",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS_WITH_NOTE",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "reduced_geocoder_stack",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 0.5,
+      "s_critic": 0.7,
+      "s_source": null,
+      "s_citation": 0.916667,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "mixed",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 1,
+      "normalized_match_span": [
+        1,
+        88,
+        222
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "1978",
+        "1981",
+        "1",
+        "1978",
+        "801",
+        "1",
+        "95110"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": false,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 6
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The geocode for 'Alma Neighborhood Center' resolved only to the city of San Jose (city-level, bbox spanning the entire city) rather than to the specific facility. The matched_name is 'San Jose, Santa Clara County, California' \u2014 this is too coarse for a named facility. All other geocodes appear appropriately specific (neighborhood or POI level). The Backesto Park evidence quote was flagged as unver",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        5,
+        6,
+        7,
+        12,
+        15,
+        21,
+        24,
+        27
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 43704
+    }
+  },
+  "summary.affected_community": {
+    "extracted_value": "The seven target neighborhoods sit in four of San Jose's fourteen planning areas: the Central Area (the oldest part of the city), the Alum Rock Planning Area east of downtown, the Alviso community about eight miles northeast of downtown, and the Willow Glen Planning Area south of Central. Residents are disproportionately elderly, lower-income, and Spanish-speaking \u2014 for example, Alma has a median income of $6,016 and 45.5% ethnic minority households, Mayfair Area B is 88% ethnic minority with a median income of $5,961, and Alviso is 73.4% ethnic minority with 65% Spanish-speaking residents and older single-family homes. The Housing Assistance Plan estimated that 30,452 lower-income households needed housing assistance in January 1978, growing to about 36,239 over the following three years. Specific groups served include Asian residents in Northside through the Nihonmachi Community Services Program, elderly residents at the John XXIII Senior Center and Alum Rock Senior Citizens Center, and students and elderly people in the Campus area near San Jose State University.",
+    "evidence_quote": "The target areas covered by the neighborhood revitalization program are located in four of the fourteen planning areas into which the City of San Jose is divided",
+    "source_pages": [
+      48,
+      50,
+      51,
+      70,
+      108,
+      110,
+      114
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "no",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "n/a"
+    },
+    "composite": 0.4,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "critic_verdict",
+    "failure_tag": "T02_numeric_hallucination",
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 0.5,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": 0.833333,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "mixed",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 48,
+      "normalized_match_span": [
+        48,
+        1306,
+        1467
+      ],
+      "pages_searched": [
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        68,
+        69,
+        70,
+        71,
+        72,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The value states Alviso has '65% Spanish-speaking residents' \u2014 but the document (p.108) attributes the 65% Spanish-speaking figure to the Alviso population as a whole in a quoted General Plan passage, which is supported. However, the value also states the HAP 'estimated that 30,452 lower-income households needed housing assistance in January 1978.' Page 50 supports this. The value also says Mayfai",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        48,
+        50,
+        51,
+        70,
+        108,
+        110,
+        114
+      ],
+      "pages_included": [
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        68,
+        69,
+        70,
+        71,
+        72,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 48410
+    }
+  },
+  "summary.alternatives_overview": {
+    "extracted_value": "The Environmental Impact Statement (EIS) discusses specific project proposals rejected by the Steering Committee or City Council (such as an Alviso skateboard park, a Mayfair amphitheater, and a Campus John XXIII parking/housing site), four single-category alternatives that would put all Community Development Block Grant (CDBG) funds into just one activity \u2014 housing rehabilitation, park acquisition and improvement, street improvements, or social services \u2014 and a no-project alternative. Each single-category alternative would avoid some negative impacts of the proposed plan but would leave other neighborhood-blight problems unaddressed; the social services alternative would produce essentially no negative environmental impacts. The no-project alternative would avoid all construction impacts but forgo the plan's benefits and leave the city with serious financial obligations from its partially completed redevelopment projects, including San Antonio Plaza.",
+    "evidence_quote": "PROJECTS REJECTED BY STEERING COMMITTEE OR PROJECTS REJECTED BY CITY COUNCIL",
+    "source_pages": [
+      157,
+      158,
+      159,
+      161
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": null,
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 157,
+      "normalized_match_span": [
+        157,
+        755,
+        831
+      ],
+      "pages_searched": [
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The value accurately summarizes the three categories of alternatives (rejected specific projects, four single-category alternatives, and no-project). Examples (Alviso skateboard park p.157, Mayfair amphitheater p.157, Campus John XXIII p.158) are all present. Social services having no significant negative impacts is supported on p.161. No-project financial obligation and San Antonio Plaza \u2014 San An",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        157,
+        158,
+        159,
+        161
+      ],
+      "pages_included": [
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 16336
+    }
+  },
+  "summary.environmental_impact": {
+    "extracted_value": "Most impacts are short-term construction effects: temporary increases in airborne dust (particulates) from demolition, trenching, and paving, and construction noise averaging 84 to 88 dBA at 50 feet from the loudest equipment. Mitigation includes performing dust-producing activities during the wetter months of November through April, and adding double-pane windows, weatherstripping, and insulation during rehab, which can yield up to a 30% long-term energy savings. Significant site-specific hazards include seismic risk \u2014 the Silver Creek Fault zone underlies all of developed Alviso and about half of Northside, and the maximum credible earthquake would produce ground acceleration of 0.3g to 0.35g \u2014 plus high liquefaction potential on alluvial soils in all seven target neighborhoods, and 100-year flood risk covering 100% of Alviso and Campus and 80% of Olinder. Alviso has flooded from creek overflows in 1955, 1958, 1963, and 1968, and its protective dikes were built for salt-pond retention rather than urban flood protection. Two siting concerns are noted: prolonging the life of the Olinder Library in a flood zone and constructing the Alma Neighborhood Center in an area of high liquefaction potential. Air quality is poor \u2014 the Bay Area is a federal non-attainment area for carbon monoxide and oxidants \u2014 and Mayfair has elevated carbon monoxide from Route 680. The saltmarsh north of Alviso is habitat for two endangered species, the California Clapper Rail and the Saltmarsh Harvest Mouse. Archaeologically sensitive areas in Gardner, Olinder, Mayfair, Northside, and Alviso require monitoring during trenching, and the project is expected to have no permanent impact on traffic while sewer upgrades should improve groundwater quality.",
+    "evidence_quote": "these operations will generate average noise levels of 84 to 88 dBA at 50 feet from the noisiest equipment",
+    "source_pages": [
+      18,
+      22,
+      24,
+      33,
+      77,
+      78,
+      82,
+      135,
+      142,
+      145,
+      148,
+      152,
+      153,
+      155,
+      156
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "yes",
+      "Q4": "no",
+      "Q5": "n/a",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "no",
+      "Q10": "yes"
+    },
+    "composite": 0.4,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "critic_verdict",
+    "failure_tag": "T02_numeric_hallucination",
+    "bucket": "summary_numeric",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 0.5,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": 0.944444,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "mixed",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 148,
+      "normalized_match_span": [
+        148,
+        2364,
+        2470
+      ],
+      "pages_searched": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        31,
+        32,
+        33,
+        34,
+        35,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        133,
+        134,
+        135,
+        136,
+        137,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "84",
+        "88",
+        "50"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The extracted value states '100-year flood risk covering 100% of Alviso and Campus and 80% of Olinder.' The cited Silver Creek Fault Zone table on page 134 shows Alviso 100%, Northside 80%, Olinder 100%, Campus 0% \u2014 those percentages refer to fault zone coverage, not flood risk. The value attaches the fault-zone percentages to the wrong hazard (flood risk) and to the wrong CNRAs (Campus is 0% in f",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        18,
+        22,
+        24,
+        33,
+        77,
+        78,
+        82,
+        135,
+        142,
+        145,
+        148,
+        152,
+        153,
+        155,
+        156
+      ],
+      "pages_included": [
+        17,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24,
+        25,
+        32,
+        33,
+        34,
+        76,
+        77,
+        78,
+        79,
+        81,
+        82,
+        83,
+        134,
+        135,
+        136,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        151,
+        152,
+        153,
+        155,
+        156,
+        157
+      ],
+      "pages_omitted": [
+        16,
+        20,
+        26,
+        31,
+        35,
+        75,
+        80,
+        84,
+        133,
+        137,
+        140,
+        150,
+        154,
+        158
+      ],
+      "window_mode": "clustered",
+      "truncated": true,
+      "n_chars": 79590
+    }
+  },
+  "summary.overview": {
+    "extracted_value": "This Final Environmental Impact Statement evaluates the City of San Jose's second three-year Community Development Block Grant (CDBG) plan, a federally funded neighborhood improvement program running July 1978 to June 1981 that pays for housing rehabilitation loans and grants, street and sewer work, parks, and community centers in seven designated target neighborhoods \u2014 Alma, Alviso, Campus, Gardner, Mayfair, Northside, and Olinder. These neighborhoods contain the city's oldest, most deteriorated housing and are home to disproportionately low-income, elderly, and Spanish-speaking residents, including a Housing Assistance Plan estimate of 30,452 lower-income households needing housing help as of January 1978. The Environmental Impact Statement (EIS) considers rejected project proposals plus four single-category alternatives (all funds to housing rehabilitation, parks, streets, or social services) and a no-project alternative that would forgo the plan's benefits and jeopardize the partially completed San Antonio Plaza Redevelopment Project. Environmental effects are mostly short-term construction impacts \u2014 dust, noise of 84\u201388 dBA at 50 feet from the loudest equipment, possible disturbance of archaeological sites, and siting concerns such as expanding the Olinder Library in a flood zone and building the Alma Neighborhood Center on soils with high liquefaction potential \u2014 with generally positive long-term effects on housing quality, sewers, and groundwater. Public involvement included three City Council public hearings, a Steering Committee that reviewed 39 citizen funding proposals over nine meetings, and formal comment letters from the State Historic Preservation Officer, San Jose Parks and Recreation, and Environmental Protection Agency (EPA) Region IX, which rated the draft 'LO-2' (Lack of Objections on impact, Insufficient Information on the statement).",
+    "evidence_quote": "The city's various partially completed redevelopment projects would represent a serious financial obligation to the city if it were unable to receive CDBG funds.",
+    "source_pages": [
+      1,
+      11,
+      48,
+      50,
+      142,
+      148,
+      155,
+      156,
+      157,
+      161
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "no",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes"
+    },
+    "composite": 0.4,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "critic_verdict",
+    "failure_tag": "T03_outside_text_fabrication",
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 0.5,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": 0.933333,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "mixed",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 161,
+      "normalized_match_span": [
+        161,
+        2633,
+        2793
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        9,
+        10,
+        11,
+        12,
+        13,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        140,
+        141,
+        142,
+        143,
+        144,
+        146,
+        147,
+        148,
+        149,
+        150,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The extracted value names 'San Antonio Plaza Redevelopment Project' as the partially completed project that would be jeopardized by the no-project alternative. Page 161 refers only to 'the city's various partially completed redevelopment projects' with no specific project named. 'San Antonio Plaza' does not appear in any cited page. Additionally, the expansion of 'LO-2' as 'Lack of Objections on i",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        11,
+        48,
+        50,
+        142,
+        148,
+        155,
+        156,
+        157,
+        161
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        9,
+        10,
+        11,
+        12,
+        13,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        140,
+        141,
+        142,
+        143,
+        144,
+        146,
+        147,
+        148,
+        149,
+        150,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 61012
+    }
+  },
+  "summary.project_description": {
+    "extracted_value": "The document is the Final Environmental Impact Statement for the City of San Jose's Community Development Block Grant (CDBG) Three-Year Plan for July 1978 through June 1981 \u2014 the second three-year cycle of federally funded neighborhood improvements authorized by the Housing and Community Development Acts of 1974 and 1977. The plan concentrates activities in seven designated Concentrated Neighborhood Revitalization Areas (target neighborhoods for coordinated upgrading): Alma, Alviso, Campus, Gardner, Mayfair, Northside, and Olinder. Typical activities include housing rehabilitation loans and grants, street reconstruction (curbs, gutters, storm and sanitary sewer lines, lights, resurfacing), construction of new parks and community centers such as the Alma Neighborhood Center, expansion of the Olinder (Carnegie) Library, and citywide projects including roughly 250 curb ramps for handicapped access and support for the San Antonio Plaza Redevelopment Project.",
+    "evidence_quote": "A program is proposed in each of the seven Concentrated Neighborhood Revitalization Areas designated by the City Council on December 12, 1977.",
+    "source_pages": [
+      1,
+      47,
+      48,
+      50,
+      148,
+      152
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes"
+    },
+    "composite": 0.4,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "critic_verdict",
+    "failure_tag": "T03_outside_text_fabrication",
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 0.5,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": 0.777778,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "mixed",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 50,
+      "normalized_match_span": [
+        50,
+        1389,
+        1529
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "12",
+        "1977"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The value lists the seven CNRAs as 'Alma, Alviso, Campus, Gardner, Mayfair, Northside, and Olinder.' The cited pages confirm the count (seven CNRAs) and name Alma, Alviso, Campus, Gardner, Mayfair, Northside, and Olinder in various listings (e.g., p.147 noise table lists all seven). However, page 148 also mentions 'Meadowfair Park (Evergreen)' suggesting Evergreen may be among CNRAs, and page 152 ",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        47,
+        48,
+        50,
+        148,
+        152
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 36395
+    }
+  },
+  "summary.public_response": {
+    "extracted_value": "The city held three public hearings on the Community Development Block Grant (CDBG) program, and the CDBG Steering Committee reviewed 39 citizen funding proposals across nine meetings before adopting the three-year plan; at the November 2, 1977 hearing, 25 speakers from 12 neighborhoods described specific problems including sewage backing up into houses and dangerous sidewalk differentials. At a December 19, 1977 Steering Committee meeting, members pushed back on using CDBG funds for the Redevelopment Agency's San Antonio Plaza project and questioned the need for another community center at Backesto Park. Four formal comment letters/memos were received on the Draft EIR/Environmental Impact Statement (EIS) from the State Historic Preservation Officer, the San Jose Parks and Recreation Director, a correction on the Olinder Library location, and Environmental Protection Agency (EPA) Region IX. EPA classified the draft as Category LO-2 \u2014 'Lack of Objections' on environmental impact but 'Insufficient Information' on the statement \u2014 and asked for more detail on air quality, traffic capacity on Highways 101, 17, and 280, dike improvements, and flooding. The State Historic Preservation Officer flagged Santa Clara County Archaeological Site #230 near Olinder and the adjacent Alviso National Register Historic District, and asked that the twenty structures slated for demolition be assessed. The Planning Commission approved the Final EIR on April 5, 1978 by a 6-0 vote, finding no significant effect on the environment.",
+    "evidence_quote": "At the November 2 hearing, twenty-five speakers representing twelve separate neighborhoods spoke.",
+    "source_pages": [
+      6,
+      11,
+      12,
+      14,
+      29,
+      50,
+      169,
+      172
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "yes",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "n/a",
+      "Q9": "yes",
+      "Q10": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 1.0,
+    "gated_to_human": true,
+    "gate_reason": "composite_below_tau",
+    "failure_tag": null,
+    "bucket": "summary_narrative",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 169,
+      "normalized_match_span": [
+        169,
+        612,
+        707
+      ],
+      "pages_searched": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        27,
+        28,
+        29,
+        30,
+        31,
+        48,
+        49,
+        50,
+        51,
+        52,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "2"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": true,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 5
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "All claims verified against cited pages. Public hearings on p.50, Steering Committee/39 proposals/9 meetings on p.50, November 2 hearing details on p.169, December 19 meeting/San Antonio Plaza/Backesto on pp.171-172, four comment letters on p.4, EPA LO-2 classification and requests on pp.11-14, SHPO comments on p.6, Planning Commission 6-0 approval on pp.28-29. Acronyms (CDBG, EIR, EIS, EPA) are e",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        6,
+        11,
+        12,
+        14,
+        29,
+        50,
+        169,
+        172
+      ],
+      "pages_included": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        27,
+        28,
+        29,
+        30,
+        31,
+        48,
+        49,
+        50,
+        51,
+        52,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 48373
+    }
+  },
+  "summary_of_interest": {
+    "extracted_value": [
+      {
+        "claim": "The dikes protecting the Alviso neighborhood \u2014 which sits partly below river level due to up to 13 feet of historical land subsidence \u2014 were originally built to contain salt evaporation ponds, not to protect an urban population, and Alviso has already flooded four times (1955, 1958, 1963, 1968) without any of those events reaching the 100-year flood level the dikes are notionally rated against.",
+        "salience_criterion": "unusual_impact",
+        "page": 22,
+        "evidence_quote": "The system of dikes, which presently protects the northern portion of the Alviso area and the town of Alviso, was built for salt pond retention and was not constructed to standards generally acceptable for the protection of life and property in an urban environment.",
+        "why_notable": "The Environmental Impact Statement (EIS) documents that an entire residential neighborhood targeted for federally funded rehabilitation depends on infrastructure that was not engineered to protect people, an atypical baseline hazard for a housing rehab program.",
+        "evidence": [
+          {
+            "quote": "The system of dikes, which presently protects the northern portion of the Alviso area and the town of Alviso, was built for salt pond retention and was not constructed to standards generally acceptable for the protection of life and property in an urban environment.",
+            "source_pages": [
+              "22"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "The Silver Creek Fault zone runs directly under 100% of developed Alviso and roughly half of the Northside target area, but because it is classified only as 'potentially active' rather than 'active,' California's Alquist-Priolo fault-zoning law does not apply and no setback restrictions govern Community Development Block Grant (CDBG) construction there.",
+        "salience_criterion": "contested",
+        "page": 135,
+        "evidence_quote": "Since the only fault directly affecting structures in CNRA's is classified as potentially active, (Silver Creek Fault), this state law does not apply.",
+        "why_notable": "The document flags a regulatory gap in which a fault the Environmental Impact Statement (EIS) itself describes as underlying most of two target neighborhoods falls outside the state's principal earthquake siting statute.",
+        "evidence": [
+          {
+            "quote": "Since the only fault directly affecting structures in CNRA's is classified as potentially active, (Silver Creek Fault), this state law does not apply.",
+            "source_pages": [
+              "135"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "Steering Committee members openly resisted using Community Development Block Grant (CDBG) funds to support the city's own Redevelopment Agency's San Antonio Plaza project, telling the agency to cut investment or find other funding \u2014 yet the Environmental Impact Statement (EIS)'s no-project alternative argues that walking away would leave the city with 'a serious financial obligation' from that same partially completed redevelopment.",
+        "salience_criterion": "contested",
+        "page": 172,
+        "evidence_quote": "Steering Committee members suggested that the Agency either reduce some project area investments and/or seek alternative funding sources, thereby reducing the need for Block Grant money.",
+        "why_notable": "The record shows the citizen advisory body and the city administration in visible tension over whether block-grant money for low-income neighborhoods should backstop a downtown redevelopment project.",
+        "evidence": [
+          {
+            "quote": "Steering Committee members suggested that the Agency either reduce some project area investments and/or seek alternative funding sources, thereby reducing the need for Block Grant money.",
+            "source_pages": [
+              "172"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "Environmental Protection Agency (EPA) Region IX rated the Draft Environmental Impact Statement (EIS) 'LO-2' \u2014 Lack of Objections on impact but Insufficient Information on the statement itself \u2014 and specifically demanded more analysis of how the program would affect Highways 101, 17, and 280, which EPA said were already carrying traffic beyond their capacity.",
+        "salience_criterion": "contested",
+        "page": 12,
+        "evidence_quote": "Highways 101, 17, and 280 are currently experiencing traffic volumes beyond road capacity. How will this project affect traffic flows/congestion on these roads?",
+        "why_notable": "A federal reviewing agency formally judged the draft analytically incomplete on regional transportation, air quality, dikes, and flooding \u2014 a substantive challenge to the document's adequacy.",
+        "evidence": [
+          {
+            "quote": "Highways 101, 17, and 280 are currently experiencing traffic volumes beyond road capacity. How will this project affect traffic flows/congestion on these roads?",
+            "source_pages": [
+              "12"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "The city plans to deal with houses too far gone to repair by literally moving city-owned replacement dwellings \u2014 auctioned off from the airport clearance area \u2014 onto the cleared lots, rather than building new structures.",
+        "salience_criterion": "novel_alternative",
+        "page": 130,
+        "evidence_quote": "Reuse of the sites of demolitions is limited to residential, primarily with \"move-ons\" of existing dwelling units.",
+        "why_notable": "House-relocation as the default replacement strategy for demolished units is an atypical rehousing mechanism and is codified in the appendix procedure as the standard path for permanent relocation.",
+        "evidence": [
+          {
+            "quote": "Reuse of the sites of demolitions is limited to residential, primarily with \"move-ons\" of existing dwelling units.",
+            "source_pages": [
+              "130"
+            ],
+            "quote_verified": true
+          }
+        ]
+      },
+      {
+        "claim": "The Parks and Recreation Director asked the city to strike an entire passage of the Draft EIR discussing park-development impacts, calling its conclusions 'spurious,' and separately demanded deletion of a sentence claiming an EIR had already been prepared for Plata Arroyo Park.",
+        "salience_criterion": "contested",
+        "page": 5,
+        "evidence_quote": "This discussion draws spurious conclusions related to the potential impacts of park development which vary with park size, location, community attitudes and a variety of other factors.",
+        "why_notable": "A city department publicly repudiated portions of its own city's Draft EIR as analytically unsound, and the Final EIR incorporated those deletions.",
+        "evidence": [
+          {
+            "quote": "This discussion draws spurious conclusions related to the potential impacts of park development which vary with park size, location, community attitudes and a variety of other factors.",
+            "source_pages": [
+              "5"
+            ],
+            "quote_verified": true
+          }
+        ]
+      }
+    ],
+    "evidence_quote": "The system of dikes, which presently protects the northern portion of the Alviso area and the town of Alviso, was built for salt pond retention and was not constructed to standards generally acceptable for the protection of life and property in an urban environment.",
+    "source_pages": [
+      5,
+      12,
+      22,
+      130,
+      135,
+      172
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "no",
+      "Q3": "yes",
+      "Q4": "no",
+      "Q5": "no",
+      "Q6a": "yes",
+      "Q6b": "yes",
+      "Q7a": "partial",
+      "Q7b": "no",
+      "Q7c": "n/a",
+      "Q7d": "yes"
+    },
+    "composite": 0.65,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "bucket_degenerate_severe",
+    "failure_tag": "T03_outside_text_fabrication",
+    "bucket": "summary_of_interest",
+    "artifact_stage": "v1",
+    "judge_model": "opus",
+    "critic_verdict": "RE_EXTRACT",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "bucket_degenerate_severe",
+      "critic_verdict",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 0.3,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 22,
+      "normalized_match_span": [
+        22,
+        1772,
+        2034
+      ],
+      "pages_searched": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12,
+        13,
+        14,
+        20,
+        21,
+        22,
+        23,
+        24,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        170,
+        171,
+        172,
+        173,
+        174
+      ],
+      "numeric_ok": null,
+      "quote_numbers": [],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": true,
+      "degenerate_severe": true,
+      "saturated": false,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 0
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "Multiple entries contain fabricated or unsupported specifics. Entry 1: The claim asserts Alviso 'sits partly below river level due to up to 13 feet of historical land subsidence' \u2014 the '13 feet' subsidence figure does not appear on page 22 (nor on cited pages). The four flood dates (1955, 1958, 1963, 1968) appear on page 24, not page 22. Entry 2: The claim states the Silver Creek Fault runs under ",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        5,
+        12,
+        22,
+        130,
+        135,
+        172
+      ],
+      "pages_included": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12,
+        13,
+        14,
+        20,
+        21,
+        22,
+        23,
+        24,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        170,
+        171,
+        172,
+        173,
+        174
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 49968
+    }
+  },
+  "themes": {
+    "extracted_value": {
+      "themes": [
+        "Urban Development",
+        "Governance and Institutional Control"
+      ],
+      "subthemes": [
+        "Housing, Planning, and Built Environment",
+        "Urban Expansion and Land Use Change",
+        "Environmental Regulation and Policy",
+        "Institutional Power and Resource Management"
+      ]
+    },
+    "evidence_quote": "three-year housing and Community Development Plan for the City of San Jose. The plan has been developed for local implementation with federal funding pursuant to the Housing and Community Development Act of 1977",
+    "source_pages": [
+      1,
+      47,
+      48
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "n/a",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": null,
+    "gated_to_human": true,
+    "gate_reason": "bucket_degenerate_severe",
+    "failure_tag": null,
+    "bucket": "alternatives+themes",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [
+      "bucket_degenerate_severe",
+      "composite_below_tau"
+    ],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": null,
+      "s_citation": 1.0,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": "yes",
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 47,
+      "normalized_match_span": [
+        47,
+        112,
+        322
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "1977"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": true,
+      "degenerate": true,
+      "degenerate_severe": true,
+      "saturated": false,
+      "tau_deployed_infinite": true,
+      "N_wrong_docs": 1
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": null,
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        47,
+        48
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "pages_omitted": [],
+      "window_mode": "clustered",
+      "truncated": false,
+      "n_chars": 10605
+    }
+  },
+  "title": {
+    "extracted_value": "San Jose community development block grant 3-year plan, July 1978-June 1981 : environmental impact statement.",
+    "evidence_quote": "Foreword to the Final Environmental Impact Statement for the City of San Jose's Community Development Block Grant Three Year Plan July 1978 - June 1981",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "n/a",
+      "Q3": "n/a",
+      "Q4": "n/a",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 3,
+      "normalized_match_span": [
+        3,
+        0,
+        149
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "1978",
+        "1981"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": null,
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 3852
+    }
+  },
+  "year": {
+    "extracted_value": 1978,
+    "evidence_quote": "THREE YEAR PLAN JULY 1978 - JUNE 1981\nJune 1, 1978",
+    "source_pages": [
+      1,
+      2,
+      3
+    ],
+    "verdict": "PASS",
+    "rubric_answers": {
+      "Q1": "yes",
+      "Q2": "yes",
+      "Q3": "n/a",
+      "Q4": "yes",
+      "Q5": "no",
+      "Q6a": "n/a",
+      "Q6b": "yes",
+      "Q7": "yes",
+      "Q8": "yes",
+      "Q9": "yes",
+      "Q10": "yes"
+    },
+    "composite": 1.0,
+    "applied_tau": 0.5,
+    "gated_to_human": false,
+    "gate_reason": null,
+    "failure_tag": null,
+    "bucket": "M1",
+    "artifact_stage": "v1",
+    "judge_model": "sonnet",
+    "critic_verdict": "PASS",
+    "verdict_before_override": null,
+    "gate_reasons": [],
+    "signals": {
+      "s_quote": 1.0,
+      "s_critic": 1.0,
+      "s_source": 1.0,
+      "s_citation": null,
+      "s_shard": null,
+      "s_acronym": null
+    },
+    "quote_verdict": null,
+    "quote_check": {
+      "verified": "yes",
+      "score": 100.0,
+      "coverage": 1.0,
+      "matched_page": 1,
+      "normalized_match_span": [
+        1,
+        122,
+        169
+      ],
+      "pages_searched": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numeric_ok": true,
+      "quote_numbers": [
+        "1978",
+        "1981",
+        "1",
+        "1978"
+      ],
+      "missing_numbers": [],
+      "reason": "partial_ratio=100.0 coverage=1.00"
+    },
+    "bucket_flags": {
+      "gate_all_to_human": false,
+      "degenerate": true,
+      "degenerate_severe": false,
+      "saturated": false,
+      "tau_deployed_infinite": false,
+      "N_wrong_docs": 3
+    },
+    "critic_overrides": [],
+    "off_vocabulary_failure_tag": null,
+    "note": "The cover page (page 1) clearly shows 'June 1, 1978' as the document date, and the plan title references 'JULY 1978 - JUNE 1981'. The year 1978 is unambiguous and consistent with internal dating throughout the document.",
+    "empty_but_valid": false,
+    "extraction_missing": false,
+    "re_extract": null,
+    "evidence_meta": {
+      "cited_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_included": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pages_omitted": [],
+      "window_mode": "contiguous",
+      "truncated": false,
+      "n_chars": 3852
+    }
+  },
+  "_meta": {
+    "doc_id": "p1074_35556038062691",
+    "artifact_stage": "v1",
+    "generated_at": "2026-08-10T19:26:40+00:00",
+    "plan_ref": "MCAL_PLAN 3.12",
+    "schema_keys": [
+      "extracted_value",
+      "evidence_quote",
+      "source_pages",
+      "verdict",
+      "rubric_answers",
+      "composite",
+      "applied_tau",
+      "gated_to_human",
+      "gate_reason",
+      "failure_tag",
+      "bucket",
+      "artifact_stage",
+      "judge_model"
+    ],
+    "n_fields": 15,
+    "reserved_keys": [
+      "_meta",
+      "_rollup",
+      "_null_tag_monitor"
+    ],
+    "reviewer_note": "Every field is present, gated or not, with its raw extraction (MCAL_PLAN 7 Q8). Grade `extracted_value` against `evidence_quote` and `source_pages`; `gate_reason` says why the field was routed to a human. `extracted_value: []` on summary_of_interest is a legitimate 'this document is routine'; `null` plus a gate_reason is a generation failure."
+  },
+  "_rollup": {
+    "doc_id": "p1074_35556038062691",
+    "artifact_stage": "v1",
+    "geocoder_stack": "reduced",
+    "n_fields": 15,
+    "n_gated": 12,
+    "n_passed": 3,
+    "gate_rate": 0.8,
+    "gate_reasons": {
+      "none": 3,
+      "critic_verdict": 6,
+      "composite_below_tau": 2,
+      "bucket_degenerate_severe": 3,
+      "reduced_geocoder_stack": 1
+    },
+    "verdicts": {
+      "PASS": 3,
+      "HUMAN_REVIEW": 12
+    },
+    "per_bucket": {
+      "M1": {
+        "n_fields": 4,
+        "n_gated": 1,
+        "n_passed": 3,
+        "gate_reasons": {
+          "critic_verdict": 1
+        },
+        "tau_deployed": 0.5,
+        "gate_all_to_human": false,
+        "degenerate": true,
+        "degenerate_severe": false,
+        "N_wrong_docs": 3
+      },
+      "summary_narrative": {
+        "n_fields": 5,
+        "n_gated": 5,
+        "n_passed": 0,
+        "gate_reasons": {
+          "critic_verdict": 3,
+          "composite_below_tau": 2
+        },
+        "tau_deployed": 1.0,
+        "gate_all_to_human": false,
+        "degenerate": true,
+        "degenerate_severe": false,
+        "N_wrong_docs": 5
+      },
+      "summary_numeric": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "critic_verdict": 1
+        },
+        "tau_deployed": 1.0,
+        "gate_all_to_human": false,
+        "degenerate": true,
+        "degenerate_severe": false,
+        "N_wrong_docs": 3
+      },
+      "summary_of_interest": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "bucket_degenerate_severe": 1
+        },
+        "tau_deployed": null,
+        "gate_all_to_human": true,
+        "degenerate": true,
+        "degenerate_severe": true,
+        "N_wrong_docs": 0
+      },
+      "alternatives+themes": {
+        "n_fields": 2,
+        "n_gated": 2,
+        "n_passed": 0,
+        "gate_reasons": {
+          "bucket_degenerate_severe": 2
+        },
+        "tau_deployed": null,
+        "gate_all_to_human": true,
+        "degenerate": true,
+        "degenerate_severe": true,
+        "N_wrong_docs": 1
+      },
+      "location": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "reduced_geocoder_stack": 1
+        },
+        "tau_deployed": null,
+        "gate_all_to_human": true,
+        "degenerate": false,
+        "degenerate_severe": false,
+        "N_wrong_docs": 6
+      },
+      "key_people": {
+        "n_fields": 1,
+        "n_gated": 1,
+        "n_passed": 0,
+        "gate_reasons": {
+          "critic_verdict": 1
+        },
+        "tau_deployed": 1.0,
+        "gate_all_to_human": false,
+        "degenerate": false,
+        "degenerate_severe": false,
+        "N_wrong_docs": 6
+      }
+    },
+    "null_tag": {
+      "M1": {
+        "n_fields": 4,
+        "n_human_review": 1,
+        "n_null_tag": 1,
+        "n_off_vocabulary": 1,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      },
+      "summary_narrative": {
+        "n_fields": 5,
+        "n_human_review": 5,
+        "n_null_tag": 2,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      },
+      "summary_numeric": {
+        "n_fields": 1,
+        "n_human_review": 1,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      },
+      "summary_of_interest": {
+        "n_fields": 1,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 1
+      },
+      "alternatives+themes": {
+        "n_fields": 2,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 2
+      },
+      "location": {
+        "n_fields": 1,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 1
+      },
+      "key_people": {
+        "n_fields": 1,
+        "n_human_review": 1,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0
+      }
+    },
+    "summary_of_interest": {
+      "present": true,
+      "generation_failure": false,
+      "non_empty": true,
+      "n_entries": 6,
+      "salience_criterion_counts": {
+        "contested": 4,
+        "unusual_impact": 1,
+        "large_magnitude": 0,
+        "novel_alternative": 1,
+        "community_pushback": 0,
+        "precedent": 0,
+        "cross_jurisdictional": 0
+      },
+      "off_vocabulary_criteria": [],
+      "n_t17_manufactured_salience": 0,
+      "n_t18_duplicates_summary": 0,
+      "overlap_with_standard_summary": {
+        "jaccard": 0.1817,
+        "n_soi_tokens": 235,
+        "n_summary_tokens": 409,
+        "per_entry_jaccard": [
+          0.0568,
+          0.0628,
+          0.0631,
+          0.0561,
+          0.016,
+          0.0254
+        ],
+        "max_entry_jaccard": 0.0631,
+        "tokenizer": "mcal.quote_check.content_tokens (stopword+boilerplate filtered)"
+      },
+      "nonempty_rate_ceiling": 0.6,
+      "soi_useful": null
+    },
+    "critic": {
+      "n_fields": 15,
+      "verdicts": {
+        "PASS": 6,
+        "RE_EXTRACT": 8,
+        "PASS_WITH_NOTE": 1
+      },
+      "overrides": {},
+      "n_quote_checked": 13,
+      "n_quote_verified": 13,
+      "evidence_quote_verifiable_rate": 1.0,
+      "n_off_vocabulary_tags": 1,
+      "n_null_tag_human_review": 0,
+      "n_schema_violations": 2,
+      "n_evidence_truncated": 1
+    },
+    "re_extract": {}
+  },
+  "_null_tag_monitor": {
+    "threshold": 0.15,
+    "taxonomy_refresh_recommended": true,
+    "buckets_needing_refresh": [
+      "M1",
+      "key_people",
+      "summary_narrative",
+      "summary_numeric"
+    ],
+    "n_docs_rolling": 12,
+    "per_bucket": {
+      "M1": {
+        "n_fields": 48,
+        "n_human_review": 6,
+        "n_null_tag": 3,
+        "n_off_vocabulary": 3,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": 0.5,
+        "exceeds_threshold": true
+      },
+      "summary_narrative": {
+        "n_fields": 60,
+        "n_human_review": 58,
+        "n_null_tag": 24,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 2,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": 0.4138,
+        "exceeds_threshold": true
+      },
+      "summary_numeric": {
+        "n_fields": 12,
+        "n_human_review": 12,
+        "n_null_tag": 5,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": 0.4167,
+        "exceeds_threshold": true
+      },
+      "summary_of_interest": {
+        "n_fields": 12,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 12,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "alternatives+themes": {
+        "n_fields": 24,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 24,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "location": {
+        "n_fields": 12,
+        "n_human_review": 0,
+        "n_null_tag": 0,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 0,
+        "n_excluded_pre_judgement": 12,
+        "null_tag_rate": null,
+        "exceeds_threshold": false
+      },
+      "key_people": {
+        "n_fields": 12,
+        "n_human_review": 11,
+        "n_null_tag": 7,
+        "n_off_vocabulary": 0,
+        "n_excluded_policy": 1,
+        "n_excluded_pre_judgement": 0,
+        "null_tag_rate": 0.6364,
+        "exceeds_threshold": true
+      }
+    },
+    "path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/mcal/artifacts/null_tag_monitor.json",
+    "halt_condition": false
+  }
+}

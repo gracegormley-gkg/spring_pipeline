@@ -1,0 +1,70 @@
+{
+  "title": {
+    "value": "Vinyl chloride emission standard : environmental impact statement.",
+    "confidence": "high",
+    "sources": [
+      "inventory index (MARC 245$ab)"
+    ]
+  },
+  "year": {
+    "value": 1976,
+    "confidence": "high",
+    "sources": [
+      "NUL",
+      "regex (first 3 pages)"
+    ],
+    "adjudication": {
+      "year": 1976,
+      "source_type": "cover",
+      "confidence": "high",
+      "candidates": [
+        {
+          "year": 1976,
+          "count": 4,
+          "pages": [
+            1,
+            2,
+            4,
+            29
+          ],
+          "source_types": [
+            "cover",
+            "body"
+          ],
+          "best_source": "cover"
+        },
+        {
+          "year": 1975,
+          "count": 1,
+          "pages": [
+            29
+          ],
+          "source_types": [
+            "body"
+          ],
+          "best_source": "body"
+        }
+      ],
+      "evidence_quote": "EPA-450/2-75-009b September 1976 RECEIVED NOVOL 1976 - 1575 15 STANDARD SUPPORT AND ENVIRONMENTAL IMPACT STATEMENT VOLUME",
+      "note": "agrees_with_m1:1976; Cover page clearly states September 1976, consistent with all other evidence."
+    },
+    "m1_value": 1976,
+    "source_type": "cover"
+  },
+  "eis_type": {
+    "value": "Final",
+    "confidence": "medium",
+    "sources": [
+      "Sonnet (first 2 pages)"
+    ]
+  },
+  "lead_agency": {
+    "value": [
+      "Environmental Protection Agency"
+    ],
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  }
+}

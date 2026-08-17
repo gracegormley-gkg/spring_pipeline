@@ -1,0 +1,95 @@
+{
+  "title": {
+    "value": "Motor carrier commercial zones and terminal areas : environmental impact statement.",
+    "confidence": "high",
+    "sources": [
+      "inventory index (MARC 245$ab)"
+    ]
+  },
+  "year": {
+    "value": 1976,
+    "confidence": "high",
+    "sources": [
+      "NUL",
+      "regex (first 3 pages)"
+    ],
+    "note": "NUL=1977 disagrees with regex=1976 \u2014 flag",
+    "adjudication": {
+      "year": 1976,
+      "source_type": "cover",
+      "confidence": "high",
+      "candidates": [
+        {
+          "year": 1976,
+          "count": 3,
+          "pages": [
+            1,
+            4,
+            5
+          ],
+          "source_types": [
+            "cover",
+            "body"
+          ],
+          "best_source": "cover"
+        },
+        {
+          "year": 1975,
+          "count": 2,
+          "pages": [
+            3,
+            4
+          ],
+          "source_types": [
+            "cover",
+            "body"
+          ],
+          "best_source": "cover"
+        },
+        {
+          "year": 1970,
+          "count": 2,
+          "pages": [
+            5,
+            29
+          ],
+          "source_types": [
+            "body"
+          ],
+          "best_source": "body"
+        },
+        {
+          "year": 1969,
+          "count": 1,
+          "pages": [
+            5
+          ],
+          "source_types": [
+            "body"
+          ],
+          "best_source": "body"
+        }
+      ],
+      "evidence_quote": "MC-37 (Sub-No. 26) \\frac{1}{2} COMMERCIAL ZONES AND TERMINAL AREAS Decided December 17, 1976",
+      "note": "disagrees_with_m1:1977; The cover page explicitly states the decision date of December 17, 1976, which is the publication year of this EIS."
+    },
+    "m1_value": 1977,
+    "source_type": "cover"
+  },
+  "eis_type": {
+    "value": "Unknown",
+    "confidence": "medium",
+    "sources": [
+      "Sonnet (first 2 pages)"
+    ]
+  },
+  "lead_agency": {
+    "value": [
+      "Interstate Commerce Commission"
+    ],
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  }
+}

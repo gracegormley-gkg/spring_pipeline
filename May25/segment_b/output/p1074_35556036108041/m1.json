@@ -1,0 +1,75 @@
+{
+  "title": {
+    "value": "Penn Susquehanna urban renewal project : environmental impact statement.",
+    "confidence": "high",
+    "sources": [
+      "inventory index (MARC 245$ab)"
+    ]
+  },
+  "year": {
+    "value": 1973,
+    "confidence": "high",
+    "sources": [
+      "NUL",
+      "regex (first 3 pages)"
+    ],
+    "adjudication": {
+      "year": 1973,
+      "source_type": "signature",
+      "confidence": "high",
+      "candidates": [
+        {
+          "year": 1973,
+          "count": 6,
+          "pages": [
+            1,
+            2,
+            4,
+            29,
+            124,
+            125
+          ],
+          "source_types": [
+            "signature",
+            "cover",
+            "body"
+          ],
+          "best_source": "signature"
+        },
+        {
+          "year": 1972,
+          "count": 1,
+          "pages": [
+            28
+          ],
+          "source_types": [
+            "body"
+          ],
+          "best_source": "body"
+        }
+      ],
+      "evidence_quote": "Date: Jone 1, 1973 Approvers. Reviews Dates: Proposed by Reducespream Authority of the City of Horrisours",
+      "note": "agrees_with_m1:1973; Signature dates of June 1, 1973 on pages 124-125 outrank all other evidence, and are consistent with the cover and body dates also showing 1973."
+    },
+    "m1_value": 1973,
+    "source_type": "signature"
+  },
+  "eis_type": {
+    "value": "Final",
+    "confidence": "high",
+    "sources": [
+      "regex (first page)",
+      "Sonnet (first 2 pages)"
+    ],
+    "evidence": "Final Environmental Impact Statement"
+  },
+  "lead_agency": {
+    "value": [
+      "Department of Housing and Urban Development"
+    ],
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  }
+}

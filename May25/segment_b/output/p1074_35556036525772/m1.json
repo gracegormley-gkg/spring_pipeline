@@ -1,0 +1,101 @@
+{
+  "title": {
+    "value": "Proposed endangered species conservation act of 1973 (incomplete appendices) : environmental impact statement.",
+    "confidence": "high",
+    "sources": [
+      "inventory index (MARC 245$ab)"
+    ]
+  },
+  "year": {
+    "value": 1973,
+    "confidence": "high",
+    "sources": [
+      "NUL",
+      "regex (first 3 pages)"
+    ],
+    "note": "NUL=1973 disagrees with regex=1969 \u2014 flag",
+    "adjudication": {
+      "year": 1973,
+      "source_type": "cover",
+      "confidence": "high",
+      "candidates": [
+        {
+          "year": 1972,
+          "count": 4,
+          "pages": [
+            4,
+            125,
+            189,
+            191
+          ],
+          "source_types": [
+            "signature",
+            "body"
+          ],
+          "best_source": "signature"
+        },
+        {
+          "year": 2020,
+          "count": 1,
+          "pages": [
+            189
+          ],
+          "source_types": [
+            "signature"
+          ],
+          "best_source": "signature"
+        },
+        {
+          "year": 1973,
+          "count": 3,
+          "pages": [
+            1,
+            4,
+            29
+          ],
+          "source_types": [
+            "cover",
+            "body"
+          ],
+          "best_source": "cover"
+        },
+        {
+          "year": 1969,
+          "count": 2,
+          "pages": [
+            2,
+            3
+          ],
+          "source_types": [
+            "cover"
+          ],
+          "best_source": "cover"
+        }
+      ],
+      "evidence_quote": "HE INTERIOR FINAL ENVIRONMENTAL STATEMENT Proposed ENDANGERED SPECIES CONSERVATION ACT OF 1973 H. R. 4758 FES 73 - 44 Prepared by Bureau of Sport Fisheries and Wildlife Department of t",
+      "note": "modal_candidate_was_1972; agrees_with_m1:1973; The 1972 signatures are comment letters from the draft review period; the final EIS cover shows FES 73-44 and is confirmed by the Federal Register final notice of AUG 7 1973."
+    },
+    "m1_value": 1973,
+    "source_type": "cover"
+  },
+  "eis_type": {
+    "value": "Final",
+    "confidence": "high",
+    "sources": [
+      "regex (first page)",
+      "Sonnet (first 2 pages)"
+    ],
+    "evidence": "FINAL ENVIRONMENTAL STATEMENT"
+  },
+  "lead_agency": {
+    "value": [
+      "Department of the Interior",
+      "Bureau of Sport Fisheries and Wildlife"
+    ],
+    "confidence": "medium",
+    "sources": [
+      "Sonnet (first 4 pages)"
+    ],
+    "note": null
+  }
+}
