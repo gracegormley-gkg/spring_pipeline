@@ -1,0 +1,8 @@
+{
+  "impulse_identifier": "p1074_35556036854040",
+  "page_number": 767,
+  "filename": "35556036854040_00000767.jpg",
+  "source_image": "s3://nu-impulse-production/p1074_35556036854040/SOURCE/jpg/35556036854040_00000767.jpg",
+  "extraction_model": "marker",
+  "text": "DIFFUSION MODELS \nAPPENDIX J\nThe basic diffusion equation used to determine the downwind, ground level concentrations of effluents emitted from the proposed stacks is given by Equation 5.1 (Turner, 1970);\n\\chi = \\frac{Q}{\\pi \\sigma_{y} \\sigma_{z} \\overline{U}} \\exp \\{-1/2 (H/\\sigma_{z})^{2} \\} \\exp \\{-1/2 (y/\\sigma_{y})^{2} \\}\n 5.1\nwhere:\n\\chi\n = concentration in micrograms per cubic meter (\n\\mu g/m^3\n) at the point x,y,o from an elevated source with effective height, H.\nQ = emission rate in micrograms per second\ny = the standard deviation in the crosswind direction of the plume concentration distribution in meters\nσ<sub>z</sub> = the standard deviation in the vertical of the plume concentration distribution in meters\nU = mean wind speed in meters per second\nH = effective height of emission in meters\nx = distance downwind in the direction of the mean wind in meters\ny = crosswind distance in meters\nThis equation assumes that the distribution of effluents downwind from a stack will be Gaussian (normal) in both the horizontal and vertical planes of the plume.\nA difficult term to accurately assess in equation 5.1 is the effective height of release (H) or plume rise. The following equation is accepted by the National Oceanographic and Atmospheric Administration (NOAA) as the"
+}

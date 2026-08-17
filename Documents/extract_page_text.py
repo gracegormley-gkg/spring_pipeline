@@ -12,10 +12,15 @@ Usage:
     python extract_page_text.py p0491_35556036091957         # one barcode
     python extract_page_text.py bc1 bc2 bc3                  # several barcodes
     python extract_page_text.py --all                        # process every document
+
+    # 10 documents not already present under output/, restricted to inventory barcodes:
+    python extract_page_text.py --new --limit 10 \
+        --from-csv '../eis-inventory-2nd-pass(eis inventory 2nd pass csv).csv'
 """
 
 import os
 import re
+import csv
 import json
 import argparse
 from pathlib import Path
@@ -23,13 +28,15 @@ from pymongo import MongoClient
 from bs4 import BeautifulSoup
 
 # --- config -----------------------------------------------------------------
-OUTPUT_DIR = Path("output")          # where folders/files get written
+# Anchored to this file so output layout is stable regardless of the caller's cwd.
+OUTPUT_DIR = Path(__file__).resolve().parent / "output"
 DEFAULT_IMPULSES = ["p0491_35556036091957"]   # used when no barcodes passed on CLI
 INCLUDE_HTML = False                 # True -> also store assembled HTML in each file
 
 col = MongoClient(os.environ["MONGO_URI"])["praxis"]["colt"]
 
 REF = re.compile(r"<content-ref\s+src=['\"]([^'\"]+)['\"][^>]*>\s*</content-ref>")
+BARCODE = re.compile(r"(\d{10,})\s*$")
 
 
 def as_blocks(children):
@@ -81,6 +88,61 @@ def page_text(doc):
     return BeautifulSoup(page_html(doc), "html.parser").get_text("\n").strip()
 
 
+# --- document selection -----------------------------------------------------
+def barcode_of(impulse_id):
+    """'p1074_35556036806586' -> '35556036806586' (None if no trailing digit run)."""
+    m = BARCODE.search(impulse_id or "")
+    return m.group(1) if m else None
+
+
+def existing_impulses():
+    """impulse_identifiers that already have a non-empty folder under OUTPUT_DIR."""
+    if not OUTPUT_DIR.is_dir():
+        return set()
+    return {p.name for p in OUTPUT_DIR.iterdir() if p.is_dir() and any(p.glob("page_*.json"))}
+
+
+def csv_barcodes(path):
+    """Barcodes from column 0 (955$b) of the inventory CSV."""
+    out = set()
+    with open(path, newline="", encoding="utf-8", errors="replace") as f:
+        reader = csv.reader(f)
+        next(reader, None)  # header
+        for row in reader:
+            if row and row[0].strip():
+                out.add(row[0].strip())
+    return out
+
+
+def select_new(limit, csv_path=None):
+    """Pick up to `limit` impulse_identifiers absent from OUTPUT_DIR (optionally in CSV)."""
+    have = existing_impulses()
+    print(f"Already extracted: {len(have)} document(s) under {OUTPUT_DIR}")
+
+    allowed = None
+    if csv_path:
+        allowed = csv_barcodes(csv_path)
+        print(f"Inventory CSV supplies {len(allowed)} unique barcodes")
+
+    chosen, skipped_existing, skipped_csv = [], 0, 0
+    for impulse_id in sorted(col.distinct("impulse_identifier")):
+        if not impulse_id:
+            continue
+        if impulse_id in have:
+            skipped_existing += 1
+            continue
+        if allowed is not None and barcode_of(impulse_id) not in allowed:
+            skipped_csv += 1
+            continue
+        chosen.append(impulse_id)
+        if len(chosen) >= limit:
+            break
+
+    print(f"Skipped {skipped_existing} already-extracted, {skipped_csv} not in CSV")
+    print(f"Selected {len(chosen)}: {chosen}")
+    return chosen
+
+
 # --- write loop -------------------------------------------------------------
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Reassemble page text per impulse_identifier.")
@@ -91,9 +153,27 @@ if __name__ == "__main__":
         help=f"one or more impulse_identifiers to process (default: {DEFAULT_IMPULSES})",
     )
     parser.add_argument("--all", action="store_true", help="process all documents")
+    parser.add_argument(
+        "--new",
+        action="store_true",
+        help="auto-select documents that have no folder under output/ yet",
+    )
+    parser.add_argument(
+        "--limit", type=int, default=10, help="max documents to select with --new (default: 10)"
+    )
+    parser.add_argument(
+        "--from-csv",
+        metavar="PATH",
+        help="with --new, only pick documents whose barcode appears in this inventory CSV",
+    )
     args = parser.parse_args()
 
-    if args.all:
+    if args.new:
+        selected = select_new(args.limit, args.from_csv)
+        if not selected:
+            raise SystemExit("Nothing new to extract.")
+        query = {"impulse_identifier": {"$in": selected}}
+    elif args.all:
         query = {}
     elif len(args.barcodes) == 1:
         query = {"impulse_identifier": args.barcodes[0]}

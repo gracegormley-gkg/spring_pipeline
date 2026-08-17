@@ -1,0 +1,8 @@
+{
+  "impulse_identifier": "p1074_35556036543080",
+  "page_number": 222,
+  "filename": "35556036543080_00000222.jpg",
+  "source_image": "s3://nu-impulse-production/p1074_35556036543080/SOURCE/jpg/35556036543080_00000222.jpg",
+  "extraction_model": "marker",
+  "text": "SAMPLE CALCULATION SHOWING VERTICAL DISTRIBUTION OF PARTICULATES GENERATED FROM DEMOLITION\nModel Employed:\nC_{(x=100m)(y=0)(z)} = \\frac{Q}{\\pi \\mu \\sigma_y \\sigma_z} \\exp{-\\frac{1}{2}(\\frac{z^2}{2\\sigma_z^2})}\nWind: 3 m/sec\nStability: D\nNo Control: Q = 7.1  g/sec\nC_{z=0} = 20472 \\, \\mu g/m^3\nC_{z=5m} = 15149\nC_{z=10m} = 6346\n \"\nC_{z=15m} = 1433\nC_{z=20m} = 184\n \"\nContinuous Control: Q = 1.15  g/sec\nC_{z=0} = 409 \\,\\mu \\text{g/m}^3\nC_{z=5m} = 309\n \"\nC_{z=10m} = 127\n \"\nC_{z=1.5m} = 29\nC_{7-20m} = 4"
+}

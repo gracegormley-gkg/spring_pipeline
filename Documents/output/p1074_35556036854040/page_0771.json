@@ -1,0 +1,8 @@
+{
+  "impulse_identifier": "p1074_35556036854040",
+  "page_number": 771,
+  "filename": "35556036854040_00000771.jpg",
+  "source_image": "s3://nu-impulse-production/p1074_35556036854040/SOURCE/jpg/35556036854040_00000771.jpg",
+  "extraction_model": "marker",
+  "text": "\\chi = \\frac{Q}{\\sqrt{2\\pi} \\quad U \\quad H_{\\delta} \\sigma_{y \\delta}} \\quad \\exp \\left[-1/2 \\left(\\frac{y}{\\sigma_{y \\delta}}\\right)^{2}\\right]\n 5.5\nwhere: \nH_{\\delta} = H + 2\\sigma_{z}\n, \n\\sigma_{y\\delta} = \\sigma_{y} + H/8\nt = time in seconds required for inversion to break from top of stack to \n2\\sigma\n above the effective stack height centerline.\nFanning occurs when the plume travels downwind in a stable atmosphere. The stability retards vertical, and to a lesser extent horizontal dispersion so that the plume appears as a \"ribbon\" to an observer downwind of the source. The plume may cause high surface concentrations if the terrain rises sufficiently that the plume impacts (intersects) the terrain. The following equation defines the downwind concentration resulting from the centerline of a fanning plume intersecting terrain. Note that this equation is similar to equation 5.1 with H = 0. Equation 5.1 includes a surface reflection term that is not present in this phenomenon.\n\\chi = \\frac{Q}{2\\pi U \\sigma_y \\sigma_z} \\exp \\left[ -1/2 \\left( \\frac{y}{\\sigma_y} \\right)^2 \\right]\n 5.6\nGround level concentrations computed using the above equations are for averaging times of approximately ten minutes. These ten minute concentrations can be converted to longer averaging times using the following relationship (Turner, 1970):\n\\chi_{s} = \\chi_{k} (t_{k}/t_{s})^{0.2}\n 5.7"
+}

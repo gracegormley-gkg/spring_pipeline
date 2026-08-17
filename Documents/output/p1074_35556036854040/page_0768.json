@@ -1,0 +1,8 @@
+{
+  "impulse_identifier": "p1074_35556036854040",
+  "page_number": 768,
+  "filename": "35556036854040_00000768.jpg",
+  "source_image": "s3://nu-impulse-production/p1074_35556036854040/SOURCE/jpg/35556036854040_00000768.jpg",
+  "extraction_model": "marker",
+  "text": "\"best fit\" plume rise equation and was used in all calculations in this report (Briggs, 1971).\nFor unstable or neutral conditions:\nH = \\frac{1.6 \\text{ F}^1/_3 \\text{ x}^2/_3}{\\overline{U}} + h_g\n 5.2\nand for stable conditions:\nH = 2.4 - \\frac{F}{\\overline{U}s} + h_s\nwhere:\nF = 3.12 \\text{ V}_{f} \\frac{T_{g} - T}{T_{g}}\nv_f = 0.785 \\ v_s \\ d^2\nH = total effective stack height (m)\nT = stack gas exit temperature (°K)\nT = ambient air temperature (°K)\nV = stack gas exit velocity (m/sec)\nd = inside stack diameter (m)\nx = downwind distance from source (m)\nU = mean wind speed (m/sec)\nh<sub>s</sub> = physical stack height (m)\ns = 9.806 \\left( \\frac{1}{T} \\quad \\frac{\\partial \\theta}{\\partial Z} \\right)\n\\frac{\\partial \\theta}{\\partial Z}\n = vertical potential temperature gradient of the atmosphere (\n^{\\circ}K/m\n)"
+}
