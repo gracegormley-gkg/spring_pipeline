@@ -1,0 +1,72 @@
+# May25 pipeline dependencies (segment_a + mcal + segment_b).
+#
+# Verified against Python 3.14.3 on macOS/arm64 (2026-07-30).
+# All geospatial wheels resolve as cp314/abi3 binaries -- no GDAL source build
+# is required. Install with:
+#
+#     .venv/bin/pip install -r May25/requirements.txt
+#
+# ---------------------------------------------------------------------------
+# Core: LLM calls + HTTP (segment_a/llm.py, nul.py, inventory.py)
+# ---------------------------------------------------------------------------
+anthropic==0.109.1
+requests==2.34.2
+pydantic==2.13.4
+
+# Required for STREAMING Bedrock calls (segment_a/llm.py). Non-streaming works
+# without it, so it is easy to miss: the AnthropicBedrock streaming path parses
+# an AWS event stream via botocore. Streaming is mandatory above ~6k max_tokens
+# on Opus, which the amended M2 reduce prompt needs -- the API refuses large
+# non-streaming requests outright with "Streaming is required for operations
+# that may take longer than 10 minutes".
+botocore==1.43.67
+
+# ---------------------------------------------------------------------------
+# M-Cal: OCR-normalized fuzzy quote matching (mcal/quote_check.py, MCAL_PLAN 3.2)
+# rapidfuzz.fuzz.partial_ratio is required by build item #1, which is a hard
+# prerequisite for items #2, #6 and #10.
+# ---------------------------------------------------------------------------
+RapidFuzz==3.14.5
+
+# ---------------------------------------------------------------------------
+# Config: .env loading for MAPBOX_TOKEN / PADUS_GEODATABASE_PATH / GNIS_TSV_PATH
+# (MCAL_PLAN 3.9a). segment_a read os.environ directly; mcal/settings.py adds a
+# dotenv layer so the geocoder assets can be configured per-machine.
+# ---------------------------------------------------------------------------
+python-dotenv==1.2.2
+
+# ---------------------------------------------------------------------------
+# Geocoder stack (segment_b/postproc/location_pipeline.py, MCAL_PLAN 3.9a)
+#   geopy      -> Nominatim, last-resort hop 5 (pre-existing segment_a dep)
+#   geopandas  -> PAD-US federal-lands spatial join (hop 3) + GNIS index (hop 2)
+#   shapely    -> bbox-containment / bbox-intersection specificity cascade
+#   pyogrio    -> OpenFileGDB driver for reading the PAD-US geodatabase
+#   pyproj     -> CRS normalization across PAD-US (Albers) and WGS84 vendors
+# Hops 1 and 4 (US Census Geocoder, Mapbox) are plain REST via `requests`.
+# ---------------------------------------------------------------------------
+geopy==2.4.1
+geopandas==1.1.4
+shapely==2.1.2
+pyogrio==0.13.0
+pyproj==3.7.2
+
+# ---------------------------------------------------------------------------
+# Numerics: Clopper-Pearson intervals, AUROC / Kendall-tau weight validation,
+# paired bootstrap (MCAL_PLAN 3.3, 6). Pulled in transitively by geopandas
+# anyway, so pinned explicitly rather than hand-rolling in stdlib.
+# ---------------------------------------------------------------------------
+numpy==2.5.1
+pandas==3.0.5
+
+# ---------------------------------------------------------------------------
+# Tests (MCAL_PLAN 6, seed-v1 acceptance item 1)
+# ---------------------------------------------------------------------------
+pytest==9.1.1
+
+# ---------------------------------------------------------------------------
+# NOT installed / NOT required for the M-Cal loop:
+#   pymongo, beautifulsoup4  -- only needed by Documents/extract_page_text.py to
+#                               materialize new per-page JSON from MongoDB. The
+#                               user materializes new doc batches out-of-band,
+#                               so mcal never imports these.
+# ---------------------------------------------------------------------------
