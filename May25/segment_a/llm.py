@@ -223,6 +223,58 @@ def _normalize_usage(usage_obj, model: str) -> dict:
     }
 
 
+class TruncatedResponse(RuntimeError):
+    """
+    The model hit `max_tokens` before finishing.
+
+    Raised as its own type because the symptom is otherwise a baffling
+    `JSONDecodeError: Unterminated string`, which reads like a model
+    misbehaving when in fact the caller's budget was too small. This bit us on
+    the build-item-#4 M2 rerun: the plain-language clause lengthened summaries
+    and roughly doubled the number of quotes per subfield, so a reduce budget
+    that had been fine for months started truncating on 4 of 8 documents.
+    """
+
+    def __init__(self, model: str, max_tokens: int, output_tokens: int, preview: str):
+        self.model = model
+        self.max_tokens = max_tokens
+        self.output_tokens = output_tokens
+        super().__init__(
+            f"{model} stopped at max_tokens={max_tokens} "
+            f"(emitted {output_tokens} output tokens) with an incomplete "
+            f"response. Raise max_tokens at the call site. Preview: {preview[:200]!r}"
+        )
+
+
+# Above this `max_tokens`, use the streaming API.
+#
+# The SDK refuses a non-streaming request whose ESTIMATED duration exceeds 10
+# minutes, and the estimate scales with max_tokens and the model's speed. It
+# rejects the request outright, before generating anything -- so the symptom is
+# an instant "Streaming is required for operations that may take longer than 10
+# minutes", not a timeout.
+#
+# Measured on Opus 4.7 during the build-item-#4 M2 rerun: 6,000 passes, 8,000 is
+# refused. The ceiling is model-dependent (Sonnet tolerates more, being faster),
+# so rather than track per-model limits we stream anything over a conservative
+# threshold. Streaming returns an identical final message, so this is
+# transparent to callers.
+STREAMING_MAX_TOKENS_THRESHOLD = 4096
+
+
+def _create_message(client, kwargs: dict, *, stream: bool):
+    """
+    Issue one request, streaming or not, and return the final message object.
+
+    Both paths yield the same shape (`.content`, `.usage`, `.stop_reason`), so
+    everything downstream is indifferent to which was used.
+    """
+    if not stream:
+        return client.messages.create(**kwargs)
+    with client.messages.stream(**kwargs) as s:
+        return s.get_final_message()
+
+
 def call_with_usage(
     model: str,
     system: str,
@@ -231,11 +283,28 @@ def call_with_usage(
     max_tokens: int = 1500,
     temperature: float = 0.2,
     max_retries: int = 3,
+    fail_on_truncation: bool = True,
+    stream: Optional[bool] = None,
 ) -> tuple[str, dict]:
-    """Single Anthropic call. Returns (assistant_text, usage_dict)."""
+    """
+    Single Anthropic call. Returns (assistant_text, usage_dict).
+
+    `stream` defaults to automatic: on when `max_tokens` exceeds
+    `STREAMING_MAX_TOKENS_THRESHOLD`, because the SDK refuses large
+    non-streaming requests (see that constant).
+
+    `fail_on_truncation` turns a `stop_reason == "max_tokens"` response into a
+    `TruncatedResponse` rather than handing back a half-finished string. Callers
+    that genuinely want partial prose can switch it off; anything parsing JSON
+    should leave it on, because a truncated object is unrecoverable and the
+    resulting error otherwise points at the wrong culprit.
+    """
     client = _get_client()
     last_exc: Optional[Exception] = None
     omit_temperature = "opus" in model.lower()
+    use_stream = (
+        stream if stream is not None else max_tokens > STREAMING_MAX_TOKENS_THRESHOLD
+    )
     for attempt in range(max_retries):
         try:
             kwargs = dict(
@@ -246,14 +315,25 @@ def call_with_usage(
             )
             if not omit_temperature:
                 kwargs["temperature"] = temperature
-            resp = client.messages.create(**kwargs)
+            resp = _create_message(client, kwargs, stream=use_stream)
             text = "".join(
                 getattr(b, "text", "") for b in resp.content
                 if getattr(b, "type", "") == "text"
             )
             usage = _normalize_usage(getattr(resp, "usage", None), model)
             _record_usage(usage)
+
+            # Usage is recorded before the truncation check: the tokens were
+            # spent whether or not the response is usable, and a cost report
+            # that hides failed attempts understates the real bill.
+            if fail_on_truncation and getattr(resp, "stop_reason", None) == "max_tokens":
+                raise TruncatedResponse(
+                    model, max_tokens, usage.get("output_tokens", 0), text
+                )
             return text, usage
+        except TruncatedResponse:
+            # Not retryable: the same request will truncate at the same budget.
+            raise
         except Exception as e:
             last_exc = e
             wait = 2 ** attempt

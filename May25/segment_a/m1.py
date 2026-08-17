@@ -2,7 +2,7 @@
 M1: Easily Gathered (NUL-first, not LLM-first).
 
 Fields:
-  - title          (NUL primary, Haiku fallback on first page)
+  - title          (inventory index only -- deterministic, no LLM)
   - year           (NUL primary, regex on first 3 pages fallback)
   - eis_type       (regex on first page primary, Sonnet on first 2 pages verifier)
   - lead_agency    (NUL primary, Sonnet on first 4 pages fallback, list-valued)
@@ -25,40 +25,136 @@ from config import (
     YEAR_MIN,
 )
 from chunk import first_pages
-from llm import haiku, sonnet
+from llm import sonnet
 from nul import get_contributors, get_year
 from pages import Doc
 
 
 # --- Title -------------------------------------------------------------------
 
+# Longest title we pass through untouched. Beyond this the record is almost
+# always a bound-volume aggregate (see _normalize_index_title).
+TITLE_MAX_CHARS = 500
+TITLE_MIN_CHARS = 5
+
+
+def _normalize_index_title(raw: str) -> dict:
+    """
+    Normalize a catalogue title from the inventory index (MARC 245$ab).
+
+    Measured over all 54,105 inventory rows: **zero** are empty or shorter than
+    5 characters, and 155 (0.29%) exceed 500 characters. Length distribution is
+    min 23 / median 91 / max 2809. So a missing title is not a real failure mode
+    in this corpus; an over-long one is.
+
+    The over-long records are bound-volume aggregates -- one catalogue record
+    covering a stack of technical reports, semicolon-separated:
+
+        "Alaska OCS (Outer Continental Shelf) socioeconomic studies program:
+         Prudhoe Bay case study, technical report B1#4; Beaufort Sea region
+         petroleum development scenarios, ... B1#6a; ... " (2809 chars)
+
+    The informative title is right there at the front; what follows is a volume
+    manifest. So we truncate at the first `;` and keep the full string under
+    `full_title`, rather than discarding a correct title in order to re-derive
+    one from OCR.
+
+    Returns `{value, full_title, truncated, n_parts, reason}`.
+    """
+    s = " ".join((raw or "").split())
+    if not s:
+        return {"value": "", "full_title": "", "truncated": False, "reason": "absent"}
+
+    if len(s) <= TITLE_MAX_CHARS:
+        return {"value": s, "full_title": s, "truncated": False, "reason": "ok"}
+
+    # Bound-volume aggregate: keep the head, count what we dropped.
+    parts = [p.strip() for p in s.split(";") if p.strip()]
+    if len(parts) > 1 and len(parts[0]) <= TITLE_MAX_CHARS:
+        return {
+            "value": parts[0],
+            "full_title": s,
+            "truncated": True,
+            "n_parts": len(parts),
+            "reason": "bound_volume_aggregate",
+        }
+
+    # Single very long title: cut on a word boundary so we never emit a
+    # half-word, which would look like OCR damage to a downstream reader.
+    cut = s[:TITLE_MAX_CHARS]
+    if " " in cut:
+        cut = cut[: cut.rindex(" ")]
+    return {
+        "value": cut.rstrip(" ,;:-") + "\u2026",
+        "full_title": s,
+        "truncated": True,
+        "reason": "over_length",
+    }
+
+
 def extract_title(work: dict, doc: Doc) -> dict:
+    """
+    Title, taken from the inventory index. Deterministic -- no LLM call.
+
+    The previous implementation fell back to an LLM read of the first OCR page
+    whenever the index title was absent or outside the 5-500 char window. That
+    fallback was removed:
+
+      * It never executed. Titles resolve from the index on 9/9 graded docs and
+        12/12 of the next batch, and no inventory row lacks a title at all.
+      * Its only real trigger was an over-LONG title -- i.e. a case where the
+        correct title was in hand and was being thrown away. Truncating is
+        strictly better than re-deriving.
+      * A guessed title is worse than no title for a research index. This field
+        is what people search and cite on, and a plausible-but-wrong title is
+        the hardest kind of error for a reader to notice.
+      * Dead code whose first real execution would be at 2000-doc scale, on the
+        hardest inputs (no metadata + 1970s OCR), is a liability rather than a
+        safety net.
+
+    `doc` is retained in the signature for call-site stability and is unused.
+
+    A genuinely absent title returns an explicit status for the Critic to route
+    to HUMAN_REVIEW, following the never-return-empty-silently rule that
+    MCAL_PLAN 1(8) applies to `alternatives`.
+    """
     nul_title = work.get("title") or work.get("nul_metadata", {}).get("title")
     if isinstance(nul_title, list):
         nul_title = nul_title[0] if nul_title else None
-    if nul_title and 5 <= len(nul_title) <= 500:
+
+    norm = _normalize_index_title(nul_title or "")
+
+    if not norm["value"] or len(norm["value"]) < TITLE_MIN_CHARS:
         return {
-            "value": nul_title.strip(),
-            "confidence": "high",
-            "sources": ["NUL"],
+            "value": "",
+            "confidence": "low",
+            "sources": ["inventory index (no usable title)"],
+            "status": "title_not_in_index",
+            "note": (
+                "No usable title in the inventory index for this accession. "
+                "Not inferred from OCR by design; route to human review."
+            ),
         }
-    # Fallback: Haiku on first page
-    first = first_pages(doc, FIRST_PAGE)
-    out = haiku(
-        system=(
-            "You extract the title of an Environmental Impact Statement from OCR text. "
-            "Respond ONLY with JSON: {\"title\": \"<full title>\"}. "
-            "If you cannot determine a plausible title, return an empty string."
-        ),
-        user=f"OCR (first page):\n{first}",
-        max_tokens=300,
-    )
-    title = (out.get("title") or "").strip()
-    return {
-        "value": title,
-        "confidence": "medium" if title else "low",
-        "sources": ["Haiku (first page)"],
+
+    out = {
+        "value": norm["value"],
+        "confidence": "medium" if norm["truncated"] else "high",
+        "sources": ["inventory index (MARC 245$ab)"],
     }
+    if norm["truncated"]:
+        out["full_title"] = norm["full_title"]
+        out["truncated"] = True
+        out["note"] = (
+            f"Index title is {len(norm['full_title'])} chars"
+            + (
+                f" listing {norm['n_parts']} bound volumes"
+                if norm.get("n_parts")
+                else ""
+            )
+            + f"; truncated to {TITLE_MAX_CHARS} ({norm['reason']}). "
+            "Full string preserved in `full_title`."
+        )
+    return out
 
 
 # --- Year --------------------------------------------------------------------

@@ -58,12 +58,33 @@ YEAR_MIN = 1969
 YEAR_MAX = 2026
 
 # --- Models ---
-# Bedrock inference-profile IDs. Haiku 4-5 isn't accessible on this account,
-# so the "haiku" tier falls back to Sonnet here. Cost impact is small for
-# Segment A's volume.
+# Bedrock inference-profile IDs.
+#
+# The "haiku" tier now has ZERO call sites. Its only consumer was the title
+# fallback in m1.extract_title, which was removed: titles come from the
+# inventory index deterministically, because measuring all 54,105 inventory rows
+# showed none lack a title and the fallback's only real trigger was an
+# over-LONG one (155 rows, bound-volume aggregates) -- a case where the correct
+# title was in hand and was being discarded to re-derive it from OCR.
+#
+# MODEL_HAIKU is kept pointing at Sonnet so that `llm.haiku()` stays safe if
+# something calls it, but nothing does. Note also that the original reason for
+# the stand-in ("not accessible on this account") is false: Haiku 4.5 answers at
+# the fully-versioned id below. It has no bare alias, unlike Sonnet and Opus --
+# `us.anthropic.claude-haiku-4-5` returns "model identifier is invalid", which is
+# probably how it came to look inaccessible.
+#
+# If you want Haiku for genuinely high-volume cheap work, the real candidates at
+# 2000 docs are the location scope classifier and the key_people role tagger.
+# Point those at MODEL_HAIKU_REAL explicitly, and do it BETWEEN calibration
+# stages -- changing an extractor's model mid-stage shifts the score
+# distribution the frozen thresholds were fitted to.
 MODEL_HAIKU = "us.anthropic.claude-sonnet-4-6"
 MODEL_SONNET = "us.anthropic.claude-sonnet-4-6"
 MODEL_OPUS = "us.anthropic.claude-opus-4-7"
+
+# Real Haiku, verified reachable on this account. Unused by default; see above.
+MODEL_HAIKU_REAL = "us.anthropic.claude-haiku-4-5-20251001-v1:0"
 
 # --- Closed vocabularies ---
 EIS_TYPE_PATTERNS = {

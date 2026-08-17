@@ -182,6 +182,11 @@ def cmd_process(args) -> int:
         _write_run_summary([result])
         return 0
 
+    if getattr(args, "docs", None):
+        return _process_explicit_list(
+            [d.strip() for d in args.docs.split(",") if d.strip()], force=args.force
+        )
+
     selection = load_selection()
     if selection is None:
         log.info("No selection yet — running `select` first.")
@@ -213,6 +218,7 @@ def cmd_process(args) -> int:
             summary.append({"doc_id": s["doc_id"], "error": str(e)})
 
     _write_run_summary(summary)
+    _maybe_stamp_prompt_version(summary)
     grand_cost = round(
         sum(((r.get("usage") or {}).get("total") or {}).get("cost_usd", 0) or 0 for r in summary),
         4,
@@ -224,14 +230,142 @@ def cmd_process(args) -> int:
     return 0
 
 
-def _write_run_summary(summary: list[dict]) -> None:
-    """Write output/run_summary.json with the runs from this invocation.
-
-    Overwrites — this reflects only the most recent `run.py process` call,
-    same as people_pipeline / statements_pipeline. For per-doc cost history
-    across runs, look at each doc's individual stage outputs.
+def _maybe_stamp_prompt_version(summary: list[dict]) -> None:
     """
-    _write_json(Path("output/run_summary.json"), {"runs": summary})
+    Stamp output/m2/_prompt_version.txt once every doc with M2 output on disk
+    has been produced under the current prompt version.
+
+    MCAL_PLAN 3.7's step-0 precheck reads this marker and refuses to calibrate
+    without it, because tau must be fitted to the same M2 prose Segment B will
+    ship.
+
+    Verification is PER FILE, via the `_prompt_version` field `run_m2` writes
+    into each artifact -- NOT "was this doc regenerated in the current
+    invocation". The invocation-scoped version of this check refused to stamp a
+    set that was genuinely consistent, because one document had been processed
+    in an earlier run. That matters: MCAL_PLAN 7.5's multi-round protocol reruns
+    subsets by design.
+
+    Still all-or-nothing -- one stale artifact blocks the stamp, because mixing
+    pre- and post-amendment prose in a calibration set is the exact failure the
+    marker exists to prevent.
+    """
+    from prompts import PROMPT_VERSION, write_version_marker
+
+    errored = [r["doc_id"] for r in summary if r.get("error")]
+    if errored:
+        log.warning(
+            f"Not stamping _prompt_version.txt: {len(errored)} doc(s) failed "
+            f"({errored}). Fix and re-run, or mcal.build will halt."
+        )
+        return
+
+    stale: list[str] = []
+    unversioned: list[str] = []
+    for path in sorted(M2_DIR.glob("*.json")):
+        got = (_read_json(path) or {}).get("_prompt_version")
+        if got is None:
+            unversioned.append(path.stem)
+        elif got != PROMPT_VERSION:
+            stale.append(f"{path.stem}={got}")
+
+    if stale or unversioned:
+        log.warning(
+            "Not stamping _prompt_version.txt. "
+            + (f"Stale: {stale}. " if stale else "")
+            + (
+                f"No _prompt_version field: {unversioned}. Re-run with --force."
+                if unversioned
+                else ""
+            )
+        )
+        return
+
+    marker = write_version_marker(M2_DIR)
+    n = len(list(M2_DIR.glob("*.json")))
+    log.info(f"Stamped {marker} = {PROMPT_VERSION} ({n} artifact(s) verified)")
+
+
+def _process_explicit_list(doc_ids: list[str], *, force: bool) -> int:
+    """
+    Process an explicit roster of doc_ids in ONE invocation.
+
+    Needed for the MCAL_PLAN 3.14 / build-item-#4 M2 rerun, which targets the
+    graded calibration set -- a set that has nothing to do with
+    `selection.json` (whose 20 entries are disjoint from the docs actually
+    processed). Running `--doc` in a loop would not do: `_write_run_summary`
+    overwrites, so only the last document's usage would survive, and
+    `mcal.build`'s Cost Summary reads that file. Batching also lets
+    `_maybe_stamp_prompt_version` see the whole set at once.
+    """
+    log.info(f"Processing {len(doc_ids)} explicitly-listed doc(s)...")
+    summary: list[dict] = []
+    for i, doc_id in enumerate(doc_ids, 1):
+        log.info(f"\n[{i}/{len(doc_ids)}] {doc_id}")
+        work, doc = _resolve_work_and_doc(doc_id)
+        if work is None or doc is None:
+            log.warning(f"  Skipping {doc_id}: could not resolve work or pages")
+            summary.append({"doc_id": doc_id, "error": "unresolved"})
+            continue
+        try:
+            summary.append(process_doc(work, doc_id, doc, force=force))
+        except Exception as e:
+            log.exception(f"  Failed: {e}")
+            summary.append({"doc_id": doc_id, "error": str(e)})
+
+    _write_run_summary(summary)
+    _maybe_stamp_prompt_version(summary)
+    grand_cost = round(
+        sum(((r.get("usage") or {}).get("total") or {}).get("cost_usd", 0) or 0
+            for r in summary),
+        4,
+    )
+    n_ok = sum(1 for r in summary if not r.get("error"))
+    log.info(
+        f"\nDone. {n_ok}/{len(summary)} succeeded. "
+        f"Grand-total estimated cost: ${grand_cost:.4f}"
+    )
+    return 0 if n_ok == len(summary) else 1
+
+
+def _write_run_summary(summary: list[dict]) -> None:
+    """
+    Write output/run_summary.json, MERGING with what is already there.
+
+    This used to overwrite, so only the latest invocation's usage survived. That
+    loses real cost data: `mcal.build`'s Cost Summary reads this file for the
+    go/no-go call, and the multi-round protocol processes documents across
+    several invocations, so an overwrite reports a fraction of the true bill.
+
+    Merge rule: the incoming entry wins, EXCEPT that an entry which made no LLM
+    calls (a checkpoint-reuse run) must not clobber a prior entry that did. A
+    rerun which skips every stage costs nothing and should not zero out the cost
+    history of the run that actually paid for the work.
+    """
+    path = Path("output/run_summary.json")
+    existing: dict[str, dict] = {}
+    for r in (_read_json(path) or {}).get("runs", []) or []:
+        if r.get("doc_id"):
+            existing[r["doc_id"]] = r
+
+    def _tokens(entry: dict) -> int:
+        tot = (entry.get("usage") or {}).get("total") or {}
+        return (tot.get("input_tokens") or 0) + (tot.get("output_tokens") or 0)
+
+    for r in summary:
+        doc_id = r.get("doc_id")
+        if not doc_id:
+            continue
+        old = existing.get(doc_id)
+        if old and _tokens(r) == 0 and _tokens(old) > 0:
+            merged = dict(r)
+            merged["usage"] = old["usage"]
+            merged["usage_from_prior_invocation"] = True
+            existing[doc_id] = merged
+        else:
+            existing[doc_id] = r
+
+    _write_json(path, {"runs": list(existing.values())})
 
 
 def cmd_status(args) -> int:
@@ -323,6 +457,12 @@ def main() -> int:
     p_proc = sub.add_parser("process", help="Run M1 → M2 → Critic → grading on selected docs")
     p_proc.add_argument("--limit", type=int, default=None, help="process at most N docs (smoke test: --limit 1)")
     p_proc.add_argument("--doc", type=str, default=None, help="process a single specific doc_id")
+    p_proc.add_argument(
+        "--docs",
+        type=str,
+        default=None,
+        help="comma-separated doc_ids, processed in one run (use for the M2 rerun)",
+    )
     p_proc.add_argument("--force", action="store_true", help="ignore existing checkpoints")
     p_proc.set_defaults(func=cmd_process)
 

@@ -41,6 +41,7 @@ from chunk import (
 from evidence import Evidence, evidence_for_quotes, union_pages, verify_and_locate
 from llm import opus, sonnet
 from pages import Doc
+from prompts import PROMPT_VERSION, plain_language_clause, summary_of_interest_prompt
 
 log = logging.getLogger(__name__)
 
@@ -64,6 +65,27 @@ SUMMARY_SUBFIELDS = [
     "environmental_impact",
     "public_response",
 ]
+
+# --- Output budgets ---------------------------------------------------------
+# Raised when the MCAL_PLAN 3.14 plain-language clause shipped (build item #4).
+#
+# The clause lengthens every subfield (in-line glosses, named entities,
+# quantities instead of nominalizations) AND roughly doubles the quotes per
+# subfield, because the concreteness rule produces more discrete claims and each
+# claim needs its own citation. Measured on Operation Breakthrough before/after:
+# public_response 6 -> 13 quotes, environmental_impact 7 -> 12, overview 11 -> 16.
+#
+# At the old SUMMARY_REDUCE budget of 6000, that document -- the SMALLEST of the
+# eight graded, with only 2 chunks -- consumed ~4,629 output tokens, leaving 23%
+# headroom. Documents with the full 12 chunks carry several times as many
+# candidate quotes, and 4 of 8 truncated mid-string on the first rerun,
+# surfacing as `JSONDecodeError: Unterminated string`.
+#
+# These are caps, not targets: raising them costs nothing unless the model
+# actually needs the room. Undersizing them costs a whole document.
+SUMMARY_MAP_MAX_TOKENS = 8_000
+SUMMARY_REDUCE_MAX_TOKENS = 24_000
+SUMMARY_OF_INTEREST_MAX_TOKENS = 8_000
 
 
 def _summary_map_one(chunk: Chunk) -> dict:
@@ -95,13 +117,15 @@ def _summary_map_one(chunk: Chunk) -> dict:
             "- Provide ONE quote per substantive claim in `text`. If your text has 4 "
             "claims, return 4 quotes. Do not write a sentence in `text` that no quote "
             "supports.\n"
-            "- Do not invent. Do not paraphrase inside the `quotes` field."
+            "- Do not invent. Do not paraphrase inside the `quotes` field.\n\n"
+            # MCAL_PLAN 3.14 (build item #4): plain-language + concreteness.
+            "WRITING CONSTRAINTS:\n" + plain_language_clause()
         ),
         user=(
             f"Chunk #{chunk.index} (pages {chunk.start_page}-{chunk.end_page}"
             f"{', section: ' + chunk.label if chunk.label else ''}):\n\n{chunk.text}"
         ),
-        max_tokens=4000,
+        max_tokens=SUMMARY_MAP_MAX_TOKENS,
     )
     return {
         "chunk_index": chunk.index,
@@ -161,10 +185,12 @@ def _summary_reduce(partials: list[dict], doc: Doc) -> dict:
             "or join). Each quote you return must appear character-for-character "
             "somewhere in the input.\n"
             "- public_response is always limited to the main document; set the flag true.\n"
-            "- If no chunks support a field, return text=\"\" and quotes=[]."
+            "- If no chunks support a field, return text=\"\" and quotes=[].\n\n"
+            # MCAL_PLAN 3.14 (build item #4): plain-language + concreteness.
+            "WRITING CONSTRAINTS:\n" + plain_language_clause()
         ),
         user=f"Per-chunk findings:\n{payload}",
-        max_tokens=6000,
+        max_tokens=SUMMARY_REDUCE_MAX_TOKENS,
     )
 
     # Normalize shape and verify quotes.
@@ -208,10 +234,53 @@ def _summary_reduce(partials: list[dict], doc: Doc) -> dict:
 
 
 def extract_summary(chunks: list[Chunk], doc: Doc, max_chunks: int = 12, parallel: int = 4) -> dict:
-    """Run Opus over chunks in parallel, then reduce. Caps chunk count to control cost."""
+    """Run Opus over chunks in parallel, then reduce. Caps chunk count to control cost.
+
+    NOTE on `max_chunks`: this is a real recall ceiling, not just a cost knob. A
+    1500-page doc yields ~31 chunks at CHUNK_PAGES=50, so only the first 12
+    CEQ-tagged-then-document-order chunks are ever summarized. Content past that
+    point cannot appear in the summary, which downstream shows up as an
+    apparently-missing claim rather than as a truncation. Surfaced in
+    `chunking_meta.n_chunks_summarized` so the gap is visible in the manifest.
+    """
     if not chunks:
         return {k: {"text": "", "evidence": []} for k in SUMMARY_SCHEMA_KEYS}
+    return _summary_pipeline(chunks, doc, max_chunks, parallel)[0]
 
+
+def extract_summary_and_salience(
+    chunks: list[Chunk],
+    doc: Doc,
+    max_chunks: int = 12,
+    parallel: int = 4,
+) -> tuple[dict, list[dict], dict]:
+    """
+    Standard summary + `summary_of_interest`, sharing one map pass.
+
+    Returns `(summary, summary_of_interest, meta)`. The salience call reuses the
+    already-computed per-chunk findings rather than re-reading the document, so
+    its marginal cost is one Opus reduce call (MCAL_PLAN 3.15 "Cost").
+    """
+    if not chunks:
+        return (
+            {k: {"text": "", "evidence": []} for k in SUMMARY_SCHEMA_KEYS},
+            [],
+            {"n_chunks_summarized": 0, "n_chunks_available": 0},
+        )
+    summary, partials = _summary_pipeline(chunks, doc, max_chunks, parallel)
+    soi = _summary_of_interest(partials, summary, doc)
+    meta = {
+        "n_chunks_summarized": len(partials),
+        "n_chunks_available": len(chunks),
+        "chunks_truncated": len(chunks) > max_chunks,
+    }
+    return summary, soi, meta
+
+
+def _summary_pipeline(
+    chunks: list[Chunk], doc: Doc, max_chunks: int, parallel: int
+) -> tuple[dict, list[dict]]:
+    """Map over chunks in parallel, then reduce. Returns (summary, partials)."""
     # Prefer chunks tagged with a CEQ chapter; fill the rest in document order.
     tagged = [c for c in chunks if c.ceq_chapter]
     untagged = [c for c in chunks if not c.ceq_chapter]
@@ -219,15 +288,149 @@ def extract_summary(chunks: list[Chunk], doc: Doc, max_chunks: int = 12, paralle
     selected.sort(key=lambda c: c.index)
 
     partials: list[dict] = []
+    failed: list[int] = []
     with ThreadPoolExecutor(max_workers=parallel) as pool:
         futures = {pool.submit(_summary_map_one, c): c for c in selected}
         for fut in as_completed(futures):
             try:
                 partials.append(fut.result())
             except Exception as e:
-                log.warning(f"Summary map failed for chunk {futures[fut].index}: {e}")
+                idx = futures[fut].index
+                failed.append(idx)
+                log.warning(f"Summary map failed for chunk {idx}: {e}")
     partials.sort(key=lambda p: p["chunk_index"])
-    return _summary_reduce(partials, doc)
+    if failed:
+        # Previously swallowed silently, which made a partial reduce
+        # indistinguishable from a document that genuinely lacked the content.
+        log.error(
+            f"{len(failed)}/{len(selected)} summary map calls failed "
+            f"(chunks {sorted(failed)}); the reduce step is running on partial "
+            f"input and the summary may be missing supported claims."
+        )
+    return _summary_reduce(partials, doc), partials
+
+
+# --- summary_of_interest (Opus, second reduce) -------------------------------
+# MCAL_PLAN 3.15, build item #5. A salience-weighted summary emitted ALONGSIDE
+# the standard one, never replacing it.
+
+SALIENCE_CRITERIA = (
+    "contested",
+    "unusual_impact",
+    "large_magnitude",
+    "novel_alternative",
+    "community_pushback",
+    "precedent",
+    "cross_jurisdictional",
+)
+
+SOI_MAX_CLAIMS = 6
+
+
+def _summary_of_interest(partials: list[dict], summary: dict, doc: Doc) -> list[dict]:
+    """
+    Second reduce: what is notable about THIS document vs a typical EIS.
+
+    Operates on the per-chunk findings already computed for the standard
+    summary, plus the standard summary itself so the model can honour rule 3
+    ("do not restate the standard summary").
+
+    An empty list is a CORRECT result for a routine document (MCAL_PLAN 3.15
+    rule 2) and is returned as `[]`, never as None. `gate.py` distinguishes a
+    legitimate empty result from a generation failure via `extracted_value: []`
+    vs `null`, so the two must not be conflated here.
+
+    `page` is derived from `verify_and_locate`, not taken from the model. The
+    model does not reliably see page numbers in the reduce payload (it gets
+    per-chunk page RANGES), so a model-supplied page would fail verification for
+    the wrong reason. This matches how every other M2 field resolves pages.
+    """
+    if not partials:
+        return []
+
+    payload = json.dumps(
+        [
+            {
+                "chunk_index": p["chunk_index"],
+                "pages": f"{p['start_page']}-{p['end_page']}",
+                "ceq_chapter": p["ceq_chapter"],
+                "findings": p["findings"],
+            }
+            for p in partials
+        ],
+        ensure_ascii=False,
+    )
+    standard = json.dumps(
+        {k: (v.get("text") or "") for k, v in (summary or {}).items()},
+        ensure_ascii=False,
+    )
+
+    try:
+        out = opus(
+            system=summary_of_interest_prompt(),
+            user=(
+                f"Per-chunk findings:\n{payload}\n\n"
+                f"The STANDARD summary already produced for this document "
+                f"(do not restate it):\n{standard}"
+            ),
+            max_tokens=SUMMARY_OF_INTEREST_MAX_TOKENS,
+        )
+    except Exception as e:
+        # Distinguishable from a legitimate empty list by the caller: an
+        # exception here means we could not determine salience at all.
+        log.error(f"summary_of_interest reduce failed: {e}")
+        raise
+
+    raw = out.get("summary_of_interest") if isinstance(out, dict) else None
+    if raw is None and isinstance(out, list):
+        raw = out
+    if not isinstance(raw, list):
+        log.warning(
+            f"summary_of_interest: expected a list, got {type(raw).__name__}; "
+            "treating as empty"
+        )
+        return []
+
+    entries: list[dict] = []
+    for item in raw[:SOI_MAX_CLAIMS]:
+        if not isinstance(item, dict):
+            continue
+        claim = (item.get("claim") or "").strip()
+        quote = (item.get("evidence_quote") or "").strip()
+        if not claim:
+            continue
+
+        criterion = (item.get("salience_criterion") or "").strip()
+        if criterion not in SALIENCE_CRITERIA:
+            # Keep the entry but mark the criterion invalid rather than dropping
+            # it: an off-taxonomy criterion is itself signal that the rubric is
+            # not discriminating, and MCAL_PLAN 6 tracks criterion distribution.
+            log.warning(f"summary_of_interest: unknown criterion {criterion!r}")
+            criterion_note = f"invalid_criterion:{criterion or 'missing'}"
+            criterion = "unclassified"
+        else:
+            criterion_note = None
+
+        ev = verify_and_locate(quote, doc)
+        pages = ev.get("source_pages") or []
+        entry = {
+            "claim": claim,
+            "salience_criterion": criterion,
+            "page": int(pages[0]) if pages else None,
+            "evidence_quote": quote,
+            "why_notable": (item.get("why_notable") or "").strip(),
+            "evidence": [ev],
+        }
+        if criterion_note:
+            entry["note"] = criterion_note
+        entries.append(entry)
+
+    if len(raw) > SOI_MAX_CLAIMS:
+        log.info(
+            f"summary_of_interest: model returned {len(raw)} claims, capped at "
+            f"{SOI_MAX_CLAIMS} per MCAL_PLAN 3.15 rule 4"
+        )
+    return entries
 
 
 # --- Alternatives ------------------------------------------------------------
@@ -572,7 +775,8 @@ def run_m2(doc: Doc, chunked: Optional[dict] = None) -> dict:
 
     log.info(f"M2: {len(chunks)} chunks, {len(chapters)} CEQ-mapped chapters detected")
 
-    summary = extract_summary(chunks, doc)
+    # summary_of_interest reuses this call's per-chunk findings (MCAL_PLAN 3.15).
+    summary, summary_of_interest, summary_meta = extract_summary_and_salience(chunks, doc)
     alternatives = extract_alternatives(doc, chapters)
     themes = extract_themes(summary)
     location = extract_location(doc, chapters)
@@ -580,6 +784,16 @@ def run_m2(doc: Doc, chunked: Optional[dict] = None) -> dict:
 
     return {
         "summary": summary,
+        # Stamped into every M2 artifact so `_prompt_version.txt` can be
+        # verified PER FILE rather than by "was it regenerated in this
+        # invocation". The multi-round protocol (MCAL_PLAN 7.5) reruns subsets,
+        # so an invocation-scoped check refuses to stamp a set that is in fact
+        # consistent -- which is exactly what happened on the first rerun.
+        "_prompt_version": PROMPT_VERSION,
+        # Always emitted, including when empty. An empty list means "this
+        # document is routine", which is a substantive result and must stay
+        # distinguishable from a generation failure (MCAL_PLAN 3.12).
+        "summary_of_interest": summary_of_interest,
         "alternatives": alternatives,
         "themes": themes,
         "location": location,
@@ -594,5 +808,6 @@ def run_m2(doc: Doc, chunked: Optional[dict] = None) -> dict:
                 for c in chapters
             ],
             "chunk_size_pages": CHUNK_PAGES,
+            **summary_meta,
         },
     }
