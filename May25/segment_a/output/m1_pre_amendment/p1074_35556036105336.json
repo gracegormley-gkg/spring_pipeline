@@ -1,0 +1,35 @@
+{
+  "title": {
+    "value": "Randolph urban renewal area : environmental impact statement.",
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  },
+  "year": {
+    "value": 1973,
+    "confidence": "high",
+    "sources": [
+      "NUL",
+      "regex (first 3 pages)"
+    ]
+  },
+  "eis_type": {
+    "value": "Final",
+    "confidence": "high",
+    "sources": [
+      "regex (first page)",
+      "Sonnet (first 2 pages)"
+    ],
+    "evidence": "FINAL ENVIRONMENTAL IMPACT STATEMENT"
+  },
+  "lead_agency": {
+    "value": [
+      "Department of Housing and Urban Development"
+    ],
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  }
+}

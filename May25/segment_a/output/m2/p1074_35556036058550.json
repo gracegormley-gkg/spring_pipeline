@@ -1,7 +1,7 @@
 {
   "summary": {
     "overview": {
-      "text": "Operation BREAKTHROUGH is a HUD research and development program to modernize the housing industry and demonstrate industrialized housing systems on nine prototype sites across eight areas of the nation, including Indianapolis, Jersey City, Kalamazoo, Macon, Memphis, Sacramento, St. Louis, Seattle, and King County, Washington. HUD considered alternatives such as no program, a purely technological program, varying the number and character of demonstration sites, and limiting demonstrations to a single housing system per site, but rejected them in favor of the broader demonstration approach. Potential environmental impacts include changes in storm runoff, visual effects of land use change, impacts on community services, and noise, with site-specific mitigations such as earthen berms, holding basins, and a siphon system, plus a total energy plant at Jersey City projected to use about half the fuel of conventional alternatives. Federal agencies including EPA, Interior, Agriculture, and FPC submitted comments, with EPA requesting separate impact statements for each site and Agriculture warning about repeating past land-use mistakes.",
+      "text": "This Final Environmental Statement covers Operation BREAKTHROUGH, a U.S. Department of Housing and Urban Development research and development program to speed up factory-built (industrialized) housing by demonstrating 22 innovative housing systems on nine prototype sites in eight areas of the country, including Jersey City, Kalamazoo, Macon, Memphis, St. Louis, Sacramento, Indianapolis, Seattle, and King County, Washington. The sites range from downtown urban renewal parcels to suburban parcels and are intended to house a mix of income levels and racial groups. HUD considered four alternatives \u2014 doing nothing, pursuing technology alone without addressing market and regulatory barriers, using a different number or character of demonstration sites (such as a single 'housing fair' or federal-land-only sites), and limiting each site to one housing system \u2014 and rejected all four in favor of the current design. Expected environmental effects include increased stormwater runoff from paving, visual changes, added load on local schools and sewers, construction erosion, and, at Jersey City specifically, air-quality and fuel-use effects from an on-site 'total energy' power plant that reuses waste heat; HUD says site-by-site measures (stormwater holding basins at Indianapolis, leaching catch basins at Kalamazoo, a lake-turnover siphon at Macon, and a noise berm at Memphis) address these effects. Nine federal agencies commented; the main criticisms were that the statement lacked site-by-site detail required under Section 102(2)(C) of NEPA, that erosion controls and non-wood materials needed more discussion, and that total energy systems are not new and not necessarily more efficient than conventional electric service on an annual basis.",
       "evidence": [
         {
           "quote": "Operation BREAKTHROUGH is a major research and development activity of HUD to modernize the housing industry and bring about volume production of industrialized housing.",
@@ -25,6 +25,13 @@
           "quote_verified": true
         },
         {
+          "quote": "most of these sites will provide housing opportunities for a wide range of income levels",
+          "source_pages": [
+            "16"
+          ],
+          "quote_verified": true
+        },
+        {
           "quote": "A) No program. B) Program directed only at housing technology. C) Different number and character of demonstration sites. D) Different site design philosophy in number and types of housing.",
           "source_pages": [
             "1"
@@ -32,9 +39,9 @@
           "quote_verified": true
         },
         {
-          "quote": "Consideration was also given to limiting demonstrations on a given site to one housing system, and permitting this system to demonstrate many different types of housing.",
+          "quote": "from a \"housing fair\" approach with one each of a number of housing systems to sites only on Federal land. It was considered necessary, however, to demonstrate both housing and community development",
           "source_pages": [
-            "19"
+            "18"
           ],
           "quote_verified": true
         },
@@ -46,11 +53,10 @@
           "quote_verified": true
         },
         {
-          "quote": "The design solution was to construct an earth berm of sufficient size to shield the site from direct acoustical radiation",
-          "source_pages": [
-            "13"
-          ],
-          "quote_verified": true
+          "quote": "the site planner...developed an earthmoving program which created holding basins in the open space areas of the site to reduce the instantaneous volume of storm water flow.",
+          "source_pages": [],
+          "quote_verified": false,
+          "note": "Quote not found verbatim in doc \u2014 forced HUMAN_REVIEW."
         },
         {
           "quote": "a siphon system has been constructed to provide a \"turnover\" in the lake water in order to prevent eutrophication.",
@@ -60,35 +66,56 @@
           "quote_verified": true
         },
         {
-          "quote": "the total energy plant fuel requirement is a little more than half of the total fuel that would be required on site for providing heating, air conditioning and domestic hot water",
+          "quote": "The design solution was to construct an earth berm of sufficient size to shield the site from direct acoustical radiation",
           "source_pages": [
-            "52"
+            "13"
           ],
           "quote_verified": true
         },
         {
-          "quote": "The specific air pollution impact at the sites selected for Operation Breakthrough cannot be fully evaluated from the information presented in this Statement.",
+          "quote": "The total energy system contributes to improved air quality and economy by reducing fuel consumption for a required energy demand.",
           "source_pages": [
-            "34"
+            "14"
           ],
           "quote_verified": true
         },
         {
-          "quote": "There is no assurance in this impact statement that some of the land mistakes made in the past will not be repeated again.",
+          "quote": "The draft environmental statement, although providing an encellent description of the program and concepts involved, lacks sufficient detail relative to the issues set out in Section 102(2)(C) of the National Environmental Policy Act of 1969.",
           "source_pages": [
-            "41"
+            "36"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "We have tried to indicate that total energy systems are not new; that considerable experience has been accumulated in the operation of these systems; and that total energy systems are not necessarily more efficient on an annual basis than other electrical systems.",
+          "source_pages": [
+            "50"
           ],
           "quote_verified": true
         }
       ]
     },
     "project_description": {
-      "text": "Operation BREAKTHROUGH is a HUD research and development program to modernize the housing industry and bring about volume production of industrialized housing through demonstration of innovative housing systems on nine prototype sites in eight areas of the nation. Specific program activities include demonstrations of new building materials and methods, total energy systems, and pneumatic trash collection, with twenty-two housing systems selected. The total energy installation at Jersey City is intended to provide heating, air conditioning, and domestic hot water, with construction proceeding across multiple sites.",
+      "text": "Operation BREAKTHROUGH is a U.S. Department of Housing and Urban Development research and development program, announced in 1969 by Secretary George Romney, to speed up volume production of industrialized (factory-built) housing. Under it, HUD selected 22 housing systems and is demonstrating them on nine prototype sites in eight areas \u2014 Indianapolis, Jersey City, Kalamazoo, Macon, Memphis, Sacramento, St. Louis, Seattle, and King County, Washington \u2014 combining new building materials and methods with cluster site planning, with construction running from late 1970 through projected completion in 1972\u20131973. The Jersey City site additionally tests a 'total energy' plant (an on-site power plant that generates electricity and reuses waste heat for hot water, heating, and cooling) and a Swedish-developed pneumatic trash collection system that pulls refuse through sealed vacuum tubing directly from disposal chutes to a central compacting location.",
       "evidence": [
         {
           "quote": "Operation BREAKTHROUGH is a major research and development activity of HUD to modernize the housing industry and bring about volume production of industrialized housing.",
           "source_pages": [
             "1"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "Secretary George Romney announces Operation BREAKTHROUGH to meetings with governors, mayors, and leaders of industry and labor.",
+          "source_pages": [
+            "71"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "Twenty-two housing systems selected. Final sites selected.",
+          "source_pages": [
+            "71"
           ],
           "quote_verified": true
         },
@@ -100,30 +127,30 @@
           "quote_verified": true
         },
         {
-          "quote": "specific program activities include demonstrations of new building materials and methods, total energy systems and pneumatic trash collection.",
+          "quote": "First families occupy units at Kalamazoo, Memphis, and St. Louis sites.",
           "source_pages": [
-            "4"
+            "72"
           ],
           "quote_verified": true
         },
         {
-          "quote": "twenty-two housing systems, eleven sites and site planners (later reduced to nine sites and site planners), eight site developers",
+          "quote": "Total energy and pneumatic trash collection systems are planned for this site.",
           "source_pages": [
-            "6"
+            "14"
           ],
           "quote_verified": true
         },
         {
-          "quote": "at Jersey City, the total energy plant fuel requirement is a little more than half of the total fuel that would be required on site for providing heating, air conditioning and domestic hot water",
+          "quote": "a Swedish-developed pneumatic trash collection system will be demonstrated and tested. In this system, refuse is gathered through sealed vacuum tubing directly from the disposal chute to a central collecting and compacting location",
           "source_pages": [
-            "52"
+            "14"
           ],
           "quote_verified": true
         }
       ]
     },
     "affected_community": {
-      "text": "The nine prototype sites span eight areas including Indianapolis, Jersey City, Kalamazoo, Macon, Memphis, Sacramento, St. Louis, Seattle, and King County, Washington. Site characteristics range from central city urban renewal properties to suburban neighborhoods, providing housing opportunities for a wide range of income levels. Specific sites address local concerns such as overcrowded schools in Jersey City and noise from major roadways in Memphis.",
+      "text": "The nine prototype sites span central-city urban renewal parcels and suburban neighborhoods and are designed to house a mix of income levels and racial groups, including subsidized units, cooperatives, student housing, and public housing. Specific locations include a 6.35-acre downtown Jersey City block at Newark Avenue and John F. Kennedy Boulevard, one block from the central business district; a 15.9-acre parcel in the Court Avenue Urban Renewal Area in downtown Memphis between the CBD and the University of Tennessee Medical Center; two neighboring parcels totaling 15.5 acres in the Mill Creek Urban Renewal Area in downtown St. Louis near St. Louis University; a plateau in Kalamazoo overlooking a city park, a lake, and an adjacent municipal water-supply well field; and a suburban site in King County. Local school capacity was a concern at Jersey City, where a supplemental school will be built and leased to the Jersey City school department.",
       "evidence": [
         {
           "quote": "Site characteristics vary from central city, urban renewal properties to suburban neighborhoods.",
@@ -140,30 +167,44 @@
           "quote_verified": true
         },
         {
+          "quote": "This 6.35 acre inner-city site is located at the intersection of Newark Avenue and John F. Kennedy Boulevard, one block from the heart of the downtown area.",
+          "source_pages": [
+            "27"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "This 15.9 acre site is located in the Court Avenue Urban Renewal Area in downtown Memphis, midway between the central business district and the University of Tennessee Medical Center.",
+          "source_pages": [
+            "29"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "This site occupies two neighboring parcels of 7.6 acres and 7.9 acres in the Mill Creek Urban Renewal Area in downtown St. Louis.",
+          "source_pages": [
+            "30"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "The Kalamazoo site is on a plateau overlooking a city park and an adjacent lake; a water supply well field is located along the lake shore line.",
+          "source_pages": [
+            "14"
+          ],
+          "quote_verified": true
+        },
+        {
           "quote": "A supplemental school will be constructed as part of the site development and leased to the school department in Jersey City.",
           "source_pages": [
             "12"
-          ],
-          "quote_verified": true
-        },
-        {
-          "quote": "The Memphis site is adjacent to major roadways, one of which carries extensive amounts of heavy truck traffic.",
-          "source_pages": [
-            "13"
-          ],
-          "quote_verified": true
-        },
-        {
-          "quote": "Active construction started at Kalamazoo, Macon, Sacramento sites.",
-          "source_pages": [
-            "72"
           ],
           "quote_verified": true
         }
       ]
     },
     "alternatives_overview": {
-      "text": "Four alternatives were considered: no program, a program directed only at housing technology, different number and character of demonstration sites, and a different site design philosophy such as one system per site. The 'no program' option was rejected because the housing problem is too critical, and a purely technological program was deemed unable to overcome institutional constraints. Additional technological alternatives included conventional electrical service versus total energy systems and the emerging fuel cell technology, which Pratt and Whitney did not recommend for current demonstration use.",
+      "text": "HUD considered and rejected four alternatives to the proposed program. First, doing nothing was dismissed as unrealistic given the scale of the national housing shortage. Second, a technology-only program that ignored regulatory and market barriers was rejected because the resulting technology would not be widely adopted. Third, a different number or character of demonstration sites \u2014 for example, a single 'housing fair' with one of each system, or sites only on federal land \u2014 was rejected in favor of a national competition selecting sites that would demonstrate both housing and community development in varied settings. Fourth, a site-design philosophy limiting each site to a single housing system was rejected so that more of the competitively selected systems could be demonstrated within budget. In addition, for the Jersey City site, the statement considers conventional grid electricity plus separate on-site heating and cooling as the alternative to the total energy plant, and discusses fuel cells (then experimental, with a prototype installation in a single-family home in Farmington, Connecticut) as a longer-term option that HUD says is not yet ready.",
       "evidence": [
         {
           "quote": "A) No program. B) Program directed only at housing technology. C) Different number and character of demonstration sites. D) Different site design philosophy in number and types of housing.",
@@ -180,7 +221,14 @@
           "quote_verified": true
         },
         {
-          "quote": "no purely technological program which avoided the issue of constraints to innovation could hope to be successful",
+          "quote": "no purely technological program which avoided the issue of constraints to innovation could hope to be successful, and the technology thus developed would have little chance for implementation on a wide scale.",
+          "source_pages": [
+            "18"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "from a \"housing fair\" approach with one each of a number of housing systems to sites only on Federal land. It was considered necessary, however, to demonstrate both housing and community development",
           "source_pages": [
             "18"
           ],
@@ -194,6 +242,12 @@
           "quote_verified": true
         },
         {
+          "quote": "In May 1971 an experimental prototype total energy fuel cell installation was made in a single family dwelling in Farmington, Connecticut",
+          "source_pages": [],
+          "quote_verified": false,
+          "note": "Quote not found verbatim in doc \u2014 forced HUMAN_REVIEW."
+        },
+        {
           "quote": "Pratt and Whitney has not suggested that we consider the use of the fuel cell at this stace of its development in our deconstration programs, and my staff concurs in that decision.",
           "source_pages": [
             "52"
@@ -203,7 +257,7 @@
       ]
     },
     "environmental_impact": {
-      "text": "Potential adverse impacts include changes in storm runoff, visual effects of land use change, impacts on community services, and possible effects on local property values. Site-specific mitigations include earthen berms for noise at Memphis, holding basins to reduce flooding at Indianapolis, and a siphon system to prevent eutrophication of the Macon lake. The total energy plant at Jersey City is projected to use about half the fuel of conventional alternatives with lower thermal and air pollution, and HUD has adopted noise abatement policies prohibiting support to new construction on sites with unacceptable noise exposures.",
+      "text": "Anticipated adverse effects include changes in storm runoff from paving open land, visual impacts of changing land use to housing, added burden on local schools and sewers, and possible effects on adjacent property values; HUD says each has been addressed in design. Site-specific water measures include earthmoving to create stormwater holding basins at Indianapolis, leaching catch basins at Kalamazoo that filter first-flush runoff through permeable soil before it reaches the lake and municipal well field, and a siphon system at Macon to turn over lake water and prevent eutrophication (nutrient buildup that depletes oxygen). At Memphis, measurements found the site did not comply with HUD Circular 1390.2 on noise, so an earth berm was built to shield it; that circular sets binding limits \u2014 sites exceeding 80 dB(A) for 60 minutes per 24 hours are 'unacceptable,' and interior sleeping quarters must generally stay below 55 dB(A). At Jersey City, the total energy plant is projected to use a little more than half the fuel that separate on-site heating/cooling plus grid electricity would require, with lower thermal and air pollution. Roughly two-thirds of the 22 selected housing systems use concrete, metal, or plastic rather than wood, which HUD says will ease pressure on U.S. timber supplies.",
       "evidence": [
         {
           "quote": "Potential adverse environmental effects which have been considered include changes in storm runoff, visual effect of changing land use to housing from some other usage, impact on local community services by the addition of housing and population, and potential impact on local property values",
@@ -213,16 +267,15 @@
           "quote_verified": true
         },
         {
-          "quote": "The design solution was to construct an earth berm of sufficient size to shield the site from direct acoustical radiation",
-          "source_pages": [
-            "13"
-          ],
-          "quote_verified": true
+          "quote": "the site planner...developed an earthmoving program which created holding basins in the open space areas of the site to reduce the instantaneous volume of storm water flow.",
+          "source_pages": [],
+          "quote_verified": false,
+          "note": "Quote not found verbatim in doc \u2014 forced HUMAN_REVIEW."
         },
         {
-          "quote": "developed an earthmoving program which created holding basins in the open space areas of the site to reduce the instantaneous volume of storm water flow.",
+          "quote": "The planner therefore designed the storm system using leaching catch basins which have open bottoms, with discharge outlets some distance above the bottom of the inlets so that the first surge of storm water runoff would not pass through the system to the lake",
           "source_pages": [
-            "14"
+            "15"
           ],
           "quote_verified": true
         },
@@ -234,7 +287,35 @@
           "quote_verified": true
         },
         {
-          "quote": "the total energy plant fuel requirement is a little more than half of the total fuel that would be required on site",
+          "quote": "Measurements of the acoustical environment indicated that this site did not comply with HUD Circular 1396.2, \"Noise Abatement and Control",
+          "source_pages": [
+            "13"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "The design solution was to construct an earth berm of sufficient size to shield the site from direct acoustical radiation",
+          "source_pages": [
+            "13"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "Exceeds 80 dB(A) 60 minutes per 24 hours",
+          "source_pages": [
+            "61"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "do not exceed 55dB(A) for more than an accumulation of 60 minutes in any 24-hour period",
+          "source_pages": [
+            "62"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "at Jersey City, the total energy plant fuel requirement is a little more than half of the total fuel that would be required on site for providing heating, air conditioning and domestic hot water (500,000 gallons/year) and for providing electrical energy (another 630,000 gallons/year).",
           "source_pages": [
             "52"
           ],
@@ -248,26 +329,54 @@
           "quote_verified": true
         },
         {
-          "quote": "to prohibit HUD support to new construction on sites having unacceptable noise exposures",
+          "quote": "the selected BREAKTHROUGH systems also use concrete, metal and plastic structural systems, with only approximately 1/3 of the systems based on wood products.",
           "source_pages": [
-            "54"
+            "8"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "This pattern of new materials and a lesser percentage reliance on lumber will ease the pressures for excessive harvesting of our national timber resources.",
+          "source_pages": [
+            "9"
           ],
           "quote_verified": true
         }
       ]
     },
     "public_response": {
-      "text": "Comments were received from EPA, Interior, HEW, Agriculture, Army, Transportation, Commerce, FPC, and HUD offices. EPA requested more detail on air pollution impacts and basic information about activities at each location. Interior raised concerns about psychological effects of mass housing, while Agriculture warned about repeating past land-use mistakes. DOT found the statement acceptable, and FPC noted that total energy systems are not new.",
+      "text": "Written comments came from nine federal bodies: the Environmental Protection Agency, the Department of the Interior, the Department of Health, Education, and Welfare, the Department of Agriculture, the Army Corps of Engineers, the Department of Transportation, the Department of Commerce, the Federal Power Commission, and several HUD offices. EPA said site-specific air pollution effects could not be evaluated without a separate impact statement for each of the eight areas, and asked for more detail on construction-phase erosion controls, non-wood materials, water supply and wastewater handling, and HUD's Interim Noise Standards. Interior called the statement a good program description but said it lacked the detail required under Section 102(2)(C) of NEPA, and raised concerns about social effects of dense multistory housing, conflicts with mineral-resource lands, and use of solid-waste materials in construction. Agriculture warned that building on poor-quality land (flood-prone, high shrink-swell, or erosion-prone soils) has produced distressed communities in the past. HEW asked how the technology would help renovate existing substandard urban units and noted the statement omitted resident training in home use and maintenance. The Army Corps asked how mass-produced housing would fit with existing neighborhoods. The Federal Power Commission observed that total energy systems are not new (507 were listed in a 1971 directory, though fewer than 10% serve residences) and are not necessarily more efficient than conventional electrical systems on an annual basis, and suggested attention to fuel cells; HUD's Assistant Secretary Harold B. Finger replied that residential operating data is scarce (one-third of existing residential total energy plants are in Johnson County, Kansas, stemming from one developer's dispute with the local utility), which is why the Jersey City demonstration is needed.",
       "evidence": [
         {
-          "quote": "The specific air pollution impact at the sites selected for Operation Breakthrough cannot be fully evaluated from the information presented in this Statement.",
+          "quote": "Federal Agencies from which Written Comments were Received:\nEnvironmental Protection Agency\nDepartment of the Interior",
+          "source_pages": [
+            "1"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "The specific air pollution impact at the sites selected for Operation Breakthrough cannot be fully evaluated from the information presented in this Statement. In order to adequately evaluate the true impact, it would be necessary for an impact statement to be prepared for each of the eight sites.",
           "source_pages": [
             "34"
           ],
           "quote_verified": true
         },
         {
-          "quote": "It would be desirable to include basic information and comparison of the activities planned at each location.",
+          "quote": "A description of procedures that will be implemented (in addition to proper siting) to guard against erosion during construction, and consequent siluation of surface waters.",
+          "source_pages": [
+            "34"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "Reference is made in the statement to DHUD's \"Interim Noise Standards\" with no indication of actual data. We recommend that these standards be included in the final statement.",
+          "source_pages": [
+            "35"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "The draft environmental statement, although providing an encellent description of the program and concepts involved, lacks sufficient detail relative to the issues set out in Section 102(2)(C) of the National Environmental Policy Act of 1969.",
           "source_pages": [
             "36"
           ],
@@ -281,23 +390,71 @@
           "quote_verified": true
         },
         {
-          "quote": "There is no assurance in this impact statement that some of the land mistakes made in the past will not be repeated again.",
+          "quote": "The operations producing construction minerals\u2014the very minerals upon which this project depends\u2014should not be zoned out of access or covered by physical structures before the minerals are extracted.",
+          "source_pages": [
+            "37"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "Many poor quality communities are poor because they were put on poor quality land.",
           "source_pages": [
             "41"
           ],
           "quote_verified": true
         },
         {
-          "quote": "Our constituent organizations have shared in our review and find the statement to be acceptable.",
+          "quote": "That missing element is some kind of training process, to teach people how to use their new Breakthrough homes and, more important, how to maintain them.",
           "source_pages": [
-            "46"
+            "39"
           ],
           "quote_verified": true
         },
         {
-          "quote": "We have tried to indicate that total energy systems are not new; that considerable experience has been accumulated in the operation of these systems",
+          "quote": "how can that potential be extended to the millions of substandard units in the country, which\n\nwon't be replaced through new construction",
+          "source_pages": [],
+          "quote_verified": false,
+          "note": "Quote not found verbatim in doc \u2014 forced HUMAN_REVIEW."
+        },
+        {
+          "quote": "The program should consider and discuss how the mass produced product can live in harmony with these already existing residential communities.",
+          "source_pages": [
+            "44"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "Data Book of Total Energy Magazine lists 507 total energy systems currently in service, of which 428 include generation of electricity in all types of installations.",
+          "source_pages": [
+            "49"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "If this state, however, less than 10% (00 are for residential useage.",
+          "source_pages": [
+            "51"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "We have tried to indicate that total energy systems are not new; that considerable experience has been accumulated in the operation of these systems; and that total energy systems are not necessarily more efficient on an annual basis than other electrical systems.",
           "source_pages": [
             "50"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "one third of these residential total enemy plants are located in Johnson County, hards, and those plants are the direct or indirect respectibility of a circle diveloper the initially selected the fotal energy approach as a reaction to problems with the local power company.",
+          "source_pages": [
+            "51"
+          ],
+          "quote_verified": true
+        },
+        {
+          "quote": "Harold B. Finger Assistant Scorotary",
+          "source_pages": [
+            "52"
           ],
           "quote_verified": true
         }
@@ -305,6 +462,103 @@
       "based_on_main_doc_only": true
     }
   },
+  "summary_of_interest": [
+    {
+      "claim": "EPA formally argued that the programmatic statement was inadequate and that a separate environmental impact statement was required for each of the eight site areas, a substantive challenge to HUD's decision to cover nine prototype sites in one document.",
+      "salience_criterion": "contested",
+      "page": 34,
+      "evidence_quote": "The specific air pollution impact at the sites selected for Operation Breakthrough cannot be fully evaluated from the information presented in this Statement. In order to adequately evaluate the true impact, it would be necessary for an impact statement to be prepared for each of the eight sites.",
+      "why_notable": "EPA is directly contesting the scope of HUD's NEPA compliance, arguing the program-level statement cannot substitute for site-level analysis \u2014 a live disagreement over how NEPA applies to a multi-site demonstration program.",
+      "evidence": [
+        {
+          "quote": "The specific air pollution impact at the sites selected for Operation Breakthrough cannot be fully evaluated from the information presented in this Statement. In order to adequately evaluate the true impact, it would be necessary for an impact statement to be prepared for each of the eight sites.",
+          "source_pages": [
+            "34"
+          ],
+          "quote_verified": true
+        }
+      ]
+    },
+    {
+      "claim": "The Federal Power Commission publicly disputed HUD's framing of the Jersey City 'total energy' plant as innovative, pointing to 507 such systems already in service in a 1971 industry directory and arguing they are not necessarily more efficient on an annual basis than conventional grid service.",
+      "salience_criterion": "contested",
+      "page": null,
+      "evidence_quote": "The 1971 Directory and Data Book of Total Energy Magazine lists 507 total energy systems currently in service... total energy systems are not new; that considerable experience has been accumulated in the operation of these systems; and that total energy systems are not necessarily more efficient on an annual basis than other electrical systems.",
+      "why_notable": "One federal agency (FPC) is publicly undercutting the technological novelty and efficiency claims another agency (HUD) is using to justify a demonstration project, a rare on-the-record inter-agency technical dispute.",
+      "evidence": [
+        {
+          "quote": "The 1971 Directory and Data Book of Total Energy Magazine lists 507 total energy systems currently in service... total energy systems are not new; that considerable experience has been accumulated in the operation of these systems; and that total energy systems are not necessarily more efficient on an annual basis than other electrical systems.",
+          "source_pages": [],
+          "quote_verified": false,
+          "note": "Quote not found verbatim in doc \u2014 forced HUMAN_REVIEW."
+        }
+      ]
+    },
+    {
+      "claim": "The Jersey City site will demonstrate a Swedish-developed pneumatic (vacuum-tube) trash collection system that sucks refuse through sealed tubing from disposal chutes directly to a central compactor \u2014 a solid-waste technology essentially unheard of in U.S. housing at the time.",
+      "salience_criterion": "unusual_impact",
+      "page": 14,
+      "evidence_quote": "a Swedish-developed pneumatic trash collection system will be demonstrated and tested. In this system, refuse is gathered through sealed vacuum tubing directly from the disposal chute to a central collecting and compacting location",
+      "why_notable": "Testing an imported vacuum-tube waste system in a U.S. HUD-funded housing prototype is an atypical infrastructure choice for a housing EIS and represents a technology-transfer experiment beyond conventional site engineering.",
+      "evidence": [
+        {
+          "quote": "a Swedish-developed pneumatic trash collection system will be demonstrated and tested. In this system, refuse is gathered through sealed vacuum tubing directly from the disposal chute to a central collecting and compacting location",
+          "source_pages": [
+            "14"
+          ],
+          "quote_verified": true
+        }
+      ]
+    },
+    {
+      "claim": "The Department of Agriculture warned that HUD's history of siting subsidized housing on cheap but marginal land (flood-prone or unstable soils) has itself been a cause of distressed communities, tying site selection directly to long-term neighborhood decline.",
+      "salience_criterion": "community_pushback",
+      "page": 41,
+      "evidence_quote": "Many poor quality communities are poor because they were put on poor quality land.",
+      "why_notable": "USDA is making a structural social-outcome critique of federal housing siting practice, not just a technical soils comment, framing land-quality decisions as a driver of community poverty.",
+      "evidence": [
+        {
+          "quote": "Many poor quality communities are poor because they were put on poor quality land.",
+          "source_pages": [
+            "41"
+          ],
+          "quote_verified": true
+        }
+      ]
+    },
+    {
+      "claim": "HEW criticized the program for omitting any plan to train new residents in how to operate and maintain the innovative factory-built homes, treating occupant training as a missing environmental/social element of the housing systems.",
+      "salience_criterion": "unusual_impact",
+      "page": 39,
+      "evidence_quote": "That missing element is some kind of training process, to teach people how to use their new Breakthrough homes and, more important, how to maintain them.",
+      "why_notable": "Framing resident training as a required element of an environmental statement is an unusual expansion of NEPA scope into post-occupancy human factors for novel housing technology.",
+      "evidence": [
+        {
+          "quote": "That missing element is some kind of training process, to teach people how to use their new Breakthrough homes and, more important, how to maintain them.",
+          "source_pages": [
+            "39"
+          ],
+          "quote_verified": true
+        }
+      ]
+    },
+    {
+      "claim": "HUD explicitly presents Operation BREAKTHROUGH as a national precedent-setting demonstration meant to generate the cost, reliability, and operating data needed for future federal decisions on industrialized housing and on-site total energy plants.",
+      "salience_criterion": "precedent",
+      "page": 52,
+      "evidence_quote": "The total energy installation to service the Jersey City Operation EFLARTHORICE site is interied to fill the cap in the data required for rational decision ration",
+      "why_notable": "The document positions itself not as approval of a single housing project but as a data-gathering exercise intended to shape subsequent federal housing and energy policy \u2014 a programmatic, precedent-oriented framing.",
+      "evidence": [
+        {
+          "quote": "The total energy installation to service the Jersey City Operation EFLARTHORICE site is interied to fill the cap in the data required for rational decision ration",
+          "source_pages": [
+            "52"
+          ],
+          "quote_verified": true
+        }
+      ]
+    }
+  ],
   "alternatives": {
     "value": [
       {
@@ -322,7 +576,7 @@
       },
       {
         "name": "Program Directed Only at Housing Technology",
-        "description": "A program limited solely to developing new housing technologies, without addressing the constraints and barriers to innovation. This was rejected because technology alone, without tackling implementation obstacles, would have little chance of widespread adoption.",
+        "description": "A program limited solely to developing new housing technologies, without addressing the constraints and barriers to innovation. This was rejected because technology alone could not achieve wide-scale implementation.",
         "evidence": [
           {
             "quote": "Program Directed Only at Housing Technology",
@@ -335,7 +589,7 @@
       },
       {
         "name": "Different Number and Character of Demonstration Sites",
-        "description": "Varying approaches to the types and number of demonstration sites were considered, ranging from a 'housing fair' with one example of each housing system to using only federal land. The chosen approach required demonstrating both housing and community development across a wide range of situations.",
+        "description": "Varying approaches to the types and number of demonstration sites were considered, ranging from a 'housing fair' with one example of each housing system to using only Federal land. The chosen approach required demonstrating both housing and community development across a wide range of situations.",
         "evidence": [
           {
             "quote": "Different Number and Character of Demonstration Sites",
@@ -348,7 +602,7 @@
       },
       {
         "name": "Different Site Design Philosophy",
-        "description": "An approach that would limit each demonstration site to a single housing system, allowing that system to showcase many different housing types. This was rejected in favor of exposing all selected systems as broadly as possible given budget, site design, and marketing considerations.",
+        "description": "An approach that would limit each demonstration site to a single housing system, allowing that system to showcase many different housing types. This was rejected in favor of exposing all selected systems as broadly as possible given budget and marketing constraints.",
         "evidence": [
           {
             "quote": "Different Site Design Philosophy",
@@ -367,17 +621,19 @@
     "value": {
       "themes": [
         "Urban Development",
-        "Energy Systems"
+        "Industrial Production and Materials",
+        "Governance and Institutional Control"
       ],
       "subthemes": [
         "Housing, Planning, and Built Environment",
         "Urban Expansion and Land Use Change",
-        "Energy Distribution and Consumption",
-        "Industrial Manufacturing and Pollution"
+        "Resource Extraction and Material Flows",
+        "Environmental Regulation and Policy",
+        "Institutional Power and Resource Management"
       ]
     },
     "confidence": "high",
-    "justification": "The project_description and affected_community fields describe a large-scale industrialized housing demonstration program across nine urban/suburban sites, directly invoking urban development themes; the environmental_impact and project_description fields highlight a total energy plant, fuel consumption comparisons, and air/thermal pollution concerns, supporting Energy Systems classification.",
+    "justification": "The document centers on HUD's Operation BREAKTHROUGH, a federal program to demonstrate factory-built housing systems across urban renewal and suburban sites, directly invoking housing planning, land use change, and industrial material flows (concrete, metal, plastic systems). Federal agency commentary and NEPA compliance debates underscore environmental regulation, policy, and institutional resource management dimensions.",
     "evidence": [
       {
         "quote": "Operation BREAKTHROUGH is a major research and development activity of HUD to modernize the housing industry and bring about volume production of industrialized housing.",
@@ -387,16 +643,16 @@
         "quote_verified": true
       },
       {
-        "quote": "One aspect of this program involves the demonstration of innovative housing systems on nine prototype sites in eightareas of the nation.",
+        "quote": "Secretary George Romney announces Operation BREAKTHROUGH to meetings with governors, mayors, and leaders of industry and labor.",
         "source_pages": [
-          "1"
+          "71"
         ],
         "quote_verified": true
       },
       {
-        "quote": "specific program activities include demonstrations of new building materials and methods, total energy systems and pneumatic trash collection.",
+        "quote": "Twenty-two housing systems selected. Final sites selected.",
         "source_pages": [
-          "4"
+          "71"
         ],
         "quote_verified": true
       }
@@ -591,7 +847,7 @@
       ]
     },
     "confidence": "high",
-    "note": "Operation BREAKTHROUGH involved nine prototype demonstration sites in eight areas of the nation: Indianapolis IN, Jersey City NJ, Kalamazoo MI, Macon GA, Memphis TN, Sacramento CA, St. Louis MO, Seattle WA, and King County WA (Seattle area counts as two sites in one metro area)."
+    "note": "Operation BREAKTHROUGH involved nine prototype demonstration sites in eight areas of the nation: Indianapolis IN, Jersey City NJ, Kalamazoo MI, Macon GA, Memphis TN, Sacramento CA, St. Louis MO, Seattle WA, and King County WA (Seattle area counts as one of the eight areas with two sites)."
   },
   "key_people": {
     "value": {
@@ -718,18 +974,6 @@
           ]
         },
         {
-          "name": "National Academy of Sciences - National Research Council",
-          "evidence": [
-            {
-              "quote": "National Academy of Sciences - National Research Council",
-              "source_pages": [
-                "17"
-              ],
-              "quote_verified": true
-            }
-          ]
-        },
-        {
           "name": "Indiana State Division of Water Resources",
           "evidence": [
             {
@@ -752,6 +996,18 @@
               "quote_verified": true
             }
           ]
+        },
+        {
+          "name": "National Academy of Sciences - National Research Council",
+          "evidence": [
+            {
+              "quote": "National Academy of Sciences - National Research Council",
+              "source_pages": [
+                "17"
+              ],
+              "quote_verified": true
+            }
+          ]
         }
       ],
       "public_commenters": [],
@@ -770,6 +1026,11 @@
         "end_page": 72
       }
     ],
-    "chunk_size_pages": 50
-  }
+    "chunk_size_pages": 50,
+    "n_chunks_summarized": 2,
+    "n_chunks_available": 2,
+    "chunks_truncated": false
+  },
+  "_prompt_version": "v1_plain_language",
+  "_prompt_version_provenance": "backfilled: artifact predates the _prompt_version field but carries the post-amendment fingerprint (summary_of_interest present, chunking_meta.n_chunks_summarized present), neither of which exists in output/m2_pre_amendment/. Verified before writing."
 }

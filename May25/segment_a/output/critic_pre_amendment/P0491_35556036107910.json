@@ -1,0 +1,271 @@
+{
+  "title": {
+    "rubric_results": [
+      {
+        "check": "Title is non-empty and plausibly the document's title?",
+        "result": "yes",
+        "note": "The title references off-road vehicle regulations and an environmental impact statement, which is a plausible EIS document title."
+      },
+      {
+        "check": "Length is reasonable (not a sentence fragment, not the whole abstract)?",
+        "result": "yes",
+        "note": "The title is concise and appropriately scoped for a document title."
+      },
+      {
+        "check": "If two sources (NUL + Haiku) — do they roughly agree?",
+        "result": "n/a",
+        "note": "Only one source (NUL) was provided; no Haiku source to compare."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "medium",
+    "notes": "The extracted title is plausible and well-formed for an EIS document concerning off-road vehicle regulations. However, no cited page text was provided to verify the extraction, and only a single source (NUL) was used. Confidence is medium due to the lack of corroborating page-level evidence.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "year": {
+    "rubric_results": [
+      {
+        "check": "Year falls within 1969 ≤ year ≤ current year?",
+        "result": "no",
+        "note": "2026 is a future year beyond the current year (2025), failing the upper bound check"
+      },
+      {
+        "check": "Year present in NUL metadata OR found on first 3 pages?",
+        "result": "yes",
+        "note": "NUL metadata reports 2026; however, no cited page text was provided to verify regex finding of 1973"
+      },
+      {
+        "check": "If NUL and regex disagree, value reflects this with a low-confidence flag?",
+        "result": "yes",
+        "note": "Extraction correctly flags disagreement between NUL=2026 and regex=1973 with low confidence"
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "There is a direct conflict between NUL metadata (2026, a future/invalid year for an EIS) and the regex extraction from the first 3 pages (1973, a plausible EIS year). No cited page text was provided to adjudicate the disagreement. Given that 2026 exceeds the current year and 1973 is a historically plausible EIS date, human review is required to determine the correct publication year.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "eis_type": {
+    "rubric_results": [
+      {
+        "check": "Type is one of: Draft, Final, Supplemental, ROD, Unknown?",
+        "result": "yes",
+        "note": "Final is a valid EIS type from the allowed list"
+      },
+      {
+        "check": "Regex hit on first page and Sonnet on first 2 pages agree?",
+        "result": "no",
+        "note": "No regex source cited; only Sonnet (first 2 pages) is listed as source — regex result is absent or not reported"
+      },
+      {
+        "check": "Evidence phrase supports the chosen type?",
+        "result": "no",
+        "note": "No cited pages or evidence phrases were provided to corroborate the 'Final' classification"
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "The extracted value of 'Final' is plausible but cannot be verified because no cited text or evidence phrases were provided, and the regex source is missing. With only Sonnet as the sole source and medium confidence, there is insufficient corroboration to confirm or reject the classification. Human review is recommended to validate against the actual document text.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "lead_agency": {
+    "rubric_results": [
+      {
+        "check": "All listed agencies appear in NUL contributors OR on cited title pages?",
+        "result": "yes",
+        "note": "United States. Forest Service is sourced from NUL contributors as stated in the extraction."
+      },
+      {
+        "check": "Joint-lead (>2 agencies) flagged for human review?",
+        "result": "n/a",
+        "note": "Only one agency listed; joint-lead check not applicable."
+      },
+      {
+        "check": "No role text left in agency names?",
+        "result": "yes",
+        "note": "The agency name 'United States. Forest Service' contains no role descriptors such as '(issuing body)' or similar."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "medium",
+    "notes": "The single extracted agency, United States. Forest Service, is cleanly named and sourced from NUL contributors. No cited title pages were provided for cross-verification, which slightly limits confidence, but the extraction appears well-formed. No joint-lead or role-text issues detected.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "summary": {
+    "rubric_results": [
+      {
+        "check": "project_description supported by cited pages",
+        "result": "yes",
+        "note": "EO 11644, 36 CFR Part 295, Forest Service Manual, 187 million acres, protect resources/promote safety/reduce conflicts, and December 31 1976 deadline all appear explicitly in the cited text."
+      },
+      {
+        "check": "affected_community supported by cited pages",
+        "result": "yes",
+        "note": "Four-wheel drivers, motorcyclists, snowmobilers, dune buggy/ATV operators, hikers, horseback riders, hunters, anglers, rural/resort communities, mining claimants, oil/gas/utility operators, Indian tribes, ORV manufacturers, and federal/state/local agencies are all mentioned in the cited pages."
+      },
+      {
+        "check": "alternatives_overview supported by cited pages",
+        "result": "yes",
+        "note": "Alternatives A and B are described exactly as extracted. The 34,000 staff-days, $3.5 million setup cost, and $6 million annual recurring cost all appear verbatim in the cited text."
+      },
+      {
+        "check": "environmental_impact supported by cited pages",
+        "result": "yes",
+        "note": "Air, water, soils, vegetation, wildlife/habitat, tree regeneration, noise, safety, and conflict of uses are all covered. Visual impacts from signs, reduced game harvests, and mining exemption under General Mining Act of 1872 are explicitly stated."
+      },
+      {
+        "check": "public_response supported by cited pages",
+        "result": "yes",
+        "note": "566 written responses, majority favoring Alternative B, Sierra Club and Izaak Walton League favoring prohibition, ~75% opposing mining exemption (only 25% in favor per Appendix A text), posting open areas, faster implementation, longer comment periods, and EPA/DOI recommendations are all present in the cited text."
+      },
+      {
+        "check": "numbers, places, dates match cited pages",
+        "result": "yes",
+        "note": "187 million acres, 566 responses, 34,000 man-days, $3.5 million, $6 million/year, December 31 1976, and 75% opposing mining exemption (derived from '25% in favor') all match the source text."
+      },
+      {
+        "check": "public_response based_on_main_doc_only=true",
+        "result": "yes",
+        "note": "The public response section draws only from the main EIS document's consultation/appendix sections, not from external sources."
+      },
+      {
+        "check": "no invention or hallucinated detail",
+        "result": "yes",
+        "note": "No details appear to be fabricated; all specifics in the extraction are traceable to the cited pages. The '75 percent opposed mining exemption' is a reasonable inversion of the stated '25 percent in favor' and is not a hallucination."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "All extracted fields are well-supported by the cited pages. Key figures (187 million acres, 566 responses, 34,000 staff-days, $3.5M setup, $6M/year, December 31 1976 deadline) match the source text exactly. The '75 percent opposed mining exemption' is a valid inference from the stated '25 percent in favor' found in Appendix A. No hallucinated or invented content was detected.",
+    "source_pages": [
+      "1-51",
+      "49-64"
+    ]
+  },
+  "alternatives": {
+    "rubric_results": [
+      {
+        "check": "Each listed alternative is actually discussed on its cited page?",
+        "result": "no",
+        "note": "Page 2-5 is cited, but the pulled text does not contain a clearly labeled 'Alternatives' section with these two alternatives. The text shows a Table of Contents referencing 'Alternatives to the Proposed Action' in Section V, and the Description/Environmental Impacts sections, but the actual alternatives text on page 2-5 is not present in the cited excerpt. The description of the Proposed Action matches Section I text, but the No Action alternative text is not visible in the provided pages."
+      },
+      {
+        "check": "The No Action alternative is included if the cited text includes it?",
+        "result": "n/a",
+        "note": "The cited text does not clearly show a No Action alternative on the pulled pages; it cannot be confirmed or denied from the excerpt provided."
+      },
+      {
+        "check": "Names and descriptions match terminology used in the cited text?",
+        "result": "no",
+        "note": "The Proposed Action description closely mirrors Section I language about 'policies and procedures,' 'protect the resources,' 'promote the safety of users,' and 'minimize conflicts.' However, the No Action description referencing 'ad hoc management' and 'without implementing new unified regulations' is not verbatim or clearly traceable to the pulled text. The alternatives section (Section V) text is not included in the cited pages."
+      },
+      {
+        "check": "No outside-knowledge alternatives added that aren't in the chapter?",
+        "result": "n/a",
+        "note": "The Table of Contents references Section V 'Alternatives to the Proposed Action,' and the pulled text from Section I mentions sub-alternatives A and B (prohibition vs. continued recognition with controls), but these are not labeled 'No Action' and 'Proposed Action' in the visible text. Cannot fully verify without the actual Section V text."
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "The cited pages (2-5) do not include the actual Alternatives section (Section V) text in the pulled excerpt, making it impossible to verify whether the extracted alternative names and descriptions accurately reflect what appears on those pages. The Proposed Action description is consistent with Section I language, but the No Action framing and the specific page citation cannot be confirmed. A human reviewer should pull the actual Section V / page 2-5 content to validate the extraction.",
+    "source_pages": [
+      "2-5"
+    ]
+  },
+  "themes": {
+    "rubric_results": [
+      {
+        "check": "Each chosen theme is supported by the doc summary fields?",
+        "result": "no",
+        "note": "No cited pages were provided, so there is no verifiable textual evidence from the document to confirm the themes are supported. The justification references content but no source text is available to validate."
+      },
+      {
+        "check": "Theme names come from the fixed taxonomy verbatim?",
+        "result": "n/a",
+        "note": "Without access to the fixed taxonomy, verbatim match cannot be confirmed. 'Wildlife and Natural Areas', 'Governance and Institutional Control', and 'Transportation Infrastructure' appear plausible but cannot be verified."
+      },
+      {
+        "check": "Subthemes belong to the chosen theme(s) per the taxonomy?",
+        "result": "n/a",
+        "note": "Cannot verify subtheme-to-theme mapping without the taxonomy. 'Institutional Power and Resource Management' under 'Governance and Institutional Control' and 'Mobility Networks and Connectivity' under 'Transportation Infrastructure' seem reasonable but are unverifiable."
+      },
+      {
+        "check": "1–3 themes and 2–5 subthemes selected (within range)?",
+        "result": "yes",
+        "note": "3 themes and 5 subthemes selected, both within the allowed ranges."
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "No cited page text was provided, making it impossible to verify that the extracted themes and subthemes are grounded in the actual document content. Additionally, the fixed taxonomy cannot be cross-referenced, so verbatim theme name accuracy and subtheme-to-theme assignments remain unconfirmed. A human reviewer should validate the taxonomy matches and source text support before accepting this extraction.",
+    "source_pages": []
+  },
+  "location": {
+    "rubric_results": [
+      {
+        "check": "Place names appear in cited pages?",
+        "result": "yes",
+        "note": "Pages 1-30 repeatedly reference 'National Forest System lands,' 'National Forests,' 'National Grasslands,' and specific locations like Portland OR, Albuquerque NM, San Francisco CA, Fort Leonard Wood MO, Washington DC."
+      },
+      {
+        "check": "is_multi_site set correctly?",
+        "result": "no",
+        "note": "The EIS covers all 187 million acres of National Forest System lands nationwide — a multi-site/nationwide scope. is_multi_site should be true, not false."
+      },
+      {
+        "check": "For corridor projects: endpoints named, not just a midpoint?",
+        "result": "n/a",
+        "note": "This is a nationwide policy EIS, not a corridor project; endpoint check does not apply."
+      },
+      {
+        "check": "State abbreviations match U.S. conventions where applicable?",
+        "result": "n/a",
+        "note": "No state abbreviations were included in the extracted value; the single place entry has no state field populated."
+      }
+    ],
+    "verdict": "RE_EXTRACT",
+    "model_confidence": "high",
+    "notes": "The extracted location captures only a generic administrative entity ('National Forest System') and incorrectly sets is_multi_site to false for what is explicitly a nationwide, multi-site policy EIS covering 187 million acres across hundreds of individual National Forests and Grasslands. The cited pages also contain numerous specific geographic references (Portland OR, Albuquerque NM, San Francisco CA, Fort Leonard Wood MO, Washington DC, western United States snow courses) that were omitted. Re-extraction should set is_multi_site to true and enumerate key named places appearing in the document.",
+    "source_pages": [
+      "1-30"
+    ]
+  },
+  "key_people": {
+    "rubric_results": [
+      {
+        "check": "Each agency preparer named in the cited Preparers/Consultation text?",
+        "result": "yes",
+        "note": "Roland V. Emetaz, Joel Dahlin, and Roger Clark are all explicitly named in the Appendix D header: 'Prepared by: Roland V. Emetaz / Technical Assistance: Joel Dahlin / Roger Clark'"
+      },
+      {
+        "check": "Cooperating agencies / tribal nations actually listed in the cited text?",
+        "result": "yes",
+        "note": "All nine cooperating agencies appear in the cited text as letter-writers in Appendix C: Bonneville Power Administration, Bureau of Indian Affairs Albuquerque Area Office, U.S. Army Corps of Engineers South Pacific Division, Dept of Army Fort Leonard Wood, U.S. Geological Survey, Soil Conservation Service (multiple offices), U.S. Atomic Energy Commission, Dept of Interior Office of the Secretary, and U.S. EPA."
+      },
+      {
+        "check": "For public_commenters: stance present on cited page? Quote verbatim? Speaker clear?",
+        "result": "n/a",
+        "note": "No public_commenters were extracted; field is empty array."
+      },
+      {
+        "check": "Private individuals: last-name-only or 'private commenter' convention followed?",
+        "result": "n/a",
+        "note": "No private individuals were extracted as commenters."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "All three preparers (Emetaz, Dahlin, Clark) are confirmed in the Appendix D title block of the cited text. All nine cooperating agencies are confirmed as present in Appendix C of the cited text through their formal response letters. No public commenters were extracted, which is consistent with the cited text not providing individually attributable public comment stances on the pages reviewed.",
+    "source_pages": [
+      "24-64"
+    ]
+  }
+}

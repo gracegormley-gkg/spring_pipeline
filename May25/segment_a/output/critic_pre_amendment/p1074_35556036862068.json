@@ -1,0 +1,278 @@
+{
+  "title": {
+    "rubric_results": [
+      {
+        "check": "Title is non-empty and plausibly the document's title?",
+        "result": "yes",
+        "note": "The title clearly identifies the subject (1980 Olympic Winter Games at Lake Placid) and document type (EIS), which is highly plausible."
+      },
+      {
+        "check": "Length is reasonable (not a sentence fragment, not the whole abstract)?",
+        "result": "yes",
+        "note": "Title is appropriately concise and descriptive without being overly long or truncated."
+      },
+      {
+        "check": "If two sources (NUL + Haiku) — do they roughly agree?",
+        "result": "n/a",
+        "note": "Only one source (NUL) was provided; no Haiku source to compare."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "high",
+    "notes": "The extracted title is well-formed, specific, and highly consistent with what an EIS title for the 1980 Lake Placid Winter Olympics would look like. Only one source (NUL) was cited with no page-level text provided for verification, but the title itself is internally coherent and credible. No major concerns, though independent corroboration from a second source would strengthen confidence further.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "year": {
+    "rubric_results": [
+      {
+        "check": "Year falls within 1969 ≤ year ≤ current year?",
+        "result": "no",
+        "note": "2026 is a future year beyond the current year (2025), failing the upper bound check"
+      },
+      {
+        "check": "Year present in NUL metadata OR found on first 3 pages?",
+        "result": "yes",
+        "note": "NUL metadata reportedly yields 2026, though no cited page text is provided to verify; regex from first 3 pages yields 1980"
+      },
+      {
+        "check": "If NUL and regex disagree, value reflects this with a low-confidence flag?",
+        "result": "yes",
+        "note": "Extraction correctly flags the disagreement (NUL=2026 vs regex=1980) and assigns low confidence"
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "The extracted year of 2026 fails the validity range check as it exceeds the current year. The regex-derived value of 1980 is plausible for an EIS document and falls within the valid range, while 2026 does not. No cited page text was provided to adjudicate between the two sources, making human review necessary to determine the correct publication year.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "eis_type": {
+    "rubric_results": [
+      {
+        "check": "Type is one of: Draft, Final, Supplemental, ROD, Unknown?",
+        "result": "yes",
+        "note": "Both 'Draft' and 'Final' are valid types; the extracted value 'Draft' is a valid type"
+      },
+      {
+        "check": "Regex hit on first page and Sonnet on first 2 pages agree?",
+        "result": "no",
+        "note": "Explicitly noted in extraction: regex=Draft disagrees with Sonnet=Final — direct conflict"
+      },
+      {
+        "check": "Evidence phrase supports the chosen type?",
+        "result": "no",
+        "note": "Evidence reads 'Check one ( ) Draft (X) Final Environmental Statement' — the (X) mark is on Final, not Draft; extracted value 'Draft' contradicts the evidence"
+      }
+    ],
+    "verdict": "RE_EXTRACT",
+    "model_confidence": "low",
+    "notes": "The evidence phrase clearly shows the checkbox is marked on 'Final' with '(X) Final Environmental Statement', while 'Draft' is unchecked '( ) Draft'. The extracted value of 'Draft' directly contradicts the cited evidence. The correct extraction should be 'Final', consistent with Sonnet's reading. This should be re-extracted with the correct value.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "lead_agency": {
+    "rubric_results": [
+      {
+        "check": "All listed agencies appear in NUL contributors OR on cited title pages?",
+        "result": "yes",
+        "note": "United States. Economic Development Administration is sourced from NUL contributors as stated."
+      },
+      {
+        "check": "Joint-lead (>2 agencies) flagged for human review?",
+        "result": "n/a",
+        "note": "Only one agency listed; joint-lead flag not required."
+      },
+      {
+        "check": "No role text left in agency names?",
+        "result": "yes",
+        "note": "Agency name contains no parenthetical role text such as '(issuing body)'."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "medium",
+    "notes": "The single extracted agency, United States. Economic Development Administration, is cleanly formatted and sourced from NUL. No cited title pages were provided for cross-verification, which slightly limits confidence, but the NUL source attribution is consistent with the extraction. No issues with role text or joint-lead complexity.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "summary": {
+    "rubric_results": [
+      {
+        "check": "project_description text supported by cited pages",
+        "result": "no",
+        "note": "The cited pages contain detailed content about the Speed Skating Oval, Press Center, Administration (Town Hall), Television Center, and Ski Jumps, confirming several venues. However, the specific $50 million LPOOC budget, $9.3 million state improvements figure, Ray Brook Olympic Village after-use as federal correctional institution, bobsled/luge at Mt. Van Hoevenberg, and Alpine facilities at Whiteface Mountain are NOT visible in the cited page text provided. The cited pages are mid-document facility-level sections, not summary or budget sections."
+      },
+      {
+        "check": "affected_community text supported by cited pages",
+        "result": "no",
+        "note": "The cited pages mention School Street, Old Military Road, River Street, Route 86, and the Lake Placid Central School/High School, consistent with the text. However, population figures (6,500–12,000), poverty rates (~11%), income levels, Saranac Lake, Wilmington, Essex/Franklin County towns, and John Brown Farm as a neighbor are not visible in the provided cited page text."
+      },
+      {
+        "check": "alternatives_overview text supported by cited pages",
+        "result": "no",
+        "note": "The cited pages do not show alternatives analysis content. References to Bassett Mountain, Mt. Whitney, Horse Show Grounds, Fish & Game Club, Holiday Inn, Airport/Horse Show Grounds for TV Center, Remsen–Lake Placid rail line, or the conclusion about least cumulative environmental impact are not visible in the provided text."
+      },
+      {
+        "check": "environmental_impact text supported by cited pages",
+        "result": "partial",
+        "note": "The cited pages do confirm floodplain impacts at the Chubb River TV Center site and Ausable River at the ski jump, and mention construction noise/soil disturbance. However, specific figures like '57 acres at Ray Brook,' '10 acres at Whiteface,' '3,000 square feet of Ausable River floodplain,' '266-foot ski jump tower,' and projections about thousands of seasonal residents by 1990 are not visible in the provided text. The document mentions a '270 foot height' for the ski jump (not 266 feet as stated in the extraction)."
+      },
+      {
+        "check": "Numbers match cited pages",
+        "result": "no",
+        "note": "The extraction states '266-foot ski jump tower' but the cited pages clearly state '270 foot height of the proposed ski jump at Intervale.' This is a direct numerical discrepancy."
+      },
+      {
+        "check": "public_response based_on_main_doc_only respected",
+        "result": "yes",
+        "note": "The field is marked based_on_main_doc_only=true and references content from the EIS document itself."
+      },
+      {
+        "check": "public_response text supported by cited pages",
+        "result": "no",
+        "note": "The cited pages mention Task Force meetings, public information meetings, and Environmental Council meetings in a footnote, but details about the North Elba referendum, household surveys, NYSDEC Commissioner Peter A.A. Berle's vote, State Historic Preservation Officer finding, Adirondack Council, Sierra Club, Wilderness Society, NRDC, and NEPA compliance at Whiteface are not visible in the provided cited text."
+      },
+      {
+        "check": "No invention or hallucinated detail",
+        "result": "no",
+        "note": "The '266-foot ski jump tower' contradicts the document's stated '270 foot height.' Other specific figures ($50M budget, $9.3M state, 57 acres, 10 acres, 3,000 sq ft floodplain fill, 11% poverty) cannot be verified from the provided cited pages and may be hallucinated or drawn from pages not shown."
+      }
+    ],
+    "verdict": "RE_EXTRACT",
+    "model_confidence": "high",
+    "notes": "The extraction contains at least one direct numerical error (266-foot vs. 270-foot ski jump tower as stated in the cited pages). Multiple specific figures and claims in all five fields cannot be verified from the provided cited page text, suggesting the extraction drew on pages not included in the citation set or invented details. The extraction should be redone with accurate page citations and corrected figures.",
+    "source_pages": [
+      "145-195",
+      "193-243",
+      "289-339",
+      "337-387",
+      "481-531",
+      "529-579",
+      "673-723",
+      "385-435"
+    ]
+  },
+  "alternatives": {
+    "rubric_results": [
+      {
+        "check": "Each listed alternative is actually discussed on its cited page?",
+        "result": "yes",
+        "note": "The cited text (pages 595-674) explicitly discusses all named alternatives: Horse Show Grounds, Fish and Game Club, No Refrigeration of Speed Skating Oval, Craig Wood Golf Course Press Center, Other Existing Structures for Press Center/Admin/TV Center, Airport/Horse Show Grounds TV Center, Mt. Whitney, Bassett Mountain, Luge alternatives, Olympic Village alternatives, Nordic alternatives, Alpine alternatives, and Bobsled refrigeration. All are present in the extracted text."
+      },
+      {
+        "check": "The No Action alternative is included if the cited text includes it?",
+        "result": "yes",
+        "note": "The cited text discusses 'No Refrigeration' alternatives for both the Speed Skating Oval and Bobsled Run, 'No Thruway Lift,' 'No Snowmaking Expansion,' and 'No Base Lodge Expansion,' which are the No Action variants for those specific facilities. These are captured in the extraction."
+      },
+      {
+        "check": "Names and descriptions match terminology used in the cited text?",
+        "result": "yes",
+        "note": "Terminology is consistent: 'Horse Show Grounds,' 'Fish and Game Club Site,' 'Craig Wood Golf Course,' 'Airport/Horse Show Grounds,' 'Mt. Whitney,' 'Bassett Mountain,' 'Old Military Road (Chubb River),' 'Ray Brook,' 'High Peaks Wilderness,' 'Cloudsplitter,' 'Thruway lift,' 'Mt. Van Hoevenberg,' and 'Intervale' all match the cited text precisely."
+      },
+      {
+        "check": "No outside-knowledge alternatives added that aren't in the chapter?",
+        "result": "yes",
+        "note": "All 33 extracted alternatives correspond to content explicitly present in the cited pages. No alternatives appear to have been introduced from outside the document. The Luge alternatives (parallel alignment, combined bobsled-luge, 1932 run, Intervale), Opening Ceremony at Arena, and Olympic Village variants are all discussed in the text."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "The extraction is thorough and accurate. All named alternatives are explicitly discussed in the cited text, terminology matches precisely, No Action variants are captured where present, and no outside-knowledge alternatives were introduced. The page range 595-674 is broad but consistent with a comprehensive alternatives chapter covering all facility types discussed.",
+    "source_pages": [
+      "595-674"
+    ]
+  },
+  "themes": {
+    "rubric_results": [
+      {
+        "check": "Each chosen theme is supported by the doc summary fields?",
+        "result": "no",
+        "note": "No cited pages or summary text were provided, making it impossible to verify that the three themes are grounded in actual document content."
+      },
+      {
+        "check": "Theme names come from the fixed taxonomy verbatim?",
+        "result": "no",
+        "note": "'Place Based Development Conflicts' does not appear to match a standard fixed taxonomy theme name verbatim; likely should be 'Place-Based Development Conflicts' or a differently named taxonomy entry. Without the taxonomy provided, this cannot be confirmed, but the hyphenation/spacing variation raises a flag."
+      },
+      {
+        "check": "Subthemes belong to the chosen theme(s) per the taxonomy?",
+        "result": "no",
+        "note": "Cannot verify subtheme-to-theme mapping without the taxonomy document, and no cited page text was supplied to cross-reference assignments."
+      },
+      {
+        "check": "1–3 themes and 2–5 subthemes selected (within range)?",
+        "result": "yes",
+        "note": "3 themes and 5 subthemes are selected, both within the allowed ranges."
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "The extraction is within numeric range (3 themes, 5 subthemes) and the justification narrative is plausible for an Olympic-venue EIS, but no cited page text was provided to verify document support. Additionally, at least one theme name ('Place Based Development Conflicts') may not match the fixed taxonomy verbatim, and subtheme-to-theme assignments cannot be validated without the taxonomy. Human review is needed to confirm taxonomy compliance and document grounding.",
+    "source_pages": []
+  },
+  "location": {
+    "rubric_results": [
+      {
+        "check": "Place names appear in the cited pages?",
+        "result": "yes",
+        "note": "Lake Placid, North Elba, Wilmington, Essex County, and Adirondack State Park all appear explicitly and repeatedly in the cited pages (1-30 / transmittal and Part One summary)."
+      },
+      {
+        "check": "is_multi_site set correctly?",
+        "result": "yes",
+        "note": "Document explicitly describes 'ten geographically dispersed sites in two adjacent towns and one village'; is_multi_site=true is correct."
+      },
+      {
+        "check": "For corridor projects: endpoints named, not just a midpoint?",
+        "result": "n/a",
+        "note": "This is not a corridor project; it is a dispersed multi-site Olympic facilities project. Endpoint check does not apply."
+      },
+      {
+        "check": "State abbreviations match U.S. conventions where applicable?",
+        "result": "yes",
+        "note": "All places use 'NY' which is the correct USPS abbreviation for New York."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "All five extracted place names (Lake Placid, North Elba, Wilmington, Essex County, Adirondack State Park) are explicitly confirmed in the cited pages. The is_multi_site=true flag is well-supported by the document's own description of dispersed sites across multiple municipalities. State abbreviations are correct throughout.",
+    "source_pages": [
+      "1-30"
+    ]
+  },
+  "key_people": {
+    "rubric_results": [
+      {
+        "check": "Each agency preparer named in the cited Preparers/Consultation text?",
+        "result": "yes",
+        "note": "All six named preparers (Hansel, Galehouse, Chapman, Carr, Reinhardt, Kenney) appear verbatim in the ACKNOWLEDGEMENTS section of the cited text."
+      },
+      {
+        "check": "Cooperating agencies / tribal nations actually listed in the cited text?",
+        "result": "yes",
+        "note": "All 20 cooperating agencies listed in the extraction appear in either the 'List all federal, state and local agencies' section or the '1980 OLYMPIC WINTER GAMES ASSESSMENT TASK FORCE' section of the cited text. No tribal nations are mentioned in the document."
+      },
+      {
+        "check": "For public_commenters: stance present on cited page? Quote verbatim? Speaker clear?",
+        "result": "no",
+        "note": "The cited pages (812-836) are not included in the provided text excerpt, so quotes and stances cannot be verified against the source pages. The Department of Agriculture Forest Service quote is already flagged as unverified in the extraction itself."
+      },
+      {
+        "check": "Private individuals: last-name-only or 'private commenter' convention followed?",
+        "result": "n/a",
+        "note": "No private individuals appear as public_commenters in the extracted value; all commenters are organizations."
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "medium",
+    "notes": "Agency preparers and cooperating agencies are fully confirmed against the cited text. However, the public commenter quotes and stances reference pages 812-836, which are not included in the provided text excerpt, making independent verification impossible. Additionally, the extraction itself flags the Department of Agriculture Forest Service quote as unverified, warranting human review of the commenter section specifically.",
+    "source_pages": [
+      "1-30",
+      "812-836"
+    ]
+  }
+}

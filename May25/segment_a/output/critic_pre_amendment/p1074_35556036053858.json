@@ -1,0 +1,264 @@
+{
+  "title": {
+    "rubric_results": [
+      {
+        "check": "Title is non-empty and plausibly the document's title?",
+        "result": "yes",
+        "note": "The value reads as a formal EIS title referencing HUD project selection criteria for subsidized housing, which is plausible."
+      },
+      {
+        "check": "Length is reasonable (not a sentence fragment, not the whole abstract)?",
+        "result": "yes",
+        "note": "Title is concise and appropriately scoped — not too short or too long."
+      },
+      {
+        "check": "If two sources (NUL + Haiku) — do they roughly agree?",
+        "result": "n/a",
+        "note": "Only one source (NUL) was provided; no Haiku source to compare."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "medium",
+    "notes": "The extracted title is plausible and well-formed for an EIS document related to HUD subsidized housing project selection criteria. However, no cited page text was provided to verify the extraction against the source document, and only one source (NUL) was used. Confidence is medium due to lack of corroborating evidence from cited pages or a second source.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "year": {
+    "rubric_results": [
+      {
+        "check": "Year falls within 1969 ≤ year ≤ current year?",
+        "result": "no",
+        "note": "2026 is in the future and exceeds the current year (2025), failing the upper bound check."
+      },
+      {
+        "check": "Year present in NUL metadata OR found on first 3 pages?",
+        "result": "yes",
+        "note": "NUL metadata reports 2026 and regex from first 3 pages reports 1971; both sources are present but disagree."
+      },
+      {
+        "check": "If NUL and regex disagree, value reflects this with a low-confidence flag?",
+        "result": "yes",
+        "note": "Extraction correctly flagged low confidence and noted the NUL=2026 vs regex=1971 disagreement."
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "There is a significant conflict between the NUL metadata year (2026, which is a future date and therefore implausible for an EIS) and the regex-extracted year from the first 3 pages (1971, which is plausible given the NEPA era). The NUL value of 2026 is almost certainly erroneous — possibly a digitization artifact or metadata error. The regex value of 1971 is the more credible candidate and falls within the valid range, but no cited page text was provided to confirm it. Human review is required to verify the correct publication year.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "eis_type": {
+    "rubric_results": [
+      {
+        "check": "Type is one of allowed values",
+        "result": "yes",
+        "note": "Both 'Supplemental' and 'Final' are valid EIS types; extracted value 'Supplemental' is in the allowed set"
+      },
+      {
+        "check": "Regex and Sonnet agree",
+        "result": "no",
+        "note": "Extraction note explicitly states regex=Supplemental disagrees with Sonnet=Final; sources conflict"
+      },
+      {
+        "check": "Evidence phrase supports chosen type",
+        "result": "no",
+        "note": "Evidence reads 'FINAL ENVIRONMENTAL STATEMENT' — this directly supports 'Final', not 'Supplemental'; chosen type contradicts the evidence"
+      }
+    ],
+    "verdict": "RE_EXTRACT",
+    "model_confidence": "low",
+    "notes": "The cited evidence phrase 'FINAL ENVIRONMENTAL STATEMENT' clearly supports a type of 'Final', yet the extracted value is 'Supplemental'. The two extraction methods disagree, and the chosen value contradicts the only available evidence. The document should be re-extracted with the type corrected to 'Final' unless additional page text reveals supplemental language elsewhere.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "lead_agency": {
+    "rubric_results": [
+      {
+        "check": "All listed agencies appear in NUL contributors OR on cited title pages?",
+        "result": "no",
+        "note": "No cited title pages were provided, so agency presence cannot be verified against source text. Confidence is undermined by absence of supporting evidence."
+      },
+      {
+        "check": "Joint-lead (>2 agencies) flagged with a note for human review?",
+        "result": "yes",
+        "note": "11 agencies listed; extractor correctly flagged this as likely joint-lead requiring verification."
+      },
+      {
+        "check": "No role text (e.g., '(issuing body)') left in the agency names?",
+        "result": "yes",
+        "note": "All agency names appear clean with no parenthetical role descriptors appended."
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "With 11 agencies listed and no cited page text provided, it is impossible to confirm whether all agencies genuinely appear as lead agencies on the title pages versus being cooperating, consulting, or referenced agencies. The unusually large number of leads (11) is atypical and warrants human verification against the original document. The extractor's own medium confidence and joint-lead flag reinforce the need for manual review.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "summary": {
+    "rubric_results": [
+      {
+        "check": "project_description supported by cited pages",
+        "result": "yes",
+        "note": "The four programs, administrative purpose, and ranking criteria (national needs, orderly urban development, equal opportunity, environmental quality) are all explicitly stated in the cited pages."
+      },
+      {
+        "check": "affected_community supported by cited pages",
+        "result": "yes",
+        "note": "Low/moderate-income families, minority households, metropolitan integration concerns, and all unit figures (325,000 Section 236, 135,000 rent supplement, 575,000 Section 235, 929,000 public housing) match the cited text exactly."
+      },
+      {
+        "check": "alternatives_overview supported by cited pages",
+        "result": "yes",
+        "note": "The 'no criteria' alternative, reliance on varying Area Office judgment, and two prior Federal Register drafts (June 24 and October 2, 1971) are all confirmed in the cited pages."
+      },
+      {
+        "check": "environmental_impact supported by cited pages",
+        "result": "yes",
+        "note": "No adverse impact anticipated, 'poor' rating disqualification, Criterion #5 language about attractive settings and ecologically valuable/significant natural, historic, archeological areas, and Criterion #4 land-use consistency are all present in the cited text."
+      },
+      {
+        "check": "Numbers, places, and dates match cited pages",
+        "result": "yes",
+        "note": "All figures (325,000 units, 50 states, 1,081 cities, 135,000 rent supplement, 575,000 Section 235, 929,000 public housing) and agency names match the cited pages precisely."
+      },
+      {
+        "check": "public_response based_on_main_doc_only=true and limited to main doc",
+        "result": "yes",
+        "note": "The field is flagged based_on_main_doc_only=true and all content (agency names, HUD responses, criterion revisions) is drawn from the cited EIS pages."
+      },
+      {
+        "check": "No invention or hallucinated detail",
+        "result": "no",
+        "note": "The extracted public_response mentions 'U.S. Civil Rights Commission, NAACP, League of Women Voters, National Urban Coalition, NAHB, and the Mortgage Bankers Association' as commenters, which is supported. However, it omits that these were commenters on the criteria themselves (not the EIS draft), and the summary sheet lists only federal agencies under comment recipients. Minor framing issue but no outright hallucination. One minor issue: the extraction states HUD 'declined to add a formal appeals process' — this is supported. It also states HUD declined 'specific references to federal employee housing and public transportation' — the public transportation reference is partially supported (DOT comment on Form 3165-A was not revised, though criterion #3 Form 3165 does mention it), and the federal employee housing reference is supported via NCPC comment. These are accurate characterizations."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "high",
+    "notes": "All major facts, figures, and descriptions in the extracted fields are supported by the cited pages. The public_response section accurately characterizes both the commenters and HUD's responses, though it slightly oversimplifies the public transportation response (HUD noted the criterion form already referenced it, rather than outright declining). No hallucinated details were found; the extraction is a faithful and accurate summary of the cited content.",
+    "source_pages": [
+      "1-10"
+    ]
+  },
+  "alternatives": {
+    "rubric_results": [
+      {
+        "check": "Each listed alternative is actually discussed on its cited page?",
+        "result": "n/a",
+        "note": "No alternatives were extracted and no cited pages were provided, so this check cannot be performed."
+      },
+      {
+        "check": "The No Action alternative is included if the cited text includes it?",
+        "result": "n/a",
+        "note": "No cited text was provided, so it is impossible to verify whether a No Action alternative should have been included."
+      },
+      {
+        "check": "Names and descriptions match terminology used in the cited text?",
+        "result": "n/a",
+        "note": "No extracted names or descriptions exist to compare against any source text."
+      },
+      {
+        "check": "No outside-knowledge alternatives added that aren't in the chapter?",
+        "result": "yes",
+        "note": "The extracted value is an empty list, so no outside-knowledge alternatives were introduced."
+      }
+    ],
+    "verdict": "RE_EXTRACT",
+    "model_confidence": "high",
+    "notes": "The extraction returned an empty result with no cited pages, citing a structural detection failure and a deliberate skip of the fallback mechanism. Because no alternatives data was captured at all, the extraction must be re-run with a corrected detection strategy (e.g., enabling the word/regex fallback or broadening the structural search) to produce a verifiable result. A human reviewer should also confirm that an alternatives chapter exists in the source document before re-extraction.",
+    "source_pages": []
+  },
+  "themes": {
+    "rubric_results": [
+      {
+        "check": "Each chosen theme is supported by the doc summary fields?",
+        "result": "no",
+        "note": "No cited pages were provided, so there is no verifiable text from the document to confirm the themes. The justification references a summary but no actual text was pulled in."
+      },
+      {
+        "check": "Theme names come from the fixed taxonomy verbatim?",
+        "result": "n/a",
+        "note": "Cannot verify against taxonomy without access to the fixed taxonomy list, but 'Urban Development' and 'Governance and Institutional Control' appear plausible as taxonomy entries. Flagged for review."
+      },
+      {
+        "check": "Subthemes belong to the chosen theme(s) per the taxonomy?",
+        "result": "n/a",
+        "note": "Without cited page text or taxonomy reference, subtheme membership cannot be confirmed. 'Environmental Regulation and Policy' may belong to a different theme than 'Urban Development' or 'Governance and Institutional Control.'"
+      },
+      {
+        "check": "1–3 themes and 2–5 subthemes selected (within range)?",
+        "result": "yes",
+        "note": "2 themes and 4 subthemes are selected, both within the allowed ranges."
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "No cited page text was provided, making it impossible to verify that the chosen themes and subthemes are grounded in the actual document content. Additionally, the cross-theme placement of 'Environmental Regulation and Policy' under 'Urban Development' or 'Governance and Institutional Control' is ambiguous without taxonomy confirmation. A human reviewer should validate theme/subtheme taxonomy membership and confirm document support.",
+    "source_pages": []
+  },
+  "location": {
+    "rubric_results": [
+      {
+        "check": "Place names appear in cited pages?",
+        "result": "yes",
+        "note": "The cited page (1-9) references 'United States,' '50 states,' '1081 cities,' and 'Washington, D.C.' confirming nationwide scope."
+      },
+      {
+        "check": "is_multi_site set correctly?",
+        "result": "yes",
+        "note": "is_multi_site=false is defensible for a programmatic/administrative EIS with no specific project sites; however, the document explicitly covers 50 states and 1081 cities, which could argue for true. Given it is a policy document with no discrete sites, false is acceptable."
+      },
+      {
+        "check": "For corridor projects: endpoints named, not just a midpoint?",
+        "result": "n/a",
+        "note": "This is not a corridor project; it is a nationwide programmatic EIS."
+      },
+      {
+        "check": "State abbreviations match U.S. conventions?",
+        "result": "n/a",
+        "note": "No state abbreviations were used in the extracted value; only 'United States' as a region."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "high",
+    "notes": "The extraction correctly identifies this as a nationwide programmatic EIS covering all 50 states with no specific project site, and the cited pages confirm this scope. The is_multi_site=false designation is a reasonable interpretation for a policy-level document, though an argument could be made for true given explicit mention of 50 states and 1081 cities. The geocoded centroid for 'United States' is appropriate given the absence of a discrete project location.",
+    "source_pages": [
+      "1-9"
+    ]
+  },
+  "key_people": {
+    "rubric_results": [
+      {
+        "check": "Each agency preparer named in the cited Preparers/Consultation text?",
+        "result": "n/a",
+        "note": "No agency preparers were extracted; the cited text contains no named individual preparers, so an empty list is appropriate."
+      },
+      {
+        "check": "Cooperating agencies / tribal nations actually listed in the cited text?",
+        "result": "yes",
+        "note": "All 10 cooperating agencies match exactly the list under 'List All Federal, State and Local Agencies from Which Comments Have Been Received' on the summary sheet."
+      },
+      {
+        "check": "For public_commenters: stance present on cited page? Quote verbatim? Speaker clear?",
+        "result": "yes",
+        "note": "Department of the Interior and EPA quotes are verbatim and confirmed in the cited text. Department of Transportation quote ('Item 3 of the questionnaire should be revised...') is also present verbatim in the cited text despite being flagged as unverified. National Capital Planning Commission quote ('Expand Criterion #4 to include the following...') is present verbatim in the cited text, also despite being flagged as unverified. All speakers are clearly identified official agencies."
+      },
+      {
+        "check": "Private individuals: last-name-only or 'private commenter' convention followed?",
+        "result": "n/a",
+        "note": "No private individuals appear as commenters; all commenters are government agencies."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "high",
+    "notes": "The extraction is substantively accurate: all cooperating agencies are correctly listed, and all four commenter quotes appear verbatim in the cited text. The two entries flagged as 'quote_verified: false' are actually verifiable in the provided text, suggesting an internal inconsistency in the extraction metadata rather than an error in the quotes themselves. No private individuals or named preparers are present in the source, so those fields being empty or absent is correct.",
+    "source_pages": [
+      "1-30",
+      "2-10"
+    ]
+  }
+}

@@ -1,44 +1,312 @@
 {
   "runs": [
     {
-      "doc_id": "p0491_35556036091957",
-      "work_id": "csv:35556036091957",
-      "title": "Off-road vehicles on public lands, implementation of Executive Order 11644 : environmental impact statement.",
-      "elapsed_sec": 264.6,
-      "m1_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/m1/p0491_35556036091957.json",
-      "m2_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/m2/p0491_35556036091957.json",
-      "critic_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/critic/p0491_35556036091957.json",
-      "grading_sheet": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/grading_sheets/p0491_35556036091957.csv",
+      "doc_id": "p1074_35556036105336",
+      "work_id": "csv:35556036105336",
+      "title": "Randolph urban renewal area : environmental impact statement.",
+      "elapsed_sec": 0.0,
+      "m1_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/m1/p1074_35556036105336.json",
+      "m2_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/m2/p1074_35556036105336.json",
+      "critic_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/critic/p1074_35556036105336.json",
+      "grading_sheet": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/grading_sheets/p1074_35556036105336.csv",
       "usage": {
         "by_model": [
           {
             "model": "us.anthropic.claude-sonnet-4-6",
             "calls": 14,
-            "input_tokens": 95272,
-            "output_tokens": 5343,
+            "input_tokens": 76331,
+            "output_tokens": 4987,
             "cache_creation_input_tokens": 0,
             "cache_read_input_tokens": 0,
-            "cost_usd": 0.366
+            "cost_usd": 0.3038
           },
           {
             "model": "us.anthropic.claude-opus-4-7",
-            "calls": 9,
-            "input_tokens": 241954,
-            "output_tokens": 21675,
+            "calls": 5,
+            "input_tokens": 106098,
+            "output_tokens": 20019,
             "cache_creation_input_tokens": 0,
             "cache_read_input_tokens": 0,
-            "cost_usd": 5.2549
+            "cost_usd": 3.0929
+          }
+        ],
+        "total": {
+          "calls": 19,
+          "input_tokens": 182429,
+          "output_tokens": 25006,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 3.3967
+        }
+      },
+      "usage_from_prior_invocation": true
+    },
+    {
+      "doc_id": "p1074_35556036546182",
+      "work_id": "csv:35556036546182",
+      "title": "Airport Spur connection, I-94 to General Mitchell Field, Milwaukee : environmental impact statement.",
+      "elapsed_sec": 0.0,
+      "m1_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/m1/p1074_35556036546182.json",
+      "m2_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/m2/p1074_35556036546182.json",
+      "critic_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/critic/p1074_35556036546182.json",
+      "grading_sheet": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/grading_sheets/p1074_35556036546182.csv",
+      "usage": {
+        "by_model": [
+          {
+            "model": "us.anthropic.claude-sonnet-4-6",
+            "calls": 15,
+            "input_tokens": 102045,
+            "output_tokens": 7535,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.4192
+          },
+          {
+            "model": "us.anthropic.claude-opus-4-7",
+            "calls": 8,
+            "input_tokens": 198131,
+            "output_tokens": 26188,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 4.9361
           }
         ],
         "total": {
           "calls": 23,
-          "input_tokens": 337226,
-          "output_tokens": 27018,
+          "input_tokens": 300176,
+          "output_tokens": 33723,
           "cache_creation_input_tokens": 0,
           "cache_read_input_tokens": 0,
-          "cost_usd": 5.6209
+          "cost_usd": 5.3552
         }
-      }
+      },
+      "usage_from_prior_invocation": true
+    },
+    {
+      "doc_id": "p1074_35556036806586",
+      "work_id": "csv:35556036806586",
+      "title": "Bad Creek pumped storage project : environmental impact statement.",
+      "elapsed_sec": 0.0,
+      "m1_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/m1/p1074_35556036806586.json",
+      "m2_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/m2/p1074_35556036806586.json",
+      "critic_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/critic/p1074_35556036806586.json",
+      "grading_sheet": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/grading_sheets/p1074_35556036806586.csv",
+      "usage": {
+        "by_model": [
+          {
+            "model": "us.anthropic.claude-sonnet-4-6",
+            "calls": 14,
+            "input_tokens": 92973,
+            "output_tokens": 6609,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.3781
+          },
+          {
+            "model": "us.anthropic.claude-opus-4-7",
+            "calls": 11,
+            "input_tokens": 317368,
+            "output_tokens": 34942,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 7.3812
+          }
+        ],
+        "total": {
+          "calls": 25,
+          "input_tokens": 410341,
+          "output_tokens": 41551,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 7.7592
+        }
+      },
+      "usage_from_prior_invocation": true
+    },
+    {
+      "doc_id": "p1074_35556036811230",
+      "work_id": "csv:35556036811230",
+      "title": "Buffalo light rail rapid transit project construction : environmental impact statement.",
+      "elapsed_sec": 0.0,
+      "m1_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/m1/p1074_35556036811230.json",
+      "m2_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/m2/p1074_35556036811230.json",
+      "critic_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/critic/p1074_35556036811230.json",
+      "grading_sheet": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/grading_sheets/p1074_35556036811230.csv",
+      "usage": {
+        "by_model": [
+          {
+            "model": "us.anthropic.claude-sonnet-4-6",
+            "calls": 13,
+            "input_tokens": 36595,
+            "output_tokens": 4503,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.1773
+          },
+          {
+            "model": "us.anthropic.claude-opus-4-7",
+            "calls": 8,
+            "input_tokens": 188498,
+            "output_tokens": 27997,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 4.9272
+          }
+        ],
+        "total": {
+          "calls": 21,
+          "input_tokens": 225093,
+          "output_tokens": 32500,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 5.1046
+        }
+      },
+      "usage_from_prior_invocation": true
+    },
+    {
+      "doc_id": "p1074_35556036861797",
+      "work_id": "csv:35556036861797",
+      "title": "Average fuel economy standard for nonpassenger automobiles, model year 1979 : environmental impact statement.",
+      "elapsed_sec": 0.0,
+      "m1_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/m1/p1074_35556036861797.json",
+      "m2_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/m2/p1074_35556036861797.json",
+      "critic_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/critic/p1074_35556036861797.json",
+      "grading_sheet": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/grading_sheets/p1074_35556036861797.csv",
+      "usage": {
+        "by_model": [
+          {
+            "model": "us.anthropic.claude-sonnet-4-6",
+            "calls": 14,
+            "input_tokens": 60519,
+            "output_tokens": 4415,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.2478
+          },
+          {
+            "model": "us.anthropic.claude-opus-4-7",
+            "calls": 6,
+            "input_tokens": 105277,
+            "output_tokens": 19665,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 3.054
+          }
+        ],
+        "total": {
+          "calls": 20,
+          "input_tokens": 165796,
+          "output_tokens": 24080,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 3.3018
+        }
+      },
+      "usage_from_prior_invocation": true
+    },
+    {
+      "doc_id": "p1074_35556038322269",
+      "work_id": "csv:35556038322269",
+      "title": "Los Angeles regional core transit system improvements alternatives analysis : environmental impact statement.",
+      "elapsed_sec": 0.0,
+      "m1_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/m1/p1074_35556038322269.json",
+      "m2_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/m2/p1074_35556038322269.json",
+      "critic_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/critic/p1074_35556038322269.json",
+      "grading_sheet": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/grading_sheets/p1074_35556038322269.csv",
+      "usage": {
+        "by_model": [
+          {
+            "model": "us.anthropic.claude-sonnet-4-6",
+            "calls": 14,
+            "input_tokens": 73933,
+            "output_tokens": 6640,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.3214
+          },
+          {
+            "model": "us.anthropic.claude-opus-4-7",
+            "calls": 9,
+            "input_tokens": 281746,
+            "output_tokens": 30266,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 6.4961
+          }
+        ],
+        "total": {
+          "calls": 23,
+          "input_tokens": 355679,
+          "output_tokens": 36906,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 6.8175
+        }
+      },
+      "usage_from_prior_invocation": true
+    },
+    {
+      "doc_id": "p1074_35556039563135",
+      "work_id": "csv:35556039563135",
+      "title": "Lincoln Hwy upgrade from Cicero Ave. to Chicago Road, Cook County : environmental impact statement.",
+      "elapsed_sec": 0.0,
+      "m1_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/m1/p1074_35556039563135.json",
+      "m2_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/m2/p1074_35556039563135.json",
+      "critic_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/critic/p1074_35556039563135.json",
+      "grading_sheet": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/grading_sheets/p1074_35556039563135.csv",
+      "usage": {
+        "by_model": [
+          {
+            "model": "us.anthropic.claude-sonnet-4-6",
+            "calls": 14,
+            "input_tokens": 95617,
+            "output_tokens": 6070,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 0.3779
+          },
+          {
+            "model": "us.anthropic.claude-opus-4-7",
+            "calls": 10,
+            "input_tokens": 309878,
+            "output_tokens": 31391,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cost_usd": 7.0025
+          }
+        ],
+        "total": {
+          "calls": 24,
+          "input_tokens": 405495,
+          "output_tokens": 37461,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 7.3804
+        }
+      },
+      "usage_from_prior_invocation": true
+    },
+    {
+      "doc_id": "p1074_35556036058550",
+      "work_id": "csv:35556036058550",
+      "title": "Operation Breakthrough : environmental impact statement.",
+      "elapsed_sec": 0.0,
+      "m1_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/m1/p1074_35556036058550.json",
+      "m2_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/m2/p1074_35556036058550.json",
+      "critic_path": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/critic/p1074_35556036058550.json",
+      "grading_sheet": "/Users/gracegormley/Desktop/EIS Job/spring_pipeline/May25/segment_a/output/grading_sheets/p1074_35556036058550.csv",
+      "usage": {
+        "by_model": [],
+        "total": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cost_usd": 2.3282
+        }
+      },
+      "usage_reconstructed_from_log": "Real cost from the first invocation's log (18 LLM calls, $2.3282). That run_summary entry was clobbered before the merge fix landed; per-model split is unrecoverable, total is exact."
     }
   ]
 }

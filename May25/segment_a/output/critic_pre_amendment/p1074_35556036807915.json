@@ -1,0 +1,278 @@
+{
+  "title": {
+    "rubric_results": [
+      {
+        "check": "Title is non-empty and plausibly the document's title?",
+        "result": "yes",
+        "note": "The title references a specific development district, a named apartment project, and explicitly states 'environmental impact statement' — highly plausible as an EIS document title."
+      },
+      {
+        "check": "Length is reasonable (not a sentence fragment, not the whole abstract)?",
+        "result": "yes",
+        "note": "Title is concise and appropriately descriptive at 12 words; fits standard EIS titling conventions."
+      },
+      {
+        "check": "If two sources (NUL + Haiku) — do they roughly agree?",
+        "result": "n/a",
+        "note": "Only one source (NUL) was provided; no Haiku source to compare."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "high",
+    "notes": "The extracted title is well-formed, specific, and consistent with standard EIS document titling. Only one source (NUL) was available, so cross-source validation could not be performed. The title's specificity (named district, named apartment complex, document type) strongly supports its authenticity.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "year": {
+    "rubric_results": [
+      {
+        "check": "Year falls within 1969 ≤ year ≤ current year?",
+        "result": "no",
+        "note": "2026 is a future year beyond the current year (2025), failing the upper bound; regex value 1976 would pass"
+      },
+      {
+        "check": "Year present in NUL metadata OR found on first 3 pages?",
+        "result": "yes",
+        "note": "NUL metadata reports 2026 and regex from first 3 pages reports 1976; both sources present but disagree"
+      },
+      {
+        "check": "If NUL and regex disagree, value reflects this with a low-confidence flag?",
+        "result": "yes",
+        "note": "Extraction correctly flagged low confidence and noted the NUL=2026 vs regex=1976 disagreement"
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "NUL metadata yields 2026, which is a future year and almost certainly a metadata error (possibly a misread of 1976). The regex extraction of 1976 from the first 3 pages is more plausible for an EIS document and falls within the valid range. No cited page text was provided to adjudicate. A human reviewer should inspect the source document to confirm the correct year, with 1976 being the likely correct value.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "eis_type": {
+    "rubric_results": [
+      {
+        "check": "Type is one of: Draft, Final, Supplemental, ROD, Unknown?",
+        "result": "yes",
+        "note": "Final is a valid EIS type within the accepted taxonomy"
+      },
+      {
+        "check": "Regex hit on first page and Sonnet on first 2 pages agree?",
+        "result": "yes",
+        "note": "Both sources listed agree on 'Final'; no conflict detected"
+      },
+      {
+        "check": "Evidence phrase supports the chosen type?",
+        "result": "yes",
+        "note": "'FINAL ENVIRONMENTAL IMPACT STATEMENT' directly and unambiguously supports the type 'Final'"
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "high",
+    "notes": "The extracted value 'Final' is strongly supported by the evidence phrase 'FINAL ENVIRONMENTAL IMPACT STATEMENT,' and both extraction methods agree. However, no cited page text was provided for independent verification of the source document, which prevents full confirmation that the phrase appears in context. The extraction is otherwise clean and consistent.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "lead_agency": {
+    "rubric_results": [
+      {
+        "check": "All listed agencies appear in NUL contributors OR on cited title pages?",
+        "result": "yes",
+        "note": "United States. Department of Housing and Urban Development is sourced from NUL and is a recognized federal agency name in standard catalog form."
+      },
+      {
+        "check": "Joint-lead (>2 agencies) flagged for human review?",
+        "result": "n/a",
+        "note": "Only one agency listed; joint-lead flag not required."
+      },
+      {
+        "check": "No role text (e.g., '(issuing body)') left in the agency names?",
+        "result": "yes",
+        "note": "Agency name is clean with no appended role descriptors."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "A single lead agency, United States. Department of Housing and Urban Development, is extracted in proper authority-file form with no extraneous role text. It is confirmed present in the NUL source. No cited title pages were provided, but the NUL attribution is sufficient for this single-agency case.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "summary": {
+    "rubric_results": [
+      {
+        "check": "project_description text supported by cited pages",
+        "result": "yes",
+        "note": "Summary sheet (p.xvii-xviii) confirms ~2000 residential units, 1050 hotel units, commercial support, raised pedestrian greenway, nine blocks, tax increment financing, Loring 100 as 102-unit elderly Section 8 trigger. However, the extracted text says '800-1,100 hotel units' while the source says '1050 hotel units'; also '~40 acres' and '$21 million in general obligation bonds' and '5-10 years build-out' are not explicitly stated on the cited pages."
+      },
+      {
+        "check": "Numbers, places, dates match cited pages",
+        "result": "no",
+        "note": "Source says '1050 hotel units' but extraction says '800-1,100 hotel units'. '$21 million in general obligation bonds' and '5-10 years' build-out are not found in the cited pages. The 102-unit count and nine blocks are confirmed. '~40 acres' is not stated on cited pages."
+      },
+      {
+        "check": "affected_community text supported by cited pages",
+        "result": "yes",
+        "note": "Pages confirm ~1000 residents, 51% earning under $4,000, 75% single-person households, high crime (5.5x assaults), 22 businesses. Named buildings (Naulhaka Flats, Imperial, Elmhurst, Roosevelt Hotel) and surrounding institutions are referenced in the document context, though some specific building names are not explicitly confirmed in the extracted pages shown."
+      },
+      {
+        "check": "921 persons and 22 businesses relocation figures match",
+        "result": "no",
+        "note": "The cited pages show relocation data table but the actual numbers are not legible/present in the extracted text shown. '22 stores' is confirmed. '921 persons' cannot be verified from the visible page content."
+      },
+      {
+        "check": "alternatives_overview text supported by cited pages",
+        "result": "yes",
+        "note": "Summary sheet (p.xviii-xix) lists alternatives a-l which match the extraction well: no project, cleared parcels only, density reduction/increase, low-rise high-density, land use change, financing alternatives, shadow/parking alternatives. 'Second Hotel Alternative' and 'Willow Street and Harmon Place' specifics are mentioned in the TOC and body."
+      },
+      {
+        "check": "environmental_impact text supported by cited pages",
+        "result": "yes",
+        "note": "Summary sheet (p.xviii) confirms displacement, demolition, shadow/wind effects, construction dust/noise, street vacation causing traffic/air/noise issues. Beneficial impacts (pedestrian separation, energy efficiency, tax base, subsidized elderly housing) are consistent with document content."
+      },
+      {
+        "check": "public_response based_on_main_doc_only=true",
+        "result": "yes",
+        "note": "The public_response field is marked based_on_main_doc_only=true and draws only from the EIS document itself (distribution list, agency comments referenced in the document)."
+      },
+      {
+        "check": "public_response agency names and ratings match cited pages",
+        "result": "yes",
+        "note": "Distribution list (p.xix-xxi) confirms EPA (National Environmental Protection Agency), DOT, Department of Interior, MPCA, Metropolitan Council, Citizens for a Loring Park Community, Loring-Nicollet Community Council, Naulhaka Flats Residents Association, Elliot Park Neighborhood, Harmon-Hennepin Commercial Association, Salvation Army, Douglas Head all commented. EPA 'environmental reservations' rating not visible in extracted pages but is a plausible EIS rating term."
+      },
+      {
+        "check": "No invention or hallucinated detail",
+        "result": "no",
+        "note": "'800-1,100 hotel units' contradicts the source's '1050 hotel units'. '$21 million in general obligation bonds' and '5-10 years' are not found in the visible cited pages. 'Harmon Place' as a street to be kept open is not confirmed in visible text. These appear to be hallucinated or drawn from non-visible pages."
+      }
+    ],
+    "verdict": "RE_EXTRACT",
+    "model_confidence": "medium",
+    "notes": "The extraction contains several specific figures not supported by the visible cited pages: hotel units are stated as '800-1,100' while the source clearly states '1050'; '$21 million in general obligation bonds' and '5-10 year build-out' do not appear in the extracted page content. The relocation figure of '921 persons' cannot be verified from visible content. These discrepancies require re-extraction with closer attention to numeric accuracy and sourcing only from confirmed page content.",
+    "source_pages": [
+      "1-51",
+      "49-99",
+      "97-147",
+      "145-195",
+      "241-269",
+      "193-243"
+    ]
+  },
+  "alternatives": {
+    "rubric_results": [
+      {
+        "check": "Each listed alternative is actually discussed on its cited page?",
+        "result": "n/a",
+        "note": "No alternatives were extracted and no cited pages were provided, so this check cannot be performed."
+      },
+      {
+        "check": "The No Action alternative is included if the cited text includes it?",
+        "result": "n/a",
+        "note": "No cited text was provided, so it is impossible to verify whether a No Action alternative should have been included."
+      },
+      {
+        "check": "Names and descriptions match terminology used in the cited text?",
+        "result": "n/a",
+        "note": "No extracted names or descriptions exist to compare against any cited text."
+      },
+      {
+        "check": "No outside-knowledge alternatives added that aren't in the chapter?",
+        "result": "yes",
+        "note": "The extracted value is an empty list, so no outside-knowledge alternatives were introduced."
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "The extraction returned an empty result with no cited pages, citing a structural detection failure and a deliberate skip per the v2 plan. Because no source text was surfaced, none of the substantive rubric checks can be evaluated. A human reviewer should locate the Alternatives chapter in the EIS and either re-run extraction with corrected logic or manually populate the alternatives field.",
+    "source_pages": []
+  },
+  "themes": {
+    "rubric_results": [
+      {
+        "check": "Each chosen theme is supported by the doc summary fields?",
+        "result": "no",
+        "note": "No cited pages were provided, so the summary fields cannot be verified. The justification references project description, affected_community, and public_response fields, but no actual text was pulled in to confirm these claims."
+      },
+      {
+        "check": "Theme names come from the fixed taxonomy verbatim?",
+        "result": "n/a",
+        "note": "Cannot confirm taxonomy compliance without access to the fixed taxonomy list, but 'Urban Development' and 'Place Based Development Conflicts' appear plausible as taxonomy entries. Unable to verify verbatim match."
+      },
+      {
+        "check": "Subthemes belong to the chosen theme(s) per the taxonomy?",
+        "result": "n/a",
+        "note": "Without cited page text or taxonomy reference, subtheme-to-theme mapping cannot be verified. 'Urban Expansion and Land Use Change' and 'Housing, Planning, and Built Environment' plausibly map to Urban Development; 'Community Resistance and Activism' and 'Land Rights and Displacement' plausibly map to Place Based Development Conflicts."
+      },
+      {
+        "check": "1–3 themes and 2–5 subthemes selected (within range)?",
+        "result": "yes",
+        "note": "2 themes and 4 subthemes selected — both counts are within the required ranges."
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "The extraction is internally coherent and the theme/subtheme counts are within range, but no cited page text was provided, making it impossible to verify that the summary fields actually support the chosen themes and subthemes. A human reviewer should confirm the source document contains the described urban renewal, displacement, and community opposition content before accepting this extraction.",
+    "source_pages": []
+  },
+  "location": {
+    "rubric_results": [
+      {
+        "check": "Place names appear in cited pages?",
+        "result": "yes",
+        "note": "Pages 1-30 (including the summary sheet and Part I) repeatedly reference 'Loring Park Development District, Minneapolis, Minnesota' — confirmed throughout the extracted text."
+      },
+      {
+        "check": "is_multi_site set correctly?",
+        "result": "yes",
+        "note": "The project is a single nine-block urban redevelopment district in Minneapolis; is_multi_site=false is correct."
+      },
+      {
+        "check": "For corridor projects: endpoints named, not just a midpoint?",
+        "result": "n/a",
+        "note": "This is not a corridor project; it is a bounded urban district. Check not applicable."
+      },
+      {
+        "check": "State abbreviations match U.S. conventions?",
+        "result": "yes",
+        "note": "MN is the correct USPS abbreviation for Minnesota."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "The extracted location — Loring Park Development District, Minneapolis, MN — is clearly and repeatedly confirmed throughout the cited pages (1-30), including the summary sheet, introduction, and Part I. The single-site designation is appropriate for a bounded nine-block urban redevelopment district. State abbreviation is correct.",
+    "source_pages": [
+      "1-30"
+    ]
+  },
+  "key_people": {
+    "rubric_results": [
+      {
+        "check": "Each agency preparer named in the cited Preparers/Consultation text?",
+        "result": "yes",
+        "note": "Both 'Minneapolis/St. Paul Area Office' and 'Chicago Regional Office, U.S. Department of Housing and Urban Development' appear explicitly on the cover page and Summary Sheet of the cited text."
+      },
+      {
+        "check": "Cooperating agencies / tribal nations actually listed in the cited text?",
+        "result": "yes",
+        "note": "All listed cooperating agencies appear in the 'Distribution List for Draft EIS' on pages xix-xxi of the cited text. However, 'Hennepin County' as a standalone entity is not listed separately—only specific Hennepin County offices/departments appear. Also, 'Metropolitan Transit Commission' appears in the list. The extraction maps these correctly. Minor note: 'City of Minneapolis, Loring Park Development District' is listed with director name in the source but extracted without the director name, which is acceptable."
+      },
+      {
+        "check": "For public_commenters: stance present on cited page? Quote verbatim? Speaker clear?",
+        "result": "n/a",
+        "note": "No public commenters were extracted; the field is an empty array."
+      },
+      {
+        "check": "Private individuals: last-name-only or 'private commenter' convention followed?",
+        "result": "n/a",
+        "note": "No private individuals were extracted as public commenters. Private individuals appear in the distribution list (e.g., Mr. Edward Peterson, Mr. Childs A. Hallenberg) but were not included in public_commenters, which is appropriate given the extraction scope."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "high",
+    "notes": "The agency preparers and cooperating agencies are accurately extracted from the cited text. The distribution list includes entities not labeled 'cooperating agencies' per se but the extraction treats them as such, which is consistent with the document's framing. 'Hennepin County' as a standalone entry in the extraction is not explicitly listed in the source (only specific Hennepin County departments are listed), representing a minor inferential addition. No public commenters were extracted despite several asterisked commenters appearing in the distribution list, which may warrant a follow-up extraction if public commenter data is needed.",
+    "source_pages": [
+      "1-30"
+    ]
+  }
+}

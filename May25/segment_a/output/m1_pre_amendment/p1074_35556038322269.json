@@ -1,0 +1,36 @@
+{
+  "title": {
+    "value": "Los Angeles regional core transit system improvements alternatives analysis : environmental impact statement.",
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  },
+  "year": {
+    "value": 1980,
+    "confidence": "low",
+    "sources": [
+      "NUL",
+      "regex (first 3 pages)"
+    ],
+    "note": "NUL=1980 disagrees with regex=1979 — flag"
+  },
+  "eis_type": {
+    "value": "Draft",
+    "confidence": "high",
+    "sources": [
+      "regex (first page)",
+      "Sonnet (first 2 pages)"
+    ],
+    "evidence": "DRAFT ALTERNATIVES ANALYSIS/ENVIRONMENTAL IMPACT STATEMENT/ENVIRONMENTAL IMPACT REPORT"
+  },
+  "lead_agency": {
+    "value": [
+      "Urban Mass Transportation Administration"
+    ],
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  }
+}

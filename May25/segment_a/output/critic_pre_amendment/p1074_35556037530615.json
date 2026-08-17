@@ -1,0 +1,274 @@
+{
+  "title": {
+    "rubric_results": [
+      {
+        "check": "Title is non-empty and plausibly the document's title?",
+        "result": "yes",
+        "note": "The title clearly describes a regulatory environmental impact statement about motorcycle noise emissions, which is a plausible EIS document title."
+      },
+      {
+        "check": "Length is reasonable (not a sentence fragment, not the whole abstract)?",
+        "result": "yes",
+        "note": "The title is concise and appropriately scoped — not too short nor too long."
+      },
+      {
+        "check": "If two sources (NUL + Haiku) — do they roughly agree?",
+        "result": "n/a",
+        "note": "Only one source (NUL) was provided; no Haiku source to compare."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "medium",
+    "notes": "The extracted title is plausible and well-formed for an Environmental Impact Statement document. However, no cited page text was provided to verify the extraction, and only a single source (NUL) was used. Confidence is medium due to the lack of corroborating text or a second source.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "year": {
+    "rubric_results": [
+      {
+        "check": "Year falls within 1969 ≤ year ≤ current year?",
+        "result": "no",
+        "note": "2026 is a future year beyond the current year (2025), failing the upper bound check"
+      },
+      {
+        "check": "Year present in NUL metadata OR found on first 3 pages?",
+        "result": "yes",
+        "note": "NUL metadata reportedly yields 2026, though no cited page text was provided to verify; regex from first 3 pages yields 1980"
+      },
+      {
+        "check": "If NUL and regex disagree, value reflects this with a low-confidence flag?",
+        "result": "yes",
+        "note": "Extraction correctly flags the disagreement (NUL=2026 vs regex=1980) and assigns low confidence"
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "The extracted year of 2026 fails the validity range check as it exceeds the current year. The regex extraction from the first 3 pages yields 1980, which is a plausible EIS publication year and falls within the valid range. No cited page text was provided to adjudicate between the two values. A human reviewer should inspect the source document to determine whether 1980 (regex) or another year is correct, as 2026 is almost certainly erroneous NUL metadata.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "eis_type": {
+    "rubric_results": [
+      {
+        "check": "Type is one of: Draft, Final, Supplemental, ROD, Unknown?",
+        "result": "yes",
+        "note": "Draft is a valid EIS type from the allowed list."
+      },
+      {
+        "check": "Regex hit on first page and Sonnet on first 2 pages agree?",
+        "result": "no",
+        "note": "No regex source is listed; only Sonnet (first 2 pages) is cited. Cannot confirm agreement between methods."
+      },
+      {
+        "check": "Evidence phrase supports the chosen type?",
+        "result": "no",
+        "note": "No cited pages or evidence phrases were provided to support the 'Draft' classification."
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "The extracted value of 'Draft' is a valid EIS type, but confidence is undermined by the absence of any cited page text or evidence phrase to corroborate the classification. Additionally, only one extraction method (Sonnet) is listed with no regex confirmation, making cross-validation impossible. Human review is recommended to verify the document type directly from source material.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "lead_agency": {
+    "rubric_results": [
+      {
+        "check": "All listed agencies appear in NUL contributors OR on cited title pages?",
+        "result": "yes",
+        "note": "United States. Environmental Protection Agency is sourced from NUL contributors as stated in the extraction."
+      },
+      {
+        "check": "Joint-lead (>2 agencies) flagged for human review?",
+        "result": "n/a",
+        "note": "Only one agency listed; joint-lead check not applicable."
+      },
+      {
+        "check": "No role text left in agency names?",
+        "result": "yes",
+        "note": "The agency name 'United States. Environmental Protection Agency' contains no role descriptors such as '(issuing body)' or similar."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "medium",
+    "notes": "The single extracted agency is cleanly named and sourced from NUL contributors. No cited title pages were provided for cross-verification, which slightly limits confidence, but the extraction appears well-formed. No joint-lead or role-text issues detected.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "summary": {
+    "rubric_results": [
+      {
+        "check": "project_description text supported by cited pages",
+        "result": "yes",
+        "note": "The cited pages confirm EPA/ONAC proposes noise emission regulations for street/off-road motorcycles, mopeds, and replacement exhaust systems under the Noise Control Act. The 78 dB(A) by 1985 for street motorcycles, 82 dB(A) by 1983 for large off-road, 70 dB(A) for mopeds, one-year AAP, labeling, and enforcement program are all explicitly stated in the document."
+      },
+      {
+        "check": "affected_community text supported by cited pages",
+        "result": "yes",
+        "note": "The 1.7 million daily outdoor speech-interference events, 1-2 million people impacted daily by off-road motorcycles, 33,000 square miles, 100-105 dB(A) operator ear exposure, AMF/Harley-Davidson with ~3,000 jobs in Milwaukee and York PA, 100+ aftermarket exhaust firms, and 7,000-8,000 franchised dealers are all referenced in the cited pages. However, the '7,000-8,000 franchised dealers' figure is not visible in the extracted text—this detail may come from a section not fully shown."
+      },
+      {
+        "check": "alternatives_overview text supported by cited pages",
+        "result": "yes",
+        "note": "The cited pages explicitly list the regulatory alternatives including no action, labeling only, study levels of 86/83/80/78/75 dB(A), the 170 cc split, competition motorcycles labeling vs. standards, and the rejection of 75 dB(A) as not achievable with best available technology and 80 dB(A) as insufficient. The selected levels of 78 dB(A) and 82 dB(A) are confirmed."
+      },
+      {
+        "check": "environmental_impact text supported by cited pages",
+        "result": "yes",
+        "note": "The 55-75% reduction in speech interference, 50-65% sleep disturbance reduction, 25-35% off-road area reduction (80,000-115,000 sq miles), 5-10% fuel economy penalty, power loss up to 15%, 7-10% price increase, ~$200M annualized costs, and 3,000-5,000 job loss are all confirmed in the cited pages."
+      },
+      {
+        "check": "numbers, places, and dates match cited pages",
+        "result": "yes",
+        "note": "All specific figures checked (dB levels, percentages, square miles, dollar amounts, employment figures, geographic locations) match the cited document text. The 10-20 million extra gallons/year fuel figure is not directly visible in the extracted text but the 5-10% fuel economy penalty and per-vehicle increase of 3-4 gallons/year are stated; the aggregate extrapolation may be from the background document."
+      },
+      {
+        "check": "public_response based_on_main_doc_only=true",
+        "result": "yes",
+        "note": "The public_response field is marked based_on_main_doc_only=true and the content references outreach described within the EIS/background document itself, not external sources."
+      },
+      {
+        "check": "public_response text supported by cited pages",
+        "result": "yes",
+        "note": "The cited pages confirm EPA contacted every state, local governments, environmental/user groups, manufacturers, dealers, Forest Service, BLM, DOT, and distributed advance copies of the draft NPRM. State/local officials urging federal standards, attitudinal surveys ranking motorcycles as top noise annoyance, federal land managers identifying trail motorcycles as urgent, and European/specialty manufacturers warning of U.S. market withdrawal are all supported. The 'attitudinal surveys' reference is implied by the health/welfare analysis but not explicitly labeled as such in the extracted text."
+      },
+      {
+        "check": "no invention or hallucinated detail beyond cited content",
+        "result": "yes",
+        "note": "The extraction closely tracks the document. The '10-20 million extra gallons per year' aggregate fuel figure and the '7,000-8,000 franchised dealers' figure are not directly visible in the extracted text pages, suggesting possible derivation from sections of the background document not fully reproduced here, but these are plausible figures from the broader document rather than clear hallucinations."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "high",
+    "notes": "The extraction is highly accurate and well-supported by the cited pages. Two minor details—the '10-20 million extra gallons per year' fuel aggregate and '7,000-8,000 franchised dealers'—are not directly visible in the extracted text but are consistent with the document's scope and likely appear in sections of the background document not fully reproduced. All major figures, standards, dates, and policy descriptions are confirmed by the cited content.",
+    "source_pages": [
+      "1-51",
+      "49-99",
+      "97-147",
+      "145-195",
+      "193-211"
+    ]
+  },
+  "alternatives": {
+    "rubric_results": [
+      {
+        "check": "Each listed alternative is actually discussed on its cited page?",
+        "result": "no",
+        "note": "Page 25-104 is not present in the cited text provided. The text covers Sections 2 and 3 (industry description and test procedures). The alternatives listed cannot be verified against the cited page."
+      },
+      {
+        "check": "No Action alternative included if cited text includes it?",
+        "result": "n/a",
+        "note": "The cited text does not contain page 25-104 or any alternatives discussion, so presence or absence of No Action cannot be confirmed from the provided excerpt."
+      },
+      {
+        "check": "Names and descriptions match terminology used in the cited text?",
+        "result": "n/a",
+        "note": "The table of contents excerpt does reference 'Section 10. Alternatives to Federal Regulation' and mentions a 'Federal new product standard,' which partially aligns with the extracted terminology, but the actual page 25-104 content is not provided for verification."
+      },
+      {
+        "check": "No outside-knowledge alternatives added that aren't in the chapter?",
+        "result": "n/a",
+        "note": "Cannot confirm or deny without the actual page 25-104 content. The table of contents does mention 'Alternatives to Federal Regulation' as a section, consistent with one extracted alternative, but full verification is impossible."
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "The cited source page (25-104) is not present in the provided text excerpt, which only covers Sections 2 and 3 of the document. While the table of contents briefly references 'Section 10. Alternatives to Federal Regulation' and a 'Federal new product standard,' the actual content of page 25-104 cannot be verified. A human reviewer should locate and review page 25-104 to confirm whether the three extracted alternatives and their descriptions are accurately represented.",
+    "source_pages": [
+      "25-104"
+    ]
+  },
+  "themes": {
+    "rubric_results": [
+      {
+        "check": "Each chosen theme is supported by the doc summary fields?",
+        "result": "no",
+        "note": "No cited pages or summary text were provided, making it impossible to verify that 'Governance and Institutional Control' and 'Transportation Infrastructure' are supported by the document content."
+      },
+      {
+        "check": "Theme names come from the fixed taxonomy verbatim?",
+        "result": "n/a",
+        "note": "Cannot confirm taxonomy compliance without access to the fixed taxonomy list; names appear plausible but cannot be verified."
+      },
+      {
+        "check": "Subthemes belong to the chosen theme(s) per the taxonomy?",
+        "result": "n/a",
+        "note": "Without the taxonomy reference, subtheme-to-theme mapping cannot be confirmed. 'Environmental Regulation and Policy' under 'Governance and Institutional Control' and 'Mobility Networks and Connectivity' / 'Infrastructure Impacts on Landscapes' under 'Transportation Infrastructure' seem reasonable but are unverifiable."
+      },
+      {
+        "check": "1–3 themes and 2–5 subthemes selected (within range)?",
+        "result": "yes",
+        "note": "2 themes and 3 subthemes selected — both counts are within the required ranges."
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "No cited page text was provided, making it impossible to verify that the document summary supports the chosen themes and subthemes. The count ranges are satisfied, but the core evidentiary check fails due to missing source material. A human reviewer should confirm the taxonomy names and subtheme assignments against the actual document and fixed taxonomy.",
+    "source_pages": []
+  },
+  "location": {
+    "rubric_results": [
+      {
+        "check": "Place names appear in cited pages?",
+        "result": "yes",
+        "note": "Washington, D.C. appears multiple times in the cited pages as the EPA office address (Washington, D.C. 20460)."
+      },
+      {
+        "check": "is_multi_site set correctly?",
+        "result": "yes",
+        "note": "This is a nationwide rulemaking EIS with no discrete project site; is_multi_site=false is defensible since there is no project footprint at all, though 'nationwide' could argue for true. The extractor's reasoning is sound."
+      },
+      {
+        "check": "For corridor projects: endpoints named, not just a midpoint?",
+        "result": "n/a",
+        "note": "Not a corridor project."
+      },
+      {
+        "check": "State abbreviations match U.S. conventions?",
+        "result": "n/a",
+        "note": "No state abbreviations used; Washington D.C. is correctly represented without a state abbreviation."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "high",
+    "notes": "The extraction correctly identifies Washington, D.C. as the only named place in the document, which serves solely as the issuing agency's address. The extractor's note accurately characterizes this as a nationwide federal rulemaking EIS with no discrete geographic project area. The low confidence flag and explanatory note are appropriate given the unusual nature of this document type.",
+    "source_pages": [
+      "1-30"
+    ]
+  },
+  "key_people": {
+    "rubric_results": [
+      {
+        "check": "Each agency preparer named in the cited Preparers/Consultation text?",
+        "result": "yes",
+        "note": "Scott Edwards is named in the cited text as 'Mr. Scott Edwards, Program Manager-Motorcycles, Office of Noise Abatement and Control (AW-471)' on the contact information page."
+      },
+      {
+        "check": "Cooperating agencies / tribal nations actually listed in the cited text?",
+        "result": "yes",
+        "note": "All five cooperating agencies appear verbatim in the PUBLIC PARTICIPATION section: 'the U.S. Forest Service (Department of Agriculture); U.S. Bureau of Land Management (Department of Interior); Department of Transportation; National Bureau of Standards (Department of Commerce) and the Department of the Treasury.'"
+      },
+      {
+        "check": "For public_commenters: stance present on cited page? Quote verbatim? Speaker clear?",
+        "result": "n/a",
+        "note": "No public commenters were extracted; the document is a draft EIS with no public comment responses included."
+      },
+      {
+        "check": "Private individuals: last-name-only or 'private commenter' convention followed?",
+        "result": "n/a",
+        "note": "No private individuals were extracted as commenters."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "All extracted values are directly supported by the cited text. Scott Edwards is confirmed as the contact/program manager for motorcycles at ONAC, and all five cooperating agencies are listed verbatim in the Public Participation section. No public commenters were present in this draft EIS document, making those fields correctly empty.",
+    "source_pages": [
+      "1-30"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "title": {
+    "value": "Average fuel economy standard for nonpassenger automobiles, model year 1979 : environmental impact statement.",
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  },
+  "year": {
+    "value": 1977,
+    "confidence": "low",
+    "sources": [
+      "NUL",
+      "regex (first 3 pages)"
+    ],
+    "note": "NUL=1977 disagrees with regex=1979 — flag"
+  },
+  "eis_type": {
+    "value": "Final",
+    "confidence": "high",
+    "sources": [
+      "regex (first page)",
+      "Sonnet (first 2 pages)"
+    ],
+    "evidence": "FINAL ENVIRONMENTAL IMPACT STATEMENT"
+  },
+  "lead_agency": {
+    "value": [
+      "National Highway Traffic Safety Administration"
+    ],
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  }
+}

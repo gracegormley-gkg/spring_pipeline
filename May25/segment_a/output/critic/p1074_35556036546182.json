@@ -4,22 +4,22 @@
       {
         "check": "Title is non-empty and plausibly the document's title?",
         "result": "yes",
-        "note": "The title clearly describes a transportation infrastructure EIS for an airport spur connection in Milwaukee, which is entirely plausible as an EIS document title."
+        "note": "The title clearly describes an EIS for an airport spur road connection project in Milwaukee, which is entirely plausible as an EIS document title."
       },
       {
         "check": "Length is reasonable (not a sentence fragment, not the whole abstract)?",
         "result": "yes",
-        "note": "The title is appropriately concise and descriptive, typical of government/infrastructure EIS document titles of this era."
+        "note": "Title is appropriately concise — a descriptive project title with document type appended, typical of MARC catalog records."
       },
       {
         "check": "If two sources (NUL + Haiku) — do they roughly agree?",
         "result": "n/a",
-        "note": "Only one source (NUL) was provided; no second source to compare."
+        "note": "Only one source provided (MARC 245$ab inventory index); no second source to compare."
       }
     ],
-    "verdict": "PASS_WITH_NOTE",
-    "model_confidence": "medium",
-    "notes": "The extracted title is well-formed and highly plausible for an EIS document concerning a highway spur connection to General Mitchell Field in Milwaukee. Only one source (NUL) was cited with no supporting page text provided, so independent verification is limited. The title follows standard government document naming conventions, increasing confidence in its accuracy.",
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "The extracted title comes directly from the MARC 245$ab field, which is the authoritative bibliographic title field. The title is well-formed, descriptive, and consistent with standard EIS document naming conventions. No concerns with this extraction.",
     "source_pages": [
       "1-3"
     ]
@@ -39,12 +39,12 @@
       {
         "check": "If NUL and regex disagree, value reflects this with a low-confidence flag?",
         "result": "yes",
-        "note": "Extraction correctly flags low confidence and notes the NUL=1976 vs regex=2015 disagreement"
+        "note": "Extraction correctly flags low confidence and notes NUL=1976 vs regex=2015 disagreement"
       }
     ],
     "verdict": "HUMAN_REVIEW",
     "model_confidence": "low",
-    "notes": "NUL metadata and regex extraction disagree (1976 vs 2015), and no cited page text was provided to adjudicate between them. The low-confidence flag was correctly applied, but the conflict cannot be resolved without reviewing the actual document pages. A human reviewer should inspect the document to determine the correct publication year.",
+    "notes": "NUL metadata yields 1976 while regex extraction from the first 3 pages yields 2015 — a 39-year discrepancy that cannot be resolved without inspecting the actual document pages. No cited page text was provided to adjudicate between the two values. A human reviewer should examine the document cover/title page to confirm the correct publication year before this record is accepted.",
     "source_pages": [
       "1-3"
     ]
@@ -69,7 +69,7 @@
     ],
     "verdict": "HUMAN_REVIEW",
     "model_confidence": "low",
-    "notes": "The extracted value of 'Final' is a valid EIS type, but the extraction is supported only by Sonnet inference with no regex corroboration and no cited text evidence. The absence of any cited pages or supporting phrases makes independent verification impossible. Human review is recommended to confirm the classification against the source document.",
+    "notes": "The extracted value of 'Final' is a valid EIS type, but confidence is undermined by the absence of any cited text or evidence phrases to corroborate the classification. Additionally, no regex hit was reported, meaning only a single extraction method (Sonnet) contributed, and cross-validation is impossible. Human review is recommended to confirm the document type directly from the source text.",
     "source_pages": [
       "1-3"
     ]
@@ -94,7 +94,7 @@
     ],
     "verdict": "PASS",
     "model_confidence": "medium",
-    "notes": "A single lead agency, Federal Highway Administration, is extracted and sourced from NUL with no role text present. Confidence is medium rather than high because no cited title pages were provided to independently corroborate the NUL attribution, leaving the extraction unverified against primary document pages. No joint-lead concerns apply.",
+    "notes": "A single lead agency, Federal Highway Administration, is extracted and sourced from NUL with no role text present. Confidence is medium rather than high because no cited title pages were provided to independently corroborate the NUL attribution. The extraction itself appears clean and well-formed.",
     "source_pages": [
       "1-3"
     ]
@@ -104,17 +104,17 @@
       {
         "check": "Each schema field's text supported by content visible on the cited pages?",
         "result": "yes",
-        "note": "All major claims in each field (overview, project_description, affected_community, alternatives_overview, environmental_impact, public_response) are supported by content on the cited pages."
+        "note": "All major claims in overview, project_description, affected_community, alternatives_overview, environmental_impact, and public_response fields are traceable to cited page content visible in the extraction."
       },
       {
         "check": "Numbers, places, and dates in the text match what the cited pages say?",
         "result": "yes",
-        "note": "1.5-mile, four-lane, $14.0 million, $12.1 million, 9 families, 2 businesses, 35 acres, $2.5 million, 45 dBA, 57.8%, March 25 1969, July 11 1974, 120 and 150 attendees all match cited pages."
+        "note": "Key figures match: 1.5 miles, $14M, $2.2M county share, 19,600 vpd, 9% trucks, 35 acres, $2.5M tax base, $350K barriers, 45 dBA interior, 57.8/42.2 referendum, 1,918 acres, 1.76M/2.26M population, 250 feet from school, 750-foot tunnel at $5M extra, March 25 1969 hearing (120 attendees), July 11 1974 hearing (150 attendees), November 20 1975 DNR approval all consistent with cited pages."
       },
       {
         "check": "Every quote in `evidence` appears verbatim on its cited page?",
         "result": "no",
-        "note": "The quote 'SEWRPC, Federal Aviation Administration, Milwaukee Air Cargo Association, and the American Automobile Association testified in favor of the Airport Spur.' is marked quote_verified: false with no source pages — it does not appear verbatim in the cited content. The cited pages show these entities separately but not in this combined sentence."
+        "note": "The quote 'the Division of Highways could divert its resources to the construction of a series of exclusive buslanes along the present Milwaukee expressway system from the center of Milwaukee towards Mitchell Field' has source_pages listed as empty [] and is flagged quote_verified: false. However, the quote does appear verbatim on page 194 in the cited pages text provided. The extractor correctly flagged it as unverified but the text is actually present in the supplied page content, creating an internal inconsistency in the extraction metadata."
       },
       {
         "check": "public_response is limited to the main doc (based_on_main_doc_only=true)?",
@@ -124,21 +124,21 @@
       {
         "check": "No invention or hallucinated detail beyond cited content?",
         "result": "yes",
-        "note": "The substantive claims are grounded in the document. The unverified quote is a synthesis of separately cited facts rather than pure invention, but it is not verbatim and is flagged accordingly."
+        "note": "No hallucinated details detected. All specific names, dates, figures, and descriptions are traceable to cited page content. The overview's '$12-14 million' range is a reasonable synthesis of the $14M estimate with inflationary factors noted; the '2-5 businesses' range is a reasonable synthesis given the displacement evidence. The Common Council resolution dates (May 2, 1973 and October 23, 1973) and Highway Commission suspension date (March 12, 1973) appear in the chronology on page 21 and are consistent with the cited content."
       }
     ],
     "verdict": "PASS_WITH_NOTE",
     "model_confidence": "high",
-    "notes": "The extraction is largely accurate and well-supported. One quote in public_response ('SEWRPC, Federal Aviation Administration, Milwaukee Air Cargo Association, and the American Automobile Association testified in favor of the Airport Spur.') is not verbatim in the document and has no source pages — it is a synthesized paraphrase of separately documented facts, which the extractor correctly flagged as quote_verified: false. All other quotes, numbers, dates, and claims are verified against the cited pages. The verdict is PASS_WITH_NOTE rather than RE_EXTRACT because the underlying facts are accurate and the issue is limited to one non-verbatim composite quote that was self-flagged.",
+    "notes": "The extraction is substantively accurate and well-supported throughout. The one flagged quote (exclusive bus lanes, source_pages: []) is actually present verbatim on page 194 in the supplied text, meaning the extractor's quote_verified: false flag is an internal metadata error rather than a fabrication — the quote exists in the document. All other quotes are verified, numbers match, and no hallucinated content was detected. The extraction passes with the note that the bus-lanes quote metadata should be corrected to source_pages: ['194'] and quote_verified: true.",
     "source_pages": [
       "8",
       "19",
-      "10",
-      "12",
-      "13",
-      "14",
-      "226",
-      "21"
+      "51",
+      "88",
+      "260",
+      "163",
+      "194",
+      "241"
     ]
   },
   "alternatives": {
@@ -146,32 +146,31 @@
       {
         "check": "Each listed alternative is actually discussed on its cited page?",
         "result": "yes",
-        "note": "Corridor 1 (p.214), Corridor 2 (p.216), Corridor 3 (p.189), Corridor 4 (p.249), Corridor 5 (p.175), No Build (p.214), College Avenue Upgrade (p.194), Exclusive Bus Lanes (p.194) — all confirmed in the pulled text."
+        "note": "Corridor 1 (p.214), Corridor 2 (p.216), Corridor 3 (p.189), Corridor 4 (p.214), Corridor 5 (p.175), No Build (p.214), College Avenue (p.194), Exclusive Bus Lanes (p.194) — all confirmed in the pulled text."
       },
       {
         "check": "The No Action alternative is included if the cited text includes it?",
         "result": "yes",
-        "note": "The 'no build alternative' is explicitly mentioned on p.214 and is included in the extraction."
+        "note": "The 'no build alternative' is explicitly mentioned on p.214 and is included in the extraction as 'No Build (No Action)'."
       },
       {
         "check": "The verbatim quote in each alternative's evidence is present on the cited page and names/describes the alternative?",
         "result": "yes",
-        "note": "All eight verbatim quotes are confirmed present in the pulled text on their respective cited pages and each names or describes the relevant alternative."
+        "note": "All eight verbatim quotes were located in the pulled text on their respective cited pages and each names or describes the relevant alternative."
       },
       {
         "check": "No outside-knowledge alternatives added that aren't in the chapter?",
         "result": "yes",
-        "note": "All alternatives (Corridors 1–5, No Build, College Avenue Upgrade, Exclusive Bus Lanes) are grounded in the pulled text with no extraneous additions."
+        "note": "All alternatives (five corridors, no-build, College Avenue upgrade, exclusive bus lanes) are directly evidenced in the pulled text; no extraneous alternatives were introduced."
       }
     ],
     "verdict": "PASS",
     "model_confidence": "high",
-    "notes": "All eight extracted alternatives are directly supported by verbatim quotes confirmed in the cited pages. The No Build alternative is properly included, and no outside-knowledge alternatives were introduced. The extraction is accurate and complete relative to the provided source text.",
+    "notes": "All eight extracted alternatives are confirmed present in the cited pages with matching verbatim quotes. The No Build alternative is properly included and sourced. No unsupported or fabricated alternatives were detected.",
     "source_pages": [
       "214",
       "216",
       "189",
-      "249",
       "175",
       "194"
     ]
@@ -181,31 +180,31 @@
       {
         "check": "Each chosen theme is supported by the doc summary fields?",
         "result": "yes",
-        "note": "Transportation Infrastructure is clearly supported by the freeway-airport connection project. Urban Development is supported by references to land transitioning from agricultural to residential/commercial use and community opposition."
+        "note": "The freeway-airport spur project clearly supports Transportation Infrastructure; displacement of families/businesses in Milwaukee neighborhoods supports Urban Development."
       },
       {
         "check": "Theme names come from the fixed taxonomy verbatim?",
         "result": "n/a",
-        "note": "No fixed taxonomy was provided to verify against. Cannot confirm verbatim match without the taxonomy reference document."
+        "note": "No fixed taxonomy was provided in this session to verify against; cannot confirm verbatim match."
       },
       {
         "check": "Subthemes belong to the chosen theme(s) per the taxonomy?",
         "result": "n/a",
-        "note": "Without the taxonomy, subtheme-to-theme mapping cannot be verified. 'Community Resistance and Activism' under 'Urban Development' is plausible but uncertain without taxonomy confirmation."
+        "note": "Without the fixed taxonomy document, subtheme-to-theme mapping cannot be formally verified, though the assignments appear logically consistent."
       },
       {
         "check": "1–3 themes and 2–5 subthemes selected (within range)?",
         "result": "yes",
-        "note": "2 themes and 4 subthemes selected, both within the specified ranges."
+        "note": "2 themes and 4 subthemes selected — both counts fall within the required ranges."
       }
     ],
     "verdict": "HUMAN_REVIEW",
     "model_confidence": "medium",
-    "notes": "The thematic selections are substantively reasonable and well-justified by the quoted evidence — a freeway-airport spur with community opposition fits both Transportation Infrastructure and Urban Development. However, the absence of the fixed taxonomy prevents verification of verbatim theme names and correct subtheme assignment, particularly for 'Community Resistance and Activism' under 'Urban Development.' Human review is recommended to confirm taxonomy compliance before acceptance.",
+    "notes": "The thematic selections are logically well-supported by the project description (freeway-airport connector) and community impact evidence (displacement in Milwaukee neighborhoods). However, because no fixed taxonomy was supplied in this session, it is impossible to confirm that theme and subtheme names are verbatim matches or that subthemes are correctly assigned to their parent themes. A human reviewer with access to the taxonomy should confirm naming and hierarchy before accepting the extraction.",
     "source_pages": [
       "8",
       "19",
-      "171"
+      "162"
     ]
   },
   "location": {
@@ -218,12 +217,12 @@
       {
         "check": "Each place's verbatim quote in evidence actually establishes that place on its cited page?",
         "result": "yes",
-        "note": "The quote 'The project is located in the City of Milwaukee, Milwaukee County. See Figures 1 and 2.' is verbatim in the cited page. The corridor quote is flagged as unverified/not verbatim, but the corridor's endpoints (I-94 and General Mitchell Field) are clearly established in the page text, just with slightly different wording ('between existing Interstate Route 94 and General Mitchell Field')."
+        "note": "The quote 'The project is located in the City of Milwaukee, Milwaukee County. See Figures 1 and 2.' is verbatim in the cited page. The corridor quote for the Airport Spur is marked quote_verified: false and flagged for HUMAN_REVIEW, but the substance ('connecting...I-94...to...General Mitchell Field') is supported by the page text ('between existing Interstate Route 94 and General Mitchell Field'), though not verbatim."
       },
       {
         "check": "is_multi_site set correctly?",
         "result": "yes",
-        "note": "is_multi_site is false; this is a single corridor project within one city/county, which is appropriate."
+        "note": "is_multi_site: false is appropriate; this is a single corridor project within one city/county."
       },
       {
         "check": "For corridor projects: endpoints named, not just a midpoint?",
@@ -232,13 +231,13 @@
       },
       {
         "check": "State abbreviations match U.S. conventions where applicable?",
-        "result": "n/a",
-        "note": "State is spelled out as 'Wisconsin' throughout; no abbreviations used, so no mismatch possible."
+        "result": "yes",
+        "note": "State is spelled out as 'Wisconsin' throughout; no abbreviation errors."
       }
     ],
     "verdict": "PASS_WITH_NOTE",
     "model_confidence": "high",
-    "notes": "The extraction is substantively correct. The corridor endpoints (I-94 and General Mitchell Field) and the administrative location (City of Milwaukee, Milwaukee County, Wisconsin) are all confirmed in the cited page text. The only minor issue is that the verbatim quote for the corridor evidence does not exactly match the source text ('connecting Interstate Route I-94...' vs. 'between existing Interstate Route 94 and General Mitchell Field'), but the extractor correctly flagged this and the underlying facts are well-supported. No material errors detected.",
+    "notes": "The extraction is substantively accurate and well-supported by the cited page text. The only minor issue is that the verbatim quote for the Airport Spur corridor evidence does not exactly match the source text ('connecting Interstate Route I-94...to the airport terminal facilities at General Mitchell Field' vs. 'between existing Interstate Route 94 and General Mitchell Field'), hence quote_verified is correctly flagged false. The core location data — a 1.5-mile freeway spur from I-94 to General Mitchell Field in Milwaukee, Wisconsin — is fully corroborated by the cited page.",
     "source_pages": [
       "8"
     ]
@@ -248,27 +247,27 @@
       {
         "check": "Agency preparers named with verbatim quote on cited page",
         "result": "yes",
-        "note": "Hibbs and Herried quoted verbatim on page 8 (summary page); Emrich quoted verbatim on page 1. All three confirmed in cited text."
+        "note": "Hibbs and Herried quoted verbatim on page 8; W.G. Emrich quoted verbatim on page 1 (cover page). All three confirmed in cited text."
       },
       {
-        "check": "Cooperating agencies listed with verbatim quotes on cited page",
+        "check": "Cooperating agencies listed with verbatim quote on cited page",
         "result": "yes",
-        "note": "All agencies on page 15 confirmed verbatim in cited text, including OCR artifacts (e.g., '!iilwaukee', '!!ing'). Wisconsin Department of Local Affairs and Development appears in the cited text ('Wisconsin Department of Local Affairs and Development') though extractor flagged it as unverified; it is present in the page 15 list."
+        "note": "All agencies on page 15 are quoted verbatim from the consultation list. 'A-95 State Clearinghouse' is flagged as quote_verified: false with no source page, but the text on page 15 does include 'A-95 State Clearinghouse' in the list — the extractor's self-flagging appears overly cautious; the quote is present in the cited text."
       },
       {
         "check": "Public commenters: stance present on cited page, verbatim quote, speaker clear",
         "result": "yes",
-        "note": "All public commenter quotes verified verbatim on cited pages. Stances (support/oppose/conditional/neutral) are supported by the quoted text. Speakers are clearly identified by organization name or last name. 'Private commenter' used appropriately for the anonymous opposition letter on page 190."
+        "note": "All public commenters have verbatim quotes on cited pages with clear identification. Stances (support/oppose/conditional/neutral) are supported by the quoted text. The 'private commenter' entry lacks a name but uses the correct convention."
       },
       {
         "check": "Private individuals follow last-name-only or 'private commenter' convention",
         "result": "yes",
-        "note": "Szyba (last name only) and 'private commenter' (anonymous) both follow the convention correctly."
+        "note": "Szyba is last-name-only; the anonymous commenter is labeled 'private commenter'. Convention is correctly followed."
       }
     ],
     "verdict": "HUMAN_REVIEW",
     "model_confidence": "high",
-    "notes": "All extracted values are well-supported by the cited text. The Wisconsin Department of Local Affairs and Development flagged as unverified by the extractor is actually present in the page 15 consultation list. All quotes are verbatim (accounting for OCR artifacts), stances are justified by quoted content, and naming conventions for private individuals are properly applied. [Forced HUMAN_REVIEW: private-individual stance present (policy override).]",
+    "notes": "All agency preparers, cooperating agencies, and public commenters are supported by verbatim quotes on the cited pages. The A-95 State Clearinghouse self-flag by the extractor appears erroneous as the quote is present in the page 15 text. Private individual naming conventions are correctly applied throughout. [Forced HUMAN_REVIEW: private-individual stance present (policy override).]",
     "source_pages": [
       "8",
       "1",

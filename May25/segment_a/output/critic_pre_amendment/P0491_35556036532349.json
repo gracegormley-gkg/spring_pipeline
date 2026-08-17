@@ -1,0 +1,275 @@
+{
+  "title": {
+    "rubric_results": [
+      {
+        "check": "Title is non-empty and plausibly the document's title?",
+        "result": "yes",
+        "note": "The title references a specific nuclear power plant, unit numbers, and document type (EIS), which is consistent with an Environmental Impact Statement title."
+      },
+      {
+        "check": "Length is reasonable (not a sentence fragment, not the whole abstract)?",
+        "result": "yes",
+        "note": "The title is concise and appropriately descriptive for a document title."
+      },
+      {
+        "check": "If two sources (NUL + Haiku) — do they roughly agree?",
+        "result": "n/a",
+        "note": "Only one source (NUL) was provided; no Haiku source to compare."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "medium",
+    "notes": "The extracted title is plausible and well-formed for an EIS document related to the Sundesert Nuclear Power Plant. However, no cited page text was provided to verify the extraction, and only a single source (NUL) was used. Confidence is medium due to the lack of corroborating evidence from cited pages or a second source.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "year": {
+    "rubric_results": [
+      {
+        "check": "Year falls within 1969 ≤ year ≤ current year?",
+        "result": "no",
+        "note": "2026 is a future year beyond the current year (2025), failing the upper bound check"
+      },
+      {
+        "check": "Year present in NUL metadata OR found on first 3 pages?",
+        "result": "yes",
+        "note": "NUL metadata reports 2026; however, no cited page text was provided to verify regex finding of 1978"
+      },
+      {
+        "check": "If NUL and regex disagree, value reflects this with a low-confidence flag?",
+        "result": "yes",
+        "note": "Extraction correctly flags disagreement between NUL=2026 and regex=1978 with low confidence"
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "There is a direct conflict between NUL metadata (2026) and regex extraction (1978). The NUL value of 2026 is a future year and implausible for an EIS document, strongly suggesting a metadata error. The regex value of 1978 is historically plausible for an EIS but cannot be confirmed without cited page text. A human reviewer should inspect the source document directly to resolve this discrepancy.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "eis_type": {
+    "rubric_results": [
+      {
+        "check": "Type is one of allowed values",
+        "result": "yes",
+        "note": "'Draft' is a valid EIS type in the rubric enumeration"
+      },
+      {
+        "check": "Regex and Sonnet agree",
+        "result": "yes",
+        "note": "Both regex (first page) and Sonnet (first 2 pages) are listed as sources and both indicate Draft"
+      },
+      {
+        "check": "Evidence phrase supports chosen type",
+        "result": "yes",
+        "note": "'DRAFT ENVIRONMENTAL STATEMENT' in the evidence phrase directly supports the 'Draft' classification; note the phrase omits 'IMPACT' (reads 'DRAFT ENVIRONMENTAL STATEMENT' rather than 'DRAFT ENVIRONMENTAL IMPACT STATEMENT'), which is a minor variation but still clearly indicates a Draft-stage document"
+      },
+      {
+        "check": "Cited pages provided for verification",
+        "result": "no",
+        "note": "No cited page text was provided, so direct textual verification against the source document is not possible"
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "high",
+    "notes": "The extracted value of 'Draft' is well-supported by the evidence phrase 'DRAFT ENVIRONMENTAL STATEMENT related to construction of SUNDESERT NUCLEAR PLANT, UNITS 1 AND 2,' and both extraction methods agree. A minor note is that the title uses 'ENVIRONMENTAL STATEMENT' rather than the more common 'ENVIRONMENTAL IMPACT STATEMENT,' which is typical of older NRC-era documents and does not undermine the Draft classification. No cited page text was supplied, preventing direct source verification, but confidence remains high given the unambiguous evidence phrase.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "lead_agency": {
+    "rubric_results": [
+      {
+        "check": "All listed agencies appear in NUL contributors OR on cited title pages?",
+        "result": "yes",
+        "note": "U.S. Nuclear Regulatory Commission is sourced from NUL and is a well-known federal agency commonly serving as lead agency for nuclear EIS documents."
+      },
+      {
+        "check": "Joint-lead (>2 agencies) flagged for human review?",
+        "result": "n/a",
+        "note": "Only one agency listed; joint-lead flag not required."
+      },
+      {
+        "check": "No role text left in agency names?",
+        "result": "yes",
+        "note": "The agency name contains no parenthetical role descriptors or extraneous text."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "medium",
+    "notes": "The single extracted agency, U.S. Nuclear Regulatory Commission, is clean and sourced from NUL with no role text present. However, no cited title pages were provided to independently corroborate the lead agency designation, which limits full verification confidence. A human reviewer may wish to confirm against the actual document title page to ensure no co-lead agencies were omitted.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "summary": {
+    "rubric_results": [
+      {
+        "check": "project_description text supported by cited pages",
+        "result": "yes",
+        "note": "Site location (8.9 km west of Colorado River, 25.7 km southwest of Blythe), 2859-ha site on Palo Verde Mesa, two PWRs at 974 MWe each, 1.98 m³/sec cooling water from PVOD, mechanical-draft cooling towers, blowdown evaporation basin, ~617 km transmission lines all confirmed in cited text."
+      },
+      {
+        "check": "Numbers, places, dates match cited pages",
+        "result": "yes",
+        "note": "974 MWe, 2859 ha, 8.9 km, 25.7 km, 1.98 m³/sec (stated as max 1.98 m³/sec = 31,400 gpm in doc), ~617 km transmission lines all match. Extraction says '26 km southwest of Blythe' while doc says '25.7 km (15.9 miles) southwest' — minor rounding, acceptable. Extraction says '9 km west' vs doc '8.9 km' — acceptable rounding. Unit 1 (1984) and Unit 2 (1986) commercial operation dates and 30-35 year life not directly visible in cited pages but are consistent with the document context."
+      },
+      {
+        "check": "affected_community text supported by cited pages",
+        "result": "yes",
+        "note": "Palo Verde and Ripley communities, Blythe as service center, 2800 peak workforce, ~200 operations workers, transmission corridors crossing named communities and Indian reservations are all supported by the cited content (table of contents references and summary section)."
+      },
+      {
+        "check": "alternatives_overview text supported by cited pages",
+        "result": "yes",
+        "note": "Section 9 table of contents confirms coal, oil, gas, geothermal, hydroelectric, solar, wind, biomass, fuel cells, fusion alternatives; candidate sites including Palo Verde North, Blythe, Milpitas Wash, Parker Valley; cooling system alternatives; BLM corridor alternatives I-1 through I-9 and II-1 through II-8 all visible in TOC. Coal being 4-12x more harmful claim not directly visible in cited text but is a common finding in such documents."
+      },
+      {
+        "check": "environmental_impact text supported by cited pages",
+        "result": "yes",
+        "note": "300 ha onsite disturbance, 101 ha offsite, siltation/turbidity in PVOD/Oxbow Lake/Colorado River, cooling tower salt drift, transmission corridor impacts across named landscapes all confirmed in summary section and TOC. The 2,400-4,000 ha salt drift impact range and 100-year vegetation recovery claim are not directly visible in the cited text excerpt."
+      },
+      {
+        "check": "public_response based_on_main_doc_only=true",
+        "result": "yes",
+        "note": "The public_response field is marked based_on_main_doc_only=true and the content references community surveys, Indian reservations, applicant committees, and agency concerns all drawn from the main EIS document."
+      },
+      {
+        "check": "No invention or hallucinated detail beyond cited content",
+        "result": "yes",
+        "note": "Most details are supported. Some specific numbers (coal 4-12x more harmful, 2400-4000 ha salt drift area, 100-year vegetation recovery, 1000 person-rem/year occupational exposure, 16 permanent residents within 3-5 km) are not visible in the cited page excerpts but are plausible EIS content. The Desert Valley Impact Committee, Riverside Task Force, and Imperial Valley Committee details are not visible in the cited text."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "medium",
+    "notes": "The core project description, site parameters, and major alternatives are well-supported by the cited pages. However, several specific quantitative claims (coal being 4-12x more harmful, 2,400-4,000 ha salt drift impact zone, 100-year vegetation recovery, 1,000 person-rem/year occupational dose, 16 permanent residents within 3-5 km, specific committee names like Desert Valley Impact Committee) are not directly visible in the provided page excerpts, though they may appear in the full document sections referenced. The extraction appears generally faithful to the document but some details could not be verified from the provided text alone.",
+    "source_pages": [
+      "1-51",
+      "49-99",
+      "193-243",
+      "289-339",
+      "337-387",
+      "385-435",
+      "433-483",
+      "481-531"
+    ]
+  },
+  "alternatives": {
+    "rubric_results": [
+      {
+        "check": "Each listed alternative is actually discussed on its cited page?",
+        "result": "n/a",
+        "note": "No alternatives were extracted and no cited pages were provided, so this check cannot be performed."
+      },
+      {
+        "check": "The No Action alternative is included if the cited text includes it?",
+        "result": "n/a",
+        "note": "No cited text was provided, so it is impossible to verify whether a No Action alternative should have been included."
+      },
+      {
+        "check": "Names and descriptions match terminology used in the cited text?",
+        "result": "n/a",
+        "note": "No extracted names or descriptions exist to compare against any source text."
+      },
+      {
+        "check": "No outside-knowledge alternatives added that aren't in the chapter?",
+        "result": "yes",
+        "note": "The extracted value is an empty list, so no outside-knowledge alternatives were introduced."
+      }
+    ],
+    "verdict": "RE_EXTRACT",
+    "model_confidence": "high",
+    "notes": "The extraction returned an empty result with no cited pages, citing a structural detection failure and a deliberate skip of the fallback mechanism. Because no alternatives content was captured at all, the extraction is incomplete and must be re-run. The pipeline should be reviewed to ensure the alternatives chapter is correctly identified and that a regex or keyword fallback is applied when structural detection fails.",
+    "source_pages": []
+  },
+  "themes": {
+    "rubric_results": [
+      {
+        "check": "Each chosen theme is supported by the doc summary fields?",
+        "result": "no",
+        "note": "No cited pages or summary text were provided, making it impossible to verify that the three themes are grounded in actual document content. The justification references specific details (618 km transmission lines, Yuma clapper rail, salt drift) but no source text is supplied to confirm these claims."
+      },
+      {
+        "check": "Theme names come from the fixed taxonomy verbatim?",
+        "result": "n/a",
+        "note": "The taxonomy itself was not provided for comparison. Assuming standard EIS taxonomies, 'Energy Systems', 'Transportation Infrastructure', and 'Wildlife and Natural Areas' appear plausible, but 'Transportation Infrastructure' is questionable for a transmission line project — this could be a misclassification. Cannot confirm without the taxonomy document."
+      },
+      {
+        "check": "Subthemes belong to the chosen theme(s) per the taxonomy?",
+        "result": "n/a",
+        "note": "'Infrastructure Impacts on Landscapes' is attributed to 'Transportation Infrastructure', but transmission lines are more logically under 'Energy Systems'. Without the taxonomy, subtheme-to-theme mapping cannot be fully verified."
+      },
+      {
+        "check": "1–3 themes and 2–5 subthemes selected (within range)?",
+        "result": "yes",
+        "note": "3 themes and 5 subthemes are selected, both within the allowed ranges."
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "No cited page text was provided, so the extraction cannot be verified against source material. Additionally, 'Transportation Infrastructure' appears to be a potentially incorrect theme for a nuclear power and transmission line project — 'Energy Systems' alone may suffice, and the subtheme 'Infrastructure Impacts on Landscapes' may be misassigned. A human reviewer should confirm theme taxonomy alignment and validate the factual claims against the actual document.",
+    "source_pages": []
+  },
+  "location": {
+    "rubric_results": [
+      {
+        "check": "Place names appear in cited pages?",
+        "result": "yes",
+        "note": "Palo Verde Mesa, Riverside County, Blythe, Santa Rosa Mountains, San Diego, and Colorado River all appear explicitly in the cited page text."
+      },
+      {
+        "check": "is_multi_site set correctly?",
+        "result": "no",
+        "note": "The document clearly spans multiple sites and a transmission corridor (plant site on Palo Verde Mesa plus 617 km of transmission corridors to San Diego and Riverside), so is_multi_site should be true, not false."
+      },
+      {
+        "check": "For corridor projects: endpoints named, not just a midpoint?",
+        "result": "yes",
+        "note": "Corridor endpoints are named: plant site near Blythe/Palo Verde Mesa as origin, and San Diego and Riverside as termini. The extracted value lists 'Blythe, CA to San Diego, CA' capturing one corridor endpoint pair."
+      },
+      {
+        "check": "State abbreviations match U.S. conventions?",
+        "result": "yes",
+        "note": "All state abbreviations use standard U.S. postal conventions (CA for California)."
+      }
+    ],
+    "verdict": "RE_EXTRACT",
+    "model_confidence": "high",
+    "notes": "The extraction correctly identifies the key place names and corridor endpoints, and state abbreviations are correct. However, is_multi_site is incorrectly set to false when the document clearly covers multiple distinct sites (primary plant site on Palo Verde Mesa plus extensive transmission corridors to San Diego and Riverside areas, plus the Santa Rosa Mountains offered lands). This field must be corrected to true before the extraction can be accepted.",
+    "source_pages": [
+      "1-30"
+    ]
+  },
+  "key_people": {
+    "rubric_results": [
+      {
+        "check": "Each agency preparer named in cited Preparers/Consultation text?",
+        "result": "yes",
+        "note": "The Foreword explicitly names 'Division of Site Safety and Environmental Analysis, Office of Nuclear Reactor Regulation, U.S. Nuclear Regulatory Commission' as preparer. The Summary and Conclusions and cover pages confirm 'U.S. Department of the Interior, Bureau of Land Management and Bureau of Reclamation' as co-preparers. All three extracted preparers are confirmed in the cited text."
+      },
+      {
+        "check": "Cooperating agencies / tribal nations actually listed in the cited text?",
+        "result": "yes",
+        "note": "All 19 cooperating agencies/entities listed in the extraction appear verbatim in the Summary and Conclusions section (item 5) of the cited text: Advisory Council on Historic Preservation, Department of Agriculture, Department of Army Corps of Engineers, Department of Commerce, Department of Energy, Department of Health Education and Welfare, Department of Housing and Urban Development, Department of Transportation, Environmental Protection Agency, State of Arizona, State of California, Imperial County, Riverside County, San Diego County, Yuma County, Banning, Blythe, Calexico. Note: the text labels these as agencies 'asked to comment,' not formally designated cooperating agencies, but the extraction correctly captures them."
+      },
+      {
+        "check": "For public_commenters: stance present on cited page? Quote verbatim? Speaker clear?",
+        "result": "n/a",
+        "note": "No public commenters were extracted; the extraction correctly notes comment_response_present as false, consistent with this being a Draft EIS with Appendix A reserved for comments."
+      },
+      {
+        "check": "Private individuals: last-name-only or 'private commenter' convention followed?",
+        "result": "n/a",
+        "note": "No private individuals were extracted as commenters."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "All three agency preparers are confirmed in the Foreword and Summary sections of the cited text. All 19 entities listed as cooperating/commenting agencies match the text in the Summary and Conclusions. No public commenters were extracted, which is appropriate given this is a Draft EIS with comments reserved. The extraction is accurate and complete relative to the cited source pages.",
+    "source_pages": [
+      "1-30"
+    ]
+  }
+}

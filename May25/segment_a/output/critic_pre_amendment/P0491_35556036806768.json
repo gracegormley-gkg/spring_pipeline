@@ -1,0 +1,268 @@
+{
+  "title": {
+    "rubric_results": [
+      {
+        "check": "Title is non-empty and plausibly the document's title?",
+        "result": "yes",
+        "note": "Project STORMFURY was a real US government hurricane modification program; the title format matches a formal EIS document title."
+      },
+      {
+        "check": "Length is reasonable (not a sentence fragment, not the whole abstract)?",
+        "result": "yes",
+        "note": "Title is concise and appropriately descriptive at 10 words."
+      },
+      {
+        "check": "If two sources (NUL + Haiku) — do they roughly agree?",
+        "result": "n/a",
+        "note": "Only one source (NUL) provided; no Haiku source to compare."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "medium",
+    "notes": "The extracted title is plausible and well-formed, matching the known Project STORMFURY Atlantic hurricane modification program conducted by NOAA/Navy. However, no cited page text was provided to verify the extraction directly, and only a single source (NUL) was used. Confidence is medium due to lack of corroborating page text or second source.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "year": {
+    "rubric_results": [
+      {
+        "check": "Year falls within 1969 ≤ year ≤ current year?",
+        "result": "no",
+        "note": "2026 is a future year beyond the current year (2025), failing the upper bound check"
+      },
+      {
+        "check": "Year present in NUL metadata OR found on first 3 pages?",
+        "result": "yes",
+        "note": "NUL metadata reports 2026; however, no cited page text was provided to verify regex finding of 1977"
+      },
+      {
+        "check": "If NUL and regex disagree, value reflects this with a low-confidence flag?",
+        "result": "yes",
+        "note": "Extraction correctly flags disagreement between NUL=2026 and regex=1977 with low confidence"
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "There is a direct conflict between NUL metadata (2026, a future/invalid year for an EIS) and regex extraction from the first 3 pages (1977, a plausible EIS year). No cited page text was provided to adjudicate the disagreement. Given that 2026 exceeds the current year and 1977 is historically plausible for an EIS, the regex value is likely more accurate, but human review is required to confirm.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "eis_type": {
+    "rubric_results": [
+      {
+        "check": "Type is one of: Draft, Final, Supplemental, ROD, Unknown?",
+        "result": "yes",
+        "note": "Supplemental is a valid EIS type in the allowed set"
+      },
+      {
+        "check": "Regex hit on first page and Sonnet on first 2 pages agree?",
+        "result": "no",
+        "note": "No regex source cited; only Sonnet (first 2 pages) is listed as source — regex result is absent or did not fire"
+      },
+      {
+        "check": "Evidence phrase supports the chosen type?",
+        "result": "no",
+        "note": "No cited pages or evidence phrases were provided to corroborate the Supplemental classification"
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "The extracted value of 'Supplemental' is plausible but cannot be verified because no cited page text or regex evidence was provided. Only Sonnet inference was used, with no corroborating regex hit or direct evidence phrase. Without supporting text, the classification cannot be confirmed and requires human review.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "lead_agency": {
+    "rubric_results": [
+      {
+        "check": "All listed agencies appear in NUL contributors OR on cited title pages?",
+        "result": "yes",
+        "note": "NOAA appears as a NUL contributor per the extraction source field."
+      },
+      {
+        "check": "Joint-lead (>2 agencies) flagged for human review?",
+        "result": "n/a",
+        "note": "Only one agency listed; joint-lead flag not required."
+      },
+      {
+        "check": "No role text left in agency names?",
+        "result": "yes",
+        "note": "The agency name 'United States. National Oceanic and Atmospheric Administration' contains no role text such as '(issuing body)'."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "medium",
+    "notes": "The single extracted agency, NOAA, is confirmed via NUL contributors. No cited title pages were provided, so verification relies solely on the NUL source, which slightly reduces confidence. The agency name is clean with no extraneous role text.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "summary": {
+    "rubric_results": [
+      {
+        "check": "project_description text supported by cited pages",
+        "result": "yes",
+        "note": "NOAA-led with NASA/DOD cooperation, silver iodide seeding to reduce winds 10-15%, 1977 plan for one Atlantic hurricane Aug 15–Oct 15, five aircraft from Miami/Puerto Rico/Bermuda, ~5,000 flares over 8-hour period at 26,000–30,000 ft all confirmed in pages 1-36."
+      },
+      {
+        "check": "Numbers, places, dates match cited pages",
+        "result": "yes",
+        "note": "10-15% wind reduction goal, Aug 15–Oct 15 window, five aircraft, ~5,000 flares, 8-hour period, 26,000–30,000 ft altitude all match. However, the text says flares ejected at 'about 30,000 feet' and 'burn out by 12,000 feet'; the extraction says '26,000 to 30,000 feet' which matches the seeding altitude range stated in the operations summary section."
+      },
+      {
+        "check": "affected_community text supported by cited pages",
+        "result": "yes",
+        "note": "10% probability threshold, 50 nautical miles from populated land mass, 24-hour post-seeding window, aircraft not within 50 nm of populated areas, and Atlantic vs. Western Pacific risk comparison all confirmed in the cited pages."
+      },
+      {
+        "check": "alternatives_overview text supported by cited pages",
+        "result": "yes",
+        "note": "Four alternatives (do not perform, postpone, other ocean region, different technique), ocean film suppression, carbon dust heating, and both being early-stage without delivery systems are all confirmed in Section V of the cited pages."
+      },
+      {
+        "check": "environmental_impact text supported by cited pages",
+        "result": "yes",
+        "note": "Silver/iodine concentrations below harmful levels, negligible bioaccumulation risk, temporary changes to intensity/size/wind/surge/waves, possible wind/wave increases at 50-200 nm, return to natural state in 6-18 hours, and no significant rainfall or track changes all confirmed in Sections III and IV."
+      },
+      {
+        "check": "public_response is limited to main doc (based_on_main_doc_only=true)",
+        "result": "n/a",
+        "note": "public_response text is empty; based_on_main_doc_only=true is set correctly and no external sources are referenced."
+      },
+      {
+        "check": "No invention or hallucinated detail beyond cited content",
+        "result": "yes",
+        "note": "All specific claims in the extraction are traceable to the cited pages. No details appear fabricated or unsupported."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "All extracted fields are well-supported by the cited pages. Key numbers (10-15% wind reduction, 5,000 flares, 8-hour period, 26,000-30,000 ft, 50 nm safety radius, 10% probability threshold, 6-18 hour recovery) match the source text precisely. The alternatives and environmental impact summaries accurately reflect the document's content without embellishment or omission of contradictory information.",
+    "source_pages": [
+      "1-36"
+    ]
+  },
+  "alternatives": {
+    "rubric_results": [
+      {
+        "check": "Each listed alternative is actually discussed on its cited page?",
+        "result": "n/a",
+        "note": "No alternatives were extracted and no cited pages were provided, so this check cannot be performed."
+      },
+      {
+        "check": "The No Action alternative is included if the cited text includes it?",
+        "result": "n/a",
+        "note": "No cited text was provided, so it is impossible to verify whether a No Action alternative should have been included."
+      },
+      {
+        "check": "Names and descriptions match terminology used in the cited text?",
+        "result": "n/a",
+        "note": "No extracted names or descriptions exist to compare against cited text."
+      },
+      {
+        "check": "No outside-knowledge alternatives added that aren't in the chapter?",
+        "result": "yes",
+        "note": "No alternatives were added at all, so no outside-knowledge contamination is present."
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "The extraction returned an empty value with no cited pages, citing a structural detection failure and a deliberate skip per the v2 plan. Because no source text was provided for review, none of the substantive rubric checks can be evaluated. A human reviewer should locate the Alternatives chapter in the EIS and either re-run extraction with corrected logic or manually populate the alternatives field.",
+    "source_pages": []
+  },
+  "themes": {
+    "rubric_results": [
+      {
+        "check": "Each chosen theme is supported by the doc summary fields?",
+        "result": "no",
+        "note": "No cited pages were provided — the extraction references 'summary' fields but no actual text was pulled in, making it impossible to verify support from the document."
+      },
+      {
+        "check": "Theme names come from the fixed taxonomy verbatim?",
+        "result": "n/a",
+        "note": "Cannot confirm without access to the fixed taxonomy, but 'Climate and Weather Modification' and 'Governance and Institutional Control' appear plausible as taxonomy entries; unverifiable without the taxonomy document."
+      },
+      {
+        "check": "Subthemes belong to the chosen theme(s) per the taxonomy?",
+        "result": "n/a",
+        "note": "Cannot verify subtheme-to-theme mapping without the taxonomy. Logical alignment exists (e.g., 'Climate Engineering and Intervention' under 'Climate and Weather Modification'), but this is unconfirmed."
+      },
+      {
+        "check": "1–3 themes and 2–5 subthemes selected (within range)?",
+        "result": "yes",
+        "note": "2 themes and 4 subthemes selected — both counts fall within the required ranges."
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "The extraction is logically coherent and the justification narrative is plausible for a hurricane cloud-seeding EIS, but no cited page text was provided, making it impossible to verify documentary support. Additionally, theme and subtheme names cannot be confirmed against the fixed taxonomy without that reference. A human reviewer should validate both the taxonomy alignment and the source text before accepting this extraction.",
+    "source_pages": []
+  },
+  "location": {
+    "rubric_results": [
+      {
+        "check": "Place names appear in cited pages?",
+        "result": "yes",
+        "note": "Pages 1-30 explicitly mention 'western Atlantic,' Miami, Puerto Rico, Bermuda, and 'North Atlantic Ocean' multiple times as the experimental area."
+      },
+      {
+        "check": "is_multi_site set correctly?",
+        "result": "no",
+        "note": "The project spans a corridor/region defined by 600 nm from three named bases (Miami, Puerto Rico, Bermuda); is_multi_site should be true since multiple anchor sites define the operational area."
+      },
+      {
+        "check": "For corridor projects: endpoints named, not just a midpoint?",
+        "result": "no",
+        "note": "The extraction lists only 'Western Atlantic Ocean' as a single region; the three defining anchor points (Miami, Puerto Rico, Bermuda) are not captured as named places in the extracted value."
+      },
+      {
+        "check": "State abbreviations match U.S. conventions where applicable?",
+        "result": "n/a",
+        "note": "No state abbreviations were used in the extraction; Miami (FL) and Puerto Rico are referenced in the source but not in the extracted places list."
+      },
+      {
+        "check": "Geocoded coordinates match stated location?",
+        "result": "no",
+        "note": "Geocoded coordinates (lat -34.29, lon 18.45) resolve to Cape Town, South Africa — entirely wrong hemisphere and ocean. The Western Atlantic is roughly 20-35°N, 60-80°W."
+      }
+    ],
+    "verdict": "RE_EXTRACT",
+    "model_confidence": "high",
+    "notes": "The extraction captures only a vague regional label ('Western Atlantic Ocean') and omits the three named anchor sites (Miami, Puerto Rico, Bermuda) that define the operational corridor, meaning is_multi_site should be true and all three locations should be listed. More critically, the geocoded coordinates resolve to Cape Town, South Africa — completely incorrect. The location field must be re-extracted with the anchor sites named and correct coordinates assigned.",
+    "source_pages": [
+      "1-30"
+    ]
+  },
+  "key_people": {
+    "rubric_results": [
+      {
+        "check": "Each agency preparer named in the cited Preparers/Consultation text?",
+        "result": "n/a",
+        "note": "No agency preparers are listed in the extracted value, and the cited text (page 1-30) contains no dedicated 'Preparers' section — the document is an EIS update with no named preparers visible in the provided text."
+      },
+      {
+        "check": "Cooperating agencies / tribal nations actually listed in the cited text?",
+        "result": "yes",
+        "note": "NOAA, NASA, and DOD are explicitly named in the Introduction as cooperating entities: 'an effort directed by the National Oceanic and Atmospheric Administration (NOAA) with cooperation from the National Aeronautics and Space Administration (NASA) and the Department of Defense (DOD).'"
+      },
+      {
+        "check": "For public_commenters: stance present on cited page? Quote verbatim? Speaker clear?",
+        "result": "n/a",
+        "note": "No public commenters are listed in the extracted value, and none appear in the cited text."
+      },
+      {
+        "check": "Private individuals: last-name-only or 'private commenter' convention followed?",
+        "result": "n/a",
+        "note": "No private individuals are listed in the extracted value."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "high",
+    "notes": "The three cooperating agencies (NOAA, NASA, DOD) are accurately extracted and directly supported by the cited text. The empty agency_preparers list is appropriate given that no preparers section is visible in the provided pages. The absence of public commenters and private individuals is consistent with the cited text, which contains no such content.",
+    "source_pages": [
+      "1-30"
+    ]
+  }
+}

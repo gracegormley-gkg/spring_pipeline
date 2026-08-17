@@ -1,0 +1,253 @@
+{
+  "title": {
+    "rubric_results": [
+      {
+        "check": "Title is non-empty and plausibly the document's title?",
+        "result": "yes",
+        "note": "The title references a specific urban renewal project (Eastwick, Philadelphia) and document type (EIS), which is plausible for an Environmental Impact Statement."
+      },
+      {
+        "check": "Length is reasonable (not a sentence fragment, not the whole abstract)?",
+        "result": "yes",
+        "note": "The title is concise and appropriately scoped — not too short or too long."
+      },
+      {
+        "check": "If two sources (NUL + Haiku) — do they roughly agree?",
+        "result": "n/a",
+        "note": "Only one source (NUL) was provided; no Haiku source to compare."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "medium",
+    "notes": "The extracted title is plausible and well-formed for an EIS document covering the Eastwick urban renewal area in Philadelphia. However, only one source (NUL) was cited and no page text was provided to corroborate the extraction. Confidence is medium due to the absence of cited page content for verification.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "year": {
+    "rubric_results": [
+      {
+        "check": "Year falls within 1969 ≤ year ≤ current year?",
+        "result": "no",
+        "note": "2026 is a future year beyond the current year (2025), failing the upper bound; regex value 1976 would pass"
+      },
+      {
+        "check": "Year present in NUL metadata OR found on first 3 pages?",
+        "result": "yes",
+        "note": "NUL metadata reports 2026 and regex found 1976 on first 3 pages; both sources present but conflicting"
+      },
+      {
+        "check": "If NUL and regex disagree, value reflects this with a low-confidence flag?",
+        "result": "yes",
+        "note": "Extraction correctly flagged low confidence and noted the NUL=2026 vs regex=1976 disagreement"
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "NUL metadata yields 2026, which is a future year and almost certainly erroneous (possibly a misread or metadata error). The regex value of 1976 falls within the valid range for an EIS and is more plausible. No cited page text was provided to adjudicate between the two values, so human review is required to confirm the correct year.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "eis_type": {
+    "rubric_results": [
+      {
+        "check": "Type is one of: Draft, Final, Supplemental, ROD, Unknown?",
+        "result": "yes",
+        "note": "Final is a valid recognized EIS type"
+      },
+      {
+        "check": "Regex hit on first page and Sonnet on first 2 pages agree?",
+        "result": "yes",
+        "note": "Both sources listed agree on 'Final'"
+      },
+      {
+        "check": "Evidence phrase supports the chosen type?",
+        "result": "yes",
+        "note": "'FINAL ENVIRONMENTAL IMPACT STATEMENT' directly and unambiguously supports type=Final"
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "high",
+    "notes": "The extracted value 'Final' is strongly supported by the evidence phrase 'FINAL ENVIRONMENTAL IMPACT STATEMENT', and both extraction methods agree. However, no cited page text was provided for independent verification of the source document, which prevents full confirmation. The extraction itself appears correct and consistent, but the absence of cited page content warrants a note rather than a clean PASS.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "lead_agency": {
+    "rubric_results": [
+      {
+        "check": "All listed agencies appear in NUL contributors OR on cited title pages?",
+        "result": "yes",
+        "note": "United States. Department of Housing and Urban Development is sourced from NUL and is a recognized federal agency name in standard cataloging form."
+      },
+      {
+        "check": "Joint-lead (>2 agencies) flagged for human review?",
+        "result": "n/a",
+        "note": "Only one agency listed; joint-lead flag not required."
+      },
+      {
+        "check": "No role text (e.g., '(issuing body)') left in the agency names?",
+        "result": "yes",
+        "note": "Agency name is clean with no parenthetical role text appended."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "medium",
+    "notes": "The single agency, United States. Department of Housing and Urban Development, is sourced solely from NUL with no cited title pages provided for corroboration. The name is properly formatted with no role text. Confidence is medium because the absence of cited title pages prevents independent verification of HUD's lead agency role on the document itself; a human reviewer should confirm against the actual title page if available.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "summary": {
+    "rubric_results": [
+      {
+        "check": "project_description text supported by cited pages",
+        "result": "yes",
+        "note": "2,506 acres, Southwest Philadelphia, since 1958, four residential/three industrial stages, row houses/apartments/shopping/schools/churches/parks, Mini-Town Center near Island Ave and Lindbergh Blvd, ~1,550 acres remaining to be conveyed, Korman Corporation as developer, street/sewer phased through 1979 all confirmed in cited text. However, '1.5 million cubic yards of landfill begun in 1968' is not directly stated; the document references ~12 million total cubic yards of fill and ~10.5 million placed, with no specific '1.5 million' or '1968' start date for site work."
+      },
+      {
+        "check": "Numbers, places, dates match cited pages",
+        "result": "no",
+        "note": "'roughly 1.5 million cubic yards of landfill begun in 1968' is not supported; the document states ~12,000,000 total cubic yards required with ~10,500,000 placed. Also, the 1970 Census figures (15,977 residents, 87% white, 5,006 housing units, $9,283 median income, 33,000 projected population, 2,400 families/325 individuals/207 businesses relocated) are not visible in the cited pages provided, nor is the HUD 1971 tentative approval of Stage III change or the '50-acre motel-commercial complex' or '4 feet of siltation at Tinicum flood gates since 1969' or '20-35 dBA' construction noise reduction range."
+      },
+      {
+        "check": "public_response limited to main doc (based_on_main_doc_only=true)",
+        "result": "yes",
+        "note": "The public_response field references agencies and groups listed in the document's comment list and response chapters, consistent with main doc only."
+      },
+      {
+        "check": "No invention or hallucinated detail beyond cited content",
+        "result": "no",
+        "note": "Several specific figures appear unsupported or potentially hallucinated: '1.5 million cubic yards of landfill begun in 1968,' '15,977 residents,' '87% white,' '5,006 housing units,' '$9,283 median income,' '33,000 projected population,' '2,400 families, 325 individuals, 207 businesses relocated,' '50-acre motel-commercial complex,' 'HUD tentatively approving the change in 1971,' 'over four feet of siltation at the Tinicum flood gates since 1969,' and '20–35 dBA noise reduction in construction' are not found in the cited page text provided."
+      }
+    ],
+    "verdict": "RE_EXTRACT",
+    "model_confidence": "high",
+    "notes": "While many high-level descriptions are broadly consistent with the cited document, numerous specific figures in the extraction (census statistics, relocation counts, landfill volume/date, siltation depth, HUD approval year, motel complex acreage, noise reduction range) are not visible in the cited pages and appear to be hallucinated or drawn from sources not provided. The extraction should be redone with strict citation to only what appears in the provided page text.",
+    "source_pages": [
+      "1-51",
+      "49-99",
+      "97-108"
+    ]
+  },
+  "alternatives": {
+    "rubric_results": [
+      {
+        "check": "Each listed alternative is actually discussed on its cited page?",
+        "result": "n/a",
+        "note": "The cited text provided does not include pages 45-46 where Chapter IV - Alternatives appears. The text cuts off well before reaching those pages. Only the table of contents listing of the alternatives chapter is visible, not the actual content of pages 45-46."
+      },
+      {
+        "check": "The No Action alternative is included if the cited text includes it?",
+        "result": "yes",
+        "note": "The table of contents confirms 'Do Nothing Alternative' is listed under Chapter IV - Alternatives (Section A), and the extraction includes it. This matches the TOC reference on what appears to be page 45."
+      },
+      {
+        "check": "Names and descriptions match terminology used in the cited text?",
+        "result": "yes",
+        "note": "The TOC shows 'Do Nothing Alternative,' 'A Greater Degree of Clearance/A Greater Degree of Rehabilitation,' and 'Changes in Land Use Proposals' — all three names in the extraction match the TOC terminology exactly."
+      },
+      {
+        "check": "No outside-knowledge alternatives added that aren't in the chapter?",
+        "result": "yes",
+        "note": "The three alternatives extracted correspond precisely to the three subsections (A, B, C) listed under Chapter IV in the table of contents. No extraneous alternatives were added."
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "The actual text of pages 45-46 (Chapter IV - Alternatives) was not provided in the cited pages pull — only the table of contents entry is visible. While the alternative names match the TOC exactly, the descriptions and details in the extraction cannot be verified against the source text since those pages were not included. A human reviewer should confirm the descriptions against the actual pages 45-46 content.",
+    "source_pages": [
+      "4-83"
+    ]
+  },
+  "themes": {
+    "rubric_results": [
+      {
+        "check": "Each chosen theme is supported by the doc summary fields?",
+        "result": "yes",
+        "note": "Urban Development aligns with the residential/commercial New Town conversion; Water Systems aligns with flooding, sewer, and creek sedimentation concerns; Wildlife and Natural Areas aligns with wetland habitat destruction and Tinicum Marsh Preserve."
+      },
+      {
+        "check": "Theme names come from the fixed taxonomy verbatim?",
+        "result": "n/a",
+        "note": "No fixed taxonomy was provided in this session to verify verbatim match; assuming standard EIS taxonomy based on context. Cannot fully confirm without the taxonomy document."
+      },
+      {
+        "check": "Subthemes belong to the chosen theme(s) per the taxonomy?",
+        "result": "n/a",
+        "note": "Without the taxonomy document, subtheme-to-theme mapping cannot be verified. However, logical alignment appears reasonable: Urban Expansion and Housing under Urban Development; Water Infrastructure under Water Systems; Habitat Conservation under Wildlife and Natural Areas."
+      },
+      {
+        "check": "1–3 themes and 2–5 subthemes selected (within range)?",
+        "result": "yes",
+        "note": "3 themes and 4 subthemes selected, both within the allowed ranges."
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "medium",
+    "notes": "The extracted themes and subthemes are logically well-supported by the project description involving urban conversion, water infrastructure challenges, and wetland habitat loss. However, no cited page text was provided, making it impossible to verify source fidelity directly. Additionally, the fixed taxonomy was not supplied in this session, so verbatim name matching and subtheme-to-theme assignments cannot be confirmed — human review is warranted to validate against the actual taxonomy.",
+    "source_pages": []
+  },
+  "location": {
+    "rubric_results": [
+      {
+        "check": "Place names appear in cited pages?",
+        "result": "yes",
+        "note": "Eastwick Urban Renewal Area, Philadelphia, Pennsylvania appear prominently and repeatedly throughout the cited page range (pages 1-30 equivalent content), including on the Summary Sheet and Chapter I."
+      },
+      {
+        "check": "is_multi_site set correctly?",
+        "result": "yes",
+        "note": "is_multi_site=false is correct; this is a single contiguous urban renewal project area within Philadelphia, not multiple discrete sites or a corridor."
+      },
+      {
+        "check": "For corridor projects: endpoints named, not just a midpoint?",
+        "result": "n/a",
+        "note": "This is not a corridor project; it is a bounded urban renewal area. Endpoint check does not apply."
+      },
+      {
+        "check": "State abbreviations match U.S. conventions?",
+        "result": "yes",
+        "note": "PA is the correct USPS abbreviation for Pennsylvania and is used consistently."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "The extracted location value accurately reflects the document. 'Eastwick Urban Renewal Area, Philadelphia, Pennsylvania' is explicitly named on the cover page and Summary Sheet within the cited source pages. The bounding description in the note (58th Street NE, Essington Avenue E, Industrial Highway S, Delaware County Line/Passyunk/Dicks Avenues W/NW) matches the text verbatim. All rubric checks pass or are not applicable.",
+    "source_pages": [
+      "1-30"
+    ]
+  },
+  "key_people": {
+    "rubric_results": [
+      {
+        "check": "Each agency preparer named in the cited Preparers/Consultation text?",
+        "result": "yes",
+        "note": "The cover page explicitly states 'Prepared By: Philadelphia Area Office, Region III, U.S. Department of Housing and Urban Development' matching the extracted agency preparer."
+      },
+      {
+        "check": "Cooperating agencies / tribal nations actually listed in the cited text?",
+        "result": "yes",
+        "note": "All 17 cooperating agencies listed in the extraction appear verbatim in the Summary Sheet section 5 'Agencies Which Commented on the Draft Statement,' with one minor discrepancy: 'Korman Corporation' appears in the source list but is not included as a cooperating agency in the extraction (it is listed as a public commenter instead), which is appropriate."
+      },
+      {
+        "check": "For public_commenters: stance present on cited page? Quote verbatim? Speaker clear?",
+        "result": "no",
+        "note": "Two quotes are flagged as quote_verified: false — EPA Region III and Pennsylvania DOT. The EPA quote in particular is a composite/paraphrase not found verbatim in the cited text. The Korman Corporation and Eastwick PAC quotes appear to be response summaries rather than direct commenter quotes. The DOC, FHWA, Corps, and Interior quotes are plausible but cannot be fully verified from the provided text excerpt."
+      },
+      {
+        "check": "Private individuals: last-name-only or 'private commenter' convention followed?",
+        "result": "n/a",
+        "note": "No private individuals appear as public commenters; all commenters are organizations or government agencies."
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "medium",
+    "notes": "The agency preparer and cooperating agency lists are accurately extracted from the cited text. However, two commenter quotes are internally flagged as unverified (EPA Region III and PennDOT), and several other quotes appear to be drawn from the response sections rather than the original comment letters, making verbatim verification impossible from the provided text. The EPA quote in particular reads as a paraphrase/synthesis rather than a direct quotation. Human review is warranted to verify quotes against the actual comment letters in Appendix II.",
+    "source_pages": [
+      "1-30",
+      "48-72"
+    ]
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "title": {
+    "rubric_results": [
+      {
+        "check": "Title is non-empty and plausibly the document's title?",
+        "result": "yes",
+        "note": "The title references a specific transit project (Dade County metro rail) and document type (EIS), which is highly plausible for an Environmental Impact Statement."
+      },
+      {
+        "check": "Length is reasonable (not a sentence fragment, not the whole abstract)?",
+        "result": "yes",
+        "note": "The title is concise and appropriately scoped — not too short or too long."
+      },
+      {
+        "check": "If two sources (NUL + Haiku) — do they roughly agree?",
+        "result": "n/a",
+        "note": "Only one source (NUL) was provided; no second source to compare."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "medium",
+    "notes": "The extracted title is plausible and well-formed for an EIS document related to a Dade County metro rail transit project. However, no cited page text was provided to verify the extraction, and only a single source (NUL) was used. Confidence is medium due to the absence of corroborating text or a second source.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "year": {
+    "rubric_results": [
+      {
+        "check": "Year falls within 1969 ≤ year ≤ current year?",
+        "result": "no",
+        "note": "2026 is a future year beyond the current year (2025), failing the upper bound check"
+      },
+      {
+        "check": "Year present in NUL metadata OR found on first 3 pages?",
+        "result": "yes",
+        "note": "NUL metadata reports 2026; however, no cited page text was provided to verify regex finding of 1978"
+      },
+      {
+        "check": "If NUL and regex disagree, value reflects this with a low-confidence flag?",
+        "result": "yes",
+        "note": "Extraction correctly flags disagreement between NUL=2026 and regex=1978 with low confidence"
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "low",
+    "notes": "There is a direct conflict between NUL metadata (2026) and regex extraction (1978). The NUL value of 2026 is a future year and implausible for an EIS document, strongly suggesting a metadata error. The regex value of 1978 is historically plausible for an EIS but cannot be confirmed without cited page text. A human reviewer should inspect the source document directly to resolve this discrepancy.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "eis_type": {
+    "rubric_results": [
+      {
+        "check": "Type is one of: Draft, Final, Supplemental, ROD, Unknown?",
+        "result": "yes",
+        "note": "Final is a valid EIS type within the accepted enumeration."
+      },
+      {
+        "check": "Regex hit on first page and Sonnet on first 2 pages agree?",
+        "result": "yes",
+        "note": "Both sources listed as 'regex (first page)' and 'Sonnet (first 2 pages)' agree on 'Final'."
+      },
+      {
+        "check": "Evidence phrase supports the chosen type?",
+        "result": "yes",
+        "note": "'FINAL ENVIRONMENTAL IMPACT STATEMENT' directly and unambiguously supports the type 'Final'."
+      },
+      {
+        "check": "Cited pages provided for independent verification?",
+        "result": "no",
+        "note": "No cited page text was provided, preventing independent corroboration of the evidence phrase."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "high",
+    "notes": "The extracted value 'Final' is strongly supported by the evidence phrase 'FINAL ENVIRONMENTAL IMPACT STATEMENT', and both extraction methods agree. However, no cited page text was supplied, so direct verification of the source document is not possible. The extraction is accepted with the caveat that cited pages should be included in future submissions for full auditability.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "lead_agency": {
+    "rubric_results": [
+      {
+        "check": "All listed agencies appear in NUL contributors OR on cited title pages?",
+        "result": "yes",
+        "note": "United States. Urban Mass Transportation Administration is sourced from NUL and confirmed present there."
+      },
+      {
+        "check": "Joint-lead (>2 agencies) flagged for human review?",
+        "result": "n/a",
+        "note": "Only one agency listed; joint-lead check not applicable."
+      },
+      {
+        "check": "No role text left in agency names?",
+        "result": "yes",
+        "note": "The agency name contains no parenthetical role text such as '(issuing body)' or similar."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "A single lead agency, United States. Urban Mass Transportation Administration, is extracted and confirmed via NUL. No role text is present in the name, and no joint-lead scenario applies. No cited title pages were provided, but NUL sourcing is sufficient for this single-agency case.",
+    "source_pages": [
+      "1-3"
+    ]
+  },
+  "summary": {
+    "rubric_results": [
+      {
+        "check": "project_description text supported by cited pages",
+        "result": "yes",
+        "note": "Summary pages confirm 20.5-mile heavy rail, Dadeland to Okeechobee, 18 miles elevated, 2.5 miles at-grade, 20 stations, 166 cars, $795M capital cost, UMTA grant. Construction dates in summary say July 1979 start/August 1982 completion, not '1978-1979 through 1982-1983' as extracted."
+      },
+      {
+        "check": "Numbers, places, dates match cited pages",
+        "result": "no",
+        "note": "Extracted text states construction 'planned from 1978-1979 through 1982-1983'; cited summary page says construction begins July 1979 and continues until August 1982. Also, extracted text says '20-21 stations' but cited page says '20 stations.' The 'semi-automated duo-rail technology' label is not visible in the cited pages. Population figure of 1,449,300 and 32% Spanish-American and 15% Black are confirmed. Displacement figures (575-650 residential, 100-150 businesses, 14 at H-1) are confirmed. The 58% Black / 31% Latin displacement breakdown is not visible in the cited pages."
+      },
+      {
+        "check": "affected_community text supported by cited pages",
+        "result": "yes",
+        "note": "Population 1,449,300, Spanish ~32%, Black ~15%, transit-dependent elderly, displacement figures, and named communities are all supported. The racial breakdown of displacements (58% Black, 31% Latin) is stated in the extraction but not visible in the provided page text."
+      },
+      {
+        "check": "alternatives_overview text supported by cited pages",
+        "result": "yes",
+        "note": "Cited pages confirm Null, All Bus (low/high), Fixed Guideway options, PEOA process, 30 corridor scenarios, six finalists (A-1, A-2, A-4, A-7, A-8, G-1(B)), A-7 selection. October 1976 County Commission adoption date and monorail rejection are not visible in the provided page excerpts."
+      },
+      {
+        "check": "environmental_impact text supported by cited pages",
+        "result": "yes",
+        "note": "Cited pages confirm displacement numbers, noise concerns, vegetation loss, visual impacts, mitigation measures. The specific figures of '1 million vehicle miles reduced,' '15 fatal accidents avoided,' '1,800 injury accidents,' '3,000 construction jobs,' '1,600-1,800 operating jobs,' and '358 acres from tax rolls' are not visible in the provided page text."
+      },
+      {
+        "check": "public_response based_on_main_doc_only=true",
+        "result": "yes",
+        "note": "All public response content references the main EIS document; no external sources cited."
+      },
+      {
+        "check": "public_response text supported by cited pages",
+        "result": "yes",
+        "note": "The $132.5M bond (1972), February 6 1978 public hearing, list of commenting organizations (Sierra Club, Tropical Audubon, STOP, Taxpayers League, League of Women Voters, Dade-Monroe Lung Association), and Draft EIS circulation starting January 6 1978 are all confirmed. The '500 public meetings,' '24 public forums,' 'March 1978 referendum,' and dropping of Kendall/Glenwood sites are not directly visible in the provided page text."
+      },
+      {
+        "check": "No invention or hallucinated detail beyond cited content",
+        "result": "no",
+        "note": "Several specific figures and details (construction date range '1978-1979 through 1982-1983,' '20-21 stations,' 'semi-automated duo-rail,' '1 million VMT reduction,' accident statistics, job counts, 358 acres, 58%/31% displacement racial breakdown, 500 meetings, 24 forums, March 1978 referendum) are not verifiable from the provided page excerpts and may be drawn from deeper document pages not shown or may be hallucinated."
+      }
+    ],
+    "verdict": "HUMAN_REVIEW",
+    "model_confidence": "medium",
+    "notes": "The extraction is broadly consistent with the cited pages but contains several specific figures and details (construction timeline, station count, technology label, accident/job statistics, acreage, racial displacement percentages, meeting counts, referendum date) that cannot be verified from the provided page text. Some details appear inconsistent with what is visible (e.g., '20-21 stations' vs. '20 stations'; construction dates differ). Human review is needed to confirm whether these details appear elsewhere in the full document or represent hallucination.",
+    "source_pages": [
+      "1-51",
+      "97-147",
+      "145-195",
+      "193-243",
+      "241-286",
+      "49-99"
+    ]
+  },
+  "alternatives": {
+    "rubric_results": [
+      {
+        "check": "Each listed alternative is actually discussed on its cited page?",
+        "result": "yes",
+        "note": "A-1, A-2, A-4, A-7, A-8, and G-1(B) are all described in detail in the cited text (pages 84-163 range, specifically the IV-13 through IV-15 sections visible in the pull). Physical data table IV-3 and narrative descriptions confirm all six alternatives with matching details."
+      },
+      {
+        "check": "No Action alternative included if cited text includes it?",
+        "result": "n/a",
+        "note": "The cited text does not include a No Action alternative; this is a corridor alternatives comparison chapter focused on six viable scenarios. No Action is not discussed in the pulled text."
+      },
+      {
+        "check": "Names and descriptions match terminology used in the cited text?",
+        "result": "yes",
+        "note": "All alternative names (A-1, A-2, A-4, A-7, A-8, G-1(B)) and descriptors (terminals, track lengths, station counts, yard sites, vehicle types) match the cited text precisely. G-1(B) is correctly described as SLRV without preemption. A-7 is correctly noted as the recommended plan adopted October 19, 1976."
+      },
+      {
+        "check": "No outside-knowledge alternatives added that aren't in the chapter?",
+        "result": "yes",
+        "note": "Only the six alternatives advanced to Level 3 screening are listed. Eliminated alternatives (A-10, B-series, C-series, streetcar variants) are not included in the extraction, consistent with the chapter's focus on the final six."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "All six extracted alternatives are accurately described and directly supported by the cited text. Track lengths, station counts, yard sites, vehicle types, and terminal endpoints all match the source document's Table IV-3 and narrative descriptions on pages IV-13 through IV-15. The designation of A-7 as the recommended plan is confirmed by the TEP evaluation and County Commission adoption described in the text.",
+    "source_pages": [
+      "84-163"
+    ]
+  },
+  "themes": {
+    "rubric_results": [
+      {
+        "check": "Each chosen theme is supported by the doc summary fields?",
+        "result": "no",
+        "note": "No cited pages or summary text were provided, making it impossible to verify that the doc summary fields support the chosen themes. The justification references specific details (575-650 residential units, STOP group, Black and Latin households) but no source text is available to confirm."
+      },
+      {
+        "check": "Theme names come from the fixed taxonomy verbatim?",
+        "result": "no",
+        "note": "'Place Based Development Conflicts' does not appear to be a standard fixed taxonomy theme name; it may be a paraphrase or non-standard variant. 'Transportation Infrastructure' and 'Urban Development' are plausible taxonomy entries but cannot be confirmed without the taxonomy reference."
+      },
+      {
+        "check": "Subthemes belong to the chosen theme(s) per the taxonomy?",
+        "result": "no",
+        "note": "Without the taxonomy document or cited source pages, subtheme-to-theme mapping cannot be verified. 'Community Resistance and Activism' and 'Land Rights and Displacement' seem more aligned with a Social Justice or Community Impact theme than 'Urban Development' or 'Place Based Development Conflicts'."
+      },
+      {
+        "check": "1–3 themes and 2–5 subthemes selected (within range)?",
+        "result": "yes",
+        "note": "3 themes and 5 subthemes are selected, both within the allowed ranges."
+      }
+    ],
+    "verdict": "RE_EXTRACT",
+    "model_confidence": "low",
+    "notes": "No cited page text was provided, making source verification impossible. At least one theme name ('Place Based Development Conflicts') appears non-standard and may not match the fixed taxonomy verbatim. The subtheme-to-theme assignments are also questionable without taxonomy confirmation, and the extraction should be redone with proper source citations and verified taxonomy terms.",
+    "source_pages": []
+  },
+  "location": {
+    "rubric_results": [
+      {
+        "check": "Place names appear in cited pages?",
+        "result": "yes",
+        "note": "Metropolitan Dade County, Dadeland, Hialeah, Okeechobee Station, Miami all appear explicitly in the cited page range (pages 1-30 cover the title page, preface, summary, and early chapters)."
+      },
+      {
+        "check": "is_multi_site set correctly?",
+        "result": "no",
+        "note": "The project is a 20.5-mile linear corridor from Dadeland to Okeechobee Station; is_multi_site should be true for a corridor project, not false."
+      },
+      {
+        "check": "For corridor projects: endpoints named, not just a midpoint?",
+        "result": "yes",
+        "note": "Both endpoints are named: Dadeland (southwest of Miami) and Okeechobee Station in Hialeah. The corridor entry in places[] correctly captures both termini."
+      },
+      {
+        "check": "State abbreviations match U.S. conventions?",
+        "result": "yes",
+        "note": "FL is the correct USPS abbreviation for Florida and is used consistently throughout the extracted value."
+      }
+    ],
+    "verdict": "PASS_WITH_NOTE",
+    "model_confidence": "high",
+    "notes": "Place names and corridor endpoints are correctly identified and confirmed in the cited pages. The only error is that is_multi_site is set to false when it should be true, as this is a linear corridor project spanning multiple communities (Dadeland through Miami to Hialeah). The geocoded entry for the corridor has null coordinates, which is acceptable given it spans a route rather than a point, but the region geocode resolves to a hotel address rather than a county centroid—a minor quality issue that does not affect the core location data.",
+    "source_pages": [
+      "1-30"
+    ]
+  },
+  "key_people": {
+    "rubric_results": [
+      {
+        "check": "Each agency preparer named in the cited Preparers/Consultation text?",
+        "result": "yes",
+        "note": "John K. Taylor as Associate Administrator for Transit Assistance is named in the cited text signing the EIS. UMTA and OTA are explicitly named as preparers in the Preface of the cited text."
+      },
+      {
+        "check": "Cooperating agencies / tribal nations actually listed in the cited text?",
+        "result": "yes",
+        "note": "All 12 cooperating agencies listed in the extraction (A through L) appear verbatim in the cited text under 'Comments on the Draft Environmental Impact Statement were received from the following Federal, state, and local agencies.' Items M onward (Dade-Monroe Lung Association, Florida Wildlife Federation, etc.) and individual commenters are also present but were correctly excluded from cooperating_agencies."
+      },
+      {
+        "check": "For public_commenters: stance present on cited page? Quote verbatim? Speaker clear?",
+        "result": "n/a",
+        "note": "No public commenters were extracted; public_commenters list is empty. The cited text does list individual commenters (Batz L., Cruz M., etc.) but the extractor chose not to include them, which is acceptable given no stance/quotes are available on this summary page."
+      },
+      {
+        "check": "Private individuals: last-name-only or 'private commenter' convention followed?",
+        "result": "n/a",
+        "note": "No private individuals were extracted, so convention compliance is not applicable."
+      }
+    ],
+    "verdict": "PASS",
+    "model_confidence": "high",
+    "notes": "All extracted agency preparers and cooperating agencies are directly supported by the cited text. The cooperating agencies list accurately reflects items A–L from the Draft EIS comment list, correctly stopping before non-governmental organizations. The decision to leave public_commenters empty is defensible since the cited page provides only names without stances or verbatim quotes.",
+    "source_pages": [
+      "1-30"
+    ]
+  }
+}

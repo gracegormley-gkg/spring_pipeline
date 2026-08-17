@@ -1,0 +1,35 @@
+{
+  "title": {
+    "value": "Off-road vehicles on public lands, implementation of Executive Order 11644 : environmental impact statement.",
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  },
+  "year": {
+    "value": 1974,
+    "confidence": "high",
+    "sources": [
+      "NUL",
+      "regex (first 3 pages)"
+    ]
+  },
+  "eis_type": {
+    "value": "Final",
+    "confidence": "high",
+    "sources": [
+      "regex (first page)",
+      "Sonnet (first 2 pages)"
+    ],
+    "evidence": "FINAL ENVIRONMENTAL STATEMENT"
+  },
+  "lead_agency": {
+    "value": [
+      "Bureau of Outdoor Recreation"
+    ],
+    "confidence": "high",
+    "sources": [
+      "NUL"
+    ]
+  }
+}
