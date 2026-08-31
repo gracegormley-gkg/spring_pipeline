@@ -126,6 +126,16 @@ STRUCTURED_FIELDS = ("alternatives", "themes", "location", "key_people")
 
 ALL_FIELDS = M1_FIELDS + SUMMARY_FIELDS + (SUMMARY_OF_INTEREST,) + STRUCTURED_FIELDS
 
+# Fields whose value comes out of m2's summary map/reduce stage, and which are
+# therefore incomplete when that stage did not read the whole document
+# (`chunking_meta.summary_source_incomplete`).
+#
+# `themes` is included because `m2.extract_themes` is handed the summary text, not
+# the document. `alternatives`, `location` and `key_people` are NOT: they read
+# CEQ-chapter slices and the first N pages directly, so the `max_chunks` cap does
+# not bound them.
+SUMMARY_DERIVED_FIELDS = SUMMARY_FIELDS + (SUMMARY_OF_INTEREST, "themes")
+
 # Fields that atomic_verify.py decomposes (MCAL_PLAN 3.4).
 # Note: summary.overview is deliberately EXCLUDED -- it is a roll-up whose
 # evidence is carried forward from the five subfields (m2.py:321-336), so
@@ -233,6 +243,27 @@ QUOTE_VERDICT_SCORES = {"yes": 1.0, "mixed": 0.5, "no": 0.0}
 # defaults to 1.0 (MCAL_PLAN 3.3). This makes the M1 composite
 # 0.5*s_critic + 0.5 -- a 0.5 floor plus half the Critic verdict.
 S_QUOTE_DEFAULT_M1 = 1.0
+
+# Fields that are never asked for quotes of their own, and whose evidence is
+# therefore entirely carried forward from other fields (see
+# `evidence.EVIDENCE_CARRIED`).
+#
+# `themes` is the only one: `m2.extract_themes` asks Sonnet for
+# themes/subthemes/justification/self_confidence and nothing else, so the quotes
+# on a themes row were all verified against a summary subfield's claim, not
+# against the themes label. Scoring those as the field's own `s_quote` credited
+# themes with citations it never made -- 1.0 on every document.
+#
+# For these fields `s_quote` is EXCLUDED (None) rather than defaulted, which is
+# the difference from M1: `composite` renormalizes over present signals, so the
+# themes composite becomes `s_critic` alone. That is the honest answer, because
+# whether a taxonomy label is right is a judgement, not something a substring
+# search can settle -- and unlike the M1 default of 1.0 it grants no free floor.
+#
+# `summary.overview` is deliberately NOT here. It IS asked for its own quotes;
+# it just falls back to borrowing when they do not verify. Absence of first-party
+# evidence there is a real defect and must score 0.
+NO_FIRST_PARTY_QUOTE_FIELDS = ("themes",)
 
 
 # --- quote_check thresholds (MCAL_PLAN 3.2) ---------------------------------

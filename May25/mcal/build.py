@@ -171,6 +171,23 @@ def score_graded_corpus(
     `s_quote` from live `quote_check` over `output/m2/` evidence, and
     `s_citation` from atomic verification when available.
 
+    `s_citation` is atom-level or `None`; there is no evidence-level substitute.
+    That is deliberate and measured -- see the comment at the `cite_rate`
+    assignment. It means `s_citation` is populated only on runs with `--atomic`,
+    and `diagnostics.n_items_with_s_citation` reports how many items carry it, so
+    a weight-validation run cannot silently treat "absent" as "zero".
+
+    NOTE on `s_shard`: not passed, and not passable. MCAL_PLAN 3.3 defines it as
+    the fraction of chunks whose atomic claim survived into the reduce output,
+    which requires a per-atom `source_chunk_id`. Nothing in the repo produces
+    that field: `atomic_verify` decomposes the FINAL prose and has no view of
+    which map-stage chunk a claim came from, and `m2._summary_pipeline` discards
+    its `partials` (which do carry `chunk_index`) without persisting them.
+    `s_shard` is therefore `None` at calibration and in production alike, and
+    will stay that way until the map stage checkpoints its partials and atoms are
+    attributed back to them. Recorded here rather than left as a TODO because
+    `gate.py` previously carried a comment asserting atomic_verify supplies it.
+
     A caveat that matters for interpreting tau: Segment A's Critic is COARSER
     than the buckets. It emits one `summary` verdict covering all six subfields,
     one `alternatives` verdict, and one `key_people` verdict. Until Segment B's
@@ -179,13 +196,15 @@ def score_graded_corpus(
     variance and makes tau look tighter than it will be in production. Recorded
     in the diagnostics as `critic_granularity`.
     """
-    from pages import load_doc  # segment_a bridge
+    from evidence import own_evidence  # segment_a bridge
+    from pages import load_doc
 
     from . import quote_check as qc
 
     items: list[confidence.ScoredItem] = []
     per_doc_notes: dict[str, str] = {}
     n_coarse = 0
+    n_atom_citation = 0
     missing: list[str] = []
 
     for doc_id in grade_set.doc_ids:
@@ -223,23 +242,54 @@ def score_graded_corpus(
 
             quote_verdict = None
             if evidence:
+                # Own evidence only, matching `gate.extraction_quote_verdict` via
+                # the same helper. If the two disagreed, tau would be fitted on
+                # one definition of s_quote and applied against another.
+                own = own_evidence(evidence)
                 checks = [
                     qc.check_quote(
                         e.get("quote", ""), e.get("source_pages"), doc
                     )
-                    for e in evidence
+                    for e in own
                     if e.get("quote")
                 ]
                 if checks:
                     quote_verdict = qc.aggregate_verdict(checks)
 
+            # `s_citation` is atom-level or absent. The evidence-level fallback
+            # that used to sit here -- fraction of the evidence entries carrying
+            # a page cite -- was removed for two reasons.
+            #
+            # 1. It is `s_quote` under another name. Measured over the 40 graded
+            #    summary subfields, it is numerically IDENTICAL to `s_quote` on
+            #    40/40 items under both label pairings that
+            #    `tests/test_atomic_verify.py::TestT01Invisibility` distinguishes,
+            #    and its AUROC matches to three decimals (0.598 pre-amendment,
+            #    0.476 on the current artifacts). That is by construction, not
+            #    coincidence: an evidence entry with pages verifies, one without
+            #    pages cannot be located and scores 0, so averaging "has a page"
+            #    and averaging "verified" return the same number. Giving it a
+            #    non-zero weight at n>=60 would double-count `s_quote` while
+            #    looking like independent evidence -- the worst failure mode
+            #    available to a weight-validation run.
+            #
+            # 2. It measures a different quantity from the thing it stood in for.
+            #    Atom-level coverage is "of the claims made, how many carry a
+            #    citation"; this is "of the citations made, how many name a page".
+            #    Filling one column with whichever was available puts two units in
+            #    one signal.
+            #
+            # Absent is therefore strictly more informative than present-but-
+            # duplicated. `confidence.composite` renormalizes over the signals
+            # actually present, so a `None` costs nothing, and
+            # `diagnostics.n_items_with_s_citation` makes the absence visible
+            # instead of letting it read as a computed zero.
+            # Pinned by `TestEvidenceLevelCitationRateIsNotASubstitute`.
             cite_rate = None
             if atomic_citation_rates:
                 cite_rate = atomic_citation_rates.get((doc_id, field))
-            if cite_rate is None and evidence:
-                cite_rate = sum(
-                    1 for e in evidence if e.get("source_pages")
-                ) / len(evidence)
+            if cite_rate is not None:
+                n_atom_citation += 1
 
             signals = confidence.compute_signals(
                 field,
@@ -272,6 +322,11 @@ def score_graded_corpus(
         ),
         "n_items_with_inherited_critic_verdict": n_coarse,
         "atomic_citation_rates_used": bool(atomic_citation_rates),
+        # How many items actually carry s_citation. Without `--atomic` this is 0
+        # and s_citation is absent everywhere, which is the honest state: see the
+        # comment at the `cite_rate` assignment for why there is no fallback.
+        "n_items_with_s_citation": n_atom_citation,
+        "s_citation_source": "atomic_verify" if atomic_citation_rates else None,
     }
     return items, diagnostics
 

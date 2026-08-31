@@ -51,6 +51,18 @@ fixing it:
    nothing in `extracted_value` or `quote`; only `_short`'s whitespace collapsing
    is retained, which is needed to keep a cell on one CSV row.
 
+5. **Blinding was defeated arithmetically by `model_confidence`.** Fixing defect 3
+   removed `critic_verdict` from the blind sheet but left `model_confidence` on
+   it, and on the manifest path that column carried the gate's `composite`. Since
+   `composite = 0.5*s_quote + 0.5*s_critic` and `quote_verified` -- which
+   determines `s_quote` -- is the adjacent blind column, `s_critic` was exactly
+   recoverable as `2*composite - s_quote`, and the four verdict scores are
+   distinct. The blind sheet therefore disclosed the Critic verdict it was built
+   to withhold. On the extractions path the same column disclosed the extractor's
+   self-reported confidence, which MCAL_PLAN phased out as a signal and which
+   anchors a reviewer just as effectively. `model_confidence` is now
+   reveal-only; see `REVEAL_ONLY_COLUMNS`.
+
 Row keys reuse `grading.py`'s dotted/bracketed convention (`location.places[0]`,
 `key_people.cooperating_agencies[2]`, `alternatives[0]`, `summary.public_response`)
 so `mcal/grades.py:canonical_field` parses them unchanged. Round-tripping is
@@ -82,6 +94,7 @@ from . import taxonomy as taxonomy_mod
 # rather than reimplemented so both sheet generations render a dict or list
 # identically -- otherwise a v1 sheet and a v2 sheet of the same document would
 # differ in ways that look like extraction changes.
+from evidence import EVIDENCE_CARRIED  # noqa: E402
 from grading import GRADE_OPTIONS, _short  # noqa: E402
 from pages import Doc  # noqa: E402
 
@@ -98,7 +111,6 @@ BASE_COLUMNS = (
     "quote",
     "source_pages",
     "quote_verified",
-    "model_confidence",
     "your_grade",
     "your_failure_tag",
     "your_notes",
@@ -109,9 +121,33 @@ BASE_COLUMNS = (
 # reuse of `your_notes` -- see defect 3 in the module docstring.
 CRITIC_COLUMNS = ("critic_verdict", "critic_failure_tag", "critic_notes")
 
+# `model_confidence` is REVEAL-ONLY (defect 5 in the module docstring). It used to
+# sit in BASE_COLUMNS, i.e. on the blind sheet, which defeated the blinding
+# arithmetically on the manifest path:
+#
+#     composite = 0.5*s_quote + 0.5*s_critic   (settings.SIGNAL_WEIGHTS)
+#     =>  s_critic = 2*composite - s_quote
+#
+# `quote_verified` is the adjacent blind column and maps to s_quote through the
+# 3-valued settings.QUOTE_VERDICT_SCORES, and the four verdict scores in
+# settings.CRITIC_VERDICT_SCORES (1.0 / 0.7 / 0.3 / 0.0) are distinct. So the
+# Critic verdict was exactly recoverable from two columns of the "blind" sheet --
+# the one thing MCAL_PLAN 7 Q5 requires the reviewer not to see, because human/
+# Critic agreement is what fits tau.
+#
+# Banding the value was the alternative and was rejected: s_quote is known from
+# the adjacent column, so any band narrow enough to be informative still narrows
+# s_critic to one or two of four levels.
+#
+# The extractions path leaked a different quantity through the same column -- the
+# extractor's self-reported "high|medium|low" (`_model_confidence`) -- which
+# MCAL_PLAN deliberately phased out as a signal and which anchors a reviewer just
+# as effectively. Moving the column fixes both paths at once.
+REVEAL_ONLY_COLUMNS = CRITIC_COLUMNS + ("model_confidence",)
+
 BLIND_COLUMNS = BASE_COLUMNS
 REVEAL_COLUMNS = (
-    BASE_COLUMNS[:5] + CRITIC_COLUMNS + BASE_COLUMNS[5:]
+    BASE_COLUMNS[:5] + REVEAL_ONLY_COLUMNS + BASE_COLUMNS[5:]
 )
 
 PASS_BLIND = "blind"
@@ -231,6 +267,15 @@ def render_evidence(
     because it reports OCR-damaged-but-present quotes as absent. Grading against
     the weaker verifier would have the reviewer adjudicating false alarms.
     Verdicts are the three-valued `yes|mixed|no` the column already uses.
+
+    Carried evidence (`evidence.EVIDENCE_CARRIED`) is labelled `[CARRIED FROM
+    <field>]` in the quote cell, and the rolled-up `quote_verified` reports on the
+    row's OWN quotes only. Without that, a `summary.overview` row whose own quotes
+    failed showed `quote_verified: yes` next to three quotes borrowed from the
+    subfields, and the reviewer had no way to tell they supported a different
+    claim. When a row has nothing BUT carried evidence -- `themes`, by design --
+    the column reads `n/a (carried)`, because there is no first-party citation to
+    pass or fail judgement on.
     """
     if not evidence:
         return "", "", ""
@@ -238,6 +283,7 @@ def render_evidence(
     pages: list[str] = []
     chunks: list[str] = []
     verdicts: list[str] = []
+    n_carried = 0
 
     for ev in evidence:
         if not isinstance(ev, dict):
@@ -246,23 +292,31 @@ def render_evidence(
         ev_pages = [str(p) for p in raw_pages]
         pages.extend(ev_pages)
         quote = (ev.get("quote") or "").strip()
+        carried = ev.get("evidence_source") == EVIDENCE_CARRIED
 
         if doc is not None:
             check = qc.check_quote(quote, raw_pages, doc)
             verdict = check.verified
         else:
             verdict = "yes" if ev.get("quote_verified") else "no"
-        verdicts.append(verdict)
+        # Carried quotes verify against the subfield they were borrowed from, so
+        # they must not vote on this row's verdict.
+        if carried:
+            n_carried += 1
+        else:
+            verdicts.append(verdict)
 
         if quote:
             tag = f"[p.{', '.join(ev_pages)}] " if ev_pages else "[no page cited] "
             flag = "" if verdict == "yes" else f"[{verdict.upper()}] "
+            if carried:
+                flag += f"[CARRIED FROM {ev.get('carried_from') or 'another field'}] "
             chunks.append(tag + flag + " ".join(quote.split()))
 
     pages_str = ", ".join(dict.fromkeys(pages))
     quote_str = " | ".join(chunks)
     if not verdicts:
-        rolled = ""
+        rolled = "n/a (carried)" if n_carried else ""
     elif set(verdicts) == {"yes"}:
         rolled = "yes"
     elif set(verdicts) == {"no"}:
@@ -591,7 +645,9 @@ def rows_from_manifest(
       equivalent is the gate's own `composite`, which is what the confidence
       machinery actually acts on, so that is what the column carries, prefixed
       `composite=` so it is never mistaken for the extractor's self-reported
-      confidence.
+      confidence. The column is REVEAL-ONLY: on the blind sheet the composite
+      inverts to the Critic verdict against the adjacent `quote_verified`
+      column (defect 5 in the module docstring).
     """
     rows: list[SheetRow] = []
     for field in manifest_fields(manifest):
@@ -734,12 +790,15 @@ def build_preamble(
     ]
     if pass_name == PASS_BLIND:
         lines += [
-            "# BLIND PASS (MCAL_PLAN 7 Q5). critic_verdict is deliberately "
-            "ABSENT and your_notes is deliberately EMPTY. Grade from "
-            "extracted_value, quote and source_pages only. Do not open the "
-            "reveal sheet until this one is finished: the human grade and the "
-            "Critic verdict must be independent, because their agreement is what "
-            "fits the conformal thresholds.",
+            "# BLIND PASS (MCAL_PLAN 7 Q5). critic_verdict and "
+            "model_confidence are deliberately ABSENT and your_notes is "
+            "deliberately EMPTY. Grade from extracted_value, quote and "
+            "source_pages only. Do not open the reveal sheet until this one is "
+            "finished: the human grade and the Critic verdict must be "
+            "independent, because their agreement is what fits the conformal "
+            "thresholds. model_confidence is withheld because the gate "
+            "composite it carries inverts to the Critic verdict against the "
+            "quote_verified column.",
         ]
     else:
         lines += [

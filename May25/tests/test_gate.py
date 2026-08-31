@@ -211,6 +211,50 @@ class TestSignals:
         # m1's note says NUL disagrees with the regex, so agreement is 1 of 2.
         assert sig.s_source == 0.5
 
+    def test_s_acronym_is_read_from_where_run_py_actually_writes_it(self, doc):
+        """
+        `run.py:_run_acronyms` hangs per-field rates off `m2["acronym_meta"]`,
+        not off the field entry. This reader originally looked only at the entry,
+        so `s_acronym` was None on every field of every document in the v1 batch
+        while being computed and written on each one.
+        """
+        m2 = build_m2()
+        entry = m2["summary"]["overview"]
+        sig, _ = G.signals_for_field(
+            "summary.overview", entry, cr("summary.overview"), doc
+        )
+        assert sig.s_acronym is None
+
+        meta = {"per_field": {"summary.overview": {"s_acronym": 0.75}}}
+        sig, _ = G.signals_for_field(
+            "summary.overview", entry, cr("summary.overview"), doc,
+            acronym_meta=meta,
+        )
+        assert sig.s_acronym == 0.75
+
+    def test_s_acronym_still_accepts_a_decorated_entry(self, doc):
+        """The original shape keeps working, so a driver that decorates the
+        entry directly is not silently broken by the new path."""
+        m2 = build_m2()
+        entry = dict(m2["summary"]["overview"], acronym_rate=0.5)
+        sig, _ = G.signals_for_field(
+            "summary.overview", entry, cr("summary.overview"), doc
+        )
+        assert sig.s_acronym == 0.5
+
+    def test_s_acronym_reaches_the_manifest_from_m2(
+        self, mcal_artifacts, doc, tmp_path
+    ):
+        """End to end: the rate must survive run_gate, not just the helper."""
+        m2 = build_m2()
+        m2["acronym_meta"] = {
+            "per_field": {"summary.overview": {"s_acronym": 0.25}}
+        }
+        out = gate(doc, all_results(), mcal_artifacts, tmp_path, m2=m2)
+        assert out.fields["summary.overview"].signals["s_acronym"] == 0.25
+        # A field the post-pass never touched stays None rather than 1.0.
+        assert out.fields["themes"].signals["s_acronym"] is None
+
     def test_document_less_call_does_not_penalize_the_field(self):
         """
         Manifest regeneration from persisted Critic results can verify nothing;
@@ -315,6 +359,212 @@ class TestGateReasons:
         assert g.composite == 0.5 and g.applied_tau == 0.6
         assert "composite_below_tau" in g.gate_reasons
         assert g.gate_reason == "critic_verdict"
+
+    def test_saturated_bucket_is_not_reported_as_a_tuning_problem(
+        self, mcal_artifacts, doc, tmp_path
+    ):
+        """
+        A saturated bucket (tau_deployed = 1.0) can never accept anything, because
+        `accepts` needs `score > tau`. Reported as `composite_below_tau` that reads
+        as "the threshold needs nudging"; the real message is that no score
+        separates right from wrong in this bucket.
+
+        The live case from the v1 batch: critic PASS, s_quote 1.0, s_critic 1.0,
+        composite 1.0 -- a perfect field, gated.
+        """
+        reload_artifacts(mcal_artifacts, saturated=("summary_narrative",))
+        out = gate(doc, all_results(), mcal_artifacts, tmp_path)
+        g = out.fields["summary.overview"]
+        assert g.critic_verdict == "PASS"
+        assert g.composite == 1.0
+        assert g.applied_tau == 1.0
+        assert g.gated_to_human is True
+        assert g.bucket_flags["saturated"] is True
+        assert g.gate_reason == "bucket_saturated"
+        # Still recorded, because it is also true -- priority decides reporting.
+        assert "composite_below_tau" in g.gate_reasons
+
+    def test_saturation_is_distinct_from_degeneracy_and_tuning(
+        self, mcal_artifacts, doc, tmp_path
+    ):
+        """
+        Three causes, three remedies: grade more (degenerate), refit (below tau),
+        find a signal that separates (saturated). They must not collapse.
+        """
+        reload_artifacts(mcal_artifacts, tau=1.0)
+        below = gate(doc, all_results(), mcal_artifacts, tmp_path)
+        assert below.fields["summary.overview"].gate_reason == "composite_below_tau"
+
+        reload_artifacts(mcal_artifacts, saturated=("summary_narrative",))
+        sat = gate(doc, all_results(), mcal_artifacts, tmp_path)
+        assert sat.fields["summary.overview"].gate_reason == "bucket_saturated"
+
+        reload_artifacts(mcal_artifacts, degenerate_severe=("summary_narrative",))
+        deg = gate(doc, all_results(), mcal_artifacts, tmp_path)
+        assert deg.fields["summary.overview"].gate_reason == "bucket_degenerate_severe"
+
+    def test_critic_verdict_outranks_bucket_saturated(
+        self, mcal_artifacts, doc, tmp_path
+    ):
+        """
+        A judge that said HUMAN_REVIEW is a fact about the field; saturation is a
+        fact about the bucket. The field-level fact is the more useful report.
+        """
+        reload_artifacts(mcal_artifacts, saturated=("alternatives+themes",))
+        out = gate(
+            doc,
+            all_results(themes=cr("themes", "HUMAN_REVIEW")),
+            mcal_artifacts, tmp_path,
+        )
+        g = out.fields["themes"]
+        assert g.gate_reason == "critic_verdict"
+        assert "bucket_saturated" in g.gate_reasons
+
+    def test_saturated_null_tags_do_not_inflate_the_monitor(
+        self, mcal_artifacts, doc, tmp_path
+    ):
+        """
+        The null-tag rate decides when the taxonomy needs new codes. A field gated
+        purely because tau saturated has no failure_tag through no fault of the
+        taxonomy, so it must be excluded from the numerator.
+        """
+        reload_artifacts(mcal_artifacts, saturated=("summary_narrative",))
+        out = gate(doc, all_results(), mcal_artifacts, tmp_path)
+        counts = out.rollup["null_tag"]["summary_narrative"]
+        assert counts["n_excluded_pre_judgement"] >= 1
+        assert counts["n_null_tag"] == 0
+
+    def test_rollup_reports_saturation_per_bucket(
+        self, mcal_artifacts, doc, tmp_path
+    ):
+        reload_artifacts(mcal_artifacts, saturated=("summary_narrative",))
+        out = gate(doc, all_results(), mcal_artifacts, tmp_path)
+        per_bucket = out.rollup["per_bucket"]
+        assert per_bucket["summary_narrative"]["saturated"] is True
+        assert per_bucket["M1"]["saturated"] is False
+
+    def test_summary_source_incomplete_gates_the_derived_buckets(
+        self, mcal_artifacts, doc, tmp_path
+    ):
+        """
+        m2 wrote `chunking_meta` from the start and nothing read it. A document
+        summarized from 11 of 17 chunks produced a manifest identical to one
+        summarized in full, so a claim missing because page 700 was never read was
+        indistinguishable from a claim the document does not make.
+        """
+        m2 = build_m2()
+        m2["chunking_meta"] = {
+            "n_chunks": 17,
+            "n_chunks_available": 17,
+            "n_chunks_summarized": 11,
+            "chunks_truncated": True,
+            "n_chunks_failed": 1,
+            "failed_chunk_indices": [4],
+            "summary_source_incomplete": True,
+        }
+        out = gate(doc, all_results(), mcal_artifacts, tmp_path, m2=m2)
+
+        for field in settings.SUMMARY_DERIVED_FIELDS:
+            g = out.fields[field]
+            assert g.gated_to_human is True, field
+            assert "summary_source_incomplete" in g.gate_reasons, field
+
+        # Fields read straight from chapters/pages are not bounded by max_chunks.
+        for field in ("alternatives", "location", "key_people") + settings.M1_FIELDS:
+            g = out.fields[field]
+            assert "summary_source_incomplete" not in g.gate_reasons, field
+
+    def test_truncation_outranks_the_critic_verdict(
+        self, mcal_artifacts, doc, tmp_path
+    ):
+        """
+        The Critic judged prose derived from part of the document and could not
+        know it. Reporting `critic_verdict` sends the reviewer to check the wrong
+        thing.
+        """
+        m2 = build_m2()
+        m2["chunking_meta"] = {"chunks_truncated": True}
+        out = gate(
+            doc,
+            all_results(themes=cr("themes", "HUMAN_REVIEW")),
+            mcal_artifacts, tmp_path, m2=m2,
+        )
+        g = out.fields["themes"]
+        assert g.gate_reason == "summary_source_incomplete"
+        assert "critic_verdict" in g.gate_reasons
+
+    def test_a_complete_summary_source_gates_nothing_extra(
+        self, mcal_artifacts, doc, tmp_path
+    ):
+        m2 = build_m2()
+        m2["chunking_meta"] = {
+            "n_chunks": 4,
+            "chunks_truncated": False,
+            "n_chunks_failed": 0,
+            "summary_source_incomplete": False,
+        }
+        out = gate(doc, all_results(), mcal_artifacts, tmp_path, m2=m2)
+        assert all(
+            "summary_source_incomplete" not in g.gate_reasons
+            for g in out.fields.values()
+        )
+
+    def test_a_failed_map_call_alone_is_enough(self, mcal_artifacts, doc, tmp_path):
+        """
+        The v1 batch case: within the cap, but one call died. `chunks_truncated`
+        is False and the document is still short of its own content.
+        """
+        m2 = build_m2()
+        m2["chunking_meta"] = {
+            "n_chunks": 17,
+            "n_chunks_available": 17,
+            "n_chunks_summarized": 11,
+            "chunks_truncated": False,
+            "n_chunks_failed": 1,
+            "failed_chunk_indices": [4],
+        }
+        out = gate(doc, all_results(), mcal_artifacts, tmp_path, m2=m2)
+        assert out.fields["summary.overview"].gate_reason == "summary_source_incomplete"
+
+    def test_coverage_is_recorded_in_the_rollup(self, mcal_artifacts, doc, tmp_path):
+        m2 = build_m2()
+        m2["chunking_meta"] = {
+            "n_chunks": 17, "n_chunks_available": 17, "n_chunks_summarized": 11,
+            "chunks_truncated": True, "n_chunks_failed": 1,
+            "failed_chunk_indices": [4], "summary_source_incomplete": True,
+        }
+        out = gate(doc, all_results(), mcal_artifacts, tmp_path, m2=m2)
+        cov = out.rollup["summary_coverage"]
+        assert cov["n_chunks_summarized"] == 11
+        assert cov["failed_chunk_indices"] == [4]
+        assert cov["summary_source_incomplete"] is True
+
+    def test_incompleteness_is_inferred_for_older_m2_artifacts(self):
+        """
+        Every m2.json on disk predates `summary_source_incomplete`, so the flag
+        has to be derivable from the two keys those artifacts do carry.
+        """
+        assert G.summary_source_incomplete(
+            {"chunking_meta": {"chunks_truncated": True}}
+        ) is True
+        assert G.summary_source_incomplete(
+            {"chunking_meta": {"n_chunks_failed": 2}}
+        ) is True
+        assert G.summary_source_incomplete(
+            {"chunking_meta": {"chunks_truncated": False, "n_chunks_failed": 0}}
+        ) is False
+        assert G.summary_source_incomplete({}) is False
+        assert G.summary_source_incomplete(None) is False
+
+    def test_truncated_null_tags_do_not_inflate_the_monitor(
+        self, mcal_artifacts, doc, tmp_path
+    ):
+        m2 = build_m2()
+        m2["chunking_meta"] = {"chunks_truncated": True}
+        out = gate(doc, all_results(), mcal_artifacts, tmp_path, m2=m2)
+        counts = out.rollup["null_tag"]["summary_narrative"]
+        assert counts["n_excluded_pre_judgement"] >= 1
+        assert counts["n_null_tag"] == 0
 
     def test_re_extract_verdict_gates_the_field(self, mcal_artifacts, doc, tmp_path):
         """A field still RE_EXTRACT after its one retry goes to a human."""

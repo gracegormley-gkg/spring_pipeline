@@ -74,9 +74,15 @@ class Signals:
     with once n reaches ~60. Storing them now costs nothing and is the only way
     the later comparison is possible at all -- you cannot retro-fit a signal you
     never recorded.
+
+    `s_quote` is Optional because for `settings.NO_FIRST_PARTY_QUOTE_FIELDS` it is
+    genuinely undefined rather than zero. `composite` renormalizes over present
+    signals, so None means "excluded", while 0.0 means "checked and unsupported".
+    Collapsing the two would either credit a field for citations it never made or
+    fault it for citations it was never asked to make.
     """
 
-    s_quote: float = 0.0
+    s_quote: Optional[float] = 0.0
     s_critic: float = 0.0
     s_source: Optional[float] = None
     s_citation: Optional[float] = None
@@ -164,8 +170,15 @@ def compute_signals(
     the Critic verdict (MCAL_PLAN 3.3). That floor is deliberate but it does mean
     an M1 field can never score below 0.5, so an M1 bucket threshold above 0.5
     gates the entire bucket. `summarize()` flags that condition.
+
+    `settings.NO_FIRST_PARTY_QUOTE_FIELDS` (currently just `themes`) is handled
+    differently: `s_quote` is set to None and therefore EXCLUDED from the
+    composite, which renormalizes over the signals present. No floor is granted.
+    See that constant for why the two cases are not the same.
     """
-    if field in settings.M1_FIELDS and quote_verdict is None:
+    if quote_verdict is None and field in settings.NO_FIRST_PARTY_QUOTE_FIELDS:
+        sq = None
+    elif field in settings.M1_FIELDS and quote_verdict is None:
         sq = settings.S_QUOTE_DEFAULT_M1
     else:
         sq = s_quote_from_verdict(quote_verdict or "no")

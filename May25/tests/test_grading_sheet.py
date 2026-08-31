@@ -93,26 +93,42 @@ class TestColumns:
     def test_blind_columns(self):
         assert gsh.BLIND_COLUMNS == (
             "field", "extracted_value", "quote", "source_pages", "quote_verified",
-            "model_confidence", "your_grade", "your_failure_tag", "your_notes",
+            "your_grade", "your_failure_tag", "your_notes",
             "soi_useful",
         )
 
-    def test_reveal_adds_the_critic_block(self):
+    def test_reveal_adds_the_critic_block_and_model_confidence(self):
         assert set(gsh.REVEAL_COLUMNS) - set(gsh.BLIND_COLUMNS) == set(
-            gsh.CRITIC_COLUMNS
+            gsh.REVEAL_ONLY_COLUMNS
+        )
+        assert set(gsh.CRITIC_COLUMNS) <= set(gsh.REVEAL_ONLY_COLUMNS)
+        assert "model_confidence" in gsh.REVEAL_ONLY_COLUMNS
+
+    def test_reveal_column_order_is_unchanged_by_the_move(self):
+        """`model_confidence` keeps its old position, after the critic block."""
+        assert gsh.REVEAL_COLUMNS == (
+            "field", "extracted_value", "quote", "source_pages", "quote_verified",
+            "critic_verdict", "critic_failure_tag", "critic_notes",
+            "model_confidence",
+            "your_grade", "your_failure_tag", "your_notes", "soi_useful",
         )
 
     def test_original_columns_are_all_retained(self):
         """
-        `segment_a/grading.py`'s columns minus `critic_verdict` must survive, or
-        anything reading the old sheets breaks.
+        `segment_a/grading.py`'s columns minus the ones blinding removes must
+        survive, or anything reading the old sheets breaks.
+
+        `model_confidence` is retained on the REVEAL sheet only (defect 5): on the
+        blind sheet the gate composite it carries inverts to the Critic verdict.
         """
         original = {
             "field", "extracted_value", "quote", "source_pages",
-            "quote_verified", "model_confidence", "your_grade", "your_notes",
+            "quote_verified", "your_grade", "your_notes",
         }
         assert original <= set(gsh.BLIND_COLUMNS)
-        assert original | {"critic_verdict"} <= set(gsh.REVEAL_COLUMNS)
+        assert original | {"critic_verdict", "model_confidence"} <= set(
+            gsh.REVEAL_COLUMNS
+        )
 
     def test_unknown_pass_rejected(self):
         with pytest.raises(ValueError, match="Unknown pass"):
@@ -788,6 +804,68 @@ class TestFromManifest:
         confs = [r.model_confidence for r in rows if r.model_confidence]
         assert confs
         assert all(c.startswith("composite=") for c in confs)
+
+    def test_composite_never_reaches_the_blind_sheet(self, manifest):
+        """
+        Defect 5. The blind pass must not carry the composite, because
+        `s_critic = 2*composite - s_quote` and `s_quote` is readable off the
+        adjacent `quote_verified` column, so the composite inverts to exactly the
+        Critic verdict the blind pass exists to withhold.
+        """
+        rows = gsh.rows_from_manifest(manifest)
+        assert "model_confidence" not in gsh.BLIND_COLUMNS
+        for row in rows:
+            blind = row.to_dict(gsh.PASS_BLIND)
+            assert "model_confidence" not in blind
+            assert not any("composite=" in str(v) for v in blind.values())
+        # The reveal pass still has it, or meta-analysis loses the quantity.
+        assert any(
+            "composite=" in row.to_dict(gsh.PASS_REVEAL)["model_confidence"]
+            for row in rows
+        )
+
+    def test_critic_verdict_is_recoverable_from_composite_plus_quote_verified(self):
+        """
+        The inversion itself, executed on the real scoring functions, so the
+        reason `model_confidence` is reveal-only stays demonstrated rather than
+        asserted. Given `s_quote` (readable off `quote_verified`) and the
+        composite, exactly one of the four Critic verdicts is consistent.
+        """
+        from mcal import confidence, settings as st
+
+        for quote_verdict, s_quote in st.QUOTE_VERDICT_SCORES.items():
+            for verdict, s_critic in st.CRITIC_VERDICT_SCORES.items():
+                comp = confidence.composite(
+                    confidence.Signals(s_quote=s_quote, s_critic=s_critic)
+                )
+                consistent = [
+                    v
+                    for v, sc in st.CRITIC_VERDICT_SCORES.items()
+                    if abs(
+                        confidence.composite(
+                            confidence.Signals(s_quote=s_quote, s_critic=sc)
+                        )
+                        - comp
+                    )
+                    < 1e-9
+                ]
+                assert consistent == [verdict], (
+                    f"{quote_verdict}/{verdict}: composite={comp} is ambiguous "
+                    f"between {consistent} -- if this ever holds, the leak this "
+                    f"test guards is no longer the reason for the column move"
+                )
+
+    def test_blind_sheet_withholds_the_invertible_pair(self, manifest):
+        """
+        Given the inversion above, the blind sheet may show `quote_verified` OR
+        the composite but never both. It shows `quote_verified`, which the
+        reviewer needs to know whether to trust the quote cell.
+        """
+        rows = gsh.rows_from_manifest(manifest)
+        for row in rows:
+            blind = row.to_dict(gsh.PASS_BLIND)
+            assert "quote_verified" in blind
+            assert "model_confidence" not in blind
 
     def test_item_evidence_recovered_from_nested_blocks(self, manifest):
         """

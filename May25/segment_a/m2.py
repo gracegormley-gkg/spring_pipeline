@@ -38,7 +38,13 @@ from chunk import (
     first_pages,
     text_for_ceq_chapter,
 )
-from evidence import Evidence, evidence_for_quotes, union_pages, verify_and_locate
+from evidence import (
+    Evidence,
+    evidence_for_quotes,
+    mark_carried,
+    union_pages,
+    verify_and_locate,
+)
 from llm import opus, sonnet
 from pages import Doc
 from prompts import PROMPT_VERSION, plain_language_clause, summary_of_interest_prompt
@@ -209,27 +215,49 @@ def _summary_reduce(partials: list[dict], doc: Doc) -> dict:
                 if entry else True
             )
 
-    # Overview evidence: union of evidence from the five subfields when overview's own
-    # quotes are missing or unverified, so the overview row in the grading sheet always
-    # points at real pages.
+    # Overview evidence: when none of the overview's OWN quotes verify, append up
+    # to three verified quotes borrowed from the five subfields, so the overview
+    # row in the grading sheet still points at real pages.
+    #
+    # Two things this deliberately does NOT do any more:
+    #
+    #   * It no longer REPLACES the overview's own evidence. The old code assigned
+    #     over the list, so the unverified entries -- the ones carrying
+    #     `quote_verified: False` and "Quote not found verbatim in doc" -- were
+    #     discarded exactly when they were the most informative thing on the row.
+    #     The failure was thereby converted into a clean-looking success.
+    #   * It no longer presents borrowed quotes as first-party. Each carried entry
+    #     is tagged `evidence_source="carried_from_subfields"` with the field it
+    #     came from, and `mcal/confidence` excludes carried entries from `s_quote`
+    #     (see `evidence.own_evidence`). Otherwise `s_quote` measured whether the
+    #     SUBFIELDS were cited, and reported it as the overview's score -- which is
+    #     why all 8 graded docs show `summary.overview` "ok" with
+    #     `quote_verified: yes` for claims nothing ever checked.
+    #
+    # `settings.ATOMIC_VERIFY_FIELDS` already excludes overview for this exact
+    # reason ("a roll-up whose evidence is carried forward"); the scoring path was
+    # the one place that had not been told.
     overview_ev = final["overview"]["evidence"]
     if not any(ev.get("quote_verified") for ev in overview_ev):
-        unioned: list[Evidence] = []
-        seen_pages: set[str] = set()
+        carried: list[Evidence] = []
         for sub in SUMMARY_SUBFIELDS:
             for ev in final[sub]["evidence"]:
                 if not ev.get("quote_verified"):
                     continue
                 key_id = (ev.get("quote", ""), tuple(ev.get("source_pages", []) or []))
-                if any(key_id == (e2.get("quote", ""), tuple(e2.get("source_pages", []) or [])) for e2 in unioned):
+                if any(
+                    key_id
+                    == (e2.get("quote", ""), tuple(e2.get("source_pages", []) or []))
+                    for e2 in carried
+                ):
                     continue
-                unioned.append(ev)
-                if len(unioned) >= 3:
+                carried.append(mark_carried(ev, f"summary.{sub}"))
+                if len(carried) >= 3:
                     break
-            if len(unioned) >= 3:
+            if len(carried) >= 3:
                 break
-        if unioned:
-            final["overview"]["evidence"] = unioned
+        if carried:
+            final["overview"]["evidence"] = list(overview_ev) + carried
     return final
 
 
@@ -240,8 +268,9 @@ def extract_summary(chunks: list[Chunk], doc: Doc, max_chunks: int = 12, paralle
     1500-page doc yields ~31 chunks at CHUNK_PAGES=50, so only the first 12
     CEQ-tagged-then-document-order chunks are ever summarized. Content past that
     point cannot appear in the summary, which downstream shows up as an
-    apparently-missing claim rather than as a truncation. Surfaced in
-    `chunking_meta.n_chunks_summarized` so the gap is visible in the manifest.
+    apparently-missing claim rather than as a truncation. Reported in
+    `chunking_meta.chunks_truncated`, which `segment_b/gate.py` now reads and
+    routes the summary-derived buckets to HUMAN_REVIEW on.
     """
     if not chunks:
         return {k: {"text": "", "evidence": []} for k in SUMMARY_SCHEMA_KEYS}
@@ -265,22 +294,49 @@ def extract_summary_and_salience(
         return (
             {k: {"text": "", "evidence": []} for k in SUMMARY_SCHEMA_KEYS},
             [],
-            {"n_chunks_summarized": 0, "n_chunks_available": 0},
+            {
+                "n_chunks_summarized": 0,
+                "n_chunks_available": 0,
+                "chunks_truncated": False,
+                "n_chunks_failed": 0,
+                "failed_chunk_indices": [],
+                "summary_source_incomplete": False,
+            },
         )
-    summary, partials = _summary_pipeline(chunks, doc, max_chunks, parallel)
+    summary, partials, failed = _summary_pipeline(chunks, doc, max_chunks, parallel)
     soi = _summary_of_interest(partials, summary, doc)
+    # `n_chunks_summarized` alone conflated two different gaps: "capped at
+    # max_chunks by design" and "a map call died". Both mean the reduce ran on
+    # less than the document, but they have different remedies (raise the cap /
+    # retry the doc), so they are reported separately.
+    #
+    # `summary_source_incomplete` is the union, and is what the gate keys on: from
+    # a reviewer's point of view a claim absent because page 700 was never read is
+    # indistinguishable from a claim the document does not make, and that is the
+    # thing that must not pass silently.
+    truncated = len(chunks) > max_chunks
     meta = {
         "n_chunks_summarized": len(partials),
         "n_chunks_available": len(chunks),
-        "chunks_truncated": len(chunks) > max_chunks,
+        "chunks_truncated": truncated,
+        "n_chunks_failed": len(failed),
+        "failed_chunk_indices": sorted(failed),
+        "summary_source_incomplete": bool(truncated or failed),
     }
     return summary, soi, meta
 
 
 def _summary_pipeline(
     chunks: list[Chunk], doc: Doc, max_chunks: int, parallel: int
-) -> tuple[dict, list[dict]]:
-    """Map over chunks in parallel, then reduce. Returns (summary, partials)."""
+) -> tuple[dict, list[dict], list[int]]:
+    """
+    Map over chunks in parallel, then reduce.
+
+    Returns `(summary, partials, failed_chunk_indices)`. The third element used to
+    be a local that only reached `log.error`, which is why
+    `p1074_35556036854040` shows `n_chunks_summarized: 11` against a cap of 12 in
+    the v1 batch with nothing in its artifacts recording that a call died.
+    """
     # Prefer chunks tagged with a CEQ chapter; fill the rest in document order.
     tagged = [c for c in chunks if c.ceq_chapter]
     untagged = [c for c in chunks if not c.ceq_chapter]
@@ -300,14 +356,15 @@ def _summary_pipeline(
                 log.warning(f"Summary map failed for chunk {idx}: {e}")
     partials.sort(key=lambda p: p["chunk_index"])
     if failed:
-        # Previously swallowed silently, which made a partial reduce
-        # indistinguishable from a document that genuinely lacked the content.
+        # Logged AND returned. Logging alone left the artifacts clean: a document
+        # summarized from 11 of 17 chunks looked identical to one summarized from
+        # 12 of 17 by design.
         log.error(
             f"{len(failed)}/{len(selected)} summary map calls failed "
             f"(chunks {sorted(failed)}); the reduce step is running on partial "
             f"input and the summary may be missing supported claims."
         )
-    return _summary_reduce(partials, doc), partials
+    return _summary_reduce(partials, doc), partials, failed
 
 
 # --- summary_of_interest (Opus, second reduce) -------------------------------
@@ -519,10 +576,15 @@ def extract_themes(summary: dict) -> dict:
         user=f"Document summary fields:\n{payload}",
         max_tokens=600,
     )
-    # Themes are derived from the summary; carry the summary's verified evidence forward
-    # so the grading sheet can point at concrete pages.
-    carried_evidence: list[Evidence] = []
-    seen_pages: set[str] = set()
+    # Themes are derived from the summary and are never asked for quotes of their
+    # own (see the JSON schema above: themes/subthemes/justification/
+    # self_confidence). Carrying the summary's verified evidence forward gives the
+    # grading sheet concrete pages to point at, but 100% of it is second-hand, so
+    # every entry is tagged. `mcal/confidence` excludes carried evidence from
+    # `s_quote`, which for this field means `s_quote` is not applicable rather than
+    # a laundered 1.0 -- the extractor cannot be credited for citations it was
+    # never asked to make, nor faulted for their absence.
+    carried: list[Evidence] = []
     for key in SUMMARY_SUBFIELDS:
         sf = summary.get(key) or {}
         for ev in sf.get("evidence", []) or []:
@@ -530,12 +592,15 @@ def extract_themes(summary: dict) -> dict:
                 continue
             pages = tuple(ev.get("source_pages", []) or [])
             key_id = (ev.get("quote", ""), pages)
-            if any(key_id == (e2.get("quote", ""), tuple(e2.get("source_pages", []) or [])) for e2 in carried_evidence):
+            if any(
+                key_id == (e2.get("quote", ""), tuple(e2.get("source_pages", []) or []))
+                for e2 in carried
+            ):
                 continue
-            carried_evidence.append(ev)
-            if len(carried_evidence) >= 3:
+            carried.append(mark_carried(ev, f"summary.{key}"))
+            if len(carried) >= 3:
                 break
-        if len(carried_evidence) >= 3:
+        if len(carried) >= 3:
             break
     return {
         "value": {
@@ -544,7 +609,7 @@ def extract_themes(summary: dict) -> dict:
         },
         "confidence": out.get("self_confidence", "medium"),
         "justification": out.get("justification", ""),
-        "evidence": carried_evidence,
+        "evidence": carried,
     }
 
 

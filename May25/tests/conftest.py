@@ -321,6 +321,7 @@ class SyntheticArtifacts:
         per_bucket: dict | None = None,
         gate_all: tuple[str, ...] = (),
         degenerate_severe: tuple[str, ...] = (),
+        saturated: tuple[str, ...] = (),
     ):
         """
         Write `thresholds.v(N).json` with hand-chosen taus.
@@ -339,7 +340,11 @@ class SyntheticArtifacts:
         for bucket in s.BUCKET_ORDER:
             severe = bucket in degenerate_severe
             gated = severe or bucket in gate_all
-            t = float("inf") if gated else float(taus.get(bucket, tau))
+            sat = bucket in saturated
+            # Saturation is the real shape from `confidence.calibrate`: tau lands
+            # at the ceiling, so `accepts()` needs score > 1.0 and nothing can
+            # pass, but `gate_all_to_human` stays False.
+            t = float("inf") if gated else (1.0 if sat else float(taus.get(bucket, tau)))
             buckets[bucket] = {
                 "bucket": bucket,
                 "alpha": s.ALPHA,
@@ -352,7 +357,7 @@ class SyntheticArtifacts:
                 "tau_raw": None if gated else t,
                 "curation_slack": 0.0,
                 "tau_deployed": t,
-                "saturated": False,
+                "saturated": sat,
                 "guarantee_conditioning": (
                     confidence.GATE_ALL_GUARANTEE
                     if gated

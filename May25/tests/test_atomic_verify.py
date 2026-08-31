@@ -44,6 +44,7 @@ import json
 import pytest
 
 from mcal import atomic_verify as av
+from mcal import build
 from mcal import grades as grades_mod
 from mcal import quote_check as qc
 from mcal import settings
@@ -1619,6 +1620,16 @@ def _subfield_stats(m2_dir):
                     "n_evidence": len(evidence),
                     "n_sentences": n_sent,
                     "ev_per_sentence": (len(evidence) / n_sent) if n_sent else 0.0,
+                    # Fraction of the evidence entries that name a page. This was
+                    # `build.py`'s fallback for `s_citation` before atom-level
+                    # coverage existed; measured in
+                    # TestEvidenceLevelCitationRateIsNotASubstitute.
+                    "ev_cite_rate": (
+                        sum(1 for e in evidence if e.get("source_pages"))
+                        / len(evidence)
+                    )
+                    if evidence
+                    else None,
                     "missing_citation": "T01_missing_citation" in item.failure_tags,
                 }
             )
@@ -1961,6 +1972,111 @@ class TestT01PreAmendmentIsTheConsistentPairing:
         if not checked:
             pytest.skip("pre-amendment M2 archive not available on this machine")
         assert checked == 8
+
+
+class TestEvidenceLevelCitationRateIsNotASubstitute:
+    """
+    Why `build.py` no longer falls back to an evidence-level citation rate for
+    `s_citation` (the fraction of a field's evidence entries that name a page).
+
+    The reason is not that it is a weak signal. It is that on this corpus it is
+    `s_quote` recomputed: an evidence entry with pages verifies, an entry without
+    pages cannot be located and scores 0, so "mean has-a-page" and "mean verified"
+    are the same number. Weighting it at n>=60 would put weight 0.5 + w on
+    `s_quote` while the weight table claimed w belonged to citation coverage.
+
+    Atom-level coverage is a genuinely different quantity -- it enumerates the
+    CLAIMS, so it can see a claim that carries no citation at all, which is
+    exactly the T01 failure `s_quote` is blind to. That one is worth recording;
+    this one is not.
+    """
+
+    @staticmethod
+    @pytest.fixture(scope="class")
+    def both_pairings():
+        new = _subfield_stats(settings.M2_DIR)
+        old = _subfield_stats(settings.M2_PRE_AMENDMENT_DIR)
+        if not new or not old:
+            pytest.skip("graded corpus / pre-amendment archive not available")
+        return {"new": new, "old": old}
+
+    def test_it_is_numerically_identical_to_s_quote(self, both_pairings):
+        """40/40 items, both pairings. This is the whole argument."""
+        for label, stats in both_pairings.items():
+            scored = [s for s in stats if s["ev_cite_rate"] is not None]
+            assert len(scored) == 40, label
+            identical = [
+                s for s in scored if abs(s["ev_cite_rate"] - s["s_quote"]) < 1e-9
+            ]
+            assert len(identical) == 40, (
+                f"{label}: {40 - len(identical)} items differ -- if this ever "
+                f"fails the two quantities have come apart and the fallback "
+                f"would no longer be pure double-counting"
+            )
+
+    def test_its_auroc_therefore_matches_s_quotes(self, both_pairings):
+        """
+        Same numbers as `test_no_threshold_on_s_quote_separates_them` asserts for
+        `s_quote`: 0.598 pre-amendment, 0.476 on the current artifacts. Recorded
+        so the duplication is visible in the statistic and not only in the values.
+        """
+        from mcal import confidence
+
+        for stats, expected in ((both_pairings["old"], 0.598),
+                                (both_pairings["new"], 0.476)):
+            missing, clean = _split_populations(stats)
+            mv = [s["ev_cite_rate"] for s in missing]
+            cv = [s["ev_cite_rate"] for s in clean]
+            auc = confidence.auroc(mv + cv, [0] * len(mv) + [1] * len(cv))
+            assert auc == pytest.approx(expected, abs=0.005)
+
+    def test_build_does_not_populate_s_citation_without_atomic(self):
+        """
+        The behavioural half: with no atomic rates supplied, every item's
+        `s_citation` must be None rather than a duplicated `s_quote`.
+        """
+        gs = grades_mod.load_grades()
+        if not gs.doc_ids:
+            pytest.skip("graded corpus not available on this machine")
+        items, diag = build.score_graded_corpus(gs, stage="v1")
+        assert items
+        assert all(i.signals.s_citation is None for i in items)
+        assert diag["n_items_with_s_citation"] == 0
+        assert diag["s_citation_source"] is None
+
+    def test_atomic_rates_still_reach_s_citation_when_supplied(self):
+        """And the atom-level rate, which is a different quantity, does land."""
+        gs = grades_mod.load_grades()
+        if not gs.doc_ids:
+            pytest.skip("graded corpus not available on this machine")
+        doc_id = sorted(gs.doc_ids)[0]
+        field = next(
+            (g.field for g in gs.for_doc(doc_id) if g.field.startswith("summary.")),
+            None,
+        )
+        if field is None:
+            pytest.skip("no graded summary subfield for the first doc")
+        items, diag = build.score_graded_corpus(
+            gs, stage="v1", atomic_citation_rates={(doc_id, field): 0.42}
+        )
+        hit = [i for i in items if i.doc_id == doc_id and i.field == field]
+        assert hit and hit[0].signals.s_citation == 0.42
+        assert diag["n_items_with_s_citation"] == 1
+        assert diag["s_citation_source"] == "atomic_verify"
+
+    def test_s_shard_is_absent_everywhere(self):
+        """
+        MCAL_PLAN 3.3 defines `s_shard` via a per-atom `source_chunk_id` that
+        nothing in the repo emits, so it is None at calibration as well as in
+        production. Asserted rather than left implicit, because `gate.py` used to
+        carry a comment claiming atomic_verify supplies it.
+        """
+        gs = grades_mod.load_grades()
+        if not gs.doc_ids:
+            pytest.skip("graded corpus not available on this machine")
+        items, _ = build.score_graded_corpus(gs, stage="v1")
+        assert items
+        assert all(i.signals.s_shard is None for i in items)
 
 
 class TestAgainstRealDoc:

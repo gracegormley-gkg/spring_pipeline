@@ -542,6 +542,99 @@ def aggregate_verdict(checks: Sequence[QuoteCheck]) -> str:
     return "mixed"
 
 
+def page_match_summary(
+    evidence_list: Sequence[dict], checks: Sequence[QuoteCheck]
+) -> dict:
+    """
+    How often a quote was found on the page it was CITED to, not merely nearby.
+
+    `check_quote` searches `cited +/- QUOTE_PAGE_TOLERANCE` and records which page
+    matched, but `aggregate_verdict` collapses everything to `yes|mixed|no`, so a
+    quote cited to p.36 and found on p.34 scores exactly like an exact hit. This
+    function keeps that distinction instead of discarding it.
+
+    WHAT IT IS NOT. This is a regression guard, not a defect detector, and the
+    measurement says so. Over every quote of every field in the 12-doc v1 batch
+    plus the 8 graded documents:
+
+        extraction evidence   1112 located quotes,  0 divergences  (rate 1.0000)
+
+    Mis-citation is structurally impossible on that path: `evidence.verify_and_locate`
+    writes the page `doc.find_quote` FOUND the quote on, so `source_pages` is
+    derived from the match rather than asserted independently. There is nothing for
+    a cited-vs-matched signal to discriminate, and weighting one would add a
+    constant.
+
+    PIPELINE_REVIEW 2.7 inferred otherwise from the Evaluation sheet's
+    "missing citation - pg 34, 36, 146" notes, but those are a reviewer naming
+    pages that SHOULD have been cited and were not -- T01_missing_citation, an
+    omission -- not pages wrongly cited. Omission is what atom-level `s_citation`
+    exists for; this is a different quantity.
+
+    It is still worth recording, because the invariant is fragile in one specific
+    way: it holds only while the cite is derived from an exact substring match.
+    Replace `find_quote` with the OCR-normalized fuzzy matcher, or have a prompt
+    assert page numbers itself, and divergence becomes possible the same day. This
+    is the only thing that would notice.
+
+    Do NOT apply it to `CriticResult.source_pages`. Those are a search WINDOW --
+    `critic.source_pages_for_field` unions the extraction's pages, defaulting M1
+    fields to `[1, 2, 3]` -- not a claim about where the Critic's own quote lives.
+    Measured against that path it reports a spurious 5.4% divergence (9 of 168),
+    dominated by `cited=[1,2,3], matched=4` on M1 fields.
+
+    Returns `{n_quotes, n_located, n_exact_page, exact_page_rate, divergences}`,
+    where `exact_page_rate` is over LOCATED quotes only: a quote that was not found
+    at all is already fully accounted for by `s_quote`, and counting it here again
+    would mix two different failures into one number.
+
+    RECORDED, NOT WEIGHTED. MCAL_PLAN 3.3 freezes the six signals and their
+    weights through v3, and on the evidence above there is no case for spending one
+    of them on this.
+    """
+    n_quotes = 0
+    n_located = 0
+    n_exact = 0
+    divergences: list[dict] = []
+
+    for ev, check in zip(evidence_list or [], checks or []):
+        n_quotes += 1
+        cited = coerce_pages((ev or {}).get("source_pages"))
+
+        # `matched_page` is the best-scoring page even when the quote did NOT
+        # verify -- `check_quote` reports where it came closest. Only a passing
+        # verdict counts as located; otherwise a failed match's best guess would be
+        # scored as a mis-citation, conflating "absent" with "on the wrong page".
+        # An uncited quote is unlocatable by construction: `check_quote` searches
+        # `cited +/- tolerance`, so with nothing cited it searches nothing and
+        # returns "no". That is entirely an `s_quote` matter and is not double
+        # counted here.
+        located = check.verified != "no" and check.matched_page is not None
+        if not located:
+            continue
+
+        n_located += 1
+        if check.matched_page in cited:
+            n_exact += 1
+            continue
+        divergences.append(
+            {
+                "cited_pages": cited,
+                "matched_page": check.matched_page,
+                "delta": min(check.matched_page - c for c in cited),
+                "reason": "found_within_tolerance_on_another_page",
+            }
+        )
+
+    return {
+        "n_quotes": n_quotes,
+        "n_located": n_located,
+        "n_exact_page": n_exact,
+        "exact_page_rate": (n_exact / n_located) if n_located else None,
+        "divergences": divergences,
+    }
+
+
 def s_quote_for(checks: Sequence[QuoteCheck]) -> float:
     """
     Mean s_quote across a field's quotes.

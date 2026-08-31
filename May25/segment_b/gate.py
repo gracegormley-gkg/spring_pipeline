@@ -75,6 +75,7 @@ from segment_b.critic import (
 )
 
 # segment_a's flat modules; the sys.path bridge is installed by mcal.settings.
+import evidence as evidence_mod  # noqa: E402
 from pages import Doc  # noqa: E402
 
 log = logging.getLogger(__name__)
@@ -102,6 +103,24 @@ VERDICT_RE_EXTRACT = critic_mod.VERDICT_RE_EXTRACT
 #   * `critic_missing`           -- no Critic result was supplied for the field.
 #     Emitted rather than skipped, per MCAL_PLAN 7 Q8 / requirement that no field
 #     is ever dropped from the manifest.
+#   * `summary_source_incomplete` -- m2's summary map stage did not read the whole
+#     document, because `max_chunks` capped it or because a map call failed. The
+#     Critic cannot see this: it judges the prose against the pages the prose
+#     cites, so a claim that is missing because page 700 was never read looks
+#     exactly like a claim the document does not make. Recorded by
+#     `chunking_meta.summary_source_incomplete` and previously read by nothing.
+#   * `bucket_saturated`         -- `tau_deployed == 1.0`, so `accepts()` requires
+#     `score > 1.0` and NOTHING in the bucket can pass at any quality. Previously
+#     this fell through to `composite_below_tau`, which this module's own
+#     docstring defines as the "gate too conservative" signal -- so a field with
+#     critic PASS and composite 1.0 was reported as if a threshold needed
+#     nudging, when the real message is that the composite has no discriminative
+#     power left in that bucket. `confidence.py` already records the condition
+#     ("functionally equivalent to gate_all_to_human for this bucket"); it just
+#     never reached the manifest. Distinct from `bucket_degenerate_severe`,
+#     which is scarcity of graded wrong-docs and is fixed by grading more, and
+#     from `composite_below_tau`, which is fixed by refitting. Saturation is
+#     fixed by neither: it needs a signal that pulls wrong items off 1.0.
 GATE_REASONS = (
     "policy_private_individual",
     "dependent_field_cascade",
@@ -109,7 +128,9 @@ GATE_REASONS = (
     "bucket_degenerate_severe",
     "extraction_missing",
     "critic_missing",
+    "summary_source_incomplete",
     "critic_verdict",
+    "bucket_saturated",
     "composite_below_tau",
 )
 
@@ -123,6 +144,17 @@ GATE_REASONS = (
 # still failed is the genuine "gate too conservative" signal, and that is exactly
 # when `composite_below_tau` is reported. Every applicable reason is still kept
 # in `gate_reasons` for the full picture.
+#
+# `bucket_saturated` sits between them for the same reason: it is strictly more
+# specific than `composite_below_tau` (it names WHY no score could clear tau) but
+# less specific than `critic_verdict` (a judge that said HUMAN_REVIEW is a fact
+# about the field, not about the bucket's calibration).
+#
+# `summary_source_incomplete` outranks `critic_verdict` because it bounds what any
+# verdict on that field can mean: the Critic judged prose derived from part of the
+# document and had no way to know it. Telling a reviewer "the judge objected" when
+# the real problem is that a third of the document was never read sends them to
+# check the wrong thing.
 GATE_REASON_PRIORITY = GATE_REASONS
 
 # Critic override note -> gate reason. Read from critic.py's constants so a
@@ -259,35 +291,75 @@ def extraction_quote_verdict(
     informative than it is.
 
     Returns None where `s_quote` is undefined, which `compute_signals` reads as
-    "use the M1 default of 1.0":
+    "use the M1 default of 1.0" for M1 fields and as "exclude the signal" for
+    `settings.NO_FIRST_PARTY_QUOTE_FIELDS`:
       * M1 fields have no verbatim quote in their values by design (MCAL_PLAN
         3.3), so their composite is `0.5*s_critic + 0.5`;
       * a document-less call (manifest regeneration from persisted results) can
         verify nothing, and asserting "no" would penalize every field for the
         caller's convenience.
+
+    CARRIED evidence is excluded. `summary.overview` and `themes` may present
+    quotes that were verified against a different field's claim
+    (`evidence.EVIDENCE_CARRIED`); counting those here measured whether the
+    SUBFIELDS were cited and reported it as this field's score. So:
+      * own evidence present  -> verdict over own evidence only. An overview whose
+        own quotes do not verify now scores 0.0 even though borrowed quotes sit on
+        the row, which is the point.
+      * only carried evidence -> None. For `themes` that excludes the signal; for
+        any other field `compute_signals` still floors it at "no", because
+        borrowing is a fallback there and not the design.
+      * no evidence at all    -> "no", unchanged.
+
+    Untagged evidence counts as own, so artifacts written before the tag existed
+    score exactly as they did before -- this cannot retroactively move a number
+    the current thresholds were fitted on.
     """
-    if field in settings.M1_FIELDS:
-        return None
-    if doc is None:
-        return None
+    return extraction_quote_audit(field, entry, doc)["verdict"]
+
+
+def extraction_quote_audit(field: str, entry: Any, doc: Optional[Doc]) -> dict:
+    """
+    `extraction_quote_verdict` plus the page-match evidence it used to discard.
+
+    One function so the quote checks run once. Returns
+    `{verdict, page_match}`, where `page_match` is
+    `quote_check.page_match_summary` over the field's own evidence -- i.e. how many
+    quotes were found on the page they were cited to rather than merely within the
+    +/-2 tolerance. `aggregate_verdict` cannot express that difference, so it was
+    computed on every quote of every field and then dropped when `checks` went out
+    of scope.
+    """
+    if field in settings.M1_FIELDS or doc is None:
+        return {"verdict": None, "page_match": None}
     evidence = critic_mod.evidence_dicts(field, entry)
     if not evidence:
         # No quotes at all. `aggregate_verdict([])` is "no" and that is right:
         # MCAL_PLAN 1(5)-(7) is a family of missing-citation failures, so absence
         # of evidence must score 0, not be excused as "not applicable".
-        return "no"
-    checks = quote_check.check_evidence_list(evidence, doc)
-    return quote_check.aggregate_verdict(checks)
+        return {"verdict": "no", "page_match": None}
+    own = evidence_mod.own_evidence(evidence)
+    if not own:
+        return {"verdict": None, "page_match": None}
+    checks = quote_check.check_evidence_list(own, doc)
+    return {
+        "verdict": quote_check.aggregate_verdict(checks),
+        "page_match": quote_check.page_match_summary(own, checks),
+    }
 
 
 def citation_rate(field: str, entry: Any) -> Optional[float]:
     """
-    `s_citation`: fraction of the field's evidence items carrying a page cite.
+    `s_citation`: fraction of the field's OWN evidence items carrying a page cite.
 
     Weight 0 at this stage (MCAL_PLAN 3.3) but computed and stored, because
     weight validation at n>=60 cannot retro-fit a signal nobody recorded.
+
+    Carried evidence is excluded for the same reason it is excluded from
+    `s_quote`: a borrowed quote's page cite says the SUBFIELD was cited. A field
+    with nothing but borrowed evidence returns None rather than 1.0.
     """
-    evidence = critic_mod.evidence_dicts(field, entry)
+    evidence = evidence_mod.own_evidence(critic_mod.evidence_dicts(field, entry))
     if not evidence:
         return None
     cited = sum(1 for ev in evidence if quote_check.coerce_pages(ev.get("source_pages")))
@@ -316,14 +388,36 @@ def source_agreement(field: str, entry: Any) -> Optional[tuple[int, int]]:
     return (1 if disagrees else n_total, n_total)
 
 
-def acronym_rate(entry: Any) -> Optional[float]:
+def acronym_rate(entry: Any, acronym_meta: Optional[dict] = None,
+                 field: Optional[str] = None) -> Optional[float]:
     """
     `s_acronym`: defined-first-use rate, when the acronym post-pass recorded one.
 
-    `postproc/acronyms.py` is the natural producer; until a driver threads its
-    per-field statistics onto the M2 entry this is None (weight 0, so the
-    composite is unaffected) rather than a fabricated 1.0.
+    Two shapes are accepted, because the producer and this reader disagreed about
+    where the number lives and the disagreement silently zeroed the signal:
+
+      * `acronym_meta["per_field"][field]["s_acronym"]` -- what
+        `segment_b/run.py:_run_acronyms` actually writes (it hangs the per-field
+        stats off `m2["acronym_meta"]`, not off the field entry). This is the real
+        production path and was previously unread, so `s_acronym` was None on
+        every field of every document in the v1 batch despite being computed.
+      * `entry["acronym_rate"]` / `entry["defined_first_use_rate"]` -- the shape
+        this function originally expected. Kept so a driver that decorates the
+        entry directly still works.
+
+    None rather than a fabricated 1.0 when neither is present. Weight 0 today, so
+    the composite is unaffected either way -- but a signal recorded as None for a
+    whole batch is indistinguishable from a signal nobody implemented, which is
+    how this went unnoticed.
     """
+    if isinstance(acronym_meta, dict) and field:
+        per_field = acronym_meta.get("per_field")
+        if isinstance(per_field, dict):
+            stats = per_field.get(field)
+            if isinstance(stats, dict):
+                value = stats.get("s_acronym")
+                if isinstance(value, (int, float)):
+                    return max(0.0, min(1.0, float(value)))
     if isinstance(entry, dict):
         for key in ("acronym_rate", "defined_first_use_rate"):
             value = entry.get(key)
@@ -337,19 +431,40 @@ def signals_for_field(
     entry: Any,
     critic_result: Optional[CriticResult],
     doc: Optional[Doc],
+    *,
+    acronym_meta: Optional[dict] = None,
+    quote_audit: Optional[dict] = None,
 ) -> tuple[Signals, Optional[str]]:
-    """Assemble the six confidence signals for one field. Returns (signals, quote_verdict)."""
+    """
+    Assemble the six confidence signals for one field.
+
+    Returns `(signals, quote_verdict)`. `quote_audit` lets a caller that already
+    ran `extraction_quote_audit` pass the result in rather than re-verifying every
+    quote; omitting it is equivalent, just slower.
+    """
     verdict = critic_result.verdict if critic_result else VERDICT_HUMAN_REVIEW
-    quote_verdict = extraction_quote_verdict(field, entry, doc)
+    audit = (
+        quote_audit
+        if quote_audit is not None
+        else extraction_quote_audit(field, entry, doc)
+    )
+    quote_verdict = audit["verdict"]
     sig = confidence.compute_signals(
         field,
         quote_verdict=quote_verdict,
         critic_verdict=verdict,
         citation_rate=citation_rate(field, entry),
-        # s_shard needs per-atom `source_chunk_id` from atomic_verify.py
-        # (MCAL_PLAN 3.3), which does not run in this path. Left None.
+        # `s_shard` is not merely unwired here -- it is not computable anywhere
+        # in the repo. MCAL_PLAN 3.3 defines it via a per-atom `source_chunk_id`,
+        # and nothing emits that field: `mcal/atomic_verify.py` decomposes the
+        # FINAL reduced prose and has no view of which map chunk a claim came
+        # from, while `m2._summary_pipeline` throws away the `partials` that do
+        # carry `chunk_index`. Making it real needs the map stage to checkpoint
+        # its partials plus atom->chunk attribution; until then None is the
+        # truthful value, and `composite` renormalizes over present signals so
+        # nothing is penalized for its absence.
         shard_rate=None,
-        acronym_rate=acronym_rate(entry),
+        acronym_rate=acronym_rate(entry, acronym_meta, field),
         source_agreement=source_agreement(field, entry),
     )
     return sig, quote_verdict
@@ -391,6 +506,7 @@ class FieldGate:
     signals: dict = dc_field(default_factory=dict)
     quote_verdict: Optional[str] = None
     quote_check: Optional[dict] = None
+    quote_page_match: Optional[dict] = None
     bucket_flags: dict = dc_field(default_factory=dict)
     critic_overrides: list[str] = dc_field(default_factory=list)
     off_vocabulary_failure_tag: Optional[str] = None
@@ -423,6 +539,7 @@ class FieldGate:
             "signals": dict(self.signals),
             "quote_verdict": self.quote_verdict,
             "quote_check": self.quote_check,
+            "quote_page_match": self.quote_page_match,
             "bucket_flags": dict(self.bucket_flags),
             "critic_overrides": list(self.critic_overrides),
             "off_vocabulary_failure_tag": self.off_vocabulary_failure_tag,
@@ -475,6 +592,8 @@ def gate_field(
     stage: str,
     doc: Optional[Doc] = None,
     geocoder_stack: str = "full",
+    acronym_meta: Optional[dict] = None,
+    source_incomplete: bool = False,
 ) -> FieldGate:
     """
     Decide one field (MCAL_PLAN 3.12).
@@ -499,7 +618,11 @@ def gate_field(
         # "generation failure" is unambiguous in the manifest.
         value = None
 
-    sig, quote_verdict = signals_for_field(field, entry, critic_result, doc)
+    quote_audit = extraction_quote_audit(field, entry, doc)
+    sig, quote_verdict = signals_for_field(
+        field, entry, critic_result, doc,
+        acronym_meta=acronym_meta, quote_audit=quote_audit,
+    )
     score = confidence.composite(sig)
 
     reasons: list[str] = []
@@ -515,12 +638,17 @@ def gate_field(
     if missing and "extraction_missing" not in reasons:
         reasons.append("extraction_missing")
 
+    if source_incomplete and field in settings.SUMMARY_DERIVED_FIELDS:
+        reasons.append("summary_source_incomplete")
+
     if threshold.gate_all_to_human:
-        # Two different causes with two different remedies (see GATE_REASONS).
+        # Three different causes with three different remedies (see GATE_REASONS).
         if bucket == "location" and geocoder_stack == "reduced":
             reasons.append("reduced_geocoder_stack")
         elif threshold.degenerate_severe:
             reasons.append("bucket_degenerate_severe")
+        elif threshold.saturated:
+            reasons.append("bucket_saturated")
         else:
             reasons.append("composite_below_tau")
 
@@ -529,8 +657,13 @@ def gate_field(
         if "critic_verdict" not in reasons:
             reasons.append("critic_verdict")
 
-    if not threshold.accepts(score) and "composite_below_tau" not in reasons:
-        reasons.append("composite_below_tau")
+    if not threshold.accepts(score):
+        # Saturation is recorded alongside `composite_below_tau`, not instead of
+        # it: both are true, and the priority order decides which one is reported.
+        if threshold.saturated and "bucket_saturated" not in reasons:
+            reasons.append("bucket_saturated")
+        if "composite_below_tau" not in reasons:
+            reasons.append("composite_below_tau")
 
     gated = bool(reasons)
     primary = next((r for r in GATE_REASON_PRIORITY if r in reasons), None)
@@ -562,6 +695,9 @@ def gate_field(
         signals=sig.to_dict(),
         quote_verdict=quote_verdict,
         quote_check=critic_result.quote_check if critic_result else None,
+        # The EXTRACTION's page-match evidence. `quote_check` above is the
+        # CRITIC's, which is a different quote against a different claim.
+        quote_page_match=quote_audit.get("page_match"),
         bucket_flags={
             "gate_all_to_human": threshold.gate_all_to_human,
             "degenerate": threshold.degenerate,
@@ -972,11 +1108,19 @@ def null_tag_counts(fields: dict[str, FieldGate]) -> dict[str, dict]:
 
 # Gate reasons that fire before the Critic has judged the field's content, and
 # are therefore excluded from the null-tag numerator (see `null_tag_counts`).
+#
+# `bucket_saturated` is included: the Critic did run, but tau = 1.0 gates the
+# field whatever it said, so a null failure_tag there is not evidence that the
+# taxonomy lacks a code. Counting it would inflate the null-tag rate in exactly
+# the buckets that gate everything, and that rate is what decides whether the
+# taxonomy needs a v(N+1) refresh.
 NULL_TAG_PRE_JUDGEMENT_REASONS = (
     "bucket_degenerate_severe",
+    "bucket_saturated",
     "reduced_geocoder_stack",
     "extraction_missing",
     "critic_missing",
+    "summary_source_incomplete",
 )
 
 
@@ -1125,6 +1269,80 @@ def _atomic_write_json(path: Path, payload: dict) -> Path:
 # --- Doc-level rollup -------------------------------------------------------
 
 
+def summary_source_incomplete(m2: Optional[dict]) -> bool:
+    """
+    True when m2's summary map stage did not read the whole document.
+
+    Reads `chunking_meta` -- the block m2 has always written and which, before
+    this, nothing consumed: not the Critic, not the gate, not the manifest. Two
+    causes, both meaning the reduce ran on a subset:
+
+      * `chunks_truncated` -- more chunks than `max_chunks` (12 x 50pp = 600 pages
+        maximum summarized). Bit 1 of 12 documents in the v1 batch, the 775-page
+        one, and will bite more often at 2,000-doc scale.
+      * `n_chunks_failed`  -- a map call raised and the reduce proceeded without
+        it. Happened once in the v1 batch (`p1074_35556036854040`, 11 partials
+        against a cap of 12) and left no trace in any artifact.
+
+    `summary_source_incomplete` is preferred when present; the two component keys
+    are read as a fallback so a manifest can be regenerated from an m2 written
+    before that key existed.
+    """
+    meta = (m2 or {}).get("chunking_meta") or {}
+    if not isinstance(meta, dict):
+        return False
+    explicit = meta.get("summary_source_incomplete")
+    if isinstance(explicit, bool):
+        return explicit
+    return bool(meta.get("chunks_truncated")) or bool(meta.get("n_chunks_failed"))
+
+
+def summary_coverage(m2: Optional[dict]) -> dict:
+    """The chunk-coverage facts, for the manifest rollup."""
+    meta = (m2 or {}).get("chunking_meta") or {}
+    if not isinstance(meta, dict):
+        meta = {}
+    return {
+        "n_chunks": meta.get("n_chunks"),
+        "n_chunks_summarized": meta.get("n_chunks_summarized"),
+        "n_chunks_available": meta.get("n_chunks_available"),
+        "chunks_truncated": bool(meta.get("chunks_truncated")),
+        "n_chunks_failed": meta.get("n_chunks_failed") or 0,
+        "failed_chunk_indices": list(meta.get("failed_chunk_indices") or []),
+        "summary_source_incomplete": summary_source_incomplete(m2),
+    }
+
+
+def quote_page_match_rollup(fields: dict[str, FieldGate]) -> dict:
+    """
+    Document-level cited-vs-matched page totals across every field's own quotes.
+
+    A regression guard, not a defect count -- see
+    `quote_check.page_match_summary` for why the extraction path cannot diverge
+    today and what would change that. `fields_with_divergence` is the thing to
+    watch: it is expected to stay empty, and a non-empty value means a page cite
+    somewhere stopped being derived from the match that produced it.
+    """
+    n_quotes = n_located = n_exact = 0
+    offenders: dict[str, list[dict]] = {}
+    for name, gate in fields.items():
+        pm = gate.quote_page_match
+        if not pm:
+            continue
+        n_quotes += pm.get("n_quotes") or 0
+        n_located += pm.get("n_located") or 0
+        n_exact += pm.get("n_exact_page") or 0
+        if pm.get("divergences"):
+            offenders[name] = pm["divergences"]
+    return {
+        "n_quotes": n_quotes,
+        "n_located": n_located,
+        "n_exact_page": n_exact,
+        "exact_page_rate": (n_exact / n_located) if n_located else None,
+        "fields_with_divergence": offenders,
+    }
+
+
 def build_rollup(
     doc_id: str,
     stage: str,
@@ -1162,6 +1380,10 @@ def build_rollup(
             "gate_all_to_human": bool(th.gate_all_to_human) if th else None,
             "degenerate": bool(th.degenerate) if th else None,
             "degenerate_severe": bool(th.degenerate_severe) if th else None,
+            # Reported here as well as per field: a bucket that gates everything
+            # because tau saturated at 1.0 is otherwise indistinguishable in the
+            # rollup from one that is merely mis-tuned.
+            "saturated": bool(th.saturated) if th else None,
             "N_wrong_docs": th.n_wrong_docs if th else None,
         }
 
@@ -1181,6 +1403,11 @@ def build_rollup(
         "verdicts": verdicts,
         "per_bucket": per_bucket,
         "null_tag": null_tag_counts(fields),
+        # m2 has always written `chunking_meta` and nothing ever read it. A
+        # document summarized from 11 of 17 chunks was indistinguishable in the
+        # manifest from one summarized in full.
+        "summary_coverage": summary_coverage(m2),
+        "quote_page_match": quote_page_match_rollup(fields),
         "summary_of_interest": soi_diagnostics(
             soi_entry, m2, fields.get(settings.SUMMARY_OF_INTEREST)
         ),
@@ -1352,6 +1579,8 @@ def run_gate(
                 call=call,
             )
 
+    source_incomplete = summary_source_incomplete(m2)
+
     gates: dict[str, FieldGate] = {}
     for field in field_list:
         bucket = settings.bucket_for_field(field)
@@ -1371,6 +1600,11 @@ def run_gate(
             stage=stage,
             doc=doc,
             geocoder_stack=geocoder_stack,
+            # `run.py` hangs the acronym post-pass's per-field rates off
+            # `m2["acronym_meta"]`, not off the field entry, so this is the only
+            # route by which `s_acronym` is ever non-None.
+            acronym_meta=(m2 or {}).get("acronym_meta"),
+            source_incomplete=source_incomplete,
         )
         if field in re_audit:
             gates[field].re_extract = re_audit[field]

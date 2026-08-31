@@ -203,6 +203,7 @@ def process_doc(
             f"  M2: summary_of_interest = "
             f"{len(soi) if isinstance(soi, list) else 'MISSING'} claim(s)"
         )
+        _warn_on_incomplete_summary_source(m2, result)
 
         # --- 5. location pipeline (replaces M2's) ---
         try:
@@ -331,6 +332,41 @@ def process_doc(
 def _val(m1: Optional[dict], field: str):
     entry = (m1 or {}).get(field)
     return entry.get("value") if isinstance(entry, dict) else entry
+
+
+def _warn_on_incomplete_summary_source(m2: dict, result: DocResult) -> None:
+    """
+    Promote m2's chunk-coverage gaps into `DocResult.warnings`.
+
+    Both gaps mean the reduce step ran on less than the document, and neither used
+    to leave a trace anywhere a human would look:
+
+      * a failed map call was logged with `log.error` and nothing else, so
+        `p1074_35556036854040` (11 partials against a cap of 12) shows the
+        geocoder as its only warning;
+      * `chunks_truncated` was written into `chunking_meta` and read by nobody.
+
+    The gate now routes the summary-derived buckets to HUMAN_REVIEW on the same
+    condition (`gate.summary_source_incomplete`); this is the operator-facing half,
+    so a batch run reports it without anyone opening a manifest.
+    """
+    meta = (m2 or {}).get("chunking_meta") or {}
+    n_failed = meta.get("n_chunks_failed") or 0
+    if n_failed:
+        result.warnings.append(
+            f"{n_failed} summary map call(s) failed "
+            f"(chunks {meta.get('failed_chunk_indices')}); the summary was reduced "
+            f"from {meta.get('n_chunks_summarized')} of "
+            f"{meta.get('n_chunks_available')} chunks and may be missing "
+            f"supported claims"
+        )
+    if meta.get("chunks_truncated"):
+        result.warnings.append(
+            f"summary source truncated: {meta.get('n_chunks_summarized')} of "
+            f"{meta.get('n_chunks_available')} chunks summarized (max_chunks cap). "
+            f"Content past that point cannot appear in the summary; the "
+            f"summary-derived buckets are gated to HUMAN_REVIEW"
+        )
 
 
 def _apply_year_adjudication(m1: dict, adj: dict, result: DocResult) -> dict:
