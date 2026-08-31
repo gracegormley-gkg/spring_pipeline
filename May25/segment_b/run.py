@@ -50,6 +50,7 @@ import logging
 import sys
 import time
 from dataclasses import dataclass, field as dc_field
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Callable, Optional, Sequence
 
@@ -139,6 +140,8 @@ def process_doc(
     force: bool = False,
     write_sheets: bool = True,
     critic_call: Optional[Callable] = None,
+    reextract: bool = True,
+    batch_id: Optional[str] = None,
 ) -> DocResult:
     """
     Run the whole Segment B pipeline over one document.
@@ -148,6 +151,14 @@ def process_doc(
     `force` is set -- the same cheap-rerun property segment_a/run.py has, which
     matters because the Critic split makes a full doc materially more expensive
     than it was in Segment A.
+
+    `reextract` enables the MCAL_PLAN 7 Q8 retry (see `_reextractor`). On by
+    default: it costs at most one extra call per RE_EXTRACT field and the
+    alternative is a human reviewing something a resample fixes. Set False to
+    reproduce a manifest exactly, since a retry resamples.
+
+    `batch_id` is recorded in the null-tag monitor; without it every document is
+    logged as "unbatched" even when a batch is what produced it.
     """
     base = (out_dir or OUTPUT_DIR) / settings.normalize_doc_id(doc_id)
     result = DocResult(doc_id=doc_id, stage=stage)
@@ -196,7 +207,10 @@ def process_doc(
         m2_path = base / "m2.json"
         m2 = None if force else _read_json(m2_path)
         if m2 is None:
-            m2 = m2_mod.run_m2(doc, chunked=chunked)
+            # `base` also receives the summary map checkpoint, so a reduce that
+            # truncates does not discard up to 12 Opus calls, and the MCAL_PLAN
+            # 7 Q8 retry can re-reduce for one call instead of thirteen.
+            m2 = m2_mod.run_m2(doc, chunked=chunked, partials_dir=base)
             _write_json(m2_path, m2)
         soi = m2.get("summary_of_interest")
         log.info(
@@ -284,6 +298,15 @@ def process_doc(
             stage=stage,
             doc=doc,
             out_dir=base.parent,
+            # Without this the MCAL_PLAN 7 Q8 retry path never fires and every
+            # RE_EXTRACT becomes a hand-reviewed HUMAN_REVIEW.
+            reextract=(
+                _reextractor(doc, m1, m2, chunked, work or {}, base)
+                if reextract
+                else None
+            ),
+            call=critic_call,
+            batch_id=batch_id,
         )
         result.rollup = gated.rollup if hasattr(gated, "rollup") else {}
         manifest = gated.manifest if hasattr(gated, "manifest") else {}
@@ -332,6 +355,103 @@ def process_doc(
 def _val(m1: Optional[dict], field: str):
     entry = (m1 or {}).get(field)
     return entry.get("value") if isinstance(entry, dict) else entry
+
+
+# --- MCAL_PLAN 7 Q8 re-extraction -------------------------------------------
+# Fields this driver can actually re-extract, and how.
+#
+# `run_gate` was called without a `reextract` callback, so the entire retry path
+# in gate.py was dead: in the v1 batch 59 fields across 12 documents returned
+# RE_EXTRACT and every one of them became HUMAN_REVIEW without a second attempt.
+#
+# Coverage is deliberately partial and the declines are recorded rather than
+# hidden, because a callback that silently returns nothing is indistinguishable
+# from one that tried and failed:
+#
+#   summary.* / summary_of_interest (41 of the 59)  -- re-run the REDUCE only,
+#       over the checkpointed map partials. One Opus call. This is what
+#       `m2.save_partials` was added for; without the checkpoint the retry would
+#       mean redoing up to 12 map calls, which is why it was not worth wiring
+#       before.
+#   alternatives, themes (6)                        -- single cheap extractor call.
+#   M1 fields (6)                                   -- single cheap extractor call.
+#   location, key_people (6)                        -- DECLINED. Their values come
+#       from the deterministic postproc pipelines, not from an LLM sample, so
+#       resampling changes nothing; location additionally depends on the geocoder
+#       stack. A retry here would spend money to reproduce the same value.
+
+
+def _reextractor(
+    doc,
+    m1: dict,
+    m2: dict,
+    chunked: dict,
+    work: dict,
+    partials_dir: Path,
+) -> Callable:
+    """
+    Build the `reextract` callback `gate.run_gate` expects.
+
+    Returns `{"ok": False, "note": ...}` for anything it cannot honour, which
+    `re_extract_fields` records in the manifest's `re_extract` audit as an
+    attempted-but-declined retry.
+    """
+    import llm
+
+    chapters = chunked["chapters"]
+    summary_fields = set(settings.SUMMARY_FIELDS) | {settings.SUMMARY_OF_INTEREST}
+
+    def _summary_retry(field: str):
+        partials = m2_mod.load_partials(partials_dir, doc.doc_id)
+        if not partials:
+            return {
+                "ok": False,
+                "note": (
+                    "no summary map checkpoint on disk; re-extracting would mean "
+                    "redoing the whole map stage"
+                ),
+            }
+        if field == settings.SUMMARY_OF_INTEREST:
+            summary = m2.get("summary") or {}
+            return {"entry": m2_mod._summary_of_interest(partials, summary, doc)}
+        redone = m2_mod.reduce_from_partials(partials, doc)
+        sub = field.split(".", 1)[1]
+        if sub not in redone:
+            return {"ok": False, "note": f"reduce produced no {sub!r}"}
+        return {"entry": redone[sub]}
+
+    def reextract(field: str, *, attempt: int, temperature: float, entry, critic_result):
+        try:
+            with llm.temperature(temperature):
+                if field in summary_fields:
+                    return _summary_retry(field)
+                if field == "alternatives":
+                    return {"entry": m2_mod.extract_alternatives(doc, chapters)}
+                if field == "themes":
+                    return {"entry": m2_mod.extract_themes(m2.get("summary") or {})}
+                if field == "title":
+                    return {"entry": m1_mod.extract_title(work or {}, doc)}
+                if field == "year":
+                    return {"entry": m1_mod.extract_year(work or {}, doc)}
+                if field == "eis_type":
+                    return {"entry": m1_mod.extract_eis_type(doc)}
+                if field == "lead_agency":
+                    return {"entry": m1_mod.extract_lead_agency(work or {}, doc)}
+                if field in ("location", "key_people"):
+                    return {
+                        "ok": False,
+                        "note": (
+                            f"{field} comes from the deterministic postproc "
+                            f"pipeline, not an LLM sample; resampling cannot change "
+                            f"it"
+                        ),
+                    }
+            return {"ok": False, "note": f"no re-extractor registered for {field}"}
+        except Exception as e:  # noqa: BLE001 - gate.py also guards, belt and braces
+            log.warning(f"  re-extraction of {field} failed: {e}")
+            return {"ok": False, "note": f"{type(e).__name__}: {e}"[:200]}
+
+    return reextract
 
 
 def _warn_on_incomplete_summary_source(m2: dict, result: DocResult) -> None:
@@ -538,11 +658,19 @@ def process_batch(
     out_dir: Optional[Path] = None,
     force: bool = False,
     write_sheets: bool = True,
+    reextract: bool = True,
+    batch_id: Optional[str] = None,
 ) -> dict:
     """Process a batch and write `<out_dir>/batch_summary.json`."""
     stage = critic_mod.resolve_stage(stage)
     out = out_dir or OUTPUT_DIR
-    log.info(f"Segment B: {len(doc_ids)} doc(s) at artifact stage {stage}")
+    # The null-tag monitor records a batch id per document and defaulted every one
+    # of them to "unbatched", even though this function knows the batch.
+    batch_id = batch_id or f"{stage}-{datetime.now(timezone.utc):%Y%m%dT%H%M%SZ}"
+    log.info(
+        f"Segment B: {len(doc_ids)} doc(s) at artifact stage {stage} "
+        f"(batch {batch_id})"
+    )
 
     results: list[DocResult] = []
     for i, doc_id in enumerate(doc_ids, 1):
@@ -555,6 +683,8 @@ def process_batch(
                     out_dir=out,
                     force=force,
                     write_sheets=write_sheets,
+                    reextract=reextract,
+                    batch_id=batch_id,
                 )
             )
         except Exception as e:
@@ -570,6 +700,7 @@ def process_batch(
 
     summary = {
         "stage": stage,
+        "batch_id": batch_id,
         "n_docs": len(results),
         "n_ok": len(ok),
         "n_failed": len(results) - len(ok),
@@ -657,6 +788,15 @@ def main(argv: Optional[list[str]] = None) -> int:
     p.add_argument("--force", action="store_true", help="ignore checkpoints")
     p.add_argument("--no-sheets", action="store_true", help="skip grading sheets")
     p.add_argument(
+        "--no-reextract",
+        action="store_true",
+        help=(
+            "skip the MCAL_PLAN 7 Q8 retry on RE_EXTRACT fields. Use to reproduce "
+            "a manifest exactly, since a retry resamples."
+        ),
+    )
+    p.add_argument("--batch-id", help="recorded in the null-tag monitor")
+    p.add_argument(
         "--estimate",
         action="store_true",
         help="print a cost estimate and exit without calling any model",
@@ -710,6 +850,8 @@ def main(argv: Optional[list[str]] = None) -> int:
         out_dir=Path(args.out) if args.out else None,
         force=args.force,
         write_sheets=not args.no_sheets,
+        reextract=not args.no_reextract,
+        batch_id=args.batch_id,
     )
     print(json.dumps({k: v for k, v in summary.items() if k != "docs"}, indent=2))
     return 0 if summary["n_failed"] == 0 else 1

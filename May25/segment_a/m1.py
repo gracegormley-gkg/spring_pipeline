@@ -197,17 +197,57 @@ def _modal_year(years: list[int]) -> Optional[int]:
 
 # --- EIS Type ----------------------------------------------------------------
 
-def extract_eis_type(doc: Doc) -> dict:
-    head = first_pages(doc, FIRST_PAGE)
-    regex_hits: list[str] = []
-    # Order matters: try Supplemental and ROD first (per config) so they win
-    # against the Draft/Final patterns when both appear.
-    for label, pat in EIS_TYPE_PATTERNS.items():
-        if re.search(pat, head, re.IGNORECASE):
-            regex_hits.append(label)
-            break  # first hit wins by config ordering
+def eis_type_regex_hits(head: str) -> list[dict]:
+    """
+    Every EIS-type pattern that matches `head`, EARLIEST MATCH FIRST.
 
-    regex_label = regex_hits[0] if regex_hits else None
+    Replaces a `break` on the first pattern that matched, which made
+    `config.EIS_TYPE_PATTERNS`' dict order the decider rather than where the
+    phrase appears. The order is `Supplemental, ROD, Draft, Final`, so a Final EIS
+    whose cover page said "record of decision" anywhere was labelled ROD, and one
+    that mentioned a "supplement" was labelled Supplemental.
+
+    Measured on the seven realistic cover-page phrasings in
+    `tests/test_eis_type.py`, dict order gets 3 wrong and position gets 0. On the
+    21 materialized documents the two disagree on `p1074_35556036535615`, where
+    "Final" appears at offset 163 and "Draft" at 520: dict order returns Draft.
+
+    The specificity the config comment was protecting survives, because the
+    patterns are phrase-anchored rather than word-anchored. In "FINAL SUPPLEMENTAL
+    ENVIRONMENTAL IMPACT STATEMENT" the Final pattern requires "final" followed by
+    "environmental", which "SUPPLEMENTAL" interrupts, so Final does not match at
+    all and Supplemental wins on position as well as on order.
+    """
+    hits: list[dict] = []
+    for label, pat in EIS_TYPE_PATTERNS.items():
+        m = re.search(pat, head, re.IGNORECASE)
+        if m:
+            hits.append({"label": label, "offset": m.start(), "matched": m.group(0)})
+    hits.sort(key=lambda h: h["offset"])
+    return hits
+
+
+def extract_eis_type(doc: Doc) -> dict:
+    """
+    EIS type from a position-scored cover-page regex, verified by Sonnet.
+
+    On disagreement the field is flagged `review_required` instead of silently
+    preferring the regex. The regex was the losing source in the one observed
+    failure (Lincoln Hwy, graded `wrong: "ROD", correct: "Final"`), so defaulting
+    to it is defaulting to the source that was wrong.
+
+    The Sonnet verifier is NOT skipped when the regex is unambiguous, though the
+    review suggested it. Two measured reasons: 6 of the 21 materialized documents
+    produce NO regex hit at all, so Sonnet is the only source on 29% of them; and
+    position scoring is still fallible on phrasings like "comments on the draft EIS
+    are addressed in this final EIS", where the earliest match is the wrong one. At
+    ~1.3k input tokens and 300 output on Sonnet the call is ~$0.008/doc -- about
+    $17 across 2,000 documents, or 0.13% of the projected corpus cost. That is not
+    a lever worth pulling at the price of the only cross-check this field has.
+    """
+    head = first_pages(doc, FIRST_PAGE)
+    hits = eis_type_regex_hits(head)
+    regex_label = hits[0]["label"] if hits else None
 
     verifier_text = first_pages(doc, FIRST_2_PAGES)
     out = sonnet(
@@ -223,26 +263,57 @@ def extract_eis_type(doc: Doc) -> dict:
     )
     sonnet_label = (out.get("eis_type") or "").strip()
 
+    # Kept on every return so a reviewer can see what the page actually said,
+    # including the runner-up labels the position rule discarded.
+    regex_audit = {
+        "regex_hits": hits,
+        "regex_label": regex_label,
+        "selection_rule": "earliest match in first page",
+    }
+
     if regex_label and sonnet_label and regex_label == sonnet_label:
         return {
             "value": regex_label,
             "confidence": "high",
             "sources": ["regex (first page)", "Sonnet (first 2 pages)"],
             "evidence": out.get("evidence", ""),
+            **regex_audit,
         }
     if regex_label and not sonnet_label:
-        return {"value": regex_label, "confidence": "medium", "sources": ["regex (first page)"]}
+        return {
+            "value": regex_label,
+            "confidence": "medium",
+            "sources": ["regex (first page)"],
+            **regex_audit,
+        }
     if sonnet_label and not regex_label:
-        return {"value": sonnet_label, "confidence": "medium", "sources": ["Sonnet (first 2 pages)"]}
+        return {
+            "value": sonnet_label,
+            "confidence": "medium",
+            "sources": ["Sonnet (first 2 pages)"],
+            "evidence": out.get("evidence", ""),
+            **regex_audit,
+        }
     if regex_label and sonnet_label and regex_label != sonnet_label:
+        # Both sources are carried and NEITHER is preferred. The value has to be
+        # populated -- MCAL_PLAN 7 Q8 requires the manifest to carry the raw
+        # extraction so the reviewer can grade it -- but `review_required` makes
+        # the gate route it to a human rather than letting the regex win by
+        # default. In the one observed failure the regex was the wrong source.
         return {
             "value": regex_label,
             "confidence": "low",
             "sources": ["regex (first page)", "Sonnet (first 2 pages)"],
             "note": f"regex={regex_label} disagrees with Sonnet={sonnet_label}",
             "evidence": out.get("evidence", ""),
+            "review_required": True,
+            "candidates": [
+                {"value": regex_label, "source": "regex (first page)"},
+                {"value": sonnet_label, "source": "Sonnet (first 2 pages)"},
+            ],
+            **regex_audit,
         }
-    return {"value": "Unknown", "confidence": "low", "sources": []}
+    return {"value": "Unknown", "confidence": "low", "sources": [], **regex_audit}
 
 
 # --- Lead Agency / Contributor ----------------------------------------------

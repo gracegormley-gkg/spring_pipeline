@@ -103,6 +103,12 @@ VERDICT_RE_EXTRACT = critic_mod.VERDICT_RE_EXTRACT
 #   * `critic_missing`           -- no Critic result was supplied for the field.
 #     Emitted rather than skipped, per MCAL_PLAN 7 Q8 / requirement that no field
 #     is ever dropped from the manifest.
+#   * `m1_source_disagreement`   -- an M1 field whose two independent sources
+#     returned different values. `m1.extract_eis_type` used to resolve this by
+#     returning the REGEX value with `confidence: low`, i.e. by preferring one
+#     source by default -- and in the one observed failure (Lincoln Hwy, graded
+#     `wrong: "ROD", correct: "Final"`) the regex was the source that was wrong.
+#     It now sets `review_required` and carries both candidates instead.
 #   * `summary_source_incomplete` -- m2's summary map stage did not read the whole
 #     document, because `max_chunks` capped it or because a map call failed. The
 #     Critic cannot see this: it judges the prose against the pages the prose
@@ -128,6 +134,7 @@ GATE_REASONS = (
     "bucket_degenerate_severe",
     "extraction_missing",
     "critic_missing",
+    "m1_source_disagreement",
     "summary_source_incomplete",
     "critic_verdict",
     "bucket_saturated",
@@ -388,6 +395,39 @@ def source_agreement(field: str, entry: Any) -> Optional[tuple[int, int]]:
     return (1 if disagrees else n_total, n_total)
 
 
+def review_required(entry: Any) -> bool:
+    """
+    True when the extractor itself asked for a human, via `review_required`.
+
+    Currently set only by `m1.extract_eis_type` when its regex and its Sonnet
+    verifier disagree. The extractor still emits a value -- MCAL_PLAN 7 Q8 needs
+    the manifest to carry the raw extraction -- so without this flag the
+    disagreement reached the manifest as nothing more than `confidence: "low"`
+    and a free-text note, and the arbitrarily-preferred value could pass the gate.
+    """
+    return bool(isinstance(entry, dict) and entry.get("review_required"))
+
+
+def extraction_review(entry: Any) -> Optional[dict]:
+    """
+    The extractor's own request for review, with the candidates it could not
+    choose between.
+
+    `extracted_value` unwraps an M1 entry to its scalar, so the losing candidate
+    would otherwise not reach the manifest at all -- and the manifest is what the
+    reviewer grades from (MCAL_PLAN 7 Q8). Emitting only the winner would leave
+    them re-deriving the alternative by hand.
+    """
+    if not review_required(entry):
+        return None
+    return {
+        "review_required": True,
+        "candidates": list(entry.get("candidates") or []),
+        "note": entry.get("note"),
+        "sources": list(entry.get("sources") or []),
+    }
+
+
 def acronym_rate(entry: Any, acronym_meta: Optional[dict] = None,
                  field: Optional[str] = None) -> Optional[float]:
     """
@@ -507,6 +547,7 @@ class FieldGate:
     quote_verdict: Optional[str] = None
     quote_check: Optional[dict] = None
     quote_page_match: Optional[dict] = None
+    extraction_review: Optional[dict] = None
     bucket_flags: dict = dc_field(default_factory=dict)
     critic_overrides: list[str] = dc_field(default_factory=list)
     off_vocabulary_failure_tag: Optional[str] = None
@@ -540,6 +581,7 @@ class FieldGate:
             "quote_verdict": self.quote_verdict,
             "quote_check": self.quote_check,
             "quote_page_match": self.quote_page_match,
+            "extraction_review": self.extraction_review,
             "bucket_flags": dict(self.bucket_flags),
             "critic_overrides": list(self.critic_overrides),
             "off_vocabulary_failure_tag": self.off_vocabulary_failure_tag,
@@ -641,6 +683,9 @@ def gate_field(
     if source_incomplete and field in settings.SUMMARY_DERIVED_FIELDS:
         reasons.append("summary_source_incomplete")
 
+    if review_required(entry):
+        reasons.append("m1_source_disagreement")
+
     if threshold.gate_all_to_human:
         # Three different causes with three different remedies (see GATE_REASONS).
         if bucket == "location" and geocoder_stack == "reduced":
@@ -698,6 +743,7 @@ def gate_field(
         # The EXTRACTION's page-match evidence. `quote_check` above is the
         # CRITIC's, which is a different quote against a different claim.
         quote_page_match=quote_audit.get("page_match"),
+        extraction_review=extraction_review(entry),
         bucket_flags={
             "gate_all_to_human": threshold.gate_all_to_human,
             "degenerate": threshold.degenerate,
@@ -1120,6 +1166,7 @@ NULL_TAG_PRE_JUDGEMENT_REASONS = (
     "reduced_geocoder_stack",
     "extraction_missing",
     "critic_missing",
+    "m1_source_disagreement",
     "summary_source_incomplete",
 )
 

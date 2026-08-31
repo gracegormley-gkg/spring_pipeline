@@ -17,6 +17,7 @@ import logging
 import os
 import threading
 import time
+from contextlib import contextmanager
 from typing import Optional
 
 from config import MODEL_HAIKU, MODEL_OPUS, MODEL_SONNET
@@ -93,7 +94,16 @@ def cost_for_usage(usage: dict) -> float:
 
 
 def aggregate_usages(usages: list[dict]) -> dict:
-    """Sum a list of usage dicts. Per-model breakdown plus an overall total."""
+    """
+    Sum a list of usage dicts. Per-model breakdown plus an overall total.
+
+    Also reports the output-token budget distribution per model:
+    `max_output_tokens_seen`, `min_output_headroom` and `n_calls_thin_headroom`.
+    Every `max_tokens` in this pipeline is a judgement call defended in a comment
+    -- "a cap, not a target" -- and until now nothing measured whether the caps
+    were near binding. The 6,000-token reduce budget was believed ample right up
+    to the run where it truncated 4 of 8 documents.
+    """
     by_model: dict[str, dict] = {}
     for u in usages:
         if not u:
@@ -107,11 +117,26 @@ def aggregate_usages(usages: list[dict]) -> dict:
             "cache_creation_input_tokens": 0,
             "cache_read_input_tokens": 0,
             "cost_usd": 0.0,
+            "max_output_tokens_seen": 0,
+            "min_output_headroom": None,
+            "n_calls_thin_headroom": 0,
         })
         agg["calls"] += 1
         for k in ("input_tokens", "output_tokens", "cache_creation_input_tokens", "cache_read_input_tokens"):
             agg[k] += u.get(k, 0)
         agg["cost_usd"] += cost_for_usage(u)
+        agg["max_output_tokens_seen"] = max(
+            agg["max_output_tokens_seen"], u.get("output_tokens", 0) or 0
+        )
+        headroom = u.get("output_headroom")
+        if headroom is not None:
+            agg["min_output_headroom"] = (
+                headroom
+                if agg["min_output_headroom"] is None
+                else min(agg["min_output_headroom"], headroom)
+            )
+            if headroom < HEADROOM_WARN_THRESHOLD:
+                agg["n_calls_thin_headroom"] += 1
     total = {
         "calls": sum(v["calls"] for v in by_model.values()),
         "input_tokens": sum(v["input_tokens"] for v in by_model.values()),
@@ -223,6 +248,65 @@ def _normalize_usage(usage_obj, model: str) -> dict:
     }
 
 
+# Warn when a response comes this close to its budget. Below this the next
+# document with slightly more to say truncates, and a truncation costs the whole
+# field (and, before `TruncatedResponse`, presented as a JSON parse error).
+HEADROOM_WARN_THRESHOLD = 0.10
+
+
+def _warn_on_thin_headroom(usage: dict, model: str, max_tokens: int) -> None:
+    headroom = usage.get("output_headroom")
+    if headroom is None or headroom >= HEADROOM_WARN_THRESHOLD:
+        return
+    log.warning(
+        f"{model} used {usage.get('output_tokens', 0)}/{max_tokens} output tokens "
+        f"({(1 - headroom) * 100:.1f}% of budget). Raise max_tokens at this call "
+        f"site before it truncates on a longer document."
+    )
+
+
+def is_retryable(exc: BaseException) -> bool:
+    """
+    Whether re-sending the identical request could plausibly succeed.
+
+    The retry loop used to catch bare `Exception` and sleep 1s then 2s on
+    everything, so a 400 (malformed request), a 401/403 (bad credentials) or a 404
+    (wrong model id) burned three identical calls and three seconds to arrive at
+    the same error -- and did it on every document of a 2,000-document run.
+
+    Retryable: connection and timeout errors, 429, and 5xx. Everything else is a
+    property of the request or the account and will not change within three
+    attempts. Where the SDK is importable its own exception types are used;
+    otherwise the status code is read off the exception, so this works with the
+    stubs the tests inject.
+    """
+    status = getattr(exc, "status_code", None)
+    if status is None:
+        response = getattr(exc, "response", None)
+        status = getattr(response, "status_code", None)
+
+    if isinstance(status, int):
+        return status == 429 or status >= 500
+
+    try:  # pragma: no cover - depends on the installed SDK
+        import anthropic
+
+        if isinstance(exc, (anthropic.APIConnectionError, anthropic.APITimeoutError)):
+            return True
+        if isinstance(exc, anthropic.RateLimitError):
+            return True
+        if isinstance(exc, anthropic.InternalServerError):
+            return True
+        if isinstance(exc, anthropic.APIStatusError):
+            return False
+    except Exception:  # noqa: BLE001 - SDK absent or restructured
+        pass
+
+    # Transport-level failures have no status. Timeouts and connection resets are
+    # worth another attempt; a programming error is not.
+    return isinstance(exc, (TimeoutError, ConnectionError))
+
+
 class TruncatedResponse(RuntimeError):
     """
     The model hit `max_tokens` before finishing.
@@ -275,6 +359,38 @@ def _create_message(client, kwargs: dict, *, stream: bool):
         return s.get_final_message()
 
 
+# --- Temperature override ---------------------------------------------------
+# None means "use whatever the call site asked for".
+#
+# Exists because no extractor in m1.py or m2.py takes a temperature: they call
+# `sonnet(system=..., user=..., max_tokens=...)` and the default of 0.2 applies.
+# MCAL_PLAN 7 Q8's re-extraction has to resample at +0.2, and threading a
+# parameter through every extractor to serve one caller is worse than one
+# explicit, scoped override.
+#
+# NOTE: Opus ignores temperature entirely here (`omit_temperature` below), so on
+# Opus-routed fields -- which is all of `summary.*` -- the override is a no-op and
+# a retry is a plain resample. `re_extract_fields` records the temperature it
+# asked for, so this must not be mistaken for a temperature that was applied.
+_TEMPERATURE_OVERRIDE: Optional[float] = None
+
+
+@contextmanager
+def temperature(value: Optional[float]):
+    """Scoped temperature override for calls made inside the block."""
+    global _TEMPERATURE_OVERRIDE
+    prior = _TEMPERATURE_OVERRIDE
+    _TEMPERATURE_OVERRIDE = value
+    try:
+        yield
+    finally:
+        _TEMPERATURE_OVERRIDE = prior
+
+
+def effective_temperature(requested: float) -> float:
+    return requested if _TEMPERATURE_OVERRIDE is None else _TEMPERATURE_OVERRIDE
+
+
 def call_with_usage(
     model: str,
     system: str,
@@ -314,14 +430,27 @@ def call_with_usage(
                 messages=[{"role": "user", "content": user}],
             )
             if not omit_temperature:
-                kwargs["temperature"] = temperature
+                kwargs["temperature"] = effective_temperature(temperature)
             resp = _create_message(client, kwargs, stream=use_stream)
             text = "".join(
                 getattr(b, "text", "") for b in resp.content
                 if getattr(b, "type", "") == "text"
             )
             usage = _normalize_usage(getattr(resp, "usage", None), model)
+            # `max_tokens` is recorded alongside the tokens actually produced so
+            # the headroom on every budget is measurable after the fact rather
+            # than asserted. `SUMMARY_REDUCE_MAX_TOKENS = 24_000` is defended in
+            # m2.py as "a cap, not a target", which was true but untested -- and
+            # the 6,000 budget it replaced was also believed to be ample until it
+            # truncated 4 of 8 documents.
+            usage["max_tokens"] = max_tokens
+            usage["output_headroom"] = (
+                round(1.0 - (usage.get("output_tokens", 0) / max_tokens), 4)
+                if max_tokens
+                else None
+            )
             _record_usage(usage)
+            _warn_on_thin_headroom(usage, model, max_tokens)
 
             # Usage is recorded before the truncation check: the tokens were
             # spent whether or not the response is usable, and a cost report
@@ -336,8 +465,21 @@ def call_with_usage(
             raise
         except Exception as e:
             last_exc = e
+            if not is_retryable(e):
+                # Fail immediately rather than sleeping through two more identical
+                # rejections. Re-raised as-is so the caller sees the real error.
+                log.error(
+                    f"LLM call failed unrecoverably on attempt {attempt + 1}: "
+                    f"{type(e).__name__}: {e}"
+                )
+                raise
+            if attempt == max_retries - 1:
+                break
             wait = 2 ** attempt
-            log.warning(f"LLM call failed (attempt {attempt + 1}/{max_retries}): {e}. Retrying in {wait}s")
+            log.warning(
+                f"LLM call failed (attempt {attempt + 1}/{max_retries}): {e}. "
+                f"Retrying in {wait}s"
+            )
             time.sleep(wait)
     raise RuntimeError(f"LLM call failed after {max_retries} attempts: {last_exc}")
 

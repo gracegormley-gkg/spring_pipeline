@@ -86,6 +86,32 @@ MODEL_OPUS = "us.anthropic.claude-opus-4-7"
 # Real Haiku, verified reachable on this account. Unused by default; see above.
 MODEL_HAIKU_REAL = "us.anthropic.claude-haiku-4-5-20251001-v1:0"
 
+# --- Which model runs the M2 summary MAP step -------------------------------
+# "opus" (default) or "sonnet".
+#
+# The map step asks for a short summary of one 50-page chunk plus verbatim quotes
+# copied out of it. That is extraction and transcription; the synthesis happens in
+# the reduce step. It is also ~40% of Opus input tokens, at a 5x price difference
+# ($3/$15 per M vs $15/$75), so moving it to Sonnet is the single largest cost
+# lever in the pipeline -- roughly a 40-55% reduction on a $6.76/doc baseline.
+#
+# It defaults to Opus anyway, deliberately:
+#
+#   * Changing an extractor's model shifts the score distribution the frozen
+#     conformal thresholds were fitted to (see the MODEL_HAIKU note above). This
+#     has to land BETWEEN calibration stages, with a rerun and a refit, not
+#     silently under an existing tau.
+#   * The quality claim is untested here. "Copying quotes verbatim out of 1970s
+#     OCR" is exactly the kind of task where a cheaper model degrades in a way
+#     that is invisible in the prose and only shows up as a quote that fails
+#     verification -- which the pipeline would then attribute to the reduce step.
+#
+# To flip it: set this to "sonnet", rerun the graded corpus, re-run
+# `python -m mcal.build --stage vN`, and check `weight_validation` before grading
+# anything new. `tests/test_summary_map_model.py` asserts the switch is honoured
+# and that the default has not moved.
+SUMMARY_MAP_MODEL = "opus"
+
 # --- Closed vocabularies ---
 EIS_TYPE_PATTERNS = {
     # Order matters: more specific first so "Final Supplemental" hits Supplemental.

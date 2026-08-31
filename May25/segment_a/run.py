@@ -121,7 +121,7 @@ def process_doc(work: dict, doc_id: str, doc: Doc, force: bool = False) -> dict:
         m2 = _read_json(m2_path) if not force else None
         if m2 is None:
             log.info("Running M2...")
-            m2 = run_m2(doc, chunked=chunked)
+            m2 = run_m2(doc, chunked=chunked, partials_dir=M2_DIR)
             _write_json(m2_path, m2)
         else:
             log.info(f"M2: cached → {m2_path}")

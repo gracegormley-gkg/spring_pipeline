@@ -25,8 +25,13 @@ import logging
 import re
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from pathlib import Path
 from typing import Optional
 
+# `config` is imported as a MODULE, not via `from config import ...`, purely for
+# SUMMARY_MAP_MODEL: a `from` import binds the value at import time, so flipping
+# the switch (or a test monkeypatching it) would have no effect.
+import config
 from config import (
     CHUNK_PAGES,
     FIRST_30_PAGES,
@@ -94,6 +99,26 @@ SUMMARY_REDUCE_MAX_TOKENS = 24_000
 SUMMARY_OF_INTEREST_MAX_TOKENS = 8_000
 
 
+def _summary_map_model():
+    """
+    The callable that runs the map step: `opus` or `sonnet`, per
+    `config.SUMMARY_MAP_MODEL`.
+
+    Resolved per call rather than bound at import so a test -- or a stage boundary
+    -- can change it without reloading the module. See that config constant for
+    why the default is Opus despite this being the pipeline's largest cost lever.
+    """
+    choice = (config.SUMMARY_MAP_MODEL or "opus").strip().lower()
+    if choice == "sonnet":
+        return sonnet
+    if choice == "opus":
+        return opus
+    raise ValueError(
+        f"config.SUMMARY_MAP_MODEL must be 'opus' or 'sonnet', got "
+        f"{config.SUMMARY_MAP_MODEL!r}"
+    )
+
+
 def _summary_map_one(chunk: Chunk) -> dict:
     """Per-chunk summary map step. Returns text + verbatim supporting quotes per field.
 
@@ -101,8 +126,12 @@ def _summary_map_one(chunk: Chunk) -> dict:
     cite every claim it carries forward — earlier versions returned a single
     quote per field per chunk, which made the final per-doc summary
     under-cited (you'd see 3 claims in `text` backed by only 1-2 quotes).
+
+    The model is `config.SUMMARY_MAP_MODEL` (default Opus). Note that Sonnet
+    honours `temperature` while Opus ignores it, so flipping the switch also makes
+    the MCAL_PLAN 7 Q8 retry's +0.2 resample actually take effect on this step.
     """
-    out = opus(
+    out = _summary_map_model()(
         system=(
             "You are summarizing a slice of an Environmental Impact Statement.\n"
             "Output JSON with EXACTLY these five keys; for each key return BOTH a "
@@ -277,11 +306,74 @@ def extract_summary(chunks: list[Chunk], doc: Doc, max_chunks: int = 12, paralle
     return _summary_pipeline(chunks, doc, max_chunks, parallel)[0]
 
 
+def partials_path(out_dir: Path, doc_id: str) -> Path:
+    """Where the map stage's per-chunk findings are checkpointed."""
+    return Path(out_dir) / f"{doc_id}.summary_partials.json"
+
+
+def save_partials(out_dir: Path, doc_id: str, partials: list[dict]) -> Optional[Path]:
+    """
+    Checkpoint the map stage before the reduce runs. Best effort.
+
+    The map calls are the most expensive artifact the pipeline produces -- up to
+    12 Opus calls over 50 pages each -- and until now they existed only as a local
+    variable and as text inside the reduce prompt. A `JSONDecodeError` or a throttle
+    in `_summary_reduce` discarded all of them, which is not hypothetical: the
+    comment on `SUMMARY_REDUCE_MAX_TOKENS` records that truncation hit 4 of 8
+    documents on one run.
+
+    Two things this buys beyond crash recovery:
+      * the reduce can be re-run on its own, which is what makes the MCAL_PLAN 7 Q8
+        retry affordable for `summary.*` -- 41 of the 59 RE_EXTRACT verdicts in the
+        v1 batch are summary fields, and without this a retry means redoing the
+        whole map stage;
+      * the reduce output becomes auditable against what the map stage actually
+        reported.
+
+    A write failure is logged and swallowed: losing the checkpoint is bad, losing
+    the document because the checkpoint could not be written is worse.
+    """
+    if not partials:
+        return None
+    try:
+        path = partials_path(out_dir, doc_id)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(
+            json.dumps(partials, ensure_ascii=False, indent=1), encoding="utf-8"
+        )
+        return path
+    except Exception as e:  # noqa: BLE001 - a checkpoint must not lose a document
+        log.warning(f"could not checkpoint summary partials for {doc_id}: {e}")
+        return None
+
+
+def load_partials(out_dir: Path, doc_id: str) -> Optional[list[dict]]:
+    """The checkpointed map findings, or None if there is no usable checkpoint."""
+    path = partials_path(out_dir, doc_id)
+    if not path.exists():
+        return None
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as e:  # noqa: BLE001
+        log.warning(f"unreadable summary partials for {doc_id}: {e}")
+        return None
+    if not isinstance(data, list) or not all(isinstance(d, dict) for d in data):
+        log.warning(f"summary partials for {doc_id} are not a list of objects")
+        return None
+    return data
+
+
+def reduce_from_partials(partials: list[dict], doc: Doc) -> dict:
+    """Re-run only the reduce step over checkpointed map findings."""
+    return _summary_reduce(partials, doc)
+
+
 def extract_summary_and_salience(
     chunks: list[Chunk],
     doc: Doc,
     max_chunks: int = 12,
     parallel: int = 4,
+    partials_dir: Optional[Path] = None,
 ) -> tuple[dict, list[dict], dict]:
     """
     Standard summary + `summary_of_interest`, sharing one map pass.
@@ -289,6 +381,9 @@ def extract_summary_and_salience(
     Returns `(summary, summary_of_interest, meta)`. The salience call reuses the
     already-computed per-chunk findings rather than re-reading the document, so
     its marginal cost is one Opus reduce call (MCAL_PLAN 3.15 "Cost").
+
+    `partials_dir` checkpoints the map findings to disk before the reduce runs; see
+    `save_partials`. Omitting it keeps the old in-memory-only behaviour.
     """
     if not chunks:
         return (
@@ -303,7 +398,10 @@ def extract_summary_and_salience(
                 "summary_source_incomplete": False,
             },
         )
-    summary, partials, failed = _summary_pipeline(chunks, doc, max_chunks, parallel)
+    summary, partials, failed = _summary_pipeline(
+        chunks, doc, max_chunks, parallel,
+        partials_dir=partials_dir, doc_id=doc.doc_id,
+    )
     soi = _summary_of_interest(partials, summary, doc)
     # `n_chunks_summarized` alone conflated two different gaps: "capped at
     # max_chunks by design" and "a map call died". Both mean the reduce ran on
@@ -327,7 +425,13 @@ def extract_summary_and_salience(
 
 
 def _summary_pipeline(
-    chunks: list[Chunk], doc: Doc, max_chunks: int, parallel: int
+    chunks: list[Chunk],
+    doc: Doc,
+    max_chunks: int,
+    parallel: int,
+    *,
+    partials_dir: Optional[Path] = None,
+    doc_id: Optional[str] = None,
 ) -> tuple[dict, list[dict], list[int]]:
     """
     Map over chunks in parallel, then reduce.
@@ -364,6 +468,11 @@ def _summary_pipeline(
             f"(chunks {sorted(failed)}); the reduce step is running on partial "
             f"input and the summary may be missing supported claims."
         )
+    # Checkpoint BEFORE the reduce: that is the whole point. The reduce is what
+    # truncates and throttles, and everything expensive has already happened.
+    if partials_dir is not None:
+        save_partials(partials_dir, doc_id or doc.doc_id, partials)
+
     return _summary_reduce(partials, doc), partials, failed
 
 
@@ -832,8 +941,19 @@ def _enrich_named_list(items: list[dict], doc: Doc) -> list[dict]:
 
 # --- Top-level ---------------------------------------------------------------
 
-def run_m2(doc: Doc, chunked: Optional[dict] = None) -> dict:
-    """Run all M2 extractors. `chunked` is the output of chunks_for_doc; computed if omitted."""
+def run_m2(
+    doc: Doc,
+    chunked: Optional[dict] = None,
+    partials_dir: Optional[Path] = None,
+) -> dict:
+    """
+    Run all M2 extractors. `chunked` is the output of chunks_for_doc; computed if
+    omitted.
+
+    `partials_dir` checkpoints the summary map stage to disk before the reduce runs
+    (see `save_partials`), which is what lets a failed reduce be resumed and what
+    makes a `summary.*` re-extraction cost one Opus call instead of thirteen.
+    """
     chunked = chunked or chunks_for_doc(doc)
     chunks: list[Chunk] = chunked["chunks"]
     chapters: list[dict] = chunked["chapters"]
@@ -841,7 +961,9 @@ def run_m2(doc: Doc, chunked: Optional[dict] = None) -> dict:
     log.info(f"M2: {len(chunks)} chunks, {len(chapters)} CEQ-mapped chapters detected")
 
     # summary_of_interest reuses this call's per-chunk findings (MCAL_PLAN 3.15).
-    summary, summary_of_interest, summary_meta = extract_summary_and_salience(chunks, doc)
+    summary, summary_of_interest, summary_meta = extract_summary_and_salience(
+        chunks, doc, partials_dir=partials_dir
+    )
     alternatives = extract_alternatives(doc, chapters)
     themes = extract_themes(summary)
     location = extract_location(doc, chapters)
