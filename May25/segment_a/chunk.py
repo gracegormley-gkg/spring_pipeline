@@ -155,13 +155,34 @@ def detect_chapters(doc: Doc) -> list[dict]:
         h.pop("span", None)
         h["start_page"] = doc.page_at_offset(h["start_char"])
         h["end_page"] = doc.page_at_offset(max(h["start_char"], h["end_char"] - 1))
+        # A span runs to the next DETECTED heading, so the last one runs to EOF and
+        # a lone detection swallows the whole document after it. That is worth
+        # knowing downstream: `text_for_ceq_chapter` on an EOF-terminated span may
+        # be returning most of the document rather than a chapter.
+        h["ends_at_eof"] = h["end_char"] >= len(text)
     return final
+
+
+# (alias, canonical) sorted LONGEST FIRST.
+#
+# Precedence used to be `CHAPTER_ALIASES`' dict order, which is only safe while no
+# alias is a prefix of another. It no longer is: "proposed action" is a Purpose and
+# Need alias and "proposed action and alternatives" is an Alternatives one, so dict
+# order would resolve the latter to Purpose and Need. Longest-first makes the table
+# order-independent, which matters because it is now long enough that nobody will
+# reason about its ordering.
+_ALIAS_PRECEDENCE = sorted(
+    ((alias, canonical) for canonical, aliases in CHAPTER_ALIASES.items()
+     for alias in aliases),
+    key=lambda pair: len(pair[0]),
+    reverse=True,
+)
 
 
 def _map_to_ceq(heading: str) -> Optional[str]:
     """
     Map a heading string (possibly with leading marker) to a canonical CEQ chapter.
-    The cleaned heading must START with a known alias.
+    The cleaned heading must START with a known alias, longest alias winning.
     """
     h = heading.strip().lower()
     h = re.sub(r"^(chapter|section)\s+[\w\.]+\s*[:\.\-–]?\s*", "", h)
@@ -169,10 +190,15 @@ def _map_to_ceq(heading: str) -> Optional[str]:
     h = re.sub(r"^[a-z]\.\s*", "", h)
     h = re.sub(r"^\d+(\.\d+)?\s*[:\.\-–]?\s*", "", h)
     h = h.strip()
-    for canonical, aliases in CHAPTER_ALIASES.items():
-        for alias in aliases:
-            if h == alias or h.startswith(alias + " ") or h.startswith(alias + ":") or h.startswith(alias + " to ") or h.startswith(alias + " of "):
-                return canonical
+    for alias, canonical in _ALIAS_PRECEDENCE:
+        if (
+            h == alias
+            or h.startswith(alias + " ")
+            or h.startswith(alias + ":")
+            or h.startswith(alias + ".")
+            or h.startswith(alias + ",")
+        ):
+            return canonical
     return None
 
 

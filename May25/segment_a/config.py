@@ -176,11 +176,117 @@ CEQ_CHAPTERS = [
 ]
 
 # Common alternate headings we should map to canonical CEQ chapters when found.
+# Heading -> canonical CEQ chapter.
+#
+# The original table used only the modern CEQ vocabulary ("Purpose and Need",
+# "Affected Environment", "Environmental Consequences"), which no document in this
+# corpus uses, because they predate it. NEPA 102(2)(C) documents from the 1970s are
+# organized as a numbered five-point response, and their headings read:
+#
+#     1. DESCRIPTION OF PROPOSED ACTION
+#     2. DESCRIPTION OF THE EXISTING ENVIRONMENT
+#     II. DESCRIPTION OF THE ENVIRONMENT
+#     PROBABLE ENVIRONMENTAL IMPACTS
+#     9. STAFF DISCUSSION OF SIGNIFICANT ENVIRONMENTAL MATTERS
+#     MITIGATING MEASURES DURING MINING OPERATIONS
+#     EVALUATION AND DISPOSITION OF COMMENTS RECEIVED FROM DRAFT ENVIRONMENTAL
+#         STATEMENT
+#
+# Measured over the 21 materialized documents, the modern-only table detected
+# `Purpose and Need` 0 times, `Affected Environment` once and `Consultation`
+# twice. The additions below are taken from the actual headings those documents
+# contain -- collected by dumping every line that passes
+# `chunk._looks_like_heading_line` and fails `chunk._map_to_ceq` -- rather than
+# from the CEQ regulations. `tests/test_detect_chapters.py` records the before and
+# after.
+#
+# `_map_to_ceq` matches the LONGEST alias first, so entries here may safely
+# overlap: "proposed action and alternatives" resolves to Alternatives even though
+# "proposed action" is a Purpose and Need alias.
 CHAPTER_ALIASES = {
-    "Purpose and Need": ["purpose and need", "purpose of and need for", "background and need"],
-    "Alternatives": ["alternatives", "alternatives considered", "proposed action and alternatives"],
-    "Affected Environment": ["affected environment", "existing environment", "environmental setting"],
-    "Environmental Consequences": ["environmental consequences", "environmental impacts", "impacts"],
-    "Mitigation": ["mitigation", "mitigation measures"],
-    "Consultation": ["consultation", "consultation and coordination", "list of preparers", "preparers"],
+    "Purpose and Need": [
+        "purpose and need",
+        "purpose of and need for",
+        "background and need",
+        # 1970s 102(2)(C) point 1: the project is described before it is justified,
+        # and the description IS the purpose-and-need section.
+        "description of proposed action",
+        "description of the proposed action",
+        "description of the proposed project",
+        "description of the proposed improvement",
+        "description of the action",
+        "proposed action",
+        "project description",
+        "purpose of the project",
+        "purpose and description",
+        "need for the project",
+        "need for the proposed action",
+    ],
+    "Alternatives": [
+        "alternatives",
+        "alternatives considered",
+        "alternatives to the proposed action",
+        "proposed action and alternatives",
+        "alternative",
+        "alternative actions",
+        "alternative corridor",
+        "alternative freeway corridor locations",
+        "recommended alternative",
+        "bus alternatives",
+        "transit alternatives",
+        "no action alternative",
+    ],
+    "Affected Environment": [
+        "affected environment",
+        "existing environment",
+        "environmental setting",
+        # 1970s point 2.
+        "description of the existing environment",
+        "description of the environment",
+        "description of existing environment",
+        "existing conditions",
+        "environment affected",
+        "the environment",
+        "environmental inventory",
+    ],
+    "Environmental Consequences": [
+        "environmental consequences",
+        "environmental impacts",
+        "impacts",
+        # 1970s point 3, and the EPA staff-review formulation.
+        "probable environmental impacts",
+        "probable impact",
+        "probable impacts",
+        "environmental impact of the proposed action",
+        "environmental impacts of the proposed action",
+        "adverse environmental effects",
+        "adverse impacts",
+        "unavoidable adverse impacts",
+        "staff discussion of significant environmental matters",
+        "significant environmental matters",
+        "impact of the proposed action",
+        "environmental effects",
+    ],
+    "Mitigation": [
+        "mitigation",
+        "mitigation measures",
+        "mitigating measures",
+        "measures to mitigate",
+        "measures to minimize",
+    ],
+    "Consultation": [
+        "consultation",
+        "consultation and coordination",
+        "list of preparers",
+        "preparers",
+        # 1970s point 5 / comment-response sections.
+        "evaluation and disposition of comments",
+        "comments and responses",
+        "comments received",
+        "response to comments",
+        "coordination and consultation",
+        "coordination",
+        "distribution list",
+        "agencies consulted",
+    ],
 }
