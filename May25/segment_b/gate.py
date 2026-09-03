@@ -437,7 +437,7 @@ def acronym_rate(entry: Any, acronym_meta: Optional[dict] = None,
     where the number lives and the disagreement silently zeroed the signal:
 
       * `acronym_meta["per_field"][field]["s_acronym"]` -- what
-        `segment_b/run.py:_run_acronyms` actually writes (it hangs the per-field
+        `segment_b/run.py:_apply_acronyms` actually writes (it hangs the per-field
         stats off `m2["acronym_meta"]`, not off the field entry). This is the real
         production path and was previously unread, so `s_acronym` was None on
         every field of every document in the v1 batch despite being computed.

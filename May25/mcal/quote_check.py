@@ -557,7 +557,7 @@ def page_match_summary(
     measurement says so. Over every quote of every field in the 12-doc v1 batch
     plus the 8 graded documents:
 
-        extraction evidence   1112 located quotes,  0 divergences  (rate 1.0000)
+        extraction evidence   1985 located quotes,  0 divergences  (rate 1.0000)
 
     Mis-citation is structurally impossible on that path: `evidence.verify_and_locate`
     writes the page `doc.find_quote` FOUND the quote on, so `source_pages` is

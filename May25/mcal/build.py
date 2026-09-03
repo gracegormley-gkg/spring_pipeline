@@ -928,18 +928,33 @@ def _run_atomic(grade_set: grades.GradeSet, stage: str) -> tuple[Optional[dict],
         log.warning(f"  false-negative audit failed: {e}")
         audit = {"error": str(e)}
 
+    # `stage` is keyword-only and this used to be called as
+    # `save_failure_log(log_payload, stage, draft=True)`, which raised
+    # `TypeError: missing a required keyword-only argument: 'stage'` on every run
+    # -- swallowed by the except below, so the failure log was NEVER written and
+    # the only trace was one warning line. It also built the payload twice, since
+    # `save_failure_log` builds it internally.
+    failure_log: Optional[str] = None
+    failure_log_error: Optional[str] = None
     try:
-        log_payload = atomic_verify.build_failure_log(
-            [dv for _, dv in verifications], grade_set, stage=stage
+        failure_log = str(
+            atomic_verify.save_failure_log(
+                [dv for _, dv in verifications], grade_set,
+                stage=stage, draft=True,
+            )
         )
-        atomic_verify.save_failure_log(log_payload, stage, draft=True)
-    except Exception as e:
-        log.warning(f"  failure log write failed: {e}")
+    except Exception as e:  # noqa: BLE001 - one artifact must not fail the build
+        log.warning(f"  failure log write failed: {type(e).__name__}: {e}")
+        failure_log_error = f"{type(e).__name__}: {e}"
 
     return rates or None, {
         "ran": True,
         "n_docs": len(verifications),
         "per_doc": per_doc,
+        # Recorded in the build result, not just logged: a warning scrolls past,
+        # and the false-negative audit is meant to be reviewable afterwards.
+        "failure_log": failure_log,
+        "failure_log_error": failure_log_error,
         "false_negative_audit": audit,
     }
 

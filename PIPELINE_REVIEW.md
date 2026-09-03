@@ -436,7 +436,7 @@ would have double-counted `s_quote` while the weight table claimed the weight
 belonged to citation coverage. Removed.
 
 **§2.7 — mis-citation is structurally impossible on the extraction path.**
-0 divergences over 1112 located quotes, all fields, 20 documents.
+0 divergences over 1985 located quotes, all fields, 20 documents.
 `evidence.verify_and_locate` writes the page `doc.find_quote` *found* the quote
 on, so the cite is derived from the match and cannot disagree with it. The
 Evaluation sheet notes cited as evidence — `missing citation - pg 34, 36, 146` —

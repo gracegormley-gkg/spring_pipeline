@@ -7,7 +7,7 @@ found on p.34 has always scored identically to an exact hit. The review called
 this "mis-citation is live and unmeasured" and asked for a signal.
 
 Measuring it first changes the conclusion. On the extraction path the invariant
-holds absolutely -- 0 divergences over 1112 located quotes across the 12-doc v1
+holds absolutely -- 0 divergences over 1985 located quotes across the 12-doc v1
 batch and the 8 graded documents -- because `evidence.verify_and_locate` writes
 the page `doc.find_quote` FOUND the quote on. The cite is derived from the match,
 so it cannot disagree with it, and a cited-vs-matched signal would be a constant.
@@ -207,9 +207,14 @@ class TestCorpusInvariant:
     def _iter_docs():
         from pages import load_doc
 
+        # Anchored to settings, not the CWD. A relative "segment_b/output" glob
+        # silently matched nothing when pytest ran from the repo root, which
+        # dropped the 12-doc batch and made the corpus size -- and therefore this
+        # test's own threshold -- depend on where it was invoked from.
+        segment_b_output = settings.SEGMENT_B_DIR / "output"
         roots = [
             (p.parent.name, p, p.parent / "m1.json")
-            for p in sorted(pathlib.Path("segment_b/output").glob("*/m2.json"))
+            for p in sorted(segment_b_output.glob("*/m2.json"))
         ]
         roots += [
             (p.stem, p, settings.M1_DIR / f"{p.stem}.json")
@@ -251,7 +256,7 @@ class TestCorpusInvariant:
 
         if n_located == 0:
             pytest.skip("no materialized documents on this machine")
-        assert n_located > 1000, f"only {n_located} quotes checked; corpus shrank?"
+        assert n_located > 1900, f"only {n_located} quotes checked; corpus shrank?"
         assert divergences == [], (
             f"{len(divergences)} cited/matched divergences appeared. The "
             f"extraction path used to be exact by construction; see "

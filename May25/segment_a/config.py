@@ -108,7 +108,7 @@ MODEL_HAIKU_REAL = "us.anthropic.claude-haiku-4-5-20251001-v1:0"
 #
 # To flip it: set this to "sonnet", rerun the graded corpus, re-run
 # `python -m mcal.build --stage vN`, and check `weight_validation` before grading
-# anything new. `tests/test_summary_map_model.py` asserts the switch is honoured
+# anything new. `tests/test_llm_and_model_switch.py` asserts the switch is honoured
 # and that the default has not moved.
 SUMMARY_MAP_MODEL = "opus"
 
