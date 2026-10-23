@@ -33,13 +33,33 @@ import m2 as m2_mod
 
 
 class TestSummaryMapModelSwitch:
-    def test_the_default_is_still_opus(self):
+    def test_the_default_is_sonnet_from_v2(self):
         """
-        A guard, not a preference. If this flips, `weight_validation` and every
-        bucket's tau were fitted on a different extractor than the one running.
+        A guard, not a preference. The default moved Opus -> Sonnet at the v1 ->
+        v2 stage boundary. If it moves again, every bucket's tau was fitted on a
+        different extractor than the one running -- which is why artifacts are
+        stamped and checked (test below, and TestMapModelStamp).
         """
-        assert config.SUMMARY_MAP_MODEL == "opus"
-        assert m2_mod._summary_map_model() is m2_mod.opus
+        assert config.SUMMARY_MAP_MODEL == "sonnet"
+        assert m2_mod._summary_map_model() is m2_mod.sonnet
+        assert m2_mod.summary_map_model_name() == "sonnet"
+
+    def test_artifacts_from_a_different_map_model_are_rejected(self, monkeypatch):
+        from mcal import settings
+
+        current = {"_prompt_version": settings.M2_PROMPT_VERSION_REQUIRED,
+                   "_summary_map_model": "sonnet"}
+        assert settings.m2_extraction_mismatches(current) == []
+        # Unstamped artifacts predate the stamp and were all made with Opus.
+        legacy = {"_prompt_version": settings.M2_PROMPT_VERSION_REQUIRED}
+        assert settings.m2_extraction_mismatches(legacy) == [
+            "summary map model 'opus', need 'sonnet'"
+        ]
+        monkeypatch.setattr(config, "SUMMARY_MAP_MODEL", "opus")
+        assert settings.m2_extraction_mismatches(legacy) == []
+        assert settings.m2_extraction_mismatches({}) == [
+            "prompt version None, need 'v1_plain_language'"
+        ]
 
     def test_sonnet_is_honoured(self, monkeypatch):
         monkeypatch.setattr(config, "SUMMARY_MAP_MODEL", "sonnet")

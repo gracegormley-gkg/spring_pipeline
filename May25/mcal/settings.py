@@ -121,6 +121,28 @@ def grading_sheet_dirs() -> list[Path]:
     return dirs
 
 
+def m2_extraction_mismatches(m2: dict) -> list[str]:
+    """
+    Why an M2 artifact was not made by the current extractor; empty if it was.
+
+    Checks the prompt version and the summary map model. An artifact without a
+    `_summary_map_model` stamp predates it and was made with Opus.
+    """
+    import config as segment_a_config  # segment_a, bridged above
+
+    want_map = (segment_a_config.SUMMARY_MAP_MODEL or "opus").strip().lower()
+    got_prompt = m2.get("_prompt_version")
+    got_map = m2.get("_summary_map_model") or M2_LEGACY_SUMMARY_MAP_MODEL
+    out: list[str] = []
+    if got_prompt != M2_PROMPT_VERSION_REQUIRED:
+        out.append(
+            f"prompt version {got_prompt!r}, need {M2_PROMPT_VERSION_REQUIRED!r}"
+        )
+    if got_map != want_map:
+        out.append(f"summary map model {got_map!r}, need {want_map!r}")
+    return out
+
+
 def holdout_doc_ids(path: Optional[Path] = None) -> set[str]:
     """Normalized doc_ids in the held-out test set. Empty if no file."""
     p = path or HOLDOUT_FILE

@@ -87,30 +87,28 @@ MODEL_OPUS = "us.anthropic.claude-opus-4-7"
 MODEL_HAIKU_REAL = "us.anthropic.claude-haiku-4-5-20251001-v1:0"
 
 # --- Which model runs the M2 summary MAP step -------------------------------
-# "opus" (default) or "sonnet".
+# "sonnet" (default since extractor-v2) or "opus".
 #
 # The map step asks for a short summary of one 50-page chunk plus verbatim quotes
 # copied out of it. That is extraction and transcription; the synthesis happens in
-# the reduce step. It is also ~40% of Opus input tokens, at a 5x price difference
-# ($3/$15 per M vs $15/$75), so moving it to Sonnet is the single largest cost
-# lever in the pipeline -- roughly a 40-55% reduction on a $6.76/doc baseline.
+# the reduce step, which stays on Opus. The map step is ~40% of Opus input tokens,
+# so this is the pipeline's largest single cost lever.
 #
-# It defaults to Opus anyway, deliberately:
+# It was Opus through stage v1 and moved to Sonnet at the v1 -> v2 boundary,
+# which is the only safe place for it: changing an extractor's model shifts the
+# score distribution the conformal thresholds were fitted to. The v1 thresholds
+# were saturated or force-gated in six of seven buckets, so there was little
+# calibration to lose, and every graded doc is rerun before v2 is built.
 #
-#   * Changing an extractor's model shifts the score distribution the frozen
-#     conformal thresholds were fitted to (see the MODEL_HAIKU note above). This
-#     has to land BETWEEN calibration stages, with a rerun and a refit, not
-#     silently under an existing tau.
-#   * The quality claim is untested here. "Copying quotes verbatim out of 1970s
-#     OCR" is exactly the kind of task where a cheaper model degrades in a way
-#     that is invisible in the prose and only shows up as a quote that fails
-#     verification -- which the pipeline would then attribute to the reduce step.
+# The quality risk is specific: copying quotes verbatim out of 1970s OCR is where
+# a cheaper model would degrade, and it would show up as quotes failing
+# verification. Compare the quote-verified rate per doc before and after.
 #
-# To flip it: set this to "sonnet", rerun the graded corpus, re-run
-# `python -m mcal.build --stage vN`, and check `weight_validation` before grading
-# anything new. `tests/test_llm_and_model_switch.py` asserts the switch is honoured
-# and that the default has not moved.
-SUMMARY_MAP_MODEL = "opus"
+# Every M2 artifact records the model as `_summary_map_model`. `segment_b/run.py`
+# refuses to reuse a checkpoint made under a different map model, and
+# `mcal/build.py` refuses to calibrate on one. Artifacts from before the stamp
+# existed are read as Opus (`mcal.settings.M2_LEGACY_SUMMARY_MAP_MODEL`).
+SUMMARY_MAP_MODEL = "sonnet"
 
 # --- Closed vocabularies ---
 EIS_TYPE_PATTERNS = {

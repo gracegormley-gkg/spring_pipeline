@@ -115,6 +115,41 @@ def precheck_m2_prompt_version() -> Precheck:
     return Precheck(ok=True, name="m2_prompt_version", detail=got)
 
 
+def precheck_m2_extraction(doc_ids) -> Precheck:
+    """
+    Halting: every graded doc's M2 artifact was made by the current extractor.
+
+    The marker check above covers Segment A's directory as a whole and never
+    looked at the map model. This reads the artifact each graded doc will
+    actually be scored from (`settings.m2_path_for`) and checks both its prompt
+    version and its `_summary_map_model` stamp, so switching the map model can
+    no longer leave tau fitted to the old model's output.
+    """
+    stale: list[str] = []
+    for doc_id in doc_ids:
+        path = settings.m2_path_for(doc_id)
+        if not path.exists():
+            continue  # reported as a missing input by score_graded_corpus
+        m2 = json.loads(path.read_text(encoding="utf-8"))
+        why = settings.m2_extraction_mismatches(m2)
+        if why:
+            stale.append(f"{doc_id}: {'; '.join(why)}")
+    if not stale:
+        return Precheck(ok=True, name="m2_extraction", detail=f"{len(doc_ids)} docs")
+    return Precheck(
+        ok=False,
+        name="m2_extraction",
+        detail=f"{len(stale)} graded doc(s) were extracted by a different extractor",
+        checklist=[
+            "These graded docs' M2 output was not made by the current extractor:",
+            *(f"  - {s}" for s in stale),
+            "",
+            "Rerun them under Segment B and re-grade any rows whose value changed:",
+            "  python -m segment_b.run process --docs <ids> --force",
+        ],
+    )
+
+
 def precheck_geocoder() -> Precheck:
     """
     MCAL_PLAN 3.7 / 3.9a: check the three user-supplied geocoder assets.
@@ -835,6 +870,24 @@ def run_build(
         raise PrecheckFailure("\n".join(gp.checklist))
     for w in grade_set.warnings:
         log.warning(f"grades: {w}")
+
+    # --- precheck 3: graded docs were extracted by the current extractor ---
+    ex = precheck_m2_extraction(grade_set.doc_ids)
+    prechecks.append(ex)
+    if not ex.ok:
+        if skip_m2_precheck:
+            log.warning(
+                "M2 extraction precheck FAILED but --skip-m2-precheck was passed. "
+                "Thresholds fitted now describe a different extractor and MUST "
+                "NOT be promoted for production use."
+            )
+        else:
+            raise PrecheckFailure(
+                "M2 extraction precheck failed.\n\n"
+                + "\n".join(ex.checklist)
+                + "\n\n(Use --skip-m2-precheck to build anyway for a dry run; "
+                "the resulting thresholds are not valid for Segment B.)"
+            )
 
     # --- taxonomy ---
     log.info("Building taxonomy...")

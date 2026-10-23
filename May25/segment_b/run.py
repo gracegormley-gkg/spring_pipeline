@@ -45,6 +45,7 @@ budget noticeably more per doc than Segment A -- check `--estimate` first.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import logging
 import sys
@@ -117,6 +118,24 @@ def _write_json(path: Path, payload) -> Path:
         json.dumps(payload, indent=2, default=str) + "\n", encoding="utf-8"
     )
     return path
+
+
+def _fingerprint(payload) -> str:
+    """Stable short hash of a JSON-able value, for checkpoint invalidation."""
+    blob = json.dumps(payload, sort_keys=True, default=str).encode("utf-8")
+    return hashlib.sha256(blob).hexdigest()[:16]
+
+
+def _read_keyed(path: Path, key: str):
+    """A checkpoint written by `_write_keyed`, or None if absent or stale."""
+    got = _read_json(path)
+    if not isinstance(got, dict) or got.get("_inputs") != key:
+        return None
+    return got.get("value")
+
+
+def _write_keyed(path: Path, key: str, value) -> Path:
+    return _write_json(path, {"_inputs": key, "value": value})
 
 
 def _read_json(path: Path):
@@ -204,14 +223,31 @@ def process_doc(
         _write_json(m1_path, m1)
 
         # --- 4. M2 (+ summary_of_interest) ---
+        # Two files. `m2_extract.json` is the extractor's raw output and is the
+        # checkpoint; `m2.json` is the final value after steps 5-7 rewrite it.
+        # Reusing the final file as the checkpoint (as this used to) re-applied
+        # the acronym pass to already-glossed text on every rerun. Outputs from
+        # before the split have only `m2.json`, which is read as the checkpoint.
         m2_path = base / "m2.json"
-        m2 = None if force else _read_json(m2_path)
+        extract_path = base / "m2_extract.json"
+        m2 = None
+        if not force:
+            m2 = _read_json(extract_path)
+            if m2 is None:
+                m2 = _read_json(m2_path)
+        if m2 is not None:
+            stale = settings.m2_extraction_mismatches(m2)
+            if stale:
+                msg = f"M2 checkpoint is stale ({'; '.join(stale)}); re-extracting"
+                log.warning(f"  {msg}")
+                result.warnings.append(msg)
+                m2 = None
         if m2 is None:
             # `base` also receives the summary map checkpoint, so a reduce that
-            # truncates does not discard up to 12 Opus calls, and the MCAL_PLAN
+            # truncates does not discard up to 12 map calls, and the MCAL_PLAN
             # 7 Q8 retry can re-reduce for one call instead of thirteen.
             m2 = m2_mod.run_m2(doc, chunked=chunked, partials_dir=base)
-            _write_json(m2_path, m2)
+            _write_json(extract_path, m2)
         soi = m2.get("summary_of_interest")
         log.info(
             f"  M2: summary_of_interest = "
@@ -220,8 +256,18 @@ def process_doc(
         _warn_on_incomplete_summary_source(m2, result)
 
         # --- 5. location pipeline (replaces M2's) ---
+        # Checkpointed on the geocoder stack, so installing the geocoder assets
+        # recomputes it and nothing else does. It used to re-run (Sonnet and
+        # network calls) on every pass, which also made the Critic checkpoint
+        # below describe a value that might have changed.
+        loc_key = _fingerprint(
+            {"geocoder_stack": settings.geocoder_precheck()["stack"]}
+        )
         try:
-            loc = location_pipeline.run_location_pipeline(doc, chapters)
+            loc = None if force else _read_keyed(base / "location.json", loc_key)
+            if loc is None:
+                loc = location_pipeline.run_location_pipeline(doc, chapters)
+                _write_keyed(base / "location.json", loc_key, loc)
             m2["location"] = location_pipeline.as_m2_location_field(loc)
             m2["location_pipeline"] = loc
             log.info(
@@ -240,13 +286,19 @@ def process_doc(
             result.warnings.append(f"location_pipeline: {e}")
 
         # --- 6. key_people pipeline (replaces M2's) ---
+        # Checkpointed on its inputs (the adjudicated year and M1), for the
+        # same reason as location.
+        kp_key = _fingerprint({"year": _val(m1, "year"), "m1": m1})
         try:
-            kp = key_people_pipeline.run_key_people_pipeline(
-                doc,
-                chapters,
-                year=_val(m1, "year"),
-                m1=m1,
-            )
+            kp = None if force else _read_keyed(base / "key_people.json", kp_key)
+            if kp is None:
+                kp = key_people_pipeline.run_key_people_pipeline(
+                    doc,
+                    chapters,
+                    year=_val(m1, "year"),
+                    m1=m1,
+                )
+                _write_keyed(base / "key_people.json", kp_key, kp)
             m2["key_people"] = key_people_pipeline.as_m2_key_people_field(kp)
             m2["key_people_pipeline"] = kp
             log.info(
@@ -275,8 +327,21 @@ def process_doc(
         _write_json(m2_path, m2)
 
         # --- 8. Critic (per field) ---
+        # The Critic checkpoint is valid only for the exact values it judged. A
+        # fingerprint of (stage, m1, m2) is written beside it; any change to an
+        # upstream value -- a re-extraction, a postproc rerun, a new year --
+        # invalidates it. Checkpoints with no fingerprint predate this and are
+        # treated as stale, since the values they judged are unknown.
         critic_path = base / "critic.json"
-        cached = None if force else _read_json(critic_path)
+        critic_key_path = base / "critic.inputs.json"
+        critic_key = _fingerprint({"stage": stage, "m1": m1, "m2": m2})
+        cached = None
+        if not force:
+            cached = _read_json(critic_path)
+            if cached is not None and _read_keyed(critic_key_path, critic_key) is None:
+                log.warning("  Critic checkpoint does not match current values; re-judging")
+                result.warnings.append("critic checkpoint stale; re-judged")
+                cached = None
         if cached is not None:
             critic_results = critic_mod.results_from_payload(cached)
         else:
@@ -287,6 +352,7 @@ def process_doc(
                 critic_path,
                 {f: r.to_dict() for f, r in critic_results.items()},
             )
+            _write_keyed(critic_key_path, critic_key, True)
         _log_verdicts(critic_results)
 
         # --- 9. gate + manifest ---

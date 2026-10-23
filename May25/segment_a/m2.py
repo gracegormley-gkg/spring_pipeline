@@ -99,24 +99,31 @@ SUMMARY_REDUCE_MAX_TOKENS = 24_000
 SUMMARY_OF_INTEREST_MAX_TOKENS = 8_000
 
 
+def summary_map_model_name() -> str:
+    """
+    `"opus"` or `"sonnet"`, per `config.SUMMARY_MAP_MODEL`. Falsy means Opus.
+
+    Stamped into every M2 artifact as `_summary_map_model`, so a checkpoint made
+    under one map model is never silently reused under the other.
+    """
+    choice = (config.SUMMARY_MAP_MODEL or "opus").strip().lower()
+    if choice in ("opus", "sonnet"):
+        return choice
+    raise ValueError(
+        f"config.SUMMARY_MAP_MODEL must be 'opus' or 'sonnet', got "
+        f"{config.SUMMARY_MAP_MODEL!r}"
+    )
+
+
 def _summary_map_model():
     """
     The callable that runs the map step: `opus` or `sonnet`, per
     `config.SUMMARY_MAP_MODEL`.
 
     Resolved per call rather than bound at import so a test -- or a stage boundary
-    -- can change it without reloading the module. See that config constant for
-    why the default is Opus despite this being the pipeline's largest cost lever.
+    -- can change it without reloading the module. See that config constant.
     """
-    choice = (config.SUMMARY_MAP_MODEL or "opus").strip().lower()
-    if choice == "sonnet":
-        return sonnet
-    if choice == "opus":
-        return opus
-    raise ValueError(
-        f"config.SUMMARY_MAP_MODEL must be 'opus' or 'sonnet', got "
-        f"{config.SUMMARY_MAP_MODEL!r}"
-    )
+    return sonnet if summary_map_model_name() == "sonnet" else opus
 
 
 def _summary_map_one(chunk: Chunk) -> dict:
@@ -127,7 +134,7 @@ def _summary_map_one(chunk: Chunk) -> dict:
     quote per field per chunk, which made the final per-doc summary
     under-cited (you'd see 3 claims in `text` backed by only 1-2 quotes).
 
-    The model is `config.SUMMARY_MAP_MODEL` (default Opus). Note that Sonnet
+    The model is `config.SUMMARY_MAP_MODEL` (default Sonnet). Note that Sonnet
     honours `temperature` while Opus ignores it, so flipping the switch also makes
     the MCAL_PLAN 7 Q8 retry's +0.2 resample actually take effect on this step.
     """
@@ -977,6 +984,9 @@ def run_m2(
         # so an invocation-scoped check refuses to stamp a set that is in fact
         # consistent -- which is exactly what happened on the first rerun.
         "_prompt_version": PROMPT_VERSION,
+        # Which model ran the summary map step. Checked alongside
+        # `_prompt_version` by `mcal.settings.m2_extraction_mismatches`.
+        "_summary_map_model": summary_map_model_name(),
         # Always emitted, including when empty. An empty list means "this
         # document is routine", which is a substantive result and must stay
         # distinguishable from a generation failure (MCAL_PLAN 3.12).

@@ -249,3 +249,137 @@ class TestCarryForward:
         _m, rows = gsh.read_sheet(second)
         assert {r["field"]: r["extracted_value"] for r in rows}["year"] == "1973"
         assert {r["field"]: r["your_grade"] for r in rows}["year"] == ""
+
+
+# --- Segment B checkpoints are invalidated by their inputs ------------------
+
+
+class TestRunnerCheckpoints:
+    """
+    `segment_b.run.process_doc` reuses checkpoints only while their inputs are
+    unchanged: M2 under the current extractor, location under the current
+    geocoder stack, key_people under the current year, and the Critic only for
+    the exact values it judged. Every model and network call is stubbed.
+    """
+
+    @pytest.fixture
+    def runner(self, tmp_path, monkeypatch):
+        from types import SimpleNamespace
+
+        from segment_b import run as R
+
+        calls = {"m2": 0, "loc": 0, "kp": 0, "critic": 0}
+        state = {"stack": "reduced", "map_model": "sonnet"}
+
+        def run_m2(doc, **kw):
+            calls["m2"] += 1
+            return {
+                "_prompt_version": settings.M2_PROMPT_VERSION_REQUIRED,
+                "_summary_map_model": state["map_model"],
+                "summary": {},
+            }
+
+        def run_loc(doc, chapters):
+            calls["loc"] += 1
+            return {"scope": "site", "stack_seen": state["stack"]}
+
+        def run_kp(doc, chapters, **kw):
+            calls["kp"] += 1
+            return {"agency_preparers": []}
+
+        def run_critic(doc, m1, m2, **kw):
+            calls["critic"] += 1
+            return {}
+
+        doc = SimpleNamespace(n_pages=3, doc_id="doc1")
+        monkeypatch.setattr(R, "load_doc", lambda d: doc)
+        monkeypatch.setattr(R, "lookup_work", lambda d: {"title": "T"})
+        monkeypatch.setattr(
+            R, "chunks_for_doc", lambda d: {"chunks": [], "chapters": []}
+        )
+        monkeypatch.setattr(R.m1_mod, "run_m1", lambda w, d: {"year": {"value": 1972}})
+        monkeypatch.setattr(
+            R.year_adjudicator, "adjudicate",
+            lambda d, m1_year=None: {"year": None, "source_type": None},
+        )
+        monkeypatch.setattr(R.m2_mod, "run_m2", run_m2)
+        monkeypatch.setattr(R.location_pipeline, "run_location_pipeline", run_loc)
+        monkeypatch.setattr(R.location_pipeline, "as_m2_location_field", lambda l: l)
+        monkeypatch.setattr(
+            R.key_people_pipeline, "run_key_people_pipeline", run_kp
+        )
+        monkeypatch.setattr(
+            R.key_people_pipeline, "as_m2_key_people_field", lambda k: k
+        )
+        monkeypatch.setattr(
+            R, "_apply_acronyms",
+            lambda m2, d, s: {"n_glossary": 0, "n_rewritten": 0,
+                              "undefined": {}, "per_field": {}},
+        )
+        monkeypatch.setattr(R.critic_mod, "run_critic", run_critic)
+        monkeypatch.setattr(
+            R.gate_mod, "run_gate",
+            lambda *a, **kw: SimpleNamespace(rollup={}, manifest={}),
+        )
+        monkeypatch.setattr(
+            settings, "geocoder_precheck",
+            lambda: {"stack": state["stack"], "checklist": []},
+        )
+        import config as segment_a_config
+
+        monkeypatch.setattr(segment_a_config, "SUMMARY_MAP_MODEL", "sonnet")
+
+        def go(**kw):
+            r = R.process_doc(
+                "doc1", stage="v1", out_dir=tmp_path, write_sheets=False,
+                reextract=False, **kw,
+            )
+            assert r.error is None, r.error
+            return r
+
+        return go, calls, state, tmp_path / "doc1"
+
+    def test_second_run_reuses_everything(self, runner):
+        go, calls, _state, base = runner
+        go()
+        go()
+        assert calls == {"m2": 1, "loc": 1, "kp": 1, "critic": 1}
+        assert (base / "m2_extract.json").exists()
+        assert (base / "critic.inputs.json").exists()
+
+    def test_force_recomputes_everything(self, runner):
+        go, calls, _state, _base = runner
+        go()
+        go(force=True)
+        assert calls == {"m2": 2, "loc": 2, "kp": 2, "critic": 2}
+
+    def test_new_geocoder_stack_reruns_location_and_rejudges(self, runner):
+        go, calls, state, _base = runner
+        go()
+        state["stack"] = "full"
+        r = go()
+        assert calls == {"m2": 1, "loc": 2, "kp": 1, "critic": 2}
+        assert "critic checkpoint stale; re-judged" in r.warnings
+
+    def test_m2_from_another_map_model_is_re_extracted(self, runner):
+        go, calls, state, _base = runner
+        state["map_model"] = "opus"   # checkpoint written by the old extractor
+        go()
+        state["map_model"] = "sonnet"
+        r = go()
+        assert calls["m2"] == 2
+        assert any("M2 checkpoint is stale" in w for w in r.warnings)
+
+    def test_legacy_critic_without_fingerprint_is_rejudged(self, runner):
+        go, calls, _state, base = runner
+        go()
+        (base / "critic.inputs.json").unlink()
+        go()
+        assert calls["critic"] == 2
+
+    def test_legacy_m2_json_is_still_read_as_the_checkpoint(self, runner):
+        go, calls, _state, base = runner
+        go()
+        (base / "m2_extract.json").unlink()
+        go()
+        assert calls["m2"] == 1
