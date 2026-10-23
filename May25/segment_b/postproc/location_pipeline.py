@@ -923,10 +923,15 @@ def geocode_gnis(
 
 # Managing agencies MCAL_PLAN 3.9a names explicitly, plus the codes PAD-US uses
 # for them. Matched case-insensitively against whichever manager column exists.
+# USACE and NRCS were added at extractor-v2.1: the Army Corps built and manages
+# many of the dams, reservoirs and waterways 1970s EISs cover, and both were
+# absent, so a Corps lake could only reach PAD-US through a substring accident.
 PADUS_FEDERAL_MANAGERS = (
     "BLM", "NPS", "FWS", "USFWS", "USFS", "FS", "DOD", "DOE", "BOR", "USBR",
+    "USACE", "NRCS",
     "Bureau of Land Management", "National Park Service",
     "Fish and Wildlife Service", "Forest Service", "Department of Defense",
+    "Army Corps of Engineers", "Natural Resources Conservation Service",
 )
 
 _PADUS_NAME_FIELDS = ("Unit_Nm", "unit_nm", "Loc_Nm", "loc_nm", "d_Unit_Nm", "Name")

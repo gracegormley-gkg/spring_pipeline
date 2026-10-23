@@ -563,6 +563,10 @@ class TestPadusHop:
             ("USFS", True),
             ("Bureau of Land Management", True),
             ("BLM", True),
+            ("USACE", True),          # added at extractor-v2.1
+            ("NRCS", True),
+            ("CITY", False),
+            ("SFW", False),           # state fish & wildlife, not FWS
             ("City of Buffalo", False),
             ("", False),
         ],
