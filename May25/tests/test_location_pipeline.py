@@ -1283,3 +1283,47 @@ class TestCorridorParserOnRealDocs:
             assert lp.looks_like_place(got.endpoint_a)
             assert lp.looks_like_place(got.endpoint_b)
             assert got.endpoint_a != got.endpoint_b
+
+
+class TestStateHintAgainstCurrentGnisSchema:
+    """
+    The current GNIS file (DomesticNames_National) stores full state names, but
+    an extracted state hint is often a USPS code or a 1970s GPO abbreviation.
+    Comparing them as names failed, so the hint was silently dropped: on the
+    real file, "Bad Creek" with state "SC" resolved to a stream in California.
+    """
+
+    HEADER = ("feature_id|feature_name|feature_class|state_name|county_name|"
+              "prim_lat_dec|prim_long_dec\n")
+
+    @pytest.fixture
+    def gnis(self, tmp_path, monkeypatch):
+        path = tmp_path / "DomesticNames_National.txt"
+        path.write_text(
+            self.HEADER
+            + "1|Bad Creek|Stream|California|Lake|38.85|-122.67\n"
+            + "2|Bad Creek|Stream|South Carolina|Oconee|35.01|-82.99\n",
+            encoding="utf-8",
+        )
+        monkeypatch.setattr(lp.settings, "gnis_path", lambda: path)
+        lp._GNIS.reset()
+        yield
+        lp._GNIS.reset()
+
+    @pytest.mark.parametrize("hint", ["SC", "S.C.", "sc", "South Carolina"])
+    def test_any_spelling_of_the_state_narrows(self, gnis, hint):
+        got = lp.geocode_gnis("Bad Creek", state=hint)
+        assert got["admin_hierarchy"]["state"] == "South Carolina"
+
+    @pytest.mark.parametrize(
+        "raw,code",
+        [("Calif.", "CA"), ("Wis.", "WI"), ("N.Y.", "NY"), ("new york", "NY"),
+         ("District of Columbia", "DC"), ("Penna.", "PA"), ("Atlantis", None),
+         ("", None), (None, None)],
+    )
+    def test_canonical_state(self, raw, code):
+        assert lp.canonical_state(raw) == code
+
+    def test_unparseable_states_fall_back_to_name_matching(self):
+        assert lp.states_match("Sotuh Carolina", "South Carolina")
+        assert not lp.states_match("SC", "NC")

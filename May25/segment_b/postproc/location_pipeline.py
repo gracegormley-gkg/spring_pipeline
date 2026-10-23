@@ -548,6 +548,62 @@ def clean_place_name(value: Any) -> Optional[str]:
     return None if s.lower() in _NULLISH else s
 
 
+# US states and territories: USPS code -> full name, plus the traditional
+# (GPO) abbreviations 1970s documents use ("Calif.", "Wis.", "S.C."). The current
+# GNIS file stores full state names while an extracted hint is often a code or
+# an old abbreviation, and `names_match("South Carolina", "SC")` is False -- so a
+# state hint used to be silently ignored, and "Bad Creek, SC" resolved to a
+# stream in California.
+_US_STATES = {
+    "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas",
+    "CA": "California", "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware",
+    "DC": "District of Columbia", "FL": "Florida", "GA": "Georgia", "HI": "Hawaii",
+    "ID": "Idaho", "IL": "Illinois", "IN": "Indiana", "IA": "Iowa", "KS": "Kansas",
+    "KY": "Kentucky", "LA": "Louisiana", "ME": "Maine", "MD": "Maryland",
+    "MA": "Massachusetts", "MI": "Michigan", "MN": "Minnesota",
+    "MS": "Mississippi", "MO": "Missouri", "MT": "Montana", "NE": "Nebraska",
+    "NV": "Nevada", "NH": "New Hampshire", "NJ": "New Jersey",
+    "NM": "New Mexico", "NY": "New York", "NC": "North Carolina",
+    "ND": "North Dakota", "OH": "Ohio", "OK": "Oklahoma", "OR": "Oregon",
+    "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina",
+    "SD": "South Dakota", "TN": "Tennessee", "TX": "Texas", "UT": "Utah",
+    "VT": "Vermont", "VA": "Virginia", "WA": "Washington", "WV": "West Virginia",
+    "WI": "Wisconsin", "WY": "Wyoming", "PR": "Puerto Rico",
+    "VI": "Virgin Islands", "GU": "Guam", "AS": "American Samoa",
+    "MP": "Northern Mariana Islands",
+}
+_GPO_STATE_ABBREVIATIONS = {
+    "ala": "AL", "ariz": "AZ", "ark": "AR", "calif": "CA", "cal": "CA",
+    "colo": "CO", "conn": "CT", "del": "DE", "fla": "FL", "ill": "IL",
+    "ind": "IN", "kans": "KS", "kan": "KS", "mass": "MA", "mich": "MI",
+    "minn": "MN", "miss": "MS", "mont": "MT", "nebr": "NE", "neb": "NE",
+    "nev": "NV", "okla": "OK", "oreg": "OR", "ore": "OR", "penn": "PA",
+    "penna": "PA", "tenn": "TN", "tex": "TX", "wash": "WA", "wis": "WI",
+    "wisc": "WI", "wyo": "WY", "va": "VA", "md": "MD", "ga": "GA",
+}
+_STATE_LOOKUP: dict[str, str] = {}
+for _code, _name in _US_STATES.items():
+    _STATE_LOOKUP[_code.lower()] = _code
+    _STATE_LOOKUP[re.sub(r"[^a-z]", "", _name.lower())] = _code
+_STATE_LOOKUP.update(_GPO_STATE_ABBREVIATIONS)
+
+
+def canonical_state(value: Optional[str]) -> Optional[str]:
+    """USPS code for a state written any common way, or None if unrecognized."""
+    if not value:
+        return None
+    key = re.sub(r"[^a-z]", "", str(value).lower())
+    return _STATE_LOOKUP.get(key)
+
+
+def states_match(a: Optional[str], b: Optional[str]) -> bool:
+    """Compare states by USPS code when both parse; else fall back to names."""
+    ca, cb = canonical_state(a), canonical_state(b)
+    if ca and cb:
+        return ca == cb
+    return names_match(a, b)
+
+
 def names_match(a: Optional[str], b: Optional[str], *, threshold: float = 88.0) -> bool:
     """
     OCR-tolerant place-name comparison.
@@ -793,7 +849,7 @@ class _GnisIndex:
             return []
         rows = self._by_name.get(normalize(name), [])
         if state and rows:
-            narrowed = [r for r in rows if names_match(r.state, state)]
+            narrowed = [r for r in rows if states_match(r.state, state)]
             if narrowed:
                 return narrowed
         return rows

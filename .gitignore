@@ -23,3 +23,6 @@ eis_pipeline/output/
 # Editors
 .idea/
 .vscode/
+
+# Geocoder reference data (PAD-US, GNIS): large, downloaded per machine
+geodata/
