@@ -205,9 +205,31 @@ def score_graded_corpus(
     per_doc_notes: dict[str, str] = {}
     n_coarse = 0
     n_atom_citation = 0
+    n_segment_b = 0
     missing: list[str] = []
 
     for doc_id in grade_set.doc_ids:
+        manifest_path = settings.manifest_path_for(doc_id)
+        if manifest_path is not None:
+            items.extend(
+                _score_from_manifest(
+                    doc_id,
+                    json.loads(manifest_path.read_text(encoding="utf-8")),
+                    grade_set,
+                    atomic_citation_rates,
+                    missing,
+                )
+            )
+            n_atom_citation += sum(
+                1
+                for g in grade_set.for_doc(doc_id)
+                if atomic_citation_rates
+                and atomic_citation_rates.get((doc_id, g.field)) is not None
+            )
+            n_segment_b += 1
+            per_doc_notes[doc_id] = grade_set.doc_notes.get(doc_id, "")
+            continue
+
         m2_path = settings.M2_DIR / f"{doc_id}.json"
         critic_path = settings.CRITIC_DIR / f"{doc_id}.json"
         if not m2_path.exists():
@@ -321,6 +343,9 @@ def score_graded_corpus(
             else "per-field"
         ),
         "n_items_with_inherited_critic_verdict": n_coarse,
+        # Docs scored from a Segment B run_manifest (production signals) rather
+        # than from Segment A's m2/critic files.
+        "n_docs_scored_from_segment_b": n_segment_b,
         "atomic_citation_rates_used": bool(atomic_citation_rates),
         # How many items actually carry s_citation. Without `--atomic` this is 0
         # and s_citation is absent everywhere, which is the honest state: see the
@@ -329,6 +354,60 @@ def score_graded_corpus(
         "s_citation_source": "atomic_verify" if atomic_citation_rates else None,
     }
     return items, diagnostics
+
+
+def _score_from_manifest(
+    doc_id: str,
+    manifest: dict,
+    grade_set: grades.GradeSet,
+    atomic_citation_rates: Optional[dict],
+    missing: list[str],
+) -> list[confidence.ScoredItem]:
+    """
+    ScoredItems for one doc from its Segment B run_manifest.
+
+    The manifest records the quote verdict and Critic verdict the gate actually
+    used for each field, after any RE_EXTRACT retry, and the blind sheet the
+    human graded was built from the same manifest. Scoring from it means tau is
+    fitted to the exact signals it will be applied to. Recomputing from m2.json
+    and critic.json would miss a retry, whose result lives only in the manifest.
+
+    The rules match the Segment A path below: `s_citation` is atom-level or
+    absent (the manifest's evidence-level `s_citation` is the duplicate of
+    `s_quote` that the comment in score_graded_corpus explains), and
+    `s_acronym` comes from the grade.
+    """
+    out: list[confidence.ScoredItem] = []
+    for g in grade_set.for_doc(doc_id):
+        entry = manifest.get(g.field)
+        if not isinstance(entry, dict):
+            missing.append(f"{doc_id}: no manifest entry for {g.field}")
+            continue
+        verdict = (
+            entry.get("critic_verdict") or entry.get("verdict") or "HUMAN_REVIEW"
+        )
+        cite_rate = None
+        if atomic_citation_rates:
+            cite_rate = atomic_citation_rates.get((doc_id, g.field))
+        signals = confidence.compute_signals(
+            g.field,
+            quote_verdict=entry.get("quote_verdict"),
+            critic_verdict=verdict,
+            citation_rate=cite_rate,
+            acronym_rate=0.0 if g.acronym_issue else 1.0,
+        )
+        out.append(
+            confidence.ScoredItem(
+                doc_id=doc_id,
+                field=g.field,
+                bucket=g.bucket,
+                signals=signals,
+                composite=confidence.composite(signals),
+                y=g.y,
+                failure_tags=list(g.failure_tags),
+            )
+        )
+    return out
 
 
 def _extract_entry_and_evidence(m2: dict, field: str) -> tuple[object, list[dict]]:
@@ -902,7 +981,7 @@ def _run_atomic(grade_set: grades.GradeSet, stage: str) -> tuple[Optional[dict],
     per_doc: dict[str, dict] = {}
     verifications = []
     for doc_id in grade_set.doc_ids:
-        m2_path = settings.M2_DIR / f"{doc_id}.json"
+        m2_path = settings.m2_path_for(doc_id)
         if not m2_path.exists():
             continue
         m2 = json.loads(m2_path.read_text(encoding="utf-8"))

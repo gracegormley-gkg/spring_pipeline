@@ -92,6 +92,27 @@ _EVAL_ROW_TO_FIELD = {
 # Rows in the Evaluation sheet that are metadata, not field grades.
 _EVAL_META_ROWS = {"id", "slug", "notes"}
 
+# --- Graders -----------------------------------------------------------------
+# A second grader works on a COPY of the blind sheet named
+# `<doc_id>__<grader>.csv`, next to the original `<doc_id>.csv`. The plain name
+# is the primary grader. Only the primary grader's answers enter calibration;
+# every other grader's answers are kept in `GradeSet.secondary_items` for
+# inter-rater agreement. Counting both would weight a double-graded document
+# twice in tau, and the agreement statistic needs them kept apart anyway.
+PRIMARY_GRADER = "primary"
+_GRADER_SEP = "__"
+
+
+def grader_from_path(path: Path) -> tuple[str, str]:
+    """`(doc_id_from_stem, grader)` for a sheet path."""
+    stem = Path(path).stem
+    if _GRADER_SEP in stem:
+        doc, _, who = stem.partition(_GRADER_SEP)
+        who = who.strip().lower()
+        if who:
+            return doc, who
+    return stem, PRIMARY_GRADER
+
 
 def canonical_field(raw: str) -> Optional[str]:
     """
@@ -154,6 +175,7 @@ class GradeItem:
     granularity: str = "coarse"      # "coarse" | "item"
     source: str = "evaluation_sheet"  # "evaluation_sheet" | "grading_sheet"
     item_key: Optional[str] = None    # original label, e.g. "location.places[0]"
+    grader: str = PRIMARY_GRADER      # from the sheet filename; see grader_from_path
 
     @property
     def y(self) -> int:
@@ -281,6 +303,10 @@ class GradeSet:
     # doc_ids that appear in a grade source but have no usable grades.
     ungraded_doc_ids: list[str] = dc_field(default_factory=list)
     warnings: list[str] = dc_field(default_factory=list)
+    # Non-primary graders' answers: for inter-rater agreement, never for tau.
+    secondary_items: list[GradeItem] = dc_field(default_factory=list)
+    # Held-out docs whose grades were dropped from this (calibration) set.
+    holdout_doc_ids: list[str] = dc_field(default_factory=list)
 
     # --- basic views ---
     @property
@@ -522,60 +548,124 @@ def load_grading_sheets(directory: Optional[Path] = None) -> GradeSet:
     """
     Load item-level grades from per-doc grading sheets.
 
-    Only rows with a filled `your_grade` produce a GradeItem. Because those
-    sheets are currently 100% unfilled this returns an empty GradeSet today;
-    it becomes the primary source from v2 once the next batch is graded.
-    """
-    d = directory or settings.GRADING_SHEETS_DIR
-    gs = GradeSet()
-    if not d.exists():
-        gs.warnings.append(f"Grading-sheet directory does not exist: {d}")
-        return gs
+    Only rows with a filled `your_grade` produce a GradeItem. With no
+    `directory`, reads every location in `settings.grading_sheet_dirs()`:
+    Segment A's flat directory and each Segment B doc's `blind/` directory.
 
-    for path in sorted(d.glob("*.csv")):
-        meta, rows = _read_grading_sheet(path)
-        doc_id = settings.normalize_doc_id(meta.get("doc_id") or path.stem)
-        if not rows:
-            gs.warnings.append(f"No data rows in grading sheet {path.name}")
+    When one document has graded sheets in BOTH places, the Segment B sheet
+    wins and the Segment A grades are dropped with a warning: calibration
+    scores a doc from its Segment B artifacts when they exist
+    (`settings.manifest_path_for`), so a Segment A grade would be paired with a
+    value it does not describe.
+
+    Sheets named `<doc_id>__<grader>.csv` belong to a second grader and go to
+    `secondary_items` (see PRIMARY_GRADER).
+    """
+    dirs = [directory] if directory is not None else settings.grading_sheet_dirs()
+    gs = GradeSet()
+    # doc_id -> (dir, items) for primary-grader sheets, so a later directory
+    # (Segment B) can replace an earlier one (Segment A) for the same doc.
+    primary: dict[str, tuple[Path, list[GradeItem]]] = {}
+    ungraded: set[str] = set()
+
+    for d in dirs:
+        if not d.exists():
+            if directory is not None or d == settings.GRADING_SHEETS_DIR:
+                gs.warnings.append(f"Grading-sheet directory does not exist: {d}")
             continue
 
-        n_graded = 0
-        for row in rows:
-            raw = (row.get("your_grade") or "").strip()
-            if not raw:
+        for path in sorted(d.glob("*.csv")):
+            meta, rows = _read_grading_sheet(path)
+            stem_doc, grader = grader_from_path(path)
+            doc_id = settings.normalize_doc_id(meta.get("doc_id") or stem_doc)
+            if not rows:
+                gs.warnings.append(f"No data rows in grading sheet {path.name}")
                 continue
-            label = (row.get("field") or "").strip()
-            fld = canonical_field(label)
-            if fld is None:
-                gs.warnings.append(
-                    f"{path.name}: field {label!r} did not map to a canonical key"
-                )
-                continue
-            correct, tags = classify_grade(fld, raw)
-            if correct is None:
-                continue
-            explicit = (row.get("your_failure_tag") or "").strip()
-            if explicit:
-                tags = _dedupe([explicit] + tags)
-            n_graded += 1
-            gs.items.append(
-                GradeItem(
-                    doc_id=doc_id,
-                    field=fld,
-                    bucket=settings.bucket_for_field(fld),
-                    correct=correct,
-                    raw_grade=raw,
-                    failure_tags=tags,
-                    notes=(row.get("your_notes") or "").strip(),
-                    granularity="item",
-                    source="grading_sheet",
-                    item_key=label,
-                )
-            )
-        if n_graded == 0:
-            gs.ungraded_doc_ids.append(doc_id)
 
+            items: list[GradeItem] = []
+            for row in rows:
+                raw = (row.get("your_grade") or "").strip()
+                if not raw:
+                    continue
+                label = (row.get("field") or "").strip()
+                fld = canonical_field(label)
+                if fld is None:
+                    gs.warnings.append(
+                        f"{path.name}: field {label!r} did not map to a canonical key"
+                    )
+                    continue
+                correct, tags = classify_grade(fld, raw)
+                if correct is None:
+                    continue
+                explicit = (row.get("your_failure_tag") or "").strip()
+                if explicit:
+                    tags = _dedupe([explicit] + tags)
+                items.append(
+                    GradeItem(
+                        doc_id=doc_id,
+                        field=fld,
+                        bucket=settings.bucket_for_field(fld),
+                        correct=correct,
+                        raw_grade=raw,
+                        failure_tags=tags,
+                        notes=(row.get("your_notes") or "").strip(),
+                        granularity="item",
+                        source="grading_sheet",
+                        item_key=label,
+                        grader=grader,
+                    )
+                )
+
+            if grader != PRIMARY_GRADER:
+                gs.secondary_items.extend(items)
+                continue
+            if not items:
+                ungraded.add(doc_id)
+                continue
+            if doc_id in primary:
+                prev_dir, _ = primary[doc_id]
+                gs.warnings.append(
+                    f"{doc_id}: graded sheets in both {prev_dir} and {d}; using "
+                    f"{d} and dropping the other. A doc is scored from one set of "
+                    f"artifacts, so only one set of grades can describe it."
+                )
+            primary[doc_id] = (d, items)
+
+    for _d, items in primary.values():
+        gs.items.extend(items)
+    gs.ungraded_doc_ids = sorted(ungraded - set(primary))
     return gs
+
+
+def cohen_kappa(gs: GradeSet) -> dict:
+    """
+    Inter-rater agreement between the primary grader and each other grader.
+
+    Paired on `(doc_id, item_key)`, binary correct/incorrect. Returns, per
+    secondary grader, `{"n", "agreement", "kappa"}`; kappa is None when it is
+    undefined (fewer than 2 pairs, or both graders constant on the same label).
+    """
+    prim = {(i.doc_id, i.item_key or i.field): i.correct for i in gs.items}
+    out: dict[str, dict] = {}
+    for who in sorted({i.grader for i in gs.secondary_items}):
+        pairs = [
+            (prim[k], i.correct)
+            for i in gs.secondary_items
+            if i.grader == who
+            for k in [(i.doc_id, i.item_key or i.field)]
+            if k in prim
+        ]
+        n = len(pairs)
+        if n == 0:
+            out[who] = {"n": 0, "agreement": None, "kappa": None}
+            continue
+        po = sum(1 for a, b in pairs if a == b) / n
+        pa = sum(1 for a, _ in pairs if a) / n
+        pb = sum(1 for _, b in pairs if b) / n
+        pe = pa * pb + (1 - pa) * (1 - pb)
+        kappa = None if n < 2 or pe >= 1.0 else (po - pe) / (1 - pe)
+        out[who] = {"n": n, "agreement": po, "kappa": kappa}
+    return out
 
 
 # --- Merge ------------------------------------------------------------------
@@ -586,6 +676,7 @@ def load_grades(
     evaluation_csv: Optional[Path] = None,
     grading_sheets_dir: Optional[Path] = None,
     prefer: str = "item",
+    holdout: str = "exclude",
 ) -> GradeSet:
     """
     Load all available human grades.
@@ -599,9 +690,31 @@ def load_grades(
     into field `location`. That is intended: MCAL_PLAN 3.3's per-doc
     nonconformity is `max{s_i : y_i = 0}` over items in the bucket, so finer
     granularity strictly sharpens the calibration set.
+
+    Evaluation-sheet grades are dropped for any doc that has a Segment B
+    run_manifest: calibration scores that doc from its Segment B artifacts, and
+    the Evaluation sheet describes the Segment A prose. Re-grade it on its
+    Segment B blind sheet instead.
+
+    `holdout` controls docs listed in `settings.HOLDOUT_FILE`: "exclude" (the
+    default, for calibration) drops them, "only" keeps nothing else (for
+    held-out evaluation), "include" ignores the file.
     """
+    if holdout not in ("exclude", "only", "include"):
+        raise ValueError(f"holdout must be exclude|only|include, got {holdout!r}")
     coarse = load_evaluation_sheet(evaluation_csv)
     fine = load_grading_sheets(grading_sheets_dir)
+
+    superseded = sorted(
+        {i.doc_id for i in coarse.items if settings.manifest_path_for(i.doc_id)}
+    )
+    if superseded:
+        coarse.items = [i for i in coarse.items if i.doc_id not in superseded]
+        coarse.warnings.append(
+            f"Dropped Evaluation-sheet grades for {len(superseded)} doc(s) that "
+            f"have Segment B output, because those grades describe Segment A "
+            f"prose. Grade them on their Segment B blind sheets: {superseded}"
+        )
 
     merged = GradeSet(
         doc_notes=dict(coarse.doc_notes),
@@ -636,7 +749,35 @@ def load_grades(
             f"the actual seed n is {len(graded_docs)}."
         )
 
-    merged.warnings.extend(_stale_label_warnings(graded_docs))
+    # Only Evaluation-sheet grades can go stale this way. A Segment B sheet is
+    # rewritten with each run and carries a grade forward only when the value it
+    # describes is unchanged (grading_sheet.carry_forward_grades).
+    merged.warnings.extend(
+        _stale_label_warnings(
+            {i.doc_id for i in merged.items if i.source == "evaluation_sheet"}
+        )
+    )
+    merged.secondary_items = list(fine.secondary_items)
+
+    if holdout != "include":
+        held = settings.holdout_doc_ids()
+        if holdout == "exclude":
+            keep = lambda d: d not in held  # noqa: E731
+        else:
+            keep = lambda d: d in held  # noqa: E731
+        dropped = sorted({i.doc_id for i in merged.items if not keep(i.doc_id)})
+        merged.items = [i for i in merged.items if keep(i.doc_id)]
+        merged.secondary_items = [
+            i for i in merged.secondary_items if keep(i.doc_id)
+        ]
+        merged.ungraded_doc_ids = [d for d in merged.ungraded_doc_ids if keep(d)]
+        if holdout == "exclude":
+            merged.holdout_doc_ids = dropped
+            if dropped:
+                merged.warnings.append(
+                    f"Excluded {len(dropped)} held-out doc(s) from calibration "
+                    f"({settings.HOLDOUT_FILE.name}): {dropped}"
+                )
 
     return merged
 
@@ -668,7 +809,7 @@ def _stale_label_warnings(graded_docs: set[str]) -> list[str]:
     grade_mtime = settings.EVALUATION_CSV.stat().st_mtime
     newer: list[str] = []
     for doc_id in sorted(graded_docs):
-        m2 = settings.M2_DIR / f"{doc_id}.json"
+        m2 = settings.m2_path_for(doc_id)
         if m2.exists() and m2.stat().st_mtime > grade_mtime:
             newer.append(doc_id)
 

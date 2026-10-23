@@ -355,12 +355,12 @@ class TestBlinding:
         assert paths["blind"].name == paths["reveal"].name
         assert len(list(paths["blind"].parent.glob("*.csv"))) == 1
 
-    def test_double_counting_would_have_happened_in_one_directory(self, tmp_path):
+    def test_two_primary_sheets_for_one_doc_count_once(self, tmp_path):
         """
-        Demonstrates the hazard the directory split avoids, so the reason for the
-        layout does not get refactored away.
+        The hazard the directory split avoids: two sheets for one document in one
+        directory. The loader used to count both, doubling the doc's grades in
+        tau. It now keeps one primary sheet per doc and warns about the other.
         """
-        rows = [gsh.SheetRow(field="year", extracted_value="1972")]
         flat = tmp_path / "flat"
         flat.mkdir()
         for name in ("doc.blind.csv", "doc.reveal.csv"):
@@ -369,7 +369,8 @@ class TestBlinding:
                 "# doc_id: doc\n\nfield,your_grade\nyear,wrong\n", encoding="utf-8"
             )
         gs = grades_mod.load_grading_sheets(flat)
-        assert len(gs.items) == 2, "two sheets in one dir double-count"
+        assert len(gs.items) == 1
+        assert any("graded sheets in both" in w for w in gs.warnings)
 
     def test_preamble_states_the_pass(self, synth_sheets):
         _d, paths = synth_sheets

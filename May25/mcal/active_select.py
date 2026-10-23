@@ -754,14 +754,20 @@ def candidate_doc_ids(grade_set: Optional["grades_mod.GradeSet"] = None) -> list
 
     Sorted case-insensitively so `P0491_...` and `p0491_...` sit together rather
     than having every capitalized directory float to the top of the batch.
+
+    Held-out docs (`settings.HOLDOUT_FILE`) are never candidates. Calibration
+    grades exclude them, so without this filter they would look ungraded and be
+    proposed for calibration grading -- the one thing a test set must avoid.
     """
     gs = grade_set if grade_set is not None else grades_mod.load_grades()
     graded = {settings.normalize_doc_id(d) for d in gs.doc_ids}
+    held = settings.holdout_doc_ids()
     return sorted(
         (
             d
             for d in settings.available_doc_ids()
             if settings.normalize_doc_id(d) not in graded
+            and settings.normalize_doc_id(d) not in held
         ),
         key=lambda d: settings.normalize_doc_id(d),
     )

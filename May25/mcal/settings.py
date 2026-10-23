@@ -59,6 +59,80 @@ M2_PROMPT_VERSION_MARKER = M2_DIR / "_prompt_version.txt"
 M2_PROMPT_VERSION_REQUIRED = "v1_plain_language"
 M2_PRE_AMENDMENT_DIR = SEGMENT_A_OUTPUT / "m2_pre_amendment"
 
+# Every M2 artifact made before the map model became a recorded switch was made
+# with Opus (`segment_a/config.py:SUMMARY_MAP_MODEL` defaulted to "opus" and was
+# never changed). An artifact with no `_summary_map_model` key is therefore read
+# as Opus, so the precheck can tell an old Opus artifact from a new Sonnet one.
+M2_LEGACY_SUMMARY_MAP_MODEL = "opus"
+
+# --- Segment B outputs -------------------------------------------------------
+# Segment B writes everything for one document under
+# `segment_b/output/<doc_id>/`: m1.json, m2.json, critic.json,
+# run_manifest.json, and the grading sheets in blind/ and reveal/.
+#
+# Calibration used to read ONLY the Segment A directories above, so grades
+# entered on a Segment B sheet were silently ignored and tau was fitted on
+# Segment A's coarse Critic rather than the per-field Critic the gate applies it
+# to. The helpers below resolve a document to its Segment B artifacts when they
+# exist and fall back to Segment A otherwise. Segment B wins when both exist:
+# tau must be fitted to the signals the production gate actually computes.
+SEGMENT_B_OUTPUT_DIR = SEGMENT_B_DIR / "output"
+
+# Held-out test set: one doc_id per line, `#` comments allowed. These documents
+# are never used for calibration (grades.load_grades) and never proposed for
+# grading by active selection. Their grades exist only to measure accuracy on
+# documents the thresholds were not fitted to.
+HOLDOUT_FILE = MAY25_ROOT / "holdout.txt"
+
+
+def segment_b_doc_dir(doc_id: str) -> Path:
+    return SEGMENT_B_OUTPUT_DIR / normalize_doc_id(doc_id)
+
+
+def manifest_path_for(doc_id: str) -> Optional[Path]:
+    """The doc's Segment B run_manifest.json, or None if it has not been run."""
+    p = segment_b_doc_dir(doc_id) / "run_manifest.json"
+    return p if p.exists() else None
+
+
+def m2_path_for(doc_id: str) -> Path:
+    """Segment B m2.json when present, else Segment A's (which may not exist)."""
+    p = segment_b_doc_dir(doc_id) / "m2.json"
+    return p if p.exists() else M2_DIR / f"{doc_id}.json"
+
+
+def critic_path_for(doc_id: str) -> Path:
+    """Segment B critic.json when present, else Segment A's (which may not exist)."""
+    p = segment_b_doc_dir(doc_id) / "critic.json"
+    return p if p.exists() else CRITIC_DIR / f"{doc_id}.json"
+
+
+def grading_sheet_dirs() -> list[Path]:
+    """
+    Every directory holding calibration grading sheets.
+
+    Segment A's flat directory, then each Segment B doc's `blind/` directory.
+    Only the blind pass: it is the calibration label (MCAL_PLAN 7 Q5), and
+    reading `reveal/` as well would count every grade twice.
+    """
+    dirs = [GRADING_SHEETS_DIR]
+    if SEGMENT_B_OUTPUT_DIR.exists():
+        dirs += sorted(p for p in SEGMENT_B_OUTPUT_DIR.glob("*/blind") if p.is_dir())
+    return dirs
+
+
+def holdout_doc_ids(path: Optional[Path] = None) -> set[str]:
+    """Normalized doc_ids in the held-out test set. Empty if no file."""
+    p = path or HOLDOUT_FILE
+    if not p.exists():
+        return set()
+    out: set[str] = set()
+    for line in p.read_text(encoding="utf-8").splitlines():
+        line = line.split("#", 1)[0].strip()
+        if line:
+            out.add(normalize_doc_id(line))
+    return out
+
 
 # --- sys.path bridge --------------------------------------------------------
 

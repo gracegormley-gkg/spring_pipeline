@@ -841,6 +841,62 @@ def sheet_path(out_dir: Path, doc_id: str, pass_name: str) -> Path:
     return pass_dir(out_dir, pass_name) / f"{doc_id}.csv"
 
 
+# A rerun rewrites a document's sheets. Before this existed it rewrote them
+# blank, so rerunning a graded document -- to pick up a fix, or just to
+# regenerate its manifest -- silently erased its grades. A grade now carries
+# forward to the new sheet when the row it describes is unchanged, and the old
+# sheet is archived whenever any grade cannot be carried.
+CARRY_MATCH_COLUMNS = ("extracted_value", "quote", "source_pages")
+SUPERSEDED_DIRNAME = "_superseded"
+
+
+def _is_graded(row: dict) -> bool:
+    return any((row.get(c) or "").strip() for c in REVIEWER_COLUMNS)
+
+
+def carry_forward_grades(
+    old_rows: Sequence[dict], new_rows: list[dict]
+) -> tuple[list[dict], list[str]]:
+    """
+    Copy reviewer cells from `old_rows` into `new_rows`, in place.
+
+    A row carries only when `field` matches and the value, quote and pages are
+    identical: a grade describes one specific extraction, and attaching it to a
+    different value would put a wrong label into tau. Returns
+    `(new_rows, dropped_fields)` where `dropped_fields` are graded old rows that
+    had no identical counterpart.
+    """
+    by_field = {(r.get("field") or ""): r for r in new_rows}
+    dropped: list[str] = []
+    for old in old_rows:
+        if not _is_graded(old):
+            continue
+        f = old.get("field") or ""
+        new = by_field.get(f)
+        same = new is not None and all(
+            (old.get(c) or "") == (new.get(c) or "") for c in CARRY_MATCH_COLUMNS
+        )
+        if not same:
+            dropped.append(f)
+            continue
+        for c in REVIEWER_COLUMNS:
+            if c in new and (old.get(c) or "").strip():
+                new[c] = old[c]
+    return new_rows, dropped
+
+
+def _archive_superseded(path: Path) -> Path:
+    """Move a sheet into `_superseded/`, which the grade loader never reads."""
+    from datetime import datetime, timezone
+
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    dest_dir = path.parent / SUPERSEDED_DIRNAME
+    dest_dir.mkdir(parents=True, exist_ok=True)
+    dest = dest_dir / f"{path.stem}.{stamp}{path.suffix}"
+    path.replace(dest)
+    return dest
+
+
 def write_sheet(
     out_dir: Path,
     doc_id: str,
@@ -852,11 +908,41 @@ def write_sheet(
     source: str = "",
     artifact_stage: Optional[str] = None,
     tax: Optional["taxonomy_mod.Taxonomy"] = None,
+    path: Optional[Path] = None,
 ) -> Path:
-    """Write one pass's sheet. Returns the path."""
-    path = sheet_path(out_dir, doc_id, pass_name)
+    """
+    Write one pass's sheet. Returns the path.
+
+    If a sheet with grades already exists at the path, grades on unchanged rows
+    carry forward (`carry_forward_grades`). If any grade cannot be carried, the
+    old sheet is archived under `_superseded/` first and a warning is logged.
+    `path` overrides the default location (used for a second grader's copy).
+    """
+    path = Path(path) if path is not None else sheet_path(out_dir, doc_id, pass_name)
     path.parent.mkdir(parents=True, exist_ok=True)
     cols = columns_for(pass_name)
+    out_rows = [r.to_dict(pass_name) for r in rows]
+
+    if path.exists():
+        try:
+            _meta, old_rows = read_sheet(path)
+        except Exception as e:  # unreadable sheet: keep it, never overwrite blind
+            old_rows = []
+            log.warning("%s: could not read existing sheet (%s); archiving it", path, e)
+            _archive_superseded(path)
+        if any(_is_graded(r) for r in old_rows):
+            out_rows, dropped = carry_forward_grades(old_rows, out_rows)
+            if dropped:
+                dest = _archive_superseded(path)
+                log.warning(
+                    "%s: %d graded row(s) changed since grading and were not "
+                    "carried forward: %s. The graded sheet is archived at %s; "
+                    "re-grade these rows.",
+                    path.name,
+                    len(dropped),
+                    dropped[:8],
+                    dest,
+                )
 
     with open(path, "w", newline="", encoding="utf-8") as fh:
         for line in build_preamble(
@@ -873,8 +959,8 @@ def write_sheet(
         fh.write("\n")
         writer = csv.DictWriter(fh, fieldnames=list(cols))
         writer.writeheader()
-        for r in rows:
-            writer.writerow(r.to_dict(pass_name))
+        for r in out_rows:
+            writer.writerow(r)
     return path
 
 
@@ -892,8 +978,15 @@ def write_sheets(
     `glob("*.csv")`, sees one sheet per document. Pointing it at the blind
     directory is what MCAL_PLAN 7 Q5 intends: the blind pass is the calibration
     label, the reveal pass is meta-analysis.
+
+    A second grader's blind copy (`<doc_id>__<grader>.csv`, see
+    `grades.PRIMARY_GRADER`) is rewritten alongside, with the same carry-forward
+    rule, so it never silently describes an older extraction.
     """
-    return {p: write_sheet(out_dir, doc_id, rows, pass_name=p, **kw) for p in PASSES}
+    paths = {p: write_sheet(out_dir, doc_id, rows, pass_name=p, **kw) for p in PASSES}
+    for extra in sorted(pass_dir(out_dir, PASS_BLIND).glob(f"{doc_id}__*.csv")):
+        write_sheet(out_dir, doc_id, rows, pass_name=PASS_BLIND, path=extra, **kw)
+    return paths
 
 
 def build_and_write(
