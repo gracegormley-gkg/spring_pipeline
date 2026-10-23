@@ -38,13 +38,22 @@ _client = None
 _usage_lock = threading.Lock()
 _usage_collector: Optional[list[dict]] = None
 
-# Default Bedrock prices ($ per 1M tokens). Same defaults as
-# people_pipeline/settings.py and statements_pipeline/settings.py — verify
-# against the AWS Bedrock invoice for billing.
+# Prices ($ per 1M tokens): Anthropic first-party list prices, checked
+# 2026-10-22. Bedrock prices separately, so verify against the AWS Bedrock
+# invoice before quoting a cost as billed.
+#
+# Opus 4.5 and later cost a third of Opus 4 / 4.1. This table used to bill every
+# Opus 4.x model at the old $15/$75, which put the v1 batch at $6.76/doc; the
+# logged tokens price out at about $2.62/doc. First matching key wins, so
+# specific versions sit above the generic fallbacks.
 PRICES_USD_PER_M = {
-    "sonnet-4": {"input": 3.00, "output": 15.00},
-    "opus-4":   {"input": 15.00, "output": 75.00},
-    "haiku":    {"input": 1.00, "output": 5.00},
+    "opus-4-7":   {"input": 5.00, "output": 25.00},
+    "opus-4-6":   {"input": 5.00, "output": 25.00},
+    "opus-4-5":   {"input": 5.00, "output": 25.00},
+    "opus-4":     {"input": 15.00, "output": 75.00},   # Opus 4 / 4.1
+    "sonnet-4":   {"input": 3.00, "output": 15.00},    # Sonnet 4 / 4.5 / 4.6
+    "haiku-4-5":  {"input": 1.00, "output": 5.00},
+    "haiku":      {"input": 1.00, "output": 5.00},
 }
 
 

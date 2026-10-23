@@ -216,3 +216,15 @@ class TestOutputHeadroom:
                 {"output_tokens": 100, "output_headroom": 0.9}, "opus", 1000
             )
         assert caplog.text == ""
+
+
+class TestPriceTable:
+    """The table billed Opus 4.7 at Opus 4's $15/$75, about 2.6x too high."""
+
+    def test_configured_models_resolve_to_current_prices(self):
+        assert llm.price_for_model(config.MODEL_OPUS) == {"input": 5.00, "output": 25.00}
+        assert llm.price_for_model(config.MODEL_SONNET) == {"input": 3.00, "output": 15.00}
+        assert llm.price_for_model(config.MODEL_HAIKU_REAL) == {"input": 1.00, "output": 5.00}
+
+    def test_old_opus_keeps_old_price(self):
+        assert llm.price_for_model("anthropic.claude-opus-4-1-20250805-v1:0")["input"] == 15.00
