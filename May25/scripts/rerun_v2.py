@@ -1,13 +1,13 @@
 """
-Rerun the 20 calibration documents under extractor-v2.1, through Bedrock.
+Rerun the 20 calibration documents under extractor-v2.2, through Bedrock.
 
 Run from May25/. Four steps, each its own command, so you see the cost of each
 before paying for the next:
 
-    python scripts/rerun_v2.py check     # free: is everything in place?
-    python scripts/rerun_v2.py ping      # ~$0.01: can this key reach Sonnet and Opus?
-    python scripts/rerun_v2.py smoke     # ~$3-5: one 123-page document end to end
-    python scripts/rerun_v2.py all       # ~$50-100: the other 19, capped by --max-usd
+    ../.venv/bin/python scripts/rerun_v2.py check     # free: is everything in place?
+    ../.venv/bin/python scripts/rerun_v2.py ping      # ~$0.01: can this key reach Sonnet and Opus?
+    ../.venv/bin/python scripts/rerun_v2.py smoke     # ~$3-5: one 123-page document end to end
+    ../.venv/bin/python scripts/rerun_v2.py all       # ~$50-100: the other 19, capped by --max-usd
 
 Credentials come from spring_pipeline/.env, which mcal.settings loads on import:
 
@@ -20,6 +20,17 @@ regenerated in place (--force), including fresh blind/ and reveal/ grading
 sheets. The v1 outputs are tracked in git, so nothing is lost; `git diff` shows
 what changed. batch_summary.json for v1 is kept as batch_summary.v1.json.
 
+Unattended runs: `smoke` and `all` are resumable. Each finished document is
+appended to segment_b/output/_progress/<batch_id>.jsonl, and the full log goes
+to <batch_id>.log beside it. If a run dies (crash, sleep, expired key), run the
+same command again: finished documents are skipped, failed ones are retried,
+and the --max-usd cap counts what the earlier attempts already spent. To run it
+overnight on a Mac, keep the machine awake and detach it from the terminal:
+
+    caffeinate -i nohup ../.venv/bin/python scripts/rerun_v2.py all > rerun.out 2>&1 &
+
+A Bedrock short-term API key expires within 12 hours; use a long-term key.
+
 After `all` finishes, grade the blind sheets: segment_b/output/<doc_id>/blind/.
 """
 
@@ -27,6 +38,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import logging
 import os
 import shutil
 import subprocess
@@ -40,9 +52,10 @@ from mcal import settings  # noqa: E402  (loads .env, bridges segment_a)
 
 import llm  # noqa: E402  (segment_a)
 from pages import load_doc  # noqa: E402
+from segment_b import gate as gate_mod  # noqa: E402
 from segment_b import run as segb  # noqa: E402
 
-EXTRACTOR_TAG = "extractor-v2.1"
+EXTRACTOR_TAG = "extractor-v2.2"
 
 # The 8 seed documents (graded in Evaluation - Sheet1.csv, against prose that has
 # since been rewritten) and the 12 documents from the v1 Segment B batch.
@@ -65,6 +78,7 @@ ALL_DOCS = SEED_DOCS + SEGMENT_B_V1_DOCS
 SMOKE_DOC = "p1074_35556036105336"
 
 OUT = segb.OUTPUT_DIR
+PROGRESS_DIR = OUT / "_progress"
 
 
 # --- check ------------------------------------------------------------------
@@ -108,6 +122,19 @@ def check() -> bool:
            else "add AWS_BEARER_TOKEN_BEDROCK to spring_pipeline/.env"))
     if has_bedrock:
         report(region.startswith("us-"), "AWS region is a US region", region)
+
+    # Libraries. Without shapely the location containment check returns False
+    # instead of raising, so the wrong interpreter degrades `location` silently.
+    import importlib
+    missing_libs = []
+    for mod in ("anthropic", "shapely", "geopandas", "pyproj", "rapidfuzz"):
+        try:
+            importlib.import_module(mod)
+        except ImportError:
+            missing_libs.append(mod)
+    report(not missing_libs, "required libraries import",
+           f"missing {', '.join(missing_libs)}; run with spring_pipeline/.venv/bin/python"
+           if missing_libs else sys.executable)
 
     # Extractor settings the calibration depends on.
     import config as segment_a_config
@@ -165,14 +192,97 @@ def _archive_v1_summary() -> None:
         print(f"Kept the v1 batch summary as {dst.name}")
 
 
+def _cost(record: dict) -> float:
+    return ((record.get("usage") or {}).get("total") or {}).get("cost_usd", 0) or 0
+
+
+def _read_progress(batch_id: str) -> list[dict]:
+    path = PROGRESS_DIR / f"{batch_id}.jsonl"
+    if not path.exists():
+        return []
+    return [json.loads(l) for l in path.read_text(encoding="utf-8").splitlines() if l.strip()]
+
+
+def _latest_per_doc(records: list[dict]) -> dict[str, dict]:
+    """The last attempt at each document wins; earlier attempts still cost money."""
+    return {r["doc_id"]: r for r in records}
+
+
 def _run(doc_ids: list[str], batch_id: str, max_usd: float | None) -> dict:
-    summary = segb.process_batch(
-        doc_ids, force=True, batch_id=batch_id, max_usd=max_usd
-    )
+    """
+    Run `doc_ids` one at a time, resumably.
+
+    Each finished document, ok or failed, is appended to the batch's progress
+    file before the next starts, so a run that dies loses at most the document
+    in flight. On a rerun with the same batch_id, documents that finished ok are
+    skipped and failed ones are retried. The budget cap counts every attempt in
+    the file, failed ones included, because they spent money too.
+
+    Resuming is refused if the code changed since the earlier attempts: a batch
+    whose documents came from two commits does not describe one extractor.
+    """
+    PROGRESS_DIR.mkdir(parents=True, exist_ok=True)
+    path = PROGRESS_DIR / f"{batch_id}.jsonl"
+    commit = gate_mod.code_version()["commit"]
+
+    earlier = _read_progress(batch_id)
+    other = sorted({r.get("commit") for r in earlier} - {commit})
+    if other:
+        raise SystemExit(
+            f"{path.name} has documents from commit(s) {other}, not HEAD {commit}. "
+            f"Move it aside to start the batch over on this code."
+        )
+    done = {d for d, r in _latest_per_doc(earlier).items() if not r.get("error")}
+    spent = sum(_cost(r) for r in earlier)
+    if earlier:
+        print(f"Resuming {batch_id}: {len(done)} done, ${spent:.2f} already spent")
+
+    stage = segb.critic_mod.resolve_stage(None)
+    todo = [d for d in doc_ids if d not in done]
+    for i, doc_id in enumerate(todo, 1):
+        if max_usd is not None and spent >= max_usd:
+            print(f"Budget cap ${max_usd:.2f} reached (${spent:.2f} spent); "
+                  f"stopping before {doc_id}. Raise --max-usd and rerun to continue.")
+            break
+        logging.getLogger(__name__).info(f"[{i}/{len(todo)}] {doc_id}")
+        try:
+            record = segb.process_doc(
+                doc_id, stage=stage, out_dir=OUT, force=True, batch_id=batch_id
+            ).to_dict()
+        except Exception as e:  # noqa: BLE001
+            logging.getLogger(__name__).exception(f"{doc_id} failed: {e}")
+            record = {"doc_id": doc_id, "stage": stage, "error": str(e)}
+        record["commit"] = commit
+        with path.open("a", encoding="utf-8") as fh:
+            fh.write(json.dumps(record, default=str) + "\n")
+        spent += _cost(record)
+
+    latest = _latest_per_doc(_read_progress(batch_id))
+    docs = [latest.get(d) or {"doc_id": d, "error": "not run: budget cap"} for d in doc_ids]
+    ok = [d for d in docs if not d.get("error")]
+    total = sum(_cost(d) for d in ok)
+    n_fields = sum((d.get("rollup") or {}).get("n_fields", 0) for d in ok)
+    n_gated = sum((d.get("rollup") or {}).get("n_gated", 0) for d in ok)
+    summary = {
+        "stage": stage,
+        "extractor": EXTRACTOR_TAG,
+        "code_version": gate_mod.code_version(),
+        "batch_id": batch_id,
+        "n_docs": len(docs),
+        "n_ok": len(ok),
+        "n_failed": len(docs) - len(ok),
+        "total_cost_usd": round(total, 4),
+        # Every attempt, failed and superseded ones included: the real bill.
+        "spent_usd": round(spent, 4),
+        "per_doc_avg_usd": round(total / len(ok), 4) if ok else None,
+        "n_fields": n_fields,
+        "n_gated": n_gated,
+        "overall_gate_rate": round(n_gated / n_fields, 4) if n_fields else None,
+        "docs": docs,
+    }
     print(json.dumps({k: v for k, v in summary.items() if k != "docs"}, indent=2))
-    for d in summary["docs"]:
-        cost = ((d.get("usage") or {}).get("total") or {}).get("cost_usd", 0) or 0
-        line = f"  {d['doc_id']}  {d.get('n_pages', '?'):>4}pp  ${cost:6.2f}"
+    for d in docs:
+        line = f"  {d['doc_id']}  {d.get('n_pages', '?'):>4}pp  ${_cost(d):6.2f}"
         if d.get("error"):
             line += f"  ERROR: {d['error']}"
         elif d.get("warnings"):
@@ -184,7 +294,9 @@ def _run(doc_ids: list[str], batch_id: str, max_usd: float | None) -> dict:
 def smoke() -> dict:
     _archive_v1_summary()
     summary = _run([SMOKE_DOC], "v2-rerun-smoke", max_usd=None)
-    (OUT / "batch_summary.json").rename(OUT / "batch_summary.v2-smoke.json")
+    (OUT / "batch_summary.v2-smoke.json").write_text(
+        json.dumps(summary, indent=2, default=str) + "\n"
+    )
     print(
         f"\nLook at segment_b/output/{SMOKE_DOC}/ (run_manifest.json, blind/) "
         f"before running `all`."
@@ -204,17 +316,16 @@ def run_all(max_usd: float) -> dict:
     smoke_summary = json.loads(smoke_path.read_text(encoding="utf-8"))
     docs = smoke_summary["docs"] + summary["docs"]
     ok = [d for d in docs if not d.get("error")]
-    total = sum(((d.get("usage") or {}).get("total") or {}).get("cost_usd", 0) or 0 for d in ok)
+    total = sum(_cost(d) for d in ok)
     n_fields = sum((d.get("rollup") or {}).get("n_fields", 0) for d in ok)
     n_gated = sum((d.get("rollup") or {}).get("n_gated", 0) for d in ok)
     combined = {
-        "stage": summary["stage"],
-        "extractor": EXTRACTOR_TAG,
-        "batch_id": "v2-rerun",
+        **{k: v for k, v in summary.items() if k != "docs"},
         "n_docs": len(docs),
         "n_ok": len(ok),
         "n_failed": len(docs) - len(ok),
         "total_cost_usd": round(total, 4),
+        "spent_usd": round(summary["spent_usd"] + smoke_summary.get("spent_usd", 0), 4),
         "per_doc_avg_usd": round(total / len(ok), 4) if ok else None,
         "n_fields": n_fields,
         "n_gated": n_gated,
@@ -224,8 +335,7 @@ def run_all(max_usd: float) -> dict:
     (OUT / "batch_summary.json").write_text(json.dumps(combined, indent=2, default=str) + "\n")
     print(f"\nAll 20: {len(ok)} ok, ${total:.2f} total. Summary in batch_summary.json.")
     if len(ok) < len(docs):
-        print("Rerun failed documents one at a time with:")
-        print("  python -m segment_b.run process --doc <doc_id> --force")
+        print("Run the same command again to retry the failed documents.")
     return combined
 
 
@@ -240,9 +350,15 @@ def main() -> int:
                    help="stop starting new documents past this spend (default 120)")
     args = ap.parse_args()
 
-    import logging
-    logging.basicConfig(level=logging.INFO,
-                        format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
+    fmt = "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
+    logging.basicConfig(level=logging.INFO, format=fmt)
+    if args.cmd in ("smoke", "all"):
+        # The terminal scrolls away overnight; keep the whole log beside the progress file.
+        PROGRESS_DIR.mkdir(parents=True, exist_ok=True)
+        name = "v2-rerun-smoke" if args.cmd == "smoke" else "v2-rerun"
+        handler = logging.FileHandler(PROGRESS_DIR / f"{name}.log", encoding="utf-8")
+        handler.setFormatter(logging.Formatter(fmt))
+        logging.getLogger().addHandler(handler)
 
     if args.cmd == "check":
         return 0 if check() else 1
