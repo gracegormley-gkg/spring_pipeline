@@ -160,6 +160,61 @@ class TestRetryClassification:
         assert llm.is_retryable(exc) is False
 
 
+class TestRetryBackoff:
+    """The loop waited 1s then 2s, too short to ride out a sustained rate limit."""
+
+    class _Msg:
+        content = []
+        usage = None
+        stop_reason = "end_turn"
+
+    def _client(self, failures):
+        outer = self
+
+        class _Messages:
+            calls = 0
+
+            def create(self, **kw):
+                _Messages.calls += 1
+                if _Messages.calls <= failures:
+                    raise _Status(429)
+                return outer._Msg()
+
+        class _Client:
+            messages = _Messages()
+
+        return _Client()
+
+    def test_waits_follow_the_schedule_then_succeed(self, monkeypatch):
+        waits = []
+        monkeypatch.setattr(llm, "_get_client", lambda: self._client(failures=3))
+        monkeypatch.setattr(llm.time, "sleep", waits.append)
+        llm.call_with_usage("sonnet", "s", "u", max_tokens=10)
+        assert waits == list(llm.RETRY_WAITS_S[:3])
+
+    def test_gives_up_after_the_last_wait(self, monkeypatch):
+        waits = []
+        monkeypatch.setattr(llm, "_get_client", lambda: self._client(failures=99))
+        monkeypatch.setattr(llm.time, "sleep", waits.append)
+        with pytest.raises(RuntimeError, match="after 5 attempts"):
+            llm.call_with_usage("sonnet", "s", "u", max_tokens=10)
+        assert waits == list(llm.RETRY_WAITS_S)
+
+    def test_a_client_error_does_not_wait(self, monkeypatch):
+        class _Bad:
+            class messages:
+                @staticmethod
+                def create(**kw):
+                    raise _Status(400)
+
+        waits = []
+        monkeypatch.setattr(llm, "_get_client", lambda: _Bad())
+        monkeypatch.setattr(llm.time, "sleep", waits.append)
+        with pytest.raises(_Status):
+            llm.call_with_usage("sonnet", "s", "u", max_tokens=10)
+        assert waits == []
+
+
 # --- 1.5 output-token headroom ----------------------------------------------
 
 
