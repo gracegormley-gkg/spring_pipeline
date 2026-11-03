@@ -726,8 +726,16 @@ def process_batch(
     write_sheets: bool = True,
     reextract: bool = True,
     batch_id: Optional[str] = None,
+    max_usd: Optional[float] = None,
 ) -> dict:
-    """Process a batch and write `<out_dir>/batch_summary.json`."""
+    """
+    Process a batch and write `<out_dir>/batch_summary.json`.
+
+    `max_usd` is a spending cap checked before each document starts: once the
+    batch has spent at least that much, the remaining documents are recorded as
+    skipped rather than run. A document already running always finishes, so the
+    cap can be overshot by up to one document's cost.
+    """
     stage = critic_mod.resolve_stage(stage)
     out = out_dir or OUTPUT_DIR
     # The null-tag monitor records a batch id per document and defaulted every one
@@ -739,7 +747,21 @@ def process_batch(
     )
 
     results: list[DocResult] = []
+    spent = 0.0
     for i, doc_id in enumerate(doc_ids, 1):
+        if max_usd is not None and spent >= max_usd:
+            log.warning(
+                f"Budget cap ${max_usd:.2f} reached (${spent:.2f} spent); "
+                f"skipping {doc_id}"
+            )
+            results.append(
+                DocResult(
+                    doc_id=doc_id,
+                    stage=stage,
+                    error=f"skipped: budget cap ${max_usd:.2f} reached",
+                )
+            )
+            continue
         log.info(f"\n[{i}/{len(doc_ids)}]")
         try:
             results.append(
@@ -756,6 +778,8 @@ def process_batch(
         except Exception as e:
             log.exception(f"{doc_id} failed outside the usage session: {e}")
             results.append(DocResult(doc_id=doc_id, stage=stage, error=str(e)))
+        # Failed documents still spent money; count it against the cap.
+        spent += ((results[-1].usage or {}).get("total") or {}).get("cost_usd", 0) or 0
 
     ok = [r for r in results if not r.error]
     total_cost = sum(
@@ -863,6 +887,11 @@ def main(argv: Optional[list[str]] = None) -> int:
     )
     p.add_argument("--batch-id", help="recorded in the null-tag monitor")
     p.add_argument(
+        "--max-usd",
+        type=float,
+        help="stop starting new documents once the batch has spent this much",
+    )
+    p.add_argument(
         "--estimate",
         action="store_true",
         help="print a cost estimate and exit without calling any model",
@@ -918,6 +947,7 @@ def main(argv: Optional[list[str]] = None) -> int:
         write_sheets=not args.no_sheets,
         reextract=not args.no_reextract,
         batch_id=args.batch_id,
+        max_usd=args.max_usd,
     )
     print(json.dumps({k: v for k, v in summary.items() if k != "docs"}, indent=2))
     return 0 if summary["n_failed"] == 0 else 1

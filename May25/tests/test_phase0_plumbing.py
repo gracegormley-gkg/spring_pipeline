@@ -383,3 +383,36 @@ class TestRunnerCheckpoints:
         (base / "m2_extract.json").unlink()
         go()
         assert calls["m2"] == 1
+
+
+class TestBudgetCap:
+    def test_stops_starting_documents_once_the_cap_is_spent(self, tmp_path, monkeypatch):
+        from segment_b import run as R
+
+        started = []
+
+        def fake_process_doc(doc_id, **kw):
+            started.append(doc_id)
+            return R.DocResult(
+                doc_id=doc_id, stage="v1", usage={"total": {"cost_usd": 4.0}}
+            )
+
+        monkeypatch.setattr(R, "process_doc", fake_process_doc)
+        monkeypatch.setattr(R.critic_mod, "resolve_stage", lambda s: "v1")
+        summary = R.process_batch(["a", "b", "c", "d"], out_dir=tmp_path, max_usd=7.0)
+        # a ($4) and b ($8 total) start; the cap is checked before c.
+        assert started == ["a", "b"]
+        assert summary["n_failed"] == 2
+        assert summary["total_cost_usd"] == 8.0
+        assert all("budget cap" in d["error"] for d in summary["docs"][2:])
+
+    def test_no_cap_runs_everything(self, tmp_path, monkeypatch):
+        from segment_b import run as R
+
+        monkeypatch.setattr(
+            R, "process_doc",
+            lambda doc_id, **kw: R.DocResult(doc_id=doc_id, stage="v1"),
+        )
+        monkeypatch.setattr(R.critic_mod, "resolve_stage", lambda s: "v1")
+        summary = R.process_batch(["a", "b"], out_dir=tmp_path)
+        assert summary["n_ok"] == 2
