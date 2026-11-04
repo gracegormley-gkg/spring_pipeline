@@ -111,7 +111,7 @@ sequence; load `complaints/` to build a complainer-keyed view.
 ## Doc source and metadata
 
 - **Doc text:** every doc found under `PAGES_DATA_DIR`
-  (`Documents/output/<doc_id>/page_NNNN.json`).
+  (`documents/output/<doc_id>/page_NNNN.json`).
 - **Work metadata:** `inventory.lookup_work(doc_id)` from segment_a. When
   the doc isn't in the local CSV, the run still proceeds; `work_id` and
   `title` are left empty.
@@ -276,7 +276,7 @@ A second complaint file `p1074_058550_C014_sierra_club.json` with the same
 
 ## Module shadowing (how local extract/merge replace the upstream ones)
 
-`settings.py` appends `segment_a/` and `Old/people_pipeline/` to `sys.path`
+`settings.py` appends `metadata_pipeline/segment_a/` and `people_pipeline/` to `sys.path`
 (`sys.path.append`, not `insert`). Local-module-wins on name collisions:
 
 | name | resolves to |

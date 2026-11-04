@@ -1,7 +1,7 @@
 """
 Rerun the 20 calibration documents under extractor-v2.2, through Bedrock.
 
-Run from May25/. Four steps, each its own command, so you see the cost of each
+Run from metadata_pipeline/. Four steps, each its own command, so you see the cost of each
 before paying for the next:
 
     ../.venv/bin/python scripts/rerun_v2.py check     # free: is everything in place?

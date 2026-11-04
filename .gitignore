@@ -17,9 +17,6 @@ env/
 .env
 .env.local
 
-# Pipeline run artifacts (regenerated per run)
-eis_pipeline/output/
-
 # Editors
 .idea/
 .vscode/

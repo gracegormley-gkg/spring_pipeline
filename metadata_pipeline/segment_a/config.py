@@ -13,9 +13,9 @@ ROOT = Path(__file__).parent
 OUTPUT_DIR = ROOT / "output"
 CACHE_DIR = ROOT / "cache"
 
-# Project-level per-page JSON source: spring_pipeline/Documents/output/<doc_id>/page_NNNN.json
+# Project-level per-page JSON source: spring_pipeline/documents/output/<doc_id>/page_NNNN.json
 PROJECT_ROOT = ROOT.parent.parent
-PAGES_DATA_DIR = PROJECT_ROOT / "Documents" / "output"
+PAGES_DATA_DIR = PROJECT_ROOT / "documents" / "output"
 
 NUL_CACHE_PATH = CACHE_DIR / "nul_works.json"
 # Local CSV inventory ("eis-inventory-2nd-pass") used as work-metadata source

@@ -13,7 +13,7 @@ carries an optional agency RESPONSE (parent-child).
 
 Doc source:
     By default, processes every doc found in segment_a's PAGES_DATA_DIR
-    (`Documents/output/<doc_id>/page_NNNN.json`). Per-page JSONs are joined
+    (`documents/output/<doc_id>/page_NNNN.json`). Per-page JSONs are joined
     into a single full_text by `pages.load_doc`; chunking and the
     find_statement window slice contiguous spans from that joined text.
 
@@ -112,7 +112,7 @@ def _enumerate_doc_ids() -> list[str]:
     if not ids:
         raise SystemExit(
             "No docs found under PAGES_DATA_DIR. Expected per-page JSONs at "
-            "Documents/output/<doc_id>/page_NNNN.json."
+            "documents/output/<doc_id>/page_NNNN.json."
         )
     return ids
 

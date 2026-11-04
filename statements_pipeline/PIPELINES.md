@@ -24,7 +24,7 @@ There is **no LLM critic** in this pipeline. A rules-based
 Processes every doc found in segment_a's `PAGES_DATA_DIR`:
 
 ```
-Documents/output/<doc_id>/page_NNNN.json
+documents/output/<doc_id>/page_NNNN.json
 ```
 
 Each per-page JSON carries `{page_number, text, ...}`. Page numbers are
@@ -271,7 +271,7 @@ Costs are aggregated by stage in `index.json` and across docs in
 ## Entry points
 
 ```bash
-cd May25/statements_pipeline
+cd statements_pipeline
 
 python run.py process                  # process every doc in PAGES_DATA_DIR
 python run.py process --doc <doc_id>   # process one doc (need not be in inventory)

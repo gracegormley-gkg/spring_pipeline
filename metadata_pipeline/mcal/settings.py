@@ -25,7 +25,7 @@ from typing import Optional
 
 # --- Paths ------------------------------------------------------------------
 
-MCAL_ROOT = Path(__file__).resolve().parent          # May25/mcal
+MCAL_ROOT = Path(__file__).resolve().parent          # metadata_pipeline/mcal
 MAY25_ROOT = MCAL_ROOT.parent                        # May25
 PROJECT_ROOT = MAY25_ROOT.parent                     # spring_pipeline
 SEGMENT_A_DIR = MAY25_ROOT / "segment_a"
@@ -49,8 +49,8 @@ M1_DIR = SEGMENT_A_OUTPUT / "m1"
 M2_DIR = SEGMENT_A_OUTPUT / "m2"
 CRITIC_DIR = SEGMENT_A_OUTPUT / "critic"
 
-# Per-page OCR JSON: Documents/output/<doc_id>/page_NNNN.json
-PAGES_DATA_DIR = PROJECT_ROOT / "Documents" / "output"
+# Per-page OCR JSON: documents/output/<doc_id>/page_NNNN.json
+PAGES_DATA_DIR = PROJECT_ROOT / "documents" / "output"
 INVENTORY_CSV_PATH = PROJECT_ROOT / "eis-inventory-2nd-pass(eis inventory 2nd pass csv).csv"
 
 # --- M2 prompt-version marker (MCAL_PLAN 3.7 step-0 precheck) ---------------
