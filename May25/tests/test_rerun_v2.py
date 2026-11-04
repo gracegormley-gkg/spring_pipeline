@@ -85,6 +85,13 @@ class TestResume:
         rerun._run(["a", "b", "c"], "t", max_usd=3.0)
         assert rerun.calls == ["a", "b"]
 
+    def test_the_time_limit_stops_new_documents(self, rerun, monkeypatch):
+        clock = iter([0.0, 0.0, 3 * 3600.0, 3 * 3600.0])
+        monkeypatch.setattr(rerun.time, "monotonic", lambda: next(clock))
+        summary = rerun._run(["a", "b", "c"], "t", max_usd=None, max_hours=2.0)
+        assert rerun.calls == ["a"]
+        assert summary["n_failed"] == 2
+
     def test_resuming_on_different_code_is_refused(self, rerun):
         rerun._run(["a"], "t", max_usd=None)
         rerun.commit = "b" * 40

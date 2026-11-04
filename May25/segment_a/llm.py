@@ -184,10 +184,12 @@ def _get_client():
                 or os.environ.get("AWS_DEFAULT_REGION")
                 or "us-east-1"
             )
-            _client = anthropic.AnthropicBedrock(aws_region=region)
+            _client = anthropic.AnthropicBedrock(
+                aws_region=region, timeout=REQUEST_TIMEOUT_S
+            )
             log.info(f"LLM: using AnthropicBedrock (region={region})")
         elif api_key:
-            _client = anthropic.Anthropic(api_key=api_key)
+            _client = anthropic.Anthropic(api_key=api_key, timeout=REQUEST_TIMEOUT_S)
             log.info("LLM: using direct Anthropic API")
         else:
             raise RuntimeError(
@@ -363,6 +365,14 @@ STREAMING_MAX_TOKENS_THRESHOLD = 4096
 # been unavailable for that long. The SDK's own retries sit inside each attempt.
 RETRY_WAITS_S = (5, 15, 45, 120)
 DEFAULT_MAX_RETRIES = len(RETRY_WAITS_S) + 1
+
+# Seconds the SDK waits on one request before giving up (for a streamed
+# request, the longest gap between chunks). The SDK default is 600, and it
+# retries twice on its own inside each of our attempts, so a hung connection
+# could hold one call for 5 x 3 x 600 s, about 2.5 hours. At 300 the worst case
+# is about 1.3 hours, and the longest healthy calls here (4,096 output tokens
+# non-streamed) finish in well under two minutes.
+REQUEST_TIMEOUT_S = 300.0
 
 
 def _create_message(client, kwargs: dict, *, stream: bool):

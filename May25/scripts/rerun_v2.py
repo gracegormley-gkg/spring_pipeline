@@ -43,6 +43,7 @@ import os
 import shutil
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 MAY25 = Path(__file__).resolve().parent.parent
@@ -208,7 +209,12 @@ def _latest_per_doc(records: list[dict]) -> dict[str, dict]:
     return {r["doc_id"]: r for r in records}
 
 
-def _run(doc_ids: list[str], batch_id: str, max_usd: float | None) -> dict:
+def _run(
+    doc_ids: list[str],
+    batch_id: str,
+    max_usd: float | None,
+    max_hours: float | None = None,
+) -> dict:
     """
     Run `doc_ids` one at a time, resumably.
 
@@ -218,15 +224,20 @@ def _run(doc_ids: list[str], batch_id: str, max_usd: float | None) -> dict:
     skipped and failed ones are retried. The budget cap counts every attempt in
     the file, failed ones included, because they spent money too.
 
+    `max_hours` stops starting new documents once this invocation has run that
+    long, so a run against a degraded endpoint ends instead of grinding on. Like
+    the budget cap, it is checked between documents: the one in flight finishes.
+
     Resuming is refused if the code changed since the earlier attempts: a batch
     whose documents came from two commits does not describe one extractor.
     """
+    started = time.monotonic()
     PROGRESS_DIR.mkdir(parents=True, exist_ok=True)
     path = PROGRESS_DIR / f"{batch_id}.jsonl"
     commit = gate_mod.code_version()["commit"]
 
     earlier = _read_progress(batch_id)
-    other = sorted({r.get("commit") for r in earlier} - {commit})
+    other = sorted({str(r.get("commit")) for r in earlier} - {str(commit)})
     if other:
         raise SystemExit(
             f"{path.name} has documents from commit(s) {other}, not HEAD {commit}. "
@@ -244,6 +255,11 @@ def _run(doc_ids: list[str], batch_id: str, max_usd: float | None) -> dict:
             print(f"Budget cap ${max_usd:.2f} reached (${spent:.2f} spent); "
                   f"stopping before {doc_id}. Raise --max-usd and rerun to continue.")
             break
+        hours = (time.monotonic() - started) / 3600
+        if max_hours is not None and hours >= max_hours:
+            print(f"Time limit {max_hours:g} h reached; stopping before {doc_id}. "
+                  f"Rerun the same command to continue.")
+            break
         logging.getLogger(__name__).info(f"[{i}/{len(todo)}] {doc_id}")
         try:
             record = segb.process_doc(
@@ -258,7 +274,8 @@ def _run(doc_ids: list[str], batch_id: str, max_usd: float | None) -> dict:
         spent += _cost(record)
 
     latest = _latest_per_doc(_read_progress(batch_id))
-    docs = [latest.get(d) or {"doc_id": d, "error": "not run: budget cap"} for d in doc_ids]
+    docs = [latest.get(d) or {"doc_id": d, "error": "not run: budget or time limit"}
+            for d in doc_ids]
     ok = [d for d in docs if not d.get("error")]
     total = sum(_cost(d) for d in ok)
     n_fields = sum((d.get("rollup") or {}).get("n_fields", 0) for d in ok)
@@ -304,13 +321,13 @@ def smoke() -> dict:
     return summary
 
 
-def run_all(max_usd: float) -> dict:
+def run_all(max_usd: float, max_hours: float) -> dict:
     smoke_path = OUT / "batch_summary.v2-smoke.json"
     if not smoke_path.exists():
         raise SystemExit("Run `smoke` first and check its output.")
     _archive_v1_summary()
     rest = [d for d in ALL_DOCS if d != SMOKE_DOC]
-    summary = _run(rest, "v2-rerun", max_usd=max_usd)
+    summary = _run(rest, "v2-rerun", max_usd=max_usd, max_hours=max_hours)
 
     # One summary for all 20, so the cost table and gate rate cover the set.
     smoke_summary = json.loads(smoke_path.read_text(encoding="utf-8"))
@@ -348,6 +365,8 @@ def main() -> int:
     a = sub.add_parser("all", help="run the other 19 documents")
     a.add_argument("--max-usd", type=float, default=120.0,
                    help="stop starting new documents past this spend (default 120)")
+    a.add_argument("--max-hours", type=float, default=12.0,
+                   help="stop starting new documents after this long (default 12)")
     args = ap.parse_args()
 
     fmt = "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
@@ -368,7 +387,7 @@ def main() -> int:
         return 0 if ping() else 1
     if args.cmd == "smoke":
         return 0 if smoke()["n_failed"] == 0 else 1
-    return 0 if run_all(args.max_usd)["n_failed"] == 0 else 1
+    return 0 if run_all(args.max_usd, args.max_hours)["n_failed"] == 0 else 1
 
 
 if __name__ == "__main__":
