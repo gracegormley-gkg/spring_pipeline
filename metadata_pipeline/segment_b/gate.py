@@ -52,8 +52,10 @@ from __future__ import annotations
 import json
 import logging
 import os
+import subprocess
 import tempfile
 from dataclasses import dataclass, field as dc_field
+from functools import lru_cache
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Callable, Optional, Sequence
@@ -1503,6 +1505,39 @@ def manifest_dir(doc_id: str, out_dir: Optional[Path] = None) -> Path:
     return (Path(out_dir) if out_dir is not None else SEGMENT_B_OUTPUT) / doc_id
 
 
+@lru_cache(maxsize=1)
+def code_version() -> dict:
+    """
+    The git version of the code writing this manifest.
+
+    The definition of done requires every released record to trace to a frozen
+    tag, but manifests recorded only a timestamp: once a later commit landed
+    there was no telling which code produced a given record. `dirty` covers
+    the pipeline code only; run outputs and the rolling null-tag monitor change
+    on every run and would otherwise mark every manifest dirty. Cached, so a
+    batch reads git once. Every value is None outside a git checkout.
+    """
+    def git(*args: str) -> Optional[str]:
+        try:
+            r = subprocess.run(
+                ["git", *args], cwd=settings.MAY25_ROOT,
+                capture_output=True, text=True, timeout=10,
+            )
+        except (OSError, subprocess.SubprocessError):
+            return None
+        return r.stdout.strip() if r.returncode == 0 else None
+
+    status = git(
+        "status", "--porcelain", "--", "segment_a", "segment_b", "mcal",
+        ":(exclude)segment_b/output", ":(glob,exclude)**/null_tag_monitor*",
+    )
+    return {
+        "describe": git("describe", "--tags", "--always"),
+        "commit": git("rev-parse", "HEAD"),
+        "dirty": None if status is None else bool(status),
+    }
+
+
 def build_manifest(
     doc_id: str,
     stage: str,
@@ -1524,6 +1559,7 @@ def build_manifest(
         "doc_id": doc_id,
         "artifact_stage": stage,
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "code_version": code_version(),
         "plan_ref": "MCAL_PLAN 3.12",
         "schema_keys": list(MANIFEST_REQUIRED_KEYS),
         "n_fields": len(fields),

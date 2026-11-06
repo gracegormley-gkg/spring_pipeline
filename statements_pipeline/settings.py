@@ -24,11 +24,10 @@ RAW_EXTRACT_DIR = OUTPUT_DIR / "raw_extract"  # per-chunk extractions (checkpoin
 RUN_SUMMARY_PATH = OUTPUT_DIR / "run_summary.json"
 
 # Reuse segment_a's calibration selection.
-SEGMENT_A_DIR = ROOT.parent / "segment_a"
-# people_pipeline currently lives under spring_pipeline/Old/, not under May25/.
-# We only need its `verify` module (extract + merge are now local). If you
-# move people_pipeline, update this path.
-PEOPLE_PIPELINE_DIR = ROOT.parent.parent / "Old" / "people_pipeline"
+SEGMENT_A_DIR = ROOT.parent / "metadata_pipeline" / "segment_a"
+# people_pipeline is vendored under statements_pipeline/. We only need its
+# `verify` module (extract + merge are now local).
+PEOPLE_PIPELINE_DIR = ROOT / "people_pipeline"
 SEGMENT_A_SELECTION_PATH = SEGMENT_A_DIR / "output" / "selection.json"
 
 # Make segment_a's and people_pipeline's modules importable. Local modules win

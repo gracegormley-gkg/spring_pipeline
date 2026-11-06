@@ -6,12 +6,12 @@ the working rules for applying the next round.
 
 Companion documents:
 
-- `May25/segment_b/MCAL_PLAN.md` — the ratified design and its §10 implementation
+- `metadata_pipeline/segment_b/MCAL_PLAN.md` — the ratified design and its §10 implementation
   addendum (where the code deviates from the plan, and why).
 - `PIPELINE_REVIEW.md` — the review itself, plus Appendix C recording what was
   applied, what was declined, and the four claims that changed once measured.
 
-Everything below is verifiable from the test suite: `May25/tests`, 1333 tests, no
+Everything below is verifiable from the test suite: `metadata_pipeline/tests`, 1333 tests, no
 network required.
 
 ---
@@ -21,9 +21,9 @@ network required.
 ```
   MongoDB (praxis.colt)
         |
-        |  Documents/extract_page_text.py          Stage 0: materialize OCR
+        |  documents/extract_page_text.py          Stage 0: materialize OCR
         v
-  Documents/output/<doc_id>/page_0001.json ...     exact page numbers live here
+  documents/output/<doc_id>/page_0001.json ...     exact page numbers live here
         |
         |  segment_b/run.py process_doc            one document, stages 1-10
         v
@@ -100,14 +100,14 @@ It can only be recorded so that it is available when the weights unfreeze.**
 
 ## 3. Stage 0 — materializing documents
 
-`Documents/extract_page_text.py` reassembles per-page text out of MongoDB and
+`documents/extract_page_text.py` reassembles per-page text out of MongoDB and
 writes one JSON file per page.
 
 ```bash
 # next 10 documents not yet extracted, restricted to inventory barcodes.
-# Run from Documents/: --from-csv is opened relative to the CWD.
+# Run from documents/: --from-csv is opened relative to the CWD.
 # Needs MONGO_URI in the environment.
-cd Documents
+cd documents
 python extract_page_text.py --new --limit 10 \
     --from-csv '../eis-inventory-2nd-pass(eis inventory 2nd pass csv).csv'
 ```
@@ -592,14 +592,14 @@ few-shot exemplars, `next_batch.csv`.
 
 ## 14. Running it
 
-The `python -m ...` commands run **from `May25/`** — that is the package root for
+The `python -m ...` commands run **from `metadata_pipeline/`** — that is the package root for
 `segment_b` and `mcal`, and importing `mcal.settings` installs the `sys.path`
 bridge to segment_a's flat modules. The test command runs from the repo root.
 Every corpus path resolves through `mcal.settings`, so nothing else depends on the
 working directory.
 
 ```bash
-cd May25
+cd metadata_pipeline
 
 # run this first: pinned stage, blockers, geocoder stack, how many docs are ready
 python -m segment_b.run status
@@ -620,7 +620,7 @@ python -m mcal.build --stage v2 --ratify       # promotes to artifacts/v2/
 
 # the tests: from the repo root, no network
 cd ..
-.venv/bin/python -m pytest May25/tests -q
+.venv/bin/python -m pytest metadata_pipeline/tests -q
 ```
 
 Checkpointing means a re-run is cheap: `process` reuses `m1.json`, `m2.json` and

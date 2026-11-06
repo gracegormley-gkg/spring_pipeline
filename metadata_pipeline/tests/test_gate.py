@@ -816,6 +816,13 @@ class TestManifest:
         assert meta["n_fields"] == 15
         assert "routine" in meta["reviewer_note"]
 
+    def test_meta_records_the_code_version(self, mcal_artifacts, doc, tmp_path):
+        """Every released record must trace to a frozen git tag."""
+        out = gate(doc, all_results(), mcal_artifacts, tmp_path)
+        version = out.manifest[G.META_KEY]["code_version"]
+        assert set(version) == {"describe", "commit", "dirty"}
+        assert version["commit"] is None or len(version["commit"]) == 40
+
     def test_audit_extras_do_not_displace_the_schema(self, mcal_artifacts, doc, tmp_path):
         """Extras are additive; a reviewer UI written against 3.12 still works."""
         out = gate(doc, all_results(), mcal_artifacts, tmp_path)

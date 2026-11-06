@@ -19,9 +19,9 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[3]  # -> spring_pipeline/
-PEOPLE_DIR = ROOT / "May25" / "statements_pipeline" / "output" / "people"
-DOCS_DIR = ROOT / "Documents" / "output"
+ROOT = Path(__file__).resolve().parents[2]  # -> spring_pipeline/
+PEOPLE_DIR = ROOT / "statements_pipeline" / "output" / "people"
+DOCS_DIR = ROOT / "documents" / "output"
 OUT_DIR = PEOPLE_DIR.parent / "grading_sheets"
 
 

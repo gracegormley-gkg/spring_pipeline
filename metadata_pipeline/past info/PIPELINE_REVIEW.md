@@ -1,6 +1,6 @@
 # Segment A / Segment B Pipeline Review
 
-**Scope:** `May25/segment_a`, `May25/segment_b`, `May25/mcal`, `mcal/artifacts/v1`, `segment_b/output` (11-doc batch), `Evaluation - Sheet1.csv`
+**Scope:** `metadata_pipeline/segment_a`, `metadata_pipeline/segment_b`, `metadata_pipeline/mcal`, `mcal/artifacts/v1`, `segment_b/output` (11-doc batch), `Evaluation - Sheet1.csv`
 **Baseline reviewed:** v1 artifacts, stage `v1`, 11 documents processed
 **Method:** two independent passes (cost/efficiency, correctness/airtightness), then a verification pass over every claim. Claims that failed verification are marked and corrected in place.
 
@@ -192,7 +192,7 @@ for label, pat in EIS_TYPE_PATTERNS.items():
 
 `break` on first match means **dict order** decides, not where the phrase appears in the text. `config.EIS_TYPE_PATTERNS` order is `Supplemental, ROD, Draft, Final`. A Final EIS whose cover page mentions "record of decision" anywhere is labeled ROD.
 
-Consistent with the Lincoln Hwy grade (`wrong: "ROD", correct: "Final"`), though that document isn't in `Documents/output/` so the attribution can't be confirmed directly.
+Consistent with the Lincoln Hwy grade (`wrong: "ROD", correct: "Final"`), though that document isn't in `documents/output/` so the attribution can't be confirmed directly.
 
 Compounding: on regex/Sonnet disagreement the code returns the **regex** value with `confidence: low`. In the one observed failure the regex is the losing source.
 

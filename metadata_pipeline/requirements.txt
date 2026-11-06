@@ -1,10 +1,10 @@
-# May25 pipeline dependencies (segment_a + mcal + segment_b).
+# metadata_pipeline dependencies (segment_a + mcal + segment_b).
 #
 # Verified against Python 3.14.3 on macOS/arm64 (2026-07-30).
 # All geospatial wheels resolve as cp314/abi3 binaries -- no GDAL source build
 # is required. Install with:
 #
-#     .venv/bin/pip install -r May25/requirements.txt
+#     .venv/bin/pip install -r metadata_pipeline/requirements.txt
 #
 # ---------------------------------------------------------------------------
 # Core: LLM calls + HTTP (segment_a/llm.py, nul.py, inventory.py)

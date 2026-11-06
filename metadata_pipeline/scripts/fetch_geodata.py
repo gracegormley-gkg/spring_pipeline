@@ -1,7 +1,7 @@
 """
 Download and build the geocoder reference data into spring_pipeline/geodata/.
 
-    python scripts/fetch_geodata.py          # from May25/; about 2 GB download, 2 minutes
+    python scripts/fetch_geodata.py          # from metadata_pipeline/; about 2 GB download, 2 minutes
 
 Produces the two files spring_pipeline/.env points at:
 

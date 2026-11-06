@@ -89,7 +89,7 @@ def precheck_m2_prompt_version() -> Precheck:
                 "1. Archive the current output so the amendment is reversible:",
                 f"     cp -r {settings.M2_DIR} {settings.M2_PRE_AMENDMENT_DIR}",
                 "2. Re-run M2 over the graded docs:",
-                "     cd May25/segment_a && python run.py process --force",
+                "     cd metadata_pipeline/segment_a && python run.py process --force",
                 "   (or --doc <doc_id> per doc; the marker is only stamped once",
                 "    every doc with M2 output on disk has been regenerated)",
                 "3. Re-run this build.",
@@ -108,7 +108,7 @@ def precheck_m2_prompt_version() -> Precheck:
             checklist=[
                 f"{marker} says {got!r} but this build requires {required!r}.",
                 "The M2 prompt templates changed since that output was written.",
-                "Re-run: cd May25/segment_a && python run.py process --force",
+                "Re-run: cd metadata_pipeline/segment_a && python run.py process --force",
             ],
         )
 
